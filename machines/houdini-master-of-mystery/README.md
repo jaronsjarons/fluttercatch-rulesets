@@ -118,7 +118,7 @@ A Milkcan loop followed by the ramp starts or raises a timed 2x, 3x, or 4x playf
 
 - Hit the SEANCE standup targets to spell SEANCE, then shoot the lit scoop to start Seance Multiball. Add it to Trunk Multiball when it is ready.
 
-- During Trunk Multiball, collect the lit jackpot shots and return to the trunk for the Super Jackpot; secure at least three Trunk jackpots for its HOUDINI letter.
+- During Trunk Multiball, collect the three lit jackpot shots, then shoot the right inner loop into the trunk for the Super Jackpot. This relights the jackpots for another cycle. Check the installed jackpot requirement for its HOUDINI letter.
 
 - During Seance Multiball, hit the SEANCE standup targets to spell SEANCE for a jackpot. Spell it in order for the Super Jackpot. Check the installed jackpot requirement for its HOUDINI letter.
 
