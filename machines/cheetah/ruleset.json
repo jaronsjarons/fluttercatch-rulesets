@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6kW",
+  "title": "Cheetah",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Cheetah Minutorial and updated-code warning",
+      "url": "https://www.youtube.com/watch?v=6sP1oOYKeRg"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Cheetah strategy",
+        "url": "https://rules.silverballmania.com/rules/GR6kW-Mo1W3"
+      },
+      {
+        "label": "Stern Cheetah confirmed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_Cheetah_instruction_cards.zip"
+      },
+      {
+        "label": "Cheetah tournament route demonstration",
+        "url": "https://www.youtube.com/watch?v=Y3G3_ZjoiSg&t=2351s"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Cheetah is a build-and-collect game. The top three-bank and repeated right-bank completions raise Bonus X, while the numbered five-bank lights the long left Collect Bonus lane. Build the base and multiplier before taking that lane, and determine first whether the installed code permits one collect or repeated collects per ball.",
+      "simpleOverview": "Complete the top three-bank or repeat the right three-bank to raise Bonus X. Complete the numbered 1–5 bank to light Collect Bonus, then shoot the long left lane after the bonus is valuable.",
+      "summary": "Build Bonus X from the top or right bank, complete 1–5 to light Collect Bonus, and cash the long left lane only after checking whether this copy allows repeated collections.",
+      "quickInfo": [
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete the top three-bank; later right-bank completions can also advance it."
+        },
+        {
+          "name": "Light Collect",
+          "summary": "Complete the numbered 1–5 bank in sequence."
+        },
+        {
+          "name": "Max Base Bonus",
+          "summary": "A second numbered-bank completion advances the base to its maximum."
+        },
+        {
+          "name": "Collect",
+          "summary": "Shoot the narrow long lane on the far left."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Work the top three-bank or repeat the more reachable right three-bank to raise Bonus X.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete the numbered 1–5 drop bank; the lit next number is worth more, and completion lights the far-left Collect Bonus lane."
+        },
+        {
+          "text": "Build base bonus with the right bank, outer return lanes, or a second numbered-bank completion."
+        },
+        {
+          "text": "When the base and multiplier are strong, shoot the narrow far-left lane to collect."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "One-collect setup",
+          "when": "Use this when the game allows only one bonus collection per ball.",
+          "steps": [
+            {
+              "text": "Leave the Collect Bonus lane lit while raising the base and multiplier."
+            },
+            {
+              "text": "Take the lane only after the bonus is near its useful maximum."
+            },
+            {
+              "text": "After the collect, switch to bank values, lit spinners, or the horseshoe instead of expecting another collect."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximum bonus and a controlled collect",
+        "steps": [
+          {
+            "text": "Raise Bonus X through the top or right bank."
+          },
+          {
+            "text": "Finish 1–5 to light Collect Bonus and repeat it to max the base."
+          },
+          {
+            "text": "Shoot the far-left Collect Bonus lane."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Identify stock versus updated/custom code before play; the Minutorial explicitly warns that rule behavior differs.",
+        "Test all three drop banks, the numbered sequence, far-left collect lane, horseshoe, spinners, bonus lamps, and upper-left flipper feed.",
+        "Confirm whether bonus can be collected once or repeatedly per ball, plus Extra Ball and Special conversion."
+      ],
+      "cautions": [
+        {
+          "issue": "Stock and updated/custom Cheetah code can change progression and collect behavior.",
+          "response": "Read the installed-code notice and verify collect behavior on that machine; do not transfer updated-code rules blindly to stock code.",
+          "sourceUrl": "https://www.youtube.com/watch?v=6sP1oOYKeRg"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

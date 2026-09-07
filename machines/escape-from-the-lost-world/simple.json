@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 1,
+  "id": "G5oEz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Learn the three plunge feeds. Build Treasure Value, then complete DINO EGG. Cross the Bridge of Gold and shoot the open Escape Gateway. The shot collects Treasure Value and starts two-ball multiball.",
+        "steps": [
+          {
+            "text": "Read the shooter-lane result on the first plunge.",
+            "modeNotes": [
+              "Treasure Value: This stored score starts at 100,000 and can reach 2,500,000. The Escape Gateway collects it, then resets it to 100,000.",
+              "Multiball Release Memory: This stored three-lamp counter advances at either 25K rollover. The third lamp releases the reserve ball. Partial progress carries between balls and resets after multiball.",
+              "Gentle plunge: Reach the flipper-return ramp rollover. It scores 25,000, adds 50,000 Treasure Value, and advances Memory once.",
+              "Firm plunge: Reach the upper right flipper for a Volcano shot.",
+              "Hard plunge: Cross the Mountain and operate the Skeleton. It scores 50,000 and adds 100,000 Treasure Value."
+            ]
+          },
+          {
+            "text": "Test one safe feed to the upper left flipper. Use a cave elevator or a short Mystery Path return."
+          },
+          {
+            "text": "Build Treasure Value before the collect attempt.",
+            "modeNotes": [
+              "Left Golden Idol bank: Complete three targets for 30,000 points and 30,000 Treasure Value.",
+              "Right Golden Idol bank: Complete five targets for 50,000 points and 50,000 Treasure Value.",
+              "Completed banks reset. Partial target progress carries between balls.",
+              "Each center or right cave trip adds 50,000 Treasure Value.",
+              "Each Volcano star rollover adds 100,000 Treasure Value.",
+              "Each Skeleton or Mountain switch adds 100,000 Treasure Value."
+            ]
+          },
+          {
+            "text": "Complete the three DINO EGG drop targets.",
+            "modeNotes": [
+              "Escape Gate Timer: The full bank opens the gate and starts a 30-Time-Unit window. A normal scoring switch can close the gate earlier.",
+              "Each DINO EGG target scores 3,000 and adds 10 Time Units.",
+              "An unlit 25K return switch, flipper-return ramp rollover, unlit Golden Idol, or Volcano rollover does not close the gate."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the Mystery Path ramp or enter the Dinosaur Cave so its elevator feeds the upper-left flipper before another scoring switch closes the Escape Gate.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the Bridge of Gold with the upper left flipper. Prepare the upper right flipper."
+          },
+          {
+            "text": "Shoot the open Escape Gateway with the upper right flipper.",
+            "modeNotes": [
+              "Two-Ball Multiball: The Gateway scores 50,000, collects Treasure Value, and releases the reserve ball. Normal scoring continues. There is no jackpot or scoring multiplier.",
+              "The Escape Path operates two switches before multiball begins.",
+              "Multiball ends when one ball remains. Multiball Release Memory then resets."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During multiball, use safe Golden Idol banks, caves, Volcano rollovers, and Mountain paths to rebuild Treasure Value.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, rebuild Memory or repeat the Escape Gateway sequence for another start.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Automatic two-ball multiball",
+          "when": "Use this plan when the Bridge of Gold transfer is not reliable.",
+          "steps": [
+            {
+              "text": "Use a gentle plunge for the flipper-return ramp rollover."
+            },
+            {
+              "text": "Confirm that one Multiball Release Memory lamp is lit."
+            },
+            {
+              "text": "Shoot the Right Cave when it gives a controlled flipper-return ramp feed."
+            },
+            {
+              "text": "Use the Dinosaur Cave saucer when the ramp feed is poor."
+            },
+            {
+              "text": "Each completed 25K rollover scores 25,000, adds 50,000 Treasure Value, and advances Memory once."
+            },
+            {
+              "text": "Collect the third Memory lamp. The reserve ball releases from the far-left physical lane.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use two-ball play to complete safe Golden Idol banks and rebuild Treasure Value.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Do not force the Gateway. Multiball has no jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Ball Saver lane start",
+            "when": "Use this start only when the left return-lane split is predictable.",
+            "steps": [
+              {
+                "text": "Guide a left return toward the far-left Ball Saver lane with an early legal nudge.",
+                "modeNotes": [
+                  "Ball Saver lane: This physical far-left lane holds the incoming ball with the reserve ball. It then releases both balls for multiball. It is not a timed software save."
+                ]
+              },
+              {
+                "text": "The lane scores 100,000 and immediately starts two-ball multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Do not force the route after the ball passes below the slingshot. The adjacent path is the left outlane."
+              }
+            ]
+          },
+          {
+            "title": "Mountain opening route",
+            "when": "Use this plan when the upper right flipper reaches the Mountain more reliably than the DINO EGG bank.",
+            "steps": [
+              {
+                "text": "Reach the upper right flipper."
+              },
+              {
+                "text": "Shoot the closed-gate Mountain path. Each completion operates the Skeleton switch."
+              },
+              {
+                "text": "Each completion scores 50,000 and adds 100,000 Treasure Value."
+              },
+              {
+                "text": "Repeat until the Escape Gate opens. The required count is adjustable; the factory setting uses six."
+              },
+              {
+                "text": "Use the next Bridge of Gold feed to shoot the open Escape Gateway.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Volcano Extra Ball",
+            "when": "Use this plan when the upper right flipper reaches the Volcano safely and replay balls have tournament value.",
+            "steps": [
+              {
+                "text": "Shoot the Volcano Tunnel or send a firm Bridge of Gold shot past the upper right flipper.",
+                "modeNotes": [
+                  "Extra Ball: A Volcano award qualifies a replay ball at the Skeleton. The award is spent after the current ball drains and SHOOT AGAIN serves the replay ball."
+                ]
+              },
+              {
+                "text": "Each Volcano rollover scores 50,000 and adds 100,000 Treasure Value."
+              },
+              {
+                "text": "On medium difficulty, collect two Volcano rollovers to flash Extra Ball."
+              },
+              {
+                "text": "Operate the Skeleton switch to collect the flashing Extra Ball."
+              },
+              {
+                "text": "Only one Extra Ball can be earned per game ball."
+              },
+              {
+                "text": "Extra Ball cannot be earned during replay-ball play or while SHOOT AGAIN is lit."
+              }
+            ]
+          },
+          {
+            "title": "Right Cave Special",
+            "when": "Use this plan only when a replay award has tournament value.",
+            "steps": [
+              {
+                "text": "Complete the Right Cave until its Special lamp flashes.",
+                "modeNotes": [
+                  "Special: This operator-configured replay award is qualified by repeated Right Cave completions. A later flashing cave completion spends it. Only one Special is available per game."
+                ]
+              },
+              {
+                "text": "Medium difficulty requires three Right Cave completions to qualify Special."
+              },
+              {
+                "text": "Shoot the flashing Right Cave again to collect it."
+              },
+              {
+                "text": "Ignore this route when tournament settings remove replay value."
+              }
+            ]
+          },
+          {
+            "title": "Hold Bonus route",
+            "when": "Use this plan when cave returns are safe and the current bonus is valuable.",
+            "steps": [
+              {
+                "text": "Enter any Dinosaur Cave opening until HOLD BONUS WHEN FLASHING flashes.",
+                "modeNotes": [
+                  "Lava Pit Bonus: This end-of-ball award grows from normal switches to 510,000. It has no multiplier. A drain collects it. A tilt cancels it.",
+                  "Hold Bonus: Repeated cave entries qualify stored bonus progress. A cave entry while the lamp flashes stores the current award for the next ball."
+                ]
+              },
+              {
+                "text": "Medium difficulty needs two entries on Ball 1, three on Ball 2, and four on Ball 3."
+              },
+              {
+                "text": "Enter a cave again while HOLD BONUS WHEN FLASHING is lit."
+              },
+              {
+                "text": "Confirm the BONUS HELD lamp."
+              },
+              {
+                "text": "A normal drain collects the current Lava Pit Bonus."
+              },
+              {
+                "text": "The held value carries to the next ball and combines with the next held award."
+              },
+              {
+                "text": "Avoid a tilt. It cancels the bonus collect."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "2,500,000 Treasure collect and two-ball multiball",
+          "steps": [
+            {
+              "text": "Repeat both Golden Idol banks."
+            },
+            {
+              "text": "Use controlled cave entries for 50,000 Treasure Value each."
+            },
+            {
+              "text": "Use Volcano and Mountain paths for 100,000 Treasure Value each."
+            },
+            {
+              "text": "Continue until Treasure Value reaches 2,500,000."
+            },
+            {
+              "text": "Complete DINO EGG to open the Escape Gate.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Feed the upper left flipper and cross the Bridge of Gold."
+            },
+            {
+              "text": "Shoot the open Escape Gateway with the upper right flipper."
+            },
+            {
+              "text": "Collect 2,500,000 plus the 50,000 Gateway award. Start two-ball multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Escape Gate Timer",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Two-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Treasure Value",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Multiball Release Memory",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Ball Saver lane",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lava Pit Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Hold Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Special",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Read the difficulty settings for Mountain, Right Cave, Volcano, and Dinosaur Cave before depending on a fixed qualification count.",
+          "Treat the Escape Gate as 30 Time Units, not 30 real seconds. A scoring switch can close it before the displayed window ends.",
+          "Confirm whether Extra Ball and Special have tournament value before using either secondary route."
+        ],
+        "techniques": [
+          {
+            "name": "Three-strength plunge",
+            "instruction": "Use a gentle plunge for the flipper-return ramp. Use a firm plunge for the upper right flipper. Use a hard plunge for the Mountain.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf"
+          },
+          {
+            "name": "Bridge of Gold transfer",
+            "instruction": "Cross the bridge with the upper left flipper. Prepare the upper right flipper before the ball reaches it.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf"
+          },
+          {
+            "name": "Escape combo",
+            "instruction": "Complete DINO EGG. Reach the upper left flipper, cross the bridge, and shoot the open Gateway with the upper right flipper.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Start a legal nudge before the ball reaches the outward-slanted lane split. Guide the ball toward an inlane.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf",
+            "techniqueSlug": "nudging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Both return lanes split outward toward an outlane.",
+            "response": "Start the nudge before the ball reaches the split. A late nudge has less effect.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf"
+          },
+          {
+            "issue": "The left return can enter the outlane instead of the Ball Saver lane.",
+            "response": "Do not force this start after the ball passes below the slingshot.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf"
+          },
+          {
+            "issue": "The upper bridge has open edges.",
+            "response": "Keep both lower flippers ready when a weak bridge shot falls to the lower playfield.",
+            "sourceUrl": "https://www.pinball.org/rules/escapefromthelostworld.html"
+          },
+          {
+            "issue": "A scoring switch can close the Escape Gate before its timer ends.",
+            "response": "Make the upper-flipper transfer promptly. Do not assume that all 30 Time Units remain.",
+            "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-escape_lost_world.pdf"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Open the Escape Gate",
+            "summary": "Complete the three DINO EGG drop targets; most scoring switches can close the gate before all 30 Time Units elapse."
+          },
+          {
+            "name": "Reach the upper flippers",
+            "summary": "Use the Mystery Path or Dinosaur Cave to feed the upper-left flipper, then cross the Bridge of Gold."
+          },
+          {
+            "name": "Escape Gateway",
+            "summary": "Shoot the open Gateway with the upper-right flipper to collect Treasure Value and start two-ball play."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "DINO EGG",
+            "label": "DINO EGG bank",
+            "description": "Three center drops that open the Escape Gate.",
+            "precision": "unverified",
+            "context": "Three center drops that open the Escape Gate."
+          },
+          {
+            "term": "Mystery Path",
+            "label": "Mystery Path ramp",
+            "description": "Lower-playfield ramp used to reach the second level and upper-left flipper.",
+            "precision": "unverified",
+            "context": "Lower-playfield ramp used to reach the second level and upper-left flipper."
+          },
+          {
+            "term": "Dinosaur Cave",
+            "label": "Dinosaur Cave",
+            "description": "Center cave entrance whose elevator can feed the upper-left flipper.",
+            "precision": "unverified",
+            "context": "Center cave entrance whose elevator can feed the upper-left flipper."
+          },
+          {
+            "term": "upper-left flipper",
+            "label": "Upper-left flipper",
+            "description": "Flipper used to shoot across the Bridge of Gold.",
+            "precision": "unverified",
+            "context": "Flipper used to shoot across the Bridge of Gold."
+          },
+          {
+            "term": "Bridge of Gold",
+            "label": "Bridge of Gold",
+            "description": "Upper-left-flipper shot that feeds the upper-right flipper.",
+            "precision": "unverified",
+            "context": "Upper-left-flipper shot that feeds the upper-right flipper."
+          },
+          {
+            "term": "upper-right flipper",
+            "label": "Upper-right flipper",
+            "description": "Flipper used to shoot the Escape Gateway, Mountain, and Volcano routes.",
+            "precision": "unverified",
+            "context": "Flipper used to shoot the Escape Gateway, Mountain, and Volcano routes."
+          },
+          {
+            "term": "Escape Gateway",
+            "label": "Escape Gateway",
+            "description": "Upper-right-flipper collect that starts two-ball play.",
+            "precision": "unverified",
+            "context": "Upper-right-flipper collect that starts two-ball play."
+          },
+          {
+            "term": "Golden Idol banks",
+            "label": "Golden Idol banks",
+            "description": "Three-target left bank and five-target right bank used to build Treasure Value.",
+            "precision": "unverified",
+            "context": "Three-target left bank and five-target right bank used to build Treasure Value."
+          },
+          {
+            "term": "Right Cave",
+            "label": "Right Cave",
+            "description": "Cave entrance used for Treasure Value, release Memory, and setting-dependent Special.",
+            "precision": "unverified",
+            "context": "Cave entrance used for Treasure Value, release Memory, and setting-dependent Special."
+          },
+          {
+            "term": "Volcano Tunnel",
+            "label": "Volcano Tunnel",
+            "description": "Upper route used to add Treasure Value and qualify Extra Ball.",
+            "precision": "unverified",
+            "context": "Upper route used to add Treasure Value and qualify Extra Ball."
+          },
+          {
+            "term": "Skeleton",
+            "label": "Skeleton switch",
+            "description": "Upper switch used by the Mountain route and setting-dependent Extra Ball collect.",
+            "precision": "unverified",
+            "context": "Upper switch used by the Mountain route and setting-dependent Extra Ball collect."
+          },
+          {
+            "term": "Mountain",
+            "label": "Mountain path",
+            "description": "Upper-right-flipper route that operates the Skeleton and can open the Escape Gate.",
+            "precision": "unverified",
+            "context": "Upper-right-flipper route that operates the Skeleton and can open the Escape Gate."
+          },
+          {
+            "term": "Ball Saver lane",
+            "label": "Far-left Ball Saver lane",
+            "description": "Physical lane that immediately releases the held reserve ball for two-ball play.",
+            "precision": "unverified",
+            "context": "Physical lane that immediately releases the held reserve ball for two-ball play."
+          },
+          {
+            "term": "25K rollovers",
+            "label": "25K return rollovers",
+            "description": "Return-path switches that advance Multiball Release Memory when lit.",
+            "precision": "unverified",
+            "context": "Return-path switches that advance Multiball Release Memory when lit."
+          }
+        ],
+        "simpleOverview": "Escape from the Lost World builds Treasure Value before a timed path to the upper Escape Gateway. Complete DINO EGG, enter the Mystery Path or Dinosaur Cave, cross the Bridge of Gold, then shoot the open Gateway with the upper-right flipper. The collect also starts two-ball Multiball.",
+        "overview": "Escape from the Lost World builds Treasure Value before a timed path to the upper Escape Gateway. Build Treasure first, open the gate with the drop targets, then move through a cave or Mystery Path, Bridge of Gold, and Gateway before another switch closes it. Rebuild value during two-ball play.",
+        "machineSetup": [
+          "Read the difficulty settings for Mountain, Right Cave, Volcano, and Dinosaur Cave before depending on a fixed qualification count.",
+          "Treat the Escape Gate as 30 Time Units, not 30 real seconds. A scoring switch can close it before the displayed window ends.",
+          "Confirm whether Extra Ball and Special have tournament value before using either secondary route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete the three DINO EGG drop targets to open the Escape Gate, use the Mystery Path or Dinosaur Cave to reach the upper-left flipper, cross the Bridge of Gold, then shoot the open Escape Gateway with the upper-right flipper.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Open the Escape Gate",
+            "text": "Complete the three DINO EGG drop targets. The full bank opens the Escape Gate for 30 Time Units, but almost any scoring switch can close it sooner.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Reach the upper-left flipper",
+            "text": "While the gate is open, shoot the Mystery Path ramp or enter the Dinosaur Cave so its elevator feeds the upper-left flipper.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Cross the Bridge of Gold",
+            "text": "Use the upper-left flipper to shoot across the Bridge of Gold. Let the ball reach the upper-right flipper."
+          },
+          {
+            "title": "Escape and collect",
+            "text": "Use the upper-right flipper to shoot the open Escape Gateway. It scores 50,000, collects the Treasure Value already built during the ball, and releases the reserve ball for two-ball play. Continue scoring the normal playfield awards with both balls.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Open the Escape Gate",
+            "summary": "Complete the three DINO EGG drop targets; most scoring switches can close the gate before all 30 Time Units elapse."
+          },
+          {
+            "name": "Reach the upper flippers",
+            "summary": "Use the Mystery Path or Dinosaur Cave to feed the upper-left flipper, then cross the Bridge of Gold."
+          },
+          {
+            "name": "Escape Gateway",
+            "summary": "Shoot the open Gateway with the upper-right flipper to collect Treasure Value and start two-ball play."
+          }
+        ]
+      }
+    }
+  ]
+}

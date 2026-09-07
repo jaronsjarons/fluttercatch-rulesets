@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Wxd",
+  "title": "Fish Tales",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "PAPA Fish Tales tutorial with Bowen Kerins",
+      "url": "https://www.youtube.com/watch?v=60a_nKnEdUA&t=88s"
+    },
+    "supportingSources": [
+      {
+        "label": "Fish Tales detailed rulesheet",
+        "url": "https://www.pinball.org/rules/fishtales.html"
+      },
+      {
+        "label": "Kineticist Fish Tales machine guide",
+        "url": "https://www.kineticist.com/games/pinball/fish-tales"
+      },
+      {
+        "label": "Williams Fish Tales manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Williams%20%281979-2000%29/Fish%20Tales/Fish%20Tales%20Operations%20Manual.pdf"
+      },
+      {
+        "label": "Jorian Engelbrektsson at PAPA 18 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/739/18764"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "On original Williams Fish Tales, alternate the lit center ramps, collect Monster Fish at the spinner, and start Caster's Club Multiball only after its target return is safe.",
+      "steps": [
+        {
+          "text": "Catch or dead bounce the launch feed. Test both center ramps and the Caster's Club target."
+        },
+        {
+          "text": "Alternate lit center ramps until you make six lit ramp shots.",
+          "modeNotes": [
+            "Ramp rule: A right ramp or right return lane lights the left ramp. A left ramp or left return lane lights the right ramp. The six awards total 10.5 million."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When possible, make the right ramp the sixth shot so its return gives you the right flipper."
+        },
+        {
+          "text": "Shoot the left-orbit spinner for Monster Fish. One forward spinner tick collects it.",
+          "modeNotes": [
+            "Monster Fish: The first hurry-up starts at 20 million, falls to 5 million, and stays there for about five seconds. A collect raises the next start by 10 million, up to 50 million. A timeout preserves the last value for the next try."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Return to the alternating ramps. Collect every Monster Fish that can cover the match score.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Video Mode floor",
+        "when": "Use this plan when both ramps and Caster's Club reject dangerously.",
+        "steps": [
+          {
+            "text": "Make two lit Long Cast right loops. Each loop qualifies the next captive-ball award."
+          },
+          {
+            "text": "Hit the captive ball once for Hold Bonus and again for Light Video Mode."
+          },
+          {
+            "text": "Shoot the left orbit into the back eject hole to start Video Mode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use 20 torpedoes in 20 seconds. Aim for the rear targets when accuracy remains controlled.",
+            "modeNotes": [
+              "Video Mode: Front, middle, and rear targets score 500,000, 1 million, and 1.5 million. Fifteen to nineteen hits add 10 million. All twenty add 20 million."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Caster's Club Multiball",
+          "when": "Use this ceiling route when the Club target and left-orbit collect are reliable.",
+          "steps": [
+            {
+              "text": "Hit the blocking Club drop. Make three more Club shots. The third lock starts three-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Relock one ball at Caster's Club. Shoot the left orbit into the eject hole within 15 seconds.",
+              "modeNotes": [
+                "Regular jackpot: The first three collects are 20 million, 30 million, and 40 million. If the timer expires, the relocked ball returns. A second relock doubles the lit jackpot and restarts the timer."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After three jackpots, hit the captive ball hard enough to reach its top switch.",
+              "modeNotes": [
+                "Super Jackpot: Each successful captive-ball hit scores 100 million. It repeats until only one ball remains. Jackpot and lit Super progress return in the next multiball."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rock the Boat stack",
+          "when": "Use this plan when the third captive-ball award or four Tales is almost ready.",
+          "steps": [
+            {
+              "text": "Start Rock the Boat from the third captive-ball award, or complete four Stringer Tales.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Multiball while Rock the Boat remains active when the lock is ready.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the safer ramp during the timed stack.",
+              "modeNotes": [
+                "Rock the Boat: For 20 or 30 seconds, either ramp, a ramp U-turn, or the captive ball scores 10 million. The mode continues during multiball."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeat 100 million Super Jackpots",
+        "steps": [
+          {
+            "text": "Collect three regular Caster's Club jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the captive ball's top switch for repeatable 100 million Super Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "A completed Super sequence raises the next multiball's jackpot multiplier. The maximum is 6x.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Sixth-ramp setup",
+          "instruction": "Make the right ramp the sixth lit ramp when its return feeds the right flipper. Shoot the left spinner immediately.",
+          "sourceUrl": "https://www.youtube.com/watch?v=60a_nKnEdUA&t=143s"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Test a right-flipper backhand to the left spinner. Monster Fish needs only one forward spinner tick.",
+          "sourceUrl": "https://www.youtube.com/watch?v=60a_nKnEdUA&t=159s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "On a clean feed across the flippers, leave the receiving flipper down and let the ball bounce to the other side.",
+          "sourceUrl": "https://www.youtube.com/watch?v=60a_nKnEdUA&t=370s",
+          "techniqueSlug": "dead-bounce"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Test a same-side Caster's Club backhand only during ball save; it works on some copies and fails on most others.",
+          "sourceUrl": "https://www.pinball.org/rules/fishtales.html",
+          "techniqueSlug": "backhand"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The short lightning flippers reduce the margin for a late catch.",
+          "response": "Prepare the receiving flipper early. Use a controlled dead bounce when the feed is clean.",
+          "sourceUrl": "https://www.youtube.com/watch?v=60a_nKnEdUA&t=472s"
+        },
+        {
+          "issue": "The Caster's Club target can return the ball toward the center drain.",
+          "response": "Keep both flippers down after the hit. Stop the Club route if the first target return is not controlled.",
+          "sourceUrl": "https://www.youtube.com/watch?v=60a_nKnEdUA&t=105s"
+        },
+        {
+          "issue": "A bad Long Cast gate or Club drop mechanism can block normal progress.",
+          "response": "Test each mechanism before the route. Call the tournament director if a required switch or target fails.",
+          "sourceUrl": "https://www.pinball.org/rules/fishtales.html"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Alternate the lit center ramps."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect three regular Caster's Club jackpots."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Video Mode floor: Use this plan when both ramps and Caster's Club reject dangerously."
+        },
+        {
+          "name": "Edition scope",
+          "summary": "This route covers original Williams Fish Tales and does not apply to the separate 2026 conversion kit."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm original Williams Fish Tales, not the 2026 conversion kit.",
+        "Test both center ramps, left spinner, Caster's Club target, and eject-hole return."
+      ],
+      "simpleOverview": "In Fish Tales, alternating the lit center ramps builds the six-shot boat sequence, and the left-orbit spinner collects Monster Fish. Alternate ramps until six lit shots are complete, then shoot the spinner for the hurry-up. When the Caster's Club target and left orbit are reliable, take three Club locks for Multiball and relock one ball before shooting the left orbit for Jackpot.",
+      "overview": "In Fish Tales, the two center ramps alternate for a six-shot sequence, the left-orbit spinner collects Monster Fish, and Caster's Club uses three locks for Multiball. Use the ramps and Monster Fish as the repeatable route. Start Caster's Club only when its target return is controlled, then relock one ball and shoot the left orbit for Jackpot. After three Jackpots, hit the captive ball's top switch for repeatable 100,000,000 Super Jackpots.",
+      "machineSetup": [
+        "Confirm original Williams Fish Tales, not the 2026 conversion kit.",
+        "Test both center ramps, left spinner, Caster's Club target, and eject-hole return."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

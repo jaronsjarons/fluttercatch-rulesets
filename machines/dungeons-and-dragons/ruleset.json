@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "G4JBP",
+  "title": "Dungeons & Dragons",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bally Dungeons & Dragons operations manual",
+      "url": "https://www.pinrepair.com/6803/manuals/6803-dungeonsdragons.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Dungeons & Dragons tutorial",
+        "url": "https://www.kineticist.com/news/bally-dungeons-dragons-tutorial"
+      },
+      {
+        "label": "Kineticist exact-machine record",
+        "url": "https://www.kineticist.com/games/pinball/dungeons-dragons"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Capture a ball at either Teleport target, then shoot its flashing Dragon's Lair or the Dungeon Level ramp to start two-ball Multiball. Capture both Teleports before making a Lair or Dungeon Level shot to start three-ball play. The upper-left inclined lane and circular ramp also build the timed Dungeon Level multiplier and collect the Bell Tower Million.",
+      "simpleOverview": "Capture a ball at a Teleport target, then shoot its flashing Dragon's Lair or the Dungeon Level ramp for two-ball Multiball. Capture balls at both Teleports first for three-ball Multiball. To collect the Bell Tower Million, enter the right Teleport, knock down the three tower targets and rear gate, then shoot the upper-left inclined lane and circular ramp within three seconds.",
+      "summary": "Capture one Teleport and shoot its flashing Dragon's Lair or the Dungeon Level ramp for two-ball Multiball; capture both Teleports first for three balls. Open the Bell Tower through the right Teleport and complete it to light the upper-left Million shot.",
+      "quickInfo": [
+        {
+          "name": "Start two-ball Multiball",
+          "summary": "Capture one Teleport ball, then shoot its flashing Dragon's Lair or the Dungeon Level ramp."
+        },
+        {
+          "name": "Start three-ball Multiball",
+          "summary": "Capture both Teleport balls, then shoot either Dragon's Lair or the Dungeon Level ramp."
+        },
+        {
+          "name": "Enter Bell Tower",
+          "summary": "Capture at the right Teleport to lower the Bell Tower ramp."
+        },
+        {
+          "name": "Collect Million",
+          "summary": "Clear the three tower targets and rear gate, then make the upper-left lane and ramp within three seconds."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit either Teleport target to capture a ball and flash its corresponding Dragon's Lair plus SUMMON HELP.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the flashing Dragon's Lair or the Dungeon Level ramp to release the captured ball and start two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For three-ball play, capture balls at both Teleport targets before shooting either Dragon's Lair or the Dungeon Level ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use the cabinet's secondary flipper buttons to open the left or right Magic Save gate when an outlane drain threatens.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Collect the Bell Tower Million",
+          "when": "Use this after the right Teleport captures a ball and lowers the Bell Tower ramp.",
+          "steps": [
+            {
+              "text": "Shoot the Bell Tower and knock down its three targets.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit the rear gate to light Million.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the upper-left inclined lane and continue around its circular ramp within three seconds to collect the Million.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Raise Dungeon Level",
+          "when": "Use this when the upper-left combo is returning safely.",
+          "steps": [
+            {
+              "text": "Shoot the upper-left inclined lane and circular ramp to raise the temporary playfield multiplier from 2x toward 5x.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Keep scoring during its timed window, then repeat the combo to advance or restart the multiplier.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Prepare the next three-ball start",
+        "steps": [
+          {
+            "text": "After the first three-ball Multiball, watch which Teleport capture is requested next; later qualifications require additional capture-and-release cycles.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use SHIELD and DUST target progress to prepare automatic Magic Saves before committing to the Lair shots.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete both active Teleport captures, then choose the safer flashing Dragon's Lair or Dungeon Level ramp to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Multiball, Magic Save, Dungeon Level timer, Extra Ball, and Special settings before competitive play.",
+        "Test both Teleport captures, both Dragon's Lairs, Dungeon Level ramp, Bell Tower lift and targets, rear gate, upper-left combo, Magic Save gates, and cabinet secondary buttons."
+      ],
+      "termStyles": [
+        {
+          "label": "Teleport",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Bell Tower",
+          "tone": "oxblood",
+          "kind": "mode"
+        },
+        {
+          "label": "Dungeon Level",
+          "tone": "indigo",
+          "kind": "mode"
+        },
+        {
+          "label": "Magic Save",
+          "tone": "teal",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Later three-ball qualifications require more Teleport capture-and-release progress than the first one.",
+          "response": "Follow the flashing Teleport and SUMMON HELP lamps; do not assume the opening two-capture route will remain unchanged.",
+          "sourceUrl": "https://www.pinrepair.com/6803/manuals/6803-dungeonsdragons.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

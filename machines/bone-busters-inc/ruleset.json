@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Lk0",
+  "title": "Bone Busters Inc.",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bone Busters rules and strategy",
+      "url": "https://pinball-genie.com/machines/bone-busters"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Bone Busters instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Bone_Busters_instruction_cards.zip"
+      },
+      {
+        "label": "Buffalo Pinball Bone Busters tutorial and play",
+        "url": "https://www.youtube.com/watch?v=SGEzPctUEGY"
+      },
+      {
+        "label": "PAPA Bone Busters competition play",
+        "url": "https://www.youtube.com/watch?v=ltpZfQneKSo"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Bone Busters has three physical locks: Moon Street at the right saucer, Headquarters at the left outlane, and Maxwell Street beneath the left ramp. The plunge can take Moon Street, and the second right-side button controls the Train Switch toward Headquarters. Once at least one ball is locked, shoot the center jump ramp to start two- to four-ball Multiball.",
+      "simpleOverview": "Use the plunge for the right-saucer lock when it is available, and use the second right-side button to send the train toward the left-outlane lock. The left ramp can light another lock. With at least one ball locked, shoot the center jump ramp to start Multiball; more locks mean more balls.",
+      "summary": "Lock balls at the right saucer, left outlane, and beneath the left ramp. The plunge and Train Switch can collect the first two. With at least one lock, shoot the center jump ramp to start two- to four-ball Multiball.",
+      "quickInfo": [
+        {
+          "name": "Moon Street lock",
+          "summary": "Plunge or shoot the right saucer while its lock is available."
+        },
+        {
+          "name": "Headquarters lock",
+          "summary": "Use the second right-side button to route the train toward the left-outlane lock."
+        },
+        {
+          "name": "Maxwell Street lock",
+          "summary": "Shoot the left ramp to light Maxwell Street, then shoot beneath the raised ramp."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "With one or more balls locked, shoot the center jump ramp."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the plunge to collect the right-saucer Moon Street lock when it is offered.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Press the second right-side button at the Train Switch to route a ball toward the left-outlane Headquarters lock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left ramp to light a lock, then collect the lit physical lock shown by the inserts.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After at least one ball is locked, shoot the center jump ramp to release the locks and start Multiball; each additional lock adds another ball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build spinner value",
+          "when": "Use this before starting Multiball if the captive-ball shot is safe.",
+          "steps": [
+            {
+              "text": "Hit the captive ball to light the spinners.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Rip a lit spinner for its high-value spins, then relight it with another captive-ball hit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Cash Bony Bonus",
+        "steps": [
+          {
+            "text": "Hit switches during Multiball and watch the Bony Bonus inserts rather than assuming a fixed threshold.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect each lit Bony Bonus award at the shot identified by the machine.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use extra locked balls for scoring time, but start promptly if protecting the current ball is more valuable than waiting for all three locks.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm the Bony Bonus thresholds and extra-ball settings; surviving rules accounts disagree on fixed switch counts.",
+        "Test the second right-side Train Switch button, all three locks, left-ramp lift, center jump ramp, captive ball, spinners, and lock releases."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Train Switch",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Bony Bonus",
+          "tone": "indigo",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Bony Bonus switch thresholds can differ by setup.",
+          "response": "Follow the lit Bony Bonus inserts and display on the machine; the qualification and start route does not depend on memorizing a fixed count.",
+          "sourceUrl": "https://pinball-genie.com/machines/bone-busters"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

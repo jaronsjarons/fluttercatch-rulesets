@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVld",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete the center red three-bank three times for the shortest Multiball route: the first completion opens the right outlane save gate, the second lights Collect Bonus there, and the third releases the right captive ball for Multiball. Along the way, complete upper 1-2-3 in order, then hit lit 4-5-6 targets to build Elektra units. Reach six units before the drain to enter the lower playfield, where ordered 1-2-3 or 4-5-6 followed by the flashing center target doubles bonus.",
+        "simpleOverview": "Complete the center red three-bank three times; the third completion releases the right captive ball and starts Multiball. Complete upper 1-2-3 in order, then hit lit 4-5-6 targets to build at least six Elektra units and reach the lower playfield after the drain.",
+        "summary": "Repeat the center red three-bank for the direct Multiball start, while building at least six Elektra units for the lower playfield. Use the lower ordered targets to double bonus.",
+        "quickInfo": [
+          {
+            "name": "Repeat the Red Bank",
+            "summary": "The third center-bank completion starts Multiball."
+          },
+          {
+            "name": "Build Elektra Units",
+            "summary": "Complete upper 1-2-3, then lit 4-5-6 targets."
+          },
+          {
+            "name": "Reach the Lower Level",
+            "summary": "Carry at least six units into the drain."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Complete a lower ordered set, then the flashing center target."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the center red three-bank once to open the right outlane save gate and again to light Collect Bonus there.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the center red three-bank a third time to release the right captive ball and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete upper 1-2-3 in order, then hit lit 4-5-6 targets to add Elektra units.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Reach at least six units before the drain; on the lower playfield, complete ordered 1-2-3 or 4-5-6, then hit the flashing center target to double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use the upper lock route",
+            "when": "Use this when upper 1-2-3 and 4-5-6 are already close.",
+            "steps": [
+              {
+                "text": "Complete upper 1-2-3 in order, qualify and finish 4-5-6, then shoot the lit upper saucer to lock a ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat the qualification to release a captured ball and begin Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Enter the lower playfield with value",
+          "steps": [
+            {
+              "text": "Build six or more Elektra units and raise Bonus X with captive-ball hits before the drain.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use the lower level's ordered targets for the bonus doubler instead of rushing the center target unqualified.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm center-post behavior, ball count, lower-playfield access threshold, Extra Ball and Special conversions, and lock state.",
+          "Test all three levels, red and blue target banks, upper 1-2-3 and 4-5-6, both captive balls and locks, right gate, lower targets, and lifts."
+        ],
+        "termStyles": [
+          {
+            "label": "Elektra units",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center red three-bank",
+            "label": "Center red three-bank",
+            "description": "Repeat bank whose third completion releases a captive ball for Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper 1-2-3 targets",
+            "label": "Upper 1-2-3 targets",
+            "description": "Ordered targets that begin Elektra-unit and lock progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower playfield",
+            "label": "Lower playfield",
+            "description": "Third level entered after draining with enough Elektra units.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Lower-playfield access is prepared before the drain, so a low unit total wastes the visit.",
+            "response": "Reach six units first; build more when the upper shots remain controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRVld-MDE3l"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the center red three-bank for the direct Multiball start, while building at least six Elektra units for the lower playfield. Use the lower ordered targets to double bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the center red three-bank once to open the right outlane save gate and again to light Collect Bonus there.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the center red three-bank a third time to release the right captive ball and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete upper 1-2-3 in order, then hit lit 4-5-6 targets to add Elektra units.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Reach at least six units before the drain; on the lower playfield, complete ordered 1-2-3 or 4-5-6, then hit the flashing center target to double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Repeat the Red Bank",
+            "summary": "The third center-bank completion starts Multiball."
+          },
+          {
+            "name": "Build Elektra Units",
+            "summary": "Complete upper 1-2-3, then lit 4-5-6 targets."
+          },
+          {
+            "name": "Reach the Lower Level",
+            "summary": "Carry at least six units into the drain."
+          }
+        ],
+        "warning": {
+          "title": "Lower-playfield access is prepared before the drain, so a low unit total wastes the visit.",
+          "text": "Reach six units first; build more when the upper shots remain controlled."
+        }
+      }
+    }
+  ]
+}

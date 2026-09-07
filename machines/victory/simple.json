@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "GrdBk",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Loop the yellow left spinner. Its return lights that spinner for 2x, so each spin scores 20,000. Build the stored FINISH multiplier and run it during Checkpoint hurry-ups.",
+        "steps": [
+          {
+            "text": "Test a full plunge and a short plunge. Confirm the left-spinner loop, right-inlane return, and which spinner is yellow.",
+            "modeNotes": [
+              "Full plunge: It can cross the left spinner, enter the back-center kicker, and feed the right inlane. Some copies choke and fall back.",
+              "Short plunge: Gives the lower flippers earlier control when the full route is unsafe."
+            ]
+          },
+          {
+            "text": "When the left spinner is yellow, shoot it from the right flipper. Let the back-center kicker feed the right inlane.",
+            "modeNotes": [
+              "Yellow spinner: Scores 10,000 per spin. The other spinner scores 500. Slings and selected switches alternate the yellow lamp.",
+              "Right inlane: Lights the left spinner white for about five seconds. Yellow plus white makes it worth 20,000 per spin."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right-inlane return to repeat the left spinner before the white 2x lamp ends. Keep looping while the feed stays controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit each flashing FINISH standup. Complete all six to add one stored multiplier, up to 15x.",
+            "modeNotes": [
+              "FINISH multiplier: It carries between balls. It does not run continuously.",
+              "When a Checkpoint hurry-up runs, the stored multiplier flashes and multiplies all playfield scoring except the hurry-up itself."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start the next Checkpoint hurry-up. During its approximately 25-second timer, repeat the 2x yellow spinner.",
+            "modeNotes": [
+              "Checkpoint route, in order: middle-left rollunder, right-spinner back kicker, upper-right orbit, left inlane, lower-right target, lower-left target, right inlane, and left-spinner Finish Line.",
+              "First-race hurry-ups start at 100,000 times the next Checkpoint number. After one race, every Checkpoint hurry-up starts at 800,000.",
+              "An expired hurry-up does not block progress. Make the required Checkpoint to advance and start the next timer."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat races and FINISH sets. Keep the spinner as the scoring priority whenever yellow, white 2x, and the timed playfield multiplier overlap.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Checkpoint hurry-ups",
+          "when": "Use this when the left-spinner loop rejects or the yellow lamp stays on the right spinner.",
+          "steps": [
+            {
+              "text": "Follow the eight flashing Checkpoints in order."
+            },
+            {
+              "text": "Collect each hurry-up while its value remains high."
+            },
+            {
+              "text": "Use upper-playfield routes to collect Checkpoints 2 through 4."
+            },
+            {
+              "text": "After one race, repeat the route with 800,000 starting hurry-ups."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Crossover ball save",
+            "when": "Use this when extra balls are enabled or converted to 500,000 and the center-left crossover shot is controlled.",
+            "steps": [
+              {
+                "text": "Shoot the center-left crossover to collect its displayed 50,000, 100,000, 150,000, and 200,000 awards in order."
+              },
+              {
+                "text": "The 200,000 shot lights extra ball at the crossover and upper right orbit."
+              },
+              {
+                "text": "A crossover extra ball locks the current ball. Plunge a replacement. The locked ball ejects only after that replacement drains."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "15x timed playfield and repeat races",
+          "steps": [
+            {
+              "text": "Complete FINISH sets until the stored multiplier reaches 15x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete one race so later Checkpoint hurry-ups start at 800,000."
+            },
+            {
+              "text": "During every timed multiplier window, loop the 2x yellow spinner."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Left-spinner repeat loop",
+            "instruction": "Shoot the left spinner from the right flipper. Use the back-kicker and right-inlane feed to return to the same flipper for another shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=WlT4g6UksTw&t=227s"
+          },
+          {
+            "name": "Checkpoint 2 upper feed",
+            "instruction": "Shoot the left ramp. Hold the upper-right flipper and let the ball leave the upper playfield with speed toward the right-spinner back kicker.",
+            "sourceUrl": "https://www.youtube.com/watch?v=WlT4g6UksTw&t=380s"
+          },
+          {
+            "name": "Shooter-lane save",
+            "instruction": "When a right-side ball approaches the open shooter-lane gap, nudge it into the shooter lane for a replunge.",
+            "sourceUrl": "https://www.youtube.com/watch?v=WlT4g6UksTw&t=676s"
+          },
+          {
+            "name": "Rolling Shatz for checkpoint alignment",
+            "instruction": "When a controlled feed reaches the wrong flipper, use a moving-ball Shatz transfer to change sides without first trapping. Continue only when the next checkpoint shot is already lined up.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ThGvGyOKlq8&t=11688s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A full plunge can stall near the left spinner and fall back unpredictably.",
+            "response": "Test the first full plunge. Use a short plunge when the intended orbit-to-kicker path does not complete.",
+            "sourceUrl": "https://www.youtube.com/watch?v=WlT4g6UksTw"
+          },
+          {
+            "issue": "A crossover extra ball ejects the stored ball immediately after the replacement ball drains.",
+            "response": "Stay at the machine and keep both flippers ready after the drain. Do not turn away for the bonus count.",
+            "sourceUrl": "https://www.youtube.com/watch?v=WlT4g6UksTw&t=131s"
+          },
+          {
+            "issue": "The right side has an open path to the shooter lane rather than a normal closed outlane wall.",
+            "response": "Nudge early toward the shooter-lane opening. Replunge any saved ball with the safer plunge.",
+            "sourceUrl": "https://www.youtube.com/watch?v=WlT4g6UksTw&t=676s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Loop the yellow left spinner."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete FINISH sets until the stored multiplier reaches 15x."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Checkpoint hurry-ups: Use this when the left-spinner loop rejects or the yellow lamp stays on the right spinner."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Victory code, ball count, crossover behavior, and award conversions.",
+          "Test the spinner, kicker, checkpoints, FINISH targets, and ramp returns."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Repeatable scoring and upper-feed shot.",
+            "precision": "unverified",
+            "context": "Repeatable scoring and upper-feed shot."
+          },
+          {
+            "term": "back-center kicker",
+            "label": "Back-center kicker",
+            "description": "Kicker used for major awards.",
+            "precision": "unverified",
+            "context": "Kicker used for major awards."
+          },
+          {
+            "term": "flashing FINISH targets",
+            "label": "FINISH targets",
+            "description": "Standups used to complete the race.",
+            "precision": "unverified",
+            "context": "Standups used to complete the race."
+          }
+        ],
+        "simpleOverview": "In stock Victory, shoot the left spinner while its yellow lamp is on, let the back-center kicker feed the right inlane, then repeat the spinner while its white 2x lamp is also on. Complete flashing F-I-N-I-S-H targets to store a multiplier, and repeat the spinner while that multiplier runs during each Checkpoint hurry-up.",
+        "overview": "In stock Victory, the yellow left spinner scores 10,000 per spin, and the right inlane lights it for 2x for about five seconds. Repeat that spinner loop, complete flashing F-I-N-I-S-H targets to store up to 15x, then use each Checkpoint hurry-up to run the stored multiplier on the spinner. Follow all eight Checkpoints to finish a race and raise later hurry-ups.",
+        "machineSetup": [
+          "Confirm Gottlieb Victory code, ball count, crossover behavior, and award conversions.",
+          "Test the spinner, kicker, checkpoints, FINISH targets, and ramp returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Loop the yellow left spinner. Its return lights that spinner for 2x, so each spin scores 20,000. Build the stored FINISH multiplier and run it during Checkpoint hurry-ups.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test a full plunge and a short plunge. Confirm the left-spinner loop, right-inlane return, and which spinner is yellow.",
+            "details": [
+              "Full plunge: It can cross the left spinner, enter the back-center kicker, and feed the right inlane. Some copies choke and fall back.",
+              "Short plunge: Gives the lower flippers earlier control when the full route is unsafe."
+            ]
+          },
+          {
+            "text": "When the left spinner is yellow, shoot it from the right flipper. Let the back-center kicker feed the right inlane.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Yellow spinner: Scores 10,000 per spin. The other spinner scores 500. Slings and selected switches alternate the yellow lamp.",
+              "Right inlane: Lights the left spinner white for about five seconds. Yellow plus white makes it worth 20,000 per spin."
+            ]
+          },
+          {
+            "text": "Use the right-inlane return to repeat the left spinner before the white 2x lamp ends. Keep looping while the feed stays controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit each flashing FINISH standup. Complete all six to add one stored multiplier, up to 15x.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "FINISH multiplier: It carries between balls. It does not run continuously.",
+              "When a Checkpoint hurry-up runs, the stored multiplier flashes and multiplies all playfield scoring except the hurry-up itself."
+            ]
+          },
+          {
+            "text": "Start the next Checkpoint hurry-up. During its approximately 25-second timer, repeat the 2x yellow spinner.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Checkpoint route, in order: middle-left rollunder, right-spinner back kicker, upper-right orbit, left inlane, lower-right target, lower-left target, right inlane, and left-spinner Finish Line.",
+              "First-race hurry-ups start at 100,000 times the next Checkpoint number. After one race, every Checkpoint hurry-up starts at 800,000.",
+              "An expired hurry-up does not block progress. Make the required Checkpoint to advance and start the next timer."
+            ]
+          },
+          {
+            "text": "Repeat races and FINISH sets. Keep the spinner as the scoring priority whenever yellow, white 2x, and the timed playfield multiplier overlap.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Loop the yellow left spinner."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete FINISH sets until the stored multiplier reaches 15x."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Checkpoint hurry-ups: Use this when the left-spinner loop rejects or the yellow lamp stays on the right spinner."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Checkpoint hurry-ups",
+          "when": "Use this when the left-spinner loop rejects or the yellow lamp stays on the right spinner.",
+          "steps": [
+            {
+              "text": "Follow the eight flashing Checkpoints in order."
+            },
+            {
+              "text": "Collect each hurry-up while its value remains high."
+            },
+            {
+              "text": "Use upper-playfield routes to collect Checkpoints 2 through 4."
+            },
+            {
+              "text": "After one race, repeat the route with 800,000 starting hurry-ups."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A crossover extra ball ejects the stored ball immediately after the replacement ball drains.",
+          "text": "Stay at the machine and keep both flippers ready after the drain. Do not turn away for the bonus count."
+        }
+      }
+    }
+  ]
+}

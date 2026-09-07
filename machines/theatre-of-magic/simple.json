@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "id": "G5BLE",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Select Levitating Woman and Start Illusion at the plunge. Spell THEATRE for 8x, use the left orbit to build Theatre and Vanish, then start Tiger Saw Multiball. Use Magic Multiball when the center loop and Trunk are safe.",
+        "quickInfo": [
+          {
+            "name": "Theatre Hurry-Up",
+            "summary": "Seven lit left-orbit shots light a decreasing Trunk collect and earn the Theatre diamond."
+          },
+          {
+            "name": "Tiger Saw Multiball",
+            "summary": "Hit the captive ball to qualify Vanish, lock at the left orbit, then shoot the right orbit to release the ball and start the two-ball captive-ball Jackpot mode."
+          },
+          {
+            "name": "Magic Multiball",
+            "summary": "Spell MAGIC, lock two balls in the center loop, and use the Trunk magnet for the third lock."
+          },
+          {
+            "name": "Illusions",
+            "summary": "The Trunk starts eight timed modes that supply the Illusions diamond after all have started."
+          },
+          {
+            "name": "Grand Finale",
+            "summary": "Collect the Theatre, Multiball, Midnight, and Illusions diamonds to start Grand Finale, then make 12 major shots in 60 seconds."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Select Levitating Woman and Start Illusion with the flippers before the plunge. Plunge a lit award."
+          },
+          {
+            "text": "Use the left orbit and top-lane feed to spell T-H-E-A-T-R-E and raise Bonus X to 8x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Make seven lit left-orbit shots to light the Theatre Hurry-Up at the Trunk.",
+            "modeNotes": [
+              "Theatre Hurry-Up: The Trunk collects a decreasing award, but the seventh orbit earns the Theatre diamond even if the value is not collected."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the captive ball three times for the first Vanish, or six times for later Vanishes. Shoot the left orbit to lock the ball.",
+            "modeNotes": [
+              "Vanish: A qualified left-orbit lock prepares two-ball Tiger Saw Multiball."
+            ]
+          },
+          {
+            "text": "Shoot the right orbit to release the lock and start Tiger Saw Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Tiger Saw, shoot the captive ball for Jackpot. Repeat it as the value rises from 30,000,000 toward 70,000,000.",
+            "modeNotes": [
+              "Tiger Saw Multiball: Two-ball play ends when one ball remains; the captive ball is the main jackpot shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When possible, cradle one ball on the left flipper and use the right flipper for the left orbit, captive ball, or open Trunk.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "For Magic Multiball, spell M-A-G-I-C with ramp shots, lock two balls in the center loop, then use the Trunk magnet for the third lock.",
+            "modeNotes": [
+              "Magic Multiball: Three-ball play lights every major shot except the center ramp to build Jackpot by 5,000,000 from a 50,000,000 base."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the Trunk until it opens, then shoot inside to collect the built Magic Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If a Vanish ball is ready during Magic Multiball, shoot the right orbit to add it to play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Left orbit and 8x bonus",
+          "when": "Recovery pivot: Use this when the captive ball, center loop, or Trunk rejects.",
+          "steps": [
+            {
+              "text": "Repeat the left orbit while its top return stays safe."
+            },
+            {
+              "text": "Spell THEATRE and raise Bonus X toward 8x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the lit left orbit seven times to earn the Theatre diamond."
+            },
+            {
+              "text": "Collect the Trunk hurry-up only when the Trunk feed is controlled."
+            },
+            {
+              "text": "Protect the built drain bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Magic Multiball",
+            "when": "When trailing, use this higher-ceiling route: use this when both ramps, the center loop, and Trunk returns are safe.",
+            "steps": [
+              {
+                "text": "Spell MAGIC with ramp shots."
+              },
+              {
+                "text": "Lock two balls in the center loop."
+              },
+              {
+                "text": "Use the Trunk magnet to lock the third ball and start Magic Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Build Jackpot at lit majors and collect inside the opened Trunk."
+              }
+            ]
+          },
+          {
+            "title": "Illusion progress",
+            "when": "Use this when the Trunk is reliable and a useful Illusion is ready.",
+            "steps": [
+              {
+                "text": "Hit the Trunk until an Illusion lights."
+              },
+              {
+                "text": "Start the Illusion at the open Trunk.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Make the displayed mode shots until the timer or objective ends."
+              },
+              {
+                "text": "Resume the left-orbit and multiball route."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Grand Finale",
+          "steps": [
+            {
+              "text": "Shoot the lit left orbit seven times to earn the Theatre diamond."
+            },
+            {
+              "text": "Spell M-A-G-I-C and start Magic Multiball to earn the Multiball diamond.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Reach Midnight through Clock progress."
+            },
+            {
+              "text": "Start all eight Illusions for the Illusions diamond.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the center ramp when Grand Finale lights."
+            },
+            {
+              "text": "Make 12 major shots in 60 seconds, then collect 500,000,000."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Theatre Hurry-Up",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Illusions",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Grand Finale",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Tiger Saw Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Magic Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Vanish",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the scoop from the right flipper after testing its reject and eject.",
+            "sourceUrl": "https://www.kineticist.com/news/theatre-of-magic-tutorial",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "Cradle one ball on the left and use the right flipper for the left orbit and Tiger Saw.",
+            "sourceUrl": "https://www.kineticist.com/news/theatre-of-magic-tutorial",
+            "techniqueSlug": "cradle"
+          },
+          {
+            "name": "Vanish add-a-ball timing",
+            "instruction": "During Magic Multiball, use the right orbit only after a Vanish ball is locked and ready.",
+            "sourceUrl": "https://www.pinball.org/rules/theatreofmagic.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A rejected center ramp or Trunk shot can return toward the center drain.",
+            "response": "Test both shots before using Magic Multiball as the main route.",
+            "sourceUrl": "https://www.kineticist.com/news/theatre-of-magic-tutorial"
+          },
+          {
+            "issue": "The right ramp feeds the right flipper when Spirit Ring is off and the left flipper when it is lit.",
+            "response": "Read the Spirit Ring insert and prepare the receiving flipper before the ball leaves the ramp.",
+            "sourceUrl": "https://www.kineticist.com/news/theatre-of-magic-tutorial"
+          },
+          {
+            "issue": "The Trunk magnet and kickout can change the next flipper feed.",
+            "response": "Keep both flippers ready until the ball is below the slings.",
+            "sourceUrl": "https://www.pinball.org/rules/theatreofmagic.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original 1.3 or Soren 2.0 code.",
+          "Test Trunk, captive ball, both orbits, and center loop."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Orbit used for THEATRE, Vanish locks, and hurry-up progress.",
+            "precision": "unverified",
+            "context": "Orbit used for THEATRE, Vanish locks, and hurry-up progress."
+          },
+          {
+            "term": "captive ball",
+            "label": "Tiger Saw",
+            "description": "Captive ball used to qualify and score Tiger Saw Multiball.",
+            "precision": "unverified",
+            "context": "Captive ball used to qualify and score Tiger Saw Multiball."
+          },
+          {
+            "term": "Trunk",
+            "label": "Magic Trunk",
+            "description": "Center toy used for starts, locks, and awards.",
+            "precision": "unverified",
+            "context": "Center toy used for starts, locks, and awards."
+          },
+          {
+            "term": "center loop",
+            "label": "Magic lock loop",
+            "description": "Center loop used to lock balls for Magic Multiball.",
+            "precision": "unverified",
+            "context": "Center loop used to lock balls for Magic Multiball."
+          }
+        ],
+        "simpleOverview": "Theatre of Magic uses left-orbit loops for THEATRE and Vanish, while M-A-G-I-C qualifies three locks for Magic Multiball. Select Levitating Woman and Start Illusion, reach 8x, then start Tiger Saw and repeat the captive-ball Jackpot. Use Magic Multiball when the center loop and Trunk are safe.",
+        "overview": "A qualified Vanish locks one ball at the left orbit in Theatre of Magic, and the right orbit releases it for two-ball Tiger Saw Multiball. Repeat the captive ball for rising Jackpots. Spelling M-A-G-I-C qualifies three locks for Magic Multiball; both Multiballs contribute the Multiball diamond toward Grand Finale.",
+        "machineSetup": [
+          "Confirm original 1.3 or Soren 2.0 code.",
+          "Test Trunk, captive ball, both orbits, and center loop."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Select Levitating Woman and Start Illusion at the plunge. Spell THEATRE for 8x, use the left orbit to build Theatre and Vanish, then start Tiger Saw Multiball. Use Magic Multiball when the center loop and Trunk are safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Select Levitating Woman and Start Illusion with the flippers before the plunge. Plunge a lit award."
+          },
+          {
+            "text": "Use the left orbit and top-lane feed to spell T-H-E-A-T-R-E and raise Bonus X to 8x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Make seven lit left-orbit shots to light the Theatre Hurry-Up at the Trunk.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Theatre Hurry-Up: The Trunk collects a decreasing award, but the seventh orbit earns the Theatre diamond even if the value is not collected."
+            ]
+          },
+          {
+            "text": "Hit the captive ball three times for the first Vanish, or six times for later Vanishes. Shoot the left orbit to lock the ball.",
+            "details": [
+              "Vanish: A qualified left-orbit lock prepares two-ball Tiger Saw Multiball."
+            ]
+          },
+          {
+            "text": "Shoot the right orbit to release the lock and start Tiger Saw Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Tiger Saw, shoot the captive ball for Jackpot. Repeat it as the value rises from 30,000,000 toward 70,000,000.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Tiger Saw Multiball: Two-ball play ends when one ball remains; the captive ball is the main jackpot shot."
+            ]
+          },
+          {
+            "text": "When possible, cradle one ball on the left flipper and use the right flipper for the left orbit, captive ball, or open Trunk.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "For Magic Multiball, spell M-A-G-I-C with ramp shots, lock two balls in the center loop, then use the Trunk magnet for the third lock.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Magic Multiball: Three-ball play lights every major shot except the center ramp to build Jackpot by 5,000,000 from a 50,000,000 base."
+            ]
+          },
+          {
+            "text": "Hit the Trunk until it opens, then shoot inside to collect the built Magic Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If a Vanish ball is ready during Magic Multiball, shoot the right orbit to add it to play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Theatre Hurry-Up",
+            "summary": "Seven lit left-orbit shots light a decreasing Trunk collect and earn the Theatre diamond."
+          },
+          {
+            "name": "Tiger Saw Multiball",
+            "summary": "Hit the captive ball to qualify Vanish, lock at the left orbit, then shoot the right orbit to release the ball and start the two-ball captive-ball Jackpot mode."
+          },
+          {
+            "name": "Magic Multiball",
+            "summary": "Spell MAGIC, lock two balls in the center loop, and use the Trunk magnet for the third lock."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Left orbit and 8x bonus",
+          "when": "Recovery pivot: Use this when the captive ball, center loop, or Trunk rejects.",
+          "steps": [
+            {
+              "text": "Repeat the left orbit while its top return stays safe."
+            },
+            {
+              "text": "Spell THEATRE and raise Bonus X toward 8x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the lit left orbit seven times to earn the Theatre diamond."
+            },
+            {
+              "text": "Collect the Trunk hurry-up only when the Trunk feed is controlled."
+            },
+            {
+              "text": "Protect the built drain bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A rejected center ramp or Trunk shot can return toward the center drain.",
+          "text": "Test both shots before using Magic Multiball as the main route."
+        }
+      }
+    }
+  ]
+}

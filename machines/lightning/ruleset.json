@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "G5pQ8",
+  "title": "Lightning",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Stern Lightning factory instruction cards",
+      "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_Lightning_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "PinWiki Lightning technical and rules reference",
+        "url": "https://www.pinwiki.com/wiki/index.php/Lightning"
+      },
+      {
+        "label": "Stern Lightning factory technical chart",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Stern_Lightning_Tech_Chart.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Lightning starts three-ball Multiball after all nine standup targets are complete. Those same targets light the center loop, which raises playfield scoring by 1x and can build it to 4x. Lit return-lane arrows and the center loop also advance Bonus X to 5x. Completing both 1-2-3 drop banks once lights the center target for Extra Ball on the factory-card setting; later completion lights Special. Some installed cards instead award Bonus Time at the score threshold, so those awards must be checked on the machine.",
+      "simpleOverview": "Complete all nine standup targets to release the locked balls and start three-ball Multiball. Shoot the lit center loop to raise playfield scoring, up to 4x. Use lit return lanes and the center loop to advance Bonus X, and clear both 1-2-3 banks for the center-target award shown on the installed card.",
+      "summary": "Finish the nine standups from controlled upper-flipper feeds, then use Multiball to loop the center shot while it is lit. Read the installed instruction card before choosing between Extra Ball, Special, or Bonus Time secondary routes.",
+      "quickInfo": [
+        {
+          "name": "Start Multiball",
+          "summary": "Complete all nine standup targets."
+        },
+        {
+          "name": "Raise Playfield X",
+          "summary": "Shoot the lit center loop, up to 4x."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Collect lit return lanes and center loops, up to 5x."
+        },
+        {
+          "name": "Center Award",
+          "summary": "Clear both 1-2-3 banks, then shoot the lit center target."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete all nine standup targets to release the stored balls and begin three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the center loop whenever it is lit to add 1x playfield scoring, up to 4x.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use lit return-lane arrows and further center-loop shots to advance Bonus X toward 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Clear both 1-2-3 banks and collect the lit center target only after confirming whether the installed card awards Extra Ball, Special, or points."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Bonus Time route",
+          "when": "Use this only on a machine whose installed card and score display enable Bonus Time.",
+          "steps": [
+            {
+              "text": "Reach the configured score threshold, commonly 200,000 on the Bonus Time card."
+            },
+            {
+              "text": "Use the timed ball to finish standups, loop multipliers, or drop-bank awards before the countdown ends."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "4x Multiball scoring",
+        "steps": [
+          {
+            "text": "Complete the nine standups to start Multiball and light the center loop.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the center loop during protected play until the playfield multiplier reaches 4x.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test all nine standups, both 1-2-3 banks and resets, the ball locks and three-ball release, the center loop, return-lane arrows, upper and lower flippers, and both multiplier displays.",
+        "Record the installed instruction-card variant and verify Extra Ball, Special, and Bonus Time settings before play; do not infer the center-target award from another Lightning setup."
+      ],
+      "cautions": [
+        {
+          "issue": "Lightning has factory-card variants with different Extra Ball, Special, and Bonus Time behavior.",
+          "response": "Use the card and lamps on the installed machine as authoritative for secondary awards; the nine-standup Multiball and loop multipliers remain the core route.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_Lightning_instruction_cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

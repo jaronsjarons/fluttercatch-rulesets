@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "id": "G48ZN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On the 1972 Bally Fireball, learn the 3K plunge, keep one ball in Wotan when possible, and repeat the Wotan gate instead of forcing uncontrolled three-ball play.",
+        "quickInfo": [
+          {
+            "name": "3K skill shot",
+            "summary": "Plunge just short of the upper-left gate to cross the horizontal 1K lanes and light the three bumpers."
+          },
+          {
+            "name": "Odin and Wotan locks",
+            "summary": "Each saucer lock gives another plunge, while a side mushroom bumper releases the ball from the opposite saucer."
+          },
+          {
+            "name": "Zip flippers",
+            "summary": "The center mushroom closes the gap between the flippers, while the side mushrooms can open it again."
+          },
+          {
+            "name": "Wotan gate",
+            "summary": "With a ball in Wotan, another Wotan shot passes through the gate and scores the lit mushroom-bumper values."
+          },
+          {
+            "name": "Three-ball play",
+            "summary": "Releasing locked balls creates multiball without a Jackpot objective, so new locks and plunges remain the priority."
+          },
+          {
+            "name": "Edition scope",
+            "summary": "This route and image cover the original 1972 Bally electromechanical Fireball with zipper flippers."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge so the ball stops before the upper-left gate. Let it fall across the horizontal 1K lanes."
+          },
+          {
+            "text": "Use the plunge to light the mushroom bumpers. Treat each later lock as another skill-shot chance."
+          },
+          {
+            "text": "Use the center mushroom to zip the flippers when the hit is available through normal play."
+          },
+          {
+            "text": "Settle the ball on the zipped flippers. Micro flip the ball up the opposite flipper."
+          },
+          {
+            "text": "Backhand Odin or Wotan to lock a ball. Prefer Wotan when both saucers are available.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With one ball held in Wotan, repeat the Wotan shot. Let the moving ball pass the gate and score the lit bumper values.",
+            "modeNotes": [
+              "Wotan gate loop: The held ball blocks the saucer. The next ball passes through the gate and crosses the upper rollovers before it returns.",
+              "Lock value: Each lock also gives a new plunge and another chance at the 3K skill shot."
+            ]
+          },
+          {
+            "text": "If a side mushroom releases the held ball, relock a ball as soon as control permits. Do not chase three-ball chaos for its own sake.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Lock and plunge",
+          "when": "Use this when the Wotan repeat gate is unreliable or the zipped-flipper settle does not work.",
+          "steps": [
+            {
+              "text": "Shoot the safer lock saucer from a controlled flipper."
+            },
+            {
+              "text": "Use the new plunge for the 3K skill shot."
+            },
+            {
+              "text": "Relight the bumpers and accept their incidental scoring."
+            },
+            {
+              "text": "Relock the returned ball when either saucer shot is controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Controlled multiball recovery",
+            "when": "Use this after a side mushroom releases a locked ball.",
+            "steps": [
+              {
+                "text": "Keep the flippers zipped when the ball paths permit it."
+              },
+              {
+                "text": "Do not flip at a ball that can settle on the zipped flippers."
+              },
+              {
+                "text": "Use short flips to separate the balls."
+              },
+              {
+                "text": "Return one ball to Odin or Wotan before you resume gate loops.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeat Wotan scoring",
+          "steps": [
+            {
+              "text": "Plunge the lit upper lane to light the mushroom bumpers."
+            },
+            {
+              "text": "Zip the flippers and lock one ball in Wotan."
+            },
+            {
+              "text": "Repeat the Wotan gate while the lock remains held."
+            },
+            {
+              "text": "Restore the Wotan lock after each multiball release.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Three-ball play",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Wotan saucer",
+            "label": "Wotan lock and gate",
+            "description": "The right saucer whose occupied lock lets another Wotan shot pass through the scoring gate.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Odin",
+            "label": "Odin lock saucer",
+            "description": "The left saucer used to hold a ball and earn another plunge.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center mushroom",
+            "label": "Zip-flipper mushroom",
+            "description": "The center mushroom bumper that closes the gap between the flippers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinning rubber disk",
+            "label": "Spinning playfield disk",
+            "description": "The rotating rubber disk that can redirect a ball unpredictably.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "From a zipped cradle, Micro flip the ball up the opposite flipper, then Backhand Wotan from halfway up that flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48ZN-Mb58O",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "When the flippers are zipped, let a centered ball settle without a flip. Use a small flip only after the ball stops.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48ZN-Mb58O",
+            "techniqueSlug": "cradle"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Most non-saucer shots can rebound without control.",
+            "response": "Prefer saucer backhands. Trap the ball before each planned lock shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48ZN-Mb58O"
+          },
+          {
+            "issue": "The spinning rubber disk can hold a ball briefly and then throw it in a new direction.",
+            "response": "Keep both flippers ready when the ball crosses the disk. Do not predict a clean feed from its first contact.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48ZN-Mb58O"
+          },
+          {
+            "issue": "Top-bumper feeds can return at high speed and start uncontrolled multiball.",
+            "response": "Do not force a side-mushroom release. Rebuild one useful lock after the balls separate.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48ZN-Mb58O"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the original 1972 Bally Fireball, not Fireball Classic or another edition, plus ball count, replay, award conversion, and tilt.",
+          "Confirm plunge scoring, both lock and release switches, Wotan gate values, mushroom-bumper lights, zip-flipper action, and whether Special has tournament value.",
+          "Test both saucer backhands, gate return, side-mushroom releases, spinning-disk exits, zipped-flipper settle, and plunge strength before choosing the Wotan loop."
+        ],
+        "simpleOverview": "Fireball uses each saucer lock to give another plunge, while a ball held in Wotan turns later Wotan shots into a repeatable gate loop. Make the 3K plunge, close the zipper flippers, store one ball in Wotan, and repeat its gate while the lock remains held.",
+        "overview": "Fireball uses each saucer lock to give another plunge, while a ball held in Wotan turns later Wotan shots into a repeatable gate loop. Favor a held Wotan ball and repeated Wotan-gate scoring over uncontrolled three-ball play, restoring the lock after any release and using each new lock for another plunge.",
+        "machineSetup": [
+          "Confirm the original 1972 Bally Fireball, not Fireball Classic or another edition, plus ball count, replay, award conversion, and tilt.",
+          "Confirm plunge scoring, both lock and release switches, Wotan gate values, mushroom-bumper lights, zip-flipper action, and whether Special has tournament value.",
+          "Test both saucer backhands, gate return, side-mushroom releases, spinning-disk exits, zipped-flipper settle, and plunge strength before choosing the Wotan loop."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "On the 1972 Bally Fireball, learn the 3K plunge, keep one ball in Wotan when possible, and repeat the Wotan gate instead of forcing uncontrolled three-ball play.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge so the ball stops before the upper-left gate. Let it fall across the horizontal 1K lanes."
+          },
+          {
+            "text": "Use the plunge to light the mushroom bumpers. Treat each later lock as another skill-shot chance."
+          },
+          {
+            "text": "Use the center mushroom to zip the flippers when the hit is available through normal play."
+          },
+          {
+            "text": "Settle the ball on the zipped flippers. Micro flip the ball up the opposite flipper."
+          },
+          {
+            "text": "Backhand Odin or Wotan to lock a ball. Prefer Wotan when both saucers are available.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With one ball held in Wotan, repeat the Wotan shot. Let the moving ball pass the gate and score the lit bumper values.",
+            "details": [
+              "Wotan gate loop: The held ball blocks the saucer. The next ball passes through the gate and crosses the upper rollovers before it returns.",
+              "Lock value: Each lock also gives a new plunge and another chance at the 3K skill shot."
+            ]
+          },
+          {
+            "text": "If a side mushroom releases the held ball, relock a ball as soon as control permits. Do not chase three-ball chaos for its own sake.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "3K skill shot",
+            "summary": "Plunge just short of the upper-left gate to cross the horizontal 1K lanes and light the three bumpers."
+          },
+          {
+            "name": "Odin and Wotan locks",
+            "summary": "Each saucer lock gives another plunge, while a side mushroom bumper releases the ball from the opposite saucer."
+          },
+          {
+            "name": "Zip flippers",
+            "summary": "The center mushroom closes the gap between the flippers, while the side mushrooms can open it again."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Lock and plunge",
+          "when": "Use this when the Wotan repeat gate is unreliable or the zipped-flipper settle does not work.",
+          "steps": [
+            {
+              "text": "Shoot the safer lock saucer from a controlled flipper."
+            },
+            {
+              "text": "Use the new plunge for the 3K skill shot."
+            },
+            {
+              "text": "Relight the bumpers and accept their incidental scoring."
+            },
+            {
+              "text": "Relock the returned ball when either saucer shot is controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

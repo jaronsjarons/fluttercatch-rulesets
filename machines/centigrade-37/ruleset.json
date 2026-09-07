@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "GrZ1k",
+  "title": "Centigrade 37",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist rules via Bob's Guide",
+      "url": "https://www.kineticist.com/games/pinball/centigrade-37"
+    },
+    "supportingSources": [
+      {
+        "label": "Bowen Kerins tutorial",
+        "url": "https://pinballvideos.com/v/2640/9"
+      },
+      {
+        "label": "Bob's Guide to Playing EMs",
+        "url": "https://tiltforums.com/uploads/default/original/2X/3/3c67cd807e4bd3edc13f087a87028ef73097aa55.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "From the left flipper, repeat the top-right saucer, then use the right flipper to send the ball up top until A-B-C-D is complete.",
+      "steps": [
+        {
+          "text": "Use each plunge and right-flipper up-top shot to collect a missing A-B-C-D lane."
+        },
+        {
+          "text": "Whenever the ball settles on the left flipper, shoot the top-right saucer.",
+          "modeNotes": [
+            "Top-right saucer: Scores 1,000 plus 1,000 for each completed A-B-C-D letter."
+          ]
+        },
+        {
+          "text": "From the right flipper, keep sending the ball up top. Do not force a transfer."
+        },
+        {
+          "text": "After A-B-C-D is complete, shoot a lit left drop target for 5,000."
+        },
+        {
+          "text": "Return to the top-right saucer when the ball reaches the left flipper."
+        }
+      ],
+      "fallback": {
+        "title": "Up top",
+        "when": "Use this plan when the saucer miss feeds the right outlane.",
+        "steps": [
+          {
+            "text": "Send the ball up the left side of the bumpers."
+          },
+          {
+            "text": "Collect A-B-C-D and top-playfield points."
+          },
+          {
+            "text": "Take a lit 5,000 drop only from a controlled ball."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Lit drops",
+          "when": "Use this plan after A-B-C-D is complete and the drop rebounds are safe.",
+          "steps": [
+            {
+              "text": "Shoot only a flashing left drop target."
+            },
+            {
+              "text": "Each lit target scores 5,000 instead of 500."
+            },
+            {
+              "text": "Stop if the first rebound is unsafe."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Full thermometer and Special",
+        "steps": [
+          {
+            "text": "Advance the thermometer with its lit target and lane progress."
+          },
+          {
+            "text": "At the top, the top-right saucer lights for Special."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Drop catch",
+          "instruction": "Use a careful live catch or drop catch on the right flipper. Do not roll the ball up the raised flipper because it can enter the wireform gap.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/centigrade-37",
+          "techniqueSlug": "drop-catch"
+        },
+        {
+          "name": "Alley pass",
+          "instruction": "Test one controlled alley pass before you use it. Stay on the current flipper when the pass does not settle safely.",
+          "sourceUrl": "https://www.youtube.com/watch?v=cCr9k0QK2aw&t=173s"
+        },
+        {
+          "name": "Late outlane nudge",
+          "instruction": "If a missed saucer enters the bottom-right lane, wait until the ball is about one-fifth into the lane. Then nudge sideways toward the return lane.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/centigrade-37"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A missed saucer can enter the bottom-right plinko lane and drain.",
+          "response": "Wait until the ball is about one-fifth into the outlane. Then give one sideways nudge toward the return lane.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/centigrade-37"
+        },
+        {
+          "issue": "Rolling the ball up the raised right flipper can send it through the wireform gap and out.",
+          "response": "Do not roll the ball up to a right-flipper cradle. Use a careful live catch or drop catch.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/centigrade-37"
+        },
+        {
+          "issue": "A post transfer or bounce transfer can continue into the gapped outlane area.",
+          "response": "Stay on the current flipper unless the transfer value justifies the risk.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/centigrade-37"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "From the left flipper, repeat the top-right saucer."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Advance the thermometer with its lit target and lane progress."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Up top: Use this plan when the saucer miss feeds the right outlane."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Special's tournament point value before chasing the thermometer.",
+        "Test both saucer ejects, the thermometer targets, and spinner registration."
+      ],
+      "simpleOverview": "In Centigrade 37, each A-B-C-D lane raises the top-right saucer by 1,000. Use the right flipper to return the ball to the top for missing letters, then shoot the saucer from the left flipper. After A-B-C-D is complete, hit only flashing left drop targets when their rebounds are safe for 5,000 each.",
+      "overview": "In Centigrade 37, the top lanes complete A-B-C-D and raise the top-right saucer from 1,000 to 5,000. Use the right flipper to send the ball back to the lanes, repeat the saucer whenever the ball reaches the left flipper, and avoid forcing transfers. Once all four letters are complete, pick off flashing left drops for 5,000 only while their rebounds remain controlled.",
+      "machineSetup": [
+        "Confirm Special's tournament point value before chasing the thermometer.",
+        "Test both saucer ejects, the thermometer targets, and spinner registration."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

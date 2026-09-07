@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr2JJ",
+  "title": "Jack In The Box / Jumping Jack",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Gottlieb Jack in the Box reproduction instruction cards",
+      "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Jack_in_the_Box_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Jack In The Box strategy",
+        "url": "https://rules.silverballmania.com/rules/Gr2JJ-MnKlB"
+      },
+      {
+        "label": "BMU EM-cyclopedia Jack In The Box strategy",
+        "url": "https://tiltforums.com/uploads/default/original/2X/0/0093d7772690b6e81ab4badda51921259159d3dc.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Jack In The Box and Jumping Jack combine a ten-target Bonus with two upper saucers. A lit saucer scores 3,000 and lights 10x Bonus; an unlit saucer scores 300. Each drop adds 100 Bonus, and completing the sequence cashes the accumulated Bonus before the targets reset. Use the upper flippers to pick off drops, but cross to the opposite upper lane when its saucer is lit.",
+      "simpleOverview": "In Jack In The Box and Jumping Jack, shoot a lit upper saucer for 3,000 and 10x Bonus. Each drop target adds 100 Bonus, and completing the target sequence collects that Bonus and resets the targets. From a lower flipper, shoot the top arc when the opposite saucer is lit; otherwise use the upper flippers to work the drops.",
+      "summary": "From control, cross the top arc to a lit opposite saucer; otherwise shoot drops. Cradle on the upper flippers when possible and use short shots to the target bank. Finish the sequence to collect Bonus and reset the targets.",
+      "quickInfo": [
+        {
+          "name": "Lit upper saucer",
+          "summary": "Score 3,000 and light 10x Bonus."
+        },
+        {
+          "name": "Unlit upper saucer",
+          "summary": "Score 300."
+        },
+        {
+          "name": "Each drop target",
+          "summary": "Add 100 to the end-of-ball Bonus."
+        },
+        {
+          "name": "Complete the target sequence",
+          "summary": "Collect the accumulated Bonus and reset the targets."
+        },
+        {
+          "name": "Top-arc geometry",
+          "summary": "The opposite top lane often banks into the lit saucer."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On the plunge, use the top lane opposite the lit saucer so the rail rebound can carry the ball into it.",
+          "kinds": [
+            "skill-shot"
+          ]
+        },
+        {
+          "text": "From a lower flipper opposite a lit saucer, shoot the top arc to collect 3,000 and light 10x Bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When the same-side saucer is lit or no clean arc is available, shoot the drop bank instead."
+        },
+        {
+          "text": "Use the upper flippers to pick off individual drops and hold them up when a rebound can settle above the flipper."
+        },
+        {
+          "text": "Finish the target sequence to collect the accumulated Bonus and reset the bank."
+        }
+      ],
+      "buildsToward": {
+        "title": "A lit 10x Bonus and a completed target bank",
+        "steps": [
+          {
+            "text": "Collect a lit upper saucer to enable 10x Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Add Bonus with controlled drop-target hits."
+          },
+          {
+            "text": "Complete the bank to cash the built Bonus and reset the targets."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm three- or five-ball play, Extra Ball conversion, target-sequence reset behavior, and whether the upper-saucer lights alternate exactly as expected.",
+        "Test both upper saucers and lamps, every drop target, the target reset and Bonus collect relays, 10x lamp, upper flippers, top rails, pop bumpers, and center-drain feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

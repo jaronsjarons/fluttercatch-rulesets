@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "G420v",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Keep the ball in the upper playfield and use the lit bumper to build bonus. Collect Double Bonus at the upper-right saucer. Shoot drop targets only when their rebounds are safe.",
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Each drop target and each hit on the lit bumper advances bonus by 1K toward its 20K maximum."
+          },
+          {
+            "name": "Bumper lights",
+            "summary": "Ten-point switches change the bumper lamps, while an unlit bumper hit lights that bumper for later bonus advances."
+          },
+          {
+            "name": "Double Bonus saucer",
+            "summary": "The upper-right saucer doubles the built bonus when its lamp is lit."
+          },
+          {
+            "name": "Drop bank",
+            "summary": "Each of the nine drops scores 500 and adds 1K bonus, while the full bank adds 5,000 and 5K bonus."
+          },
+          {
+            "name": "Upper flippers",
+            "summary": "The upper flippers can deflect a descending ball to the opposite lower flipper or return it toward the top."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge to the top. Identify the lit bumper and watch the feed around both upper flippers."
+          },
+          {
+            "text": "Keep the ball in upper play. Hit the lit bumper for 1K bonus advances."
+          },
+          {
+            "text": "Let safe or incidental drop-target hits add bonus. Do not force a direct bank shot."
+          },
+          {
+            "text": "When the upper-right saucer lights, send the ball back to the top and collect Double Bonus.",
+            "modeNotes": [
+              "Double Bonus: Build bonus to the operator-set threshold. Then put the ball in the lit upper-right saucer to double the end-of-ball collect."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Continue lit-bumper and safe-drop progress until bonus reaches 20K."
+          },
+          {
+            "text": "After 20K and Double Bonus are ready, use upper-flipper deflections and safer top play to protect the 40K collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Lit-bumper bonus",
+          "when": "Use this when drop-target rebounds are reaching the outlanes or center drain.",
+          "steps": [
+            {
+              "text": "Return the ball to the upper playfield."
+            },
+            {
+              "text": "Use ten-point switches to manage the bumper lights."
+            },
+            {
+              "text": "Hit the lit bumper for bonus advances."
+            },
+            {
+              "text": "Collect the upper-right Double Bonus saucer when it lights.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Controlled drop-bank clear",
+            "when": "Use this when the target rebounds return safely and several drops remain reachable.",
+            "steps": [
+              {
+                "text": "Choose a drop target that gives a shallow, recoverable rebound."
+              },
+              {
+                "text": "Use each target for 500 points and a 1K bonus advance."
+              },
+              {
+                "text": "Complete all nine for 5,000 points and 5K bonus."
+              },
+              {
+                "text": "Stop after the bank stays down. Resume top play until the next ball."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "20K at Double Bonus",
+          "steps": [
+            {
+              "text": "Advance bonus with the lit bumper and safe drop targets."
+            },
+            {
+              "text": "Reach the operator-set threshold for the upper-right saucer."
+            },
+            {
+              "text": "Collect Double Bonus at the saucer.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Carry the 40K maximum bonus to the end of the ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-flipper deflection",
+            "instruction": "Leave the upper flipper down when the ball will reach the same-side lower flipper. Hold it up to send the ball toward the opposite lower flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G420v-M1rYR"
+          },
+          {
+            "name": "Upper-flipper top return",
+            "instruction": "Use an upper flipper to return the ball toward the top instead of shooting across the drop bank when the side feed is unsafe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G420v-M1rYR"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Upper-flipper shots at the drop bank create fast side-to-side movement and can drain at either side.",
+            "response": "Use the upper flippers for controlled deflections or top returns when the cross-playfield shot is unsafe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G420v-M1rYR"
+          },
+          {
+            "issue": "Shooting the drops from a lower flipper can return the ball through the center or toward an outlane.",
+            "response": "Test one target from control. Switch to the lit-bumper route after a dangerous rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G420v-M1rYR"
+          },
+          {
+            "issue": "A ball leaving the top can pass the upper flippers and drain through the center.",
+            "response": "Watch the rubber above the upper flippers. Flip only when a passive deflection will not reach a lower flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G420v-M1rYR"
+          }
+        ],
+        "checkBeforePlay": [
+          "Read the adjustable 4K-13K bonus threshold that lights Double Bonus and Extra Ball.",
+          "Confirm ball count plus Extra Ball, Special, and replay treatment before choosing a secondary award.",
+          "Test tilt, posts, bumper strength, both upper-flipper feeds, and the upper-right saucer eject before committing to top play."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Double Bonus saucer",
+            "label": "Double Bonus saucer",
+            "description": "Collect the upper-right Double Bonus saucer when it lights.",
+            "xPercent": 58.4,
+            "yPercent": 9.92,
+            "widthPercent": 3.91,
+            "heightPercent": 2.77,
+            "precision": "area"
+          },
+          {
+            "term": "drop-target",
+            "label": "Drop-target bank",
+            "description": "Let safe or incidental drop-target hits add bonus. Do not force a direct bank shot.",
+            "xPercent": 51.97,
+            "yPercent": 21.46,
+            "widthPercent": 29.95,
+            "heightPercent": 2.56,
+            "precision": "area"
+          },
+          {
+            "term": "lit bumper",
+            "label": "Lit bumper",
+            "description": "Keep the ball in the upper playfield and use the lit bumper to build bonus. Collect Double Bonus at the upper-right saucer. Shoot drop targets only when their rebounds are safe.",
+            "xPercent": 44.28,
+            "yPercent": 11.96,
+            "widthPercent": 7.7,
+            "heightPercent": 5.48,
+            "precision": "area"
+          },
+          {
+            "term": "lit bumper",
+            "label": "Lit bumper",
+            "description": "Keep the ball in the upper playfield and use the lit bumper to build bonus. Collect Double Bonus at the upper-right saucer. Shoot drop targets only when their rebounds are safe.",
+            "xPercent": 61.37,
+            "yPercent": 12.07,
+            "widthPercent": 8.07,
+            "heightPercent": 6.54,
+            "precision": "area"
+          },
+          {
+            "term": "upper-right saucer",
+            "label": "Double Bonus saucer",
+            "description": "Keep the ball in the upper playfield and use the lit bumper to build bonus. Collect Double Bonus at the upper-right saucer. Shoot drop targets only when their rebounds are safe.",
+            "xPercent": 58.44,
+            "yPercent": 9.57,
+            "widthPercent": 4.98,
+            "heightPercent": 2.92,
+            "precision": "area"
+          }
+        ],
+        "simpleOverview": "Air Aces builds bonus through the currently lit bumper and controlled drop-target hits, then doubles the built value at the upper-right saucer. Keep the ball upstairs, reach the saucer's threshold, collect Double Bonus, and carry the result to the end of the ball.",
+        "overview": "Air Aces builds bonus through the currently lit bumper and controlled drop-target hits, then doubles the built value at the upper-right saucer. Favor the lit bumper and upper-playfield flow, using drops only when their rebounds are controlled. Reach the operator-set saucer threshold, collect Double Bonus, and protect the resulting 40K maximum end-of-ball bonus.",
+        "machineSetup": [
+          "Read the adjustable 4K-13K bonus threshold that lights Double Bonus and Extra Ball.",
+          "Confirm ball count plus Extra Ball, Special, and replay treatment before choosing a secondary award.",
+          "Test tilt, posts, bumper strength, both upper-flipper feeds, and the upper-right saucer eject before committing to top play."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball in the upper playfield and use the lit bumper to build bonus. Collect Double Bonus at the upper-right saucer. Shoot drop targets only when their rebounds are safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge to the top. Identify the lit bumper and watch the feed around both upper flippers."
+          },
+          {
+            "text": "Keep the ball in upper play. Hit the lit bumper for 1K bonus advances."
+          },
+          {
+            "text": "Let safe or incidental drop-target hits add bonus. Do not force a direct bank shot."
+          },
+          {
+            "text": "When the upper-right saucer lights, send the ball back to the top and collect Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Double Bonus: Build bonus to the operator-set threshold. Then put the ball in the lit upper-right saucer to double the end-of-ball collect."
+            ]
+          },
+          {
+            "text": "Continue lit-bumper and safe-drop progress until bonus reaches 20K."
+          },
+          {
+            "text": "After 20K and Double Bonus are ready, use upper-flipper deflections and safer top play to protect the 40K collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Each drop target and each hit on the lit bumper advances bonus by 1K toward its 20K maximum."
+          },
+          {
+            "name": "Bumper lights",
+            "summary": "Ten-point switches change the bumper lamps, while an unlit bumper hit lights that bumper for later bonus advances."
+          },
+          {
+            "name": "Double Bonus saucer",
+            "summary": "The upper-right saucer doubles the built bonus when its lamp is lit."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Lit-bumper bonus",
+          "when": "Use this when drop-target rebounds are reaching the outlanes or center drain.",
+          "steps": [
+            {
+              "text": "Return the ball to the upper playfield."
+            },
+            {
+              "text": "Use ten-point switches to manage the bumper lights."
+            },
+            {
+              "text": "Hit the lit bumper for bonus advances."
+            },
+            {
+              "text": "Collect the upper-right Double Bonus saucer when it lights.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "Upper-flipper shots at the drop bank create fast side-to-side movement and can drain at either side.",
+          "text": "Use the upper flippers for controlled deflections or top returns when the cross-playfield shot is unsafe."
+        }
+      }
+    }
+  ]
+}

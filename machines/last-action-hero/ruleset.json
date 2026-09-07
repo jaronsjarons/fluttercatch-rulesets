@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwyq",
+  "title": "Last Action Hero",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Last Action Hero rulesheet",
+      "url": "https://www.pinball.org/rules/lastactionhero.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Factory Last Action Hero instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Last_Action_Hero_755-5046-00.pdf"
+      },
+      {
+        "label": "Kineticist Last Action Hero record",
+        "url": "https://www.kineticist.com/games/pinball/last-action-hero"
+      },
+      {
+        "label": "Official Last Action Hero operations manual",
+        "url": "https://www.mamechannel.it/files_free/arcade_manuals_unpacked/lah_112.pdf"
+      },
+      {
+        "label": "Current Data East ROM index",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      },
+      {
+        "label": "July 2026 Last Action Hero rules, strategy, and tips guide",
+        "url": "https://www.youtube.com/watch?v=eitnC3374vc"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use Wildcard and the Movie scoop to start LAH 6-Ball, extend it with switch waves and one captive-ball reset, then use M-Ball and stacked Dynamite Features to progress toward World Premiere.",
+      "quickInfo": [
+        {
+          "name": "LAH 6-Ball",
+          "summary": "Collect LAST, ACTION, and HERO at the Movie scoop to start the timed six-ball feature."
+        },
+        {
+          "name": "Dynamite Feature",
+          "summary": "A lit feature starts at the scoop and can stack with normal M-Ball."
+        },
+        {
+          "name": "M-Ball",
+          "summary": "Advance the captive ball eight times, start at the Movie scoop, and collect ramp jackpots."
+        },
+        {
+          "name": "Smart Missile",
+          "summary": "The cabinet button spots a lit feature shot or awards the listed multiball value."
+        },
+        {
+          "name": "World Premiere",
+          "summary": "Play all ten regular Dynamite features and LAH 6-Ball to light the final scoop feature."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the moving skill-shot indicator to plunge a lit C-R-A-N-E drop. Watch the Crane return before you chase locks."
+        },
+        {
+          "text": "At each ball start, shoot the Movie scoop and take the free feature selection."
+        },
+        {
+          "text": "Shoot the Wildcard scoop to select a missing LAST, ACTION, or HERO word. Shoot the left ramp to relight the Movie scoop.",
+          "modeNotes": [
+            "Wildcard: The scoop lets you choose one missing title word and can double a running feature award."
+          ]
+        },
+        {
+          "text": "Shoot the Movie scoop to collect the selected word. Repeat until LAST, ACTION, and HERO are complete."
+        },
+        {
+          "text": "Collect the third word at the Movie scoop to start LAH 6-Ball.",
+          "modeNotes": [
+            "LAH 6-Ball: Six balls play for about 25 seconds with an unlimited save until the timer expires."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the spinner and pop bumpers until the display completes each 50-switch wave.",
+          "modeNotes": [
+            "Switch wave: Each completed wave adds about eight seconds and raises the stored World Premiere value."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the left captive ball once to reset the active timed feature to its maximum time.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the timer ends, let the game drain the extra balls. Resume M-Ball and Dynamite progress with the remaining ball."
+        },
+        {
+          "text": "Start a Dynamite Feature at the Movie scoop before M-Ball when both are ready. During the extra-ball protection, follow the display for the active feature's required shots.",
+          "modeNotes": [
+            "Dynamite Feature: One of ten timed modes starts at the Movie scoop and can run during normal multiball."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: M-Ball jackpot route",
+        "when": "Recovery pivot: Use this when the title-word route is too far away.",
+        "steps": [
+          {
+            "text": "Roll through an inlane to light 2x M-Ball Advance."
+          },
+          {
+            "text": "Hit the captive ball while 2x is lit; the first M-Ball normally needs eight advances."
+          },
+          {
+            "text": "Start M-Ball at the Movie scoop.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the ramp for Jackpot, then shoot the timed Crane for Double Jackpot."
+          },
+          {
+            "text": "After enough jackpots, spell B-A-D-G-E and shoot the Crane, then the ramp, for the Super sequence."
+          },
+          {
+            "text": "Stop forcing the Crane if its return is unstable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Dynamite and M-Ball stack",
+          "when": "When trailing, use this higher-ceiling route: use this when one Dynamite Feature and M-Ball are both ready.",
+          "steps": [
+            {
+              "text": "Start the safer Dynamite Feature at the Movie scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start M-Ball before the feature timer expires.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Favor shots lit for both the feature and Jackpot."
+            },
+            {
+              "text": "Use one captive-ball hit to reset the active feature timer."
+            }
+          ]
+        },
+        {
+          "title": "Crane locks and Smart Missile",
+          "when": "Use this when the Crane feed and cabinet button awards are useful.",
+          "steps": [
+            {
+              "text": "Complete C-R-A-N-E and lock balls at the Crane."
+            },
+            {
+              "text": "Use Smart Missile during a difficult lit feature shot."
+            },
+            {
+              "text": "Do not spend Smart Missile on an award that settings have disabled."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "World Premiere",
+        "steps": [
+          {
+            "text": "Start or complete all ten regular Dynamite Features.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start LAH 6-Ball and increase its stored value with target hits.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Movie scoop when World Premiere lights."
+          },
+          {
+            "text": "Repeat the scoop to build the audience and collect the final value."
+          },
+          {
+            "text": "World Premiere is the wizard objective."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "LAH 6-Ball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "M-Ball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Dynamite Feature",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "World Premiere",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Wildcard",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Smart Missile",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Double Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Last Action Hero CPU 1.12 and display 1.06, then read feature timers, lock count, ball save, Extra Ball, and Special settings.",
+        "Verify the Crane, C-R-A-N-E bank, both captive balls, three scoops, Smart Missile, spinner, magnets, and Movie-scoop feature order.",
+        "Test Movie and Ripper kickouts, ramp diversions, Crane returns, scoop feeds, outlane saves, tilt sensitivity, and flipper strength."
+      ],
+      "techniques": [
+        {
+          "name": "Captive-ball timer reset",
+          "instruction": "Hit the left captive ball once to reset an active timed feature to its maximum time.",
+          "sourceUrl": "https://www.pinball.org/rules/lastactionhero.html"
+        },
+        {
+          "name": "Wildcard doubler",
+          "instruction": "Use the Wildcard scoop during a valuable running feature to double its award when available.",
+          "sourceUrl": "https://www.pinball.org/rules/lastactionhero.html"
+        },
+        {
+          "name": "Lit-inlane M-Ball advance",
+          "instruction": "Roll through an inlane, then hit the captive ball before the 2x advance lamp expires.",
+          "sourceUrl": "https://www.pinball.org/rules/lastactionhero.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Ripper kickout can return the ball at high speed.",
+          "response": "Keep both flippers ready and watch one kickout before you repeat the scoop.",
+          "sourceUrl": "https://www.pinball.org/rules/lastactionhero.html"
+        },
+        {
+          "issue": "The Danger Bar can reset the C-R-A-N-E drops.",
+          "response": "Finish the moving skill shot or Crane bank before another bar hit when possible.",
+          "sourceUrl": "https://www.pinball.org/rules/lastactionhero.html"
+        },
+        {
+          "issue": "A weak Crane shot can fall back into the upper playfield.",
+          "response": "Use a full controlled shot and prepare for an unpredictable return after a reject.",
+          "sourceUrl": "https://www.pinball.org/rules/lastactionhero.html"
+        }
+      ],
+      "simpleOverview": "Last Action Hero uses the Movie scoop to collect LAST, ACTION, and HERO, with the third word starting timed six-ball play. Select missing words at Wildcard, relight the scoop at the left ramp, then extend LAH 6-Ball through switch waves and one captive-ball timer reset.",
+      "overview": "Last Action Hero uses the Movie scoop to collect LAST, ACTION, and HERO, with the third word starting timed six-ball play. Collect LAST, ACTION, and HERO for the six-ball start, reset its timer once at the captive ball, then stack later Dynamite Features with M-Ball. Complete all features and return to the Movie scoop.",
+      "machineSetup": [
+        "Confirm Last Action Hero CPU 1.12 and display 1.06, then read feature timers, lock count, ball save, Extra Ball, and Special settings.",
+        "Verify the Crane, C-R-A-N-E bank, both captive balls, three scoops, Smart Missile, spinner, magnets, and Movie-scoop feature order.",
+        "Test Movie and Ripper kickouts, ramp diversions, Crane returns, scoop feeds, outlane saves, tilt sensitivity, and flipper strength."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "G43kO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the top-left three-bank until the held Bonus X reaches 5x. Each target and rollover hit adds 2,000 to Bonus Score. Then repeat the right-side eject pocket, which collects Bonus Score × Bonus X without resetting either value.",
+        "steps": [
+          {
+            "text": "From the right flipper, complete the top-left three-bank until Bonus X reaches 5x.",
+            "modeNotes": [
+              "Bonus X: Four bank completions reach 5x in three-ball play; five completions reach 5x in five-ball play. Bonus X carries between balls and survives a tilt."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "While working the bank, use standups, return lanes, and center rollovers; each hit adds 2,000 to Bonus Score.",
+            "modeNotes": [
+              "Bonus Score: It starts at 2,000, advances by 2,000, and tops out at 28,000. A full 5x collect scores 140,000."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "At 5x, move the ball to the left flipper and shoot the right-side Collect Bonus eject pocket.",
+            "modeNotes": [
+              "Collect Bonus: The eject pocket scores Bonus Score × Bonus X. It does not reset either value."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Control the eject-pocket kickout and return the ball to the left flipper with the feed that works on this copy: a cradle and post pass, a tip to the left flipper, or a dead bounce."
+          },
+          {
+            "text": "Repeat the right-side eject pocket while its kickout remains controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Left three-bank",
+          "when": "Use this when the right-side eject-pocket kickout cannot be returned to the left flipper.",
+          "steps": [
+            {
+              "text": "From the right flipper, complete the left three-bank.",
+              "modeNotes": [
+                "Left-bank value: A completion scores the lit star value once, plus that value again for each G-R-E-A-T-E-S-T letter already lit."
+              ]
+            },
+            {
+              "text": "Repeat the bank as its star value rises from 4,000 to 6,000, 8,000, then 10,000. A scrape across the bank can hit several targets and rebound into the top-left bank."
+            }
+          ]
+        },
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "Complete the top-left three-bank four times in three-ball play or five times in five-ball play to reach 5x. Bonus X carries between balls and survives a tilt."
+          },
+          {
+            "name": "Bonus Score",
+            "summary": "Standups, return lanes, and center rollovers raise it by 2,000, from a 2,000 start to a 28,000 maximum."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The right-side eject pocket scores Bonus Score × Bonus X without resetting either value. A maximum collect is 140,000."
+          },
+          {
+            "name": "Left three-bank",
+            "summary": "A completion scores the current 4,000-to-10,000 star value once, plus once for every G-R-E-A-T-E-S-T letter already lit."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the 2012-13 PAPA Circuit Final, Cayle George and Daniele Acciari built the held Bonus X and repeatedly collected the multiplied Bonus Score at the right eject pocket.",
+            "Acciari used an on-the-fly collect to take the lead.",
+            "At the UK Open 2023 Classics I final, Raymond Davidson built 3x Bonus and collected the multiplied bonus at the right eject pocket",
+            "Peter Andersen and Julio Vicario Soriano also developed Bonus X before attempting the same collect.",
+            "Original Stern six-digit ROM. The seven-digit alib revision 76 and alic revision 85 are separate code revisions."
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Collect Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "G-R-E-A-T-E-S-T",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Bonus X bank",
+            "label": "Bonus X bank",
+            "description": "From the right flipper, scrape across the left bank. A clean line can clear more than one target and deflect into the upper Bonus X bank.",
+            "xPercent": 32.58,
+            "yPercent": 13.28,
+            "widthPercent": 11.58,
+            "heightPercent": 6.05,
+            "precision": "area"
+          },
+          {
+            "term": "center rollovers",
+            "label": "center rollovers",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 34,
+            "yPercent": 35.23,
+            "widthPercent": 4.71,
+            "heightPercent": 3.88,
+            "precision": "area"
+          },
+          {
+            "term": "center rollovers",
+            "label": "center rollovers",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 55.71,
+            "yPercent": 37.52,
+            "widthPercent": 5.4,
+            "heightPercent": 4.3,
+            "precision": "area"
+          },
+          {
+            "term": "left three-bank",
+            "label": "Left three-bank",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 32.38,
+            "yPercent": 13.1,
+            "widthPercent": 10.19,
+            "heightPercent": 5.7,
+            "precision": "area"
+          },
+          {
+            "term": "Left-bank",
+            "label": "Left-bank",
+            "description": "Left-bank value: A completion scores the lit star value once, plus that value again for each G-R-E-A-T-E-S-T letter already lit.",
+            "xPercent": 26.86,
+            "yPercent": 26.57,
+            "widthPercent": 4.58,
+            "heightPercent": 10.04,
+            "precision": "area"
+          },
+          {
+            "term": "return lanes",
+            "label": "return lanes",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 70.63,
+            "yPercent": 56.63,
+            "widthPercent": 5.47,
+            "heightPercent": 9.41,
+            "precision": "area"
+          },
+          {
+            "term": "return lanes",
+            "label": "return lanes",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 20.76,
+            "yPercent": 57.16,
+            "widthPercent": 4.79,
+            "heightPercent": 10.64,
+            "precision": "area"
+          },
+          {
+            "term": "right-side Collect Bonus eject pocket",
+            "label": "Collect Bonus eject pocket",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 69.87,
+            "yPercent": 26.36,
+            "widthPercent": 7.07,
+            "heightPercent": 5.4,
+            "precision": "area"
+          },
+          {
+            "term": "top-left bank",
+            "label": "top-left bank",
+            "description": "Repeat the bank as its star value rises from 4,000 to 6,000, 8,000, then 10,000. A scrape across the bank can hit several targets and rebound into the top-left bank.",
+            "xPercent": 32.69,
+            "yPercent": 13.19,
+            "widthPercent": 10.1,
+            "heightPercent": 5.26,
+            "precision": "area"
+          },
+          {
+            "term": "top-left three-bank",
+            "label": "Bonus X bank",
+            "description": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+            "xPercent": 32.1,
+            "yPercent": 13.16,
+            "widthPercent": 10.89,
+            "heightPercent": 6.06,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test the right-side eject-pocket kickout before Bonus Score is large; learn whether a cradle, tip, or dead bounce returns the ball to the left flipper.",
+          "Test the top-left and left three-banks from their intended flippers and watch the far-right bumper exit toward the outlane."
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Cradle on the left flipper. Test a backhand into the top-left three-bank. Use it only when this copy clears the targets cleanly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G43kO-MQ50p",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Left-bank scrape",
+            "instruction": "From the right flipper, scrape across the left bank. A clean line can clear more than one target and deflect into the upper Bonus X bank.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G43kO-MQ50p"
+          },
+          {
+            "name": "Eject-pocket transfer",
+            "instruction": "Test the right-side eject-pocket kickout once. Use a cradle and post pass, a tip, or a dead bounce only when it reliably returns the ball to the left flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G43kO-MQ50p"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Collect Bonus eject-pocket kickout decides whether the main route is repeatable.",
+            "response": "Learn the feed before the bonus is large. Use the left-bank fallback when the return cannot be controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G43kO-MQ50p"
+          },
+          {
+            "issue": "The upper-left turnaround can continue toward a drain.",
+            "response": "Stop using the spinner when a full shot leaves the return uncontrolled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G43kO-MQ50p"
+          },
+          {
+            "issue": "Target rebounds and bumper exits can feed either outlane.",
+            "response": "Keep both flippers ready after bank shots. Watch the far-right bumper exit until the ball clears the right outlane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G43kO-MQ50p"
+          }
+        ],
+        "simpleOverview": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, repeat the right-side Collect Bonus eject pocket from the left flipper; the collect does not reset either value.",
+        "overview": "In Ali, each completion of the top-left three-bank raises Bonus X until it reaches 5x. Standups, return lanes, and center rollovers each add 2,000 to Bonus Score. At 5x, shoot the right-side Collect Bonus eject pocket from the left flipper, control its kickout, and repeat it because neither Bonus Score nor Bonus X resets.",
+        "machineSetup": [
+          "Test the right-side eject-pocket kickout before Bonus Score is large; learn whether a cradle, tip, or dead bounce returns the ball to the left flipper.",
+          "Test the top-left and left three-banks from their intended flippers and watch the far-right bumper exit toward the outlane."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete the top-left three-bank until Bonus X reaches 5x. Each standup, return lane, and center rollover adds 2,000 to Bonus Score. Then repeat the right-side Collect Bonus eject pocket.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Reach 5x and raise Bonus Score",
+            "text": "From the right flipper, complete the top-left three-bank until Bonus X reaches 5x. Each standup, return lane, and center rollover adds 2,000 to Bonus Score."
+          },
+          {
+            "title": "Collect the bonus",
+            "text": "At 5x, move the ball to the left flipper and shoot the right-side Collect Bonus eject pocket. Control its kickout and return the ball to the left flipper."
+          },
+          {
+            "title": "Repeat the collect",
+            "text": "Repeat the right-side eject pocket while its kickout remains controlled; the collect does not reset Bonus Score or Bonus X."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "Complete the top-left three-bank four times in three-ball play or five times in five-ball play to reach 5x. Bonus X carries between balls and survives a tilt."
+          },
+          {
+            "name": "Bonus Score",
+            "summary": "Standups, return lanes, and center rollovers raise it by 2,000, from a 2,000 start to a 28,000 maximum."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The right-side eject pocket scores Bonus Score × Bonus X without resetting either value. A maximum collect is 140,000."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: left three-bank",
+          "when": "Use this when the eject-pocket kickout cannot be returned to the left flipper.",
+          "steps": [
+            {
+              "text": "From the right flipper, complete the left three-bank. Its value grows with the G-R-E-A-T-E-S-T letters already lit."
+            },
+            {
+              "text": "Repeat the bank as its star value rises from 4,000 to 6,000, 8,000, then 10,000."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The upper-left turnaround can continue toward a drain.",
+          "text": "Stop using the spinner when a full shot leaves the return uncontrolled."
+        }
+      }
+    }
+  ]
+}

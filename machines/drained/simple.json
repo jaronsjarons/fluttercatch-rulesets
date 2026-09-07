@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "GyVb1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Drained asks you to prepare for one vampire per ball and choose when to take the irreversible slay shot. Complete the flashing SLAY and VAMP standups to awaken the vampire. Tool sequences can spot battle shots, STAKES can launch a second ball once per ball, and completing every flashing battle shot stuns the vampire before the gobble-hole finish.",
+        "simpleOverview": "Build tools first, then hit the flashing SLAY and VAMP standups to awaken the vampire. Finish the flashing battle shots to stun it, then shoot the gobble hole to slay it and end the ball for the larger reward.",
+        "summary": "Complete the flashing SLAY and VAMP standups to awaken the current vampire. Tool sequences can spot battle shots; after the vampire wakes, finish the flashing shots to stun it, then shoot the gobble hole to slay it and end the ball.",
+        "quickInfo": [
+          {
+            "name": "Awaken vampire",
+            "summary": "Complete the flashing SLAY and VAMP standups on the current ball."
+          },
+          {
+            "name": "Tools",
+            "summary": "Complete GARLIC, MIRROR, Holy Water, STAKES, Flaming Torch, and Silver Sword sequences before the battle to spot required shots."
+          },
+          {
+            "name": "Second ball",
+            "summary": "The first STAKES completion on a ball launches a second ball; later completions on that ball do not add another."
+          },
+          {
+            "name": "Gobble hole",
+            "summary": "Once the vampire is awake, the gobble hole slays it and always ends the ball. Stunning it first raises the reward."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before awakening the vampire, complete the six tool sequences you can reach reliably; each completed requirement can spot part of the coming battle.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete STAKES once on the current ball when you want a second ball for safer tool building or battle progress.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the flashing SLAY and VAMP standups to awaken the current vampire and reveal its flashing battle shots.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish the flashing battle shots to stun the vampire and hold the coffin lids down, then shoot the gobble hole to slay it for the larger finish.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Choose the slay timing",
+          "steps": [
+            {
+              "text": "Shoot the gobble hole any time after the vampire wakes if survival matters more than maximizing the award.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For the stronger route, complete every flashing battle shot first; a stunned vampire pays more when you take the gobble-hole finish.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat on later balls against the next vampire, adjusting which tool sequences you build to match the displayed battle requirements.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "SLAY and VAMP",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "tool sequences",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "STAKES",
+            "tone": "indigo",
+            "kind": "multiball"
+          },
+          {
+            "label": "gobble hole",
+            "tone": "rust",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "SLAY and VAMP standups",
+            "label": "Vampire wake-up targets",
+            "description": "The flashing target pair used to awaken the current vampire.",
+            "precision": "unverified"
+          },
+          {
+            "term": "six tool sequences",
+            "label": "Vampire-hunting tools",
+            "description": "GARLIC, MIRROR, Holy Water, STAKES, Flaming Torch, and Silver Sword target sequences.",
+            "precision": "unverified"
+          },
+          {
+            "term": "gobble hole",
+            "label": "Vampire slay shot",
+            "description": "The center gobble hole that slays an awakened vampire and ends the current ball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Launch-era point values, spotting counts, and timing may have changed.",
+            "response": "Use the physical wake, tool, stun, and slay route, but follow the current display for values and timing.",
+            "sourceUrl": "https://www.kineticist.com/news/drained-pinball-deep-dive"
+          },
+          {
+            "issue": "The gobble hole can behave differently before the vampire wakes.",
+            "response": "Outside a battle it normally ends the ball, but an operator or profile setting can relaunch it. After a vampire slay, the ball always ends.",
+            "sourceUrl": "https://www.kineticist.com/news/drained-pinball-deep-dive"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the flashing SLAY and VAMP standups to awaken the current vampire. Tool sequences can spot battle shots; after the vampire wakes, finish the flashing shots to stun it, then shoot the gobble hole to slay it and end the ball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before awakening the vampire, complete the six tool sequences you can reach reliably; each completed requirement can spot part of the coming battle.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete STAKES once on the current ball when you want a second ball for safer tool building or battle progress.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the flashing SLAY and VAMP standups to awaken the current vampire and reveal its flashing battle shots.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish the flashing battle shots to stun the vampire and hold the coffin lids down, then shoot the gobble hole to slay it for the larger finish.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Awaken vampire",
+            "summary": "Complete the flashing SLAY and VAMP standups on the current ball."
+          },
+          {
+            "name": "Tools",
+            "summary": "Complete GARLIC, MIRROR, Holy Water, STAKES, Flaming Torch, and Silver Sword sequences before the battle to spot required shots."
+          },
+          {
+            "name": "Second ball",
+            "summary": "The first STAKES completion on a ball launches a second ball; later completions on that ball do not add another."
+          }
+        ]
+      }
+    }
+  ]
+}

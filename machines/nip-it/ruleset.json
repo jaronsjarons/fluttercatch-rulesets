@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "Gre0B",
+  "title": "Nip-It",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Silverball Rules Nip-It strategy",
+      "url": "https://rules.silverballmania.com/rules/Gre0B-MYewk"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Nip-It factory instruction cards",
+        "url": "https://pinballaustralia.com/zip/Bally_1973_Nip_It_Reproduction_Score_and_Instruction_Cards.zip"
+      },
+      {
+        "label": "Bally Nip-It factory playfield chart",
+        "url": "https://pinballaustralia.com/PDF/Nip_It.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "On Nip-It, the center mushroom zips the flippers, the cabinet button controls the gator, and the lower-right saucer begins a repeatable lock-and-release Multiball route. Shoot the lower-right saucer to lock a ball and collect the current bonus. Hit either upper Release Ball target to start Multiball; relocking a ball collects the still-held bonus again, allowing repeated release-and-relock cashouts.",
+      "simpleOverview": "Hit the center mushroom to zip the flippers. Shoot the lower-right saucer to lock a ball and collect bonus, then hit either upper Release Ball target to start two-ball Multiball. During Multiball, relock a ball to collect the held bonus again; release it and repeat while control lasts.",
+      "summary": "Keep the flippers zipped whenever possible and let the ball settle across them before shooting. Build bonus before the first lock because locking does not reset it; then use repeated release-and-relock cycles for the strongest scoring route.",
+      "quickInfo": [
+        {
+          "name": "Zip Flippers",
+          "summary": "Hit the center mushroom bumper."
+        },
+        {
+          "name": "Lock and Collect",
+          "summary": "Shoot the lower-right saucer."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Hit either upper Release Ball target after locking."
+        },
+        {
+          "name": "Collect Again",
+          "summary": "Relock a ball during Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the center mushroom to zip the flippers."
+        },
+        {
+          "text": "Build bonus toward 10,000, then shoot the lower-right saucer to lock a ball and collect it."
+        },
+        {
+          "text": "Hit either upper Release Ball target to start two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, relock a ball to collect the held bonus again, then release and repeat while control lasts.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Gator-control route",
+          "when": "Use this when the lock or Release Ball targets are rejecting dangerously.",
+          "steps": [
+            {
+              "text": "Keep the flippers zipped and cradle a ball on the left."
+            },
+            {
+              "text": "Shoot the left gate or send the ball to the top, then press the cabinet gator button to catch the gator-saucer eject."
+            },
+            {
+              "text": "Repeat only if the gator feed returns safely; some setups can feed the center drain."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated bonus collections",
+        "steps": [
+          {
+            "text": "Build bonus near its 10,000 ceiling before locking."
+          },
+          {
+            "text": "Lock once and release the ball to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Relock and release repeatedly to collect the held bonus more than once.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the center zipper mushroom, both zipper-flipper linkages, white gate rollover, cabinet gator button, gator mechanism and feed, lower-right lock saucer, both Release Ball targets, ball serve, and bonus lamps.",
+        "Confirm the machine starts with two balls installed, locked-ball stealing between players, bonus hold through locks, tilt behavior, and whether the gator and lock ejects can be controlled safely."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

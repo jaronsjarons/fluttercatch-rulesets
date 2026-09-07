@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "G5nj6",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the outer arcs to keep the ball up top and build bonus to 19K, hit A and B for Double Bonus, then resume top play and collect the saucer when 5,000 is lit.",
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "Hits on lower rollover buttons, lit upper rollover buttons, and a lit top saucer build the end-of-ball bonus to 19K."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Hit both side A and B standup targets to double the end-of-ball bonus for the current ball."
+          },
+          {
+            "name": "Top saucer",
+            "summary": "Ten-point switches alternate the saucer between number progress and bonus progress, then between number progress and 5,000 at maximum bonus."
+          },
+          {
+            "name": "Number buttons",
+            "summary": "The numbered buttons advance in order from 1 through 8, and the next required number is the important direct hit."
+          },
+          {
+            "name": "Per-ball reset",
+            "summary": "Bonus, Double Bonus, and numbered-target progress reset at the start of each ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the top saucer."
+          },
+          {
+            "text": "Shoot either outer arc over its lower rollover button to return the ball to the top."
+          },
+          {
+            "text": "Use repeated top play to build the base bonus to 19K."
+          },
+          {
+            "text": "After the bonus reaches 19K, hit the A and B side standups from controlled shots.",
+            "modeNotes": [
+              "Double Bonus: Hit both A and B standup targets. The game doubles the end-of-ball bonus for the current ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Resume the outer-arc route after Double Bonus is ready."
+          },
+          {
+            "text": "Read the top-saucer lamp. Collect it when 5,000 is lit and the upper feed can reach it."
+          },
+          {
+            "text": "Do not shoot the center number buttons from the upper flippers unless a specific return has proved safe."
+          }
+        ],
+        "fallback": {
+          "title": "Outer arcs and bonus only",
+          "when": "Use this when A-B rebounds, the top saucer, or the center area is dangerous.",
+          "steps": [
+            {
+              "text": "Ignore the center number buttons."
+            },
+            {
+              "text": "Repeat the safer outer arc to the top."
+            },
+            {
+              "text": "Use lit rollovers and incidental saucer entries to build bonus."
+            },
+            {
+              "text": "Skip Double Bonus if the A-B target returns threaten the ball."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "5,000 top-saucer route",
+            "when": "Use this after the bonus reaches 19K and the top saucer catches reliably.",
+            "steps": [
+              {
+                "text": "Score lower rollover buttons, lit upper rollover buttons, or the lit top saucer until base bonus reaches 19K."
+              },
+              {
+                "text": "Use safe ten-point switches until the top saucer shows 5,000."
+              },
+              {
+                "text": "Send the ball to the top through the safer outer arc."
+              },
+              {
+                "text": "Guide upper play into the saucer without a direct center-button shot."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "19K at Double Bonus",
+          "steps": [
+            {
+              "text": "Use outer arcs and rollover buttons to build 19K."
+            },
+            {
+              "text": "Hit A and B to enable Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Return to top play after the doubled bonus is ready.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Collect the top saucer during its 5,000 state."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Outer-arc top feed",
+            "instruction": "Shoot an outer arc over its rollover button. Use the arc that returns the ball to safer upper play.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5nj6-MLnwY"
+          },
+          {
+            "name": "Saucer-state timing",
+            "instruction": "Read the top-saucer lamp before you send the ball upward. At 19K, wait for the 5,000 state.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5nj6-MLnwY"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Direct shots at the center number buttons can send the ball sideways toward a drain.",
+            "response": "Let top play and the small center rollover advance numbers. Avoid direct button shots when the return is not known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5nj6-MLnwY"
+          },
+          {
+            "issue": "Shots from the upper flippers to the center buttons create additional side-to-side risk.",
+            "response": "Use the upper flippers to continue the top route. Do not force a center-button shot from them.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5nj6-MLnwY"
+          },
+          {
+            "issue": "Ten-point switches change the lit upper rollovers and the top-saucer state.",
+            "response": "Read the lamps again after switch activity. Do not assume that the prior saucer award remains lit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5nj6-MLnwY"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Toledo or Valencia edition and player count.",
+          "Read ball count, award settings, saucer lamp, and arc feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "outer arcs",
+            "label": "Outer arcs",
+            "description": "Two looping lanes used to return the ball to the top.",
+            "precision": "unverified",
+            "context": "Two looping lanes used to return the ball to the top."
+          },
+          {
+            "term": "A and B targets",
+            "label": "Double Bonus targets",
+            "description": "Side standups that qualify Double Bonus.",
+            "precision": "unverified",
+            "context": "Side standups that qualify Double Bonus."
+          },
+          {
+            "term": "top saucer",
+            "label": "Top saucer",
+            "description": "Saucer used to collect its currently lit award.",
+            "precision": "unverified",
+            "context": "Saucer used to collect its currently lit award."
+          }
+        ],
+        "simpleOverview": "Valencia and Toledo reset bonus, Double Bonus, and numbered-target progress every ball. Use the outer arcs and lit rollovers to reach 19K, hit A and B for Double Bonus, then collect the top saucer when its 5,000 state is lit.",
+        "overview": "Valencia and Toledo build a 19K base bonus through the outer arcs, lit rollovers, and the top saucer. Hit A and B during the same ball for Double Bonus, then resume safe top play and collect the saucer when 5,000 is lit. The 1-through-8 button sequence advances in order and can also be spotted by the saucer.",
+        "machineSetup": [
+          "Confirm Toledo or Valencia edition and player count.",
+          "Read ball count, award settings, saucer lamp, and arc feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the outer arcs to keep the ball up top and build bonus to 19K, hit A and B for Double Bonus, then resume top play and collect the saucer when 5,000 is lit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the top saucer."
+          },
+          {
+            "text": "Shoot either outer arc over its lower rollover button to return the ball to the top."
+          },
+          {
+            "text": "Use repeated top play to build the base bonus to 19K."
+          },
+          {
+            "text": "After the bonus reaches 19K, hit the A and B side standups from controlled shots.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Double Bonus: Hit both A and B standup targets. The game doubles the end-of-ball bonus for the current ball."
+            ]
+          },
+          {
+            "text": "Resume the outer-arc route after Double Bonus is ready."
+          },
+          {
+            "text": "Read the top-saucer lamp. Collect it when 5,000 is lit and the upper feed can reach it."
+          },
+          {
+            "text": "Do not shoot the center number buttons from the upper flippers unless a specific return has proved safe."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "Hits on lower rollover buttons, lit upper rollover buttons, and a lit top saucer build the end-of-ball bonus to 19K."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Hit both side A and B standup targets to double the end-of-ball bonus for the current ball."
+          },
+          {
+            "name": "Top saucer",
+            "summary": "Ten-point switches alternate the saucer between number progress and bonus progress, then between number progress and 5,000 at maximum bonus."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Outer arcs and bonus only",
+          "when": "Use this when A-B rebounds, the top saucer, or the center area is dangerous.",
+          "steps": [
+            {
+              "text": "Ignore the center number buttons."
+            },
+            {
+              "text": "Repeat the safer outer arc to the top."
+            },
+            {
+              "text": "Use lit rollovers and incidental saucer entries to build bonus."
+            },
+            {
+              "text": "Skip Double Bonus if the A-B target returns threaten the ball."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Direct shots at the center number buttons can send the ball sideways toward a drain.",
+          "text": "Let top play and the small center rollover advance numbers. Avoid direct button shots when the return is not known."
+        }
+      }
+    }
+  ]
+}

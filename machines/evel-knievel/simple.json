@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "id": "G59wx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On solid-state Evel Knievel, read both spinner lamps, complete the five-drop bank only if neither is lit, return to the lit spinner for 1,000 per spin, and protect the prepared 30,000 bonus collect.",
+        "steps": [
+          {
+            "text": "Read both spinner lamps before the plunge.",
+            "modeNotes": [
+              "Lit Spinner: Only one spinner can be lit. It scores 1,000 per spin. An unlit spinner scores 10 per spin.",
+              "Factory three-ball play lights one spinner at the start of each ball.",
+              "Five-ball play starts with both spinners unlit. The first drop-bank completion lights one."
+            ]
+          },
+          {
+            "text": "If a spinner is lit, do not force the drop bank."
+          },
+          {
+            "text": "Plunge for the top saucer only after its feed is known.",
+            "modeNotes": [
+              "SUPER: This five-letter collection uses a moving arrow to select the next letter. The top saucer or center target collects it. Completion spends the configured award and resets the word.",
+              "The saucer scores 3,000 and collects the selected SUPER letter."
+            ]
+          },
+          {
+            "text": "Cradle the first controllable ball. Shoot the lit spinner from the flipper with the safe line."
+          },
+          {
+            "text": "Read both spinner lamps after the top C or Y lane, any drop target, a right C-L-E target, either inlane, or a completed drop bank.",
+            "modeNotes": [
+              "A 500-point event can alternate the lit spinner. These events include top C and Y, each drop, right C-L-E, and both inlanes.",
+              "Each 500-point event also advances base bonus by 1,000.",
+              "A completed drop bank scores 5,000 and can alternate the lit spinner."
+            ]
+          },
+          {
+            "text": "If both spinners are unlit, complete the five left drop targets once.",
+            "modeNotes": [
+              "Double Bonus: The first bank completion lights this per-ball multiplier. It doubles base bonus at the drain, then is spent. It does not carry between balls.",
+              "Each drop scores 500 and adds 1,000 base bonus.",
+              "The full bank scores 5,000, lights a spinner, lights Double Bonus, and resets the bank."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to the lit spinner. Read both lamps again after any top C or Y lane, drop target, right C-L-E target, or inlane."
+          },
+          {
+            "text": "After an inlane changes the lit spinner, cradle a slow feed or use one immediate shot on a fast feed."
+          },
+          {
+            "text": "Continue controlled lit-spinner shots until base bonus reaches 15,000."
+          },
+          {
+            "text": "Stop forcing bonus advances. Drain without tilting to collect 30,000 with Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "One bank and protected bonus",
+          "when": "Use this plan when the lit spinner rejects or returns dangerously.",
+          "steps": [
+            {
+              "text": "Cradle on the flipper with the safer line to the five left drops."
+            },
+            {
+              "text": "Choose one standing target. Shoot one target at a time."
+            },
+            {
+              "text": "Each target scores 500 and adds 1,000 base bonus."
+            },
+            {
+              "text": "Complete all five once. Collect the 5,000 bank award."
+            },
+            {
+              "text": "Confirm that Double Bonus and one spinner are lit.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Resume the spinner only when its return is controlled."
+            },
+            {
+              "text": "Otherwise, use top lanes, inlanes, and incidental drops to reach 15,000 base bonus."
+            },
+            {
+              "text": "Protect the prepared 30,000 end-of-ball bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Do not shoot the right standups only for bonus advances."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Second and later drop-bank completions",
+            "when": "Use this plan when target rebounds are controlled and the configured replay award has value.",
+            "steps": [
+              {
+                "text": "Complete the five-drop bank a second time.",
+                "modeNotes": [
+                  "Extra Ball: This replay award serves another ball after the current ball drains. The second bank completion can qualify it, depending on settings.",
+                  "Special: This operator-configured replay award can give a credit or Extra Ball. Original electronic code does not offer a point award for Special."
+                ]
+              },
+              {
+                "text": "The recommended three-ball setting awards Extra Ball."
+              },
+              {
+                "text": "Other settings award nothing, 5,000, or 5,000 plus Extra Ball."
+              },
+              {
+                "text": "Complete the bank a third time or later only when the rebound remains safe."
+              },
+              {
+                "text": "The recommended three-ball setting awards Special."
+              },
+              {
+                "text": "Other settings award nothing, 5,000, or Extra Ball."
+              }
+            ]
+          },
+          {
+            "title": "SUPER route",
+            "when": "Use this plan when the top saucer is controlled and the configured word award has value.",
+            "steps": [
+              {
+                "text": "Watch the moving arrow under S-U-P-E-R.",
+                "modeNotes": [
+                  "SUPER: This five-letter collection uses a moving arrow to select the next letter. The saucer or center target collects it. Completion spends the configured award and resets the word."
+                ]
+              },
+              {
+                "text": "Each 10-point event advances the arrow by one letter."
+              },
+              {
+                "text": "Shoot the top saucer or center target. The shot scores 3,000 and lights the selected letter."
+              },
+              {
+                "text": "The arrow advances again after the collect."
+              },
+              {
+                "text": "Complete all five letters on the same ball."
+              },
+              {
+                "text": "The factory three-ball award is one credit."
+              },
+              {
+                "text": "Settings can award nothing, one credit, Extra Ball, or two credits."
+              },
+              {
+                "text": "Prefer the saucer. The center target is a major rebound risk."
+              }
+            ]
+          },
+          {
+            "title": "CYCLE route",
+            "when": "Use this plan only when standup rebounds are controlled and outlane awards have value.",
+            "steps": [
+              {
+                "text": "Collect the top C and Y lanes. Then hit the right C, L, and E standups.",
+                "modeNotes": [
+                  "CYCLE: This five-letter collection uses two top lanes and three right standups. It lights bumper and outlane awards for the current ball, then resets at the drain."
+                ]
+              },
+              {
+                "text": "Complete C-L-E to light the center red bumper for 1,000 per hit."
+              },
+              {
+                "text": "Recommended three-ball rules also light one outlane Special."
+              },
+              {
+                "text": "Complete all of C-Y-C-L-E to light both outlane Specials continuously for the ball."
+              },
+              {
+                "text": "An operator can make full CYCLE light only one alternating outlane."
+              },
+              {
+                "text": "A lit outlane can award nothing, Extra Ball, one credit, or one credit plus Extra Ball."
+              },
+              {
+                "text": "Ignore this route when replay awards do not score."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Lit-spinner points and 30,000 end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Confirm a lit spinner."
+            },
+            {
+              "text": "If needed, complete the five-drop bank once."
+            },
+            {
+              "text": "Use the bank to light Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the lit spinner for 1,000 per spin."
+            },
+            {
+              "text": "Let spinner shots and incidental 500-point features build base bonus."
+            },
+            {
+              "text": "Stop forcing advances when base bonus reaches 15,000."
+            },
+            {
+              "text": "Drain without tilting to collect 30,000.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Repeat on the next ball. No rule progress carries between balls."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "2x",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lit Spinner",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "SUPER",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "CYCLE",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Special",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm three-ball or five-ball play. Three-ball starts each ball with one spinner lit; five-ball starts with both unlit.",
+          "Read the configured second-bank, later-bank, SUPER, CYCLE, Extra Ball, and Special awards before choosing a replay route."
+        ],
+        "techniques": [
+          {
+            "name": "One-time the lit spinner",
+            "instruction": "One-time the lit spinner after an inlane changes it and the feed is moving too quickly to cradle.",
+            "techniqueSlug": "one-time-shot",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G59wx-MLnZ3"
+          },
+          {
+            "name": "Inlane cradle",
+            "instruction": "Catch a slow inlane feed. Then make a controlled shot at the newly lit spinner.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G59wx-MLnZ3"
+          },
+          {
+            "name": "Flipper transfer",
+            "instruction": "Pass the ball to the flipper with the better line to the lit spinner. Read the lamp after the pass or another 500-point event.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/evel-knievel"
+          },
+          {
+            "name": "Saucer skill plunge",
+            "instruction": "Plunge into the top center saucer for 3,000 and the SUPER letter under the current arrow.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G59wx-MLnZ3"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Drop-target rebounds can drain.",
+            "response": "Complete the bank only when no spinner is lit or Double Bonus justifies the risk.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G59wx-MLnZ3"
+          },
+          {
+            "issue": "The right C-L-E standups can return the ball toward a drain.",
+            "response": "Do not shoot them only for their small bonus advances.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G59wx-MLnZ3"
+          },
+          {
+            "issue": "Bumper exits can reach an outlane or the center quickly.",
+            "response": "Keep both flippers ready until the ball clears the bumper area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G59wx-MLnZ3"
+          },
+          {
+            "issue": "The center SUPER target is a direct rebound hazard.",
+            "response": "Prefer the top saucer for a SUPER collect.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/evel-knievel"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Read both spinner lamps before the plunge."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Confirm a lit spinner."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "One bank and protected bonus: Use this plan when the lit spinner rejects or returns dangerously."
+          },
+          {
+            "name": "Edition scope",
+            "summary": "This route covers Bally's 1977 solid-state Evel Knievel, not the separate 1976 electromechanical game."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Spinner that scores 1,000 per spin when lit.",
+            "precision": "unverified",
+            "context": "Spinner that scores 1,000 per spin when lit."
+          },
+          {
+            "term": "right spinner",
+            "label": "Right spinner",
+            "description": "Alternate spinner that scores 1,000 per spin when lit.",
+            "precision": "unverified",
+            "context": "Alternate spinner that scores 1,000 per spin when lit."
+          },
+          {
+            "term": "five left drop targets",
+            "label": "Five-target bank",
+            "description": "Bank that lights Double Bonus and one spinner.",
+            "precision": "unverified",
+            "context": "Bank that lights Double Bonus and one spinner."
+          },
+          {
+            "term": "top saucer",
+            "label": "Top saucer",
+            "description": "Skill-plunge collect for the selected SUPER letter.",
+            "precision": "unverified",
+            "context": "Skill-plunge collect for the selected SUPER letter."
+          },
+          {
+            "term": "top C and Y lanes",
+            "label": "Top C and Y lanes",
+            "description": "Two top rollover lanes that advance CYCLE and can alternate the lit spinner.",
+            "precision": "unverified",
+            "context": "Two top rollover lanes that advance CYCLE and can alternate the lit spinner."
+          },
+          {
+            "term": "center SUPER target",
+            "label": "Center SUPER target",
+            "description": "Riskier standup that collects the SUPER letter selected by the moving arrow.",
+            "precision": "unverified",
+            "context": "Riskier standup that collects the SUPER letter selected by the moving arrow."
+          },
+          {
+            "term": "right C-L-E standups",
+            "label": "Right C-L-E targets",
+            "description": "Three right-side standups that complete CYCLE with the two top lanes.",
+            "precision": "unverified",
+            "context": "Three right-side standups that complete CYCLE with the two top lanes."
+          },
+          {
+            "term": "center red bumper",
+            "label": "Center red bumper",
+            "description": "Bumper lit for 1,000 per hit after completing C-L-E.",
+            "precision": "unverified",
+            "context": "Bumper lit for 1,000 per hit after completing C-L-E."
+          },
+          {
+            "term": "inlanes",
+            "label": "Left and right inlanes",
+            "description": "Return lanes whose 500-point events can alternate the lit spinner.",
+            "precision": "unverified",
+            "context": "Return lanes whose 500-point events can alternate the lit spinner."
+          },
+          {
+            "term": "outlane Specials",
+            "label": "Left and right outlane awards",
+            "description": "Setting-dependent CYCLE awards lit for the current ball.",
+            "precision": "unverified",
+            "context": "Setting-dependent CYCLE awards lit for the current ball."
+          }
+        ],
+        "simpleOverview": "Evel Knievel uses playfield lamps to choose which spinner pays 1,000 per spin. Read both lamps, complete the five-drop bank only when neither spinner is lit, then repeat the lit spinner while building base bonus. Protect the prepared 30,000 Double Bonus collect.",
+        "overview": "In Evel Knievel, lanes, targets, and inlanes move the lit 1,000-per-spin award between the two spinners, while one five-drop completion lights Double Bonus. Read both spinner lamps after every qualifying switch and shoot only the lit side from control. Stop forcing bonus advances at 15,000 base and preserve the 30,000 drain collect.",
+        "machineSetup": [
+          "Confirm three-ball or five-ball play. Three-ball starts each ball with one spinner lit; five-ball starts with both unlit.",
+          "Read the configured second-bank, later-bank, SUPER, CYCLE, Extra Ball, and Special awards before choosing a replay route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Shoot whichever spinner is lit for 1,000 per spin. If neither spinner is lit, complete the five left drop targets once to light a spinner and Double Bonus, then return to the lit spinner and protect the doubled end-of-ball bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Shoot the lit spinner",
+            "text": "Check the lamps beside the left and right spinners, then shoot whichever spinner is lit for 1,000 points per spin. An unlit spinner scores only 10 per spin."
+          },
+          {
+            "title": "Light one when both are dark",
+            "text": "If neither spinner is lit, complete the five left drop targets once. The completed bank lights one spinner, lights Double Bonus for this ball, and resets the targets.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Return and collect",
+            "text": "Return to the lit spinner. Hits at the top C and Y lanes, any drop target, the right C-L-E targets, or either inlane can move the lit spinner, so read both lamps before the next spinner shot. Stop forcing shots at 15,000 base bonus and finish the ball without tilting to collect 30,000 with Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Read both spinner lamps before the plunge."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Confirm a lit spinner."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "One bank and protected bonus: Use this plan when the lit spinner rejects or returns dangerously."
+          }
+        ],
+        "warning": {
+          "title": "Drop-target rebounds can drain.",
+          "text": "Complete the bank only when no spinner is lit or Double Bonus justifies the risk."
+        }
+      }
+    }
+  ]
+}

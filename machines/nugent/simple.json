@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "id": "G5VWL",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build Bonus X with the upper-right three-bank, use the right spinner and upper-left collect area to build and collect bonus, and keep the upper-right flipper raised and unused.",
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "Lanes, the spinner, small slings, and selected targets build base bonus to 19,000."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Each upper-right three-bank completion advances Bonus X through 2x, 3x, and 5x."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The upper-left saucer collects base bonus, resets its value, and keeps the current multiplier for the rest of the ball."
+          },
+          {
+            "name": "Return-lane boost",
+            "summary": "The standup below the left top lane raises each return lane to 5,000 and three bonus advances."
+          },
+          {
+            "name": "Skill shot",
+            "summary": "The top rollover raises both outside top lanes from 3,000 to 9,000 before the ball enters one of them."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge across the small top rollover. Guide the ball into the lit right outside lane when the nudge is safe."
+          },
+          {
+            "text": "Use the left flipper to shoot the upper-right three-bank. Complete it until Bonus X reaches 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right spinner and the lanes beside the bumpers to build base bonus toward 19,000."
+          },
+          {
+            "text": "Send the ball through the gap below the upper-left saucer. Nudge for a bumper rebound into Collect Bonus.",
+            "modeNotes": [
+              "Collect Bonus: The saucer scores the current base bonus at the current multiplier. Base bonus resets, but Bonus X remains for the ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If the standup below the left top lane is available from that rebound, hit it to improve return-lane scoring before returning to the Bonus X and Collect Bonus route."
+          },
+          {
+            "text": "Rebuild base bonus through the spinner and top area. Collect it again while 5x remains active.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep the upper-right flipper raised during nearby action. Do not use it for normal shots."
+          }
+        ],
+        "fallback": {
+          "title": "Spinner and top play",
+          "when": "Use this when the right drop bank or Collect Bonus rebound is too dangerous.",
+          "steps": [
+            {
+              "text": "Repeat the right spinner from the left flipper."
+            },
+            {
+              "text": "Use the top lanes and bumpers to build bonus."
+            },
+            {
+              "text": "Collect a partial bonus only after the saucer feed becomes controlled."
+            },
+            {
+              "text": "Avoid the far outside-left shot and the upper-right flipper."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Repeated 19,000 bonus collects at 5x",
+          "steps": [
+            {
+              "text": "Complete the upper-right three-bank until Bonus X reaches 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the right spinner, return lanes, outlanes, upper slings, or other bonus-advance switches until base bonus reaches 19,000."
+            },
+            {
+              "text": "Use a bumper rebound or bank shot to enter Collect Bonus."
+            },
+            {
+              "text": "Rebuild and collect base bonus again before the ball ends."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-left saucer",
+            "context": "upper-left saucer",
+            "label": "Collect Bonus saucer",
+            "description": "The upper-left saucer that scores the current base bonus at the current multiplier.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-right three-bank",
+            "context": "upper-right three-bank",
+            "label": "Bonus X three-bank",
+            "description": "The upper-right drop-target bank whose completions advance Bonus X through 2x, 3x, and 5x.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Collect Bonus rebound",
+            "instruction": "Shoot through the gap below the saucer. Nudge so the left bumper sends the ball into the saucer.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VWL-MLRjl"
+          },
+          {
+            "name": "Drop-bank bank shot",
+            "instruction": "Use the upper-right drop bank as a bank surface when a direct Collect Bonus entry is not available.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VWL-MLRjl"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Bumper exits and target rebounds can move to the center drain.",
+            "response": "Use controlled outside shots. Nudge early while the ball is still above the lower slingshots.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VWL-MLRjl"
+          },
+          {
+            "issue": "The upper-right flipper can send rebounds toward the left outlane.",
+            "response": "Keep that flipper raised as a guide. Do not flip with it during normal play.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VWL-MLRjl"
+          },
+          {
+            "issue": "A missing center-post rubber makes center drains more common.",
+            "response": "Check the center post before play. Reduce target risk if the post or its rubber is missing.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VWL-MLRjl"
+          }
+        ],
+        "simpleOverview": "Nugent uses the upper-right three-bank to raise Bonus X and an upper-left saucer to collect the built base bonus without resetting that multiplier. Reach 5x, build toward 19,000, collect at the saucer, then rebuild and collect again during the same ball.",
+        "overview": "Nugent uses the upper-right three-bank to raise Bonus X and an upper-left saucer to collect the built base bonus without resetting that multiplier. Complete the bank first, then feed bonus through the right side and use a bumper rebound or controlled bank shot for the collect. Rebuild before the ball ends and leave the upper-right flipper raised rather than using it.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Build Bonus X with the upper-right three-bank, use the right spinner and upper-left collect area to build and collect bonus, and keep the upper-right flipper raised and unused.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge across the small top rollover. Guide the ball into the lit right outside lane when the nudge is safe."
+          },
+          {
+            "text": "Use the left flipper to shoot the upper-right three-bank. Complete it until Bonus X reaches 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right spinner and the lanes beside the bumpers to build base bonus toward 19,000."
+          },
+          {
+            "text": "Send the ball through the gap below the upper-left saucer. Nudge for a bumper rebound into Collect Bonus.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Collect Bonus: The saucer scores the current base bonus at the current multiplier. Base bonus resets, but Bonus X remains for the ball."
+            ]
+          },
+          {
+            "text": "If the standup below the left top lane is available from that rebound, hit it to improve return-lane scoring before returning to the Bonus X and Collect Bonus route."
+          },
+          {
+            "text": "Rebuild base bonus through the spinner and top area. Collect it again while 5x remains active.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep the upper-right flipper raised during nearby action. Do not use it for normal shots."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "Lanes, the spinner, small slings, and selected targets build base bonus to 19,000."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Each upper-right three-bank completion advances Bonus X through 2x, 3x, and 5x."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The upper-left saucer collects base bonus, resets its value, and keeps the current multiplier for the rest of the ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Spinner and top play",
+          "when": "Use this when the right drop bank or Collect Bonus rebound is too dangerous.",
+          "steps": [
+            {
+              "text": "Repeat the right spinner from the left flipper."
+            },
+            {
+              "text": "Use the top lanes and bumpers to build bonus."
+            },
+            {
+              "text": "Collect a partial bonus only after the saucer feed becomes controlled."
+            },
+            {
+              "text": "Avoid the far outside-left shot and the upper-right flipper."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Bumper exits and target rebounds can move to the center drain.",
+          "text": "Use controlled outside shots. Nudge early while the ball is still above the lower slingshots."
+        }
+      }
+    }
+  ]
+}

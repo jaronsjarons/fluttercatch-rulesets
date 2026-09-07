@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "GR7ZX",
+  "title": "Pirates of the Caribbean",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Pirates of the Caribbean guide",
+      "url": "https://www.kineticist.com/games/pinball/pirates-of-the-caribbean"
+    },
+    "supportingSources": [
+      {
+        "label": "Pinball News production-game rules review",
+        "url": "https://www.pinballnews.com/games/potc/index7.html"
+      },
+      {
+        "label": "David Mainwaring at Pinball Universe Battle 2019",
+        "url": "https://pinballvideos.com/v/3199/2498"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Sink the ship to expose the Kraken while spelling KEY and HEART toward Dead Man's Chest Multiball. Use the spinning Tortuga disc only after its release proves controllable.",
+      "quickInfo": [
+        {
+          "name": "Pirate ship",
+          "summary": "Ship hits lower its sails. Sinking it starts two-ball Battle the Kraken; shoot the ship lane to damage the Kraken."
+        },
+        {
+          "name": "Dead Man's Chest",
+          "summary": "KEY and HEART progress opens the chest and leads to its multiball."
+        },
+        {
+          "name": "Tortuga or Port Royal",
+          "summary": "The spinning disc can hold as many as three balls and creates unpredictable releases."
+        },
+        {
+          "name": "Feature interactions",
+          "summary": "Heart Multiball does not stop other feature progress. Tortuga Multiball can run with it; balls held on the disc raise playfield scoring to 2x, 3x, or 4x."
+        },
+        {
+          "name": "Four Winds",
+          "summary": "Completing all eight compass tasks lights Four Winds Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the ship, chest, Tortuga disc, and both ramp returns during ball save."
+        },
+        {
+          "text": "Attack the pirate ship only from a controlled flipper until its sails are lowered."
+        },
+        {
+          "text": "Finish sinking the ship to start two-ball Battle the Kraken, then shoot the ship lane until the Kraken's life bar reaches zero.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After defeating the Kraken, shoot the ship lane again before the hurry-up expires to start Victory Jig.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot beneath the chest or use the upper-playfield lanes to spell KEY. Shoot the chest to open it, then return to the chest to spell HEART."
+        },
+        {
+          "text": "After KEY and HEART are complete, shoot Dead Man's Chest to start Heart Multiball.",
+          "modeNotes": [
+            "Chest route: KEY and HEART are separate qualifications. Read the inserts before forcing either side of the chest."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Heart Multiball, take the lit major shots and use the extra balls for controlled ship hits.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Ship and Kraken",
+        "when": "Use this when chest progress is distant but the ship shot returns predictably.",
+        "steps": [
+          {
+            "text": "Hit the pirate ship to lower the remaining sails."
+          },
+          {
+            "text": "Sink the ship."
+          },
+          {
+            "text": "Shoot the revealed Kraken."
+          },
+          {
+            "text": "Resume KEY and HEART progress after regaining control."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Tortuga position play",
+          "when": "Use this only after the spinning-disc capture and release are proven safe.",
+          "steps": [
+            {
+              "text": "Trap before entering the disc."
+            },
+            {
+              "text": "Take the lit Tortuga or Port Royal collect."
+            },
+            {
+              "text": "Prepare both flippers for the release."
+            },
+            {
+              "text": "Abandon the disc route after one dangerous feed."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Four Winds",
+        "steps": [
+          {
+            "text": "Complete the ship and Kraken feature."
+          },
+          {
+            "text": "Play Dead Man's Chest Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Finish the remaining major feature inserts."
+          },
+          {
+            "text": "Collect Four Winds after all eight features are complete.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Kraken",
+          "tone": "forest",
+          "kind": "shot"
+        },
+        {
+          "label": "Dead Man's Chest Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Tortuga",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Four Winds",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Ship-shot patience",
+          "instruction": "Hit the ship from a settled flipper; do not repeat into a center feed that has not reached control.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/pirates-of-the-caribbean"
+        },
+        {
+          "name": "Disc-release stance",
+          "instruction": "Keep both flippers ready whenever Tortuga or Port Royal releases a held ball.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/pirates-of-the-caribbean"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Ship, chest, and spinning-disc mechanisms can register or release differently across physical copies.",
+          "response": "Confirm every credited hit on the display and change routes after a reject, weak lock, or unsafe release.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/pirates-of-the-caribbean"
+        }
+      ],
+      "simpleOverview": "Pirates of the Caribbean fills eight compass tasks to light Four Winds Multiball. For an immediate route, sink the ship to start two-ball Battle the Kraken, keep shooting the ship lane until the Kraken is defeated, then return there once more for Victory Jig. Work K-E-Y and H-E-A-R-T at Dead Man's Chest as a separate route to Heart Multiball.",
+      "overview": "Pirates of the Caribbean fills eight compass tasks to light Four Winds Multiball. Sink the ship to start Battle the Kraken, then shoot the ship lane until the Kraken is defeated and return there for Victory Jig. In parallel, spell K-E-Y and H-E-A-R-T at Dead Man's Chest for Heart Multiball; add Tortuga only after its disc release proves controllable.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

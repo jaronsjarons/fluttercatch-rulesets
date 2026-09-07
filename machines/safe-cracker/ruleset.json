@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBxq",
+  "title": "Safe Cracker",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Safe Cracker rulesheet",
+      "url": "https://pinball.org/rules/safecracker2.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Kaylee Campbell at INDISC 2022 Women's",
+        "url": "https://pinballvideos.com/v/4668/6000"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Add time while completing lit drop sets, collect useful board-game items, enter the bank through the shortest prepared entrance, and reach the Vault before the guard or clock ends the attempt.",
+      "quickInfo": [
+        {
+          "name": "Timed play",
+          "summary": "Most switches add or pause time; at zero the game enters Sudden Death until time is restored."
+        },
+        {
+          "name": "Bank entrances",
+          "summary": "Complete the flashing drop sets, lock a ball, then use Cellar, Main Entrance, or Roof for the board game."
+        },
+        {
+          "name": "Board items",
+          "summary": "Keys, dog biscuits, notes, alarm progress, and ATM cards improve the route to the Vault."
+        },
+        {
+          "name": "VAULT letters",
+          "summary": "Safe-number awards spell VAULT; a completed set can lead to Token Multiball on a later break-in."
+        },
+        {
+          "name": "Multiball and time",
+          "summary": "The game clock can be extended during Multiball: completing TNT's target requirement adds 5 seconds, and each Vault or Token Jackpot adds 10 seconds."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the first seconds to test the ramp, Main Entrance, sliding target, wheel, and drop-target returns."
+        },
+        {
+          "text": "Keep the ball moving through safe switches and the wheel to preserve or add time."
+        },
+        {
+          "text": "Complete only the flashing drop sets, then collect the lit lock on the left ramp."
+        },
+        {
+          "text": "Use wheel and manhole awards to obtain the item that removes the nearest board obstacle."
+        },
+        {
+          "text": "Enter through the shortest prepared bank entrance and stop the safe knob deliberately.",
+          "modeNotes": [
+            "Board preparation: Keys handle gates, dog biscuits handle the guard dog, notes help with the teller, and ALARM progress removes alarm spaces."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Advance toward the Vault; take the stash only when continuing would risk the guard catching you or the match target is already secured.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After reaching the Vault, shoot the ramp for a Jackpot, then hit the spinning disc to relight it.",
+          "modeNotes": [
+            "Each Vault or Token Multiball Jackpot adds 10 seconds to the game clock.",
+            "During TNT Multiball, complete the required lit targets to add 5 seconds."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Time-first survival",
+        "when": "Use this when the lit drop sets or bank entrances reject and the clock is low.",
+        "steps": [
+          {
+            "text": "Rip the wheel from a controlled feed."
+          },
+          {
+            "text": "Complete ABC lanes or collect lit Extra Time."
+          },
+          {
+            "text": "Use Disable Computer when available."
+          },
+          {
+            "text": "Resume the break-in only after leaving Sudden Death."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Nearest bank entrance",
+          "when": "Use this when one entrance is ready and the board is sufficiently prepared.",
+          "steps": [
+            {
+              "text": "Read which entrance has the shortest open route."
+            },
+            {
+              "text": "Collect one missing item for that route."
+            },
+            {
+              "text": "Start the board game through that entrance."
+            },
+            {
+              "text": "Quit with the stash if the next risk outweighs reaching the Vault."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "The Vault",
+        "steps": [
+          {
+            "text": "Add time and prepare board items."
+          },
+          {
+            "text": "Shoot the lit lock shot to collect the required lock."
+          },
+          {
+            "text": "Enter the bank through the best route."
+          },
+          {
+            "text": "Pass the guard, obstacles, and gates to reach the Vault.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Sudden Death",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Board Game",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "The Vault",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Token Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Clock management",
+          "instruction": "Choose flowing switch shots when the clock is low; return to drop targets only after time is stable.",
+          "sourceUrl": "https://pinball.org/rules/safecracker2.html"
+        },
+        {
+          "name": "Board-route reading",
+          "instruction": "Before entering, identify the first blocked gate, guard, dog, alarm, or teller on the chosen path.",
+          "sourceUrl": "https://pinball.org/rules/safecracker2.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Safe-knob control, board awards, time, and token behavior are heavily adjustable.",
+          "response": "Read the live board and timer; never assume a route, token, or deterministic knob stop from another machine.",
+          "sourceUrl": "https://pinball.org/rules/safecracker2.html"
+        }
+      ],
+      "simpleOverview": "Safe Cracker runs on a game clock while drop sets, locks, and board-game items prepare a bank entrance. Keep the ball moving because most switches add or pause time, complete only flashing drops, lock at the left ramp, then enter through the shortest prepared route and decide whether to take the stash or continue to the Vault.",
+      "overview": "Safe Cracker runs on a game clock while drop sets, locks, and board-game items prepare a bank entrance. Preserve time, finish flashing drops, collect a left-ramp lock, and use wheel or manhole items to clear the shortest entrance. Reach the Vault when the route is favorable, but take the stash when the guard, remaining time, or match position makes another board risk unnecessary.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "GRvNk",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Collect as many different cards as possible because the cards and Bonus X carry between balls. Use each drop-bank completion to change suits and collect a new Ace, then return through the spinner to the top card pockets.",
+        "steps": [
+          {
+            "text": "Plunge a top pocket for a card that is still missing. The sweeping arm can move the ball through additional pockets."
+          },
+          {
+            "text": "Hit card targets and pockets to build pairs, three of a kind, and four of a kind for 2X, 3X, and 4X Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the drop-target bank, let the lit suit change, then hit the center Ace drop when it represents an Ace you do not have."
+          },
+          {
+            "text": "Repeat the spinner to send the ball back to the top pockets. Completing all 20 cards lights 5X and holds the complete 20,000 base bonus for later balls.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top pocket",
+            "context": "top pocket",
+            "label": "Top card pockets",
+            "description": "The ten shallow card pockets around the sweeping arm.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop-target bank",
+            "context": "drop-target bank",
+            "label": "Card drop bank",
+            "description": "The bank that supplies cards and resets the Ace opportunity.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Ace drop",
+            "context": "center Ace drop",
+            "label": "Ace target",
+            "description": "The center drop target and the only source of each Ace.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "context": "Repeat the spinner",
+            "label": "Spinner",
+            "description": "The repeatable route back to the upper card pockets.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Drop-target rebounds can combine with bumper hits and head toward a drain.",
+            "response": "Use the spinner as the repeat shot and return to the bank only when a missing Ace requires a new suit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvNk-MQkro"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect as many different cards as possible because the cards and Bonus X carry between balls."
+          }
+        ],
+        "simpleOverview": "Hot Hand records a 20-card deck, and both card progress and Bonus X carry between balls. New cards build poker hands and multipliers; completing the drop bank changes suits so the center Ace can award a missing Ace.",
+        "overview": "Hot Hand is a carried card-collection game built around poker hands, Bonus X, and the 20-card completion. Plunge and revisit the top pockets for missing cards, complete the bank to change suits, and take a new Ace at the center drop. Use the spinner to return up top until all cards hold 20,000 base bonus at 5X.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Collect different cards because card and Bonus X progress carries between balls. Use the drop bank to change suits and collect each missing Ace.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Collect different cards",
+            "text": "Plunge a missing top-pocket card, then use the card targets and pockets to build poker hands and Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Collect the Aces",
+            "text": "Complete the drop bank, let the suit change, then hit the center Ace target when it represents an Ace you still need."
+          },
+          {
+            "title": "Return up top",
+            "text": "Repeat the spinner to return to the card pockets. Completing all 20 cards lights 5X and holds the full base bonus for later balls.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect as many different cards as possible because the cards and Bonus X carry between balls."
+          }
+        ],
+        "warning": {
+          "title": "Drop-target rebounds can combine with bumper hits and head toward a drain.",
+          "text": "Use the spinner as the repeat shot and return to the bank only when a missing Ace requires a new suit."
+        }
+      }
+    }
+  ]
+}

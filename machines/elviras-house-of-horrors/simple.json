@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "id": "GZVOd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Take two Garage locks, start Werewolf of Washington, then collect the third lock during the mode to run Wild Women Multiball with it.",
+        "steps": [
+          {
+            "text": "Take the normal Dead End lane skill shot. It adds five bonus multipliers.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the Garage drop target once. Lock two balls at the Garage. Do not take the third lock yet.",
+            "modeNotes": [
+              "Wild Women Multiball: The first Garage drop lights all three locks. The third lock starts the multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the House until its light turns purple. Select Werewolf of Washington. Shoot the House to start it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Werewolf, shoot an orbit to transform. Then shoot flashing ramps or the House. Make the next combo within seven seconds.",
+            "modeNotes": [
+              "Werewolf of Washington: A ramp turns itself off until you make a different shot. The Garage or Crypt ends each transformation.",
+              "Complete three transformations. Then shoot the House for the final shot.",
+              "The mode starts with 45 seconds. Below 15 seconds, a scoring shot resets the timer to 15 seconds."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Take the third Garage lock during Werewolf. Collect one jackpot at each of the five major shots.",
+            "modeNotes": [
+              "Wild Women Multiball: Complete all five major-shot jackpots. Shoot the House for the Super Jackpot.",
+              "After the Super Jackpot, either orbit collects more Supers. The multiball ends when one ball remains."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Werewolf ends, shoot the House before the Trailer Trash hurry-up expires.",
+            "modeNotes": [
+              "Trailer Trash: The collect is 50 percent with no ramp completion, 75 percent with one, and 100 percent with two.",
+              "Trailer Trash can run during multiball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Night of the Living Dead",
+          "when": "Use this route when the orbits do not support the Werewolf combo timer.",
+          "steps": [
+            {
+              "text": "Shoot both ramps before the first House shot. Shoot the House. Then complete four different major shots.",
+              "modeNotes": [
+                "Night of the Living Dead: Do not repeat the same major shot. Shoot the Cellar, then the House, to finish the Haunt."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot both ramps before the House collect to raise Trailer Trash to 100 percent.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Double Trouble",
+            "when": "Use this when the Trunk and Hand of Fate target banks are already close; do not abandon the prepared Haunt and multiball stack to force them.",
+            "steps": [
+              {
+                "text": "Complete the Trunk targets and the Hand of Fate targets to light an inlane."
+              },
+              {
+                "text": "Roll through the lit inlane to start 30 seconds of 2x playfield scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "During the timer, complete either target bank to add 10 seconds. Complete the Trunk and Hand of Fate banks again, then roll through the lit inlane while 2x is still running to begin 4x playfield scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Trunk Multiball stack",
+            "when": "Use this route when the Trunk bank and left ramp are safer than the Garage.",
+            "steps": [
+              {
+                "text": "Hit a Trunk target to select junk. Complete 36-24-36. Shoot the left ramp to collect the junk and lock a ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start a Haunt before you collect the second lock. Repeat the Trunk process to start the two-ball multiball.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the two random jackpot shots. Use the Trunk to change them. Complete the bank to light the left-ramp Super Jackpot.",
+                "modeNotes": [
+                  "Trunk Multiball: The left-ramp Super Jackpot also awards the selected junk. The multiball ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "House Party, Director's Cut, and They Came From Space",
+          "steps": [
+            {
+              "text": "Play or start three Haunts to qualify House Party.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete four Haunts to qualify Director's Cut.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start all six Haunts, or five regular Haunts plus one bonus Haunt, to qualify They Came From Space. Follow each lit start shown by the installed display.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "From a cradle on the right flipper, test a backhand to the Crypt before you use a cross-playfield shot.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/elviras-house-of-horrors-2019",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Complete the Trunk bank first. Then backhand the left ramp from control. Do not force direct Trunk target shots.",
+            "sourceUrl": "https://www.youtube.com/watch?v=2SdIZ-7Me9o",
+            "techniqueSlug": "backhand"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Direct Trunk target shots can return without control.",
+            "response": "Complete the bank through safer rebounds when possible. Then backhand the left ramp from a cradle.",
+            "sourceUrl": "https://www.youtube.com/watch?v=2SdIZ-7Me9o"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Prepare two Wild Women locks."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Play or start three Haunts to light House Party."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Night of the Living Dead: Use this route when the orbits do not support the Werewolf combo timer."
+          },
+          {
+            "name": "Competition settings",
+            "summary": "Wild Market Value qualification and Haunt timers can change with operator settings."
+          }
+        ],
+        "checkBeforePlay": [
+          "Check Wild Market Value qualification and competition timers.",
+          "Test Garage, House, Crypt, Trunk, and left-ramp returns before choosing the stack."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Garage",
+            "label": "Garage",
+            "description": "Drop target and lock used for Wild Women Multiball.",
+            "precision": "unverified",
+            "context": "Drop target and lock used for Wild Women Multiball."
+          },
+          {
+            "term": "House",
+            "label": "House shot",
+            "description": "Center feature shot used to select and start Haunts.",
+            "precision": "unverified",
+            "context": "Center feature shot used to select and start Haunts."
+          },
+          {
+            "term": "Trunk",
+            "label": "Trunk bank",
+            "description": "Target bank that selects a Junk item and lights the left ramp to collect it and lock a ball.",
+            "precision": "unverified",
+            "context": "Target bank that selects a Junk item and lights the left ramp to collect it and lock a ball."
+          }
+        ],
+        "overview": "Elvira's House of Horrors lets a Haunt continue into Garage Multiball. Hit Garage drop, lock two balls, then shoot the House until purple; choose Werewolf with flippers and shoot the House again to start. Take third Garage lock for Wild Women, complete five major-shot Jackpots, shoot the House Super, finish three transformations, then return to the House for Werewolf's final shot and Trailer Trash.",
+        "simpleOverview": "Elvira's House of Horrors lets a Haunt continue into Garage Multiball; Double Trouble adds 30 seconds of 2x playfield scoring. Shoot the House until purple, choose Werewolf of Washington with the flippers, then shoot the House to start it. Hit the Garage drop once, lock two balls, start Werewolf, then take the third Garage lock for Wild Women. Complete the Trunk and Hand of Fate banks, then roll through the lit inlane for 2x.",
+        "machineSetup": [
+          "Check Wild Market Value qualification and competition timers.",
+          "Test Garage, House, Crypt, Trunk, and left-ramp returns before choosing the stack."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the House for Werewolf of Washington, the Garage for Wild Women Multiball, or both ramps for Night of the Living Dead.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Werewolf of Washington",
+            "text": "Shoot the House until its light turns purple. Select Werewolf of Washington, then shoot the House again to start it.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Werewolf of Washington",
+              "reason": "Choose it when the orbits, ramps, and House are controlled shots.",
+              "play": "Shoot an orbit to transform, then make flashing ramps or the House. Complete three transformations and return to the House for the final shot."
+            }
+          },
+          {
+            "title": "Start Wild Women Multiball",
+            "text": "Hit the Garage drop target once, then shoot the Garage for three locks. The third lock starts Wild Women Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Prepare two Wild Women locks."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Play or start three Haunts to light House Party."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Night of the Living Dead: Use this route when the orbits do not support the Werewolf combo timer."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Night of the Living Dead",
+          "when": "Use this when both ramps are safer than the Werewolf orbit shots.",
+          "steps": [
+            {
+              "text": "Shoot both ramps, then shoot the House to start Night of the Living Dead.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

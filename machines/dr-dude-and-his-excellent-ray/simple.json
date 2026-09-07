@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVEJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Collect Magnetic Personality, Gift of Gab, and Heart of Rock 'n Roll, then send the ball up the ramp into the Mix Master and hit at least one of its targets. Lock lights at the left saucer; shoot it for two-ball Multiball. During Multiball, finish the displayed Mix Master target countdown and shoot the ramp for the Jackpot.",
+        "simpleOverview": "Collect Magnetic Personality, Gift of Gab, and Heart of Rock 'n Roll with three direct hits apiece, or spot them through their Mix Master target banks. Then shoot the ramp, hit a Mix Master target, and shoot the lit left saucer for two-ball Multiball. Finish the displayed target countdown and return to the ramp for the Jackpot.",
+        "summary": "Collect the three Elements, shoot the ramp into the Mix Master, and hit one of its targets to light Lock. Shoot the left saucer for two-ball Multiball, finish the displayed Mix Master target countdown, then shoot the ramp for the Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Collect an Element",
+            "summary": "Hit its feature shot three times, or spot it through the matching Mix Master target bank."
+          },
+          {
+            "name": "Light Lock",
+            "summary": "After all three Elements, shoot the ramp and hit at least one Mix Master target."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the lit left saucer."
+          },
+          {
+            "name": "Collect the Jackpot",
+            "summary": "Finish the displayed Mix Master target countdown, then shoot the ramp."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit Magnetic Personality, Gift of Gab, and Heart of Rock 'n Roll three times each, or use the corresponding Mix Master target banks to spot progress.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all three Elements are collected, shoot the ramp into the Mix Master and hit at least one target to light Lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit left saucer to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, hit Mix Master targets until the displayed countdown reaches zero, then shoot the ramp for the Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the four right drop targets before the Jackpot to double its current value.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Run the Reflex sequence",
+            "when": "Use this when direct Element shots are returning poorly.",
+            "steps": [
+              {
+                "text": "Complete the six R-E-F-L-E-X targets to light Reflex 1 at the left saucer.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Collect Reflex 1, then hit Gift of Gab for Reflex 2 and Magnetic Personality for Reflex 3.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Keep doubled scoring alive",
+          "steps": [
+            {
+              "text": "Complete the four right drop targets before collecting the Jackpot to double it.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "If one Multiball ball drains, keep playing the remaining ball; playfield scoring stays doubled through the rest of that ball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the raised value on controllable ramp and feature shots instead of forcing the Mix Master immediately.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Read the displayed Mix Master countdown at the start of Multiball; its target requirement is adjustable.",
+          "Test all three Element shots, the Mix Master motor and targets, ramp, left saucer, right drop bank, and ball lock before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "Elements",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Mix Master",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Reflex",
+            "tone": "teal",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Mix Master",
+            "label": "Mix Master",
+            "description": "The rotating upper feature whose targets qualify and score the Multiball Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramp",
+            "label": "Mix Master ramp",
+            "description": "The ramp into the Mix Master and the eventual Jackpot shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "label": "Left saucer",
+            "description": "The shot that starts Multiball when Lock is lit and begins Reflex 1 when qualified.",
+            "precision": "unverified"
+          },
+          {
+            "term": "four right drop targets",
+            "label": "Jackpot doubler bank",
+            "description": "The right-side four-bank that doubles the current Multiball Jackpot.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cradle",
+            "techniqueSlug": "cradle",
+            "instruction": "Trap one ball on a flipper during Multiball and use the other to loop the ramp and work the Mix Master countdown.",
+            "sourceUrl": "https://www.youtube.com/watch?v=4BLt8QNG1L0"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Mix Master target requirement varies by setup.",
+            "response": "Follow the machine's displayed countdown rather than assuming a fixed number of hits.",
+            "sourceUrl": "https://pinball.org/rules/drdude.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Collect the three Elements, shoot the ramp into the Mix Master, and hit one of its targets to light Lock. Shoot the left saucer for two-ball Multiball, finish the displayed Mix Master target countdown, then shoot the ramp for the Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit Magnetic Personality, Gift of Gab, and Heart of Rock 'n Roll three times each, or use the corresponding Mix Master target banks to spot progress.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all three Elements are collected, shoot the ramp into the Mix Master and hit at least one target to light Lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit left saucer to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, hit Mix Master targets until the displayed countdown reaches zero, then shoot the ramp for the Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the four right drop targets before the Jackpot to double its current value.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Collect an Element",
+            "summary": "Hit its feature shot three times, or spot it through the matching Mix Master target bank."
+          },
+          {
+            "name": "Light Lock",
+            "summary": "After all three Elements, shoot the ramp and hit at least one Mix Master target."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the lit left saucer."
+          }
+        ]
+      }
+    }
+  ]
+}

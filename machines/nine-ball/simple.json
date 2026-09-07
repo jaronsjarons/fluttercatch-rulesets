@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jjx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Plunge the center standup below the upper flipper to set the spinner to 2,500, then shoot the spinner before any spin resets its value. Complete both three-banks to advance Bonus X toward 7x. Build the upper-left horseshoe award to 173,000 before collecting it. For Multiball, advance the numbered drops through 8, hit the flashing ninth target, and use any locked balls: scoring 9 starts three-ball play with two locks, two-ball play with one, and no Multiball with none.",
+        "simpleOverview": "Hit the center skill-shot standup to set the spinner to 2,500, then shoot the spinner. Complete both three-banks for Bonus X, and build the upper-left horseshoe to 173,000 before collecting it. Advance numbers 1 through 8, then score the flashing ninth target; locked balls determine whether that starts Multiball.",
+        "summary": "Use the skill shot to maximize the spinner, complete both three-banks for 7x Bonus, and delay the horseshoe collect until 173,000. Build 1 through 9 with locks ready for Multiball.",
+        "quickInfo": [
+          {
+            "name": "Max the Spinner",
+            "summary": "Hit the center skill target, then shoot the spinner."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete both three-target banks."
+          },
+          {
+            "name": "Delay the Horseshoe",
+            "summary": "Raise it to 173,000 before collecting."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Score the flashing ninth target with one or two balls locked."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On the plunge, hit the center standup below the upper flipper to set the spinner to 2,500, then shoot the spinner before a weak spin resets it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete both three-target banks to advance Bonus X toward 7x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Loop the upper-left horseshoe until its value reaches 173,000, then collect it rather than taking the earlier steps.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Advance numbered targets 1 through 8, then hit the randomly flashing target for 9; with one lock this starts two-ball Multiball, and with two locks it starts three-ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use the left chute",
+            "when": "Use this when numbered-ball progress or the loop value is more useful than a riskier bank rebound.",
+            "steps": [
+              {
+                "text": "Shoot the left chute to spot numbered progress and raise its repeat value.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Carry the 77,000 Super Bonus",
+          "steps": [
+            {
+              "text": "Complete numbers 1 through 8, then score the flashing ninth target.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Preserve the qualified 77,000 Super Bonus for the next ball while continuing to build Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count, lock sharing and memory, Extra Ball and Special conversions, and Bonus X maximum.",
+          "Test the center skill target, spinner, both three-banks, upper-left horseshoe and standup, eight numbered drops, flashing ninth-target lamps, left chute, and three-ball lock mechanism."
+        ],
+        "termStyles": [
+          {
+            "label": "Spinner",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center skill-shot standup",
+            "label": "Center skill-shot standup",
+            "description": "Standup below the upper flipper that maximizes the spinner.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-left horseshoe",
+            "label": "Upper-left horseshoe",
+            "description": "Loop with an escalating collect value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbered targets",
+            "label": "Numbered targets",
+            "description": "Targets used to advance from 1 through 9.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Any spinner movement resets its built value after the scoring pass.",
+            "response": "Shoot it only after setting a useful value, and rebuild before the next attempt.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4jjx-MDbz2"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the skill shot to maximize the spinner, complete both three-banks for 7x Bonus, and delay the horseshoe collect until 173,000. Build 1 through 9 with locks ready for Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "On the plunge, hit the center standup below the upper flipper to set the spinner to 2,500, then shoot the spinner before a weak spin resets it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete both three-target banks to advance Bonus X toward 7x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Loop the upper-left horseshoe until its value reaches 173,000, then collect it rather than taking the earlier steps.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Advance numbered targets 1 through 8, then hit the randomly flashing target for 9; with one lock this starts two-ball Multiball, and with two locks it starts three-ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Max the Spinner",
+            "summary": "Hit the center skill target, then shoot the spinner."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete both three-target banks."
+          },
+          {
+            "name": "Delay the Horseshoe",
+            "summary": "Raise it to 173,000 before collecting."
+          }
+        ]
+      }
+    }
+  ]
+}

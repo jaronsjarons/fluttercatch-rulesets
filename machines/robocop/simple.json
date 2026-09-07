@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "Grlxe",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the spinner and top lanes to finish the three colors without direct target shots. Lock three balls. Build the jackpot to 1,000,000, then collect at the jump ramp.",
+        "steps": [
+          {
+            "text": "Lane-change before the plunge. Put an unlit color insert under the lane between the two flashing guides.",
+            "modeNotes": [
+              "Skill shot: The guided lane scores 100,000 times the ball number. An unlit color insert also spots one target of that color."
+            ]
+          },
+          {
+            "text": "From the right flipper, repeat the left spinner. Nudge the ball into an unlit top lane for an unfinished color.",
+            "modeNotes": [
+              "Color progress: Green needs four standups. Yellow needs three. Red needs the captive ball. Unlit top lanes can spot these targets.",
+              "Completing a color lights one arrest at the jump ramp and raises the spinner value, up to 3,000 per spin on default settings."
+            ]
+          },
+          {
+            "text": "When an arrest is lit, make the right jump ramp to lock one ball. Repeat the spinner and lane route for all three arrests."
+          },
+          {
+            "text": "Lock the third ball at the jump ramp to start three-ball multiball.",
+            "modeNotes": [
+              "RoboCop multiball: The jump ramp is lit for one jackpot. Normal scoring raises its value from about 500,000 to a 1,000,000 cap."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During multiball, rip the spinner and let incidental standup rebounds raise the jackpot to 1,000,000. Then make the jump ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the jackpot, hit five green, yellow, or red standups during multiball. Then shoot the ramp for Special when it is set to 1,000,000 points.",
+            "modeNotes": [
+              "Post-jackpot Special: The target count is operator-adjustable. It is the only planned time to shoot standups directly."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Spinner farm",
+          "when": "Use this when the jump ramp fails or drops into the bumpers.",
+          "steps": [
+            {
+              "text": "Repeat the left spinner from its right-flipper sweet spot."
+            },
+            {
+              "text": "Use unlit top lanes to finish colors and raise the spinner to 3,000 per spin."
+            },
+            {
+              "text": "Continue while the bumper exit stays safe. Take a lit arrest only when the ramp is reliable."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Sweet Jump and 2x",
+            "when": "Use this only when a made jump returns cleanly to the left flipper.",
+            "steps": [
+              {
+                "text": "Make two consecutive jump ramps to start double playfield scoring.",
+                "modeNotes": [
+                  "Double scoring: Two clean jumps start 2x. Further pairs of consecutive jumps refresh the feature on standard settings."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Continue the ramp-to-left-inlane loop, or use the 2x window for the maxed spinner."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Everything Is Lit",
+          "steps": [
+            {
+              "text": "Tie the stored Jumpmaster record with successful jump ramps."
+            },
+            {
+              "text": "Everything lights, including a timed ramp Special and a timed extra ball at the RoboCop scoop."
+            },
+            {
+              "text": "Beat the record for the one-time Jumpmaster award."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Skill-shot double-dip",
+            "instruction": "Move an unlit color insert under the guided lane before plunging. Score the skill shot and spot a needed target with one lane.",
+            "sourceUrl": "https://tiltforums.com/t/robocop-rulesheet/8294"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "Cradle on the right flipper. Find the repeatable left-spinner release point before using the all-day route.",
+            "sourceUrl": "https://www.youtube.com/watch?v=_gaCEWjyuOI&t=116s",
+            "techniqueSlug": "cradle"
+          },
+          {
+            "name": "Jump-ramp post transfer",
+            "instruction": "After a made jump returns left, use the post transfer when this copy supports it. Set up another controlled jump instead of shooting on the fly.",
+            "sourceUrl": "https://tiltforums.com/t/robocop-rulesheet/8294"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "An early spinner shot can hit the center post and drain straight down the middle.",
+            "response": "Find the right-flipper sweet spot before repeating the spinner. Stop when the ball clips the post.",
+            "sourceUrl": "https://tiltforums.com/t/robocop-rulesheet/8294"
+          },
+          {
+            "issue": "Direct green and yellow standup hits can rebound to the right outlane.",
+            "response": "Spot the targets through unlit top lanes. Shoot standups directly only during post-jackpot multiball.",
+            "sourceUrl": "https://www.youtube.com/watch?v=_gaCEWjyuOI&t=468s"
+          },
+          {
+            "issue": "A missed jump ramp falls into the bumpers, where the exit can drain.",
+            "response": "Use the spinner fallback until the jump is dialed in. Watch every bumper exit after a miss.",
+            "sourceUrl": "https://www.youtube.com/watch?v=_gaCEWjyuOI&t=461s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the spinner and top lanes to finish the three colors without direct target shots."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Tie the stored Jumpmaster record with successful jump ramps."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Spinner farm: Use this when the jump ramp fails or drops into the bumpers."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Data East RoboCop code, ball count, lock rules, and award conversions.",
+          "Test the jump ramp, spinner, locks, top lanes, and center-bank rebounds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Repeatable scoring and upper-feed shot.",
+            "precision": "unverified",
+            "context": "Repeatable scoring and upper-feed shot."
+          },
+          {
+            "term": "right jump ramp",
+            "label": "Jump ramp",
+            "description": "Ramp used for major progress and scoring.",
+            "precision": "unverified",
+            "context": "Ramp used for major progress and scoring."
+          },
+          {
+            "term": "top lanes",
+            "label": "Top lanes",
+            "description": "Lanes used for bonus and feature progress.",
+            "precision": "unverified",
+            "context": "Lanes used for bonus and feature progress."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "Bowen Kerins completed colors through the top lanes, repeated the maxed spinner, locked balls at the jump ramp, and built the Multiball Jackpot before collecting it."
+          ]
+        },
+        "simpleOverview": "Robocop uses the spinner and top lanes to finish three color arrests without forcing the standups. Lock each completed color at the jump ramp, start three-ball Multiball, then rip the spinner to build the Jackpot and collect it at the ramp.",
+        "overview": "Completing each green, yellow, or red target color lights one arrest at the jump ramp in Robocop. Take all three ramp locks to start Multiball. During Multiball, normal scoring raises the one available Jackpot toward 1,000,000; collect it at the jump ramp.",
+        "machineSetup": [
+          "Confirm Data East RoboCop code, ball count, lock rules, and award conversions.",
+          "Test the jump ramp, spinner, locks, top lanes, and center-bank rebounds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the spinner and top lanes to finish the three colors without direct target shots. Lock three balls. Build the jackpot to 1,000,000, then collect at the jump ramp.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Lane-change before the plunge. Put an unlit color insert under the lane between the two flashing guides.",
+            "details": [
+              "Skill shot: The guided lane scores 100,000 times the ball number. An unlit color insert also spots one target of that color."
+            ]
+          },
+          {
+            "text": "From the right flipper, repeat the left spinner. Nudge the ball into an unlit top lane for an unfinished color.",
+            "details": [
+              "Color progress: Green needs four standups. Yellow needs three. Red needs the captive ball. Unlit top lanes can spot these targets.",
+              "Completing a color lights one arrest at the jump ramp and raises the spinner value, up to 3,000 per spin on default settings."
+            ]
+          },
+          {
+            "text": "When an arrest is lit, make the right jump ramp to lock one ball. Repeat the spinner and lane route for all three arrests."
+          },
+          {
+            "text": "Lock the third ball at the jump ramp to start three-ball multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "RoboCop multiball: The jump ramp is lit for one jackpot. Normal scoring raises its value from about 500,000 to a 1,000,000 cap."
+            ]
+          },
+          {
+            "text": "During multiball, rip the spinner and let incidental standup rebounds raise the jackpot to 1,000,000. Then make the jump ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the jackpot, hit five green, yellow, or red standups during multiball. Then shoot the ramp for Special when it is set to 1,000,000 points.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Post-jackpot Special: The target count is operator-adjustable. It is the only planned time to shoot standups directly."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the spinner and top lanes to finish the three colors without direct target shots."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Tie the stored Jumpmaster record with successful jump ramps."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Spinner farm: Use this when the jump ramp fails or drops into the bumpers."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Spinner farm",
+          "when": "Use this when the jump ramp fails or drops into the bumpers.",
+          "steps": [
+            {
+              "text": "Repeat the left spinner from its right-flipper sweet spot."
+            },
+            {
+              "text": "Use unlit top lanes to finish colors and raise the spinner to 3,000 per spin."
+            },
+            {
+              "text": "Continue while the bumper exit stays safe. Take a lit arrest only when the ramp is reliable."
+            }
+          ]
+        },
+        "warning": {
+          "title": "An early spinner shot can hit the center post and drain straight down the middle.",
+          "text": "Find the right-flipper sweet spot before repeating the spinner. Stop when the ball clips the post."
+        }
+      }
+    }
+  ]
+}

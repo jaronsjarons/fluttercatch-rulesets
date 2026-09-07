@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ddn",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the lower-right bank and lock at the left saucer, complete the lower-left bank and lock at the top-left saucer, then use 3x playfield scoring to finish the ordered Bonus X banks before repeating the orbit.",
+        "quickInfo": [
+          {
+            "name": "First lock",
+            "summary": "Complete the lower-right four-bank, then shoot the left saucer to lock the first ball."
+          },
+          {
+            "name": "Second lock",
+            "summary": "After the first lock, complete the lower-left four-bank and shoot the top-left saucer to lock the second ball."
+          },
+          {
+            "name": "Eclipse Multiball",
+            "summary": "After both locks, plunge the third ball to start three-ball play with 3x playfield scoring, which becomes 2x playfield scoring with two balls."
+          },
+          {
+            "name": "Bonus X order",
+            "summary": "Collect the left saucer for 2x, center three-bank for 3x, upper-right four-bank for 4x, and upper-left five-bank for 5x."
+          },
+          {
+            "name": "Orbit value",
+            "summary": "Complete the upper target banks to light the lower-right standup that activates the orbit value feature."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the lower-right four-bank. Use the left flipper when it gives the cleanest angle."
+          },
+          {
+            "text": "Shoot the left saucer to lock the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the lock, complete the lower-left four-bank. Earlier hits on this bank do not count."
+          },
+          {
+            "text": "Shoot the top-left saucer to lock the second ball. Plunge to start Eclipse Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Eclipse Multiball, complete the flashing Bonus X stage in order.",
+            "modeNotes": [
+              "Eclipse Multiball: Lock two balls, then plunge the third ball. It gives 3x playfield scoring with three balls and 2x playfield scoring with two balls.",
+              "Bonus X: Collect the left saucer, center three-bank, upper-right four-bank, and upper-left five-bank in that order."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Bonus X reaches 5x, repeat the orbit to the upper playfield."
+          }
+        ],
+        "fallback": {
+          "title": "Ordered bonus route",
+          "when": "Use this when a lock saucer does not accept the ball or the lock sequence is not ready.",
+          "steps": [
+            {
+              "text": "Shoot the flashing Bonus X feature instead of an unlit bank."
+            },
+            {
+              "text": "Build base bonus with lanes and drop targets."
+            },
+            {
+              "text": "Stop after 5x and use upper-playfield orbit shots."
+            },
+            {
+              "text": "Return to the lock sequence when its required bank is active.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Orbit-value route",
+            "when": "Use this after the upper banks are complete and the lower-right pad is safe.",
+            "steps": [
+              {
+                "text": "Complete the upper-right and upper-left target banks."
+              },
+              {
+                "text": "Hit the lower-right pad to activate the orbit value."
+              },
+              {
+                "text": "Repeat the orbit to the top while the return remains controlled."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "3x Multiball and 5x Bonus",
+          "steps": [
+            {
+              "text": "Complete the two lock banks in their required order."
+            },
+            {
+              "text": "Lock two balls and plunge the third ball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Preserve all three balls while you finish the Bonus X sequence.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Reach 5x, then use the orbit for continued scoring."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Eclipse Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "lower-right four-bank",
+            "label": "First-lock target bank",
+            "description": "The lower-right four standups that qualify the first lock at the left saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "label": "First lock saucer",
+            "description": "The saucer above the upper-left flipper used for the first lock and the 2x Bonus X stage.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-left saucer",
+            "label": "Second lock saucer",
+            "description": "The upper-left saucer that accepts the second lock after the lower-left bank is completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "orbit",
+            "label": "Upper-playfield orbit",
+            "description": "The lower-right-to-top orbit used after its value is activated.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Left-flipper lock setup",
+            "instruction": "Move the ball to the left flipper for the lower-right bank and first lock sequence.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4ddn-MLX3E"
+          },
+          {
+            "name": "Right-flipper Multiball setup",
+            "instruction": "During Multiball, use the right flipper for the required target banks when it gives the direct angle.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4ddn-MLX3E"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Every required target bank can send an uncontrolled rebound toward a drain.",
+            "response": "Shoot only the active bank. Use Multiball protection for the later banks when possible.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4ddn-MLX3E"
+          },
+          {
+            "issue": "The center three-bank has a difficult angle and a post below it.",
+            "response": "Shoot it from a controlled flipper. Do not repeat it after a weak or post-bound rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4ddn-MLX3E"
+          },
+          {
+            "issue": "The saucer feeds are usually safe, but a rare machine can behave differently.",
+            "response": "Watch the first eject from each saucer. Trap the return before you continue the sequence.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4ddn-MLX3E"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the 1982 Gottlieb Eclipse, not Black Hole, plus ball count, Extra Ball and Special handling, tilt, and tournament scoring.",
+          "Confirm both virtual locks, ordered Bonus X lamps, orbit-value activation, and 3x-to-2x playfield scoring transition during Multiball.",
+          "Test both saucer ejects, all required target banks, the post below the center three-bank, and the orbit return before choosing the route."
+        ],
+        "simpleOverview": "Eclipse requires two banks and two saucers in order before the third ball begins three-ball play with 3x scoring. Complete the lower-right bank and left-saucer lock, then the lower-left bank and top-left lock, and use Multiball to finish the ordered 2x-through-5x Bonus sequence.",
+        "overview": "Eclipse requires two banks and two saucers in order before the third ball begins three-ball play with 3x scoring. Complete the lower-right bank and left-saucer lock before the lower-left bank and top-left lock, then plunge the third ball. Preserve all three balls while collecting the left saucer, center three-bank, upper-right four-bank, and upper-left five-bank for 2x through 5x, then use the lit orbit.",
+        "machineSetup": [
+          "Confirm the 1982 Gottlieb Eclipse, not Black Hole, plus ball count, Extra Ball and Special handling, tilt, and tournament scoring.",
+          "Confirm both virtual locks, ordered Bonus X lamps, orbit-value activation, and 3x-to-2x playfield scoring transition during Multiball.",
+          "Test both saucer ejects, all required target banks, the post below the center three-bank, and the orbit return before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete the lower-right bank and lock at the left saucer, complete the lower-left bank and lock at the top-left saucer, then use 3x playfield scoring to finish the ordered Bonus X banks before repeating the orbit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the lower-right four-bank. Use the left flipper when it gives the cleanest angle."
+          },
+          {
+            "text": "Shoot the left saucer to lock the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the lock, complete the lower-left four-bank. Earlier hits on this bank do not count."
+          },
+          {
+            "text": "Shoot the top-left saucer to lock the second ball. Plunge to start Eclipse Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Eclipse Multiball, complete the flashing Bonus X stage in order.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Eclipse Multiball: Lock two balls, then plunge the third ball. It gives 3x playfield scoring with three balls and 2x playfield scoring with two balls.",
+              "Bonus X: Collect the left saucer, center three-bank, upper-right four-bank, and upper-left five-bank in that order."
+            ]
+          },
+          {
+            "text": "After Bonus X reaches 5x, repeat the orbit to the upper playfield."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "First lock",
+            "summary": "Complete the lower-right four-bank, then shoot the left saucer to lock the first ball."
+          },
+          {
+            "name": "Second lock",
+            "summary": "After the first lock, complete the lower-left four-bank and shoot the top-left saucer to lock the second ball."
+          },
+          {
+            "name": "Eclipse Multiball",
+            "summary": "After both locks, plunge the third ball to start three-ball play with 3x playfield scoring, which becomes 2x playfield scoring with two balls."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Ordered bonus route",
+          "when": "Use this when a lock saucer does not accept the ball or the lock sequence is not ready.",
+          "steps": [
+            {
+              "text": "Shoot the flashing Bonus X feature instead of an unlit bank."
+            },
+            {
+              "text": "Build base bonus with lanes and drop targets."
+            },
+            {
+              "text": "Stop after 5x and use upper-playfield orbit shots."
+            },
+            {
+              "text": "Return to the lock sequence when its required bank is active.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "Every required target bank can send an uncontrolled rebound toward a drain.",
+          "text": "Shoot only the active bank. Use Multiball protection for the later banks when possible."
+        }
+      }
+    }
+  ]
+}

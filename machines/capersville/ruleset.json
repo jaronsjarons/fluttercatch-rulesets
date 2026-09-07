@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "GrXex",
+  "title": "Capersville",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Capersville",
+      "url": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Capersville machine guide",
+        "url": "https://www.kineticist.com/games/pinball/capersville"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Read the stored balls before the plunge, hit the red bumper to close the zipper flippers, lock balls in the top saucers, then use the white bumper to start multiball.",
+      "quickInfo": [
+        {
+          "name": "Red bumper",
+          "summary": "The red mushroom bumper closes the zipper flippers and protects the center drain."
+        },
+        {
+          "name": "Green bumpers",
+          "summary": "The three green bumpers reopen the flippers and advance the left-chute Zapper value."
+        },
+        {
+          "name": "Blue bumper",
+          "summary": "The blue mushroom bumper opens the gate that admits the ball to the left chute."
+        },
+        {
+          "name": "White bumper",
+          "summary": "The white bumper releases locked balls or advances a ball through the four-step right chute."
+        },
+        {
+          "name": "Stored state",
+          "summary": "Saucer locks and right-chute progress remain between balls and between games."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before the plunge, inspect both top saucers and the right chute for stored balls."
+        },
+        {
+          "text": "If a saucer is empty and the right chute is empty, plunge toward that saucer."
+        },
+        {
+          "text": "Otherwise, plunge through the center lane."
+        },
+        {
+          "text": "Hit the red mushroom bumper to close the zipper flippers."
+        },
+        {
+          "text": "Send controlled balls toward an empty top saucer while the right chute remains empty.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Avoid the green bumpers after the flippers close."
+        },
+        {
+          "text": "After the saucers hold balls, hit the red bumper again if the flippers are open."
+        },
+        {
+          "text": "Hit the white bumper to release the locked balls and start multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Relock a controlled ball when an empty saucer is available during multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Deep 4 chute recovery",
+        "when": "Use this plan when a stored ball in the right chute prevents a saucer lock.",
+        "steps": [
+          {
+            "text": "Read the stored ball's position in the four-step right chute."
+          },
+          {
+            "text": "Hit the white bumper once for each remaining chute step."
+          },
+          {
+            "text": "Prepare for the ball to return to the shooter lane after the fourth step."
+          },
+          {
+            "text": "Plunge the returned ball toward an empty saucer or the center lane."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Zipper-first upper play",
+          "when": "Use this plan when the lock entries reject balls or the stored state is unfavorable.",
+          "steps": [
+            {
+              "text": "Hit the red bumper to close the flippers."
+            },
+            {
+              "text": "Send the ball toward the top without aiming through the green bumpers."
+            },
+            {
+              "text": "Use the closed flippers to protect the center drain."
+            },
+            {
+              "text": "Return to the lock plan when an empty saucer and an empty right chute are available."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Protected three-ball multiball",
+        "steps": [
+          {
+            "text": "Clear any stored ball from the right chute."
+          },
+          {
+            "text": "Lock balls in the two top saucers.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Close the zipper flippers with the red bumper."
+          },
+          {
+            "text": "Hit the white bumper to release the locked balls.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "State-aware plunge",
+          "instruction": "Inspect both saucers and the right chute before each plunge. Choose an empty saucer only when the right chute is empty.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+        },
+        {
+          "name": "White-bumper timing",
+          "instruction": "Hit the white bumper after the flippers close. The same hit releases saucer locks or advances the right-chute ball.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+        },
+        {
+          "name": "Outlane-post nudge",
+          "instruction": "Nudge while the ball contacts the outlane-divider posts. Guide the ball inward toward a flipper without exceeding the tilt limit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A green-bumper hit reopens the zipper flippers.",
+          "response": "Avoid the green bumpers after the red bumper closes the flippers. Prepare for a center drain after any green hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+        },
+        {
+          "issue": "The wide-angle slingshot and outlane posts create frequent side drains.",
+          "response": "Nudge before the ball leaves the divider-post area. Keep the ball away from the outer slingshot face.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+        },
+        {
+          "issue": "Stored locks and right-chute progress can belong to an earlier player or game.",
+          "response": "Inspect the stored state before the plunge. Use available progress, and do not assume that the machine starts empty.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXex-MQk7l"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm 1966 Bally Capersville, ball count, tilt, replay and Special conversion, and whether a prior game left balls in the saucers or Deep 4 chute.",
+        "Confirm that a top saucer locks only while Deep 4 is empty, the white bumper releases locks or advances Deep 4, and state persists between games.",
+        "Test red, green, blue and white bumpers, zipper-flipper action, both saucer holds and releases, Deep 4 timing, left-chute gate, slingshots, and outlane feeds."
+      ],
+      "simpleOverview": "Capersville stores balls in two top saucers and keeps those locks between balls and games. Clear any stored ball from the right chute, hit the red bumper to close the zipper flippers, lock both saucers, then hit the white bumper to release the balls for Multiball.",
+      "overview": "Capersville stores balls in two top saucers and keeps those locks between balls and games. Read the stored state before plunging, clear the right chute, and use the red bumper to close the flippers before filling both saucers. Hit the white bumper to release the locks; green bumpers reopen the flippers and advance the left-chute Zapper value.",
+      "machineSetup": [
+        "Confirm 1966 Bally Capersville, ball count, tilt, replay and Special conversion, and whether a prior game left balls in the saucers or Deep 4 chute.",
+        "Confirm that a top saucer locks only while Deep 4 is empty, the white bumper releases locks or advances Deep 4, and state persists between games.",
+        "Test red, green, blue and white bumpers, zipper-flipper action, both saucer holds and releases, Deep 4 timing, left-chute gate, slingshots, and outlane feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9YD",
+  "title": "Triple Strike",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Classic Pinball Machines",
+      "url": "https://rules.silverballmania.com/rules/GR9YD-MQP1j"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Triple Strike instruction manual",
+        "url": "https://www.ipdb.org/files/2652/Wms_TripleStrike0001.pdf"
+      },
+      {
+        "label": "Kineticist Triple Strike machine guide",
+        "url": "https://www.kineticist.com/games/pinball/triple-strike"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Make three top saucers to hold bonus. Complete A-B-C-D once to light the 10x lanes. Then build the held pin bonus to 39,000 without completing a fourth set.",
+      "steps": [
+        {
+          "text": "Plunge the top saucer. From the right flipper, repeat the left orbit until the saucer has collected three times on this ball.",
+          "modeNotes": [
+            "Hold Bonus: The third top-saucer collect stores the complete pin bonus for the next ball.",
+            "A saucer scores 500 unlit or 5,000 after A-B-C-D is complete."
+          ]
+        },
+        {
+          "text": "Complete A-B-C-D once. Use natural bumper hits for A and B and safe defensive shots for C and D.",
+          "modeNotes": [
+            "Green-star 10x values: One A-B-C-D completion raises the three left-orbit buttons and both inlanes from 100 to 1,000. It raises the top saucer from 500 to 5,000.",
+            "A-B-C-D target progress carries between balls. The lit 10x values end at the drain."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Let upper feeds and safe shots roll over the ten center pin buttons. Complete three full pin sets for 30,000 bonus.",
+          "modeNotes": [
+            "Pin bonus: Each unlit pin is worth 1,000. Each completed ten-pin set lights one 10,000 Strike.",
+            "Three Strike lamps are available."
+          ]
+        },
+        {
+          "text": "After three complete sets, collect up to nine pins in the fourth set for a 39,000 maximum. Do not collect the tenth pin; it resets the loose-pin portion to zero."
+        },
+        {
+          "text": "With Hold Bonus and a large pin bonus secured, repeat the lit left orbit and 5,000 saucer."
+        }
+      ],
+      "fallback": {
+        "title": "Hold Bonus first",
+        "when": "Use this when the A-B-C-D rebounds or side lanes are dangerous.",
+        "steps": [
+          {
+            "text": "Ignore direct drop-target shots."
+          },
+          {
+            "text": "Repeat the left orbit and collect three top saucers."
+          },
+          {
+            "text": "Let natural upper-playfield returns roll over unlit center pin buttons to raise pin bonus."
+          },
+          {
+            "text": "Carry the bonus to the next ball before attempting the remaining letters."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Extra ball or Special",
+          "when": "Use this only when the event awards useful points or allows the extra ball.",
+          "steps": [
+            {
+              "text": "Complete A-B-C-D twice on one ball for extra ball."
+            },
+            {
+              "text": "Make five top saucers to light the left outlane for Special."
+            },
+            {
+              "text": "Do not take these risks after a held 39,000 bonus already secures the needed score."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Held 39,000 bonus",
+        "steps": [
+          {
+            "text": "Make three top saucers to light Hold Bonus."
+          },
+          {
+            "text": "Complete three full pin sets and nine pins of the fourth."
+          },
+          {
+            "text": "Drain without tilting. Start the next ball with the held 39,000."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Shatz pass",
+          "instruction": "With strong flippers, shoot up a wide inlane and continue into the C or D target. Use it only after the target rebound proves safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR9YD-MQP1j",
+          "techniqueSlug": "shatz-pass"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The side outlanes are very large, and old side-wall rubber can be too dead to return the ball.",
+          "response": "Nudge before the ball reaches the dead wall. Do not expect a passive wall bounce to find the inlane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR9YD-MQP1j"
+        },
+        {
+          "issue": "A ball that misses the top saucer can fall through the center or into bumper trouble.",
+          "response": "Test the orbit-to-saucer feed. Stop forcing Hold Bonus when missed entries do not return safely.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR9YD-MQP1j"
+        },
+        {
+          "issue": "Direct A-B-C-D rebounds can drain or feed a bumper.",
+          "response": "Let upper bumper action collect A and B. Shoot C or D only when one hit completes the set or a tested shatz reaches it safely.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR9YD-MQP1j"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Make three top saucers to hold bonus."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Make three top saucers to light Hold Bonus."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Hold Bonus first: Use this when the A-B-C-D rebounds or side lanes are dangerous."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams Triple Strike, ball count, Hold Bonus, and award conversions.",
+        "Test the saucer, A-B-C-D targets, orbit, pins, and kickout."
+      ],
+      "simpleOverview": "In Triple Strike, collect the top saucer three times on one ball to hold pin bonus for the next ball. Complete A-B-C-D once to raise the left-orbit buttons, inlanes, and saucer to 10x value, then complete three ten-pin sets plus nine pins of the fourth for a held 39,000 bonus.",
+      "overview": "In Triple Strike, three top-saucer collects hold pin bonus for the next ball, while one A-B-C-D completion raises the left-orbit buttons, inlanes, and saucer to 10x value until the drain. Secure Hold Bonus first, complete three ten-pin sets plus nine pins of the fourth, then repeat the lit left orbit and 5,000 saucer without collecting the final pin that would reset the loose-pin value.",
+      "machineSetup": [
+        "Confirm Williams Triple Strike, ball count, Hold Bonus, and award conversions.",
+        "Test the saucer, A-B-C-D targets, orbit, pins, and kickout."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "GR612",
+  "title": "Playball / Home Run",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Playball and Home Run",
+      "url": "https://rules.silverballmania.com/rules/GR612-MLyRe"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Playball and Home Run guide",
+        "url": "https://www.kineticist.com/games/pinball/playball-home-run"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Send controlled shots to the two top-corner Triples horseshoes, use a same-flipper return or Dead bounce for the mirror shot, and ignore the narrow vari-targets unless a deep hit is reliable.",
+      "quickInfo": [
+        {
+          "name": "Autoplunger",
+          "summary": "The machine launches each ball from between the flippers, so it has no player-controlled skill shot."
+        },
+        {
+          "name": "Triples horseshoes",
+          "summary": "Each top-corner Triples horseshoe scores 3K on Home Run, while Playball uses one-tenth scoring."
+        },
+        {
+          "name": "Lit bumpers",
+          "summary": "The bumpers stay lit after activation and can start the game in a lit state."
+        },
+        {
+          "name": "Double chutes",
+          "summary": "The side Double chutes add useful value, but their exits can move directly toward the center drain."
+        },
+        {
+          "name": "Vari-target home run",
+          "summary": "A deep vari-target hit scores a 5K home run on Home Run, while Playball uses one-tenth scoring."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Prepare both flippers for the automatic launch from the center of the lower playfield."
+        },
+        {
+          "text": "Control the ball, then shoot the more reliable top-corner Triples horseshoe."
+        },
+        {
+          "text": "Watch the horseshoe return. Catch it on the same flipper or dead-bounce it to the opposite flipper."
+        },
+        {
+          "text": "Use the controlled return for the same horseshoe or its mirror shot."
+        },
+        {
+          "text": "Take incidental hits on a lit center bumper or a side Double chute."
+        },
+        {
+          "text": "Ignore the numbered runner targets during points play."
+        },
+        {
+          "text": "Repeat the Triples route while the top feeds remain controlled."
+        }
+      ],
+      "fallback": {
+        "title": "One-corner Triples loop",
+        "when": "Use this plan when only one top horseshoe has a predictable feed.",
+        "steps": [
+          {
+            "text": "Choose the top-corner Triples horseshoe with the safer entry and return."
+          },
+          {
+            "text": "Shoot only that horseshoe from a controlled flipper."
+          },
+          {
+            "text": "Catch the return or use one dead bounce to regain control."
+          },
+          {
+            "text": "Repeat the same horseshoe instead of forcing the mirror shot."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Deep vari-target home run",
+          "when": "Use this plan only when a forehand or backhand can push a vari-target to its deep value safely.",
+          "steps": [
+            {
+              "text": "Trap the ball and choose the vari-target with the cleaner angle."
+            },
+            {
+              "text": "Make one controlled shot that can reach the home-run value."
+            },
+            {
+              "text": "Prepare for a direct target rebound or a side-chute feed."
+            },
+            {
+              "text": "Return to the Triples horseshoes if the shot does not reach the deep value safely."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeatable top Triples scoring",
+        "steps": [
+          {
+            "text": "Identify the safer top-corner horseshoe."
+          },
+          {
+            "text": "Learn whether its return stays on one flipper or crosses safely."
+          },
+          {
+            "text": "Use a dead bounce when it produces a controlled mirror shot."
+          },
+          {
+            "text": "Repeat the top route and accept incidental bumper or Double-chute value."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Dead bounce",
+          "instruction": "Watch the complete horseshoe feed. Let a suitable return dead-bounce to the other flipper, then shoot the opposite top corner.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR612-MLyRe",
+          "techniqueSlug": "dead-bounce"
+        },
+        {
+          "name": "Controlled vari-target shot",
+          "instruction": "Use a forehand or backhand only when it can push the vari-target deep enough for the home-run value. Stop after an unsafe rebound.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR612-MLyRe"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A ball that exits a side Double chute at the wrong speed can drain through the center.",
+          "response": "Prepare both flippers before the exit. Do not chase a Double chute from an uncontrolled ball.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR612-MLyRe"
+        },
+        {
+          "issue": "Balls can drain beside a vari-target chute or rebound sharply from the target face.",
+          "response": "Ignore the vari-targets unless a controlled forehand or backhand can reach the deep value.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR612-MLyRe"
+        },
+        {
+          "issue": "The center autoplunger returns the ball without a normal plunger-lane pause.",
+          "response": "Keep both flippers ready before each ball enters play. Observe the launch feed before planning the first shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GR612-MLyRe"
+        }
+      ],
+      "simpleOverview": "Playball and Home Run launch each ball automatically and reward repeat shots through the two top-corner Triples horseshoes. Find the safer horseshoe, learn whether it returns to the same flipper or crosses, and repeat that route instead of forcing a narrow vari-target.",
+      "overview": "Playball and Home Run center on two top-corner Triples horseshoes, with bumper, Double-chute, and deep vari-target value around them. Identify the safer horseshoe and use its same-flipper or cross-playfield return to set up the mirror shot. Accept incidental upper scoring, but avoid forcing the Double chutes or vari-targets until their feeds are proven.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

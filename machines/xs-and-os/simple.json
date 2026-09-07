@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "GRpWD",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the left orbit and the upper-right flipper to keep the ball up top, repeatedly complete the upper three-bank, and let the X-O card build from incidental standup hits.",
+        "steps": [
+          {
+            "text": "Short-plunge below the shooter-lane switch before the timed skill shot expires for 100,000."
+          },
+          {
+            "text": "From the lower flippers, shoot the outer-left orbit or feed the upper-right flipper."
+          },
+          {
+            "text": "Use the upper-right flipper to complete the upper three-bank. Each completion raises both the bank and outer-left-lane values."
+          },
+          {
+            "text": "Let standup hits fill the X-O card. If one symbol already dominates the card, time later target hits so they keep that same symbol."
+          },
+          {
+            "text": "Repeat the upper-playfield route. The completed card and any three-in-a-row bonuses carry between balls."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "shooter-lane switch",
+            "context": "shooter-lane switch",
+            "label": "Shooter-lane switch",
+            "description": "The switch above the skill-shot gate that must not be crossed on the short plunge.",
+            "precision": "unverified"
+          },
+          {
+            "term": "outer-left orbit",
+            "context": "outer-left orbit",
+            "label": "Outer-left orbit",
+            "description": "The repeatable route to the upper playfield whose value rises with the drop bank.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper three-bank",
+            "context": "upper three-bank",
+            "label": "Upper three-bank",
+            "description": "The upper drop-target bank that raises both progressive scoring features.",
+            "precision": "unverified"
+          },
+          {
+            "term": "X-O card",
+            "context": "X-O card",
+            "label": "X-O card targets",
+            "description": "The nine standups that fill the held tic-tac-toe card.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Standup-target rebounds can drain through the center.",
+            "response": "Use the upper-playfield route as the backbone and chase a card symbol only when one safe hit completes a valuable line.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpWD-MNEPl"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the left orbit and the upper-right flipper to keep the ball up top, repeatedly complete the upper three-bank, and let the X-O card build from incidental standup hits."
+          }
+        ],
+        "simpleOverview": "X's & O's carries upper-bank, outer-left-lane, and completed X-O-card values between balls. The left orbit and upper-right flipper keep the ball near the drop bank while incidental standup hits fill the card.",
+        "overview": "The repeatable upper-playfield loop in X's & O's raises values that carry between balls, while standups fill the carried X-O card. Take the timed short-plunge award, use the left orbit and upper-right flipper to repeat the upper three-bank, and favor one symbol when possible.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball up top through the left orbit and upper-right flipper, and repeatedly complete the upper drop bank as both progressive values rise.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Reach the upper bank",
+            "text": "Shoot the outer-left orbit, or feed the upper-right flipper from below."
+          },
+          {
+            "title": "Repeat the bank",
+            "text": "Use the upper-right flipper to complete the upper three-bank. Each completion raises both its value and the outer-left-lane value."
+          },
+          {
+            "title": "Keep matching symbols",
+            "text": "Let standup hits build the X-O card. If one symbol dominates, time later hits to keep that same symbol."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the left orbit and the upper-right flipper to keep the ball up top, repeatedly complete the upper three-bank, and let the X-O card build from incidental standup hits."
+          }
+        ],
+        "warning": {
+          "title": "Standup-target rebounds can drain through the center.",
+          "text": "Use the upper-playfield route as the backbone and chase a card symbol only when one safe hit completes a valuable line."
+        }
+      }
+    }
+  ]
+}

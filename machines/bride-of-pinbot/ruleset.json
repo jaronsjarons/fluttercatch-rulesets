@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "GRpee",
+  "title": "Bride of Pinbot",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Bride of Pinbot manual",
+      "url": "https://www.planetarypinball.com/reference/gamemanuals/The_Machine_Bride_of_Pinbot/files/assets/basic-html/toc.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Bride of Pinbot detailed rulesheet",
+        "url": "https://gamefaqs.gamespot.com/pinball/916462-bride-of-pinbot/faqs/1373"
+      },
+      {
+        "label": "Bride of Pinbot tournament play with Steven Bowden",
+        "url": "https://www.youtube.com/watch?v=0GMUB1cB8QY&t=4816s"
+      },
+      {
+        "label": "Eric Stone's 27-billion physical-machine game",
+        "url": "https://www.youtube.com/watch?v=N2XiXiHlaRc&t=1s"
+      },
+      {
+        "label": "Pinball Genie Bride of Pinbot guide",
+        "url": "https://pinball-genie.com/machines/bride-of-pinbot"
+      },
+      {
+        "label": "Jason Zahler at District 82 Super Series 2022: Progressive KO — Round 4",
+        "url": "https://pinballvideos.com/v/4587/4816"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat the Shuttle ramp through the face stages and two-ball multiball, then collect Light 1 Billion at Heartbeat when it appears.",
+      "steps": [
+        {
+          "text": "Take the skill shot. Trap the ball and test the Shuttle ramp from the right flipper."
+        },
+        {
+          "text": "Repeat the Shuttle ramp through Voice, Eye 1, and Eye 2.",
+          "modeNotes": [
+            "Face stages: Each completed stage advances the Bride. Eye 2 starts two-ball multiball."
+          ]
+        },
+        {
+          "text": "During multiball, return balls to the Shuttle ramp for Human Influx, Metamorphosis, Face 4, and Big Wheel spins.",
+          "modeNotes": [
+            "Big Wheel: A completed face can award Light 1 Billion and other values."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When Light 1 Billion appears, shoot the Heartbeat ramp before its timer ends."
+        },
+        {
+          "text": "After a failed Big Wheel award, continue the Shuttle ramp and rebuild the face."
+        }
+      ],
+      "fallback": {
+        "title": "Unlimited Million",
+        "when": "Use this plan when Light 1 Billion is unavailable, rare, or set to a very short timer.",
+        "steps": [
+          {
+            "text": "Continue Shuttle progress for regular Big Wheel awards."
+          },
+          {
+            "text": "During multiball, park one ball or hold it in the Face.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make three consecutive Heartbeat ramps to light Unlimited Million.",
+            "modeNotes": [
+              "Unlimited Million: Repeated Heartbeat shots score millions while the feature remains active."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the jets when neither ramp returns safely."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Quick extra ball",
+          "when": "Use this plan only when extra balls are enabled and count in the event.",
+          "steps": [
+            {
+              "text": "Complete the quick left-loop extra-ball route."
+            },
+            {
+              "text": "Then start the Shuttle-ramp plan."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Billion shot",
+        "steps": [
+          {
+            "text": "Complete the face and spin the Big Wheel."
+          },
+          {
+            "text": "Receive Light 1 Billion."
+          },
+          {
+            "text": "Shoot Heartbeat before the operator-set timer ends."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Trap on the right flipper and test a same-side shot to the Shuttle ramp. Dial the angle on this copy before you repeat it.",
+          "sourceUrl": "https://www.youtube.com/watch?v=N2XiXiHlaRc&t=18s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Gentle multiball pass",
+          "instruction": "On a controlled Shuttle return, let the ball bounce or pass to the right flipper. Trap instead when the tilt is tight.",
+          "sourceUrl": "https://www.youtube.com/watch?v=0GMUB1cB8QY&t=5517s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A fast Shuttle return during multiball can remove control.",
+          "response": "Use a gentle bounce or pass to the right flipper. Trap instead when the tilt is tight.",
+          "sourceUrl": "https://www.youtube.com/watch?v=0GMUB1cB8QY&t=5517s"
+        },
+        {
+          "issue": "The Shuttle timing and backhand can differ by machine copy.",
+          "response": "Dial the ramp from a catch. Do not assume the usual angle works.",
+          "sourceUrl": "https://www.youtube.com/watch?v=N2XiXiHlaRc&t=18s"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Repeat the Shuttle ramp through the face stages and two-ball multiball."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete the face and spin the Big Wheel."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Unlimited Million: Use this plan when Light 1 Billion is unavailable, rare, or set to a very short timer."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm original Bride of Pinbot code, including L-8; exclude Dutch Pinball 2.0 rules.",
+        "Check Light 1 Billion probability and timer; operators can reduce it to 1%."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the District 82 Super Series 2022, Jason Zahler repeatedly used the Shuttle ramp through face progress and Multiball on original Bride of Pinbot code, finishing with 43,872,380."
+        ]
+      },
+      "simpleOverview": "Bride of Pinbot advances one repeating Shuttle ramp through the face stages and into two-ball Multiball. Keep returning to Shuttle until the Big Wheel offers Light 1 Billion, then shoot Heartbeat before its timer ends. Use three consecutive Heartbeat ramps for Unlimited Million when the Billion is unavailable.",
+      "overview": "Bride of Pinbot is a repeating Shuttle-ramp progression through face stages, Multiball, and Big Wheel awards. Continue Shuttle through Metamorphosis and the later face stages, then collect Light 1 Billion at Heartbeat when offered. Otherwise, use Multiball control to complete three Heartbeat ramps and light Unlimited Million.",
+      "machineSetup": [
+        "Confirm original Bride of Pinbot code, including L-8; exclude Dutch Pinball 2.0 rules.",
+        "Check Light 1 Billion probability and timer; operators can reduce it to 1%."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

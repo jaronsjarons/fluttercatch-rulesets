@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Xbk",
+  "title": "Liberty Belle",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Liberty Belle",
+      "url": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Liberty Belle machine guide",
+        "url": "https://www.kineticist.com/games/pinball/liberty-belle"
+      },
+      {
+        "label": "BMU Pinball EM-cyclopedia",
+        "url": "https://tiltforums.com/uploads/default/original/2X/0/0093d7772690b6e81ab4badda51921259159d3dc.pdf"
+      },
+      {
+        "label": "1962 Liberty Belle flyer archive",
+        "url": "https://nypinball.com/flyers/liberty-belle/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the center standup to light all three bumpers, keep sending the ball up top, and take a clean lit 10x roto-target shot when its entry opens.",
+      "quickInfo": [
+        {
+          "name": "Center standup",
+          "summary": "The center standup target lights all three upper bumpers."
+        },
+        {
+          "name": "Roto-target light",
+          "summary": "Exactly one of the four roto targets is lit, and switch hits move that light."
+        },
+        {
+          "name": "Ten-times target",
+          "summary": "A clean shot at the lit roto target collects its 10x value."
+        },
+        {
+          "name": "Inner rotos",
+          "summary": "Each inner roto target is available through the bumper gap from the opposite upper flipper."
+        },
+        {
+          "name": "Outer rotos",
+          "summary": "Each outer roto target is available through an early flying backhand from the upper flipper below it."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the lit roto target and the three bumper lamps before the plunge."
+        },
+        {
+          "text": "Hit the center standup target to light all three upper bumpers."
+        },
+        {
+          "text": "Send the ball to the upper playfield through the most open path."
+        },
+        {
+          "text": "Nudge among the upper bumpers to extend scoring and produce roto-target contacts."
+        },
+        {
+          "text": "Track the lit roto target as switch hits move its lamp."
+        },
+        {
+          "text": "Take a direct roto-target shot only when its 10x lamp and entry are both clear."
+        },
+        {
+          "text": "Otherwise, return the ball to the upper bumpers."
+        },
+        {
+          "text": "Repeat upper play while the exits remain survivable."
+        }
+      ],
+      "fallback": {
+        "title": "Two-stage upper-flipper route",
+        "when": "Use this plan when the lower flippers cannot reach the outer roto targets consistently.",
+        "steps": [
+          {
+            "text": "Use a lower flipper to send the ball back to the upper playfield."
+          },
+          {
+            "text": "Track the ball as it leaves the upper bumpers toward an upper flipper."
+          },
+          {
+            "text": "Use that upper flipper for the next roto-target attempt."
+          },
+          {
+            "text": "Return to bumper play when the lit target is not available."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Lit outer-roto flying backhand",
+          "when": "Use this plan when the ball falls from the upper bumpers toward the flipper below the lit outer target.",
+          "steps": [
+            {
+              "text": "Confirm that the outer roto target above the receiving flipper is lit."
+            },
+            {
+              "text": "Flip early while the ball still moves toward the upper flipper."
+            },
+            {
+              "text": "Deflect the ball directly at the target or toward the outside edge of the nearby bumper."
+            },
+            {
+              "text": "Stop the attempt when the feed is late or the target lamp moves."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit-bumper 10x roto scoring",
+        "steps": [
+          {
+            "text": "Hit the center standup to light all three bumpers."
+          },
+          {
+            "text": "Keep the ball moving through the upper bumpers."
+          },
+          {
+            "text": "Track which roto target has the 10x lamp."
+          },
+          {
+            "text": "Use the matching upper-flipper route when its entry opens."
+          },
+          {
+            "text": "Collect the lit roto target, then resume upper play."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the lit outer roto target from the same-side upper flipper while its falling feed is still controllable.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3"
+        },
+        {
+          "name": "Inner-roto cross shot",
+          "instruction": "Use the opposite upper flipper. Send the ball through the bumper gap toward the lit inner roto target.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "On a flying backhand, use the outside edge of the nearby top bumper when the direct outer-target line is closed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3",
+          "techniqueSlug": "backhand"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A flipper stroke usually sends the ball out of control.",
+          "response": "Flip only for an open upper route or lit roto target. Track the full rebound before the next stroke.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3"
+        },
+        {
+          "issue": "Balls leaving the upper playfield have unpredictable paths.",
+          "response": "Prepare all four flippers. Do not commit to a roto-target shot until the receiving upper flipper has a clear feed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3"
+        },
+        {
+          "issue": "The center standup target can produce a dangerous rebound.",
+          "response": "Shoot it only until all three bumpers light. Return to upper play after the lights are on.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4Xbk-MQ6d3"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the four-player 1962 Gottlieb Liberty Belle, not the 1977 Williams Liberty Bell.",
+        "Confirm ball count, replay and Special handling, tilt, bumper-lamp behavior, and any tournament conversions.",
+        "Test center-standup rebounds, all four roto targets, three bumpers, upper and lower flippers, slingshots, and upper exits."
+      ],
+      "simpleOverview": "Liberty Belle moves one 10x lamp among four roto targets while its upper bumpers can be lit from the center standup. Hit the center standup to light the bumpers, keep the ball upstairs, and use the matching upper flipper when the lit roto target opens.",
+      "overview": "Liberty Belle moves one 10x lamp among four roto targets while its upper bumpers can be lit from the center standup. Hit the center standup, keep the ball in the bumpers, and track the lit roto position. Shoot an inner target through the opposite bumper gap or an outer target with the upper flipper below it, then resume upper play.",
+      "machineSetup": [
+        "Confirm the four-player 1962 Gottlieb Liberty Belle, not the 1977 Williams Liberty Bell.",
+        "Confirm ball count, replay and Special handling, tilt, bumper-lamp behavior, and any tournament conversions.",
+        "Test center-standup rebounds, all four roto targets, three bumpers, upper and lower flippers, slingshots, and upper exits."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

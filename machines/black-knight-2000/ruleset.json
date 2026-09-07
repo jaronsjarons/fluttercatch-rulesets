@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "id": "GrxPP",
+  "title": "Black Knight 2000",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Black Knight 2000 tournament tutorial with Danni",
+      "url": "https://www.youtube.com/watch?v=xiolQ8l17vY&t=117s"
+    },
+    "supportingSources": [
+      {
+        "label": "Black Knight 2000 complete rulesheet",
+        "url": "https://www.pinball.org/rules/blackknight2000.html"
+      },
+      {
+        "label": "Kineticist Black Knight 2000 overview",
+        "url": "https://www.kineticist.com/games/pinball/black-knight-2000"
+      },
+      {
+        "label": "Buffalo Pinball Black Knight 2000 tutorial",
+        "url": "https://www.youtube.com/watch?v=Bjo9kvsVr-A&t=275s"
+      },
+      {
+        "label": "Black Knight 2000 rules demonstration",
+        "url": "https://www.youtube.com/watch?v=O4mr9s8EJE0&t=80s"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Keep the ball upstairs. Collect rising WAR hurry-ups, then start Drawbridge Multiball and shoot its jackpot.",
+      "steps": [
+        {
+          "text": "Find the Magna-Save button above the right flipper button. Test the Skyway and upper Loop feeds."
+        },
+        {
+          "text": "Keep the ball on the upper playfield. Complete W-A-R in the top lanes."
+        },
+        {
+          "text": "Shoot Skyway when the hurry-up is lit. Repeat this cycle as its starting value rises.",
+          "modeNotes": [
+            "WAR Hurry-Up: Complete W-A-R, then shoot Skyway before the value counts down."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit Drawbridge targets 1, 2, and 3. Lock three balls at the Drawbridge.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During multiball, trap a ball on the left flipper. Shoot the Drawbridge jackpot from the right flipper.",
+          "modeNotes": [
+            "Drawbridge Multiball: The Drawbridge shot scores the main jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When useful, park one ball in the Challenge Lane for about ten seconds.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Upper-playfield loop",
+        "when": "Use this plan when the Drawbridge targets or locks are not reliable.",
+        "steps": [
+          {
+            "text": "Ignore lower-playfield targets."
+          },
+          {
+            "text": "Loop the upper playfield and complete W-A-R."
+          },
+          {
+            "text": "Collect each safe Skyway hurry-up.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the Lightning Lane to return upstairs."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Double Knights Challenge",
+          "when": "Use this faster comeback route only when you need a large score immediately.",
+          "steps": [
+            {
+              "text": "Shoot the U-Turn."
+            },
+            {
+              "text": "Start Double Knights Challenge at the far-right lane.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete W-A-R for one million before either ball drains.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "King's Ransom",
+        "steps": [
+          {
+            "text": "Collect rising WAR hurry-ups.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build held bonus with consecutive upper Loops."
+          },
+          {
+            "text": "Complete Drawbridge Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue W-I-N-to-Drawbridge progress for R-A-N-S-O-M."
+          },
+          {
+            "text": "Start King's Ransom for 20 seconds of replenished three-ball play.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect Drawbridge Jackpot, one-million WAR sets, 250K U-Turns, and the first one-million Skyway.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "WAR Hurry-Up",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Drawbridge Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Double Knights Challenge",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "King's Ransom",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Flipper staging upstairs",
+          "instruction": "Stage the upper and lower flippers so an unwanted upper-playfield ball can pass through the orbit to the lower flippers.",
+          "techniqueSlug": "flipper-staging",
+          "sourceUrl": "https://www.youtube.com/watch?v=xiolQ8l17vY&t=917s"
+        },
+        {
+          "name": "Challenge Lane ball park",
+          "instruction": "Send one ball into the Challenge Lane to remove it from play for about ten seconds while you control the other ball.",
+          "sourceUrl": "https://www.youtube.com/watch?v=O4mr9s8EJE0&t=80s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The lower playfield has dangerous returns.",
+          "response": "Send the ball back through Skyway or Lightning Lane instead of shooting lower targets.",
+          "sourceUrl": "https://www.youtube.com/watch?v=xiolQ8l17vY&t=117s"
+        },
+        {
+          "issue": "The U-Turn can return the ball toward the center.",
+          "response": "Use it only for a deliberate Double Knights Challenge attempt.",
+          "sourceUrl": "https://www.youtube.com/watch?v=xiolQ8l17vY&t=180s"
+        },
+        {
+          "issue": "Magna-Save is manual.",
+          "response": "Press its separate button before the ball passes the magnet.",
+          "sourceUrl": "https://www.pinball.org/rules/blackknight2000.html"
+        },
+        {
+          "issue": "A Drawbridge lock switch can fail to give credit.",
+          "response": "Do not shake the machine. Stop and call the tournament director.",
+          "sourceUrl": "https://www.pinball.org/rules/blackknight2000.html"
+        },
+        {
+          "issue": "Some tournament machines have a modified W-A-R wireform.",
+          "response": "Observe the first feed before you trust it.",
+          "sourceUrl": "https://www.youtube.com/watch?v=xiolQ8l17vY&t=55s"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams Black Knight 2000, installed code (commonly L-4), ball count, tilt, Extra Ball and Special conversion, Last Chance, and shared multiplayer locks.",
+        "Confirm whether Drawbridge closes after each lock or Jackpot, Jackpot start and maximum, KNIGHT timer, WAR hurry-up ladder, and RANSOM persistence.",
+        "Test Skyway and upper Loop feeds, Drawbridge sensors and releases, Challenge Lane hold, Lightning eject, staged flippers, Magna-Save, Kickback, U-Turn, and lower returns."
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Keep the ball upstairs."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect rising WAR hurry-ups."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Upper-playfield loop: Use this plan when the Drawbridge targets or locks are not reliable."
+        }
+      ],
+      "simpleOverview": "In Black Knight 2000, completing W-A-R lights a timed Skyway award, while the three Drawbridge targets open the locks below. Keep returning upstairs for the rising W-A-R hurry-ups, then lock three balls at the Drawbridge for Multiball.",
+      "overview": "Black Knight 2000 repeats W-A-R hurry-ups in the upper playfield while lower Drawbridge progress qualifies three locks and its Multiball Jackpot. Keep the ball upstairs and collect rising Skyway awards, then take the locks and shoot the Drawbridge Jackpot. Use Double Knights Challenge only as the faster comeback route.",
+      "machineSetup": [
+        "Confirm Williams Black Knight 2000, installed code (commonly L-4), ball count, tilt, Extra Ball and Special conversion, Last Chance, and shared multiplayer locks.",
+        "Confirm whether Drawbridge closes after each lock or Jackpot, Jackpot start and maximum, KNIGHT timer, WAR hurry-up ladder, and RANSOM persistence.",
+        "Test Skyway and upper Loop feeds, Drawbridge sensors and releases, Challenge Lane hold, Lightning eject, staged flippers, Magna-Save, Kickback, U-Turn, and lower returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

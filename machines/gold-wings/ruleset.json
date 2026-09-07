@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "G5WXd",
+  "title": "Gold Wings",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Gold Wings factory instruction cards",
+      "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Gold_Wings_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Gold Wings machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/gold-wings"
+      },
+      {
+        "label": "Gold Wings exact-machine tutorial",
+        "url": "https://www.youtube.com/watch?v=kvr9siSNU2k"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Build the playfield multiplier with the three top lanes or the flashing left loop, then shoot the right ramp and lock a ball at the upper lock. On the next plunge, guide the ball through the lower-left gate to light the right orbit; shoot that orbit to start Multiball. The active playfield multiplier applies during Multiball, making the spinner and Loop-de-Loop especially valuable.",
+      "simpleOverview": "Build the playfield multiplier, shoot the right ramp, and lock a ball at the upper lock. On the next plunge, send the ball through the lower-left gate to light the right orbit, then shoot the lit orbit for Multiball. Use the spinner and Loop-de-Loop while the multiplier is active.",
+      "summary": "Complete the top lanes or shoot the flashing left loop to raise the multiplier, then use the right ramp to lock a ball. Make the lower-left gate on the served ball and shoot the lit right orbit for Multiball.",
+      "quickInfo": [
+        {
+          "name": "Raise the Multiplier",
+          "summary": "Complete the top lanes or make the flashing left loop."
+        },
+        {
+          "name": "Lock a Ball",
+          "summary": "Use the right ramp to reach the upper lock."
+        },
+        {
+          "name": "Light Multiball",
+          "summary": "Send the served ball through the lower-left gate."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Shoot the lit right orbit."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the three top lanes or shoot the flashing left loop to raise the playfield multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the right ramp, then make the upper lock shot; the game serves another ball to the shooter lane.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "On the served ball, guide the plunge and upper-playfield feed through the lower-left gate beside the lower-left flipper to light the right orbit.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit right orbit to start Multiball, then use the spinner and Loop-de-Loop while the multiplier is active.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build the 1–8 award",
+          "when": "Use this while recovering from a missed lock or orbit start.",
+          "steps": [
+            {
+              "text": "Complete numbered targets 1 through 8 to light the configured Extra Ball award.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Resume the ramp, lock, gate, and right-orbit sequence with a controlled feed.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximize multiplied switch scoring",
+        "steps": [
+          {
+            "text": "Complete the top lanes or shoot the flashing left loop before locking the ball so Multiball begins with a higher playfield multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Multiball, rip the spinner and repeat the Loop-de-Loop because both scale strongly with the active multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm ball count, Extra Ball and Special conversions, lock sharing, and whether multiplier progress carries between balls.",
+        "Test the right ramp and upper lock, served-ball feed, lower-left gate switch, right-orbit start lamp, three top lanes, left loop, spinner, and Loop-de-Loop."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Playfield multiplier",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Loop-de-Loop",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Locking a ball does not start Multiball or light its start shot by itself.",
+          "response": "Use the next served ball to make the lower-left gate, then shoot the newly lit right orbit.",
+          "sourceUrl": "https://www.youtube.com/watch?v=kvr9siSNU2k"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

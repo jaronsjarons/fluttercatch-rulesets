@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "GRvzd",
+  "title": "High Speed",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "High Speed complete rulesheet",
+      "url": "https://pinball.org/rules/highspeed.html"
+    },
+    "supportingSources": [
+      {
+        "label": "High Speed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Williams/Williams_High_Speed_instruction_cards.zip"
+      },
+      {
+        "label": "High Speed machine and playfield overview",
+        "url": "https://www.pinballrebel.com/game/pins/high_speed/high_speed_pinball.htm"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Complete the flashing stoplight targets through green, yellow, and red, then shoot the side ramp to run the red light and start Police Chase. Shoot the ramp again during Police Chase: it locks one ball, automatically locks the next served ball, and releases both when the third ball reaches play for three-ball Multiball. During Multiball, shoot the ramp for the Hideout Jackpot.",
+      "simpleOverview": "Complete the flashing stoplight targets through green, yellow, and red. Shoot the side ramp to start Police Chase, then make the ramp again to escape and start Multiball. During Multiball, shoot the ramp for the Hideout Jackpot.",
+      "summary": "Finish the green, yellow, and red stoplights, shoot the side ramp for Police Chase, then shoot it again to escape and start Multiball. Return to the ramp during Multiball for the Hideout Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Build the Stoplight",
+          "summary": "Complete the flashing green, yellow, and red targets."
+        },
+        {
+          "name": "Start Police Chase",
+          "summary": "Shoot the side ramp while the red light is lit."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Shoot the ramp again during Police Chase."
+        },
+        {
+          "name": "Collect Jackpot",
+          "summary": "Return to the ramp during Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the flashing stoplight targets to advance from green through yellow to red.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the side ramp while red is lit to run the light and start Police Chase.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the ramp again during Police Chase to escape: one ball locks, the next served ball auto-locks, and the third ball releases both for Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the side ramp once for the Hideout Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Escape through the eject hole",
+          "when": "Use this when the ramp is rejecting shots during Police Chase.",
+          "steps": [
+            {
+              "text": "During Police Chase, complete all nine stoplight targets in any order to light Escape at the upper-right eject hole.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the lit eject hole to escape and begin Multiball without making the ramp again.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Advance the Freeways",
+        "steps": [
+          {
+            "text": "Roll through an inlane to light the opposite Freeway, then make that timed orbit or loop shot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeated Freeways raise their value and eventually light useful features including the inlanes, spinners, Hold Bonus, and Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm three- versus five-ball play, extra-ball and Special conversions, lock sharing, and the operator-set Freeway timer.",
+        "Test all nine stoplight targets, side ramp and lock gate, upper-right eject hole, both Freeway switches, inlanes, kickback, and three-ball release."
+      ],
+      "termStyles": [
+        {
+          "label": "Police Chase",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Hideout Jackpot",
+          "tone": "indigo",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The first red-lit ramp starts Police Chase; it does not start Multiball by itself.",
+          "response": "Keep control and make the ramp again during Police Chase, or complete all nine targets and use the lit eject hole.",
+          "sourceUrl": "https://pinball.org/rules/highspeed.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

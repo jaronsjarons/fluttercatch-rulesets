@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "G57X4",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot each ramp to raise Bud and Buzz, hit each gofer, and collect both locks. Start Multiball at the Putting Green, shoot the left ramp for Jackpot and Hole-In-One for Super, and use the right ramp to relight Jackpot when needed.",
+        "quickInfo": [
+          {
+            "name": "Gofer locks",
+            "summary": "Shoot each ramp to raise its gofer, hit the gofer, then lock under the lowered ramp."
+          },
+          {
+            "name": "Multiball start",
+            "summary": "After both locks, the Putting Green or Hole-In-One starts Multiball."
+          },
+          {
+            "name": "Jackpot loop",
+            "summary": "The left ramp scores Jackpot, Hole-In-One scores Super, and the right ramp relights Jackpot."
+          },
+          {
+            "name": "Golf holes",
+            "summary": "Complete drive shots, then putt out; gofer hits reduce strokes and improve bonus."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the center ramp, right ramp, left ramp, and Putting Green kickout during ball save."
+          },
+          {
+            "text": "Shoot the center ramp to raise Bud, hit Bud before he lowers, then lock under the center ramp."
+          },
+          {
+            "text": "Shoot the right ramp to raise Buzz, hit Buzz, then collect the second lock under the right ramp."
+          },
+          {
+            "text": "Shoot the Putting Green or Hole-In-One to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for Jackpot, then use the lowered Driving Range and upper flipper to reach Hole-In-One for Super.",
+            "modeNotes": [
+              "Jackpot relight: The right ramp can relight Jackpot, so use it when Hole-In-One is not safely available."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat Jackpot, relight, and Super only while the upper-flipper feed remains controlled.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Golf-hole position play",
+          "when": "Use this when the gofer ramps reject but the five drive shots and Putting Green are safe.",
+          "steps": [
+            {
+              "text": "Complete controlled drive shots until the Putting Green is lit."
+            },
+            {
+              "text": "Hit a raised gofer when it safely reduces the hole's stroke count."
+            },
+            {
+              "text": "Shoot the Putting Green to finish the hole."
+            },
+            {
+              "text": "Protect the improved hole bonus through the drain."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Jackpot-only multiball",
+            "when": "Use this when Hole-In-One is rejecting or the upper flipper is weak.",
+            "steps": [
+              {
+                "text": "Start Multiball."
+              },
+              {
+                "text": "Shoot the left ramp for Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the right ramp to relight Jackpot."
+              },
+              {
+                "text": "Repeat left-ramp Jackpots instead of forcing the Super.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Hole 9 and Super cycle",
+          "steps": [
+            {
+              "text": "Finish holes through drive and putt sequences."
+            },
+            {
+              "text": "Use gofer hits to reduce strokes."
+            },
+            {
+              "text": "Reach the later-hole features."
+            },
+            {
+              "text": "Continue Jackpot and Super cycles whenever multiball is ready.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Jackpot",
+            "tone": "navy",
+            "kind": "jackpot"
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "gold",
+            "kind": "jackpot"
+          },
+          {
+            "label": "Hole-In-One",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center ramp",
+            "context": "center ramp",
+            "label": "Bud ramp",
+            "description": "Center ramp raises Bud and exposes the first lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "right ramp",
+            "label": "Buzz and relight ramp",
+            "description": "Right ramp raises Buzz and relights Multiball Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "context": "left ramp",
+            "label": "Jackpot ramp",
+            "description": "Left ramp scores the Multiball Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Putting Green",
+            "context": "Putting Green",
+            "label": "Hole and Multiball start",
+            "description": "Putting Green completes holes and starts Multiball when lit.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Gofer timing",
+            "instruction": "Raise only one gofer at a time and hit it before spending another shot elsewhere.",
+            "sourceUrl": "https://www.pinball.org/rules/nogoodgofers.html"
+          },
+          {
+            "name": "Upper-flipper Super",
+            "instruction": "Use a lower-flipper cradle to establish the Driving Range feed before attempting Hole-In-One.",
+            "sourceUrl": "https://www.pinball.org/rules/nogoodgofers.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The gofer toys, movable ramps, wheel, and Putting Green kickout can make identical shots return differently.",
+            "response": "Test the kickout and upper-playfield feed before committing to Super Jackpot; use repeat Jackpots when hardware is inconsistent.",
+            "sourceUrl": "https://www.pinball.org/rules/nogoodgofers.html"
+          }
+        ],
+        "simpleOverview": "No Good Gofers uses its two ramps to raise Bud and Buzz, then locks balls beneath those ramps. Start Multiball at the Putting Green, shoot the left ramp for Jackpot, and use the upper flipper for Hole-In-One Super. The right ramp relights Jackpot when repeating the safer loop.",
+        "overview": "No Good Gofers uses its two ramps to raise Bud and Buzz, then locks balls beneath those ramps. Shoot each gofer's ramp to raise it, hit the gofer, lock beneath its ramp, then start at the Putting Green. Repeat left-ramp Jackpots and right-ramp relights, adding Hole-In-One Super only when the upper-flipper feed is controlled.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot each ramp to raise Bud and Buzz, hit each gofer, and collect both locks. Start Multiball at the Putting Green, shoot the left ramp for Jackpot and Hole-In-One for Super, and use the right ramp to relight Jackpot when needed.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the center ramp, right ramp, left ramp, and Putting Green kickout during ball save."
+          },
+          {
+            "text": "Shoot the center ramp to raise Bud, hit Bud before he lowers, then lock under the center ramp."
+          },
+          {
+            "text": "Shoot the right ramp to raise Buzz, hit Buzz, then collect the second lock under the right ramp."
+          },
+          {
+            "text": "Shoot the Putting Green or Hole-In-One to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for Jackpot, then use the lowered Driving Range and upper flipper to reach Hole-In-One for Super.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Jackpot relight: The right ramp can relight Jackpot, so use it when Hole-In-One is not safely available."
+            ]
+          },
+          {
+            "text": "Repeat Jackpot, relight, and Super only while the upper-flipper feed remains controlled.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gofer locks",
+            "summary": "Shoot each ramp to raise its gofer, hit the gofer, then lock under the lowered ramp."
+          },
+          {
+            "name": "Multiball start",
+            "summary": "After both locks, the Putting Green or Hole-In-One starts Multiball."
+          },
+          {
+            "name": "Jackpot loop",
+            "summary": "The left ramp scores Jackpot, Hole-In-One scores Super, and the right ramp relights Jackpot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Golf-hole position play",
+          "when": "Use this when the gofer ramps reject but the five drive shots and Putting Green are safe.",
+          "steps": [
+            {
+              "text": "Complete controlled drive shots until the Putting Green is lit."
+            },
+            {
+              "text": "Hit a raised gofer when it safely reduces the hole's stroke count."
+            },
+            {
+              "text": "Shoot the Putting Green to finish the hole."
+            },
+            {
+              "text": "Protect the improved hole bonus through the drain."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

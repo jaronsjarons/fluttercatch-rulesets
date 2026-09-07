@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoz4",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Bookworm with Riddler, then use Mr. Freeze with Catwoman before Villain Multiball. Complete King Tut modes to raise the Main Channel multiplier.",
+        "steps": [
+          {
+            "text": "Complete the three TV targets, shoot the left orbit, use the flippers to choose Bookworm, and press the action button to confirm.",
+            "modeNotes": [
+              "Complete Bookworm so Minor Villain awards remain active for the rest of the game."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot either orbit to qualify Riddler, then shoot the Bat-Phone. Shoot either orbit again, complete every shot it lights, and collect the Super Jackpot at the scoop when ready.",
+            "modeNotes": [
+              "Riddler is the Major Villain paired with Bookworm in this route."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the TV targets, shoot the left orbit, select Mr. Freeze, and press the action button. Complete his first phase before starting Villain Multiball.",
+            "modeNotes": [
+              "Completing all three phases freezes Bat-Phone, Minor Villain, playfield-multiplier, Bat Turn, and first-phase Villain Escape timers for the rest of the ball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "While Mr. Freeze runs, shoot both ramps once to qualify Catwoman, then shoot the Bat-Phone to start her.",
+            "modeNotes": [
+              "Catwoman's ramp shots overlap with Mr. Freeze."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Catwoman, hit both turntable targets, then collect all three locks at the right orbit for Villain Multiball.",
+            "modeNotes": [
+              "Collect 12 major-shot Jackpots, then shoot the Atomic Pile for the Super Jackpot."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the TV targets, shoot the left orbit, select King Tut, and press the action button.",
+            "modeNotes": [
+              "The first King Tut completion saves Minor Villain progress. Later completions raise the Main Channel multiplier for the rest of the ball."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Mad Hatter recovery",
+          "when": "Use this plan after a failed Bookworm or Mr. Freeze mode.",
+          "steps": [
+            {
+              "text": "Select Mad Hatter as the next minor villain.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Mad Hatter to replay the failed minor villain.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the main stack after the replay.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Shame into Villain Multiball",
+            "when": "Use this plan when about 50 million points can decide the group, or when the Villain locks are already close.",
+            "steps": [
+              {
+                "text": "Select Shame. Make four flashing target hits, then five moving lit shots.",
+                "modeNotes": [
+                  "Shame: Its first attempt is a two-ball minor-villain mode. Completing it adds one ball and 10 seconds of ball save to later multiballs.",
+                  "Keith used Shame as the immediate scoring play in the March 2018 PAPA Circuit Final."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Finish Shame before risking the remaining Villain locks. Start or continue a major villain, then complete three locks at the right orbit.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start Villain Multiball. Collect 12 major-shot jackpots, then shoot the Atomic Pile for the Super Jackpot.",
+                "modeNotes": [
+                  "Villain Multiball: Later Super Jackpots need additional major-shot jackpots. Mystery awards add-a-ball during the multiball."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Villain wizard qualifications",
+          "steps": [
+            {
+              "text": "Complete one Minor Villain from each season to open the Minor-Villain wizard selection.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete all four Major Villains, then shoot the left orbit to start Villain Escape.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "cautions": [
+          {
+            "issue": "Starting Villain Multiball before completing Mr. Freeze's first phase can interfere with the required Freeze shots.",
+            "response": "Complete the first Mr. Freeze phase before starting Villain Multiball.",
+            "sourceUrl": "https://tiltforums.com/t/batman-66-rulesheet/2463"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Start Bookworm and Riddler together."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete Bookworm, Mr."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Mad Hatter recovery: Use this plan after a failed Bookworm or Mr."
+          }
+        ],
+        "checkBeforePlay": [
+          "Premium, LE, Super LE, and Catwoman Signature share these main-playfield rules."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "TV targets",
+            "label": "TV targets",
+            "description": "Targets used to select and qualify minor villains.",
+            "precision": "unverified",
+            "context": "Targets used to select and qualify minor villains."
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Shot used for Bookworm, multipliers, and Bat Signal.",
+            "precision": "unverified",
+            "context": "Shot used for Bookworm, multipliers, and Bat Signal."
+          },
+          {
+            "term": "Batphone",
+            "label": "Batphone",
+            "description": "Shot used to start a qualified Riddler phase.",
+            "precision": "unverified",
+            "context": "Shot used to start a qualified Riddler phase."
+          },
+          {
+            "term": "Atomic Pile",
+            "label": "Atomic Pile",
+            "description": "Collect shot for the Villain Multiball Super Jackpot.",
+            "precision": "unverified",
+            "context": "Collect shot for the Villain Multiball Super Jackpot."
+          }
+        ],
+        "overview": "Batman 66 lets Minor and Major Villains run during Villain Multiball. Complete TV bank, shoot the left orbit, select Bookworm with the flippers, and press the action button; shoot either orbit to qualify Riddler, then the Bat-Phone to start. During Riddler, hit both turntable targets and lock three balls at the right orbit for Villain Multiball. Finish both before building Mr. Freeze and Catwoman.",
+        "simpleOverview": "Minor and Major Villains can run during Villain Multiball in Batman 66. Complete three TV targets, shoot the left orbit, choose Bookworm with the flippers, and press the action button. Shoot either orbit to qualify Riddler, then shoot the Bat-Phone to start it; during Riddler, hit both turntable targets and lock three balls at the right orbit for Villain Multiball.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "In his Batman 66 MasterClass, Roland Nadeau prioritized Bookworm, Mr. Freeze, and King Tut because their completed advantages continue to strengthen later villain scoring and wizard-mode progress."
+          ]
+        },
+        "machineSetup": [
+          "Premium, LE, Super LE, and Catwoman Signature share these main-playfield rules."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the TV targets and left orbit for a Minor Villain. Shoot an orbit to qualify Riddler, then answer the Bat-Phone to start it. Use its turntable-target and right-orbit locks for Villain Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Bookworm",
+            "text": "Complete the three TV targets, shoot the left orbit, use the flippers to choose Bookworm, and press the action button to confirm.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Bookworm",
+              "reason": "Complete it first because its Minor Villain awards remain active for the rest of the game.",
+              "play": "Follow the lit Bookworm shots shown on the display until all of its phases are complete."
+            }
+          },
+          {
+            "title": "Start Villain Multiball",
+            "text": "Shoot either orbit to qualify Riddler, then shoot the Bat-Phone to start him. During Riddler, hit both turntable targets, then collect all three locks at the right orbit to start Villain Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Start Bookworm and Riddler together."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete Bookworm, Mr."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Mad Hatter recovery: Use this plan after a failed Bookworm or Mr."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Shame",
+          "when": "Use this when Shame's displayed shots are safer than the other Villains.",
+          "steps": [
+            {
+              "text": "Hit the TV targets and left orbit to qualify a Minor Villain. Use the flippers to choose Shame, then press the action button to confirm.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwW9",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the card targets from the right flippers, use the upper flipper to cross the 1-9 matrix, then build 10K bonus and light Triple Bonus before taking the upper-right lane.",
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "Either top lane and each yellow standup advance the end-of-ball bonus to its 10K maximum."
+          },
+          {
+            "name": "1-9 matrix",
+            "summary": "Complete the center 1-9 rollover matrix once for Double Bonus and twice for Triple Bonus."
+          },
+          {
+            "name": "Card targets",
+            "summary": "Complete 10-J-Q-K-A to light the upper-right lane and the right return lane for their configured awards."
+          },
+          {
+            "name": "Upper-right lane",
+            "summary": "The narrow lane above the upper-right flipper scores 1,000 or the lit Special award."
+          },
+          {
+            "name": "Upper-flipper cross shot",
+            "summary": "A crosswise shot from the upper flipper can collect center rollovers and a card target on the same trip."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the right flippers to hit the 10-J-Q-K-A standups."
+          },
+          {
+            "text": "From the upper-right flipper, shoot across the 1-9 matrix toward the card targets."
+          },
+          {
+            "text": "Complete the 1-9 matrix once to light Double Bonus."
+          },
+          {
+            "text": "Complete the 1-9 matrix a second time to light Triple Bonus.",
+            "modeNotes": [
+              "Bonus multiplier: One 1-9 completion lights Double Bonus. A second completion lights Triple Bonus."
+            ]
+          },
+          {
+            "text": "Use either top lane and safe yellow-target hits to build base bonus to 10K."
+          },
+          {
+            "text": "After the cards are complete, take the upper-right lane when its award is useful."
+          },
+          {
+            "text": "Protect the 30K end-of-ball collect after 10K and Triple Bonus are ready."
+          }
+        ],
+        "fallback": {
+          "title": "Top-lane bonus",
+          "when": "Use this when lower-flipper shots through the 1-9 matrix reach the bumpers and return without control.",
+          "steps": [
+            {
+              "text": "Send the ball through either top lane."
+            },
+            {
+              "text": "Take safe yellow-standup hits to add base bonus."
+            },
+            {
+              "text": "Use the upper flipper for crosswise matrix progress."
+            },
+            {
+              "text": "Do not shoot directly through the matrix from a lower flipper without a controlled return."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Card-lane award",
+            "when": "Use this when the five cards are complete and the upper-right lane is repeatable.",
+            "steps": [
+              {
+                "text": "Confirm that 10-J-Q-K-A is complete."
+              },
+              {
+                "text": "Shoot the upper-right lane from the left flipper."
+              },
+              {
+                "text": "Collect the lit award only when tournament settings make it valuable."
+              },
+              {
+                "text": "Return to the matrix and base-bonus route after the collect."
+              }
+            ]
+          },
+          {
+            "title": "Right-return-lane collect",
+            "when": "Use this only when the right return-lane award is enabled and a controlled opposite-lane shot is available.",
+            "steps": [
+              {
+                "text": "Complete 10-J-Q-K-A to light the right return lane."
+              },
+              {
+                "text": "From the left flipper, shoot up the right return lane."
+              },
+              {
+                "text": "Stop after one unsafe attempt or when the award is disabled."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "10K at Triple Bonus",
+          "steps": [
+            {
+              "text": "Shoot either top lane and the three yellow standups until base bonus reaches 10K."
+            },
+            {
+              "text": "Complete the 1-9 matrix once for Double Bonus."
+            },
+            {
+              "text": "Complete the matrix again for Triple Bonus."
+            },
+            {
+              "text": "Carry the 30K maximum bonus to the end of the ball."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "olive",
+            "kind": "item"
+          },
+          {
+            "label": "Triple Bonus",
+            "tone": "olive",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-flipper cross shot",
+            "instruction": "Shoot across the center matrix from the upper flipper. Aim through useful 1-9 rollovers and into the card bank.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwW9-MnK17"
+          },
+          {
+            "name": "Opposite return-lane shot",
+            "instruction": "Shoot up the right return lane from the left flipper only after the five card targets light its award.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwW9-MnK17"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A lower-flipper shot through the 1-9 matrix usually enters the bumpers and can drain through the center or either side.",
+            "response": "Use the upper-flipper cross shot for broad matrix progress. Use a lower flipper only for one or two needed numbers.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwW9-MnK17"
+          },
+          {
+            "issue": "A card-target rebound can arc toward the center instead of returning to a flipper.",
+            "response": "Keep both lower flippers ready after every card shot. Stop repeating the shot after a center-bound rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwW9-MnK17"
+          },
+          {
+            "issue": "Extra Ball and Special behavior differs between the replay and add-a-ball editions and can be disabled for competition.",
+            "response": "Confirm the installed edition and award settings before you risk the upper-right lane or right return lane.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/dealers-choice-lucky-ace-high-ace"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Dealer's Choice, Lucky Ace, High Ace, or the exact licensed edition, plus replay versus add-a-ball rules.",
+          "Confirm three-ball or five-ball setup, Extra Ball and Special conversion, matrix awards, right-lane awards, tilt, and bonus maximum.",
+          "Test both upper flippers, card-target rebounds, matrix switches, top lanes, return lanes, posts, and bumper exits before choosing the route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center saucer",
+            "label": "Center saucer",
+            "description": "Saucer used for feature starts and collects.",
+            "precision": "unverified",
+            "context": "Saucer used for feature starts and collects."
+          },
+          {
+            "term": "drop bank",
+            "label": "Drop-target bank",
+            "description": "Bank used to qualify the main feature.",
+            "precision": "unverified",
+            "context": "Bank used to qualify the main feature."
+          }
+        ],
+        "simpleOverview": "Dealer's Choice, Lucky Ace, and High Ace build base bonus through regular scoring, while completing the 1-through-9 matrix enables Double and then Triple Bonus. Reach 10K, complete the matrix twice, and carry the resulting 30K bonus to the end of the ball.",
+        "overview": "Dealer's Choice, Lucky Ace, and High Ace build base bonus to 10K through the top lanes and three yellow standups. Completing the center 1-through-9 matrix once lights Double Bonus and completing it twice lights Triple Bonus. Use the upper flipper to cross the matrix and collect card targets on the same trip, then protect the 30K end-of-ball collect.",
+        "machineSetup": [
+          "Confirm Dealer's Choice, Lucky Ace, High Ace, or the exact licensed edition, plus replay versus add-a-ball rules.",
+          "Confirm three-ball or five-ball setup, Extra Ball and Special conversion, matrix awards, right-lane awards, tilt, and bonus maximum.",
+          "Test both upper flippers, card-target rebounds, matrix switches, top lanes, return lanes, posts, and bumper exits before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete the card targets from the right flippers, use the upper flipper to cross the 1-9 matrix, then build 10K bonus and light Triple Bonus before taking the upper-right lane.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the right flippers to hit the 10-J-Q-K-A standups."
+          },
+          {
+            "text": "From the upper-right flipper, shoot across the 1-9 matrix toward the card targets."
+          },
+          {
+            "text": "Complete the 1-9 matrix once to light Double Bonus."
+          },
+          {
+            "text": "Complete the 1-9 matrix a second time to light Triple Bonus.",
+            "details": [
+              "Bonus multiplier: One 1-9 completion lights Double Bonus. A second completion lights Triple Bonus."
+            ]
+          },
+          {
+            "text": "Use either top lane and safe yellow-target hits to build base bonus to 10K."
+          },
+          {
+            "text": "After the cards are complete, take the upper-right lane when its award is useful."
+          },
+          {
+            "text": "Protect the 30K end-of-ball collect after 10K and Triple Bonus are ready."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "Either top lane and each yellow standup advance the end-of-ball bonus to its 10K maximum."
+          },
+          {
+            "name": "1-9 matrix",
+            "summary": "Complete the center 1-9 rollover matrix once for Double Bonus and twice for Triple Bonus."
+          },
+          {
+            "name": "Card targets",
+            "summary": "Complete 10-J-Q-K-A to light the upper-right lane and the right return lane for their configured awards."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Top-lane bonus",
+          "when": "Use this when lower-flipper shots through the 1-9 matrix reach the bumpers and return without control.",
+          "steps": [
+            {
+              "text": "Send the ball through either top lane."
+            },
+            {
+              "text": "Take safe yellow-standup hits to add base bonus."
+            },
+            {
+              "text": "Use the upper flipper for crosswise matrix progress."
+            },
+            {
+              "text": "Do not shoot directly through the matrix from a lower flipper without a controlled return."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A lower-flipper shot through the 1-9 matrix usually enters the bumpers and can drain through the center or either side.",
+          "text": "Use the upper-flipper cross shot for broad matrix progress. Use a lower flipper only for one or two needed numbers."
+        }
+      }
+    }
+  ]
+}

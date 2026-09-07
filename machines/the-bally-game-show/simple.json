@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "G5V92",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Light the TV, TRUCK, TRIP, and CAR prizes by completing their targets, then shoot the far-right Collect ramp hard enough to reach the left Collect saucer. With all four prizes lit, that same ramp-and-saucer shot starts two-ball Showcase Bonanza. Return there during Multiball to collect the falling Grand Prize value.",
+        "simpleOverview": "Complete the TV, TRUCK, TRIP, and CAR targets to light all four prizes. Then shoot the far-right Collect ramp hard enough to reach the left Collect saucer and start two-ball Showcase Bonanza. During Multiball, make that same full ramp shot to collect the Grand Prize before it falls to one million.",
+        "summary": "Light TV, TRUCK, TRIP, and CAR, then make the far-right Collect ramp all the way to the left saucer for two-ball Showcase Bonanza. Repeat that full shot during Multiball to collect the falling Grand Prize.",
+        "quickInfo": [
+          {
+            "name": "Light Prizes",
+            "summary": "Complete TV, TRUCK, TRIP, and the CAR drop; the rear SPOT loop can help fill letters."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "With all four prizes lit, shoot the far-right Collect ramp into the left saucer."
+          },
+          {
+            "name": "Collect Grand Prize",
+            "summary": "During Multiball, repeat the full Collect ramp-and-saucer shot."
+          },
+          {
+            "name": "Play Big Bucks",
+            "summary": "Hit the CAR drop to expose the Big Bucks hole, then build and cash its award."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete T-V, T-R-U-C-K, T-R-I-P, and the CAR drop target to light all four prizes.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the rear SPOT loop when available to fill missing prize letters.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the far-right Collect ramp with enough speed to reach the left Collect saucer and start two-ball Showcase Bonanza.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, repeat the full Collect ramp-and-saucer shot to take the falling Grand Prize value.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Big Bucks",
+            "when": "Use this when the CAR drop and center return are safer than the long Collect ramp.",
+            "steps": [
+              {
+                "text": "Hit the CAR drop to expose the Big Bucks hole.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot Big Bucks repeatedly to build and cash its award, up to one million.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Control the Wheel",
+          "steps": [
+            {
+              "text": "Roll through the right inlane to light SPIN at the Wheel ramp.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Wheel ramp and complete the full loop for the current award.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After one full loop, use well-timed nudges to continue looping the ball for additional awards.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm the Grand Prize timer and extra-ball settings before competitive play.",
+          "Test all prize targets, rear SPOT loop, far-right Collect ramp, left Collect saucer, CAR drop and Big Bucks hole, Wheel ramp, and trough."
+        ],
+        "termStyles": [
+          {
+            "label": "Showcase Bonanza",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Grand Prize",
+            "tone": "indigo",
+            "kind": "multiball"
+          },
+          {
+            "label": "Big Bucks",
+            "tone": "oxblood",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "rear SPOT loop",
+            "label": "SPOT loop",
+            "description": "The rear loop that can spot missing prize letters according to its direction.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Collect ramp",
+            "label": "Far-right Collect ramp",
+            "description": "The long ramp that must carry the ball into the left Collect saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left Collect saucer",
+            "label": "Collect saucer",
+            "description": "The saucer reached from the Collect ramp to start Multiball and collect Grand Prize.",
+            "precision": "unverified"
+          },
+          {
+            "term": "CAR drop",
+            "label": "CAR target",
+            "description": "The drop target that lights the CAR prize and exposes Big Bucks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Wheel ramp",
+            "label": "Wheel ramp",
+            "description": "The ramp used for SPIN and repeat loop awards.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Collect Ramp shots that do not reach the left saucer do not finish the required collection.",
+            "response": "Favor a clean, full-strength ramp shot; do not count a partial climb as the Multiball start or Grand Prize collect.",
+            "sourceUrl": "https://www.youtube.com/watch?v=i9VcN6io-YU"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Light TV, TRUCK, TRIP, and CAR, then make the far-right Collect ramp all the way to the left saucer for two-ball Showcase Bonanza. Repeat that full shot during Multiball to collect the falling Grand Prize.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete T-V, T-R-U-C-K, T-R-I-P, and the CAR drop target to light all four prizes.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the rear SPOT loop when available to fill missing prize letters.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the far-right Collect ramp with enough speed to reach the left Collect saucer and start two-ball Showcase Bonanza.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, repeat the full Collect ramp-and-saucer shot to take the falling Grand Prize value.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Prizes",
+            "summary": "Complete TV, TRUCK, TRIP, and the CAR drop; the rear SPOT loop can help fill letters."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "With all four prizes lit, shoot the far-right Collect ramp into the left saucer."
+          },
+          {
+            "name": "Collect Grand Prize",
+            "summary": "During Multiball, repeat the full Collect ramp-and-saucer shot."
+          }
+        ]
+      }
+    }
+  ]
+}

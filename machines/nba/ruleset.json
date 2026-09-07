@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "G5K19",
+  "title": "NBA",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball News NBA rules and strategy review (code 3.0+)",
+      "url": "https://www.pinballnews.com/games/nba/index4b.html"
+    },
+    "supportingSources": [
+      {
+        "label": "PinballRebel NBA playfield guide",
+        "url": "https://www.pinballrebel.com/pinball/nba_pinball/nba_pinball.htm"
+      },
+      {
+        "label": "Stern NBA instruction card hosted by PinballRebel",
+        "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_NBA_755-51A9-XX.pdf"
+      },
+      {
+        "label": "NBA gameplay",
+        "url": "https://pinballvideos.com/v/203"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Light NBA Multiball at the right NBA saucer, complete the M-V-P drop targets for 20 seconds of 2x scoring, then return to the saucer to start three-ball play. Clear the seven major shots and hit the Super Star target for their combined value.",
+      "quickInfo": [
+        {
+          "name": "Basket shots",
+          "summary": "The left jump ramp scores three basketball points, the right ramp scores two, and the All Star saucer scores one."
+        },
+        {
+          "name": "M-V-P scoring",
+          "summary": "Complete the three M-V-P drop targets for 20 seconds of 2x scoring. Another completion while it is running restarts the timer at 20 seconds."
+        },
+        {
+          "name": "NBA Multiball",
+          "summary": "The first NBA Multiball needs one shot to the right NBA saucer to light it and one more to start it. Later starts require more saucer shots."
+        },
+        {
+          "name": "Fast Break",
+          "summary": "Three orbit shots start a repeat hurry-up. Keep shooting either orbit before the value reaches its minimum."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the right NBA saucer once to spell N-B-A and light the first NBA Multiball."
+        },
+        {
+          "text": "Leave NBA Multiball lit while working the M-V-P drop targets."
+        },
+        {
+          "text": "Complete the M-V-P drop bank, then shoot the right NBA saucer before the 20-second 2x timer expires to start three-ball NBA Multiball.",
+          "modeNotes": [
+            "The M-V-P timer begins when the third drop target falls. Completing the bank again while 2x is active restarts the timer."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During NBA Multiball, shoot each of the seven lit major shots. The first three score single awards and the remaining four score double awards.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After all seven major shots, hit the orange Super Star standup in the pop-bumper area. Its value is the sum of the seven awards, including any M-V-P doubling.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the Super Star award, all seven major shots relight and the scoring cycle restarts.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Fast Break",
+        "when": "Use this when the orbits are returning cleanly but the NBA saucer or M-V-P bank is rejecting shots.",
+        "steps": [
+          {
+            "text": "Shoot either orbit three times to start Fast Break."
+          },
+          {
+            "text": "Keep repeating either orbit to collect the hurry-up before it reaches its minimum value."
+          },
+          {
+            "text": "Complete M-V-P during Fast Break when the drop bank is safely available; 2x applies to its awards."
+          },
+          {
+            "text": "Return to the right NBA saucer after Fast Break ends."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "All Star feature",
+          "when": "Use this when both outside target banks are close to complete.",
+          "steps": [
+            {
+              "text": "Complete the A-L-L target bank and the S-T-A-R target bank."
+            },
+            {
+              "text": "Shoot the All Star saucer to start the flashing feature.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow that feature's displayed shots, using M-V-P for 2x when the drop bank is available."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "NBA Finals",
+        "steps": [
+          {
+            "text": "Light all six championship-ring objectives on the playfield."
+          },
+          {
+            "text": "Shoot the right NBA saucer when NBA Finals is lit."
+          },
+          {
+            "text": "During NBA Finals, shoot the left jump ramp, right ramp, or All Star saucer to score baskets and build the bonus pot."
+          },
+          {
+            "text": "Shoot the right NBA saucer after a basket to collect the bonus pot; start M-V-P before the mode when possible because it doubles the mode's scoring."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Basket",
+          "tone": "gold",
+          "kind": "shot"
+        },
+        {
+          "label": "M-V-P",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Basketball disc",
+          "tone": "indigo",
+          "kind": "shot"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "M-V-P timing",
+          "instruction": "Leave NBA Multiball lit, complete the M-V-P drop bank, then start Multiball at the right NBA saucer while 2x is running.",
+          "sourceUrl": "https://www.pinballnews.com/games/nba/index4b.html"
+        },
+        {
+          "name": "Basket-return read",
+          "instruction": "Watch where the basket magnet drops the ball before repeating either basket ramp.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/nba_pinball/nba_pinball.htm"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Starting NBA Multiball pauses any running All Star feature.",
+          "response": "Finish the feature first, or delay the right NBA saucer until its remaining value is no longer worth protecting.",
+          "sourceUrl": "https://www.pinballnews.com/games/nba/index4b.html"
+        }
+      ],
+      "simpleOverview": "NBA makes the right NBA saucer the quickest Multiball route: shoot it once to spell N-B-A and once more to start three-ball NBA Multiball. If the M-V-P drop bank is close, complete it first for 20 seconds of 2x scoring, then start Multiball and shoot each of the seven lit major shots before hitting the Super Star target in the pop-bumper area.",
+      "overview": "NBA uses the M-V-P drop bank to double every scoring award for 20 seconds. Shoot the right NBA saucer once to light the first NBA Multiball, leave it ready while completing M-V-P, then shoot the saucer again to start three-ball play. Clear all seven lit major shots and hit the Super Star target for their combined value; use three orbit shots and repeated orbits for Fast Break between Multiballs.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

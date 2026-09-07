@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwyv",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Advance the Start Round state at Big Fatso, finish Hideout, Big Fatso, Crash the Tolls, and Hammerhead Bar, then play Haywire. Use each multiball round's long save and left-ramp add-a-ball before chasing its objectives.",
+        "quickInfo": [
+          {
+            "name": "Rounds",
+            "summary": "Follow Big Fatso through light, open, and start states; each completed round cycle adds one qualification hit."
+          },
+          {
+            "name": "Rounds and Multiball",
+            "summary": "Big Fatso, Hammerhead Bar, Firefight, and Haywire each begin their own Multiball. Start and finish one of these rounds at a time."
+          },
+          {
+            "name": "Round multiballs",
+            "summary": "Multiball rounds launch two balls and can light the left ramp for an add-a-ball."
+          },
+          {
+            "name": "Mega Bonus",
+            "summary": "The lower-right target opens Big Fatso briefly to collect the built Mega Bonus."
+          },
+          {
+            "name": "Tournament Mode",
+            "summary": "Tournament Mode disables the persistent BARB WIRE super jackpot and converts extra balls and specials."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Enable Tournament Mode by holding both flippers before Start, then test Big Fatso, Retina Scan, Mind Read, and their ejects."
+          },
+          {
+            "text": "Follow the Big Fatso insert through light Start Round, open the door, and start the lit round only when the return is controlled.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Hideout, Big Fatso, Crash the Tolls, and Hammerhead Bar by following each round's lit objectives.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "At the start of a multiball round, shoot the lit left ramp for its one add-a-ball while the long ball save remains active.",
+            "modeNotes": [
+              "Round ball-count rule: Multiball rounds begin with two balls and light the left ramp for one additional ball."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all four rounds are complete, start Haywire. Collect roving arrow shots to finish H-A-Y-W-I-R-E before falling to one ball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "In Haywire frenzy, use the four balls and long save to build the bonus to 990M, then collect it at Big Fatso when the door opens.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Haywire ends before the letters are complete, use controlled skill shots or Retina Scan awards to finish the word and restart the frenzy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect Mega Bonus at Big Fatso only after testing the opening and eject; otherwise preserve control and continue rounds."
+          }
+        ],
+        "fallback": {
+          "title": "Arrow and Firefight route",
+          "when": "Use this when Big Fatso or its return is unsafe.",
+          "steps": [
+            {
+              "text": "Collect the lit major-shot arrows from controlled feeds."
+            },
+            {
+              "text": "Complete the arrow set to start Firefight multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the moving lit jackpots for protected points, then resume round progress."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Mega Bonus cashout",
+            "when": "Use this when Mega Bonus is already built and one safe collect can secure position.",
+            "steps": [
+              {
+                "text": "Hit the lower-right target to open Big Fatso."
+              },
+              {
+                "text": "Collect Mega Bonus only if the opening and eject are behaving predictably."
+              },
+              {
+                "text": "Do not repeat the dangerous target after the needed score is secured."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Haywire",
+          "steps": [
+            {
+              "text": "Complete Hideout, Big Fatso, Crash the Tolls, and Hammerhead Bar.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Haywire and collect its roving H-A-Y-W-I-R-E arrows while two or more balls remain.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Build the frenzy bonus to 990M and collect it at Big Fatso.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "If needed, complete retained letters through skill shots or Retina Scan to restart Haywire frenzy.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Firefight",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Haywire",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Haywire frenzy",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "round",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Big Fatso",
+            "context": "Big Fatso",
+            "label": "Round and Mega Bonus scoop",
+            "description": "The opening shot used to start rounds and collect Mega Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower-right kickout",
+            "context": "lower-right kickout",
+            "label": "Mind Read kickout",
+            "description": "The low right eject whose return can approach the flippers dangerously.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Retina Scan",
+            "context": "Retina Scan",
+            "label": "Retina Scan shot",
+            "description": "The shot used for awards and late HAYWIRE progress.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Early add-a-ball",
+            "instruction": "During a multiball round, take the lit left ramp while the opening ball save still protects a miss.",
+            "sourceUrl": "https://www.pinball.org/rules/barbwire.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The lower-right kickout can eject close to the center drain.",
+            "response": "Test and trap its feed before relying on repeated Mind Read or Mega Bonus collects.",
+            "sourceUrl": "https://www.pinball.org/rules/barbwire.html"
+          },
+          {
+            "issue": "The persistent BARB WIRE award is unsuitable for fair competition outside Tournament Mode.",
+            "response": "Enable Tournament Mode or confirm the event's ruling before play.",
+            "sourceUrl": "https://www.pinball.org/rules/barbwire.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the 1996 Gottlieb/Premier game, installed revision, Tournament Mode, round order, qualification counts, and ball-save times.",
+          "Tournament Mode must disable persistent BARB WIRE progress and convert Extra Ball to 50M and Special to 200M.",
+          "Test the manual and auto-plunges, lower Mind Read eject, Retina Scan eject, Big Fatso door and eject, left-ramp add-a-ball switch, and center post."
+        ],
+        "simpleOverview": "Barb Wire advances one active round through the Big Fatso start sequence, and several rounds begin their own Multiball. Complete Hideout, Big Fatso, Crash the Tolls, and Hammerhead Bar, taking the lit left-ramp add-a-ball early in each Multiball round, then start Haywire.",
+        "overview": "Barb Wire advances one active round through the Big Fatso start sequence, and several rounds begin their own Multiball. Follow Big Fatso through light, open, and start states, complete each round's displayed objectives, and use the opening ball save to collect the left-ramp add-a-ball during Multiball rounds. In Haywire, collect the roving letters before focusing on the frenzy bonus and Big Fatso collect.",
+        "machineSetup": [
+          "Confirm the 1996 Gottlieb/Premier game, installed revision, Tournament Mode, round order, qualification counts, and ball-save times.",
+          "Tournament Mode must disable persistent BARB WIRE progress and convert Extra Ball to 50M and Special to 200M.",
+          "Test the manual and auto-plunges, lower Mind Read eject, Retina Scan eject, Big Fatso door and eject, left-ramp add-a-ball switch, and center post."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Advance the Start Round state at Big Fatso, finish Hideout, Big Fatso, Crash the Tolls, and Hammerhead Bar, then play Haywire. Use each multiball round's long save and left-ramp add-a-ball before chasing its objectives.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Enable Tournament Mode by holding both flippers before Start, then test Big Fatso, Retina Scan, Mind Read, and their ejects."
+          },
+          {
+            "text": "Follow the Big Fatso insert through light Start Round, open the door, and start the lit round only when the return is controlled.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Hideout, Big Fatso, Crash the Tolls, and Hammerhead Bar by following each round's lit objectives.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "At the start of a multiball round, shoot the lit left ramp for its one add-a-ball while the long ball save remains active.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "details": [
+              "Round ball-count rule: Multiball rounds begin with two balls and light the left ramp for one additional ball."
+            ]
+          },
+          {
+            "text": "After all four rounds are complete, start Haywire. Collect roving arrow shots to finish H-A-Y-W-I-R-E before falling to one ball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "In Haywire frenzy, use the four balls and long save to build the bonus to 990M, then collect it at Big Fatso when the door opens.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Haywire ends before the letters are complete, use controlled skill shots or Retina Scan awards to finish the word and restart the frenzy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect Mega Bonus at Big Fatso only after testing the opening and eject; otherwise preserve control and continue rounds."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Rounds",
+            "summary": "Follow Big Fatso through light, open, and start states; each completed round cycle adds one qualification hit."
+          },
+          {
+            "name": "Rounds and Multiball",
+            "summary": "Big Fatso, Hammerhead Bar, Firefight, and Haywire each begin their own Multiball. Start and finish one of these rounds at a time."
+          },
+          {
+            "name": "Round multiballs",
+            "summary": "Multiball rounds launch two balls and can light the left ramp for an add-a-ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Arrow and Firefight route",
+          "when": "Use this when Big Fatso or its return is unsafe.",
+          "steps": [
+            {
+              "text": "Collect the lit major-shot arrows from controlled feeds."
+            },
+            {
+              "text": "Complete the arrow set to start Firefight multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the moving lit jackpots for protected points, then resume round progress."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The lower-right kickout can eject close to the center drain.",
+          "text": "Test and trap its feed before relying on repeated Mind Read or Mega Bonus collects."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEkZ",
+  "title": "24",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "24 rules and review",
+      "url": "https://www.pinballnews.com/games/24/index4b.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Stern 24 v1.50 ROM history",
+        "url": "https://pinside.com/pinball/machine/stern-24/details"
+      },
+      {
+        "label": "24 current wizard-mode rule discussion",
+        "url": "https://pinside.com/pinball/forum/topic/24-gameplay"
+      },
+      {
+        "label": "Bowen Kerins at North East Summer Slam 2024",
+        "url": "https://pinballvideos.com/v/5598/10219"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot the left ramp to light Suitcase Nuke locks, collect them at the right ramp, build value at flashing major shots, then open the suitcase, re-lock the balls, and repeat left-ramp Supers.",
+      "quickInfo": [
+        {
+          "name": "Suitcase Nuke Multiball",
+          "summary": "The left ramp lights suitcase locks and the right ramp collects them; three locks start Multiball."
+        },
+        {
+          "name": "Suitcase Super",
+          "summary": "Build its value at flashing shots, open the suitcase at the left ramp, then relock the active balls to light the left-ramp Super Jackpot."
+        },
+        {
+          "name": "Safe House route",
+          "summary": "Drop-target and scoop progress builds a hurry-up that starts Terrorist Multiball when collected."
+        },
+        {
+          "name": "Sniper Multiball",
+          "summary": "Pop-bumper progress qualifies the simpler Sniper route."
+        },
+        {
+          "name": "Mole X",
+          "summary": "Complete M-O-L-E and collect its left-ramp hurry-up to add a persistent multiplier to one eligible shot."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the opening save to test both ramps, the drop bank, scoop eject, and pop-bumper exit."
+        },
+        {
+          "text": "Shoot the left ramp to light Suitcase locks.",
+          "modeNotes": [
+            "First Suitcase start: One left ramp lights all three locks on default settings. Later starts need another left-ramp qualification before each right-ramp lock."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the right ramp to lock three balls and start Suitcase Nuke Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot any flashing major shot repeatedly to score Jackpots and build the Suitcase Super value.",
+          "modeNotes": [
+            "Jackpot lamps stay flashing after a collect; the six shots are value builders, not a six-shot completion checklist."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left ramp to open the suitcase, then relock the active balls at the right ramp. The second relock lights the Super if only two balls remain; otherwise relock all three.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left ramp for the Super Jackpot and an added ball, then shoot it twice more for two additional Supers.",
+          "modeNotes": [
+            "After the third Super, collect six flashing Victory Laps, then shoot the right-ramp suitcase for the Nuke Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Sniper Multiball",
+        "when": "Use this when the ramps reject but the pop-bumper feed is safe.",
+        "steps": [
+          {
+            "text": "Feed the pops through the safer orbit until the Sniper hurry-up starts."
+          },
+          {
+            "text": "Optionally shoot the right ramp once to collect and raise the hurry-up; then hit the Sniper target before it expires.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During two-ball Sniper Multiball, build each Sniper value in the pops and collect it at the Sniper target.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After three Sniper values, take the left-ramp Super, six orbit/Sniper Victory Laps, and the final Sniper target collect while ball count survives.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Safe House target route",
+          "when": "Use this when the drop bank and scoop are safer than the ramps.",
+          "steps": [
+            {
+              "text": "Knock down the required Safe House terrorists, then shoot the saucer to start its hurry-up.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use safe drop hits to raise and restart the hurry-up, then shoot the saucer to collect it and start Terrorist Multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Clear the required terrorists, collect the saucer value, then take the left-ramp Super and six Victory Laps.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Save the President",
+        "steps": [
+          {
+            "text": "Start and end Suitcase Nuke, Safe House, and Sniper Multiball once each.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the flashing left ramp to start Save the President.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Save the President, make every required major shot twice, then follow the lit final collect.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Suitcase Nuke Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Terrorist Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Sniper Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Save the President",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Master Agent",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Mole X",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Lock-ramp alternation",
+          "instruction": "After each left-ramp qualification, settle the return before sending the next ball to the right-ramp lock.",
+          "sourceUrl": "https://www.pinballnews.com/games/24/index4b.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Suitcase physical locks can contain another player's balls or release inconsistently.",
+          "response": "Read the lock lamps and physical state before assuming the next right ramp will lock.",
+          "sourceUrl": "https://www.pinballnews.com/games/24/index4b.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test both ramps, Safe House bank and saucer, Sniper target, pop exits, M-O-L-E targets, and every lock release."
+      ],
+      "simpleOverview": "In 24, three right-ramp locks start Suitcase Nuke, whose flashing major shots build the value before left-ramp Super Jackpots. Use the left ramp to light the locks, take all three at the right ramp, then raise the Suitcase value before opening, relocking, and collecting the Supers.",
+      "overview": "Completing Suitcase Nuke, Safe House, Sniper Multiball, and all six scenes qualifies Save the President in 24. Lead with Suitcase Nuke because its left-ramp qualification and right-ramp locks create a defined Jackpot and Super cycle; use Safe House or Sniper when either is already close.",
+      "machineSetup": [
+        "Test both ramps, Safe House bank and saucer, Sniper target, pop exits, M-O-L-E targets, and every lock release."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

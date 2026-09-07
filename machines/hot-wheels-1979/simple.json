@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "GrOY9",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Hot Wheels turns the upper racetrack into a race-position ladder. Complete one lap to light Start, then hit racetrack buttons to build bonus and the top-hole value. The ten numbered fixed targets advance race position before the swinging target; reaching first position lights that swinging target for Special. Repeated completions of the four left drop targets raise Bonus X to 2x, 3x, then 5x.",
+        "simpleOverview": "Complete a lap of the upper racetrack to light Start. Then hit racetrack buttons and the ten numbered fixed targets to advance the race. When first position lights the swinging target, hit it for Special. Complete the four left drop targets repeatedly to raise Bonus X to 2x, 3x, then 5x.",
+        "summary": "Light Start before spending time on the race buttons, then finish the numbered target route into first position. Take the swinging target as soon as Special is lit, and finish partial left-bank sets for Bonus X.",
+        "quickInfo": [
+          {
+            "name": "Light Start",
+            "summary": "Complete one upper-racetrack lap."
+          },
+          {
+            "name": "Advance the Race",
+            "summary": "Hit the racetrack buttons and numbered targets."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Reach first position, then hit the swinging target."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete the four left drops repeatedly."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete a lap of the upper racetrack to light Start.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "With Start lit, hit racetrack buttons to advance bonus; completing all of them also advances the top-hole value.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the ten numbered fixed targets to advance race position; when first position lights the swinging target, hit it for Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the four left drop targets repeatedly to advance Bonus X to 2x, 3x, then 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Bonus X",
+            "when": "Use this when Start is not lit and the left bank is nearly complete.",
+            "steps": [
+              {
+                "text": "Finish the left drop bank for the next Bonus X step.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Return to the upper racetrack and complete a lap before working race buttons.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Reach first position",
+          "steps": [
+            {
+              "text": "Light Start with one full racetrack lap.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish the numbered target route, then hit the swinging target while Special is lit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check race-position difficulty, Bonus X steps, top-hole awards, swinging-target Special, and extra-ball settings.",
+          "Test the upper racetrack and every button, ten numbered targets, swinging target, four left drops, lower lit rollovers, top hole, and race lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "Racetrack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "First Position",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Swinging Target",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper racetrack",
+            "label": "Upper racetrack",
+            "description": "Loop whose completed lap lights Start.",
+            "precision": "unverified"
+          },
+          {
+            "term": "racetrack buttons",
+            "label": "Racetrack buttons",
+            "description": "Buttons that advance bonus and the top-hole value after Start.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbered fixed targets",
+            "label": "Targets 1–10",
+            "description": "Targets that advance race position.",
+            "precision": "unverified"
+          },
+          {
+            "term": "swinging target",
+            "label": "Swinging Special target",
+            "description": "Special collect after reaching first position.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Special and extra-ball awards are operator-adjustable.",
+            "response": "Follow the lit insert and local award card when the swinging target or out-hole Special is ready.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen1/hotwheels/settings.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Light Start before spending time on the race buttons, then finish the numbered target route into first position. Take the swinging target as soon as Special is lit, and finish partial left-bank sets for Bonus X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete a lap of the upper racetrack to light Start.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "With Start lit, hit racetrack buttons to advance bonus; completing all of them also advances the top-hole value.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the ten numbered fixed targets to advance race position; when first position lights the swinging target, hit it for Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the four left drop targets repeatedly to advance Bonus X to 2x, 3x, then 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Start",
+            "summary": "Complete one upper-racetrack lap."
+          },
+          {
+            "name": "Advance the Race",
+            "summary": "Hit the racetrack buttons and numbered targets."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Reach first position, then hit the swinging target."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwYo",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete 1-2-3 until 5x Bonus lights, and knock down the upper yellow three-bank twice to light the right spinners. Repeat the top-right spinner when its return is clean. Use the left-orbit ladder when the full orbit is safer.",
+        "steps": [
+          {
+            "text": "Send the ball to the upper playfield through the left orbit or a right-side spinner. Use the right flipper button to change the lit 1-2-3 lane under the ball."
+          },
+          {
+            "text": "Complete 1-2-3 repeatedly until 5x Bonus lights. Lanes and targets also add base bonus."
+          },
+          {
+            "text": "Complete the upper yellow three-bank twice to light the right spinners."
+          },
+          {
+            "text": "Repeat the lit top-right spinner while it feeds the upper playfield cleanly."
+          },
+          {
+            "text": "When the left orbit returns safely, make complete orbits to collect its 5,000, 10,000, 15,000, then 20,000 ladder."
+          },
+          {
+            "text": "Keep feeding the top lanes. Do not shoot the center red drops directly."
+          }
+        ],
+        "fallback": {
+          "title": "Green targets",
+          "when": "Use this plan when the left orbit or plunge sends the ball into danger.",
+          "steps": [
+            {
+              "text": "Shoot the green standups and the upper yellow bank."
+            },
+            {
+              "text": "Use these shots to build bonus without forcing the unsafe orbit."
+            },
+            {
+              "text": "Return to the upper route only after a safe feed."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Maximum end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Score lanes and targets until base bonus reaches 29,000."
+            },
+            {
+              "text": "Complete 1-2-3 repeatedly until 5x Bonus lights."
+            },
+            {
+              "text": "Collect up to 145,000 at the end of the ball."
+            },
+            {
+              "text": "Use lit spinners for repeatable value after the bonus is ready."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Top-lane change",
+            "instruction": "Use the right flipper button while the ball is above the lanes. Move the lit 1-2-3 lane under the ball to complete the set.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwYo-MQoPw"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Blackout, installed code, ball count, tilt, Extra Ball and Special conversion, Bonus X memory, lane change, and 29K base-bonus maximum.",
+          "Confirm two yellow-bank completions light both spinners, their per-spin value, green-bank orbit ladder, Blackout saucer behavior, and which awards reset progress.",
+          "Test both spinners and full feeds, yellow and green banks, dangerous red drops, top lanes, left orbit, saucer kickout, bumpers, and right-side plunge exit."
+        ],
+        "cautions": [
+          {
+            "issue": "The center red drop targets rebound dangerously.",
+            "response": "Do not shoot them directly. Let normal play complete them.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ITN63IQ-vbE&t=1026s"
+          },
+          {
+            "issue": "A plunge or left-orbit shot can exit the top and drain on the right or through the center.",
+            "response": "Test the return once. Use green targets and the upper bank if the return is hostile.",
+            "sourceUrl": "https://www.youtube.com/watch?v=YwjqqyzrfYs&t=17593s"
+          },
+          {
+            "issue": "Spinner points can post after a short delay.",
+            "response": "Watch the ball. Do not look at the display while the feed is active.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ITN63IQ-vbE&t=331s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete 1-2-3 until 5x Bonus lights, and knock down the upper yellow three-bank twice to light the right spinners."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Score lanes and targets until base bonus reaches 29,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Green targets: Use this plan when the left orbit or plunge sends the ball into danger."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "yellow three-bank",
+            "label": "Yellow target bank",
+            "description": "Upper bank used to light the right spinners.",
+            "precision": "unverified",
+            "context": "Upper bank used to light the right spinners."
+          },
+          {
+            "term": "top-right spinner",
+            "label": "Top-right spinner",
+            "description": "Repeatable spinner and upper-playfield route.",
+            "precision": "unverified",
+            "context": "Repeatable spinner and upper-playfield route."
+          },
+          {
+            "term": "green standups",
+            "label": "Green targets",
+            "description": "Targets used for safer bonus progress.",
+            "precision": "unverified",
+            "context": "Targets used for safer bonus progress."
+          },
+          {
+            "term": "left-orbit",
+            "label": "Blackout orbit",
+            "description": "Orbit used for the 20,000-point ladder.",
+            "precision": "unverified",
+            "context": "Orbit used for the 20,000-point ladder."
+          }
+        ],
+        "simpleOverview": "In Blackout, complete the upper 1-2-3 lanes until Bonus X reaches 5x, then knock down the upper yellow three-bank twice to light the right spinners. Repeat the top-right spinner while it returns cleanly to the upper playfield. Use full left orbits for their rising 5,000-to-20,000 ladder when that return is safer.",
+        "overview": "In Blackout, repeated 1-2-3 completions raise Bonus X to 5x, and two upper yellow-bank completions light the right spinners. Use lane change while the ball is up top, repeat the top-right spinner when its return is clean, and use full left orbits for the 5,000, 10,000, 15,000, and 20,000 ladder when that path is safer. Build 29,000 base bonus and protect the 145,000 end-of-ball collect.",
+        "machineSetup": [
+          "Confirm Williams Blackout, installed code, ball count, tilt, Extra Ball and Special conversion, Bonus X memory, lane change, and 29K base-bonus maximum.",
+          "Confirm two yellow-bank completions light both spinners, their per-spin value, green-bank orbit ladder, Blackout saucer behavior, and which awards reset progress.",
+          "Test both spinners and full feeds, yellow and green banks, dangerous red drops, top lanes, left orbit, saucer kickout, bumpers, and right-side plunge exit."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete 1-2-3 until 5x Bonus lights, and knock down the upper yellow three-bank twice to light the right spinners. Repeat the top-right spinner when its return is clean. Use the left-orbit ladder when the full orbit is safer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Send the ball to the upper playfield through the left orbit or a right-side spinner. Use the right flipper button to change the lit 1-2-3 lane under the ball."
+          },
+          {
+            "text": "Complete 1-2-3 repeatedly until 5x Bonus lights. Lanes and targets also add base bonus."
+          },
+          {
+            "text": "Complete the upper yellow three-bank twice to light the right spinners."
+          },
+          {
+            "text": "Repeat the lit top-right spinner while it feeds the upper playfield cleanly."
+          },
+          {
+            "text": "When the left orbit returns safely, make complete orbits to collect its 5,000, 10,000, 15,000, then 20,000 ladder."
+          },
+          {
+            "text": "Keep feeding the top lanes. Do not shoot the center red drops directly."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete 1-2-3 until 5x Bonus lights, and knock down the upper yellow three-bank twice to light the right spinners."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Score lanes and targets until base bonus reaches 29,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Green targets: Use this plan when the left orbit or plunge sends the ball into danger."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Green targets",
+          "when": "Use this plan when the left orbit or plunge sends the ball into danger.",
+          "steps": [
+            {
+              "text": "Shoot the green standups and the upper yellow bank."
+            },
+            {
+              "text": "Use these shots to build bonus without forcing the unsafe orbit."
+            },
+            {
+              "text": "Return to the upper route only after a safe feed."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A plunge or left-orbit shot can exit the top and drain on the right or through the center.",
+          "text": "Test the return once. Use green targets and the upper bank if the return is hostile."
+        }
+      }
+    }
+  ]
+}

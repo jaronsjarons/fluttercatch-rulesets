@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "G411e",
+  "title": "Apollo 13",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Apollo 13 contemporary CPU 5.01 rulesheet",
+      "url": "https://www.pinball.org/rules/apollo13.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Original Sega Apollo 13 game-rules manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Apollo-13%20Sample%20Manual.pdf"
+      },
+      {
+        "label": "Original Sega Apollo 13 instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Sega/Sega_Apollo_13_755-5080-XX.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Shoot the Rocket ramp until its LED reaches 1, then shoot it again to start Multiball. Selectable Missions begin at the plunge or lit right saucer, while briefly lit orbits advance the spacecraft toward Splashdown; nine completed Missions qualify Master Alarm.",
+      "simpleOverview": "Shoot the Rocket ramp until its LED reaches 1, then shoot it once more for Multiball. Choose Start Mission at the plunge or shoot the lit right saucer for a Mission, and use briefly lit orbits to advance the spacecraft separately.",
+      "summary": "Use the plunge to start a Mission, then repeat the Rocket ramp until its LED reads 1 and shoot the Rocket again for Multiball. Take lit orbits after their matching inlane feeds when control allows, because those advances build the separate route toward Splashdown.",
+      "quickInfo": [
+        {
+          "name": "Missions",
+          "summary": "Choose Start Mission on the plunge or shoot the right saucer while its red lamp is lit. Nine played Missions qualify Master Alarm at that saucer."
+        },
+        {
+          "name": "Regular Multiball",
+          "summary": "The first start needs three Rocket-ramp shots; later starts add two shots. The Rocket LED shows the remaining count."
+        },
+        {
+          "name": "13-Ball",
+          "summary": "Complete B-L-A-S-T-O-F-F with lit ramp shots, exact ramp combos, or Mystery. The next qualified Rocket Multiball becomes 13-Ball."
+        },
+        {
+          "name": "Spacecraft",
+          "summary": "An inlane briefly lights the opposite orbit. Shoot lit orbits to advance through Video Mode, Power Down, Power Up, and Splashdown."
+        },
+        {
+          "name": "Shoot the Moon",
+          "summary": "Hit M-O-O-N in sequence, then shoot the Blastoff ramp to collect the hurry-up before draining."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Choose Start Mission on the plunge, or shoot the right saucer while its red Start Mission lamp is lit. Follow the display for the current Mission’s physical shots.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Repeat the Rocket ramp and watch its LED. The first Multiball takes three Rocket shots; when the LED reads 1, the next Rocket shot starts it.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During regular Multiball, collect the left-orbit, spinner-lane, right-orbit, and right-saucer Jackpots. Shoot the Blastoff ramp for the Super Jackpot after all four are collected.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete M-O-O-N in sequence during controlled one-ball play, then shoot the Blastoff ramp for Shoot the Moon. The same target sequence can light the Super during Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "After a left or right inlane, shoot the briefly lit opposite orbit to advance the spacecraft. Keep taking these controlled transfers toward Video Mode, Power Down, Power Up, and Splashdown.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the Blastoff ramp when its yellow lamp is lit, or make the exact lit ramp combo, to collect B-L-A-S-T-O-F-F. Once the word is complete, build the next Rocket Multiball to start 13-Ball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Master Alarm and Splashdown",
+        "steps": [
+          {
+            "text": "Play all nine Missions; after Master Alarm is qualified, spin the left spinner when needed to relight the right saucer.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit right saucer to start Master Alarm, then follow its lit shots and repeatable Blastoff-ramp Jackpot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Continue collecting lit-orbit spacecraft advances until the final orbit requirement starts Splashdown.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Mission",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Rocket",
+          "tone": "rust",
+          "kind": "multiball"
+        },
+        {
+          "label": "Regular Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "13-Ball",
+          "tone": "indigo",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Spacecraft",
+          "tone": "teal",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "CPU 5.01 leaves some scoring values uncertain, and other ROM revisions can differ.",
+          "response": "Use the physical starts and display prompts; do not assume the same values or timers on every ROM and setup.",
+          "sourceUrl": "https://www.pinball.org/rules/apollo13.html"
+        },
+        {
+          "issue": "Regular and Novice games use different time and ball structures.",
+          "response": "This route assumes the normal Regular selection; Novice is a timed game with drained balls relaunched until time expires.",
+          "sourceUrl": "https://www.pinball.org/rules/apollo13.html"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

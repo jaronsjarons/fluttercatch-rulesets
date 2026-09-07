@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "G56zB",
+  "title": "Count-Down",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Count-Down",
+      "url": "https://rules.silverballmania.com/rules/G56zB-MLv9k"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Count-Down rules and machine record",
+        "url": "https://www.kineticist.com/games/pinball/count-down-space-walk"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the green, yellow, red, and blue drop-target banks to reach 5x bonus. When base bonus reaches 20,000 and lights the top saucer, use the upper mini-flippers to collect it; the collect resets base bonus but keeps the multiplier for the rest of the ball.",
+      "quickInfo": [
+        {
+          "name": "Green, yellow, red, and blue banks",
+          "summary": "Complete green for 2x. Add yellow for 3x, red for 4x, and blue for 5x."
+        },
+        {
+          "name": "Completed-bank value",
+          "summary": "After a color bank is completed once on a ball, each target in that bank scores 5,000 instead of 500."
+        },
+        {
+          "name": "Base bonus",
+          "summary": "Drop targets build it. At 20,000, the top saucer lights to collect the current base bonus times the active multiplier."
+        },
+        {
+          "name": "Collect Bonus saucer",
+          "summary": "A collect resets base bonus but leaves Bonus X intact. Prefer the collect at 4x or 5x."
+        },
+        {
+          "name": "Upper mini-flippers",
+          "summary": "They provide the practical saucer shot and usually give a safer sideways angle into green and yellow targets."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the green drop targets to reach 2x bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete yellow for 3x, then red for 4x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete blue to reach 5x bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use the upper mini-flippers for green and yellow targets when their sideways angle is safer than a lower-flipper shot."
+        },
+        {
+          "text": "Continue drop-target hits until base bonus reaches 20,000 and lights the top saucer."
+        },
+        {
+          "text": "At 4x or 5x, use an upper mini-flipper, bank, or controlled nudge to send the ball into the top saucer."
+        },
+        {
+          "text": "After the collect resets base bonus, rebuild it while the multiplier remains active."
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 5x bonus collects",
+        "steps": [
+          {
+            "text": "Complete green, yellow, red, and blue for 5x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Build base bonus to 20,000 with drop-target hits."
+          },
+          {
+            "text": "Collect the lit top saucer at 5x."
+          },
+          {
+            "text": "Rebuild base bonus while 5x remains active for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "2x",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "3x",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "4x",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "5x",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Collect Bonus",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Green and yellow drop-target rebounds can drain down the middle.",
+          "response": "Prefer the upper mini-flippers' sideways angle and stop using a lower-flipper shot after a dangerous return.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G56zB-MLv9k"
+        },
+        {
+          "issue": "The center post may be removed or may fail to return the ball because of a sunken insert.",
+          "response": "Do not rely on the post to save a center drain.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G56zB-MLv9k"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check whether the center post is present, then test each colored-bank rebound and both upper mini-flippers."
+      ],
+      "simpleOverview": "In Count-Down, completing the four colored drop banks raises Bonus X, and target hits raise base bonus. The top saucer collects their product, resets only the base, and leaves the multiplier ready for another collect.",
+      "overview": "Count-Down is a repeatable bonus-collect game built from the green, yellow, red, and blue banks, a 20,000 base bonus, and the top saucer. Complete all four banks for 5X, raise the base to its cap, and collect it with an upper mini-flipper. Keep hitting drop targets to raise the base again while 5X remains active for the rest of the ball.",
+      "machineSetup": [
+        "Check whether the center post is present, then test each colored-bank rebound and both upper mini-flippers."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

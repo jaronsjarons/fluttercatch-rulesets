@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Yyo",
+  "title": "Tag-Team Pinball",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob Matthews's Tag-Team Pinball strategy",
+      "url": "https://rules.silverballmania.com/rules/G5Yyo-ML3Wo"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Tag-Team Pinball rules and strategy",
+        "url": "https://www.kineticist.com/games/pinball/tag-team-pinball"
+      },
+      {
+        "label": "OPDB Tag-Team Pinball edition group",
+        "url": "https://opdb.org/machine-groups/168"
+      },
+      {
+        "label": "MAME Gottlieb System 80B ROM definitions",
+        "url": "https://raw.githubusercontent.com/mamedev/mame/master/src/mame/pinball/gts80b.cpp"
+      },
+      {
+        "label": "Tag-Team Pinball at Arcade Expo 2019",
+        "url": "https://pinballvideos.com/v/2804/129"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete T-A-G left to right and T-E-A-M in order, lock one ball in each saucer, then shoot Release for three-ball Multiball and 3x playfield scoring. Use the left return lane to light the right spinner, then continue through the upper-left lock saucer and top lanes.",
+      "quickInfo": [
+        {
+          "name": "Locks",
+          "summary": "Completing T-A-G left to right lights the upper-left lock saucer. Completing T-E-A-M in order lights the lower-right lock saucer."
+        },
+        {
+          "name": "Three-ball Multiball",
+          "summary": "After both balls are locked, Release starts three-ball play with 3x playfield scoring."
+        },
+        {
+          "name": "Lit right spinner",
+          "summary": "The left return lane lights the right spinner briefly for 10,000 per spin, or 30,000 during Multiball."
+        },
+        {
+          "name": "Bonus Collect",
+          "summary": "Build base bonus to 20,000 to light one of the two lock saucers or Release. Slingshot hits move the lit collect; the shot scores base bonus with Bonus X and preserves the multiplier."
+        },
+        {
+          "name": "Last Chance",
+          "summary": "While a lock saucer holds a ball, draining through the lit left outlane releases that ball and continues play."
+        },
+        {
+          "name": "Reverse top lanes",
+          "summary": "Roll through each lit top lane to turn it off. Clearing all three raises Bonus X; at 5x, the lit top lane awards Special."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the T-A-G drop targets from left to right, then shoot the lit upper-left lock saucer.",
+          "modeNotes": [
+            "Build the T-A-G lock first. While a ball is held there, the lit left outlane releases that ball and continues play as Last Chance."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete the lower-right T-E-A-M drop targets in order, then shoot the lit lower-right lock saucer.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After both balls are locked, shoot the left Release horseshoe to start three-ball Multiball and 3x playfield scoring.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During Multiball, roll through the left return lane to light the right spinner, then shoot the lit spinner for 30,000 per spin.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the upper-left lock saucer from the right flipper. After its kickout, shoot the gate to the top lanes and roll through each lit lane. Clearing all three raises Bonus X; at 5x, the lit top lane awards Special.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Novelty-settings Extra Ball and Special",
+          "when": "Use these routes only when the tournament setting converts Extra Ball and Special to 500,000 points.",
+          "steps": [
+            {
+              "text": "Roll through the right return lane to light the lane left of the T in T-A-G, then repeat that lane while it is lit to work toward Extra Ball."
+            },
+            {
+              "text": "After Bonus X reaches 5x, shoot the lit top lane for Special. Reach it through the spinner, the upper gate right of G, or the gap left of T-A-G."
+            }
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Three-ball Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "3x playfield",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Release",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus Collect",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Last Chance",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "T-A-G rebounds can drain through the center.",
+          "response": "Watch each rebound before taking the next target.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Yyo-ML3Wo"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test both lock saucers, Release, the left-return-lane spinner lamp, the right spinner, and the upper gate."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At Arcade Expo 2019, Karl DeAngelo and the other finalists built the T-A-G lock before T-E-A-M, then used three-ball play for the lit right spinner at 30,000 per spin.",
+          "At the Arcade Expo semifinal, Karl DeAngelo, Mark Gilmore, David Oliver, and Gene Lewin held a lock for left-outlane protection and repeatedly shot the lit spinner.",
+          "Extra Ball and Special were each worth 500,000 on that event's novelty settings."
+        ]
+      },
+      "simpleOverview": "Tag-Team Pinball uses the T-A-G and T-E-A-M target banks to light two saucer locks. Complete the letters in order, lock one ball in each saucer, shoot Release for three-ball Multiball, then use the left return lane to light the right spinner for 30,000 per spin.",
+      "overview": "Tag-Team Pinball uses the T-A-G and T-E-A-M target banks to light two saucer locks. Lock one ball in each saucer, start three-ball Multiball for 3x playfield scoring, then roll through the left return lane and shoot the lit right spinner. Use the upper-left saucer and gate to return to the top lanes and raise Bonus X.",
+      "machineSetup": [
+        "Test both lock saucers, Release, the left-return-lane spinner lamp, the right spinner, and the upper gate."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

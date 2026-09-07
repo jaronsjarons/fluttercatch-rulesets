@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "G188W",
+  "title": "Hoopin' It Up",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Current Multimorphic Hoopin' It Up product and rules page",
+      "url": "https://www.multimorphic.com/store/p3-game-kits/3rd-party-game-kits/hoopin-it-up/"
+    },
+    "supportingSources": [
+      {
+        "label": "Complete Hoopin' It Up rules and gameplay overview",
+        "url": "https://www.youtube.com/watch?v=417DD143HNg"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Hoopin' It Up plays as two timed basketball halves. Green teammate scoops pass the ball and can remove defenders from scoring lanes; then shoot an open 2-point, 3-point, or dunk lane before the shot clock or a turnover resets the possession. Halftime minigames can earn time for overtime.",
+      "simpleOverview": "Hit green teammate scoops to open a scoring lane, then shoot the available 2-point, 3-point, or dunk shot before the possession resets. At halftime, choose a minigame to earn overtime time.",
+      "summary": "Pass through green teammate scoops until a scoring lane opens, then make the labeled 2-point, 3-point, or dunk shot before a turnover or shot-clock violation. Use the halftime minigame to build overtime time.",
+      "quickInfo": [
+        {
+          "name": "Pass",
+          "summary": "Green scoops represent teammates. Hitting one can remove a defender and make a scoring lane available."
+        },
+        {
+          "name": "Open shot",
+          "summary": "Shoot a lane labeled 2 points, 3 points, or dunk after it becomes available."
+        },
+        {
+          "name": "Possession",
+          "summary": "A turnover or shot-clock violation clears the current passing progress and starts another possession."
+        },
+        {
+          "name": "Halftime",
+          "summary": "Choose a short minigame between the two halves; its result contributes time to overtime."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before launch, use the flippers to select a topic on the rules whiteboard and press launch to read any unfamiliar rule.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "At the start of a possession, hit a green teammate scoop to pass and remove a blocker from a scoring lane.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When a lane shows an open 2-point, 3-point, or dunk opportunity, shoot it before the shot clock expires.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After a turnover, missed possession, or made basket resets the floor, pass again to create the next open shot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "At halftime, choose and play a minigame. Return to the second half, then use the earned overtime time after regulation.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "More points before time expires",
+        "steps": [
+          {
+            "text": "Use rebounds, assists, and free throws when their labels appear, but keep the open field-goal lane as the repeatable route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Avoid red defender scoops and complete the current shot before the shot clock reaches zero.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Convert the halftime minigame into overtime time, then repeat the pass-and-shoot sequence.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "teammate",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "turnover",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "halftime",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The complete walkthrough shows version 1 software.",
+          "response": "The possession, shot, half, and minigame structure remains stable; follow the display for values and later balancing.",
+          "sourceUrl": "https://www.multimorphic.com/store/p3-game-kits/3rd-party-game-kits/hoopin-it-up/"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

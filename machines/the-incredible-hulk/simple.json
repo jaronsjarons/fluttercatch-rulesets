@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "id": "GRQW7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Send the ball to the four top lanes and collect the lit multiplier, preferably 5x. Complete 1-2-3 to light the spinner. Build base bonus to 20,000, then guide the ball into either kicker for a 100,000 Bonus Collect.",
+        "quickInfo": [
+          {
+            "name": "Lit Bonus X lane",
+            "summary": "A lit top lane awards its displayed multiplier directly and can jump from 1x to 5x."
+          },
+          {
+            "name": "1-2-3",
+            "summary": "Unlight all three numbered targets to light the spinner for the ball and the right lane once."
+          },
+          {
+            "name": "Lit Spinner",
+            "summary": "After 1-2-3, each spin scores 1,000 and adds one base-bonus advance for the current ball."
+          },
+          {
+            "name": "Bonus Collect",
+            "summary": "At 20,000 base bonus, either kicker collects the multiplied bonus, resets base bonus, and preserves Bonus X."
+          },
+          {
+            "name": "A-B-C",
+            "summary": "Use both kickers once and complete the seven-bank to light inlane Specials for the current ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before the plunge, read which top lane has a lit multiplier. Plunge for the highest reachable value.",
+            "modeNotes": [
+              "Lit Bonus X lane: A lit top lane awards its displayed 2x, 3x, 4x, or 5x directly. You do not need lower values first.",
+              "Ten-point switches rotate the lit lane. After a collect, only higher multiplier lanes can light."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Cradle the first controllable ball. Test the right-flipper spinner shot and its reject."
+          },
+          {
+            "text": "Use the spinner or a bank shot from the upper-right targets to return the ball to the top lanes."
+          },
+          {
+            "text": "Repeat until Bonus X reaches 5x, or stop at the best controlled value.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit lit 1, 2, and 3 targets until all three become unlit.",
+            "modeNotes": [
+              "1-2-3: A lit target scores 5,000 and one bonus advance, then becomes unlit. An unlit target scores 500 and one advance.",
+              "Completion lights the spinner for the rest of the ball and lights the right side lane once."
+            ]
+          },
+          {
+            "text": "Shoot the lit spinner to build base bonus toward 20,000.",
+            "modeNotes": [
+              "Lit Spinner: Each spin scores 1,000 and adds one bonus advance. An unlit spin scores 100."
+            ]
+          },
+          {
+            "text": "When base bonus reaches 20,000, guide a descending ball into either center-side kicker.",
+            "modeNotes": [
+              "Bonus Collect: Both kicker lanes light at maximum base bonus. A kicker scores base bonus with Bonus X, resets base bonus, and preserves Bonus X.",
+              "The kickers replace normal slingshots. They accept balls only from above, so no lower flipper has a direct collect shot."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After the kicker returns the ball upfield, rebuild base bonus with the lit spinner and lanes."
+          },
+          {
+            "text": "Repeat the kicker collect while the feed remains controlled. All bonus progress resets after the ball."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Lit spinner and any-multiplier collect",
+          "when": "Recovery pivot: Use this when the lit top lane is hard to reach or repeated upper feeds become unsafe.",
+          "steps": [
+            {
+              "text": "Complete lit 1, 2, and 3 targets."
+            },
+            {
+              "text": "Confirm that the spinner lights for the current ball."
+            },
+            {
+              "text": "Shoot the spinner firmly from the right flipper."
+            },
+            {
+              "text": "Use each spin to build base bonus to 20,000."
+            },
+            {
+              "text": "Accept the current Bonus X. Do not force another top-lane attempt."
+            },
+            {
+              "text": "Guide a descending ball into either lit kicker."
+            },
+            {
+              "text": "Collect the multiplied bonus and rebuild base bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: 1-2-3 Extra Ball",
+            "when": "When trailing, use this higher-ceiling route: use this when the middle-right lane feed is controlled and Extra Ball has tournament value.",
+            "steps": [
+              {
+                "text": "Unlight the lit 1, 2, and 3 targets.",
+                "modeNotes": [
+                  "Extra Ball: A 1-2-3 completion lights the right side lane once. The lit lane scores 10,000 and awards a replay ball."
+                ]
+              },
+              {
+                "text": "Guide the ball into the middle-right lane from above when possible."
+              },
+              {
+                "text": "A lit entry scores 10,000, one bonus advance, and Extra Ball."
+              },
+              {
+                "text": "An unlit entry scores 500 and one bonus advance."
+              },
+              {
+                "text": "The lane lights only once per ball."
+              }
+            ]
+          },
+          {
+            "title": "A-B-C Special route",
+            "when": "Use this only when replay Specials score and both kicker entries are predictable.",
+            "steps": [
+              {
+                "text": "Use each center-side kicker once to collect A and B.",
+                "modeNotes": [
+                  "A-B-C: The first left and right kicker uses collect A and B. Completing the seven-bank collects C.",
+                  "An unused letter kicker scores 5,000 and one bonus advance. Later entries score 500 and one advance before Bonus Collect lights."
+                ]
+              },
+              {
+                "text": "Hit each of the seven drop targets."
+              },
+              {
+                "text": "Each target scores 3,000 and one bonus advance."
+              },
+              {
+                "text": "The full bank adds 5,000, collects C, and resets."
+              },
+              {
+                "text": "After A-B-C, roll through either lit inlane for Special.",
+                "modeNotes": [
+                  "Special: Both inlanes light after A-B-C. An inlane collect lights the same-side outlane for another Special."
+                ]
+              },
+              {
+                "text": "Ignore this route when replay awards have no tournament value."
+              }
+            ]
+          },
+          {
+            "title": "Seven-bank top-feed route",
+            "when": "Use this when bank shots reach the top more safely than the spinner.",
+            "steps": [
+              {
+                "text": "Cradle on the left flipper."
+              },
+              {
+                "text": "Bank the ball from the upper-right targets toward the four top lanes."
+              },
+              {
+                "text": "Collect the lit Bonus X lane when the feed reaches it."
+              },
+              {
+                "text": "Let incidental drop hits add base bonus."
+              },
+              {
+                "text": "After 5x, use bank shots only when more base bonus is needed."
+              },
+              {
+                "text": "Stop after a center-directed target rebound."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated 100,000 Bonus Collects",
+          "steps": [
+            {
+              "text": "Collect the lit 5x top lane.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete 1-2-3 to light the spinner."
+            },
+            {
+              "text": "Use the spinner to build base bonus to 20,000."
+            },
+            {
+              "text": "Guide the ball into either lit kicker."
+            },
+            {
+              "text": "Collect 100,000 and preserve 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Rebuild base bonus and repeat the collect."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "3x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "4x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "5x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Lit Bonus X lane",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "1-2-3",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Lit Spinner",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Bonus Collect",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "A-B-C",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Special",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Nudging",
+            "instruction": "Read the lit multiplier before the ball reaches the four lanes. Use a small legal nudge toward that lane.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/the-incredible-hulk",
+            "techniqueSlug": "nudging"
+          },
+          {
+            "name": "Spinner dribble collect",
+            "instruction": "Shoot the spinner firmly. When a reject descends slowly, guide it into the left kicker instead of forcing another shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQW7-MLW5P"
+          },
+          {
+            "name": "Upper-right bank feed",
+            "instruction": "From the left flipper, bank the ball from the upper-right targets toward the top lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQW7-MLW5P"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Begin a legal nudge before the ball reaches a kicker mouth. Let the passive rubber deflect the ball into the lane.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/the-incredible-hulk",
+            "techniqueSlug": "nudging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Spinner shots can reject from the upper rubber or miss the top lanes at high speed.",
+            "response": "Test one firm shot. Prepare both flippers when the ball returns outside the four lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQW7-MLW5P"
+          },
+          {
+            "issue": "A ball can rattle out of either kicker and drain through the center.",
+            "response": "Nudge before the ball settles. Keep both flippers ready until the kicker fires.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/the-incredible-hulk"
+          },
+          {
+            "issue": "The inlane-outlane divider begins below the entry point.",
+            "response": "Do not assume a clean entry reaches the inlane. Use an early legal nudge at the split.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQW7-MLW5P"
+          },
+          {
+            "issue": "All standup and drop-target shots can rebound toward a drain.",
+            "response": "Complete only needed targets. Stop direct target shots after the spinner and 5x are ready.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQW7-MLW5P"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original System 1 hardware, not a replacement rules board.",
+          "Test top lanes, spinner, both kickers, and Bonus Collect lamps."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top lanes",
+            "label": "Bonus X lanes",
+            "description": "Four top lanes that award their lit multiplier.",
+            "precision": "unverified",
+            "context": "Four top lanes that award their lit multiplier."
+          },
+          {
+            "term": "spinner",
+            "label": "Lit spinner",
+            "description": "Spinner qualified by completing the 1-2-3 targets.",
+            "precision": "unverified",
+            "context": "Spinner qualified by completing the 1-2-3 targets."
+          },
+          {
+            "term": "center-side kickers",
+            "label": "Bonus Collect kickers",
+            "description": "Two kicker lanes that collect maximum base bonus.",
+            "precision": "unverified",
+            "context": "Two kicker lanes that collect maximum base bonus."
+          },
+          {
+            "term": "1-2-3 targets",
+            "label": "1-2-3 targets",
+            "description": "Target set used to light the spinner.",
+            "precision": "unverified",
+            "context": "Target set used to light the spinner."
+          }
+        ],
+        "simpleOverview": "The Incredible Hulk is a multiplier-and-bonus-collect game. Send the ball through the lit top-lane multiplier, hit the numbered 1-2-3 targets until the spinner lights, use spinner spins to raise base bonus, then guide the ball into either kicker for the collect.",
+        "overview": "The Incredible Hulk is a multiplier-and-bonus-collect game. Reach the best controlled multiplier, hit lit 1-2-3 targets until they go dark, then use the spinner to raise base bonus to 20,000. Guide the ball into either kicker, preserve Bonus X, and repeat the build and collect.",
+        "machineSetup": [
+          "Confirm original System 1 hardware, not a replacement rules board.",
+          "Test top lanes, spinner, both kickers, and Bonus Collect lamps."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Send the ball to the four top lanes and collect the lit multiplier, preferably 5x. Complete 1-2-3 to light the spinner. Build base bonus to 20,000, then guide the ball into either kicker for a 100,000 Bonus Collect.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before the plunge, read which top lane has a lit multiplier. Plunge for the highest reachable value.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Lit Bonus X lane: A lit top lane awards its displayed 2x, 3x, 4x, or 5x directly. You do not need lower values first.",
+              "Ten-point switches rotate the lit lane. After a collect, only higher multiplier lanes can light."
+            ]
+          },
+          {
+            "text": "Cradle the first controllable ball. Test the right-flipper spinner shot and its reject."
+          },
+          {
+            "text": "Use the spinner or a bank shot from the upper-right targets to return the ball to the top lanes."
+          },
+          {
+            "text": "Repeat until Bonus X reaches 5x, or stop at the best controlled value.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit lit 1, 2, and 3 targets until all three become unlit.",
+            "details": [
+              "1-2-3: A lit target scores 5,000 and one bonus advance, then becomes unlit. An unlit target scores 500 and one advance.",
+              "Completion lights the spinner for the rest of the ball and lights the right side lane once."
+            ]
+          },
+          {
+            "text": "Shoot the lit spinner to build base bonus toward 20,000.",
+            "details": [
+              "Lit Spinner: Each spin scores 1,000 and adds one bonus advance. An unlit spin scores 100."
+            ]
+          },
+          {
+            "text": "When base bonus reaches 20,000, guide a descending ball into either center-side kicker.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus Collect: Both kicker lanes light at maximum base bonus. A kicker scores base bonus with Bonus X, resets base bonus, and preserves Bonus X.",
+              "The kickers replace normal slingshots. They accept balls only from above, so no lower flipper has a direct collect shot."
+            ]
+          },
+          {
+            "text": "After the kicker returns the ball upfield, rebuild base bonus with the lit spinner and lanes."
+          },
+          {
+            "text": "Repeat the kicker collect while the feed remains controlled. All bonus progress resets after the ball."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Lit Bonus X lane",
+            "summary": "A lit top lane awards its displayed multiplier directly and can jump from 1x to 5x."
+          },
+          {
+            "name": "1-2-3",
+            "summary": "Unlight all three numbered targets to light the spinner for the ball and the right lane once."
+          },
+          {
+            "name": "Lit Spinner",
+            "summary": "After 1-2-3, each spin scores 1,000 and adds one base-bonus advance for the current ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Lit spinner and any-multiplier collect",
+          "when": "Recovery pivot: Use this when the lit top lane is hard to reach or repeated upper feeds become unsafe.",
+          "steps": [
+            {
+              "text": "Complete lit 1, 2, and 3 targets."
+            },
+            {
+              "text": "Confirm that the spinner lights for the current ball."
+            },
+            {
+              "text": "Shoot the spinner firmly from the right flipper."
+            },
+            {
+              "text": "Use each spin to build base bonus to 20,000."
+            },
+            {
+              "text": "Accept the current Bonus X. Do not force another top-lane attempt."
+            },
+            {
+              "text": "Guide a descending ball into either lit kicker."
+            },
+            {
+              "text": "Collect the multiplied bonus and rebuild base bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A ball can rattle out of either kicker and drain through the center.",
+          "text": "Nudge before the ball settles. Keep both flippers ready until the kicker fires."
+        }
+      }
+    }
+  ]
+}

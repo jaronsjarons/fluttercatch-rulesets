@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "id": "GRw0r",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Repeat the Fault ramp to spot difficult zones, complete the predicted zones, lock once at the Shelter or Fault, finish the new zones and lock at the Fault, then shoot the center ramp followed by Fault for the Multiball Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Zones",
+            "summary": "Complete the current predicted zones to light the next lock; later rounds require more zones and a stricter order."
+          },
+          {
+            "name": "Fault ramp",
+            "summary": "The right ramp spots the lowest incomplete zone, locks a ball, and collects the lit Multiball Jackpot."
+          },
+          {
+            "name": "Earthshaker Multiball",
+            "summary": "Complete a building and lock two balls so the next plunge starts three-ball play."
+          },
+          {
+            "name": "Jackpot",
+            "summary": "During standard Multiball, shoot the center ramp to light the Jackpot and then shoot the Fault ramp to collect it."
+          },
+          {
+            "name": "Aftershock",
+            "summary": "After standard Multiball ends, shoot the Shelter within about 15 seconds to start two-ball play and another Jackpot attempt."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the Fault ramp and center-ramp returns during the first ball."
+          },
+          {
+            "text": "Repeat the Fault ramp to score miles and spot the lowest incomplete zone."
+          },
+          {
+            "text": "Complete the remaining predicted zones. Lock the first ball at the Shelter or Fault when the game permits it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the new predicted zones, then shoot the Fault ramp to lock the second ball and start three-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Earthshaker Multiball, shoot the center ramp once. Then shoot the Fault ramp for the Jackpot.",
+            "modeNotes": [
+              "Earthshaker Multiball: Two locks start three-ball play. The center ramp lights the Jackpot. The Fault ramp collects it.",
+              "Ball park: A ball in the Shelter can stay there until another ball drains. Use this only when it improves control."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After one ball remains, shoot the Shelter before the Aftershock timer ends. Repeat center ramp, then Fault, for another Jackpot attempt.",
+            "modeNotes": [
+              "Aftershock: The Shelter starts two-ball play for about 15 seconds after standard Multiball ends. The standard Jackpot light-and-collect sequence applies."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Fault and center ramps",
+          "when": "Use this when one zone shot, the Shelter, or the captive ball is unsafe.",
+          "steps": [
+            {
+              "text": "Repeat the Fault ramp to spot incomplete zones."
+            },
+            {
+              "text": "Loop the center ramp for miles and increasing ramp value."
+            },
+            {
+              "text": "Use incidental switches to complete the easier zones."
+            },
+            {
+              "text": "Return to the building lock only when its start feed is controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Quick Multiball",
+            "when": "Use this only when the captive ball and eject-hole feed are predictable.",
+            "steps": [
+              {
+                "text": "Shoot the center ramp repeatedly to raise the captive-ball value."
+              },
+              {
+                "text": "Hit the captive ball at its top value to light Quick Multiball."
+              },
+              {
+                "text": "Shoot the eject hole to start two-ball play.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the Fault ramp for the Million Shot. The standard Jackpot is not available in this feature.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Later buildings and maximum end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Complete each building and collect its Multiball Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete another building to raise the persistent end-of-ball Bonus X by one step."
+            },
+            {
+              "text": "Continue miles toward End of Road scoring."
+            },
+            {
+              "text": "Expect later buildings to require all nine zones in numerical order."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Earthshaker Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Aftershock",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Quick Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Fault ramp",
+            "label": "Fault ramp",
+            "description": "The right ramp that spots a zone, locks balls, and collects the lit Jackpot or Million Shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Shelter",
+            "label": "Shelter",
+            "description": "The center-right hole used for the first lock, Match-Up awards, and the timed Aftershock start.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "label": "Scenic Drive center ramp",
+            "description": "The center ramp that scores miles, raises captive-ball value, and lights the standard Multiball Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "label": "Zone 9 captive ball",
+            "description": "The right-side captive ball that can light Quick Multiball at its 250,000 value.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Eject-hole Fault feed",
+            "instruction": "Shoot the eject hole from the right flipper. Use its slow left-side release for an immediate Fault-ramp attempt.",
+            "sourceUrl": "https://www.pinball.org/rules/earthshaker.html"
+          },
+          {
+            "name": "Multiball overpass plunge",
+            "instruction": "Plunge through the overpass at a standard Multiball start. Use the lower-left feed for the center-ramp Jackpot light.",
+            "sourceUrl": "https://www.pinball.org/rules/earthshaker.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The captive ball is a low-percentage direct shot.",
+            "response": "Use Fault-ramp zone spots for the standard route. Take the captive ball only from a controlled feed.",
+            "sourceUrl": "https://www.pinball.org/rules/earthshaker.html"
+          },
+          {
+            "issue": "A strong Quick Multiball plunge can reach the center ramp while the locked ball ejects past the upper flipper.",
+            "response": "Use a controlled plunge. Avoid a two-ball collision that removes the first Million Shot attempt.",
+            "sourceUrl": "https://www.pinball.org/rules/earthshaker.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Earthshaker L-3 or the installed ROM, ball count, Extra Ball conversion, first-lock location, zone spotting, and Aftershock timer.",
+          "Confirm required zone order, captive-ball timer, Match-Up awards, starting bumpers, Jackpot ladder, and whether Quick Multiball is enabled.",
+          "Test the Fault and center ramps, Shelter release, eject-hole feed, captive-ball registration, upper flipper, and Multiball plunge before choosing the route."
+        ],
+        "simpleOverview": "Earthshaker uses completed zones to light two locks and start three-ball Multiball. Repeat the Fault ramp to spot difficult zones, finish each building, take the Shelter or Fault locks, then shoot center ramp followed by Fault for the Jackpot.",
+        "overview": "Earthshaker uses completed zones to light two locks and start three-ball Multiball. Use Fault to spot the lowest incomplete zone, finish the required buildings, and take both locks. During Multiball shoot center ramp then Fault; after it ends, use the short Shelter window for Aftershock only when the feed is controlled.",
+        "machineSetup": [
+          "Confirm Earthshaker L-3 or the installed ROM, ball count, Extra Ball conversion, first-lock location, zone spotting, and Aftershock timer.",
+          "Confirm required zone order, captive-ball timer, Match-Up awards, starting bumpers, Jackpot ladder, and whether Quick Multiball is enabled.",
+          "Test the Fault and center ramps, Shelter release, eject-hole feed, captive-ball registration, upper flipper, and Multiball plunge before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the Fault ramp to spot difficult zones, complete the predicted zones, lock once at the Shelter or Fault, finish the new zones and lock at the Fault, then shoot the center ramp followed by Fault for the Multiball Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the Fault ramp and center-ramp returns during the first ball."
+          },
+          {
+            "text": "Repeat the Fault ramp to score miles and spot the lowest incomplete zone."
+          },
+          {
+            "text": "Complete the remaining predicted zones. Lock the first ball at the Shelter or Fault when the game permits it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the new predicted zones, then shoot the Fault ramp to lock the second ball and start three-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Earthshaker Multiball, shoot the center ramp once. Then shoot the Fault ramp for the Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Earthshaker Multiball: Two locks start three-ball play. The center ramp lights the Jackpot. The Fault ramp collects it.",
+              "Ball park: A ball in the Shelter can stay there until another ball drains. Use this only when it improves control."
+            ]
+          },
+          {
+            "text": "After one ball remains, shoot the Shelter before the Aftershock timer ends. Repeat center ramp, then Fault, for another Jackpot attempt.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Aftershock: The Shelter starts two-ball play for about 15 seconds after standard Multiball ends. The standard Jackpot light-and-collect sequence applies."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Zones",
+            "summary": "Complete the current predicted zones to light the next lock; later rounds require more zones and a stricter order."
+          },
+          {
+            "name": "Fault ramp",
+            "summary": "The right ramp spots the lowest incomplete zone, locks a ball, and collects the lit Multiball Jackpot."
+          },
+          {
+            "name": "Earthshaker Multiball",
+            "summary": "Complete a building and lock two balls so the next plunge starts three-ball play."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Fault and center ramps",
+          "when": "Use this when one zone shot, the Shelter, or the captive ball is unsafe.",
+          "steps": [
+            {
+              "text": "Repeat the Fault ramp to spot incomplete zones."
+            },
+            {
+              "text": "Loop the center ramp for miles and increasing ramp value."
+            },
+            {
+              "text": "Use incidental switches to complete the easier zones."
+            },
+            {
+              "text": "Return to the building lock only when its start feed is controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "id": "GRpZ2",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "complete 1-2-3-4 early, score the moving lit drop, and use the lit center target to reset the banks and raise their value.",
+        "steps": [
+          {
+            "text": "Plunge for a missing number. Prefer 2 or 3 if a 1 or 4 plunge feeds the center."
+          },
+          {
+            "text": "Complete 1-2-3-4 as soon as possible. The numbers carry between balls."
+          },
+          {
+            "text": "Shoot 1 and 4 directly. Bank a shot behind lowered drops to reach 2 or 3."
+          },
+          {
+            "text": "Hit the lit drop targets. Switch hits move the lit target."
+          },
+          {
+            "text": "If a bank is almost complete, finish its unlit targets."
+          },
+          {
+            "text": "When the center target lights, hit it to reset the drops and raise the target value."
+          },
+          {
+            "text": "Repeat. Score the lit drops at the higher value."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Number lanes",
+            "summary": "Complete 1-2-3-4 to score and advance the lit drop-target value; number progress carries between balls."
+          },
+          {
+            "name": "Lit drop",
+            "summary": "Switch hits move the lit target, so read the bank before choosing a rebound."
+          },
+          {
+            "name": "Center reset",
+            "summary": "After the required bank progress, the lit center target resets the drops and raises their value."
+          }
+        ],
+        "fallback": {
+          "title": "Number lanes",
+          "when": "Use this plan when the center target or drop rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the outer 1 and 4 lanes."
+            },
+            {
+              "text": "Use the lower inlanes to complete missing numbers."
+            },
+            {
+              "text": "Complete 1-2-3-4 to score and raise the target value."
+            }
+          ]
+        },
+        "alternatives": [],
+        "buildsToward": {
+          "title": "5,000 lit-target value",
+          "steps": [
+            {
+              "text": "Complete 1-2-3-4 repeatedly."
+            },
+            {
+              "text": "Hit the lit center target after completing the required drop bank."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "lit-target value",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "1-2-3-4",
+            "label": "Number lanes",
+            "description": "The four numbered upper and lower lanes whose completion advances the lit-target value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit drop targets",
+            "label": "Moving lit drop",
+            "description": "The two drop banks; switch hits move which drop target is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center reset target",
+            "description": "The bullseye that resets the banks and raises target value when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower inlanes",
+            "label": "Lower number inlanes",
+            "description": "The lower 2 and 3 lanes used to finish missing number progress through safe flow.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Banked number-lane shot",
+            "instruction": "After a drop is down, bank the ball through the opening to reach the hidden 2 or 3 lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MkPyb"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A plunge into lane 1 or 4 can return straight down the middle.",
+            "response": "Test the first plunge. Use lane 2 or 3 when an outer plunge feeds the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MkPyb"
+          },
+          {
+            "issue": "Drop-target rebounds can become uncontrolled.",
+            "response": "Use the outer 1 and 4 lane shots when they are the safer repeatable shots.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MkPyb"
+          }
+        ],
+        "checkBeforePlay": [
+          "read the installed ball count and whether add-a-ball, Extra Ball, and Special awards convert to points.",
+          "Confirm number-lane carry, lit-target maximum, bank reset, center-target requirements, tournament conversions, and tilt settings.",
+          "Test every number lane, both drop banks, lit targets, upper exits, slingshots, outlanes, and target rebounds."
+        ],
+        "simpleOverview": "In Abra Ca Dabra, collect numbered lanes 1 through 4 early because they carry between balls, then hit the drop target carrying the moving lit award. When the center target lights, hit it to reset both banks at a higher target value and repeat. On Team One, instead collect its six numbered lanes and finish the two target banks for the add-a-ball awards shown on that version.",
+        "overview": "In Abra Ca Dabra, numbers 1 through 4 carry between balls, switch hits move the lit drop award, and the lit center target resets the banks at a higher value. Complete the numbers, take safe lit drops, finish a nearly complete bank, then hit the center target and repeat at the higher value. On Team One, use its six numbered lanes and two five-target banks, prioritizing converted add-a-ball awards only when their shots are controlled.",
+        "machineSetup": [
+          "Identify Abra Ca Dabra or Team One, then read the installed ball count and whether add-a-ball, Extra Ball, and Special awards convert to points.",
+          "Confirm number-lane carry, lit-target maximum, bank reset, center-target requirements, tournament conversions, and tilt settings.",
+          "Test every number lane, both drop banks, lit targets, upper exits, slingshots, outlanes, and target rebounds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "complete 1-2-3-4 early, score the moving lit drop, and use the lit center target to reset the banks and raise their value.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a missing number. Prefer 2 or 3 if a 1 or 4 plunge feeds the center."
+          },
+          {
+            "text": "Complete 1-2-3-4 as soon as possible. The numbers carry between balls."
+          },
+          {
+            "text": "Shoot 1 and 4 directly. Bank a shot behind lowered drops to reach 2 or 3."
+          },
+          {
+            "text": "Hit the lit drop targets. Switch hits move the lit target."
+          },
+          {
+            "text": "If a bank is almost complete, finish its unlit targets."
+          },
+          {
+            "text": "When the center target lights, hit it to reset the drops and raise the target value."
+          },
+          {
+            "text": "Repeat. Score the lit drops at the higher value."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Number lanes",
+            "summary": "Complete 1-2-3-4 to score and advance the lit drop-target value; number progress carries between balls."
+          },
+          {
+            "name": "Lit drop",
+            "summary": "Switch hits move the lit target, so read the bank before choosing a rebound."
+          },
+          {
+            "name": "Center reset",
+            "summary": "After the required bank progress, the lit center target resets the drops and raises their value."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Number lanes",
+          "when": "Use this plan when the center target or drop rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the outer 1 and 4 lanes."
+            },
+            {
+              "text": "Use the lower inlanes to complete missing numbers."
+            },
+            {
+              "text": "Complete 1-2-3-4 to score and raise the target value."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A plunge into lane 1 or 4 can return straight down the middle.",
+          "text": "Test the first plunge. Use lane 2 or 3 when an outer plunge feeds the center."
+        }
+      }
+    },
+    {
+      "name": "GRpZ2-MkPyb",
+      "input": {
+        "summary": "complete 1-2-3-4 early, score the moving lit drop, and use the lit center target to reset the banks and raise their value.",
+        "steps": [
+          {
+            "text": "Plunge for a missing number. Prefer 2 or 3 if a 1 or 4 plunge feeds the center."
+          },
+          {
+            "text": "Complete 1-2-3-4 as soon as possible. The numbers carry between balls."
+          },
+          {
+            "text": "Shoot 1 and 4 directly. Bank a shot behind lowered drops to reach 2 or 3."
+          },
+          {
+            "text": "Hit the lit drop targets. Switch hits move the lit target."
+          },
+          {
+            "text": "If a bank is almost complete, finish its unlit targets."
+          },
+          {
+            "text": "When the center target lights, hit it to reset the drops and raise the target value."
+          },
+          {
+            "text": "Repeat. Score the lit drops at the higher value."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Number lanes",
+            "summary": "Complete 1-2-3-4 to score and advance the lit drop-target value; number progress carries between balls."
+          },
+          {
+            "name": "Lit drop",
+            "summary": "Switch hits move the lit target, so read the bank before choosing a rebound."
+          },
+          {
+            "name": "Center reset",
+            "summary": "After the required bank progress, the lit center target resets the drops and raises their value."
+          }
+        ],
+        "fallback": {
+          "title": "Number lanes",
+          "when": "Use this plan when the center target or drop rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the outer 1 and 4 lanes."
+            },
+            {
+              "text": "Use the lower inlanes to complete missing numbers."
+            },
+            {
+              "text": "Complete 1-2-3-4 to score and raise the target value."
+            }
+          ]
+        },
+        "alternatives": [],
+        "buildsToward": {
+          "title": "5,000 lit-target value",
+          "steps": [
+            {
+              "text": "Complete 1-2-3-4 repeatedly."
+            },
+            {
+              "text": "Hit the lit center target after completing the required drop bank."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "lit-target value",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "1-2-3-4",
+            "label": "Number lanes",
+            "description": "The four numbered upper and lower lanes whose completion advances the lit-target value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit drop targets",
+            "label": "Moving lit drop",
+            "description": "The two drop banks; switch hits move which drop target is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center reset target",
+            "description": "The bullseye that resets the banks and raises target value when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower inlanes",
+            "label": "Lower number inlanes",
+            "description": "The lower 2 and 3 lanes used to finish missing number progress through safe flow.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Banked number-lane shot",
+            "instruction": "After a drop is down, bank the ball through the opening to reach the hidden 2 or 3 lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MkPyb"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A plunge into lane 1 or 4 can return straight down the middle.",
+            "response": "Test the first plunge. Use lane 2 or 3 when an outer plunge feeds the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MkPyb"
+          },
+          {
+            "issue": "Drop-target rebounds can become uncontrolled.",
+            "response": "Use the outer 1 and 4 lane shots when they are the safer repeatable shots.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MkPyb"
+          }
+        ],
+        "checkBeforePlay": [
+          "read the installed ball count and whether add-a-ball, Extra Ball, and Special awards convert to points.",
+          "Confirm number-lane carry, lit-target maximum, bank reset, center-target requirements, tournament conversions, and tilt settings.",
+          "Test every number lane, both drop banks, lit targets, upper exits, slingshots, outlanes, and target rebounds."
+        ],
+        "simpleOverview": "In Abra Ca Dabra, collect numbered lanes 1 through 4 early because they carry between balls, then hit the drop target carrying the moving lit award. When the center target lights, hit it to reset both banks at a higher target value and repeat. On Team One, instead collect its six numbered lanes and finish the two target banks for the add-a-ball awards shown on that version.",
+        "overview": "In Abra Ca Dabra, numbers 1 through 4 carry between balls, switch hits move the lit drop award, and the lit center target resets the banks at a higher value. Complete the numbers, take safe lit drops, finish a nearly complete bank, then hit the center target and repeat at the higher value. On Team One, use its six numbered lanes and two five-target banks, prioritizing converted add-a-ball awards only when their shots are controlled.",
+        "machineSetup": [
+          "Identify Abra Ca Dabra or Team One, then read the installed ball count and whether add-a-ball, Extra Ball, and Special awards convert to points.",
+          "Confirm number-lane carry, lit-target maximum, bank reset, center-target requirements, tournament conversions, and tilt settings.",
+          "Test every number lane, both drop banks, lit targets, upper exits, slingshots, outlanes, and target rebounds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "complete 1-2-3-4 early, score the moving lit drop, and use the lit center target to reset the banks and raise their value.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a missing number. Prefer 2 or 3 if a 1 or 4 plunge feeds the center."
+          },
+          {
+            "text": "Complete 1-2-3-4 as soon as possible. The numbers carry between balls."
+          },
+          {
+            "text": "Shoot 1 and 4 directly. Bank a shot behind lowered drops to reach 2 or 3."
+          },
+          {
+            "text": "Hit the lit drop targets. Switch hits move the lit target."
+          },
+          {
+            "text": "If a bank is almost complete, finish its unlit targets."
+          },
+          {
+            "text": "When the center target lights, hit it to reset the drops and raise the target value."
+          },
+          {
+            "text": "Repeat. Score the lit drops at the higher value."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Number lanes",
+            "summary": "Complete 1-2-3-4 to score and advance the lit drop-target value; number progress carries between balls."
+          },
+          {
+            "name": "Lit drop",
+            "summary": "Switch hits move the lit target, so read the bank before choosing a rebound."
+          },
+          {
+            "name": "Center reset",
+            "summary": "After the required bank progress, the lit center target resets the drops and raises their value."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Number lanes",
+          "when": "Use this plan when the center target or drop rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the outer 1 and 4 lanes."
+            },
+            {
+              "text": "Use the lower inlanes to complete missing numbers."
+            },
+            {
+              "text": "Complete 1-2-3-4 to score and raise the target value."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A plunge into lane 1 or 4 can return straight down the middle.",
+          "text": "Test the first plunge. Use lane 2 or 3 when an outer plunge feeds the center."
+        }
+      }
+    },
+    {
+      "name": "GRpZ2-MDO9d",
+      "input": {
+        "summary": "Complete all six numbered lanes, hit each star target when the soccer-ball lamp above it is lit, and work through both five-target banks toward the converted add-a-ball awards.",
+        "steps": [
+          {
+            "text": "Plunge a missing number; prefer 2 or 3 if the outer lanes can return down the center."
+          },
+          {
+            "text": "Complete all six numbered lanes. Hit a star target when the soccer-ball lamp above it is lit and its rebound is controlled."
+          },
+          {
+            "text": "Work through both five-target banks. From a cradle, backhand an exposed upper number or lit target when that angle is repeatable."
+          },
+          {
+            "text": "When add-a-balls are converted for competition, prioritize the converted point awards over unsafe completion attempts."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Six number lanes",
+            "summary": "Complete all six numbered lanes; number progress carries between balls."
+          },
+          {
+            "name": "Lit star targets",
+            "summary": "Hit a star target when the soccer-ball lamp above it is lit and its rebound is controlled."
+          },
+          {
+            "name": "Converted awards",
+            "summary": "When competition converts add-a-balls to points, collect those awards only from controlled returns."
+          }
+        ],
+        "fallback": {
+          "title": "Numbers first",
+          "when": "Use this when the lit-target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Plunge a missing number."
+            },
+            {
+              "text": "Return the ball up top and finish all six numbered lanes."
+            },
+            {
+              "text": "Take only lit targets whose rebounds have reached a flipper safely."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Six numbers and converted add-a-ball awards",
+          "steps": [
+            {
+              "text": "Plunge a missing number; prefer 2 or 3 if the outer lanes can return down the center."
+            },
+            {
+              "text": "Complete all six numbered lanes. Hit a star target when the soccer-ball lamp above it is lit and its rebound is controlled."
+            },
+            {
+              "text": "Work through both five-target banks. From a cradle, backhand an exposed upper number or lit target when that angle is repeatable."
+            },
+            {
+              "text": "When add-a-balls are converted for competition, prioritize the converted point awards over unsafe completion attempts."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "lit-target value",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "six numbered lanes",
+            "label": "Six numbered lanes",
+            "description": "The six rollover lanes whose progress carries between balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "star targets",
+            "label": "Ten star targets",
+            "description": "The two five-target banks; hit a star target when the soccer-ball lamp above it is lit.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A plunge into lane 1 or 4 can return straight down the middle.",
+            "response": "Test the first plunge. Use lane 2 or 3 when an outer plunge feeds the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRpZ2-MDO9d"
+          }
+        ],
+        "checkBeforePlay": [
+          "Read the installed ball count and whether add-a-ball, Extra Ball, and Special awards convert to points.",
+          "Confirm number-lane carry, lit-target maximum, bank reset, center-target requirements, tournament conversions, and tilt settings.",
+          "Test every number lane, both drop banks, lit targets, upper exits, slingshots, outlanes, and target rebounds."
+        ],
+        "simpleOverview": "Team One lights scoring through six numbered rollover lanes and two five-target star banks. Complete the lanes, hit a star target when the soccer-ball lamp above it is lit, and collect a converted add-a-ball award only when its return is controlled.",
+        "overview": "In Team One, six numbered rollover lanes carry their progress between balls, and soccer-ball lamps mark the valuable star targets in two five-target banks. Complete the lanes, take safely presented lit targets, then work through both banks toward the converted add-a-ball awards.",
+        "machineSetup": [
+          "Identify Abra Ca Dabra or Team One, then read the installed ball count and whether add-a-ball, Extra Ball, and Special awards convert to points.",
+          "Confirm number-lane carry, lit-target maximum, bank reset, center-target requirements, tournament conversions, and tilt settings.",
+          "Test every number lane, both drop banks, lit targets, upper exits, slingshots, outlanes, and target rebounds."
+        ],
+        "rulesNotes": [],
+        "simplePilotKey": "GRpZ2-MDO9d"
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete all six numbered lanes, hit each star target when the soccer-ball lamp above it is lit, and collect converted add-a-ball awards only from controlled returns.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Complete the six number lanes",
+            "text": "Plunge a missing number, preferring 2 or 3 when lane 1 or 4 can return down the middle, then keep returning the ball up top until all six numbers are complete."
+          },
+          {
+            "title": "Hit the lit star targets",
+            "text": "Work through both five-target banks. Hit a star target when the soccer-ball lamp above it is lit and its rebound is controlled."
+          },
+          {
+            "title": "Use converted awards",
+            "text": "When competition converts add-a-balls to points, complete the required target or lane only from a controlled shot."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Six number lanes",
+            "summary": "Complete all six numbered lanes; number progress carries between balls."
+          },
+          {
+            "name": "Lit star targets",
+            "summary": "Hit a star target when the soccer-ball lamp above it is lit and its rebound is controlled."
+          },
+          {
+            "name": "Converted awards",
+            "summary": "When competition converts add-a-balls to points, collect those awards only from controlled returns."
+          }
+        ],
+        "warning": {
+          "title": "A plunge into lane 1 or 4 can return straight down the middle.",
+          "text": "Test the first plunge. Use lane 2 or 3 when an outer plunge feeds the center."
+        }
+      }
+    }
+  ]
+}

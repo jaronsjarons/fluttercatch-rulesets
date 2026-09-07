@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "G42Zz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete the P-A-R-T-Y A-N-I-M-A-L letters at their lit playfield shots; the inserts carry between balls and may also carry between games on the installed setup. Completing the phrase starts three-ball Multiball. During Multiball, the number of balls in play controls the 2x or 3x playfield value, so preserve all three and favor the repeatable ramps.",
+        "simpleOverview": "Collect the lit P-A-R-T-Y A-N-I-M-A-L letters around the playfield. Completing the phrase starts three-ball Multiball. Keep all three balls alive for 3x playfield value; after one drains, the remaining two score at 2x. Repeat the safest ramp while the multiplier is high.",
+        "summary": "Complete the lit P-A-R-T-Y A-N-I-M-A-L letters to start three-ball Multiball. Preserve three balls for 3x playfield value, then two balls for 2x, and repeat the safest ramp while the multiplier lasts.",
+        "quickInfo": [
+          {
+            "name": "Build Letters",
+            "summary": "Shoot the lit playfield features that award P-A-R-T-Y A-N-I-M-A-L."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Complete the full P-A-R-T-Y A-N-I-M-A-L phrase."
+          },
+          {
+            "name": "Keep 3x",
+            "summary": "Keep all three balls in play during Multiball."
+          },
+          {
+            "name": "Change Music",
+            "summary": "Complete the three Jukebox targets outside Multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Follow the lit inserts and collect every letter in P-A-R-T-Y A-N-I-M-A-L.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the phrase to release the balls and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Separate and control the balls before attacking the ramps; three live balls give 3x playfield value.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the safest ramp while three or two balls remain, because the playfield multiplier falls with ball count.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Work P-I-G-O-U-T",
+            "when": "Use this when its six targets are safer than the current letter shot.",
+            "steps": [
+              {
+                "text": "Complete the P-I-G-O-U-T targets for their lit feature value.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Return to the flashing PARTY ANIMAL letter after the target feed is controlled.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Use the Jukebox",
+          "steps": [
+            {
+              "text": "Outside Multiball, complete the three Jukebox targets to advance the song and collect their feature.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Do not plan a Jukebox collect during Multiball; use that time for multiplied ramp and target scoring.",
+              "kinds": [
+                "multiball",
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm whether PARTY ANIMAL letters carry between games, how extra ball and Special convert, and whether locks or letter progress are shared.",
+          "Test every PARTY ANIMAL and P-I-G-O-U-T award shot, both ramps, three-ball release, Jukebox targets, all three saucers, toad target, and trough."
+        ],
+        "termStyles": [
+          {
+            "label": "P-A-R-T-Y A-N-I-M-A-L",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Playfield Multiplier",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "P-A-R-T-Y A-N-I-M-A-L",
+            "label": "Party Animal letters",
+            "description": "The lit phrase whose completion starts three-ball Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramps",
+            "label": "Left and right ramps",
+            "description": "The repeatable shots favored while Multiball playfield value is multiplied.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Jukebox targets",
+            "label": "Jukebox three-bank",
+            "description": "The three targets that change the song and collect their feature outside Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "PARTY ANIMAL letter carry can be operator-dependent.",
+            "response": "Read the inserts at game start instead of assuming the phrase begins empty or retains prior progress.",
+            "sourceUrl": "https://www.arcade-history.com/game/5365/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the lit P-A-R-T-Y A-N-I-M-A-L letters to start three-ball Multiball. Preserve three balls for 3x playfield value, then two balls for 2x, and repeat the safest ramp while the multiplier lasts.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Follow the lit inserts and collect every letter in P-A-R-T-Y A-N-I-M-A-L.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the phrase to release the balls and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Separate and control the balls before attacking the ramps; three live balls give 3x playfield value.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the safest ramp while three or two balls remain, because the playfield multiplier falls with ball count.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Build Letters",
+            "summary": "Shoot the lit playfield features that award P-A-R-T-Y A-N-I-M-A-L."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Complete the full P-A-R-T-Y A-N-I-M-A-L phrase."
+          },
+          {
+            "name": "Keep 3x",
+            "summary": "Keep all three balls in play during Multiball."
+          }
+        ]
+      }
+    }
+  ]
+}

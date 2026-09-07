@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "id": "G5VBJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the left ramp for M-I-L-L-I-O-N-S while you build Multiball. Complete the center drops, lock one ball for two-ball play, and relock both balls before the timer ends. During three-ball play, complete the center bank, keep switches active, and collect the one Jackpot at the left ramp.",
+        "quickInfo": [
+          {
+            "name": "Two-Ball Multiball",
+            "summary": "Complete the bowling-pin bank and lock at a lit saucer to release a second ball."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "During two-ball play, relock both balls in different saucers before the timer expires."
+          },
+          {
+            "name": "Multiball Jackpot",
+            "summary": "Complete the center bank during three-ball play and shoot the left ramp for the one available Jackpot."
+          },
+          {
+            "name": "Simpsons Millions",
+            "summary": "Spell M-I-L-L-I-O-N-S at the left ramp, then repeat the ramp for 1,000,000 during the timer."
+          },
+          {
+            "name": "Mystery",
+            "summary": "Two quick left ramps at ball start or after multiball award one displayed mystery value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through an unlit top lane and use either flipper to move the lit lanes toward a completion."
+          },
+          {
+            "text": "Test the left ramp. Repeat it from the right-inlane return only when that feed stays controlled."
+          },
+          {
+            "text": "Use the left ramp to add M-I-L-L-I-O-N-S letters while you work toward the center bank.",
+            "modeNotes": [
+              "Simpsons Millions: Completing the word starts a timed mode with 1,000,000 at each left-ramp shot."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the three center bowling-pin drops and shoot any saucer lit for Lock.",
+            "modeNotes": [
+              "Two-Ball Multiball: The first lock releases with an autoplunged replacement ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During two-ball play, lock one ball in any saucer and read the relock timer.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Put the second ball into a different saucer before the timer ends, then plunge the third ball.",
+            "modeNotes": [
+              "Failed relock: If time expires, the first held ball ejects and the two-ball relock attempt must start again.",
+              "Three-Ball Multiball: The third plunge releases both held balls for the Jackpot phase."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the center bowling-pin bank once to light Jackpot at the left ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep balls moving through safe switches while Jackpot rises from 1,000,000 toward 4,000,000.",
+            "modeNotes": [
+              "Jackpot growth: Long periods without switch activity can lower the displayed value."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for the one Jackpot collect, then use safe play until one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to left-ramp letters and the next multiball qualification."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Simpsons Millions",
+          "when": "Recovery pivot: Use this when the center targets or timed relocks are unsafe.",
+          "steps": [
+            {
+              "text": "Repeat the left ramp to spell M-I-L-L-I-O-N-S."
+            },
+            {
+              "text": "When the mode starts, repeat the ramp for 1,000,000."
+            },
+            {
+              "text": "A made ramp briefly pauses the timer during its callout."
+            },
+            {
+              "text": "Stop after a dangerous return; the mode has no grace period."
+            },
+            {
+              "text": "Each scored Million shortens the next mode timer by two seconds to a five-second minimum."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Opening Mystery double ramp",
+            "when": "When trailing, use this higher-ceiling route: use this at ball start or after multiball when the ramp loop is reliable.",
+            "steps": [
+              {
+                "text": "Shoot the lit left ramp once."
+              },
+              {
+                "text": "Repeat the ramp before the short timer ends."
+              },
+              {
+                "text": "Accept the displayed Mystery award and return to the main route."
+              },
+              {
+                "text": "Do not depend on a specific random award."
+              }
+            ]
+          },
+          {
+            "title": "Right-bank awards",
+            "when": "Use this when the right drops are safe and awards have tournament value.",
+            "steps": [
+              {
+                "text": "Complete the bank once and shoot the near-left saucer for Bonus Hold."
+              },
+              {
+                "text": "Complete it again and shoot the upper-right saucer for Extra Ball."
+              },
+              {
+                "text": "Complete it again and shoot the upper-left saucer for Special."
+              },
+              {
+                "text": "Stop after an unsafe direct-bank rebound."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Multiball Jackpots",
+          "steps": [
+            {
+              "text": "Complete the center bank and start Two-Ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Relock both balls before the timer ends and start Three-Ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the center bank again."
+            },
+            {
+              "text": "Keep switch activity high while Jackpot grows."
+            },
+            {
+              "text": "Shoot the left ramp for the one Jackpot."
+            },
+            {
+              "text": "Repeat the qualification later; the game has no separate wizard mode."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Two-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Three-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Simpsons Millions",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Mystery",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Double Score",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Multiball Jackpot",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Laser Kick",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lane change",
+            "instruction": "Use either flipper to move the lit top lanes in the same direction before the ball rolls through.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          },
+          {
+            "name": "Left-ramp loop",
+            "instruction": "Take the next left-ramp shot from the right-inlane return only when the copy feeds it cleanly.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          },
+          {
+            "name": "Timed two-ball relock",
+            "instruction": "Use the safest first saucer, then shoot a different saucer with the live ball before the timer ends.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          },
+          {
+            "name": "Multiball activity control",
+            "instruction": "Use safe switch shots to keep Jackpot rising instead of holding every ball until the value falls.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The open playfield and wide left drain feed both outlanes.",
+            "response": "Keep the left-outlane Laser Kick lit and relight it at the lower-left standups after use.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          },
+          {
+            "issue": "The second two-ball relock is timed and the first ball ejects at zero.",
+            "response": "Read the display before you choose the first saucer.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          },
+          {
+            "issue": "Simpsons Millions has no grace period.",
+            "response": "Do not start a final ramp shot after the timer reaches zero.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          },
+          {
+            "issue": "Three-Ball Multiball has one Jackpot collect.",
+            "response": "After the left-ramp collect, use safe play instead of chasing an unavailable second Jackpot.",
+            "sourceUrl": "https://www.pinball.org/rules/simpsons.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the 1990 Data East game and relock timer.",
+          "Test each saucer eject, left-ramp return, and Laser Kick."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "MILLIONS ramp",
+            "description": "Ramp used for letters, Simpsons Millions, and Jackpot.",
+            "precision": "unverified",
+            "context": "Ramp used for letters, Simpsons Millions, and Jackpot."
+          },
+          {
+            "term": "center drops",
+            "label": "Bowling-pin bank",
+            "description": "Three-bank used to light locks and Jackpot.",
+            "precision": "unverified",
+            "context": "Three-bank used to light locks and Jackpot."
+          },
+          {
+            "term": "saucers",
+            "label": "Lock saucers",
+            "description": "Three saucers used for two-ball and three-ball Multiball.",
+            "precision": "unverified",
+            "context": "Three saucers used for two-ball and three-ball Multiball."
+          },
+          {
+            "term": "left outlane",
+            "label": "Laser Kick",
+            "description": "Left outlane kickback used to return a draining ball.",
+            "precision": "unverified",
+            "context": "Left outlane kickback used to return a draining ball."
+          }
+        ],
+        "simpleOverview": "The Simpsons uses the center bowling-pin drops and lit saucers to turn one lock into two-ball play, then two timed relocks start three-ball Multiball. Complete the center bank, take the first lock, relock both balls before time expires, then complete the bank again and shoot the left ramp for Jackpot.",
+        "overview": "The Simpsons uses the center bowling-pin drops and lit saucers to turn one lock into two-ball play, then two timed relocks start three-ball Multiball. Complete the bank again during Multiball, keep safe switches active to raise the Jackpot, and collect once at the left ramp. Use that ramp for M-I-L-L-I-O-N-S letters between Multiballs.",
+        "machineSetup": [
+          "Confirm the 1990 Data East game and relock timer.",
+          "Test each saucer eject, left-ramp return, and Laser Kick."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the left ramp for M-I-L-L-I-O-N-S while you build Multiball. Complete the center drops, lock one ball for two-ball play, and relock both balls before the timer ends. During three-ball play, complete the center bank, keep switches active, and collect the one Jackpot at the left ramp.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through an unlit top lane and use either flipper to move the lit lanes toward a completion."
+          },
+          {
+            "text": "Test the left ramp. Repeat it from the right-inlane return only when that feed stays controlled."
+          },
+          {
+            "text": "Use the left ramp to add M-I-L-L-I-O-N-S letters while you work toward the center bank.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Simpsons Millions: Completing the word starts a timed mode with 1,000,000 at each left-ramp shot."
+            ]
+          },
+          {
+            "text": "Complete the three center bowling-pin drops and shoot any saucer lit for Lock.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Two-Ball Multiball: The first lock releases with an autoplunged replacement ball."
+            ]
+          },
+          {
+            "text": "During two-ball play, lock one ball in any saucer and read the relock timer.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Put the second ball into a different saucer before the timer ends, then plunge the third ball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Failed relock: If time expires, the first held ball ejects and the two-ball relock attempt must start again.",
+              "Three-Ball Multiball: The third plunge releases both held balls for the Jackpot phase."
+            ]
+          },
+          {
+            "text": "Complete the center bowling-pin bank once to light Jackpot at the left ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep balls moving through safe switches while Jackpot rises from 1,000,000 toward 4,000,000.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Jackpot growth: Long periods without switch activity can lower the displayed value."
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for the one Jackpot collect, then use safe play until one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to left-ramp letters and the next multiball qualification."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Two-Ball Multiball",
+            "summary": "Complete the bowling-pin bank and lock at a lit saucer to release a second ball."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "During two-ball play, relock both balls in different saucers before the timer expires."
+          },
+          {
+            "name": "Multiball Jackpot",
+            "summary": "Complete the center bank during three-ball play and shoot the left ramp for the one available Jackpot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Simpsons Millions",
+          "when": "Recovery pivot: Use this when the center targets or timed relocks are unsafe.",
+          "steps": [
+            {
+              "text": "Repeat the left ramp to spell M-I-L-L-I-O-N-S."
+            },
+            {
+              "text": "When the mode starts, repeat the ramp for 1,000,000."
+            },
+            {
+              "text": "A made ramp briefly pauses the timer during its callout."
+            },
+            {
+              "text": "Stop after a dangerous return; the mode has no grace period."
+            },
+            {
+              "text": "Each scored Million shortens the next mode timer by two seconds to a five-second minimum."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The open playfield and wide left drain feed both outlanes.",
+          "text": "Keep the left-outlane Laser Kick lit and relight it at the lower-left standups after use."
+        }
+      }
+    }
+  ]
+}

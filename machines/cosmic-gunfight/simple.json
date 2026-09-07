@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "GRv7B",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Repeat the right orbit as it rises through 20,000, 30,000, 40,000, 50,000, and 60,000; the next completion starts double playfield scoring for the rest of the ball. Complete the top 1-2-3 lanes to light the upper-left lock, lock one ball there, then complete 1-2-3 again to light the far-left lock. Shoot the far-left lock to capture the second ball and start three-ball Multiball.",
+        "simpleOverview": "Repeat the right orbit until it starts double playfield scoring for the rest of the ball. Complete top 1-2-3, lock at the upper-left saucer, complete 1-2-3 again, then lock at the far-left saucer to start three-ball Multiball.",
+        "summary": "Prioritize the repeatable right orbit for a rest-of-ball doubler. For Multiball, complete 1-2-3 and lock upper-left, then repeat 1-2-3 and lock far-left.",
+        "quickInfo": [
+          {
+            "name": "Repeat the Right Orbit",
+            "summary": "Its ladder leads to double playfield scoring for the ball."
+          },
+          {
+            "name": "Complete 1-2-3",
+            "summary": "The first set lights the upper-left lock."
+          },
+          {
+            "name": "Lock One Ball",
+            "summary": "Shoot the upper-left saucer."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Repeat 1-2-3, then shoot the far-left lock."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Repeat the right orbit through its 20,000-to-60,000 ladder; the next completion starts double playfield scoring for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the top 1-2-3 lanes to light the upper-left lock, then shoot that saucer to capture the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete 1-2-3 again to light the far-left lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the far-left lock to capture the second ball and release all three balls for Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Bonus X",
+            "when": "Use this when a return-lane feed is controlled.",
+            "steps": [
+              {
+                "text": "Roll through a lit return lane to advance Bonus X toward 5x, then return to the right-orbit doubler route.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Combine Multiball with the rest-of-ball doubler",
+          "steps": [
+            {
+              "text": "Finish the right-orbit ladder before taking the second lock when the orbit is safe.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Start three-ball Multiball only after double playfield scoring is running.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count, lock memory, Extra Ball and Special conversions, Cosmic Ball settings, and Bonus X maximum.",
+          "Test the right orbit and value lamps, top 1-2-3 lanes and lane change, both left locks and releases, X-Y lanes, drop banks, and all three balls."
+        ],
+        "termStyles": [
+          {
+            "label": "Double playfield",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "1-2-3",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "Orbit whose ladder ends in double playfield scoring.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-2-3 lanes",
+            "label": "Top 1-2-3 lanes",
+            "description": "Upper lanes that qualify both locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-left lock",
+            "label": "Upper-left lock",
+            "description": "First ball lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "far-left lock",
+            "label": "Far-left lock",
+            "description": "Second lock and three-ball Multiball start.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The right-orbit value is held, but the playfield doubler lasts only for the current ball.",
+            "response": "Finish the ladder early enough to use the doubler on locks and Multiball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRv7B-MLqPd"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Prioritize the repeatable right orbit for a rest-of-ball doubler. For Multiball, complete 1-2-3 and lock upper-left, then repeat 1-2-3 and lock far-left.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Repeat the right orbit through its 20,000-to-60,000 ladder; the next completion starts double playfield scoring for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the top 1-2-3 lanes to light the upper-left lock, then shoot that saucer to capture the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete 1-2-3 again to light the far-left lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the far-left lock to capture the second ball and release all three balls for Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Repeat the Right Orbit",
+            "summary": "Its ladder leads to double playfield scoring for the ball."
+          },
+          {
+            "name": "Complete 1-2-3",
+            "summary": "The first set lights the upper-left lock."
+          },
+          {
+            "name": "Lock One Ball",
+            "summary": "Shoot the upper-left saucer."
+          }
+        ]
+      }
+    }
+  ]
+}

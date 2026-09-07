@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVnd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the four drops twice for 3x. Use the saucer, B-A-L-L-Y shots, side lanes, and inlanes until base bonus reaches 29,000. Shoot Warp Speed to collect 87,000 and return to the shooter lane. The collect preserves bonus, so repeat it after each controlled replunge.",
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "The first two drop-bank completions light 2x and 3x for the current ball."
+          },
+          {
+            "name": "Warp Speed",
+            "summary": "The upper-right lane collects the full multiplied bonus without resetting it and returns the ball for a replunge."
+          },
+          {
+            "name": "B-A-L-L-Y",
+            "summary": "Top lanes, three standups, and the saucer complete a stored award ladder from points to Special."
+          },
+          {
+            "name": "Hyperspace Value",
+            "summary": "Upper-left stars and lit inlanes raise this value to 10,000, then qualify Extra Ball."
+          },
+          {
+            "name": "Maximum bonus",
+            "summary": "Base bonus reaches 29,000 and Bonus X reaches 3x for an 87,000 collect."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for a missing B-A-L-L-Y letter. Prefer the top saucer when its feed is known.",
+            "modeNotes": [
+              "B-A-L-L-Y: B and A are top lanes. L-L-Y are right standups. The saucer spots its lit letter. Progress carries between balls.",
+              "Top saucer: It scores 3,000, adds three base-bonus advances, and spots the lit letter. Bumper and slingshot hits rotate that letter."
+            ]
+          },
+          {
+            "text": "Cradle the first controllable ball. Test one four-bank drop-target hit."
+          },
+          {
+            "text": "Complete the four-bank twice.",
+            "modeNotes": [
+              "Bonus X: Each target scores 500 and adds one base-bonus advance. The first bank lights 2x. The second lights 3x.",
+              "A bank completion scores 5,000 and resets the bank. Drop progress and Bonus X reset after the ball.",
+              "A third same-ball completion scores Special under the configured replay setting."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After 3x, stop direct drop shots. Send the ball through the left orbit toward the upper features.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the saucer, B-A-L-L-Y shots, side lanes, and inlanes to build base bonus toward 29,000."
+          },
+          {
+            "text": "When bonus is valuable, shoot the upper-right Warp Speed lane from the left flipper.",
+            "modeNotes": [
+              "Warp Speed: The lane scores the full base bonus with Bonus X. It preserves both values and returns the ball to the shooter lane."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the replunge for a missing B-A-L-L-Y letter or a controlled upper feed."
+          },
+          {
+            "text": "Repeat Warp Speed while the left-flipper shot and bumper exit remain controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "A normal drain collects the same multiplied bonus. A tilt cancels that collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: One bank, safe upper feeds, and Warp Speed",
+          "when": "Recovery pivot: Use this plan when repeated drop-bank rebounds threaten the center drain.",
+          "steps": [
+            {
+              "text": "Complete the drop bank once to light 2x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Stop target shots after the first dangerous rebound."
+            },
+            {
+              "text": "Use the left orbit to reach the saucer, top lanes, and upper-left stars."
+            },
+            {
+              "text": "Use the top lanes, side lanes, inlanes, saucer, and standup targets to raise base bonus."
+            },
+            {
+              "text": "Shoot Warp Speed after base bonus becomes valuable."
+            },
+            {
+              "text": "Use each replunge to add a missing B-A-L-L-Y letter."
+            },
+            {
+              "text": "Repeat the collect at 2x rather than risking the second bank.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: B-A-L-L-Y award ladder",
+            "when": "When trailing, use this higher-ceiling route: use this plan when the saucer and letter shots are safer than the drop bank.",
+            "steps": [
+              {
+                "text": "Collect B and A at the top lanes."
+              },
+              {
+                "text": "Collect L, L, and Y at the three middle-right standups."
+              },
+              {
+                "text": "Use the top saucer to spot its rotating lit letter."
+              },
+              {
+                "text": "The first completion scores 10,000 or 25,000, depending on Switch 29."
+              },
+              {
+                "text": "Later completions score 25,000, then 50,000, then light outlane Special."
+              },
+              {
+                "text": "After Special lights, another completion awards Special or 50,000, depending on Switch 23."
+              },
+              {
+                "text": "Partial and completed-letter progress carries between balls."
+              }
+            ]
+          },
+          {
+            "title": "Hyperspace and Extra Ball",
+            "when": "Use this plan when upper-left feeds are safe and the configured Extra Ball has value.",
+            "steps": [
+              {
+                "text": "Roll through the two upper-left star rollovers or a lit inlane.",
+                "modeNotes": [
+                  "Hyperspace Value: Each eligible rollover scores and raises the lit value. It starts at 2,000 or 4,000 and reaches 10,000.",
+                  "Extra Ball: The next Hyperspace advance after 10,000 awards a replay ball. Novelty settings score 25,000 instead."
+                ]
+              },
+              {
+                "text": "Continue until Extra Ball lights at the Hyperspace award."
+              },
+              {
+                "text": "Collect the next eligible star or lit inlane."
+              },
+              {
+                "text": "After the award, each upper-left star scores 10,000."
+              },
+              {
+                "text": "Do not force the route when replay awards are disabled."
+              }
+            ]
+          },
+          {
+            "title": "Lit center-target bonus",
+            "when": "Use this only after its direct rebound is known.",
+            "steps": [
+              {
+                "text": "Read the center-target lamp."
+              },
+              {
+                "text": "A lit hit scores 3,000 and adds three base-bonus advances."
+              },
+              {
+                "text": "An unlit hit scores 300."
+              },
+              {
+                "text": "Switch 24 makes the lamp stay lit or alternate with bumper and slingshot hits."
+              },
+              {
+                "text": "Stop after a center-directed rebound."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated 87,000 Warp Speed collects",
+          "steps": [
+            {
+              "text": "Complete the drop bank twice for 3x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use the saucer, B-A-L-L-Y shots, side lanes, and inlanes until base bonus reaches 29,000."
+            },
+            {
+              "text": "Shoot Warp Speed for 87,000."
+            },
+            {
+              "text": "Use the returned ball for another controlled plunge."
+            },
+            {
+              "text": "Shoot Warp Speed again while bonus remains at 29,000 and 3x.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Warp Speed",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "B-A-L-L-Y",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Hyperspace Value",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Special",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Warp Speed",
+            "label": "Warp Speed bonus collect",
+            "description": "Shot used to collect the built multiplied base bonus and return to the shooter lane.",
+            "precision": "unverified",
+            "context": "Shoot Warp Speed after building 29,000 base bonus at 3x."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "B-A-L-L-Y skill plunge",
+            "instruction": "Aim for a needed top-lane letter. Use the saucer when its rotating letter completes a harder target.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRVnd-MQZzx"
+          },
+          {
+            "name": "Right-flipper build shot",
+            "instruction": "Use the right flipper for the left orbit and upper bonus features after the drop bank is ready.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/star-trek-1978"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "Cradle on the left flipper. Shoot the upper-right lane after Bonus X and base bonus are ready.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRVnd-MQZzx",
+            "techniqueSlug": "cradle"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The drop bank can rebound the ball toward the center or slingshots.",
+            "response": "Complete only the two banks needed for 3x. Stop after repeated center-directed returns.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/star-trek-1978"
+          },
+          {
+            "issue": "The primary shots feed the bumper area.",
+            "response": "Keep both flippers ready until the bumper exit and slingshot response finish.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRVnd-MQZzx"
+          },
+          {
+            "issue": "The main orbit, drop-bank, and Bonus Collect shots feed the bumpers before returning.",
+            "response": "Keep both flippers ready for a bumper exit to a slingshot or drain.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRVnd-MQZzx"
+          }
+        ],
+        "simpleOverview": "Star Trek is a multiplier-and-bonus loop. Complete the four-bank twice for 3x, build base bonus with the upper features, then shoot Warp Speed to collect the multiplied bonus and return to the shooter lane without resetting it.",
+        "overview": "Star Trek is a multiplier-and-bonus loop. Reach 29,000, shoot Warp Speed for 87,000, and use the returned ball for another controlled plunge. Repeat Warp Speed while the left-flipper shot and bumper exit remain predictable.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete the four drops twice for 3x. Use the saucer, B-A-L-L-Y shots, side lanes, and inlanes until base bonus reaches 29,000. Shoot Warp Speed to collect 87,000 and return to the shooter lane. The collect preserves bonus, so repeat it after each controlled replunge.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a missing B-A-L-L-Y letter. Prefer the top saucer when its feed is known.",
+            "details": [
+              "B-A-L-L-Y: B and A are top lanes. L-L-Y are right standups. The saucer spots its lit letter. Progress carries between balls.",
+              "Top saucer: It scores 3,000, adds three base-bonus advances, and spots the lit letter. Bumper and slingshot hits rotate that letter."
+            ]
+          },
+          {
+            "text": "Cradle the first controllable ball. Test one four-bank drop-target hit."
+          },
+          {
+            "text": "Complete the four-bank twice.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus X: Each target scores 500 and adds one base-bonus advance. The first bank lights 2x. The second lights 3x.",
+              "A bank completion scores 5,000 and resets the bank. Drop progress and Bonus X reset after the ball.",
+              "A third same-ball completion scores Special under the configured replay setting."
+            ]
+          },
+          {
+            "text": "After 3x, stop direct drop shots. Send the ball through the left orbit toward the upper features.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the saucer, B-A-L-L-Y shots, side lanes, and inlanes to build base bonus toward 29,000."
+          },
+          {
+            "text": "When bonus is valuable, shoot the upper-right Warp Speed lane from the left flipper.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Warp Speed: The lane scores the full base bonus with Bonus X. It preserves both values and returns the ball to the shooter lane."
+            ]
+          },
+          {
+            "text": "Use the replunge for a missing B-A-L-L-Y letter or a controlled upper feed."
+          },
+          {
+            "text": "Repeat Warp Speed while the left-flipper shot and bumper exit remain controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "A normal drain collects the same multiplied bonus. A tilt cancels that collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "The first two drop-bank completions light 2x and 3x for the current ball."
+          },
+          {
+            "name": "Warp Speed",
+            "summary": "The upper-right lane collects the full multiplied bonus without resetting it and returns the ball for a replunge."
+          },
+          {
+            "name": "B-A-L-L-Y",
+            "summary": "Top lanes, three standups, and the saucer complete a stored award ladder from points to Special."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: One bank, safe upper feeds, and Warp Speed",
+          "when": "Recovery pivot: Use this plan when repeated drop-bank rebounds threaten the center drain.",
+          "steps": [
+            {
+              "text": "Complete the drop bank once to light 2x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Stop target shots after the first dangerous rebound."
+            },
+            {
+              "text": "Use the left orbit to reach the saucer, top lanes, and upper-left stars."
+            },
+            {
+              "text": "Use the top lanes, side lanes, inlanes, saucer, and standup targets to raise base bonus."
+            },
+            {
+              "text": "Shoot Warp Speed after base bonus becomes valuable."
+            },
+            {
+              "text": "Use each replunge to add a missing B-A-L-L-Y letter."
+            },
+            {
+              "text": "Repeat the collect at 2x rather than risking the second bank.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "The main orbit, drop-bank, and Bonus Collect shots feed the bumpers before returning.",
+          "text": "Keep both flippers ready for a bumper exit to a slingshot or drain."
+        }
+      }
+    }
+  ]
+}

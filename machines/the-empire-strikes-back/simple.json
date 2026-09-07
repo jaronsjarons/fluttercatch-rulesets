@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVqP",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Completing the six flashing Rebel targets on The Empire Strikes Back lights the return lanes, spinners, and pop bumpers. Use the right-flipper lane change to complete the four starship lanes and raise Bonus X. A flashing return-lane feed lights its matching planet; build Dagobah with the left drop bank, then shoot the lit planet to collect that bank's value plus bonus. Bespin follows its own advancing collect ladder toward Extra Ball.",
+        "simpleOverview": "Complete the six flashing Rebel targets to light the return lanes, spinners, and pop bumpers. Use the right flipper to move the lit starship lane and complete all four for Bonus X. Roll through a flashing return lane to light Dagobah or Bespin. Build the left drop-bank value before collecting lit Dagobah; repeat Bespin collects toward its increasing award and Extra Ball.",
+        "summary": "Light the return lanes first, then use lane change to finish the starship lanes and grow Bonus X. Favor the left drop bank and Dagobah route because the planet collects both the bank value and bonus; take Bespin when its return lane and planet are safely available.",
+        "quickInfo": [
+          {
+            "name": "Light Features",
+            "summary": "Complete all six flashing Rebel targets."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete the four starship lanes; move the lit lane with the right flipper."
+          },
+          {
+            "name": "Light a Planet",
+            "summary": "Roll through its flashing ball-return lane."
+          },
+          {
+            "name": "Collect Dagobah",
+            "summary": "Build the left drop bank, then shoot Planet Dagobah when lit."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete all six flashing Rebel targets to light the ball-return lanes, spinners, and pop bumpers."
+          },
+          {
+            "text": "Use the right-flipper lane change to complete all four starship lanes and raise Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the three left drop targets to build their award, then roll through the flashing Dagobah return lane to light Planet Dagobah."
+          },
+          {
+            "text": "Shoot Planet Dagobah while lit to collect the left drop-bank value plus the current bonus."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Bespin route",
+            "when": "Use this when the Bespin return lane and planet feed are safer than the left drop bank.",
+            "steps": [
+              {
+                "text": "Roll through the flashing Bespin return lane to light Planet Bespin."
+              },
+              {
+                "text": "Shoot Planet Bespin while lit to collect its current award."
+              },
+              {
+                "text": "Repeat the light-and-collect cycle as the Bespin award advances from points toward Extra Ball."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Higher planet collections",
+          "steps": [
+            {
+              "text": "Complete the flashing Rebel targets so the return lanes can light a planet."
+            },
+            {
+              "text": "Raise Bonus X at the four starship lanes and build the left drop-bank award.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Light and collect Dagobah for the combined drop-bank and bonus value."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test the six flashing Rebel targets and lamps, all four starship lane switches and lane change, both return lanes, both planet switches and lamps, the three left drops, the right drop, both spinners, pop bumpers, and the ball-exit gate.",
+          "Confirm three- or five-ball play, Extra Ball and Special conversion, lane-change response, target-bank carryover, and the current replay thresholds before choosing a scoring route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Rebel targets",
+            "label": "Six flashing Rebel targets",
+            "description": "Six standup targets that light the return lanes, spinners, and pop bumpers when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "starship lanes",
+            "label": "Four starship lanes",
+            "description": "Upper rollover lanes that raise Bonus X when completed; the right flipper moves the lit lane.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left drop bank",
+            "label": "Left Darth Vader drop bank",
+            "description": "Three drops that build the award collected with lit Planet Dagobah.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Planet Dagobah",
+            "label": "Planet Dagobah collect",
+            "description": "Collect shot for the left drop-bank value plus the current bonus when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Planet Bespin",
+            "label": "Planet Bespin collect",
+            "description": "Collect shot for the advancing Bespin award when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right drop target",
+            "label": "Right-hand drop target",
+            "description": "Target that opens the ball-exit lane and scores 50,000 when flashing.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The factory card describes award progression but not every operator-adjustable carryover or conversion setting.",
+            "response": "Check the installed card and lamps before play; rely on the physical qualification and collect sequence, not an assumed Extra Ball or Special payout.",
+            "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Hankin/Hankin_The_Empire_Strikes_Back.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Light the return lanes first, then use lane change to finish the starship lanes and grow Bonus X. Favor the left drop bank and Dagobah route because the planet collects both the bank value and bonus; take Bespin when its return lane and planet are safely available.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete all six flashing Rebel targets to light the ball-return lanes, spinners, and pop bumpers."
+          },
+          {
+            "text": "Use the right-flipper lane change to complete all four starship lanes and raise Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the three left drop targets to build their award, then roll through the flashing Dagobah return lane to light Planet Dagobah."
+          },
+          {
+            "text": "Shoot Planet Dagobah while lit to collect the left drop-bank value plus the current bonus."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Features",
+            "summary": "Complete all six flashing Rebel targets."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete the four starship lanes; move the lit lane with the right flipper."
+          },
+          {
+            "name": "Light a Planet",
+            "summary": "Roll through its flashing ball-return lane."
+          }
+        ]
+      }
+    }
+  ]
+}

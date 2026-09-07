@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "G50Wr",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the safest saucer-light modes and Bonus Wave multiballs, then use regular Multiball for repeatable saucer jackpots and a Super Jackpot saucer light.",
+        "quickInfo": [
+          {
+            "name": "Saucer lights",
+            "summary": "Nine center saucer lights plus the three Bonus Wave categories and Mothership Multiball qualify Attack Mars."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Three Capture awards start it; ten saucer jackpots qualify the Super Jackpot."
+          },
+          {
+            "name": "Martian Multiball",
+            "summary": "Complete Martian Attack for a two-ball switch-scoring multiball and possible saucer lights."
+          },
+          {
+            "name": "Attack Mars",
+            "summary": "The wizard uses cabinet buttons to aim screen targets while the physical center shots advance each phase."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose the Fuel or Weapons skill-shot group whose modes have safer required shots on this copy."
+          },
+          {
+            "text": "Start a controllable mode and finish it cleanly when a Flawless completion is within reach.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect Capture when lit. Repeat until the third Capture starts regular Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During regular Multiball, shoot the safest lit saucer targets until the Super Jackpot qualifies.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Super Jackpot for a saucer light, then continue only while two balls remain controlled.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use accumulated mode, Bonus Wave, and Mothership progress to fill the remaining Attack Mars requirements.",
+            "modeNotes": [
+              "Attack Mars checklist: Light nine saucers, complete all three Bonus Wave categories, and finish Mothership Multiball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Martian Attack route",
+          "when": "Use this when Capture or the center bank is unreliable but the seven Martian targets are registering safely.",
+          "steps": [
+            {
+              "text": "Complete the lit Martian targets to qualify Martian Attack."
+            },
+            {
+              "text": "Start Martian Attack at Stroke of Luck and defeat the center Martian.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Martian Multiball to collect switch hits and its available saucer-light thresholds.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Incremental mode route",
+            "when": "Use this when a modest match target is reachable without completing the full wizard checklist.",
+            "steps": [
+              {
+                "text": "Start the safest available mode."
+              },
+              {
+                "text": "Cash its primary shots without forcing the center ramp or targets after control is lost.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Take Stroke of Luck and Capture awards when naturally lit."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Attack Mars",
+          "steps": [
+            {
+              "text": "Complete modes and Multiball goals until all nine saucer inserts are lit."
+            },
+            {
+              "text": "Complete Fuel, Saucer, and Weapons Bonus Wave multiballs.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete Mothership Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the center start, then use the action buttons and center shots through all Attack Mars phases.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Martian Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Attack Mars",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Capture",
+            "context": "Capture",
+            "label": "Capture shot",
+            "description": "The left-side Capture shot used to qualify regular Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center bank",
+            "context": "center bank",
+            "label": "Center targets",
+            "description": "The center target bank and rising ramp used by multiple modes and Attack Mars.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Stroke of Luck",
+            "context": "Stroke of Luck",
+            "label": "Award scoop",
+            "description": "The scoop used for Stroke of Luck and Martian Attack.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Button aiming",
+            "instruction": "During Attack Mars, use the action buttons to align the screen target before committing to the physical center shot.",
+            "sourceUrl": "https://www.pinball.org/rules/revengefrommars.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Martian Multiball interrupts the running mode and cannot stack with regular Multiball.",
+            "response": "Finish a valuable mode or regular-multiball setup before the final Martian Attack shot.",
+            "sourceUrl": "https://www.pinball.org/rules/revengefrommars.html"
+          },
+          {
+            "issue": "Pinball 2000 projection alignment and center mechanisms vary sharply by copy.",
+            "response": "Test the virtual target alignment, center-bank registration, ramp lift, and ball saves before relying on them.",
+            "sourceUrl": "https://www.pinball.org/rules/revengefrommars.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Revenge From Mars software, tournament settings, mode difficulty, and Extra Ball conversion.",
+          "Test the projection alignment, saucer switches, center shot, launch button, and flipper response."
+        ],
+        "simpleOverview": "Revenge From Mars fills nine saucer lights through modes, Bonus Wave Multiballs, regular Multiball, and Mothership Multiball. Choose modes whose physical shots are controlled, collect three Capture awards for regular Multiball, then shoot lit saucer targets for ten Jackpots and a Super Jackpot saucer light.",
+        "overview": "Revenge From Mars fills nine saucer lights through modes, Bonus Wave Multiballs, regular Multiball, and Mothership Multiball. Complete the safest saucer-light modes, use regular Multiball for ten saucer Jackpots and its Super, then fill the remaining Bonus Wave and Mothership requirements. Start Attack Mars only after the center shots and cabinet-button aim are understood.",
+        "machineSetup": [
+          "Confirm Revenge From Mars software, tournament settings, mode difficulty, and Extra Ball conversion.",
+          "Test the projection alignment, saucer switches, center shot, launch button, and flipper response."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete the safest saucer-light modes and Bonus Wave multiballs, then use regular Multiball for repeatable saucer jackpots and a Super Jackpot saucer light.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose the Fuel or Weapons skill-shot group whose modes have safer required shots on this copy."
+          },
+          {
+            "text": "Start a controllable mode and finish it cleanly when a Flawless completion is within reach.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect Capture when lit. Repeat until the third Capture starts regular Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During regular Multiball, shoot the safest lit saucer targets until the Super Jackpot qualifies.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Super Jackpot for a saucer light, then continue only while two balls remain controlled.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use accumulated mode, Bonus Wave, and Mothership progress to fill the remaining Attack Mars requirements.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Attack Mars checklist: Light nine saucers, complete all three Bonus Wave categories, and finish Mothership Multiball."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Saucer lights",
+            "summary": "Nine center saucer lights plus the three Bonus Wave categories and Mothership Multiball qualify Attack Mars."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Three Capture awards start it; ten saucer jackpots qualify the Super Jackpot."
+          },
+          {
+            "name": "Martian Multiball",
+            "summary": "Complete Martian Attack for a two-ball switch-scoring multiball and possible saucer lights."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Martian Attack route",
+          "when": "Use this when Capture or the center bank is unreliable but the seven Martian targets are registering safely.",
+          "steps": [
+            {
+              "text": "Complete the lit Martian targets to qualify Martian Attack."
+            },
+            {
+              "text": "Start Martian Attack at Stroke of Luck and defeat the center Martian.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Martian Multiball to collect switch hits and its available saucer-light thresholds.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "GWyyZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Silver Falls is a room-by-room renovation game. Earn PinBucks, knock on the jail door to enter the shop, buy the furniture required by the current room, and then finish that room's timed task. The crane and MORE CASH targets start timed 2X PinBucks, while the moving combo arrow identifies the next shot in a combo.",
+        "simpleOverview": "Build PinBucks with shots and combos, using the crane or MORE CASH targets for timed 2X. Knock on the jail door until it opens, buy the current room's required furniture, then follow the display through that room's timed task.",
+        "summary": "Make shots and follow the moving combo arrow to earn PinBucks. Use the crane or MORE CASH targets for timed 2X, then knock on the jail door to enter the shop. Furnish the current room and complete its timed task to move to the next room.",
+        "quickInfo": [
+          {
+            "name": "PinBucks",
+            "summary": "Shots, targets, and combos earn the currency used to buy furniture in the shop. Unspent PinBucks carry between rooms."
+          },
+          {
+            "name": "Jail door",
+            "summary": "Hit the door until it opens, then enter to visit the shop. The required number of knocks is adjustable."
+          },
+          {
+            "name": "Timed 2X",
+            "summary": "Hit the crane at the start of a ball or complete the side MORE CASH targets to double PinBucks for a limited time."
+          },
+          {
+            "name": "Combos",
+            "summary": "After a qualifying shot, follow the moving arrow to the next shot. A miss ends the current combo."
+          },
+          {
+            "name": "Room progress",
+            "summary": "Buy every required furnishing, then complete the room's timed task. A signed-in P3 profile can save room progress."
+          }
+        ],
+        "steps": [
+          {
+            "text": "At the start of a ball, hit the crane for timed 2X PinBucks. Completing the side MORE CASH targets can start another 2X period later.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Make shots and follow the moving combo arrow to build PinBucks. If the next combo shot is missed, begin a new sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the jail door until it opens, then enter the door to visit the shop. Follow the door display because the knock count is adjustable.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Spend PinBucks on the furniture required by the current room. Leave optional purchases until the required set is covered.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "With the room furnished, follow the display's lit shots and finish its timed task to advance to the next room.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "The next room",
+          "steps": [
+            {
+              "text": "Carry unused PinBucks forward so the next room's furniture is easier to afford.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Sign in to a P3 profile before playing when you want the machine to preserve room progress.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat the earn, shop, furnish, and timed-task loop in each new room.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "PinBucks",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "2X PinBucks",
+            "tone": "navy",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "jail door",
+            "tone": "rust",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "jail door",
+            "label": "On-screen jail door",
+            "description": "The lower-display door used to enter the shop after the required knocks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "crane",
+            "label": "On-screen crane",
+            "description": "The ball-start opportunity that begins timed 2X PinBucks when hit.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Jail-door knocks and the base PinBuck multiplier are adjustable.",
+            "response": "Follow the door display and the live multiplier shown on the playfield instead of relying on a fixed count or maximum.",
+            "sourceUrl": "https://www.youtube.com/watch?v=R19EjYHsCiI"
+          },
+          {
+            "issue": "Silver Falls works with different P3 upper modules.",
+            "response": "Use the changing labels and arrows on the lower display; physical shot coordinates can differ with the installed module.",
+            "sourceUrl": "https://www.kineticist.com/news/silver-falls-deep-dive"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Make shots and follow the moving combo arrow to earn PinBucks. Use the crane or MORE CASH targets for timed 2X, then knock on the jail door to enter the shop. Furnish the current room and complete its timed task to move to the next room.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "At the start of a ball, hit the crane for timed 2X PinBucks. Completing the side MORE CASH targets can start another 2X period later.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Make shots and follow the moving combo arrow to build PinBucks. If the next combo shot is missed, begin a new sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the jail door until it opens, then enter the door to visit the shop. Follow the door display because the knock count is adjustable.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Spend PinBucks on the furniture required by the current room. Leave optional purchases until the required set is covered.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "With the room furnished, follow the display's lit shots and finish its timed task to advance to the next room.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "PinBucks",
+            "summary": "Shots, targets, and combos earn the currency used to buy furniture in the shop. Unspent PinBucks carry between rooms."
+          },
+          {
+            "name": "Jail door",
+            "summary": "Hit the door until it opens, then enter to visit the shop. The required number of knocks is adjustable."
+          },
+          {
+            "name": "Timed 2X",
+            "summary": "Hit the crane at the start of a ball or complete the side MORE CASH targets to double PinBucks for a limited time."
+          }
+        ]
+      }
+    }
+  ]
+}

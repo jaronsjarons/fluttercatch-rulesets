@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "G439V",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Repeat the left orbit and carry the ball across the top into the upper-right saucer. Those shots increase the orbit rollover value, raise Bonus X to 5x, and feed the H-A-M lanes. Complete C-H-A-M-P once for 2x playfield scoring and again for 3x, then keep taking the orbit and saucer. Build the numbered-ball rack only when the orbit route is unavailable or the competition setup weakens it.",
+        "simpleOverview": "Repeat the left orbit into the upper-right saucer to build the rollover value and Bonus X. Use lane change to complete unlit C-H-A-M-P lanes; the first set starts 2x playfield scoring and the second starts 3x. Keep shooting the orbit and saucer once both multipliers are ready.",
+        "summary": "Repeat the left orbit into the upper-right saucer to reach 5x Bonus and complete C-H-A-M-P twice for 3x playfield scoring. Score unlit lane lamps, not lit ones, and keep using the orbit route unless the machine has been modified.",
+        "quickInfo": [
+          {
+            "name": "Repeat the Left Orbit",
+            "summary": "Carry it across the top into the upper-right saucer."
+          },
+          {
+            "name": "Reach 5x Bonus",
+            "summary": "Each completed left-orbit and saucer route advances Bonus X."
+          },
+          {
+            "name": "Complete CHAMP Twice",
+            "summary": "The first set starts 2x; the second starts 3x playfield scoring."
+          },
+          {
+            "name": "Choose Unlit Lanes",
+            "summary": "The lane lamps turn off when their letters are scored."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the left orbit and let it travel across the top to the upper-right saucer; repeat it to raise the orbit value and Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use lane change to steer top feeds through unlit H-A-M lanes and return-lane feeds through unlit C or P.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete C-H-A-M-P once for 2x playfield scoring and a second time for 3x, then repeat the orbit and saucer for the combined value.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the upper-right flipper for additional saucer attempts instead of abandoning a controlled upper-playfield feed.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build the numbered-ball rack",
+            "when": "Use this when lane change or orbit values have been disabled, or when a target bank is already close to completion.",
+            "steps": [
+              {
+                "text": "Collect balls 1–7 or 9–15 from the pool-ball drops and the E-I-G-H-T standups behind them.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Collect the 8-ball last to finish the rack and add its held bonus, then return to the orbit route.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Combine 3x playfield with 5x bonus",
+          "steps": [
+            {
+              "text": "Complete C-H-A-M-P twice and raise Bonus X to 5x before spreading shots across the target banks.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Keep feeding the upper-right saucer, whose value rises after Bonus X is ready.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check whether lane change, orbit value increments, the left-orbit route, Extra Ball, and Special have been disabled or converted for competition.",
+          "Test both orbits, the top saucer and upper-right flipper, H-A-M and C/P lane switches and lamps, all pool-ball drops and E-I-G-H-T standups, spinner, and side drains."
+        ],
+        "techniques": [
+          {
+            "name": "Shatz pass",
+            "instruction": "Use a controlled return-lane shatz to move the ball from the left flipper to the right for the left-orbit shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G439V-MDvWZ",
+            "techniqueSlug": "shatz-pass"
+          },
+          {
+            "name": "Live catch",
+            "instruction": "Use a live catch when a dead bounce repeatedly carries too far toward the opposite slingshot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G439V-MDvWZ",
+            "techniqueSlug": "live-catch"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "C-H-A-M-P",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "3x playfield",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x Bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "The primary shot that crosses the top and can reach the upper-right saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-right saucer",
+            "label": "Upper-right saucer",
+            "description": "The saucer at the end of the preferred left-orbit route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "H-A-M lanes",
+            "label": "Top H-A-M lanes",
+            "description": "The three upper lanes used with C and P to complete CHAMP.",
+            "precision": "unverified"
+          },
+          {
+            "term": "pool-ball targets",
+            "label": "Pool-ball and E-I-G-H-T targets",
+            "description": "The central drops and hidden standups that build the numbered-ball rack.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Tournament setups may disable lane change or reduce the dominant left-orbit value.",
+            "response": "Check the setup first; if the orbit has been weakened, put more weight on held pool-ball bonus and safe right-orbit feeds.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G439V-MDvWZ"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the left orbit into the upper-right saucer to reach 5x Bonus and complete C-H-A-M-P twice for 3x playfield scoring. Score unlit lane lamps, not lit ones, and keep using the orbit route unless the machine has been modified.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the left orbit and let it travel across the top to the upper-right saucer; repeat it to raise the orbit value and Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use lane change to steer top feeds through unlit H-A-M lanes and return-lane feeds through unlit C or P.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete C-H-A-M-P once for 2x playfield scoring and a second time for 3x, then repeat the orbit and saucer for the combined value.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the upper-right flipper for additional saucer attempts instead of abandoning a controlled upper-playfield feed.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Repeat the Left Orbit",
+            "summary": "Carry it across the top into the upper-right saucer."
+          },
+          {
+            "name": "Reach 5x Bonus",
+            "summary": "Each completed left-orbit and saucer route advances Bonus X."
+          },
+          {
+            "name": "Complete CHAMP Twice",
+            "summary": "The first set starts 2x; the second starts 3x playfield scoring."
+          }
+        ]
+      }
+    }
+  ]
+}

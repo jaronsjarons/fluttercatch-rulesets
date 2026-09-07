@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "id": "G5oBw",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build the Payoff Lane and collect safe Way Out of Control awards, then when Party Dudez starts Happy Hour, raise Rocket Fuel with the Comic or Back-2-Bop and use the ramp to cash Big Bang.",
+        "quickInfo": [
+          {
+            "name": "Payoff Lane",
+            "summary": "Repeat it for escalating value, or use it to collect the currently lit Way Out of Control award."
+          },
+          {
+            "name": "Way Out of Control",
+            "summary": "Complete the right target bank, then collect the lit award through Payoff before rebuilding it."
+          },
+          {
+            "name": "Happy Hour",
+            "summary": "Party Dudez at the Cottage starts two-ball play and the Rocket Fuel sequence."
+          },
+          {
+            "name": "Big Bang",
+            "summary": "Shoot the Comic or Back-2-Bop to raise Rocket Fuel, shoot the ramp to stage the first ball, then return the second ball to the ramp."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the Payoff Lane, rocket ramp, Comic saucer, and Back-2-Bop return."
+          },
+          {
+            "text": "Repeat the Payoff Lane while it feeds a controllable flipper."
+          },
+          {
+            "text": "Complete Way Out of Control only when the target rebounds are safe, then collect its lit award at Payoff."
+          },
+          {
+            "text": "Use Request Time and the Cosmic Cottage to collect Party passes until Party Dudez starts Happy Hour.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Happy Hour, use the Comic saucer or Back-2-Bop to raise Rocket Fuel, then cash the current fuel at the ramp.",
+            "modeNotes": [
+              "Big Bang setup: Once enough fuel is built, a ramp shot stages one ball and invites the remaining ball back to the ramp for Big Bang."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect Big Bang at the ramp only from a controlled feed; use the post-multiball 2x state for safe Payoff scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Payoff Lane repeat",
+          "when": "Use this when the Cottage, Comic, or rocket ramp rejects.",
+          "steps": [
+            {
+              "text": "Repeat Payoff until its base value is useful."
+            },
+            {
+              "text": "Complete one Way Out of Control award."
+            },
+            {
+              "text": "Collect the award through Payoff."
+            },
+            {
+              "text": "Rebuild only after the first award is collected."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Eat, Drink & Be Merry",
+            "when": "Use this when the left targets, ramp, Comic, and Captain Bizarre saucer form a controllable sequence.",
+            "steps": [
+              {
+                "text": "Complete the E-D-B-M targets."
+              },
+              {
+                "text": "Shoot the ramp for Eat."
+              },
+              {
+                "text": "Shoot the Comic saucer for Drink."
+              },
+              {
+                "text": "Finish at the Captain Bizarre saucer for Merry."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Big Bang",
+          "steps": [
+            {
+              "text": "Collect Party passes."
+            },
+            {
+              "text": "Use Party Dudez to start Happy Hour.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the Comic or Back-2-Bop to raise Rocket Fuel."
+            },
+            {
+              "text": "Make the two required ramp entries to collect Big Bang.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Happy Hour",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Rocket Fuel",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Big Bang",
+            "tone": "gold",
+            "kind": "jackpot"
+          },
+          {
+            "label": "10x Playfield",
+            "tone": "indigo",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Payoff Lane",
+            "context": "Payoff Lane",
+            "label": "Payoff collect",
+            "description": "Lane collects Way Out of Control awards and its own escalating value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "rocket ramp",
+            "context": "rocket ramp",
+            "label": "Rocket Fuel cashout",
+            "description": "Ramp scores fuel and completes Big Bang.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Comic saucer",
+            "context": "Comic saucer",
+            "label": "Comic and fuel shot",
+            "description": "Comic saucer gives awards and raises Rocket Fuel during Happy Hour.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Cosmic Cottage",
+            "context": "Cosmic Cottage",
+            "label": "Party pass collect",
+            "description": "Cottage collects flashing Party passes.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Payoff repeat",
+            "instruction": "Repeat Payoff only while its exit reaches a predictable flipper or upper feed.",
+            "sourceUrl": "https://www.pinball.org/rules/partyzone.html"
+          },
+          {
+            "name": "Big Bang setup",
+            "instruction": "Trap one Happy Hour ball before taking the first ramp so the second ramp can be aimed deliberately.",
+            "sourceUrl": "https://www.pinball.org/rules/partyzone.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The B-O-P and Back-2-Bop returns can fall quickly between the flippers.",
+            "response": "Keep both flippers ready after top play and avoid forcing the Door or Cottage when the return is not repeatable.",
+            "sourceUrl": "https://www.pinball.org/rules/partyzone.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ROM, Party Saver, award, and timer settings.",
+          "Test Payoff, Cottage, Comic, and ramp returns."
+        ],
+        "simpleOverview": "In The Party Zone, repeated Payoff Lane shots raise their own value, Way Out of Control gives rotating awards, and Party passes start Happy Hour. Repeat controlled Payoff Lane shots, then during Happy Hour raise Rocket Fuel at the Comic or Back-2-Bop and make the two ramp entries required for Big Bang.",
+        "overview": "In The Party Zone, repeated Payoff Lane shots raise their own value, Way Out of Control gives rotating awards, and Party passes lead to Happy Hour. Repeat safe Payoff feeds and collect Way Out of Control when convenient. Collect enough Party passes for Party Dudez to start Happy Hour, raise Rocket Fuel at the Comic or Back-2-Bop, and make both ramp entries for Big Bang.",
+        "machineSetup": [
+          "Confirm ROM, Party Saver, award, and timer settings.",
+          "Test Payoff, Cottage, Comic, and ramp returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Build the Payoff Lane and collect safe Way Out of Control awards, then when Party Dudez starts Happy Hour, raise Rocket Fuel with the Comic or Back-2-Bop and use the ramp to cash Big Bang.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the Payoff Lane, rocket ramp, Comic saucer, and Back-2-Bop return."
+          },
+          {
+            "text": "Repeat the Payoff Lane while it feeds a controllable flipper."
+          },
+          {
+            "text": "Complete Way Out of Control only when the target rebounds are safe, then collect its lit award at Payoff."
+          },
+          {
+            "text": "Use Request Time and the Cosmic Cottage to collect Party passes until Party Dudez starts Happy Hour.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Happy Hour, use the Comic saucer or Back-2-Bop to raise Rocket Fuel, then cash the current fuel at the ramp.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Big Bang setup: Once enough fuel is built, a ramp shot stages one ball and invites the remaining ball back to the ramp for Big Bang."
+            ]
+          },
+          {
+            "text": "Collect Big Bang at the ramp only from a controlled feed; use the post-multiball 2x state for safe Payoff scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Payoff Lane",
+            "summary": "Repeat it for escalating value, or use it to collect the currently lit Way Out of Control award."
+          },
+          {
+            "name": "Way Out of Control",
+            "summary": "Complete the right target bank, then collect the lit award through Payoff before rebuilding it."
+          },
+          {
+            "name": "Happy Hour",
+            "summary": "Party Dudez at the Cottage starts two-ball play and the Rocket Fuel sequence."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Payoff Lane repeat",
+          "when": "Use this when the Cottage, Comic, or rocket ramp rejects.",
+          "steps": [
+            {
+              "text": "Repeat Payoff until its base value is useful."
+            },
+            {
+              "text": "Complete one Way Out of Control award."
+            },
+            {
+              "text": "Collect the award through Payoff."
+            },
+            {
+              "text": "Rebuild only after the first award is collected."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The B-O-P and Back-2-Bop returns can fall quickly between the flippers.",
+          "text": "Keep both flippers ready after top play and avoid forcing the Door or Cottage when the return is not repeatable."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "id": "GkBnQ",
+  "title": "The Princess Bride",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "The Princess Bride rulesheet",
+      "url": "https://tiltforums.com/t/the-princess-bride-rulesheet/9250"
+    },
+    "supportingSources": [
+      {
+        "label": "Official The Princess Bride game page",
+        "url": "https://www.multimorphic.com/the-princess-bride-game-kit/"
+      },
+      {
+        "label": "Current pinball code index",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      },
+      {
+        "label": "Princess Bride launch stream with rules designer Colin MacAlpine (launch code)",
+        "url": "https://www.youtube.com/watch?v=yvMRhEI0QVM"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Spell TRUE LOVE, shoot the Castle ramp twice to choose Buttercup's Nightmare, then start True Love at Max's Hut about halfway through the Story's opening ball save. Rebuild TRUE LOVE with Jackpots and make the held-ball kiss Super Jackpot for add-a-ball and Westley and Buttercup progress.",
+      "quickInfo": [
+        {
+          "name": "True Love Multiball",
+          "summary": "Spell TRUE and LOVE at the side targets, start at Max's Hut, rebuild the letters with jackpots, then make the held-ball kiss for the Super Jackpot."
+        },
+        {
+          "name": "Prepare to Die Multiball",
+          "summary": "Hit the captive ball to light glove shots, collect six gloves, start at the Castle ramp, then alternate glove shots and captive-ball jackpots."
+        },
+        {
+          "name": "Story Modes",
+          "summary": "Shoot a region twice for its first Story and three times for later Stories. The final Castle, Florin, or Guilder shot opens that region's selection; completing Stories in narrative order increases end-of-ball bonus."
+        },
+        {
+          "name": "Story-mode stacking",
+          "summary": "True Love or Prepare to Die Multiball can stack with an active Castle or Florin mode except Guide My Sword and the regional mini-wizards. Neither can join a Guilder mode, and the two main Multiballs cannot run together."
+        },
+        {
+          "name": "As You Wish",
+          "summary": "Spend an earned As You Wish to play a Guilder Battle as an untimed two-ball mode with 2x scoring."
+        },
+        {
+          "name": "Pit of Despair",
+          "summary": "Use the upper side loop, Buttercup's Nightmare, or Mystery to qualify Pit of Despair, then after a drain complete its survivor shots to resume the ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On the plunge, try the first Farm Boy sequence: shoot the center ramp, then repeat the center ramp.",
+          "modeNotes": [
+            "Each completed Farm Boy sequence earns one As You Wish. Later sequences add the left orbit, Castle ramp, right orbit, and upper loop."
+          ]
+        },
+        {
+          "text": "Work the left and right side targets to spell TRUE LOVE. In Competition Mode, shoot only the currently highlighted cycling letter.",
+          "modeNotes": [
+            "On default settings, any uncollected letter can advance qualification. A second full letter set before the start extends the multiball after the first drain to one ball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Castle ramp twice to open its first Story selection, then choose Buttercup's Nightmare.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "About halfway through Buttercup's Nightmare's opening ball save, shoot Max's Hut to start True Love Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During multiball, collect lit ramp and target jackpots until TRUE LOVE is complete again.",
+          "modeNotes": [
+            "The first two default Super Jackpot cycles need four ramp jackpots. Later cycles also require four target jackpots. Difficulty and prior progress can change the count."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the right orbit or upper side loop to hold a ball at the left-orbit post. Use another ball to ricochet the held ball into the scoop for the Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the Super Jackpot adds a ball, finish the active story mode before returning to the next letter cycle.",
+          "modeNotes": [
+            "The first True Love Super Jackpot awards Westley and Buttercup Character progress."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Prepare to Die Multiball",
+        "when": "Use this as the other main Multiball route, or start it over an eligible Castle or Florin Story.",
+        "steps": [
+          {
+            "text": "Hit the captive ball to light six-fingered glove shots."
+          },
+          {
+            "text": "Collect six glove shots. Re-hit the captive ball when more glove choices are needed."
+          },
+          {
+            "text": "Shoot the Castle ramp to start Prepare to Die Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use lit glove shots to light and build a captive-ball Jackpot. Collect six captive-ball Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Enter the Six-Fingered Duel phase and follow the lit duel shots for Super Jackpot progress.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Guilder Battle with As You Wish",
+          "when": "Use this after earning As You Wish from a Farm Boy skill-shot sequence.",
+          "steps": [
+            {
+              "text": "Shoot Guilder and complete Cliffs of Insanity with three ramp shots, then the raised scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Choose a Battle mode and spend As You Wish to start it as an untimed two-ball mode with 2x scoring.",
+              "kinds": [
+                "mode",
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete the Battle before draining to one ball to earn timed Battle Victory Laps.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pit of Despair resurrection",
+          "when": "Use this after the upper side loop qualifies Pit of Despair.",
+          "steps": [
+            {
+              "text": "Repeat the upper side loop until Pit of Despair is qualified."
+            },
+            {
+              "text": "After the drain, make center ramp, left orbit, and left ramp to return Mostly Dead."
+            },
+            {
+              "text": "Treat a second Pit of Despair or a tilt-started attempt as harder; it adds the right targets and Max's Hut."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Four White Horses",
+        "steps": [
+          {
+            "text": "Complete story modes and multiball Super Jackpots until Westley, Buttercup, Inigo, and Fezzik each have four Character segments.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the Guilder modes and Fire Swamp mini-wizard.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the Florin modes and Miracle Max mini-wizard.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the Castle modes and To the Pain mini-wizard to reach Four White Horses.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Standard, Limited, and Collector's editions",
+          "pro": "The Standard Edition uses the same playfield module and game software as the other editions.",
+          "premium": "Limited and Collector's editions add presentation and cabinet extras without changing the playfield module or rules.",
+          "sourceUrl": "https://www.multimorphic.com/the-princess-bride-game-kit/"
+        },
+        {
+          "feature": "P3 side-target flipper assemblies",
+          "pro": "P3 machines built before 2022 may lack one or both side-target flipper assemblies required by this four-flipper game.",
+          "premium": "Current P3 machines include both assemblies. Confirm both auxiliary flippers work before using side-target and upper-loop routes.",
+          "sourceUrl": "https://www.multimorphic.com/the-princess-bride-game-kit/"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "True Love Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Prepare to Die Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "As You Wish",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "2x scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Story Mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Pit of Despair",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Character progress",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Four White Horses",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "KISS lane rotation",
+          "instruction": "Use the configured flipper buttons to rotate the lit KISS lanes and advance Bonus X without changing the selected shot plan.",
+          "sourceUrl": "https://tiltforums.com/t/the-princess-bride-rulesheet/9250"
+        },
+        {
+          "name": "Inconceivable loop repeat",
+          "instruction": "Use the upper-left flipper to repeat the side loop. Consecutive loops build awards and can qualify Pit of Despair.",
+          "sourceUrl": "https://tiltforums.com/t/the-princess-bride-rulesheet/9250"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The True Love Super Jackpot requires a live-ball ricochet into the scoop.",
+          "response": "Use the held ball only when another ball is controlled on the correct flipper. Do not abandon stable multiball control for a blind collision.",
+          "sourceUrl": "https://tiltforums.com/t/the-princess-bride-rulesheet/9250"
+        },
+        {
+          "issue": "The Cliffs magnet captures and moves a ball while another ball is served for Cliffs of Insanity.",
+          "response": "Treat the served ball as single-ball play. The magnet-held ball is not a protected second ball.",
+          "sourceUrl": "https://tiltforums.com/t/the-princess-bride-rulesheet/9250"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test both auxiliary flippers, Max's Hut, and side loop."
+      ],
+      "simpleOverview": "The Princess Bride opens each Story region through its named ramp or orbit, while TRUE LOVE and glove progress prepare separate Multiballs. Shoot the Castle ramp or Florin orbit twice to open that region's first Story selection (later Stories need three shots), then choose a Story. Spell TRUE LOVE at the side targets and shoot Max's Hut for True Love Multiball, or light and collect six glove shots from the captive ball and shoot the Castle ramp for Prepare to Die Multiball.",
+      "overview": "The Princess Bride advances four Characters by completing Stories and collecting Multiball Super Jackpots. Spell TRUE LOVE, shoot the Castle ramp twice to choose Buttercup's Nightmare, then start True Love at Max's Hut about halfway through the Story's opening ball save. During True Love, rebuild TRUE LOVE with Jackpots, hold a ball from the right orbit or upper side loop, then ricochet it into the left-orbit scoop for the Super Jackpot, add-a-ball, and Westley and Buttercup progress.",
+      "machineSetup": [
+        "Test both auxiliary flippers, Max's Hut, and side loop."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

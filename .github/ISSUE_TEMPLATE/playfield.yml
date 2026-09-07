@@ -1,0 +1,22 @@
+name: Improve a playfield image or mapping
+description: Correct a crop, shot location, image credit, or offer a photo.
+title: "Playfield: "
+body:
+  - type: input
+    id: machine
+    attributes:
+      label: Machine and edition
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Image, crop, or mapping change
+      description: Identify the shot or image and describe the correction.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Image credit and permission
+      description: For a new image, identify its creator, source, and redistribution license. Do not post private correspondence.

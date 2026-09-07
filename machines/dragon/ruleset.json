@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qPZ",
+  "title": "Dragon",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Dragon",
+      "url": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Dragon machine guide",
+        "url": "https://www.kineticist.com/games/pinball/dragon"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge A, keep feeding the top until A-B-C-D gives 5x and base bonus reaches 19,000, then use a full-depth vari-target collect at maximum bonus, rebuild, and repeat a lit spinner when its return is safe.",
+      "quickInfo": [
+        {
+          "name": "A-B-C-D lanes",
+          "summary": "The four top letters advance Bonus X: the first letter earns 2x, then later letters advance through 3x, 4x, and 5x."
+        },
+        {
+          "name": "Star-rollover letter",
+          "summary": "The right-side star rollovers award the lit A-B-C-D letter, while spinner hits move which letter is lit."
+        },
+        {
+          "name": "Base bonus",
+          "summary": "Base bonus builds to 19,000, and the safest early goal is to combine that maximum with 5x."
+        },
+        {
+          "name": "Vari-target collect",
+          "summary": "Each vari-target collects 1,000, 2,000, or 3,000 of base bonus according to depth and applies the current multiplier."
+        },
+        {
+          "name": "Lit spinner",
+          "summary": "A full-depth shot to either vari-target lights the spinner for 1,000 per spin."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge the A lane when its position is reachable."
+        },
+        {
+          "text": "From the right flipper, shoot the right orbit back to the top."
+        },
+        {
+          "text": "Use the top lanes and the lit right-side star rollover to collect missing A-B-C-D letters."
+        },
+        {
+          "text": "Continue upper-playfield feeds until Bonus X reaches 5x and base bonus reaches 19,000."
+        },
+        {
+          "text": "At 19,000, shoot the safer vari-target deeply enough to collect 3,000 and light the spinner."
+        },
+        {
+          "text": "Rebuild the reduced base bonus through upper play."
+        },
+        {
+          "text": "Repeat the lit spinner only after one observed return shows that its feed is controlled."
+        }
+      ],
+      "fallback": {
+        "title": "Safe-side upper feeds",
+        "when": "Use this plan when the right-side star-rollover route or vari-target rebounds are unreliable.",
+        "steps": [
+          {
+            "text": "Use the upper-left feed or the right orbit, whichever returns safely on this copy."
+          },
+          {
+            "text": "Let top-lane action collect A-B-C-D and build base bonus."
+          },
+          {
+            "text": "Avoid direct vari-target shots until 5x and 19,000 are ready."
+          },
+          {
+            "text": "Continue upper feeds instead of forcing a dangerous collect."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Bonus-value award timing",
+          "when": "Use this plan only when Extra Ball or Special is enabled and the exact bonus-value award has tournament value.",
+          "steps": [
+            {
+              "text": "Read the base bonus before a vari-target collect."
+            },
+            {
+              "text": "At 19,000, collect 3,000 to return to 16,000 or collect another amount that reaches the needed award value."
+            },
+            {
+              "text": "Shoot the lit upper-left target, upper-right target, or Special lane only when its award is enabled."
+            },
+            {
+              "text": "Otherwise, resume the upper-playfield route."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 5x bonus collects",
+        "steps": [
+          {
+            "text": "Complete A-B-C-D for 5x."
+          },
+          {
+            "text": "Keep feeding the top lanes until base bonus reaches 19,000."
+          },
+          {
+            "text": "Use a deep vari-target shot to collect multiplied bonus and light the spinner."
+          },
+          {
+            "text": "Rebuild the spent base bonus through the top."
+          },
+          {
+            "text": "Repeat the collect while its same-side return remains safe."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Right-side top feed",
+          "instruction": "From the right flipper, send the ball along the right side toward the star rollovers and top lanes. Favor a clean lane entry over a hard post hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+        },
+        {
+          "name": "Vari-target depth control",
+          "instruction": "Shoot the center of the safer vari-target. Use enough force for the intended 1,000, 2,000, or 3,000 collect without striking its side post.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+        },
+        {
+          "name": "Spinner-return test",
+          "instruction": "Watch one complete spinner return. Repeat only if the ball reaches a flipper without a center-drain or slingshot deflection.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Balls leaving the bumpers or spinner can fall through the center or enter a slingshot.",
+          "response": "Prepare both flippers before the ball exits the upper area. Stop repeating a spinner that returns out of control.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+        },
+        {
+          "issue": "A vari-target can rebound toward the center on an individual machine.",
+          "response": "Test each vari-target once at moderate force. Use only the side that falls toward its same-side flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+        },
+        {
+          "issue": "The posts beside the vari-targets create severe misses.",
+          "response": "Do not force the vari-target from a poor angle. Return to the upper-playfield route when the center is not open.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qPZ-ME0Nr"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the 1978 solid-state Dragon; the electro-mechanical edition has different scoring and must use its installed instruction card.",
+        "Confirm ball count, replay, Extra Ball and Special handling, tilt, bonus carry, and whether vari-target depths register reliably.",
+        "Test upper feeds, star rollovers, spinner strength, both vari-target returns, and the center posts beside them before choosing a collect route."
+      ],
+      "simpleOverview": "Dragon turns upper-playfield lanes into Bonus X and base bonus, then lets either vari-target collect part of that bonus. Complete A-B-C-D for 5x, build the base to 19,000, and make a deep vari-target shot before rebuilding through the top.",
+      "overview": "Dragon turns upper-playfield lanes into Bonus X and base bonus, then lets either vari-target collect part of that bonus. Feed the upper playfield until 5x and 19,000 are ready, use the safer vari-target for a 3,000 collect, then rebuild the base. Repeat the lit spinner only when its return is controlled.",
+      "machineSetup": [
+        "Confirm the 1978 solid-state Dragon; the electro-mechanical edition has different scoring and must use its installed instruction card.",
+        "Confirm ball count, replay, Extra Ball and Special handling, tilt, bonus carry, and whether vari-target depths register reliably.",
+        "Test upper feeds, star rollovers, spinner strength, both vari-target returns, and the center posts beside them before choosing a collect route."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

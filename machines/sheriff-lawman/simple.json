@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEXx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit the outside standup to open the right-side gate, then shoot the upper-right entry into the lit waterfall lanes. Use the right flipper to complete the left drop bank when the gate route is unavailable.",
+        "quickInfo": [
+          {
+            "name": "Gate controls",
+            "summary": "The standup targets outside the waterfall lanes open and close the right-side ball-save gate."
+          },
+          {
+            "name": "Waterfall value",
+            "summary": "A lit waterfall lane is the highest-value scoring shot, but its lower-right exit is dangerous when the gate is closed."
+          },
+          {
+            "name": "Left drop bank",
+            "summary": "Completing the left drop-target bank adds 5,000, with no extra award for dropping two targets on one shot."
+          },
+          {
+            "name": "Synchronized lanes",
+            "summary": "The lit advance-bonus lanes across the top, waterfall, and lower left alternate when the thousands reel changes."
+          },
+          {
+            "name": "Last-ball bonus",
+            "summary": "Each 1,000 points advances bonus by 1,000, and Double Bonus applies only on the last ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Confirm that the right-side gate is open before you shoot the waterfall entry."
+          },
+          {
+            "text": "If the gate is closed, hit the right-side standup target outside the waterfall lanes."
+          },
+          {
+            "text": "From a controlled flipper, shoot the upper-right entry into the waterfall lanes."
+          },
+          {
+            "text": "Track the lit lane as the thousands reel changes and the synchronized lane set alternates."
+          },
+          {
+            "text": "Prepare both flippers before the ball leaves the waterfall area."
+          },
+          {
+            "text": "Repeat the upper-right shot while the gate remains open and the exit remains predictable."
+          },
+          {
+            "text": "When the ball is on the right flipper, complete the left drop bank for 5,000."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Left-bank scoring",
+          "when": "Recovery pivot: Use this plan when the gate is closed and the open-gate standup produces unsafe rebounds.",
+          "steps": [
+            {
+              "text": "Trap the ball on the right flipper."
+            },
+            {
+              "text": "Choose the left drop target with the cleanest angle."
+            },
+            {
+              "text": "Hit one drop target and prepare for its rebound."
+            },
+            {
+              "text": "Complete the bank for 5,000, then reassess the gate route."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Last-ball bonus route",
+            "when": "When trailing, use this distinct scoreboard route: use this plan on the last ball when the waterfall entry is unsafe but broad scoring remains available.",
+            "steps": [
+              {
+                "text": "Use safe top and waterfall action to advance bonus with each 1,000 points."
+              },
+              {
+                "text": "Follow the synchronized lit lanes instead of forcing an unlit lane."
+              },
+              {
+                "text": "Avoid the lower-right waterfall exit while the gate is closed."
+              },
+              {
+                "text": "Protect the doubled end-of-ball bonus instead of taking a poor gate shot.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Gate-protected waterfall scoring",
+          "steps": [
+            {
+              "text": "Hit the outside standup to open the right-side gate."
+            },
+            {
+              "text": "Shoot the upper-right waterfall entry."
+            },
+            {
+              "text": "Collect a lit waterfall lane."
+            },
+            {
+              "text": "Repeat while the gate and lower-right exit remain safe."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right-side gate",
+            "label": "Waterfall gate",
+            "description": "Right-side gate that feeds the upper-right waterfall lanes.",
+            "precision": "unverified",
+            "context": "Open the gate before shooting the waterfall-lane entry."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Right-flipper bank shot",
+            "instruction": "Shoot the left drop bank from the right flipper. Take one clean target and prepare for the rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEXx-MDlq0"
+          },
+          {
+            "name": "Lane-set tracking",
+            "instruction": "Watch the lit top and waterfall lanes when the thousands reel changes. The whole advance-bonus lane set alternates together.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEXx-MDlq0"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The lower-right waterfall exit can drain when the ball-save gate is closed.",
+            "response": "Hit the outside standup to open the gate before the upper-right shot. Do not repeat the shot after the gate closes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEXx-MDlq0"
+          },
+          {
+            "issue": "A ball can leave the waterfall lanes early and travel toward the center drain.",
+            "response": "Watch every waterfall exit. Prepare both flippers before the ball reaches the lower playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEXx-MDlq0"
+          },
+          {
+            "issue": "Rubber on the lowest waterfall post changes the lower-right exit.",
+            "response": "Inspect the post before play. Test one protected waterfall feed before you repeat the route.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEXx-MDlq0"
+          }
+        ],
+        "simpleOverview": "Sheriff and Lawman route their highest-value lanes through an upper-right waterfall whose exit is protected by a side gate. Hit the outside standup to open the gate, shoot the upper-right entry, and repeat lit waterfall lanes while the lower-right exit remains safe.",
+        "overview": "In Sheriff and Lawman, the outside standup opens the right-side save gate before a shot into the waterfall lanes. Hit that standup before shooting the upper-right entry, follow the synchronized lit lane, and repeat only while the exit remains predictable. When the waterfall route is unavailable, complete the left drop bank from the right flipper for 5,000.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit the outside standup to open the right-side gate, then shoot the upper-right entry into the lit waterfall lanes. Use the right flipper to complete the left drop bank when the gate route is unavailable.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Confirm that the right-side gate is open before you shoot the waterfall entry."
+          },
+          {
+            "text": "If the gate is closed, hit the right-side standup target outside the waterfall lanes."
+          },
+          {
+            "text": "From a controlled flipper, shoot the upper-right entry into the waterfall lanes."
+          },
+          {
+            "text": "Track the lit lane as the thousands reel changes and the synchronized lane set alternates."
+          },
+          {
+            "text": "Prepare both flippers before the ball leaves the waterfall area."
+          },
+          {
+            "text": "Repeat the upper-right shot while the gate remains open and the exit remains predictable."
+          },
+          {
+            "text": "When the ball is on the right flipper, complete the left drop bank for 5,000."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gate controls",
+            "summary": "The standup targets outside the waterfall lanes open and close the right-side ball-save gate."
+          },
+          {
+            "name": "Waterfall value",
+            "summary": "A lit waterfall lane is the highest-value scoring shot, but its lower-right exit is dangerous when the gate is closed."
+          },
+          {
+            "name": "Left drop bank",
+            "summary": "Completing the left drop-target bank adds 5,000, with no extra award for dropping two targets on one shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Left-bank scoring",
+          "when": "Recovery pivot: Use this plan when the gate is closed and the open-gate standup produces unsafe rebounds.",
+          "steps": [
+            {
+              "text": "Trap the ball on the right flipper."
+            },
+            {
+              "text": "Choose the left drop target with the cleanest angle."
+            },
+            {
+              "text": "Hit one drop target and prepare for its rebound."
+            },
+            {
+              "text": "Complete the bank for 5,000, then reassess the gate route."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The lower-right waterfall exit can drain when the ball-save gate is closed.",
+          "text": "Hit the outside standup to open the gate before the upper-right shot. Do not repeat the shot after the gate closes."
+        }
+      }
+    }
+  ]
+}

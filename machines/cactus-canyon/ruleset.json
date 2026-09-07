@@ -1,0 +1,886 @@
+{
+  "schemaVersion": 1,
+  "id": "G4835",
+  "title": "Cactus Canyon",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Keith Elwin Cactus Canyon tournament strategy transcript",
+      "url": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+    },
+    "supportingSources": [
+      {
+        "label": "Chicago Gaming Cactus Canyon Remake manual",
+        "url": "https://www.chicago-gaming.com/manuals/Cactus_Canyon_Manual_Rev_3.pdf"
+      },
+      {
+        "label": "Chicago Gaming Lyman Sheats Complete Upgrade",
+        "url": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+      },
+      {
+        "label": "Tilt Forums Complete Upgrade rulesheet",
+        "url": "https://tiltforums.com/t/cactus-canyon-remake-lyman-sheats-complete-upgrade-rulesheet/10018"
+      },
+      {
+        "label": "Original and Extended rules cross-check",
+        "url": "https://gamefaqs.gamespot.com/pinball/915657-cactus-canyon/faqs/40815"
+      },
+      {
+        "label": "May 2023 Cactus Canyon Remake game with Eric Stone",
+        "url": "https://www.youtube.com/watch?v=y130_GAqYkY"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Prepare three Quick Draw Bad Guys and two Gold Mine locks, start Gold Mine Multiball, hit the waiting Bad Guy to add Showdown, use its drop-set add-a-ball loop, then complete five unique Jackpots and collect Mother Lode at the Gold Mine.",
+      "steps": [
+        {
+          "text": "Test both orbit kickouts and the Gold Mine return. Use the first safe feed to test the Gold Mine shot.",
+          "modeNotes": [
+            "Gold Mine: The upper-left mine entrance lights Lock and collects the Mother Lode. The game can return a mine shot from either orbit."
+          ]
+        },
+        {
+          "text": "Shoot the Gold Mine to light Lock, then shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+          "modeNotes": [
+            "Gold Mine Multiball: The five ramps and orbits score one Jackpot each. A full set lights Mother Lode at the Gold Mine. More full sets raise its multiplier. The multiball ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Start Quick Draws. Complete the left target bank or right target bank to light its inlane. Roll through the lit inlane to raise a Bad Guy. Hit the raised target before its value counts down.",
+          "modeNotes": [
+            "Quick Draw: A defeated Bad Guy stays down. Defeat the required Bad Guys to qualify Showdown Multiball. Bounty, Lasso, and Gun Fight also raise rank."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "On Extended software, defeat three Bad Guys. Complete a target bank and roll through its lit inlane to raise the last Bad Guy, but do not hit it. Collect two Gold Mine locks and leave the third lock ready.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Gold Mine to start Gold Mine Multiball. Then hit the last raised Bad Guy to add Showdown Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During the Extended stack, clear all but one Bad Guy drop while three balls are active. Complete the set when two balls remain. Then collect the five Gold Mine Jackpots and shoot the Gold Mine for Mother Lode.",
+          "modeNotes": [
+            "Extended Showdown Multiball: A full four-drop set adds a ball, up to three balls, and keeps the save active. Repeat the set to replace later drained balls.",
+            "Mother Lode: Five unique Gold Mine Jackpots light it. Each additional full set before collection raises its multiplier."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Repeat Gold Mine Multiball",
+        "when": "Use this plan when Quick Draw returns, Boss Bart, or Showdown timing is unsafe.",
+        "steps": [
+          {
+            "text": "Shoot the Gold Mine to light Lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During multiball, collect the five unique ramp and orbit Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Gold Mine for Mother Lode. Repeat a full Jackpot set before collection only while two or more balls remain under control.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Quick Draw position play",
+          "when": "Use this when Gold Mine rejects but the target-bank returns are controlled.",
+          "steps": [
+            {
+              "text": "Complete the safer Quick Draw target bank."
+            },
+            {
+              "text": "Roll through its lit inlane to raise the Bad Guy."
+            },
+            {
+              "text": "Settle the return, then hit the raised target before its value expires."
+            },
+            {
+              "text": "Stop after three defeated Bad Guys and prepare the Gold Mine stack.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "High Noon and Marshall",
+        "steps": [
+          {
+            "text": "Collect Mother Lode, complete Showdown, make 10 combos, score all five Stampede Jackpots, and defeat all required Barts.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the five major shots in single-ball play to qualify Stampede. During Stampede Multiball, shoot all five again for Jackpots.",
+            "modeNotes": [
+              "Stampede qualification does not advance during another multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Gold Mine when High Noon is ready.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In Extended High Noon, hit 20 Bad Guy targets before time ends. Drained balls return while the timer runs.",
+            "modeNotes": [],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Gold Mine Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Showdown Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Showdown",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Stampede Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Drunken Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Marshall Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Quick Draw",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Gunfight",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Saloon Fight",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "High Noon",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Marshall",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Mother Lode",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+        "Confirm Showdown drop sets add a ball before planning the replacement loop."
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "From a left-flipper cradle, test the backhand to the Gold Mine. Use it only when the mine door and return are predictable.",
+          "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Orbit-return control",
+          "instruction": "On a slow orbit return, let the ball dead-bounce from the left flipper to the right flipper, or catch it on the left. Test the return before you repeat it.",
+          "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Orbit kickouts can change speed and angle.",
+          "response": "Watch each orbit feed once. Keep both flippers ready. Trap only after the ball is below the slingshots.",
+          "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+        },
+        {
+          "issue": "Lyman saloon doors block Bart during a fight.",
+          "response": "Do not fire repeated uncontrolled shots into closed doors. Wait for a controlled shot or a feature that opens them.",
+          "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+        },
+        {
+          "issue": "The Lyman spinner is copy-dependent; a full rip can register roughly 40 to 150 spins.",
+          "response": "Test one rip before you choose Saloon Fight as the main route.",
+          "sourceUrl": "https://tiltforums.com/t/cactus-canyon-remake-lyman-sheats-complete-upgrade-rulesheet/10018"
+        },
+        {
+          "issue": "Drunken Multiball reverses the flipper buttons.",
+          "response": "Cradle before the start when possible. Map the left button to the right flipper and the right button to the left flipper before the Beer Mug Super Jackpot.",
+          "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Gold Mine Multiball",
+          "summary": "Shoot the Gold Mine to light Lock, then shoot it while Lock is lit. The third lock starts Multiball."
+        },
+        {
+          "name": "Mother Lode",
+          "summary": "Collect one Jackpot at each of the five major ramps and orbits, then shoot the Gold Mine for Mother Lode."
+        },
+        {
+          "name": "Quick Draw",
+          "summary": "Complete either target bank, roll through its lit inlane, then hit the raised Bad Guy before its value counts down."
+        }
+      ],
+      "overview": "In Cactus Canyon, Gold Mine and Showdown can run together. Defeat three Bad Guys, complete a target bank and roll through its lit inlane to raise the fourth without hitting it, then collect two Gold Mine locks. Start Gold Mine with the third lock, hit the waiting Bad Guy to add Showdown, use complete drop sets for add-a-balls, and collect the five Gold Mine Jackpots before returning to the mine for Mother Lode.",
+      "simpleOverview": "Cactus Canyon starts Gold Mine Multiball after three locks at the Gold Mine. Shoot the mine once to light Lock and again to lock each ball, then collect one Jackpot at each of the five ramps and orbits and return to the mine for Mother Lode. Quick Draw is a separate option: complete either target bank, roll through its lit inlane, and hit the raised Bad Guy.",
+      "machineSetup": [
+        "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+        "Confirm Showdown drop sets add a ball before planning the replacement loop."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "extended",
+      "items": [
+        {
+          "id": "extended",
+          "label": "Extended software",
+          "differences": {
+            "changes": [
+              "During Extended Showdown, completing the four Bad Guy drops adds a ball and restores play to as many as three balls.",
+              "Repeated drop-bank completions can replace later drained balls while Showdown continues."
+            ]
+          },
+          "strategy": {
+            "summary": "Prepare three Quick Draw Bad Guys and two Gold Mine locks, start Gold Mine Multiball, hit the waiting Bad Guy to add Showdown, use its drop-set add-a-ball loop, then complete five unique Jackpots and collect Mother Lode at the Gold Mine.",
+            "steps": [
+              {
+                "text": "Test both orbit kickouts and the Gold Mine return. Use the first safe feed to test the Gold Mine shot.",
+                "modeNotes": [
+                  "Gold Mine: The upper-left mine entrance lights Lock and collects the Mother Lode. The game can return a mine shot from either orbit."
+                ]
+              },
+              {
+                "text": "Shoot the Gold Mine to light Lock, then shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+                "modeNotes": [
+                  "Gold Mine Multiball: The five ramps and orbits score one Jackpot each. A full set lights Mother Lode at the Gold Mine. More full sets raise its multiplier. The multiball ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Start Quick Draws. Complete the left target bank or right target bank to light its inlane. Roll through the lit inlane to raise a Bad Guy. Hit the raised target before its value counts down.",
+                "modeNotes": [
+                  "Quick Draw: A defeated Bad Guy stays down. Defeat the required Bad Guys to qualify Showdown Multiball. Bounty, Lasso, and Gun Fight also raise rank."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "On Extended software, defeat three Bad Guys. Complete a target bank and roll through its lit inlane to raise the last Bad Guy, but do not hit it. Collect two Gold Mine locks and leave the third lock ready.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the Gold Mine to start Gold Mine Multiball. Then hit the last raised Bad Guy to add Showdown Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During the Extended stack, clear all but one Bad Guy drop while three balls are active. Complete the set when two balls remain. Then collect the five Gold Mine Jackpots and shoot the Gold Mine for Mother Lode.",
+                "modeNotes": [
+                  "Extended Showdown Multiball: A full four-drop set adds a ball, up to three balls, and keeps the save active. Repeat the set to replace later drained balls.",
+                  "Mother Lode: Five unique Gold Mine Jackpots light it. Each additional full set before collection raises its multiplier."
+                ],
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ],
+            "fallback": {
+              "title": "Repeat Gold Mine Multiball",
+              "when": "Use this plan when Quick Draw returns, Boss Bart, or Showdown timing is unsafe.",
+              "steps": [
+                {
+                  "text": "Shoot the Gold Mine to light Lock.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "During multiball, collect the five unique ramp and orbit Jackpots.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the Gold Mine for Mother Lode. Repeat a full Jackpot set before collection only while two or more balls remain under control.",
+                  "kinds": [
+                    "multiball",
+                    "multiplier"
+                  ]
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Quick Draw position play",
+                "when": "Use this when Gold Mine rejects but the target-bank returns are controlled.",
+                "steps": [
+                  {
+                    "text": "Complete the safer Quick Draw target bank."
+                  },
+                  {
+                    "text": "Roll through its lit inlane to raise the Bad Guy."
+                  },
+                  {
+                    "text": "Settle the return, then hit the raised target before its value expires."
+                  },
+                  {
+                    "text": "Stop after three defeated Bad Guys and prepare the Gold Mine stack.",
+                    "kinds": [
+                      "mode",
+                      "multiball"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "High Noon and Marshall",
+              "steps": [
+                {
+                  "text": "Collect Mother Lode, complete Showdown, make 10 combos, score all five Stampede Jackpots, and defeat all required Barts.",
+                  "kinds": [
+                    "mode",
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Complete the five major shots in single-ball play to qualify Stampede. During Stampede Multiball, shoot all five again for Jackpots.",
+                  "modeNotes": [
+                    "Stampede qualification does not advance during another multiball."
+                  ],
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the Gold Mine when High Noon is ready.",
+                  "kinds": [
+                    "mode"
+                  ]
+                },
+                {
+                  "text": "In Extended High Noon, hit 20 Bad Guy targets before time ends. Drained balls return while the timer runs.",
+                  "modeNotes": [],
+                  "kinds": [
+                    "mode"
+                  ]
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Gold Mine Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Showdown Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Showdown",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Stampede Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Drunken Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Marshall Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Quick Draw",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Gunfight",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Saloon Fight",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "High Noon",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Marshall",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Mother Lode",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "checkBeforePlay": [
+              "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+              "Confirm Showdown drop sets add a ball before planning the replacement loop."
+            ],
+            "techniques": [
+              {
+                "name": "Backhand",
+                "instruction": "From a left-flipper cradle, test the backhand to the Gold Mine. Use it only when the mine door and return are predictable.",
+                "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/",
+                "techniqueSlug": "backhand"
+              },
+              {
+                "name": "Orbit-return control",
+                "instruction": "On a slow orbit return, let the ball dead-bounce from the left flipper to the right flipper, or catch it on the left. Test the return before you repeat it.",
+                "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Orbit kickouts can change speed and angle.",
+                "response": "Watch each orbit feed once. Keep both flippers ready. Trap only after the ball is below the slingshots.",
+                "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+              },
+              {
+                "issue": "Lyman saloon doors block Bart during a fight.",
+                "response": "Do not fire repeated uncontrolled shots into closed doors. Wait for a controlled shot or a feature that opens them.",
+                "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+              },
+              {
+                "issue": "The Lyman spinner is copy-dependent; a full rip can register roughly 40 to 150 spins.",
+                "response": "Test one rip before you choose Saloon Fight as the main route.",
+                "sourceUrl": "https://tiltforums.com/t/cactus-canyon-remake-lyman-sheats-complete-upgrade-rulesheet/10018"
+              },
+              {
+                "issue": "Drunken Multiball reverses the flipper buttons.",
+                "response": "Cradle before the start when possible. Map the left button to the right flipper and the right button to the left flipper before the Beer Mug Super Jackpot.",
+                "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+              }
+            ],
+            "quickInfo": [
+              {
+                "name": "Gold Mine Multiball",
+                "summary": "Shoot the Gold Mine to light Lock, then shoot it while Lock is lit. The third lock starts Multiball."
+              },
+              {
+                "name": "Mother Lode",
+                "summary": "Collect one Jackpot at each of the five major ramps and orbits, then shoot the Gold Mine for Mother Lode."
+              },
+              {
+                "name": "Quick Draw",
+                "summary": "Complete either target bank, roll through its lit inlane, then hit the raised Bad Guy before its value counts down."
+              }
+            ],
+            "overview": "In Cactus Canyon, Gold Mine and Showdown can run together. Defeat three Bad Guys, complete a target bank and roll through its lit inlane to raise the fourth without hitting it, then collect two Gold Mine locks. Start Gold Mine with the third lock, hit the waiting Bad Guy to add Showdown, use complete drop sets for add-a-balls, and collect the five Gold Mine Jackpots before returning to the mine for Mother Lode.",
+            "simpleOverview": "Cactus Canyon starts Gold Mine Multiball after three locks at the Gold Mine. Shoot the mine once to light Lock and again to lock each ball, then collect one Jackpot at each of the five ramps and orbits and return to the mine for Mother Lode. Quick Draw is a separate option: complete either target bank, roll through its lit inlane, and hit the raised Bad Guy.",
+            "machineSetup": [
+              "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+              "Confirm Showdown drop sets add a ball before planning the replacement loop."
+            ],
+            "rulesNotes": []
+          }
+        },
+        {
+          "id": "lyman-complete",
+          "label": "Lyman Complete Upgrade",
+          "strategy": {
+            "summary": "Shoot the Gold Mine to light Lock, then shoot it again for each of three locks and a controlled Multiball. Complete Shot Modes and defeat Barts to increase Gunfight, then roll through its lit inlane for the cashout. In Showdown, clear drop sets, make lit Jackpots, and hit Boss Bart.",
+            "steps": [
+              {
+                "text": "Test both orbit kickouts and the Gold Mine return. Use the first safe feed to test the Gold Mine shot.",
+                "modeNotes": [
+                  "Gold Mine: The upper-left mine entrance lights Lock and collects the Mother Lode. The game can return a mine shot from either orbit."
+                ]
+              },
+              {
+                "text": "Shoot the Gold Mine to light Lock, then shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+                "modeNotes": [
+                  "Gold Mine Multiball: The five ramps and orbits score one Jackpot each. A full set lights Mother Lode at the Gold Mine. More full sets raise its multiplier. The multiball ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Start Quick Draws. Complete the left target bank or right target bank to light its inlane. Roll through the lit inlane to raise a Bad Guy. Hit the raised target before its value counts down.",
+                "modeNotes": [
+                  "Quick Draw: A defeated Bad Guy stays down. Defeat the required Bad Guys to qualify Showdown Multiball. Bounty, Lasso, and Gun Fight also raise rank."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "On the Lyman upgrade, do not depend on the old Showdown add-a-ball loop. Play Gold Mine Multiball alone. In Showdown, clear a drop set, then make a lit Jackpot shot. Complete the sequence, hit Boss Bart for the Super Jackpot, and shoot Victory Laps.",
+                "modeNotes": [
+                  "Lyman Showdown: Drop sets expose Boss Bart. Lit major-shot Jackpots attack him. The old Extended full-drop add-a-ball loop does not apply."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "On the Lyman upgrade, build Gunfight while the ball is controlled. Complete Shot Modes and defeat Barts. Move the lit Gunfight inlane with the flippers. Roll through it before the ball drains.",
+                "modeNotes": [
+                  "Gunfight: Each new contribution adds its scored value to the stored cashout and raises its multiplier. A collect resets it. A drain loses it."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              }
+            ],
+            "fallback": {
+              "title": "Repeat Gold Mine Multiball",
+              "when": "Use this plan when Quick Draw returns, Boss Bart, or Showdown timing is unsafe.",
+              "steps": [
+                {
+                  "text": "Shoot the Gold Mine to light Lock.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "During multiball, collect the five unique ramp and orbit Jackpots.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the Gold Mine for Mother Lode. Repeat a full Jackpot set before collection only while two or more balls remain under control.",
+                  "kinds": [
+                    "multiball",
+                    "multiplier"
+                  ]
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Lyman Gunfight cashout",
+                "when": "Use this plan when the major Shot Modes are safe.",
+                "steps": [
+                  {
+                    "text": "Complete a Shot Mode or defeat a Bart to add its value to Gunfight.",
+                    "kinds": [
+                      "mode"
+                    ]
+                  },
+                  {
+                    "text": "Each later contribution raises the stored Gunfight multiplier.",
+                    "kinds": [
+                      "multiplier"
+                    ]
+                  },
+                  {
+                    "text": "Move the lit Gunfight inlane away from an uncontrolled return."
+                  },
+                  {
+                    "text": "Collect the inlane before the ball drains. The value resets after the collect.",
+                    "kinds": [
+                      "multiplier"
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Lyman Saloon Fight",
+                "when": "Use this plan only when the right-orbit spinner registers strongly.",
+                "steps": [
+                  {
+                    "text": "Test one full spinner rip."
+                  },
+                  {
+                    "text": "Reach the displayed spinner threshold. Shoot the Saloon to start Saloon Fight.",
+                    "kinds": [
+                      "mode"
+                    ]
+                  },
+                  {
+                    "text": "During the timed mode, use switches and the spinner to build the value.",
+                    "kinds": [
+                      "mode"
+                    ]
+                  },
+                  {
+                    "text": "Hit the Beer Mug for the one cashout.",
+                    "kinds": [
+                      "mode"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Lyman High Noon and Marshall",
+              "steps": [
+                {
+                  "text": "Collect Mother Lode, complete Showdown, make 10 combos, score all five Stampede Jackpots, and defeat every required Bart.",
+                  "kinds": [
+                    "mode",
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Complete the five major shots in single-ball play to qualify Stampede. During Stampede Multiball, shoot all five again for Jackpots.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the Gold Mine when High Noon is ready.",
+                  "kinds": [
+                    "mode"
+                  ]
+                },
+                {
+                  "text": "Clear the first High Noon battle, then defeat Boss Bart in the added final stage.",
+                  "kinds": [
+                    "mode"
+                  ]
+                },
+                {
+                  "text": "Reach Marshall rank, make five guarded Jackpots, then return the Bad Guys to jail in Marshall Multiball.",
+                  "kinds": [
+                    "mode",
+                    "multiball"
+                  ]
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Gold Mine Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Showdown Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Showdown",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Stampede Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Drunken Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Marshall Multiball",
+                "tone": "forest",
+                "kind": "multiball"
+              },
+              {
+                "label": "Quick Draw",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Gunfight",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Saloon Fight",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "High Noon",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Marshall",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Mother Lode",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "checkBeforePlay": [
+              "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+              "Confirm Showdown drop sets add a ball before planning the replacement loop."
+            ],
+            "techniques": [
+              {
+                "name": "Backhand",
+                "instruction": "From a left-flipper cradle, test the backhand to the Gold Mine. Use it only when the mine door and return are predictable.",
+                "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/",
+                "techniqueSlug": "backhand"
+              },
+              {
+                "name": "Orbit-return control",
+                "instruction": "On a slow orbit return, let the ball dead-bounce from the left flipper to the right flipper, or catch it on the left. Test the return before you repeat it.",
+                "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Orbit kickouts can change speed and angle.",
+                "response": "Watch each orbit feed once. Keep both flippers ready. Trap only after the ball is below the slingshots.",
+                "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+              },
+              {
+                "issue": "Lyman saloon doors block Bart during a fight.",
+                "response": "Do not fire repeated uncontrolled shots into closed doors. Wait for a controlled shot or a feature that opens them.",
+                "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+              },
+              {
+                "issue": "The Lyman spinner is copy-dependent; a full rip can register roughly 40 to 150 spins.",
+                "response": "Test one rip before you choose Saloon Fight as the main route.",
+                "sourceUrl": "https://tiltforums.com/t/cactus-canyon-remake-lyman-sheats-complete-upgrade-rulesheet/10018"
+              },
+              {
+                "issue": "Drunken Multiball reverses the flipper buttons.",
+                "response": "Cradle before the start when possible. Map the left button to the right flipper and the right button to the left flipper before the Beer Mug Super Jackpot.",
+                "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+              }
+            ],
+            "quickInfo": [
+              {
+                "name": "Lyman Complete changes",
+                "summary": "The upgrade adds saloon doors and a right-orbit spinner, removes the Extended Showdown add-a-ball loop, and adds the Gunfight route."
+              },
+              {
+                "name": "Long goal",
+                "summary": "Collect Mother Lode, complete Showdown, make 10 combos, score all five Stampede Jackpots, and defeat all required Barts."
+              },
+              {
+                "name": "Safer fallback",
+                "summary": "Repeat Gold Mine Multiball: Use this plan when Quick Draw returns, Boss Bart, or Showdown timing is unsafe."
+              }
+            ],
+            "overview": "In Cactus Canyon, three Gold Mine locks start a controlled Multiball, while completed Shot Modes and defeated Barts increase the Gunfight cashout at its lit inlane. Use Gold Mine alone for five unique Jackpots and Mother Lode. During Showdown, clear drop sets, make the lit major-shot Jackpots, and hit Boss Bart for the Super Jackpot.",
+            "simpleOverview": "Cactus Canyon starts Gold Mine Multiball after three locks at the Gold Mine. Shoot the mine once to light Lock and again to lock each ball, then collect one Jackpot at each of the five ramps and orbits and return to the mine for Mother Lode. Quick Draw is a separate option: complete either target bank, roll through its lit inlane, and hit the raised Bad Guy.",
+            "machineSetup": [
+              "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+              "Confirm Showdown drop sets add a ball before planning the replacement loop."
+            ],
+            "rulesNotes": []
+          },
+          "differences": {
+            "changes": [
+              "The upgrade adds saloon doors, a right-orbit spinner, and the Gunfight cashout route.",
+              "Showdown replaces the Extended drop-bank add-a-ball loop with drop sets, lit major-shot Jackpots, and a Boss Bart Super Jackpot.",
+              "The upgrade adds the Marshall rank mini-wizard route."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

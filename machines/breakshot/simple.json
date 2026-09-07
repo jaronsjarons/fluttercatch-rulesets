@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "id": "G43oE",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Short-plunge to light Bank Shot, sink the current pool game's required balls, lock captive balls in the side pockets for Ball-O-Rama or Breakshot Frenzy, complete the configured games, attack called balls in Cutthroat Countdown, and collect its center-pocket Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Eight Ball",
+            "summary": "Sink one ball of every color, then finish at the 8-Ball saucer."
+          },
+          {
+            "name": "Nine Ball and Rotation",
+            "summary": "Use lit ball shots, Super Cues, and the Center Pockets to sink the next numbered ball."
+          },
+          {
+            "name": "Center Pockets",
+            "summary": "Hit the side saucers to light locks, then drive captive balls from the raised center post into the flashing pockets."
+          },
+          {
+            "name": "Multiballs",
+            "summary": "One lock lights two-ball Ball-O-Rama at the 8-Ball saucer; two locks prepare three-ball Breakshot Frenzy at the center pocket."
+          },
+          {
+            "name": "Cutthroat Countdown",
+            "summary": "Shoot each called ball within ten seconds to add time, then collect two million per sunk ball at the center pocket."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On the initial plunge, leave the rollovers short to light the Bank Shot skill shot, then shoot its upper-right-flipper lane for 100,000 and one sunk ball."
+          },
+          {
+            "text": "Read the flashing Eight Ball, Nine Ball, or Rotation lamp before choosing a target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the safest shot that sinks the required ball.",
+            "modeNotes": [
+              "Eight Ball: Collect the three rollovers, two colored standups, and the Green and Brown banks, then shoot the lit 8-Ball saucer.",
+              "Nine Ball: Each loop, captive-ball target, or exposed Green or Brown standup sinks the next ball; both Super Cues are always lit.",
+              "Rotation: Sink balls 1 through 15 in order; Super Cues, Center Pockets, and completed bonus-multiplier lanes can spot the next available ball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the center post rises with a captive ball, shoot it into a flashing side pocket to lock it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With one ball locked, start Ball-O-Rama at the 8-Ball saucer for two-ball play and repeated rising saucer awards.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With two balls locked, shoot the center pocket to start Breakshot Frenzy; collect center jackpots while three balls triple normal scoring.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the configured number of completed games, shoot each called ball during Cutthroat Countdown.",
+            "modeNotes": [
+              "The default first qualification is all three pool games. Each called ball has up to ten seconds, scores at least one million, and adds ten seconds when collected."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the countdown ends, shoot the center pocket for two million per ball sunk; the Super Jackpot is not multiplied by multiball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Super Cues and Bank Shot",
+          "when": "Use this when the direct ball target or Center Pockets assembly is rejecting.",
+          "steps": [
+            {
+              "text": "Hit a flashing colored standup to light the opposite Super Cue."
+            },
+            {
+              "text": "Shoot the full lit orbit to sink the next available ball."
+            },
+            {
+              "text": "During Nine Ball, use the always-lit Super Cue that returns more safely."
+            },
+            {
+              "text": "If the upper-right Bank Shot lane is controlled, build consecutive 100,000-point multiples without touching another switch."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Repeated Cutthroat rounds",
+          "steps": [
+            {
+              "text": "Complete the configured number of pool games; the default first qualification is all three.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Cutthroat Countdown, sink every called ball that has a controlled shot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect the center-pocket Super Jackpot before returning to normal play.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the awarded next-game progress to reach the following Cutthroat round sooner.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Eight Ball",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Nine Ball",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Rotation",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Cutthroat Countdown",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Ball-O-Rama",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Breakshot Frenzy",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Bank Shot",
+            "context": "Bank Shot skill shot",
+            "label": "Bank Shot lane",
+            "description": "The short lane reachable from the upper-right flipper after a weak initial plunge.",
+            "precision": "unverified"
+          },
+          {
+            "term": "8-Ball saucer",
+            "context": "8-Ball saucer",
+            "label": "8-Ball saucer",
+            "description": "The upper-right saucer used to finish Eight Ball, start Ball-O-Rama, collect bonus, and take Call Your Shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Center Pockets",
+            "context": "Center Pockets",
+            "label": "Center Pockets assembly",
+            "description": "The three-saucer area behind the rising post used to light and capture locks and start Breakshot Frenzy.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Super Cues",
+            "context": "Super Cues",
+            "label": "Super Cue orbits",
+            "description": "The left and right full orbits that sink the next ball when their cue lamps are lit.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cradle",
+            "instruction": "Cradle on the upper-right flipper before choosing the Bank Shot lane, Brown bank, or right-orbit backhand.",
+            "techniqueSlug": "cradle",
+            "sourceUrl": "https://www.pinball.org/rules/breakshot.txt"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A center-post hit can reject between the flippers or leave both captive balls on the same side.",
+            "response": "Shoot the post only from control. Stop and call the tournament director if the assembly does not settle or register correctly.",
+            "sourceUrl": "https://www.pinball.org/rules/breakshot.txt"
+          },
+          {
+            "issue": "Center-pocket ejections occur one ball at a time and can continue after the next ball reaches the shooter lane.",
+            "response": "Wait for every captive ball to settle before plunging or attacking the center again.",
+            "sourceUrl": "https://www.pinball.org/rules/breakshot.txt"
+          },
+          {
+            "issue": "End-of-ball bonus grows with sunk balls and its rollover multiplier.",
+            "response": "Avoid a late tilt after a productive game or Cutthroat round.",
+            "sourceUrl": "https://www.pinball.org/rules/breakshot.txt"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Capcom Breakshot, installed ROM, ball count, tilt warnings, eight-second saves, Kicker memory, Extra Ball and Special conversion, and tournament settings.",
+          "Confirm games needed for Cutthroat, Center Pockets difficulty, balls sunk per game, Breakshot Frenzy easy-jackpot count, and multiplayer lock behavior.",
+          "Test both drop banks and rear standups, rollovers, Super Cues, Bank Shot lane, 8-Ball saucer, captive-ball switches, center post, all three pockets, trough, and feeds."
+        ],
+        "simpleOverview": "Breakshot changes the required shots with the selected pool game. Read the flashing Eight Ball, Nine Ball, or Rotation lamp, use the named ball shots and Super Cues to sink the next ball, and drive a raised captive ball into a flashing side pocket when a lock is available.",
+        "overview": "Breakshot changes the required shots with the selected pool game. Follow the current game's called-ball order, use one captive-ball lock for Ball-O-Rama or two for Breakshot Frenzy, and collect center Jackpots while extra balls protect the rebounds. After enough completed games, follow the called balls in Cutthroat and finish at the center pocket.",
+        "machineSetup": [
+          "Confirm Capcom Breakshot, installed ROM, ball count, tilt warnings, eight-second saves, Kicker memory, Extra Ball and Special conversion, and tournament settings.",
+          "Confirm games needed for Cutthroat, Center Pockets difficulty, balls sunk per game, Breakshot Frenzy easy-jackpot count, and multiplayer lock behavior.",
+          "Test both drop banks and rear standups, rollovers, Super Cues, Bank Shot lane, 8-Ball saucer, captive-ball switches, center post, all three pockets, trough, and feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Short-plunge to light Bank Shot, sink the current pool game's required balls, lock captive balls in the side pockets for Ball-O-Rama or Breakshot Frenzy, complete the configured games, attack called balls in Cutthroat Countdown, and collect its center-pocket Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "On the initial plunge, leave the rollovers short to light the Bank Shot skill shot, then shoot its upper-right-flipper lane for 100,000 and one sunk ball."
+          },
+          {
+            "text": "Read the flashing Eight Ball, Nine Ball, or Rotation lamp before choosing a target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the safest shot that sinks the required ball.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Eight Ball: Collect the three rollovers, two colored standups, and the Green and Brown banks, then shoot the lit 8-Ball saucer.",
+              "Nine Ball: Each loop, captive-ball target, or exposed Green or Brown standup sinks the next ball; both Super Cues are always lit.",
+              "Rotation: Sink balls 1 through 15 in order; Super Cues, Center Pockets, and completed bonus-multiplier lanes can spot the next available ball."
+            ]
+          },
+          {
+            "text": "When the center post rises with a captive ball, shoot it into a flashing side pocket to lock it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With one ball locked, start Ball-O-Rama at the 8-Ball saucer for two-ball play and repeated rising saucer awards.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With two balls locked, shoot the center pocket to start Breakshot Frenzy; collect center jackpots while three balls triple normal scoring.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the configured number of completed games, shoot each called ball during Cutthroat Countdown.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "The default first qualification is all three pool games. Each called ball has up to ten seconds, scores at least one million, and adds ten seconds when collected."
+            ]
+          },
+          {
+            "text": "When the countdown ends, shoot the center pocket for two million per ball sunk; the Super Jackpot is not multiplied by multiball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Eight Ball",
+            "summary": "Sink one ball of every color, then finish at the 8-Ball saucer."
+          },
+          {
+            "name": "Nine Ball and Rotation",
+            "summary": "Use lit ball shots, Super Cues, and the Center Pockets to sink the next numbered ball."
+          },
+          {
+            "name": "Center Pockets",
+            "summary": "Hit the side saucers to light locks, then drive captive balls from the raised center post into the flashing pockets."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Super Cues and Bank Shot",
+          "when": "Use this when the direct ball target or Center Pockets assembly is rejecting.",
+          "steps": [
+            {
+              "text": "Hit a flashing colored standup to light the opposite Super Cue."
+            },
+            {
+              "text": "Shoot the full lit orbit to sink the next available ball."
+            },
+            {
+              "text": "During Nine Ball, use the always-lit Super Cue that returns more safely."
+            },
+            {
+              "text": "If the upper-right Bank Shot lane is controlled, build consecutive 100,000-point multiples without touching another switch."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A center-post hit can reject between the flippers or leave both captive balls on the same side.",
+          "text": "Shoot the post only from control. Stop and call the tournament director if the assembly does not settle or register correctly."
+        }
+      }
+    }
+  ]
+}

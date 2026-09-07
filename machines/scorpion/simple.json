@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qQj",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Scorpion starts two-ball Multiball by locking one ball in each side saucer. The 1-2-3 sequence advances both saucer bonuses, while the upper three-banks grow through 10,000, 20,000, 30,000, 50,000, and Special. Multiball runs on an active-play timer: 15 seconds lights the right orbit for 50,000, 30 seconds lights Extra Ball, and 50 seconds lights Special; cradled balls pause the clock.",
+        "simpleOverview": "Shoot one ball into each side saucer to start two-ball Multiball. During Multiball, keep at least one ball moving: 15 active seconds lights the right orbit for 50,000, 30 seconds lights Extra Ball, and 50 seconds lights Special. Cradling both balls pauses the timer.",
+        "summary": "Build the side-saucer values with 1-2-3, then take one lock on each side. Once Multiball begins, avoid a full two-ball cradle if you are playing for the timer awards. Complete the center five-bank during Multiball to light the outlanes for double timer bonus.",
+        "quickInfo": [
+          {
+            "name": "Start Multiball",
+            "summary": "Lock one ball in each side saucer."
+          },
+          {
+            "name": "Build Saucer Value",
+            "summary": "Complete 1-2-3; target 2 advances both sides."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete the center five-bank."
+          },
+          {
+            "name": "Double Timer Bonus",
+            "summary": "Complete the center five-bank during Multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot a ball into either side saucer to lock it and serve a replacement."
+          },
+          {
+            "text": "Shoot the opposite side saucer to lock the second ball and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep at least one ball moving so the Multiball timer advances; a full cradle pauses it."
+          },
+          {
+            "text": "At 15 active seconds shoot the lit right orbit for 50,000; continue to 30 seconds for Extra Ball and 50 seconds for Special."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Bank-value route",
+            "when": "Use this while a saucer is rejecting or one side is too dangerous.",
+            "steps": [
+              {
+                "text": "Complete an upper three-bank repeatedly to advance its held value through the lit awards."
+              },
+              {
+                "text": "Complete 1-2-3 to grow both saucer values and the side associated with each outer target."
+              },
+              {
+                "text": "Complete the center five-bank to raise Bonus X through 2x, 3x, and 5x.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Timer awards",
+          "steps": [
+            {
+              "text": "Start two-ball Multiball and keep a ball in motion.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the center five-bank during Multiball to light both outlanes for double timer bonus."
+            },
+            {
+              "text": "Protect the second ball until the 30- and 50-second awards light, then collect the available award shots."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test both side saucers, lock and release switches, all four flippers, the 1-2-3 targets and lanes, both upper three-banks, center five-bank, right orbit, and Multiball timer lamps.",
+          "Confirm the installed Extra Ball and Special settings and verify that the active-play timer pauses only when both balls are held, not because of a weak playfield switch."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left saucer",
+            "label": "Left lock saucer",
+            "description": "Left-side ball lock and bonus award saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right saucer",
+            "label": "Right lock saucer",
+            "description": "Right-side ball lock and bonus award saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-2-3",
+            "label": "1-2-3 targets and lanes",
+            "description": "Sequence that advances side-saucer bonus values.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper three-banks",
+            "label": "Upper three-banks",
+            "description": "Two drop banks with held completion values up through Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center five-bank",
+            "label": "Center five-bank",
+            "description": "Bank that raises Bonus X and lights double timer bonus during Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "Shot lit for the 15-second 50,000 Multiball award.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Cradling changes the Multiball timer route.",
+            "response": "Use short controlled holds, but keep another ball moving whenever advancing the timed 50,000, Extra Ball, or Special awards is the objective.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4qQj-MD8XD"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build the side-saucer values with 1-2-3, then take one lock on each side. Once Multiball begins, avoid a full two-ball cradle if you are playing for the timer awards. Complete the center five-bank during Multiball to light the outlanes for double timer bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot a ball into either side saucer to lock it and serve a replacement."
+          },
+          {
+            "text": "Shoot the opposite side saucer to lock the second ball and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep at least one ball moving so the Multiball timer advances; a full cradle pauses it."
+          },
+          {
+            "text": "At 15 active seconds shoot the lit right orbit for 50,000; continue to 30 seconds for Extra Ball and 50 seconds for Special."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start Multiball",
+            "summary": "Lock one ball in each side saucer."
+          },
+          {
+            "name": "Build Saucer Value",
+            "summary": "Complete 1-2-3; target 2 advances both sides."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete the center five-bank."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jXr",
+  "title": "KISS",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide Bally KISS Quickie",
+      "url": "https://rules.silverballmania.com/rules/G4jXr-MQ6kz"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Bally KISS tournament tutorial",
+        "url": "https://www.kineticist.com/news/bally-kiss-pinball-tutorial"
+      },
+      {
+        "label": "Official Bally KISS operations manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Kiss%20Manual.pdf"
+      },
+      {
+        "label": "PinMAME Bally KISS model and ROM definitions",
+        "url": "https://github.com/vpinball/pinmame/blob/master/src/wpc/by35games.c"
+      },
+      {
+        "label": "Bally KISS at District 82 Super Series 2022",
+        "url": "https://pinballvideos.com/v/4545/12437"
+      },
+      {
+        "label": "District 82 KISS 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=Ptjwk30C3A8"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge the center top lane to light both spinners, repeat either spinner until the 40,000 Super Bonus is lit, complete A-B-C-D for 2X Bonus, then return to either spinner.",
+      "steps": [
+        {
+          "text": "On each plunge, aim for the center top lane. If the ball touches a top-lane post, use a small nudge toward the center.",
+          "modeNotes": [
+            "The center top lane lights both spinners for 1,000 per spin for the rest of the ball.",
+            "If LIGHT-A-LINE is lit, the lane completes the current K-I-S-S row. If OPEN GATE is lit, it opens the right-outlane gate. If both are lit, both happen."
+          ]
+        },
+        {
+          "text": "Repeat either spinner to send the ball through the top lanes until the 40,000 Super Bonus is lit.",
+          "modeNotes": [
+            "Each K-I-S-S letter adds 1,000 bonus. Each completed horizontal or vertical line adds 3,000. The carried bonus grid can be completed again for 80,000 and a third time for 120,000."
+          ]
+        },
+        {
+          "text": "After the 40,000 Super Bonus is lit, complete A-B-C-D on the right for 2X Bonus.",
+          "modeNotes": [
+            "2X Bonus does not carry to the next ball. Its A-B-C-D target-progress memory is a separate operator setting."
+          ]
+        },
+        {
+          "text": "If Extra Ball is enabled, complete A-B-C-D a second time to earn it."
+        },
+        {
+          "text": "Return to either spinner and the top lanes. Do not chase the left K-I-S-S drop bank or the four K-I-S-S standups because their rebounds enter the bumpers."
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Center top lane",
+          "summary": "It lights both spinners for 1,000 per spin for the rest of the ball. If LIGHT-A-LINE is lit, it completes the current K-I-S-S row. If OPEN GATE is lit, it opens the right-outlane gate. If both are lit, both happen."
+        },
+        {
+          "name": "KISS bonus grid",
+          "summary": "Top-lane letters build the four-row carried bonus grid while the spinner route repeatedly sends the ball up top."
+        },
+        {
+          "name": "Super and Colossal Bonus",
+          "summary": "One full grid gives 40,000, two give 80,000, and three cap the carried bonus at 120,000."
+        },
+        {
+          "name": "A-B-C-D",
+          "summary": "The first completion gives 2X Bonus for the current ball, the second awards Extra Ball when enabled, and the third awards Special. The 2X lamp does not carry."
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the District 82 Super Series 2022, Raymond Davidson and the other finalists repeatedly returned to the lit spinners, built the carried KISS bonus grid, and completed A-B-C-D",
+          "for 2X Bonus only after substantial Super Bonus progress.",
+          "At the Dutch Open 2022 Classics final, Mark van der Gugten repeatedly made the center top lane and lit spinners, completed several KISS bonus-grid lines, then completed A-B-C-D",
+          "for 2X Bonus during the winning game.",
+          "This strategy covers the stock six-digit game. The seven-digit display conversion does not require a different scoring route. 2X Bonus does not carry between balls.",
+          "Switch 31 controls only whether unfinished A-B-C-D target lights are remembered. LIGHT-A-LINE and OPEN GATE are separate adjustable features."
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "KISS bonus grid",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Super Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Colossal Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "LIGHT-A-LINE",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "OPEN GATE",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "2X Bonus",
+          "tone": "rust",
+          "kind": "multiplier"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test both spinners, the top-lane switches, A-B-C-D rebounds, bumper exits, the right-outlane gate, tilt sensitivity, and flipper strength."
+      ],
+      "techniques": [
+        {
+          "name": "Nudging",
+          "instruction": "Use a small tap as the ball contacts a top-lane post. Move it toward the center lane. Do not shake after the ball passes the post.",
+          "sourceUrl": "https://www.kineticist.com/news/bally-kiss-pinball-tutorial",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The K and second S standups can send direct hits toward the opposite outlane.",
+          "response": "Return to the spinner and top lanes instead of aiming at either standup.",
+          "sourceUrl": "https://www.kineticist.com/news/bally-kiss-pinball-tutorial"
+        },
+        {
+          "issue": "Target rebounds enter the bumpers, and bumper exits cause many drains.",
+          "response": "Save A-B-C-D until the 40,000 Super Bonus is lit, and otherwise return to the spinners.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jXr-MQ6kz"
+        }
+      ],
+      "simpleOverview": "KISS rewards a center-lane plunge by lighting both spinners for 1,000 per spin for the rest of the ball. Repeat either spinner to send the ball through the top lanes until the carried Super Bonus reaches 40,000, then complete the four A-B-C-D targets for 2x end-of-ball bonus on that ball.",
+      "overview": "In KISS, the center top lane lights both spinners and can also complete the current K-I-S-S row or open the right-outlane gate when those lamps are on. Plunge that lane, repeat either spinner until the carried Super Bonus reaches 40,000, then complete A-B-C-D for 2x end-of-ball bonus. Return to the spinners and top lanes instead of forcing the K-I-S-S targets through the bumpers.",
+      "machineSetup": [
+        "Test both spinners, the top-lane switches, A-B-C-D rebounds, bumper exits, the right-outlane gate, tilt sensitivity, and flipper strength."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

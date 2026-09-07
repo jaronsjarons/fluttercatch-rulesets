@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vq2",
+  "title": "Big Deal",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Big Deal",
+      "url": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Big Deal machine guide",
+        "url": "https://www.kineticist.com/games/pinball/big-deal"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the right flipper to repeat the left orbit and send the ball back to the Ace lanes. Collect all four suits for double bonus, build bonus to 200,000, then alternate the left orbit and horseshoe when their feeds are safe.",
+      "quickInfo": [
+        {
+          "name": "Eight Ace lanes",
+          "summary": "The four top lanes and four lower return or outlanes represent the suits, with each scored Ace lane adding 10,000 bonus."
+        },
+        {
+          "name": "Double bonus",
+          "summary": "Collect all four Ace suits on the ball to light double bonus."
+        },
+        {
+          "name": "Bonus advances",
+          "summary": "The left orbit, horseshoe, and three red standups advance bonus toward 200,000."
+        },
+        {
+          "name": "Horseshoe value",
+          "summary": "The horseshoe scores 10,000 for each collected Ace suit, up to 40,000 with all four."
+        },
+        {
+          "name": "B-I-G-D-E-A-L",
+          "summary": "The drop-target letters lead to Extra Ball and replay awards, so they are secondary when those awards have no tournament value."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge toward an uncollected top Ace lane."
+        },
+        {
+          "text": "Dead bounce a safe left-flipper feed, or use the proven left-to-right Shatz pass, to reach the right flipper."
+        },
+        {
+          "text": "From the right flipper, shoot the left orbit for 5,000 and a feed back to the top Ace lanes."
+        },
+        {
+          "text": "Use top-lane action to collect all four Ace suits and light double bonus."
+        },
+        {
+          "text": "Continue the left-orbit route until bonus reaches 200,000."
+        },
+        {
+          "text": "From the left flipper, shoot the horseshoe when its return is controlled."
+        },
+        {
+          "text": "After double bonus and 200,000 are ready, alternate the left orbit and horseshoe instead of attacking the drop targets."
+        }
+      ],
+      "fallback": {
+        "title": "Right-flipper orbit loop",
+        "when": "Use this plan when the horseshoe or drop-target area produces unsafe rebounds.",
+        "steps": [
+          {
+            "text": "Dead bounce a safe return onto the right flipper."
+          },
+          {
+            "text": "Shoot the left orbit back to the top."
+          },
+          {
+            "text": "Let the top lanes collect Aces and advance bonus."
+          },
+          {
+            "text": "Repeat the orbit while its return remains predictable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Horseshoe collect",
+          "when": "Use this plan after several Ace suits are collected and the left-flipper horseshoe shot returns safely.",
+          "steps": [
+            {
+              "text": "Collect at least three Ace suits through the top or lower lanes."
+            },
+            {
+              "text": "Settle or receive the ball on the left flipper."
+            },
+            {
+              "text": "Shoot the horseshoe for 10,000 per collected Ace and a bonus advance."
+            },
+            {
+              "text": "Return to the left orbit if the horseshoe exit becomes uncontrolled."
+            }
+          ]
+        },
+        {
+          "title": "Award-enabled letters",
+          "when": "Use this plan only when Extra Ball or replay awards have tournament value and bonus is already at 200,000.",
+          "steps": [
+            {
+              "text": "First collect all four Aces and maximize bonus."
+            },
+            {
+              "text": "Complete B-I-G or D-E-A-L only from a controlled feed."
+            },
+            {
+              "text": "Collect the enabled award once when it is lit."
+            },
+            {
+              "text": "Resume the left-orbit route."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "200,000 doubled bonus",
+        "steps": [
+          {
+            "text": "Use the left orbit to return the ball to the top."
+          },
+          {
+            "text": "Collect all four Ace suits to light double bonus."
+          },
+          {
+            "text": "Collect Ace lanes, hit the three red standups, or shoot the horseshoe until base bonus reaches 200,000."
+          },
+          {
+            "text": "Preserve the ball with repeatable orbit shots and selective horseshoes."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Shatz pass to the right flipper",
+          "instruction": "Use a tested left-to-right Shatz pass only when its inlane route reliably reaches the right flipper.",
+          "techniqueSlug": "shatz-pass",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+        },
+        {
+          "name": "Dead bounce to the right flipper",
+          "instruction": "Dead bounce a safe left-flipper feed to the right flipper before shooting the left orbit.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+        },
+        {
+          "name": "Left-orbit repeat",
+          "instruction": "From the right flipper, shoot along the left wall and watch the entire top feed before preparing the next transfer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Drop-target rebounds can travel in any direction.",
+          "response": "Ignore B-I-G-D-E-A-L when its awards have no value. Prefer the left orbit for controlled scoring and bonus progress.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+        },
+        {
+          "issue": "A slow ball can roll down the triangular feature above the B-I-G targets toward the center.",
+          "response": "Track the ball before it leaves the triangle and nudge early, within the machine's tilt limit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+        },
+        {
+          "issue": "Slow balls can dribble down the outside of the left orbit or the right side of the horseshoe.",
+          "response": "Do not assume a made-looking shot is safe. Keep both flippers ready until the ball clears the outside barrier.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vq2-MDnP0"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the four-player 1977 Williams Big Deal, not the unrelated 1963 title; verify ball count, tilt, replay, Extra Ball, and Special treatment.",
+        "Confirm all eight Ace lanes register, four suits light double bonus, base bonus stops at 200,000, and letter awards match the card.",
+        "Test the left-orbit top feed, horseshoe exit, standup and drop rebounds, and whether the Shatz and dead-bounce transfers are safe."
+      ],
+      "simpleOverview": "Big Deal uses four Ace suits to light Double Bonus and a left-orbit return to revisit the top Ace lanes. Repeat the left orbit from the right flipper until all suits and 200,000 base bonus are ready, then alternate it with the horseshoe while both returns remain controlled.",
+      "overview": "Big Deal uses four Ace suits to light Double Bonus and a left-orbit return to revisit the top Ace lanes. Use the left orbit for top access and bonus advances, collect all four suits, then add the horseshoe from the left flipper. Ignore B-I-G-D-E-A-L drop awards when Extra Ball and replay have no match value.",
+      "machineSetup": [
+        "Confirm the four-player 1977 Williams Big Deal, not the unrelated 1963 title; verify ball count, tilt, replay, Extra Ball, and Special treatment.",
+        "Confirm all eight Ace lanes register, four suits light double bonus, base bonus stops at 200,000, and letter awards match the card.",
+        "Test the left-orbit top feed, horseshoe exit, standup and drop rebounds, and whether the Shatz and dead-bounce transfers are safe."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "G4l8K",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge through the right star into the top saucer. Then shoot the left orbit and spinner from the right flipper. Each saucer visit scores 3,000, adds three bonus steps, and sends the ball through all four feature flags. Control that return and repeat.",
+        "quickInfo": [
+          {
+            "name": "Feature flags",
+            "summary": "After activation, a later roll through each of the four physical flags enables its scoring feature."
+          },
+          {
+            "name": "Flag 1",
+            "summary": "It raises pop bumpers from 10 to 100."
+          },
+          {
+            "name": "Flag 2",
+            "summary": "It raises the center target from 500 to 3,000."
+          },
+          {
+            "name": "Flag 3",
+            "summary": "It enables Double Bonus for the current ball."
+          },
+          {
+            "name": "Flag 4",
+            "summary": "It raises the spinner from 10 to 100."
+          },
+          {
+            "name": "Top saucer",
+            "summary": "It scores 3,000, advances bonus three steps, and ejects the ball through all four flags."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge over the right star rollover and into the top saucer when that lane is available."
+          },
+          {
+            "text": "Use the saucer eject to roll through the four feature flags.",
+            "modeNotes": [
+              "Feature flags: The matching standups activate flags 1 through 4. The top stars also activate flags 1 and 4."
+            ]
+          },
+          {
+            "text": "Control the flag-lane exit and move the ball to the right flipper."
+          },
+          {
+            "text": "From the right flipper, shoot through the left spinner and return to the top saucer."
+          },
+          {
+            "text": "Repeat the saucer route until Flag 4 raises the spinner to 100 and Flag 3 enables Double Bonus.",
+            "modeNotes": [
+              "Double Bonus: Flag 3 doubles the end-of-ball bonus. Base bonus reaches 19,000."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Continue the spinner-to-saucer loop and protect the doubled bonus."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Controlled top-entry route",
+          "when": "Recovery pivot: Use this when the spinner is weak or the flag exit does not transfer safely.",
+          "steps": [
+            {
+              "text": "Shoot any controlled top entry instead of forcing the spinner."
+            },
+            {
+              "text": "Prioritize the top saucer over a star rollover."
+            },
+            {
+              "text": "Control the flag exit on whichever flipper receives it."
+            },
+            {
+              "text": "Repeat only while that return remains predictable."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Direct Double Bonus setup",
+            "when": "When trailing, use this higher-ceiling route: use this when base bonus is near 19,000 and Flag 3 is not active.",
+            "steps": [
+              {
+                "text": "Hit the lower-left standup that activates Flag 3."
+              },
+              {
+                "text": "Return the ball to the top saucer."
+              },
+              {
+                "text": "Roll through Flag 3 to enable Double Bonus."
+              },
+              {
+                "text": "Protect the doubled end-of-ball bonus."
+              }
+            ]
+          },
+          {
+            "title": "Left-flipper spinner backhand",
+            "when": "Use this only when the left flipper can make the spinner without a dangerous reject.",
+            "steps": [
+              {
+                "text": "Test one left-flipper backhand through the spinner."
+              },
+              {
+                "text": "Use it only when the ball reaches the top cleanly."
+              },
+              {
+                "text": "Stop after the first uncontrolled reject."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "A 38,000 doubled bonus",
+          "steps": [
+            {
+              "text": "Repeat the spinner-to-top-saucer loop until base bonus reaches 19,000."
+            },
+            {
+              "text": "Activate Flag 3 at its matching standup."
+            },
+            {
+              "text": "Roll through Flag 3 to enable Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Drain without tilting to score the 38,000 bonus."
+            },
+            {
+              "text": "When enabled, 19,000 also lights the Extra Ball lane and right Special target."
+            },
+            {
+              "text": "Wizard!"
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Feature flags",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Flag 1",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Flag 2",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Flag 3",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Flag 4",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball lane",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Special target",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce a controlled flag-lane exit to the right flipper before shooting the spinner.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/wizard",
+            "techniqueSlug": "dead-bounce"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the spinner from the left only when the shot reliably reaches the top.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/wizard",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Right-star skill shot",
+            "instruction": "Plunge over the right star and into the saucer so the star activates Flag 4 before the flag-lane roll.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4l8K-MJwXy"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak flipper can fail to send the ball through the spinner to the top.",
+            "response": "Test the shot early. Use a different controlled top entry after one weak reject.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/wizard"
+          },
+          {
+            "issue": "The flag-lane feed can change speed and landing point between copies.",
+            "response": "Watch one full feed before you choose a catch or pass.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/wizard"
+          },
+          {
+            "issue": "The recessed 5,000 standup can drain on a miss or a direct hit.",
+            "response": "Ignore it unless its points can immediately decide the game.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4l8K-MJwXy"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Bally Wizard! replay or add-a-ball instruction card.",
+          "Test outer flags, spinner, saucer, and gate returns."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "outer flags",
+            "label": "Feature flags",
+            "description": "Four rollover flags used to light spinner and bonus features.",
+            "precision": "unverified",
+            "context": "Four rollover flags used to light spinner and bonus features."
+          },
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "Main repeatable scoring shot after Flag 4.",
+            "precision": "unverified",
+            "context": "Main repeatable scoring shot after Flag 4."
+          },
+          {
+            "term": "saucer",
+            "label": "Top saucer",
+            "description": "Saucer reached by the plunge and upper playfield.",
+            "precision": "unverified",
+            "context": "Saucer reached by the plunge and upper playfield."
+          },
+          {
+            "term": "upper-right gate",
+            "label": "Top gate",
+            "description": "Gate used to return the ball to the upper lanes.",
+            "precision": "unverified",
+            "context": "Gate used to return the ball to the upper lanes."
+          }
+        ],
+        "simpleOverview": "Wizard! is a top-saucer and feature-flag scoring loop. Plunge through the right star into the saucer, control its exit through the four flags, then shoot the left spinner from the right flipper to return to the saucer and repeat.",
+        "overview": "Each top-saucer visit in Wizard! sends the ball through all four physical flags. Flag 1 lights the bumpers, Flag 2 raises the center-target value, Flag 3 enables Double Bonus, and Flag 4 raises the spinner. Use the left spinner to return to the saucer and control the flag-lane exit.",
+        "machineSetup": [
+          "Confirm Bally Wizard! replay or add-a-ball instruction card.",
+          "Test outer flags, spinner, saucer, and gate returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge through the right star into the top saucer. Then shoot the left orbit and spinner from the right flipper. Each saucer visit scores 3,000, adds three bonus steps, and sends the ball through all four feature flags. Control that return and repeat.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge over the right star rollover and into the top saucer when that lane is available."
+          },
+          {
+            "text": "Use the saucer eject to roll through the four feature flags.",
+            "details": [
+              "Feature flags: The matching standups activate flags 1 through 4. The top stars also activate flags 1 and 4."
+            ]
+          },
+          {
+            "text": "Control the flag-lane exit and move the ball to the right flipper."
+          },
+          {
+            "text": "From the right flipper, shoot through the left spinner and return to the top saucer."
+          },
+          {
+            "text": "Repeat the saucer route until Flag 4 raises the spinner to 100 and Flag 3 enables Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Double Bonus: Flag 3 doubles the end-of-ball bonus. Base bonus reaches 19,000."
+            ]
+          },
+          {
+            "text": "Continue the spinner-to-saucer loop and protect the doubled bonus."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Feature flags",
+            "summary": "After activation, a later roll through each of the four physical flags enables its scoring feature."
+          },
+          {
+            "name": "Flag 1",
+            "summary": "It raises pop bumpers from 10 to 100."
+          },
+          {
+            "name": "Flag 2",
+            "summary": "It raises the center target from 500 to 3,000."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Controlled top-entry route",
+          "when": "Recovery pivot: Use this when the spinner is weak or the flag exit does not transfer safely.",
+          "steps": [
+            {
+              "text": "Shoot any controlled top entry instead of forcing the spinner."
+            },
+            {
+              "text": "Prioritize the top saucer over a star rollover."
+            },
+            {
+              "text": "Control the flag exit on whichever flipper receives it."
+            },
+            {
+              "text": "Repeat only while that return remains predictable."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The recessed 5,000 standup can drain on a miss or a direct hit.",
+          "text": "Ignore it unless its points can immediately decide the game."
+        }
+      }
+    }
+  ]
+}

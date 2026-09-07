@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vZd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Loop the Whirlpool while changing the L-O-C-K lanes, then shoot Pirate's Cove for two-ball Multiball. Cradle one ball and repeat the safer ramp for SINK SHIP letters. After Multiball, load the cannon and hit Broadside to sink each qualified ship.",
+        "steps": [
+          {
+            "text": "Trap the ball on the left flipper. Test the Whirlpool ramp and its return."
+          },
+          {
+            "text": "If the return is clean, repeat Whirlpool. Use lane change to complete L-O-C-K."
+          },
+          {
+            "text": "Shoot Pirate's Cove when Lock lights. Use the two-ball multiball.",
+            "modeNotes": [
+              "Multiball: Ramp shots score 1 million and add S-I-N-K S-H-I-P letters."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cradle one ball. Repeat the ramp with the safer return to build SINK SHIP letters.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When SINK SHIP opens Davy Jones' Locker after Multiball, shoot the hole beneath the raised side ramp to load the cannon. Fire at the flashing Broadside target.",
+            "modeNotes": [
+              "Broadside ship: The first ship scores 20 million. Each later ship adds 10 million."
+            ]
+          },
+          {
+            "text": "When a regular cannon shot offers Double Broadside, take it and repeat Broadside for 1, 2, 4, 8, 16, then 32 million before returning to the ship route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat Lock, multiball letters, and Broadside ships.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Whirlpool value",
+          "when": "Use this plan when Lock or Broadside is not ready and the Whirlpool return is safe.",
+          "steps": [
+            {
+              "text": "Repeat the Whirlpool until its 1 million award lights."
+            },
+            {
+              "text": "Repeat it while its return remains controlled."
+            },
+            {
+              "text": "If Whirlpool rejects, use the side ramp only during multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Three-ball multiball",
+            "when": "Use this plan only when Pirate's Cove and both ramp returns are reliable.",
+            "steps": [
+              {
+                "text": "During two-ball play, lock one ball in Pirate's Cove, then shoot the other there before the lock timer expires.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the served third ball to continue three-ball Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot ramps for two SINK SHIP letters per ramp.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Return to a two-ball cradle when control is available.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Escalating Broadside ships",
+          "steps": [
+            {
+              "text": "Store extra SINK SHIP letters during multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the stored letters to qualify more than one ship."
+            },
+            {
+              "text": "Collect each ship for a value 10 million higher than the last."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Double Broadside",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Broadside ship",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Offset cannon hit",
+            "instruction": "Aim the cannon slightly off center at the lit Broadside target. Hold the right flipper for the usual return and prepare one corrective nudge.",
+            "sourceUrl": "https://www.youtube.com/watch?v=qBSrZU0v5TQ&t=4590s"
+          },
+          {
+            "name": "Timed upper-flipper shot",
+            "instruction": "Watch the ramp feed. Time the upper flipper before the ball reaches it instead of reacting after contact.",
+            "sourceUrl": "https://www.youtube.com/watch?v=dITLGry5f70&t=1259s"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original Bally Black Rose code, not Skull & Bones; verify ball count, tilt, award conversion, lock difficulty, and Broadside order.",
+          "Confirm LOCK lane change, Whirlpool timer, SINK SHIP letters, starting letters, ship values, Instant Multiball, Double Broadside, and cannon sequence.",
+          "Test Whirlpool, ramp returns, Pirate's Cove, locker, cannon, Broadside targets, standups, upper flipper, and pop exits."
+        ],
+        "cautions": [
+          {
+            "issue": "A failed Whirlpool shot can drain.",
+            "response": "Test its return from a controlled left-flipper shot. Do not repeat it when a full shot rejects.",
+            "sourceUrl": "https://www.kineticist.com/post/black-rose-pinball-tutorial"
+          },
+          {
+            "issue": "The left and side ramps feed the upper flipper quickly.",
+            "response": "Trap when the feed allows it. Otherwise, time the upper flipper before the ball arrives.",
+            "sourceUrl": "https://www.youtube.com/watch?v=dITLGry5f70&t=1259s"
+          },
+          {
+            "issue": "A direct Broadside hit can rebound down the middle.",
+            "response": "Use an offset cannon hit. Hold the right flipper for the normal return and stay ready to nudge.",
+            "sourceUrl": "https://www.youtube.com/watch?v=qBSrZU0v5TQ&t=4590s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Loop the Whirlpool while changing the L-O-C-K lanes, then shoot Pirate's Cove for two-ball Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Store extra SINK SHIP letters during multiball."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Whirlpool value: Use this plan when Lock or Broadside is not ready and the Whirlpool return is safe."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Whirlpool",
+            "label": "Whirlpool ramp",
+            "description": "Repeatable ramp used for value and SINK SHIP progress.",
+            "precision": "unverified",
+            "context": "Repeatable ramp used for value and SINK SHIP progress."
+          },
+          {
+            "term": "Pirate's Cove",
+            "label": "Pirate's Cove",
+            "description": "Lock used to start and extend Multiball.",
+            "precision": "unverified",
+            "context": "Lock used to start and extend Multiball."
+          },
+          {
+            "term": "cannon",
+            "label": "Cannon",
+            "description": "Aimed device used to sink qualified Broadside ships.",
+            "precision": "unverified",
+            "context": "Aimed device used to sink qualified Broadside ships."
+          },
+          {
+            "term": "Broadside target",
+            "label": "Broadside targets",
+            "description": "Flashing targets used for ship collects.",
+            "precision": "unverified",
+            "context": "Flashing targets used for ship collects."
+          }
+        ],
+        "simpleOverview": "Whirlpool loops spell L-O-C-K in Black Rose, and completing the word lights two-ball Multiball at Pirate's Cove. During Multiball, the ramps bank SINK SHIP letters for later ships. Repeat Whirlpool, start Multiball, use the safer ramp for letters, then load the cannon at Davy Jones' Locker and hit Broadside.",
+        "overview": "Black Rose converts controlled ramp loops into Multiball progress and rising ship awards. Complete L-O-C-K through Whirlpool, start two-ball play, and bank SINK SHIP letters on the safer ramp. Use those letters to qualify ships, load the cannon, and collect Broadside before returning to the loop.",
+        "machineSetup": [
+          "Confirm original Bally Black Rose code, not Skull & Bones; verify ball count, tilt, award conversion, lock difficulty, and Broadside order.",
+          "Confirm LOCK lane change, Whirlpool timer, SINK SHIP letters, starting letters, ship values, Instant Multiball, Double Broadside, and cannon sequence.",
+          "Test Whirlpool, ramp returns, Pirate's Cove, locker, cannon, Broadside targets, standups, upper flipper, and pop exits."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Loop the Whirlpool while changing the L-O-C-K lanes, then shoot Pirate's Cove for two-ball Multiball. Cradle one ball and repeat the safer ramp for SINK SHIP letters. After Multiball, load the cannon and hit Broadside to sink each qualified ship.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Trap the ball on the left flipper. Test the Whirlpool ramp and its return."
+          },
+          {
+            "text": "If the return is clean, repeat Whirlpool. Use lane change to complete L-O-C-K."
+          },
+          {
+            "text": "Shoot Pirate's Cove when Lock lights. Use the two-ball multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball: Ramp shots score 1 million and add S-I-N-K S-H-I-P letters."
+            ]
+          },
+          {
+            "text": "Cradle one ball. Repeat the ramp with the safer return to build SINK SHIP letters.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When SINK SHIP opens Davy Jones' Locker after Multiball, shoot the hole beneath the raised side ramp to load the cannon. Fire at the flashing Broadside target.",
+            "details": [
+              "Broadside ship: The first ship scores 20 million. Each later ship adds 10 million."
+            ]
+          },
+          {
+            "text": "When a regular cannon shot offers Double Broadside, take it and repeat Broadside for 1, 2, 4, 8, 16, then 32 million before returning to the ship route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat Lock, multiball letters, and Broadside ships.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Loop the Whirlpool while changing the L-O-C-K lanes, then shoot Pirate's Cove for two-ball Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Store extra SINK SHIP letters during multiball."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Whirlpool value: Use this plan when Lock or Broadside is not ready and the Whirlpool return is safe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Whirlpool value",
+          "when": "Use this plan when Lock or Broadside is not ready and the Whirlpool return is safe.",
+          "steps": [
+            {
+              "text": "Repeat the Whirlpool until its 1 million award lights."
+            },
+            {
+              "text": "Repeat it while its return remains controlled."
+            },
+            {
+              "text": "If Whirlpool rejects, use the side ramp only during multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "A failed Whirlpool shot can drain.",
+          "text": "Test its return from a controlled left-flipper shot. Do not repeat it when a full shot rejects."
+        }
+      }
+    }
+  ]
+}

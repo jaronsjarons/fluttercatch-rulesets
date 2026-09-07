@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "GRKx7",
+  "title": "Buck Rogers",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Silverball Rules Buck Rogers strategy",
+      "url": "https://rules.silverballmania.com/rules/GRKx7-MJ49e"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Buck Rogers confirmed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Buck_Rogers_instruction_cards.zip"
+      },
+      {
+        "label": "Buck Rogers exact-machine physical gameplay",
+        "url": "https://www.youtube.com/watch?v=lePevjDCOVE"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Buck Rogers makes Bonus X a two-stage job: drive the center captive ball to Return to Base, then complete lit yellow drops to raise the multiplier. Once base bonus reaches 20,000, the upper-right saucer lights to collect it; collecting resets the base bonus but preserves the multiplier for the rest of that ball.",
+      "simpleOverview": "Drive the center captive ball back to Return to Base, then complete the lit yellow drop targets to raise Bonus X. Build base bonus to 20,000 and collect it at the upper-right saucer after the multiplier is high.",
+      "summary": "Finish Return to Base first, build Bonus X through the yellow bank, then use the left side to refill bonus and collect 20,000 at 4x or 5x rather than cashing too early.",
+      "quickInfo": [
+        {
+          "name": "Qualify Yellow Drops",
+          "summary": "Push the center captive ball to Return to Base."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete the lit yellow drop targets, up to 5x."
+        },
+        {
+          "name": "Light Collect Bonus",
+          "summary": "Build the base bonus to 20,000."
+        },
+        {
+          "name": "Collect",
+          "summary": "Shoot the upper-right saucer; the base resets but Bonus X remains for that ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the center captive ball until Return to Base lights the yellow drop targets.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete the lit yellow drop targets to raise Bonus X toward 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Build the base bonus to 20,000 with lanes, targets, and the saucer."
+        },
+        {
+          "text": "At 4x or 5x, shoot the lit upper-right saucer to collect bonus, then rebuild the base while the multiplier remains lit."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Captive-ball repeat",
+          "when": "Use this only when the captive-ball rebound is controllable and the target reaches Return to Base reliably.",
+          "steps": [
+            {
+              "text": "Hit the captive ball slightly off-center but hard enough to reach the rear pad."
+            },
+            {
+              "text": "Take the captive-ball award and any yellow targets spotted by the result."
+            },
+            {
+              "text": "Abandon the repeat if rebounds head toward the center drain."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated high-multiplier bonus collects",
+        "steps": [
+          {
+            "text": "Reach Return to Base and finish the yellow-bank multiplier work."
+          },
+          {
+            "text": "Build the base bonus to 20,000."
+          },
+          {
+            "text": "Collect at the upper-right saucer, then refill the base without losing the in-ball multiplier."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the captive Vari-target, yellow and red drop banks, B-U-C-K lanes, upper-right saucer, bonus ladder, and center post.",
+        "Confirm whether Collect Bonus can be used repeatedly, plus Extra Ball and Special conversion and the installed ball count."
+      ],
+      "cautions": [
+        {
+          "issue": "The captive-ball rebound and repeated Collect Bonus behavior vary by copy or setting.",
+          "response": "Verify both before committing to repeats; use the left-side bonus route when the captive ball or saucer is unreliable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRKx7-MJ49e"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

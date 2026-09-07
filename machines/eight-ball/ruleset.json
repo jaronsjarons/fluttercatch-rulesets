@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "id": "GrN7J",
+  "title": "Eight Ball",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Eight Ball rules and strategy",
+      "url": "https://www.kineticist.com/games/pinball/eight-ball"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Mania Eight Ball strategy",
+        "url": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+      },
+      {
+        "label": "Official Bally Eight Ball manual",
+        "url": "https://online.gameex.com/media/pinballx/all/addmedia/eight%20ball%20%28bally%201977%29/English%20Manual%20%28no%20schematics%29.pdf"
+      },
+      {
+        "label": "PinballCards Eight Ball card",
+        "url": "https://pinballcards.net/eight-ball-1977"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build 5x Bonus at the candy cane before taking repeated lit-spinner shots, complete your numbered rack while another ball remains, then hit the lit 8-ball pad to start persistent Super Bonus on later balls.",
+      "steps": [
+        {
+          "text": "On ball one, plunge for the 4 lane in your numbered set.",
+          "modeNotes": [
+            "Rack: Each player owns seven numbered balls plus the neutral 8-ball. Players one and three collect 1 through 7. Players two and four collect 9 through 15.",
+            "The first four numbered balls are top lanes. The next two are standup targets. The final numbered ball is the right return lane.",
+            "Each collected numbered ball adds 3,000 to base bonus. Rack progress stays through the game."
+          ]
+        },
+        {
+          "text": "If the kickback and spinner are not lit, hit the 8-ball pad once.",
+          "modeNotes": [
+            "Kickback: A one-use left-outlane save. An 8-ball-pad hit lights it before rack completion. A successful save turns off both the kickback and the lit spinner.",
+            "Lit Spinner: The left spinner scores 1,000 per spin after an 8-ball-pad hit. Hit the pad again to relight it after a kickback save."
+          ]
+        },
+        {
+          "text": "Shoot the candy cane from the left flipper. Hit its star rollover five times to reach 5x Bonus.",
+          "modeNotes": [
+            "Candy Cane: The upper-right horseshoe lane and star rollover. Star hits one and two raise the shot value. Hits three, four, and five give 2x, 3x, and 5x Bonus.",
+            "Extra Ball: The step after 5x is the Extra Ball step. Confirm whether the installed game requires a separate collect shot. Later steps score 5,000.",
+            "All four top lanes light one of the two center top-lane arrows. Switch hits move the arrow. Rolling through the lit center lane advances the same candy-cane ladder.",
+            "Bonus X: The 2x, 3x, or 5x value multiplies normal end-of-ball bonus for the current ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After 5x is active, shoot the lit spinner from a controlled right-flipper hold.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Collect your first six numbered balls. Let the right return lane collect the seventh during normal play.",
+          "modeNotes": [
+            "Rack completion: Complete 1 through 7 or 9 through 15. The 8-ball pad then lights for the rack finish.",
+            "Do not force the final standup or return lane when its feed is not controlled. Progress stays for a later ball."
+          ]
+        },
+        {
+          "text": "After all seven numbered balls are collected, hit the lit 8-ball pad.",
+          "modeNotes": [
+            "Super Bonus: Completing the rack and the lit 8-ball pad qualifies a 24,000 base for the player's next and every later turn. At each drain, add 3,000 for every ball lit in the current rack, then apply Bonus X.",
+            "Rack reset: The completed rack clears at the start of the player's next turn. New rack balls then add to the persistent 24,000 Super Bonus base.",
+            "Special: Rack completion lights the right outlane. A roll through it collects the configured replay, Extra Ball, or points award."
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Candy cane and controlled bonus",
+        "when": "Use this plan when rack targets or the 8-ball pad reject dangerously.",
+        "steps": [
+          {
+            "text": "Plunge for a missing top lane. Use switch hits to move the lit 2 or 3 lane."
+          },
+          {
+            "text": "Shoot the candy cane until 5x Bonus is active.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the 8-ball pad once to light the spinner and kickback."
+          },
+          {
+            "text": "Shoot the lit spinner only from a controlled flipper hold."
+          },
+          {
+            "text": "Let normal feeds collect rack numbers. Do not force 5, 6, or 7."
+          },
+          {
+            "text": "Protect the 5x end-of-ball bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Rack and Super Bonus",
+          "when": "Use this route when another player ball remains and only safe rack numbers are missing.",
+          "steps": [
+            {
+              "text": "Collect the four top-lane numbers for your player set."
+            },
+            {
+              "text": "Collect the two matching standup targets only from controlled shots."
+            },
+            {
+              "text": "Let the right return lane collect the seventh number."
+            },
+            {
+              "text": "Hit the lit 8-ball pad to complete the rack."
+            },
+            {
+              "text": "On the next ball, raise Bonus X and collect balls in the new rack before the drain. Super Bonus is 24,000 plus 3,000 per lit rack ball, all multiplied.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Spinner after 5x",
+          "when": "Use this route when the candy cane and spinner shots are repeatable but rack completion is too far away.",
+          "steps": [
+            {
+              "text": "Shoot the candy cane until its star rollover has advanced Bonus X to 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Hit the 8-ball pad to light the spinner."
+            },
+            {
+              "text": "Shoot the lit spinner from a controlled right-flipper hold."
+            },
+            {
+              "text": "Use the spinner return to collect top lanes and return to the candy cane."
+            },
+            {
+              "text": "If the kickback fires, hit the 8-ball pad again before another spinner attempt."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "5x Bonus and persistent Super Bonus",
+        "steps": [
+          {
+            "text": "Reach 5x on the candy-cane ladder.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the seven numbered balls in your rack."
+          },
+          {
+            "text": "Hit the lit 8-ball pad to qualify persistent Super Bonus."
+          },
+          {
+            "text": "On every later ball, add safe rack balls and rebuild Bonus X before the drain.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "2x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "3x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "5x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Rack",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Candy Cane",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Kickback",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Lit Spinner",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Super Bonus",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Eight Ball from 1977, not Eight Ball Deluxe or a licensed copy with different code.",
+        "Read whether the left-outlane kickback starts lit and relight it from the 8-ball pad before relying on the save.",
+        "Confirm the Bank Shot Extra Ball step and whether Extra Ball or Special awards a ball, replay, or points."
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Test a right-flipper backhand to the 8-ball pad. Continue only when the rebound is controlled.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Counterclockwise candy-cane loop",
+          "instruction": "Shoot the candy cane from the left flipper. A bumper rebound can also send the ball into the 8-ball pad.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "From a full left-flipper hold, test the spinner backhand once. Stop if the shot is weak or the return is unsafe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Left-outlane settle",
+          "instruction": "Use a small nudge to settle a slow ball near the left outlane into the lit kickback lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A weak spinner shot can return toward the center drain.",
+          "response": "Shoot the spinner from a controlled hold. Stop after a weak return.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        },
+        {
+          "issue": "A slow 8-ball-pad rebound can travel toward the center drain.",
+          "response": "Test the pad once. Use the safer direction if one flipper gives a controlled return.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        },
+        {
+          "issue": "Pop-bumper exits can feed an outlane.",
+          "response": "Track the bumper exit and nudge before the ball reaches the outlane post.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        },
+        {
+          "issue": "The 5 and 6 standups can give dangerous rebounds.",
+          "response": "Take those targets only from a controlled shot. Let incidental hits complete them when possible.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        },
+        {
+          "issue": "The 7 return lane is not a reliable skill shot.",
+          "response": "Do not force it from the plunge. Collect it from normal return-lane flow.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrN7J-MJ78q"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Build 5x Bonus at the candy cane before you take repeated lit-spinner shots."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Reach 5x on the candy-cane ladder."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Candy cane and controlled bonus: Use this plan when rack targets or the 8-ball pad reject dangerously."
+        }
+      ],
+      "simpleOverview": "In Eight Ball, five candy-cane rollovers raise Bonus X to 5x, while collecting seven numbered balls lights the 8-ball pad for persistent Super Bonus. Reach 5x before repeating the lit spinner, complete the rack while another ball remains, then hit the lit 8-ball pad.",
+      "overview": "In Eight Ball, five candy-cane rollovers raise Bonus X to 5x, while collecting seven numbered balls lights the 8-ball pad for persistent Super Bonus. Build 5x first, use the lit spinner from control, and finish the rack without forcing dangerous targets. Hit the lit 8-ball pad, then rebuild the multiplier on each later ball.",
+      "machineSetup": [
+        "Confirm Bally Eight Ball from 1977, not Eight Ball Deluxe or a licensed copy with different code.",
+        "Read whether the left-outlane kickback starts lit and relight it from the 8-ball pad before relying on the save.",
+        "Confirm the Bank Shot Extra Ball step and whether Extra Ball or Special awards a ball, replay, or points."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

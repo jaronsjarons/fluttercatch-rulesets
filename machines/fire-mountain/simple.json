@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G4E9p",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Fire Mountain builds E-R-U-P-T-I-O-N through the two side drop banks. Complete either bank to light the next letters; after the word is complete, hit the center drop target to collect Special. The left and right banks also build separate end-of-ball bonuses. Lit top rollovers advance both bonuses by two steps. Upper lane targets raise Bonus X. The right bank advances the ball-return gate, while the left bank advances the left-outlane Special.",
+        "simpleOverview": "Complete either side drop bank to spell E-R-U-P-T-I-O-N. When the word is complete, hit the center drop target for Special. The two banks also build separate bonuses: the right bank advances ball return and the left bank advances the left-outlane Special. Use upper lane targets for Bonus X.",
+        "summary": "Finish the nearer side bank rather than alternating loose hits. Build E-R-U-P-T-I-O-N, then prioritize the center drop target. Use the right bank for safety or the left bank for the outlane Special route.",
+        "quickInfo": [
+          {
+            "name": "Spell Eruption",
+            "summary": "Complete either side drop bank."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Finish E-R-U-P-T-I-O-N, then hit the center drop."
+          },
+          {
+            "name": "Build Ball Return",
+            "summary": "Complete the right bank."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Hit the upper lane targets."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete either the left or right drop-target bank to light the next E-R-U-P-T-I-O-N letters.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After E-R-U-P-T-I-O-N is complete, hit the center drop target to collect Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the right bank to advance the ball-return gate or the left bank to advance the left-outlane Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit upper lane targets to advance Bonus X; take lit top rollovers to move both end-of-ball bonuses two positions.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use the spinner setup",
+            "when": "Use this when a side bank is partly down and the spinner is available.",
+            "steps": [
+              {
+                "text": "Shoot the spinner to light bonus and FIRE target lamps briefly.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use the lit sequence to finish the corresponding side progress without forcing a direct bank shot.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish E-R-U-P-T-I-O-N",
+          "steps": [
+            {
+              "text": "Complete full side banks to add letters efficiently.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Once the word is complete, switch immediately to the center drop target.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check E-R-U-P-T-I-O-N difficulty, Bonus X, ball-return gate, left-outlane Special, spinner timer, and Special award.",
+          "Test both side banks, center drop, upper lane targets and top rollovers, spinner, ball-return gate, left outlane, and all sequence lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "E-R-U-P-T-I-O-N",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Side Banks",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Ball Return",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "side drop banks",
+            "label": "Left and right drop banks",
+            "description": "Banks that spell E-R-U-P-T-I-O-N and build separate bonuses.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drop target",
+            "label": "Center Special target",
+            "description": "Collect target after E-R-U-P-T-I-O-N is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper lane targets",
+            "label": "Upper lane targets",
+            "description": "Targets that advance Bonus X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "Shot that briefly lights bonus and FIRE target lamps.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Spinner-related lamps are momentary.",
+            "response": "Have the next side-target route ready before shooting the spinner.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen1/firemountain/cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Finish the nearer side bank rather than alternating loose hits. Build E-R-U-P-T-I-O-N, then prioritize the center drop target. Use the right bank for safety or the left bank for the outlane Special route.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete either the left or right drop-target bank to light the next E-R-U-P-T-I-O-N letters.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After E-R-U-P-T-I-O-N is complete, hit the center drop target to collect Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the right bank to advance the ball-return gate or the left bank to advance the left-outlane Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit upper lane targets to advance Bonus X; take lit top rollovers to move both end-of-ball bonuses two positions.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Spell Eruption",
+            "summary": "Complete either side drop bank."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Finish E-R-U-P-T-I-O-N, then hit the center drop."
+          },
+          {
+            "name": "Build Ball Return",
+            "summary": "Complete the right bank."
+          }
+        ]
+      }
+    }
+  ]
+}

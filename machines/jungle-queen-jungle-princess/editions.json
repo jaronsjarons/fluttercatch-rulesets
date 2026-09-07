@@ -1,0 +1,892 @@
+{
+  "schemaVersion": 1,
+  "id": "GrNnr",
+  "editions": [
+    {
+      "id": "GrNnr-MQ2Bw",
+      "title": "Jungle Queen",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://img.opdb.org/44b9b904-7172-483a-8791-2d453903faa2-large.jpg",
+        "sourceUrl": "https://opdb.org/search?q=GrNnr-MQ2Bw",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Plunge B, complete the safer five-target bank, then repeat that side's lit 5,000-point lane or saucer only from a controlled feed.",
+            "steps": [
+              {
+                "text": "Plunge for the top B lane. Use the lower A and C lanes to complete A-B-C.",
+                "modeNotes": [
+                  "A-B-C: Completing all three letters lights double end-of-ball bonus. The last ball has double bonus automatically.",
+                  "B also lights the blue pop bumper. Its scoring can change with three-ball and five-ball settings."
+                ]
+              },
+              {
+                "text": "Complete either full bank of five drop targets. Prefer the bank with the safer rebound and side return.",
+                "modeNotes": [
+                  "Drop bank: Each target builds bonus. Completing all five targets on one side lights that side lane for 5,000.",
+                  "The targets stay down for the rest of the ball. They reset for the next ball or player."
+                ]
+              },
+              {
+                "text": "Use the short upper flippers only to redirect the ball or finish a controlled target shot. Transfer to a lower flipper when possible."
+              },
+              {
+                "text": "After one side is lit, choose its repeatable 5,000-point shot: the upper saucer or the side lane from below.",
+                "modeNotes": [
+                  "5,000 lane: A completed drop bank lights the lane behind it. A missed saucer shot can still roll through the lit lane.",
+                  "A strong, accurate bottom-up lane shot can score going up and again when the ball returns through the lane."
+                ]
+              },
+              {
+                "text": "Repeat only the route that gives a controlled return. Trap the ball between attempts."
+              }
+            ],
+            "fallback": {
+              "title": "Bonus and A-B-C",
+              "when": "Use this route when both lit side shots or saucer kickouts return badly.",
+              "steps": [
+                {
+                  "text": "Plunge B. Complete A and C through the lower lanes to light double bonus."
+                },
+                {
+                  "text": "Finish safe drop targets to add bonus. Do not force the last target in a dangerous bank."
+                },
+                {
+                  "text": "Protect the doubled bonus. Use controlled upper-flipper deflections instead of repeated power flips."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Top-feed 5,000 lane",
+                "when": "Use this route when the top pop area is safe but the bottom-up side-lane shot is not.",
+                "steps": [
+                  {
+                    "text": "Complete one five-target bank to light its side lane."
+                  },
+                  {
+                    "text": "Send the ball to the top playfield. Nudge the pop-bumper exit toward the lit side lane."
+                  },
+                  {
+                    "text": "Catch the side return on a lower flipper. Repeat only after a controlled catch."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Both 5,000-point lanes and double bonus",
+              "steps": [
+                {
+                  "text": "Complete both five-target banks."
+                },
+                {
+                  "text": "Complete A-B-C to light double bonus."
+                },
+                {
+                  "text": "Repeat the safer lit side lane or saucer until the ball drains."
+                }
+              ]
+            },
+            "quickInfo": [
+              {
+                "name": "Jungle Queen / Jungle Princess",
+                "summary": "Jungle Queen is the four-player game; Jungle Princess is its two-player sibling on the same playfield."
+              },
+              {
+                "name": "A-B-C",
+                "summary": "Complete the three rollover letters to light double end-of-ball bonus; the last ball receives double bonus automatically."
+              },
+              {
+                "name": "Drop banks",
+                "summary": "Each five-target bank builds bonus and lights its matching side lane for repeatable 5,000-point scoring."
+              },
+              {
+                "name": "Side lanes and saucers",
+                "summary": "After a bank completion, use the matching lane or upper saucer only when its kickout or roll-down feed is controlled."
+              },
+              {
+                "name": "Blue pop bumper",
+                "summary": "The B lane lights the blue bumper; its value can differ between three-ball and five-ball settings."
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "B lane",
+                "label": "Top B rollover lane",
+                "description": "The center top lane collects B and lights the blue pop bumper.",
+                "xPercent": 50,
+                "yPercent": 13,
+                "precision": "area"
+              },
+              {
+                "term": "A and C lanes",
+                "label": "Lower A and C return lanes",
+                "description": "The lower return lanes complete A-B-C with the top B lane.",
+                "xPercent": 50,
+                "yPercent": 74,
+                "precision": "area"
+              },
+              {
+                "term": "left drop bank",
+                "label": "Left five-target bank",
+                "description": "The left bank builds bonus and lights the left 5,000-point route.",
+                "xPercent": 27,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "right drop bank",
+                "label": "Right five-target bank",
+                "description": "The right bank builds bonus and lights the right 5,000-point route.",
+                "xPercent": 73,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "upper saucer",
+                "label": "Upper side saucers",
+                "description": "Each upper side saucer shares the bank's lit 5,000-point route.",
+                "xPercent": 50,
+                "yPercent": 27,
+                "precision": "area"
+              },
+              {
+                "term": "upper flippers",
+                "label": "Short upper flippers",
+                "description": "The short side flippers redirect feeds toward targets or the lower flippers.",
+                "xPercent": 50,
+                "yPercent": 52,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "techniques": [
+              {
+                "name": "Shatz pass",
+                "instruction": "Use an alley pass to move the ball between lower flippers. The missing slingshots make this transfer unusually forgiving.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=143s",
+                "techniqueSlug": "shatz-pass"
+              },
+              {
+                "name": "Upper-flipper redirect",
+                "instruction": "Use a short upper-flipper tap to send a side feed toward the opposite lower flipper. Do not use a full power flip.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=441s"
+              },
+              {
+                "name": "Return-lane roll",
+                "instruction": "On a fast inside feed, hold the lower flipper up and guide the ball into the A or C return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Dead bounce",
+                "instruction": "Dead bounce a centered lower-flipper feed to the opposite flipper before choosing the next side shot.",
+                "techniqueSlug": "dead-bounce",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Side-lane up-and-down",
+                "instruction": "On a strong copy, shoot a lit side lane from below. The ball can score again when it falls back through the lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated upper-flipper power shots create side-to-side motion and can feed an outlane.",
+                "response": "Use the upper flippers for short redirects. Transfer the ball to a lower flipper before the next scoring shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=506s"
+              },
+              {
+                "issue": "Most uncontrolled drains start with fast side-to-side ball movement.",
+                "response": "Trap the ball. Use an alley pass or a dead bounce before you aim another shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=511s"
+              },
+              {
+                "issue": "Drop-target and pop-bumper rebounds can remove flipper control.",
+                "response": "Test each bank early. Choose the opposite bank when repeated rebounds move toward an outlane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "issue": "Top-saucer kickouts and side roll-down feeds differ by machine copy.",
+                "response": "Watch one kickout and one side return. Select the 5,000-point route only after one feed reaches a controlled flipper.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "simpleOverview": "In Jungle Queen or Jungle Princess, complete A-B-C to light Double Bonus, then clear the five-target bank with the safer rebound. That bank lights its side lane and upper saucer for 5,000. Repeat the lit lane or saucer only when its return reaches a lower flipper under control.",
+            "overview": "In Jungle Queen or Jungle Princess, A-B-C lights Double Bonus, and each completed five-target bank lights that side's lane and upper saucer for 5,000. Complete the safer bank first, use the short upper flippers only to redirect the ball, then repeat the lit lane or saucer from a controlled lower-flipper feed. Complete the other bank only after the first repeatable route is established.",
+            "machineSetup": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Plunge B, complete the safer five-target bank, then repeat that side's lit 5,000-point lane or saucer only from a controlled feed.",
+            "steps": [
+              {
+                "text": "Plunge for the top B lane. Use the lower A and C lanes to complete A-B-C.",
+                "modeNotes": [
+                  "A-B-C: Completing all three letters lights double end-of-ball bonus. The last ball has double bonus automatically.",
+                  "B also lights the blue pop bumper. Its scoring can change with three-ball and five-ball settings."
+                ]
+              },
+              {
+                "text": "Complete either full bank of five drop targets. Prefer the bank with the safer rebound and side return.",
+                "modeNotes": [
+                  "Drop bank: Each target builds bonus. Completing all five targets on one side lights that side lane for 5,000.",
+                  "The targets stay down for the rest of the ball. They reset for the next ball or player."
+                ]
+              },
+              {
+                "text": "Use the short upper flippers only to redirect the ball or finish a controlled target shot. Transfer to a lower flipper when possible."
+              },
+              {
+                "text": "After one side is lit, choose its repeatable 5,000-point shot: the upper saucer or the side lane from below.",
+                "modeNotes": [
+                  "5,000 lane: A completed drop bank lights the lane behind it. A missed saucer shot can still roll through the lit lane.",
+                  "A strong, accurate bottom-up lane shot can score going up and again when the ball returns through the lane."
+                ]
+              },
+              {
+                "text": "Repeat only the route that gives a controlled return. Trap the ball between attempts."
+              }
+            ],
+            "fallback": {
+              "title": "Bonus and A-B-C",
+              "when": "Use this route when both lit side shots or saucer kickouts return badly.",
+              "steps": [
+                {
+                  "text": "Plunge B. Complete A and C through the lower lanes to light double bonus."
+                },
+                {
+                  "text": "Finish safe drop targets to add bonus. Do not force the last target in a dangerous bank."
+                },
+                {
+                  "text": "Protect the doubled bonus. Use controlled upper-flipper deflections instead of repeated power flips."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Top-feed 5,000 lane",
+                "when": "Use this route when the top pop area is safe but the bottom-up side-lane shot is not.",
+                "steps": [
+                  {
+                    "text": "Complete one five-target bank to light its side lane."
+                  },
+                  {
+                    "text": "Send the ball to the top playfield. Nudge the pop-bumper exit toward the lit side lane."
+                  },
+                  {
+                    "text": "Catch the side return on a lower flipper. Repeat only after a controlled catch."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Both 5,000-point lanes and double bonus",
+              "steps": [
+                {
+                  "text": "Complete both five-target banks."
+                },
+                {
+                  "text": "Complete A-B-C to light double bonus."
+                },
+                {
+                  "text": "Repeat the safer lit side lane or saucer until the ball drains."
+                }
+              ]
+            },
+            "quickInfo": [
+              {
+                "name": "Jungle Queen / Jungle Princess",
+                "summary": "Jungle Queen is the four-player game; Jungle Princess is its two-player sibling on the same playfield."
+              },
+              {
+                "name": "A-B-C",
+                "summary": "Complete the three rollover letters to light double end-of-ball bonus; the last ball receives double bonus automatically."
+              },
+              {
+                "name": "Drop banks",
+                "summary": "Each five-target bank builds bonus and lights its matching side lane for repeatable 5,000-point scoring."
+              },
+              {
+                "name": "Side lanes and saucers",
+                "summary": "After a bank completion, use the matching lane or upper saucer only when its kickout or roll-down feed is controlled."
+              },
+              {
+                "name": "Blue pop bumper",
+                "summary": "The B lane lights the blue bumper; its value can differ between three-ball and five-ball settings."
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "B lane",
+                "label": "Top B rollover lane",
+                "description": "The center top lane collects B and lights the blue pop bumper.",
+                "xPercent": 50,
+                "yPercent": 13,
+                "precision": "area"
+              },
+              {
+                "term": "A and C lanes",
+                "label": "Lower A and C return lanes",
+                "description": "The lower return lanes complete A-B-C with the top B lane.",
+                "xPercent": 50,
+                "yPercent": 74,
+                "precision": "area"
+              },
+              {
+                "term": "left drop bank",
+                "label": "Left five-target bank",
+                "description": "The left bank builds bonus and lights the left 5,000-point route.",
+                "xPercent": 27,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "right drop bank",
+                "label": "Right five-target bank",
+                "description": "The right bank builds bonus and lights the right 5,000-point route.",
+                "xPercent": 73,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "upper saucer",
+                "label": "Upper side saucers",
+                "description": "Each upper side saucer shares the bank's lit 5,000-point route.",
+                "xPercent": 50,
+                "yPercent": 27,
+                "precision": "area"
+              },
+              {
+                "term": "upper flippers",
+                "label": "Short upper flippers",
+                "description": "The short side flippers redirect feeds toward targets or the lower flippers.",
+                "xPercent": 50,
+                "yPercent": 52,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "techniques": [
+              {
+                "name": "Shatz pass",
+                "instruction": "Use an alley pass to move the ball between lower flippers. The missing slingshots make this transfer unusually forgiving.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=143s",
+                "techniqueSlug": "shatz-pass"
+              },
+              {
+                "name": "Upper-flipper redirect",
+                "instruction": "Use a short upper-flipper tap to send a side feed toward the opposite lower flipper. Do not use a full power flip.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=441s"
+              },
+              {
+                "name": "Return-lane roll",
+                "instruction": "On a fast inside feed, hold the lower flipper up and guide the ball into the A or C return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Dead bounce",
+                "instruction": "Dead bounce a centered lower-flipper feed to the opposite flipper before choosing the next side shot.",
+                "techniqueSlug": "dead-bounce",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Side-lane up-and-down",
+                "instruction": "On a strong copy, shoot a lit side lane from below. The ball can score again when it falls back through the lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated upper-flipper power shots create side-to-side motion and can feed an outlane.",
+                "response": "Use the upper flippers for short redirects. Transfer the ball to a lower flipper before the next scoring shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=506s"
+              },
+              {
+                "issue": "Most uncontrolled drains start with fast side-to-side ball movement.",
+                "response": "Trap the ball. Use an alley pass or a dead bounce before you aim another shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=511s"
+              },
+              {
+                "issue": "Drop-target and pop-bumper rebounds can remove flipper control.",
+                "response": "Test each bank early. Choose the opposite bank when repeated rebounds move toward an outlane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "issue": "Top-saucer kickouts and side roll-down feeds differ by machine copy.",
+                "response": "Watch one kickout and one side return. Select the 5,000-point route only after one feed reaches a controlled flipper.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "simpleOverview": "In Jungle Queen or Jungle Princess, complete A-B-C to light Double Bonus, then clear the five-target bank with the safer rebound. That bank lights its side lane and upper saucer for 5,000. Repeat the lit lane or saucer only when its return reaches a lower flipper under control.",
+            "overview": "In Jungle Queen or Jungle Princess, A-B-C lights Double Bonus, and each completed five-target bank lights that side's lane and upper saucer for 5,000. Complete the safer bank first, use the short upper flippers only to redirect the ball, then repeat the lit lane or saucer from a controlled lower-flipper feed. Complete the other bank only after the first repeatable route is established.",
+            "machineSetup": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "GrNnr-MJkj3",
+      "title": "Jungle Princess",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://img.opdb.org/cec82180-9925-4d30-9f71-7eb69c57bb3b-large.jpg",
+        "sourceUrl": "https://opdb.org/search?q=GrNnr-MJkj3",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Plunge B, complete the safer five-target bank, then repeat that side's lit 5,000-point lane or saucer only from a controlled feed.",
+            "steps": [
+              {
+                "text": "Plunge for the top B lane. Use the lower A and C lanes to complete A-B-C.",
+                "modeNotes": [
+                  "A-B-C: Completing all three letters lights double end-of-ball bonus. The last ball has double bonus automatically.",
+                  "B also lights the blue pop bumper. Its scoring can change with three-ball and five-ball settings."
+                ]
+              },
+              {
+                "text": "Complete either full bank of five drop targets. Prefer the bank with the safer rebound and side return.",
+                "modeNotes": [
+                  "Drop bank: Each target builds bonus. Completing all five targets on one side lights that side lane for 5,000.",
+                  "The targets stay down for the rest of the ball. They reset for the next ball or player."
+                ]
+              },
+              {
+                "text": "Use the short upper flippers only to redirect the ball or finish a controlled target shot. Transfer to a lower flipper when possible."
+              },
+              {
+                "text": "After one side is lit, choose its repeatable 5,000-point shot: the upper saucer or the side lane from below.",
+                "modeNotes": [
+                  "5,000 lane: A completed drop bank lights the lane behind it. A missed saucer shot can still roll through the lit lane.",
+                  "A strong, accurate bottom-up lane shot can score going up and again when the ball returns through the lane."
+                ]
+              },
+              {
+                "text": "Repeat only the route that gives a controlled return. Trap the ball between attempts."
+              }
+            ],
+            "fallback": {
+              "title": "Bonus and A-B-C",
+              "when": "Use this route when both lit side shots or saucer kickouts return badly.",
+              "steps": [
+                {
+                  "text": "Plunge B. Complete A and C through the lower lanes to light double bonus."
+                },
+                {
+                  "text": "Finish safe drop targets to add bonus. Do not force the last target in a dangerous bank."
+                },
+                {
+                  "text": "Protect the doubled bonus. Use controlled upper-flipper deflections instead of repeated power flips."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Top-feed 5,000 lane",
+                "when": "Use this route when the top pop area is safe but the bottom-up side-lane shot is not.",
+                "steps": [
+                  {
+                    "text": "Complete one five-target bank to light its side lane."
+                  },
+                  {
+                    "text": "Send the ball to the top playfield. Nudge the pop-bumper exit toward the lit side lane."
+                  },
+                  {
+                    "text": "Catch the side return on a lower flipper. Repeat only after a controlled catch."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Both 5,000-point lanes and double bonus",
+              "steps": [
+                {
+                  "text": "Complete both five-target banks."
+                },
+                {
+                  "text": "Complete A-B-C to light double bonus."
+                },
+                {
+                  "text": "Repeat the safer lit side lane or saucer until the ball drains."
+                }
+              ]
+            },
+            "quickInfo": [
+              {
+                "name": "Jungle Queen / Jungle Princess",
+                "summary": "Jungle Queen is the four-player game; Jungle Princess is its two-player sibling on the same playfield."
+              },
+              {
+                "name": "A-B-C",
+                "summary": "Complete the three rollover letters to light double end-of-ball bonus; the last ball receives double bonus automatically."
+              },
+              {
+                "name": "Drop banks",
+                "summary": "Each five-target bank builds bonus and lights its matching side lane for repeatable 5,000-point scoring."
+              },
+              {
+                "name": "Side lanes and saucers",
+                "summary": "After a bank completion, use the matching lane or upper saucer only when its kickout or roll-down feed is controlled."
+              },
+              {
+                "name": "Blue pop bumper",
+                "summary": "The B lane lights the blue bumper; its value can differ between three-ball and five-ball settings."
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "B lane",
+                "label": "Top B rollover lane",
+                "description": "The center top lane collects B and lights the blue pop bumper.",
+                "xPercent": 50,
+                "yPercent": 13,
+                "precision": "area"
+              },
+              {
+                "term": "A and C lanes",
+                "label": "Lower A and C return lanes",
+                "description": "The lower return lanes complete A-B-C with the top B lane.",
+                "xPercent": 50,
+                "yPercent": 74,
+                "precision": "area"
+              },
+              {
+                "term": "left drop bank",
+                "label": "Left five-target bank",
+                "description": "The left bank builds bonus and lights the left 5,000-point route.",
+                "xPercent": 27,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "right drop bank",
+                "label": "Right five-target bank",
+                "description": "The right bank builds bonus and lights the right 5,000-point route.",
+                "xPercent": 73,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "upper saucer",
+                "label": "Upper side saucers",
+                "description": "Each upper side saucer shares the bank's lit 5,000-point route.",
+                "xPercent": 50,
+                "yPercent": 27,
+                "precision": "area"
+              },
+              {
+                "term": "upper flippers",
+                "label": "Short upper flippers",
+                "description": "The short side flippers redirect feeds toward targets or the lower flippers.",
+                "xPercent": 50,
+                "yPercent": 52,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "techniques": [
+              {
+                "name": "Shatz pass",
+                "instruction": "Use an alley pass to move the ball between lower flippers. The missing slingshots make this transfer unusually forgiving.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=143s",
+                "techniqueSlug": "shatz-pass"
+              },
+              {
+                "name": "Upper-flipper redirect",
+                "instruction": "Use a short upper-flipper tap to send a side feed toward the opposite lower flipper. Do not use a full power flip.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=441s"
+              },
+              {
+                "name": "Return-lane roll",
+                "instruction": "On a fast inside feed, hold the lower flipper up and guide the ball into the A or C return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Dead bounce",
+                "instruction": "Dead bounce a centered lower-flipper feed to the opposite flipper before choosing the next side shot.",
+                "techniqueSlug": "dead-bounce",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Side-lane up-and-down",
+                "instruction": "On a strong copy, shoot a lit side lane from below. The ball can score again when it falls back through the lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated upper-flipper power shots create side-to-side motion and can feed an outlane.",
+                "response": "Use the upper flippers for short redirects. Transfer the ball to a lower flipper before the next scoring shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=506s"
+              },
+              {
+                "issue": "Most uncontrolled drains start with fast side-to-side ball movement.",
+                "response": "Trap the ball. Use an alley pass or a dead bounce before you aim another shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=511s"
+              },
+              {
+                "issue": "Drop-target and pop-bumper rebounds can remove flipper control.",
+                "response": "Test each bank early. Choose the opposite bank when repeated rebounds move toward an outlane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "issue": "Top-saucer kickouts and side roll-down feeds differ by machine copy.",
+                "response": "Watch one kickout and one side return. Select the 5,000-point route only after one feed reaches a controlled flipper.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "simpleOverview": "In Jungle Queen or Jungle Princess, complete A-B-C to light Double Bonus, then clear the five-target bank with the safer rebound. That bank lights its side lane and upper saucer for 5,000. Repeat the lit lane or saucer only when its return reaches a lower flipper under control.",
+            "overview": "In Jungle Queen or Jungle Princess, A-B-C lights Double Bonus, and each completed five-target bank lights that side's lane and upper saucer for 5,000. Complete the safer bank first, use the short upper flippers only to redirect the ball, then repeat the lit lane or saucer from a controlled lower-flipper feed. Complete the other bank only after the first repeatable route is established.",
+            "machineSetup": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Plunge B, complete the safer five-target bank, then repeat that side's lit 5,000-point lane or saucer only from a controlled feed.",
+            "steps": [
+              {
+                "text": "Plunge for the top B lane. Use the lower A and C lanes to complete A-B-C.",
+                "modeNotes": [
+                  "A-B-C: Completing all three letters lights double end-of-ball bonus. The last ball has double bonus automatically.",
+                  "B also lights the blue pop bumper. Its scoring can change with three-ball and five-ball settings."
+                ]
+              },
+              {
+                "text": "Complete either full bank of five drop targets. Prefer the bank with the safer rebound and side return.",
+                "modeNotes": [
+                  "Drop bank: Each target builds bonus. Completing all five targets on one side lights that side lane for 5,000.",
+                  "The targets stay down for the rest of the ball. They reset for the next ball or player."
+                ]
+              },
+              {
+                "text": "Use the short upper flippers only to redirect the ball or finish a controlled target shot. Transfer to a lower flipper when possible."
+              },
+              {
+                "text": "After one side is lit, choose its repeatable 5,000-point shot: the upper saucer or the side lane from below.",
+                "modeNotes": [
+                  "5,000 lane: A completed drop bank lights the lane behind it. A missed saucer shot can still roll through the lit lane.",
+                  "A strong, accurate bottom-up lane shot can score going up and again when the ball returns through the lane."
+                ]
+              },
+              {
+                "text": "Repeat only the route that gives a controlled return. Trap the ball between attempts."
+              }
+            ],
+            "fallback": {
+              "title": "Bonus and A-B-C",
+              "when": "Use this route when both lit side shots or saucer kickouts return badly.",
+              "steps": [
+                {
+                  "text": "Plunge B. Complete A and C through the lower lanes to light double bonus."
+                },
+                {
+                  "text": "Finish safe drop targets to add bonus. Do not force the last target in a dangerous bank."
+                },
+                {
+                  "text": "Protect the doubled bonus. Use controlled upper-flipper deflections instead of repeated power flips."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Top-feed 5,000 lane",
+                "when": "Use this route when the top pop area is safe but the bottom-up side-lane shot is not.",
+                "steps": [
+                  {
+                    "text": "Complete one five-target bank to light its side lane."
+                  },
+                  {
+                    "text": "Send the ball to the top playfield. Nudge the pop-bumper exit toward the lit side lane."
+                  },
+                  {
+                    "text": "Catch the side return on a lower flipper. Repeat only after a controlled catch."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Both 5,000-point lanes and double bonus",
+              "steps": [
+                {
+                  "text": "Complete both five-target banks."
+                },
+                {
+                  "text": "Complete A-B-C to light double bonus."
+                },
+                {
+                  "text": "Repeat the safer lit side lane or saucer until the ball drains."
+                }
+              ]
+            },
+            "quickInfo": [
+              {
+                "name": "Jungle Queen / Jungle Princess",
+                "summary": "Jungle Queen is the four-player game; Jungle Princess is its two-player sibling on the same playfield."
+              },
+              {
+                "name": "A-B-C",
+                "summary": "Complete the three rollover letters to light double end-of-ball bonus; the last ball receives double bonus automatically."
+              },
+              {
+                "name": "Drop banks",
+                "summary": "Each five-target bank builds bonus and lights its matching side lane for repeatable 5,000-point scoring."
+              },
+              {
+                "name": "Side lanes and saucers",
+                "summary": "After a bank completion, use the matching lane or upper saucer only when its kickout or roll-down feed is controlled."
+              },
+              {
+                "name": "Blue pop bumper",
+                "summary": "The B lane lights the blue bumper; its value can differ between three-ball and five-ball settings."
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "B lane",
+                "label": "Top B rollover lane",
+                "description": "The center top lane collects B and lights the blue pop bumper.",
+                "xPercent": 50,
+                "yPercent": 13,
+                "precision": "area"
+              },
+              {
+                "term": "A and C lanes",
+                "label": "Lower A and C return lanes",
+                "description": "The lower return lanes complete A-B-C with the top B lane.",
+                "xPercent": 50,
+                "yPercent": 74,
+                "precision": "area"
+              },
+              {
+                "term": "left drop bank",
+                "label": "Left five-target bank",
+                "description": "The left bank builds bonus and lights the left 5,000-point route.",
+                "xPercent": 27,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "right drop bank",
+                "label": "Right five-target bank",
+                "description": "The right bank builds bonus and lights the right 5,000-point route.",
+                "xPercent": 73,
+                "yPercent": 42,
+                "precision": "area"
+              },
+              {
+                "term": "upper saucer",
+                "label": "Upper side saucers",
+                "description": "Each upper side saucer shares the bank's lit 5,000-point route.",
+                "xPercent": 50,
+                "yPercent": 27,
+                "precision": "area"
+              },
+              {
+                "term": "upper flippers",
+                "label": "Short upper flippers",
+                "description": "The short side flippers redirect feeds toward targets or the lower flippers.",
+                "xPercent": 50,
+                "yPercent": 52,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "techniques": [
+              {
+                "name": "Shatz pass",
+                "instruction": "Use an alley pass to move the ball between lower flippers. The missing slingshots make this transfer unusually forgiving.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=143s",
+                "techniqueSlug": "shatz-pass"
+              },
+              {
+                "name": "Upper-flipper redirect",
+                "instruction": "Use a short upper-flipper tap to send a side feed toward the opposite lower flipper. Do not use a full power flip.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=441s"
+              },
+              {
+                "name": "Return-lane roll",
+                "instruction": "On a fast inside feed, hold the lower flipper up and guide the ball into the A or C return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Dead bounce",
+                "instruction": "Dead bounce a centered lower-flipper feed to the opposite flipper before choosing the next side shot.",
+                "techniqueSlug": "dead-bounce",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "name": "Side-lane up-and-down",
+                "instruction": "On a strong copy, shoot a lit side lane from below. The ball can score again when it falls back through the lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated upper-flipper power shots create side-to-side motion and can feed an outlane.",
+                "response": "Use the upper flippers for short redirects. Transfer the ball to a lower flipper before the next scoring shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=506s"
+              },
+              {
+                "issue": "Most uncontrolled drains start with fast side-to-side ball movement.",
+                "response": "Trap the ball. Use an alley pass or a dead bounce before you aim another shot.",
+                "sourceUrl": "https://www.youtube.com/watch?v=AbFOMWyU_eA&t=511s"
+              },
+              {
+                "issue": "Drop-target and pop-bumper rebounds can remove flipper control.",
+                "response": "Test each bank early. Choose the opposite bank when repeated rebounds move toward an outlane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              },
+              {
+                "issue": "Top-saucer kickouts and side roll-down feeds differ by machine copy.",
+                "response": "Watch one kickout and one side return. Select the 5,000-point route only after one feed reaches a controlled flipper.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrNnr-MQ2Bw"
+              }
+            ],
+            "simpleOverview": "In Jungle Queen or Jungle Princess, complete A-B-C to light Double Bonus, then clear the five-target bank with the safer rebound. That bank lights its side lane and upper saucer for 5,000. Repeat the lit lane or saucer only when its return reaches a lower flipper under control.",
+            "overview": "In Jungle Queen or Jungle Princess, A-B-C lights Double Bonus, and each completed five-target bank lights that side's lane and upper saucer for 5,000. Complete the safer bank first, use the short upper flippers only to redirect the ball, then repeat the lit lane or saucer from a controlled lower-flipper feed. Complete the other bank only after the first repeatable route is established.",
+            "machineSetup": [
+              "Confirm Jungle Queen or two-player Jungle Princess; verify ball count, replay or add-a-ball awards, bonus rules, and blue-bumper value.",
+              "Read whether the last ball receives automatic Double Bonus and how drop banks reset between balls and players.",
+              "Test both saucer kickouts, side roll-down lanes, upper-flipper redirects, bank rebounds, lower transfers, and tilt sensitivity."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  ]
+}

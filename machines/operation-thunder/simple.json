@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr3Lq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Operation: Thunder runs through twelve missions in a fixed order. A mission starts automatically with each served ball; completing its flashing objective or draining advances to the next one. Use the flipper buttons while the plunged ball circles the Power Plant to steer it toward lit targets, then attack the flashing mission shot. Mission 3 automatically begins two-ball play and can become three-ball play when both locks were earned first.",
+        "simpleOverview": "Each served ball starts the next mission automatically. Shoot the flashing mission objective; completing it earns a promotion, while draining still advances the sequence. On timed missions, shoot the spinner to refill fuel before it reaches zero. Mission 3 starts two-ball play automatically, or three-ball play if both balls were locked first.",
+        "summary": "A served ball starts the current mission automatically. Complete its flashing shot for a promotion; a drain advances without one. Refill timed missions at the spinner. Mission 3 starts two-ball play, upgraded to three balls when both locks are ready.",
+        "quickInfo": [
+          {
+            "name": "Start a mission",
+            "summary": "Launch the next ball; missions begin automatically in their fixed order."
+          },
+          {
+            "name": "Advance",
+            "summary": "Complete the flashing objective for a promotion, or drain and continue to the next mission."
+          },
+          {
+            "name": "Refuel",
+            "summary": "Shoot the spinner during fuel-timed missions before the gauge reaches zero."
+          },
+          {
+            "name": "Mission 3",
+            "summary": "Starts two-ball play automatically, or three-ball play after both locks."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Launch the ball to start the current mission automatically.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons while the ball circles the Power Plant to steer the rotating target lights toward the ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the flashing mission objective. A completed mission awards a promotion; a drain moves on without that promotion.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During a fuel-timed mission, return to the spinner before the gauge empties; zero fuel disables the flippers and ends the ball when that rule is enabled.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Reach Mission 3 to start two-ball play automatically. Earn both available locks beforehand to upgrade it to three balls.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Exploit the STRAFE spinner",
+            "when": "Use this from Mission 1 when the Power Plant gives you a strong STRAFE value.",
+            "steps": [
+              {
+                "text": "Steer the Power Plant so its lit targets raise the STRAFE value on the launch.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the spinner repeatedly; each spin scores the built STRAFE value and can outscore the nearby single-shot objectives.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish the twelve-mission tour",
+          "steps": [
+            {
+              "text": "Take the fixed missions one served ball at a time and finish as many objectives as possible for promotions.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Treat the fuel gauge as the priority on timed missions; refuel first, then return to the objective.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Carry extra balls into the later timed missions so a failed objective does not end the full run.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm the timed-mission difficulty, fuel-out behavior, and extra-ball settings; each changes how forgiving the twelve-mission run will be.",
+          "Test the Power Plant target ring, spinner, both locks, drop targets, ramp, saucers, and fuel display before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "Mission",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Power Plant",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "Fuel",
+            "tone": "oxblood",
+            "kind": "mode"
+          },
+          {
+            "label": "Mission 3",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Power Plant",
+            "label": "Power Plant target ring",
+            "description": "The rotating upper feature whose lit targets are steered with the flipper buttons during launch.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "STRAFE and fuel spinner",
+            "description": "The shot used for built STRAFE scoring and to refill fuel during timed missions.",
+            "precision": "unverified"
+          },
+          {
+            "term": "locks",
+            "label": "Mission 3 ball locks",
+            "description": "The two locks that upgrade Mission 3 from two-ball to three-ball play.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Timed-mission behavior is operator-adjustable, including how much fuel is available and whether empty fuel forces a drain.",
+            "response": "Check the setup before planning around a late refuel; on a strict machine, shoot the spinner early.",
+            "sourceUrl": "https://www.youtube.com/watch?v=TWdgXaG9Cnc"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "A served ball starts the current mission automatically. Complete its flashing shot for a promotion; a drain advances without one. Refill timed missions at the spinner. Mission 3 starts two-ball play, upgraded to three balls when both locks are ready.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Launch the ball to start the current mission automatically.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons while the ball circles the Power Plant to steer the rotating target lights toward the ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the flashing mission objective. A completed mission awards a promotion; a drain moves on without that promotion.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During a fuel-timed mission, return to the spinner before the gauge empties; zero fuel disables the flippers and ends the ball when that rule is enabled.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Reach Mission 3 to start two-ball play automatically. Earn both available locks beforehand to upgrade it to three balls.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start a mission",
+            "summary": "Launch the next ball; missions begin automatically in their fixed order."
+          },
+          {
+            "name": "Advance",
+            "summary": "Complete the flashing objective for a promotion, or drain and continue to the next mission."
+          },
+          {
+            "name": "Refuel",
+            "summary": "Shoot the spinner during fuel-timed missions before the gauge reaches zero."
+          }
+        ],
+        "warning": {
+          "title": "Timed-mission behavior is operator-adjustable, including how much fuel is available and whether empty fuel forces a drain.",
+          "text": "Check the setup before planning around a late refuel; on a strict machine, shoot the spinner early."
+        }
+      }
+    }
+  ]
+}

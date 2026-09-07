@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "id": "GrXlr",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge B, collect A, and test the lit return lanes. Use controlled alley passes to build 5x and 29,000 base bonus. Enter lit saucer 2 to collect 145,000, reset base bonus, and preserve 5x for another cycle.",
+        "quickInfo": [
+          {
+            "name": "A-B",
+            "summary": "A and B light opposite inlanes and outlanes for 5,000, a bonus advance, and one Bonus X advance."
+          },
+          {
+            "name": "Scores Bonus",
+            "summary": "Lit saucer 2 collects base bonus with Bonus X, resets base bonus, and preserves the multiplier."
+          },
+          {
+            "name": "Green drop",
+            "summary": "A moving green lamp makes one right-bank target worth 10,000 and one Bonus X advance."
+          },
+          {
+            "name": "Lit Spinner",
+            "summary": "Completing the five-bank lights the spinner for 1,000 and one bonus advance per spin."
+          },
+          {
+            "name": "Maximum bonus",
+            "summary": "Base bonus reaches 29,000 and Bonus X reaches 5x for a 145,000 collect."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge the top B lane. Try to let its exit bounce into the right-side A lane.",
+            "modeNotes": [
+              "A-B: A lights the left outlane and right inlane. B lights the left inlane and right outlane.",
+              "A lit bottom lane scores 5,000, adds one base-bonus advance, and raises Bonus X once."
+            ]
+          },
+          {
+            "text": "Control the ball. Test one alley pass through a lit inlane."
+          },
+          {
+            "text": "If the pass is controlled, repeat it between the two inlanes.",
+            "modeNotes": [
+              "Bonus X: Lit bottom lanes, green right-bank targets, and a qualified three-bank completion raise this multiplier to 5x.",
+              "Base bonus reaches 29,000. Neither base bonus nor Bonus X carries after the ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Continue until Bonus X reaches 5x and base bonus reaches 29,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Read saucer 2. It lights after base bonus reaches 20,000 or all three saucers are unlit.",
+            "modeNotes": [
+              "Scores Bonus: Lit saucer 2 scores the full multiplied bonus. It resets base bonus and preserves Bonus X.",
+              "Each saucer adds one bonus advance. A lit saucer scores 5,000 and becomes unlit. An unlit saucer scores 500.",
+              "Unlighting all three relights them, adds one green right-bank lamp, and lights Scores Bonus."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Send the ball through the spinner or upper lanes toward saucer 2."
+          },
+          {
+            "text": "Enter lit saucer 2 to collect up to 145,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Rebuild base bonus while 5x remains active. Repeat Scores Bonus on the same ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Up-top bonus route",
+          "when": "Recovery pivot: Use this when the alley pass arcs out of control or the inlane switches do not register reliably.",
+          "steps": [
+            {
+              "text": "Shoot the left orbit from the right flipper."
+            },
+            {
+              "text": "From the left flipper, bank the ball from the right-side drop targets toward the top."
+            },
+            {
+              "text": "Collect A and B at top and side lanes."
+            },
+            {
+              "text": "Hit only a right-bank target with a green lamp for one Bonus X advance."
+            },
+            {
+              "text": "Complete the center three-bank after the top standup qualifies its multiplier award."
+            },
+            {
+              "text": "At 20,000 base bonus, read saucer 2."
+            },
+            {
+              "text": "Collect Scores Bonus when its upper feed remains controlled."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Five-bank spinner route",
+            "when": "When trailing, use this higher-ceiling route: use this when the right-bank rebounds and spinner return are controlled.",
+            "steps": [
+              {
+                "text": "Hit a green-lit target in the right five-bank.",
+                "modeNotes": [
+                  "Green drop: Each right-bank target scores 3,000 and adds one bonus advance. A green target scores 10,000 and raises Bonus X."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Pop-bumper hits move the green lamp. A 1-2-3 saucer completion adds another green lamp."
+              },
+              {
+                "text": "Complete the five-bank.",
+                "modeNotes": [
+                  "Lit Spinner: The completion lights 1,000 and one bonus advance per spin. It also resets both drop banks.",
+                  "Extra Ball: The completion makes the center three-bank alternate between lit and unlit Extra Ball states with bumper hits."
+                ]
+              },
+              {
+                "text": "Shoot the spinner to rebuild base bonus after a Scores Bonus collect."
+              },
+              {
+                "text": "Complete the center bank only while its Extra Ball lamp is lit."
+              }
+            ]
+          },
+          {
+            "title": "Top-standup sequence",
+            "when": "Use this only after the direct target rebound is known.",
+            "steps": [
+              {
+                "text": "Hit the top center standup once.",
+                "modeNotes": [
+                  "Multi-Bonus: The first hit makes each A-B lane add five base-bonus advances."
+                ]
+              },
+              {
+                "text": "Hit it a second time to qualify a Bonus X advance at the center three-bank."
+              },
+              {
+                "text": "Complete the three-bank for that multiplier advance."
+              },
+              {
+                "text": "A third top-standup hit lights Special at the left standup for this ball."
+              },
+              {
+                "text": "Stop after a center-directed rebound."
+              }
+            ]
+          },
+          {
+            "title": "A-B Extra Ball",
+            "when": "Use this when A-B is complete and Extra Ball has tournament value.",
+            "steps": [
+              {
+                "text": "Complete both A and B."
+              },
+              {
+                "text": "Watch the moving green lamp on the right five-bank."
+              },
+              {
+                "text": "When the center target is green, it also lights for Extra Ball."
+              },
+              {
+                "text": "Hit that target to collect the award."
+              },
+              {
+                "text": "Competition settings can replace Extra Ball and Special with 50,000 or disable both."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated 145,000 Scores Bonus collects",
+          "steps": [
+            {
+              "text": "Collect A and B."
+            },
+            {
+              "text": "Use controlled lit-inlane passes to reach 5x and 29,000.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Enter lit saucer 2 for 145,000."
+            },
+            {
+              "text": "Keep 5x and rebuild base bonus."
+            },
+            {
+              "text": "Collect saucer 2 again on the same ball."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "A-B",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Scores Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Green drop",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Lit Spinner",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Multi-Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Special",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "saucer 2",
+            "label": "Bonus collect saucer 2",
+            "description": "Lit saucer used to collect multiplied base bonus.",
+            "precision": "unverified",
+            "context": "Enter lit saucer 2 after building base bonus and 5x."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Shatz pass",
+            "instruction": "Pass the ball through a lit inlane to the opposite flipper. Repeat only while the arc stays controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXlr-MOEE2",
+            "techniqueSlug": "shatz-pass"
+          },
+          {
+            "name": "Right-flipper left orbit",
+            "instruction": "Use the right flipper to send the ball through the left orbit toward the top lanes.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/spider-man"
+          },
+          {
+            "name": "Right-bank rebound",
+            "instruction": "From the left flipper, bank the ball from the right drop targets toward the top instead of driving them squarely.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXlr-MOEE2"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "An alley pass can arc above the return lane and lose control.",
+            "response": "Test one pass before repetition. Stop when the arc reaches the upper playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXlr-MOEE2"
+          },
+          {
+            "issue": "Target rebounds and upper-right returns can reach the center drain.",
+            "response": "Prefer green targets and bank shots. Keep both lower flippers ready for upper returns.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXlr-MOEE2"
+          }
+        ],
+        "simpleOverview": "The Amazing Spider-Man is a multiplier, bonus, and saucer-collect game. Use controlled passes through the lit inlanes to reach 5x and build base bonus, then send the ball to lit saucer 2 to collect the multiplied value and keep 5x for another cycle.",
+        "overview": "The Amazing Spider-Man is a multiplier, bonus, and saucer-collect game. Reach both values, enter lit saucer 2 for the Scores Bonus collect, then rebuild the base bonus while 5x remains active. Repeat only while the inlane pass and upper feed stay controlled.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge B, collect A, and test the lit return lanes. Use controlled alley passes to build 5x and 29,000 base bonus. Enter lit saucer 2 to collect 145,000, reset base bonus, and preserve 5x for another cycle.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the top B lane. Try to let its exit bounce into the right-side A lane.",
+            "details": [
+              "A-B: A lights the left outlane and right inlane. B lights the left inlane and right outlane.",
+              "A lit bottom lane scores 5,000, adds one base-bonus advance, and raises Bonus X once."
+            ]
+          },
+          {
+            "text": "Control the ball. Test one alley pass through a lit inlane."
+          },
+          {
+            "text": "If the pass is controlled, repeat it between the two inlanes.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus X: Lit bottom lanes, green right-bank targets, and a qualified three-bank completion raise this multiplier to 5x.",
+              "Base bonus reaches 29,000. Neither base bonus nor Bonus X carries after the ball."
+            ]
+          },
+          {
+            "text": "Continue until Bonus X reaches 5x and base bonus reaches 29,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Read saucer 2. It lights after base bonus reaches 20,000 or all three saucers are unlit.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Scores Bonus: Lit saucer 2 scores the full multiplied bonus. It resets base bonus and preserves Bonus X.",
+              "Each saucer adds one bonus advance. A lit saucer scores 5,000 and becomes unlit. An unlit saucer scores 500.",
+              "Unlighting all three relights them, adds one green right-bank lamp, and lights Scores Bonus."
+            ]
+          },
+          {
+            "text": "Send the ball through the spinner or upper lanes toward saucer 2."
+          },
+          {
+            "text": "Enter lit saucer 2 to collect up to 145,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Rebuild base bonus while 5x remains active. Repeat Scores Bonus on the same ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "A-B",
+            "summary": "A and B light opposite inlanes and outlanes for 5,000, a bonus advance, and one Bonus X advance."
+          },
+          {
+            "name": "Scores Bonus",
+            "summary": "Lit saucer 2 collects base bonus with Bonus X, resets base bonus, and preserves the multiplier."
+          },
+          {
+            "name": "Green drop",
+            "summary": "A moving green lamp makes one right-bank target worth 10,000 and one Bonus X advance."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Up-top bonus route",
+          "when": "Recovery pivot: Use this when the alley pass arcs out of control or the inlane switches do not register reliably.",
+          "steps": [
+            {
+              "text": "Shoot the left orbit from the right flipper."
+            },
+            {
+              "text": "From the left flipper, bank the ball from the right-side drop targets toward the top."
+            },
+            {
+              "text": "Collect A and B at top and side lanes."
+            },
+            {
+              "text": "Hit only a right-bank target with a green lamp for one Bonus X advance."
+            },
+            {
+              "text": "Complete the center three-bank after the top standup qualifies its multiplier award."
+            },
+            {
+              "text": "At 20,000 base bonus, read saucer 2."
+            },
+            {
+              "text": "Collect Scores Bonus when its upper feed remains controlled."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Target rebounds and upper-right returns can reach the center drain.",
+          "text": "Prefer green targets and bank shots. Keep both lower flippers ready for upper returns."
+        }
+      }
+    }
+  ]
+}

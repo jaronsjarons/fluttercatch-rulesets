@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "GkBZD",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Qualify Elwood at the drop banks, Jake at the J-A-K-E targets, or the Band at the spinners, then shoot the saucer to start every qualified minimode together. In parallel, use the captive ball and upper hideaway to build the three-ball Multiball.",
+        "simpleOverview": "Finish the drop-bank, J-A-K-E, or spinner requirement, then shoot the saucer to start the qualified minimode. Hit the captive ball to light each lock and shoot the upper hideaway to lock it.",
+        "summary": "Build Elwood at the drop banks, Jake at J-A-K-E, and the Band at the spinners. The saucer starts every qualified minimode together. For three-ball Multiball, hit the captive ball to light a lock and shoot the upper hideaway; repeat for the second lock.",
+        "checkBeforePlay": [
+          "Ask how locks are handled. The operator can choose shared, stolen, purged, or virtual locks.",
+          "Qualification counts, whether progress resets each ball, and ball-save time are adjustable."
+        ],
+        "quickInfo": [
+          {
+            "name": "Elwood minimode",
+            "summary": "Clear the required drop-bank pattern, then shoot the lit saucer."
+          },
+          {
+            "name": "Jake minimode",
+            "summary": "Complete J-A-K-E, then shoot the lit saucer."
+          },
+          {
+            "name": "Band minimode",
+            "summary": "Build the required spinner progress, then shoot the lit saucer."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Hit the captive ball to light a lock, shoot the upper hideaway, and repeat for the second lock."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Qualify one or more minimodes: work the drop banks for Elwood, spell J-A-K-E for Jake, or build progress at the two spinners for the Band.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the saucer to start every minimode that is currently qualified. A second ball is served for the feature.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Elwood, hit the indicated drop targets in order; during Jake, hit the lit J-A-K-E target; during the Band, shoot the lit left spinner.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the separate three-ball Multiball, hit the captive ball to light the next lock, then shoot the opened upper hideaway to lock the ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat captive ball to upper hideaway for the second lock. The game then moves into the Multiball start sequence.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Concert Multiball",
+          "steps": [
+            {
+              "text": "Make at least one correct lit shot during the Elwood minimode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Make at least one correct lit shot during the Jake minimode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Make at least one correct left-spinner shot during the Band minimode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "When Concert is ready, shoot the saucer to start it.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "minimode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "three-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Concert Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "saucer",
+            "label": "Minimode and Concert saucer",
+            "description": "The saucer that starts qualified minimodes and Concert Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "label": "Lock-light captive ball",
+            "description": "The captive ball used to light and open each Multiball lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper hideaway",
+            "label": "Physical ball lock",
+            "description": "The gated upper trap used to hold balls for the three-ball Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Several qualification and lock behaviors are operator-adjustable.",
+            "response": "Use the lit saucer, captive-ball lamp, lock gate, and status callouts instead of assuming one universal count.",
+            "sourceUrl": "https://github.com/RetroPinUpgrade/BluesBrothers/blob/main/BluesBrothers.ino"
+          }
+        ],
+        "machineSetup": [
+          "Ask how locks are handled. The operator can choose shared, stolen, purged, or virtual locks.",
+          "Qualification counts, whether progress resets each ball, and ball-save time are adjustable."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Elwood at the drop banks, Jake at J-A-K-E, and the Band at the spinners. The saucer starts every qualified minimode together. For three-ball Multiball, hit the captive ball to light a lock and shoot the upper hideaway; repeat for the second lock.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Qualify one or more minimodes: work the drop banks for Elwood, spell J-A-K-E for Jake, or build progress at the two spinners for the Band.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the saucer to start every minimode that is currently qualified. A second ball is served for the feature.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Elwood, hit the indicated drop targets in order; during Jake, hit the lit J-A-K-E target; during the Band, shoot the lit left spinner.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the separate three-ball Multiball, hit the captive ball to light the next lock, then shoot the opened upper hideaway to lock the ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat captive ball to upper hideaway for the second lock. The game then moves into the Multiball start sequence.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Elwood minimode",
+            "summary": "Clear the required drop-bank pattern, then shoot the lit saucer."
+          },
+          {
+            "name": "Jake minimode",
+            "summary": "Complete J-A-K-E, then shoot the lit saucer."
+          },
+          {
+            "name": "Band minimode",
+            "summary": "Build the required spinner progress, then shoot the lit saucer."
+          }
+        ]
+      }
+    }
+  ]
+}

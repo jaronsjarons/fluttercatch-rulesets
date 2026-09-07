@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "G5YDN",
+  "title": "Totem",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist and Bob's Guide Totem strategy",
+      "url": "https://www.kineticist.com/games/pinball/totem"
+    },
+    "supportingSources": [
+      {
+        "label": "Factory Totem three-ball and five-ball cards",
+        "url": "https://web.archive.org/web/20210417005829id_/http://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Totem_instruction_cards.zip"
+      },
+      {
+        "label": "Silverball Rules Totem guide",
+        "url": "https://rules.silverballmania.com/rules/G5YDN-MJKYo"
+      },
+      {
+        "label": "Gottlieb System 1 settings reference",
+        "url": "https://www.pinrepair.com/sys1/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot the top from the left flipper and the full-depth vari-target from the right. Build 20,000 base bonus and at least 3X. Then shoot the right saucer to collect the bonus. At 5X, each full collect scores 100,000.",
+      "quickInfo": [
+        {
+          "name": "Collect Bonus",
+          "summary": "At 20,000 base bonus, this lit saucer scores base bonus times Bonus X, resets base bonus, and keeps Bonus X this ball."
+        },
+        {
+          "name": "Bonus X",
+          "summary": "A full vari-target hit, a complete six-bank, certain lane-and-target sets, or an outlane advances the multiplier to a maximum of 5X."
+        },
+        {
+          "name": "Lit drop target",
+          "summary": "A matching top lane lights its target to score 5,000 instead of 500."
+        },
+        {
+          "name": "Three-ball rules",
+          "summary": "With A and D lit together, either completing A-B-C-D or knocking down all six drops lights Extra Ball, and both objectives light Special."
+        },
+        {
+          "name": "Five-ball rules",
+          "summary": "With A and D separate, all six drops lights Extra Ball, and A-B-C-D plus all six drops lights Special."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On the first ball, read the offset flippers and watch one complete exit from the top bumper area."
+        },
+        {
+          "text": "From the left flipper, shoot the ball to the top lanes and build base bonus."
+        },
+        {
+          "text": "From the right flipper, make a full-depth vari-target hit for 5,000 and one Bonus X advance.",
+          "modeNotes": [
+            "Bonus X: The multiplier reaches 5X. Both base bonus and Bonus X reset at the next ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Repeat the safer top or vari-target shot until base bonus reaches 20,000 and Bonus X reaches at least 3X."
+        },
+        {
+          "text": "If one required drop remains and its multiplier color is lit, finish that target from the safer glancing angle, then return to the top and vari-target route.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the right saucer to collect the current bonus.",
+          "modeNotes": [
+            "Collect Bonus: The saucer scores base bonus times Bonus X. It resets base bonus and keeps Bonus X for the rest of this ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "At 5X, rebuild base bonus to 20,000 and repeat the saucer for another 100,000."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Top-only bonus route",
+        "when": "Recovery pivot: Use this when the vari-target rebound is unsafe.",
+        "steps": [
+          {
+            "text": "Shoot up top from either flipper."
+          },
+          {
+            "text": "Use lanes and random top activity to build base bonus."
+          },
+          {
+            "text": "Let complete B or C target-and-lane sets advance Bonus X."
+          },
+          {
+            "text": "Collect at the right saucer when 20,000 base and at least 3X are ready."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Right-gate escape",
+          "when": "When trailing, use this higher-ceiling route: use this when the ball is trapped in right-bumper activity.",
+          "steps": [
+            {
+              "text": "Nudge the ball toward the right gate."
+            },
+            {
+              "text": "Take the 5,000 gate value and watch the safer right-arc return."
+            },
+            {
+              "text": "Cradle on the right flipper when the feed permits it."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 100,000 bonus collects",
+        "steps": [
+          {
+            "text": "Make full-depth vari-target hits or complete the six-bank until Bonus X reaches 5X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the top lanes until base bonus reaches 20,000."
+          },
+          {
+            "text": "Shoot the right saucer for 100,000."
+          },
+          {
+            "text": "Keep 5X, rebuild the 20,000 base, and collect again."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "5X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Collect Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Lit drop target",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Nudging",
+          "instruction": "When the ball stays near the right bumper, nudge it through the gate for the safer right-arc return.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/totem",
+          "techniqueSlug": "nudging"
+        },
+        {
+          "name": "Nudging",
+          "instruction": "Nudge as the ball leaves the top through a target gap so it does not continue toward the center drain.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/totem",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right flipper sits higher than the left flipper.",
+          "response": "Calibrate both hold points before you use the same timing on each side.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/totem"
+        },
+        {
+          "issue": "The rubber below the vari-target can change its return angle.",
+          "response": "Watch one full rebound and stop repeating the shot if it reaches a slingshot or center drain.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/totem"
+        },
+        {
+          "issue": "Balls can exit the top through the gaps between the B and C targets.",
+          "response": "Nudge during the exit to keep the ball away from the center drain.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5YDN-MJKYo"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm three-ball or five-ball rules and award conversions.",
+        "Test vari-target depth, right saucer, gates, and offset flippers."
+      ],
+      "simpleOverview": "Totem is a bonus-building and saucer-collect game. Shoot the top lanes from the left flipper, make full-depth vari-target hits from the right to raise Bonus X, then shoot the right saucer after base bonus reaches 20,000.",
+      "overview": "Totem is a bonus-building and saucer-collect game. Reach 20,000 base bonus and at least 3X, collect at the saucer, then rebuild the base. At 5X, each complete build and collect scores 100,000.",
+      "machineSetup": [
+        "Confirm three-ball or five-ball rules and award conversions.",
+        "Test vari-target depth, right saucer, gates, and offset flippers."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

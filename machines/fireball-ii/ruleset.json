@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "Gry7q",
+  "title": "Fireball II",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bally Fireball II factory instruction card and manual",
+      "url": "https://www.mamechannel.it/files_free/arcade_manuals_unpacked/fball_ii.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Fireball II strategy",
+        "url": "https://rules.silverballmania.com/rules/Gry7q-MwNE2"
+      },
+      {
+        "label": "Fireball II factory instruction card",
+        "url": "https://arcarc.xmission.com/Pinball/Instruction%20%20Cards/firebal2.gif"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Fireball II turns repeated completions of the upper-left three-bank into three-ball Multiball. The first completion lights either the Odin or Wotan saucer for lock, the second lights the other, and the third releases both captured balls. A-B-C-D raises the separately collected Fireball Bonus to 5x, while the center and right drops build the end-of-ball Doomsday Bonus and its multiplier.",
+      "simpleOverview": "Complete the upper-left three-bank to light an Odin or Wotan saucer, then shoot that lit saucer to lock a ball. Complete the bank again and fill the other lock. Complete the bank a third time to release both balls and start three-ball Multiball.",
+      "summary": "Fill each saucer as soon as it lights, then return to the upper-left bank for the Multiball release. Take A-B-C-D when available, but remember that Fireball Bonus is collected only at an orange-lit saucer; Doomsday Bonus is paid at the end of the ball.",
+      "quickInfo": [
+        {
+          "name": "Light the First Lock",
+          "summary": "Complete the upper-left three-bank once."
+        },
+        {
+          "name": "Light the Second Lock",
+          "summary": "Complete the bank again after filling the first lock."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Complete the bank a third time after both locks are filled."
+        },
+        {
+          "name": "Raise Fireball Bonus X",
+          "summary": "Complete A-B-C-D, up to 5x."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the upper-left three-bank to light either the Odin or Wotan saucer for lock."
+        },
+        {
+          "text": "Shoot the lit saucer to capture the ball, then complete the upper-left three-bank again to light the other saucer."
+        },
+        {
+          "text": "Capture the second ball in its lit saucer."
+        },
+        {
+          "text": "Complete the upper-left three-bank a third time; both locks release and three-ball Multiball begins.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Two-bonus route",
+          "when": "Use this when the upper-left bank is rejecting or its return is feeding the center.",
+          "steps": [
+            {
+              "text": "Complete A-B-C-D and the left-side drops to grow Fireball Bonus and its multiplier.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot an orange-lit saucer to collect Fireball Bonus; it is not paid automatically at the drain."
+            },
+            {
+              "text": "Use the center and right drops to grow Doomsday Bonus and its multiplier for end-of-ball value.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Fireball and Doomsday bonuses",
+        "steps": [
+          {
+            "text": "Complete A-B-C-D repeatedly to raise Fireball Bonus X to 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the center bank to raise Doomsday Bonus X to 4x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect Fireball Bonus at an orange-lit saucer and protect the larger Doomsday value until end of ball."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the upper-left three-bank and reset, both captive-ball saucers and releases, A-B-C-D lanes, center and right drop banks, all three-ball trough switches, and both bonus displays.",
+        "Confirm the installed Little Demon center-post credits, whether locked balls can be stolen in multiplayer, and the Extra Ball and Special settings before competition play."
+      ],
+      "cautions": [
+        {
+          "issue": "Lock and center-post behavior can vary by setup.",
+          "response": "Watch the lock lamps and Little Demon credit count on the installed game; rebuild the bank if a multiplayer lock is no longer available.",
+          "sourceUrl": "https://www.mamechannel.it/files_free/arcade_manuals_unpacked/fball_ii.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

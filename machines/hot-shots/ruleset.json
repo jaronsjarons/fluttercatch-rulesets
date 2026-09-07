@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEVz",
+  "title": "Hot Shots",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Hot Shots instruction cards",
+      "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Hot_Shots_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Hot Shots machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/hot-shots"
+      },
+      {
+        "label": "Hot Shots exact-machine play",
+        "url": "https://www.youtube.com/watch?v=EmtzM7Vd-vw"
+      },
+      {
+        "label": "Hot Shots machine feature page",
+        "url": "https://www.pinballrebel.com/pinball/hot_shots/hot_shots_pinball.htm"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Complete the five white T-E-D-D-Y targets to light Lock and activate its ball hole, then shoot the lit Lock hole to begin two-ball Multiball. For the repeatable score route, complete B-E-A-R to raise the center Save target; knock it down to light the right ramp briefly for Collect Jackpot.",
+      "simpleOverview": "Complete the five white T-E-D-D-Y targets, then shoot the newly lit Lock hole for two-ball Multiball. Complete B-E-A-R to reset the center Save target; hit Save, then shoot the right ramp before Collect Jackpot times out.",
+      "summary": "Complete T-E-D-D-Y and shoot the lit Lock hole for two-ball Multiball. Complete B-E-A-R to raise Save, knock Save down, then make the right ramp during its timed Collect Jackpot window.",
+      "quickInfo": [
+        {
+          "name": "Light Lock",
+          "summary": "Complete the five white T-E-D-D-Y targets."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Shoot the newly active Lock hole."
+        },
+        {
+          "name": "Raise Save",
+          "summary": "Complete the four B-E-A-R gallery targets."
+        },
+        {
+          "name": "Collect Jackpot",
+          "summary": "Knock down Save, then shoot the right ramp before the timer expires."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the five white T-E-D-D-Y targets to light Lock and activate the lock hole.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit Lock hole to hold the ball and serve the second ball for two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete B-E-A-R to raise the center Save target.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Knock down Save, then shoot the right ramp while Collect Jackpot is lit.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Play the Shooting Gallery",
+          "when": "Use this while T-E-D-D-Y letters are awkward or the target banks are already close to complete.",
+          "steps": [
+            {
+              "text": "Knock down all sixteen colored drop targets to collect the lit Shooting Gallery value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the remaining white T-E-D-D-Y targets after the banks reset.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Build Teddy Bear awards",
+        "steps": [
+          {
+            "text": "Complete T-E-D-D-Y and B-E-A-R together to collect the currently lit sequence value.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On default three-ball rules, the second same-ball sequence can light Extra Ball; tournament settings may convert it to points.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm special and extra-ball conversions, sequence counts, and whether lock progress carries between balls or players.",
+        "Test every T-E-D-D-Y and B-E-A-R target, all colored drops, lock hole, center Save target, accelerator, and right Jackpot ramp."
+      ],
+      "termStyles": [
+        {
+          "label": "T-E-D-D-Y",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Collect Jackpot",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Collect Jackpot is timed after the Save target falls.",
+          "response": "Do not hit Save without a plan for the right ramp; B-E-A-R must be completed again to raise it after the opportunity ends.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Hot_Shots_instruction_cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

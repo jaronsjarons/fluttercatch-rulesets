@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G4d7B",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Locomotion uses three drop-target banks as station routes. Complete a bank to open its station gate and raise Extra Bonus. Each bank also has a timed Special lamp; finish that bank while its lamp is on to collect Special. Shoot the left ramp to cross the bridge and pass open station gates. Hit the three fixed targets to advance Bonus X. The center top rollover advances the lower rollover awards from 5,000 to the two return lanes.",
+        "simpleOverview": "Complete any drop-target bank to open its station gate and raise Extra Bonus. If a bank's Special lamp is lit, finish that bank before the timer ends. Shoot the left ramp to cross the bridge and use open stations. Hit the three fixed targets for Bonus X, and use the center top rollover to advance the lower return-lane awards.",
+        "summary": "Finish one station bank at a time, especially when its timed Special lamp is active. Use the left ramp after gates are open, and take the fixed targets when Bonus X is the safer route.",
+        "quickInfo": [
+          {
+            "name": "Open a Station",
+            "summary": "Complete its drop-target bank."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Finish a bank while its Special lamp is lit."
+          },
+          {
+            "name": "Cross the Bridge",
+            "summary": "Shoot the left ramp."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Hit the three fixed targets."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete one of the three drop-target banks to open its station gate and increase Extra Bonus.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When a bank's Special lamp is lit, complete that bank before the timed window ends to collect Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp to cross the bridge and pass the station gates you have opened.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the three fixed targets to advance Bonus X; use the center top rollover to advance the lower rollover awards.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Bonus X",
+            "when": "Use this when no bank has a live Special timer.",
+            "steps": [
+              {
+                "text": "Work the three fixed targets for the next Bonus X step.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Return to a station bank when its Special lamp begins flashing.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Use the station gates",
+          "steps": [
+            {
+              "text": "Open one or more gates by completing their matching banks.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp to cross the bridge and convert the open route.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check bank difficulty, timed Special duration, Extra Bonus, Bonus X, station-gate, and award settings.",
+          "Test all three banks and gates, Special timers, left ramp and bridge, three fixed targets, center top rollover, lower return lanes, and Bonus X lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "Station Banks",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Timed Special",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Bridge",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "station banks",
+            "label": "Three station banks",
+            "description": "Drop banks that open station gates and raise Extra Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "station gates",
+            "label": "Station gates",
+            "description": "Gates opened by their matching target banks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Bridge ramp",
+            "description": "Left ramp that crosses the bridge and open stations.",
+            "precision": "unverified"
+          },
+          {
+            "term": "fixed targets",
+            "label": "Bonus X targets",
+            "description": "Three fixed targets that advance Bonus X.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The bank Special windows are timed.",
+            "response": "Do not spread hits across all three banks; stay with the lit bank while its timer is active.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen1/locomotion/Cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Finish one station bank at a time, especially when its timed Special lamp is active. Use the left ramp after gates are open, and take the fixed targets when Bonus X is the safer route.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete one of the three drop-target banks to open its station gate and increase Extra Bonus.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When a bank's Special lamp is lit, complete that bank before the timed window ends to collect Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp to cross the bridge and pass the station gates you have opened.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the three fixed targets to advance Bonus X; use the center top rollover to advance the lower rollover awards.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Open a Station",
+            "summary": "Complete its drop-target bank."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Finish a bank while its Special lamp is lit."
+          },
+          {
+            "name": "Cross the Bridge",
+            "summary": "Shoot the left ramp."
+          }
+        ]
+      }
+    }
+  ]
+}

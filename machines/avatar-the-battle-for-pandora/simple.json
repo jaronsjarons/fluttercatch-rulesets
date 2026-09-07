@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "id": "GbPxB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Bank two Hallelujah locks. Ready Tree of Souls or RDA Sivako. Start the mode, take the final lock, maintain 4x arrows, and cash Eclipse.",
+        "steps": [
+          {
+            "text": "Use the action button to select the left-orbit lock super skill shot. Plunge the ball into the lock.",
+            "modeNotes": [
+              "Lock super skill shot: It gives one free ball lock toward Battle of the Hallelujah Mountains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Bank two total locks. Complete the Jake and Neytiri center targets when lock is not lit. Shoot a lit green orbit to lock a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Do not take the third lock yet. Hit Tree of Souls or the RDA ramp twice to ready its Sivako mode.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot ramps that feed the inlanes to fill the arrow meters. If a lane award is lit, select Max Toxin or Unlimited Arrows.",
+            "modeNotes": [
+              "Arrows: They set the multiplier for the next event. The maximum is 4x. Each flip spends one arrow.",
+              "Max Toxin: The next event starts at 4x. Unlimited Arrows: The next event keeps its current multiplier without spending arrows."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Make the third Sivako-starter shot. Then take the third lock to start Battle of the Hallelujah Mountains.",
+            "modeNotes": [
+              "Tree of Souls: Collect 250 switch hits before time ends. A multiball usually completes this mode.",
+              "RDA: Shoot Hometree VUK or Rainforest loopback to collect five resources. The Tulkun shot collects 2x resources.",
+              "The prepared Sivako mode continues during Multiball. Its lit shots and Multiball awards can score together."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the stack, make a lit shot. Then press the action button until both arrow meters are full.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot award shots to light the next red jackpot. Every ten award shots makes the next jackpot add a ball.",
+            "modeNotes": [
+              "Multiball jackpot order: Jake and Neytiri targets, Rainforest reverse scoop, scoop, Hometree VUK, Spider, then RDA Super Jackpot.",
+              "The five jackpots carry between multiball attempts. The RDA Super completes the current stage."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Eclipse starts, keep scoring the stack. Shoot the right ramp before Eclipse ends to collect its jackpot.",
+            "modeNotes": [
+              "Eclipse: All points scored during Eclipse are added to its jackpot. The right ramp collects it and resets the value."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Sivako and Multiball",
+            "summary": "Start Tree of Souls or RDA before the final lock. The Sivako mode continues during Multiball, and Tree of Souls gains switch progress from the extra balls."
+          }
+        ],
+        "fallback": {
+          "title": "Sivako and Eclipse",
+          "when": "Use this plan when the orbit locks or lower-playfield releases are not controlled.",
+          "steps": [
+            {
+              "text": "Choose a repeatable Sivako starter. Prefer Tree of Souls, Tulkun, Omatikaya, or RDA.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Fill the arrow meters before the third starter shot. Use Max Toxin when it is available.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Start the Sivako mode with the third shot. Make its lit objective shots.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After each lit shot, press the action button to refill arrows and hold the event multiplier.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "When Eclipse starts, finish the mode and collect the built value at the right ramp.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Battle of Awa'Atlu",
+            "when": "Use this plan when the Dive shot and crab-suit playfield are easier than the orbit locks.",
+            "steps": [
+              {
+                "text": "Hit either lowered scoop-ramp entrance to raise the ramp. Then shoot the raised ramp from a lower flipper.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Complete the lit lower-playfield targets. Use the flippers to change the lit targets.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Defeat the first crab suit with about six direct-target or orbit hits. This starts multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the same award-shot, jackpot, add-a-ball, and RDA Super sequence as Hallelujah Mountains.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Later crab suits need about 12 hits plus both orbits, then about 18 hits plus both orbits twice.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Eywa'Eveng",
+          "steps": [
+            {
+              "text": "Complete a mode, score a Multiball Super, collect a large Eclipse, or collect a Bond Jackpot to earn P-A-N-D-O-R-A letters.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "You can also cash 25 Meuia at Hometree for a PANDORA letter.",
+              "modeNotes": [
+                "Meuia: Honor earned from shots. The Hometree VUK collects it and gives the next listed award.",
+                "Bond Jackpot: Use all eight pink shots in combos. Then make a combo into the scoop."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Spell PANDORA. Shoot the left scoop to start three-ball Eywa'Eveng.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete its seven displayed tasks: locks, tokens, Meuia, target-and-ramp pairs, lanes, Bond combos, and the mini-playfield route.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Each task scores a jackpot. Complete all seven tasks for the Super Jackpot. The task set then resets.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "RDA",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the Tree of Souls left ramp from the left flipper. A made shot feeds the left inlane.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ywFZFesziCo&t=291s",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the left scoop from the left flipper to start a lit Songcord mode.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ywFZFesziCo&t=218s",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Shoot the scoop. Dead-bounce the eject off the right flipper. Shoot the right ramp on the fly from the left flipper.",
+            "sourceUrl": "https://www.kineticist.com/news/avatar-battle-for-pandora-tutorial",
+            "techniqueSlug": "dead-bounce"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The game has many VUK and lock releases. A wrong or missing flip can send the ball straight down the middle.",
+            "response": "Watch every release during the first ball. Follow the first-use flipper prompt. Do not ignore a known release direction.",
+            "sourceUrl": "https://www.kineticist.com/news/avatar-battle-for-pandora-tutorial"
+          },
+          {
+            "issue": "The Hallelujah Mountains right ramp is the toughest major shot in this route. It must be hit cleanly from the left flipper.",
+            "response": "Use the scoop dead-bounce setup for an on-the-fly attempt. Do not try to backhand the ramp.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ywFZFesziCo&t=434s"
+          },
+          {
+            "issue": "The Tree of Souls ramp can reject a weak left-flipper shot.",
+            "response": "Test the left-flipper backhand before a timed collect. Use RDA Sivako when the ramp rejects repeatedly.",
+            "sourceUrl": "https://www.youtube.com/watch?v=ywFZFesziCo&t=1196s"
+          }
+        ],
+        "checkBeforePlay": [
+          "Check whether Extra Balls and Specials remain enabled or convert to points."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Tree of Souls",
+            "label": "Tree of Souls ramp",
+            "description": "Left ramp used for locks and character progress.",
+            "precision": "unverified",
+            "context": "Left ramp used for locks and character progress."
+          },
+          {
+            "term": "Songcord scoop",
+            "label": "Songcord scoop",
+            "description": "Left scoop used to start a lit Songcord mode.",
+            "precision": "unverified",
+            "context": "Left scoop used to start a lit Songcord mode."
+          },
+          {
+            "term": "Hallelujah Mountains",
+            "label": "Hallelujah Mountains ramp",
+            "description": "Right ramp used for Eclipse and major objectives.",
+            "precision": "unverified",
+            "context": "Right ramp used for Eclipse and major objectives."
+          }
+        ],
+        "simpleOverview": "Avatar: The Battle for Pandora starts each Sivako mode with three hits to its named shot. Hit the Tree of Souls ramp or RDA mini-ramp twice, then leave that mode ready. Complete the Jake and Neytiri center targets and lock two balls at lit green orbits; make the third mode shot, then collect the third lock to start Battle of the Hallelujah Mountains during the mode. After each lit award shot, press the Action Button to refill arrows and maintain playfield X. When switch hits start Eclipse automatically, shoot the right ramp before Eclipse ends to collect its built Jackpot.",
+        "overview": "A three-hit Sivako mode can run during Battle of the Hallelujah Mountains in Avatar: The Battle for Pandora, while arrows maintain playfield X and switch hits start Eclipse automatically. Complete the Jake and Neytiri center targets and lock two balls at lit green orbits. Hit the Tree of Souls ramp or RDA mini-ramp twice, prepare Max Toxin or Unlimited Arrows when available, make the third mode shot, then collect the third lock to start Multiball during the mode. Press the Action Button after lit award shots to refill arrows. During Eclipse, keep scoring the running events and shoot the right ramp before time expires to collect the built Jackpot.",
+        "machineSetup": [
+          "Check whether Extra Balls and Specials remain enabled or convert to points."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use three Tree of Souls or RDA shots for a Sivako mode, green orbit locks for Hallelujah Mountains, or the Dive shot for Awa'Atlu.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Sivako mode",
+            "text": "Hit Tree of Souls or the RDA ramp twice to ready its Sivako mode, then make the same shot a third time to start it.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Tree of Souls",
+              "reason": "Choose it when the Tree of Souls shot is controlled; its switch objective is well protected by multiball.",
+              "play": "Make 250 switch hits before time ends. After the mode begins, use Battle of the Hallelujah Mountains so its extra balls protect the switch count."
+            }
+          },
+          {
+            "title": "Start Battle of the Hallelujah Mountains",
+            "text": "Complete the Jake and Neytiri center targets when Lock is not lit, then shoot a lit green orbit to lock a ball. The third lock starts Battle of the Hallelujah Mountains.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Sivako and Multiball",
+            "summary": "Start Tree of Souls or RDA before the final lock. The Sivako mode continues during Multiball, and Tree of Souls gains switch progress from the extra balls."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Battle of Awa'Atlu",
+          "when": "Use this when the Dive shot and crab-suit playfield are safer than the green orbit locks.",
+          "steps": [
+            {
+              "text": "Hit either lowered Dive entrance to raise its ramp, shoot the raised ramp, then complete the lit lower-playfield targets. Defeat the first crab suit to start Battle of Awa'Atlu multiball play.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

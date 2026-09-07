@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBKZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit one yellow-bank target whenever Advance Multiplier is lit. Build Base Bonus with controlled drops, stars, lanes, and spinner shots. At 20,000 or more, collect at the top-right saucer after its kickout proves safe; Bonus X stays active for the next build.",
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "A lit yellow target advances the bonus multiplier through 5x until the ball drains."
+          },
+          {
+            "name": "Base Bonus",
+            "summary": "Drops, stars, Add Bonus lanes, and lit-spinner spins build the value to a 29,000 maximum."
+          },
+          {
+            "name": "Bonus Collect",
+            "summary": "At 20,000 Base Bonus, the lit saucer scores Base Bonus times Bonus X and preserves the multiplier."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the ball count and instruction card. Test all five flippers and the top-right saucer return."
+          },
+          {
+            "text": "Plunge toward A when possible and use the first upper-playfield visit to learn the flipper feeds."
+          },
+          {
+            "text": "When Advance Multiplier is lit, hit one yellow-bank target. The hit adds 1x and turns the lamp off.",
+            "modeNotes": [
+              "Bonus X: A lit yellow target earns +1x through 5x; a mid-ball Bonus Collect keeps it, but a drain resets it."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the yellow bank is dark, use a lit spinner or return the ball to the upper playfield until the lamp toggles on.",
+            "modeNotes": [
+              "Lit Spinner: An inlane star lights it; each spin then scores 1,000 and adds one Base Bonus advance until a switch turns it off."
+            ]
+          },
+          {
+            "text": "Repeat the lit yellow target until Bonus X reaches at least 3x. Prefer 4x or 5x before a planned collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Score drop targets, stars, Add Bonus lanes, and lit-spinner spins until Base Bonus reaches 20,000 or more.",
+            "modeNotes": [
+              "Base Bonus: This unmultiplied value reaches 29,000; a drain or Bonus Collect spends it."
+            ]
+          },
+          {
+            "text": "When the top-right saucer lights, shoot it only if its kickout is controlled. It scores Base Bonus times Bonus X.",
+            "modeNotes": [
+              "Bonus Collect: Reaching 20,000 Base Bonus lights the saucer; collection resets Base Bonus to 1,000 but preserves Bonus X."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Rebuild Base Bonus from 1,000 and repeat the saucer collect on the same ball."
+          },
+          {
+            "text": "If the saucer return is unsafe, stop shooting it and protect the multiplied drain bonus."
+          }
+        ],
+        "fallback": {
+          "title": "Multiplier first, drain collect second",
+          "when": "Use this when the Bonus Collect saucer return is unsafe.",
+          "steps": [
+            {
+              "text": "Hit a yellow target whenever Advance Multiplier is lit."
+            },
+            {
+              "text": "Keep hitting one yellow-bank target while Advance Multiplier is lit until Bonus X reaches 4x or 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score drop targets, stars, Add Bonus lanes, and lit-spinner spins until Base Bonus approaches 29,000."
+            },
+            {
+              "text": "Do not shoot the Bonus Collect saucer."
+            },
+            {
+              "text": "Drain without tilting to collect Base Bonus times Bonus X."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Upper-bank bonus route",
+            "when": "Use this when the upper flippers are strong enough for controlled target work.",
+            "steps": [
+              {
+                "text": "Send the ball to the upper playfield."
+              },
+              {
+                "text": "Finish either the three white drops or the four red drops."
+              },
+              {
+                "text": "Use newly lit white drops for three bonus advances each."
+              },
+              {
+                "text": "Return to the yellow bank when Advance Multiplier lights."
+              }
+            ]
+          },
+          {
+            "title": "Lit-spinner route",
+            "when": "Use this while the yellow bank is dark.",
+            "steps": [
+              {
+                "text": "Alley pass through a lower inlane star."
+              },
+              {
+                "text": "Confirm that the spinner lights."
+              },
+              {
+                "text": "Shoot the spinner before a bumper or sling turns it off."
+              },
+              {
+                "text": "Return to the yellow bank when Advance Multiplier lights."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 4x or 5x Bonus Collects",
+          "steps": [
+            {
+              "text": "Hit one yellow-bank target whenever Advance Multiplier is lit until Bonus X reaches 4x or 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score drop targets, stars, Add Bonus lanes, and lit-spinner spins until Base Bonus reaches at least 20,000."
+            },
+            {
+              "text": "Collect at the top-right saucer when its return is safe."
+            },
+            {
+              "text": "Keep the 4x or 5x Bonus X and rebuild Base Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Repeat the collect and protect the final drain bonus."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Base Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Bonus Collect",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lit Spinner",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B-C-D targets",
+            "context": "A-B-C-D targets",
+            "label": "Lower target bank",
+            "description": "The lower-left A-B-C-D targets used for major progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-right saucer",
+            "context": "top-right saucer",
+            "label": "Upper saucer",
+            "description": "The top-right saucer whose eject must be tested before repeated shots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left spinner",
+            "context": "left spinner",
+            "label": "Left spinner",
+            "description": "The spinner lit by a lower inlane star.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Shatz pass",
+            "instruction": "Use a late flip through either lower inlane star to light the spinner and transfer the ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBKZ-ML8Oe",
+            "techniqueSlug": "shatz-pass"
+          },
+          {
+            "name": "A-lane plunge",
+            "instruction": "Aim the plunge for A when its bumper rebound can reach the upper playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBKZ-ML8Oe"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Move the cabinet from the right before the ball reaches the lower fork and keep the ball over the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBKZ-ML8Oe",
+            "techniqueSlug": "nudging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Genie copies often have weak flippers and a stiff spinner.",
+            "response": "Test all five flippers before you depend on an upper-playfield or saucer shot.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/genie"
+          },
+          {
+            "issue": "The lower-left A-B-C-D structure can feed a 50/50 drain.",
+            "response": "Nudge toward the center before the ball reaches the lower fork.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBKZ-ML8Oe"
+          },
+          {
+            "issue": "A ball below the top-right saucer can bounce away from its return rubber and drain through the center.",
+            "response": "Nudge before the ball reaches the rubber. A late correction has little effect on this wide cabinet.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBKZ-ML8Oe"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Genie ball count, carryover, and Extra Ball or Special conversion.",
+          "Test the yellow bank, bonus saucer, inlanes, 50-point lanes, and upper exits."
+        ],
+        "simpleOverview": "Genie is a multiplier-and-saucer bonus loop. Hit one yellow-bank target whenever Advance Multiplier is lit, build Base Bonus with controlled drops, stars, lanes, and spinner shots, then shoot the top-right saucer when its kickout is safe.",
+        "overview": "Genie is a multiplier-and-saucer bonus loop. Reach at least 3x, preferably 4x or 5x, build 20,000 or more base, then collect only when the saucer kickout is controlled. Keep the multiplier, rebuild the base from 1,000, and repeat.",
+        "machineSetup": [
+          "Confirm Gottlieb Genie ball count, carryover, and Extra Ball or Special conversion.",
+          "Test the yellow bank, bonus saucer, inlanes, 50-point lanes, and upper exits."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Hit one yellow-bank target whenever Advance Multiplier is lit. Build Base Bonus with controlled drops, stars, lanes, and spinner shots. At 20,000 or more, collect at the top-right saucer after its kickout proves safe; Bonus X stays active for the next build.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the ball count and instruction card. Test all five flippers and the top-right saucer return."
+          },
+          {
+            "text": "Plunge toward A when possible and use the first upper-playfield visit to learn the flipper feeds."
+          },
+          {
+            "text": "When Advance Multiplier is lit, hit one yellow-bank target. The hit adds 1x and turns the lamp off.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus X: A lit yellow target earns +1x through 5x; a mid-ball Bonus Collect keeps it, but a drain resets it."
+            ]
+          },
+          {
+            "text": "When the yellow bank is dark, use a lit spinner or return the ball to the upper playfield until the lamp toggles on.",
+            "details": [
+              "Lit Spinner: An inlane star lights it; each spin then scores 1,000 and adds one Base Bonus advance until a switch turns it off."
+            ]
+          },
+          {
+            "text": "Repeat the lit yellow target until Bonus X reaches at least 3x. Prefer 4x or 5x before a planned collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Score drop targets, stars, Add Bonus lanes, and lit-spinner spins until Base Bonus reaches 20,000 or more.",
+            "details": [
+              "Base Bonus: This unmultiplied value reaches 29,000; a drain or Bonus Collect spends it."
+            ]
+          },
+          {
+            "text": "When the top-right saucer lights, shoot it only if its kickout is controlled. It scores Base Bonus times Bonus X.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus Collect: Reaching 20,000 Base Bonus lights the saucer; collection resets Base Bonus to 1,000 but preserves Bonus X."
+            ]
+          },
+          {
+            "text": "Rebuild Base Bonus from 1,000 and repeat the saucer collect on the same ball."
+          },
+          {
+            "text": "If the saucer return is unsafe, stop shooting it and protect the multiplied drain bonus."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "A lit yellow target advances the bonus multiplier through 5x until the ball drains."
+          },
+          {
+            "name": "Base Bonus",
+            "summary": "Drops, stars, Add Bonus lanes, and lit-spinner spins build the value to a 29,000 maximum."
+          },
+          {
+            "name": "Bonus Collect",
+            "summary": "At 20,000 Base Bonus, the lit saucer scores Base Bonus times Bonus X and preserves the multiplier."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Multiplier first, drain collect second",
+          "when": "Use this when the Bonus Collect saucer return is unsafe.",
+          "steps": [
+            {
+              "text": "Hit a yellow target whenever Advance Multiplier is lit."
+            },
+            {
+              "text": "Keep hitting one yellow-bank target while Advance Multiplier is lit until Bonus X reaches 4x or 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score drop targets, stars, Add Bonus lanes, and lit-spinner spins until Base Bonus approaches 29,000."
+            },
+            {
+              "text": "Do not shoot the Bonus Collect saucer."
+            },
+            {
+              "text": "Drain without tilting to collect Base Bonus times Bonus X."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The lower-left A-B-C-D structure can feed a 50/50 drain.",
+          "text": "Nudge toward the center before the ball reaches the lower fork."
+        }
+      }
+    }
+  ]
+}

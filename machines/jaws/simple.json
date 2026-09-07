@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "id": "GLWll",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Save Beach Panic or Night Swim for Jaws Multiball 1, finish the encounter during the stack, then hunt Mako first and collect Dart before the second bounty.",
+        "quickInfo": [
+          {
+            "name": "Shark Encounters",
+            "summary": "Hit the boat or captive area to qualify an encounter, start it at the flashing wave ramp, left spinner, or center ramp, and finish its phases before the fin collect expires."
+          },
+          {
+            "name": "Jaws Multiball 1",
+            "summary": "Hit the chum bucket once, collect three moving red arrows, use a yellow feed to raise the fin, hit the fin to attach one barrel, then shoot a flashing yellow feed to start."
+          },
+          {
+            "name": "Machete",
+            "summary": "Complete the left bank to light Machete, then roll through its lit inlane; the stored value multiplies only the next scoring shot."
+          },
+          {
+            "name": "Mako Multiball",
+            "summary": "Finish the reel, ramp, pop, and chum tasks, then alternate green shots with shark hits to capture the bounty."
+          },
+          {
+            "name": "Cage Dive",
+            "summary": "Complete its chum and three-barrel qualification, then build captive-ball Jackpots before the fin Super Jackpot."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Take the level-one bumper skill shot for more ball-save time. Use that save to test the fin, reel, and mini-flipper feed."
+          },
+          {
+            "text": "Use a Quickshot to earn Gear. Choose Shark Cage when it is available, then collect it at the right ramp before working the fin.",
+            "modeNotes": [
+              "Quickshot: Roll through the lane above the mini-flipper. Shoot the harpoon lane. Hit the fin before time expires.",
+              "Each rollover and completed Quickshot raises its multiplier to 7x. A miss resets the multiplier.",
+              "Gear: A completed Quickshot lights the right ramp. Use the right flipper to select a perk. The ramp stores it.",
+              "Shark Cage: Each fin hit starts a short ball save. This protects encounter fin collects and Jaws Multiball qualification.",
+              "Most Gear is spent automatically when its protection or boost triggers. Selling all six qualifies Great White."
+            ]
+          },
+          {
+            "text": "Hit the boat or center captive area to light an encounter. Start Beach Panic at the wave ramp or Night Swim at the left spinner.",
+            "kinds": [
+              "mode"
+            ],
+            "modeNotes": [
+              "Encounter qualification: Hit the boat or center captive area once, plus one extra hit for each encounter already played.",
+              "Beach Panic: Reach eight blue-shot progress. A rapid flash counts twice. Shoot the wave ramp. Then hit the fin for the full collect.",
+              "Night Swim: Score four blue progress. Make the lit transition shot. Score three cyan or roving shots. Shoot the left orbit. Then hit the fin.",
+              "If the fin timer expires, the boat or shark offers a smaller backup collect. A backup does not raise Machete."
+            ]
+          },
+          {
+            "text": "While the encounter runs, hit the chum bucket once and collect three moving red arrows. Use the harpoon lane, left orbit, or center ramp to raise the fin; hit it to attach one barrel, then shoot a flashing feed to start Jaws Multiball 1.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "modeNotes": [
+              "Chum line: Hit the chum bucket once. Collect three moving red arrows. The bucket also advances this first line.",
+              "Barrel: Shoot the harpoon lane, left orbit, or center ramp to raise the fin. Hit the fin to attach one barrel.",
+              "Start the multiball at the harpoon lane, left orbit, center ramp, or right ramp."
+            ]
+          },
+          {
+            "text": "During the stack, finish the encounter first. Then make three red awards and collect the yellow-and-red multiball jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "modeNotes": [
+              "Jaws Multiball 1: Extra red awards raise the next jackpot to 3x. Five jackpots complete the multiball.",
+              "Three chum-bucket hits add one ball. The multiball ends when one ball remains."
+            ]
+          },
+          {
+            "text": "Complete the left standup bank to light Machete at an inlane. Roll through the lit inlane, then use the one-shot multiplier on the encounter fin collect, a Beach Closed collect, or the final target in a Feeding Frenzy set.",
+            "modeNotes": [
+              "Machete: Complete the left bank while Light Machete is active. Roll through the lit inlane or use its ramp feed.",
+              "The next scored shot spends the stored multiplier. It starts at 2x. Each full encounter adds 1x permanently."
+            ]
+          },
+          {
+            "text": "Build Start Bounty with fishing-reel spins or right-ramp shots, then shoot the right ramp and select Mako. Complete its four tasks during single-ball play, then shoot the reel to start Mako Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "modeNotes": [
+              "Mako: In single-ball play, collect 80 reel spins, three ramps, one pop hit, and two chum-bucket hits.",
+              "Shoot the reel to start two-ball Mako Multiball. Shoot a green shot, then hit the shark. Repeat before its health regenerates.",
+              "Use the reel or left orbit for the final green shot. Then hit the shark. A successful capture starts Celebration Multiball.",
+              "A failed attempt keeps progress. Its retry uses half the task count, but gives a smaller award and no bonus Gear."
+            ]
+          },
+          {
+            "text": "After catching Mako, light Gear, choose Dart with the right flipper, and collect it at the right ramp before starting the second bounty.",
+            "modeNotes": [
+              "Dart: Doubles qualification progress for the next bounty and adds 1x to its final award."
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Early single-ball Scars",
+          "when": "Choose Scars when you want to prepare the first Jaws Multiball during single-ball play.",
+          "steps": [
+            {
+              "text": "Hit the center captive ball (or the shark toy on Premium or LE) to light the encounters, then shoot the center ramp to start Scars.",
+              "kinds": [
+                "mode"
+              ],
+              "modeNotes": [
+                "Scars: Pro lights two required shots per phase. Premium and LE light three shots and require any two."
+              ]
+            },
+            {
+              "text": "In phases 1 and 2, shoot the major arrow currently flashing, then return to the center ramp. In phase 3, hit a left-bank target, then hit the fin for the encounter jackpot.",
+              "kinds": [
+                "mode"
+              ],
+              "modeNotes": [
+                "The fin collect scores 35 percent of the mode total. The backup collect scores 15 percent."
+              ]
+            },
+            {
+              "text": "While Scars runs, hit the chum bucket once and collect three moving red arrows. After Scars, use the harpoon lane, left orbit, or center ramp to raise the fin; hit it to attach one barrel, then shoot a flashing feed to start Jaws Multiball 1.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ],
+              "modeNotes": [
+                "The flashing feed can be the harpoon lane, left orbit, center ramp, or right ramp."
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Quickshot line",
+            "when": "Use this plan when the mini-flipper lane and fin target are reliable.",
+            "steps": [
+              {
+                "text": "Roll through the mini-flipper lane. Shoot the harpoon lane. Hit the fin before time expires."
+              },
+              {
+                "text": "Repeat without a miss to raise the Quickshot multiplier to 7x."
+              },
+              {
+                "text": "Collect the selected Gear at the right ramp."
+              },
+              {
+                "text": "Use a Machete on a large Quickshot or final award."
+              }
+            ]
+          },
+          {
+            "title": "Raft Attack",
+            "when": "Use this encounter when both ramps and the fin are reliable.",
+            "steps": [
+              {
+                "text": "Start Raft Attack at the right ramp. Shoot either ramp to raise the fin. Hit the fin for an award.",
+                "kinds": [
+                  "mode"
+                ],
+                "modeNotes": [
+                  "Raft Attack: Optional listed combos before the fin multiply its award. Collect three fin awards.",
+                  "Hit the fin once more for the encounter jackpot. It pays 30 percent of the mode total. The backup pays 15 percent."
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Smile, You Son of A…",
+          "steps": [
+            {
+              "text": "For the second Jaws Multiball, hit the chum bucket twice, complete its chum line, complete Ready Barrel, attach two barrels, and shoot a lit feed shot to start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "For Cage Dive, hit the chum bucket three times, complete its chum line, complete Ready Barrel, attach three barrels, and shoot a lit feed shot to start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "When no other mode is running, shoot the lit center ramp to start Smile.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Shark Encounter boosts",
+            "pro": "Shoot the captive ball or bash boat one extra time to light boosts. During an encounter, keep using that shot to advance them.",
+            "premium": "Shoot the raised shark toy to light boosts. During an encounter, one, two, then three shark hits advance the three boost levels.",
+            "sourceUrl": "https://tiltforums.com/t/jaws-rulesheet/8781"
+          },
+          {
+            "feature": "Scars phase shots",
+            "pro": "Two shots are lit in each phase; make both to advance.",
+            "premium": "Three shots are lit in each phase; make any two to advance.",
+            "sourceUrl": "https://tiltforums.com/t/jaws-rulesheet/8781"
+          },
+          {
+            "feature": "Orca Wheel awards",
+            "pro": "The upper-playfield wheel is not present. Shark Ramps can appear as a random Quint's Shack award.",
+            "premium": "Lookout Tower and steering-wheel progress light five selectable Orca Wheel awards, followed by Say Ah! after the full set.",
+            "sourceUrl": "https://tiltforums.com/t/jaws-rulesheet/8781"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Beach Panic",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Night Swim",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Scars",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Raft Attack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jaws Multiball 1",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Jaws Multiball 2",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Mako Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Celebration Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Cage Dive",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Smile",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "captive ball",
+            "label": "captive ball",
+            "description": "Shoot the captive ball or bash boat one extra time to light boosts.",
+            "xPercent": 40.29,
+            "yPercent": 36.61,
+            "widthPercent": 12,
+            "heightPercent": 8,
+            "precision": "area"
+          },
+          {
+            "term": "center ramp",
+            "label": "center ramp",
+            "description": "Use the harpoon lane, left orbit, or center ramp to raise the fin; hit it to attach one barrel, then shoot a flashing feed to start Jaws Multiball 1.",
+            "xPercent": 46.52,
+            "yPercent": 31.35,
+            "widthPercent": 6.97,
+            "heightPercent": 15.45,
+            "precision": "area"
+          },
+          {
+            "term": "chum bucket",
+            "label": "Chum bucket target",
+            "description": "The chum bucket sits in the left-center playfield and advances chum lines.",
+            "xPercent": 40.71,
+            "yPercent": 36.65,
+            "widthPercent": 6.31,
+            "heightPercent": 5.26,
+            "precision": "area"
+          },
+          {
+            "term": "fin",
+            "label": "Shark fin target",
+            "description": "The fin rises from the center-right playfield and completes many encounter and bounty awards.",
+            "xPercent": 64.56,
+            "yPercent": 44.59,
+            "widthPercent": 26.97,
+            "heightPercent": 7.84,
+            "precision": "area"
+          },
+          {
+            "term": "harpoon lane",
+            "label": "Harpoon lane",
+            "description": "The narrow harpoon lane is beside the mini-flipper in the upper-right area.",
+            "xPercent": 81.53,
+            "yPercent": 57.54,
+            "widthPercent": 17.09,
+            "heightPercent": 15.82,
+            "precision": "area"
+          },
+          {
+            "term": "left bank",
+            "label": "left bank",
+            "description": "Machete: Complete the left bank while Light Machete is active.",
+            "xPercent": 22.7,
+            "yPercent": 56.06,
+            "widthPercent": 9.96,
+            "heightPercent": 9.28,
+            "precision": "area"
+          },
+          {
+            "term": "left orbit",
+            "label": "left orbit",
+            "description": "Shoot the left orbit.",
+            "xPercent": 23.78,
+            "yPercent": 35.07,
+            "widthPercent": 9.79,
+            "heightPercent": 24.34,
+            "precision": "area"
+          },
+          {
+            "term": "left outlane",
+            "label": "left outlane",
+            "description": "Wait until the ball enters the left outlane.",
+            "xPercent": 13.57,
+            "yPercent": 77.44,
+            "widthPercent": 8.88,
+            "heightPercent": 13.36,
+            "precision": "area"
+          },
+          {
+            "term": "left spinner",
+            "label": "left spinner",
+            "description": "Start Beach Panic at the wave ramp or Night Swim at the left spinner.",
+            "xPercent": 22.49,
+            "yPercent": 35.94,
+            "widthPercent": 11.2,
+            "heightPercent": 7.71,
+            "precision": "area"
+          },
+          {
+            "term": "left standup",
+            "label": "left standup",
+            "description": "Complete the left standup bank to light Machete at an inlane.",
+            "xPercent": 23.16,
+            "yPercent": 56.29,
+            "widthPercent": 10.87,
+            "heightPercent": 10.36,
+            "precision": "area"
+          },
+          {
+            "term": "reel",
+            "label": "Fishing reel spinner",
+            "description": "The fishing reel is the lower-center spinner and Mako start shot.",
+            "xPercent": 73.77,
+            "yPercent": 26.17,
+            "widthPercent": 14.19,
+            "heightPercent": 12.04,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp and Gear collect",
+            "description": "The right ramp collects Gear and starts selected bounties.",
+            "xPercent": 83.85,
+            "yPercent": 24.25,
+            "widthPercent": 12.44,
+            "heightPercent": 24.64,
+            "precision": "area"
+          },
+          {
+            "term": "right-outlane",
+            "label": "right-outlane",
+            "description": "Give one small nudge while the ball is above the right-outlane post.",
+            "xPercent": 81.9,
+            "yPercent": 75.4,
+            "widthPercent": 9.87,
+            "heightPercent": 11.73,
+            "precision": "area"
+          },
+          {
+            "term": "wave ramp",
+            "label": "Wave ramp",
+            "description": "The wave ramp is the major left-side ramp used to start and finish Beach Panic.",
+            "xPercent": 34.07,
+            "yPercent": 34.41,
+            "widthPercent": 8.13,
+            "heightPercent": 12.39,
+            "precision": "area"
+          },
+          {
+            "term": "wave ramp",
+            "label": "Wave ramp",
+            "description": "The wave ramp is the major left-side ramp used to start and finish Beach Panic.",
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 12,
+            "heightPercent": 8,
+            "precision": "area"
+          },
+          {
+            "term": "wave ramp",
+            "label": "Wave ramp",
+            "description": "The wave ramp is the major left-side ramp used to start and finish Beach Panic.",
+            "xPercent": 61.44,
+            "yPercent": 13.67,
+            "widthPercent": 17.43,
+            "heightPercent": 11.22,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Stern code 1.02.0 and the installed Pro, Premium, or LE edition before relying on exact rules.",
+          "Check tournament settings for ball saves, life-ring timing, encounter requirements, and any disabled extra balls.",
+          "Test the fin, mini-flipper, reel, right-ramp return, and both outlane saves before choosing the main route."
+        ],
+        "techniques": [
+          {
+            "name": "Fishing-reel timing shot",
+            "instruction": "Hold the ball on the left flipper. Flip when the ball overlaps the left edge of the shark image between the flippers.",
+            "sourceUrl": "https://www.kineticist.com/news/jaws-pinball-tutorial"
+          },
+          {
+            "name": "Mini-flipper trap and flip-lock",
+            "instruction": "Trap a ball on the mini-flipper. Press the green action button once. Holding the button releases the ball early.",
+            "sourceUrl": "https://youtu.be/fB9Yobd-BuY?t=249"
+          },
+          {
+            "name": "Late life-ring press",
+            "instruction": "Wait until the ball enters the left outlane. Press the action button while it flashes orange.",
+            "sourceUrl": "https://youtu.be/fB9Yobd-BuY?t=1078"
+          },
+          {
+            "name": "Right-outlane post nudge",
+            "instruction": "Give one small nudge while the ball is above the right-outlane post. The post can return the ball to play on some copies.",
+            "sourceUrl": "https://www.kineticist.com/news/jaws-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A missed mini-flipper shot can feed the right outlane.",
+            "response": "Watch the first return. Stop using the mini-flipper lane when repeated misses feed the outlane.",
+            "sourceUrl": "https://www.kineticist.com/news/jaws-pinball-tutorial"
+          },
+          {
+            "issue": "The life ring must be used near the left outlane.",
+            "response": "Wait until the ball enters the left outlane. Press once while the action button flashes orange.",
+            "sourceUrl": "https://youtu.be/fB9Yobd-BuY?t=1078"
+          }
+        ],
+        "overview": "Jaws lets a running Shark Encounter continue into Jaws Multiball, while Bounty Hunts advance on a separate track. Hit the center captive area or raised boat once for the first Encounter, plus one hit per Encounter played; start Beach Panic at the wave ramp, Night Swim at the left spinner, or Scars at the center ramp. Start Beach Panic or Night Swim before Jaws Multiball; hunt Mako and collect Dart before bounty two.",
+        "simpleOverview": "Jaws lights Shark Encounters after hits to the center captive area or raised boat (one hit for the first Encounter, then one additional hit for each Encounter played). Start Beach Panic at the wave ramp, Night Swim at the left spinner, or Scars at the center ramp. Start Beach Panic or Night Swim before Jaws Multiball because a running Encounter continues into that Multiball.",
+        "machineSetup": [
+          "Confirm Stern code 1.02.0 and the installed Pro, Premium, or LE edition before relying on exact rules.",
+          "Check tournament settings for ball saves, life-ring timing, encounter requirements, and any disabled extra balls.",
+          "Test the fin, mini-flipper, reel, right-ramp return, and both outlane saves before choosing the main route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the wave ramp or left spinner for an encounter, the chum bucket and red arrows for Jaws Multiball, or the reel for Mako.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start an encounter",
+            "text": "Hit the boat or center captive area to light an encounter. Shoot the wave ramp to start Beach Panic, or shoot the left spinner to start Night Swim.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Beach Panic or Night Swim",
+              "reason": "Choose the encounter whose start shot and lit shots are safer on the current machine.",
+              "play": "For Beach Panic, shoot eight lit blue shots, shoot the wave ramp, then hit the fin. For Night Swim, shoot four lit blue shots, make the lit transition shot, shoot three lit cyan shots, shoot the left orbit, then hit the fin. While the encounter runs, use the chum-and-red-arrow sequence below to begin Jaws Multiball so its extra balls protect the mode."
+            }
+          },
+          {
+            "title": "Start Jaws Multiball 1",
+            "text": "Hit the chum bucket once, then shoot three moving red-arrow shots. Shoot a flashing yellow feed to raise the fin, hit the fin to attach one barrel, then shoot a flashing yellow feed to start Jaws Multiball 1.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Shark Encounters",
+            "summary": "Hit the boat or captive area to qualify an encounter, start it at the flashing wave ramp, left spinner, or center ramp, and finish its phases before the fin collect expires."
+          },
+          {
+            "name": "Jaws Multiball 1",
+            "summary": "Hit the chum bucket once, collect three moving red arrows, use a yellow feed to raise the fin, hit the fin to attach one barrel, then shoot a flashing yellow feed to start."
+          },
+          {
+            "name": "Machete",
+            "summary": "Complete the left bank to light Machete, then roll through its lit inlane; the stored value multiplies only the next scoring shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Mako Multiball",
+          "when": "Use this when the fishing reel and right ramp are controlled.",
+          "steps": [
+            {
+              "text": "Build Start Bounty with fishing-reel spins or right-ramp shots, then shoot the right ramp and select Mako. Complete its four displayed tasks, then shoot the reel to start Mako Multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

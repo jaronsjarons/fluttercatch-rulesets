@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qX5",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Deuce and complete it for 2x playfield scoring for the rest of the ball. Build STAR during the Song, start Love Gun after Deuce is complete, then rebuild Love Gun while 2x remains active.",
+        "steps": [
+          {
+            "text": "Choose Deuce before the first plunge. Shoot the lit left orbit or STAR, then follow the two lit shots as they move to the right.",
+            "modeNotes": [
+              "Deuce: After the lit pair crosses the playfield, the two arrows rove back and forth. Loop the center ramp until the mode ends.",
+              "KISS has no normal skill shot. A slow plunge can hang in the left orbit and register Deuce's first left-orbit shot on some copies."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Deuce to start 2x playfield scoring for the rest of the ball.",
+            "modeNotes": [
+              "Mode multiplier: The first completed mode starts 2x playfield for the rest of the ball. Later completions on the same ball raise it to 3x, 5x, and 10x.",
+              "Deuce progress carries between balls, but the playfield multiplier lasts only for the ball on which the mode is completed."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "While Deuce runs, hit STAR until the Love Gun meter is full when its return is controlled. Complete Deuce before shooting the lit right ramp to start Love Gun Multiball.",
+            "modeNotes": [
+              "A Pro can also start Love Gun at the STAR saucer. On Premium and LE, use the right ramp.",
+              "The Pro starts with two balls. Premium and LE hold one ball and continue as single-ball play. Shoot STAR before the hurry-up ends to set the jackpot value and launch a third ball.",
+              "A missed hurry-up gives the minimum jackpot and two-ball play.",
+              "A running song can continue into Love Gun. A new song cannot start during multiball. This route completes Deuce first so Love Gun scores under 2x playfield."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Love Gun, collect a Jackpot, then repeat that same shot for its Double Jackpot.",
+            "modeNotes": [
+              "The repeated Double Jackpot relights the other Jackpot shots.",
+              "Collect every major jackpot. Shoot the right ramp for the triple jackpot. Then shoot STAR for the 50,000,000 Super Jackpot.",
+              "Love Gun is easier to start and is useful for finishing songs. Demon scores more on average, while a completed Love Gun has the higher ceiling.",
+              "Love Gun and Demon Multiball cannot run together."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Love Gun ends, hit STAR until Love Gun is ready again, then shoot the lit right ramp to restart it while 2x playfield scoring remains active.",
+            "modeNotes": [
+              "Start another song at the Backstage scoop before Love Gun only when Deuce is complete and the extra mode will not delay the repeat start.",
+              "Demon Multiball remains a separate scoring route. Do not interrupt a controlled Love Gun repeat to force the Demon or Light Lock targets."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "overview": "KISS uses untimed Songs to supply its ball-long playfield multiplier, and Love Gun's Jackpot ladder scores under that multiplier after the Song is complete. Choose Deuce before plunging, shoot its lit left orbit or STAR, follow the two lit shots as they move right, then loop the center ramp when the arrows begin to rove. Build the STAR meter while Deuce runs, complete the Song for 2x playfield scoring, then shoot the lit right ramp to start Love Gun Multiball (on Pro, the STAR saucer can also start it). Repeat each Jackpot shot for its Double Jackpot. After Multiball, rebuild Love Gun while 2x remains active; start another Song at the Backstage scoop only when it will not delay that repeat.",
+        "simpleOverview": "KISS begins each ball with a selected untimed Song, and each completed Song raises playfield scoring for the rest of that ball. Choose Deuce before plunging, shoot the lit left orbit or STAR, follow the two lit shots as they move right, then loop the center ramp when the arrows begin to rove. Completing Deuce starts 2x playfield scoring. Build the STAR meter while Deuce runs, finish the Song, then shoot the lit right ramp to start Love Gun Multiball (on Pro, the STAR saucer can also start it). During Multiball, repeat each Jackpot shot immediately for its Double Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Song modes",
+            "summary": "Choose a song before plunge, finish its lit sequence, and start later modes at the Backstage scoop when no mode runs."
+          },
+          {
+            "name": "Mode Playfield X",
+            "summary": "The first completed mode starts 2x playfield scoring for the ball; later completions raise it to 3x, 5x, then 10x."
+          },
+          {
+            "name": "Love Gun Multiball",
+            "summary": "Fill STAR, start at the right ramp, repeat each Jackpot shot for its Double, then collect the right-ramp Triple and STAR Super."
+          },
+          {
+            "name": "Demon Multiball",
+            "summary": "Spell DEMON or complete Light Lock, lock three balls, clear two Jackpots per major shot, then collect the roving Double and Demon Double Super."
+          },
+          {
+            "name": "Backstage Pass",
+            "summary": "Complete KISS and ARMY to light the scoop. During multiball, collect it after ball save for an add-a-ball; during ball save it scores 2 million and relights."
+          },
+          {
+            "name": "Permanent shot multiplier",
+            "summary": "KISS lights a center-ramp hurry-up and ARMY lights a left-orbit hurry-up. Collect both; the next major shot you hit receives permanent 2x scoring. Prefer the center ramp."
+          }
+        ],
+        "buildsToward": {
+          "title": "Heaven's On Fire",
+          "steps": [
+            {
+              "text": "Hit every KISS and ARMY target to fill the first two rows of the 16-insert grid."
+            },
+            {
+              "text": "Roll through the far-left inlane to light bumper advances, then shoot the right orbit to apply the lit advances to the four bumpers."
+            },
+            {
+              "text": "When Instrument Power On is lit, shoot the right ramp. Collect the four lit instruments at the left orbit, STAR, center ramp, and Demon."
+            },
+            {
+              "text": "Complete all 16 grid inserts twice on default settings; some operators require one completion. Then shoot the Backstage scoop to start Heaven's On Fire.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Love Gun opening",
+            "pro": "The right ramp or STAR saucer can start it. The feature begins as two-ball multiball.",
+            "premium": "The right ramp starts it by holding one ball while single-ball play continues. Shoot STAR during the hurry-up to launch the third ball.",
+            "sourceUrl": "https://tiltforums.com/t/kiss-wiki-rulesheet/732"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Deuce",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Lick It Up",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Shout It Out Loud",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Love Gun Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Demon Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Heaven's On Fire",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Kiss Army",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Rock City",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "2x playfield scoring",
+            "tone": "indigo",
+            "kind": "item",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "The left orbit can register the slow-plunge mode shot and collects the ARMY hurry-up.",
+            "xPercent": 18,
+            "yPercent": 36,
+            "precision": "area"
+          },
+          {
+            "term": "center ramp",
+            "label": "Center combo ramp",
+            "description": "The center ramp loops back for mode progress and lights 2x on the next left-flipper shot.",
+            "xPercent": 49,
+            "yPercent": 34,
+            "precision": "area"
+          },
+          {
+            "term": "Backstage scoop",
+            "label": "Backstage Pass scoop",
+            "description": "The left-center scoop starts later song modes and collects Backstage Pass.",
+            "xPercent": 31,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "STAR",
+            "label": "STAR mechanism",
+            "description": "The STAR target and mechanism build and collect Love Gun awards.",
+            "xPercent": 69,
+            "yPercent": 33,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "label": "Love Gun right ramp",
+            "description": "The right ramp starts Love Gun and collects its Triple Jackpot.",
+            "xPercent": 80,
+            "yPercent": 37,
+            "precision": "area"
+          },
+          {
+            "term": "KISS bank",
+            "label": "KISS target bank",
+            "description": "The KISS bank helps build Backstage Pass and the permanent shot multiplier.",
+            "xPercent": 30,
+            "yPercent": 57,
+            "precision": "area"
+          },
+          {
+            "term": "ARMY bank",
+            "label": "ARMY target bank",
+            "description": "The ARMY bank completes the second Backstage Pass requirement.",
+            "xPercent": 70,
+            "yPercent": 57,
+            "precision": "area"
+          },
+          {
+            "term": "Demon",
+            "label": "Demon disc and lock",
+            "description": "The Demon area collects locks, jackpots, and the Double Super Jackpot.",
+            "xPercent": 50,
+            "yPercent": 44,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Check the Love Gun opening and KISS target hardware for the installed edition.",
+          "Check song-mode start, mode Playfield X, grid completion, lock difficulty, Extra Ball conversion, ball saves, and competition settings.",
+          "Test the scoop, STAR, Demon, right-ramp backhand, center-ramp return, both orbits, target banks, pops, and outlane feeds."
+        ],
+        "techniques": [
+          {
+            "name": "Slow-plunge orbit",
+            "instruction": "Try a slow plunge. If the ball hangs in the left orbit, it can register the left-orbit mode shot.",
+            "sourceUrl": "https://www.kineticist.com/news/modern-kiss-pinball-tutorial"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the Backstage scoop or right ramp when the local copy accepts the same-side shot cleanly.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.youtube.com/watch?v=W-VZAdtlo80&t=444s"
+          },
+          {
+            "name": "Center-ramp combo",
+            "instruction": "Shoot the center ramp first. Then make the needed left-flipper shot for 2x combo scoring.",
+            "sourceUrl": "https://www.kineticist.com/news/modern-kiss-pinball-tutorial"
+          },
+          {
+            "name": "Ski pass",
+            "instruction": "On a clean side return, raise the receiving flipper late to transfer the ball across. Use this only after confirming the local KISS copy produces the demonstrated return.",
+            "techniqueSlug": "ski-pass",
+            "sourceUrl": "https://www.youtube.com/watch?v=kiFTwfAecp8&t=1021s"
+          },
+          {
+            "name": "Micro-flip settle",
+            "instruction": "Use a very small flipper pulse to move or settle an unsettled return without committing to a full shot. The useful pulse depends on flipper strength and pitch.",
+            "techniqueSlug": "micro-flip",
+            "sourceUrl": "https://www.youtube.com/watch?v=kiFTwfAecp8&t=1949s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The STAR kickers can send the ball in an unpredictable direction.",
+            "response": "Test STAR during ball save. Use Love Gun for mode progress unless its return becomes controlled.",
+            "sourceUrl": "https://www.youtube.com/watch?v=W-VZAdtlo80&t=342s"
+          },
+          {
+            "issue": "The KISS and ARMY banks can send the ball toward the opposite outlane.",
+            "response": "Use the inlane-lit one-shot bank completion. Make direct bank shots during multiball when possible.",
+            "sourceUrl": "https://www.kineticist.com/news/modern-kiss-pinball-tutorial"
+          },
+          {
+            "issue": "The Demon disc and scoop can reject the ball toward the center.",
+            "response": "Use natural Demon hits. Do not force the Light Lock targets when the return is not known.",
+            "sourceUrl": "https://www.youtube.com/watch?v=W-VZAdtlo80&t=935s"
+          },
+          {
+            "issue": "The right ramp is often the hardest major shot.",
+            "response": "Test the backhand. If it fails, use the mode-only fallback instead of forcing Love Gun or instruments.",
+            "sourceUrl": "https://www.kineticist.com/news/modern-kiss-pinball-tutorial"
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At IFPA 20, Viggo Löwgren and Jason Zahler both chose Deuce, used its ball-long 2x playfield scoring, and repeatedly returned to Love Gun Multiball."
+          ]
+        },
+        "machineSetup": [
+          "Check the Love Gun opening and KISS target hardware for the installed edition.",
+          "Check song-mode start, mode Playfield X, grid completion, lock difficulty, Extra Ball conversion, ball saves, and competition settings.",
+          "Test the scoop, STAR, Demon, right-ramp backhand, center-ramp return, both orbits, target banks, pops, and outlane feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use Deuce for a song, STAR and the right ramp for Love Gun Multiball, or the Demon shot for Demon Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Deuce",
+            "text": "Choose Deuce before the plunge. Shoot the lit left orbit or STAR, follow the lit pair as it moves right, then loop the center ramp when the arrows begin roving.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Deuce",
+              "reason": "Choose it for a visible left-to-right lit-shot sequence that finishes on the center ramp.",
+              "play": "Shoot the lit left orbit or STAR, follow the lit pair as it moves right, then loop the center ramp when the arrows begin roving."
+            }
+          },
+          {
+            "title": "Start Love Gun Multiball",
+            "text": "While the song runs, hit STAR until Love Gun is ready, then shoot the lit right ramp. Prioritize the song's lit shots; after any Jackpot, repeat the same shot for its Double Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Song modes",
+            "summary": "Choose a song before plunge, finish its lit sequence, and start later modes at the Backstage scoop when no mode runs."
+          },
+          {
+            "name": "Mode Playfield X",
+            "summary": "The first completed mode starts 2x playfield scoring for the ball; later completions raise it to 3x, 5x, then 10x."
+          },
+          {
+            "name": "Love Gun Multiball",
+            "summary": "Fill STAR, start at the right ramp, repeat each Jackpot shot for its Double, then collect the right-ramp Triple and STAR Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Demon Multiball",
+          "when": "Use this when the Demon and Light Lock targets are safer than STAR and the right ramp.",
+          "steps": [
+            {
+              "text": "Shoot the Demon to spell D-E-M-O-N, or hit both Light Lock targets whenever Lock is unlit. Shoot the Demon each time Lock is lit; the third lock starts Demon Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot each of the six major shots twice. The sixth and twelfth Jackpots are Supers; then shoot the roving Double Jackpot and the Demon Double Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "The KISS and ARMY banks can send the ball toward the opposite outlane.",
+          "text": "Use the inlane-lit one-shot bank completion. Make direct bank shots during multiball when possible."
+        }
+      }
+    }
+  ]
+}

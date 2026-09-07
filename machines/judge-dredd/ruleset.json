@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoZw",
+  "title": "Judge Dredd",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Judge Dredd rulesheet",
+      "url": "https://www.pinball.org/rules/judgedredd.html"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA Judge Dredd gameplay",
+        "url": "https://pinballvideos.com/v/195"
+      },
+      {
+        "label": "Preston Moncla at Space City Open 2018",
+        "url": "https://pinballvideos.com/v/2199/9843"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Make the loop skill shot, spell JUDGE, use the left ramp to build Multiball, alternate the left ramp and subway for four rising Jackpots during Multiball, then complete the set to reach Ultimate Challenge.",
+      "quickInfo": [
+        {
+          "name": "Multiball",
+          "summary": "Spell JUDGE, lock at the left ramp, and repeat the lock route to start Multiball."
+        },
+        {
+          "name": "Four Jackpots",
+          "summary": "Alternate the left ramp and subway to collect Mortis, Fire, Fear, and Death Jackpots."
+        },
+        {
+          "name": "Ultimate Challenge",
+          "summary": "The Death Jackpot replenishes the balls and lights all Crime Scenes for high-value shots."
+        },
+        {
+          "name": "Chain Modes",
+          "summary": "The left ramp and Sniper Tower alternate as mode starts during single-ball play."
+        },
+        {
+          "name": "Chain Links and Multiball",
+          "summary": "Starting regular Multiball normally stops the active Chain Link, then restarts it after Multiball with its points preserved. Certain two-stage Chain Links can remain active because of a software bug; do not depend on that exception."
+        },
+        {
+          "name": "Ramp value",
+          "summary": "Unlit ramp shots start at 500,000 and increase during the current ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Let the plunge circle the large loop. Use the upper-left flipper to shoot the loop again for the skill shot."
+        },
+        {
+          "text": "Use the opening ball save to test the JUDGE bank, both ramps, and the Deadworld subway return."
+        },
+        {
+          "text": "Complete the JUDGE drop targets to light each lock. After collecting two locks, leave the third lock lit until the left-ramp feed is controlled."
+        },
+        {
+          "text": "Shoot the left ramp for each lock. The third lock starts four-ball Multiball on release software.",
+          "modeNotes": [
+            "Deadworld Multiball: Release behavior depends on the installed Deadworld mechanism and ROM settings."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, use JUDGE hits to build Jackpot value. Shoot the left ramp to light the next Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the subway behind the Deadworld target to collect the Jackpot. Repeat the ramp and subway cycle four times.",
+          "modeNotes": [
+            "Jackpot ladder: The four awards are Mortis, Fire, Fear, and Death."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the Death Jackpot, use the replenished balls to shoot the lit Crime Scenes.",
+          "modeNotes": [
+            "On release L-7, Ultimate Challenge restores lost balls and lights the Crime Scene shots for 10,000,000 each."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Between Multiballs, start a safe Chain Link at the flashing left ramp or Sniper Tower. Prefer Manhunt, Blackout, or Sniper Tower when their shots are controlled.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Ramps and Crime Scenes",
+        "when": "Use this plan when the JUDGE bank produces dangerous rebounds.",
+        "steps": [
+          {
+            "text": "Repeat the safer ramp. Its unlit value increases during the current ball."
+          },
+          {
+            "text": "Collect a lit Crime Scene when its shot has a controlled return."
+          },
+          {
+            "text": "Start a Chain Link only when its flashing start shot is safe.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Return to the JUDGE bank only when one lock will justify the rebound risk."
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Death Jackpot and six-ball Ultimate Challenge",
+        "steps": [
+          {
+            "text": "Complete all four Multiball Jackpots to start the immediate Ultimate Challenge.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Play all nine Chain Links to qualify the full six-ball Ultimate Challenge.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "On release L-7, shoot the lit Crime Scenes for 10,000,000 each during Ultimate Challenge.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Deadworld Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Four Jackpots",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Ultimate Challenge",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Chain Links",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Manhunt",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Blackout",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Sniper Tower",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Ramp-to-subway rhythm",
+          "instruction": "During Multiball, use the left ramp to light a Jackpot. Then use the subway to collect it.",
+          "sourceUrl": "https://www.pinball.org/rules/judgedredd.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The JUDGE drop bank can send the ball toward the center or the slings.",
+          "response": "Work the bank under ball save or Multiball protection. Stop when the next lock is not close.",
+          "sourceUrl": "https://www.pinball.org/rules/judgedredd.html"
+        },
+        {
+          "issue": "Deadworld lock and release behavior differs between mechanisms, ROMs, and operator settings.",
+          "response": "Watch the first release. Use the actual feed instead of assuming prototype or release-ROM behavior.",
+          "sourceUrl": "https://www.pinball.org/rules/judgedredd.html"
+        },
+        {
+          "issue": "A lit lock prevents the left ramp from starting a Chain Link, and ball time in the Deadworld mechanism does not pause an active Chain Link timer.",
+          "response": "Start the Chain Link before you light the lock, or use the Sniper Tower start. Do not spend mode time waiting on a slow Deadworld return.",
+          "sourceUrl": "https://www.pinball.org/rules/judgedredd.html"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

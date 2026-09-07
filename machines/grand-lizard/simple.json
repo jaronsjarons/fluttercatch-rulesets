@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "id": "G4XPZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Collect high Flash Bank values, backhand two unqualified locks, then start Three-Ball Multiball and score the bank, spinner, and lock passage with 3x playfield scoring.",
+        "quickInfo": [
+          {
+            "name": "Flash Bank",
+            "summary": "The first target stops a moving value, and a timed four-bank completion collects it."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "Lock two balls without qualification, then hit the release target or lock a third ball to begin 3x playfield scoring."
+          },
+          {
+            "name": "Two-Ball Multiball",
+            "summary": "Lock one ball and hit the release target to begin 2x playfield scoring."
+          },
+          {
+            "name": "Magna-Save",
+            "summary": "A separate cabinet button spends stored magnet time to push a ball away from an outlane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge medium-soft. Deflect the upper-right feed to the upper-left flipper and cradle when this copy permits it."
+          },
+          {
+            "text": "Wait for an 80,000 or 100,000 Flash Bank value. Hit one target to stop it, then complete all four targets before timeout.",
+            "modeNotes": [
+              "Flash Bank: The first target stops the moving value and starts its timer; bank completion collects the value, while a sweep scores it twice."
+            ]
+          },
+          {
+            "text": "Repeat the Flash Bank while the ball stays on the upper playfield. A Cave shot can raise the stopped value but uses the same timer."
+          },
+          {
+            "text": "On the lower playfield, cradle on the left flipper and backhand the Ball Lock. No qualification is necessary.",
+            "modeNotes": [
+              "Ball Lock: The horseshoe passage stores up to two balls before multiball; physical locks are shared between players."
+            ]
+          },
+          {
+            "text": "Lock a second ball. Ignore the ready release target until two balls are stored."
+          },
+          {
+            "text": "Hit the upper release target or lock the third ball to start Three-Ball Multiball.",
+            "modeNotes": [
+              "Three-Ball Multiball: 3x playfield scoring lasts while three balls remain, then becomes 2x playfield scoring with two balls and normal scoring with one."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During multiball, stop Flash Bank at 100,000 and complete it for 300,000; a sweep scores 600,000.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the spinner is lit, backhand it from a controlled right-flipper hold for 6,000 per spin while three balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Ball Lock passage for 90,000 while three balls remain, then return to the upper Flash Bank when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Upper Flash Bank",
+          "when": "Use this when the Ball Lock rejects or another player can steal the physical locks.",
+          "steps": [
+            {
+              "text": "Keep the ball on the upper playfield."
+            },
+            {
+              "text": "Start Flash Bank at 80,000 or 100,000."
+            },
+            {
+              "text": "Complete the bank before timeout."
+            },
+            {
+              "text": "Ignore the Cave detour unless the Flash Bank timer is generous."
+            },
+            {
+              "text": "Complete L-I-Z-A-R-D when safe to light the spinner and raise Bonus X."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Two-Ball Multiball",
+            "when": "Use this when one physical lock is safe but the second is not.",
+            "steps": [
+              {
+                "text": "Backhand one ball into the Ball Lock."
+              },
+              {
+                "text": "Shoot the upper release target to start Two-Ball Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect Flash Bank with 2x playfield scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot the Ball Lock passage for repeat 60,000 awards."
+              }
+            ]
+          },
+          {
+            "title": "A/B and bonus",
+            "when": "Use this when both ramps are reliable and upper drops reject.",
+            "steps": [
+              {
+                "text": "Complete A and B once, then use the right passage for Bonus Holdover."
+              },
+              {
+                "text": "Complete A and B again to light the outlanes."
+              },
+              {
+                "text": "Complete L-I-Z-A-R-D for Bonus X and a lit spinner."
+              },
+              {
+                "text": "Protect the multiplied bonus and held base bonus."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Three-Ball Multiball at a high Flash Bank value",
+          "steps": [
+            {
+              "text": "Score Flash Bank values on the upper playfield."
+            },
+            {
+              "text": "Lock two balls during controlled lower-playfield visits."
+            },
+            {
+              "text": "Start Three-Ball Multiball with the release target or third lock.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Stop Flash Bank at 100,000 and complete it for 300,000."
+            },
+            {
+              "text": "Sweep the bank for 600,000 while three balls remain."
+            },
+            {
+              "text": "Use the lit spinner and Ball Lock with 3x playfield scoring.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Two-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Three-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Flash Bank",
+            "tone": "teal",
+            "kind": "item"
+          },
+          {
+            "label": "2x playfield scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x playfield scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "olive",
+            "kind": "item"
+          },
+          {
+            "label": "Ball Lock",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Magna-Save",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Bonus Holdover",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Flash Bank",
+            "label": "Flash Bank",
+            "description": "Four upper drops used to stop and collect the moving timed value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Cave",
+            "label": "Cave",
+            "description": "Upper-left loop that can raise a stopped Flash Bank value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Ball Lock",
+            "label": "Ball Lock passage",
+            "description": "Lower-left horseshoe passage that stores up to two shared physical locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "release target",
+            "label": "Multiball release target",
+            "description": "Upper-right standup used to release stored balls and start Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Center spinner",
+            "description": "Spinner between the upper flippers worth 2,000 per spin when L-I-Z-A-R-D is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "L-I-Z-A-R-D",
+            "label": "L-I-Z-A-R-D targets",
+            "description": "Six standups used for Magna-Save time, lit spinner, and end-of-ball Bonus X.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-playfield skill shot",
+            "instruction": "Plunge medium-soft, deflect the upper-right feed left, cradle, and start Flash Bank at 80,000 or 100,000.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/grand-lizard"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the Ball Lock from the lower-left flipper and the lit spinner from the lower-right flipper.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4XPZ-M7Zob"
+          },
+          {
+            "name": "Short Magna-Save pulse",
+            "instruction": "Press the Magna-Save button briefly to reverse an outlane-bound ball instead of holding the magnet.",
+            "sourceUrl": "https://www.jeff-z.com/pinball/grandlizard/rules/rules.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A spinner exit can hit the frame and drain through the center.",
+            "response": "Keep both lower flippers ready after each spinner shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4XPZ-M7Zob"
+          },
+          {
+            "issue": "A Ball Lock eject can return through the center.",
+            "response": "Do not release a cradle until you see the eject path.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4XPZ-M7Zob"
+          },
+          {
+            "issue": "Magna-Save can send the ball in an unpredictable direction.",
+            "response": "Use a short press only when an outlane drain is likely.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4XPZ-M7Zob"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm L-4 and Adjustments 31–44 for timers, feature memory, Extra Ball, Special, lock, and difficulty behavior.",
+          "Physical locks are shared; check stored balls before every turn and expect another player to release or steal them.",
+          "Test Flash Bank timing, both locks, release target, spinner, Cave, four flippers, and both Magna-Saves before choosing a route."
+        ],
+        "simpleOverview": "In Grand Lizard, completing the timed upper Flash Bank awards its displayed value, and two lower locks start three-ball Multiball with 3x playfield scoring. Collect a high bank value, backhand both locks, then release the balls. Rebuild Flash Bank at 100,000 and sweep it while three balls remain.",
+        "overview": "In Grand Lizard, completing the timed upper Flash Bank awards its displayed value, and two lower locks start three-ball Multiball with 3x playfield scoring. Stop the bank at 80,000 or 100,000, complete it, then store two balls and release them. During Multiball, return upstairs for a 300,000 completion or 600,000 sweep.",
+        "machineSetup": [
+          "Confirm L-4 and Adjustments 31–44 for timers, feature memory, Extra Ball, Special, lock, and difficulty behavior.",
+          "Physical locks are shared; check stored balls before every turn and expect another player to release or steal them.",
+          "Test Flash Bank timing, both locks, release target, spinner, Cave, four flippers, and both Magna-Saves before choosing a route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Collect high Flash Bank values, backhand two unqualified locks, then start Three-Ball Multiball and score the bank, spinner, and lock passage with 3x playfield scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge medium-soft. Deflect the upper-right feed to the upper-left flipper and cradle when this copy permits it."
+          },
+          {
+            "text": "Wait for an 80,000 or 100,000 Flash Bank value. Hit one target to stop it, then complete all four targets before timeout.",
+            "details": [
+              "Flash Bank: The first target stops the moving value and starts its timer; bank completion collects the value, while a sweep scores it twice."
+            ]
+          },
+          {
+            "text": "Repeat the Flash Bank while the ball stays on the upper playfield. A Cave shot can raise the stopped value but uses the same timer."
+          },
+          {
+            "text": "On the lower playfield, cradle on the left flipper and backhand the Ball Lock. No qualification is necessary.",
+            "details": [
+              "Ball Lock: The horseshoe passage stores up to two balls before multiball; physical locks are shared between players."
+            ]
+          },
+          {
+            "text": "Lock a second ball. Ignore the ready release target until two balls are stored."
+          },
+          {
+            "text": "Hit the upper release target or lock the third ball to start Three-Ball Multiball.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "details": [
+              "Three-Ball Multiball: 3x playfield scoring lasts while three balls remain, then becomes 2x playfield scoring with two balls and normal scoring with one."
+            ]
+          },
+          {
+            "text": "During multiball, stop Flash Bank at 100,000 and complete it for 300,000; a sweep scores 600,000.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the spinner is lit, backhand it from a controlled right-flipper hold for 6,000 per spin while three balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Ball Lock passage for 90,000 while three balls remain, then return to the upper Flash Bank when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Flash Bank",
+            "summary": "The first target stops a moving value, and a timed four-bank completion collects it."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "Lock two balls without qualification, then hit the release target or lock a third ball to begin 3x playfield scoring."
+          },
+          {
+            "name": "Two-Ball Multiball",
+            "summary": "Lock one ball and hit the release target to begin 2x playfield scoring."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper Flash Bank",
+          "when": "Use this when the Ball Lock rejects or another player can steal the physical locks.",
+          "steps": [
+            {
+              "text": "Keep the ball on the upper playfield."
+            },
+            {
+              "text": "Start Flash Bank at 80,000 or 100,000."
+            },
+            {
+              "text": "Complete the bank before timeout."
+            },
+            {
+              "text": "Ignore the Cave detour unless the Flash Bank timer is generous."
+            },
+            {
+              "text": "Complete L-I-Z-A-R-D when safe to light the spinner and raise Bonus X."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A spinner exit can hit the frame and drain through the center.",
+          "text": "Keep both lower flippers ready after each spinner shot."
+        }
+      }
+    }
+  ]
+}

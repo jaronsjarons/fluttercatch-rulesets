@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "GRzNR",
+  "title": "The Avengers",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Stern The Avengers instruction card",
+      "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_The_Avengers_755-51D3-XX.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Pinball News The Avengers rules and playfield guide",
+        "url": "https://www.pinballnews.com/games/avengers/index5.html"
+      },
+      {
+        "label": "Keith Elwin at Pinball Expo 2013",
+        "url": "https://pinballvideos.com/v/573/1059"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Spell L-O-K-I in the bottom lanes and lock two balls at the right ramp. Shoot the right inner orbit four times to start Iron Man, then collect the third right-ramp lock so Iron Man continues during Loki Multiball.",
+      "quickInfo": [
+        {
+          "name": "Iron Man",
+          "summary": "Four shots to the right inner orbit start Iron Man. Seven more right-inner-orbit shots spell I-R-O-N-M-A-N and complete the mode."
+        },
+        {
+          "name": "Loki Multiball",
+          "summary": "Spell L-O-K-I through the bottom lanes, then lock three balls at the right ramp. The third lock starts Multiball."
+        },
+        {
+          "name": "Hulk Multiball",
+          "summary": "Complete the H-U-L-K drop bank three times, then shoot the Hulk saucer, Hulk, or a lit Hulk Multiball arrow to start."
+        },
+        {
+          "name": "Tesseract",
+          "summary": "Spin the cube to spell C-O-S-M-I-C and start Tesseract Scoring. Tesseract can run during either primary Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use lane change to spell L-O-K-I in the bottom lanes and light all three Loki locks."
+        },
+        {
+          "text": "Shoot the right ramp twice to lock two balls for Loki Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the right inner orbit four times to start Iron Man.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the right ramp for the third lock. This starts Loki Multiball while Iron Man is running.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Repeat the right inner orbit to spell I-R-O-N-M-A-N while collecting Loki Jackpots at Hawkeye, Black Widow, and Iron Man.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "After those three Jackpot pairs, hit Hulk twice, then Captain America twice, and shoot the strobing Loki lock for the Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Hulk Multiball",
+        "when": "Recovery pivot: Use this when the bottom lanes or right-ramp locks are not progressing.",
+        "steps": [
+          {
+            "text": "Complete the H-U-L-K drop bank three times."
+          },
+          {
+            "text": "Shoot the Hulk saucer, Hulk, or a lit Hulk Multiball arrow to start four-ball Hulk Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the three standing H-U-L-K targets for Jackpots, then hit Hulk four times."
+          },
+          {
+            "text": "Hit each flashing H-U-L-K target once, then shoot Hulk Smash for the Super Jackpot."
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Assault on the Helicarrier",
+        "steps": [
+          {
+            "text": "Complete each Avenger's named-shot sequence; starting Hulk Multiball collects Hulk."
+          },
+          {
+            "text": "When all six sectors on the progress display are lit, shoot the strobing Loki lock to start Assault on the Helicarrier.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Hulk Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Loki Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Tesseract",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Avenger modes",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "LOKI lane change",
+          "instruction": "Tap the flippers before lower-lane entries to move the needed LOKI letter into the ball's path.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_The_Avengers_755-51D3-XX.pdf"
+        }
+      ],
+      "checkBeforePlay": [
+        "Note the lock and ball-save settings.",
+        "Test the Hulk bank, Loki ramp, and Tesseract."
+      ],
+      "simpleOverview": "The Avengers builds each Avenger at that character's named shot. Spell L-O-K-I in the bottom lanes and lock two balls at the right ramp, then shoot the right inner orbit four times to start Iron Man. Collect the third right-ramp lock so Iron Man continues during Loki Multiball.",
+      "overview": "The Avengers builds six Avenger modes at their named shots, and a running mode can continue into the Hulk and Loki Multiballs. Spell L-O-K-I in the bottom lanes and lock two balls at the right ramp, then shoot the right inner orbit four times to start Iron Man. Collect the third right-ramp lock and finish Iron Man during Loki Multiball.",
+      "machineSetup": [
+        "Note the lock and ball-save settings.",
+        "Test the Hulk bank, Loki ramp, and Tesseract."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

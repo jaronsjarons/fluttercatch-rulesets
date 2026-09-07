@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "id": "GK1Kv",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Cash a safe cook-off trophy. Bank a large Pitmaster jackpot, keep F-I-R-E ready as protection, raise playfield X, and start Pitmaster Multiball.",
+        "steps": [
+          {
+            "text": "Choose the right-ramp skill shot when you can make it. It increases the time for each playfield multiplier level.",
+            "modeNotes": [
+              "Skill-shot power: Each skill shot gives a permanent game power. The right-ramp power extends the playfield-X timer."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "In the first cook-off, complete the orange recipe shots. Build extra stars only from controlled shots.",
+            "modeNotes": [
+              "Cook-off: Orange shots complete the main recipe. Spinner sauce, the correct Mild or Spicy target, and two sets of side-dish targets can add four more stars.",
+              "Recipe value: Switches and features build the current cook-off value. Orange recipe shots also add this value to the next Pitmaster jackpot base."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the orange shots are complete, shoot any open saucer to cash the trophy. Cash three or more stars unless the ball is fully controlled.",
+            "modeNotes": [
+              "Trophy cash-out: The saucer ends the cook-off. Each earned star adds 1x to the cook-off value."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the left ramp, top lanes, and safe recipe shots to build the next Pitmaster base. Bank useful value before you take a high-risk shot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete F-I-R-E until one lane remains. Keep that lane ready as an outlane save.",
+            "modeNotes": [
+              "F-I-R-E protection: If an outlane completes the word, the game saves the ball.",
+              "F-I-R-E hurry-up: If an inlane completes the word, shoot the flashing blue orbit. A collect scores the value and adds it to the recipe. A timeout cuts the recipe value in half."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Lock at least one ball in the left or lower-right saucer. If a challenge is already qualified, start it at an open saucer before Pitmaster.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right ramp while the ball is controlled. Each shot adds 0.5x playfield scoring, up to 4x.",
+            "modeNotes": [
+              "Playfield X: Each level runs for about 30 seconds. The right-ramp skill-shot power extends this time."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the upper-right saucer to start Pitmaster Multiball. Shoot a lit red jackpot, then move balls between different saucers for larger awards.",
+            "modeNotes": [
+              "Pitmaster Multiball: It starts with the Pitmaster base that you banked before the multiball. Normal jackpots advance from 1x to 1.5x, 2x, and higher ladder values.",
+              "Super Jackpot: Lock one ball in a saucer. Lock another ball in a different saucer before the timer ends. The award advances the ladder by two steps.",
+              "Mega Jackpot: Lock balls in all three saucers within the sequence. The award advances the ladder by four steps."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Pitmaster, keep shooting the right ramp when it is safe. Use the larger playfield X on Super and Mega Jackpots. Shoot the upper-right saucer when jackpots need to relight.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Combomania and Multiball",
+            "summary": "Start Combomania before Multiball if you want both running. A running Combomania continues into Multiball, but it cannot be started after Multiball begins."
+          }
+        ],
+        "fallback": {
+          "title": "Side Dish Multiball",
+          "when": "Use this plan when the Pitmaster saucers or right ramp reject the ball.",
+          "steps": [
+            {
+              "text": "Complete the drop-target bank until all three cycling Side Dish inserts are collected.",
+              "modeNotes": [
+                "Side Dish Multiball: The third Side Dish award starts the multiball. Red shots score jackpots."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot red jackpots. Switch hits raise their value.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the drop-target bank to relight all jackpots. If none is lit, one jackpot moves between shots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the right ramp to add playfield X only when its return is safe.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Aggressive F-I-R-E build",
+            "when": "Use this plan when both blue orbits are repeatable and you need a larger Pitmaster base.",
+            "steps": [
+              {
+                "text": "Complete F-I-R-E through an inlane to start the orbit hurry-up.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the flashing blue orbit before time expires. The collect adds the value to the current recipe.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Repeat F-I-R-E to raise its multiplier by 0.5x, up to 5x.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Stop this plan if the orbit is not repeatable. A failed hurry-up cuts the recipe value in half."
+              }
+            ]
+          },
+          {
+            "title": "Challenge stack",
+            "when": "Use this plan when orbit progress has qualified a challenge before Pitmaster or Side Dish starts.",
+            "steps": [
+              {
+                "text": "Shoot purple shots to build the next challenge value. Start the challenge at an open saucer.",
+                "modeNotes": [
+                  "Challenge: Each challenge gives a timed shot task. Only one challenge can run, but it can run during a multiball."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Pitmaster or Side Dish while the challenge runs.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the multiball to make the purple or challenge shots. Do not risk a drain only to prebuild more value.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Meat Coma",
+          "steps": [
+            {
+              "text": "Win three cook-offs to start Meat Coma.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "In Meat Coma, complete the six red shot areas. Then shoot any saucer for the jackpot.",
+              "modeNotes": [
+                "Meat Coma: It starts as multiball. The first three completed jackpot rounds add a ball. If play reaches one ball, a 20-second timer starts."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the red shots and saucer. Spend an available add-a-ball before the single-ball timer ends.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Cook-off",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Drop-catch for the BBQ targets",
+            "instruction": "Drop-catch a controlled return. Then shoot the BBQ target bank after the ball settles.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=1642s"
+          },
+          {
+            "name": "Softer saucer shot",
+            "instruction": "If a saucer rejects hard shots, use less power. Test each saucer before Pitmaster Multiball.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=5815s"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "Use a controlled post pass to move the ball to the flipper that has the safer Meat Coma or target-bank shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=4636s",
+            "techniqueSlug": "post-pass"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A hard saucer shot can reject and return without starting or locking the feature.",
+            "response": "Test the three saucers early. Use a softer shot on a saucer that rejects hard entries.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=5815s"
+          },
+          {
+            "issue": "A drain removes the unbanked recipe value.",
+            "response": "Complete the orange recipe or add its value to Pitmaster before you take a high-risk shot. Banked Pitmaster value remains after a drain.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=662s"
+          },
+          {
+            "issue": "A failed F-I-R-E hurry-up cuts the current recipe value in half.",
+            "response": "Leave one F-I-R-E lane ready for an outlane save when the blue orbit is not repeatable.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=603s"
+          },
+          {
+            "issue": "Purple challenge value is lost at the end of the ball.",
+            "response": "Start the qualified challenge before a risky shot. Do not chase purple value without control.",
+            "sourceUrl": "https://www.youtube.com/watch?v=A6HGPFbJ1oI&t=5105s"
+          }
+        ],
+        "checkBeforePlay": [
+          "Check Pitmaster Jackpot carryover, Extra Ball conversion, and challenge order.",
+          "Start Combomania before Multiball if both should run together; Combomania cannot start after Multiball begins."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right ramp",
+            "label": "Multiplier ramp",
+            "description": "Ramp used to raise live playfield scoring.",
+            "precision": "unverified",
+            "context": "Ramp used to raise live playfield scoring."
+          },
+          {
+            "term": "upper-right saucer",
+            "label": "Pitmaster saucer",
+            "description": "Saucer used to start Pitmaster and relight jackpots.",
+            "precision": "unverified",
+            "context": "Saucer used to start Pitmaster and relight jackpots."
+          },
+          {
+            "term": "drop-target bank",
+            "label": "Side Dish targets",
+            "description": "Bank used to collect dishes and relight jackpots.",
+            "precision": "unverified",
+            "context": "Bank used to collect dishes and relight jackpots."
+          }
+        ],
+        "simpleOverview": "In Barry O's Barbeque Challenge, orange recipe shots complete the active cook-off and an open saucer cashes its trophy. Lock a ball in a saucer, then shoot the upper-right saucer to start Pitmaster Multiball. Repeated right-ramp shots raise playfield X for the larger Pitmaster awards.",
+        "overview": "In Barry O's Barbeque Challenge, orange recipe shots build the Pitmaster Jackpot base, and an open saucer cashes the cook-off trophy. Complete a safe cook-off, keep one F-I-R-E lane ready for an outlane save, lock a ball in a saucer, and repeat the right ramp for playfield X. Start Pitmaster at the upper-right saucer and use the multiplier on its larger Super and Mega Jackpots.",
+        "machineSetup": [
+          "Check Pitmaster Jackpot carryover, Extra Ball conversion, and challenge order."
+        ],
+        "rulesNotes": [
+          "Start Combomania before Multiball if both should run together; Combomania cannot start after Multiball begins."
+        ]
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the orange recipe shots for a cook-off, use a saucer lock and the upper-right saucer for Pitmaster Multiball, and repeat the right ramp for playfield X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a cook-off",
+            "text": "Complete the orange recipe shots, then shoot any open saucer to cash the trophy and begin the next cook-off cycle.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "The opening cook-off",
+              "reason": "The orange recipe shots show the complete opening objective without requiring a separate selection menu.",
+              "play": "Shoot the orange recipe shots. When they are complete, shoot any open saucer to cash the trophy."
+            }
+          },
+          {
+            "title": "Start Pitmaster Multiball",
+            "text": "Lock at least one ball in the left or lower-right saucer, then shoot the upper-right saucer to start Pitmaster Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start playfield X",
+            "text": "Shoot the right ramp to add 0.5x playfield scoring per shot, up to 4x. The right-ramp skill shot increases the time available at each multiplier level.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Combomania and Multiball",
+            "summary": "Start Combomania before Multiball if you want both running. A running Combomania continues into Multiball, but it cannot be started after Multiball begins."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Side Dish Multiball",
+          "when": "Use this when the upper-right saucer is rejecting the ball but the drop targets are controlled.",
+          "steps": [
+            {
+              "text": "Complete the drop-target bank until all three cycling Side Dish inserts have been collected. The completed set starts Side Dish Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

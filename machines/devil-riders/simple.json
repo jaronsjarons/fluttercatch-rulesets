@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G5DPP",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Devil Riders links its two moving-ramp banks to Specials and drain recovery. Complete either five-target bank to lower the moving ramp, advance Orange Special, and light REACT. Hit the flashing Advance Red Special targets to build D-E-V-I-L R-I-D-E-R-S and raise the head-wheel value; lit 20,000 targets also raise that value. Send the ball to the upper rider to collect the lit head-wheel score. Side tunnels advance the bonus multiplier. When REACT is lit, press a flipper button as the ball enters an outlane to return it to play.",
+        "simpleOverview": "Complete either five-target bank to lower its moving ramp, advance Orange Special, and light REACT. Hit flashing Advance Red Special targets to build Red Special and raise the head-wheel value, then send the ball to the upper rider to collect it. Use the side tunnels for Bonus X. Press a flipper button during an outlane drain while REACT is lit.",
+        "summary": "Finish one five-target bank, then use its lowered moving ramp and lit awards. Build the head-wheel value from the flashing Red and 20,000 targets, collect it at the upper rider, and keep REACT ready for an outlane save.",
+        "quickInfo": [
+          {
+            "name": "Lower a Moving Ramp",
+            "summary": "Complete either five-target bank."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Hit the flashing Advance Red Special targets."
+          },
+          {
+            "name": "Collect Head-Wheel Value",
+            "summary": "Send the ball to the upper rider."
+          },
+          {
+            "name": "Use REACT",
+            "summary": "Press a flipper button during an outlane drain while lit."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete either five-target bank to lower its moving ramp, advance Orange Special, and light REACT.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit flashing Advance Red Special targets to light D-E-V-I-L R-I-D-E-R-S letters and raise the head-wheel value.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit lit 20,000 targets to raise the head-wheel value, then send the ball to the upper rider to collect it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the side tunnels to advance the bonus multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Keep REACT available",
+            "when": "Use this when outlane risk matters more than finishing a Special.",
+            "steps": [
+              {
+                "text": "Complete the required target or bank sequence to relight REACT.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "If the ball enters an outlane while REACT is lit, press the corresponding flipper button to return it to play.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Convert a completed bank",
+          "steps": [
+            {
+              "text": "Use a Spot Move Ramp target to spot a bank target and relight REACT when helpful.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish that bank, then take the lowered moving ramp or lit Special before beginning the other side.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check the DEVIL RIDERS letters awarded per bank, Orange Special bank requirement, REACT reset setting, ball count, and configured Special awards.",
+          "Test both five-target banks, moving ramps, Spot Move Ramp targets, Advance Red and 20,000 targets, upper rider, both side tunnels, REACT lamps, and outlane switches."
+        ],
+        "termStyles": [
+          {
+            "label": "Moving Ramp",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Red Special",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "REACT",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus Multiplier",
+            "tone": "amber",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "five-target banks",
+            "label": "Five-target banks",
+            "description": "Two banks that lower moving ramps, advance Orange Special, and light REACT.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Advance Red targets",
+            "label": "Advance Red Special targets",
+            "description": "Flashing upper targets that build DEVIL RIDERS and the head-wheel value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper rider",
+            "label": "Upper rider",
+            "description": "Upper-playfield collect for the lit head-wheel score.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side tunnels",
+            "label": "Side tunnels",
+            "description": "Side shots that advance the bonus multiplier.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "REACT relight and Special progress vary by setup.",
+            "response": "Confirm whether one target or a whole bank relights REACT, and how many DEVIL RIDERS letters each completion awards.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen2/devilriders/settings.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Finish one five-target bank, then use its lowered moving ramp and lit awards. Build the head-wheel value from the flashing Red and 20,000 targets, collect it at the upper rider, and keep REACT ready for an outlane save.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete either five-target bank to lower its moving ramp, advance Orange Special, and light REACT.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit flashing Advance Red Special targets to light D-E-V-I-L R-I-D-E-R-S letters and raise the head-wheel value.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit lit 20,000 targets to raise the head-wheel value, then send the ball to the upper rider to collect it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the side tunnels to advance the bonus multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Lower a Moving Ramp",
+            "summary": "Complete either five-target bank."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Hit the flashing Advance Red Special targets."
+          },
+          {
+            "name": "Collect Head-Wheel Value",
+            "summary": "Send the ball to the upper rider."
+          }
+        ]
+      }
+    }
+  ]
+}

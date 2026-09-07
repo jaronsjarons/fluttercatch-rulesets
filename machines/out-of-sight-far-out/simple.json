@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "G5zQO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Out of Sight starts by protecting both sides. Send the ball up top until the left side lane lights the left kickback and the right side lane opens the right gate. Then shoot the lit drop bank and its individually lit target for elevated points while each target also builds Bonus.",
+        "simpleOverview": "In Out of Sight, go up top until the left side lane lights the left kickback and the right side lane opens the right gate. Then shoot the lit drop bank, especially the individually lit target. Completing a bank in three-ball play, or all ten targets in five-ball play, lights Double Bonus.",
+        "summary": "Light both side protections before attacking the drops. Follow the lit bank and the small target lamp rather than forcing an unlit target. Use the center red star rollover to move the individually lit target when it improves the next shot.",
+        "quickInfo": [
+          {
+            "name": "Left top side lane",
+            "summary": "Lights the left kickback."
+          },
+          {
+            "name": "Right top side lane",
+            "summary": "Opens the right outlane gate."
+          },
+          {
+            "name": "Lit drop target",
+            "summary": "Scores 500 instead of 50 and adds one Bonus step, or two with 10x lit."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Lights after either bank in three-ball play or all ten targets in five-ball play; it also lights on the last ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Send the ball through the top lanes until both the left kickback and right gate are active."
+          },
+          {
+            "text": "Identify the lit drop bank and the individually lit target within each bank."
+          },
+          {
+            "text": "Shoot the best-controlled lit target; use the center red star rollover when moving the lit target creates a safer shot."
+          },
+          {
+            "text": "Complete either bank in three-ball play, or all ten targets in five-ball play, to light Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep collecting lit targets while preserving the two side protections."
+          }
+        ],
+        "buildsToward": {
+          "title": "Two protected sides and Double Bonus",
+          "steps": [
+            {
+              "text": "Light the left kickback and open the right gate."
+            },
+            {
+              "text": "Pick off lit targets for elevated points and Bonus."
+            },
+            {
+              "text": "Finish the required bank or banks to light Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play because the Double Bonus requirement changes, then confirm Special conversion and last-ball Double Bonus behavior.",
+          "Test all top lanes, left kickback, right gate, both five-target banks, individual target lamps, 10x lamp, center red star rollover, Bonus unit, and drop-target rebounds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left side lane",
+            "label": "Left top side lane",
+            "description": "Top lane that lights the left kickback.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right side lane",
+            "label": "Right top side lane",
+            "description": "Top lane that opens the right outlane gate.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop bank",
+            "label": "Left and right drop-target banks",
+            "description": "Two five-target banks with elevated lit values and Bonus progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center red star rollover",
+            "label": "Center red star rollover",
+            "description": "Rollover that moves the individually lit target.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Light both side protections before attacking the drops. Follow the lit bank and the small target lamp rather than forcing an unlit target. Use the center red star rollover to move the individually lit target when it improves the next shot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Send the ball through the top lanes until both the left kickback and right gate are active."
+          },
+          {
+            "text": "Identify the lit drop bank and the individually lit target within each bank."
+          },
+          {
+            "text": "Shoot the best-controlled lit target; use the center red star rollover when moving the lit target creates a safer shot."
+          },
+          {
+            "text": "Complete either bank in three-ball play, or all ten targets in five-ball play, to light Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep collecting lit targets while preserving the two side protections."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Left top side lane",
+            "summary": "Lights the left kickback."
+          },
+          {
+            "name": "Right top side lane",
+            "summary": "Opens the right outlane gate."
+          },
+          {
+            "name": "Lit drop target",
+            "summary": "Scores 500 instead of 50 and adds one Bonus step, or two with 10x lit."
+          }
+        ]
+      }
+    }
+  ]
+}

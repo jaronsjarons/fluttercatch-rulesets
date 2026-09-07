@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "G4yZN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Iron Maiden qualifies three-ball Multiball by completing I-R-O-N M-A-I-D-E-N and trapping all three balls in the upper walker; when both conditions are met, the walker releases them. The two five-target banks also reward order: ascending completion lights Extra Ball on the opposite level, descending completion lights Special, and another order raises Bonus X. The three-target bank awards 5 to 25 seconds of Bonus Time according to completion speed. During Bonus Time, Multiball pauses the countdown.",
+        "simpleOverview": "Complete I-R-O-N M-A-I-D-E-N and trap all three balls in the upper walker to start three-ball Multiball. Complete a five-target bank in ascending order to light Extra Ball or descending order to light Special. Clear the three-target bank quickly for up to 25 seconds of Bonus Time.",
+        "summary": "Spell the title while feeding balls into the walker, then use the released three-ball play to finish ordered banks. Build Bonus Time before Multiball when possible because its countdown pauses while multiple balls remain active.",
+        "quickInfo": [
+          {
+            "name": "Qualify Multiball",
+            "summary": "Complete I-R-O-N M-A-I-D-E-N."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Trap all three balls in the walker after the title is complete."
+          },
+          {
+            "name": "Light Extra Ball",
+            "summary": "Complete a five-target bank in ascending order."
+          },
+          {
+            "name": "Build Bonus Time",
+            "summary": "Clear the three-target bank quickly."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete I-R-O-N M-A-I-D-E-N through the I/N lanes, O-D-E targets, and remaining lit letter switches."
+          },
+          {
+            "text": "Open a walker gate through the upper playfield or the right-side gate, then send a ball into the walker; repeat until all three balls are trapped."
+          },
+          {
+            "text": "With the title complete and three balls trapped, collect the release for three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, work an ordered five-target bank and shoot the lower-right Spot IRON / Spot MAIDEN target when Extra Ball is lit.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Bonus Time route",
+            "when": "Use this before the walker is ready or when the three-target bank is returning safely.",
+            "steps": [
+              {
+                "text": "Clear the three-target bank as quickly as possible for 5 to 25 seconds of Bonus Time."
+              },
+              {
+                "text": "Start Multiball during Bonus Time to pause the countdown while more than one ball is active.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Ordered-bank awards",
+          "steps": [
+            {
+              "text": "Complete a five-target bank in ascending order to light Extra Ball on the opposite playfield level."
+            },
+            {
+              "text": "Complete a bank in descending order to light Special, or use the non-ordered completion to raise Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test every I-R-O-N M-A-I-D-E-N letter switch, both walker gates and all three walker positions, the three-ball release, both five-target banks, the three-target bank, and the upper and lower flippers.",
+          "Verify ascending, descending, and Bonus X bank orders; test the Bonus Time timer and confirm that Multiball pauses it and that another ball serves if all balls drain before time expires."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "I-R-O-N M-A-I-D-E-N",
+            "label": "IRON MAIDEN letters",
+            "description": "Letter progress that qualifies Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "walker",
+            "label": "Upper walker lock",
+            "description": "Three-ball storage mechanism that releases Multiball after the title is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "five-target banks",
+            "label": "Ordered five-target banks",
+            "description": "Banks that light Extra Ball, Special, or raise Bonus X according to order.",
+            "precision": "unverified"
+          },
+          {
+            "term": "three-target bank",
+            "label": "Bonus Time bank",
+            "description": "Bank that awards 5 to 25 seconds according to completion speed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Spot IRON / Spot MAIDEN target",
+            "label": "Lower-right letter target",
+            "description": "Target that can collect the lit Extra Ball during Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "This is Stern Electronics' 1981 Iron Maiden, not Stern's 2018 Iron Maiden: Legacy of the Beast.",
+            "response": "Use the walker, ordered drop banks, and Bonus Time rules only for the vintage split-level machine.",
+            "sourceUrl": "https://strictlypinball.com/machines/iron-maiden"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Spell the title while feeding balls into the walker, then use the released three-ball play to finish ordered banks. Build Bonus Time before Multiball when possible because its countdown pauses while multiple balls remain active.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete I-R-O-N M-A-I-D-E-N through the I/N lanes, O-D-E targets, and remaining lit letter switches."
+          },
+          {
+            "text": "Open a walker gate through the upper playfield or the right-side gate, then send a ball into the walker; repeat until all three balls are trapped."
+          },
+          {
+            "text": "With the title complete and three balls trapped, collect the release for three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, work an ordered five-target bank and shoot the lower-right Spot IRON / Spot MAIDEN target when Extra Ball is lit.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Qualify Multiball",
+            "summary": "Complete I-R-O-N M-A-I-D-E-N."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Trap all three balls in the walker after the title is complete."
+          },
+          {
+            "name": "Light Extra Ball",
+            "summary": "Complete a five-target bank in ascending order."
+          }
+        ]
+      }
+    }
+  ]
+}

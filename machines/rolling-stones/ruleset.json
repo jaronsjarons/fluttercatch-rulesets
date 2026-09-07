@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Qz4",
+  "title": "Rolling Stones",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide Rolling Stones strategy",
+      "url": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Bally Rolling Stones operations manual",
+        "url": "https://www.bmigaming.com/Games/Manuals/pinball-machines/Rolling_Stones-OPS.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the right flipper to hit Satisfaction and collect bonus at the upper-left saucer. Feed the top to complete R-O-C-K and raise Bonus X. Complete 1-2-3-4-5 for held Super Bonus, then repeat the saucer after the combined value is large.",
+      "quickInfo": [
+        {
+          "name": "Bonus X",
+          "summary": "Each R-O-C-K completion advances the multiplier through 2x, 3x, and 5x."
+        },
+        {
+          "name": "Satisfaction",
+          "summary": "The upper-left standup lights the nearby saucer to collect standard and Super Bonus."
+        },
+        {
+          "name": "Super Bonus",
+          "summary": "Three complete 1-2-3-4-5 sets build the value through 20,000, 40,000, and 60,000."
+        },
+        {
+          "name": "Number 5 relight",
+          "summary": "The horseshoe post briefly lights target 5 so its next hit spots one missing R-O-C-K letter."
+        },
+        {
+          "name": "Maximum collect",
+          "summary": "A 19,000 standard bonus plus 60,000 Super Bonus at 5x pays 395,000 at the saucer."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the lit R-O-C-K letters and check whether progress holds after the first drain.",
+          "modeNotes": [
+            "Check whether R-O-C-K, number-set, and lit Extra Ball progress carry between balls."
+          ]
+        },
+        {
+          "text": "Control on the right flipper, hit the Satisfaction target, and confirm that the upper-left saucer lights."
+        },
+        {
+          "text": "Shoot the lit saucer to collect the current standard bonus and Super Bonus.",
+          "modeNotes": [
+            "Satisfaction: Its standup scores 5,000, adds three bonus advances, and lights the saucer for the combined collect."
+          ]
+        },
+        {
+          "text": "Use the saucer eject to return toward the top lanes and collect missing R-O-C-K letters."
+        },
+        {
+          "text": "Complete R-O-C-K for 2x, then repeat the top-feed sequence for 3x and 5x.",
+          "modeNotes": [
+            "Bonus X: The four top lanes have no lane change; a lit target 5 can spot one missing letter."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete 1-2-3-4-5 during safe feeds to build Super Bonus from 20,000 to 40,000, then 60,000.",
+          "modeNotes": [
+            "Super Bonus: The first three full number sets store 20,000, 40,000, and 60,000 for the saucer and drain payout."
+          ]
+        },
+        {
+          "text": "Hit Satisfaction again when required and collect the larger combined bonus at the saucer."
+        },
+        {
+          "text": "A second saucer collect on the same ball can award Extra Ball; stop when settings make it worthless or the entry becomes unsafe."
+        },
+        {
+          "text": "Protect held Super Bonus and multiplier progress from a tilt."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Numbered targets and Super Bonus",
+        "when": "Recovery pivot: Use this when Satisfaction or the saucer is unreliable.",
+        "steps": [
+          {
+            "text": "From the left flipper, shoot targets 3 or 4."
+          },
+          {
+            "text": "Use useful rebounds into the bumpers to collect targets 1 and 2."
+          },
+          {
+            "text": "Use the right flipper for target 5."
+          },
+          {
+            "text": "Complete 1-2-3-4-5 for 20,000 Super Bonus."
+          },
+          {
+            "text": "Repeat the number set for 40,000 and 60,000."
+          },
+          {
+            "text": "Return to the saucer only after control improves."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: R-O-C-K and multiplier",
+          "when": "When trailing, use this higher-ceiling route: use this when controlled top feeds are more reliable than the saucer.",
+          "steps": [
+            {
+              "text": "Feed the ball to the top lanes and collect unlit R-O-C-K letters."
+            },
+            {
+              "text": "Hit the horseshoe post to relight target 5, then use target 5 to spot a missing letter."
+            },
+            {
+              "text": "Complete R-O-C-K for 2x, 3x, and 5x."
+            },
+            {
+              "text": "A later completion at 5x awards Special or its tournament points."
+            }
+          ]
+        },
+        {
+          "title": "Right drop-bank award",
+          "when": "Use this when the rotating award is valuable and the bank return is controlled.",
+          "steps": [
+            {
+              "text": "Read the rotating 5,000 through 25,000 or Special award."
+            },
+            {
+              "text": "Complete the number targets but leave one when the selected award is weak."
+            },
+            {
+              "text": "Finish the bank when the desired award is lit."
+            },
+            {
+              "text": "Use held partial bank progress after a drain when the setting permits it."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximum 395,000 bonus collect",
+        "steps": [
+          {
+            "text": "Complete R-O-C-K three times and reach 5x Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete 1-2-3-4-5 three times for 60,000 Super Bonus."
+          },
+          {
+            "text": "Hit Satisfaction and shoot either horseshoe until standard bonus reaches 19,000."
+          },
+          {
+            "text": "Hit Satisfaction and shoot the lit upper-left saucer."
+          },
+          {
+            "text": "Collect 395,000; a second same-ball collect can also award Extra Ball."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Satisfaction",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Super Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Number 5 relight",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "R-O-C-K",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Maximum collect",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check whether R-O-C-K, number-set, and lit Extra Ball progress carry between balls."
+      ],
+      "techniques": [
+        {
+          "name": "Right-flipper saucer route",
+          "instruction": "Use the right flipper for Satisfaction and the upper-left saucer; its eject feeds the top lanes.",
+          "sourceUrl": "https://www.bmigaming.com/Games/Manuals/pinball-machines/Rolling_Stones-OPS.pdf"
+        },
+        {
+          "name": "Left-flipper number feed",
+          "instruction": "Shoot targets 3 or 4 from the left flipper and use a controlled bumper rebound for targets 1 or 2.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+        },
+        {
+          "name": "Number 5 relight",
+          "instruction": "Hit the small horseshoe post, then hit target 5 before its lamp expires to spot R-O-C-K.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Bumper exits are uncontrolled.",
+          "response": "Use that area for number progress only when both side lanes are acceptable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+        },
+        {
+          "issue": "The Satisfaction target can rebound toward the center or slings.",
+          "response": "Shoot it only from a controlled right-flipper position.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+        },
+        {
+          "issue": "Target 5 can return dangerously and horseshoe misses can graze the slings.",
+          "response": "Use target 5 only when lit for R-O-C-K help and stop the horseshoe after one bad miss.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+        },
+        {
+          "issue": "A tilt erases a combined bonus that can reach 395,000.",
+          "response": "Use small, early nudges after standard bonus, Super Bonus, and Bonus X are built.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Qz4-MQddv"
+        }
+      ],
+      "simpleOverview": "Rolling Stones is a bonus-building and saucer-collect game. Complete R-O-C-K to raise Bonus X, complete 1-2-3-4-5 to raise held Super Bonus, hit Satisfaction, then shoot the lit upper-left saucer for the combined collect.",
+      "overview": "Rolling Stones is a bonus-building and saucer-collect game. Use the saucer eject to return to the top letters, build toward 5x and 60,000 Super Bonus, then hit Satisfaction and collect. Protect held progress from a tilt.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

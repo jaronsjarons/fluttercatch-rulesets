@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "GrN9V",
+  "title": "Maverick",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "PAPA 5 guide to Maverick",
+      "url": "https://www.pinball.org/rules/maverick.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Original Data East Maverick manual",
+        "url": "https://maypin.eu/pinsdata/maverick_manual.pdf"
+      },
+      {
+        "label": "Original Maverick instruction card",
+        "url": "https://pinballrebel.com/game/pins/instruction/maverickinst.jpg"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Maverick deals one flashing poker hand at a time, converts every five won chips into a mode, and eventually turns the completed mode set into Poker Championship. The right ramp and orbit build a separate lock sequence; Coop’s Cash and Bank Heist can continue into Multiball, while the other chip modes block its start.",
+      "simpleOverview": "Clear only the flashing drop-target bank to win poker chips; unrelated drops spend your limited discards. Five chips start the current mode, while the right ramp lights Lock and the right orbit locks balls for Multiball.",
+      "summary": "Concentrate on the flashing poker bank and fold at the VUK when the required targets are too dangerous. Use the right ramp to light Lock, shoot the right orbit to load balls, and enter Multiball during Coop’s Cash or Bank Heist when the stack is available.",
+      "quickInfo": [
+        {
+          "name": "Poker hands",
+          "summary": "Clear every target in the flashing bank before the discard counter reaches zero. Unrelated drops normally spend discards."
+        },
+        {
+          "name": "Raise or Fold",
+          "summary": "Shoot the VUK before completing a hand to double its value or fold and receive a new hand without breaking the winning streak."
+        },
+        {
+          "name": "Chip modes",
+          "summary": "Every five won chips starts the flashing mode: Coop’s Cash, Lauren Belle, Bank Heist, Angel’s Revenge, or Stagecoach."
+        },
+        {
+          "name": "Multiball",
+          "summary": "Repeat the right ramp until Lock is lit, then shoot the right orbit. A plunge choice after the second lock may start four-ball play; otherwise lock a third ball."
+        },
+        {
+          "name": "Poker Championship",
+          "summary": "After all five chip modes, earn another five chips. Clear every flashing drop bank during the four-ball Championship, then shoot the VUK for the Pot."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read which drop-target bank is flashing, then clear only that bank. Unrelated target hits normally reduce the discard counter, and the hand is lost when it reaches zero.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the VUK before the hand ends to Raise or Fold. Raise only when the remaining targets are controlled; fold a dangerous hand to preserve the current winning streak.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After an inlane, shoot the VUK while its dollar chip briefly flashes to spot the lowest remaining card in the current hand.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the right ramp until the display says Lock is lit, then shoot the right orbit. The ramp count is set by the operator, so follow the display rather than expecting one fixed count.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the second lock, plunge the second hole to start four-ball Multiball when offered. If it is missed, light and lock a third ball to start Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the ramp for three Jackpots, then shoot the captive ball for the Super Jackpot. If the Multiball ends early, shoot the right orbit during the restart timer.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Mode stack",
+          "when": "Use this only when Coop’s Cash or Bank Heist is running and the final Multiball lock is ready.",
+          "steps": [
+            {
+              "text": "Start Coop’s Cash or Bank Heist before making the final Multiball lock; those two modes continue into Multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Do not try the same stack with Lauren Belle, Angel’s Revenge, or Stagecoach because those modes block a Multiball start.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Poker Championship",
+        "steps": [
+          {
+            "text": "Win five chips for each of the five regular poker modes.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all five modes are complete, win another five chips to start the four-ball Championship.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Clear all four flashing drop banks, then shoot the lit VUK for the growing Championship Pot. Repeat while balls remain.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Poker hand",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Raise",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "Fold",
+          "tone": "teal",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Poker Championship",
+          "tone": "indigo",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The number of right-ramp shots needed to light Lock is operator-adjustable.",
+          "response": "Read the displayed remaining count after each ramp instead of memorizing a universal qualification.",
+          "sourceUrl": "https://www.pinball.org/rules/maverick.html"
+        },
+        {
+          "issue": "Shared physical locks can skip plunge opportunities in multiplayer games.",
+          "response": "When another player has balls in the lock, follow the display; the normal second-lock four-ball choice may not be served.",
+          "sourceUrl": "https://www.pinball.org/rules/maverick.html"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

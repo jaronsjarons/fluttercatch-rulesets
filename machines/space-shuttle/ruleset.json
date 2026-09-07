@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "G4q3L",
+  "title": "Space Shuttle",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Space Shuttle",
+      "url": "https://rules.silverballmania.com/rules/G4q3L-MKN50"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Space Shuttle operator manual",
+        "url": "https://www.planetimming.com/Pinball/space_shuttle_williams_1984.pdf"
+      },
+      {
+        "label": "Kineticist Space Shuttle machine guide",
+        "url": "https://www.kineticist.com/games/pinball/space-shuttle-1984"
+      },
+      {
+        "label": "Space Shuttle instruction card",
+        "url": "https://www.pinballrebel.com/game/pins/instruction/space_shuttle_2014.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the narrow three-bank to light the spinner, repeat the lit spinner, and use the two side locks plus the center ramp for three-ball Multiball when the ramp is safe.",
+      "quickInfo": [
+        {
+          "name": "Spinner bank",
+          "summary": "The narrow three-bank beside the spinner raises its value."
+        },
+        {
+          "name": "Ball locks",
+          "summary": "Each side lock holds one ball, and opponents can use balls that are already locked."
+        },
+        {
+          "name": "Multiball",
+          "summary": "The center ramp starts two-ball or three-ball Multiball according to how many balls are locked."
+        },
+        {
+          "name": "U-S-A lanes",
+          "summary": "The top lanes advance the end-of-ball multiplier, and the flipper buttons change the lit lane."
+        },
+        {
+          "name": "S-H-U-T-T-L-E",
+          "summary": "Standups add bonus, and completing the word collects the currently lit award."
+        }
+      ],
+      "steps": [
+        {
+          "text": "From the right flipper, find the narrow angle that clips the spinner three-bank."
+        },
+        {
+          "text": "From the left flipper, shoot through the spinner after its value is built."
+        },
+        {
+          "text": "Repeat bank and spinner work while both returns remain controlled."
+        },
+        {
+          "text": "Lock one ball on each side when the lock kickouts are safe."
+        },
+        {
+          "text": "With two balls locked, shoot the center ramp to start three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, repeat the lit spinner and finish useful S-H-U-T-T-L-E or U-S-A progress.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Spinner-only route",
+        "when": "Use this when the center ramp rejects or the side locks do not return safely.",
+        "steps": [
+          {
+            "text": "Stop shooting the ramp and locks."
+          },
+          {
+            "text": "Use the right flipper to work the narrow spinner bank."
+          },
+          {
+            "text": "Use the left flipper to repeat the spinner."
+          },
+          {
+            "text": "Use lane change to collect missing U-S-A lanes during natural top play."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Fast two-ball start",
+          "when": "Use this when one ball is locked and the center ramp is safer than the second lock.",
+          "steps": [
+            {
+              "text": "Confirm that one ball is locked."
+            },
+            {
+              "text": "Shoot the center ramp to start two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the extra ball to repeat the spinner and finish bank progress."
+            }
+          ]
+        },
+        {
+          "title": "100,000 SHUTTLE collect",
+          "when": "Use this when one letter remains and the lit award is 100,000.",
+          "steps": [
+            {
+              "text": "Check the lit award before the final letter."
+            },
+            {
+              "text": "Use the ramp bullseye to change the award only when its rebound is safe."
+            },
+            {
+              "text": "Complete the last S-H-U-T-T-L-E letter at 100,000."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Built spinner and three-ball Multiball",
+        "steps": [
+          {
+            "text": "Complete the spinner three-bank."
+          },
+          {
+            "text": "Lock one ball on each side."
+          },
+          {
+            "text": "Start three-ball Multiball at the center ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the built spinner during protected play."
+          },
+          {
+            "text": "Use U-S-A lane change to build the largest available Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bonus X",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "S-H-U-T-T-L-E",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Spinner-bank clip",
+          "instruction": "From the right flipper, aim at the thin target edge beside the spinner instead of shooting straight through its lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4q3L-MKN50"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A short center-ramp shot can return through the middle.",
+          "response": "Shoot the ramp only with full flipper strength and abandon it after a reject.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4q3L-MKN50"
+        },
+        {
+          "issue": "Bumper exits and direct standup rebounds can remove control.",
+          "response": "Favor the spinner and completed lock shots over direct standup attacks.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4q3L-MKN50"
+        },
+        {
+          "issue": "Locked balls can be used by the next player.",
+          "response": "Start Multiball in the same ball when a valuable lock state is ready and the ramp is safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4q3L-MKN50"
+        }
+      ],
+      "simpleOverview": "In Space Shuttle, the narrow three-bank lights the spinner for repeatable scoring. Lock one ball on each side and shoot the center ramp for three-ball Multiball. Use U-S-A lane change to improve Bonus X whenever the ball returns upstairs.",
+      "overview": "In Space Shuttle, completing the narrow three-bank lights the spinner, while one lock on each side plus the center ramp starts Multiball. Repeat the lit spinner when its return is controlled; take both locks and the ramp only when the center shot is safe. During protected play, return to the built spinner and use flipper-button lane change to finish U-S-A for Bonus X.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

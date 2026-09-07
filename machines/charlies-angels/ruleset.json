@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Woz",
+  "title": "Charlie’s Angels",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist rules via Bob's Guide",
+      "url": "https://www.kineticist.com/games/pinball/charlies-angels"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Charlie's Angels scoring chart",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Gottlieb_Charlies_Angels_Tech_Chart.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the red five-bank, follow the lit multiplier shots to 5x, then collect at least 11,000 bonus at the bullseye.",
+      "steps": [
+        {
+          "text": "From the left flipper, shoot the right arc to collect C-H-I-C and build base bonus."
+        },
+        {
+          "text": "From the right flipper, complete the red five-bank. This starts 2x bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Follow the lit multiplier shot: bullseye for 3x, leftmost red drop for 4x, then top white drop for 5x.",
+          "modeNotes": [
+            "Multiplier path: The required shot changes after each collect."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Keep using the red drops and right arc until base bonus is at least 11,000."
+        },
+        {
+          "text": "Hit the bullseye above the right slingshot to collect base bonus x multiplier.",
+          "modeNotes": [
+            "Bonus collect: Resets base bonus. The multiplier stays lit for the rest of the ball.",
+            "Base bonus, multiplier, and C-H-I-C progress reset every ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Rebuild with the red bank and right arc. Collect the bonus again."
+        }
+      ],
+      "fallback": {
+        "title": "C-H-I-C and right arc",
+        "when": "Use this plan when the red drop rebounds are unsafe.",
+        "steps": [
+          {
+            "text": "Send the ball up the right arc."
+          },
+          {
+            "text": "Complete C-H-I-C for 2x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Build base bonus to at least 11,000 and collect it at the bullseye."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Red bank",
+          "when": "Use this plan when the right-flipper shot to the red bank is controlled and repeatable.",
+          "steps": [
+            {
+              "text": "Repeat the five-bank to rebuild bonus and relight multiplier progress."
+            },
+            {
+              "text": "Switch to the named multiplier target after each full bank.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "95,000 bonus collect",
+        "steps": [
+          {
+            "text": "Reach 5x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right arc and red drops to raise base bonus to its 19,000 maximum."
+          },
+          {
+            "text": "Collect at the bullseye for 95,000."
+          }
+        ]
+      },
+      "cautions": [
+        {
+          "issue": "A shot behind the left side of the red bank enters a dead zone and scores nothing useful.",
+          "response": "Aim at a red target face. If that shot is not dialed, use the right arc instead.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/charlies-angels"
+        },
+        {
+          "issue": "Holding the right flipper up under a fast return can cause an inlane-outlane drain.",
+          "response": "Do not raise the right flipper early to cradle a fast ball. Let the feed slow or make one controlled play.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/charlies-angels"
+        },
+        {
+          "issue": "A ball descending the right arc can hit the white-bank rubber and kick across the playfield.",
+          "response": "Expect the cross-playfield kick. Keep the left flipper ready instead of assuming a clean right return.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/charlies-angels"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Complete the red five-bank."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Reach 5x bonus."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "C-H-I-C and right arc: Use this plan when the red drop rebounds are unsafe."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the common solid-state game, not the rare electromechanical edition.",
+        "Base bonus, multiplier, and C-H-I-C progress reset every ball."
+      ],
+      "simpleOverview": "In Charlie's Angels, complete the red five-bank for 2x Bonus, then hit the bullseye for 3x, the leftmost red drop for 4x, and the top white drop for 5x. Use the right arc and red drops to build base bonus, then hit the bullseye to collect base bonus times the lit multiplier without resetting that multiplier.",
+      "overview": "In Charlie's Angels, the red five-bank starts Bonus X at 2x, and the bullseye, leftmost red drop, and top white drop raise it through 5x in that order. Follow those physical shots, build at least 11,000 base bonus through the right arc and red drops, then shoot the bullseye for the multiplied Bonus Collect. Rebuild the base and repeat because the multiplier remains lit for the ball.",
+      "machineSetup": [
+        "Confirm the common solid-state game, not the rare electromechanical edition."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

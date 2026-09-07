@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Zl2",
+  "title": "Dracula",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Stern Dracula factory manual",
+      "url": "https://www.mamechannel.it/files_free/arcade_manuals_unpacked/dracula.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Dracula strategy",
+        "url": "https://rules.silverballmania.com/rules/G4Zl2-Ml90d"
+      },
+      {
+        "label": "Dracula factory instruction card",
+        "url": "https://arcarc.xmission.com/Pinball/Instruction%20%20Cards/dracster.gif"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Dracula rewards a compact bonus-and-spinner loop. Complete the left three-bank to light 2x, build the base bonus in 2,000 steps, and shoot the upper-left eject pocket to collect the current bonus while keeping the multiplier. The spinner lights for 1,000 whenever bonus reaches 2,000, 8,000, 14,000, or 20,000, so each collect creates another chance to rebuild through a high-value spinner window.",
+      "simpleOverview": "Complete the left three-bank to light 2x. Build the base bonus to 14,000 or 20,000, repeat the lit 1,000 spinner, then shoot the upper-left eject pocket to collect the multiplied bonus. The collect resets the base but preserves Bonus X for another build on the same ball.",
+      "summary": "Use the safer left three-bank for 2x, then let spinner shots grow the bonus through its lit thresholds. Collect at the upper-left pocket when the multiplied value justifies the kickout risk. The star loop and upper four-bank offer secondary awards; the repeatable bonus cycle is the dependable route.",
+      "quickInfo": [
+        {
+          "name": "Light 2x",
+          "summary": "Complete the left three-bank."
+        },
+        {
+          "name": "Light Spinner for 1,000",
+          "summary": "Reach 2,000, 8,000, 14,000, or 20,000 bonus."
+        },
+        {
+          "name": "Collect Bonus",
+          "summary": "Shoot the upper-left eject pocket."
+        },
+        {
+          "name": "Light Bottom Special",
+          "summary": "Spot all four Cats and Bats twice."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the left three-bank to light 2x and add bonus value.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Build the base bonus through 8,000 or 14,000 so the spinner lights for 1,000 per spin."
+        },
+        {
+          "text": "Repeat the lit spinner while its return is controlled and continue building toward 20,000."
+        },
+        {
+          "text": "Shoot the upper-left eject pocket to collect the base bonus with Bonus X, then rebuild with the multiplier preserved.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Cats, Bats, and stars",
+          "when": "Use this when the left bank or collect pocket is unavailable.",
+          "steps": [
+            {
+              "text": "Complete the upper four-bank to spot the four Cats and Bats; a second completion lights the bottom Special."
+            },
+            {
+              "text": "Collect three star switches to advance the star award and light the rollover for 10,000."
+            },
+            {
+              "text": "Complete X-Y-Z once for 4,000 bonus and twice for Special, when enabled."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated multiplied bonus",
+        "steps": [
+          {
+            "text": "Raise Bonus X with the left three-bank.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Build through a 1,000-spinner threshold and use the spinner to accelerate the base value."
+          },
+          {
+            "text": "Collect at the eject pocket, then repeat the cycle with the held multiplier."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the left three-bank and reset, upper four-bank, upper-left eject pocket and kickout, spinner and value lamps, three star switches, X-Y-Z lanes, and the full bonus ladder.",
+        "Confirm the last-ball alternating 2x/5x behavior and the Extra Ball and Special settings; the instruction card permits score substitutions on some adjustments."
+      ],
+      "cautions": [
+        {
+          "issue": "The final-ball multiplier and award substitutions are adjustable.",
+          "response": "Read the 2x and 5x lamps and the apron card before committing to a last-ball collect; do not assume that Extra Ball or Special is enabled.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/Instruction%20%20Cards/dracster.gif"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

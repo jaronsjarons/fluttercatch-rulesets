@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr2Dk",
+  "title": "Mr. & Mrs. Pac-Man",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "1982 Mr. & Mrs. Pac-Man strategy book",
+      "url": "https://www.digitpress.com/library/books/book_how_to_win_at_pac-man.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Mr. & Mrs. Pac-Man manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Mr%20and%20Mrs%20Pacman%20Manual.pdf"
+      },
+      {
+        "label": "Mr. & Mrs. Pac-Man rules cross-check",
+        "url": "https://pinballnirvana.com/forums/resources/mr-mrs-pac-man-bally-1982-vp9-pm5.4740/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Full plunge to the upper flipper, repeat the safer top saucer, use the center safety space and wraparound in Pac-Maze, and chase the lower four-target banks or P-A-C-M-A-N standups only for valuable moves or lives.",
+      "quickInfo": [
+        {
+          "name": "Six-move start",
+          "summary": "Complete the upper three-target bank twice to store six moves, then shoot either top saucer."
+        },
+        {
+          "name": "Pac-Maze controls",
+          "summary": "The left flipper button rotates direction and the right button moves Pac-Man one space."
+        },
+        {
+          "name": "Maze completion",
+          "summary": "Move Pac-Man through all 25 spaces, including the center after leaving it, to add 250,000 to the final-game bonus."
+        },
+        {
+          "name": "Saucer value",
+          "summary": "Either top saucer advances the shared value from 1,000 to a 100,000 maximum."
+        },
+        {
+          "name": "Final-game bonus",
+          "summary": "Each completed maze adds 250,000 and each remaining life adds 50,000 after the final ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the displayed maze time, starting lives, and Extra Ball setting before you plunge."
+        },
+        {
+          "text": "Use a full plunge past the narrow skill-shot lane and let the ball reach the upper flipper."
+        },
+        {
+          "text": "Test one upper-bank shot and one top-saucer shot. Watch both returns before you choose the repeatable route."
+        },
+        {
+          "text": "Repeat the safer top saucer while its return stays controlled.",
+          "modeNotes": [
+            "Saucer value: Either saucer scores the shared value; it starts at 1,000, then reaches 10,000 and rises by 10,000 to 100,000."
+          ]
+        },
+        {
+          "text": "If Extra Ball lights after the configured fifth or tenth saucer advance, shoot either saucer once more to collect it."
+        },
+        {
+          "text": "When six moves are stored, shoot a top saucer to start Pac-Maze. Read the remaining move count before the first input.",
+          "modeNotes": [
+            "Pac-Maze: The saucer holds the physical ball while the flipper buttons control Pac-Man on a 5-by-5 grid."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the left button to rotate direction and the right button to move one space. Each move spends one stored move."
+        },
+        {
+          "text": "Keep the center safety space available because the ghost cannot enter it. Use edge wraparound to create distance."
+        },
+        {
+          "text": "During Pac-Man Aggressive, fill safe grid lights before you chase the ghost.",
+          "modeNotes": [
+            "Pac-Man Aggressive: The ghost flees; touching it scores 50,000 and returns it to a random corner."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the flipper buttons to move Pac-Man through all 25 spaces and complete the maze. Return to the center later because its starting light is not collected automatically."
+        },
+        {
+          "text": "After the saucer releases the ball, resume the saucer or upper-bank route and protect the final-game bonus."
+        }
+      ],
+      "fallback": {
+        "title": "Upper bank, gate, and saucers",
+        "when": "Use this when a direct saucer return is dangerous.",
+        "steps": [
+          {
+            "text": "Full plunge to the upper flipper."
+          },
+          {
+            "text": "Complete the upper three-bank for three moves."
+          },
+          {
+            "text": "Complete it a second time to open the left-outlane gate."
+          },
+          {
+            "text": "Take a saucer only after its feed is known."
+          },
+          {
+            "text": "Use the center space and wraparound in Pac-Maze."
+          },
+          {
+            "text": "Resume upper-bank progress after the ball is released."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Pac-Maze completion",
+          "when": "Use this when both lower banks return safely and more moves are valuable.",
+          "steps": [
+            {
+              "text": "Complete each lower four-bank for five moves."
+            },
+            {
+              "text": "Hit the six lit P-A-C-M-A-N standups; each adds one move."
+            },
+            {
+              "text": "Complete the word to restore one Pac-Man life."
+            },
+            {
+              "text": "Shoot a saucer and light all 25 maze spaces."
+            },
+            {
+              "text": "A completed maze adds 250,000 at game end."
+            }
+          ]
+        },
+        {
+          "title": "Precision skill shot",
+          "when": "Use this only after the plunge strength and upper feed are measured.",
+          "steps": [
+            {
+              "text": "Aim for the narrow upper-right lane into the top-right saucer."
+            },
+            {
+              "text": "A made plunge gives ten moves and starts Pac-Man Aggressive."
+            },
+            {
+              "text": "Abandon the shot after a miss or an unsafe upper feed."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Completed mazes and final-game bonus",
+        "steps": [
+          {
+            "text": "Store moves through target banks, lanes, and standups."
+          },
+          {
+            "text": "Preserve or restore Pac-Man lives."
+          },
+          {
+            "text": "Enter Pac-Maze with at least six moves.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete each 25-space grid."
+          },
+          {
+            "text": "Store 250,000 for each completed maze and 50,000 for each remaining life."
+          },
+          {
+            "text": "Avoid tilting the final ball so the completed-maze and remaining-life awards are counted."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Pac-Maze",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Pac-Man Aggressive",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Maze moves",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Saucer value",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Final-game bonus",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Upper-bank return",
+          "instruction": "Use the upper flipper for the three top targets. A firm button press can return the ball to that flipper.",
+          "sourceUrl": "https://www.digitpress.com/library/books/book_how_to_win_at_pac-man.pdf"
+        },
+        {
+          "name": "Measured saucer skill shot",
+          "instruction": "Use a repeatable partial plunge into the top-right saucer for ten moves and Aggressive.",
+          "sourceUrl": "https://www.digitpress.com/library/books/book_how_to_win_at_pac-man.pdf"
+        },
+        {
+          "name": "Maze wraparound",
+          "instruction": "Move through one grid edge and return from the opposite edge to keep distance from the ghost.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Mr%20and%20Mrs%20Pacman%20Manual.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The top-right skill shot needs a precise partial plunge into the saucer.",
+          "response": "Learn the required plunger strength before you depend on its ten Maze moves.",
+          "sourceUrl": "https://www.digitpress.com/library/books/book_how_to_win_at_pac-man.pdf"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ball count, tournament settings, Extra Ball conversion, Special treatment, final-game bonus, and tilt behavior.",
+        "Confirm starting lives, maze time, Pac-Man Aggressive duration, saucer hold, move awards, gate rules, and the Extra Ball threshold.",
+        "Test the skill-shot lane, both saucers and kickouts, upper and lower banks, standups, upper flipper, outlane gate, slingshots, and returns."
+      ],
+      "simpleOverview": "Mr. & Mrs. Pac-Man alternates upper-playfield scoring with a button-controlled Pac-Maze. Build six moves at the upper bank, enter through a top saucer, then rotate and move through the grid while preserving the center safety space and edge wraparound. Completed mazes add to the final-game bonus.",
+      "overview": "The upper bank in Mr. & Mrs. Pac-Man adds stored maze moves, while playfield switches add maze lives and raise the top-saucer value. Either top saucer starts Pac-Maze. Store at least six moves, light all 25 maze spaces, then return to upper-playfield scoring while protecting completed mazes and remaining lives.",
+      "machineSetup": [
+        "Confirm ball count, tournament settings, Extra Ball conversion, Special treatment, final-game bonus, and tilt behavior.",
+        "Confirm starting lives, maze time, Pac-Man Aggressive duration, saucer hold, move awards, gate rules, and the Extra Ball threshold.",
+        "Test the skill-shot lane, both saucers and kickouts, upper and lower banks, standups, upper flipper, outlane gate, slingshots, and returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

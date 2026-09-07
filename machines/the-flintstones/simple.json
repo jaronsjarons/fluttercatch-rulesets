@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "GRK95",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start a safe 1-2-3 mode before completing C-O-N-C-R-E-T-E, then use multiball to alternate the center-lane Jackpot and upper-flipper U-Turn Super.",
+        "quickInfo": [
+          {
+            "name": "C-O-N-C-R-E-T-E",
+            "summary": "BED, ROCK, first-multiball DIG, and Bronto Crane awards spot letters; completing the word lights multiball."
+          },
+          {
+            "name": "Mode stack",
+            "summary": "Complete 1-2-3 on the lit ramps before multiball; running modes continue during multiball."
+          },
+          {
+            "name": "Jackpot",
+            "summary": "The center lane collects the regular Jackpot and feeds the upper flipper."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "After the center collect, shoot the U-Turn from the upper flipper; it relights the center Jackpot."
+          },
+          {
+            "name": "Drain Shield",
+            "summary": "Complete either shell-target bank to light temporary outlane rescue."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the ramps, center lane, U-Turn, BED targets, ROCK targets, and orbit-to-Time-Machine feed."
+          },
+          {
+            "text": "Complete the lit 1-2-3 ramp sequence to start a mode whose shots overlap the main route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build C-O-N-C-R-E-T-E through the safer BED or ROCK bank and any available Bronto Crane spotting."
+          },
+          {
+            "text": "Shoot a lit orbit, or complete DIG where applicable, to start three-ball multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the center lane for the regular Jackpot and prepare for its feed to the upper flipper.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the upper flipper to shoot the U-Turn Super Jackpot, which relights the center-lane Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the center-to-U-Turn cycle while using the running mode's overlapping lit shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between starts, complete a shell bank for Drain Shield before attacking the central target areas."
+          }
+        ],
+        "fallback": {
+          "title": "Dino Frenzy",
+          "when": "Use this when ramp transfers and C-O-N-C-R-E-T-E banks reject but the Dino targets are safe.",
+          "steps": [
+            {
+              "text": "Complete 1-2-3 until Dino Frenzy is selected."
+            },
+            {
+              "text": "Start the two-ball mode.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat controlled lit Dino targets, using the Dino-marked target to raise the value."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bronto Crane spot",
+            "when": "Use this when the left orbit is reliable and direct BED or ROCK hits are dangerous.",
+            "steps": [
+              {
+                "text": "Shoot the left orbit to light Bronto Crane."
+              },
+              {
+                "text": "Shoot it again for the diverted award."
+              },
+              {
+                "text": "Take Spell CONCRETE when awarded, then start multiball from the safest lit route."
+              }
+            ]
+          },
+          {
+            "title": "Bowl-A-Rama multiball",
+            "when": "Use this when two strikes are already recorded and the ramp-to-bowling feed is consistent.",
+            "steps": [
+              {
+                "text": "Shoot the lit Go Bowling ramp."
+              },
+              {
+                "text": "Make the center strike target; use Bowling Power-Up when available."
+              },
+              {
+                "text": "After the third strike, take Super Strikes during two-ball play.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Mystery Mode",
+          "steps": [
+            {
+              "text": "Play all four 1-2-3 modes."
+            },
+            {
+              "text": "Start Mystery Mode on the next completed sequence."
+            },
+            {
+              "text": "Knock down BED and ROCK inside the timer for the completion award.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Concrete Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Dino Frenzy",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Drain Shield",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Mystery Mode",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center lane",
+            "label": "Jackpot lane",
+            "description": "Narrow center shot used for the regular multiball Jackpot.",
+            "precision": "unverified",
+            "context": "center lane: Narrow center shot used for the regular multiball Jackpot."
+          },
+          {
+            "term": "U-Turn",
+            "label": "Super U-Turn",
+            "description": "Upper-flipper shot used for the Super Jackpot and 2x playfield collect.",
+            "precision": "unverified",
+            "context": "U-Turn: Upper-flipper shot used for the Super Jackpot and 2x playfield collect."
+          },
+          {
+            "term": "BED targets",
+            "label": "BED bank",
+            "description": "Drop-target bank used for CONCRETE progress and modes.",
+            "precision": "unverified",
+            "context": "BED targets: Drop-target bank used for CONCRETE progress and modes."
+          },
+          {
+            "term": "ROCK targets",
+            "label": "ROCK bank",
+            "description": "Second drop-target bank used for CONCRETE progress and modes.",
+            "precision": "unverified",
+            "context": "ROCK targets: Second drop-target bank used for CONCRETE progress and modes."
+          },
+          {
+            "term": "left orbit",
+            "label": "Bronto Crane orbit",
+            "description": "Orbit used to light and collect Bronto Crane awards.",
+            "precision": "unverified",
+            "context": "left orbit: Orbit used to light and collect Bronto Crane awards."
+          },
+          {
+            "term": "ramps",
+            "label": "1-2-3 ramps",
+            "description": "Paired ramps and cross-playfield transfer used to qualify modes.",
+            "precision": "unverified",
+            "context": "ramps: Paired ramps and cross-playfield transfer used to qualify modes."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Mode-before-multiball order",
+            "instruction": "Finish the lit 1-2-3 sequence before starting multiball so the selected mode continues under protection.",
+            "sourceUrl": "https://www.pinball.org/rules/flintstones.html"
+          },
+          {
+            "name": "Center-to-U-Turn transfer",
+            "instruction": "After the center Jackpot, prepare the upper flipper immediately for the U-Turn Super feed.",
+            "sourceUrl": "https://www.pinball.org/rules/flintstones.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The center lane and drop-bank rebounds can drain straight down the middle.",
+            "response": "Use multiball or Drain Shield protection for repeated center work.",
+            "sourceUrl": "https://www.pinball.org/rules/flintstones.html"
+          },
+          {
+            "issue": "The ramp transfer can unexpectedly switch the receiving flipper.",
+            "response": "Read the 1-2-3 lights and keep both flippers ready until the ball commits to the loop.",
+            "sourceUrl": "https://www.pinball.org/rules/flintstones.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ROM, CONCRETE spotting, mode order, and ball saves.",
+          "Test the center lane, U-Turn, ramps, and orbit gate."
+        ],
+        "simpleOverview": "Any of The Flintstones' four 1-2-3 modes can continue during C-O-N-C-R-E-T-E Multiball. Start a mode through its three lit ramps, finish CONCRETE, then collect the center-lane Jackpot and use its upper-flipper feed for the U-Turn Super before repeating the cycle.",
+        "overview": "Any of The Flintstones' four 1-2-3 modes can continue during C-O-N-C-R-E-T-E Multiball. Begin a compatible 1-2-3 mode, finish CONCRETE through safe BED, ROCK, and spotting progress, then start Multiball. Alternate the center Jackpot and upper-flipper U-Turn Super while the mode's overlapping shots remain active.",
+        "machineSetup": [
+          "Confirm ROM, CONCRETE spotting, mode order, and ball saves.",
+          "Test the center lane, U-Turn, ramps, and orbit gate."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Start a safe 1-2-3 mode before completing C-O-N-C-R-E-T-E, then use multiball to alternate the center-lane Jackpot and upper-flipper U-Turn Super.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the ramps, center lane, U-Turn, BED targets, ROCK targets, and orbit-to-Time-Machine feed."
+          },
+          {
+            "text": "Complete the lit 1-2-3 ramp sequence to start a mode whose shots overlap the main route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build C-O-N-C-R-E-T-E through the safer BED or ROCK bank and any available Bronto Crane spotting."
+          },
+          {
+            "text": "Shoot a lit orbit, or complete DIG where applicable, to start three-ball multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the center lane for the regular Jackpot and prepare for its feed to the upper flipper.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the upper flipper to shoot the U-Turn Super Jackpot, which relights the center-lane Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the center-to-U-Turn cycle while using the running mode's overlapping lit shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between starts, complete a shell bank for Drain Shield before attacking the central target areas."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "C-O-N-C-R-E-T-E",
+            "summary": "BED, ROCK, first-multiball DIG, and Bronto Crane awards spot letters; completing the word lights multiball."
+          },
+          {
+            "name": "Mode stack",
+            "summary": "Complete 1-2-3 on the lit ramps before multiball; running modes continue during multiball."
+          },
+          {
+            "name": "Jackpot",
+            "summary": "The center lane collects the regular Jackpot and feeds the upper flipper."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Dino Frenzy",
+          "when": "Use this when ramp transfers and C-O-N-C-R-E-T-E banks reject but the Dino targets are safe.",
+          "steps": [
+            {
+              "text": "Complete 1-2-3 until Dino Frenzy is selected."
+            },
+            {
+              "text": "Start the two-ball mode.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat controlled lit Dino targets, using the Dino-marked target to raise the value."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The center lane and drop-bank rebounds can drain straight down the middle.",
+          "text": "Use multiball or Drain Shield protection for repeated center work."
+        }
+      }
+    }
+  ]
+}

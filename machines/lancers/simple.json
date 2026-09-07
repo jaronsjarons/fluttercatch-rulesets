@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "id": "G5p6d",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge Light A or Light B first, return to the top through the broad outer gaps, and collect lit side lanes or holes only after their feeds prove safe.",
+        "quickInfo": [
+          {
+            "name": "Top-lane lighting",
+            "summary": "The top rollovers light pop bumpers, kickout holes, and side rollovers for higher scoring."
+          },
+          {
+            "name": "Light A and B",
+            "summary": "The Light A and Light B top lanes score 30 points and prepare the matching side features."
+          },
+          {
+            "name": "Four kickout holes",
+            "summary": "The two center holes fire toward the top, while the two side holes kick toward the flippers."
+          },
+          {
+            "name": "Lit bottom rollovers",
+            "summary": "Each bottom rollover scores 200 when its lamp is lit."
+          },
+          {
+            "name": "Alternating kickers",
+            "summary": "The two lower cyclonic kickers light alternately during play."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the top-lane lamps before each plunge."
+          },
+          {
+            "text": "Plunge Light A or Light B first when either lane is still needed."
+          },
+          {
+            "text": "On later balls, plunge a different top lane to light another feature."
+          },
+          {
+            "text": "Send the ball through the broad gap between an outer saucer and its nearby A or B side lane."
+          },
+          {
+            "text": "Use the upper bumpers to reach newly lit saucers and side rollovers."
+          },
+          {
+            "text": "Test each lit saucer once and track its full kickout."
+          },
+          {
+            "text": "Repeat the lit saucer or side-lane route that returns the ball safely."
+          },
+          {
+            "text": "Return to the broad upper gap when a direct feature shot becomes unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Broad-gap upper play",
+          "when": "Use this plan when the lit side lane or a saucer kickout reaches a sling or side drain.",
+          "steps": [
+            {
+              "text": "Stop direct shots at the unsafe feature."
+            },
+            {
+              "text": "Aim through the broad gap beside the outer saucer."
+            },
+            {
+              "text": "Let top bumpers find lit features through natural action."
+            },
+            {
+              "text": "Track the full exit before the next flip."
+            },
+            {
+              "text": "Repeat the upper route while it remains survivable."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Lit side-lane collect",
+            "when": "Use this plan when an A or B side lane is lit and its lower return has been safe.",
+            "steps": [
+              {
+                "text": "Wait for a controlled flipper angle to the lit side lane."
+              },
+              {
+                "text": "Shoot through the lane without clipping the adjacent saucer or rubber."
+              },
+              {
+                "text": "Prepare for the lower slingshot when the ball exits."
+              },
+              {
+                "text": "Return to broad-gap upper play after the collect."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Lit Super-score features",
+          "steps": [
+            {
+              "text": "Collect different top rollovers."
+            },
+            {
+              "text": "Use Light A and Light B to prepare side features."
+            },
+            {
+              "text": "Use different top lanes to light the bumpers, kickout holes, and side rollovers."
+            },
+            {
+              "text": "Collect the lit features through their safest entries."
+            },
+            {
+              "text": "Repeat upper-lane lighting on each new ball."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "top rollovers",
+            "label": "Top rollover lanes",
+            "description": "The rollover lanes across the top light matching bumpers, kickout holes, and side rollovers.",
+            "xPercent": 50,
+            "yPercent": 18,
+            "precision": "area"
+          },
+          {
+            "term": "Light A",
+            "context": "Plunge Light A or Light B first.",
+            "label": "Light A top lane",
+            "description": "The A lane is the left labeled lighting lane below the upper rollovers.",
+            "xPercent": 34,
+            "yPercent": 36,
+            "precision": "area"
+          },
+          {
+            "term": "Light B",
+            "context": "Plunge Light A or Light B first.",
+            "label": "Light B top lane",
+            "description": "The B lane is the right labeled lighting lane below the upper rollovers.",
+            "xPercent": 66,
+            "yPercent": 36,
+            "precision": "area"
+          },
+          {
+            "term": "center holes",
+            "label": "Center kickout holes",
+            "description": "The two center holes kick the ball back toward the top of the playfield.",
+            "xPercent": 50,
+            "yPercent": 45,
+            "precision": "area"
+          },
+          {
+            "term": "side saucer",
+            "label": "Side kickout holes",
+            "description": "The outer holes kick toward the lower flippers; learn each return before repeating it.",
+            "xPercent": 50,
+            "yPercent": 56,
+            "precision": "area"
+          },
+          {
+            "term": "bottom rollover",
+            "label": "Lit bottom rollovers",
+            "description": "The two lower outside rollovers score 200 when lit and lead toward the outlanes.",
+            "xPercent": 50,
+            "yPercent": 78,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm this is Gottlieb Lancers and read the instruction cards for three-ball or five-ball play, Super, replay, and Special awards.",
+          "Verify that each top lane lights its matching bumpers, holes, or side rollovers and that the lamps and switches register.",
+          "Test both side-hole kickouts, center-hole returns, bottom rollovers, lower kickers, bumper exits, tilt sensitivity, and flipper strength."
+        ],
+        "techniques": [
+          {
+            "name": "Different-lane plunge",
+            "instruction": "Change plunge strength or aim on each ball so the ball enters a top lane that has not supplied the needed light.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/lancers"
+          },
+          {
+            "name": "Outer-saucer gap feed",
+            "instruction": "Shoot through the open space between an outer saucer and the adjacent A or B side lane to reach the upper playfield without striking either feature directly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5p6d-MdEVb"
+          },
+          {
+            "name": "Saucer kickout test",
+            "instruction": "Collect each side saucer once, keep both flippers ready, and record which kickout reaches a controllable flipper feed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5p6d-MdEVb"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A pop-bumper exit can send the ball directly toward a drain.",
+            "response": "Keep both flippers ready and use only an early legal nudge while the exit path can still change.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5p6d-MdEVb"
+          },
+          {
+            "issue": "A side-saucer kickout can arrive fast at a flipper.",
+            "response": "Test each saucer before repeating it and abandon any saucer whose kickout cannot be controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5p6d-MdEVb"
+          },
+          {
+            "issue": "A side-lane exit becomes dangerous when it triggers the nearby slingshot.",
+            "response": "Do not repeat the lane after a sling-assisted outlane feed. Return to the broad upper gap instead.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5p6d-MdEVb"
+          }
+        ],
+        "simpleOverview": "Lancers uses its top lanes to light matching bumpers, kickout holes, and side rollovers. Plunge Light A or Light B first, return to the top through a broad outer gap, and repeat only the lit saucer or side-lane route whose full return has proved safe.",
+        "overview": "In Lancers, each top lane lights its matching bumpers, kickout holes, and side rollovers for higher values. Use the lanes to light the useful features, then send the ball through the broad outer gaps for upper access. Test each lit saucer once and keep only the route whose kickout returns the ball safely.",
+        "machineSetup": [
+          "Confirm this is Gottlieb Lancers and read the instruction cards for three-ball or five-ball play, Super, replay, and Special awards.",
+          "Verify that each top lane lights its matching bumpers, holes, or side rollovers and that the lamps and switches register.",
+          "Test both side-hole kickouts, center-hole returns, bottom rollovers, lower kickers, bumper exits, tilt sensitivity, and flipper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Plunge Light A or Light B first, return to the top through the broad outer gaps, and collect lit side lanes or holes only after their feeds prove safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the top-lane lamps before each plunge."
+          },
+          {
+            "text": "Plunge Light A or Light B first when either lane is still needed."
+          },
+          {
+            "text": "On later balls, plunge a different top lane to light another feature."
+          },
+          {
+            "text": "Send the ball through the broad gap between an outer saucer and its nearby A or B side lane."
+          },
+          {
+            "text": "Use the upper bumpers to reach newly lit saucers and side rollovers."
+          },
+          {
+            "text": "Test each lit saucer once and track its full kickout."
+          },
+          {
+            "text": "Repeat the lit saucer or side-lane route that returns the ball safely."
+          },
+          {
+            "text": "Return to the broad upper gap when a direct feature shot becomes unsafe."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Top-lane lighting",
+            "summary": "The top rollovers light pop bumpers, kickout holes, and side rollovers for higher scoring."
+          },
+          {
+            "name": "Light A and B",
+            "summary": "The Light A and Light B top lanes score 30 points and prepare the matching side features."
+          },
+          {
+            "name": "Four kickout holes",
+            "summary": "The two center holes fire toward the top, while the two side holes kick toward the flippers."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Broad-gap upper play",
+          "when": "Use this plan when the lit side lane or a saucer kickout reaches a sling or side drain.",
+          "steps": [
+            {
+              "text": "Stop direct shots at the unsafe feature."
+            },
+            {
+              "text": "Aim through the broad gap beside the outer saucer."
+            },
+            {
+              "text": "Let top bumpers find lit features through natural action."
+            },
+            {
+              "text": "Track the full exit before the next flip."
+            },
+            {
+              "text": "Repeat the upper route while it remains survivable."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A pop-bumper exit can send the ball directly toward a drain.",
+          "text": "Keep both flippers ready and use only an early legal nudge while the exit path can still change."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr13q",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Time Line turns each target group into an X on its tic-tac-toe grid. Knock down seven targets on the timed mini-playfield to place the center X; the yellow drop bank places square 1, the red drop bank square 7, and red 1-2-3 square 9. Complete any three-X line before the machine completes three O's. Each win raises Bonus X and the next Win or Draw award, while a loss lowers that ladder.",
+        "simpleOverview": "Knock down seven targets on the timed mini-playfield to place the center X. On the main playfield, the yellow drop bank places square 1, the red drop bank square 7, and red 1-2-3 square 9. Choose the group that completes a three-X line before the machine makes three O's; each win raises Bonus X and the next Win or Draw award.",
+        "summary": "Start with the center X, then read the grid instead of clearing every target group. Choose the safest bank or numbered target set that finishes a line; a win raises both the end-of-ball multiplier and the next award, so preserving the ball becomes more valuable after each board.",
+        "quickInfo": [
+          {
+            "name": "Place Center X",
+            "summary": "Knock down seven mini-playfield targets before its timer ends."
+          },
+          {
+            "name": "Place Corner X's",
+            "summary": "Complete the yellow bank, red bank, or red 1-2-3 targets."
+          },
+          {
+            "name": "Win the Board",
+            "summary": "Complete any row, column, or diagonal of three X's."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Win a tic-tac-toe board."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On the mini-playfield, knock down seven targets before the timed flippers go dead to place the center X."
+          },
+          {
+            "text": "Read the backglass grid and choose the safest main-playfield group that advances a possible three-X line."
+          },
+          {
+            "text": "Complete the yellow drop bank for square 1, the red drop bank for square 7, or red 1-2-3 for square 9."
+          },
+          {
+            "text": "Finish any three-X line before the machine completes three O's; the win raises Bonus X and advances the next Win or Draw award.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Main-playfield recovery",
+            "when": "Use this when the mini-playfield timer ends before seven targets fall.",
+            "steps": [
+              {
+                "text": "Inspect which X squares are already lit and which line still has no blocking O."
+              },
+              {
+                "text": "Use the yellow bank, red bank, red 1-2-3, side targets, or lower rollovers to place the needed X."
+              },
+              {
+                "text": "Stop shooting a completed group and move immediately to the feature for the final square."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Higher Win or Draw award",
+          "steps": [
+            {
+              "text": "Complete a three-X line to win the current board."
+            },
+            {
+              "text": "Use the resulting Bonus X increase to grow the end-of-ball payout.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Win later boards to advance the Win or Draw award toward Extra Ball, 50,000, and Special."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test both mini-playfield flippers, all five mini drops and their reset, both main drop banks, red 1-2-3, side targets, return and outlane switches, the left kicker, the return gate, the grid lamps, and the separate O response.",
+          "Confirm three- or five-ball play, Extra Ball and Special conversion, playfield-memory difficulty, and whether the mini-playfield timer and seven-hit counter behave consistently."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "mini-playfield",
+            "label": "Timed mini-playfield",
+            "description": "Upper-left playfield where seven drop-target hits place the center X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "yellow drop bank",
+            "label": "Yellow drop-target bank",
+            "description": "Main-playfield bank that places X in square 1 when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red drop bank",
+            "label": "Red drop-target bank",
+            "description": "Main-playfield bank that places X in square 7 when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red 1-2-3",
+            "label": "Red 1-2-3 targets",
+            "description": "Three targets that place X in square 9 when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "backglass grid",
+            "label": "Backglass tic-tac-toe grid",
+            "description": "Display showing the player's X's and the machine's O's.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The selected difficulty controls which grid, award, and gate progress carries between balls.",
+            "response": "Read the live grid at the start of every ball; do not assume the previous player's or previous ball's state was retained.",
+            "sourceUrl": "https://www.pinball.org/rules/cache/Timeline-rules.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Start with the center X, then read the grid instead of clearing every target group. Choose the safest bank or numbered target set that finishes a line; a win raises both the end-of-ball multiplier and the next award, so preserving the ball becomes more valuable after each board.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "On the mini-playfield, knock down seven targets before the timed flippers go dead to place the center X."
+          },
+          {
+            "text": "Read the backglass grid and choose the safest main-playfield group that advances a possible three-X line."
+          },
+          {
+            "text": "Complete the yellow drop bank for square 1, the red drop bank for square 7, or red 1-2-3 for square 9."
+          },
+          {
+            "text": "Finish any three-X line before the machine completes three O's; the win raises Bonus X and advances the next Win or Draw award.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Place Center X",
+            "summary": "Knock down seven mini-playfield targets before its timer ends."
+          },
+          {
+            "name": "Place Corner X's",
+            "summary": "Complete the yellow bank, red bank, or red 1-2-3 targets."
+          },
+          {
+            "name": "Win the Board",
+            "summary": "Complete any row, column, or diagonal of three X's."
+          }
+        ]
+      }
+    }
+  ]
+}

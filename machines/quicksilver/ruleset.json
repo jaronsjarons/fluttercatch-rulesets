@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBZl",
+  "title": "Quicksilver",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Quicksilver player card",
+      "url": "https://www.pinballrebel.com/game/pins/instruction/quicksilver.doc"
+    },
+    "supportingSources": [
+      {
+        "label": "Quicksilver competitive rules",
+        "url": "https://rules.silverballmania.com/rules/GRBZl-Mb5Zq"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Shoot the right three-bank from the left flipper; each completion scores 25,000 and advances Bonus X toward 5x. A right return-lane roll lights the left spinner only briefly, so shoot it immediately from the right flipper. Use the center four-bank to raise the left saucer and spot a bonus letter, but return to the right-bank and lit-spinner route whenever it is available.",
+      "simpleOverview": "Repeat the right three-bank for 25,000 and a Bonus X advance. When the ball rolls through the right return lane, shoot the left spinner immediately while it is lit. Complete the center four-bank to raise the left saucer and spot a bonus letter.",
+      "summary": "Repeat the right three-bank to reach 5x Bonus, and use the brief right-return-to-left-spinner sequence for scoring. Build the left saucer with the center four-bank when that route is safer.",
+      "quickInfo": [
+        {
+          "name": "Repeat the Right Bank",
+          "summary": "Each completion scores 25,000 and advances Bonus X."
+        },
+        {
+          "name": "Watch the Return Lane",
+          "summary": "The right return lane lights the left spinner briefly."
+        },
+        {
+          "name": "Shoot the Lit Spinner",
+          "summary": "Take it immediately from the right flipper."
+        },
+        {
+          "name": "Build the Saucer",
+          "summary": "Complete the center four-bank to raise its value."
+        }
+      ],
+      "steps": [
+        {
+          "text": "From the left flipper, complete the right three-bank for 25,000 and one Bonus X advance.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Repeat the bank until Bonus X reaches 5x, using the spinner-through-bank path when the machine feeds it reliably.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When the ball crosses the right return lane, shoot the left spinner immediately from the right flipper before its lamp times out.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the center four-bank to raise the left saucer value and spot one bonus letter, then collect the saucer when its value justifies the feed.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Cash a 5x end-of-ball bonus",
+        "steps": [
+          {
+            "text": "Use the right bank to reach 5x before spreading shots across the letter targets.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Finish top lanes and letter standups to raise the base bonus toward 75,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Bonus X maximum, Extra Ball and Special conversions, ball count, and the lit-spinner timer.",
+        "Test the right and center banks, both spinners, both return-lane lamps, left saucer, top lanes, standups, and trough."
+      ],
+      "techniques": [
+        {
+          "name": "Shatz pass",
+          "instruction": "Use a controlled shatz through a return lane when it transfers the ball to the flipper with the next spinner shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRBZl-Mb5Zq",
+          "techniqueSlug": "shatz-pass"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "Let a predictable saucer kickout cross to the opposite flipper instead of flipping at it immediately.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRBZl-Mb5Zq",
+          "techniqueSlug": "dead-bounce"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Lit spinner",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The lit spinner value is timed.",
+          "response": "Read the return-lane lamp and shoot immediately; trapping first can lose the value.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRBZl-Mb5Zq"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Ljd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Blackbelt has three Special routes and a bonus-multiplier lane. Complete either B-L-A-C-K or B-E-L-T target bank to advance Red Special, then hit the lit left or right Ippon target. Hit all seven Dan positions on the center target wheel to light Orange Special, then hit the wheel's center target. Use the four upper KATA lanes to advance KATA Special and collect it at the lit upper-left KATA lane. Repeated Yoko Geri shots on the upper right advance the bonus multiplier.",
+        "simpleOverview": "Complete either B-L-A-C-K or B-E-L-T to advance Red Special, then hit a lit Ippon target. Hit all seven Dan positions on the center wheel to light Orange Special and collect it at the center target. Use the four upper KATA lanes for KATA Special, and repeat Yoko Geri on the upper right for a higher bonus multiplier.",
+        "summary": "Choose the safest visible route: a moving target bank into a lit Ippon target, all seven Dan positions into the wheel's center target, or the upper KATA lanes into the lit KATA lane. Use Yoko Geri when the multiplier route is safer than the targets.",
+        "quickInfo": [
+          {
+            "name": "Build Red Special",
+            "summary": "Complete either moving target bank, then hit a lit Ippon target."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Hit all seven Dan positions, then the center target when lit."
+          },
+          {
+            "name": "Build KATA Special",
+            "summary": "Use the four upper lanes, then the lit KATA lane."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Repeat the upper-right Yoko Geri lane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete either five-target B-L-A-C-K or B-E-L-T bank to advance Red Special, then hit the lit left or right Ippon target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit every Dan position on the center target wheel; when Orange Special is lit, hit the wheel's center target to collect it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the four upper KATA lanes to advance KATA Special, then send the ball through the lit upper-left KATA lane.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the upper-right Yoko Geri lane to advance the bonus multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Favor the multiplier",
+            "when": "Use this when the moving banks or center wheel are rejecting the ball.",
+            "steps": [
+              {
+                "text": "Repeat Yoko Geri until the next bonus-multiplier lamp is earned.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Return to a Special route only when its collect is already lit or the target bank is nearly complete.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Convert a lit Special",
+          "steps": [
+            {
+              "text": "Finish one visible qualification route before changing targets.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Take the corresponding lit Ippon, center-wheel, or KATA collect while it is available.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check the target-wheel setting, bank-completion setting, Yoko Geri requirement, and the configured Red and Orange Special awards.",
+          "Test both moving target banks, all seven Dan positions, the wheel center, both Ippon targets, four KATA lanes, and Yoko Geri lane."
+        ],
+        "termStyles": [
+          {
+            "label": "Red Special",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Orange Special",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "KATA",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus Multiplier",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "moving target banks",
+            "label": "B-L-A-C-K / B-E-L-T banks",
+            "description": "Two five-target banks that advance Red Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target wheel",
+            "label": "Dan target wheel",
+            "description": "Seven outer positions qualify the Orange Special collect at center.",
+            "precision": "unverified"
+          },
+          {
+            "term": "KATA lanes",
+            "label": "KATA lanes",
+            "description": "Four upper lanes and the upper-left Special collect lane.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Yoko Geri lane",
+            "label": "Yoko Geri lane",
+            "description": "Upper-right lane that advances the bonus multiplier.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Special and qualification thresholds are operator-adjustable.",
+            "response": "Confirm the bank, Dan-wheel, and Yoko Geri requirements before committing to a long sequence.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen2/blackbelt/settings.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose the safest visible route: a moving target bank into a lit Ippon target, all seven Dan positions into the wheel's center target, or the upper KATA lanes into the lit KATA lane. Use Yoko Geri when the multiplier route is safer than the targets.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete either five-target B-L-A-C-K or B-E-L-T bank to advance Red Special, then hit the lit left or right Ippon target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit every Dan position on the center target wheel; when Orange Special is lit, hit the wheel's center target to collect it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the four upper KATA lanes to advance KATA Special, then send the ball through the lit upper-left KATA lane.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the upper-right Yoko Geri lane to advance the bonus multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Build Red Special",
+            "summary": "Complete either moving target bank, then hit a lit Ippon target."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Hit all seven Dan positions, then the center target when lit."
+          },
+          {
+            "name": "Build KATA Special",
+            "summary": "Use the four upper lanes, then the lit KATA lane."
+          }
+        ]
+      }
+    }
+  ]
+}

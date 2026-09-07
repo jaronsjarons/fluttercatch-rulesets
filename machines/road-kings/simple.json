@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "G4NKJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete ROAD or KINGS to light locks. Start double-scoring multiball, re-lock both balls for Time Lock, then pass through the timed Extra Ball stage before collecting Mega Score.",
+        "steps": [
+          {
+            "text": "Test the center Detour, both target banks, all three lock returns, and the raised-ramp shot."
+          },
+          {
+            "text": "Complete ROAD or KINGS. Use the center Detour to spot hard letters when its return is safe.",
+            "modeNotes": [
+              "Detour: The center half-loop spots ROAD KINGS letters and raises the Detour value. Make the center ramp and exit on the lit side to collect that value."
+            ]
+          },
+          {
+            "text": "Shoot a lit lock. Complete ROAD or KINGS again if the second lock is not lit."
+          },
+          {
+            "text": "Lock the second ball to start double-scoring multiball.",
+            "modeNotes": [
+              "Road Kings multiball: All scoring is doubled while two balls remain in play."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During multiball, shoot any lit lock. Before the Time Lock timer ends, put the other ball into another lit lock.",
+            "modeNotes": [
+              "Time Lock: Two fast re-locks raise the right ramp. The raised-ramp shot lights a timed Extra Ball first; Mega Score lights there only after Extra Ball is collected or its timer expires."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the raised right ramp for the timed Extra Ball, or let that timer expire. Then shoot the same raised-ramp shot for 300,000 Mega Score.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Detour and carried bonus",
+          "when": "Use this when the lock shots or multiball re-locks reject.",
+          "steps": [
+            {
+              "text": "Repeat the center Detour only while its half-loop return is safe."
+            },
+            {
+              "text": "Collect the raised Detour value by making the center ramp and exiting on the lit side."
+            },
+            {
+              "text": "Complete the 1-2-3-4 lanes to advance Bonus X to 5x and light Bonus Holdover.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Target-bank locks",
+            "when": "Use this when the Detour return is dangerous but the ROAD or KINGS bank is controlled.",
+            "steps": [
+              {
+                "text": "Complete the safer ROAD or KINGS bank."
+              },
+              {
+                "text": "Shoot a lit lock."
+              },
+              {
+                "text": "Repeat for the second lock and double-scoring multiball.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Time Lock and Mega Score",
+          "steps": [
+            {
+              "text": "Start double-scoring multiball with two locks.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Re-lock one ball to start the Time Lock timer."
+            },
+            {
+              "text": "Re-lock the other ball before time ends. Shoot the raised right ramp for Extra Ball or wait for its timer to expire."
+            },
+            {
+              "text": "Shoot the raised right ramp again for 300,000 Mega Score."
+            }
+          ]
+        },
+        "cautions": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete ROAD or KINGS to light locks."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start double-scoring multiball with two locks."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Detour and carried bonus: Use this when the lock shots or multiball re-locks reject."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Road Kings code, ball count, lock sharing, and award conversions.",
+          "Test Detour, both locks, the raised ramp, and ROAD and KINGS banks."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Detour",
+            "label": "Detour",
+            "description": "Route used for the safer scoring plan.",
+            "precision": "unverified",
+            "context": "Route used for the safer scoring plan."
+          },
+          {
+            "term": "ROAD",
+            "label": "ROAD targets",
+            "description": "Target bank used for feature progress.",
+            "precision": "unverified",
+            "context": "Target bank used for feature progress."
+          },
+          {
+            "term": "raised right ramp",
+            "label": "Raised right ramp",
+            "description": "Ramp used for locks and major awards.",
+            "precision": "unverified",
+            "context": "Ramp used for locks and major awards."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At INDISC 2017, Cryss Stephens completed ROAD and KINGS through the ramps, used the qualified locks for Multiball, and combined the cycle with Bonus X."
+          ]
+        },
+        "simpleOverview": "Road Kings turns ROAD or KINGS completions into locks and double-scoring Multiball. Take two locks, relock both balls during Multiball for Time Lock, then shoot the raised right ramp for Extra Ball or let that timer expire. Shoot the ramp again for Mega Score.",
+        "overview": "Road Kings turns ROAD or KINGS completions into locks and double-scoring Multiball. Complete either word for each lock, then relock both balls before the Time Lock expires. Pass through the timed Extra Ball stage and return to the raised right ramp for 300,000.",
+        "machineSetup": [
+          "Confirm Williams Road Kings code, ball count, lock sharing, and award conversions.",
+          "Test Detour, both locks, the raised ramp, and ROAD and KINGS banks."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete ROAD or KINGS to light locks. Start double-scoring multiball, re-lock both balls for Time Lock, then pass through the timed Extra Ball stage before collecting Mega Score.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the center Detour, both target banks, all three lock returns, and the raised-ramp shot."
+          },
+          {
+            "text": "Complete ROAD or KINGS. Use the center Detour to spot hard letters when its return is safe.",
+            "details": [
+              "Detour: The center half-loop spots ROAD KINGS letters and raises the Detour value. Make the center ramp and exit on the lit side to collect that value."
+            ]
+          },
+          {
+            "text": "Shoot a lit lock. Complete ROAD or KINGS again if the second lock is not lit."
+          },
+          {
+            "text": "Lock the second ball to start double-scoring multiball.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "details": [
+              "Road Kings multiball: All scoring is doubled while two balls remain in play."
+            ]
+          },
+          {
+            "text": "During multiball, shoot any lit lock. Before the Time Lock timer ends, put the other ball into another lit lock.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Time Lock: Two fast re-locks raise the right ramp. The raised-ramp shot lights a timed Extra Ball first; Mega Score lights there only after Extra Ball is collected or its timer expires."
+            ]
+          },
+          {
+            "text": "Shoot the raised right ramp for the timed Extra Ball, or let that timer expire. Then shoot the same raised-ramp shot for 300,000 Mega Score.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete ROAD or KINGS to light locks."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start double-scoring multiball with two locks."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Detour and carried bonus: Use this when the lock shots or multiball re-locks reject."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Detour and carried bonus",
+          "when": "Use this when the lock shots or multiball re-locks reject.",
+          "steps": [
+            {
+              "text": "Repeat the center Detour only while its half-loop return is safe."
+            },
+            {
+              "text": "Collect the raised Detour value by making the center ramp and exiting on the lit side."
+            },
+            {
+              "text": "Complete the 1-2-3-4 lanes to advance Bonus X to 5x and light Bonus Holdover.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

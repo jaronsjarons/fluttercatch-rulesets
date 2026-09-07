@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "id": "G4e9z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge a missing 1-through-4 lane and keep feeding the top. Track the green and yellow lamp positions as their bumpers advance them, then shoot the center target only when the two positions match for an added ball.",
+        "quickInfo": [
+          {
+            "name": "Top 1-2-3-4 lanes",
+            "summary": "Each color-and-number lane lights its corresponding bumper and upper side lane; completing all four awards an added ball."
+          },
+          {
+            "name": "Green track",
+            "summary": "Hits on green bumpers advance the green lamp below the center target one position at a time."
+          },
+          {
+            "name": "Yellow track",
+            "summary": "Hits on yellow bumpers advance the yellow lamp below the center target one position at a time."
+          },
+          {
+            "name": "Matched center shot",
+            "summary": "The center target scores 100 normally, but awards an added ball when the green and yellow lamps show matching positions."
+          },
+          {
+            "name": "Upper-playfield priority",
+            "summary": "Bumper action, lit side lanes, lane completion, and lamp matching all begin with repeated shots to the top."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read which of the four top lanes is still uncollected."
+          },
+          {
+            "text": "Plunge for one missing 1-through-4 lane."
+          },
+          {
+            "text": "From either flipper, choose the broadest route back to the upper playfield."
+          },
+          {
+            "text": "Use lit bumpers and upper side lanes for points while watching green and yellow advances."
+          },
+          {
+            "text": "Compare the two lamp positions after every green or yellow bumper hit."
+          },
+          {
+            "text": "When the green and yellow positions match, settle the ball before shooting the center target."
+          },
+          {
+            "text": "Collect the matched center target for an added ball, then resume upper-playfield feeds."
+          },
+          {
+            "text": "Complete any remaining 1-through-4 lanes for the second added-ball route."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-playfield survival",
+          "when": "Use this plan when the center target is unmatched or its rebound cannot be controlled.",
+          "steps": [
+            {
+              "text": "Ignore the center target while its green and yellow positions differ."
+            },
+            {
+              "text": "Send the ball to the top through the safer outside or center opening on this copy."
+            },
+            {
+              "text": "Let bumper action advance the two color tracks."
+            },
+            {
+              "text": "Collect missing 1-through-4 lanes and lit upper side lanes naturally."
+            },
+            {
+              "text": "Return to the center target only after the lamps match and a controlled shot is available."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Finish the four-lane set",
+            "when": "Use this plan when only one top lane remains and the color lamps are not matched.",
+            "steps": [
+              {
+                "text": "Identify the single missing top number."
+              },
+              {
+                "text": "Use the next plunge or safest upper feed to reach that lane."
+              },
+              {
+                "text": "Collect the lane to complete 1 through 4 and add a ball."
+              },
+              {
+                "text": "Resume color-lamp tracking on the extended ball."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated added-ball extensions",
+          "steps": [
+            {
+              "text": "Roll through the top 1-through-4 lanes to light useful bumpers and side lanes."
+            },
+            {
+              "text": "Advance green and yellow lamps through their matching bumpers."
+            },
+            {
+              "text": "Shoot the center target when the two positions match."
+            },
+            {
+              "text": "Complete all four top lanes when that route is closer."
+            },
+            {
+              "text": "Use each added ball to rebuild another lane set or lamp match."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "top 1-2-3-4 lanes",
+            "context": "top 1-2-3-4 lanes",
+            "label": "Number lanes",
+            "description": "The four upper lanes that light matching bumpers and side lanes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "context": "center target",
+            "label": "Matched-lamp target",
+            "description": "The center target that awards an added ball when the two lamp positions match.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Missing-lane skill shot",
+            "instruction": "Before plunging, choose an uncollected 1-through-4 lane and adjust plunge strength for its entry rather than accepting a duplicate deliberately.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4e9z-MD81o"
+          },
+          {
+            "name": "Two-color lamp count",
+            "instruction": "After every green or yellow bumper hit, compare the two lamp positions below the center target before deciding whether the target is active.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4e9z-MD81o"
+          },
+          {
+            "name": "Matched center collect",
+            "instruction": "Shoot the center target from a settled flipper only when the green and yellow lamps match. Track the rebound immediately after contact.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4e9z-MD81o"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "An unmatched center-target shot is only a 100-point rebound risk.",
+            "response": "Do not shoot the target until the green and yellow lamp positions match or it is reached accidentally.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4e9z-MD81o"
+          },
+          {
+            "issue": "Bumper exits can bypass both flippers on this very high-risk layout.",
+            "response": "Keep both flippers ready after every upper feed and avoid choosing the next objective before the exit is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4e9z-MD81o"
+          },
+          {
+            "issue": "Added-ball awards may be restricted or disabled for competition.",
+            "response": "Confirm the installed rules and tournament treatment before making lane completion or a lamp match the entire plan.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4e9z-MD81o"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Flipper Fair and whether add-a-ball awards remain live.",
+          "Test top lanes, colored bumpers, center target, and both lower returns."
+        ],
+        "simpleOverview": "Flipper Fair uses top lanes 1 through 4 to light matching bumpers and side lanes, while green and yellow bumper hits move two lamp tracks. Keep feeding the top, watch both positions, and hit the center target only when the green and yellow lamps match.",
+        "overview": "Flipper Fair uses top lanes 1 through 4 to light matching bumpers and side lanes, while green and yellow bumper hits move two lamp tracks. Collect missing 1-through-4 lanes while bumper action advances the green and yellow tracks, then settle the ball and hit the center target when both positions match. Resume upper play after each collect instead of forcing the center target early.",
+        "machineSetup": [
+          "Confirm Gottlieb Flipper Fair and whether add-a-ball awards remain live.",
+          "Test top lanes, colored bumpers, center target, and both lower returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge a missing 1-through-4 lane and keep feeding the top. Track the green and yellow lamp positions as their bumpers advance them, then shoot the center target only when the two positions match for an added ball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read which of the four top lanes is still uncollected."
+          },
+          {
+            "text": "Plunge for one missing 1-through-4 lane."
+          },
+          {
+            "text": "From either flipper, choose the broadest route back to the upper playfield."
+          },
+          {
+            "text": "Use lit bumpers and upper side lanes for points while watching green and yellow advances."
+          },
+          {
+            "text": "Compare the two lamp positions after every green or yellow bumper hit."
+          },
+          {
+            "text": "When the green and yellow positions match, settle the ball before shooting the center target."
+          },
+          {
+            "text": "Collect the matched center target for an added ball, then resume upper-playfield feeds."
+          },
+          {
+            "text": "Complete any remaining 1-through-4 lanes for the second added-ball route."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Top 1-2-3-4 lanes",
+            "summary": "Each color-and-number lane lights its corresponding bumper and upper side lane; completing all four awards an added ball."
+          },
+          {
+            "name": "Green track",
+            "summary": "Hits on green bumpers advance the green lamp below the center target one position at a time."
+          },
+          {
+            "name": "Yellow track",
+            "summary": "Hits on yellow bumpers advance the yellow lamp below the center target one position at a time."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-playfield survival",
+          "when": "Use this plan when the center target is unmatched or its rebound cannot be controlled.",
+          "steps": [
+            {
+              "text": "Ignore the center target while its green and yellow positions differ."
+            },
+            {
+              "text": "Send the ball to the top through the safer outside or center opening on this copy."
+            },
+            {
+              "text": "Let bumper action advance the two color tracks."
+            },
+            {
+              "text": "Collect missing 1-through-4 lanes and lit upper side lanes naturally."
+            },
+            {
+              "text": "Return to the center target only after the lamps match and a controlled shot is available."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "GrNlV",
+  "title": "Atlantis",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bally Atlantis operations manual",
+      "url": "https://www.pinrepair.com/6803/manuals/6803-atlantis.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Atlantis exact-machine tutorial",
+        "url": "https://www.youtube.com/watch?v=P2VorV3_5PY"
+      },
+      {
+        "label": "PAPA Atlantis competition play",
+        "url": "https://www.youtube.com/watch?v=Lzkk2EThJBA"
+      },
+      {
+        "label": "Atlantis machine overview",
+        "url": "https://www.kineticist.com/games/pinball/atlantis"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Atlantis uses three numbered target banks to qualify three locks. Hit the flashing 1 in each bank to light the first lock at the left ramp, then repeat the pattern for 2 and 3. Lock three balls at that ramp to start Multiball; the lower-left flip ramp is the single Jackpot shot.",
+      "simpleOverview": "Hit the flashing 1 in all three target banks, then shoot the left ramp to lock a ball. Repeat with the flashing 2s and then 3s. The third lock starts Multiball. During Multiball, shoot the lower-left flip ramp for the Jackpot.",
+      "summary": "Complete the flashing 1 across all three target banks and lock at the left ramp; repeat for 2 and 3. The third lock starts Multiball. Shoot the lower-left flip ramp for the single Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Light Lock 1",
+          "summary": "Hit the flashing 1 in each of the three target banks."
+        },
+        {
+          "name": "Light later Locks",
+          "summary": "Repeat across all three banks for the flashing 2s, then the flashing 3s."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Collect all three locks at the left ramp."
+        },
+        {
+          "name": "Collect Jackpot",
+          "summary": "Shoot the lower-left flip ramp during Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the flashing 1 in each of the three numbered target banks to light the first lock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left lock ramp, then complete the flashing 2 in all three banks and lock again.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete the flashing 3 across all three banks and shoot the left ramp for the third lock and Multiball start.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the lower-left flip ramp for the Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Spot target progress",
+          "when": "Use these routes when one numbered target is unsafe or difficult.",
+          "steps": [
+            {
+              "text": "Shoot the upper-left saucer to spot one currently flashing numbered target.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Roll through an inlane, then make the lower-left flip ramp before its short timer expires to spot the whole current number set.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Prepare the Jackpot feed",
+        "steps": [
+          {
+            "text": "Finish the third numbered set with a controllable return whenever possible.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the third lock serves the balls, separate them before attacking the lower-left flip ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Treat the Jackpot as a single lit collect unless this machine's software clearly relights it.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm whether the machine uses the original progressive Jackpot or a tournament ROM with a fixed value.",
+        "Check the center post, all nine numbered targets, upper-left saucer, inlanes, both left ramps, and three-ball lock assembly."
+      ],
+      "termStyles": [
+        {
+          "label": "Locks",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Jackpot",
+          "tone": "indigo",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Tournament ROMs can change the Jackpot from a progressive, carryover value to a fixed value.",
+          "response": "Read the display and event notes before choosing a Jackpot-heavy strategy.",
+          "sourceUrl": "https://www.youtube.com/watch?v=P2VorV3_5PY"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

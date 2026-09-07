@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "GPBB9",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Career mode turns each three-ball game into a racing campaign: jobs earn the money needed for races, the shop improves the cart, and the magnetic right ramp builds Meteor Shower Multiball. Watch the shot colors, then decide whether to finish the Multiball before a race clears its locks.",
+        "simpleOverview": "Choose Career mode, shoot green arrows to complete jobs for money, and use yellow arrows to qualify and enter races. Build Meteor Shower Multiball at the magnetic right ramp before starting a ready race, because the race releases balls already locked there.",
+        "summary": "Follow green shots to earn money from jobs, open the shop at the standups, and follow yellow shots to qualify a race. If the right magnetic ramp is building Meteor Shower Multiball, finish its locks before starting the race so the race does not erase that progress.",
+        "quickInfo": [
+          {
+            "name": "Career mode",
+            "summary": "Select Career, then choose Amateur or Pro. Career uses a traditional three-ball game with persistent progress through jobs, upgrades, and races."
+          },
+          {
+            "name": "Jobs and money",
+            "summary": "Green arrows start or advance jobs. Complete those lit tasks to earn the stake needed for races."
+          },
+          {
+            "name": "Races",
+            "summary": "Yellow arrows qualify or start races. A qualified race still needs its displayed cash stake, and a drain loses the race on default settings."
+          },
+          {
+            "name": "Meteor Shower Multiball",
+            "summary": "Repeat the magnetic right ramp to enable its assist, light locks, and load the three balls. Amateur needs fewer qualifying ramp shots than Pro."
+          },
+          {
+            "name": "RPM multiplier",
+            "summary": "Red RPM shots raise a temporary playfield multiplier. Hit the center captive ball to freeze the current multiplier."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose Career mode and select Amateur or Pro. Use the easier setting while learning because Meteor Shower needs fewer right-ramp qualification shots in Amateur.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Follow the green arrows to start and complete jobs. Keep enough of the cash award for the displayed race stake instead of spending every visit to the shop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the indicated standups to open the shop, then buy an upgrade only when it leaves enough money for the next race you want to enter.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the magnetic right ramp to enable its assist, light locks, and load three balls. In Pro this takes one assist shot, one lock-lighting shot, then three loads; Amateur shortens the qualification.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If a yellow race start is ready while balls are locked, finish Meteor Shower first when control allows. Starting the race releases the locked balls and removes that lock progress.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between those objectives, make safe red RPM shots to raise the playfield multiplier. Freeze a useful value at the center captive ball only when that dangerous shot is controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Race-first route",
+          "when": "Use this when the right magnetic ramp is rejecting or the next race is already affordable and ready.",
+          "steps": [
+            {
+              "text": "Complete the nearest green-arrow job until the displayed stake is covered.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the yellow arrows to qualify and start the race before spending the stake at the shop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the race's displayed shot colors and protect any collected shield for a drain when the default rule would otherwise lose the race.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Career progression",
+          "steps": [
+            {
+              "text": "Keep completing jobs to fund later races and deliberate shop upgrades.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Win the qualified races against the AI instead of treating qualification alone as completion.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the resulting money and upgrades to continue through the displayed Career ladder toward the championship.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Career mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "job",
+            "tone": "teal",
+            "kind": "mode"
+          },
+          {
+            "label": "race",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "Meteor Shower Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "RPM multiplier",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "magnetic right ramp",
+            "label": "Meteor Shower ramp",
+            "description": "The right ramp whose magnetic assist and three locks build Meteor Shower Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "standups",
+            "label": "Shop and task targets",
+            "description": "The four standup targets whose current display indicators can open the shop or advance another task.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center captive ball",
+            "label": "RPM freeze captive ball",
+            "description": "The central captive-ball shot used to freeze the current temporary playfield multiplier.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Career, Arcade, and network play use different structures.",
+            "response": "These rules apply to the traditional three-ball Career selection; follow the display when another mode was chosen.",
+            "sourceUrl": "https://www.multimorphic.com/store/p3-game-kits/multimorphic-game-kits/cosmic-cart-racing/"
+          },
+          {
+            "issue": "The current code listing is 2.4.0.3, but the 2024 walkthrough does not show its installed version.",
+            "response": "Use the visible shot colors and display prompts; do not assume its upgrade prices, race order, timers, or jackpot values on every installation.",
+            "sourceUrl": "https://www.youtube.com/watch?v=hv4VUGSK_6s"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Follow green shots to earn money from jobs, open the shop at the standups, and follow yellow shots to qualify a race. If the right magnetic ramp is building Meteor Shower Multiball, finish its locks before starting the race so the race does not erase that progress.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose Career mode and select Amateur or Pro. Use the easier setting while learning because Meteor Shower needs fewer right-ramp qualification shots in Amateur.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Follow the green arrows to start and complete jobs. Keep enough of the cash award for the displayed race stake instead of spending every visit to the shop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the indicated standups to open the shop, then buy an upgrade only when it leaves enough money for the next race you want to enter.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the magnetic right ramp to enable its assist, light locks, and load three balls. In Pro this takes one assist shot, one lock-lighting shot, then three loads; Amateur shortens the qualification.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If a yellow race start is ready while balls are locked, finish Meteor Shower first when control allows. Starting the race releases the locked balls and removes that lock progress.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between those objectives, make safe red RPM shots to raise the playfield multiplier. Freeze a useful value at the center captive ball only when that dangerous shot is controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Career mode",
+            "summary": "Select Career, then choose Amateur or Pro. Career uses a traditional three-ball game with persistent progress through jobs, upgrades, and races."
+          },
+          {
+            "name": "Jobs and money",
+            "summary": "Green arrows start or advance jobs. Complete those lit tasks to earn the stake needed for races."
+          },
+          {
+            "name": "Races",
+            "summary": "Yellow arrows qualify or start races. A qualified race still needs its displayed cash stake, and a drain loses the race on default settings."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Race-first route",
+          "when": "Use this when the right magnetic ramp is rejecting or the next race is already affordable and ready.",
+          "steps": [
+            {
+              "text": "Complete the nearest green-arrow job until the displayed stake is covered.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the yellow arrows to qualify and start the race before spending the stake at the shop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the race's displayed shot colors and protect any collected shield for a drain when the default rule would otherwise lose the race.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "GR0nO",
+  "title": "Lady Luck",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Lady Luck narrated tournament rules and route",
+      "url": "https://www.youtube.com/watch?v=0FZbnvM2cNA&t=11535s"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Lady Luck confirmed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Bally/Bally_Lady_Luck_instruction_cards.zip"
+      },
+      {
+        "label": "Lady Luck corroborating tournament game",
+        "url": "https://www.youtube.com/watch?v=GKFPBFmT2Kc&t=5757s"
+      },
+      {
+        "label": "Lady Luck second corroborating tournament game",
+        "url": "https://www.youtube.com/watch?v=KDJXmnFD7mk&t=8173s"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Lady Luck's safe scoring plan is to raise the spinner with the captive ball, then rip the spinner. The larger timed route completes A-K-Q-J-10 and the two star rollovers to start 10x playfield scoring; spelling P-O-K-E-R separately raises end-of-ball Bonus X.",
+      "simpleOverview": "Hit the captive ball to raise the spinner, then shoot the spinner repeatedly. For a bigger but harder payoff, complete A-K-Q-J-10 and both stars to start timed 10x scoring. Spell POKER to raise Bonus X.",
+      "summary": "Take one or more controlled captive-ball advances and grind the spinner; add the A-K-Q-J-10 and star sequence only when its target rebounds are manageable.",
+      "quickInfo": [
+        {
+          "name": "Raise Spinner",
+          "summary": "Hit the captive ball; its value advances through visible steps."
+        },
+        {
+          "name": "Safe Route",
+          "summary": "Repeat the spinner after its value is raised."
+        },
+        {
+          "name": "Start 10x",
+          "summary": "Complete A-K-Q-J-10, then the two star rollovers."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Spell P-O-K-E-R in the top lanes."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the captive ball at least once to raise the spinner value."
+        },
+        {
+          "text": "Repeat the spinner while its return is controlled; the captive-ball value resets between balls."
+        },
+        {
+          "text": "When the card-target rebounds are safe, complete A-K-Q-J-10 and then both star rollovers to start timed 10x playfield scoring.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During 10x, rip the spinner or use the best repeatable lit shot until the timer expires.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Bonus route",
+          "when": "Use this when the top lanes are feeding safely or the captive-ball rebound is dangerous.",
+          "steps": [
+            {
+              "text": "Spell P-O-K-E-R through the top lanes."
+            },
+            {
+              "text": "Repeat completions to raise end-of-ball Bonus X from 2x toward 5x."
+            },
+            {
+              "text": "Protect the multiplied bonus and avoid tilting at the drain."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "10x spinner window",
+        "steps": [
+          {
+            "text": "Raise the spinner with controlled captive-ball hits."
+          },
+          {
+            "text": "Complete A-K-Q-J-10, then both star rollovers."
+          },
+          {
+            "text": "Shoot the spinner repeatedly during the short 10x timer."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the captive ball and spinner-value lamps, spinner switch, A-K-Q-J-10 target bank, both star rollovers, P-O-K-E-R lanes, Bonus X lamps, and Freeball Gate.",
+        "Confirm the captive-ball reset, 10x timer, Extra Ball and Special conversion, and tournament settings."
+      ],
+      "cautions": [
+        {
+          "issue": "Captive-ball progress resets between balls and 10x is a short timed window.",
+          "response": "Finish the captive work and cash the spinner in the same ball; do not delay once 10x begins.",
+          "sourceUrl": "https://www.youtube.com/watch?v=0FZbnvM2cNA&t=11535s"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

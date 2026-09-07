@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "GZVXY",
+  "title": "Ninja Eclipse",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Ninja Eclipse v0.76 rulesheet",
+      "url": "https://turnerpinball.com/rulesets/Ninja_Eclipse_Ruleset_v0.76.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Ninja Eclipse v0.9.5 release notes",
+        "url": "https://turnerpinball.com/software-releases/ninjaeclipse_v0.9.5/update.md"
+      },
+      {
+        "label": "Official Ninja Eclipse v0.8.4 release notes",
+        "url": "https://turnerpinball.com/software-releases/ninjaeclipse_v0.8.4/update.md"
+      },
+      {
+        "label": "Official Ninja Eclipse game page",
+        "url": "https://turnerpinball.com/games/ninja-eclipse/"
+      },
+      {
+        "label": "August 2026 CAX tournament stream; code not shown",
+        "url": "https://www.youtube.com/watch?v=mNLq5rSCQDU"
+      },
+      {
+        "label": "Aleksander Kaczmarczyk at Pinburgh 2025",
+        "url": "https://pinballvideos.com/v/6278/395"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the Backflip standups to light Ninja Storm locks, then collect two at the Iga ramp. Start Akkorokamui at the castle before collecting the third lock. During the overlap, hit the Jonin target for 2x battle scoring, turn blue major shots pink, and loop Sword Super Jackpots.",
+      "quickInfo": [
+        {
+          "name": "Obake battles",
+          "summary": "Knock down the Castle Gate, enter the castle, choose a persistent battle, finish its shots, then return to the castle for the Obake Super Jackpot."
+        },
+        {
+          "name": "Ninja Storm Multiball",
+          "summary": "Hit the Backflip standups to light locks, then lock three balls on the Iga ramp."
+        },
+        {
+          "name": "Jonin double",
+          "summary": "The hidden Jonin target briefly doubles battle scoring when each battle starts."
+        },
+        {
+          "name": "Sword multiplier",
+          "summary": "Consecutive Sword-ramp loops start and raise the timed playfield multiplier."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit both standups beside the Backflip ramp to light a Ninja Storm lock, then shoot the Iga ramp to collect it. Repeat for a second lock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Knock down the Castle Gate target, shoot into the castle, and choose Akkorokamui; one of its required ramp shots also collects an Iga-ramp lock.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "At the start of the battle, hit the flashing Jonin target beneath the Iga ramp to double battle scoring.",
+          "kinds": [
+            "mode",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Hit the Backflip standups to light another lock, then shoot the Iga ramp for the third lock and start Ninja Storm Multiball while Akkorokamui is running.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit each blue major shot to turn it pink. Pink shots score repeatable Jackpots until all major shots are pink.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Loop the Sword ramp for repeatable Super Jackpots. Consecutive Sword-ramp loops also start and raise the timed playfield multiplier.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use the first Mystery during multiball or complete Firestorm for one available add-a-ball.",
+          "modeNotes": [
+            "Ninja Storm add-a-balls: The first multiball Mystery adds a ball; Firestorm can add one more ball once per multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Spirit Multiball",
+          "when": "Use this after collecting all twelve bells.",
+          "steps": [
+            {
+              "text": "Use spinner hits to locate bells and collect them at the Shrine scoop."
+            },
+            {
+              "text": "After all twelve bells, charge the Newton ball from either spinner and hit it when red."
+            },
+            {
+              "text": "Lock at the castle, then open the castle gate to start Spirit Multiball as protection for the current objective.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Oni Nisshoku",
+        "steps": [
+          {
+            "text": "Defeat all eight Obake bosses in one game to unlock Oni Nisshoku.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Completing the game also enables the Dragon Kami."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Ninja Storm Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Spirit Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Obake battle",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "playfield multiplier",
+          "tone": "rust",
+          "kind": "multiplier",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Battle-before-multiball order",
+          "instruction": "Start the chosen battle before collecting the third Ninja Storm lock.",
+          "sourceUrl": "https://pinballvideos.com/v/6278/395"
+        },
+        {
+          "name": "Sword-ramp sequencing",
+          "instruction": "Use consecutive Sword loops only from a repeatable return because another shot resets multiplier qualification.",
+          "sourceUrl": "https://turnerpinball.com/rulesets/Ninja_Eclipse_Ruleset_v0.76.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Rokurokubi is a two-ball battle that disables other Multiballs and pauses Kami progress.",
+          "response": "Do not choose Rokurokubi when the plan depends on starting Ninja Storm or advancing Kami.",
+          "sourceUrl": "https://turnerpinball.com/software-releases/ninjaeclipse_v0.8.4/update.md"
+        },
+        {
+          "issue": "Tengu is a limited-flip battle and does not preserve failed progress.",
+          "response": "Choose it only when its lit-shot feeds are already understood; other battles normally carry progress between balls.",
+          "sourceUrl": "https://turnerpinball.com/rulesets/Ninja_Eclipse_Ruleset_v0.76.pdf"
+        }
+      ],
+      "simpleOverview": "An Obake battle can continue during Ninja Storm Multiball, while three Sword-ramp loops start 1.5x playfield scoring. Knock down the Castle Gate target and shoot into the castle to choose Battle 1. Hit both Backflip standups and shoot the Iga ramp for each lock; the third lock starts Multiball.",
+      "overview": "Ninja Eclipse allows an Obake battle to continue during Ninja Storm Multiball. Hit both Backflip standups, then shoot the Iga ramp for the first two locks; knock down Castle Gate and shoot the castle to start Akkorokamui, with its Iga shot collecting a lock. Hit Jonin for 2x battle scoring, collect the third lock, then loop Sword Super Jackpots during the playfield multiplier.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

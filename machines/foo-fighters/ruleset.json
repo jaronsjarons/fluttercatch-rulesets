@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "GpeoL",
+  "title": "Foo Fighters",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Foo Fighters tournament strategy guide",
+      "url": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Foo Fighters living rulesheet",
+        "url": "https://tiltforums.com/t/foo-fighters-rulesheet/8162"
+      },
+      {
+        "label": "Foo Fighters tutorial",
+        "url": "https://www.youtube.com/watch?v=f3ypX6SyJKQ"
+      },
+      {
+        "label": "Markus Virtanen at UK Open 2023, round 1",
+        "url": "https://pinballvideos.com/v/5231/2885"
+      },
+      {
+        "label": "Escher Lefkoff and Jared August at Stern Pro Circuit Championship 2023",
+        "url": "https://pinballvideos.com/v/5049/34742"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Prepare All My Life one hit from starting, begin New Orleans, then add All My Life and Rock-O-Meter 2x. Score both feature ladders during the stack.",
+      "steps": [
+        {
+          "text": "Hit both Overlord flank targets. Shoot the Overlord to lock one ball. Hit the locked captive ball twice. Stop before the third hit.",
+          "modeNotes": [
+            "All My Life qualification: The two flank targets light the lock. The Overlord locks one ball. Three captive-ball hits start the multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot white V-A-N arrows until the left ramp lights. Shoot the left ramp and choose New Orleans on the city map.",
+          "modeNotes": [
+            "City qualification: The first city needs one white shot. Later cities need up to three white shots.",
+            "New Orleans: Hit a lit major shot. Only that shot stays lit. Hit it again to complete its pair.",
+            "The side loop and side ramp each give two progress units with one hit. Complete up to 14 units. Then shoot the Overlord.",
+            "Progress survives a failed attempt. A one-visit completion earns the FooBot left leg."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the locked captive ball a third time to start All My Life during New Orleans.",
+          "modeNotes": [
+            "All My Life: Collect the left ramp, right ramp, and center spinner. Then collect the left crossover and right orbit.",
+            "Next, collect the side loop and side ramp. Shoot the Overlord for the Super Jackpot.",
+            "The Super Jackpot scores the total jackpot value. The multiball ends when one ball remains.",
+            "Area 51 can progress and start during All My Life. Combotron cannot start during it."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "For New Orleans, hit a lit major shot and repeat it. The side loop and side ramp each complete their pair with one hit.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "For All My Life, first collect the left ramp, right ramp, and center spinner. Next collect the left crossover and right orbit. Finish with the side loop and side ramp, then shoot the Overlord for the Super Jackpot.",
+          "modeNotes": [
+            "All My Life jackpot ladder: Complete the three lower shots, the crossover and orbit, then the two upper-flipper shots.",
+            "The Overlord Super Jackpot scores the total jackpot value."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "If Rock-O-Meter is one advance from 2x, shoot the right orbit after New Orleans and All My Life begin.",
+          "modeNotes": [
+            "Rock-O-Meter: Roll through the lit battery lane three times. Use the right orbit or the timed plunge.",
+            "The third advance starts 2x playfield scoring. Requalify during 2x to reset the timer and start 3x.",
+            "Requalify during 3x to add ten seconds. Playfield X combines with the ray-gun shot multiplier."
+          ],
+          "kinds": [
+            "multiplier",
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Pro alternative: New Orleans with Area 51",
+        "when": "On Pro, use New Orleans with Area 51 instead of All My Life.",
+        "steps": [
+          {
+            "text": "Shoot the right ramp four times, start New Orleans, then make the fifth right ramp to start Area 51 Multiball.",
+            "modeNotes": [
+              "Later Area 51 attempts need nine right ramps. Start New Orleans before the final qualifying ramp."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect eight Area 51 jackpots while completing the New Orleans shot pairs.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right ramp, then the UFO captive ball for the Super Jackpot.",
+            "modeNotes": [
+              "Controlled extra lit shots before the UFO raise the Super. A Super relights jackpots and raises their base value."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Austin or Washington, D.C.",
+        "steps": [
+          {
+            "text": "Complete three city modes. At the left-ramp city map, choose Austin when its displayed starting jackpot is above 1.5 million; choose Washington, D.C. otherwise.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Area 51 Multiball qualification",
+          "pro": "Shoot the right ramp five times; later attempts need nine. The final right-ramp shot starts multiball.",
+          "premium": "Enter Area 51 at the right ramp, then complete the upper targets, spinner, loop, and Secret Files. Secret Files starts multiball.",
+          "sourceUrl": "https://tiltforums.com/t/foo-fighters-rulesheet/8162"
+        },
+        {
+          "feature": "Area 51 jackpot and Super",
+          "pro": "Any lit major shot scores a jackpot. The right ramp and adjacent bot targets raise the base jackpot.",
+          "premium": "Collect eight major-shot jackpots, then shoot Secret Files for the Super Jackpot.",
+          "sourceUrl": "https://tiltforums.com/t/foo-fighters-rulesheet/8162"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "From the left flipper, test a backhand to the left ramp during the opening ball save.",
+          "sourceUrl": "https://www.youtube.com/watch?v=f3ypX6SyJKQ&t=63s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Cradle on the right flipper. Use an early backhand into the Overlord captive ball.",
+          "sourceUrl": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Left-crossover setup",
+          "instruction": "Cradle on the right flipper. Shoot the left crossover from that controlled position.",
+          "sourceUrl": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial"
+        },
+        {
+          "name": "Shatz pass",
+          "instruction": "Alley-pass through a return lane into its ray target. The next shot gets 2x. Both targets can give 4x.",
+          "sourceUrl": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial",
+          "techniqueSlug": "shatz-pass"
+        },
+        {
+          "name": "Extended skill shot",
+          "instruction": "Full plunge to the right flipper. Shoot the left crossover. Then use the upper flipper.",
+          "sourceUrl": "https://www.youtube.com/watch?v=f3ypX6SyJKQ&t=31s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Overlord target hits can return the ball toward the center or an outlane.",
+          "response": "Test both target angles during the opening ball save. Stop the route when repeated returns are uncontrolled.",
+          "sourceUrl": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial"
+        },
+        {
+          "issue": "The outlanes are severe on many Foo Fighters copies.",
+          "response": "Keep an available radio or Bot Award outlane save active when the game offers one.",
+          "sourceUrl": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial"
+        },
+        {
+          "issue": "The upper-loop exit and UFO captive-ball return can move toward an outlane.",
+          "response": "Nudge as the ball leaves the upper-loop entrance. Nudge again after a dangerous UFO rebound.",
+          "sourceUrl": "https://www.kineticist.com/news/foo-fighters-pinball-tutorial"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "All My Life",
+          "tone": "forest",
+          "kind": "multiball"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check ball count, ball-save time, and competition-mode settings",
+        "Check Extra Ball and Special conversion",
+        "Use ball save to test the primary ramp, scoop, and orbit returns"
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Prepare All My Life one hit from starting, begin New Orleans, then add All My Life and Rock-O-Meter 2x."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete three city modes."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Pro alternative: New Orleans with Area 51: On Pro, use New Orleans with Area 51 instead of All My Life."
+        },
+        {
+          "name": "Competition settings",
+          "summary": "Competition Install can shorten city and playfield-X timers and change Overlord or Area 51 spotting."
+        },
+        {
+          "name": "Optional Bot Frenzy stack",
+          "summary": "Complete all four bot targets and collect the Bot Award three times, then shoot the left ramp for Bot Frenzy; bring it into a prepared multiball when useful."
+        },
+        {
+          "name": "Austin add-a-balls",
+          "summary": "The first 5x, 6x, and 7x Supers award the first, second, and third add-a-balls; hitting the Overlord moves the blue Super."
+        }
+      ],
+      "overview": "Foo Fighters lets New Orleans run through All My Life and Rock-O-Meter 2x. Hit both Overlord flank targets, lock at Overlord, hit captive twice, then shoot one white arrow and left ramp to start New Orleans. Hit the captive a third time for All My Life; complete city pairs while shooting its ordered jackpots, then shoot right orbit after three BATTERY advances for 2x.",
+      "simpleOverview": "Foo Fighters lets New Orleans run through All My Life and Rock-O-Meter 2x. Shoot one white V-A-N arrow, then the left ramp to choose New Orleans; repeat each lit shot to finish its pair. Hit both Overlord flank targets, lock a ball at Overlord, then hit the captive ball three times for All My Life. Shoot the right orbit or plunge through lit BATTERY lanes three times to start 2x.",
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At UK Open 2023, Markus Virtanen combined New Orleans, All My Life, and Rock-O-Meter 2x before collecting 114,000,000 from Washington, D.C.",
+          "At the Stern Pro Circuit Championship 2023, Escher Lefkoff combined New Orleans, All My Life, and the playfield multiplier during his winning 600-million game against Jared August."
+        ]
+      },
+      "machineSetup": [
+        "Check ball count, ball-save time, and competition-mode settings",
+        "Check Extra Ball and Special conversion",
+        "Use ball save to test the primary ramp, scoop, and orbit returns"
+      ],
+      "rulesNotes": []
+    }
+  }
+}

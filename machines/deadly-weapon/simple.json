@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "Grj9q",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Advance the numbered Squad Cars in order. Car 5 lights PIK-5, while Mystery can be reached separately; either feature can randomly award Multiball, so there is no guaranteed lock sequence. If Multiball appears, choose Arrests or Points before launch, then complete Squad Cars 1 through 6 repeatedly for the selected award.",
+        "simpleOverview": "Hit the flashing Squad Car numbers in order. Car 5 lights PIK-5; shoot the upper PIK-5 hole, or collect Mystery, for a chance at Multiball. If it is awarded, choose Arrests or Points, then complete Squad Cars 1 through 6 during Multiball.",
+        "summary": "Advance the flashing Squad Cars to Car 5 and shoot the lit PIK-5 hole, or collect Mystery. Either can randomly start Multiball. Choose Arrests or Points, then complete Squad Cars 1 through 6 for the chosen award.",
+        "quickInfo": [
+          {
+            "name": "Light PIK-5",
+            "summary": "Complete the flashing Squad Cars in order through Car 5."
+          },
+          {
+            "name": "Try for Multiball",
+            "summary": "Shoot the lit upper PIK-5 hole, or collect Mystery; Multiball is a possible feature, not a guaranteed result."
+          },
+          {
+            "name": "Choose a payoff",
+            "summary": "Before Multiball launches, choose Arrests or Points."
+          },
+          {
+            "name": "Collect",
+            "summary": "Complete Squad Cars 1 through 6 during Multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the flashing Squad Car numbers in order until Car 5 lights PIK-5.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the upper hole while PIK-5 is lit, or collect Mystery, for a chance at the Multiball feature.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "If Multiball is offered, choose Arrests or Points before the balls are released.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, complete Squad Cars 1 through 6 to collect the displayed Arrest or point award.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build W-E-A-P-O-N",
+            "when": "Use this when Multiball is not awarded.",
+            "steps": [
+              {
+                "text": "Collect W-E-A-P-O-N letters from PIK-5 or Mystery, or collect Supercop to complete the word at once.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete W-E-A-P-O-N to begin Riot, then hit the flashing Crime Scenes.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Turn progress into arrests",
+          "steps": [
+            {
+              "text": "Complete red or yellow Squad Car 7, then shoot the corresponding lit hole for an Add Badge award.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Riot, hit the flashing Crime Scenes. During Multiball, complete Squad Cars 1 through 6 to collect the chosen Arrest award.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Mystery and PIK-5 award settings, extra-ball conversions, and whether Squad Car progress is shared or player-specific.",
+          "Test the numbered targets, both Add Badge holes, upper PIK-5 hole, Crime Scene targets, right-side targets, and ball release."
+        ],
+        "termStyles": [
+          {
+            "label": "PIK-5",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Riot",
+            "tone": "oxblood",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Squad Cars",
+            "label": "Squad Car targets",
+            "description": "The numbered targets that must be completed in flashing order.",
+            "precision": "unverified"
+          },
+          {
+            "term": "PIK-5 hole",
+            "label": "PIK-5 hole",
+            "description": "The upper hole that collects a lit PIK-5 feature after Car 5.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Crime Scenes",
+            "label": "Crime Scene targets",
+            "description": "The feature targets used during Riot and Special rounds.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Multiball is a random PIK-5 or Mystery feature.",
+            "response": "Do not promise Multiball after a fixed number of shots; relight and collect a feature if another award appears.",
+            "sourceUrl": "https://www.kineticist.com/news/gottlieb-street-level-reviews"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Advance the flashing Squad Cars to Car 5 and shoot the lit PIK-5 hole, or collect Mystery. Either can randomly start Multiball. Choose Arrests or Points, then complete Squad Cars 1 through 6 for the chosen award.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the flashing Squad Car numbers in order until Car 5 lights PIK-5.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the upper hole while PIK-5 is lit, or collect Mystery, for a chance at the Multiball feature.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "If Multiball is offered, choose Arrests or Points before the balls are released.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, complete Squad Cars 1 through 6 to collect the displayed Arrest or point award.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light PIK-5",
+            "summary": "Complete the flashing Squad Cars in order through Car 5."
+          },
+          {
+            "name": "Try for Multiball",
+            "summary": "Shoot the lit upper PIK-5 hole, or collect Mystery; Multiball is a possible feature, not a guaranteed result."
+          },
+          {
+            "name": "Choose a payoff",
+            "summary": "Before Multiball launches, choose Arrests or Points."
+          }
+        ]
+      }
+    }
+  ]
+}

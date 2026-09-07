@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "G5oXq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Aladdin's Castle connects four top lanes to two strong payoffs. Completing A-B lights the spinner for 1,000 per spin and lets either outlane collect the current Aladdin's Alley value; completing C-D lights double bonus. Completing all four lanes lights Extra Ball, while repeated horseshoe shots advance Aladdin's Alley from 500 through 5,000.",
+        "simpleOverview": "Complete A-B to light the spinner and outlane Alley collects, then shoot the spinner from the left flipper. Complete C-D for double bonus. From the right flipper, shoot the Aladdin's Alley horseshoe repeatedly to raise its value toward 5,000; completing A-B-C-D lights Extra Ball.",
+        "summary": "Use the left flipper for the spinner and the right for Aladdin's Alley. Send misses back to the top whenever possible so lane progress strengthens both the repeatable spinner route and the end-of-ball bonus.",
+        "quickInfo": [
+          {
+            "name": "Light Spinner",
+            "summary": "Complete A-B."
+          },
+          {
+            "name": "Light Double Bonus",
+            "summary": "Complete C-D."
+          },
+          {
+            "name": "Raise Alley Value",
+            "summary": "Shoot the Aladdin's Alley horseshoe."
+          },
+          {
+            "name": "Light Extra Ball",
+            "summary": "Complete A-B-C-D."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete A-B to light the spinner for 1,000 per spin and enable outlane Alley-value collects."
+          },
+          {
+            "text": "From the left flipper, shoot the lit spinner for repeatable points."
+          },
+          {
+            "text": "Complete C-D to light double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "From the right flipper, repeat the Aladdin's Alley horseshoe to grow its value toward 5,000."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Lane-completion route",
+            "when": "Use this when the horseshoe or spinner rejects dangerously.",
+            "steps": [
+              {
+                "text": "Shoot back to the top to finish A-B and C-D."
+              },
+              {
+                "text": "Complete all four letters to light Extra Ball."
+              },
+              {
+                "text": "Return to the spinner only after A-B has relit it."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Double-bonus spinner ball",
+          "steps": [
+            {
+              "text": "Complete A-B to light the spinner."
+            },
+            {
+              "text": "Complete C-D to double the end-of-ball bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use the two flippers for their natural repeatable shots while preserving the completed lane progress."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test A-B-C-D, both lane-pair lamps, spinner, horseshoe switch, Alley-value ladder, outlane collects, bonus lamps, Extra Ball, and every upper-playfield gate and feed.",
+          "Confirm three- or five-ball play, replay versus Extra Ball settings, maximum one Extra Ball per ball, and whether the horseshoe and spinner return safely enough for repeat attempts."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B lanes",
+            "label": "A-B top lanes",
+            "description": "Lane pair that lights the spinner and outlane Alley-value collects.",
+            "precision": "unverified"
+          },
+          {
+            "term": "C-D lanes",
+            "label": "C-D top lanes",
+            "description": "Lane pair that lights double bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Right spinner",
+            "description": "Repeatable shot worth 1,000 per spin after A-B is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Aladdin's Alley",
+            "label": "Aladdin's Alley horseshoe",
+            "description": "Left horseshoe shot that advances its lit value toward 5,000.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the left flipper for the spinner and the right for Aladdin's Alley. Send misses back to the top whenever possible so lane progress strengthens both the repeatable spinner route and the end-of-ball bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete A-B to light the spinner for 1,000 per spin and enable outlane Alley-value collects."
+          },
+          {
+            "text": "From the left flipper, shoot the lit spinner for repeatable points."
+          },
+          {
+            "text": "Complete C-D to light double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "From the right flipper, repeat the Aladdin's Alley horseshoe to grow its value toward 5,000."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Spinner",
+            "summary": "Complete A-B."
+          },
+          {
+            "name": "Light Double Bonus",
+            "summary": "Complete C-D."
+          },
+          {
+            "name": "Raise Alley Value",
+            "summary": "Shoot the Aladdin's Alley horseshoe."
+          }
+        ]
+      }
+    }
+  ]
+}

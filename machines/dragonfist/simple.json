@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "GRQkJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete the right drop bank through the spinner for 2x Bonus, the center bank for 3x, and the left bank through the left orbit for 4x. Repeat that three-bank order to reach 7x. Every completed bank also raises the spinner from 100 toward 1,300 per spin, so return to the spinner after each bank. Use the numbered targets and return lanes to build the base bonus toward 100,000.",
+        "simpleOverview": "Complete the right drop bank, then the center bank, then the left bank to advance Bonus X from 2x to 4x. Repeat the same order to reach 7x. Each bank also raises the spinner value, so shoot the spinner between bank completions.",
+        "summary": "Complete the right, center, and left drop banks in order, then repeat the sequence to reach 7x Bonus. Revisit the spinner as every bank completion raises its value.",
+        "quickInfo": [
+          {
+            "name": "Start at the Right Bank",
+            "summary": "Complete it through the spinner for 2x Bonus."
+          },
+          {
+            "name": "Take the Center Bank",
+            "summary": "Its lit completion advances to 3x."
+          },
+          {
+            "name": "Finish at the Left Bank",
+            "summary": "Reach it through the left orbit for 4x."
+          },
+          {
+            "name": "Repeat for 7x",
+            "summary": "Run the same three-bank order a second time."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot through the spinner to complete the right drop bank and advance Bonus X to 2x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the center drop bank while its multiplier lamp is active to advance to 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the left orbit to complete the left bank and advance to 4x, then repeat right-center-left to reach 7x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After each bank completion, return to the spinner; its value rises by 200 per completed bank, from 100 to 1,300 per spin.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build the left-orbit collect",
+            "when": "Use this when the left bank is not the active multiplier bank.",
+            "steps": [
+              {
+                "text": "Hit numbered targets to raise the left-orbit value from 5,000 toward 21,000, then collect and reset it after all nine.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Cash 7x on a full bonus",
+          "steps": [
+            {
+              "text": "Use numbered targets and return lanes to raise base bonus toward 100,000 while following the bank order.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Preserve the 7x route instead of clearing an out-of-order bank for low immediate value.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count, Extra Ball and Special conversions, Bonus X maximum, and spinner-award settings.",
+          "Test all three drop banks and multiplier lamps, right spinner, left orbit, numbered targets and lamps, return lanes, and trough."
+        ],
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Spinner",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right drop bank",
+            "label": "Right drop bank",
+            "description": "First bank in the Bonus X sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drop bank",
+            "label": "Center drop bank",
+            "description": "Second bank in the Bonus X sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left drop bank",
+            "label": "Left drop bank",
+            "description": "Third bank in the Bonus X sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Right spinner",
+            "description": "Spinner whose value rises after every bank completion.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Bonus X advances only when the required bank is completed in sequence.",
+            "response": "Read the active multiplier lamp before finishing a bank and avoid resetting an unlit bank unnecessarily.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQkJ-MDxpK"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the right, center, and left drop banks in order, then repeat the sequence to reach 7x Bonus. Revisit the spinner as every bank completion raises its value.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot through the spinner to complete the right drop bank and advance Bonus X to 2x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the center drop bank while its multiplier lamp is active to advance to 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the left orbit to complete the left bank and advance to 4x, then repeat right-center-left to reach 7x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After each bank completion, return to the spinner; its value rises by 200 per completed bank, from 100 to 1,300 per spin.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start at the Right Bank",
+            "summary": "Complete it through the spinner for 2x Bonus."
+          },
+          {
+            "name": "Take the Center Bank",
+            "summary": "Its lit completion advances to 3x."
+          },
+          {
+            "name": "Finish at the Left Bank",
+            "summary": "Reach it through the left orbit for 4x."
+          }
+        ]
+      }
+    }
+  ]
+}

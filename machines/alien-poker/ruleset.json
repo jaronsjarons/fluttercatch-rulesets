@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "G4yen",
+  "title": "Alien Poker",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Classic Pinball Machines",
+      "url": "https://rules.silverballmania.com/rules/G4yen-MD12Y"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Alien Poker manual",
+        "url": "https://www.pinrepair.com/sys37/manuals/wms6-alienpoker-op.pdf"
+      },
+      {
+        "label": "Bowen Kerins tutorial",
+        "url": "https://pinballvideos.com/v/300"
+      },
+      {
+        "label": "Jaden Rich on Alien Poker at Pinburgh 2026",
+        "url": "https://www.youtube.com/watch?v=Li_MZEJnf9E&t=12022s"
+      },
+      {
+        "label": "District 82 Alien Poker gameplay guide",
+        "url": "https://district82.com/game-list/alien-poker-pinball-machine/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the KING lanes three times for 4x. Then hit 10-J-Q-K-A in order for a 400,000 Royal Flush.",
+      "steps": [
+        {
+          "text": "Send the ball up top. Use lane change to complete each lit KING lane."
+        },
+        {
+          "text": "Complete KING three times to reach 4x Royal Flush value.",
+          "modeNotes": [
+            "Royal Flush: Drop 10-J-Q-K-A in order for the lit value times the KING multiplier. The base value reaches 100,000; at 4x, it pays 400,000."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When the left return lane spots the last missing KING, check the multiplier before sending the ball up top again. At 4x, attack 10 immediately.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After 4x, hit the center drops from right to left: 10, J, Q, K, A."
+        },
+        {
+          "text": "Do not hit a later card early. An out-of-order target returns and lowers the Royal Flush value."
+        },
+        {
+          "text": "Complete the sequence for 100,000 x 4. Then repeat."
+        }
+      ],
+      "fallback": {
+        "title": "End-of-ball bonus",
+        "when": "Use this plan when the center drop rebounds are unsafe.",
+        "steps": [
+          {
+            "text": "Hit only the lit Joker target to raise bonus X to 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use KING lanes and ACE saucers to build base bonus."
+          },
+          {
+            "text": "Protect the ball and preserve the bonus."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "2x Royal Flush position play",
+          "when": "Use this when 200,000 can reach the target score and another KING cycle adds unnecessary center-target risk.",
+          "steps": [
+            {
+              "text": "Complete KING once to light the 2x Royal Flush value.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Hit the center drops from right to left: 10, J, Q, K, A."
+            },
+            {
+              "text": "Collect the 200,000 Royal Flush. Then switch to top-lane and bonus play."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "400,000 Royal Flush",
+        "steps": [
+          {
+            "text": "Reach 4x from the KING lanes.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete 10-J-Q-K-A from right to left."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Right-to-left tap pass",
+          "instruction": "From a controlled right-flipper cradle, use a short tap to move the ball to the left flipper when this copy transfers cleanly.",
+          "techniqueSlug": "tap-pass",
+          "sourceUrl": "https://www.youtube.com/watch?v=Li_MZEJnf9E&t=12022s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Center drop-target rebounds cause most uncontrolled drains.",
+          "response": "Watch each target return from all three lower flippers. Use the flipper that gives the safest return for that target.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4yen-MD12Y"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Complete the KING lanes three times for 4x."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Reach 4x from the KING lanes."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "End-of-ball bonus: Use this plan when the center drop rebounds are unsafe."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams Alien Poker, ball count, Bonus X behavior, and Extra Ball or Special conversion."
+      ],
+      "simpleOverview": "In Alien Poker, complete the K-I-N-G top lanes three times to raise Royal Flush to 4x, then knock down the center drops from right to left in the order 10, J, Q, K, A. An out-of-order hit raises that card again and lowers the Royal Flush value, so do not begin the sequence until 4x is ready.",
+      "overview": "In Alien Poker, each K-I-N-G completion raises the Royal Flush multiplier, and three sets produce the 4x maximum. Use lane change to finish the top lanes, then hit the five center drops from right to left in the order 10, J, Q, K, A. Avoid later cards until their turn because an out-of-order hit raises the target and lowers the collect; finish the ordered set for 400,000 and repeat.",
+      "machineSetup": [
+        "Confirm Williams Alien Poker, ball count, Bonus X behavior, and Extra Ball or Special conversion."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

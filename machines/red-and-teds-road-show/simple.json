@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "G4dWd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Miami before the first city. Rip the spinner, and hit standups to raise every Miami switch. Between cities, use the spinner and left-left-right ramp combos for miles and Bonus X. Keep traveling west for Super Payday, and avoid tilting away Fun With Bonus.",
+        "quickInfo": [
+          {
+            "name": "City modes",
+            "summary": "Shoot the spinner and ramps for 400 travel miles, select a city with the colored bumpers or standups, then shoot the City Event saucer or Blast hole."
+          },
+          {
+            "name": "Bridge Out",
+            "summary": "A left-ramp repeat followed by the right-ramp Bridge Out can add two Bonus X advances and feed the small upper flipper."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Hit Ted's bulldozer through Friday, lock twice at Bob's Bunker, then shoot Ted's open mouth for alternating head jackpots."
+          },
+          {
+            "name": "Super Blast",
+            "summary": "After a left loop or right-ramp Bridge Out, shoot the Blast hole for 5,000,000, then 10,000,000, then 15,000,000."
+          },
+          {
+            "name": "Fun With Bonus",
+            "summary": "Cities, miles, Blasts, and matching souvenirs combine at drain before Bonus X is applied."
+          },
+          {
+            "name": "Super Payday",
+            "summary": "Reach a West Coast city and complete two locks during its timer to start the mini-wizard multiball."
+          },
+          {
+            "name": "City Scenes and Multiball",
+            "summary": "A City Scene cannot start during Regular Multiball. Super Payday is the exception: start a West Coast city first, then complete two locks before its timer ends."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before starting the first city, hit an orange standup or bumper to select Miami instead of New York."
+          },
+          {
+            "text": "Shoot the City Event saucer to start Miami. Rip the left spinner. Hit standups to raise every Miami switch by 100,000.",
+            "modeNotes": [
+              "Miami: Every switch begins at 1,000,000. Each standup hit raises the switch value by 100,000 during the 20-second mode."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After Miami, shoot the spinner and ramps to build the 400 miles needed for the next city."
+          },
+          {
+            "text": "Shoot the left ramp, repeat it when the return stays safe, then shoot the right ramp. The two completed ramp combos raise Bonus X twice.",
+            "modeNotes": [
+              "Bridge Out: The right ramp changes its diverter toward the small upper flipper and lights the Wheel."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hold the small upper flipper during the Bridge Out feed, let the ball settle, then release and shoot the Blast hole."
+          },
+          {
+            "text": "After a left loop or right-ramp Bridge Out, shoot the Blast hole to collect Super Blast. If Start City is lit, the same shot begins the selected city.",
+            "modeNotes": [
+              "Super Blast: After a left loop or right-ramp Bridge Out, shoot the Blast hole for 5,000,000 the first time, 10,000,000 the second, then 15,000,000.",
+              "Start City: The normal 400 travel miles light the Blast hole for the city selected by the colored bumpers and standups."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Ohio, shoot the left and right ramps. During Denver, repeat the left ramp."
+          },
+          {
+            "text": "During Nashville, shoot the radio targets. During Kansas City, shoot through the left spinner into the shelter."
+          },
+          {
+            "text": "When two cities are available, hit the bumper or standup color for the city farther left on the map to reach the West Coast sooner."
+          },
+          {
+            "text": "Keep using safe ramp combos to raise Bonus X toward 6x before a large Fun With Bonus payout.",
+            "modeNotes": [
+              "Fun With Bonus: It adds 2,000,000 per city, 1,000 per mile this ball, 200,000 per Blast, and 10,000,000 per matching city souvenir before Bonus X."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Avoid a late tilt; a tilt erases the entire Fun With Bonus payout."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Position play: Ted's Multiball",
+            "when": "When trailing, use this higher-ceiling route: use this when no City Scene is running and Ted's bulldozer is controllable.",
+            "steps": [
+              {
+                "text": "With no City Scene running, hit Ted's bulldozer four times until Friday lights Lock."
+              },
+              {
+                "text": "Shoot the left spinner twice to lock two balls in Bob's Bunker."
+              },
+              {
+                "text": "Shoot Ted's open mouth to start Regular Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot Ted for the first jackpot. Wait until his bulldozer is raised before shooting."
+              },
+              {
+                "text": "Shoot Red for the next jackpot, then continue alternating Ted and Red."
+              },
+              {
+                "text": "When possible, shoot Ted from the left flipper so its eject feeds the upper flipper for Red."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Super Payday",
+          "steps": [
+            {
+              "text": "Travel through the city map toward Seattle, Los Angeles, or San Francisco."
+            },
+            {
+              "text": "Start one of those West Coast city modes."
+            },
+            {
+              "text": "Shoot the left spinner to lock one ball in Bob's Bunker."
+            },
+            {
+              "text": "Before the city timer ends, lock a second ball in Bob's Bunker, the City Event saucer, or the Blast hole."
+            },
+            {
+              "text": "During Super Payday, shoot ramps and loops to collect the Payday Bonuses from earlier cities.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Continue until every available city bonus has been collected."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Super Payday",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Miami",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "New York",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Nashville",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Kansas City",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bridge Out",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Wheel",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Super Blast",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Fun With Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "souvenir",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "context": "left ramp",
+            "label": "Left ramp",
+            "description": "The first ramp in the preferred Bridge Out route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "right ramp",
+            "label": "Right ramp",
+            "description": "The Bridge Out ramp whose diverter feeds the upper flipper.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Blast hole",
+            "context": "Blast hole",
+            "label": "Blast hole",
+            "description": "The upper-flipper shot used to start cities and collect Super Blast.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Small-flipper trap",
+            "instruction": "Hold the small upper flipper during a ramp feed, let the ball settle, then release and shoot the Blast hole.",
+            "sourceUrl": "https://pinballvideos.com/v/902"
+          },
+          {
+            "name": "Magic Standup",
+            "instruction": "Do not flip when the lock eject rolls toward the backward standup; its natural contact can improve city progress once per mode.",
+            "sourceUrl": "https://pinballvideos.com/v/902"
+          },
+          {
+            "name": "Drop catch",
+            "instruction": "Test a drop catch or dead bounce on the Start City eject before you aim immediately.",
+            "techniqueSlug": "drop-catch",
+            "sourceUrl": "https://pinball.org/rules/roadshow.html"
+          },
+          {
+            "name": "Skill-shot calibration",
+            "instruction": "Use a short plunge for the Blast hole; use a full plunge until the required short-plunge strength is known.",
+            "sourceUrl": "https://pinball.org/rules/roadshow.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The small upper flipper has no normal cradle.",
+            "response": "Hold it to settle the feed, then release for the Blast shot.",
+            "sourceUrl": "https://pinballvideos.com/v/902"
+          },
+          {
+            "issue": "The Start City eject returns toward the right flipper.",
+            "response": "Read its speed and use a catch or bounce before the next aimed shot.",
+            "sourceUrl": "https://pinball.org/rules/roadshow.html"
+          },
+          {
+            "issue": "The lock return can contact the Magic Standup.",
+            "response": "Do not replace a useful natural contact with a premature flip.",
+            "sourceUrl": "https://pinballvideos.com/v/902"
+          },
+          {
+            "issue": "A tilt erases the complete Fun With Bonus payout.",
+            "response": "Use small, early nudges when city, mileage, souvenir, and Bonus X value are large.",
+            "sourceUrl": "https://pinball.org/rules/roadshow.html"
+          }
+        ],
+        "simpleOverview": "Red and Ted's Road Show moves west through city modes, while spinner shots and left-left-right ramp combos add miles and raise Bonus X. Choose Miami first, start it at the City Event saucer, then keep selecting cities farther west and protect Fun With Bonus from a tilt.",
+        "overview": "Spinner and ramp shots add travel miles in Red and Ted's Road Show, while a left-left-right ramp sequence raises Bonus X twice. Build 400 miles, start the selected city, and choose the farther-west option when two cities are available. Reach a West Coast city, lock two balls during its timer, and use Super Payday to collect earlier city bonuses.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Choose Miami before the first city. Rip the spinner, and hit standups to raise every Miami switch. Between cities, use the spinner and left-left-right ramp combos for miles and Bonus X. Keep traveling west for Super Payday, and avoid tilting away Fun With Bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before starting the first city, hit an orange standup or bumper to select Miami instead of New York."
+          },
+          {
+            "text": "Shoot the City Event saucer to start Miami. Rip the left spinner. Hit standups to raise every Miami switch by 100,000.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Miami: Every switch begins at 1,000,000. Each standup hit raises the switch value by 100,000 during the 20-second mode."
+            ]
+          },
+          {
+            "text": "After Miami, shoot the spinner and ramps to build the 400 miles needed for the next city."
+          },
+          {
+            "text": "Shoot the left ramp, repeat it when the return stays safe, then shoot the right ramp. The two completed ramp combos raise Bonus X twice.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bridge Out: The right ramp changes its diverter toward the small upper flipper and lights the Wheel."
+            ]
+          },
+          {
+            "text": "Hold the small upper flipper during the Bridge Out feed, let the ball settle, then release and shoot the Blast hole."
+          },
+          {
+            "text": "After a left loop or right-ramp Bridge Out, shoot the Blast hole to collect Super Blast. If Start City is lit, the same shot begins the selected city.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Super Blast: After a left loop or right-ramp Bridge Out, shoot the Blast hole for 5,000,000 the first time, 10,000,000 the second, then 15,000,000.",
+              "Start City: The normal 400 travel miles light the Blast hole for the city selected by the colored bumpers and standups."
+            ]
+          },
+          {
+            "text": "During Ohio, shoot the left and right ramps. During Denver, repeat the left ramp."
+          },
+          {
+            "text": "During Nashville, shoot the radio targets. During Kansas City, shoot through the left spinner into the shelter."
+          },
+          {
+            "text": "When two cities are available, hit the bumper or standup color for the city farther left on the map to reach the West Coast sooner."
+          },
+          {
+            "text": "Keep using safe ramp combos to raise Bonus X toward 6x before a large Fun With Bonus payout.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Fun With Bonus: It adds 2,000,000 per city, 1,000 per mile this ball, 200,000 per Blast, and 10,000,000 per matching city souvenir before Bonus X."
+            ]
+          },
+          {
+            "text": "Avoid a late tilt; a tilt erases the entire Fun With Bonus payout."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "City modes",
+            "summary": "Shoot the spinner and ramps for 400 travel miles, select a city with the colored bumpers or standups, then shoot the City Event saucer or Blast hole."
+          },
+          {
+            "name": "Bridge Out",
+            "summary": "A left-ramp repeat followed by the right-ramp Bridge Out can add two Bonus X advances and feed the small upper flipper."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Hit Ted's bulldozer through Friday, lock twice at Bob's Bunker, then shoot Ted's open mouth for alternating head jackpots."
+          }
+        ]
+      }
+    }
+  ]
+}

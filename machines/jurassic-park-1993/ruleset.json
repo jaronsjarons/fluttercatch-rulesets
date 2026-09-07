@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ZVB",
+  "title": "Jurassic Park",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Jurassic Park complete rulesheet",
+      "url": "https://www.pinball.org/rules/jurassicpark.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Jurassic Park tournament tips",
+        "url": "https://www.pinball.org/rules/jurassicpark-notes2.html"
+      },
+      {
+        "label": "Data East instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Jurassic_Park_755-5043-00.pdf"
+      },
+      {
+        "label": "Current Data East ROM index",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      },
+      {
+        "label": "Robert Gagno at INDISC 2017",
+        "url": "https://pinballvideos.com/v/1459/585"
+      },
+      {
+        "label": "District 82 Jurassic Park 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=_irP3cSdSU0"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Collect Computer Screens at the Control Room and relight it at the Power Shed. Cycle through every Screen to start System Failure, then let its replenished balls feed the Turbo Bumpers for switch scoring.",
+      "quickInfo": [
+        {
+          "name": "Smart Missile",
+          "summary": "The action button collects most lit playfield awards once per game."
+        },
+        {
+          "name": "Tri-Ball",
+          "summary": "Complete the Species map, then feed T-Rex or hit the Raptor Pit enough times to start three-ball play."
+        },
+        {
+          "name": "CHAOS",
+          "summary": "A Tri-Ball Jackpot lights the first CHAOS set, whose completion starts six-ball play."
+        },
+        {
+          "name": "System Failure",
+          "summary": "Collect all Computer Screens to start 45 seconds of replenished six-ball switch scoring."
+        },
+        {
+          "name": "Control Room",
+          "summary": "The lit Control Room awards the current Computer Screen and advances the System Failure build."
+        },
+        {
+          "name": "Multiball interaction",
+          "summary": "Starting Raptor Two-Ball aborts many running Computer Screens. This Multiball blocks Tri-Ball; System Failure ends every running Screen except a lit Extra Ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the gun trigger for the video skill shot. If Smart Missile is enabled, preserve it for a valuable lit award or a threatened ball."
+        },
+        {
+          "text": "Shoot the lit Control Room to collect the current Computer Screen.",
+          "modeNotes": [
+            "Computer Screens: Each Control Room collect advances the sequence toward System Failure. The screen modes score differently, but collecting the next Screen is the lasting progress."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the Power Shed, or use the available inlane relight, to relight the Control Room."
+        },
+        {
+          "text": "During a Screen mode, take controlled lit shots while working back toward the next Control Room collect. Do not start Raptor Two-Ball during a valuable timed Screen.",
+          "modeNotes": [
+            "Raptor Two-Ball aborts many active Computer Screens, and Tri-Ball cannot start while Raptor Two-Ball is running."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect every Computer Screen. Shoot the lit Control Room or Power Shed to start System Failure.",
+          "modeNotes": [
+            "System Failure aborts the running Computer Screens. They do not resume afterward; only a lit Extra Ball remains collectible."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During System Failure, let drained balls auto-plunge into the Turbo Bumpers. Flip only when a controlled shot produces more switch activity than the bumper feed.",
+          "modeNotes": [
+            "System Failure: 45 seconds of replenished six-ball play. Turbo Bumper switches supply the repeatable scoring."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Tri-Ball and CHAOS",
+        "when": "Use this route when the Species targets and Raptor Pit are registering reliably and the installed Tri-Ball settings are practical.",
+        "steps": [
+          {
+            "text": "Complete the six Species groups. Use a lit Boat Dock shot to spot a difficult group.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When Tri-Ball is lit, hit the Raptor Pit twice, regain control, then make the third hit to start Tri-Ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Tri-Ball, shoot the ramp for the Jackpot or the Helicopter Pad for the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After either Jackpot, spell CHAOS while at least two balls remain. Completing the first set starts six-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Spell CHAOS again, then feed T-Rex for 50,000,000.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the ramp and Helicopter Pad for the twin Super Jackpots. If Smart Missile remains, use it when both are lit.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Repeat System Failure",
+        "steps": [
+          {
+            "text": "Keep collecting Computer Screens and relighting the Control Room.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start System Failure after the complete Screen cycle.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use its replenished balls to repeat Turbo Bumper switch scoring.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Tri-Ball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "CHAOS",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "System Failure",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Control Room",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Computer Screen",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Smart Missile",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm CPU ROM 5.13 and display 5.10; older ROMs change Egg, CHAOS, Mr. DNA, values, and mode behavior.",
+        "Tournament settings can reset T-REX, fix Mr. DNA awards, disable Extra Balls, change Tri-Ball hits, and alter ball saves.",
+        "Test Raptor Pit kickouts, Boat Dock, T-Rex, Control Room, ramp, Helicopter Pad, Power Shed, and Visitor's Center returns."
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "After a ramp return reaches the left flipper, backhand the lit Control Room when the angle is controlled.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://www.pinball.org/rules/jurassicpark-notes2.html"
+        },
+        {
+          "name": "Helicopter Double Jackpot switch",
+          "instruction": "During Tri-Ball, the ball must trip the two entrance switches for the Double Jackpot. It does not need to complete the full loop.",
+          "sourceUrl": "https://www.pinball.org/rules/jurassicpark-notes2.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The lit Visitor's Center orbit can hit an upper rubber and return toward the center drain.",
+          "response": "Test the first return before you use it for bonus X. Prefer Control Room or Tri-Ball progress when that feed is dangerous.",
+          "sourceUrl": "https://www.pinball.org/rules/jurassicpark-notes2.html"
+        },
+        {
+          "issue": "The two-ball Tri-Ball restart has no ball save.",
+          "response": "Attempt the restart under control. Save the Smart Missile for a full Tri-Ball relight or later CHAOS value when possible.",
+          "sourceUrl": "https://www.pinball.org/rules/jurassicpark.html"
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At INDISC 2017, players repeatedly cycled Computer Screens to reach System Failure and used its auto-plunges through the Turbo Bumpers instead of forcing the dangerous standups."
+        ]
+      },
+      "simpleOverview": "Jurassic Park uses Control Room Computer Screens to build toward System Failure. Collect a Screen, relight Control Room at the Power Shed, and cycle through every Screen; avoid starting Raptor Two-Ball when it would abort a running Screen.",
+      "overview": "Each Control Room Screen advances System Failure in Jurassic Park, and the Power Shed relights the Control Room. Complete the required species to qualify Tri-Ball; its first Jackpot lights C-H-A-O-S. Complete the Screens without interrupting them with Raptor Two-Ball, then use System Failure's replenished balls for Turbo Bumper switch scoring.",
+      "machineSetup": [
+        "Confirm CPU ROM 5.13 and display 5.10; older ROMs change Egg, CHAOS, Mr. DNA, values, and mode behavior.",
+        "Tournament settings can reset T-REX, fix Mr. DNA awards, disable Extra Balls, change Tri-Ball hits, and alter ball saves.",
+        "Test Raptor Pit kickouts, Boat Dock, T-Rex, Control Room, ramp, Helicopter Pad, Power Shed, and Visitor's Center returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

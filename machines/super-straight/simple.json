@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xyp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the left flipper to repeat the upper-right gate and build bonus, use the right flipper to complete both Jacks, collect at the left saucer near 70,000, then use the lit spinner after 100,000.",
+        "quickInfo": [
+          {
+            "name": "Upper-right gate",
+            "summary": "A left-flipper shot returns the ball to the upper playfield for more bonus advances."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "Complete both Jack standups to light the left saucer for a current-base-bonus collect."
+          },
+          {
+            "name": "Maximum bonus",
+            "summary": "Reaching 100,000 base bonus lights the center spinner for 1,000 per spin."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Complete both Aces to light an alternating return lane, then roll through it to activate Double Bonus."
+          },
+          {
+            "name": "Lower gate",
+            "summary": "Both Kings open a right-side gate that returns the ball to the plunger lane for another top feed."
+          }
+        ],
+        "steps": [
+          {
+            "text": "From the left flipper, shoot the upper-right gate. Use each return to build base bonus."
+          },
+          {
+            "text": "From the right flipper, shoot the two Jack standups. This lights Collect Bonus at the left saucer."
+          },
+          {
+            "text": "When base bonus reaches about 70,000, shoot the left saucer from the right flipper.",
+            "modeNotes": [
+              "Collect Bonus: Both Jacks light the left saucer. The saucer awards the current base bonus and resets it."
+            ]
+          },
+          {
+            "text": "After the collect, return to the upper-right gate and rebuild bonus."
+          },
+          {
+            "text": "If base bonus reaches 100,000, use the left flipper to shoot the lit center spinner.",
+            "modeNotes": [
+              "Maximum-bonus spinner: Reaching 100,000 base bonus lights the spinner for 1,000 per spin."
+            ]
+          },
+          {
+            "text": "When the spinner is weak, transfer the ball to the right flipper and collect bonus instead of forcing the spinner."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-gate bonus build",
+          "when": "Use this when the Jack targets, Collect Bonus saucer, or center spinner has a dangerous return.",
+          "steps": [
+            {
+              "text": "Repeat the upper-right gate from the left flipper."
+            },
+            {
+              "text": "Use top lanes and bumpers to build base bonus."
+            },
+            {
+              "text": "Complete both King targets to open the lower gate only when they are collected naturally."
+            },
+            {
+              "text": "Protect the built end-of-ball bonus instead of forcing a cashout."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Double Bonus position play",
+            "when": "Use this only when base bonus is high and one safe Ace hit remains.",
+            "steps": [
+              {
+                "text": "Complete the second Ace to light the alternating return lane."
+              },
+              {
+                "text": "Guide the ball through the lit return lane to activate Double Bonus.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Do not collect base bonus at the saucer unless the match position requires immediate points."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated high-value bonus collects",
+          "steps": [
+            {
+              "text": "Complete both Jacks to light Collect Bonus."
+            },
+            {
+              "text": "Shoot the upper-right gate to return the ball to the top, then score top lanes and bumper hits to raise base bonus."
+            },
+            {
+              "text": "Collect near 70,000 or later when the saucer feed is safe."
+            },
+            {
+              "text": "At 100,000, add the lit spinner or protect Double Bonus according to match position.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-right gate",
+            "label": "Upper-right gate",
+            "description": "Gate used to build bonus through repeat upper play.",
+            "precision": "unverified",
+            "context": "Repeat the upper-right gate from the left flipper."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Shatz transfer",
+            "techniqueSlug": "shatz-pass",
+            "instruction": "Shoot the ball across the wide inlane gap from the left flipper to the right flipper. Use the right flipper for Collect Bonus.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xyp-MQ25n"
+          },
+          {
+            "name": "Upper-right gate repeat",
+            "instruction": "Use the left flipper to shoot the upper-right gate. Repeat only while its return remains controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xyp-MQ25n"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Ace-target rebounds can reach an outlane or leave the ball uncontrolled.",
+            "response": "Do not shoot an Ace until base bonus is high and the Double Bonus attempt justifies the risk.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xyp-MQ25n"
+          },
+          {
+            "issue": "A center spinner shot can hit the bumper above it and return through the center.",
+            "response": "Avoid a dead-center spinner hit. Use the upper gate or Collect Bonus when the bumper return is unsafe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xyp-MQ25n"
+          },
+          {
+            "issue": "The left saucer kickout and upper bumper exits can vary by machine.",
+            "response": "Watch the first full return. Do not repeat a collect or gate shot until the feed is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xyp-MQ25n"
+          }
+        ],
+        "simpleOverview": "Super Straight uses the upper-right gate to build base bonus, two Jacks to light a left-saucer collect, and the center spinner after bonus reaches 100,000. Repeat the gate, complete both Jacks, collect near 70,000 or later, then use the lit spinner at maximum base.",
+        "overview": "Super Straight uses the upper-right gate to build base bonus, two Jacks to light a left-saucer collect, and the center spinner after bonus reaches 100,000. Build through the upper-right route, complete both Jacks, and collect at the saucer when its feed is safe. At 100,000 switch to the 1,000-per-spin center spinner, adding Double Bonus only when the Ace and return-lane sequence is controlled.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the left flipper to repeat the upper-right gate and build bonus, use the right flipper to complete both Jacks, collect at the left saucer near 70,000, then use the lit spinner after 100,000.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "From the left flipper, shoot the upper-right gate. Use each return to build base bonus."
+          },
+          {
+            "text": "From the right flipper, shoot the two Jack standups. This lights Collect Bonus at the left saucer."
+          },
+          {
+            "text": "When base bonus reaches about 70,000, shoot the left saucer from the right flipper.",
+            "details": [
+              "Collect Bonus: Both Jacks light the left saucer. The saucer awards the current base bonus and resets it."
+            ]
+          },
+          {
+            "text": "After the collect, return to the upper-right gate and rebuild bonus."
+          },
+          {
+            "text": "If base bonus reaches 100,000, use the left flipper to shoot the lit center spinner.",
+            "details": [
+              "Maximum-bonus spinner: Reaching 100,000 base bonus lights the spinner for 1,000 per spin."
+            ]
+          },
+          {
+            "text": "When the spinner is weak, transfer the ball to the right flipper and collect bonus instead of forcing the spinner."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Upper-right gate",
+            "summary": "A left-flipper shot returns the ball to the upper playfield for more bonus advances."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "Complete both Jack standups to light the left saucer for a current-base-bonus collect."
+          },
+          {
+            "name": "Maximum bonus",
+            "summary": "Reaching 100,000 base bonus lights the center spinner for 1,000 per spin."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-gate bonus build",
+          "when": "Use this when the Jack targets, Collect Bonus saucer, or center spinner has a dangerous return.",
+          "steps": [
+            {
+              "text": "Repeat the upper-right gate from the left flipper."
+            },
+            {
+              "text": "Use top lanes and bumpers to build base bonus."
+            },
+            {
+              "text": "Complete both King targets to open the lower gate only when they are collected naturally."
+            },
+            {
+              "text": "Protect the built end-of-ball bonus instead of forcing a cashout."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Ace-target rebounds can reach an outlane or leave the ball uncontrolled.",
+          "text": "Do not shoot an Ace until base bonus is high and the Double Bonus attempt justifies the risk."
+        }
+      }
+    }
+  ]
+}

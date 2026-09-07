@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "GkBPY",
+  "title": "Cosmic Carnival",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Kineticist designer-supplied Cosmic Carnival rules",
+      "url": "https://www.kineticist.com/news/cosmic-carnival-deep-dive"
+    },
+    "supportingSources": [
+      {
+        "label": "Suncoast Arcade exact commercial game page",
+        "url": "https://www.suncoastarcade.com/product-page/pinball"
+      },
+      {
+        "label": "Aussie Arcade exact-machine rules demonstration record",
+        "url": "https://www.aussiearcade.com/topic/88445-cosmic-carnival-suncoast-pinball/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Build Cosmic Carnival through its five Talos challenges and five Wrath challenges. The cleanest first Multiball route is Dunk Tank: complete its three target lamps three times, run the lit inner lanes in both directions, then shoot the center scoop twice. Each completed challenge also advances the long route toward the four-ball finale.",
+      "simpleOverview": "Complete the three Dunk Tank targets three times, then run the lit inner lanes from left to right and back from right to left. When Ringleader Multiball is lit, shoot the center scoop twice to start it.",
+      "summary": "Complete the three Dunk Tank targets three times to start its timed lane sequence. Run the lit inner lanes left-to-right and then right-to-left; when Ringleader Multiball is lit, shoot the center scoop twice to start three-ball Multiball.",
+      "quickInfo": [
+        {
+          "name": "Dunk Tank",
+          "summary": "Complete the three dunk targets three times, then make the two directed inner-lane passes."
+        },
+        {
+          "name": "Ringleader Multiball",
+          "summary": "After Dunk Tank lights it, shoot the center scoop twice to start three-ball Multiball."
+        },
+        {
+          "name": "Ringleader challenge",
+          "summary": "Hit the left Ringleader ramp three times, then alternate the left and right ramps three times."
+        },
+        {
+          "name": "Cosmic Clown challenge",
+          "summary": "Hit the right ramp three times, then complete all ten clown targets."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete all three Dunk Tank targets three times to start the timed Dunk Tank lane sequence.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "During Dunk Tank, run the lit inner lanes from left to right and then from right to left; completing both directions lights Ringleader Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the center scoop once to prepare Ringleader Multiball, then shoot it a second time to start three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, follow the lit ramp and scoop Jackpots rather than assuming an unlit challenge shot will score a Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Complete the carnival challenges",
+        "steps": [
+          {
+            "text": "For Ringleader, hit the left Ringleader ramp three times, then alternate the left and right ramps three times to finish the challenge.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For Cosmic Clown, hit the right ramp three times, then complete all ten clown targets.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep completing the five Talos and five Wrath challenges; the full set opens the four-ball finale.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm that the center scoop registers both qualification shots and that all three Dunk Tank targets and both inner lanes register cleanly.",
+        "Use the display for timer and score values; the physical qualification and start route remain stable."
+      ],
+      "termStyles": [
+        {
+          "label": "Dunk Tank",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "inner lanes",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "Ringleader Multiball",
+          "tone": "rust",
+          "kind": "multiball"
+        },
+        {
+          "label": "center scoop",
+          "tone": "indigo",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Challenge stacking with Ringleader Multiball can vary by software or game state.",
+          "response": "Treat Dunk Tank as the qualification route and follow the lit Jackpot shots after Multiball starts; do not plan around an undocumented running-challenge stack.",
+          "sourceUrl": "https://www.kineticist.com/news/cosmic-carnival-deep-dive"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

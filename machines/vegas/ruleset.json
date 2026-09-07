@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "GrqVL",
+  "title": "Vegas",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Vegas complete narrated tournament walkthrough",
+      "url": "https://www.youtube.com/watch?v=3Up2h_XFJ6E&t=5173s"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Vegas confirmed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Vegas_instruction_cards.zip"
+      },
+      {
+        "label": "Vegas exact-machine physical gameplay",
+        "url": "https://www.youtube.com/watch?v=Gi1NXZCwdMM"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Vegas offers two compatible plans: spell V-E-G-A-S through the yellow-lamp features toward Cashier, or build the left loop with the five right drop targets. The bank can raise the loop to 5x, and Multiball doubles playfield scoring, making a lit loop worth up to 10x.",
+      "simpleOverview": "Complete the five right drop targets to raise the left loop toward 5x, then repeat the loop. Multiball doubles scoring. Separately, collect the yellow V-E-G-A-S features to light Cashier.",
+      "summary": "Use the right bank to build the repeatable left loop, then alternate light and collect through that loop; pursue V-E-G-A-S features when their starts are safely available.",
+      "quickInfo": [
+        {
+          "name": "Raise Loop",
+          "summary": "Complete the five right drop targets, up to 5x."
+        },
+        {
+          "name": "Score Loop",
+          "summary": "Shoot the left loop; it alternates between lighting and collecting its award."
+        },
+        {
+          "name": "Double Scoring",
+          "summary": "Multiball doubles playfield values, including the loop."
+        },
+        {
+          "name": "Cashier",
+          "summary": "Complete the yellow V-E-G-A-S feature lamps, then shoot the lit Cashier."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the five right drop targets to raise the left-loop multiplier toward 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Repeat the left loop, watching its alternating light-and-collect state."
+        },
+        {
+          "text": "When Multiball is active, prioritize the built left loop because playfield scoring is doubled.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Take safe feature starts to complete the yellow V-E-G-A-S lamps, then shoot the lit Cashier."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "V-E-G-A-S feature route",
+          "when": "Use this when feature starts are safer or the right drop bank is rejecting dangerously.",
+          "steps": [
+            {
+              "text": "Use Joker and Select-a-Feature awards to fill missing yellow V-E-G-A-S lamps."
+            },
+            {
+              "text": "Play the lit slot, roulette, and card features according to their visible state."
+            },
+            {
+              "text": "After V-E-G-A-S is complete, shoot Cashier for the qualified award."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "A 10x loop during Multiball",
+        "steps": [
+          {
+            "text": "Complete the right five-bank enough times to raise the left loop to 5x."
+          },
+          {
+            "text": "Start Multiball for 2x playfield scoring."
+          },
+          {
+            "text": "Repeat the left loop and track whether the next pass lights or collects."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the right five-bank and reset, left-loop state lamps, Multiball start and ball release, Joker and Select-a-Feature awards, slot hole, roulette, Cashier, and score rollover display.",
+        "Confirm tournament settings, Extra Ball and Special conversion, and whether Double-or-Nothing is enabled."
+      ],
+      "cautions": [
+        {
+          "issue": "The loop alternates between qualifying and collecting, and the score can roll over.",
+          "response": "Read the loop lamp before every shot and track the displayed score digit rather than assuming a missed award or lead.",
+          "sourceUrl": "https://www.youtube.com/watch?v=3Up2h_XFJ6E&t=5173s"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

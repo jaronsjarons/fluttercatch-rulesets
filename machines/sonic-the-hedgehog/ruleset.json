@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "GvBPJ",
+  "title": "Sonic the Hedgehog",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Current Sonic the Hedgehog rulesheet",
+      "url": "https://tiltforums.com/t/sonic-the-hedgehog-rulesheet/10260"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Jersey Jack Sonic 0.930 support and rules flowchart",
+        "url": "https://jerseyjackpinball.com/pages/support/sonic-special-edition"
+      },
+      {
+        "label": "Official Jersey Jack Sonic 0.930 changelog",
+        "url": "https://marketing.jerseyjackpinball.com/sonic/sonic_changelog.txt"
+      },
+      {
+        "label": "Pinball Genie Sonic rules and shot guide",
+        "url": "https://pinball-genie.com/machines/sonic-the-hedgehog"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "earlyCode": true,
+      "summary": "Choose Green Hill before plunging and build its checkpoints while preparing a Chaos Emerald lock. Start Chaos Emerald Multiball before the Goal Ring, collect the Emerald at the lockup, then finish the Zone and hit Eggman. Use the action button to pause and resume timers with Chaos Control.",
+      "quickInfo": [
+        {
+          "name": "Zones and Multiball",
+          "summary": "An active Zone continues during one Multiball until the Goal Ring is reached. After the Goal Ring, the Zone timer pauses and checkpoint shots are disabled, so Boss Battle cannot start until Multiball ends."
+        },
+        {
+          "name": "One Multiball at a time",
+          "summary": "Chaos Emerald and Sonic Heroes Multiball cannot run together."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before plunging, use the action button to select Green Hill. Plunge to the left or center ramp, then hit Eggman on the upper playfield for the ball-one skill shot.",
+          "modeNotes": [
+            "For Green Hill, use the currently lit choice for each checkpoint. The choices are either ramp or orbit, center ramp or lockup, right ramp or left orbit, left ramp or right orbit, center ramp or Bash Dash, and center ramp or either orbit. Then shoot the center-ramp Goal Ring."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the inline drops beside the right ramp, then shoot the lockup. The first Chaos Emerald Multiball needs only one lockup collect.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Chaos Emerald Multiball, shoot the lockup to collect the first Emerald. Shoot the lit orbits and ramps for Jackpots.",
+          "modeNotes": [
+            "Chaos Emeralds are the durable reward. Each one adds 15 seconds to Chaos Control and increases the Bash Dash starting jackpot multiplier."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the left standup to hold a ball and start Bash Dash. Hit the held ball to raise the Jackpot multiplier, then shoot lit Jackpot orbits and ramps before the ten-second Bash Dash timer expires.",
+          "modeNotes": [
+            "Bash Dash starts at 2x plus the number of collected Emeralds. Each captive-ball hit adds 1x during its short timer."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After Multiball, finish the remaining Green Hill checkpoints and shoot the center-ramp Goal Ring in single-ball play.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "During Boss Battle, shoot the left or center ramp to enter the upper playfield and hit Eggman. Because the first Emerald gives 15 seconds of Chaos Control, press the action button to freeze the hurry-up timer and press it again to resume the timer.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "First Emerald and completed Boss Battle",
+        "steps": [
+          {
+            "text": "Start Chaos Emerald Multiball at the lockup.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect Emerald 1 at the lockup.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Finish a Zone and reach its Goal Ring.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use Chaos Control while attacking Eggman in Boss Battle.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Chaos Emerald Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bash Dash",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Zone",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Boss Battle",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Chaos Control",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Chaos Emerald",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Upper-playfield entries and exits are fast and can return without a lower-flipper cradle.",
+          "response": "Keep both lower flippers ready when a ball leaves the lab upper playfield.",
+          "sourceUrl": "https://pinball-genie.com/machines/sonic-the-hedgehog"
+        },
+        {
+          "issue": "Repeated Bash Dash impacts can produce unpredictable rebounds.",
+          "response": "Expect the captured ball to return immediately after each hit to the Bash Dash captive ball.",
+          "sourceUrl": "https://tiltforums.com/t/sonic-the-hedgehog-rulesheet/10260"
+        }
+      ],
+      "simpleOverview": "Sonic the Hedgehog turns a selected Zone into six checkpoints, a Goal Ring, and a Boss Battle. Before plunging, select Green Hill with the action button. Complete its six lower-playfield checkpoints, shoot the center-ramp Goal Ring in single-ball play, then enter the upper playfield from the left or center ramp and hit Eggman. Clear the inline drops beside the right ramp and shoot the lockup once to start the first Chaos Emerald Multiball; then shoot the lockup again to collect the first Emerald.",
+      "overview": "Sonic the Hedgehog turns a selected Zone into six checkpoints, a Goal Ring, and a Boss Battle. Choose Green Hill and earn the first Chaos Emerald before reaching the Goal Ring: clear the inline drops, then shoot the lockup once to start Chaos Emerald Multiball. The Zone can continue during Multiball; shoot the lockup again for the first Emerald. Finish the checkpoints, shoot the center-ramp Goal Ring, and hit Eggman. Use the action button to freeze and resume timers with the Emerald's 15 seconds of Chaos Control.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

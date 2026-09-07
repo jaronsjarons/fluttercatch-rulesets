@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "id": "GrXOZ",
+  "title": "Andromeda",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Andromeda tournament rules",
+      "url": "https://rules.silverballmania.com/rules/GrXOZ-MLyb0"
+    },
+    "supportingSources": [
+      {
+        "label": "Game Plan Andromeda game page",
+        "url": "https://www.gameplanpinball.com/machine-andromeda.html"
+      },
+      {
+        "label": "Keith Elwin at Pinburgh 2017",
+        "url": "https://pinballvideos.com/v/1564/15576"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the black drop target, lock at the orbit saucer, then start two-ball 2x play at the guarded yellow standup. Focus on the spinner; finish a red bank only when one or two targets remain.",
+      "quickInfo": [
+        {
+          "name": "Lock qualification",
+          "summary": "Hit the black drop target to light the orbit saucer lock for one ball."
+        },
+        {
+          "name": "Andromeda Multiball",
+          "summary": "After a lock, hit the guarded yellow standup to release the ball and start two-ball play with 2x scoring."
+        },
+        {
+          "name": "2x scoring",
+          "summary": "Two-ball play doubles playfield scoring while both balls remain active."
+        },
+        {
+          "name": "Spinner value",
+          "summary": "The first red-bank completion raises the spinner from 1K to 3K per spin, and the second raises it to 4K."
+        },
+        {
+          "name": "Bonus X",
+          "summary": "Complete top-lane sets to raise Bonus X through 2x, 3x, 4x, 5x, and 10x on a base bonus worth up to 80K."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the black drop target to light lock."
+        },
+        {
+          "text": "Shoot the orbit saucer to lock one ball. A later player can steal an unclaimed lock, so convert it on the same ball when possible.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the guarded yellow standup to start Andromeda Multiball and 2x scoring.",
+          "modeNotes": [
+            "Andromeda Multiball: The black target lights the orbit lock. After the lock, the guarded yellow target releases the held ball for two-ball play.",
+            "2x scoring: Normal playfield scoring is doubled while both balls remain in play."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During two-ball play, focus on the spinner. Finish the red bank only when one or two targets remain; the first two completions raise the spinner to 3K and 4K.",
+          "kinds": [
+            "multiball"
+          ],
+          "modeNotes": [
+            "Read the current spinner value and Bonus X before deciding whether to finish a red bank or top-lane set."
+          ]
+        },
+        {
+          "text": "Let spinner and upper-playfield returns complete top-lane sets and advance Bonus X toward 10x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After multiball, rebuild the black-target lock route before another player can benefit from a staged ball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Spinner and top bonus",
+        "when": "Use this when the lock saucer or guarded start target is unsafe.",
+        "steps": [
+          {
+            "text": "Finish the red drop bank only when one or two targets remain and their rebounds are controlled."
+          },
+          {
+            "text": "Repeat the spinner from a controlled flipper."
+          },
+          {
+            "text": "Use top-lane feeds to raise Bonus X toward 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to the lock route only after the orbit and yellow-target returns are known."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Fast 2x conversion",
+          "when": "Use this when a lock is already staged and the yellow target is safe.",
+          "steps": [
+            {
+              "text": "Do not delay the lock for full spinner or bonus preparation."
+            },
+            {
+              "text": "Hit the guarded yellow standup to start two-ball 2x play.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use the protection to finish red banks and top lanes.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "4K spinner and 10x Bonus",
+        "steps": [
+          {
+            "text": "Complete successive red drop banks until the spinner reaches 4K."
+          },
+          {
+            "text": "Complete top-lane groups until Bonus X reaches 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start two-ball 2x scoring to protect the dangerous progress shots.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Carry the multiplied bonus to the end of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Andromeda Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "2x scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Orbit-to-lock setup",
+          "instruction": "Trap before the orbit shot. Use the full orbit only when it reaches the saucer cleanly and does not reject from its entrance.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXOZ-MLyb0"
+        },
+        {
+          "name": "Multiball spinner control",
+          "instruction": "Trap one ball when possible. Use the other ball to repeat the spinner after the red banks raise its value.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXOZ-MLyb0"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The multiball start is a guarded standup and can rebound toward the center.",
+          "response": "Shoot it from a cradle. Keep the opposite flipper ready for the rebound.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXOZ-MLyb0"
+        },
+        {
+          "issue": "A missed orbit-saucer shot can hit the lane divider and return unpredictably.",
+          "response": "Test the orbit before committing to repeated locks. Use spinner and bonus play when it rejects.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXOZ-MLyb0"
+        },
+        {
+          "issue": "A locked ball can remain available for the next player.",
+          "response": "After locking, start two-ball play on the same ball when the guarded target is controllable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXOZ-MLyb0"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm balls per game, Extra Ball and Special treatment, feature memory, and whether a physical lock is shared between players.",
+        "Read the current spinner value and Bonus X before deciding whether to finish a red bank or top-lane set.",
+        "Test the orbit-saucer entry, guarded launch target, lock release, right-lane return, spinner feed, and red-target rebounds."
+      ],
+      "simpleOverview": "Andromeda uses the black drop target to light one orbit-saucer lock, then the guarded yellow standup starts two-ball 2x scoring. Start Multiball and repeat the spinner, finishing a red bank only when one or two targets remain.",
+      "overview": "Andromeda uses the black drop target to light one orbit-saucer lock, then the guarded yellow standup starts two-ball 2x scoring. Use the first red-bank completion to raise the spinner to 3K and the second to 4K, but favor the spinner itself once built. Complete top-lane sets for Bonus X without forcing broad bank rebounds.",
+      "machineSetup": [
+        "Confirm balls per game, Extra Ball and Special treatment, feature memory, and whether a physical lock is shared between players.",
+        "Test the orbit-saucer entry, guarded launch target, lock release, right-lane return, spinner feed, and red-target rebounds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

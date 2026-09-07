@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "id": "GK17D",
+  "title": "Jurassic Park",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Stern Jurassic Park tournament strategy",
+      "url": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Current Stern game-code list",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      },
+      {
+        "label": "Tilt Forums Stern Jurassic Park rulesheet",
+        "url": "https://tiltforums.com/t/stern-jurassic-park-rulesheet/5644"
+      },
+      {
+        "label": "PAPA Jurassic Park tutorial with Bowen Kerins",
+        "url": "https://www.youtube.com/watch?v=vVs_0jqCPGA"
+      },
+      {
+        "label": "System-J Jurassic Park tournament tactics",
+        "url": "https://systemjpinball.ca/index.php/2024/01/30/jurassic-park-stern-tactics-page/"
+      },
+      {
+        "label": "Escher Lefkoff at Stern Pro Circuit Championship 2023 — Round 3",
+        "url": "https://pinballvideos.com/v/5038/11958"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Prepare Raptor Tri-Ball, capture the first dinosaur on an outside route, then choose System Boot when its exact combos are controlled and use Raptor to protect the route.",
+      "steps": [
+        {
+          "text": "Try the skill-shot chain: left ramp, right ramp, tower ramp, then O. Use each return to measure the copy."
+        },
+        {
+          "text": "Complete the Raptor Pen bank twice. Shoot the center dead-end lane and reduce fence integrity to zero, but stop before the final dead-end start.",
+          "modeNotes": [
+            "Raptor preparation: Bank completions qualify the center capture. The first dead-end shot captures a ball; fence hits then lower integrity to zero. The next dead-end shot starts Raptor Tri-Ball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot one white MAP arrow. Shoot the left ramp to start the first Paddock, then capture its dinosaur.",
+          "modeNotes": [
+            "Paddock: Shoot one red Rescue and one yellow Set Trap target. The first Paddock does not require the Helipad.",
+            "Shoot the moving yellow-green dinosaur arrow to capture the dinosaur and end the Paddock.",
+            "A capture gives a permanent Paddock Perk. The first capture lights Control Room."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Keep the truck on an outside route. This reaches Visitor Center through fewer difficult Paddocks."
+        },
+        {
+          "text": "Shoot C. Select System Boot at Control Room when its exact two-shot combos are controlled.",
+          "modeNotes": [
+            "System Boot: Complete one two-shot combo from each opener: left ramp, Helipad, and spinner. Return to C for the combined collect and Fossil.",
+            "Current tournament guidance ranks System Boot above Restore Power when the exact combos are reliable."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete all three purple targets so Supply Drop is ready. Leave the far-right 2x target available.",
+          "modeNotes": [
+            "Supply Drop: The large target gives an award after the three purple targets are complete.",
+            "Each collected Supply Drop lights the far-right target for 45 seconds of 2x playfield scoring.",
+            "The first Supply Drop collected during Raptor Tri-Ball adds a ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the final center dead-end lane to start Raptor Tri-Ball. Collect the first Supply Drop for add-a-ball, then start 2x only when the far-right target angle is safe.",
+          "modeNotes": [
+            "Raptor Tri-Ball phase 1: Shoot both ramps. The second ramp jackpot is double.",
+            "Phase 2: Shoot all five C-H-A-O-S jackpots.",
+            "Phase 3: The game adds three balls. Shoot the right ramp for 2x and the upper loop for 3x, multiplied by balls in play.",
+            "Phase 4: Shoot C-H-A-O-S victory laps. The dead-end lane relights them. The feature ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Finish System Boot's three exact combos and return to C. Score both Raptor ramp jackpots, complete C-H-A-O-S, and prioritize the upper loop during the six-ball phase.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Raptor Tri-Ball",
+          "summary": "Complete the Raptor Pen bank twice, capture a ball, lower fence integrity, then return to the dead-end lane for the start."
+        },
+        {
+          "name": "System Boot",
+          "summary": "Start it at Control Room, complete one two-shot combo from each of its three openers, then return to C for the Fossil."
+        },
+        {
+          "name": "Supply Drop 2x",
+          "summary": "Complete the three purple targets, collect Supply Drop, then hit the far-right target for 45 seconds of 2x playfield scoring."
+        },
+        {
+          "name": "Feed T-Rex Multiball",
+          "summary": "Spell T-REX, build and collect the hurry-up at the left ramp, then clear C-H-A-O-S before the left-ramp Super Jackpot."
+        },
+        {
+          "name": "Paddocks",
+          "summary": "Follow the MAP, rescue staff, set the trap, and capture each dinosaur to earn persistent route perks."
+        },
+        {
+          "name": "Modes and Multiball",
+          "summary": "A Control Room mode can run with one Multiball and non-T-Rex modes. A single-ball T-Rex Event can run with one Multiball and non-Control Room modes. Control Room modes and T-Rex Events do not run together."
+        }
+      ],
+      "fallback": {
+        "title": "Feed T-Rex Multiball",
+        "when": "Use this plan when C, the Raptor Pen, or the far-right 2x target rejects.",
+        "steps": [
+          {
+            "text": "Hit the truck three times on default settings to spell T-REX and start the hurry-up."
+          },
+          {
+            "text": "Shoot orange arrows. Each shot resets the timer to 20 seconds and raises the value."
+          },
+          {
+            "text": "Shoot the left ramp when the value is adequate. Do not overbuild without ball save."
+          },
+          {
+            "text": "During two-ball T-Rex Multiball, shoot all five C-H-A-O-S jackpots. Then shoot the left ramp for the Super Jackpot.",
+            "modeNotes": [
+              "The collected hurry-up becomes the jackpot base.",
+              "A left-to-right jackpot sequence adds 1x to the next jackpot and 250,000 to its value.",
+              "The Super equals the jackpot sum. A Super relights jackpots and resets the multiplier."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Restore Power and Raptor stack",
+          "when": "Use this lower-precision route when System Boot's exact two-shot combos are unreliable.",
+          "steps": [
+            {
+              "text": "Start Restore Power at Control Room after the first dinosaur capture.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the spinner, then start Raptor Tri-Ball. Restore Power continues during the Multiball.",
+              "modeNotes": [
+                "A Control Room mode can run with one Multiball. A second Multiball cannot start during the overlap."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the extra balls to complete Restore Power's seven broadly lit major shots.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Make the final lit shot for the Fossil, then resume the Raptor jackpot sequence.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "2x Chaos comeback",
+          "when": "Use this high-ceiling line when 2x, Chaos Multiball, an active Paddock, and a T-Rex Event are already aligned.",
+          "steps": [
+            {
+              "text": "Start 2x before the protected scoring window.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Start Chaos Multiball while the Paddock and single-ball T-Rex Event are active. The T-Rex Event continues during the Multiball.",
+              "modeNotes": [
+                "A single-ball T-Rex Event can run with one Multiball. Multiball T-Rex Events cannot stack with another Multiball."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use a Smart Missile for Clear Paddock when that removes the least controllable requirement."
+            },
+            {
+              "text": "Prioritize overlapping lit shots while the 2x timer and extra balls remain active.",
+              "kinds": [
+                "mode",
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Amber Bonus",
+          "when": "Use this line on a pop-heavy copy when the precision shots are not reliable.",
+          "steps": [
+            {
+              "text": "Use bumpers to build the Amber base for the game."
+            },
+            {
+              "text": "Use the top rollover to light the amber-mine target."
+            },
+            {
+              "text": "Capture dinosaurs to add multipliers to the next Amber collect."
+            },
+            {
+              "text": "Shoot the amber target to collect the base with stored multipliers."
+            },
+            {
+              "text": "The base does not reset. End-of-ball bonus spends the current multiplier."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Visitor Center and mini-wizards",
+        "steps": [
+          {
+            "text": "Complete the outside-route Paddocks to reach Visitor Center.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Play all three Control Room modes to qualify Secure Control Room, and all four T-Rex Events to qualify Museum Mayhem.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete modes and Raptor Super Jackpots to earn Fossils. Follow the installed display for the next lit mini-wizard start because the start shot can change with the goal.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Raptor Tri-Ball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Feed T-Rex Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Chaos Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Paddock",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Restore Power",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "System Boot",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "T-Rex Event",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "2x playfield scoring",
+          "tone": "indigo",
+          "kind": "item",
+          "kindIsExplicit": true
+        }
+      ],
+      "checkBeforePlay": [
+        "Competition Install, first T-Rex Event, Paddock order, Raptor locks, ball saves, Extra Ball conversion, and Supply Drop thresholds can change with operator settings.",
+        "Test Raptor Pen, dead-end lane, truck, C, spinner, Helipad, Supply Drop, far-right 2x target, ramps, and upper-loop returns."
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the Raptor Pen and Set Trap targets from their same-side flippers when the local copy accepts those angles.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        },
+        {
+          "name": "C shot from the right",
+          "instruction": "Shoot C from a right-flipper cradle. Use the shot for Control Room and mode collects.",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        },
+        {
+          "name": "O aiming mark",
+          "instruction": "Aim at the light-brown area above the Jurassic Park logo for the O shot.",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "Use a late left-flipper shot into Helipad, then dead bounce a weak rejection to the opposite flipper.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        },
+        {
+          "name": "Cradle separation",
+          "instruction": "Hold one ball. Use the other ball for a clean jackpot shot during Raptor Tri-Ball.",
+          "techniqueSlug": "cradle-separation",
+          "sourceUrl": "https://www.youtube.com/watch?v=vVs_0jqCPGA&t=1549s"
+        },
+        {
+          "name": "Ski pass",
+          "instruction": "Ski-pass the left-ramp return. Shoot C for the first C-H-A-O-S jackpot.",
+          "techniqueSlug": "ski-pass",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A weak spinner shot can drain down the middle.",
+          "response": "Shoot the spinner firmly, or use another feed to the top.",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        },
+        {
+          "issue": "The far-right 2x target has a dangerous angle.",
+          "response": "Use a late left-flipper shot. Do not force 2x when the angle is not dialed in.",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        },
+        {
+          "issue": "Feed T-Rex has no multiball ball save until the left-ramp collect.",
+          "response": "Collect a moderate hurry-up instead of overbuilding it on an unknown copy.",
+          "sourceUrl": "https://systemjpinball.ca/index.php/2024/01/30/jurassic-park-stern-tactics-page/"
+        },
+        {
+          "issue": "The Pro Raptor Pen can reject direct forehands.",
+          "response": "Use the left-flipper backhand when it is available and its return is safe.",
+          "sourceUrl": "https://www.kineticist.com/news/stern-jurassic-park-pinball-tutorial"
+        }
+      ],
+      "overview": "Jurassic Park uses first Paddock capture to light Control Room before Raptor Tri-Ball. Complete the Raptor Pen twice, capture at the dead-end lane, lower fence to zero, then leave final start ready. Shoot one white MAP arrow and the left ramp, capture an outside-route dinosaur, then shoot C for System Boot; start Raptor, collect Supply Drop for add-a-ball, then hit far-right target for 2x.",
+      "simpleOverview": "Jurassic Park rewards the first Paddock capture with Control Room access; Raptor Tri-Ball can use Supply Drop for add-a-ball and the far-right target for 2x. Shoot one white MAP arrow and the left ramp for the first Paddock; rescue staff, set the trap, then capture the dinosaur. Complete the Raptor Pen twice, capture at the dead-end lane, lower fence integrity to zero, then return there for Tri-Ball; complete purple targets, collect Supply Drop, then hit the far-right target for 2x.",
+      "machineSetup": [
+        "Competition Install, first T-Rex Event, Paddock order, Raptor locks, ball saves, Extra Ball conversion, and Supply Drop thresholds can change with operator settings.",
+        "Test Raptor Pen, dead-end lane, truck, C, spinner, Helipad, Supply Drop, far-right 2x target, ramps, and upper-loop returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

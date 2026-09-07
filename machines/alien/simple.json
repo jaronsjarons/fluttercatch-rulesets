@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "id": "G4PBO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Alien. Start Derelict Ship. Ready Ambush and Sentry Guns. Start Ambush first, then add Sentry Guns for doubled multiball jackpots.",
+        "steps": [
+          {
+            "text": "Choose the Alien film. On the skill shot, hit the Xenomorph targets to spot two Ambush hits.",
+            "modeNotes": [
+              "Ambush Multiball: The first start needs five Xenomorph hits. The last hit starts the multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Air Lock to start Derelict Ship. Shoot orbits to reach the egg bumpers.",
+            "modeNotes": [
+              "Derelict Ship: Destroy 12 eggs. Shoot a lit Vent. Then shoot the Air Lock to win the mission.",
+              "Blue and green orbit shots raise the bumper value. Green orbit shots also add time."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use spinner and switch hits to build 500 ammo for the first Sentry Guns Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When Vent 1 lights for Sentry Guns, do not shoot it yet. Keep it ready for the stack.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the Xenomorph targets until Ambush starts. Use a stored Shotgun to spot two hits if needed.",
+            "modeNotes": [
+              "Shotgun: Select it with the flippers. Press the launch button to spend it and spot two Xenomorph hits."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Ambush starts, shoot Vent 1 to add Sentry Guns. This doubles every multiball jackpot in the stack.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If 2x is ready, start it after both multiballs begin. The Sentry double and 2x playfield give 4x jackpot scoring.",
+            "modeNotes": [
+              "2x playfield: Complete D-R-O-P at the left ramp and S-H-I-P at the right ramp. The first timer is 20 seconds.",
+              "Pulse Rifle: Press the launch button to spend this weapon and start 20 seconds of 2x playfield."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During the stack, shoot spinners, lit attacker shots, and the Xenomorph jackpot.",
+            "modeNotes": [
+              "Sentry Guns: Spinners light the Xenomorph jackpot. Below 50 ammo, shoot the Air Lock for the Super Jackpot.",
+              "Ambush: Defeat all four attackers. Then shoot Vent 3 for the decreasing Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Derelict Ship is still active, finish its Vent and Air Lock shots before the timer ends.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Hypersleep and Sentry Guns",
+          "when": "Use this plan when the Xenomorph targets or magnet return are unsafe.",
+          "steps": [
+            {
+              "text": "Complete the far-right APC drop bank to light Hypersleep lock.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Lock two balls at the Hypersleep ramp. The second lock starts the first Hypersleep Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot all seven red jackpot shots. They relight after the set is complete.",
+              "modeNotes": [
+                "Hypersleep Multiball: APC drop completions raise the jackpot. A top-to-bottom completion adds 1x to the jackpot multiplier."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "A Hypersleep-ramp shot also lights one left-outlane Revive. Both Revive lanes can be stored.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "If Sentry Guns is ready, shoot Vent 1 after Hypersleep starts. The stack doubles the jackpots.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Save Newt Multiball",
+            "when": "Use this plan when the orbit, Vent, Host, and Xenomorph sequence is repeatable.",
+            "steps": [
+              {
+                "text": "Complete two Xenomorph lifecycles: orbit, any Vent, Host magnet, then Xenomorph targets.",
+                "modeNotes": [
+                  "Lifecycle: Egg is the orbit. Facehugger is a Vent. Chestburster is the Host magnet. Xenomorph is the center target bank."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "The final Xenomorph hit starts four-ball Save Newt Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "For about 30 seconds, shoot red shots. Each shot raises the jackpot for the rest of the multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Then find the correct one of three Vents. Wrong Vents score 1x. The correct Vent scores 2x.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "After the rescue, alternate any lit target with Vent 3. The target scores 1x and Vent 3 scores 3x.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Mission and bonus",
+            "when": "Use this plan when no multiball start shot is safe.",
+            "steps": [
+              {
+                "text": "Choose the Alien mission set and shoot the Air Lock to start Derelict Ship.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot either orbit to feed the egg bumpers until they destroy 12 eggs.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot any lit Vent, then shoot the Air Lock to win Derelict Ship.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "When the Vent and Air Lock are ready, complete D-R-O-P at the left ramp and S-H-I-P at the right ramp to start 2x playfield, then make those mission shots.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Use top-lane advances or the Handgun weapon to raise bonus X.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Do not tilt. A completed mission adds part of its score to the multiplied end-of-ball bonus.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Self-Destruct, Loader Battle, and All-Out War",
+          "steps": [
+            {
+              "text": "Win all four Alien missions. Start the next mission to play Self-Destruct.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Self-Destruct, clear four major shots and Air Lock. Then hit Xenomorph and Air Lock. Finish at Vent 1.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Win all four Aliens missions. Start the next mission to play Loader Battle.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Play both film mission sets and all four multiballs to light All-Out War at the Xenomorph.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "During All-Out War, complete all three Vents for a Super. Shoot both orbits, both ramps, Air Lock, and Xenomorph for +1x. Complete weapon targets to add a ball.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "techniques": [],
+        "cautions": [
+          {
+            "issue": "The unlit Xenomorph magnet can sling the ball away from the center targets.",
+            "response": "Test the return during ball save. Use the Shotgun or take center hits during multiball when the return is unsafe.",
+            "sourceUrl": "https://www.youtube.com/watch?v=6uCwmiZuTYY&t=96s"
+          },
+          {
+            "issue": "The Hypersleep ramp can reject an incomplete shot toward the center.",
+            "response": "Test it before building locks. Use Ambush plus Sentry Guns when the ramp rejects.",
+            "sourceUrl": "https://www.youtube.com/watch?v=6uCwmiZuTYY&t=876s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Choose Alien."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Win all four Alien missions."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Hypersleep and Sentry Guns: Use this plan when the Xenomorph targets or magnet return are unsafe."
+          }
+        ],
+        "checkBeforePlay": [
+          "Check whether Extra Balls and Specials remain enabled or convert to points."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Air Lock",
+            "label": "Air Lock",
+            "description": "Scoop used to start missions and bank completed objectives.",
+            "precision": "unverified",
+            "context": "Scoop used to start missions and bank completed objectives."
+          },
+          {
+            "term": "Vent 1",
+            "label": "Vent 1",
+            "description": "Vent used to start and stack Sentry Guns Multiball.",
+            "precision": "unverified",
+            "context": "Vent used to start and stack Sentry Guns Multiball."
+          },
+          {
+            "term": "Xenomorph targets",
+            "label": "Xenomorph targets",
+            "description": "Center bank used for Ambush and lifecycle progress.",
+            "precision": "unverified",
+            "context": "Center bank used for Ambush and lifecycle progress."
+          },
+          {
+            "term": "Hypersleep ramp",
+            "label": "Hypersleep ramp",
+            "description": "Ramp used to lock balls for Hypersleep Multiball.",
+            "precision": "unverified",
+            "context": "Ramp used to lock balls for Hypersleep Multiball."
+          }
+        ],
+        "simpleOverview": "Alien begins with a choice between the Alien and Aliens mission sets; choose Alien for the Derelict Ship route. Shoot the Air Lock to start Derelict Ship. Hit the Xenomorph targets until the fifth hit starts Ambush Multiball, and build 500 ammo with playfield switches without shooting the lit Vent 1. After Ambush starts, shoot Vent 1 to add Sentry Guns and double the Multiball Jackpots. Complete D-R-O-P at the left ramp and S-H-I-P at the right ramp to start 20 seconds of 2x playfield scoring.",
+        "overview": "Alien allows a running mission to continue during Multiball, and Sentry Guns can join another Multiball and double its Jackpots. Choose the Alien mission set and shoot the Air Lock to start Derelict Ship. Hit the Xenomorph targets until the fifth hit starts Ambush Multiball, while building 500 ammo with playfield switches and leaving Vent 1 ready. Start Ambush first, then shoot Vent 1 to add Sentry Guns. Complete D-R-O-P at the left ramp and S-H-I-P at the right ramp when the doubled Jackpot phase is ready for 20 seconds of 2x playfield scoring.",
+        "machineSetup": [
+          "Check whether Extra Balls and Specials remain enabled or convert to points."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the Air Lock for Derelict Ship, five Xenomorph hits for Ambush Multiball, and the D-R-O-P and S-H-I-P ramps for 2x scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Derelict Ship",
+            "text": "Shoot the Air Lock to start Derelict Ship.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Derelict Ship",
+              "reason": "Choose it for a direct Air Lock start and a visible egg, Vent, and Air Lock sequence.",
+              "play": "Shoot orbits to reach the egg bumpers and destroy 12 eggs, shoot a lit Vent, then return to the Air Lock to win the mission."
+            }
+          },
+          {
+            "title": "Start Ambush Multiball",
+            "text": "Hit the Xenomorph targets five times; the fifth hit starts the first Ambush Multiball. A stored Shotgun can spot two of those hits.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start 2x playfield scoring",
+            "text": "Complete D-R-O-P at the left ramp and S-H-I-P at the right ramp to start the first 20-second 2x playfield timer.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Choose Alien."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Win all four Alien missions."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Hypersleep and Sentry Guns: Use this plan when the Xenomorph targets or magnet return are unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Hypersleep Multiball",
+          "when": "Use this when the far-right drop bank and Hypersleep ramp are safer than the Xenomorph targets.",
+          "steps": [
+            {
+              "text": "Complete the far-right APC drop bank to light Hypersleep lock, then shoot the Hypersleep ramp for two locks. The second lock starts the first Hypersleep Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

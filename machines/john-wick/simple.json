@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "id": "GQK1P",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Security Detail or Heist, bring Deconsecrated Multiball into the Job, then use Lights Out's 2x scoring on the Job cashout and multiball jackpots.",
+        "steps": [
+          {
+            "text": "Take the Red Circle VIP skill shot when you can control it. Otherwise, full-plunge. During initial ball save, test the car, WINSTON captive ball, ramps, and fast orbit returns.",
+            "modeNotes": [
+              "VIP skill shot: A controlled plunge through the rear Red Circle advances Excommunicado and can place enemies on shots.",
+              "Enemy: An orange target banks an enemy at a lit major shot. The enemy raises that shot to 2x, then up to 4x. The next scored shot consumes the enemy."
+            ]
+          },
+          {
+            "text": "Fill the three blue Job lights at the crate/VUK. Select Security Detail with the left ramp or Heist with the center ramp. Shoot the crate/VUK to start the Job.",
+            "modeNotes": [
+              "Job: A 60-second timed mode. Each scoring Job shot adds three seconds.",
+              "Once per Job, complete the crate and shoot the VUK to add 30 seconds.",
+              "Complete the Job requirements. Then shoot the left eject to cash out and collect the Job perk.",
+              "Security Detail: Hit the blinking red major shot. The shot starts at the left ramp and moves to the right. Seven shots light the cashout. Its perk extends a multiball once per ball when only one ball remains.",
+              "Heist: Hit standups to light yellow major shots. Collect six gold targets to light the cashout. Its perk lets the action button reveal shots during Lights Out."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Spell W-I-N-S-T-O-N at the captive ball. Shoot the center ramp for each lit lock. The third lock starts Deconsecrated Multiball.",
+            "modeNotes": [
+              "Deconsecrated Multiball: Shoot the green jackpot shots. Enemies on those shots can multiply the jackpots up to 4x.",
+              "Collect the required jackpot set. Then hit the WINSTON captive ball to start about 15 seconds of repeated Super Jackpots.",
+              "Charon can restore enemies to shots. The multiball ends when one ball remains.",
+              "Later Deconsecrated starts can need more WINSTON hits and jackpot shots."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Deconsecrated while the Job runs. Use the multiball ball save for the Job's difficult shots. Cash out the Job before its timer ends.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete B-A-B-A Y-A-G-A. Press the action button to start Lights Out during the stack or before a large cashout.",
+            "modeNotes": [
+              "Lights Out: A 30-second mode that darkens the playfield and doubles playfield scoring.",
+              "The Heist perk lets the action button reveal the lit shots every five seconds."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot ten playfield shots marked by enemies, then shoot the left eject to start a Battle. Complete its lit shots, the blood marker, and the final left-eject shot.",
+            "modeNotes": [
+              "Battle: A 200-second mode with an opening ball save. Battles cannot run together.",
+              "At the left eject, take the current value or continue. Continuing raises the battle multiplier by 1x, up to 4x, but risks the uncollected value.",
+              "Enough battle progress lights Be Seeing You for 25,000,000 plus a 10,000,000 bonus. The first completion also gives an extra ball on standard settings."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Security Detail and WINSTON",
+          "when": "Use this plan when the Red Circle, car, or battle shots are not safe.",
+          "steps": [
+            {
+              "text": "Fill the three blue Job lights at the crate/VUK, shoot the left ramp to select Security Detail, then shoot the crate/VUK to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Spell WINSTON and lock three balls at the center ramp.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start Deconsecrated. Use ball save to finish Security Detail.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the Job cashout. Then make green jackpots and WINSTON Super Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Ally Job stack",
+            "when": "Use this plan when an ally is lit and its matching shots are safe.",
+            "steps": [
+              {
+                "text": "Collect Charon at the center ramp. Then start Gather Intel.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Alternate the left and right ramps. Make the center ramp as a combo for 2x. Complete six side-ramp shots and cash out.",
+                "modeNotes": [
+                  "Gather Intel: Side ramps build the center-ramp jackpot. A combo into the center ramp doubles it. Its perk adds 20 seconds to Lights Out."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Or collect Katia at the right ramp. Start Task a Crew. Make four spinner rips and cash out for the action-button add-a-ball perk.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Car Multiball",
+            "when": "Use this plan when the car shot and left orbit return safely.",
+            "steps": [
+              {
+                "text": "Hit the car until the left orbit lights. Shoot the left orbit to start Car Multiball.",
+                "modeNotes": [
+                  "Car Multiball: The selected car mode changes its jackpot rules. Helipad and Bagarre are the strongest tournament choices.",
+                  "Helipad: Red and pink shots raise the multiplier. The car scores jackpots. Nine jackpot credits light a car Super Jackpot. The left orbit can score it at 2x.",
+                  "Bagarre: A ramp lights the car. Orbits raise the multiplier. Four car jackpots light four car Super Jackpots."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Excommunicado Multiball",
+            "when": "Use this plan when the Red Circle shot is repeatable.",
+            "steps": [
+              {
+                "text": "Build the Excommunicado level at the Red Circle bumpers and targets. Shoot the Red Circle or VIP lane when it is ready.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During the 15-second single-ball phase, build value and hit orange targets to add five seconds. Then play the two-ball phase.",
+                "modeNotes": [
+                  "Excommunicado Multiball: The first phase has single-ball play with ball save. The second phase uses two balls.",
+                  "In the two-ball phase, collect the six outward gold jackpots. Then shoot the Red Circle for the Super Jackpot."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Red Circle Reckoning and The Staircase",
+          "steps": [
+            {
+              "text": "Complete one Job, one Battle, and one of each multiball type to qualify Red Circle Reckoning. Follow the lit start shown by the installed display.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete all seven Jobs, all five Battles, or all six multiballs. Completing any one full path qualifies The Staircase; follow the lit start shown by the installed display.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Security Detail",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Heist",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Gather Intel",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Task a Crew",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Lights Out",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Deconsecrated Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Car Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Excommunicado Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Red Circle Reckoning",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "The Staircase",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Red Circle",
+            "label": "Red Circle club",
+            "description": "The Red Circle target area and VIP plunge lane occupy the upper-left playfield.",
+            "xPercent": 22,
+            "yPercent": 24,
+            "precision": "area"
+          },
+          {
+            "term": "car",
+            "label": "John Wick car",
+            "description": "The motorized car bash toy sits in the center-left playfield.",
+            "xPercent": 39,
+            "yPercent": 46,
+            "precision": "area"
+          },
+          {
+            "term": "WINSTON captive ball",
+            "label": "WINSTON captive ball",
+            "description": "The WINSTON captive ball is inside the Continental structure in the upper-middle playfield.",
+            "xPercent": 50,
+            "yPercent": 31,
+            "precision": "area"
+          },
+          {
+            "term": "crate/VUK",
+            "label": "Weapons crate and VUK",
+            "description": "The weapons crate opens to expose the Job-start VUK in the right-center playfield.",
+            "xPercent": 69,
+            "yPercent": 46,
+            "precision": "area"
+          },
+          {
+            "term": "left eject",
+            "label": "Left eject and battle cashout",
+            "description": "The left eject starts battles and collects Job and battle cashouts.",
+            "xPercent": 27,
+            "yPercent": 52,
+            "precision": "area"
+          },
+          {
+            "term": "center ramp",
+            "label": "Center ramp and Deconsecrated locks",
+            "description": "The center ramp locks balls for Deconsecrated Multiball.",
+            "xPercent": 52,
+            "yPercent": 42,
+            "precision": "area"
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit and Car Multiball start",
+            "description": "The left orbit starts a qualified Car Multiball and can return quickly.",
+            "xPercent": 18,
+            "yPercent": 36,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "label": "Katia right ramp",
+            "description": "The right ramp collects Katia and returns by wireform toward the right flipper.",
+            "xPercent": 80,
+            "yPercent": 39,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "On Premium or LE, check the physical Deconsecrated locks, Red Circle drop target, and side-access car movement.",
+          "Check tournament settings for Extra Ball conversion, ball saves, Job timers, enemy behavior, and battle cashout rules.",
+          "Test the car, Red Circle, crate VUK, WINSTON captive ball, both orbits, ramps, and eject returns during ball save."
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the car from the right flipper. Test the left and center ramps from their same-side flippers during initial ball save.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          },
+          {
+            "name": "Right-orbit parry",
+            "instruction": "When the right orbit returns fast, parry the ball or hold the flipper up so the ball bounces off the crate and loses speed.",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "Shoot the center ramp from a right-flipper cradle. Test the on-the-fly shot only when its return is stable.",
+            "techniqueSlug": "cradle",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The left orbit can return without control.",
+            "response": "Test the orbit during ball save. Do not make it the main repeatable shot when the feed cannot be trapped.",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          },
+          {
+            "issue": "The Red Circle return can be dangerous.",
+            "response": "Use the VIP skill shot only when the plunge is controlled. Otherwise, full-plunge and build safer features.",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          },
+          {
+            "issue": "The car is a kicker and can reject toward the center.",
+            "response": "Backhand it from the right flipper. Make the early hits during initial ball save.",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          },
+          {
+            "issue": "The right orbit can return very fast.",
+            "response": "Parry the return or hold a flipper up to use the crate as a speed brake.",
+            "sourceUrl": "https://www.kineticist.com/news/john-wick-pinball-tutorial"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Start Security Detail or Heist, stack it with Deconsecrated Multiball, use enemies on valuable shots, and activate Lights Out's 2x playfield scoring for the stack or cashout."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete one Job, one battle, and one of each multiball type to qualify Red Circle Reckoning."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Security Detail and WINSTON: Use this plan when the Red Circle, car, or battle shots are not safe."
+          }
+        ],
+        "overview": "John Wick lets a timed Job continue into Deconsecrated Multiball, while Lights Out can double the Job, Jackpot, and cashout scoring. Hit the weapons crate or its VUK until all three blue Job lights are filled, shoot the left ramp to select Security Detail or the center ramp to select Heist, then shoot the crate VUK to start the Job. Spell W-I-N-S-T-O-N at the captive ball and take two center-ramp locks before the Job; collect the third lock while it runs to start Deconsecrated Multiball. Spell B-A-B-A Y-A-G-A at the return lanes and press the lit action button for 30 seconds of 2x playfield scoring, then shoot the left eject before the Job timer expires to collect its cashout and perk.",
+        "simpleOverview": "John Wick lets a timed Job continue into Deconsecrated Multiball, while Lights Out doubles the Job, Jackpot, and cashout scoring. Hit the weapons crate or its VUK until all three blue Job lights are filled, shoot the left ramp to select Security Detail or the center ramp to select Heist, then shoot the crate VUK to start the Job. Spell W-I-N-S-T-O-N at the captive ball and shoot the center ramp for each lit lock; the third lock starts Deconsecrated Multiball. Spell B-A-B-A Y-A-G-A at the return lanes, then press the lit action button for 30 seconds of 2x playfield scoring.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Northwest Pinball Championships 2025, Noah Sicard prepared a Job, started Multiball, activated Lights Out, and applied its 2x scoring to jackpots."
+          ]
+        },
+        "machineSetup": [
+          "On Premium or LE, check the physical Deconsecrated locks, Red Circle drop target, and side-access car movement.",
+          "Check tournament settings for Extra Ball conversion, ball saves, Job timers, enemy behavior, and battle cashout rules.",
+          "Test the car, Red Circle, crate VUK, WINSTON captive ball, both orbits, ramps, and eject returns during ball save."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use blue Job lights for a Job, W-I-N-S-T-O-N for Deconsecrated Multiball, and B-A-B-A Y-A-G-A for Lights Out 2x.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Job",
+            "text": "Hit the crate VUK until all three blue Job lights are filled. Select Security Detail with the left ramp or Heist with the center ramp, then shoot the crate VUK to start the Job.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Security Detail",
+              "reason": "Choose it for the simplest Job pattern and a perk that can extend a later multiball.",
+              "play": "Hit the blinking red major shot as it moves from left to right. After seven hits, shoot the lit left eject to cash out."
+            }
+          },
+          {
+            "title": "Start Deconsecrated Multiball",
+            "text": "Spell W-I-N-S-T-O-N at the captive ball. Shoot the center ramp for each lit lock. The third lock starts Deconsecrated Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Lights Out 2x",
+            "text": "Use the flippers to manage the lit B-A-B-A inlane letters. Roll through an inlane whose B-A-B-A letter is lit to add its matching Y-A-G-A progress. After Y-A-G-A completes, press the lit action button to start Lights Out's 2x playfield scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Start Security Detail or Heist, stack it with Deconsecrated Multiball, use enemies on valuable shots, and activate Lights Out's 2x playfield scoring for the stack or cashout."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete one Job, one battle, and one of each multiball type to qualify Red Circle Reckoning."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Security Detail and WINSTON: Use this plan when the Red Circle, car, or battle shots are not safe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Car Multiball",
+          "when": "Use this when the car and left-orbit returns are safer.",
+          "steps": [
+            {
+              "text": "Hit the car until the left orbit lights, then shoot the lit left orbit to start Car Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

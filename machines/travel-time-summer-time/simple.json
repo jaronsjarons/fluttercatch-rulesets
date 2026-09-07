@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "GrJED",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge the center lane for time on every ball. Complete either letter set, dribble the ball into the lit upkicker for more time, and use the resulting center-saucer feed to stop the clock before building the next set.",
+        "quickInfo": [
+          {
+            "name": "Timed game",
+            "summary": "The game starts with 1 minute 30 seconds and ends when the clock expires instead of after a fixed ball count."
+          },
+          {
+            "name": "Center-lane skill shot",
+            "summary": "Every center-lane plunge adds 10 time units before the ball enters normal play."
+          },
+          {
+            "name": "Stop Clock saucer",
+            "summary": "The center saucer stops the running clock and scores 5,000 when lit."
+          },
+          {
+            "name": "Letter sets",
+            "summary": "Complete either letter set, then enter the upkicker to add 25 time units and score 5,000."
+          },
+          {
+            "name": "Clock maximum",
+            "summary": "The clock stops increasing at 2 minutes 55 seconds, so delay a ready time collect when already near the cap."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge the center lane for 10 time units every time the ball reaches the shooter lane."
+          },
+          {
+            "text": "Read the upkicker feed on the first cycle and confirm whether it reliably lands in the Stop Clock saucer."
+          },
+          {
+            "text": "While the clock is stopped, finish the nearer either letter set set with controlled shots."
+          },
+          {
+            "text": "Let the ball dribble from a flipper into the lit upkicker instead of firing a hard direct shot."
+          },
+          {
+            "text": "Collect 25 time units and 5,000 at the upkicker."
+          },
+          {
+            "text": "Use the upkicker's feed into the center saucer to stop the clock again."
+          },
+          {
+            "text": "Repeat the letter-set, upkicker, and Stop Clock cycle while the feed remains reliable."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Skill-shot and drain loop",
+          "when": "Recovery pivot: Use this when the upkicker misses the Stop Clock saucer or the playfield is too slow to earn time faster than it expires.",
+          "steps": [
+            {
+              "text": "Make the center-lane skill shot for 10 time units."
+            },
+            {
+              "text": "Do not cradle while the clock is running."
+            },
+            {
+              "text": "Take one immediate useful shot or let the ball drain quickly."
+            },
+            {
+              "text": "Use the next plunge to add another 10 time units."
+            },
+            {
+              "text": "Return to the main loop only if the kickout feed improves."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Direct Stop Clock control",
+            "when": "When ahead, use this distinct scoreboard route: use this when the center saucer accepts a controlled direct shot and the clock is running.",
+            "steps": [
+              {
+                "text": "Shoot the center saucer before spending time on low-value switches."
+              },
+              {
+                "text": "When the saucer stops the clock, complete the nearest letter set."
+              },
+              {
+                "text": "Dribble into the upkicker to add time and attempt the normal saucer feed."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Self-sustaining clock loop",
+          "steps": [
+            {
+              "text": "Add time with the center-lane plunge."
+            },
+            {
+              "text": "Stop the clock at the center saucer."
+            },
+            {
+              "text": "Complete either letter set while time is stopped."
+            },
+            {
+              "text": "Collect 25 time units at the upkicker."
+            },
+            {
+              "text": "Land the kickout in the Stop Clock saucer and repeat."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Upkicker dribble",
+            "instruction": "Let the ball roll off the end of a controlled flipper into the upkicker instead of shooting across the opening.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrJED-MJrwv"
+          },
+          {
+            "name": "Fast unavoidable drain",
+            "instruction": "If a center drain is certain while the clock runs, a quick flip-and-release can push the ball into the trough sooner and preserve time.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrJED-MJrwv"
+          },
+          {
+            "name": "Clock-stopped letter work",
+            "instruction": "Use the center-saucer stop to aim deliberately at either letter set without spending game time.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrJED-MJrwv"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak upkicker can miss the Stop Clock saucer and restart the clock without protection.",
+            "response": "Test the first feed, then switch to direct saucer shots or the skill-shot-and-drain loop if it fails repeatedly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrJED-MJrwv"
+          },
+          {
+            "issue": "A shallow or floaty setup can consume more time than the available shots return.",
+            "response": "Do not cradle while the clock runs; shoot, enter the upkicker, or drain quickly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrJED-MJrwv"
+          },
+          {
+            "issue": "The red rollovers and the upkicker restart the clock.",
+            "response": "Plan the next shot before touching them and prioritize the Stop Clock saucer immediately after a time collect.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrJED-MJrwv"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Travel Time, Summer Time, or Segasa edition.",
+          "Read starting time, maximum time, and added-time settings."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center lane",
+            "label": "Time skill-shot lane",
+            "description": "Plunge lane that adds time at each shooter-lane return.",
+            "precision": "unverified",
+            "context": "Plunge lane that adds time at each shooter-lane return."
+          },
+          {
+            "term": "upkicker",
+            "label": "Time upkicker",
+            "description": "Lit upkicker that adds time and feeds Stop Clock.",
+            "precision": "unverified",
+            "context": "Lit upkicker that adds time and feeds Stop Clock."
+          },
+          {
+            "term": "center saucer",
+            "label": "Stop Clock saucer",
+            "description": "Saucer used to stop the running game clock.",
+            "precision": "unverified",
+            "context": "Saucer used to stop the running game clock."
+          },
+          {
+            "term": "letter targets",
+            "label": "TRAVEL and TIME targets",
+            "description": "Targets used to qualify the time upkicker.",
+            "precision": "unverified",
+            "context": "Targets used to qualify the time upkicker."
+          }
+        ],
+        "simpleOverview": "Travel Time / Summer Time is a timed game rather than a fixed number of balls. Plunge the center lane for more time, complete either letter set while the clock is stopped, then dribble the ball into the lit upkicker for 25 time units and use its feed into the center saucer to stop the clock again.",
+        "overview": "Travel Time / Summer Time repeats one clock-management loop. Use every shooter-lane return for the center-lane time award, finish the nearer letter set while the clock is stopped, and enter the lit upkicker softly. Let its center-saucer feed stop the clock again, but delay another time collect when the clock is already near its 2:55 maximum.",
+        "machineSetup": [
+          "Confirm Travel Time, Summer Time, or Segasa edition.",
+          "Read starting time, maximum time, and added-time settings."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge the center lane for time on every ball. Complete either letter set, dribble the ball into the lit upkicker for more time, and use the resulting center-saucer feed to stop the clock before building the next set.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the center lane for 10 time units every time the ball reaches the shooter lane."
+          },
+          {
+            "text": "Read the upkicker feed on the first cycle and confirm whether it reliably lands in the Stop Clock saucer."
+          },
+          {
+            "text": "While the clock is stopped, finish the nearer either letter set set with controlled shots."
+          },
+          {
+            "text": "Let the ball dribble from a flipper into the lit upkicker instead of firing a hard direct shot."
+          },
+          {
+            "text": "Collect 25 time units and 5,000 at the upkicker."
+          },
+          {
+            "text": "Use the upkicker's feed into the center saucer to stop the clock again."
+          },
+          {
+            "text": "Repeat the letter-set, upkicker, and Stop Clock cycle while the feed remains reliable."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Timed game",
+            "summary": "The game starts with 1 minute 30 seconds and ends when the clock expires instead of after a fixed ball count."
+          },
+          {
+            "name": "Center-lane skill shot",
+            "summary": "Every center-lane plunge adds 10 time units before the ball enters normal play."
+          },
+          {
+            "name": "Stop Clock saucer",
+            "summary": "The center saucer stops the running clock and scores 5,000 when lit."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Skill-shot and drain loop",
+          "when": "Recovery pivot: Use this when the upkicker misses the Stop Clock saucer or the playfield is too slow to earn time faster than it expires.",
+          "steps": [
+            {
+              "text": "Make the center-lane skill shot for 10 time units."
+            },
+            {
+              "text": "Do not cradle while the clock is running."
+            },
+            {
+              "text": "Take one immediate useful shot or let the ball drain quickly."
+            },
+            {
+              "text": "Use the next plunge to add another 10 time units."
+            },
+            {
+              "text": "Return to the main loop only if the kickout feed improves."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A weak upkicker can miss the Stop Clock saucer and restart the clock without protection.",
+          "text": "Test the first feed, then switch to direct saucer shots or the skill-shot-and-drain loop if it fails repeatedly."
+        }
+      }
+    }
+  ]
+}

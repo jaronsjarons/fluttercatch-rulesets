@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "id": "G5we0",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Live Fire or Orbit Multiball for immediate points. Between multiballs, clear bugs with the mini-flipper. Decline the first one or two Planet Multiballs at Recon, advance to later planets, then start a larger Planet Multiball at Arm Nukes.",
+        "quickInfo": [
+          {
+            "name": "Live Fire Assault Range Multiball",
+            "summary": "Hit the Warrior four times for the first four-ball ramp-jackpot multiball."
+          },
+          {
+            "name": "Live Fire Jackpots",
+            "summary": "Shoot either ramp; first hits on unlit colored Bug standups raise the Jackpot value."
+          },
+          {
+            "name": "Live Fire Super Jackpot",
+            "summary": "After five ramp Jackpots, shoot the Warrior within 16 seconds for 15,000,000."
+          },
+          {
+            "name": "Orbit Multiball",
+            "summary": "Make four lit opposite-orbit shots for each lock and collect two locks to start it."
+          },
+          {
+            "name": "Planet Multiball",
+            "summary": "Clear planets, choose Advance Planet at Recon, and start the delayed larger multiball at Arm Nukes."
+          },
+          {
+            "name": "Nuke Jackpot",
+            "summary": "During Planet Multiball, collect both ramps, both orbits, and Recon before the Warrior Super Nuke."
+          },
+          {
+            "name": "Recon",
+            "summary": "The right-center scoop selects Advance Planet and supplies level-based awards."
+          },
+          {
+            "name": "Klendathu",
+            "summary": "Clear all five planets and finish the final Planet Multiball to qualify the wizard multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the normal B-U-G lane skill shot unless the right-ramp super skill shot is already reliable."
+          },
+          {
+            "text": "Test the Warrior shot, both ramps, and one inlane-to-opposite-orbit sequence."
+          },
+          {
+            "text": "Hit the Warrior four times to start the first Live Fire Assault Range Multiball.",
+            "modeNotes": [
+              "Live Fire Assault Range Multiball: The first start needs four Warrior hits; later starts need more hits and the display gives the current count."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During four-ball play, shoot the left ramp or right ramp for Jackpots. The first hit on each unlit colored Bug standup raises the Jackpot value.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After five ramp Jackpots, shoot the Warrior within 16 seconds for a 15,000,000 Super Jackpot.",
+            "modeNotes": [
+              "Live Fire restart: If the multiball ends before any Jackpot, a timed Warrior shot restarts it with two balls."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "In single-ball play, roll through an inlane and shoot the lit opposite orbit. Make four lit orbits for each of two locks.",
+            "modeNotes": [
+              "Orbit Multiball: The released instruction card requires four lit orbit shots for each lock; two locks start the mode."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Orbit Multiball, repeat either orbit for 5,000,000. The first two orbit Jackpots each add a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between multiballs, clear the displayed bugs and use the mini-flipper for lit standups when safe.",
+            "modeNotes": [
+              "Double bug kill: A lit colored standup hit from the mini-flipper counts as two kills during normal planet play."
+            ]
+          },
+          {
+            "text": "After a planet clears, let the Brain Bug time out if its rebound is unsafe; the planet choice still appears."
+          },
+          {
+            "text": "At the Recon scoop, choose Advance Planet for the first one or two cleared planets.",
+            "modeNotes": [
+              "Advance Planet: The game skips the ready multiball, starts the next planet, and raises the future Nuke value and ball count."
+            ]
+          },
+          {
+            "text": "After at least three planets are ready, shoot Arm Nukes to start Planet Multiball.",
+            "modeNotes": [
+              "Planet Multiball: Both ramps, both orbits, and Recon score unique Nuke Jackpots; Recon scores a Double Nuke and Arm Nukes spots one Nuke."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect all five unique Nukes, then hit the Warrior for a Super Nuke worth 10x the regular value. Repeat until one ball remains.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Live Fire Assault Range Multiball",
+          "when": "Recovery pivot: Use this when bug standups and Arm Nukes are dangerous.",
+          "steps": [
+            {
+              "text": "Hit the Warrior until Live Fire starts.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the ramp with the safer return."
+            },
+            {
+              "text": "Use incidental standups to raise Jackpot; do not chase a dangerous target."
+            },
+            {
+              "text": "Collect five ramp Jackpots."
+            },
+            {
+              "text": "After five ramp Jackpots, shoot the Warrior within 16 seconds for the 15,000,000 Super Jackpot."
+            },
+            {
+              "text": "Repeat while two or more balls remain."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Orbit Multiball",
+            "when": "When trailing, use this higher-ceiling route: use this when both orbit returns are clean.",
+            "steps": [
+              {
+                "text": "Use an inlane to light the opposite orbit."
+              },
+              {
+                "text": "Make four lit orbit shots for the first lock and repeat for the second."
+              },
+              {
+                "text": "Loop either orbit for 5,000,000 Jackpots.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "The first two Jackpot orbits each add one ball."
+              },
+              {
+                "text": "Stop at one ball; this multiball does not stack with another multiball."
+              }
+            ]
+          },
+          {
+            "title": "Recon level 5",
+            "when": "Use this when both ramps and the Recon scoop form a reliable combo.",
+            "steps": [
+              {
+                "text": "Complete both ramps to light Recon."
+              },
+              {
+                "text": "Shoot both ramps in sequence, then Recon, to raise its level."
+              },
+              {
+                "text": "Collect level 5 for a chance at Instant Live Fire or Instant Orbit Multiball."
+              },
+              {
+                "text": "Do not depend on a specific pseudo-random award."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Klendathu",
+          "steps": [
+            {
+              "text": "Clear Antilles, Zegema Beach, Dantana, Tango Urilla, and Planet P."
+            },
+            {
+              "text": "Choose Advance Planet while another planet remains and the delay is worth the risk."
+            },
+            {
+              "text": "After Planet P, start Planet Multiball at Arm Nukes.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "End that Planet Multiball after all five planets are nuked."
+            },
+            {
+              "text": "Shoot Recon to start four-ball Klendathu.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect all five Nukes and nine bugs of each color for each 50,000,000 wave."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Live Fire Assault Range Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Orbit Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Planet Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Klendathu",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Double Nuke",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Super Nuke",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Recon",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Advance Planet",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "mini-flipper",
+            "label": "Bug mini-flipper",
+            "description": "Small flipper used to clear bugs and reach Arm Nukes.",
+            "precision": "unverified",
+            "context": "Use the mini-flipper to clear bugs between multiballs."
+          },
+          {
+            "term": "Live Fire Assault Range Warrior",
+            "label": "Live Fire Assault Range Warrior",
+            "description": "Moving center target and sinkhole used to qualify Live Fire and collect its Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramps",
+            "label": "Left and right ramps",
+            "description": "Live Fire Jackpot shots and the pair used to advance Recon level.",
+            "precision": "unverified"
+          },
+          {
+            "term": "orbits",
+            "label": "Left and right orbits",
+            "description": "Opposite-orbit lock routes and Orbit Multiball Jackpot shots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "inlanes",
+            "label": "Left and right return lanes",
+            "description": "Lower return lanes that temporarily light the opposite orbit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "colored Bug standups",
+            "label": "Colored Bug targets",
+            "description": "Yellow Warrior, green Hopper, blue Plasma Bug, and red Tanker standups.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Recon scoop",
+            "label": "Recon scoop",
+            "description": "Center hole used for Advance Planet, Recon awards, Double Nuke, and Klendathu.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Arm Nukes",
+            "label": "Arm Nukes hole",
+            "description": "Hole reached near the mini-flipper to start Planet Multiball or spot a Nuke.",
+            "precision": "unverified"
+          },
+          {
+            "term": "B-U-G lanes",
+            "label": "B-U-G rollover lanes",
+            "description": "Top skill-shot lanes used to raise Bonus X.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Mini-flipper double kill",
+            "instruction": "Use the separate upper-right button to hit a lit bug standup for two kills during normal planet play.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          },
+          {
+            "name": "Mini-flipper Arm Nukes tap",
+            "instruction": "With a ball held on the lower-right flipper, tap the mini-flipper to test whether contact moves the ball into Arm Nukes.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          },
+          {
+            "name": "Drop catch",
+            "techniqueSlug": "drop-catch",
+            "instruction": "Use the mini-flipper to slow or drop-catch the Recon-scoop return before it reaches the lower flippers.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          },
+          {
+            "name": "Secret orbit skill shot",
+            "instruction": "Hold the left flipper and use a controlled plunge into the top orbit lock to keep both orbit lamps lit when the copy supports it.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A slow left-ramp shot can return down the middle.",
+            "response": "Do not use the left ramp as a bailout when the shot lacks power.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          },
+          {
+            "issue": "Bug standups are dangerous in single-ball play.",
+            "response": "Use the mini-flipper double kill and stop direct target shooting after an uncontrolled rebound.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          },
+          {
+            "issue": "The two right flippers use separate buttons and leave a gap.",
+            "response": "Learn the mini-flipper button before a fast right-side feed.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          },
+          {
+            "issue": "Multiballs do not stack and normal bug progress stops during multiball.",
+            "response": "Do not start a weaker multiball when a more valuable one is ready.",
+            "sourceUrl": "https://pinball.org/rules/starshiptroopers.html"
+          }
+        ],
+        "simpleOverview": "Four Warrior hits start Live Fire in Starship Troopers, four lit opposite-orbit shots qualify each Orbit lock, and cleared bugs advance the planet campaign. Use the quicker Multiballs for immediate scoring, then start a later Planet Multiball at Arm Nukes.",
+        "overview": "In Starship Troopers, four Warrior hits start Live Fire and four lit opposite-orbit shots qualify each Orbit Multiball lock. Use those quicker Multiballs for immediate scoring, clear displayed bugs between them, and choose Advance Planet at Recon while another planet is worth preparing. Start a later Planet Multiball at Arm Nukes, collect all five Nukes, then use the Warrior for repeatable Super Nukes toward Klendathu.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Hit the Live Fire Assault Range Warrior four times to start the first four-ball Multiball, shoot either ramp for five Jackpots, then return to the Warrior for the timed Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Live Fire",
+            "text": "Hit the Live Fire Assault Range Warrior four times to start the first four-ball Live Fire Assault Range Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect five Jackpots",
+            "text": "During Multiball, shoot the left ramp or right ramp for Jackpots. The first hit on each unlit colored Bug standup raises the Jackpot value, but the ramps are the scoring shots. Collect five ramp Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect the Super Jackpot",
+            "text": "After the fifth ramp Jackpot, shoot the Live Fire Assault Range Warrior within 16 seconds for the 15,000,000 Super Jackpot. The ramp-Jackpot cycle then starts again while at least two balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Live Fire Assault Range Multiball",
+            "summary": "Hit the Warrior four times for the first four-ball ramp-jackpot multiball."
+          },
+          {
+            "name": "Live Fire Jackpots",
+            "summary": "Shoot either ramp; first hits on unlit colored Bug standups raise the Jackpot value."
+          },
+          {
+            "name": "Live Fire Super Jackpot",
+            "summary": "After five ramp Jackpots, shoot the Warrior within 16 seconds for 15,000,000."
+          }
+        ],
+        "warning": {
+          "title": "A weak left-ramp shot can drain between the flippers.",
+          "text": "Use the right ramp when the left-ramp return is not reaching its normal path."
+        }
+      }
+    }
+  ]
+}

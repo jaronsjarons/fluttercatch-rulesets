@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "GxvQ7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Shooting either outer orbit three times qualifies Make the Pizza at the right oven scoop, while O-V-E-N and three right-ramp locks qualify Handle the Rush. Make the Pizza is the cleaner first start: complete its orbit shots, then shoot the right oven scoop. Handle the Rush takes more work—spell O-V-E-N at the lower lanes, lock three balls at the right oven ramp, then shoot either scoop.",
+        "simpleOverview": "Shoot either outer orbit three times to qualify Make the Pizza, then shoot the right oven scoop to start its Multiball. For Handle the Rush, spell O-V-E-N at the lower lanes, lock three balls at the right oven ramp, then shoot either scoop.",
+        "summary": "Qualify Make the Pizza with three outer-orbit shots, then shoot the right oven scoop to start its Multiball. The longer Handle the Rush route spells O-V-E-N at the lower lanes, locks three balls at the right oven ramp, and starts at either scoop.",
+        "quickInfo": [
+          {
+            "name": "Make the Pizza",
+            "summary": "Shoot either outer orbit three times, then the right oven scoop."
+          },
+          {
+            "name": "Other Operations",
+            "summary": "Use three Noid-orbit shots for Lost Topping or three center-ramp shots for Pizza Dispatch, then the right scoop."
+          },
+          {
+            "name": "Career Multiballs",
+            "summary": "Build career points in the pops or left scoop; start the lit level at the left scoop."
+          },
+          {
+            "name": "Handle the Rush",
+            "summary": "Spell O-V-E-N, lock three balls at the right ramp, then shoot either scoop."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot either outer orbit three times to qualify Make the Pizza; its insert and the right oven scoop flash when ready.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right oven scoop to start Make the Pizza as a Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During an Operations Multiball, hit flashing shots to qualify Jackpots, then shoot the oven ramp to collect them.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "For a repeat, use the Noid orbit three times for Lost Topping or the center ramp three times for Pizza Dispatch, then return to the right scoop.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Handle the Rush route",
+            "when": "Use this when the lower lanes and right ramp are registering reliably.",
+            "steps": [
+              {
+                "text": "Spell O-V-E-N at the lower inlanes and outlanes; use the flipper buttons to lane-change the lit letters.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the right oven ramp to lock three balls.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "After the third lock, shoot either the left or right scoop to start Handle the Rush Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Advance the two tracks",
+          "steps": [
+            {
+              "text": "Build Career points with pop-bumper hits or the left scoop, then start each qualified Career Multiball at the left scoop.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Play the right-side Operations Multiballs from the right scoop; completing one side's track qualifies World's Fastest Pizza Maker.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the other side's track to qualify Global Conquest, then use the lit scoop shown by the machine.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Prefer software v006. Version v005 scoring and anomalous behavior can differ, so follow the display.",
+          "Check both scoops, the Noid and outer orbits, the center and oven ramps, all five Tracker targets, and every O-V-E-N lane before competition."
+        ],
+        "termStyles": [
+          {
+            "label": "outer orbit",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "right oven scoop",
+            "tone": "rust",
+            "kind": "multiball"
+          },
+          {
+            "label": "O-V-E-N",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "right oven ramp",
+            "tone": "indigo",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "outer orbit",
+            "label": "Make the Pizza qualification",
+            "description": "Either outside orbit, used three times to qualify Make the Pizza.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right oven scoop",
+            "label": "Operations Multiball start",
+            "description": "The scoop under the pizza oven that starts qualified Operations modes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right oven ramp",
+            "label": "Handle the Rush lock",
+            "description": "The ramp used to lock three balls after O-V-E-N is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left scoop",
+            "label": "Career start",
+            "description": "The scoop that advances Career progress and starts qualified Career Multiballs.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The detailed rules card is labeled for v005, while v006 is the last public release.",
+            "response": "Use the physical qualifications and starts, but treat display state and current-machine behavior as authoritative for values and any v006 difference.",
+            "sourceUrl": "https://pinballrulesheets.com/other/list-of-games-with-their-current-code-number-wiki.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Qualify Make the Pizza with three outer-orbit shots, then shoot the right oven scoop to start its Multiball. The longer Handle the Rush route spells O-V-E-N at the lower lanes, locks three balls at the right oven ramp, and starts at either scoop.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot either outer orbit three times to qualify Make the Pizza; its insert and the right oven scoop flash when ready.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right oven scoop to start Make the Pizza as a Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During an Operations Multiball, hit flashing shots to qualify Jackpots, then shoot the oven ramp to collect them.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "For a repeat, use the Noid orbit three times for Lost Topping or the center ramp three times for Pizza Dispatch, then return to the right scoop.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Make the Pizza",
+            "summary": "Shoot either outer orbit three times, then the right oven scoop."
+          },
+          {
+            "name": "Other Operations",
+            "summary": "Use three Noid-orbit shots for Lost Topping or three center-ramp shots for Pizza Dispatch, then the right scoop."
+          },
+          {
+            "name": "Career Multiballs",
+            "summary": "Build career points in the pops or left scoop; start the lit level at the left scoop."
+          }
+        ]
+      }
+    }
+  ]
+}

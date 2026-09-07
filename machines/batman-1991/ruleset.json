@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "GrOpb",
+  "title": "Batman",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Data East Batman instruction manual",
+      "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Batman%20Instruction%20Manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Data East Batman instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Batman_755-5011-00.pdf"
+      },
+      {
+        "label": "Data East Batman tutorial",
+        "url": "https://pinballvideos.com/v/3450"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Spell BATMAN at the Flugelheim target, start two-ball play at the opened Museum, put both balls back into the Museum for three-ball play, then relight and collect the Museum Jackpot.",
+      "quickInfo": [
+        {
+          "name": "BATMAN and the Museum",
+          "summary": "Flugelheim hits spell BATMAN; completion drops the target and opens the Museum for two-ball play."
+        },
+        {
+          "name": "Three-ball Multiball",
+          "summary": "During two-ball play, put both balls into the Museum to release all three balls."
+        },
+        {
+          "name": "Museum Jackpot",
+          "summary": "During three-ball play, hit Flugelheim once to light the Museum, then shoot the Museum for Jackpot."
+        },
+        {
+          "name": "Joker Jump",
+          "summary": "Either eye scores 2M; complete both eyes to light the mouth for 4M."
+        },
+        {
+          "name": "Ramp values",
+          "summary": "A lit ramp collects its displayed award; an unlit ramp spots one Young Jack or Old Jack target."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the opening ball to test the Flugelheim rebound, Museum eject, ramp return, and Batcave feed."
+        },
+        {
+          "text": "Spell BATMAN with Flugelheim-target hits; a left-return-lane feed into Flugelheim spots two letters."
+        },
+        {
+          "text": "After BATMAN is complete and Flugelheim drops, shoot the open Museum to start two-ball play.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During two-ball play, put both balls into the Museum to release all three balls.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During three-ball play, hit Flugelheim once to light the Museum for Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit Museum for Jackpot before returning to the qualification cycle.",
+          "modeNotes": [
+            "Museum sequence: Complete BATMAN, start two-ball play at the Museum, put both balls back into the Museum, then hit Flugelheim and collect the lit Museum Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Ramp and Jack-target route",
+        "when": "Use this when Flugelheim or the Museum eject is rejecting.",
+        "steps": [
+          {
+            "text": "Shoot the ramp while its return reaches a controlled flipper."
+          },
+          {
+            "text": "When the ramp is unlit, use it to spot a remaining Young Jack or Old Jack target."
+          },
+          {
+            "text": "When a ramp value is lit, collect it rather than forcing the Museum path."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Joker Jump cashout",
+          "when": "Use this when the Joker face registers cleanly and the Museum path does not.",
+          "steps": [
+            {
+              "text": "Shoot each Joker eye for 2M."
+            },
+            {
+              "text": "After both eyes register, shoot the lit mouth for 4M."
+            },
+            {
+              "text": "Return to the ramp or Batcave after the eject settles."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Museum Jackpot cycle",
+        "steps": [
+          {
+            "text": "Spell BATMAN at Flugelheim."
+          },
+          {
+            "text": "Start two-ball play at the opened Museum.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Put both balls back into the Museum for three-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit Flugelheim and collect the lit Museum Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Museum Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Three-ball Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Left-return letter spot",
+          "instruction": "Use a safe left-return-lane feed into Flugelheim to spot two BATMAN letters.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Batman%20Instruction%20Manual.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Both balls must reach the Museum during two-ball play before three-ball play begins.",
+          "response": "Keep one ball controlled when possible and avoid mistaking the first Museum lock for the three-ball start.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Batman%20Instruction%20Manual.pdf"
+        },
+        {
+          "issue": "Early and later ROMs can display different version identifiers and feature behavior.",
+          "response": "Use the installed software and current lamp state for awards, lock behavior, and scoring.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Batman%20Instruction%20Manual.pdf"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm this is Data East Batman from 1991, not Batman Forever, The Dark Knight, or Batman '66.",
+        "Confirm the installed CPU and display revisions, ball count, Extra Ball conversion, Jackpot value, Joker timer, ramp awards, and tournament adjustments.",
+        "Test Flugelheim registration, the dropping target, Museum locks and ejects, the left-return-lane helper, Batcave feed, and ramp return before choosing the Museum route."
+      ],
+      "simpleOverview": "Batman starts Multiball in two stages through Flugelheim and the Museum. Spell BATMAN to open the Museum, start two-ball play there, put both balls back into the Museum for three balls, then hit Flugelheim once and return to the Museum for Jackpot.",
+      "overview": "Flugelheim hits spell BATMAN and open the Museum for two-ball play in Batman. Return both active balls to the Museum for three-ball play, hit Flugelheim once to light Jackpot, and collect it at the Museum. Use Joker Jump or ramp awards only when their returns are safer than rebuilding the cycle.",
+      "machineSetup": [
+        "Confirm this is Data East Batman from 1991, not Batman Forever, The Dark Knight, or Batman '66.",
+        "Confirm the installed CPU and display revisions, ball count, Extra Ball conversion, Jackpot value, Joker timer, ramp awards, and tournament adjustments.",
+        "Test Flugelheim registration, the dropping target, Museum locks and ejects, the left-return-lane helper, Batcave feed, and ramp return before choosing the Museum route."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

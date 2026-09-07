@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "GRYPN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Counterforce is a timed fight against seven descending missile columns. The first playfield switch starts the chase; hit a numbered drop target directly or use its matching yellow lane or standup to knock it down before that column's red light reaches the green multiplier row. A missed column loses only its corresponding multiplier lamp when the cycle resets. Clear all seven targets before the chase passes row three to light the upper-left Collect Bonus hole. Base bonus reaches 29,000 and Bonus X reaches 8x; collecting bonus resets the base value but keeps the multiplier.",
+        "simpleOverview": "The first switch starts seven descending missile columns. Hit each drop target, or its matching yellow lane or standup, before that column reaches the green multiplier row. Clear all seven before row three to light the upper-left Collect Bonus hole; collecting resets base bonus but keeps Bonus X.",
+        "summary": "Attack the easiest center targets directly and use yellow spot shots for the outside targets. Watch individual columns rather than waiting for the whole bank: only unfinished columns erase their multiplier lamps. When Collect Bonus lights, take it immediately and rebuild the base value under the retained multiplier.",
+        "quickInfo": [
+          {
+            "name": "Start the Chase",
+            "summary": "Hit the first playfield switch."
+          },
+          {
+            "name": "Destroy a Missile",
+            "summary": "Hit its drop target or matching yellow spot shot."
+          },
+          {
+            "name": "Light Collect Bonus",
+            "summary": "Clear all seven targets before row three."
+          },
+          {
+            "name": "Keep Bonus X",
+            "summary": "Collect Bonus resets base bonus but retains the multiplier."
+          }
+        ],
+        "steps": [
+          {
+            "text": "As the first playfield switch starts the chase, identify which of the seven drop targets are still standing."
+          },
+          {
+            "text": "Shoot standing targets directly; use a matching yellow rollover or standup to spot an outside target that is difficult to hit."
+          },
+          {
+            "text": "Finish all seven before their chase lights pass the third row to light the upper-left Collect Bonus hole."
+          },
+          {
+            "text": "Shoot the lit Collect Bonus hole for base bonus times the retained Bonus X, then begin another seven-target cycle.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Multiplier preservation",
+            "when": "Use this when the full bank cannot be completed before the chase reaches the green row.",
+            "steps": [
+              {
+                "text": "Prioritize the columns whose green multiplier lamps are already lit."
+              },
+              {
+                "text": "Let lower-value unfinished columns reset if necessary; completed columns keep their multiplier contribution."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "29,000 at 8x",
+          "steps": [
+            {
+              "text": "Use repeated chase cycles to preserve all seven target-linked multiplier lamps plus the outlane contribution.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Build base bonus to 29,000 while protecting the 8x multiplier.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Clear a fast cycle to light Collect Bonus and cash the full value without losing Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test all seven memory drop targets and resets, all seven descending chase columns, the yellow spot lanes and standups, the Collect Bonus hole and kickout, both pop bumpers, four flippers, and the bonus display.",
+          "Confirm that each yellow shot knocks down only its matching target, each missed column clears only its own multiplier lamp, partial targets and Bonus X are remembered between balls, and the chase audio accelerates with the light sequence."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "seven drop targets",
+            "label": "Seven missile drop targets",
+            "description": "Central memory bank representing the missiles that must be destroyed during each chase.",
+            "precision": "unverified"
+          },
+          {
+            "term": "chase lights",
+            "label": "Descending chase columns",
+            "description": "Seven timed red-light columns that determine which multiplier lamps survive a reset.",
+            "precision": "unverified"
+          },
+          {
+            "term": "yellow lanes",
+            "label": "Yellow rollover lanes",
+            "description": "Spot shots that knock down their matching drop targets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "yellow standups",
+            "label": "Yellow standup targets",
+            "description": "Additional spot shots for corresponding missile targets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Collect Bonus hole",
+            "label": "Collect Bonus hole",
+            "description": "Upper-left hole lit by clearing the bank before row three.",
+            "precision": "unverified"
+          },
+          {
+            "term": "green multiplier row",
+            "label": "Green multiplier row",
+            "description": "Threshold where unfinished missile columns remove their linked Bonus X lamps.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The bank reset does not necessarily erase every multiplier lamp.",
+            "response": "Track each missile column separately: only targets still standing when their chase reaches the green row lose the corresponding progress.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRYPN-Mz2RE"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Attack the easiest center targets directly and use yellow spot shots for the outside targets. Watch individual columns rather than waiting for the whole bank: only unfinished columns erase their multiplier lamps. When Collect Bonus lights, take it immediately and rebuild the base value under the retained multiplier.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "As the first playfield switch starts the chase, identify which of the seven drop targets are still standing."
+          },
+          {
+            "text": "Shoot standing targets directly; use a matching yellow rollover or standup to spot an outside target that is difficult to hit."
+          },
+          {
+            "text": "Finish all seven before their chase lights pass the third row to light the upper-left Collect Bonus hole."
+          },
+          {
+            "text": "Shoot the lit Collect Bonus hole for base bonus times the retained Bonus X, then begin another seven-target cycle.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start the Chase",
+            "summary": "Hit the first playfield switch."
+          },
+          {
+            "name": "Destroy a Missile",
+            "summary": "Hit its drop target or matching yellow spot shot."
+          },
+          {
+            "name": "Light Collect Bonus",
+            "summary": "Clear all seven targets before row three."
+          }
+        ]
+      }
+    }
+  ]
+}

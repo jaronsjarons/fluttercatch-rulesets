@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "GR768",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Caveman alternates between a conventional widebody playfield and its video maze. Enter the video game by reaching either long side vari-target or by shooting behind a drop-target bank. Deeper vari-target hits add more maze time. On the playfield, complete C-A-V-E to light an extra ball that must be collected in the maze, and finish drop-target banks to advance the end-of-ball multiplier from 2x through 5x. In the maze, eat the required dinosaurs while avoiding the red Tyrannosauruses, or escape through a door to return to pinball.",
+        "simpleOverview": "Reach either side vari-target or shoot behind a drop-target bank to enter the video maze. Deeper vari-target hits add video time. Spell C-A-V-E to light an extra ball that is collected in the maze, and complete drop-target banks to build the 2x-through-5x bonus multiplier.",
+        "summary": "Use the vari-targets when you want a longer video attempt; use the drop banks when multiplier progress matters more. Finish C-A-V-E before entering the maze if an extra ball is the priority.",
+        "quickInfo": [
+          {
+            "name": "Enter the Maze",
+            "summary": "Reach a vari-target or shoot behind a drop bank."
+          },
+          {
+            "name": "Add Maze Time",
+            "summary": "Drive a vari-target farther back."
+          },
+          {
+            "name": "Light Extra Ball",
+            "summary": "Spell C-A-V-E."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete drop-target banks."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose a side vari-target for a timed video entry, or shoot behind either drop-target bank for a direct entry.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Before entering, complete C-A-V-E if you want the maze's extra-ball collect available.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In the maze, guide Caveman to the required dinosaurs, avoid the red Tyrannosauruses, and use a door when you want to return to the playfield.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Between maze attempts, complete drop-target banks to raise the end-of-ball multiplier through 2x, 3x, 4x, and 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Pinball-first route",
+            "when": "Use this when the video controls are unfamiliar or the drop banks are nearly complete.",
+            "steps": [
+              {
+                "text": "Finish the most advanced drop bank for the next bonus multiplier.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Spell C-A-V-E, then use a vari-target to enter with more maze time.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Extra Ball in the Maze",
+          "steps": [
+            {
+              "text": "Spell C-A-V-E on the playfield.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Enter the video maze and collect the lit extra ball there.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check video-screen brightness, joystick calibration, maze timing, extra-ball behavior, and whether progress carries between balls.",
+          "Test both vari-target depths, both drop-bank entry switches, C-A-V-E lamps, drop-bank resets, multiplier lamps, all four flippers, and the video-to-pinball return sequence."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left vari-target",
+            "label": "Left maze vari-target",
+            "description": "Long-range side target that enters the maze and can add video time.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right vari-target",
+            "label": "Right maze vari-target",
+            "description": "Matching side target used for maze entry and time.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop-target banks",
+            "label": "Two four-target banks",
+            "description": "Banks that advance Bonus X and can feed the video entry behind them.",
+            "precision": "unverified"
+          },
+          {
+            "term": "C-A-V-E targets",
+            "label": "C-A-V-E letters",
+            "description": "Mid-playfield letters that light the maze extra ball.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Live Catch",
+            "instruction": "After a video return, catch the served ball before choosing a narrow vari-target or bank shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8OQdCuJtiTc",
+            "techniqueSlug": "live-catch"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Caveman combines two control systems, and a weak or miscalibrated video section can change the value of every maze route.",
+            "response": "Test the joystick and video handoff before relying on the extra-ball path.",
+            "sourceUrl": "https://www.youtube.com/watch?v=HJSw32vvT0o"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the vari-targets when you want a longer video attempt; use the drop banks when multiplier progress matters more. Finish C-A-V-E before entering the maze if an extra ball is the priority.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose a side vari-target for a timed video entry, or shoot behind either drop-target bank for a direct entry.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Before entering, complete C-A-V-E if you want the maze's extra-ball collect available.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In the maze, guide Caveman to the required dinosaurs, avoid the red Tyrannosauruses, and use a door when you want to return to the playfield.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Between maze attempts, complete drop-target banks to raise the end-of-ball multiplier through 2x, 3x, 4x, and 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Enter the Maze",
+            "summary": "Reach a vari-target or shoot behind a drop bank."
+          },
+          {
+            "name": "Add Maze Time",
+            "summary": "Drive a vari-target farther back."
+          },
+          {
+            "name": "Light Extra Ball",
+            "summary": "Spell C-A-V-E."
+          }
+        ]
+      }
+    }
+  ]
+}

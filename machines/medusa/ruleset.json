@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xXQ",
+  "title": "Medusa",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Medusa",
+      "url": "https://rules.silverballmania.com/rules/G4xXQ-MDWW1"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Medusa machine guide",
+        "url": "https://www.kineticist.com/games/pinball/medusa"
+      },
+      {
+        "label": "Bally Medusa operator manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Medusa%20Manual.pdf"
+      },
+      {
+        "label": "Nick DeStefano at NYCPC 2022",
+        "url": "https://pinballvideos.com/v/3925/9758"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Soft-plunge into the upper playfield, complete each lit seven-target pattern, collect the lit Olympus Bonus at the saucer, and use the left orbit to build 5x bonus.",
+      "quickInfo": [
+        {
+          "name": "Seven-target patterns",
+          "summary": "The seven targets present seven progressively larger required patterns."
+        },
+        {
+          "name": "Zipper flippers",
+          "summary": "A completed upper pattern closes the upper flippers for a timed control window, and more target hits extend it."
+        },
+        {
+          "name": "Olympus Bonus",
+          "summary": "Repeated upper-bank work lights the upper saucer to collect the built Olympus value."
+        },
+        {
+          "name": "Bonus X",
+          "summary": "The left orbit advances the end-of-ball multiplier through 2x, 3x, and 5x."
+        },
+        {
+          "name": "Shield of Gods",
+          "summary": "The extra cabinet button activates the center kick post while stored uses remain."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Soft-plunge for the moving star rollover and keep the ball on the upper playfield."
+        },
+        {
+          "text": "Read the lit seven-target bank and hit only the current required pattern."
+        },
+        {
+          "text": "Use the closed zipper-flipper window to continue the seven-target bank and raise the Olympus Bonus value."
+        },
+        {
+          "text": "When the upper saucer is lit, collect Olympus Bonus before the ball leaves the upper level."
+        },
+        {
+          "text": "In lower play, shoot the left orbit to advance Bonus X through 5x."
+        },
+        {
+          "text": "At 5x, repeat the left orbit for its 50,000-point award while the return stays safe."
+        }
+      ],
+      "fallback": {
+        "title": "Colossus route",
+        "when": "Use this when the seven-target patterns are difficult to finish.",
+        "steps": [
+          {
+            "text": "Complete the left 1-2-3 standups in order or complete the right four-bank."
+          },
+          {
+            "text": "Advance and collect the Colossus award."
+          },
+          {
+            "text": "Repeat only while target rebounds remain controlled."
+          },
+          {
+            "text": "Return to the upper route after a safe top feed."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Orbit and bonus route",
+          "when": "Use this when both orbit feeds are safer than the target banks, especially on the final ball with substantial base bonus already banked.",
+          "steps": [
+            {
+              "text": "Take the next safe left-orbit Bonus X advance only when the right flipper is strong and the orbit feed is proven makeable."
+            },
+            {
+              "text": "Skip the orbit when the flipper is weak or the feed is rejecting, and return upstairs instead."
+            },
+            {
+              "text": "Repeat the left orbit to reach 5x bonus only while each return stays controlled."
+            },
+            {
+              "text": "Use the right orbit to advance its award toward 50,000."
+            },
+            {
+              "text": "Score lower drop targets and standups, star rollovers, and outlanes to add Medusa base bonus."
+            },
+            {
+              "text": "Protect the large end-of-ball bonus with Shield of Gods when needed."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Olympus collect, 5x bonus, and 150,000 Colossus",
+        "steps": [
+          {
+            "text": "Complete progressive seven-target patterns."
+          },
+          {
+            "text": "Collect the lit Olympus Bonus at the upper saucer."
+          },
+          {
+            "text": "Use the left orbit to reach 5x bonus."
+          },
+          {
+            "text": "Use ordered standups or the right bank to raise Colossus toward 150,000."
+          },
+          {
+            "text": "Keep unused Shield of Gods charges for drain protection."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Olympus Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Shield of Gods",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Colossus",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Moving-light plunge",
+          "instruction": "Release a soft plunge so the ball crosses the star rollover that is lit when it arrives.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4xXQ-MDWW1"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Shots at the lower targets and exits from the bumpers can return the ball toward the center.",
+          "response": "Favor the two broad orbits and take target shots only from a settled flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4xXQ-MDWW1"
+        },
+        {
+          "issue": "The upper center exit can send the ball directly between the lower flippers.",
+          "response": "Track the ball before it leaves the zipper-flipper area and nudge before it gains speed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4xXQ-MDWW1"
+        },
+        {
+          "issue": "Shield of Gods uses are limited and the post timing depends on the machine.",
+          "response": "Test the button early and press before the ball reaches the lower center gap.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/medusa"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ball count, Extra Ball and Special conversion, target-pattern resets, Olympus settings, and Colossus awards.",
+        "Test the zipper-flipper timer, upper-level exit, both orbit feeds, lower target rebounds, and center-post timing.",
+        "Confirm the stored Shield of Gods uses; factory settings begin with five, but tournament adjustments may differ."
+      ],
+      "simpleOverview": "Medusa turns seven progressive target patterns into timed zipper-flipper control and a lit Olympus Bonus at the upper saucer. Soft-plunge upstairs, complete each displayed pattern, collect Olympus, and use the left orbit to raise end-of-ball bonus to 5x.",
+      "overview": "Medusa turns seven progressive target patterns into timed zipper-flipper control and a lit Olympus Bonus at the upper saucer. Keep the ball upstairs, follow each displayed pattern, and collect the lit saucer before returning through the left orbit for multiplier progress. Use Shield of Gods only for drain protection and take lower targets from a settled flipper.",
+      "machineSetup": [
+        "Confirm ball count, Extra Ball and Special conversion, target-pattern resets, Olympus settings, and Colossus awards.",
+        "Test the zipper-flipper timer, upper-level exit, both orbit feeds, lower target rebounds, and center-post timing.",
+        "Confirm the stored Shield of Gods uses; factory settings begin with five, but tournament adjustments may differ."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9qY",
+  "title": "Freedom",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Silverball Rules Freedom strategy",
+      "url": "https://rules.silverballmania.com/rules/GR9qY-MD3Px"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Freedom factory instruction cards",
+        "url": "https://pinballaustralia.com/zip/Bally_1976_Freedom_Reproduction_Score_and_Instruction_Cards.zip"
+      },
+      {
+        "label": "Bally Freedom factory manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Bally_Freedom_Manual.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Freedom's central wheel points to the feature the upper saucers can activate. When Lite Spinners is selected, shoot either upper saucer to light both side spinners; other wheel positions award the indicated feature. Every additional completed target bank adds 5,000, and finishing the full target set awards the configured Extra Ball. The controlled plan is to keep returning to the top, collect the selected wheel feature, then exploit lit spinners.",
+      "simpleOverview": "Shoot to the top and use either upper saucer to collect the feature shown on the center wheel. When Lite Spinners is selected, a saucer lights both side spinners; keep sending the ball through them for 1,000 per spin. Finish the target set for the configured Extra Ball, with later target-bank completions adding 5,000.",
+      "summary": "Prioritize upper-playfield access over square target hits. The saucers convert the wheel's current selection into a feature, while repeated trips through the top also feed the bumpers and lit spinners.",
+      "quickInfo": [
+        {
+          "name": "Collect Wheel Feature",
+          "summary": "Shoot either upper saucer."
+        },
+        {
+          "name": "Light Spinners",
+          "summary": "Shoot a saucer while Lite Spinners is selected."
+        },
+        {
+          "name": "Score Lit Spinner",
+          "summary": "Send the ball through either side spinner for 1,000 per spin."
+        },
+        {
+          "name": "Earn Target Award",
+          "summary": "Finish the target set; later completions add 5,000."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot to the top and read the feature selected on the center wheel."
+        },
+        {
+          "text": "Shoot either upper saucer to collect or activate the selected feature."
+        },
+        {
+          "text": "When Lite Spinners is selected, use the saucer to light both spinners, then repeat the safer side shot."
+        },
+        {
+          "text": "Finish the target set only from controlled feeds; the first completion awards the configured Extra Ball and later completions add 5,000."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Target-completion route",
+          "when": "Use this when the saucer feeds are poor but the targets can be grazed safely.",
+          "steps": [
+            {
+              "text": "Pick off the outermost remaining targets rather than shooting through the center of the set."
+            },
+            {
+              "text": "Complete the set for the configured award."
+            },
+            {
+              "text": "Return to the upper saucers after the bank resets."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit-spinner control loop",
+        "steps": [
+          {
+            "text": "Return to the top until the wheel selects Lite Spinners."
+          },
+          {
+            "text": "Collect that feature at either upper saucer."
+          },
+          {
+            "text": "Repeat side-spinner shots while using upper-playfield returns to regain control."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Identify the electromechanical or solid-state edition; test the center feature wheel, both upper saucers and ejects, both spinners, the full target set and reset, bumpers, outlanes, and the Extra Ball and Special lamps.",
+        "Confirm spinner value, three- or five-ball play, Extra Ball versus replay settings, and the early-versus-later instruction-card target award before competition."
+      ],
+      "cautions": [
+        {
+          "issue": "Freedom exists in EM and solid-state editions, and multiple factory cards survive.",
+          "response": "Verify the installed apron card: spinner values and the first completed-target award can differ by production and operator configuration.",
+          "sourceUrl": "https://pinballaustralia.com/zip/Bally_1976_Freedom_Reproduction_Score_and_Instruction_Cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

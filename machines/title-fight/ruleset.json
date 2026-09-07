@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Xw9",
+  "title": "Title Fight",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Gottlieb street-level rules review",
+      "url": "https://www.kineticist.com/news/gottlieb-street-level-reviews"
+    },
+    "supportingSources": [
+      {
+        "label": "Title Fight instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Title_Fight_instruction_cards.zip"
+      },
+      {
+        "label": "Title Fight machine overview",
+        "url": "https://www.kineticist.com/games/pinball/title-fight"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Title Fight begins each ball on the boxing mini-playfield; during normal play, hit the left Ring the Bell target to return there. Complete the five drops, let the ball enter the saucer, and time both flipper buttons against the animated boxer for Mystery. Complete Gloves 1 through 10 to start two-ball Multiball and collect its Mini-Jackpot.",
+      "simpleOverview": "Play the boxing mini-playfield at the start of each ball, or hit the left Ring the Bell target to return. Knock down its five targets, then press both flipper buttons to time the backglass punch for Mystery. Complete Gloves 1 through 10 to start two-ball Multiball and collect the Mini-Jackpot.",
+      "summary": "Use the starting mini-playfield or hit Ring the Bell, clear its five drops, and time both flipper buttons for Mystery. Complete Gloves 1 through 10 for two-ball Multiball and its Mini-Jackpot. Repeat Roundhouse for dependable points.",
+      "quickInfo": [
+        {
+          "name": "Enter the ring",
+          "summary": "Use the automatic start-of-ball feed, or hit the left Ring the Bell target during play."
+        },
+        {
+          "name": "Collect Mystery",
+          "summary": "Clear the five mini-playfield drops, then time both flipper buttons when the ball reaches the saucer."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Complete Gloves 1 through 10."
+        },
+        {
+          "name": "Build score",
+          "summary": "Repeat the upper-right Roundhouse loop."
+        }
+      ],
+      "steps": [
+        {
+          "text": "At the start of the ball, use the mini-playfield flippers to knock down its five targets.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "During normal play, hit the left Ring the Bell target to send the ball back to the mini-playfield.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When the completed bank sends the ball to the saucer, press both flipper buttons to time the backglass punch and collect Mystery.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete Gloves 1 through 10 to start two-ball Multiball and collect the Mini-Jackpot award.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Repeat Roundhouse",
+          "when": "Use this when the mini-playfield return is not controlled.",
+          "steps": [
+            {
+              "text": "Shoot the upper-right Roundhouse loop repeatedly; consecutive shots raise its value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to Ring the Bell after a controlled feed or when Gloves progress needs the mini-playfield.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Qualify Title Fight Jackpot",
+        "steps": [
+          {
+            "text": "Defeat the four contenders through the three main target banks and the Roundhouse loop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all four are defeated, complete the mini-playfield drops again for Title Fight Jackpot.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm ticket, extra-round, Mystery, and replay conversions before competitive play.",
+        "Test Ring the Bell, both mini-playfield flippers, all five drops, saucer, cabinet-button punch input, Roundhouse loop, and contender banks."
+      ],
+      "termStyles": [
+        {
+          "label": "Knockout Bout",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Title Fight Jackpot",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The backglass punch is timing-dependent.",
+          "response": "Wait for the fighter alignment, then press both flipper buttons together instead of mashing early.",
+          "sourceUrl": "https://www.kineticist.com/news/gottlieb-street-level-reviews"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

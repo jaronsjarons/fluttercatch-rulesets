@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "Grybw",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the Chicago Loop or Rocket to open rides and collect locks, then start three-ball Multiball. Use a Start FUN mode before the final lock only when its shot and return are controlled.",
+        "quickInfo": [
+          {
+            "name": "Ride progress",
+            "summary": "Advance a ride's red, yellow, and green stoplights to open it. Each opened ride lights a lock and becomes a Jackpot shot during Multiball."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Lock two balls at the Chicago Loop or Rocket, then start Multiball at Flying Turns or the Rocket."
+          },
+          {
+            "name": "Start FUN",
+            "summary": "The inner loop or shooter-lane Handyman path starts one of the available timed modes."
+          },
+          {
+            "name": "Park Tycoon",
+            "summary": "Play all six FUN modes to light Park Tycoon at the Handyman. Guests set its Jackpot value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the plunge to test the Start FUN feed, A-B-C lanes, and upper-left flipper."
+          },
+          {
+            "text": "Shoot the nearest ride's associated targets or ramp only from controlled returns."
+          },
+          {
+            "text": "Shoot the Chicago Loop or Rocket when lock is lit."
+          },
+          {
+            "text": "If Start FUN is one safe shot away, start the selected mode before collecting the final lock.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start three-ball Multiball, shoot every lit ride Jackpot, then shoot the Rocket for the Super Jackpot.",
+            "modeNotes": [
+              "Lock progression: The first lock can be easier than later locks. Read the lit Chicago Loop and Rocket arrows before repeating either shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, resume ride and guest progress instead of forcing an unlit lock lane."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Start FUN route",
+          "when": "Recovery pivot: Use this when lock entries reject but the inner loop and mode feeds are reliable.",
+          "steps": [
+            {
+              "text": "Shoot the inner loop or use the shooter-lane Handyman path."
+            },
+            {
+              "text": "Start the safest available FUN mode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete its broadest lit shots rather than forcing the Dummy bank."
+            },
+            {
+              "text": "Return to ride and lock progress after the timer ends."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Park Tycoon",
+          "steps": [
+            {
+              "text": "Play all six FUN modes. On factory settings, the Flying Ghost relights Start FUN; harder settings require completing R&D at the upper standups.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After Park Tycoon lights, shoot behind the Handyman through the FUN orbit to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During the 50-second four-ball mode, open rides and shoot their lit Jackpots. Each Jackpot raises the Super Jackpot multiplier."
+            },
+            {
+              "text": "Shoot the Rocket to collect the Super Jackpot. Guests collected before the mode set the base Jackpot value."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Three-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Start FUN",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Rocket",
+            "tone": "navy",
+            "kind": "shot"
+          },
+          {
+            "label": "Park Tycoon",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test lock sensors, mode timers, ball saves, and upper-playfield feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Chicago Loop",
+            "label": "Left loop ramp",
+            "description": "Loop ramp used for ball locks and ride progress.",
+            "precision": "unverified",
+            "context": "Chicago Loop: Loop ramp used for ball locks and ride progress."
+          },
+          {
+            "term": "Rocket",
+            "label": "Rocket VUK",
+            "description": "Vertical-up-kicker used for rides, locks, and the Super Jackpot.",
+            "precision": "unverified",
+            "context": "Rocket: Vertical-up-kicker used for rides, locks, and the Super Jackpot."
+          },
+          {
+            "term": "inner loop",
+            "label": "Start FUN lane",
+            "description": "Inner loop leading behind the Handyman to start modes.",
+            "precision": "unverified",
+            "context": "inner loop: Inner loop leading behind the Handyman to start modes."
+          },
+          {
+            "term": "upper-left flipper",
+            "label": "Snack Bar flipper",
+            "description": "Upper flipper that can send pop-bumper exits toward the Snack Bar.",
+            "precision": "unverified",
+            "context": "upper-left flipper: Upper flipper that can send pop-bumper exits toward the Snack Bar."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-flipper read",
+            "instruction": "Let one pop-bumper exit reach the upper-left flipper before trying to redirect it toward the Snack Bar.",
+            "sourceUrl": "https://doczz.net/doc/5785797/ein-service-von-flippermarkt.de"
+          },
+          {
+            "name": "Lock-arrow check",
+            "instruction": "Read which lock shot is lit before sending a controlled ball to the Chicago Loop or Rocket.",
+            "sourceUrl": "https://doczz.net/doc/5785797/ein-service-von-flippermarkt.de"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Dummy bank, Rocket eject, and upper-flipper feeds can turn incomplete ride progress into a fast drain.",
+            "response": "Use ball save or multiball for risky hits and abandon any return that rejects twice.",
+            "sourceUrl": "https://doczz.net/doc/5785797/ein-service-von-flippermarkt.de"
+          }
+        ],
+        "simpleOverview": "RollerCoaster Tycoon advances each ride from red to yellow to green; opening a ride lights a lock at the Chicago Loop or Rocket. After two locks, start three-ball Multiball at Flying Turns or the Rocket, shoot every lit ride Jackpot, then shoot the Rocket for the Super Jackpot. Start FUN modes behind the Handyman; playing all six lights Park Tycoon.",
+        "overview": "RollerCoaster Tycoon opens rides by advancing their red, yellow, and green stoplights; each opened ride lights a lock at Chicago Loop or Rocket. Prepare a FUN mode, collect two locks, start Multiball at Flying Turns or Rocket, then clear every lit ride Jackpot before the Rocket Super. Playing all six FUN modes lights Park Tycoon; Guests set its Jackpot value rather than qualifying it.",
+        "machineSetup": [
+          "Test lock sensors, mode timers, ball saves, and upper-playfield feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the Chicago Loop or Rocket to open rides and collect locks, then start three-ball Multiball. Use a Start FUN mode before the final lock only when its shot and return are controlled.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the plunge to test the Start FUN feed, A-B-C lanes, and upper-left flipper."
+          },
+          {
+            "text": "Shoot the nearest ride's associated targets or ramp only from controlled returns."
+          },
+          {
+            "text": "Shoot the Chicago Loop or Rocket when lock is lit."
+          },
+          {
+            "text": "If Start FUN is one safe shot away, start the selected mode before collecting the final lock.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start three-ball Multiball, shoot every lit ride Jackpot, then shoot the Rocket for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Lock progression: The first lock can be easier than later locks. Read the lit Chicago Loop and Rocket arrows before repeating either shot."
+            ]
+          },
+          {
+            "text": "After multiball, resume ride and guest progress instead of forcing an unlit lock lane."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Ride progress",
+            "summary": "Advance a ride's red, yellow, and green stoplights to open it. Each opened ride lights a lock and becomes a Jackpot shot during Multiball."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Lock two balls at the Chicago Loop or Rocket, then start Multiball at Flying Turns or the Rocket."
+          },
+          {
+            "name": "Start FUN",
+            "summary": "The inner loop or shooter-lane Handyman path starts one of the available timed modes."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Start FUN route",
+          "when": "Recovery pivot: Use this when lock entries reject but the inner loop and mode feeds are reliable.",
+          "steps": [
+            {
+              "text": "Shoot the inner loop or use the shooter-lane Handyman path."
+            },
+            {
+              "text": "Start the safest available FUN mode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete its broadest lit shots rather than forcing the Dummy bank."
+            },
+            {
+              "text": "Return to ride and lock progress after the timer ends."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The Dummy bank, Rocket eject, and upper-flipper feeds can turn incomplete ride progress into a fast drain.",
+          "text": "Use ball save or multiball for risky hits and abandon any return that rejects twice."
+        }
+      }
+    }
+  ]
+}

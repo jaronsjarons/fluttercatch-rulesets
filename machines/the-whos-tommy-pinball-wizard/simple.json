@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6do",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start a useful Union Jack mode, spell T-O-M-M-Y at the mirror, then start the four-ball version at the Tommy hole and work from ramp Jackpots to the Tommy-hole ladder and right-ramp Double Super.",
+        "quickInfo": [
+          {
+            "name": "T-O-M-M-Y",
+            "summary": "Mirror hits spell TOMMY and lower the mirror to light regular multiball."
+          },
+          {
+            "name": "Best start",
+            "summary": "The Tommy hole starts four balls and larger base awards; the left scoop starts a smaller three-ball version."
+          },
+          {
+            "name": "Opening jackpots",
+            "summary": "Left ramp scores Jackpot and upper-flipper right ramp scores Double Jackpot; collect both to advance."
+          },
+          {
+            "name": "Tommy-hole stage",
+            "summary": "Collect five TOMMY mini-jackpots at the exposed hole to light the Supers."
+          },
+          {
+            "name": "Union Jack modes",
+            "summary": "Modes continue during regular multiball, so begin one before the multiball start."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the mirror, Tommy hole, both ramps, and right-scoop eject before choosing the opening mode."
+          },
+          {
+            "text": "Start a useful Union Jack feature at the right scoop, then continue spelling T-O-M-M-Y at the mirror.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the mirror lowers, shoot the Tommy hole for the four-ball multiball whenever that feed is controllable.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the left-ramp Jackpot and upper-flipper right-ramp Double Jackpot to advance the first stage.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Take one relit ramp Jackpot in the next stage, then shoot the Tommy hole five times to spell T-O-M-M-Y through mini-jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "At the Super stage, choose the right-ramp Double Super when the upper-flipper feed is controlled; take the easier left-ramp Super when certainty matters.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If no opening Jackpot is collected, use the relit Tommy hole or left-scoop two-ball restart and rebuild ball count through a Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Left-scoop start",
+          "when": "Use this when multiball is lit but the exposed Tommy-hole shot is rejecting.",
+          "steps": [
+            {
+              "text": "Shoot the left scoop for the three-ball start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect an immediate ramp Jackpot to add a ball."
+            },
+            {
+              "text": "Continue the normal jackpot stages with the restored ball count."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Sally Simpson ramp mode",
+            "when": "Use this when both ramps are repeatable before multiball.",
+            "steps": [
+              {
+                "text": "Start Sally Simpson at the right scoop.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use left ramps to raise the following value and right ramps to double it."
+              },
+              {
+                "text": "Start prepared multiball while the ramp scoring remains active.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Blind multiball loop",
+          "steps": [
+            {
+              "text": "Complete both opening ramp Jackpots."
+            },
+            {
+              "text": "Finish the later ramp and Tommy-hole stages."
+            },
+            {
+              "text": "Collect a Super or Double Super."
+            },
+            {
+              "text": "Repeat the jackpot ladder with the blinders active.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Tommy Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Union Jack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Blind Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "T-O-M-M-Y",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "mirror",
+            "label": "TOMMY mirror",
+            "description": "Center mirror target used to spell TOMMY and expose the multiball hole.",
+            "precision": "unverified",
+            "context": "mirror: Center mirror target used to spell TOMMY and expose the multiball hole."
+          },
+          {
+            "term": "Tommy hole",
+            "label": "Tommy hole",
+            "description": "Hole behind the mirror used for four-ball start and mini-jackpots.",
+            "precision": "unverified",
+            "context": "Tommy hole: Hole behind the mirror used for four-ball start and mini-jackpots."
+          },
+          {
+            "term": "left ramp",
+            "label": "Jackpot ramp",
+            "description": "Lower-flipper ramp used for Jackpot and Super Jackpot.",
+            "precision": "unverified",
+            "context": "left ramp: Lower-flipper ramp used for Jackpot and Super Jackpot."
+          },
+          {
+            "term": "right ramp",
+            "label": "Double ramp",
+            "description": "Upper-left-flipper ramp used for Double Jackpot and Double Super.",
+            "precision": "unverified",
+            "context": "right ramp: Upper-left-flipper ramp used for Double Jackpot and Double Super."
+          },
+          {
+            "term": "right scoop",
+            "label": "Union Jack scoop",
+            "description": "Scoop used to start the flashing Union Jack mode.",
+            "precision": "unverified",
+            "context": "right scoop: Scoop used to start the flashing Union Jack mode."
+          },
+          {
+            "term": "left scoop",
+            "label": "Alternate multiball start",
+            "description": "Left scoop used for the first three-ball start and two-ball restarts.",
+            "precision": "unverified",
+            "context": "left scoop: Left scoop used for the first three-ball start and two-ball restarts."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Union-Jack-before-multiball order",
+            "instruction": "Start a useful Union Jack feature first because its timer and scoring continue during regular multiball.",
+            "sourceUrl": "https://www.pinball.org/rules/tommy.html"
+          },
+          {
+            "name": "Upper-flipper Double setup",
+            "instruction": "Use the left-ramp or Tommy-hole return to prepare the upper-left flipper before committing to the right-ramp Double award.",
+            "sourceUrl": "https://www.pinball.org/rules/tommy.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper-flipper right ramp is the higher-value but harder Super shot.",
+            "response": "Take the left-ramp Super when ball count, feed, or match position does not justify the miss risk.",
+            "sourceUrl": "https://www.pinball.org/rules/tommy.html"
+          },
+          {
+            "issue": "The captive ball and hard right-scoop shots can reject toward the outlane or center.",
+            "response": "Avoid captive-ball bonus work and back off overpowered scoop shots when their returns are unsafe.",
+            "sourceUrl": "https://www.pinball.org/rules/tommy.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ROM, mirror timing, mode starts, and ball saves.",
+          "Test both scoops, both ramps, and blinders."
+        ],
+        "simpleOverview": "In The Who's Tommy Pinball Wizard, an active Union Jack mode continues during Multiball, but a new mode cannot start or relight after Multiball begins. Start a mode first, spell T-O-M-M-Y at the mirror, then start Multiball at the Tommy hole and advance through the ramp, mini-Jackpot, and Super stages.",
+        "overview": "The Who's Tommy Pinball Wizard lets Union Jack modes continue during Multiball, whose scoring advances through ramp, Tommy-hole, and Super stages. Start a compatible mode, spell T-O-M-M-Y, and use the Tommy-hole four-ball start. Complete both opening ramps, five hole mini-jackpots, then choose the controlled Super or Double Super feed.",
+        "machineSetup": [
+          "Confirm ROM, mirror timing, mode starts, and ball saves.",
+          "Test both scoops, both ramps, and blinders."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Start a useful Union Jack mode, spell T-O-M-M-Y at the mirror, then start the four-ball version at the Tommy hole and work from ramp Jackpots to the Tommy-hole ladder and right-ramp Double Super.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the mirror, Tommy hole, both ramps, and right-scoop eject before choosing the opening mode."
+          },
+          {
+            "text": "Start a useful Union Jack feature at the right scoop, then continue spelling T-O-M-M-Y at the mirror.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the mirror lowers, shoot the Tommy hole for the four-ball multiball whenever that feed is controllable.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the left-ramp Jackpot and upper-flipper right-ramp Double Jackpot to advance the first stage.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Take one relit ramp Jackpot in the next stage, then shoot the Tommy hole five times to spell T-O-M-M-Y through mini-jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "At the Super stage, choose the right-ramp Double Super when the upper-flipper feed is controlled; take the easier left-ramp Super when certainty matters.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If no opening Jackpot is collected, use the relit Tommy hole or left-scoop two-ball restart and rebuild ball count through a Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "T-O-M-M-Y",
+            "summary": "Mirror hits spell TOMMY and lower the mirror to light regular multiball."
+          },
+          {
+            "name": "Best start",
+            "summary": "The Tommy hole starts four balls and larger base awards; the left scoop starts a smaller three-ball version."
+          },
+          {
+            "name": "Opening jackpots",
+            "summary": "Left ramp scores Jackpot and upper-flipper right ramp scores Double Jackpot; collect both to advance."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Left-scoop start",
+          "when": "Use this when multiball is lit but the exposed Tommy-hole shot is rejecting.",
+          "steps": [
+            {
+              "text": "Shoot the left scoop for the three-ball start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect an immediate ramp Jackpot to add a ball."
+            },
+            {
+              "text": "Continue the normal jackpot stages with the restored ball count."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The captive ball and hard right-scoop shots can reject toward the outlane or center.",
+          "text": "Avoid captive-ball bonus work and back off overpowered scoop shots when their returns are unsafe."
+        }
+      }
+    }
+  ]
+}

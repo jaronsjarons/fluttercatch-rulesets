@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "id": "G4j8k",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Keep the ball in the upper playfield and judge each exit before chasing a center or side target. Use the installed Domino instruction card for roto-target, saucer, and award values.",
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Repeat controlled upper-playfield entries."
+          },
+          {
+            "name": "Scoring values",
+            "summary": "Use the installed Domino card; PlayMates values do not apply."
+          },
+          {
+            "name": "Exit control",
+            "summary": "Nudge straight upper exits before they enter a side-drain path."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the installed instruction card before using any displayed roto-target or saucer value."
+          },
+          {
+            "text": "Send the ball to the upper playfield instead of forcing a center target shot."
+          },
+          {
+            "text": "Watch each upper exit and nudge before a straight path reaches a side drain."
+          },
+          {
+            "text": "Repeat the upper route while its exits remain angled and controllable."
+          },
+          {
+            "text": "Take a center or side target only after its rebound has reached a flipper safely."
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable upper-playfield control",
+          "steps": [
+            {
+              "text": "Send the ball to the upper playfield instead of forcing a center target shot."
+            },
+            {
+              "text": "Watch each upper exit and nudge before a straight path reaches a side drain."
+            },
+            {
+              "text": "Repeat the upper route while its exits remain angled and controllable."
+            },
+            {
+              "text": "Take a center or side target only after its rebound has reached a flipper safely."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Exit-angle read",
+            "instruction": "Watch the line from the upper playfield. Nudge a straight exit before it enters a side-drain path.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/domino-playmates"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A straight upper-playfield exit can travel toward a side drain.",
+            "response": "Watch the exit angle and nudge early. Favor upper paths that send the ball downward at a stronger angle.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/domino-playmates"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "10X lanes",
+            "tone": "olive",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "roto-target",
+            "label": "Center roto-target",
+            "description": "Center target that is worth only 50 regardless of its displayed number.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side target",
+            "label": "Lit numbered target",
+            "description": "Numbered side standup that scores 200 when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "saucer",
+            "label": "saucer",
+            "description": "Saucer worth 200 on the Domino add-a-ball rules.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Domino, Grande Domino, or PlayMates, plus replay versus add-a-ball rules, ball count, tilt, and tournament scoring.",
+          "For Domino, read the installed instruction card because scoring can vary by edition.",
+          "Test the PlayMates soft plunge, top-center lane, 10X lanes, roto-target, side targets, saucer eject, upper exits, and side-drain feeds."
+        ],
+        "simpleOverview": "Domino and PlayMates share a playfield but not the same scoring. On PlayMates, soft-plunge the top-center lane to light both 10X lanes, clear the four Aces and shoot the center target twice for Double Bonus, then clear the Aces again and collect a lit 10X side lane for 50,000.",
+        "overview": "Domino and PlayMates use different scoring on the same layout, so the installed edition determines the useful route. On PlayMates, soft-plunge the top-center lane, complete two Ace-bank and center-target cycles for Double Bonus, then clear the Aces again and leave them down. Return up top for a lit 50,000-point 10X side lane while avoiding the low-value roto-target.",
+        "machineSetup": [
+          "Confirm Domino, Grande Domino, or PlayMates, plus replay versus add-a-ball rules, ball count, tilt, and tournament scoring.",
+          "For Domino, read the installed instruction card because scoring can vary by edition.",
+          "Test the PlayMates soft plunge, top-center lane, 10X lanes, roto-target, side targets, saucer eject, upper exits, and side-drain feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball in the upper playfield and judge each exit before chasing a center or side target. Use the installed Domino instruction card for roto-target, saucer, and award values.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the installed instruction card before using any displayed roto-target or saucer value."
+          },
+          {
+            "text": "Send the ball to the upper playfield instead of forcing a center target shot."
+          },
+          {
+            "text": "Watch each upper exit and nudge before a straight path reaches a side drain."
+          },
+          {
+            "text": "Repeat the upper route while its exits remain angled and controllable."
+          },
+          {
+            "text": "Take a center or side target only after its rebound has reached a flipper safely."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Repeat controlled upper-playfield entries."
+          },
+          {
+            "name": "Scoring values",
+            "summary": "Use the installed Domino card; PlayMates values do not apply."
+          },
+          {
+            "name": "Exit control",
+            "summary": "Nudge straight upper exits before they enter a side-drain path."
+          }
+        ],
+        "warning": {
+          "title": "A straight upper-playfield exit can travel toward a side drain.",
+          "text": "Watch the exit angle and nudge early. Favor upper paths that send the ball downward at a stronger angle."
+        }
+      }
+    },
+    {
+      "name": "G4j8k-MJK5K",
+      "input": {
+        "summary": "Keep the ball in the upper playfield and judge each exit before chasing a center or side target. Use the installed Domino instruction card for roto-target, saucer, and award values.",
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Repeat controlled upper-playfield entries."
+          },
+          {
+            "name": "Scoring values",
+            "summary": "Use the installed Domino card; PlayMates values do not apply."
+          },
+          {
+            "name": "Exit control",
+            "summary": "Nudge straight upper exits before they enter a side-drain path."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the installed instruction card before using any displayed roto-target or saucer value."
+          },
+          {
+            "text": "Send the ball to the upper playfield instead of forcing a center target shot."
+          },
+          {
+            "text": "Watch each upper exit and nudge before a straight path reaches a side drain."
+          },
+          {
+            "text": "Repeat the upper route while its exits remain angled and controllable."
+          },
+          {
+            "text": "Take a center or side target only after its rebound has reached a flipper safely."
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable upper-playfield control",
+          "steps": [
+            {
+              "text": "Send the ball to the upper playfield instead of forcing a center target shot."
+            },
+            {
+              "text": "Watch each upper exit and nudge before a straight path reaches a side drain."
+            },
+            {
+              "text": "Repeat the upper route while its exits remain angled and controllable."
+            },
+            {
+              "text": "Take a center or side target only after its rebound has reached a flipper safely."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Exit-angle read",
+            "instruction": "Watch the line from the upper playfield. Nudge a straight exit before it enters a side-drain path.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/domino-playmates"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A straight upper-playfield exit can travel toward a side drain.",
+            "response": "Watch the exit angle and nudge early. Favor upper paths that send the ball downward at a stronger angle.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/domino-playmates"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "10X lanes",
+            "tone": "olive",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "roto-target",
+            "label": "Center roto-target",
+            "description": "Center target that is worth only 50 regardless of its displayed number.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side target",
+            "label": "Lit numbered target",
+            "description": "Numbered side standup that scores 200 when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "saucer",
+            "label": "saucer",
+            "description": "Saucer worth 200 on the Domino add-a-ball rules.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Domino, Grande Domino, or PlayMates, plus replay versus add-a-ball rules, ball count, tilt, and tournament scoring.",
+          "For Domino, read the installed instruction card because scoring can vary by edition.",
+          "Test the PlayMates soft plunge, top-center lane, 10X lanes, roto-target, side targets, saucer eject, upper exits, and side-drain feeds."
+        ],
+        "simpleOverview": "Domino and PlayMates share a playfield but not the same scoring. On PlayMates, soft-plunge the top-center lane to light both 10X lanes, clear the four Aces and shoot the center target twice for Double Bonus, then clear the Aces again and collect a lit 10X side lane for 50,000.",
+        "overview": "Domino and PlayMates use different scoring on the same layout, so the installed edition determines the useful route. On PlayMates, soft-plunge the top-center lane, complete two Ace-bank and center-target cycles for Double Bonus, then clear the Aces again and leave them down. Return up top for a lit 50,000-point 10X side lane while avoiding the low-value roto-target.",
+        "machineSetup": [
+          "Confirm Domino, Grande Domino, or PlayMates, plus replay versus add-a-ball rules, ball count, tilt, and tournament scoring.",
+          "For Domino, read the installed instruction card because scoring can vary by edition.",
+          "Test the PlayMates soft plunge, top-center lane, 10X lanes, roto-target, side targets, saucer eject, upper exits, and side-drain feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball in the upper playfield and judge each exit before chasing a center or side target. Use the installed Domino instruction card for roto-target, saucer, and award values.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the installed instruction card before using any displayed roto-target or saucer value."
+          },
+          {
+            "text": "Send the ball to the upper playfield instead of forcing a center target shot."
+          },
+          {
+            "text": "Watch each upper exit and nudge before a straight path reaches a side drain."
+          },
+          {
+            "text": "Repeat the upper route while its exits remain angled and controllable."
+          },
+          {
+            "text": "Take a center or side target only after its rebound has reached a flipper safely."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Repeat controlled upper-playfield entries."
+          },
+          {
+            "name": "Scoring values",
+            "summary": "Use the installed Domino card; PlayMates values do not apply."
+          },
+          {
+            "name": "Exit control",
+            "summary": "Nudge straight upper exits before they enter a side-drain path."
+          }
+        ],
+        "warning": {
+          "title": "A straight upper-playfield exit can travel toward a side drain.",
+          "text": "Watch the exit angle and nudge early. Favor upper paths that send the ball downward at a stronger angle."
+        }
+      }
+    },
+    {
+      "name": "G4j8k-MDlYy",
+      "input": {
+        "summary": "Soft-plunge the top-center lane to light both 10X side lanes, send the ball back to the upper playfield, and take a lit numbered side target only after its rebound proves safe.",
+        "quickInfo": [
+          {
+            "name": "Skill shot",
+            "summary": "A soft plunge can collect the top-center lane that lights both 10X lanes, while a full plunge is not recommended."
+          },
+          {
+            "name": "Roto-target",
+            "summary": "The roto-target scores only 50 points regardless of the numbers shown in its windows."
+          },
+          {
+            "name": "PlayMates Ace cycle",
+            "summary": "Clear all four Ace drops and shoot the center target twice to earn Double Bonus. Then clear the Aces again and leave them down for the 50,000-point 10X side lanes."
+          },
+          {
+            "name": "Side targets and saucers",
+            "summary": "A saucer scores 200, and a lit numbered side target also scores 200 when its rebound is safe."
+          },
+          {
+            "name": "Upper exits",
+            "summary": "A straight exit from the upper playfield can reach a side drain, while a more angled exit is usually safer."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Soft-plunge the top-center lane to light both 10X lanes and do not use a full plunge."
+          },
+          {
+            "text": "Drop all four Ace targets, then shoot the center target to reset the bank and build bonus."
+          },
+          {
+            "text": "Clear the four Aces and shoot the center target a second time to earn Double Bonus."
+          },
+          {
+            "text": "Clear all four Aces again, but do not shoot the center target after this completion."
+          },
+          {
+            "text": "Send the ball to the upper playfield and collect either lit 10X side lane for 50,000."
+          },
+          {
+            "text": "Repeat the safer upper feed while avoiding the 50-point roto-target and watching for straight side-drain exits."
+          }
+        ],
+        "fallback": {
+          "title": "Safe lit side target",
+          "when": "Use this plan on PlayMates when upper exits are unsafe and one lit side target has a tested return.",
+          "steps": [
+            {
+              "text": "Identify one lit numbered side target."
+            },
+            {
+              "text": "Shoot it only from a controlled ball."
+            },
+            {
+              "text": "Prepare both flippers for the target rebound."
+            },
+            {
+              "text": "Stop after one unsafe rebound and return to top play."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Natural saucer collect",
+            "when": "Use this plan on PlayMates when the ball approaches a saucer during upper play.",
+            "steps": [
+              {
+                "text": "Do not replace a safe top shot with a direct saucer shot."
+              },
+              {
+                "text": "Guide a natural upper-playfield feed toward the saucer."
+              },
+              {
+                "text": "Collect 200 when the ball enters."
+              },
+              {
+                "text": "Read the saucer eject and return to top play."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Double Bonus and a 50,000-point 10X lane",
+          "steps": [
+            {
+              "text": "Soft-plunge the top-center lane to light both 10X side lanes."
+            },
+            {
+              "text": "Complete the Ace bank and center-target reset twice for Double Bonus."
+            },
+            {
+              "text": "Complete the Ace bank a third time and leave it down."
+            },
+            {
+              "text": "Return the ball up top and collect a lit 10X side lane for 50,000."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Soft center plunge",
+            "instruction": "Use less than full plunge force on PlayMates. Aim for the top-center lane that lights both 10X lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4j8k-MDlYy"
+          },
+          {
+            "name": "Exit-angle read",
+            "instruction": "Watch the line from the upper playfield. Nudge a straight exit before it enters a side-drain path.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/domino-playmates"
+          },
+          {
+            "name": "Tested side target",
+            "instruction": "Shoot a lit numbered target only after an earlier rebound reached a flipper or a return lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4j8k-MDlYy"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The PlayMates roto-target scores only 50 points even when another number appears in its window.",
+            "response": "Do not shoot it for points. Use the upper route or a safe lit numbered target.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4j8k-MDlYy"
+          },
+          {
+            "issue": "A straight upper-playfield exit can travel toward a side drain.",
+            "response": "Watch the exit angle and nudge early. Favor upper paths that send the ball downward at a stronger angle.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/domino-playmates"
+          },
+          {
+            "issue": "A numbered side target can rebound toward danger even when it is lit for 200 on PlayMates.",
+            "response": "Test one target at a time. Stop shooting any target that does not return safely.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4j8k-MDlYy"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "10X lanes",
+            "tone": "olive",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top-center lane",
+            "label": "PlayMates skill-shot lane",
+            "description": "Soft-plunge lane that lights both 10X side lanes on PlayMates.",
+            "precision": "unverified"
+          },
+          {
+            "term": "roto-target",
+            "label": "Center roto-target",
+            "description": "Center target that is worth only 50 on PlayMates regardless of its displayed number.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbered side targets",
+            "label": "Lit numbered side targets",
+            "description": "Numbered side standup that scores 200 when lit on PlayMates.",
+            "precision": "unverified"
+          },
+          {
+            "term": "saucer",
+            "label": "PlayMates saucer",
+            "description": "Saucer worth 200 on the PlayMates add-a-ball rules.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test the soft plunge, top-center lane, 10X lanes, roto-target, numbered side targets, saucer ejects, upper exits, and side-drain feeds."
+        ],
+        "simpleOverview": "Domino and PlayMates share a playfield but not the same scoring. On PlayMates, soft-plunge the top-center lane to light both 10X lanes, clear the four Aces and shoot the center target twice for Double Bonus, then clear the Aces again and collect a lit 10X side lane for 50,000.",
+        "overview": "Domino and PlayMates use different scoring on the same layout, so the installed edition determines the useful route. On PlayMates, soft-plunge the top-center lane, complete two Ace-bank and center-target cycles for Double Bonus, then clear the Aces again and leave them down. Return up top for a lit 50,000-point 10X side lane while avoiding the low-value roto-target.",
+        "machineSetup": [
+          "Confirm Domino, Grande Domino, or PlayMates, plus replay versus add-a-ball rules, ball count, tilt, and tournament scoring.",
+          "For Domino, read the installed instruction card because scoring can vary by edition.",
+          "Test the PlayMates soft plunge, top-center lane, 10X lanes, roto-target, side targets, saucer eject, upper exits, and side-drain feeds."
+        ],
+        "rulesNotes": [],
+        "simplePilotKey": "G4j8k-MDlYy"
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Soft-plunge the top-center lane to light both 10X side lanes, send the ball back to the upper playfield, and take a lit numbered side target only after its rebound proves safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Soft-plunge the top-center lane to light both 10X lanes and do not use a full plunge."
+          },
+          {
+            "text": "Drop all four Ace targets, then shoot the center target to reset the bank and build bonus."
+          },
+          {
+            "text": "Clear the four Aces and shoot the center target a second time to earn Double Bonus."
+          },
+          {
+            "text": "Clear all four Aces again, but do not shoot the center target after this completion."
+          },
+          {
+            "text": "Send the ball to the upper playfield and collect either lit 10X side lane for 50,000."
+          },
+          {
+            "text": "Repeat the safer upper feed while avoiding the 50-point roto-target and watching for straight side-drain exits."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Skill shot",
+            "summary": "A soft plunge can collect the top-center lane that lights both 10X lanes, while a full plunge is not recommended."
+          },
+          {
+            "name": "Roto-target",
+            "summary": "The roto-target scores only 50 points regardless of the numbers shown in its windows."
+          },
+          {
+            "name": "PlayMates Ace cycle",
+            "summary": "Clear all four Ace drops and shoot the center target twice to earn Double Bonus. Then clear the Aces again and leave them down for the 50,000-point 10X side lanes."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Safe lit side target",
+          "when": "Use this plan on PlayMates when upper exits are unsafe and one lit side target has a tested return.",
+          "steps": [
+            {
+              "text": "Identify one lit numbered side target."
+            },
+            {
+              "text": "Shoot it only from a controlled ball."
+            },
+            {
+              "text": "Prepare both flippers for the target rebound."
+            },
+            {
+              "text": "Stop after one unsafe rebound and return to top play."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A straight upper-playfield exit can travel toward a side drain.",
+          "text": "Watch the exit angle and nudge early. Favor upper paths that send the ball downward at a stronger angle."
+        }
+      }
+    }
+  ]
+}

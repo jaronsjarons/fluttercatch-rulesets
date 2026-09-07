@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "G5nzJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "The decisive route is Atom Smasher Multiball. Put five balls into the upper-left Atom Smasher; the fifth lock starts five-ball Multiball with a 12x playfield multiplier. Because the lock is physical and the lower eject can be weak, watch every serve and release instead of assuming a rejected ball was counted. Use the Particle Separator and Anti-Gravity ramps for safer scoring only when the Atom Smasher feed is not under control.",
+        "simpleOverview": "Put five balls into the upper-left Atom Smasher. The fifth lock starts five-ball Multiball with a 12x playfield multiplier, so keep the lock as the priority and watch each weak eject or release carefully.",
+        "summary": "Lock five balls in the upper-left Atom Smasher; the fifth lock starts five-ball Multiball and its 12x playfield multiplier. Watch each lock and release because weak ejects can make the mechanism hard to read.",
+        "quickInfo": [
+          {
+            "name": "Find the Atom Smasher",
+            "summary": "Use the large upper-left ball-holding mechanism."
+          },
+          {
+            "name": "Lock Five Balls",
+            "summary": "Each successful Atom Smasher entry advances the physical lock."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "The fifth Atom Smasher lock begins five-ball play."
+          },
+          {
+            "name": "Use 12x",
+            "summary": "Keep the ball count alive while the playfield multiplier is active."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the upper-left Atom Smasher and confirm that each ball is accepted into the physical lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Atom Smasher shot until five balls have been locked; the fifth lock starts five-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep shooting controllable switches and major features while the 12x playfield multiplier is active.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Track weak or partial Atom Smasher ejections by sight so a mechanical rejection is not mistaken for qualified progress.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use the two center ramps",
+            "when": "Use these when the Atom Smasher feed is rejecting or the upper-left kickers are too weak for reliable locks.",
+            "steps": [
+              {
+                "text": "Shoot the Particle Separator ramp across the upper playfield or the center Anti-Gravity ramp for safer controlled progress.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Return to the Atom Smasher route once the ball is settled and the lock mechanism is reading cleanly.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Protect the Multiball value",
+          "steps": [
+            {
+              "text": "Treat the fifth lock as the scoring threshold rather than spreading risk across every feature.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Once five-ball play begins, prioritize survival because every live switch benefits from the 12x multiplier.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count, Extra Ball and Special conversions, multiplayer lock sharing, and any competition setting that changes physical-lock behavior.",
+          "Test all five Atom Smasher captures and releases, the lower-ball and raise-ball ejects, Particle Separator and Anti-Gravity ramps, both target banks, trough, and all flippers."
+        ],
+        "termStyles": [
+          {
+            "label": "Atom Smasher",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Five-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "12x playfield",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Atom Smasher",
+            "label": "Atom Smasher",
+            "description": "The upper-left physical lock that starts five-ball Multiball on the fifth accepted ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Particle Separator",
+            "label": "Particle Separator ramp",
+            "description": "The ramp crossing the upper playfield above the central features.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Anti-Gravity ramp",
+            "label": "Anti-Gravity ramp",
+            "description": "The large translucent center ramp and return assembly.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak Atom Smasher eject or partial capture can make physical lock progress look different from the mechanism's actual state.",
+            "response": "Watch the ball enter, settle, and release; verify the lock count before committing another shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=K6Q1BLDNL_k"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Lock five balls in the upper-left Atom Smasher; the fifth lock starts five-ball Multiball and its 12x playfield multiplier. Watch each lock and release because weak ejects can make the mechanism hard to read.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the upper-left Atom Smasher and confirm that each ball is accepted into the physical lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Atom Smasher shot until five balls have been locked; the fifth lock starts five-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep shooting controllable switches and major features while the 12x playfield multiplier is active.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Track weak or partial Atom Smasher ejections by sight so a mechanical rejection is not mistaken for qualified progress.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Find the Atom Smasher",
+            "summary": "Use the large upper-left ball-holding mechanism."
+          },
+          {
+            "name": "Lock Five Balls",
+            "summary": "Each successful Atom Smasher entry advances the physical lock."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "The fifth Atom Smasher lock begins five-ball play."
+          }
+        ]
+      }
+    }
+  ]
+}

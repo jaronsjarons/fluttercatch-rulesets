@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "id": "Gj6DE",
+  "title": "The Walking Dead Remastered",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Genie Walking Dead Remastered strategy guide",
+      "url": "https://pinball-genie.com/machines/twd"
+    },
+    "supportingSources": [
+      {
+        "label": "Current 0.93 Remastered rulesheet",
+        "url": "https://tiltforums.com/t/the-walking-dead-remastered-rulesheet/10102"
+      },
+      {
+        "label": "Kineticist Walking Dead tournament guide",
+        "url": "https://www.kineticist.com/news/the-walking-dead-pinball-tutorial"
+      },
+      {
+        "label": "Pinball Rulesheets Remastered guide",
+        "url": "https://pinballrulesheets.com/stern/the-walking-dead-remastered-rulesheet"
+      },
+      {
+        "label": "August 2026 code 0.93 gameplay with Hadi Seyed-Ali",
+        "url": "https://www.youtube.com/watch?v=8jhRbcSQLho"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Collect all three Supplies and ready Blood Bath, Prison, Tower 2x, and a banked X. Start Riot before Multiball, add Prison and Blood Bath, then use the add-a-balls and multipliers on Riot awards and large Jackpots.",
+      "steps": [
+        {
+          "text": "Survive the first pop-bumper feed. Keep the ball out of the center. Once the ball reaches a flipper, trap it.",
+          "modeNotes": [
+            "Opening feed: The plunge enters the pop bumpers. The exit can reach either flipper or the center drain. Watch the ball, not the display."
+          ]
+        },
+        {
+          "text": "While the launch ball save runs, attack the left drop targets. When all three stand, watch the flashing Supply, hit any drop to lock the Supply you want, then knock down the other two drops to collect it.",
+          "modeNotes": [
+            "Supply selection: The flashing insert moves from First Aid to Weapons to Food and back. The first drop hit stops the cycle; completing the bank collects that Supply and resets the targets.",
+            "Avoid duplicates: Try not to lock a Supply that is already solid. If you lock a duplicate, the game makes you knock down all three drop targets again before you can make progress toward a missing Supply.",
+            "Dead Features: Every bank completion also advances qualification. The first qualification needs one completion and later qualifications need two. On Competition Mode, every qualification needs one completion.",
+            "Blood Bath: Collect First Aid, Weapons, and Food, then complete the bank once more to start the multiball."
+          ]
+        },
+        {
+          "text": "Repeat the drop-bank process until First Aid, Weapons, and Food are solid, but leave the next bank completion for Blood Bath. Complete both stab targets to light Tower 2x.",
+          "modeNotes": [
+            "Blood Bath qualification: Collect one of each Supply. The next completed drop bank starts Blood Bath.",
+            "Tower 2x: Completing both stab targets lights Tower. A strong Riot/Tower shot starts about 30 seconds of 2x playfield scoring."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Spell P-R-I-S-O-N, clear the lit Prison Yard shots, then leave the exposed Walker one hit from starting Prison Multiball.",
+          "modeNotes": [
+            "Prison preparation: The first start has five PRISON letters spotted. Hit Prison three times to begin Clear the Prison Yard. Clear the lit yard shots, then hit the exposed Walker to start three-ball Prison Multiball.",
+            "Prison has the highest base value of the three main multiballs and advances Siege. Well Walker is weak by itself, so save it for later."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit Riot/Tower shot to start Riot only after Prison, Blood Bath, and Tower are ready. Repeat the Riot/Tower shot while switch hits raise its value.",
+          "modeNotes": [
+            "Dead Feature: The first mode needs one drop-bank completion. Later modes need two. On Competition Mode, Dead Features cannot light during multiball, but a running mode continues through it.",
+            "Riot: Each Riot/Tower shot collects the current value. Switch hits and more Riot/Tower shots build that value. Complete the displayed Riot requirement to qualify its Multi-Kill."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the exposed Walker to start Prison Multiball. While Prison runs, complete the ready drop bank to start Blood Bath. Do not start Well Walker until Prison has ended.",
+          "modeNotes": [
+            "Blood Bath is the only multiball that can join another multiball. Prison and Well Walker cannot run together."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "While Blood Bath runs, clear the drop bank twice before the ball count falls. Each of the first two clears scores a jackpot and adds a ball.",
+          "modeNotes": [
+            "Blood Bath: Each switch starts at 15,000 and adds to the jackpot. A bank clear collects the jackpot and raises switch value by 2,500. A full Supply set scores a Super Jackpot and adds a ball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit Tower with a strong Riot/Tower shot to start 30 seconds of 2x playfield scoring. Use it on the stacked multiball.",
+          "modeNotes": [
+            "2x playfield: The stab targets light Tower. A strong Riot/Tower shot reaches Tower. More stab-target completions add 10 seconds before it starts or reset the timer while it runs."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Keep killing Walkers at white-crosshair shots without rolling through the lit X inlane. When Tower 2x and a large Prison or Blood Bath jackpot are ready, roll through the lit inlane, then make that jackpot shot.",
+          "modeNotes": [
+            "Shot X: Every two additional Walker kills raises the next-shot multiplier by 1x until it is used. Roll through the lit inlane to arm it. The next scored shot spends it."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Barn beginner opener",
+        "when": "Use this single-ball route while learning the multiball setup.",
+        "steps": [
+          {
+            "text": "Take the skill shot, let the pop-bumper feed reach a flipper, and settle the ball."
+          },
+          {
+            "text": "Complete the left drop bank to light Dead Features, then shoot the left orbit to start Barn.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the left orbit for Barn awards while collecting Walker kills and building the next-shot X.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Finish the stack with Well Walker",
+          "when": "Use the advanced stacking sequence after Prison ends while Blood Bath is still running.",
+          "steps": [
+            {
+              "text": "Advance Well Walker until its display shows one hit remaining, then stop.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start Riot, Prison, and Blood Bath in the main order.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "After Prison ends, if Blood Bath is still running, make the final Well Walker hit to start its multiball. Prison and Well Walker cannot run together.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use switch hits to light each Well Walker jackpot, then hit the toy to collect it.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "CDC single-ball score",
+          "when": "Use this plan when the left ramp repeats and a precise single-ball route is safer than the toys.",
+          "steps": [
+            {
+              "text": "Complete the drop bank and start CDC at the left ramp.",
+              "modeNotes": [
+                "CDC: Left-ramp shots add white arrows from left to right. Each white arrow scores 2.5 million and qualifies the two-shot left-ramp finish."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Loop the left ramp while it is controlled. Near the end of the timer, shoot one lit white arrow to enter CDC's finish.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp once for the current award and again for the final CDC total. Arm the saved X before the second left-ramp shot.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "CDC with Prison",
+          "when": "Use this when the left ramp and Prison are both controlled.",
+          "steps": [
+            {
+              "text": "Complete the left drop bank, then shoot the lit left ramp to start CDC. Repeat the left ramp to build its value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit Prison three times, clear the lit Prison Yard shots, then hit the exposed Walker to start Prison Multiball while CDC is still running.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete both stab targets and shoot Tower for 2x. Arm a saved inlane X and spend it on a large Prison jackpot or the CDC finish.",
+              "kinds": [
+                "mode",
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Horde, Siege, Crossbow Frenzy, Escape Terminus, and Last Man Standing",
+        "steps": [
+          {
+            "text": "Make the required shots in six different objectives to earn six Multi-Kills and light all six yellow inserts, then shoot Woodbury during single-ball play to start Horde.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Score 12 Prison jackpots across two Prison Multiballs to spell P-R-I-S-O-N twice, then make the next Prison shot to start Siege.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect Weapons during single-ball play, shoot the lit right ramp to load the Crossbow, and press the action button to fire. The third successful Crossbow shot starts Crossbow Frenzy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Play all five Dead Features, clear the left drop bank to relight them, then shoot any flashing Dead Feature shot to start Escape Terminus.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Kill 115 Walkers, then shoot Woodbury to start Last Man Standing.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Riot",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "CDC",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Blood Bath",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Prison Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Well Walker Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Horde",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Siege",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Crossbow Frenzy",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Escape Terminus",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Last Man Standing",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "2x playfield",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Shot X",
+          "tone": "olive",
+          "kind": "multiplier"
+        }
+      ],
+      "checkBeforePlay": [
+        "Competition Mode changes when Dead Features and Multi-Kills qualify."
+      ],
+      "cautions": [
+        {
+          "issue": "The pop-bumper exit can feed either flipper or the center drain.",
+          "response": "Watch the ball through the full bumper exit. Survive first. Once the feed reaches a flipper, trap the ball.",
+          "sourceUrl": "https://www.kineticist.com/news/the-walking-dead-pinball-tutorial"
+        },
+        {
+          "issue": "The left drop targets can reject the ball toward the center.",
+          "response": "Attack them during the launch ball save or multiball. Stop when the return on this copy is not controlled.",
+          "sourceUrl": "https://www.kineticist.com/news/the-walking-dead-pinball-tutorial"
+        },
+        {
+          "issue": "The Prison magnet and bash toy can return the ball straight down the middle.",
+          "response": "Test Prison during ball save. Use the CDC or Barn single-ball route when the Prison return is not predictable.",
+          "sourceUrl": "https://www.kineticist.com/news/the-walking-dead-pinball-tutorial"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Collect all three Supplies and ready Blood Bath, Prison, Tower 2x, and a banked X."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Make the required shots in six different objectives to earn six Multi-Kills and light all six yellow inserts, then shoot Woodbury during single-ball play to start Horde."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Barn beginner opener: Use this single-ball route while learning the multiball setup."
+        }
+      ],
+      "overview": "The Walking Dead Remastered tracks Walker kills and an inlane X through white-crosshair shots, Dead Features and Supplies through drop-bank clears, and Prison Multiball at the center Prison. Collect First Aid, Weapons, and Food to prepare Blood Bath; spell P-R-I-S-O-N, clear the Prison Yard, and leave the exposed Walker ready for Prison. Complete the drop bank to light Riot, then shoot the Riot/Tower shot to start it before adding Prison and Blood Bath. Complete both stab targets and shoot Tower for 2x, then arm the inlane X and spend it on a large Riot award or Multiball Jackpot.",
+      "simpleOverview": "In The Walking Dead Remastered, Walker-kill, Dead Feature, Supply, and Multiball progress advance separately. White-crosshair shots kill Walkers; every two kills light an inlane X for the next scored shot. Complete the left drop bank to light a Dead Feature and collect the Supply selected by the first drop hit. Start Barn at the left orbit, or collect First Aid, Weapons, and Food and complete the bank again for Blood Bath. Prison Multiball instead starts at the center Prison after spelling P-R-I-S-O-N, clearing the Prison Yard, and hitting the exposed Walker.",
+      "machineSetup": [
+        "Competition Mode changes when Dead Features and Multi-Kills qualify."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

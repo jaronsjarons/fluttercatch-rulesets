@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "id": "G4den",
+  "title": "Joust",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Williams Joust instruction manual",
+      "url": "https://online.fliphtml5.com/vrtyz/zamk/"
+    },
+    "supportingSources": [
+      {
+        "label": "Transcribed Joust rules demonstration",
+        "url": "https://www.youtube.com/watch?v=yxHHPVjFOs0&t=1591s"
+      },
+      {
+        "label": "PinWiki Joust operation summary",
+        "url": "https://pinwiki.com/wiki/index.php/Joust"
+      },
+      {
+        "label": "Williams Joust technical chart",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Williams_Joust_Tech_Chart.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Learn both center-gate returns and keep controllable balls on your side. Hit the disappearing targets to raise the spinner to 5,000, collect flashing Egg Bonus, and use the final 30-second Unlimited Balls period for continuous scoring.",
+      "quickInfo": [
+        {
+          "name": "Game format",
+          "summary": "Joust supports one-player or two-player play, and its configured normal-ball count determines when the timed finale begins."
+        },
+        {
+          "name": "Head-to-head play",
+          "summary": "Each player controls two flippers while spinner gates send balls between the two ends."
+        },
+        {
+          "name": "Untimed Unlimited Balls",
+          "summary": "A qualified disappearing-target lane can start a separate replacement-ball period under the installed rules."
+        },
+        {
+          "name": "Final Unlimited Balls",
+          "summary": "After normal play, each player receives a 30-second replacement-ball scoring finale."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Release the first ball when prompted. Watch both center spinner gates before committing to a shot."
+        },
+        {
+          "text": "Keep a controllable ball on your end while you learn which center shot transfers it to the other player."
+        },
+        {
+          "text": "Hit the first disappearing target to light the spinner at 1,000, then hit the second to raise it to 5,000."
+        },
+        {
+          "text": "Shoot the 5,000 spinner only when you accept the transfer to the other end."
+        },
+        {
+          "text": "Use numbered and Hunter rollovers, then collect a flashing Egg Bonus at the indicated left three-bank.",
+          "modeNotes": [
+            "Egg Bonus: Hunter and numbered rollover progress lights the bank collect shown by the local display and lamps."
+          ]
+        },
+        {
+          "text": "When a target lane shows a qualifying value, shoot it and confirm Untimed Unlimited Balls before changing routes.",
+          "modeNotes": [
+            "Untimed Unlimited Balls is separately qualified from the automatic 30-second finale. Its ending condition varies, so identify the installed behavior before changing routes."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When normal play ends, use the 30-second Unlimited Balls finale to keep every available ball moving.",
+          "modeNotes": [
+            "Unlimited Balls: Drained balls are replaced during the timed finale, which ends when its 30-second countdown expires."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During the finale, favor the 5,000 spinner and lit Egg Bonus or target-bank collects until time ends.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Local targets and Egg Bonus",
+        "when": "Recovery pivot: Use this when center-gate shots give the opponent too much control.",
+        "steps": [
+          {
+            "text": "Keep the ball on your end."
+          },
+          {
+            "text": "Work one local three-bank at a time."
+          },
+          {
+            "text": "Use Hunter rollovers when the feed is natural."
+          },
+          {
+            "text": "Wait for Collect Egg Bonus to flash, then take its indicated bank."
+          },
+          {
+            "text": "Avoid the spinner until its value is useful."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: High-value spinner attack",
+          "when": "When trailing, use this higher-ceiling route: use this when the two disappearing targets are safe.",
+          "steps": [
+            {
+              "text": "Hit both disappearing targets and confirm 5,000 at the spinner."
+            },
+            {
+              "text": "Shoot through the spinner gate."
+            },
+            {
+              "text": "Prepare for a ball returning through either center gate."
+            },
+            {
+              "text": "Repeat only while 5,000 remains lit."
+            }
+          ]
+        },
+        {
+          "title": "One-player practice",
+          "when": "Use this before a match to learn both ends of the machine.",
+          "steps": [
+            {
+              "text": "Start a one-player game and release the first ball when prompted."
+            },
+            {
+              "text": "Control all four flippers."
+            },
+            {
+              "text": "Learn both center-gate feeds and raise the spinner value on each end."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "The 30-second Unlimited Balls finale",
+        "steps": [
+          {
+            "text": "Complete normal play on your side."
+          },
+          {
+            "text": "Keep scoring while the other player finishes remaining normal balls."
+          },
+          {
+            "text": "Enter the final 30-second Unlimited Balls period.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the 5,000 spinner and lit bank or Egg Bonus awards."
+          },
+          {
+            "text": "Continue until the countdown ends."
+          },
+          {
+            "text": "Joust has no separate mini-wizard or wizard mode."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Unlimited Balls",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Untimed Unlimited Balls",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Egg Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Hunter",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Dual-flipper lane change",
+          "instruction": "Tap either flipper control only after you confirm which lamps move on the local game.",
+          "sourceUrl": "https://www.youtube.com/watch?v=yxHHPVjFOs0&t=1823s"
+        },
+        {
+          "name": "Spinner transfer",
+          "instruction": "Use a center spinner shot after its value is raised because the ball moves to the other end.",
+          "sourceUrl": "https://pinwiki.com/wiki/index.php/Joust"
+        },
+        {
+          "name": "Four-flipper practice",
+          "instruction": "Use one-player mode to operate all four flippers and learn both center feeds.",
+          "sourceUrl": "https://www.youtube.com/watch?v=yxHHPVjFOs0&t=1582s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A center spinner shot sends the ball to the opponent's end.",
+          "response": "Do not expect a normal return and watch for another ball coming through either gate.",
+          "sourceUrl": "https://pinwiki.com/wiki/index.php/Joust"
+        },
+        {
+          "issue": "Two players shoot at the same time.",
+          "response": "Watch both center gates while you control a local ball.",
+          "sourceUrl": "https://pinwiki.com/wiki/index.php/Joust"
+        },
+        {
+          "issue": "A disappearing target can reset around a ball.",
+          "response": "Stop play and call the tournament official if the ball remains stuck.",
+          "sourceUrl": "https://www.youtube.com/watch?v=yxHHPVjFOs0&t=2242s"
+        }
+      ],
+      "simpleOverview": "Joust sends balls between two players through center spinner gates, then ends with a 30-second Unlimited Balls period. Keep a controllable ball on your side, raise the spinner to 5,000, and collect flashing Egg Bonus. During the finale, keep every available ball moving through the best lit awards.",
+      "overview": "Joust sends balls between two players through center spinner gates, then ends with a 30-second Unlimited Balls period. Learn both spinner returns before sending a ball away, raise the spinner to 5,000, and collect the indicated bank when Egg Bonus flashes. Use the final 30 seconds for continuous spinner and bank scoring.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

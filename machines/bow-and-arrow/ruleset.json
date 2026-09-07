@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoqq",
+  "title": "Bow and Arrow",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Bow and Arrow",
+      "url": "https://rules.silverballmania.com/rules/GRoqq-MJr9K"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Bow and Arrow machine guide",
+        "url": "https://www.kineticist.com/games/pinball/bow-and-arrow"
+      },
+      {
+        "label": "Tournament mini-guide by David Lee",
+        "url": "https://www.pinballformortals.com/2019/05/14/bow-and-arrow-pinball-mini-guide/"
+      },
+      {
+        "label": "Bally Bow and Arrow service manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Bow%20And%20Arrow%20Service%20Manual.pdf"
+      },
+      {
+        "label": "Derek Thomson at INDISC 2019 Classic II — Tiebreaker for 1st",
+        "url": "https://pinballvideos.com/v/2756/3786"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build at least 7,000 bonus with the spinners, then repeat the upper-left saucer from the right flipper.",
+      "steps": [
+        {
+          "text": "On the plunge, try to enter the top saucer when 3,000 is lit.",
+          "modeNotes": [
+            "Top saucer at 3,000: Scores 3,000 and opens the return gate."
+          ]
+        },
+        {
+          "text": "Backhand either spinner to build bonus. Use the safer spinner on this machine."
+        },
+        {
+          "text": "When bonus reaches at least 7,000, trap on the right flipper."
+        },
+        {
+          "text": "Shoot the upper-left saucer to collect the full bonus.",
+          "modeNotes": [
+            "Bonus saucer: Collects the current bonus without resetting it."
+          ]
+        },
+        {
+          "text": "Control the saucer kickout on the right flipper. Repeat the saucer."
+        }
+      ],
+      "fallback": {
+        "title": "Spinners",
+        "when": "Use this plan when the bonus saucer is not reliable.",
+        "steps": [
+          {
+            "text": "Backhand the safest spinner."
+          },
+          {
+            "text": "Use the inlanes and top playfield to add bonus."
+          },
+          {
+            "text": "Protect the ball and collect the bonus at the end of the ball."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Finish A-B-C-D",
+          "when": "Use this plan only after three of the four letters are already complete.",
+          "steps": [
+            {
+              "text": "Hit the last needed standup."
+            },
+            {
+              "text": "Protect the ball to collect double end-of-ball bonus."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "10,000 bonus",
+        "steps": [
+          {
+            "text": "Backhand either spinner until bonus reaches 10,000."
+          },
+          {
+            "text": "Repeat the bonus saucer without resetting the value."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Shoot either spinner from the same-side flipper. Choose the backhand that reaches the top with the safest return.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bow-and-arrow",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "One-time shot",
+          "instruction": "One-time the upper-left saucer kickout toward the saucer only when the feed is repeatable.",
+          "techniqueSlug": "one-time-shot",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bow-and-arrow"
+        },
+        {
+          "name": "Live catch",
+          "instruction": "Live catch the upper-left saucer kickout on the right flipper only when the feed consistently reaches it.",
+          "techniqueSlug": "live-catch",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bow-and-arrow"
+        },
+        {
+          "name": "Gate nudge",
+          "instruction": "When a loose ball is already beside the open gate, nudge it through. Do not shoot the gate directly from a flipper.",
+          "sourceUrl": "https://www.pinballformortals.com/2019/05/14/bow-and-arrow-pinball-mini-guide/"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The A-B-C-D standups can give dangerous rebounds.",
+          "response": "Do not shoot them as a main plan. Finish the bank only when one letter remains.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bow-and-arrow"
+        },
+        {
+          "issue": "The upper-left saucer kickout can remove control.",
+          "response": "Watch the first kickout. Use the tested One-time shot or Live catch; abandon repeat saucer play if neither receives it safely.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bow-and-arrow"
+        },
+        {
+          "issue": "A ball through the open return gate can become a house ball after the next plunge.",
+          "response": "Do not shoot at the gate from a flipper. Nudge through it only when the ball is already near it.",
+          "sourceUrl": "https://www.pinballformortals.com/2019/05/14/bow-and-arrow-pinball-mini-guide/"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the four-player 1975 Bally Bow and Arrow, ball count, tilt, replay, Extra Ball and Special conversion, and whether score or credits decide the event.",
+        "Confirm the 10,000 bonus maximum, that the upper-left saucer collects without resetting bonus, and that A-B-C-D doubles only the end-of-ball collect.",
+        "Test both spinner feeds, upper-left saucer kickout, top-center saucer timing, return gate and house-ball procedure, standup rebounds, and top and outlane feeds."
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Build at least 7,000 bonus with the spinners."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Backhand either spinner until bonus reaches 10,000."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Spinners: Use this plan when the bonus saucer is not reliable."
+        }
+      ],
+      "simpleOverview": "In Bow and Arrow, shoot either spinner to build base bonus, then shoot the upper-left saucer from the right flipper once the bonus reaches at least 7,000. The saucer collects the full bonus without resetting it, so control the kickout and repeat the saucer.",
+      "overview": "In Bow and Arrow, spinner shots build base bonus and the upper-left saucer collects the current value without resetting it. Build at least 7,000 through the safer spinner, trap on the right flipper, then repeat the saucer while its kickout remains controlled. Finish A-B-C-D for Double Bonus only when three letters are already complete.",
+      "machineSetup": [
+        "Confirm the four-player 1975 Bally Bow and Arrow, ball count, tilt, replay, Extra Ball and Special conversion, and whether score or credits decide the event.",
+        "Confirm the 10,000 bonus maximum, that the upper-left saucer collects without resetting bonus, and that A-B-C-D doubles only the end-of-ball collect.",
+        "Test both spinner feeds, upper-left saucer kickout, top-center saucer timing, return gate and house-ball procedure, standup rebounds, and top and outlane feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

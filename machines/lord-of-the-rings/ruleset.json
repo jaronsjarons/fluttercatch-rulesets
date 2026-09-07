@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "GrqZX",
+  "title": "Lord of the Rings",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "The Lord of the Rings complete rulesheet",
+      "url": "https://www.pinball.org/rules/lordoftherings.txt"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA tutorial",
+        "url": "https://pinballvideos.com/v/319"
+      },
+      {
+        "label": "Current Stern code index — CPU and display 10.0",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Prepare Two Towers Multiball and a useful Ring mode, start the mode before the third lock, and add Gollum Multiball or 2x Scoring only when safely ready.",
+      "quickInfo": [
+        {
+          "name": "Two Towers Multiball",
+          "summary": "Spell KEEP, lock three balls on the Sword ramp, then build a seven-Jackpot assault and collect Super Jackpots."
+        },
+        {
+          "name": "Ring modes",
+          "summary": "Collect three Elf rings, select a mode at the center Ring, and start it before a movie multiball."
+        },
+        {
+          "name": "Gollum Multiball",
+          "summary": "Collect nine Rings of Men and start at Gollum's Cave, where Smeagol phases double scoring and Gollum phases halve it."
+        },
+        {
+          "name": "Palantir",
+          "summary": "Collect the lit Palantir during a movie multiball for a context-dependent award that usually adds a ball."
+        },
+        {
+          "name": "Destroy the Ring",
+          "summary": "Play all three movie multiballs, then complete the Ring-shot sequence and knock the held ball through the Ring."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use flipper lane change to spell KEEP, and make safe right-ramp shots to prepare the three Sword locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect three Elf rings. Select Attack of Shelob or War of the Ents when its required shots are reliable.",
+          "modeNotes": [
+            "Ring mode: Only one Ring mode can run. A mode cannot start during a movie multiball, so begin it before the final lock.",
+            "Attack of Shelob: Alternate the lit left and right shot groups.",
+            "War of the Ents: Shoot Orthanc six times. The shots also help Return of the King soul progress."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Start the Ring mode, then make the third Sword lock to start Two Towers Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Two Towers Multiball, make consecutive lit Jackpots quickly. Advance the assault from one through seven Jackpots.",
+          "modeNotes": [
+            "Two Towers Multiball: Consecutive Jackpots raise the assault count. More balls in play increase the Jackpot multiplier.",
+            "Super Jackpot phase: Complete the assault, then collect the Ring Super Jackpot and the paired VUK, ramp, and orbit Super Jackpots."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect the first Super Jackpot to complete the multiball objective and light an Elf Gift.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When nine Rings of Men or Gift 2x Scoring are already close, start them before the stack. Do not risk the main start solely to force them.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Persistent Fellowship route",
+        "when": "Use this when the center Ring, Palantir, or final Sword lock has a dangerous return.",
+        "steps": [
+          {
+            "text": "Collect Fellowship members from their lit shots."
+          },
+          {
+            "text": "Start Fellowship Multiball at Barad-Dur after all nine members are collected.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Alternate Balrog hits with the lit ramps. Progress survives between starts.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to Two Towers only when its qualification shots are under control.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Return of the King progress",
+          "when": "Use this when shots into Paths of the Dead are safer than the Sword ramp.",
+          "steps": [
+            {
+              "text": "Send the ball into the Orthanc VUK during regular play so it travels down Paths of the Dead and collects souls. Repeat until the display reaches 5,000 souls."
+            },
+            {
+              "text": "Start Return of the King at the lit Orthanc, Barad-Dur, or Gollum shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the four Ring-related Jackpot stages. The progress carries to later starts.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Destroy the Ring and Valinor",
+        "steps": [
+          {
+            "text": "Complete Fellowship, Two Towers, and Return of the King Multiballs.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete Destroy the Ring after all three movie multiballs are played."
+          },
+          {
+            "text": "Complete all six Ring modes and There and Back Again.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect all six Elf Gifts. Complete every requirement to light Valinor."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Two Towers Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Fellowship Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Gollum Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Ring modes",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "2x Scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Gollum's Cave award",
+          "instruction": "Make the qualifying flipper route into the VUK. A ball that reaches the VUK from the jets does not collect the lit Gollum award.",
+          "sourceUrl": "https://www.pinball.org/rules/lordoftherings.txt"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Palantir target can rebound toward the center drain.",
+          "response": "Take it under multiball protection or from a controlled feed. Do not force a pseudo-random award from a bad cradle.",
+          "sourceUrl": "https://www.pinball.org/rules/lordoftherings.txt"
+        },
+        {
+          "issue": "A right-ramp or Gollum-wireform ball can release a physically locked ball without warning.",
+          "response": "Be ready for a second ball whenever you shoot near the lock assembly.",
+          "sourceUrl": "https://www.pinball.org/rules/lordoftherings.txt"
+        },
+        {
+          "issue": "The inner orbit returns quickly, and weak Ring shots can fall into the ORC lanes or Barad-Dur.",
+          "response": "Test these feeds early. Use the safest ready Ring mode instead of forcing the nominal best one.",
+          "sourceUrl": "https://www.pinball.org/rules/lordoftherings.txt"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm CPU and display 10.0; behavior from 5.01 and 8.0 can differ.",
+        "Confirm Cave Troll, lock difficulty, ball saves, Ring-mode values, Extra Ball, Palantir, and one-ball Destroy the Ring settings.",
+        "Test Sword ramp, Ring, Gollum, Palantir, both towers, VUKs, Paths of the Dead, inner orbit, magnets, and lock releases."
+      ],
+      "simpleOverview": "In The Lord of the Rings, three Elf rings start a Ring mode, while spelling K-E-E-P and taking three Sword-ramp locks starts Two Towers Multiball. Start the Ring mode before the third lock when both are ready so the mode continues during Multiball.",
+      "overview": "The Lord of the Rings lets a Ring mode continue into a prepared movie Multiball. Collect three Elf rings and choose a controllable mode, prepare K-E-E-P and two Sword-ramp locks, then start the mode before taking the third lock. Add Gollum or 2x only when ready without delaying the main stack.",
+      "machineSetup": [
+        "Confirm CPU and display 10.0; behavior from 5.01 and 8.0 can differ.",
+        "Confirm Cave Troll, lock difficulty, ball saves, Ring-mode values, Extra Ball, Palantir, and one-ball Destroy the Ring settings.",
+        "Test Sword ramp, Ring, Gollum, Palantir, both towers, VUKs, Paths of the Dead, inner orbit, magnets, and lock releases."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

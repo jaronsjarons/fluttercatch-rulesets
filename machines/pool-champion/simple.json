@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jex",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Pool Champion uses the upper B-A-L-L targets and top hole for its Red Special route. Complete B-A-L-L, then shoot the top hole to open the upper gate and score the 8 Ball. Each lit 8 BALL lane entry spots a B-A-L-L letter; completing the word lights Red Special. The three center targets light SHOOT NOW, and completing that sequence advances Orange Special. The side Ball Return lane advances its lamps until a lit pass returns the ball, while upper buttons and targets advance the bonus multiplier.",
+        "simpleOverview": "Complete the upper B-A-L-L targets, then shoot the top hole to open the gate and score the 8 Ball. Use the lit 8 BALL lane to spot B-A-L-L letters toward Red Special. Complete the three center targets for SHOOT NOW and Orange Special. Build the side Ball Return lane for a saved ball.",
+        "summary": "Finish B-A-L-L before taking the top hole, then use the lit 8 BALL lane to move toward Red Special. Take SHOOT NOW from the center targets when ready, or build Ball Return when the side lane is the safer shot.",
+        "quickInfo": [
+          {
+            "name": "Open the Upper Gate",
+            "summary": "Complete B-A-L-L, then shoot the top hole."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Use the lit 8 BALL lane to spot B-A-L-L letters."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Complete the three center targets through SHOOT NOW."
+          },
+          {
+            "name": "Light Ball Return",
+            "summary": "Repeat the side return lane until its collect is lit."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the upper B-A-L-L targets, then shoot the top hole to open the upper gate and score the 8 Ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the lit 8 BALL lane to spot a B-A-L-L letter; complete the word to light Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Knock down the three center targets to light SHOOT NOW, then complete the lit sequence to advance Orange Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the upper buttons and fixed targets to advance the bonus multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Ball Return",
+            "when": "Use this when the side return lane is safer than the upper target routes.",
+            "steps": [
+              {
+                "text": "Repeat the Ball Return lane to advance its three lamps.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Enter the lane while Ball Return is lit to send the ball back to the shooter lane.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish B-A-L-L",
+          "steps": [
+            {
+              "text": "Use the target bank and lit 8 BALL lane to fill missing letters.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Convert the completed word at Red Special before rebuilding the upper route.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check the Red and Orange Special difficulty settings, right-kickback lane requirement, ball count, and configured awards.",
+          "Test B-A-L-L targets, top hole and gate, 8 BALL lane, three center targets, SHOOT NOW lamps, Ball Return lane, upper buttons, and multiplier lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "B-A-L-L",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Red Special",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Orange Special",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Ball Return",
+            "tone": "forest",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "B-A-L-L targets",
+            "label": "B-A-L-L targets",
+            "description": "Upper targets that prepare the top-hole and Red Special routes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top hole",
+            "label": "Top hole",
+            "description": "Upper hole that opens the gate and scores the 8 Ball after B-A-L-L.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center targets",
+            "label": "Center targets",
+            "description": "Three-target bank for SHOOT NOW and Orange Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Ball Return lane",
+            "label": "Ball Return lane",
+            "description": "Side lane that advances and collects the ball-return sequence.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Special and Ball Return thresholds are operator-adjustable.",
+            "response": "Use the lane and sequence lamps instead of assuming a fixed number of passes.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen2/poolchampion/settings.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Finish B-A-L-L before taking the top hole, then use the lit 8 BALL lane to move toward Red Special. Take SHOOT NOW from the center targets when ready, or build Ball Return when the side lane is the safer shot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the upper B-A-L-L targets, then shoot the top hole to open the upper gate and score the 8 Ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the lit 8 BALL lane to spot a B-A-L-L letter; complete the word to light Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Knock down the three center targets to light SHOOT NOW, then complete the lit sequence to advance Orange Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the upper buttons and fixed targets to advance the bonus multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Open the Upper Gate",
+            "summary": "Complete B-A-L-L, then shoot the top hole."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Use the lit 8 BALL lane to spot B-A-L-L letters."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Complete the three center targets through SHOOT NOW."
+          }
+        ]
+      }
+    }
+  ]
+}

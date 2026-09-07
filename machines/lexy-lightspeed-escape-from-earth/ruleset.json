@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "G4doo",
+  "title": "Lexy Lightspeed - Escape From Earth",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kevin Manne's Buffalo Pinball Lexy Lightspeed walkthrough",
+      "url": "https://www.youtube.com/watch?v=66WGw-q_3Yg"
+    },
+    "supportingSources": [
+      {
+        "label": "Lexy Lightspeed Tilt rulesheet",
+        "url": "https://tiltforums.com/t/lexy-lightspeed-escape-from-earth/2848"
+      },
+      {
+        "label": "Official Lexy Lightspeed game page",
+        "url": "https://www.multimorphic.com/store/p3-game-kits/multimorphic-game-kits/lexy-lightspeed-escape-from-earth/"
+      },
+      {
+        "label": "Current pinball code list",
+        "url": "https://pinballrulesheets.com/other/list-of-games-with-their-current-code-number-wiki.html"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete Barroom Brawl for Seeing Double, then start two-ball Secret Agent Multiball and repeat either ramp for doubled Jackpots.",
+      "quickInfo": [
+        {
+          "name": "Covered build",
+          "summary": "This route uses Escape From Earth app v2.1.0.0. Secret Agent Showdown v2.1.1.0 is a different game package."
+        },
+        {
+          "name": "Seeing Double",
+          "summary": "Complete Barroom Brawl's mugs, fill, and chug sequence. Seeing Double then doubles Secret Agent Jackpots for the rest of the game."
+        },
+        {
+          "name": "Secret Agent Multiball",
+          "summary": "Complete both LITE LOCK target groups, lock qualified balls in the saucer, then shoot the saucer while it is not lit for Lock. Secret Agent can start with two through eight balls."
+        },
+        {
+          "name": "Secret Agent Super Jackpot",
+          "summary": "Either ramp scores Jackpots and collects Agents. The 25th Jackpot awards the Super Jackpot and a wizard item."
+        },
+        {
+          "name": "Feature exclusivity",
+          "summary": "Secret Agent and Lights Out cannot start while a story mode or another multiball is running."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the yellow buttons to select Barroom Brawl, then shoot the right scoop to start it.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit mugs, fill the mug, and complete the chug sequence.",
+          "modeNotes": [
+            "Completing Barroom Brawl activates Seeing Double for the rest of the game. Finish the mode before starting Secret Agent Multiball."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete both LITE LOCK target groups, then shoot the saucer once to lock one ball and ready the two-ball start."
+        },
+        {
+          "text": "Shoot the saucer while it is not lit for Lock to start two-ball Secret Agent Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Repeat either ramp for Secret Agent Jackpots.",
+          "modeNotes": [
+            "Because Seeing Double is active, each Jackpot is doubled. Each Jackpot also collects an Agent."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If the multiball lasts for 25 Jackpots, collect the Super Jackpot and its wizard item.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Secret Agent Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Barroom Brawl",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Seeing Double",
+          "tone": "indigo"
+        },
+        {
+          "label": "wizard item",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Mode selection",
+          "instruction": "Use the yellow flipper buttons before the scoop shot to select the next story mode.",
+          "sourceUrl": "https://tiltforums.com/t/lexy-lightspeed-escape-from-earth/2848"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Secret Agent qualification becomes harder after each start.",
+          "response": "Read the current LITE LOCK state; later starts do not necessarily reuse the first-start requirements.",
+          "sourceUrl": "https://tiltforums.com/t/lexy-lightspeed-escape-from-earth/2848"
+        },
+        {
+          "issue": "Story modes and the main qualification multiballs cannot run together.",
+          "response": "Finish Barroom Brawl first, then start Secret Agent after the mode ends.",
+          "sourceUrl": "https://tiltforums.com/t/lexy-lightspeed-escape-from-earth/2848"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check Secret Agent lock difficulty, mode difficulty, Extra Ball, wizard-item, and competition settings.",
+        "Test both LITE LOCK groups, the saucer and physical lock, both ramps, the right scoop, yellow buttons, and their feeds."
+      ],
+      "simpleOverview": "Finish Barroom Brawl before Secret Agent Multiball because Seeing Double doubles its ramp Jackpots. Select Barroom Brawl with the yellow flipper buttons, start it at the right scoop, and complete its mug-and-chug sequence. Then complete both LITE LOCK groups, lock one ball at the saucer, and shoot the saucer while Lock is unlit to start Multiball.",
+      "overview": "In Lexy Lightspeed - Escape From Earth, completing Barroom Brawl awards Seeing Double, which doubles the ramp Jackpots in Secret Agent Multiball. Select Barroom Brawl with the yellow flipper buttons, start it at the right scoop, and complete its mug-and-chug sequence. Then complete both LITE LOCK groups, lock one ball at the saucer, and shoot the saucer while Lock is unlit to start Multiball.",
+      "machineSetup": [
+        "Check Secret Agent lock difficulty, mode difficulty, Extra Ball, wizard-item, and competition settings.",
+        "Test both LITE LOCK groups, the saucer and physical lock, both ramps, the right scoop, yellow buttons, and their feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

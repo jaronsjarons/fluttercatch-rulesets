@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "GRbX3",
+  "title": "Hardbody",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bally Hardbody operations manual",
+      "url": "https://www.pinrepair.com/6803/manuals/6803-hardbody.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Hardbody instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Bally/Bally_Hardbody_instruction_cards.zip"
+      },
+      {
+        "label": "Hardbody exact-machine tutorial",
+        "url": "https://www.youtube.com/watch?v=YevPBejGc8g"
+      },
+      {
+        "label": "Hardbody machine overview",
+        "url": "https://www.kineticist.com/games/pinball/hardbody"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "A completed Circuit qualifies Hardbody's center shot, which raises both ramps and exposes Power Rep. Build a Circuit by completing Stations 1 through 4, or by completing any one station three times. Make the qualified center shot, then collect the escalating 50,000, 100,000, 200,000, and 400,000-plus-extra-ball sequence.",
+      "simpleOverview": "Completing Stations 1 through 4, or repeating one station three times, finishes a Circuit. Shoot the qualified center shot to raise the ramps, then hit the exposed Power Rep target for its four escalating awards.",
+      "summary": "Complete all four Stations or one Station three times, shoot the qualified center shot to raise the ramps, then collect the escalating Power Rep awards.",
+      "quickInfo": [
+        {
+          "name": "Build a Circuit",
+          "summary": "Complete Stations 1 through 4, or any one Station three times."
+        },
+        {
+          "name": "Raise Ramps",
+          "summary": "Shoot the center shot after the Circuit is complete."
+        },
+        {
+          "name": "Collect Power Rep",
+          "summary": "Hit the exposed center target for 50K, 100K, 200K, then 400K and Extra Ball."
+        },
+        {
+          "name": "Use Flex Save",
+          "summary": "Press the lower flipper buttons to operate the two save lanes."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Advance Station 1 with the Blaster loop, then collect its award at the three orange bullseyes.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete Stations 1 through 4, or repeat any one Station three times, to finish a Circuit.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the qualified center shot to raise the ramps and expose Power Rep.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit Power Rep repeatedly for 50K, 100K, 200K, then 400K and Extra Ball on default settings.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Use the playfield doubler",
+          "when": "Use this when Muscle Power is lit and the target return is acceptable.",
+          "steps": [
+            {
+              "text": "Hit the lit Muscle Power target to double playfield values.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use the doubled window on Circuit, Station, and Power Rep progress instead of taking low-value filler shots.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Protect the workout",
+        "steps": [
+          {
+            "text": "Use the lower flipper buttons to operate Flex Save lanes and retain automatic-flip opportunities.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Advance Bonus X through the top inline drops; collect the lit extra-ball award only if event settings allow it.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm extra-ball conversion, Station requirements, Power Rep values, and Flex Save behavior.",
+        "Test both Flex Save buttons and lanes, all four Stations, Blaster loop, orange bullseyes, center lift, both ramps, Power Rep, Muscle Power, and inline drops."
+      ],
+      "termStyles": [
+        {
+          "label": "Circuit",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Power Rep",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "Muscle Power",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

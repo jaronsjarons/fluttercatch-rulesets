@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "GrE7e",
+  "title": "Whirlwind",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "PAPA Whirlwind tutorial",
+      "url": "https://www.youtube.com/watch?v=kNOWXKKNqRw"
+    },
+    "supportingSources": [
+      {
+        "label": "Whirlwind full rulesheet",
+        "url": "https://pinball.org/rules/whirlwind.html"
+      },
+      {
+        "label": "Williams Whirlwind operator handbook",
+        "url": "https://wwyss.ch/Arcades_Manuals/Manuals/Pinball/Whirlwind_Manual.pdf"
+      },
+      {
+        "label": "Eric Stone at IFPA 17 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/4105/24268"
+      },
+      {
+        "label": "Pinballso Whirlwind tournament tutorial",
+        "url": "https://www.youtube.com/watch?v=mDLR4V_FuzY"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the flashing compass directions, lock two balls at the right ramp, then shoot the left 3-Toll ramp to start Multiball and repeat it for Million Plus.",
+      "steps": [
+        {
+          "text": "Use a full plunge to the upper loop or a very short plunge to the flippers. Test the side ramp, upper loop, and Cellar kickout."
+        },
+        {
+          "text": "Complete the flashing compass directions to light Lock.",
+          "modeNotes": [
+            "Direction: Complete both same-color shots. The side ramp spots one needed direction target.",
+            "The first multiball needs two directions for each lock. Later multiballs need more directions and force them in order."
+          ]
+        },
+        {
+          "text": "Shoot the right ramp when Lock is lit. Repeat the direction sequence and lock a second ball."
+        },
+        {
+          "text": "After two locks, shoot the side ramp to start three-ball multiball.",
+          "modeNotes": [
+            "Standard multiball: The first multiball can also start at the saucer under the right ramp on common settings. The side ramp always starts it."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During multiball, repeat the side ramp. The first Million Plus is 2,000,000. Each collect adds 1,000,000, usually to 10,000,000.",
+          "modeNotes": [
+            "Million Plus: The value stays raised for the current multiball. The feature ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use the saucer under the right ramp to feed the upper-right flipper. Shoot the side ramp again."
+        },
+        {
+          "text": "If multiball ends before one Million Plus, shoot either Cellar within about 15 seconds.",
+          "modeNotes": [
+            "Cellar Multiball: This is a two-ball restart. The side ramp uses the standard Million-Plus rules."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Quick Multiball",
+        "when": "Use this plan when regular lock progress is difficult and Quick Multiball is lit.",
+        "steps": [
+          {
+            "text": "Make consecutive right-ramp shots to raise the solo drop value to Light Quick Multiball. The value falls about every five seconds."
+          },
+          {
+            "text": "Hit the solo drop target, or collect Light Quick Multiball from the Super Cellar."
+          },
+          {
+            "text": "Shoot the saucer under the raised right ramp to start two-ball Quick Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the side ramp for unlimited 1,000,000 shots until one ball drains.",
+            "modeNotes": [
+              "Quick Multiball: It has no rising Million-Plus value. It ends when the game returns to one ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Stack both multiballs",
+          "when": "Use this plan when two balls are locked and Quick Multiball is lit.",
+          "steps": [
+            {
+              "text": "Do not start standard multiball at the side ramp."
+            },
+            {
+              "text": "Shoot the saucer under the right ramp to start both multiballs together.",
+              "modeNotes": [
+                "The stack adds Quick Multiball's 1,000,000 to every rising Million Plus instead of leaving Quick Multiball as a flat side-ramp award.",
+                "An unstacked Quick Multiball ended within seconds in the 2022 IFPA 17 final. With both locks ready, use the stack."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the side ramp. Million Plus starts at 3,000,000 and can reach 11,000,000 on common settings.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Super Cellar Million",
+          "when": "Use this plan when the side ramp is repeatable but lock progress is not safe.",
+          "steps": [
+            {
+              "text": "Shoot the side ramp to keep the Super Cellar lit."
+            },
+            {
+              "text": "Use the right spinner to move the backbox award to Light Million."
+            },
+            {
+              "text": "Shoot the yellow Super Cellar scoop. Then shoot the side ramp for 1,000,000."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Mega Door Bonus",
+        "steps": [
+          {
+            "text": "Shoot the left 3-Toll ramp to keep the yellow Super Cellar lit."
+          },
+          {
+            "text": "Use the right spinner to select an uncollected backbox award, then shoot the yellow Super Cellar scoop. Repeat until all seven awards are collected."
+          },
+          {
+            "text": "When all seven awards flash, shoot the yellow Super Cellar scoop again to start Mega Door Bonus."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Under-ramp saucer feed",
+          "instruction": "Shoot the saucer under the raised right ramp. Let its kickout feed the upper-right flipper, then shoot the side ramp.",
+          "sourceUrl": "https://www.pinball.org/rules/whirlwind.html"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand a Cellar scoop from the same-side flipper when the direct forehand path is not controlled.",
+          "sourceUrl": "https://www.youtube.com/watch?v=kNOWXKKNqRw&t=522s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Post transfer",
+          "instruction": "Use the center post to move a controlled ball between flippers before a side-ramp or lock shot.",
+          "sourceUrl": "https://www.youtube.com/watch?v=kNOWXKKNqRw&t=182s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The FEEL THE POWER skill shot can rebound directly to the center drain. Whirlwind has no normal ball save.",
+          "response": "Use the full upper-loop plunge or the very short unvalidated plunge instead.",
+          "sourceUrl": "https://www.pinball.org/rules/whirlwind.html"
+        },
+        {
+          "issue": "The yellow NW target beside the Super Cellar and the lower-right orange SE target are dangerous direct shots.",
+          "response": "Use side-ramp shots to spot these direction targets when direct rebounds are not safe.",
+          "sourceUrl": "https://www.youtube.com/watch?v=kNOWXKKNqRw&t=231s"
+        },
+        {
+          "issue": "The three spinning discs activate when Lock is lit and during multiball. They can change a rolling ball's direction.",
+          "response": "Do not predict a slow roll across an active disc. Regain control after the ball leaves the disc area.",
+          "sourceUrl": "https://www.pinball.org/rules/whirlwind.html"
+        },
+        {
+          "issue": "A Cellar scoop ejects from the adjacent hole and can return too fast for a dead catch.",
+          "response": "Test the kickout early. Use the demonstrated live catch only when this copy sends the ball to the flipper face.",
+          "sourceUrl": "https://www.youtube.com/watch?v=kNOWXKKNqRw&t=1587s"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Million Plus",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Complete the compass directions."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect all seven Super Cellar awards."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Quick Multiball: Use this plan when regular lock progress is difficult and Quick Multiball is lit."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams Whirlwind code, ball count, lock rules, and award conversions.",
+        "Test both ramps, locks, Cellars, compass switches, and kickouts."
+      ],
+      "overview": "In Whirlwind, complete the flashing compass directions to light two right-ramp locks, then shoot the left 3-Toll ramp to start Multiball. Repeat 3-Toll for rising Million Plus awards. If Quick Multiball is lit while two balls are locked, shoot the saucer under the right ramp to start both Multiballs together and add 1,000,000 to each Million Plus.",
+      "simpleOverview": "In Whirlwind, complete the flashing compass directions to light two right-ramp locks, then shoot the left 3-Toll ramp to start Multiball. Repeat 3-Toll for rising Million Plus awards. When the lock route is difficult, qualify Quick Multiball and start it at the saucer under the right ramp.",
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the Bulls&Balls Okayest Weekend 2022, Frank Goeltl and the other finalists built compass and locks, started Multiball under the ramp, and repeatedly shot Million Plus."
+        ]
+      },
+      "machineSetup": [
+        "Confirm Williams Whirlwind code, ball count, lock rules, and award conversions.",
+        "Test both ramps, locks, Cellars, compass switches, and kickouts."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

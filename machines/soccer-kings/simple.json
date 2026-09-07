@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "GR0VJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Soccer Kings starts its upper-playfield attack at the top hole. Complete side drop banks to earn Extra Kicks, giving more attempts once the ball reaches the upper level. Score goals to advance Red Special. Complete A-B-C to advance Orange Special and add Extra Kicks. Side drops also light the top fixed targets; hit those lit targets to raise Bonus X. Complete the six center rollovers to start timed 10x Super Score.",
+        "simpleOverview": "Shoot the top hole to enter the upper playfield. Complete the side drop banks first to earn Extra Kicks, then score goals to advance Red Special. Complete A-B-C for Orange Special and another Extra Kick. Hit lit top fixed targets for Bonus X, and complete the six center rollovers to start 10x Super Score.",
+        "summary": "Build Extra Kicks before taking the top hole, then use the upper visit to score goals. Finish A-B-C when it is close, and do not start 10x Super Score until valuable shots are ready.",
+        "quickInfo": [
+          {
+            "name": "Enter Upper Play",
+            "summary": "Shoot the top hole."
+          },
+          {
+            "name": "Earn Extra Kicks",
+            "summary": "Complete side drop banks or A-B-C."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Score goals on the upper level."
+          },
+          {
+            "name": "Start 10x Scoring",
+            "summary": "Complete the six center rollovers."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete side drop banks to add Extra Kicks before shooting the top hole.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the top hole to activate the upper playfield, then use the available kicks to score goals and advance Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete A-B-C to advance Orange Special and add another Extra Kick.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use drops to light the top fixed targets, then hit those lit targets for Bonus X; complete the six center rollovers to start timed 10x Super Score.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Prepare 10x first",
+            "when": "Use this when the center rollovers are nearly complete but few Extra Kicks are ready.",
+            "steps": [
+              {
+                "text": "Finish the six center rollovers to start Super Score.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Immediately take the highest-value lit shots rather than beginning a long qualification.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Score repeated goals",
+          "steps": [
+            {
+              "text": "Bank Extra Kicks from the side drops and A-B-C.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Enter through the top hole and convert each available upper-playfield attempt into a goal.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check Extra Kicks, Super Score time and multiplier, Red and Orange Special thresholds, Bonus X, and Special awards.",
+          "Test both side banks, A-B-C, top hole, upper-playfield kick mechanism and goal, center rollovers, top fixed targets, and Special lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "Extra Kicks",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Goal",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Score",
+            "tone": "amber",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top hole",
+            "label": "Top hole",
+            "description": "Shot that activates the upper playfield.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side drop banks",
+            "label": "Side drop banks",
+            "description": "Target banks that add Extra Kicks and light Bonus X targets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "goal",
+            "label": "Goal",
+            "description": "Upper-playfield objective that advances Red Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center rollovers",
+            "label": "Six center rollovers",
+            "description": "Rollover group that starts timed Super Score.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Extra Kicks and Super Score time are setup-dependent.",
+            "response": "Read the kick and timer lamps before choosing between upper-playfield progress and 10x scoring.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen2/soccerkings/settings.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Extra Kicks before taking the top hole, then use the upper visit to score goals. Finish A-B-C when it is close, and do not start 10x Super Score until valuable shots are ready.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete side drop banks to add Extra Kicks before shooting the top hole.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the top hole to activate the upper playfield, then use the available kicks to score goals and advance Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete A-B-C to advance Orange Special and add another Extra Kick.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use drops to light the top fixed targets, then hit those lit targets for Bonus X; complete the six center rollovers to start timed 10x Super Score.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Enter Upper Play",
+            "summary": "Shoot the top hole."
+          },
+          {
+            "name": "Earn Extra Kicks",
+            "summary": "Complete side drop banks or A-B-C."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Score goals on the upper level."
+          }
+        ]
+      }
+    }
+  ]
+}

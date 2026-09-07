@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "id": "GR91x",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Spell ROBOT and start Robot Multiball, use its protected balls to finish WARNING and repeat the Robot for Super Jackpots, then switch to Condition Red when the green, yellow, and red target banks are already close.",
+        "quickInfo": [
+          {
+            "name": "ROBOT",
+            "summary": "The left orbit, Mystery scoop, spinner lane, Robot lane, and right orbit supply the five letters."
+          },
+          {
+            "name": "Robot Multiball",
+            "summary": "Start at the Robot lane, spell WARNING through lit Robot shots, then repeat Robot for Supers."
+          },
+          {
+            "name": "Condition Red",
+            "summary": "Complete the green, red, and yellow target banks, start at the right orbit, and use the ramp for jackpots."
+          },
+          {
+            "name": "Fighter Multiball",
+            "summary": "Complete the upper lanes enough times; later starts require more lane progress."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the ramp, Robot lane, and both orbit feeds during the opening save."
+          },
+          {
+            "text": "Collect safe ROBOT letters through the orbits, spinner lane, and Mystery scoop."
+          },
+          {
+            "text": "Take the Robot lane only from a controlled left-flipper shot, then return to it to start Robot Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Robot Multiball, repeat the lit Robot shot to spell WARNING.",
+            "modeNotes": [
+              "WARNING sequence: Each lit Robot collect advances the word. Completing it changes the Robot to the repeating Super Jackpot shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After WARNING is complete, keep returning to Robot for Super Jackpots while ball count protects the feed.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between starts, hit the green, red, and yellow target banks only when their rebounds are controlled; cash a near-ready Condition Red at the right orbit.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Condition Red",
+          "when": "Use this when ROBOT letters are awkward but the green, red, and yellow target banks are already advanced.",
+          "steps": [
+            {
+              "text": "Finish the green, red, and yellow target progress."
+            },
+            {
+              "text": "Shoot the right orbit to start Condition Red.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the ramp for jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the surviving ball to resume ROBOT progress."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Fighter lane route",
+            "when": "Use this when the plunge and orbit feeds repeatedly reach the upper lanes.",
+            "steps": [
+              {
+                "text": "Use controlled top entries to complete rollover-lane progress."
+              },
+              {
+                "text": "Adjust lanes with the flippers before each entry."
+              },
+              {
+                "text": "Start Fighter Multiball when the lane count completes.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Return to ROBOT after multiball."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Multiball rotation",
+          "steps": [
+            {
+              "text": "Complete Robot Multiball's WARNING sequence.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Advance Condition Red without forcing standups."
+            },
+            {
+              "text": "Take incidental Fighter lane progress."
+            },
+            {
+              "text": "Rotate to whichever multiball is one safe shot away.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Robot Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Condition Red",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Fighter Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "indigo"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Robot lane",
+            "context": "Robot lane",
+            "label": "Robot Multiball shot",
+            "description": "Narrow lane used for a ROBOT letter, the multiball start, and Supers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "context": "right orbit",
+            "label": "Condition Red start",
+            "description": "Right orbit supplies T in ROBOT and starts Condition Red when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramp",
+            "context": "ramp",
+            "label": "Condition Red jackpot",
+            "description": "Ramp scores Condition Red jackpots and planet progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper lanes",
+            "context": "upper lanes",
+            "label": "Fighter progress",
+            "description": "Upper lanes qualify Fighter Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "green, red, and yellow target banks",
+            "context": "green, red, and yellow target banks",
+            "label": "Condition Red targets",
+            "description": "The green, yellow, and red standup banks qualify and raise Condition Red jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner lane",
+            "context": "spinner lane",
+            "label": "Spinner and bumper lane",
+            "description": "The narrow lane supplies B in ROBOT and can advance Fighter progress when Super Pops is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Mystery scoop",
+            "context": "Mystery scoop",
+            "label": "Mystery scoop",
+            "description": "The scoop supplies O in ROBOT and collects a lit Mystery award.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cradle",
+            "instruction": "Cradle on the left flipper before aiming at the narrow Robot lane.",
+            "techniqueSlug": "cradle",
+            "sourceUrl": "https://www.pinball.org/rules/lostinspace.html"
+          },
+          {
+            "name": "Lane adjustment",
+            "instruction": "Use flipper taps to move the lit upper-lane needs before an orbit or plunge reaches them.",
+            "sourceUrl": "https://www.pinball.org/rules/lostinspace.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Magnet, VUK, and Robot-lane feeds can differ sharply by maintenance state.",
+            "response": "Test each return before making that shot the center of the plan; use the next-nearest multiball when it rejects.",
+            "sourceUrl": "https://www.pinball.org/rules/lostinspace.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm CPU 1.01 and display 1.02; this strategy was tested on A1.02.",
+          "Confirm WARNING memory, target counts, Fighter thresholds, ball saves, Mystery, Extra Ball, Special, and tournament settings.",
+          "Test Robot lane, both orbits, ramp, spinner lane, Mystery scoop, green, red, and yellow target banks, upper lanes, magnets, VUK, disk, and returns."
+        ],
+        "simpleOverview": "Lost In Space starts Robot Multiball through R-O-B-O-T letters, Condition Red through the green, red, and yellow targets, and Fighter through the upper lanes. Favor Robot Multiball because its lit Robot shots spell WARNING and then become repeatable Super Jackpots; switch to Condition Red or Fighter when that route is already one safe sequence away.",
+        "overview": "Lost In Space rotates among Robot, Condition Red, and Fighter Multiballs. Spell ROBOT through the safer orbits, spinner lane, and Mystery scoop, then use Multiball to spell WARNING and repeat Robot Supers. Hit the green, red, and yellow targets or upper lanes only from controlled feeds, taking whichever secondary Multiball becomes ready without interrupting the Robot route.",
+        "machineSetup": [
+          "Confirm CPU 1.01 and display 1.02; this strategy was tested on A1.02.",
+          "Confirm WARNING memory, target counts, Fighter thresholds, ball saves, Mystery, Extra Ball, Special, and tournament settings.",
+          "Test Robot lane, both orbits, ramp, spinner lane, Mystery scoop, green, red, and yellow target banks, upper lanes, magnets, VUK, disk, and returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Spell ROBOT and start Robot Multiball, use its protected balls to finish WARNING and repeat the Robot for Super Jackpots, then switch to Condition Red when the green, yellow, and red target banks are already close.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the ramp, Robot lane, and both orbit feeds during the opening save."
+          },
+          {
+            "text": "Collect safe ROBOT letters through the orbits, spinner lane, and Mystery scoop."
+          },
+          {
+            "text": "Take the Robot lane only from a controlled left-flipper shot, then return to it to start Robot Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Robot Multiball, repeat the lit Robot shot to spell WARNING.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "WARNING sequence: Each lit Robot collect advances the word. Completing it changes the Robot to the repeating Super Jackpot shot."
+            ]
+          },
+          {
+            "text": "After WARNING is complete, keep returning to Robot for Super Jackpots while ball count protects the feed.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between starts, hit the green, red, and yellow target banks only when their rebounds are controlled; cash a near-ready Condition Red at the right orbit.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "ROBOT",
+            "summary": "The left orbit, Mystery scoop, spinner lane, Robot lane, and right orbit supply the five letters."
+          },
+          {
+            "name": "Robot Multiball",
+            "summary": "Start at the Robot lane, spell WARNING through lit Robot shots, then repeat Robot for Supers."
+          },
+          {
+            "name": "Condition Red",
+            "summary": "Complete the green, red, and yellow target banks, start at the right orbit, and use the ramp for jackpots."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Condition Red",
+          "when": "Use this when ROBOT letters are awkward but the green, red, and yellow target banks are already advanced.",
+          "steps": [
+            {
+              "text": "Finish the green, red, and yellow target progress."
+            },
+            {
+              "text": "Shoot the right orbit to start Condition Red.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the ramp for jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the surviving ball to resume ROBOT progress."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

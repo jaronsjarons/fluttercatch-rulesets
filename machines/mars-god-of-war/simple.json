@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "GrNpY",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Mars God of War uses two Warbases for ball capture. Complete the center drop bank to activate the left Warbase and the right bank to activate the right; shoot an active hole to capture a ball. After one capture, the Launch lane releases two-ball Hyperforce at 3x playfield scoring. Capture both balls and send the third to Launch for three-ball Hyperforce at 5x; the multiplier drops to 3x after one drain and ends after the second. M-A-R-S or the Launch lane also advances Bonus X and the Warbase award multipliers.",
+        "simpleOverview": "Complete the center drop bank for the left Warbase or the right bank for the right Warbase, then shoot the active hole to capture a ball. Shoot the Launch lane for two-ball Hyperforce at 3x, or capture both balls first and use Launch for three-ball Hyperforce at 5x.",
+        "summary": "Build both banks before taking Launch whenever control allows, because the second capture upgrades Hyperforce from two balls at 3x to three balls at 5x. Use M-A-R-S and repeated Launch-lane entries to raise the stored multiplier between lock attempts.",
+        "quickInfo": [
+          {
+            "name": "Activate Left Warbase",
+            "summary": "Complete the center drop bank."
+          },
+          {
+            "name": "Activate Right Warbase",
+            "summary": "Complete the right drop bank."
+          },
+          {
+            "name": "Start 3x Hyperforce",
+            "summary": "Capture one ball, then shoot Launch."
+          },
+          {
+            "name": "Start 5x Hyperforce",
+            "summary": "Capture both balls, then shoot Launch."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the center drop bank to flash Activate Warbase at the left capture hole."
+          },
+          {
+            "text": "Complete the right drop bank to flash Activate Warbase at the right capture hole."
+          },
+          {
+            "text": "Shoot each active Warbase to capture two balls; the machine serves a replacement after each capture."
+          },
+          {
+            "text": "Send the third ball into the Launch lane to release three-ball Hyperforce with 5x playfield scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Faster two-ball Hyperforce",
+            "when": "Use this when one Warbase is captured but the second bank or hole is too dangerous.",
+            "steps": [
+              {
+                "text": "With one ball captured, shoot the flashing Launch lane.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Play two-ball Hyperforce at 3x; normal scoring returns after one ball drains.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Warbase Extra Ball and Special",
+          "steps": [
+            {
+              "text": "Complete M-A-R-S or enter the Launch lane repeatedly to raise Bonus X and the Warbase multipliers.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "At the installed 3x or 4x threshold, enter a Warbase to light its related Extra Ball collect."
+            },
+            {
+              "text": "At the installed 4x or 5x threshold, enter a Warbase to light the matching outlane Special."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test both drop banks and resets, both Warbase capture holes, the Stargate, Launch lane and kicker, the three-ball trough, M-A-R-S lane change, spinner, pop bumpers, and both multiplier displays.",
+          "Record switches 31 and 32: switch 31 controls Last Chance, while switch 32 changes the 3-ball Extra Ball and Special multiplier thresholds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center drop bank",
+            "label": "Center Warbase bank",
+            "description": "Bank that activates the left capture hole.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right drop bank",
+            "label": "Right Warbase bank",
+            "description": "Bank that activates the right capture hole.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Warbases",
+            "label": "Left and right Warbases",
+            "description": "Capture holes used to store up to two balls for Hyperforce.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Launch lane",
+            "label": "Launch lane",
+            "description": "Upper-right kicker lane that starts Hyperforce and advances the multiplier.",
+            "precision": "unverified"
+          },
+          {
+            "term": "M-A-R-S rollovers",
+            "label": "M-A-R-S rollovers",
+            "description": "Rollover sequence that advances Bonus X and Warbase multipliers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Stargate",
+            "label": "Stargate tube",
+            "description": "Lowered tube route that can award 50,000 before a pop-bumper hit ends the feature.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Hyperforce value depends on how many balls were captured before Launch.",
+            "response": "Do not take the flashing Launch lane after the first capture if the second Warbase is safely available; two captures raise the start from 3x to 5x.",
+            "sourceUrl": "https://www.pinball.org/rules/cache/Mars-rules.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build both banks before taking Launch whenever control allows, because the second capture upgrades Hyperforce from two balls at 3x to three balls at 5x. Use M-A-R-S and repeated Launch-lane entries to raise the stored multiplier between lock attempts.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the center drop bank to flash Activate Warbase at the left capture hole."
+          },
+          {
+            "text": "Complete the right drop bank to flash Activate Warbase at the right capture hole."
+          },
+          {
+            "text": "Shoot each active Warbase to capture two balls; the machine serves a replacement after each capture."
+          },
+          {
+            "text": "Send the third ball into the Launch lane to release three-ball Hyperforce with 5x playfield scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Activate Left Warbase",
+            "summary": "Complete the center drop bank."
+          },
+          {
+            "name": "Activate Right Warbase",
+            "summary": "Complete the right drop bank."
+          },
+          {
+            "name": "Start 3x Hyperforce",
+            "summary": "Capture one ball, then shoot Launch."
+          }
+        ]
+      }
+    }
+  ]
+}

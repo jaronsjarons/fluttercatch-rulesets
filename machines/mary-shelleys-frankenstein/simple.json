@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "id": "GRB7E",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build Creature 2-Ball with ramp shots, convert it promptly into 3–6-ball Multiball through North Pole and a lit jackpot shot, then alternate the moving Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Creature 2-Ball",
+            "summary": "Ramp progress lights the first two-ball stage at North Pole or the right orbit; later starts require more ramps."
+          },
+          {
+            "name": "3–6-ball Multiball",
+            "summary": "During Creature 2-Ball, lock at North Pole, wait for the 6, then make a lit jackpot shot before the count falls."
+          },
+          {
+            "name": "Jackpots",
+            "summary": "Two major shots are lit; completing both adds a ball below the six-ball maximum, while Move Jackpot rotates their locations."
+          },
+          {
+            "name": "Scenes",
+            "summary": "Complete FRANKENSTEIN letters to start the selected scene and earn CREATION progress by finishing its objective."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the opening save to test the ramp, North Pole, Geneva scoop, left lane, and right orbit."
+          },
+          {
+            "text": "Repeat the ramp from controlled returns until Creature 2-Ball is lit."
+          },
+          {
+            "text": "Start Creature 2-Ball at North Pole or the right orbit, then cradle one ball on each lower flipper when possible.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock one ball at North Pole, wait until the display shows 6, then make the safest lit jackpot shot to start 3–6-ball Multiball.",
+            "modeNotes": [
+              "Countdown rule: The value falls from 69M toward 30M; waiting after 6 appears lowers both the starting ball count and Jackpot value."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Alternate the two lit Jackpots; use the Move Jackpot target only when both current shots are unsafe.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect exposed FRANKENSTEIN letters during multiball, then start and finish the next practical scene in single-ball play.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Scenes before multiball",
+          "when": "Use this when the ramp rejects but the letter standups and spotting holes feed safely.",
+          "steps": [
+            {
+              "text": "Finish FRANKENSTEIN through controlled targets and spotting shots."
+            },
+            {
+              "text": "Start the selected scene.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete its marked objective for CREATION progress.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to ramp progress only from a settled ball."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "CREATION",
+          "steps": [
+            {
+              "text": "Start a scene by completing FRANKENSTEIN.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish the scene's required shots for its CREATION letter.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use multiball to collect difficult standup letters."
+            },
+            {
+              "text": "Repeat scenes until CREATION is complete.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Creature 2-Ball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "3–6-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "scene",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "FRANKENSTEIN",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "CREATION",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "ramp",
+            "context": "ramp",
+            "label": "Creature progress",
+            "description": "Ramp advances and starts the Creature multiball route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "North Pole",
+            "context": "North Pole",
+            "label": "Multiball conversion shot",
+            "description": "North Pole is one of the shots used during Creature 2-Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Geneva scoop",
+            "context": "Geneva scoop",
+            "label": "Multiball conversion shot",
+            "description": "Geneva completes the conversion from Creature 2-Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left lane",
+            "context": "left lane",
+            "label": "Jackpot lane",
+            "description": "Left lane can be one of the moving multiball jackpot shots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "context": "right orbit",
+            "label": "Creature 2-Ball start",
+            "description": "The right orbit can start Creature 2-Ball and normally feeds the bumpers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Sarcophagus",
+            "context": "Sarcophagus",
+            "label": "Sarcophagus scoop",
+            "description": "The scoop spots FRANKENSTEIN letters and can convert Creature 2-Ball or light the Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Ice Cave",
+            "context": "Ice Cave",
+            "label": "Ice Cave",
+            "description": "The upper-flipper shot spots letters, supplies awards, and can be a moving Jackpot location.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Move Jackpot target",
+            "context": "Move Jackpot target",
+            "label": "Move Jackpot target",
+            "description": "The standup rotates the two active Jackpot locations during the main multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cradle",
+            "instruction": "Cradle one ball on each lower flipper before sending the left-flipper ball to North Pole.",
+            "techniqueSlug": "cradle",
+            "sourceUrl": "https://www.pinball.org/rules/frankenstein.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The monster release, scoop kickouts, and moving Jackpot state can break a planned sequence.",
+            "response": "Watch the lit locations after every collect and regain a cradle before the next conversion or Jackpot shot.",
+            "sourceUrl": "https://www.pinball.org/rules/frankenstein.html"
+          },
+          {
+            "issue": "Modes, ball save, and multiball scoring have little or no grace after a drain.",
+            "response": "Do not begin a late transfer; take the lit shot before the trough registers the second-to-last ball.",
+            "sourceUrl": "https://www.pinball.org/rules/frankenstein.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Sega CPU and display 1.03, plus ball count, gore, buy-in, Extra Ball, scene, Creature-ramp, and tournament settings.",
+          "Confirm Creature countdown, restart, Jackpot movement, add-a-ball, Geneva, mode-completion, ball-save, and grace behavior.",
+          "Test ramp return, North Pole, Geneva, Sarcophagus, Ice Cave, right orbit, left lane, monster release, diverter, and all scoop ejects."
+        ],
+        "simpleOverview": "Mary Shelley's Frankenstein begins with ramp shots toward Creature 2-Ball, then converts that feature into as many as six balls through North Pole. Start two-ball play, lock one ball, wait for the display's 6, and hit a lit Jackpot; afterward, alternate the two lit Jackpots to maintain ball count.",
+        "overview": "Mary Shelley's Frankenstein begins with ramp shots toward Creature 2-Ball, then converts that feature into as many as six balls through North Pole. Repeat the ramps to start Creature 2-Ball, use North Pole and a lit Jackpot to reach 3–6-ball play, then alternate the two current Jackpots. Collect FRANKENSTEIN letters under protection and complete practical scenes between starts toward CREATION.",
+        "machineSetup": [
+          "Confirm Sega CPU and display 1.03, plus ball count, gore, buy-in, Extra Ball, scene, Creature-ramp, and tournament settings.",
+          "Confirm Creature countdown, restart, Jackpot movement, add-a-ball, Geneva, mode-completion, ball-save, and grace behavior.",
+          "Test ramp return, North Pole, Geneva, Sarcophagus, Ice Cave, right orbit, left lane, monster release, diverter, and all scoop ejects."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Build Creature 2-Ball with ramp shots, convert it promptly into 3–6-ball Multiball through North Pole and a lit jackpot shot, then alternate the moving Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the opening save to test the ramp, North Pole, Geneva scoop, left lane, and right orbit."
+          },
+          {
+            "text": "Repeat the ramp from controlled returns until Creature 2-Ball is lit."
+          },
+          {
+            "text": "Start Creature 2-Ball at North Pole or the right orbit, then cradle one ball on each lower flipper when possible.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock one ball at North Pole, wait until the display shows 6, then make the safest lit jackpot shot to start 3–6-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Countdown rule: The value falls from 69M toward 30M; waiting after 6 appears lowers both the starting ball count and Jackpot value."
+            ]
+          },
+          {
+            "text": "Alternate the two lit Jackpots; use the Move Jackpot target only when both current shots are unsafe.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect exposed FRANKENSTEIN letters during multiball, then start and finish the next practical scene in single-ball play.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Creature 2-Ball",
+            "summary": "Ramp progress lights the first two-ball stage at North Pole or the right orbit; later starts require more ramps."
+          },
+          {
+            "name": "3–6-ball Multiball",
+            "summary": "During Creature 2-Ball, lock at North Pole, wait for the 6, then make a lit jackpot shot before the count falls."
+          },
+          {
+            "name": "Jackpots",
+            "summary": "Two major shots are lit; completing both adds a ball below the six-ball maximum, while Move Jackpot rotates their locations."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Scenes before multiball",
+          "when": "Use this when the ramp rejects but the letter standups and spotting holes feed safely.",
+          "steps": [
+            {
+              "text": "Finish FRANKENSTEIN through controlled targets and spotting shots."
+            },
+            {
+              "text": "Start the selected scene.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete its marked objective for CREATION progress.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to ramp progress only from a settled ball."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Modes, ball save, and multiball scoring have little or no grace after a drain.",
+          "text": "Do not begin a late transfer; take the lit shot before the trough registers the second-to-last ball."
+        }
+      }
+    }
+  ]
+}

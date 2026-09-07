@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "GV8j1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Missions begin at the three standups and left scoop, while the center drop target and lock scoop build the main Multiball. Use the mission display to choose a route that leaves the lock available, then add Multiball and temporary combo 2X when the game permits the stack.",
+        "simpleOverview": "Complete the three mission standups and shoot the left scoop to choose a mission. For Multiball, knock down the center drop target and shoot the lock scoop behind it three times.",
+        "summary": "Complete the left, center, and right mission standups, then shoot the left scoop and choose a mission that matches your safest shots. Build three locks at the center drop target and scoop, and add the Multiball when its lock remains available during the mission.",
+        "quickInfo": [
+          {
+            "name": "Start a mission",
+            "summary": "Complete the three mission standups, shoot the left scoop, and use the carousel to choose an available mission."
+          },
+          {
+            "name": "Main Multiball",
+            "summary": "Knock down the center drop target, shoot the lock scoop behind it, and repeat until the third lock starts Multiball."
+          },
+          {
+            "name": "Combo 2X",
+            "summary": "Keep making the displayed combo sequence to activate a short period of 2X playfield scoring."
+          },
+          {
+            "name": "Mega Jackpot",
+            "summary": "Collect the required central-ramp jackpots, relock a ball and knock down the target for Supers, then earn three Supers to light the mini-playfield Mega."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the left, center, and right mission standups until MISSION lights. On the first ball, the game may begin with two of the three standups already awarded.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left scoop, read the shots and difficulty shown for each choice, and select a mission whose lit route fits the feeds on this copy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Between mission shots, knock down the center drop target and shoot the lock scoop behind it. Repeat the target-to-scoop sequence until three balls have been locked.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the lock remains available during the chosen mission, take the final lock after the mission starts. Some missions suspend the lock, so trust the lit insert instead of forcing the stack.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, collect the required jackpots at both entrances to the central ramp. Relock a ball and knock down the drop target for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After three Super Jackpots, shoot the lit Mega Jackpot on the mini-playfield. Use any active combo 2X on the largest available collect.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Mission-first route",
+          "when": "Use this when the center drop target or lock scoop is rejecting too dangerously.",
+          "steps": [
+            {
+              "text": "Complete the three mission standups and start the safest available mission at the left scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow only the lit mission shots and use the displayed objective to reach Bronze, Silver, or Gold progress.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Build HUNTED in the return and upper lanes for bonus multiplication while the lock path remains unsafe.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Grand Wizard",
+          "steps": [
+            {
+              "text": "Complete mission objectives at their displayed levels to collect trophies, then finish the listed Master requirements.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Reach the trophy thresholds for the mini-wizards and complete those mini-wizards.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the spinner, challenge, combo, and Gravity Loop Masters shown on the current rules map.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish all mini-wizards and Masters to qualify the Grand Wizard.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "mission",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Main Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "combo 2X",
+            "tone": "indigo",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Grand Wizard",
+            "tone": "oxblood",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "mission standups",
+            "label": "Three mission standups",
+            "description": "The left, center, and right standups used to light the mission selector.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left scoop",
+            "label": "Mission and award scoop",
+            "description": "The left scoop used to choose a qualified mission and collect lit awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drop target",
+            "label": "Lock drop target",
+            "description": "The drop target guarding the main Multiball lock scoop.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lock scoop",
+            "label": "Main Multiball lock",
+            "description": "The scoop behind the center drop target that holds each ball for the main Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The complete walkthrough predates the combo system, Grand Wizard, and current 0.956 software.",
+            "response": "Use it for the physical mission and lock paths; use the current rules map and display for later progression, thresholds, and values.",
+            "sourceUrl": "https://www.hexa-pinball.com/support/"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the left, center, and right mission standups, then shoot the left scoop and choose a mission that matches your safest shots. Build three locks at the center drop target and scoop, and add the Multiball when its lock remains available during the mission.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the left, center, and right mission standups until MISSION lights. On the first ball, the game may begin with two of the three standups already awarded.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left scoop, read the shots and difficulty shown for each choice, and select a mission whose lit route fits the feeds on this copy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Between mission shots, knock down the center drop target and shoot the lock scoop behind it. Repeat the target-to-scoop sequence until three balls have been locked.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the lock remains available during the chosen mission, take the final lock after the mission starts. Some missions suspend the lock, so trust the lit insert instead of forcing the stack.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, collect the required jackpots at both entrances to the central ramp. Relock a ball and knock down the drop target for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After three Super Jackpots, shoot the lit Mega Jackpot on the mini-playfield. Use any active combo 2X on the largest available collect.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start a mission",
+            "summary": "Complete the three mission standups, shoot the left scoop, and use the carousel to choose an available mission."
+          },
+          {
+            "name": "Main Multiball",
+            "summary": "Knock down the center drop target, shoot the lock scoop behind it, and repeat until the third lock starts Multiball."
+          },
+          {
+            "name": "Combo 2X",
+            "summary": "Keep making the displayed combo sequence to activate a short period of 2X playfield scoring."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Mission-first route",
+          "when": "Use this when the center drop target or lock scoop is rejecting too dangerously.",
+          "steps": [
+            {
+              "text": "Complete the three mission standups and start the safest available mission at the left scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow only the lit mission shots and use the displayed objective to reach Bronze, Silver, or Gold progress.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Build HUNTED in the return and upper lanes for bonus multiplication while the lock path remains unsafe.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

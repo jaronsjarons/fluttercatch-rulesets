@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "G5v2B",
+  "title": "Magic Castle",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Magic Castle instruction cards",
+      "url": "https://www.zaccaria-pinball.com/gen2/magiccastle/Cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Magic Castle rules",
+        "url": "https://www.zaccaria-pinball.com/rulesheets/magiccastle.html"
+      },
+      {
+        "label": "Magic Castle operator settings",
+        "url": "https://www.zaccaria-pinball.com/gen2/magiccastle/settings.html"
+      },
+      {
+        "label": "Magic Castle operator manual",
+        "url": "https://www.zaccaria-pinball.com/gen2/magiccastle/zaccaria-magiccastle_manual.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Magic Castle turns two drop-target banks into a route across the drawbridge. Complete M-A-G-I-C and C-A-S-T-L-E to advance the drawbridge lamps, then shoot through the lit Dr. Zekyll, Zankenstein, or Zaccula window. The orange three-bank builds Orange Special. The Mystery Tunnel advances its own value before feeding Orange Special, while A-B-C and the right fixed target advance Bonus X and the ball-return sequence.",
+      "simpleOverview": "Complete the M-A-G-I-C and C-A-S-T-L-E drop banks, then shoot the drawbridge through a lit castle window. Use the orange three-bank for Orange Special. Hit A-B-C for Bonus X, and use the Mystery Tunnel or right fixed target to advance their lit awards.",
+      "summary": "Finish the nearer letter bank, then take the drawbridge as soon as a castle window is lit. If the bridge route is not ready, work the orange bank for Orange Special or A-B-C for Bonus X.",
+      "quickInfo": [
+        {
+          "name": "Open the Castle",
+          "summary": "Complete M-A-G-I-C and C-A-S-T-L-E."
+        },
+        {
+          "name": "Use the Drawbridge",
+          "summary": "Shoot through a lit castle window."
+        },
+        {
+          "name": "Build Orange Special",
+          "summary": "Complete the orange three-bank."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete A-B-C."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the M-A-G-I-C and C-A-S-T-L-E drop-target banks to advance the drawbridge lamps.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the drawbridge through a lit Dr. Zekyll, Zankenstein, or Zaccula window; take Zaccula when lit for its Special award.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the orange three-bank to advance Orange Special, then collect its lit award.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete A-B-C to advance Bonus X; use the Mystery Tunnel and right fixed target when their next awards are lit.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build the safer side award",
+          "when": "Use this when the drawbridge is rejecting the ball.",
+          "steps": [
+            {
+              "text": "Work the orange three-bank or A-B-C instead of forcing the bridge.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the bridge when a castle window is lit and the entrance is under control.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Reach Zaccula",
+        "steps": [
+          {
+            "text": "Keep completing the two letter banks to advance the castle-window sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Take each lit drawbridge window and finish at Zaccula for the Special.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check the drawbridge, Orange Special, Mystery Tunnel, ball-return, and Special-award settings.",
+        "Test both letter banks, the drawbridge and three castle windows, orange bank, A-B-C, Mystery Tunnel, right fixed target, and REACT outlane save."
+      ],
+      "termStyles": [
+        {
+          "label": "Drawbridge",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Orange Special",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Zaccula",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Award thresholds and Special behavior are adjustable.",
+          "response": "Follow the insert lamps and verify the setup before treating a completion as the final one.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen2/magiccastle/settings.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "G42EQ",
+  "coordinateSystem": "percent-of-published-image",
+  "entries": [
+    {
+      "path": [
+        "strategy",
+        "playfieldReferences"
+      ],
+      "references": [
+        {
+          "term": "left ramp",
+          "label": "Left Jackpot ramp",
+          "description": "The first ramp in the alternating Multiball Jackpot sequence.",
+          "precision": "unverified",
+          "context": "left ramp: The first ramp in the alternating Multiball Jackpot sequence."
+        },
+        {
+          "term": "right ramp",
+          "label": "Right Jackpot ramp",
+          "description": "The second ramp in the alternating Multiball Jackpot sequence.",
+          "precision": "unverified",
+          "context": "right ramp: The second ramp in the alternating Multiball Jackpot sequence."
+        },
+        {
+          "term": "Power Scoop",
+          "label": "Power Scoop collect",
+          "description": "The scoop used to collect the award lit by the Skull.",
+          "precision": "unverified",
+          "context": "Power Scoop: The scoop used to collect the award lit by the Skull."
+        },
+        {
+          "term": "Skull",
+          "label": "Skull hole",
+          "description": "Hole that lights the next Power Scoop award.",
+          "precision": "unverified",
+          "context": "Skull: Hole that lights the next Power Scoop award."
+        },
+        {
+          "term": "Scoop",
+          "context": "Scoop eject",
+          "label": "Scoop eject",
+          "description": "Right-side Scoop return that should be tested before relying on Power Scoop awards.",
+          "precision": "unverified"
+        },
+        {
+          "term": "Croc Clock",
+          "label": "Croc Clock shot",
+          "description": "Upper-right clock shot used to finish the Bangarang sequence.",
+          "precision": "unverified",
+          "context": "Croc Clock: Upper-right clock shot used to finish the Bangarang sequence."
+        },
+        {
+          "term": "lock",
+          "context": "lock qualification",
+          "label": "Lock bank and shot",
+          "description": "Displayed standup and lock sequence used to qualify and start Multiball.",
+          "precision": "unverified"
+        }
+      ]
+    },
+    {
+      "path": [
+        "romOptions",
+        "items",
+        "1",
+        "strategy",
+        "playfieldReferences"
+      ],
+      "references": [
+        {
+          "term": "left ramp",
+          "context": "left ramp",
+          "label": "Left ramp",
+          "description": "Cashout for the drop-target-built Left Ramp Value and one alternating Multiball Jackpot side.",
+          "precision": "unverified"
+        },
+        {
+          "term": "right ramp",
+          "context": "right ramp",
+          "label": "Right ramp",
+          "description": "Second alternating Multiball Jackpot side and Croc Time collect.",
+          "precision": "unverified"
+        },
+        {
+          "term": "drop targets",
+          "context": "drop targets",
+          "label": "Drop-target bank",
+          "description": "Bank that raises Left Ramp Value one target at a time on 5.01.",
+          "precision": "unverified"
+        },
+        {
+          "term": "Skull",
+          "context": "Skull",
+          "label": "Skull hole",
+          "description": "Hole that lights Power Scoop and can collect the timed Skull award.",
+          "precision": "unverified"
+        },
+        {
+          "term": "Scoop",
+          "context": "Scoop",
+          "label": "Right Scoop",
+          "description": "Right-side scoop that collects the selected deterministic award.",
+          "precision": "unverified"
+        },
+        {
+          "term": "Croc Clock",
+          "context": "Croc Clock",
+          "label": "Croc Clock shot",
+          "description": "Upper-right clock/VUK area used by Croc Time and Bangarang.",
+          "precision": "unverified"
+        }
+      ]
+    }
+  ]
+}

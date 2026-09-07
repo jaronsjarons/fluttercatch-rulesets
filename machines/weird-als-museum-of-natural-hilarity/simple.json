@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "GN6WW",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Choose an Exhibit Hall with one shot, open the Ticket Counter, and shoot its scoop to begin a song. Prepare a Multiball while the song runs, then add it without losing the mode's scoring objective.",
+        "simpleOverview": "Start an Exhibit Hall song at the Ticket Counter, then add a prepared Multiball. Each different song and main Multiball also moves you toward Running With Scissors.",
+        "summary": "Choose an Exhibit Hall with its playfield shot, knock down the Ticket Counter target, and shoot the scoop to start one of that hall's songs. While the song runs, prepare a Multiball and add it when the extra balls help more than they disrupt the song's scoring pattern.",
+        "quickInfo": [
+          {
+            "name": "Start an Exhibit Hall song",
+            "summary": "Shoot a hall entrance once, knock down the Ticket Counter target, then shoot the exposed scoop and choose one of that hall's two unplayed songs."
+          },
+          {
+            "name": "VIP Pass",
+            "summary": "Complete V-I-P and shoot either raised center scoop within 10 seconds to choose any unplayed Exhibit Hall song."
+          },
+          {
+            "name": "Three main Multiballs",
+            "summary": "Dare to Be Stupid uses Harvey and three hamster-wheel locks. Hardware Store uses 27 side-target items and the Supplies Closet. UHF uses the UHF target and three camera locks."
+          },
+          {
+            "name": "Running With Scissors",
+            "summary": "Play all ten Exhibit Hall songs, all three main Multiballs, My Bologna, and You Make Me, then shoot the Ticket Counter to begin the speed run."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the safest available Hall entrance once: left ramp for Anthropology, left side loop for Sports & Leisure, upper/right side loop for Crime & Punishment, or a mini-loop entrance for Business & Industry or Health & Medicine.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Knock down the Ticket Counter target, shoot the exposed scoop, and choose one of that Hall's two unplayed songs.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the song, prepare a Multiball: Harvey and the hamster-wheel locks for Dare to Be Stupid, 27 side-target items and the Supplies Closet for Hardware Store, or the UHF target and camera locks for UHF.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start the prepared Multiball while the song is running when the extra balls fit its scoring objective. Avoid stray shots in modes that punish a wrong shot or break a streak.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the Ticket Counter lights to end a song, use it when you want to bank the play and move to another unplayed song.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Running With Scissors",
+          "steps": [
+            {
+              "text": "Play all ten Exhibit Hall songs; completing them is not required.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Play Dare to Be Stupid, Hardware Store, and UHF Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Play My Bologna and visit all five Halls to qualify You Make Me; complete V-I-P and shoot a raised center scoop to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After all fifteen required features have been played, shoot the Ticket Counter to start Running With Scissors.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Exhibit Hall",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Running With Scissors",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Ticket Counter",
+            "context": "Knock down the Ticket Counter target, shoot the exposed scoop.",
+            "label": "Ticket Counter target and scoop",
+            "description": "The guarded scoop used to start or exit Exhibit Hall songs and to start Running With Scissors.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Hall entrance",
+            "label": "Exhibit Hall shots",
+            "description": "The left ramp, side loops, and two mini-loop entrances that select the next Exhibit Hall.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Supplies Closet",
+            "label": "Supplies Closet scoop",
+            "description": "The scoop that starts Hardware Store Multiball after 27 broken items.",
+            "precision": "unverified"
+          },
+          {
+            "term": "UHF target",
+            "label": "Lite UHF Lock target",
+            "description": "The standup that lights the next camera lock.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Earlier behavior predates current code 1.5.3.0.",
+            "response": "Use the physical starts, but read the display for later balance, timing, or award changes.",
+            "sourceUrl": "https://pinballrulesheets.com/other/list-of-games-with-their-current-code-number-wiki.html"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose an Exhibit Hall with its playfield shot, knock down the Ticket Counter target, and shoot the scoop to start one of that hall's songs. While the song runs, prepare a Multiball and add it when the extra balls help more than they disrupt the song's scoring pattern.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the safest available Hall entrance once: left ramp for Anthropology, left side loop for Sports & Leisure, upper/right side loop for Crime & Punishment, or a mini-loop entrance for Business & Industry or Health & Medicine.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Knock down the Ticket Counter target, shoot the exposed scoop, and choose one of that Hall's two unplayed songs.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the song, prepare a Multiball: Harvey and the hamster-wheel locks for Dare to Be Stupid, 27 side-target items and the Supplies Closet for Hardware Store, or the UHF target and camera locks for UHF.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start the prepared Multiball while the song is running when the extra balls fit its scoring objective. Avoid stray shots in modes that punish a wrong shot or break a streak.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the Ticket Counter lights to end a song, use it when you want to bank the play and move to another unplayed song.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start an Exhibit Hall song",
+            "summary": "Shoot a hall entrance once, knock down the Ticket Counter target, then shoot the exposed scoop and choose one of that hall's two unplayed songs."
+          },
+          {
+            "name": "VIP Pass",
+            "summary": "Complete V-I-P and shoot either raised center scoop within 10 seconds to choose any unplayed Exhibit Hall song."
+          },
+          {
+            "name": "Three main Multiballs",
+            "summary": "Dare to Be Stupid uses Harvey and three hamster-wheel locks. Hardware Store uses 27 side-target items and the Supplies Closet. UHF uses the UHF target and three camera locks."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 1,
+  "id": "GvBn8",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot Sir Didymus's first Friend Jackpot to collect the HELP defense. Play Knockers, Four Guards, and Fireys to qualify Poisoned Peach, then complete their exact Orb objectives while preparing Brick Keeper or Friend Multiball.",
+        "steps": [
+          {
+            "text": "On ball 1, let the selected mode cycle to Knockers, Four Guards, or Fireys, then plunge so the first switch locks that choice. Take the Wiseman scoop and immediate inner bridge loop only when that Super Skill Shot preserves the selection.",
+            "modeNotes": [
+              "Wiseman Super Skill Shot: The scoop scores the Skill Shot. The immediate inner bridge-loop shot scores 1,200,000 on ball 1. Values increase on later balls."
+            ]
+          },
+          {
+            "text": "Find Sir Didymus at his flashing Friend circle. Collect the solid item shots, then shoot Helping Hands for his first Friend Jackpot.",
+            "modeNotes": [
+              "Sir Didymus level 1: It enables the HELP defense post at the outlanes. The items persist until the Friend Jackpot spends them."
+            ]
+          },
+          {
+            "text": "Make white-arrow shots to collect the required LABYRINTH letters. The first mode needs one letter, and each later mode needs one more, up to six. Shoot either side of the U-turn, or the open Wiseman scoop, to start the selected upper-row mode.",
+            "modeNotes": [
+              "Mode start: The Change Mode target moves within the current row. Spell HELP and shoot Helping Hands while no mode runs to change rows. Later modes normally need more LABYRINTH letters. Operator settings can change the count."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In Knockers, make the yellow ramps or U-turn sides. At the prompt, hit the Wiseman drop and quickly shoot the scoop. Finish the yellow shots, then shoot the right orbit.",
+            "modeNotes": [
+              "Knockers: The yellow shots find the door. The Wiseman sequence opens it. The right orbit finishes the mode."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In Four Guards, shoot the center ramp or bridge loop to reveal the true color. It is opposite the spoken answer. Make all four major shots in that color, then shoot the right U-turn.",
+            "modeNotes": [
+              "Four Guards: The two ramps and two orbits are red or blue. The final right U-turn answers the guards."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In Fireys, hit the captive ball to release the trapped ball and add a ball. Make a red shot to relight the forks. Repeat while control lasts. Make five head pops for the roving Super Jackpot.",
+            "modeNotes": [
+              "Fireys: Two-ball play starts with one ball held at the forks. Captive-ball hits can produce up to five add-a-balls. Five head pops light a roving Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When a completed mode lights Collect Orb, shoot under the upper-right flipper. Then shoot the left orbit while its rainbow arrow is lit to assign the Orb there.",
+            "modeNotes": [
+              "Orb: It adds a permanent multiplier to one major shot, up to 4x. An unassigned multiplier is lost at the drain, but the Orb stays collected."
+            ]
+          },
+          {
+            "text": "After Knockers, Four Guards, and Fireys have all been played, shoot a lit U-turn side or the Wiseman scoop to start Poisoned Peach. Make ramp combos to raise its value. Hit the Humongous and Wiseman drops twice each.",
+            "modeNotes": [
+              "Poisoned Peach: The ball returns after drains until time ends or both targets are complete."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Ball 3 Brick Keeper consolation",
+          "when": "Use this plan when the target returns are unsafe or the first two balls are short.",
+          "steps": [
+            {
+              "text": "Preserve the ball. Do not fire repeated shots at the wall or Fairy targets."
+            },
+            {
+              "text": "On ball 3, check whether all three Brick Keeper lock shots flash green. This is the default consolation setting when the multiball has not started.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the left orbit, center ramp, and right orbit in that order.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Score one Jackpot. Shoot the left orbit. Hit the captive ball into the spinner for the first Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Friends first",
+            "when": "Use this route when Friend shots and Helping Hands are safer than the Brick Keeper targets.",
+            "steps": [
+              {
+                "text": "Shoot a flashing yellow, orange, or blue Friend circle. Shoot solid circles of the same color to collect items. Shoot Helping Hands when the Friend Jackpot is ready."
+              },
+              {
+                "text": "Use each Friend's level reward.",
+                "modeNotes": [
+                  "Hoggle: Level 1 gives two LABYRINTH letters per white-arrow shot. Level 2 makes Brick Keeper targets easier.",
+                  "Ludo: Level 1 adds 50% to mode scoring. Level 2 gives 2x Brick Keeper Jackpots.",
+                  "Sir Didymus: Level 1 enables the HELP defense post. Level 2 gives one Helping Hands add-a-ball per multiball. Level 3 adds five seconds to major ball saves."
+                ]
+              },
+              {
+                "text": "Collect one Jackpot for all three Friends. Shoot Helping Hands to start Friend Multiball. Hold a flipper during the prompt to delay it if you want higher Friend levels.",
+                "modeNotes": [
+                  "Friend Multiball: Collect one blue, one yellow, and one red Friend shot. Shoot Helping Hands for the Friend Jackpot. Repeat until one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Lower modes and Poisoned Peach",
+            "when": "Use this route when the orbits and repeatable major shots are safer than the upper targets.",
+            "steps": [
+              {
+                "text": "Start Cleaners. Rip the left-orbit spinner, then shoot the right orbit before the value resets. Collect three times.",
+                "modeNotes": [
+                  "Cleaners: The left spinner builds a hurry-up. The right orbit collects it. Three collects finish the 90-second mode."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Oubliette. Shoot one lit door twice in a row. Clear all five doors before the ball drains.",
+                "modeNotes": [
+                  "Oubliette: Five shots are lit. A different shot becomes the active door after each clear. The mode has no timer."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Bog. Make the orange shots in this order: left ramp, right ramp, left orbit, right U-turn, and right orbit.",
+                "modeNotes": [
+                  "Bog: A green shot advances the sequence but does not give a clean completion. The mode ends after the last shot or a drain."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "After all three lower modes have started, shoot a lit mode start for Poisoned Peach. Build with ramp combos. Hit the Humongous drop and Wiseman drop twice each.",
+                "modeNotes": [
+                  "Poisoned Peach: Ramp combos raise the value. The ball returns after drains until time ends or both targets are complete."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Brick Keeper first",
+            "when": "Use this route when the wall, Fairy targets, and three lock shots are safer than the upper modes.",
+            "steps": [
+              {
+                "text": "Hit the wall target and all four flashing green Fairy targets. Each made target turns solid green, and a complete set lights the first Brick Keeper lock.",
+                "modeNotes": [
+                  "Brick Keeper qualification: Hoggle level 2 gives nearest-neighbor target credit. The default ball-3 consolation lights all locks if Brick Keeper Multiball has not started. An operator can disable it."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the flashing green left orbit to lock ball 1. Shoot the flashing green center ramp to lock ball 2. Shoot the flashing green right orbit to start Brick Keeper Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Make one red-arrow Jackpot. Then shoot the left orbit to trap a ball in the forks. Hit the captive ball into the spinner for the Super Jackpot.",
+                "modeNotes": [
+                  "Brick Keeper Multiball: Red shots score Jackpots. The first Jackpot lights the forks. Each later Super Jackpot needs one more Jackpot. Extra Jackpots raise the lit Super value. The multiball ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat the Jackpot, left-orbit trap, and captive-spinner sequence. Control the loose ball before you shoot the trapped ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Wiseman and Tea Time",
+            "when": "Use this route when the Wiseman target, scoop, and Ello lane give controlled returns.",
+            "steps": [
+              {
+                "text": "Hit the Wiseman drop. Shoot the scoop. Complete the shown Quest shots. Return to the scoop.",
+                "modeNotes": [
+                  "Wiseman Quest: Odd completions start Friendzy. Quest 2 lights Extra Ball. Quest 4 starts Wiseman Multiball. Quest 6 lights its Orb."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "During Wiseman Multiball, shoot the Wiseman scoop for Jackpots until one ball remains.",
+                "modeNotes": [
+                  "Wiseman Multiball: The Wiseman scoop is the Jackpot shot. It ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Complete both Mystery targets in one ball. Shoot the Ello lane under the upper-right flipper. Tournament Mode alternates points and bonus X."
+              },
+              {
+                "text": "If Mystery lights Tea Time, shoot under the left ramp before the start hurry-up ends. Shoot orbits to raise the value. Shoot either U-turn side to multiply it. Collect at the left ramp.",
+                "modeNotes": [
+                  "Tea Time Multiball: The third left-ramp collect starts single-lit-shot victory laps. It ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Poisoned Peach, Goblin City, and Battle Jareth",
+          "steps": [
+            {
+              "text": "Start all three modes in either row to qualify Poisoned Peach. Start it at a U-turn side or the Wiseman scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start all six modes to qualify Goblin City. Shoot the left-orbit forks to start it.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "In phase 1, alternate a ramp and Humongous three times, then shoot under the left ramp. In phase 2, make four blue shots and lock at the center ramp, Wiseman, and Helping Hands. In phase 3, score a Jackpot and shoot Wiseman for the Super.",
+              "modeNotes": [
+                "Goblin City: It advances from single-ball play to three-ball locks, then five-ball Jackpot play. Each later Super Jackpot needs one more Jackpot. The last phase ends when one ball remains."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the 13 Orbs from the displayed mode, Friend, multiball, and Quest goals. Shoot under the upper-right flipper when Collect Orb is lit. Then shoot one rainbow major shot to assign its multiplier.",
+              "modeNotes": [
+                "Orb: It adds a permanent multiplier to one major shot. An unassigned multiplier is lost at the drain, but the Orb stays collected."
+              ]
+            },
+            {
+              "text": "After Orb 13 is assigned, shoot either lit orbit to start Battle Jareth. Store six words by completing each growing yellow set and its red collect. Then repeat the six red shots in order.",
+              "modeNotes": [
+                "Battle Jareth: A drain or the clock reaching 13 removes one Orb and returns the ball while an Orb remains. The game ends after phase 2."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Brick Keeper Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Friend Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Fireys",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Tea Time Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Wiseman Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Goblin City",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Knockers",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Four Guards",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Cleaners",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Oubliette",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bog",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Poisoned Peach",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Battle Jareth",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left-orbit forks",
+            "context": "Then shoot the left-orbit forks to trap a ball.",
+            "label": "Left-orbit forks and captive ball",
+            "description": "The forks and captive ball are in the upper-left-middle area.",
+            "xPercent": 29,
+            "yPercent": 36,
+            "precision": "area"
+          },
+          {
+            "term": "center ramp",
+            "context": "Shoot the flashing green center ramp to lock ball 2.",
+            "label": "Center ramp lock",
+            "description": "The center ramp rises through the upper-middle playfield.",
+            "xPercent": 49,
+            "yPercent": 27,
+            "precision": "area"
+          },
+          {
+            "term": "right orbit",
+            "context": "Shoot the flashing green right orbit to start Brick Keeper Multiball.",
+            "label": "Right orbit",
+            "description": "The right orbit is the upper-right Brick Keeper start shot.",
+            "xPercent": 75,
+            "yPercent": 31,
+            "precision": "area"
+          },
+          {
+            "term": "Wiseman scoop",
+            "context": "Plunge into the Wiseman scoop.",
+            "label": "Wiseman drop and scoop",
+            "description": "The Wiseman target and scoop are in the right-center area.",
+            "xPercent": 66,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "Helping Hands",
+            "context": "Shoot Helping Hands when the Friend Jackpot is ready.",
+            "label": "Helping Hands scoop",
+            "description": "Helping Hands is the left-center scoop.",
+            "xPercent": 23,
+            "yPercent": 57,
+            "precision": "area"
+          },
+          {
+            "term": "inner bridge loop",
+            "context": "After the eject, use the upper flipper to shoot the inner bridge loop.",
+            "label": "Inner bridge loop",
+            "description": "The bridge loop is above the upper flipper in the upper-left-center area.",
+            "xPercent": 38,
+            "yPercent": 25,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Tournament Mode replaces some Mystery awards; do not plan around Extra Ball, Bonus X, or Tea Time unless they remain enabled.",
+          "Test both U-turns, the Wiseman scoop eject, left-ramp return, forks, and outlane posts before choosing a route."
+        ],
+        "techniques": [],
+        "cautions": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Shoot Sir Didymus's first Friend Jackpot to collect the HELP defense."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start all three modes in either row to qualify Poisoned Peach."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Ball 3 Brick Keeper consolation: Use this plan when the target returns are unsafe or the first two balls are short."
+          }
+        ],
+        "simpleOverview": "Jim Henson's Labyrinth adds one LABYRINTH-letter requirement for each successive mode (one letter for the first mode, then two, up to six). White-arrow shots collect the letters; the Change Mode target changes the selection within its row, and either side of the U-turn or the open Wiseman scoop starts the selected mode. Separately, hit the wall and all four flashing green Fairy targets, then lock at the left orbit and center ramp before shooting the right orbit to start Brick Keeper Multiball.",
+        "overview": "Jim Henson's Labyrinth opens several routes through six modes, three Friends, several Multiballs, and thirteen specific Orb objectives. Shoot Sir Didymus's first Friend Jackpot to collect the HELP defense. Use white-arrow LABYRINTH letters and a U-turn side or the open Wiseman scoop to play Knockers, Four Guards, and Fireys; playing all three lights Poisoned Peach at the same start shots. When an objective lights Collect Orb, shoot under the upper-right flipper and then a rainbow major shot to assign its permanent multiplier.",
+        "machineSetup": [
+          "Tournament Mode replaces some Mystery awards; do not plan around Extra Ball, Bonus X, or Tea Time unless they remain enabled.",
+          "Test both U-turns, the Wiseman scoop eject, left-ramp return, forks, and outlane posts before choosing a route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Collect LABYRINTH letters for the selected mode, use the wall and Fairy targets for Brick Keeper Multiball, or collect Friend Jackpots for Friend Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start the selected mode",
+            "text": "Use the Change Mode target to choose within the active row. Make white-arrow shots to collect LABYRINTH letters (one for the first mode, then one additional letter for each later mode). Shoot either side of the U-turn or the open Wiseman scoop to start the selected mode.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Knockers",
+              "reason": "Playing it advances the upper-row set toward Poisoned Peach, and its yellow-shot sequence is fixed.",
+              "play": "Shoot the yellow ramps or U-turn sides. At the prompt, hit the Wiseman drop and quickly shoot the scoop. Finish the yellow shots, then shoot the right orbit."
+            }
+          },
+          {
+            "title": "Start Brick Keeper Multiball",
+            "text": "Hit the wall target and all four flashing green Fairy targets to light the first lock. Shoot the flashing green left orbit for lock 1, the center ramp for lock 2, and the right orbit to start Brick Keeper Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Shoot Sir Didymus's first Friend Jackpot to collect the HELP defense."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start all three modes in either row to qualify Poisoned Peach."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Ball 3 Brick Keeper consolation: Use this plan when the target returns are unsafe or the first two balls are short."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Friend Multiball",
+          "when": "Use this when the Friend circles and Helping Hands are safer than the wall and Fairy targets.",
+          "steps": [
+            {
+              "text": "Shoot a flashing Friend circle, then the solid circles of the same color. Shoot Helping Hands when that Friend Jackpot is ready. Collect one Jackpot for each of the blue, yellow, and red Friends.",
+              "kinds": []
+            },
+            {
+              "text": "Shoot Helping Hands after all three Friend Jackpots to start Friend Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "G4kdB",
+  "title": "Pinball Pool",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide Pinball Pool strategy",
+      "url": "https://rules.silverballmania.com/rules/G4kdB-MLqe3"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Pinball Pool tournament guide",
+        "url": "https://www.kineticist.com/games/pinball/pinball-pool"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot either upper saucer four times to reach 5x. Clear the two drop banks and center 8 ball to collect all 15 pool balls. Shoot an upper saucer for the 75,000 maximum bonus, reset the rack, and repeat.",
+      "quickInfo": [
+        {
+          "name": "Bonus X",
+          "summary": "Each upper-saucer shot advances the multiplier to a 5x maximum."
+        },
+        {
+          "name": "Linked rack",
+          "summary": "The default setting drops the same-height target in the opposite bank after one direct hit."
+        },
+        {
+          "name": "Pool-ball bonus",
+          "summary": "Each collected ball adds 1,000 to base bonus for a 15,000 full rack."
+        },
+        {
+          "name": "Collect Bonus",
+          "summary": "A full rack at 5x scores 75,000 at either upper saucer and resets all targets."
+        }
+      ],
+      "steps": [
+        {
+          "text": "If Extra Ball or Special has tournament value, plunge the center B lane; otherwise, use the safest top feed."
+        },
+        {
+          "text": "Watch the first ball leave the top and identify the safe nudge or catch before you repeat a saucer."
+        },
+        {
+          "text": "Shoot either upper saucer until 5x is lit.",
+          "modeNotes": [
+            "Bonus X: Each saucer scores 5,000 and advances the multiplier; 5x is the maximum."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Hit one controlled drop target and watch the opposite bank to learn the paired-target setting.",
+          "modeNotes": [
+            "Paired rack: The default setting drops the same-height target in the opposite bank, so one safe shot can collect two pool balls."
+          ]
+        },
+        {
+          "text": "Use the safer target in each same-height pair to clear the 14 drop targets."
+        },
+        {
+          "text": "Hit the center captive ball hard enough to trip its rollover and collect the 8 ball.",
+          "modeNotes": [
+            "Pool-ball bonus: Each of the 15 collected balls adds 1,000 to base bonus."
+          ]
+        },
+        {
+          "text": "After all 15 balls are lit, shoot either upper saucer to collect the full bonus and reset the rack.",
+          "modeNotes": [
+            "Collect Bonus: A full rack scores 15,000 times Bonus X, for a 75,000 maximum at 5x."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Repeat the 5x rack-and-collect cycle. Do not shoot the captive ball after the 8 ball is already collected."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Partial rack and 5x bonus",
+        "when": "Recovery pivot: Use this when the captive ball or several targets reject dangerously.",
+        "steps": [
+          {
+            "text": "Build 5x at the upper saucers.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the safer target in each same-height pair to collect pool balls."
+          },
+          {
+            "text": "Do not force the center 8 ball only to complete the rack."
+          },
+          {
+            "text": "Protect the partial base bonus at 5x."
+          },
+          {
+            "text": "Expect the partial rack to reset at the drain."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: A-B-C awards",
+          "when": "When trailing, use this higher-ceiling route: use this only when Extra Ball or Special has tournament value.",
+          "steps": [
+            {
+              "text": "Plunge the center B lane."
+            },
+            {
+              "text": "Collect A at the left inlane and C at the right inlane."
+            },
+            {
+              "text": "Hit the center 8 ball to collect the lit Extra Ball."
+            },
+            {
+              "text": "After the Extra Ball collect, shoot an upper saucer for Special."
+            },
+            {
+              "text": "Stop when the awards give no useful points."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 75,000 bonus collects",
+        "steps": [
+          {
+            "text": "Reach 5x at the upper saucers.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect all 15 pool balls."
+          },
+          {
+            "text": "Shoot an upper saucer for the 75,000 maximum Collect Bonus."
+          },
+          {
+            "text": "Repeat after the targets reset."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Collect Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "A-B-C",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "8 ball",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Linked rack",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "B-lane plunge",
+          "instruction": "Time the plunge for the center B lane when A-B-C awards have tournament value.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/pinball-pool"
+        },
+        {
+          "name": "Linked-target selection",
+          "instruction": "If the opposite same-height target also drops, aim at the safer member of each pair.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/pinball-pool"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Drop-target rebounds can strike the sides of the center 8-ball column.",
+          "response": "Keep both flippers ready after every target hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4kdB-MLqe3"
+        },
+        {
+          "issue": "The center captive ball is a difficult rebound shot.",
+          "response": "Do not repeat it after the 8 ball is collected and prepare to save the rebound.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/pinball-pool"
+        },
+        {
+          "issue": "Balls leaving the top can create the largest uncontrolled feeds.",
+          "response": "Watch one full exit before you repeat a saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4kdB-MLqe3"
+        }
+      ],
+      "simpleOverview": "Pinball Pool is a rack-and-collect game. Shoot either upper saucer four times to reach 5x, clear the two drop banks and center 8 ball, then shoot an upper saucer for the full 75,000 bonus and repeat after the rack resets.",
+      "overview": "Four visits to either upper saucer raise Bonus X to 5x in Pinball Pool. The two banks and center captive ball represent the 15-ball rack; hitting one bank target also drops its same-height partner in the opposite bank. Clear each pair from its safer side, collect the 8 ball, then shoot either upper saucer for the maximum bonus.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "GR67j",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "On an unmodified machine, repeatedly shoot the right-side standup from the left flipper; its value dominates the rest of the game. If a tournament gate sends that rebound to the shooter lane, still take the standup from the left, but use the right flipper to send the ball up top, collect white card rollovers, and finish in the top saucer. Complete the three upper-left Deuce targets for Bonus X when the mini-flipper has a clean shot.",
+        "simpleOverview": "First check whether the right-side standup has been modified. On a factory setup, repeat it from the left flipper. On a gated tournament setup, take that standup only from the left and use the right flipper to shoot up top, collect white card rollovers, and reach the saucer.",
+        "summary": "Check the right-side standup before play. Repeat it from the left flipper on a factory setup; if a tournament gate changes its feed, combine that shot with right-flipper feeds through the white card rollovers and top saucer.",
+        "quickInfo": [
+          {
+            "name": "Check the Right Standup",
+            "summary": "Tournament setups may gate its rebound to the shooter lane."
+          },
+          {
+            "name": "Repeat It from the Left",
+            "summary": "The factory value is the dominant scoring route."
+          },
+          {
+            "name": "Use the Top Saucer",
+            "summary": "On a modified setup, collect white cards before the saucer."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete the three upper-left Deuce targets."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the right-side standup from the left flipper and read where its rebound or added tournament gate sends the ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On a factory setup, transfer safely back to the left flipper and repeat the right-side standup.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On a gated setup, use the right flipper to shoot above the upper mini-flipper, collect white card rollovers, and let the ball finish in the top saucer.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When controlled at the upper flipper, complete the three Deuce targets to advance Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build card and Super Bonus",
+            "when": "Use this when the right standup has been weakened and the left card targets are feeding safely.",
+            "steps": [
+              {
+                "text": "Collect cards in order through 10, Jacks, Queens, the full house, then Kings and Ace.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Completing all 16 cards banks 80,000 Super Bonus and starts the next set; combine it with Deuce-target Bonus X.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Cash reliable saucer value",
+          "steps": [
+            {
+              "text": "Collect white card rollovers before the ball reaches the top saucer.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete one or two white-card sets for the larger 40,000 and 80,000 saucer extras before taking riskier lower targets.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Inspect the right-side standup for a tournament gate or feed modification; confirm Extra Ball and Special conversions, Bonus X, and saucer/card values.",
+          "Test the right standup and rebound, white card rollovers and top saucer, upper mini-flipper and Deuce bank, left card drops and standups, center red target and gate, return lanes, and trough."
+        ],
+        "techniques": [
+          {
+            "name": "Post pass",
+            "instruction": "Use a tested post pass to return a controlled ball from the right flipper to the left for the dominant right-standup shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR67j-M7ZYy",
+            "techniqueSlug": "post-pass"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Right-side standup",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Top saucer",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right-side standup",
+            "label": "Right-side standup",
+            "description": "The lower-right standup used as the factory scoring route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "white card rollovers",
+            "label": "White card rollovers",
+            "description": "The upper white buttons that add value before the top saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top saucer",
+            "label": "Top saucer",
+            "description": "The upper collect reached after the white card rollovers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Deuce targets",
+            "label": "Upper-left Deuce bank",
+            "description": "The three targets beside the mini-flipper that advance Bonus X.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A tournament gate can turn the factory right-standup repeat into a shooter-lane feed.",
+            "response": "Inspect and test the shot before committing; use the mixed standup and top-saucer plan when the feed has been changed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR67j-M7ZYy"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Check the right-side standup before play. Repeat it from the left flipper on a factory setup; if a tournament gate changes its feed, combine that shot with right-flipper feeds through the white card rollovers and top saucer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the right-side standup from the left flipper and read where its rebound or added tournament gate sends the ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On a factory setup, transfer safely back to the left flipper and repeat the right-side standup.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On a gated setup, use the right flipper to shoot above the upper mini-flipper, collect white card rollovers, and let the ball finish in the top saucer.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When controlled at the upper flipper, complete the three Deuce targets to advance Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Check the Right Standup",
+            "summary": "Tournament setups may gate its rebound to the shooter lane."
+          },
+          {
+            "name": "Repeat It from the Left",
+            "summary": "The factory value is the dominant scoring route."
+          },
+          {
+            "name": "Use the Top Saucer",
+            "summary": "On a modified setup, collect white cards before the saucer."
+          }
+        ]
+      }
+    }
+  ]
+}

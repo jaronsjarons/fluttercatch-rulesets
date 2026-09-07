@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "GRD79",
+  "title": "Total Nuclear Annihilation",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Total Nuclear Annihilation rulesheet",
+      "url": "https://tiltforums.com/t/total-nuclear-annihilation-rulesheet/3209"
+    },
+    "supportingSources": [
+      {
+        "label": "Bowen Kerins at Texas Pinball Festival 2018",
+        "url": "https://pinballvideos.com/v/1798/6767"
+      },
+      {
+        "label": "Total Nuclear Annihilation at Space City Open 2022",
+        "url": "https://pinballvideos.com/v/4310/21950"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Total Nuclear Annihilation: fill the keypad and shoot the scoop to start Reactor scoring. Hit the lit orbit and upper switches until status passes 99, then hit flashing destroy targets. For Multiball, lock two balls and hit Lock Target again; complete drop-target Jackpots before the rear-scoop Super Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Two separate starts",
+          "summary": "The keypad and scoop start a Reactor. The inline lock lane starts Multiball. Reactor qualification, progress, and collects remain available during Multiball."
+        },
+        {
+          "name": "Ball-save windows",
+          "summary": "Use active ball-save time for the dangerous Reactor, inline-lock, and destroy-target shots. Completing S-A-V-E can light an inlane or outlane save that is moved with the flippers."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before plunging, move the lit CORE letter to the expected plunge lane. Do not touch the flippers after launch if the Hands-Free Skill Shot is lined up.",
+          "modeNotes": [
+            "Hands-Free Skill Shot: Completing the lit CORE lane without moving it after launch fills the reactor grid, advances one ball-save level, and awards points."
+          ]
+        },
+        {
+          "text": "Fill the center keypad grid with target hits. When the grid is complete, shoot the scoop to start the Reactor.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Send the ball through a lit orbit into the upper Reactor area. Build the status past 99 with upper switches, spinners, and the 1-2-3 targets.",
+          "modeNotes": [
+            "After the Reactor reaches critical, hit every flashing lower-playfield destroy target. Later Reactors require more destroy shots."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "While the Reactor is running, refill the keypad grid to score the Reactor Jackpot. Then repeat the keypad, scoop, upper-Reactor, and destroy-target sequence for the next Reactor.",
+          "modeNotes": [
+            "Reactor progress remains available during Multiball, but Multiball is not part of Reactor qualification or its start sequence."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Multiball route",
+          "when": "Use this after preparing two inline locks. Multiball does not qualify or start a Reactor.",
+          "steps": [
+            {
+              "text": "Settle the ball on the flipper that gives the cleanest inline-lock backhand."
+            },
+            {
+              "text": "Lock two balls, then hit the lock target again to start Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit the lock drops in order for the 1x, 2x, and 3x Jackpots.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the rear lock scoop for the 5x Super Jackpot or add-a-ball.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Destroy all nine Reactors",
+        "steps": [
+          {
+            "text": "Repeat the keypad, scoop, upper-Reactor, and flashing destroy-target sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Expect later Reactors to require more upper status and more flashing destroy-target hits.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Destroy the ninth Reactor to complete Total Nuclear Annihilation.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Reactor",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Super Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Playfield Multiplier",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Ball Save",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Drop catch",
+          "techniqueSlug": "drop-catch",
+          "instruction": "Drop catch the scoop eject on the receiving flipper, then settle the ball before choosing the Reactor or lock shot.",
+          "sourceUrl": "https://tiltforums.com/t/total-nuclear-annihilation-rulesheet/3209"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Attempt the inline lock only from a settled cradle. Stop after a reject reaches the center drain.",
+          "sourceUrl": "https://tiltforums.com/t/total-nuclear-annihilation-rulesheet/3209",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Choose the reliable side",
+          "instruction": "Transfer a controlled ball before the inline lock or Reactor entrance when the shot is more reliable from the other flipper; do not force the weaker side.",
+          "sourceUrl": "https://pinballvideos.com/v/5335"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The main scoop fires the ball back quickly.",
+          "response": "Drop catch the scoop eject and expect an immediate live return.",
+          "sourceUrl": "https://tiltforums.com/t/total-nuclear-annihilation-rulesheet/3209"
+        },
+        {
+          "issue": "The inline lock lane becomes more dangerous as deeper drops are lowered.",
+          "response": "Backhand it only from a settled cradle. Abandon the lock route after a center-drain reject.",
+          "sourceUrl": "https://tiltforums.com/t/total-nuclear-annihilation-rulesheet/3209"
+        },
+        {
+          "issue": "Reactor and inline-lock shots can reject dangerously during single-ball play.",
+          "response": "Prefer those shots while a ball save is active or during Multiball, and settle down before the protection expires.",
+          "sourceUrl": "https://pinballvideos.com/v/5335"
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At Texas Pinball Festival 2018, Bowen Kerins stacked Reactor scoring with Multiball.",
+          "At the Space City Open 2022, Jim Mueller, Tim Sexton, Colin MacAlpine, and Mark Meserve prepared a Reactor with locks, then finished the Reactor during Multiball.",
+          "Bowen Kerins used active ball-save time for Reactor and lock shots, transferred to the more reliable flipper, and collected Jackpots to ease the next Multiball qualification."
+        ]
+      },
+      "simpleOverview": "Total Nuclear Annihilation is a race through nine Reactors. Fill the keypad, shoot the scoop to start the current Reactor, send the ball through a lit orbit, raise the Reactor status past 99 with upper-playfield switches, then hit every flashing lower-playfield destroy target. Multiball starts separately: lock two balls in the inline lane, then hit the lock target again.",
+      "overview": "Total Nuclear Annihilation is a race through nine Reactors. Prepare two balls in the inline lock while building the Reactor. Start the Reactor at the scoop, raise it past 99, then hit the lock target again to start Multiball and finish the flashing destroy targets while the Reactor value is multiplied by the number of balls in play. The keypad and scoop start the Reactor; the inline lane starts Multiball.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

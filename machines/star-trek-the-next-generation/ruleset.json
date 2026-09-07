@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6d8",
+  "title": "Star Trek: The Next Generation",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Star Trek: The Next Generation rulesheet",
+      "url": "https://www.pinball.org/rules/startrekthenextgeneration.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Keith Elwin strategy tutorial",
+        "url": "https://pinballvideos.com/v/706"
+      },
+      {
+        "label": "Bowen Kerins PAPA tutorial",
+        "url": "https://pinballvideos.com/v/332"
+      },
+      {
+        "label": "PAPA tournament notes",
+        "url": "https://www.pinball.org/rules/startrekthenextgeneration-notes.txt"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Choose Start Mission, complete seven missions, favor missions that award artifacts, build Warp with the Picard Maneuver, start Final Frontier with at least four artifacts when possible, then use right-ramp Explosive Millions and Borg Multiball.",
+      "quickInfo": [
+        {
+          "name": "Picard Maneuver",
+          "summary": "Shoot the left orbit into the left ramp to build Warp efficiently."
+        },
+        {
+          "name": "Artifacts",
+          "summary": "Selected missions award artifacts that raise Final Frontier value."
+        },
+        {
+          "name": "Borg Multiball",
+          "summary": "Lock at the right orbit, use both cannons for higher Jackpots, and restore shields at the spinner."
+        },
+        {
+          "name": "Final Frontier",
+          "summary": "Complete seven missions to qualify the six-ball final mode."
+        },
+        {
+          "name": "Explosive Millions",
+          "summary": "Repeated right-ramp shots award a rising value after Final Frontier or when missions are unsafe."
+        },
+        {
+          "name": "Q’s Challenge and Multiball",
+          "summary": "Q’s Challenge continues during Borg Multiball, and its lit shots stop timing out until Multiball ends. Do not apply this exception to the other missions."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Choose Start Mission at the plunge. Choose Light Lock only when immediate Borg protection is more valuable."
+        },
+        {
+          "text": "Shoot the left orbit and then the left ramp for a Picard Maneuver. Repeat it to advance Warp.",
+          "modeNotes": [
+            "Warp: Warp 4 raises spinner value. Warp 6 lights Super Spinner. Warp 7 doubles it. Warp 9 starts timed high-value Warp awards."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Prefer artifact-producing missions. Q's Challenge and Search the Galaxy can support the route when their shots are controlled.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "For Borg Multiball, light and collect locks at the right orbit. The third lock loads the left cannon.",
+          "modeNotes": [
+            "Borg cannon sequence: Hit Start Mission from the left cannon for a Double Jackpot. Hit the Neutral Zone from the right cannon for a Triple Jackpot."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During Borg Multiball, shoot Start Mission for the Jackpot and make Picard Maneuvers for Triple Jackpots. Use the spinner to restore shields on supported ROMs.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete seven missions. If possible, collect at least four artifacts before you start Final Frontier.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Start Final Frontier and shoot the six lit major shots. Artifact count increases its start awards and shot values on supported ROMs.",
+          "modeNotes": [
+            "Final Frontier: This is a six-ball feature. Two complete sets of four artifacts give it the highest starting value."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "After Final Frontier, repeat the right ramp for Explosive Millions and use Borg Multiball instead of forcing another seven-mission cycle.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Explosive Millions and Borg",
+        "when": "Use this plan when mission starts or artifact shots are unreliable.",
+        "steps": [
+          {
+            "text": "Repeat the right ramp through the rising Explosive Millions values."
+          },
+          {
+            "text": "Take a safe Shuttle award when it helps the current position."
+          },
+          {
+            "text": "Shoot the right orbit for each lit Borg lock."
+          },
+          {
+            "text": "Use Borg Multiball for Jackpot, Triple Jackpot, and shield-restoration scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Artifact-rich Final Frontier",
+        "steps": [
+          {
+            "text": "Complete seven missions.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect at least four different artifacts. Continue to eight for two complete sets when the ball is controlled."
+          },
+          {
+            "text": "Start Final Frontier and shoot all six lit major shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the final feature, use Explosive Millions and Borg Multiball for repeatable scoring.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Borg Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Final Frontier",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Q's Challenge",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Search the Galaxy",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Explosive Millions",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Super Spinner",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Picard Maneuver",
+          "instruction": "Shoot the left orbit. Use the upper-left flipper to send the ball up the left ramp.",
+          "sourceUrl": "https://pinballvideos.com/v/706"
+        },
+        {
+          "name": "Cannon Jackpot sequence",
+          "instruction": "From the left cannon, hit Start Mission. From the right cannon, hit the Neutral Zone for the higher Jackpot.",
+          "sourceUrl": "https://www.pinball.org/rules/startrekthenextgeneration-notes.txt"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right-orbit auto-plunger controls the skill shot and Borg lock feed.",
+          "response": "Test the launcher before you commit to repeated locks. Use the right-ramp fallback if it cannot reach the required switches.",
+          "sourceUrl": "https://www.pinball.org/rules/startrekthenextgeneration.html"
+        },
+        {
+          "issue": "ROM versions change artifact scoring, Final Frontier values, Borg shields, and Jackpot rules.",
+          "response": "Use the installed ROM for numeric rules. Use the tutorials for shot order and control decisions.",
+          "sourceUrl": "https://www.pinball.org/rules/startrekthenextgeneration.html"
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Picard Maneuver position play",
+          "when": "Use this when the left orbit and left ramp return more safely than mission starts.",
+          "steps": [
+            {
+              "text": "Settle the ball on the right flipper."
+            },
+            {
+              "text": "Shoot the left orbit, then complete the left ramp for a Picard Maneuver."
+            },
+            {
+              "text": "Repeat the pair to advance Warp without forcing a dangerous mission shot."
+            },
+            {
+              "text": "Start the next mission only when its opening shot matches the controlled feed."
+            }
+          ]
+        }
+      ],
+      "simpleOverview": "Star Trek: The Next Generation uses missions and their artifacts to build Final Frontier. Choose Start Mission, complete seven missions, collect at least four artifacts when possible, then start the six-ball finale; use the left-orbit-to-left-ramp Picard Maneuver for Warp.",
+      "overview": "Completing all seven missions lights Final Frontier in Star Trek: The Next Generation, and collected artifacts raise its scoring. Use the Picard Maneuver for Warp progress. Start Borg Multiball through the lock route only when its Jackpots are the better immediate score; every mission except Q's Challenge pauses during it. Favor artifact missions and start Final Frontier with at least four artifacts before using right-ramp Explosive Millions.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

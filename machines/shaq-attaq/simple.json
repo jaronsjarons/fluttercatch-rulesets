@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "id": "G4PoV",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the four event-icon sets and shoot the basket once without using the right ramp. When HORSE, MVP, Game Balls, Shot Clock, and regular Multiball are ready, start them together there. Relock every active ball for Jackpot, then shoot the basket for the five-second Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Four event-icon sets",
+            "summary": "Horse-head inserts qualify HORSE, MVP-cup inserts qualify MVP, basketball inserts qualify the Game Balls event, and clock inserts qualify Shot Clock. Flashing events begin together at the right ramp."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Shoot the basket during single-ball play to light regular Multiball at the right ramp. The same ramp starts it with every flashing event."
+          },
+          {
+            "name": "Multimode Level 5",
+            "summary": "Start all four regular events and regular Multiball together. Do not call this Supermode; Supermode also requires Shaq Attaq."
+          },
+          {
+            "name": "Event interactions",
+            "summary": "The four regular events can start together with regular Multiball. During Slammin Jammin, event qualification can advance, but a new event cannot start until the feature ends."
+          },
+          {
+            "name": "Regular Multiball scoring",
+            "summary": "The basket or an all-active-ball right-ramp relock scores a Jackpot. The basket then collects a five-second Super Jackpot; tournament values are 10 million and 50 million."
+          },
+          {
+            "name": "Game Balls",
+            "summary": "The Game Balls event uses the vari-target. Its awards add collectible Game Balls, which are later spent at trade prompts."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On balls 1 and 2, complete the lit horse-head, MVP-cup, basketball, and clock event inserts until HORSE, MVP, the Game Balls event, and Shot Clock are flashing at the right ramp. Once an event is ready, do not shoot the right ramp.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the basket once during single-ball play to light regular Multiball at the right ramp. Do not shoot the right ramp yet.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "At the plunger, choose Alley Oop instead of Begin Event when the two lamps alternate. After the plunge lights Alley Oop, shoot the basket while it flashes.",
+            "modeNotes": [
+              "Choosing Alley Oop preserves the prepared right-ramp start. The basket awards one Game Ball."
+            ]
+          },
+          {
+            "text": "If all four events and regular Multiball are ready before ball 3, shoot the right ramp immediately. On ball 3, shoot the ramp with whatever features are waiting.",
+            "modeNotes": [
+              "All four events plus regular Multiball start as Multimode Level 5."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During regular Multiball, relock every active ball on the right ramp.",
+            "modeNotes": [
+              "The complete relock scores a Jackpot, lights the five-second Super Jackpot, and records the relock hidden feature."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the basket within five seconds for the Super Jackpot. On tournament settings, the Jackpot is 10 million and the Super Jackpot is 50 million.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Throughout the stack, shoot the center Drop Target for MVP, the vari-target for the Game Balls event, and the basket for Shot Clock. When the event timer gets low, shoot the HORSE spinner to restart it.",
+            "modeNotes": [
+              "Whenever the ball reaches the upper flippers, prioritize the center Drop Target before it returns to the lower playfield."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Finals",
+            "when": "After all four regular events have played, build at least five Game Balls before starting the lit Finals event.",
+            "steps": [
+              {
+                "text": "Shoot the right ramp when Finals is flashing.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Choose No to play for 100 million, or choose Yes to spend five Game Balls for 300 million or ten for 500 million.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the strobing vari-target, spinner, right rollover lane, right ramp, and basket before the 30-second timer ends.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Fourteen Game Balls",
+            "when": "After the four-event route has played, follow @pinballguru's exact setup for the one-time Double Entire Score trade.",
+            "steps": [
+              {
+                "text": "Stop at 13 Game Balls. Avoid Alley Oop because it adds one."
+              },
+              {
+                "text": "Shoot 1, 2, 3, and 4 in order to light #5, then let the ball enter the right up-kicker. It awards Game Ball 14 and immediately opens the trade prompt."
+              },
+              {
+                "text": "Accept the 14-Game-Ball trade to collect Double Entire Score once for this player."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Slammin Jammin",
+          "steps": [
+            {
+              "text": "Hit the upper-right spot target to spell SHAQUILLE, or choose Advance SHAQUILLE from Tip-Off awards."
+            },
+            {
+              "text": "When SHAQUILLE is complete, shoot Tip-Off and select Slammin Jammin to start the three-ball feature.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Slammin Jammin",
+            "tone": "forest",
+            "kind": "multiball",
+            "symbolKinds": [
+              "mode",
+              "multiball"
+            ],
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Multimode Level 5",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Game Balls event",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Finals",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Game Balls",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Double Entire Score",
+            "tone": "indigo"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center drop-target bank",
+            "context": "Hit the center drop-target bank, right-side rollover lane, and hole kicker while their MVP-cup inserts are lit.",
+            "label": "Center drop-target bank",
+            "description": "The center bank collects lit MVP-cup inserts; its upper target scores the MVP awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right-side rollover lane",
+            "context": "Hit the center drop-target bank, right-side rollover lane, and hole kicker while their MVP-cup inserts are lit.",
+            "label": "Right-side rollover lane",
+            "description": "The rollover lane at the right side collects its lit MVP-cup insert.",
+            "precision": "unverified"
+          },
+          {
+            "term": "hole kicker",
+            "context": "Hit the center drop-target bank, right-side rollover lane, and hole kicker while their MVP-cup inserts are lit.",
+            "label": "Hole kicker",
+            "description": "The hole kicker collects its lit MVP-cup insert.",
+            "precision": "unverified"
+          },
+          {
+            "term": "basket",
+            "context": "Shoot the basket once during single-ball play to light regular Multiball at the right ramp. Leave the ramp uncollected.",
+            "label": "Basket",
+            "description": "The moving hoop above the center playfield qualifies Multiball and scores its Jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "If all four events and regular Multiball are ready before ball 3, shoot the right ramp immediately. On ball 3, shoot the ramp with whatever features are waiting.",
+            "label": "Start and lock ramp",
+            "description": "The right ramp starts qualified events and Multiball and temporarily holds balls during relocks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "HORSE spinner",
+            "context": "Throughout the stack, shoot the center Drop Target for MVP, the vari-target for the Game Balls event, and the basket for Shot Clock. When the event timer gets low, shoot the HORSE spinner to restart it.",
+            "label": "HORSE spinner",
+            "description": "The spinner controls HORSE progress and keeps the stacked event timers running.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Tip-Off",
+            "context": "When SHAQUILLE is complete, shoot Tip-Off and select Slammin Jammin to start the three-ball feature.",
+            "label": "Tip-Off left up-kicker",
+            "description": "The left up-kicker gives choice awards and starts qualified Slammin Jammin.",
+            "precision": "unverified"
+          },
+          {
+            "term": "vari-target",
+            "context": "Throughout the stack, shoot the center Drop Target for MVP, the vari-target for the Game Balls event, and the basket for Shot Clock. When the event timer gets low, shoot the HORSE spinner to restart it.",
+            "label": "Vari-target",
+            "description": "The lower-left vari-target advances the Game Balls event.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Drop Target",
+            "context": "Throughout the stack, shoot the center Drop Target for MVP, the vari-target for the Game Balls event, and the basket for Shot Clock. When the event timer gets low, shoot the HORSE spinner to restart it.",
+            "label": "Center Drop Target",
+            "description": "The upper-playfield drop target is the priority MVP shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right up-kicker",
+            "context": "Shoot 1, 2, 3, and 4 in order to light #5, then let the ball enter the right up-kicker. It awards Game Ball 14 and immediately opens the trade prompt.",
+            "label": "Right up-kicker",
+            "description": "The up-kicker between the upper flippers collects lit #5 and opens the Game Ball trade.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper drop-target priority",
+            "instruction": "When the ball reaches the upper flippers, shoot the center Drop Target before it returns to the lower playfield.",
+            "sourceUrl": "https://tiltforums.com/t/shaq-attaq-rules/3007"
+          },
+          {
+            "name": "Status check",
+            "instruction": "Hold a flipper button to read the current Game Ball total before a Tip-Off trade or fourteen-ball setup.",
+            "sourceUrl": "https://tiltforums.com/t/shaq-attaq-rules/3007"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The right ramp starts every flashing event and regular Multiball together.",
+            "response": "Once a desired feature is waiting, preserve the ramp with Alley Oop until the planned start.",
+            "sourceUrl": "https://tiltforums.com/t/shaq-attaq-rules/3007"
+          },
+          {
+            "issue": "Tournament Mode automatically starts unplayed regular Multiball on the last ball.",
+            "response": "On the last ball, shoot the right ramp for whatever is waiting; do not rely on the automatic Multiball start to begin the events.",
+            "sourceUrl": "https://tiltforums.com/t/shaq-attaq-rules/3007"
+          },
+          {
+            "issue": "A right-ramp relock releases its ball after ten seconds, and the Super Jackpot window lasts five seconds.",
+            "response": "Track every released ball; after the Jackpot, shoot the basket within five seconds.",
+            "sourceUrl": "https://pinball.org/rules/shaqattaq.html"
+          },
+          {
+            "issue": "After the first regular Multiball, the basket-qualified right-ramp start can time out.",
+            "response": "If Start Multiball times out, shoot the basket again to requalify it.",
+            "sourceUrl": "https://pinball.org/rules/shaqattaq.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm three-ball Tournament Mode, event difficulty, timer settings, Game Ball trades, Extra Ball conversion, and Jackpot values.",
+          "Test the moving basket, right ramp and ball release, HORSE spinner, vari-target, center Drop Target, both up-kickers, Tip-Off, and all event-icon switches."
+        ],
+        "simpleOverview": "Shaq Attaq starts every flashing event and regular Multiball together at the right ramp. Complete the four event-icon sets and shoot the basket once without using that ramp, then start all five features there.",
+        "overview": "Shaq Attaq starts every flashing event and regular Multiball together at the right ramp. Complete all four event-icon sets and shoot the basket once without shooting the right ramp, then start all five together. Relock the active balls for Jackpot, collect the timed basket Super Jackpot, and keep the event clock alive at the HORSE spinner.",
+        "machineSetup": [
+          "Confirm three-ball Tournament Mode, event difficulty, timer settings, Game Ball trades, Extra Ball conversion, and Jackpot values.",
+          "Test the moving basket, right ramp and ball release, HORSE spinner, vari-target, center Drop Target, both up-kickers, Tip-Off, and all event-icon switches."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Collect every MVP-cup insert, shoot the basket once to light regular Multiball, then shoot the right ramp to start MVP and Multiball together. During the stack, hit the upper target in the center drop-target bank for MVP awards and shoot the basket for Jackpots and five-second Super Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Qualify MVP",
+            "text": "Hit the center drop-target bank, right-side rollover lane, and hole kicker while their MVP-cup inserts are lit. Collect every MVP-cup insert to qualify MVP at the right ramp.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Light regular Multiball",
+            "text": "During single-ball play, shoot the basket once to light regular Multiball at the right ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start MVP with Multiball",
+            "text": "When MVP and regular Multiball are flashing, shoot the right ramp to start them together.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "title": "Score MVP and the Jackpot",
+            "text": "During MVP, hit the upper target in the center drop-target bank for its progressive awards. During regular Multiball, shoot the basket or relock every active ball at the right ramp for a Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect the Super Jackpot",
+            "text": "After a Jackpot, shoot the basket within five seconds for the Super Jackpot. Each additional basket during the five-second window scores another Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Four event-icon sets",
+            "summary": "Horse-head inserts qualify HORSE, MVP-cup inserts qualify MVP, basketball inserts qualify the Game Balls event, and clock inserts qualify Shot Clock. Flashing events begin together at the right ramp."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Shoot the basket during single-ball play to light regular Multiball at the right ramp. The same ramp starts it with every flashing event."
+          },
+          {
+            "name": "Multimode Level 5",
+            "summary": "Start all four regular events and regular Multiball together. Do not call this Supermode; Supermode also requires Shaq Attaq."
+          }
+        ]
+      }
+    }
+  ]
+}

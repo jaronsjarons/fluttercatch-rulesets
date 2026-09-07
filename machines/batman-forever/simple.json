@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "G59zN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Select a Gotham Event or Light Lock at the plunge, spell CAVE for each VUK lock, then take both ramp Jackpots, the side-ramp Double, and the Batwing U-turn Super during Multiball.",
+        "quickInfo": [
+          {
+            "name": "Gotham Events",
+            "summary": "Hit all five ? targets to light an Event at the right orbit, or select Start Gotham Event as the skill shot; the launch button locks the selected Event."
+          },
+          {
+            "name": "Event progress",
+            "summary": "While a Gotham Event is running, shots do not advance other game features. Finish the Event before returning to CAVE and Multiball-lock progress."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Spell CAVE to light each VUK lock; the third lock normally starts three-ball play."
+          },
+          {
+            "name": "Jackpot ladder",
+            "summary": "Collect both outer-ramp Jackpots, the side-ramp Double, then load the Batwing and fire through the U-turn ramp for the Super."
+          },
+          {
+            "name": "Four-ball start",
+            "summary": "With the third lock lit, load a qualified Batwing and fire its ball into the VUK to start four-ball play with a higher base Jackpot."
+          },
+          {
+            "name": "Circus Countdown",
+            "summary": "Spot all seven flashing Bat Signal shots, then shoot the right orbit before the 99M countdown expires."
+          },
+          {
+            "name": "Forever",
+            "summary": "Complete all seven Gotham Events, match both good and bad Two-Face heads, and spot every Bat Signal, then use a normal Event-start route."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the opening save to test the CAVE drops, VUK, three ramps, U-turn ramp, Batwing feed, and right-orbit saucer eject."
+          },
+          {
+            "text": "Select Start Gotham Event or Light Lock at the plunge according to the safer current objective."
+          },
+          {
+            "text": "Spell CAVE to light each VUK lock. Before the third lock, choose the normal VUK start or the stronger Batwing-assisted start.",
+            "modeNotes": [
+              "Normal start: Shoot the lit VUK for three-ball Multiball.",
+              "Four-ball start: Make four ramp shots to light the Batwing. With the third lock lit, load the Batwing at the left ramp and fire into the VUK for four balls and a 75,000,000 base Jackpot. Use this only when the cannon aim is reliable."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, collect one Jackpot at each outer ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After both outer Jackpots, shoot the side ramp for the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp to load the enabled Batwing, then fire its ball through the U-turn ramp for the Super Jackpot.",
+            "modeNotes": [
+              "Multiball order: Left and right outer ramps, side-ramp Double, left-ramp Batwing load, then Batwing through the U-turn ramp for Super."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Gotham Event route",
+          "when": "Use this when the CAVE drops, VUK, or Batwing feeds are unreliable.",
+          "steps": [
+            {
+              "text": "Complete all five ? targets to light a Gotham Event at the right orbit."
+            },
+            {
+              "text": "Use the launch button to lock a selected Event whose required shots match the safe side of the playfield."
+            },
+            {
+              "text": "Shoot the right orbit and complete the displayed Event objectives.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect Circus Countdown only when the right-orbit feed is already proven."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Forever",
+          "steps": [
+            {
+              "text": "Play all seven Gotham Events.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Match both good Two-Face heads and both bad Two-Face heads."
+            },
+            {
+              "text": "Spot every flashing Bat Signal shot."
+            },
+            {
+              "text": "Collect lit Forever through a normal Gotham Event start route.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Forever, load the moving Batwing for Jackpots while at least two balls remain.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Gotham Event",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Gotham Events",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Forever",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Batwing",
+            "context": "Batwing",
+            "label": "Batwing cannon",
+            "description": "The ball-loading and firing toy used in the Super Jackpot sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "CAVE drops",
+            "context": "CAVE drops",
+            "label": "Lock qualification",
+            "description": "The drop targets used to spell CAVE and light each VUK lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "VUK",
+            "context": "VUK",
+            "label": "Batcave lock",
+            "description": "The right-side vertical eject used to collect lit Multiball locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side ramp",
+            "context": "side ramp",
+            "label": "Double Jackpot ramp",
+            "description": "The ramp lit for Double Jackpot after both outer-ramp Jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "U-turn ramp",
+            "context": "U-turn ramp",
+            "label": "Batwing Super shot",
+            "description": "The small ramp the Batwing must fire through for the Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "context": "right orbit",
+            "label": "Circus Countdown collect",
+            "description": "The orbit used to cash a lit Circus Countdown.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Batwing staging",
+            "instruction": "Attempt the Batwing-to-U-turn Super only while another multiball ball is trapped or safely parked.",
+            "sourceUrl": "https://www.kineticist.com/news/batman-forever-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Batwing Super Jackpot is a difficult two-part shot.",
+            "response": "Cash both outer Jackpots and the side-ramp Double before risking ball count on the Batwing-to-U-turn shot.",
+            "sourceUrl": "https://www.kineticist.com/news/batman-forever-pinball-tutorial"
+          },
+          {
+            "issue": "A2.00 uses four-ball Multiball, while later production revisions normally start three balls and can qualify a four-ball start.",
+            "response": "Read the installed revision and trough behavior before relying on ball count or base Jackpot value.",
+            "sourceUrl": "https://www.kineticist.com/news/batman-forever-pinball-tutorial"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Sega Batman Forever, installed revision, production or prototype hardware, Multiball ball count, lock difficulty, ball save, and Extra Ball conversion.",
+          "Confirm normal three-ball play, qualified four-ball Batwing play, or A2.00-era four-ball behavior.",
+          "Test CAVE drops, VUK, Batwing and launch button, both ramps, right-orbit saucer, Laser Kick, and Two-Face targets."
+        ],
+        "simpleOverview": "Batman Forever uses C-A-V-E to light each VUK lock and a four-step Jackpot ladder during Multiball. Collect both outer-ramp Jackpots, shoot the side ramp for Double Jackpot, then load the Batwing at the left ramp and fire through the U-turn ramp for Super Jackpot.",
+        "overview": "Batman Forever stops other feature progress while a Gotham Event is running. Finish the Event before returning to C-A-V-E and VUK locks, or prepare the Batwing-assisted four-ball start when its aim is reliable. During Multiball, complete both outer ramps, the side-ramp Double, and the Batwing-to-U-turn Super in order.",
+        "machineSetup": [
+          "Confirm Sega Batman Forever, installed revision, production or prototype hardware, Multiball ball count, lock difficulty, ball save, and Extra Ball conversion.",
+          "Confirm normal three-ball play, qualified four-ball Batwing play, or A2.00-era four-ball behavior.",
+          "Test CAVE drops, VUK, Batwing and launch button, both ramps, right-orbit saucer, Laser Kick, and Two-Face targets."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Select a Gotham Event or Light Lock at the plunge, spell CAVE for each VUK lock, then take both ramp Jackpots, the side-ramp Double, and the Batwing U-turn Super during Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the opening save to test the CAVE drops, VUK, three ramps, U-turn ramp, Batwing feed, and right-orbit saucer eject."
+          },
+          {
+            "text": "Select Start Gotham Event or Light Lock at the plunge according to the safer current objective."
+          },
+          {
+            "text": "Spell CAVE to light each VUK lock. Before the third lock, choose the normal VUK start or the stronger Batwing-assisted start.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Normal start: Shoot the lit VUK for three-ball Multiball.",
+              "Four-ball start: Make four ramp shots to light the Batwing. With the third lock lit, load the Batwing at the left ramp and fire into the VUK for four balls and a 75,000,000 base Jackpot. Use this only when the cannon aim is reliable."
+            ]
+          },
+          {
+            "text": "During Multiball, collect one Jackpot at each outer ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After both outer Jackpots, shoot the side ramp for the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp to load the enabled Batwing, then fire its ball through the U-turn ramp for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball order: Left and right outer ramps, side-ramp Double, left-ramp Batwing load, then Batwing through the U-turn ramp for Super."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gotham Events",
+            "summary": "Hit all five ? targets to light an Event at the right orbit, or select Start Gotham Event as the skill shot; the launch button locks the selected Event."
+          },
+          {
+            "name": "Event progress",
+            "summary": "While a Gotham Event is running, shots do not advance other game features. Finish the Event before returning to CAVE and Multiball-lock progress."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Spell CAVE to light each VUK lock; the third lock normally starts three-ball play."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Gotham Event route",
+          "when": "Use this when the CAVE drops, VUK, or Batwing feeds are unreliable.",
+          "steps": [
+            {
+              "text": "Complete all five ? targets to light a Gotham Event at the right orbit."
+            },
+            {
+              "text": "Use the launch button to lock a selected Event whose required shots match the safe side of the playfield."
+            },
+            {
+              "text": "Shoot the right orbit and complete the displayed Event objectives.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect Circus Countdown only when the right-orbit feed is already proven."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

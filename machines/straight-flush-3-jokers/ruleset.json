@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "GrkK0",
+  "title": "Straight Flush / 3 Jokers",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Straight Flush and 3 Jokers",
+      "url": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Straight Flush and 3 Jokers machine guide",
+        "url": "https://www.kineticist.com/games/pinball/straight-flush-3-jokers"
+      },
+      {
+        "label": "PinRescue 3 Jokers restoration and playfield reference",
+        "url": "https://pinrescue.com/games/3jokers.html"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat the left orbit for 10,000 and safe upper play. Use the plunge and incidental center-saucer entries to finish missing cards, and use the raised center post for control instead of chasing risky standups.",
+      "quickInfo": [
+        {
+          "name": "Left orbit",
+          "summary": "The left orbit scores 10,000 even when its Special lamp is not lit."
+        },
+        {
+          "name": "Five-card set",
+          "summary": "Completing all five cards through top lanes or the center saucer awards 100,000 or an extra ball according to the setup."
+        },
+        {
+          "name": "Three jokers",
+          "summary": "Collecting all three jokers through the center saucer awards 100,000 or the configured add-a-ball result."
+        },
+        {
+          "name": "Card selector",
+          "summary": "Either Advance standup or Advance rollover moves the center-saucer arrow one position clockwise."
+        },
+        {
+          "name": "Center post",
+          "summary": "The Up Post and Down Post standups raise and lower the ball-save post between the flippers."
+        },
+        {
+          "name": "Special timing",
+          "summary": "The left-orbit Special lamp changes with the hundreds digit of the score and is lit for about two digits out of ten."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before the plunge, read the missing top cards and aim for the hardest missing lane on the left."
+        },
+        {
+          "text": "After the plunge, transfer to or settle on the right flipper when safe."
+        },
+        {
+          "text": "Shoot the left orbit for 10,000 and another upper-playfield feed."
+        },
+        {
+          "text": "Use repeated orbit feeds and later plunges to finish missing top cards."
+        },
+        {
+          "text": "Let bumper action find the center saucer instead of shooting the saucer directly."
+        },
+        {
+          "text": "When the center post rises through natural play, let a slow ball settle against the post and a flipper."
+        },
+        {
+          "text": "Use a soft flip from the settled position to set up the next left orbit."
+        },
+        {
+          "text": "Take a lit left-orbit Special through the same safe shot, then continue the repeat."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Raised-post control",
+        "when": "Recovery pivot: Use this plan when upper exits reach the flippers slowly and the center post is already raised.",
+        "steps": [
+          {
+            "text": "Do not flip at the slow return immediately."
+          },
+          {
+            "text": "Let the ball settle between the raised post and a flipper."
+          },
+          {
+            "text": "Use a soft flip to move the ball toward the right flipper or a safe upper angle."
+          },
+          {
+            "text": "Shoot the left orbit from the controlled position."
+          },
+          {
+            "text": "Stop using this plan as soon as the center post lowers."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Finish a missing card",
+          "when": "When trailing, use this distinct scoreboard route: use this plan when one card remains and its top lane is reachable on the plunge or through the left orbit.",
+          "steps": [
+            {
+              "text": "Read the missing card before the next plunge or orbit shot."
+            },
+            {
+              "text": "Favor the matching top lane instead of a card you already have."
+            },
+            {
+              "text": "Use an Advance feature only when it can safely align the center-saucer arrow with the missing card."
+            },
+            {
+              "text": "Let the ball enter the center saucer naturally."
+            },
+            {
+              "text": "Collect the completed-set award, then resume left-orbit repeats."
+            }
+          ]
+        },
+        {
+          "title": "Card, joker, and Special awards",
+          "when": "Use this plan when card, joker, or Special awards give useful tournament points or allowed extra balls.",
+          "steps": [
+            {
+              "text": "Confirm each award conversion before the game."
+            },
+            {
+              "text": "Use the safe left orbit to seek the lit Special and top cards."
+            },
+            {
+              "text": "Use incidental saucer entries for the selected card or joker."
+            },
+            {
+              "text": "Do not shoot exposed bumpers or Advance standups only to force an award."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Safe 10,000 repeats with incidental set awards",
+        "steps": [
+          {
+            "text": "Collect a difficult missing card on the plunge."
+          },
+          {
+            "text": "Repeat the 10,000-point left orbit."
+          },
+          {
+            "text": "Use upper play to collect more card lanes."
+          },
+          {
+            "text": "Take incidental center-saucer cards and jokers."
+          },
+          {
+            "text": "Collect a lit Special or completed-set award through the same controlled routes."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Right-flipper left orbit",
+          "instruction": "Settle the ball on the right flipper and shoot the broad left orbit instead of a face-on bumper or standup target.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ"
+        },
+        {
+          "name": "Raised-post settle",
+          "instruction": "When the center post is up, let a slow ball stop between the post and a flipper, then use a soft flip to prepare the next shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ"
+        },
+        {
+          "name": "Cradle",
+          "instruction": "Expect the center-saucer kickout toward the left flipper, but verify the first return before you try to cradle it.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ",
+          "techniqueSlug": "cradle"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Face-on bumper hits and target rebounds can send the ball out of control or toward a drain.",
+          "response": "Use the left orbit for deliberate shots and let upper-playfield action collect cards naturally.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ"
+        },
+        {
+          "issue": "A deliberate center-saucer chase is riskier than waiting for the ball to enter during bumper action.",
+          "response": "Treat saucer cards and jokers as incidental awards unless its entry and kickout are proven safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ"
+        },
+        {
+          "issue": "The center post can lower after a Down Post hit and remove the expected save.",
+          "response": "Check the post position before every settle attempt and keep both flippers ready when it is down.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrkK0-MQdjZ"
+        }
+      ],
+      "simpleOverview": "Straight Flush / 3 Jokers scores 10,000 at the repeatable left orbit and returns the ball to the upper card lanes. Use plunges and orbit feeds to finish missing cards, let bumper action find the center saucer, and use the raised center post for control instead of shooting risky standups.",
+      "overview": "The repeatable left orbit in Straight Flush / 3 Jokers scores 10,000 and feeds five-card, three-joker, and center-post progress through the upper playfield. Keep returning through the orbit for points and top access, finish card lanes through natural upper play, and take incidental saucer entries. Use the Up Post target and a settled ball for control, then resume the orbit route.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

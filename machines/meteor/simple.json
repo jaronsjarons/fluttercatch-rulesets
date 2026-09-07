@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "id": "G5b38",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Knock down M, R, and three small METEOR letters, leave one standing to hold the spinner at 2,000, then transfer left and repeat the spinner.",
+        "quickInfo": [
+          {
+            "name": "2,000 spinner",
+            "summary": "M and R plus three small METEOR letters raise the spinner to its maximum without resetting the bank."
+          },
+          {
+            "name": "Bonus Multiplier",
+            "summary": "A complete METEOR bank resets the letters and spinner but advances end-of-ball bonus through 7x."
+          },
+          {
+            "name": "Number Bonus",
+            "summary": "The three numbered banks build separate stored values whose sum is multiplied at the drain."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the standing METEOR letters and cradle the first controllable ball."
+          },
+          {
+            "text": "Knock down M and R. Each scores 6,000 and adds 600 to the spinner."
+          },
+          {
+            "text": "Knock down three of E, T, the second E, and O. Each adds 200 to the spinner."
+          },
+          {
+            "text": "Leave one small letter standing and confirm that the spinner is worth 2,000 per spin.",
+            "modeNotes": [
+              "2,000 spinner: Five down METEOR letters, including M and R, maximize the spinner without completing and resetting the bank."
+            ]
+          },
+          {
+            "text": "Move the ball to the left flipper and shoot the spinner cleanly."
+          },
+          {
+            "text": "If the ball returns before the spinner stops, cradle and wait before the next shot."
+          },
+          {
+            "text": "Watch lit inlanes and top rollovers because they can spot the final METEOR letter."
+          },
+          {
+            "text": "When the bank completes, accept the reset and rebuild the same five-letter spinner setup.",
+            "modeNotes": [
+              "Bonus Multiplier: A complete METEOR bank advances end-of-ball bonus by one step; 6x and 7x reset to 1x after the drain instead of carrying."
+            ]
+          },
+          {
+            "text": "Use numbered banks only as a recovery route, then return to the 2,000 spinner."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Number 2 bank and bonus",
+          "when": "Recovery pivot: Use this when the ball is on the right flipper and the spinner transfer is unsafe.",
+          "steps": [
+            {
+              "text": "Read the number 2 Bonus value."
+            },
+            {
+              "text": "Shoot the upper-left number 2 bank from the right flipper."
+            },
+            {
+              "text": "Use each target to advance and score the number 2 Bonus."
+            },
+            {
+              "text": "Let the bank rebound send the ball toward the upper letters."
+            },
+            {
+              "text": "Resume spinner setup when the ball reaches the left flipper."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Complete METEOR for Bonus Multiplier",
+            "when": "When trailing, use this higher-ceiling route: use this after taking enough value from the 2,000 spinner.",
+            "steps": [
+              {
+                "text": "Complete the final standing letter."
+              },
+              {
+                "text": "Accept the six-target reset and 200 spinner."
+              },
+              {
+                "text": "Confirm that Bonus Multiplier advanced."
+              },
+              {
+                "text": "Rebuild the five-letter spinner setup."
+              }
+            ]
+          },
+          {
+            "title": "Balanced 1-2-3 Bonus",
+            "when": "Use this when natural bank shots can keep the three stored values equal.",
+            "steps": [
+              {
+                "text": "Hit at least one target in each numbered 1, 2, and 3 bank so all three displayed Bonus values are above zero."
+              },
+              {
+                "text": "Keep them equal below 7,000 to light WOW."
+              },
+              {
+                "text": "Collect WOW only when its configured award has tournament value."
+              },
+              {
+                "text": "Continue each Bonus value toward 7,000."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "147,000 end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Complete the numbered lanes and targets until each displayed Bonus value reaches 7,000."
+            },
+            {
+              "text": "Complete METEOR six times to reach 7x Bonus Multiplier."
+            },
+            {
+              "text": "Use the 2,000 spinner between completions."
+            },
+            {
+              "text": "Drain without tilting at 21,000 total Bonus and 7x."
+            },
+            {
+              "text": "Collect 147,000, then expect the next ball to start at 1x."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus Multiplier",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2,000 spinner",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Number Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "WOW",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Shatz pass",
+            "instruction": "Shatz pass from the right flipper into the left inlane only after testing it at low force.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5b38-MDqkx"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "Post pass from the right flipper to the left after testing the center-post response.",
+            "techniqueSlug": "post-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5b38-MDqkx"
+          },
+          {
+            "name": "Left-flipper spinner loop",
+            "instruction": "Move the ball to the left flipper and repeat the spinner while the return remains controlled.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/meteor"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Around-the-world spinner shots can drain in either direction.",
+            "response": "Keep both flippers ready after every spinner rip.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5b38-MDqkx"
+          },
+          {
+            "issue": "An overpowered alley pass can continue through the inlane into the outlane.",
+            "response": "Start with low force and stop after one dangerous result.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5b38-MDqkx"
+          },
+          {
+            "issue": "Drop targets in the lower playfield can return the ball toward the center.",
+            "response": "Use the number 2 bank as a recovery shot instead of the primary route.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5b38-MDqkx"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "METEOR letters",
+            "context": "Raise the spinner value with the six METEOR drop targets.",
+            "label": "METEOR drop targets",
+            "description": "Leave one small letter standing to preserve the 2,000 spinner.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "context": "Repeat the spinner from the left flipper.",
+            "label": "Spinner",
+            "description": "Its value rises with each down METEOR letter.",
+            "precision": "unverified"
+          },
+          {
+            "term": "number 2 bank",
+            "context": "Use the upper-left number 2 bank as the recovery route.",
+            "label": "Number 2 bank",
+            "description": "Build the stored number 2 Bonus value here.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbered banks",
+            "context": "The three numbered banks build separate Bonus values.",
+            "label": "Numbered drop-target banks",
+            "description": "Build the three stored Bonus values toward 21,000 total.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit inlanes",
+            "context": "Lit inlanes and top rollovers can spot the final METEOR letter.",
+            "label": "Lit inlanes and top rollovers",
+            "description": "A lit lane can complete the remaining letter and reset the bank.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center-post",
+            "context": "Test the center-post response before transferring the ball.",
+            "label": "Center post",
+            "description": "Its rebound determines whether a post pass is controlled.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm this is stock 1979 Stern Meteor code, not the aftermarket Meteor 2021 rules or the Taito edition.",
+          "Verify ball count, Extra Ball and Special conversion, WOW award, Bonus carry, and Bonus Multiplier reset behavior.",
+          "Test the spinner return, center post, both transfer lanes, numbered-bank rebounds, and whether lit lanes safely spot METEOR letters."
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At Pinburgh 2019, the players repeatedly completed selected METEOR targets to raise the lit spinner, then returned to the spinner from control instead of indiscriminately clearing every remaining target."
+          ]
+        },
+        "simpleOverview": "Meteor uses standing M-E-T-E-O-R targets to set the spinner value. Knock down M, R, and three smaller letters, leave one small letter standing to hold the spinner at 2,000, then transfer to the left flipper and repeat the spinner.",
+        "overview": "Meteor uses standing M-E-T-E-O-R targets to set the spinner value. Knock down M and R plus three of the four smaller letters, leave one small letter standing, and confirm the spinner at 2,000. Shoot it from the left flipper, avoid accidentally spotting the final letter, and rebuild the same five-letter state after a reset.",
+        "machineSetup": [
+          "Confirm this is stock 1979 Stern Meteor code, not the aftermarket Meteor 2021 rules or the Taito edition.",
+          "Verify ball count, Extra Ball and Special conversion, WOW award, Bonus carry, and Bonus Multiplier reset behavior.",
+          "Test the spinner return, center post, both transfer lanes, numbered-bank rebounds, and whether lit lanes safely spot METEOR letters."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Knock down M, R, and three small METEOR letters, leave one standing to hold the spinner at 2,000, then transfer left and repeat the spinner.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the standing METEOR letters and cradle the first controllable ball."
+          },
+          {
+            "text": "Knock down M and R. Each scores 6,000 and adds 600 to the spinner."
+          },
+          {
+            "text": "Knock down three of E, T, the second E, and O. Each adds 200 to the spinner."
+          },
+          {
+            "text": "Leave one small letter standing and confirm that the spinner is worth 2,000 per spin.",
+            "details": [
+              "2,000 spinner: Five down METEOR letters, including M and R, maximize the spinner without completing and resetting the bank."
+            ]
+          },
+          {
+            "text": "Move the ball to the left flipper and shoot the spinner cleanly."
+          },
+          {
+            "text": "If the ball returns before the spinner stops, cradle and wait before the next shot."
+          },
+          {
+            "text": "Watch lit inlanes and top rollovers because they can spot the final METEOR letter."
+          },
+          {
+            "text": "When the bank completes, accept the reset and rebuild the same five-letter spinner setup.",
+            "details": [
+              "Bonus Multiplier: A complete METEOR bank advances end-of-ball bonus by one step; 6x and 7x reset to 1x after the drain instead of carrying."
+            ]
+          },
+          {
+            "text": "Use numbered banks only as a recovery route, then return to the 2,000 spinner."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "2,000 spinner",
+            "summary": "M and R plus three small METEOR letters raise the spinner to its maximum without resetting the bank."
+          },
+          {
+            "name": "Bonus Multiplier",
+            "summary": "A complete METEOR bank resets the letters and spinner but advances end-of-ball bonus through 7x."
+          },
+          {
+            "name": "Number Bonus",
+            "summary": "The three numbered banks build separate stored values whose sum is multiplied at the drain."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Number 2 bank and bonus",
+          "when": "Recovery pivot: Use this when the ball is on the right flipper and the spinner transfer is unsafe.",
+          "steps": [
+            {
+              "text": "Read the number 2 Bonus value."
+            },
+            {
+              "text": "Shoot the upper-left number 2 bank from the right flipper."
+            },
+            {
+              "text": "Use each target to advance and score the number 2 Bonus."
+            },
+            {
+              "text": "Let the bank rebound send the ball toward the upper letters."
+            },
+            {
+              "text": "Resume spinner setup when the ball reaches the left flipper."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Around-the-world spinner shots can drain in either direction.",
+          "text": "Keep both flippers ready after every spinner rip."
+        }
+      }
+    }
+  ]
+}

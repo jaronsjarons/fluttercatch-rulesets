@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xqN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On the solid-state game, clear white, yellow, purple, then red to raise Bonus X in stages. Build base bonus up top, collect it, then rebuild both values.",
+        "steps": [
+          {
+            "text": "Plunge for the far-left 5,000 lane. Avoid a plunge that misses every lane and falls down the left side."
+          },
+          {
+            "text": "Hit the single white target first for 2x. Then complete the two yellow targets for 3x.",
+            "modeNotes": [
+              "Ordered Bonus X: Target position in the sequence matters. A later color does not raise the multiplier until every earlier color is complete."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the three purple targets for 4x. Then complete the four red targets for 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the left orbit, center spinner, and lit upper-left star rollovers to build base bonus to 15,000.",
+            "modeNotes": [
+              "Base bonus: Every five center-spinner turns add 1,000. Each lit green star rollover adds 1,000."
+            ]
+          },
+          {
+            "text": "Complete the last required drop target to collect the built bonus. Keep playing while it counts down.",
+            "modeNotes": [
+              "Bonus collect: Completing all ten drops immediately scores base bonus times Bonus X. The maximum collect is 15,000 at 5x, or 75,000.",
+              "After the collect, base bonus and Bonus X reset. Rebuild both for another collect."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Send the ball back to the top while the bonus counts. New scoring is kept during the count."
+          }
+        ],
+        "fallback": {
+          "title": "Up-top bonus",
+          "when": "Use this when direct drop-target rebounds are worse than the orbit and spinner feeds.",
+          "steps": [
+            {
+              "text": "Repeat the safer left orbit or center spinner."
+            },
+            {
+              "text": "Build base bonus at the spinner and lit green stars."
+            },
+            {
+              "text": "Return to white-yellow-purple-red only when a target is safely presented."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Purple extra ball",
+            "when": "Use this only when extra balls are enabled or converted to useful points.",
+            "steps": [
+              {
+                "text": "Complete the three purple targets."
+              },
+              {
+                "text": "Send the ball to the top and collect the now-lit purple lane."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 75,000 bonus collect",
+          "steps": [
+            {
+              "text": "Use the left orbit, every five center-spinner turns, and lit upper-left green star rollovers until base bonus reaches 15,000."
+            },
+            {
+              "text": "Complete white, yellow, purple, and red for 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Collect 75,000. Then rebuild after both values reset."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Angled spinner entry",
+            "instruction": "Guide a descending ball along a panel or through the far-right edge of the spinner gap. Avoid the straight left-side path.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xqN-MD1Rj"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball descending the left-side rollovers can hit the lower post and deflect to the right outlane.",
+            "response": "Watch the first plunge and upper return. Nudge before the ball reaches the post, based on this copy's rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xqN-MD1Rj"
+          },
+          {
+            "issue": "A ball falling straight down the left side of the center spinner can drain through the middle.",
+            "response": "Use an angled entry or the far-right edge of the gap. Be ready before any straight spinner exit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xqN-MD1Rj"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "On the solid-state game, clear white, yellow, purple, then red."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Use the left orbit, every five center-spinner turns, and lit upper-left green star rollovers until base bonus reaches 15,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Up-top bonus: Use this when direct drop-target rebounds are worse than the orbit and spinner feeds."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Orbit used to return the ball to upper play.",
+            "precision": "unverified",
+            "context": "Orbit used to return the ball to upper play."
+          },
+          {
+            "term": "center spinner",
+            "label": "Center spinner",
+            "description": "Repeatable scoring shot.",
+            "precision": "unverified",
+            "context": "Repeatable scoring shot."
+          },
+          {
+            "term": "target bank",
+            "label": "Target banks",
+            "description": "White, yellow, purple, and red drop-target banks used for multiplier progress.",
+            "precision": "unverified",
+            "context": "White, yellow, purple, and red drop-target banks used for multiplier progress."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Vancouver Island Pinball Expo 2024, the finalists followed the ordered color-target progression on the installed replacement board."
+          ]
+        },
+        "simpleOverview": "In Sinbad or Eye of the Tiger, complete the white target for 2x, the two yellow targets for 3x, the three purple targets for 4x, and the four red targets for 5x. Use the left orbit, center spinner, and lit upper-left stars to build 15,000 base bonus; the final drop collects the 75,000 multiplied value and resets both values.",
+        "overview": "In Sinbad or Eye of the Tiger, the ordered white, yellow, purple, and red target sets raise Bonus X from 2x through 5x, and completing the last required drop immediately collects base bonus times that multiplier. Build base bonus to 15,000 through the left orbit, center spinner, and lit upper-left stars, finish the color sequence for 75,000, then rebuild both values while the collect counts down.",
+        "machineSetup": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit the white, yellow, purple, then red targets for 5x Bonus, build base bonus up top, and complete the last required target to collect it.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Reach 3x Bonus",
+            "text": "Hit the single white target for 2x Bonus, then complete the two yellow targets for 3x."
+          },
+          {
+            "title": "Reach 5x Bonus",
+            "text": "Complete the three purple targets for 4x Bonus, then complete the four red targets for 5x."
+          },
+          {
+            "title": "Build and collect base bonus",
+            "text": "Use the left orbit, center spinner, and lit upper-left star rollovers to build base bonus to 15,000. Complete the last required drop target to collect it, then return the ball up top while the value counts down."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "On the solid-state game, clear white, yellow, purple, then red."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Use the left orbit, every five center-spinner turns, and lit upper-left green star rollovers until base bonus reaches 15,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Up-top bonus: Use this when direct drop-target rebounds are worse than the orbit and spinner feeds."
+          }
+        ],
+        "warning": {
+          "title": "A ball descending the left-side rollovers can hit the lower post and deflect to the right outlane.",
+          "text": "Watch the first plunge and upper return. Nudge before the ball reaches the post, based on this copy's rebound."
+        }
+      }
+    },
+    {
+      "name": "G4xqN-ML3o5",
+      "input": {
+        "summary": "Build base bonus through the spinner and upper rollovers, then complete all ten targets in the left and right banks for 2x end-of-ball bonus.",
+        "steps": [
+          {
+            "text": "Plunge for a lit upper lane and read the left-side return."
+          },
+          {
+            "text": "Use the left orbit, center spinner, and upper star rollovers to build base bonus."
+          },
+          {
+            "text": "Complete all ten targets in the left and right banks to light 2x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep the ball up top rather than forcing a dangerous target rebound."
+          },
+          {
+            "text": "Protect the built value until the multiplied bonus counts at the end of the ball."
+          }
+        ],
+        "fallback": {
+          "title": "Up-top bonus",
+          "when": "Use this when direct target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Repeat the safer orbit or center spinner."
+            },
+            {
+              "text": "Build base bonus at the spinner and lit upper rollovers."
+            },
+            {
+              "text": "Return to the left and right target banks only when a standing target is safely presented."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "2x end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Use the left orbit, center spinner, and upper star rollovers to build base bonus."
+            },
+            {
+              "text": "Complete all ten targets in the left and right banks to light 2x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Keep the ball up top rather than forcing a dangerous target rebound."
+            },
+            {
+              "text": "Protect the built value until the multiplied bonus counts at the end of the ball."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Angled spinner entry",
+            "instruction": "Guide a descending ball along a panel or through the far-right edge of the spinner gap. Avoid the straight left-side path.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xqN-MD1Rj"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball descending the left-side rollovers can hit the lower post and deflect to the right outlane.",
+            "response": "Watch the first plunge and upper return. Nudge before the ball reaches the post, based on this copy's rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xqN-MD1Rj"
+          },
+          {
+            "issue": "A ball falling straight down the left side of the center spinner can drain through the middle.",
+            "response": "Use an angled entry or the far-right edge of the gap. Be ready before any straight spinner exit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xqN-MD1Rj"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Build base bonus up top, then complete all ten targets for 2x."
+          },
+          {
+            "name": "Bonus timing",
+            "summary": "Bonus counts at the end of the ball; it is not collected and reset during play."
+          },
+          {
+            "name": "Upper play",
+            "summary": "The left orbit, center spinner, and upper star rollovers build base bonus."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Orbit used to return the ball to upper play.",
+            "precision": "unverified",
+            "context": "Orbit used to return the ball to upper play."
+          },
+          {
+            "term": "center spinner",
+            "label": "Center spinner",
+            "description": "Repeatable scoring shot.",
+            "precision": "unverified",
+            "context": "Repeatable scoring shot."
+          },
+          {
+            "term": "left and right target banks",
+            "label": "Left and right target banks",
+            "description": "The ten targets used to light 2x end-of-ball bonus.",
+            "precision": "unverified",
+            "context": "Complete all ten targets in the left and right banks to light 2x bonus."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Vancouver Island Pinball Expo 2024, the finalists followed the ordered color-target progression on the installed replacement board."
+          ]
+        },
+        "simpleOverview": "Sinbad (EM) builds base bonus through the left orbit, center spinner, and upper star rollovers, while all ten drop targets light 2x end-of-ball bonus. Build bonus through upper play, then complete the target banks only from controlled feeds.",
+        "overview": "In Sinbad (EM), the left orbit, center spinner, and upper star rollovers build base bonus, while completing all ten drop targets lights 2x end-of-ball bonus. Build the bonus through upper play, complete standing targets only from controlled feeds, then protect the multiplied value until the ball ends.",
+        "machineSetup": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "rulesNotes": [],
+        "simplePilotKey": "G4xqN-ML3o5"
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Build base bonus through the left orbit, center spinner, and upper star rollovers, then complete all ten targets in the left and right banks for 2x end-of-ball bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Build base bonus up top",
+            "text": "Use the left orbit or center spinner to return the ball to the upper playfield, then roll over the upper star switches to build base bonus."
+          },
+          {
+            "title": "Light 2x Bonus",
+            "text": "Hit all ten targets across the white, yellow, purple, and red banks to light 2x Bonus for this ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Protect the bonus",
+            "text": "Keep returning the ball through the left orbit or center spinner and protect control until the multiplied bonus counts at the end of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Build base bonus up top, then complete all ten targets for 2x."
+          },
+          {
+            "name": "Bonus timing",
+            "summary": "Bonus counts at the end of the ball; it is not collected and reset during play."
+          },
+          {
+            "name": "Upper play",
+            "summary": "The left orbit, center spinner, and upper star rollovers build base bonus."
+          }
+        ],
+        "warning": {
+          "title": "A ball descending the left-side rollovers can hit the lower post and deflect to the right outlane.",
+          "text": "Watch the first plunge and upper return. Nudge before the ball reaches the post, based on this copy's rebound."
+        }
+      }
+    }
+  ]
+}

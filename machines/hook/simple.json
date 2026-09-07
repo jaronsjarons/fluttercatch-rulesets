@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "id": "G42EQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Repeat the Windcoaster ramp while its return is controlled. Otherwise, complete the nine standup targets, lock one ball, plunge a lit Vortex hole to start three-ball Multiball, and alternate the left and right ramps for Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Multiball",
+            "summary": "Complete the nine standup targets, shoot the lock to hold one ball, then plunge a lit Vortex hole to start three-ball play."
+          },
+          {
+            "name": "Jackpot order",
+            "summary": "The Multiball Jackpot alternates from the left ramp to the right ramp and back."
+          },
+          {
+            "name": "Jackpot build",
+            "summary": "The nine standup targets raise the Jackpot value."
+          },
+          {
+            "name": "Power Scoop",
+            "summary": "The Skull lights an award; the Scoop collects whichever award the bumpers selected."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the left ramp, right ramp, Skull hole, Scoop eject, and Croc Clock return under ball save."
+          },
+          {
+            "text": "Repeat the Windcoaster ramp while it returns under control and advances toward 3 Million Plus."
+          },
+          {
+            "text": "Complete the nine standup targets. The top-left Clock Shop shot can spot targets."
+          },
+          {
+            "text": "Shoot the lit lock to hold one ball, then plunge a lit Vortex hole to start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for the first Jackpot, then the right ramp for the next.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue alternating ramps; use standup targets to build value only when the extra balls protect their rebounds.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to the currently lit ramp after each collect instead of repeating the same side blindly.",
+            "modeNotes": [
+              "Multiball order: Jackpots alternate between the left and right ramps."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Power Scoop awards",
+          "when": "Use this when the ramp entrances or lock feed are rejecting.",
+          "steps": [
+            {
+              "text": "Shoot the Skull to light the Power Scoop."
+            },
+            {
+              "text": "Read the award selected by the bumpers."
+            },
+            {
+              "text": "Collect the lit Scoop only when its eject is known to be safe."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bangarang combo",
+            "when": "Use this when both ramps and the Croc Clock shot are dialed in.",
+            "steps": [
+              {
+                "text": "Shoot the right ramp."
+              },
+              {
+                "text": "Follow with the left ramp."
+              },
+              {
+                "text": "Finish at the Croc Clock shot for the combo award."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Multiball Jackpots",
+          "steps": [
+            {
+              "text": "Complete the standups, lock one ball, then plunge a lit Vortex hole to start Multiball."
+            },
+            {
+              "text": "Build the Jackpot through controlled standups."
+            },
+            {
+              "text": "Alternate left and right ramp collects throughout Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Bangarang",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "Left Jackpot ramp",
+            "description": "The first ramp in the alternating Multiball Jackpot sequence.",
+            "precision": "unverified",
+            "context": "left ramp: The first ramp in the alternating Multiball Jackpot sequence."
+          },
+          {
+            "term": "right ramp",
+            "label": "Right Jackpot ramp",
+            "description": "The second ramp in the alternating Multiball Jackpot sequence.",
+            "precision": "unverified",
+            "context": "right ramp: The second ramp in the alternating Multiball Jackpot sequence."
+          },
+          {
+            "term": "Power Scoop",
+            "label": "Power Scoop collect",
+            "description": "The scoop used to collect the award lit by the Skull.",
+            "precision": "unverified",
+            "context": "Power Scoop: The scoop used to collect the award lit by the Skull."
+          },
+          {
+            "term": "Skull",
+            "label": "Skull hole",
+            "description": "Hole that lights the next Power Scoop award.",
+            "precision": "unverified",
+            "context": "Skull: Hole that lights the next Power Scoop award."
+          },
+          {
+            "term": "Scoop",
+            "context": "Scoop eject",
+            "label": "Scoop eject",
+            "description": "Right-side Scoop return that should be tested before relying on Power Scoop awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Croc Clock",
+            "label": "Croc Clock shot",
+            "description": "Upper-right clock shot used to finish the Bangarang sequence.",
+            "precision": "unverified",
+            "context": "Croc Clock: Upper-right clock shot used to finish the Bangarang sequence."
+          },
+          {
+            "term": "lock",
+            "context": "lock qualification",
+            "label": "Lock bank and shot",
+            "description": "Displayed standup and lock sequence used to qualify and start Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Alternating-ramp control",
+            "instruction": "Trap after each Jackpot and transfer deliberately to the flipper that owns the newly lit ramp.",
+            "sourceUrl": "https://www.coinoperatorshop.com/media/products/manual/pinball/Data_East_1992_Hook_Manual.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The standups that build Jackpot can produce uncontrolled center rebounds.",
+            "response": "Hit the standups only under Multiball protection or from a proven angle to raise the Jackpot.",
+            "sourceUrl": "https://www.coinoperatorshop.com/media/products/manual/pinball/Data_East_1992_Hook_Manual.pdf"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm lock qualification, Multiball restart, Power Scoop awards, ball save, Extra Ball conversion, and tournament settings.",
+          "Test both ramps, the lock bank and release, Skull hold, Scoop eject, Croc Clock, standups, and lane-change behavior."
+        ],
+        "simpleOverview": "In Hook, repeat the Windcoaster ramp to advance its value toward 3 Million Plus. Complete the nine standup targets, lock one ball, then plunge a lit Vortex hole to start three-ball Multiball, where Jackpots alternate between the left and right ramps. Collect Power Scoop and Bangarang when they are ready instead of treating either as required preparation.",
+        "overview": "In Hook, repeat the Windcoaster ramp to advance its value toward 3 Million Plus. Repeat Windcoaster while its return is controlled; otherwise complete the nine standup targets, lock one ball, plunge a lit Vortex hole, and alternate left and right ramps during Multiball. Collect Power Scoop or Bangarang when ready rather than making either a prerequisite.",
+        "machineSetup": [
+          "Confirm lock qualification, Multiball restart, Power Scoop awards, ball save, Extra Ball conversion, and tournament settings.",
+          "Test both ramps, the lock bank and release, Skull hold, Scoop eject, Croc Clock, standups, and lane-change behavior."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the Windcoaster ramp while its return is controlled. Otherwise, complete the nine standup targets, lock one ball, plunge a lit Vortex hole to start three-ball Multiball, and alternate the left and right ramps for Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the left ramp, right ramp, Skull hole, Scoop eject, and Croc Clock return under ball save."
+          },
+          {
+            "text": "Repeat the Windcoaster ramp while it returns under control and advances toward 3 Million Plus."
+          },
+          {
+            "text": "Complete the nine standup targets. The top-left Clock Shop shot can spot targets."
+          },
+          {
+            "text": "Shoot the lit lock to hold one ball, then plunge a lit Vortex hole to start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for the first Jackpot, then the right ramp for the next.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue alternating ramps; use standup targets to build value only when the extra balls protect their rebounds.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to the currently lit ramp after each collect instead of repeating the same side blindly.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball order: Jackpots alternate between the left and right ramps."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Multiball",
+            "summary": "Complete the nine standup targets, shoot the lock to hold one ball, then plunge a lit Vortex hole to start three-ball play."
+          },
+          {
+            "name": "Jackpot order",
+            "summary": "The Multiball Jackpot alternates from the left ramp to the right ramp and back."
+          },
+          {
+            "name": "Jackpot build",
+            "summary": "The nine standup targets raise the Jackpot value."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Power Scoop awards",
+          "when": "Use this when the ramp entrances or lock feed are rejecting.",
+          "steps": [
+            {
+              "text": "Shoot the Skull to light the Power Scoop."
+            },
+            {
+              "text": "Read the award selected by the bumpers."
+            },
+            {
+              "text": "Collect the lit Scoop only when its eject is known to be safe."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

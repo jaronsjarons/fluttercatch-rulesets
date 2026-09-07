@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ODR",
+  "title": "The Addams Family",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "The Addams Family rulesheet",
+      "url": "https://www.pinball.org/rules/addamsfamily.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams operating manual",
+        "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Addams%20Family%20Operations%20Manual.pdf"
+      },
+      {
+        "label": "PAPA tutorial",
+        "url": "https://pinballvideos.com/v/299"
+      },
+      {
+        "label": "The Addams Family Gold rulesheet",
+        "url": "https://www.pinball.org/rules/addamsfamilygold.html"
+      },
+      {
+        "label": "Aleksander Kaczmarczyk at CLEPIN 2018",
+        "url": "https://pinballvideos.com/v/2105/18173"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Spell G-R-E-E-D to open the Vault, lock two balls, then shoot the lit Electric Chair or Vault to start the first Multiball; shoot the Million Plus ramp during Multiball for the Super Jackpot, relight it at the Vault, and repeat.",
+      "quickInfo": [
+        {
+          "name": "Multiball",
+          "summary": "Bank two locks, then shoot the lit Chair or Vault to start three-ball play."
+        },
+        {
+          "name": "Million Plus",
+          "summary": "The left ramp scores the Super Jackpot during Multiball."
+        },
+        {
+          "name": "Train Wreck",
+          "summary": "The center ramp scores the regular Jackpot during Multiball."
+        },
+        {
+          "name": "Mansion Rooms",
+          "summary": "The Chair or Swamp collects the flashing room during single-ball play."
+        },
+        {
+          "name": "Tour the Mansion",
+          "summary": "Collect all 12 Mansion Rooms to start the final room sequence."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Soft-plunge the ball into the Thing eject. Use this skill shot to learn its return feed."
+        },
+        {
+          "text": "Hit the Bookcase until it opens. Shoot the Vault to bank the first lock.",
+          "modeNotes": [
+            "GREED: Bookcase hits spell GREED. A completed word opens the Vault.",
+            "First Multiball: The first start needs two banked locks. A lit Swamp plunge can bank the second lock on common settings."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Bank the second lock. Shoot the lit Chair or Vault to start Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the left Million Plus ramp first. This scores the large Super Jackpot.",
+          "modeNotes": [
+            "Super Jackpot: The first Multiball pays two times the base Jackpot. Later Multiballs pay three times the base Jackpot."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the center Train Wreck ramp when the left ramp is not available. This collects the regular Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After a Jackpot or Super Jackpot, shoot the Vault. Then return to the left ramp for another Super Jackpot.",
+          "modeNotes": [
+            "Vault relight: The Vault relights the Super Jackpot after a Jackpot or Super Jackpot collect."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If the Multiball ends without a Jackpot, shoot Thing during the restart timer when the installed settings offer a restart.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Bear-and-Chair rooms",
+        "when": "Use this plan when the Vault or Million Plus ramp is unreliable.",
+        "steps": [
+          {
+            "text": "Shoot either ramp to light the Chair."
+          },
+          {
+            "text": "Shoot the Chair or Swamp to collect the flashing Mansion Room.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the pop bumpers to change the flashing room when the current room is poor."
+          },
+          {
+            "text": "Repeat the Million Plus ramp for rising single-ball values when it returns safely."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Mansion and Thing position play",
+          "when": "Use this when Vault or Million Plus control is unreliable, or when the match score needs a safer incremental climb.",
+          "steps": [
+            {
+              "text": "Keep using controlled ramp returns to relight the Chair and collect Mansion Rooms."
+            },
+            {
+              "text": "Take Seance and Raise the Dead when they are flashing instead of forcing the Vault."
+            },
+            {
+              "text": "Use Thing and Quick Multiball as protection while you resume Chair and ramp progress.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to the primary Multiball route when the Vault and left-ramp feeds are controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Tour the Mansion",
+        "steps": [
+          {
+            "text": "Collect all 12 Mansion Rooms at the Chair or Swamp."
+          },
+          {
+            "text": "Shoot the Chair or Swamp when the question mark is lit."
+          },
+          {
+            "text": "During Tour the Mansion, complete the timed rooms and use any temporary awards that remain available.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "GREED",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Super Jackpot",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Mansion Rooms",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Tour the Mansion",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Million Plus",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Thing skill plunge",
+          "instruction": "Use a soft plunge to send the ball into the Thing eject. Watch the return before you continue the lock plan.",
+          "sourceUrl": "https://www.pinball.org/rules/addamsfamily.html"
+        },
+        {
+          "name": "Swamp lock plunge",
+          "instruction": "When the Swamp lock is lit, use a short plunge to enter the Swamp and bank the lock.",
+          "sourceUrl": "https://www.pinball.org/rules/addamsfamily.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Power magnets can change the ball path during Seance and Multiball.",
+          "response": "Keep the flippers ready and react to the actual magnet release. Do not expect the same feed on each machine.",
+          "sourceUrl": "https://www.pinball.org/rules/addamsfamily.html"
+        },
+        {
+          "issue": "Mansion Rooms and several single-ball features stop during Multiball.",
+          "response": "Collect a valuable lit room or THING award before you start Multiball.",
+          "sourceUrl": "https://www.pinball.org/rules/addamsfamily.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm original or Gold rules, lock rules, and restart timers.",
+        "Test Chair, Swamp, Thing eject, and left-ramp return."
+      ],
+      "simpleOverview": "The Addams Family uses G-R-E-E-D to open the Vault for two locks, then the lit Electric Chair or Vault starts three-ball Multiball. Shoot the left Million Plus ramp for the Super Jackpot, relight it at the Vault, and repeat.",
+      "overview": "Spelling G-R-E-E-D opens the Vault in The Addams Family. Bank two locks and shoot the lit Electric Chair or Vault to start Multiball. The center Train Wreck ramp scores the regular Jackpot, the left Million Plus ramp scores the Super Jackpot, and the Vault relights the Super. Continue collecting Mansion Rooms to qualify Tour the Mansion.",
+      "machineSetup": [
+        "Confirm original or Gold rules, lock rules, and restart timers.",
+        "Test Chair, Swamp, Thing eject, and left-ramp return."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

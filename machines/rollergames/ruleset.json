@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr1Ko",
+  "title": "Rollergames",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Rollergames rules and strategy",
+      "url": "https://pinball.org/rules/rollergames.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Rollergames operations manual",
+        "url": "https://online.fliphtml5.com/vrtyz/harq/"
+      },
+      {
+        "label": "PAPA exact-machine Rollergames tutorial",
+        "url": "https://www.youtube.com/watch?v=hkWUsgzkthw"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Complete the green W-A-R drop bank to light locks, then shoot The Wall from the upper-right flipper. After two locks, the next Wall shot starts three-ball Multiball. The Wall is also the repeatable Jackpot shot; use the Pit magnet when it is lit to slow the feed and set up the upper-flipper shot.",
+      "simpleOverview": "Complete W-A-R to light locks, then shoot The Wall from the upper-right flipper. Lock two balls there and shoot The Wall again for three-ball Multiball. During Multiball, keep returning to The Wall for repeatable Jackpots; when the Pit magnet is lit, use it to help line up the shot.",
+      "summary": "Complete W-A-R, collect two locks at The Wall, then shoot The Wall again for three-ball Multiball. Return to The Wall for repeatable Jackpots. Use the lit Pit magnet to control its feed when available.",
+      "quickInfo": [
+        {
+          "name": "Light Locks",
+          "summary": "Complete the green W-A-R drop bank; each target can light its corresponding lock."
+        },
+        {
+          "name": "Collect Locks",
+          "summary": "Shoot The Wall from the upper-right flipper."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "After two locks, shoot The Wall once more."
+        },
+        {
+          "name": "Score Jackpots",
+          "summary": "Keep shooting The Wall during Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the green W-A-R drop targets to light the locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Feed the upper-right flipper and shoot The Wall to collect each lit lock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After two balls are locked, shoot The Wall again to start three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, return to The Wall for each repeatable Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Use the Pit magnet",
+          "when": "Use this when the Magnet insert is lit and the Wall feed is difficult.",
+          "steps": [
+            {
+              "text": "Shoot the Pit ramp to collect the lit magnet feature.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Wait through the 'Don't flip' hold, then flip when prompted to send the ball toward The Wall.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Build the Jetways",
+        "steps": [
+          {
+            "text": "Roll through an inlane to light the opposite Jetway shot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit spinner lane to collect that team and advance the Jetways.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect all six teams to light Extra Ball at the center lane.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm whether locks are shared between players; on a shared-lock setup, another player can take the balls you qualified.",
+        "Test the W-A-R drops, upper-right flipper, The Wall, Pit ramp and magnet, spinner, inlanes, and physical locks before competitive play."
+      ],
+      "termStyles": [
+        {
+          "label": "W-A-R",
+          "tone": "oxblood",
+          "kind": "multiball"
+        },
+        {
+          "label": "The Wall",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Sudden Death",
+          "tone": "indigo",
+          "kind": "mode"
+        },
+        {
+          "label": "Jetways",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Sudden Death can begin without a controlled qualification.",
+          "response": "When it starts, shoot the Pit ramp for one-million awards and magnet extensions instead of waiting for a planned setup.",
+          "sourceUrl": "https://pinball.org/rules/rollergames.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vLR",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Han before plunging. Shoot the right scoop three times to qualify Tatooine and once more to start Tatooine II. Complete it, return to the scoop for Escape from Tatooine, and use FORCE for add-a-ball before Victory Multiball.",
+        "steps": [
+          {
+            "text": "Select Han. Move the starting shot-multiplier spread so it covers the next required Tatooine shot. Lock it with the action button before shooting.",
+            "modeNotes": [
+              "Han: Escape from Boba Fett scoring is doubled. His route also supports the short Tatooine II into Escape from Tatooine sequence.",
+              "Shot multipliers: The center target bank raises the selected shot multiplier. A shot can reach 20x, or 40x with the FORCE double-multiplier award. A timer resets the active multiplier to 2x when it expires."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the right scoop three times to qualify Tatooine. Use the center target-bank backhand to rebuild the multiplier timer when it is safe.",
+            "modeNotes": [
+              "Planet qualification: Three shots to a planet arrow qualify its next mode. Han has one Tatooine mode, so completing it qualifies the Tatooine final."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the right scoop to start Tatooine II.",
+            "modeNotes": [
+              "Tatooine II (Escape Mos Eisley): Shoot either ramp once. Then shoot the left mini-loop to complete it. Further ramp shots increase its value."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After completing Tatooine II, shoot the right scoop to start Escape from Tatooine, the Tatooine final.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Escape from Tatooine, alternate the left ramp and right mini-loop to assemble all nine ship parts. Use the center bank, right ramp, and scoop to raise the part values when the ball save gives time.",
+            "modeNotes": [
+              "Escape from Tatooine: It is a multiball final. Each required left-ramp or right-mini-loop hit collects the displayed part. The center bank, right ramp, and right scoop increase the next collect."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete FORCE during the final. Hold the action button to spend its add-a-ball after the opening ball save has ended.",
+            "modeNotes": [
+              "FORCE: Completing the FORCE targets during a planet final lights one action-button add-a-ball. An unused add-a-ball can carry into another multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all nine parts, play Victory Multiball. Make each of the six major shots once for medals. Continue the relit shots while two or more balls remain.",
+            "modeNotes": [
+              "Victory Multiball: The final adds three balls. The six major shots award Victory medals and their displayed values."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If TIE Multiball is close, complete the red targets before Escape from Tatooine. Start it during the planet final to restart a ball save and add another Jackpot layer.",
+            "modeNotes": [
+              "TIE Multiball: Red target hits qualify a TIE hurry-up. Press the action button to fire. Reach the displayed TIE requirement, then shoot the Death Star to start the three-ball multiball. Major shots score Jackpots. The left ramp scores the Super Jackpot.",
+              "Setting caveat: The first TIE requirement is normally 35 in current 1.31 rules. Competition settings can change it. Follow the display."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep Endor, Hoth, and the Death Star multiplier arrows active. Use the fourth FORCE completion to double the active shot multipliers before the largest final or Victory collect.",
+            "kinds": [
+              "multiplier",
+              "multiball"
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Planet modes and Multiball",
+            "summary": "A planet’s final Multiball starts without another planet mode running. During that final, TIE Fighter or Hyperspace Multiball can still start, add another scoring layer, and restart the ball save."
+          },
+          {
+            "name": "Competition Mode",
+            "summary": "Outside Competition Mode, normal modes from two different planets can run together. Competition Mode disables that two-mode stack."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Higher-ceiling alternative: R2-D2 multiplier route",
+          "when": "Recovery pivot: Use this plan when the center bank and one strong planet shot are controlled well enough to support a larger multiplier route than Han's shorter Tatooine path.",
+          "steps": [
+            {
+              "text": "Select R2-D2. His shot multipliers need fewer center-bank hits and remain active longer.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the same planet shot three times to qualify its next mode. Shoot it again, use the flippers to choose the mode, then press the action button to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Build a safe shot multiplier with the center bank. Reset its timer with another bank hit.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "During a planet final, work safe red targets or yellow shots. TIE and Hyperspace Multiballs can join the final and restart its ball save.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete FORCE for Escape before that stack. Use the stored add-a-ball after the opening save ends.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: TIE Multiball",
+            "when": "When trailing, use this higher-ceiling route: use this plan when the red targets and Death Star shot are safer than the planet finals.",
+            "steps": [
+              {
+                "text": "Hit red TIE targets. When the hurry-up is ready, press the action button to fire."
+              },
+              {
+                "text": "Reach the displayed TIE requirement. Shoot the Death Star to start the three-ball multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot all major arrows for Jackpots. Shoot the left ramp for the Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat the Jackpot cycle. Add FORCE Escape when it is ready.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Hyperspace Multiball",
+            "when": "Use this plan when the inlanes, right ramp, and left mini-loop are controlled.",
+            "steps": [
+              {
+                "text": "Complete the return lanes. Shoot the right ramp or left loop to light the Hyperspace hurry-up."
+              },
+              {
+                "text": "Shoot the left mini-loop to collect the hurry-up. Collect two hurry-ups for the first Hyperspace Multiball; later starts need one additional hurry-up.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "At multiball start, follow the edition-specific lock phase. Pro traps a ball at the left mini-loop; Premium and LE use the Death Star hyperloop.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During multiball, collect the yellow Jackpots. Shoot the left mini-loop for the hurry-up collect.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Multiplied Video Mode",
+            "when": "Use this plan when the right mini-loop is safe and a Video Mode is ready.",
+            "steps": [
+              {
+                "text": "Complete F-O-R-C-E three times to light Video Mode at the right mini-loop. With Leia or Han, Hoth I starts Video Mode instead.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Build the right-mini-loop shot multiplier before the start.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Use the flippers to steer. Use the action button for the displayed boost.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "The video award uses the right-mini-loop multiplier. Do not start it with an expired multiplier timer.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Jedi Multiball",
+          "steps": [
+            {
+              "text": "Complete every planet mode available to the selected character. Start the Tatooine, Death Star, Hoth, and Endor final multiballs.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the Jedi Training levels, reach Jedi Master rank, complete the Lightsaber Duel route, and complete Escape from Boba Fett.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Reach the displayed 100-TIE requirement. When all five requirements are complete, shoot the left ramp to start Jedi Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Hyperspace lock and Jackpot hardware",
+            "pro": "Balls lock virtually through the left mini-loop trap. Target sets control the Jackpot sequence.",
+            "premium": "Premium and LE use the moving Death Star and physical hyperloop. More looped balls can raise the multiball ball count and Jackpot value.",
+            "sourceUrl": "https://tiltforums.com/t/star-wars-stern-rulesheet/2812"
+          },
+          {
+            "feature": "Escape ball save",
+            "pro": "Escape returns a drained ball through a virtual software save.",
+            "premium": "Premium and LE use the physical outlane gate and shooter-lane return when the mechanism is enabled.",
+            "sourceUrl": "https://tiltforums.com/t/star-wars-stern-rulesheet/2812"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Tatooine II",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Escape Mos Eisley",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Escape from Tatooine",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Victory Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "TIE Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Hyperspace Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Video Mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "shot multipliers",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "20x",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "40x",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "FORCE",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Jedi Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "checkBeforePlay": [],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Cradle on the right flipper and test the backhand into the center multiplier bank. Use it to reset the active shot-multiplier timer.",
+            "sourceUrl": "https://tiltforums.com/t/star-wars-stern-rulesheet/2812",
+            "techniqueSlug": "backhand"
+          }
+        ],
+        "cautions": [],
+        "playfieldReferences": [
+          {
+            "term": "right scoop",
+            "label": "Right scoop",
+            "description": "Planet-mode qualification and start shot.",
+            "precision": "unverified",
+            "context": "Planet-mode qualification and start shot."
+          },
+          {
+            "term": "left mini-loop",
+            "label": "Left mini-loop",
+            "description": "Tatooine II completion shot.",
+            "precision": "unverified",
+            "context": "Tatooine II completion shot."
+          },
+          {
+            "term": "right mini-loop",
+            "label": "Right mini-loop",
+            "description": "Alternating Escape from Tatooine shot.",
+            "precision": "unverified",
+            "context": "Alternating Escape from Tatooine shot."
+          }
+        ],
+        "overview": "Star Wars uses a pre-plunge character choice to set the available planet modes and multiplier behavior. Choose Han; three right-scoop shots qualify Tatooine, and the fourth starts Tatooine II. Shoot either ramp and the left mini-loop, return to the right scoop for Escape from Tatooine, then alternate the left ramp and right mini-loop through its nine parts while using FORCE for add-a-ball before Victory Multiball.",
+        "simpleOverview": "Star Wars uses a pre-plunge character choice to set the available planet modes and multiplier behavior. Choose Han; three right-scoop shots qualify Tatooine, and the fourth starts Tatooine II. Shoot either ramp and the left mini-loop to complete it; the next right-scoop shot starts Escape from Tatooine.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Before plunging, choose Han for the short Tatooine route. Use the right scoop for Tatooine II. For Hyperspace Multiball, complete both inlanes, light a hurry-up at the right ramp or left loop, and collect it at the left mini-loop.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Choose Han before plunging",
+            "text": "On the character-selection screen before ball one, choose Han. He has only one Tatooine mode before its planet final and doubles Escape from Boba Fett scoring."
+          },
+          {
+            "title": "Start Tatooine II",
+            "text": "Shoot the right scoop three times to qualify Tatooine, then shoot the right scoop again to start Tatooine II.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Tatooine II",
+              "reason": "Choose it for a short, direct two-step objective.",
+              "play": "Shoot either ramp once, then shoot the left mini-loop to complete the mode."
+            }
+          },
+          {
+            "title": "Start Hyperspace Multiball",
+            "text": "Use the flipper buttons to move the lit inlane before the ball crosses it, and complete both inlane rollovers. Then shoot the right ramp or left loop to light a Hyperspace hurry-up and shoot the left mini-loop to collect it. Two hurry-ups start the first Hyperspace Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Planet modes and Multiball",
+            "summary": "A planet’s final Multiball starts without another planet mode running. During that final, TIE Fighter or Hyperspace Multiball can still start, add another scoring layer, and restart the ball save."
+          },
+          {
+            "name": "Competition Mode",
+            "summary": "Outside Competition Mode, normal modes from two different planets can run together. Competition Mode disables that two-mode stack."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: R2-D2",
+          "when": "Choose R2-D2 instead of Han before plunging only when the center bank and one strong planet shot are controlled well enough for a higher-ceiling multiplier route.",
+          "steps": [
+            {
+              "text": "Use the center target bank to raise and maintain R2-D2's longer-lasting multiplier on one reliable planet shot. Shoot that planet shot three times to qualify its next mode, then shoot it again and use the flippers and action button to choose and start the mode.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr1j8",
+  "title": "Spooky",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Spooky translated factory instruction card",
+      "url": "https://digitalpinballfans.com/threads/zaccaria-pinball-spooky-1987.8916/"
+    },
+    "supportingSources": [
+      {
+        "label": "Zaccaria Spooky factory manual",
+        "url": "https://www.zaccaria-pinball.com/gen2/spooky/spooky_manual.pdf"
+      },
+      {
+        "label": "Spooky machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/spooky"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Spooky has three linked progress routes. Hit the upper fixed targets to light the right Shades lane, then use the lit lane to advance the Spooky and Red Special sequence; completing the sequence lights Red Special at that lane. Fixed and moving targets advance Orange Special, which is collected at the lit Orange Special hole. A lit lower inner lane advances the Spider lane sequence, and completing Spider raises the bonus multiplier.",
+      "simpleOverview": "Hit the upper fixed targets to light the right Shades lane, then shoot that lit lane to advance toward Red Special. Use the fixed and moving targets to build Orange Special and collect it at the lit Orange Special hole. Use the lit lower inner lane to advance Spider and raise the bonus multiplier.",
+      "summary": "Choose one lit route at a time: upper fixed targets into the right Shades lane for Red Special, fixed and moving targets into the Orange Special hole, or the lit lower inner lane into Spider for a higher bonus multiplier.",
+      "quickInfo": [
+        {
+          "name": "Light the Shades Lane",
+          "summary": "Hit the upper fixed targets, then shoot the lit right lane."
+        },
+        {
+          "name": "Build Red Special",
+          "summary": "Repeat the lit Shades route until its sequence is complete."
+        },
+        {
+          "name": "Build Orange Special",
+          "summary": "Use the fixed and moving targets, then collect at the lit hole."
+        },
+        {
+          "name": "Advance Spider",
+          "summary": "Use the lit lower inner lane to raise the bonus multiplier."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the upper fixed targets until the right Shades lane is lit.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit right Shades lane to advance the Spooky and Red Special sequence; repeat until Red Special lights there.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the fixed and moving targets to advance Orange Special, then shoot the Orange Special hole while it is lit.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the lit lower inner lane to advance Spider; completing the Spider sequence raises the bonus multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Favor Spider and bonus",
+          "when": "Use this when the lower inner lane is safer than the upper target-and-lane route.",
+          "steps": [
+            {
+              "text": "Keep taking the lower inner lane while its lamp is on.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Finish the Spider sequence before returning to the upper Special routes.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Convert a lit Special",
+        "steps": [
+          {
+            "text": "Finish the Shades sequence and return to the right lane for Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Or finish the target sequence and shoot the lit Orange Special hole.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm ball count, Special award settings, bonus carry rules, and whether awards convert to points.",
+        "Test the upper fixed targets, moving target, right Shades lane, Orange Special hole, lower inner lane, Spider lamps, and bonus-multiplier lamps."
+      ],
+      "termStyles": [
+        {
+          "label": "Shades",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Red Special",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Orange Special",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Spider",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Special award is operator-programmable.",
+          "response": "Check whether each Special awards a replay, another configured award, or tournament points before choosing that route.",
+          "sourceUrl": "https://digitalpinballfans.com/threads/zaccaria-pinball-spooky-1987.8916/"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

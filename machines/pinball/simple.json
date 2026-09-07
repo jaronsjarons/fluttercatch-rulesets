@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "id": "GrZXj",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Send the ball to the top through the left spinner or right saucer. Build the bonus to 100K. Collect Triple Bonus when its two-shot path is available.",
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Lit red rollover buttons advance the end-of-ball bonus from 10K toward 100K."
+          },
+          {
+            "name": "Right eject hole",
+            "summary": "The upper-right eject hole awards its lit value or lights the named feature shown beside it."
+          },
+          {
+            "name": "Triple Bonus",
+            "summary": "Collect the Lights Top Center Hole award at the right eject, then put the ball in the top-center hole."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Collect the Lights Double Bonus award at the right eject to double the end-of-ball bonus."
+          },
+          {
+            "name": "Lit spinner",
+            "summary": "Collect Lights Spinner at the right eject to raise the left spinner from 100 to 1,000 per spin."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge to the top. Watch the return from the top-center hole and the upper-right eject."
+          },
+          {
+            "text": "Repeat the left spinner or send the ball toward the upper-right eject. Use the shot with the safer return."
+          },
+          {
+            "text": "Let the red rollover buttons advance bonus during top play. Do not chase a small button from an uncontrolled ball."
+          },
+          {
+            "text": "When Lights Top Center Hole is lit at the right eject, collect it. Then send the ball into the top-center hole.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If that award is not available, collect Double Bonus before a large bonus drains.",
+            "modeNotes": [
+              "Triple Bonus: Collect Lights Top Center Hole at the right eject. Then score the top-center hole to triple the end-of-ball bonus.",
+              "Double Bonus: Collect the matching award at the right eject. The game doubles the end-of-ball bonus when the ball drains."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After 100K and Triple Bonus are ready, use the safest top return. Do not force the lower-left drop target.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Double the built bonus",
+          "when": "Recovery pivot: Use this when the top-center hole is rejecting the ball or Triple Bonus is not ready.",
+          "steps": [
+            {
+              "text": "Send the ball through the left spinner or upper-right eject and let the lit red rollover buttons raise bonus."
+            },
+            {
+              "text": "Collect Lights Double Bonus at the right eject.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Continue the safer left-spinner or right-side top shot."
+            },
+            {
+              "text": "Protect the doubled bonus after it reaches a useful value.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Lit-spinner scoring",
+            "when": "When trailing, use this distinct scoreboard route: use this when the left spinner is repeatable and the right eject has lit it.",
+            "steps": [
+              {
+                "text": "Collect Lights Spinner at the right eject."
+              },
+              {
+                "text": "Repeat the left spinner for 1,000 per spin."
+              },
+              {
+                "text": "Return to bonus qualification when the spinner feed stops being controlled."
+              }
+            ]
+          },
+          {
+            "title": "50K eject award",
+            "when": "Use this when 50K is lit and the right eject is safer than the multiplier path.",
+            "steps": [
+              {
+                "text": "Confirm that 50K is lit at the upper-right eject."
+              },
+              {
+                "text": "Collect the eject award from a controlled shot."
+              },
+              {
+                "text": "Resume the top route and bonus build."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "100K at Triple Bonus",
+          "steps": [
+            {
+              "text": "Score the lit red rollover buttons until base bonus reaches 100K."
+            },
+            {
+              "text": "Collect Lights Top Center Hole at the right eject.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score the top-center hole to enable Triple Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Carry the 3x maximum bonus to the end of the ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Triple Bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top route",
+            "context": "top route",
+            "label": "Upper route",
+            "description": "The upper path selected according to the currently lit award.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit target",
+            "context": "lit target",
+            "label": "Lit award target",
+            "description": "The indicated target used to collect the prepared award.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Top route selection",
+            "instruction": "Test the left spinner and right-side top shot. Repeat the route that returns the ball to a flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZXj-Mq11k"
+          },
+          {
+            "name": "Lit-award timing",
+            "instruction": "Read the upper-right eject lamps before the shot. Take the top-center-hole award before lesser scoring awards when possible.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZXj-Mq11k"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The lower-left drop target is the dangerous final target in the five-target bank.",
+            "response": "Ignore the bank. Let top-center returns collect the upper targets without a direct lower-left shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZXj-Mq11k"
+          },
+          {
+            "issue": "The right eject can award a lesser feature when the preferred lamp is not lit.",
+            "response": "Read the current award before the shot. Continue safe switch play when the desired award is not ready.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZXj-Mq11k"
+          },
+          {
+            "issue": "The outlane posts and Special awards are operator-adjustable.",
+            "response": "Check the outlane openings and tournament settings before you risk a large bonus.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZXj-Mq11k"
+          }
+        ],
+        "simpleOverview": "Pinball builds base bonus to 100K. Collect Lights Top Center Hole at the upper-right eject, then shoot the top-center hole for Triple Bonus and carry the 300K maximum bonus to the end of the ball.",
+        "overview": "Pinball builds base bonus to 100K. Build the base through top feeds, take Lights Top Center Hole at the eject, then complete the two-shot path at the top-center hole for Triple Bonus. Preserve the resulting 300K end-of-ball collect; use Lights Spinner only when its left-orbit return is controlled.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Send the ball to the top through the left spinner or right saucer. Build the bonus to 100K. Collect Triple Bonus when its two-shot path is available.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge to the top. Watch the return from the top-center hole and the upper-right eject."
+          },
+          {
+            "text": "Repeat the left spinner or send the ball toward the upper-right eject. Use the shot with the safer return."
+          },
+          {
+            "text": "Let the red rollover buttons advance bonus during top play. Do not chase a small button from an uncontrolled ball."
+          },
+          {
+            "text": "When Lights Top Center Hole is lit at the right eject, collect it. Then send the ball into the top-center hole.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If that award is not available, collect Double Bonus before a large bonus drains.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Triple Bonus: Collect Lights Top Center Hole at the right eject. Then score the top-center hole to triple the end-of-ball bonus.",
+              "Double Bonus: Collect the matching award at the right eject. The game doubles the end-of-ball bonus when the ball drains."
+            ]
+          },
+          {
+            "text": "After 100K and Triple Bonus are ready, use the safest top return. Do not force the lower-left drop target.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Lit red rollover buttons advance the end-of-ball bonus from 10K toward 100K."
+          },
+          {
+            "name": "Right eject hole",
+            "summary": "The upper-right eject hole awards its lit value or lights the named feature shown beside it."
+          },
+          {
+            "name": "Triple Bonus",
+            "summary": "Collect the Lights Top Center Hole award at the right eject, then put the ball in the top-center hole."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Double the built bonus",
+          "when": "Recovery pivot: Use this when the top-center hole is rejecting the ball or Triple Bonus is not ready.",
+          "steps": [
+            {
+              "text": "Send the ball through the left spinner or upper-right eject and let the lit red rollover buttons raise bonus."
+            },
+            {
+              "text": "Collect Lights Double Bonus at the right eject.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Continue the safer left-spinner or right-side top shot."
+            },
+            {
+              "text": "Protect the doubled bonus after it reaches a useful value.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "The outlane posts and Special awards are operator-adjustable.",
+          "text": "Check the outlane openings and tournament settings before you risk a large bonus."
+        }
+      }
+    }
+  ]
+}

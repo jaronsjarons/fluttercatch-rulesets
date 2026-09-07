@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9Bx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Multiball through the Skull and cannon. Relock at the Skull first, then use the timed left-orbit and Database locks. Fire the cannon for a Double or Triple Jackpot and repeat the 50,000,000 Super Jackpot. Add Payback Time when its ramps are close.",
+        "quickInfo": [
+          {
+            "name": "Multiball",
+            "summary": "Hit the Skull target to open the Skull, shoot inside to load the cannon, then hit the required white targets to start three-ball play."
+          },
+          {
+            "name": "Jackpot relocks",
+            "summary": "Relock at Skull, left orbit, and Database before firing the cannon for up to a Triple Jackpot."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "After a Double or Triple Jackpot, repeat Skull and cannon shots for 50,000,000."
+          },
+          {
+            "name": "Payback Time",
+            "summary": "Complete both five-light ramp sequences for 20 seconds of 5,000,000 major shots."
+          },
+          {
+            "name": "Millions-Plus",
+            "summary": "Repeat the right orbit. Each shot advances the Chase Loop value toward 5,000,000, while quick consecutive shots add an increasing Millions-Plus award."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the gun trigger to hit the moving white skill-shot target and learn the cannon delay."
+          },
+          {
+            "text": "Hit the drop target below the Skull, then shoot the exposed Skull saucer."
+          },
+          {
+            "text": "When the ball loads into the cannon, move your view to the cannon line and fire at the lit white target.",
+            "modeNotes": [
+              "Multiball qualification: The first start needs one lit cannon target; each later start adds one target to a five-target maximum."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "At the three-ball start, cradle when the ball save permits it. Lock the first controlled ball at the Skull.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock the other balls at the left-orbit saucer and far-left Database before either timed lock ejects.",
+            "modeNotes": [
+              "Timed side locks: The left-orbit and Database locks eject after about 12 seconds by default, while the Skull lock stays held."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Fire the cannon at the flashing target for the built Jackpot.",
+            "modeNotes": [
+              "Jackpot multiplier: One relock gives a Single Jackpot, two give a Double, and three give a Triple; the base resets after collection."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After a Double or Triple Jackpot, hold spare balls on the left flipper and use the right flipper for the Skull.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Fire the cannon at the moving target for 50,000,000. Repeat Skull and cannon shots while two or more balls remain.",
+            "modeNotes": [
+              "Super Jackpot: Multiple 50,000,000 Supers can be collected in one Multiball; side relocks are disabled during this phase."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the Security ramp sequence is close, finish the lit ramps during Multiball to start Payback Time.",
+            "modeNotes": [
+              "Payback Time: Complete all five Security inserts at both ramps for 20 seconds of 5,000,000 at both ramps and both orbits."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Payback Time",
+          "when": "Recovery pivot: Use this when cannon timing or multiball control is unreliable.",
+          "steps": [
+            {
+              "text": "Shoot the ramp with the active Security insert."
+            },
+            {
+              "text": "Alternate ramps until all five inserts are lit at each ramp."
+            },
+            {
+              "text": "Payback Time starts immediately.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For 20 seconds, shoot the two ramps and two orbits for 5,000,000 each."
+            },
+            {
+              "text": "Use only the shots with repeatable returns; the mode has no grace period."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Right-orbit chase loop",
+            "when": "When trailing, use this higher-ceiling route: use this only when the right orbit repeatedly returns to the left flipper.",
+            "steps": [
+              {
+                "text": "Build the held orbit value through 250,000, 500,000, 750,000, 1,000,000, 3,000,000, and 5,000,000."
+              },
+              {
+                "text": "Repeat the orbit within about four seconds for Millions-Plus."
+              },
+              {
+                "text": "Continue the increasing combo while the return remains controlled."
+              },
+              {
+                "text": "The 5,000,000 base stays for the ball after the fast combo ends."
+              }
+            ]
+          },
+          {
+            "title": "Escape Route progress",
+            "when": "Use this when the center target bank has safe rebounds.",
+            "steps": [
+              {
+                "text": "Complete the three center targets to light the next left-orbit award."
+              },
+              {
+                "text": "Shoot the left orbit to collect Security progress, Hold Bonus, return-lane features, Instant Multiball, Extra Ball, then 10,000,000."
+              },
+              {
+                "text": "Stop when the later timed bank completions become unsafe."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Super Jackpots and Payback stack",
+          "steps": [
+            {
+              "text": "Start Multiball through Skull and cannon targets.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Relock at Skull first, then add the left-orbit and Database locks."
+            },
+            {
+              "text": "Collect a Double or Triple Jackpot.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Repeat Skull and cannon for 50,000,000 Super Jackpots."
+            },
+            {
+              "text": "Complete both ramp-light sequences and start Payback Time before Multiball ends.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Terminator 2 has no separate mini-wizard or final wizard mode."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Instant Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Payback Time",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Double Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Triple Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Hold Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Millions-Plus",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cannon sight line",
+            "instruction": "Move your head so the lit target is viewed from the cannon's angle, especially for the top and bottom targets.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce the Database eject from the left flipper to the right when the feed is clean.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial",
+            "techniqueSlug": "dead-bounce"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "Cradle spare balls on the left flipper and use the right flipper for Skull while reaching the trigger.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial",
+            "techniqueSlug": "cradle"
+          },
+          {
+            "name": "Ramp combo",
+            "instruction": "Take the opposite ramp on a clean return; fast left-right or right-left pairs also score a combo.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The cannon auto-fires after a delay and an automatic shot misses the intended award.",
+            "response": "Keep one hand ready on the trigger whenever a ball loads into the cannon.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial"
+          },
+          {
+            "issue": "The left-orbit and Database locks eject on a timer.",
+            "response": "Lock Skull first, then make both timed side locks.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial"
+          },
+          {
+            "issue": "Later Multiballs can start without a ball save.",
+            "response": "Cradle immediately when safe and do not assume the first-start save remains active.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial"
+          },
+          {
+            "issue": "The left-outlane kickback is consumed after one use.",
+            "response": "Relight it at the lower-right targets or Database before you depend on another save.",
+            "sourceUrl": "https://www.kineticist.com/news/terminator-2-pinball-tutorial"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm cannon calibration, lock timers, and first-multiball ball save.",
+          "Test Skull and Database ejects before relying on relocks."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Skull",
+            "label": "Skull lock",
+            "description": "Center lock and relock shot used throughout Multiball.",
+            "precision": "unverified",
+            "context": "Center lock and relock shot used throughout Multiball."
+          },
+          {
+            "term": "cannon",
+            "label": "Cannon",
+            "description": "Player-fired cannon used to collect Multiball awards.",
+            "precision": "unverified",
+            "context": "Player-fired cannon used to collect Multiball awards."
+          },
+          {
+            "term": "Database",
+            "label": "Database lock",
+            "description": "Right-side lock used in the relock sequence.",
+            "precision": "unverified",
+            "context": "Right-side lock used in the relock sequence."
+          },
+          {
+            "term": "left orbit",
+            "label": "Left-orbit lock",
+            "description": "Timed relock shot used before later cannon awards.",
+            "precision": "unverified",
+            "context": "Timed relock shot used before later cannon awards."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Bulls&Balls Okayest Weekend 2022, Nico Wicke started Multiball, completed three relocks, fired a Triple Jackpot from the cannon, and continued into the Super Jackpot cycle."
+          ]
+        },
+        "simpleOverview": "Terminator 2 uses the Skull saucer and cannon to start Multiball, then three timed relocks build a larger Jackpot. Start through the Skull and cannon, relock at the Skull first, add the left-orbit and Database locks, then fire the cannon for the built Jackpot.",
+        "overview": "Terminator 2 uses the Skull saucer and cannon to start Multiball, then three timed relocks build a larger Jackpot. Relock at the Skull first, add the left-orbit and Database locks before their timers expire, then fire at the flashing cannon target. Repeat the Skull for 50,000,000 Supers and finish the Security ramps for Payback Time when they are already close.",
+        "machineSetup": [
+          "Confirm cannon calibration, lock timers, and first-multiball ball save.",
+          "Test Skull and Database ejects before relying on relocks."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Start Multiball through the Skull and cannon. Relock at the Skull first, then use the timed left-orbit and Database locks. Fire the cannon for a Double or Triple Jackpot and repeat the 50,000,000 Super Jackpot. Add Payback Time when its ramps are close.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the gun trigger to hit the moving white skill-shot target and learn the cannon delay."
+          },
+          {
+            "text": "Hit the drop target below the Skull, then shoot the exposed Skull saucer."
+          },
+          {
+            "text": "When the ball loads into the cannon, move your view to the cannon line and fire at the lit white target.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball qualification: The first start needs one lit cannon target; each later start adds one target to a five-target maximum."
+            ]
+          },
+          {
+            "text": "At the three-ball start, cradle when the ball save permits it. Lock the first controlled ball at the Skull.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock the other balls at the left-orbit saucer and far-left Database before either timed lock ejects.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Timed side locks: The left-orbit and Database locks eject after about 12 seconds by default, while the Skull lock stays held."
+            ]
+          },
+          {
+            "text": "Fire the cannon at the flashing target for the built Jackpot.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "details": [
+              "Jackpot multiplier: One relock gives a Single Jackpot, two give a Double, and three give a Triple; the base resets after collection."
+            ]
+          },
+          {
+            "text": "After a Double or Triple Jackpot, hold spare balls on the left flipper and use the right flipper for the Skull.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Fire the cannon at the moving target for 50,000,000. Repeat Skull and cannon shots while two or more balls remain.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Super Jackpot: Multiple 50,000,000 Supers can be collected in one Multiball; side relocks are disabled during this phase."
+            ]
+          },
+          {
+            "text": "If the Security ramp sequence is close, finish the lit ramps during Multiball to start Payback Time.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "details": [
+              "Payback Time: Complete all five Security inserts at both ramps for 20 seconds of 5,000,000 at both ramps and both orbits."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Multiball",
+            "summary": "Hit the Skull target to open the Skull, shoot inside to load the cannon, then hit the required white targets to start three-ball play."
+          },
+          {
+            "name": "Jackpot relocks",
+            "summary": "Relock at Skull, left orbit, and Database before firing the cannon for up to a Triple Jackpot."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "After a Double or Triple Jackpot, repeat Skull and cannon shots for 50,000,000."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Payback Time",
+          "when": "Recovery pivot: Use this when cannon timing or multiball control is unreliable.",
+          "steps": [
+            {
+              "text": "Shoot the ramp with the active Security insert."
+            },
+            {
+              "text": "Alternate ramps until all five inserts are lit at each ramp."
+            },
+            {
+              "text": "Payback Time starts immediately.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For 20 seconds, shoot the two ramps and two orbits for 5,000,000 each."
+            },
+            {
+              "text": "Use only the shots with repeatable returns; the mode has no grace period."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The left-outlane kickback is consumed after one use.",
+          "text": "Relight it at the lower-right targets or Database before you depend on another save."
+        }
+      }
+    }
+  ]
+}

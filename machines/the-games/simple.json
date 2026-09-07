@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9NZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Win Gold Medals to raise Bonus X. Five medals activate Hold Bonus, which preserves the built bonus for another ball when collected.",
+        "quickInfo": [
+          {
+            "name": "Gold Medals",
+            "summary": "Discus, Pole Vault, Javelin, Shot Put, and Hammer are the five medals. Each medal advances Bonus X."
+          },
+          {
+            "name": "Hold Bonus",
+            "summary": "Winning all five medals activates Hold Bonus. The factory card says the bonus level is restored when Hold Bonus is collected."
+          },
+          {
+            "name": "Extra Ball",
+            "summary": "The configured medal threshold lights the left and right spot targets. Complete both lit targets twice to earn Extra Ball."
+          },
+          {
+            "name": "Special",
+            "summary": "Completing the Pole Vault vari-target sequence lights Special."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose a lit Gold Medal shot whose return is controlled."
+          },
+          {
+            "text": "Follow its playfield lamps until the game awards the medal. Each medal advances Bonus X."
+          },
+          {
+            "text": "Repeat safely available medal shots, using the spinner and captive ball only when their returns remain controlled."
+          },
+          {
+            "text": "After the fifth medal activates Hold Bonus, protect the multiplied end-of-ball value."
+          }
+        ],
+        "fallback": {
+          "title": "Four-medal multiplier route",
+          "when": "Use this when the fifth medal requires an unsafe vari-target or side shot.",
+          "steps": [
+            {
+              "text": "Collect the four safely available medals."
+            },
+            {
+              "text": "Protect the multiplied end-of-ball bonus instead of forcing the fifth medal."
+            }
+          ]
+        },
+        "alternatives": [],
+        "buildsToward": {
+          "title": "Five medals and Hold Bonus",
+          "steps": [
+            {
+              "text": "Collect safely available Gold Medals to raise Bonus X."
+            },
+            {
+              "text": "Win all five medals to activate Hold Bonus."
+            },
+            {
+              "text": "Protect the multiplied end-of-ball value after Hold Bonus activates."
+            },
+            {
+              "text": "Use Hold Bonus to preserve the built level for another ball."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Gold Medals",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Hold Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "techniques": [],
+        "cautions": [],
+        "noteDetails": {
+          "label": "Settings that change play",
+          "items": [
+            "The stock instruction cards document medal-based Bonus X, Hold Bonus, configurable Extra Ball qualification, and a Pole Vault Special.",
+            "Ball count, Medal Setting, and Player Level change thresholds or whether bonus is remembered. Exact stock spinner progression, event selection, captive-ball scoring, saucer qualification, and bonus-reset behavior remain unverified."
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "Spinner whose scoring and bonus behavior depends on the installed rules.",
+            "precision": "unverified",
+            "context": "Spinner whose scoring and bonus behavior depends on the installed rules."
+          },
+          {
+            "term": "captive ball",
+            "label": "Captive ball",
+            "description": "Captive-ball shot whose scoring depends on the installed rules.",
+            "precision": "unverified",
+            "context": "Captive-ball shot whose scoring depends on the installed rules."
+          },
+          {
+            "term": "vari-target",
+            "label": "Pole Vault vari-target",
+            "description": "Variable target used to qualify the Pole Vault medal.",
+            "precision": "unverified",
+            "context": "Variable target used to qualify the Pole Vault medal."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "On the INDISC competition ROM, the right saucer collects a qualified Bonus Collect.",
+            "precision": "unverified",
+            "context": "On the INDISC competition ROM, the right saucer collects a qualified Bonus Collect."
+          }
+        ],
+        "simpleOverview": "The Games is a bonus-building game. Collect Gold Medals to raise Bonus X, use the spinner and other controlled scoring switches to raise base bonus, then shoot the lit saucer when the multiplied Bonus Collect is ready.",
+        "overview": "The Games uses Gold Medals to raise Bonus X while controlled spinner and captive-ball shots build base bonus. Collect safely available medals, then protect the multiplied end-of-ball value. Five medals activate Hold Bonus, allowing the built bonus to carry to another ball.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Collect safely available Gold Medals to raise Bonus X. Reach five medals for Hold Bonus, then protect the built end-of-ball bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Choose a safe medal",
+            "text": "Follow the lit playfield inserts and choose a Gold Medal shot whose rebound is controlled."
+          },
+          {
+            "title": "Raise Bonus X",
+            "text": "Complete that medal, then choose another safe lit medal. Each collected medal advances Bonus X."
+          },
+          {
+            "title": "Reach Hold Bonus",
+            "text": "Collect all five medals when their shots remain safe. The fifth activates Hold Bonus."
+          },
+          {
+            "title": "Protect the built bonus",
+            "text": "After five Gold Medals activate Hold Bonus, protect the multiplied end-of-ball value."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gold Medals",
+            "summary": "Discus, Pole Vault, Javelin, Shot Put, and Hammer are the five medals. Each medal advances Bonus X."
+          },
+          {
+            "name": "Hold Bonus",
+            "summary": "Winning all five medals activates Hold Bonus. The factory card says the bonus level is restored when Hold Bonus is collected."
+          },
+          {
+            "name": "Extra Ball",
+            "summary": "The configured medal threshold lights the left and right spot targets. Complete both lit targets twice to earn Extra Ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: four medals",
+          "when": "Use this when the fifth medal requires an unsafe shot.",
+          "steps": [
+            {
+              "text": "Collect the four safely available medals to raise Bonus X."
+            },
+            {
+              "text": "Protect the multiplied end-of-ball bonus instead of forcing the fifth medal."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

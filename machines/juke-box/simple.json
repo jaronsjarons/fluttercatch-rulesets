@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Qnx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit C-D to raise the spinner and E-F to light Double Bonus, build bonus to 19K through the top, then use the spinner targets for repeatable points.",
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Top lanes, return lanes, and three rollover buttons advance bonus to its 19K maximum."
+          },
+          {
+            "name": "C-D targets",
+            "summary": "Complete the middle C-D targets to raise the pinwheel spinner from 100 to 1,000 per revolution."
+          },
+          {
+            "name": "E-F targets",
+            "summary": "Complete the lower E-F targets to light the top hole for Double Bonus."
+          },
+          {
+            "name": "Top saucer",
+            "summary": "The top saucer has no direct lower-flipper shot, so upper play and a controlled nudge must feed it."
+          },
+          {
+            "name": "A-B targets",
+            "summary": "A and A-B qualify Special and Extra Ball features; the configured awards depend on the machine setup."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge to the top. Learn whether the upper feed can reach the top saucer."
+          },
+          {
+            "text": "Hit the middle C-D standups to light 1,000-point pinwheel scoring."
+          },
+          {
+            "text": "Hit the lower E-F standups to light Double Bonus at the top hole.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Send the ball through the narrow right orbit or another safe top route. Guide the upper movement toward the saucer.",
+            "modeNotes": [
+              "Double Bonus: Complete E-F, then collect the lit top hole. The game doubles the built end-of-ball bonus."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use top lanes, return lanes, and rollover buttons to raise the bonus to 19K."
+          },
+          {
+            "text": "After Double Bonus and 19K are ready, shoot the spin targets for 1,000 per pinwheel revolution.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Top-play bonus",
+          "when": "Use this when the C-D or E-F standup rebounds are dangerous.",
+          "steps": [
+            {
+              "text": "Send the ball to the top through the safer available route."
+            },
+            {
+              "text": "Use lanes and rollover buttons to advance bonus."
+            },
+            {
+              "text": "Let incidental contacts complete C-D or E-F."
+            },
+            {
+              "text": "Take the top saucer when Double Bonus becomes available.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Pinwheel scoring",
+            "when": "Use this when C-D is complete and the spin-target returns are repeatable.",
+            "steps": [
+              {
+                "text": "Confirm that C-D has raised the spinner to 1,000 per revolution."
+              },
+              {
+                "text": "Repeat the safer spin target."
+              },
+              {
+                "text": "Stop when a rebound reaches the center or an outlane."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "19K at Double Bonus",
+          "steps": [
+            {
+              "text": "Complete C-D for the high spinner value."
+            },
+            {
+              "text": "Complete E-F to light Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Collect the top saucer and build bonus to 19K.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use the spinner targets after the protected bonus is ready."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right orbit",
+            "context": "right orbit",
+            "label": "Right orbit",
+            "description": "The narrow orbit used by the preferred upper-playfield route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top saucer",
+            "context": "top saucer",
+            "label": "Top saucer",
+            "description": "The upper saucer whose value and return drive the main scoring plan.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Narrow right-orbit shot",
+            "instruction": "Aim through the center of the right-orbit gap. Stop using it when the ball clips the edge beside the Special button.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5Qnx-MJYek"
+          },
+          {
+            "name": "Top-saucer nudge",
+            "instruction": "Use a small nudge during upper play to guide the ball toward the saucer. The lower flippers have no direct shot to it.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5Qnx-MJYek"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The right orbit is narrow and often rejects shots from the edge beside the Special button.",
+            "response": "Test the orbit early. Use another top route if repeated shots do not pass cleanly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5Qnx-MJYek"
+          },
+          {
+            "issue": "The top saucer cannot be shot directly from a lower flipper.",
+            "response": "Do not force a nonexistent direct angle. Use top play and only the nudge that the tilt setting permits.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5Qnx-MJYek"
+          },
+          {
+            "issue": "A-B mainly advances Extra Ball and Special features that can be disabled in tournaments.",
+            "response": "Check the event settings. Favor C-D and E-F when those awards do not score useful points.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5Qnx-MJYek"
+          }
+        ],
+        "simpleOverview": "Juke Box uses C-D to raise its pinwheel spinner and E-F to light Double Bonus at the top saucer. Complete both pairs, feed the saucer through upper play, build 19K bonus, then use the 1,000-per-revolution spinner targets for repeatable points.",
+        "overview": "Juke Box uses C-D to raise its pinwheel spinner and E-F to light Double Bonus at the top saucer. Complete C-D and E-F, then use upper play and controlled nudges to feed the saucer because it has no direct lower-flipper shot. After the doubled bonus is secured, repeat the spinner targets and protect the end-of-ball collect.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit C-D to raise the spinner and E-F to light Double Bonus, build bonus to 19K through the top, then use the spinner targets for repeatable points.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge to the top. Learn whether the upper feed can reach the top saucer."
+          },
+          {
+            "text": "Hit the middle C-D standups to light 1,000-point pinwheel scoring."
+          },
+          {
+            "text": "Hit the lower E-F standups to light Double Bonus at the top hole.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Send the ball through the narrow right orbit or another safe top route. Guide the upper movement toward the saucer.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Double Bonus: Complete E-F, then collect the lit top hole. The game doubles the built end-of-ball bonus."
+            ]
+          },
+          {
+            "text": "Use top lanes, return lanes, and rollover buttons to raise the bonus to 19K."
+          },
+          {
+            "text": "After Double Bonus and 19K are ready, shoot the spin targets for 1,000 per pinwheel revolution.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Top lanes, return lanes, and three rollover buttons advance bonus to its 19K maximum."
+          },
+          {
+            "name": "C-D targets",
+            "summary": "Complete the middle C-D targets to raise the pinwheel spinner from 100 to 1,000 per revolution."
+          },
+          {
+            "name": "E-F targets",
+            "summary": "Complete the lower E-F targets to light the top hole for Double Bonus."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Top-play bonus",
+          "when": "Use this when the C-D or E-F standup rebounds are dangerous.",
+          "steps": [
+            {
+              "text": "Send the ball to the top through the safer available route."
+            },
+            {
+              "text": "Use lanes and rollover buttons to advance bonus."
+            },
+            {
+              "text": "Let incidental contacts complete C-D or E-F."
+            },
+            {
+              "text": "Take the top saucer when Double Bonus becomes available.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

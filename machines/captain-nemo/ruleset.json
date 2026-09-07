@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "GWyB8",
+  "title": "Captain Nemo",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Pinball News Captain Nemo production-machine in-depth review",
+      "url": "https://www.pinballnews.com/games/captainnemo/index7.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist exact Captain Nemo machine record",
+        "url": "https://www.kineticist.com/games/pinball/captain-nemo"
+      },
+      {
+        "label": "Pinball News pre-production feature and edition record",
+        "url": "https://www.pinballnews.com/games/captainnemo/index2.html"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Captain Nemo begins by asking you to choose one of three main modes, each with its own lit objectives. Hit the HERA and CLES standups to light Multiball locks at the left lane and right saucer; complete the lit route, with the right saucer starting Multiball. Every complete N-E-M-O drop bank adds one ball to the next Multiball.",
+      "simpleOverview": "Choose one of the three main modes at game start and follow its lit playfield objectives. To build Multiball, hit both HERA and CLES, then take the lit locks at the left lane and right saucer; the right saucer starts it.",
+      "summary": "Choose a main mode at the start of the game, then follow its lit objectives. Hit HERA and CLES to light the left-lane and right-saucer Multiball locks; complete those lit locks, with the right saucer starting Multiball. A full N-E-M-O bank adds a ball to the next Multiball.",
+      "quickInfo": [
+        {
+          "name": "Choose a mode",
+          "summary": "At the beginning of the game, select one of the three main modes and follow its lit shots."
+        },
+        {
+          "name": "Light Multiball",
+          "summary": "Hit both HERA and CLES standups."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Take the lit locks at the left lane and right saucer; the right saucer starts play."
+        },
+        {
+          "name": "Add a ball",
+          "summary": "Complete the four-bank spelling N-E-M-O before the next Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "At game start, choose one of the three main modes; use its lit inserts and display as the objective map.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the HERA and CLES standup targets to light the Multiball locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit left lane and right saucer to complete the lock route; the right saucer starts Multiball immediately when its start is lit.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Before starting, complete the N-E-M-O drop bank whenever practical; each full bank adds a ball to the next Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Mode-first route",
+          "when": "Use this when the selected mode's shots are safer than the two standups and lock lanes.",
+          "steps": [
+            {
+              "text": "For Protect the Sea, work the two ramps while the rear power meter counts down.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For Build the Nautilus, use the lit right-lane objectives.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For Underwater Treasures, work the lit Underwater Forest and Bay of Vigo targets.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Reach Kraken",
+        "steps": [
+          {
+            "text": "Finish the three selected main-mode objectives across the game; their inserts show completed progress.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the in-playfield display for the final Kraken state and current objective; the 2017 software was still incomplete.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm the installed software and show it to players. The 2017 release was still receiving rule development, so later versions can behave differently.",
+        "Check HERA, CLES, the left-lane upkicker, right saucer, all four N-E-M-O drops, both ramps, and the mode targets before play."
+      ],
+      "termStyles": [
+        {
+          "label": "three main modes",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "HERA and CLES",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "right saucer",
+          "tone": "rust",
+          "kind": "multiball"
+        },
+        {
+          "label": "N-E-M-O",
+          "tone": "indigo",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Captain Nemo software continued changing after the 2017 release, so later behavior can differ.",
+          "response": "Treat this as a 2017 delivered-code physical route. Verify mode choice and lock behavior on the exact machine, and let the display settle any later-code difference.",
+          "sourceUrl": "https://www.pinballnews.com/games/captainnemo/index7.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

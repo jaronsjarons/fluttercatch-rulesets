@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "G57kN",
+  "title": "Viking",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Viking tournament guide",
+      "url": "https://rules.silverballmania.com/rules/G57kN-MQ71K"
+    },
+    "supportingSources": [
+      {
+        "label": "Jim Belsito at California State Pinball Championship 2017-18",
+        "url": "https://pinballvideos.com/v/1727/21193"
+      },
+      {
+        "label": "Kaylee Campbell at the 2025 Women’s World Championship Finals",
+        "url": "https://www.youtube.com/watch?v=BhvqpP-nLb4&t=29644s"
+      },
+      {
+        "label": "District 82 Viking 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=M_8fuXQXVrk"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the left inline drops for 5x Bonus and the exposed standup, build held Super Bonus to 20,000 and 40,000, then shoot the right orbit through the lit upper-left saucer for repeated Bonus collects.",
+      "quickInfo": [
+        {
+          "name": "Inline drops",
+          "summary": "The left-side targets advance base bonus and Bonus X through 5x, and completion exposes a repeatable standup."
+        },
+        {
+          "name": "Collect Bonus",
+          "summary": "The right orbit lights the upper-left saucer, and a strong orbit can continue directly into the lit collect."
+        },
+        {
+          "name": "Super Bonus",
+          "summary": "Reaching 20,000 and 40,000 base bonus preserves those amounts for later balls."
+        },
+        {
+          "name": "Spinner",
+          "summary": "Repeated spinner shots raise its value on a timer and add one bonus advance for each ten spins."
+        },
+        {
+          "name": "Upper-right bank",
+          "summary": "A 1-2-3 completion multiplies the bank award by ten, but the target rebounds are risky."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the left inline drops from the right flipper. Stop after any center or bumper rebound."
+        },
+        {
+          "text": "Complete the inline bank to reach 5x Bonus and expose the standup behind it.",
+          "modeNotes": [
+            "Inline bank: The targets add base bonus and raise Bonus X. Completion lights the outlanes and exposes the rear standup for the rest of the ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Score inline-drop hits and sets of ten spinner spins until base bonus reaches the held 20,000 level, then the held 40,000 level. These levels reduce later-ball setup."
+        },
+        {
+          "text": "Shoot the right orbit from the left flipper. A strong shot can continue into the upper-left Collect Bonus saucer.",
+          "modeNotes": [
+            "Collect Bonus: The right orbit lights the upper-left saucer. The saucer can award up to 59,000 base bonus at 5x, or 295,000."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After a collect, shoot the right orbit again to relight the saucer. Repeat only while the orbit feed remains controlled."
+        },
+        {
+          "text": "Use the exposed rear standup or a rising-value spinner when the orbit is not safe. Protect the held Super Bonus progress."
+        }
+      ],
+      "fallback": {
+        "title": "Standup and spinner scoring",
+        "when": "Use this when the right orbit, upper-left saucer, or inline bank has an unsafe return.",
+        "steps": [
+          {
+            "text": "Complete the inline bank once when it is still safe."
+          },
+          {
+            "text": "Repeat the exposed standup from a controlled right-flipper shot."
+          },
+          {
+            "text": "Use two quick spinner rips when the spinner carries enough speed to raise its value."
+          },
+          {
+            "text": "Protect the 20,000 or 40,000 held Super Bonus level for later balls."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "1-2-3 bank cashout",
+          "when": "Use this only when the upper-right bank feed is safe and the sequence is already partly complete.",
+          "steps": [
+            {
+              "text": "Complete the remaining targets in 1-2-3 order."
+            },
+            {
+              "text": "Collect the ten-times bank award."
+            },
+            {
+              "text": "Return to inline drops and Collect Bonus. Do not repeat a dangerous bank rebound."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "295,000 Bonus collect",
+        "steps": [
+          {
+            "text": "Complete the inline bank to reach 5x Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Score inline-drop hits and sets of ten spinner spins until base bonus reaches its 59,000 maximum."
+          },
+          {
+            "text": "Shoot the right orbit to light and feed the upper-left saucer."
+          },
+          {
+            "text": "Collect the multiplied bonus. Relight the saucer and repeat when the orbit is controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "5x Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Tap pass for inline-drop alignment",
+          "techniqueSlug": "tap-pass",
+          "instruction": "Use a short tap pass to transfer a controlled ball to the right flipper before shooting the left inline drops. Stop after a knuckle hit or uncontrolled rebound.",
+          "sourceUrl": "https://www.youtube.com/watch?v=BhvqpP-nLb4&t=29644s"
+        },
+        {
+          "name": "Orbit-to-saucer collect",
+          "instruction": "Shoot the right orbit firmly from the left flipper. Use enough speed to cross the top and enter the lit upper-left saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57kN-MQ71K"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Inline-target shots can center-drain or enter the left bumper and change direction.",
+          "response": "Attack the bank from a controlled right flipper. Stop after the first unsafe rebound.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57kN-MQ71K"
+        },
+        {
+          "issue": "A ball can fall straight through the spinner, and the upper bumpers can send it to an outlane.",
+          "response": "Keep both flippers ready after every spinner or upper-lane shot. Nudge before the ball reaches a lane divider.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57kN-MQ71K"
+        },
+        {
+          "issue": "The right-orbit return can reach the bumper below it instead of the Collect Bonus saucer.",
+          "response": "Test one firm orbit. Use the standup or spinner fallback when the ball does not cross the top cleanly.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57kN-MQ71K"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally factory rules, ball count, and award conversions.",
+        "Test inline bank, rear standup, right orbit, and collect saucer."
+      ],
+      "simpleOverview": "Viking uses the left inline drops for 5x Bonus and a right orbit to light and feed the upper-left bonus saucer. Complete the inline bank, build base bonus, then shoot the right orbit for repeated multiplied-bonus collects.",
+      "overview": "Viking uses the left inline drops for 5x Bonus and a right orbit to light and feed the upper-left bonus saucer. Complete the inline targets, build base toward 59,000, then use a strong right orbit to light and enter the saucer. Relight and repeat only while that orbit remains controlled; avoid the risky upper-right 1-2-3 bank unless its rebound is proven.",
+      "machineSetup": [
+        "Confirm Bally factory rules, ball count, and award conversions.",
+        "Test inline bank, rear standup, right orbit, and collect saucer."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

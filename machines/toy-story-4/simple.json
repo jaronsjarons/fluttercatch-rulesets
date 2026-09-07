@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "id": "GJ2o0",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Soft-plunge the Woody saucer for +5x bonus. Hit the left drop target, then lock three balls behind it to start Road Trip Multiball. During Road Trip, use Shot X on a large Jackpot. Collect the Super and Mega Jackpots, saving the repeatable add-a-ball until one ball remains.",
+        "steps": [
+          {
+            "text": "Soft-plunge the ball into the Woody saucer.",
+            "modeNotes": [
+              "Woody Skill Shot: The saucer adds 5x bonus and 50 tickets. Upper-loop shots can continue the Super Skill Shot sequence."
+            ]
+          },
+          {
+            "text": "Hit the left drop target to light Lock. Shoot behind the target to lock a ball. Repeat for three locks.",
+            "modeNotes": [
+              "Road Trip qualification: Each physical lock needs a new left-drop hit. The third lock starts Road Trip Multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Road Trip Multiball, shoot lit major shots for 1x, 2x, or 3x Jackpots. Complete the displayed Jackpot quota.",
+            "modeNotes": [
+              "Road Trip Multiball: Complete the Jackpot quota, collect the Super Jackpot at the left drop target, and collect the timed Mega Jackpot at the lockup. The wave then repeats while two or more balls remain."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp to light Shot X at the captive ball. Rip either spinner to move the value from 2x to 4x. Hit the captive ball to activate it.",
+            "modeNotes": [
+              "Shot X: The next Jackpot, Super Jackpot, or Mega Jackpot within 15 seconds uses the displayed multiplier. One scored award consumes it."
+            ]
+          },
+          {
+            "text": "When the Jackpot quota is complete, hit the left drop target for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lockup for the Mega Jackpot before its hurry-up expires.",
+            "modeNotes": [
+              "Mega Jackpot: This is the Road Trip end-of-wave cashout. Collect it at the lockup before the hurry-up expires."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Before the first Mega Jackpot, shoot the lockup again when one ball remains to add a ball.",
+            "modeNotes": [
+              "Road Trip add-a-ball: The lockup relights for repeatable add-a-balls until the first Mega Jackpot is collected. Save each collect until one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Jackpot, Super Jackpot, and Mega Jackpot cycle while two or more balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Buzz Quick Multiball",
+          "when": "Recovery pivot: Use this plan when the Road Trip target or lockup is unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the Inner Voice saucer until Buzz Quick Multiball lights. Shoot it again to start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the ramps and captive ball for Jackpots. Hit pop bumpers to raise the temporary Jackpot multiplier.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Score five Jackpots. Shoot Inner Voice for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the scoop to start the Intergalactic hurry-up.",
+              "modeNotes": [
+                "Buzz Quick Multiball: Jackpots lead to an Inner Voice Super Jackpot and then the scoop hurry-up. Completing the sequence finishes the Buzz scene. The multiball ends when one ball remains."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Super X stack",
+            "when": "When trailing, use this higher-ceiling route: use this plan when the left target, inlanes, and jump ramp are safe.",
+            "steps": [
+              {
+                "text": "Hit the captive ball to spell A-L-I-E-N and light the Take A Chance Wheel. Use captive-ball or upper-loop shots to select Super X, then shoot the lit left Army Men target to start it before another feature starts.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete both left inlanes and the jump ramp to raise Super X from 2x to 3x and then 4x. Each completion adds 10 seconds.",
+                "modeNotes": [
+                  "Super X: It starts at 2x for 30 seconds. It cannot be added after the other feature starts."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Start Road Trip, Buzz Quick, or Carnival Multiball before Super X expires.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Carnival games and Multiball",
+            "when": "Use this route when the ramps and left-ramp return are controlled.",
+            "steps": [
+              {
+                "text": "Shoot ramps for tickets. Shoot the left ramp to start the selected Carnival game. Complete its lit objective during 40 seconds.",
+                "modeNotes": [
+                  "Carnival game: A lit shot advances the objective. The scoop can add five seconds. After a win, the left ramp awards the character perk."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "After a win, shoot the left ramp again to collect the character perk. When the shots stay controlled, win and collect both first-game perks before starting Carnival Multiball.",
+                "modeNotes": [
+                  "Carnival perks: The first collected character gives a long ball save. The second gives an automatic multiball restart.",
+                  "A played game advances Carnival Multiball qualification even after a loss, but a lost game or uncollected win gives no perk."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect the lit lock at the scoop after each played game. The first Carnival Multiball needs two played games and two locks. Later starts need three games and three locks.",
+                "modeNotes": [
+                  "Carnival Multiball: The first start launches three balls. Follow the displayed Jackpot stages. Keep one ball for the final collect."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Gabby Gabby Multiball",
+            "when": "Use this route when the jump ramp and Gabby target are safe.",
+            "steps": [
+              {
+                "text": "Make the jump ramp or start Frenzy or Super X to raise Gabby.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Hit Gabby five times for the first start. Later starts need eight hits.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Gabby Gabby Multiball, shoot ramps for Jackpots. Shoot the upper loop for a Double Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "After five Jackpots, shoot the upper loop for the Super Jackpot. It scores the accumulated total.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Take A Chance Multiball",
+            "when": "Use this route when the captive ball and current wheel collect shot are controlled.",
+            "steps": [
+              {
+                "text": "Hit the captive ball to spell A-L-I-E-N. Use captive-ball and upper-loop hits to move the lit wheel award."
+              },
+              {
+                "text": "Collect all eight wheel awards. Shoot the scoop to start Take A Chance Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During four-ball play, score Jackpots to light two lockup shots, the left ramp, and then the Tiki saucer.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the Tiki saucer within 30 seconds for the Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Meet Me at the Carousel",
+          "steps": [
+            {
+              "text": "Start Road Trip, Buzz, Carnival, and Super Spinners. Complete Rescue Forky, make ten Duke Caboom jumps, and finish Bo Peep's Super Loops and upper-loop requirement.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Road Trip, Buzz, and Carnival qualify when their multiballs start. Rescue Forky must be completed.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Super Spinners qualifies when it starts. Duke Caboom needs ten successful jumps on current rules.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Bo Peep needs Super Loops, then 15 total upper loops or the three-combo completion.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the scoop to start Meet Me at the Carousel. Select a path with the ramps. Each scene completed before the start adds +1x, up to 7x.",
+              "modeNotes": [
+                "Meet Me at the Carousel: Play the wizard twice to complete both the Woody and Buzz paths and reach the full ending."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Road Trip Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Buzz Quick Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Carnival Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Gabby Gabby Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Take A Chance Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Super X",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Shot X",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Double Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Rescue Forky",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Spinners",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Duke Caboom",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bo Peep",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Meet Me at the Carousel",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "checkBeforePlay": [],
+        "techniques": [],
+        "cautions": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Soft-plunge the Woody saucer for +5x bonus."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start Road Trip, Buzz, Carnival, and Super Spinners."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Buzz Quick Multiball: Use this plan when the Road Trip target or lockup is unsafe."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Woody saucer",
+            "label": "Woody saucer",
+            "description": "Soft-plunge skill-shot collect.",
+            "precision": "unverified",
+            "context": "Soft-plunge skill-shot collect."
+          },
+          {
+            "term": "lockup",
+            "label": "Road Trip lockup",
+            "description": "Physical locks, Mega Jackpot, and pre-Mega add-a-ball.",
+            "precision": "unverified",
+            "context": "Physical locks, Mega Jackpot, and pre-Mega add-a-ball."
+          },
+          {
+            "term": "captive ball",
+            "label": "Captive ball",
+            "description": "Shot X activation shot.",
+            "precision": "unverified",
+            "context": "Shot X activation shot."
+          }
+        ],
+        "simpleOverview": "Toy Story 4 uses ramp tickets for Carnival games, the left drop and lockup for Road Trip Multiball, and the Take A Chance Wheel for features such as Super X. Shoot ramps until a Carnival game lights, then shoot the left ramp to start it. For Road Trip, hit the left drop before each of three lockup shots. For Super X, hit the captive ball to spell A-L-I-E-N, select Super X on the wheel, then shoot the lit Army Men target before starting another feature.",
+        "overview": "Toy Story 4 advances seven Scenes toward Meet Me at the Carousel, while Road Trip Multiball supplies repeatable Jackpot waves and add-a-balls before its first Mega Jackpot. Soft-plunge into the Woody saucer, then hit the left drop before each of three lockup shots. During Road Trip, shoot the left ramp to light Shot X, use spinner shots to choose its value, hit the captive ball to activate it, then collect the Super Jackpot at the left drop and the timed Mega Jackpot at the lockup.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use tickets and the left ramp for a Carnival game, the left drop and lockup for Road Trip, and the Take A Chance Wheel plus Army Men target for Super X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Carnival game",
+            "text": "Shoot ramps for tickets, then shoot the left ramp to start the selected Carnival game.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "The selected Carnival game",
+              "reason": "Each game uses its own colored inserts and displayed requirement.",
+              "play": "Follow the selected game's colored inserts and the count shown on the display. For Flipball, shoot the cyan-and-green left ramp four times at the first difficulty. After a win, shoot the left ramp again to collect the character perk."
+            }
+          },
+          {
+            "title": "Start Road Trip Multiball",
+            "text": "Hit the left drop target to light Lock, then shoot behind it to lock a ball. Repeat until the third lock starts Road Trip Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Super X",
+            "text": "Hit the captive ball to spell A-L-I-E-N and light the Take A Chance Wheel. Use captive-ball or upper-loop shots to select Super X, then shoot the lit left Army Men target to start it. Complete both left inlanes and the jump ramp to raise it from 2x to 3x, then 4x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Soft-plunge the Woody saucer for +5x bonus."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start Road Trip, Buzz, Carnival, and Super Spinners."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Buzz Quick Multiball: Use this plan when the Road Trip target or lockup is unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Buzz Quick Multiball",
+          "when": "Use this when the Road Trip target or lockup is unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the Inner Voice saucer until Buzz Quick Multiball lights, then shoot the saucer again to start it.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

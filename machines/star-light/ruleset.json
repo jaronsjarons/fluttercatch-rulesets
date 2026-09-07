@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "GRB86",
+  "title": "Star Light",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Silverball Rules Star Light guide",
+      "url": "https://rules.silverballmania.com/rules/GRB86-MJ2nw"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Star Light owner and factory-card archive",
+        "url": "https://www.firepowerpinball.com/2ya/7-sl.html"
+      },
+      {
+        "label": "Star Light exact rules reconstruction",
+        "url": "https://pinballnirvana.com/forums/resources/star-light-williams-1984-vp9.4780/"
+      },
+      {
+        "label": "Licensed Williams Star Light service manual",
+        "url": "https://online.fliphtml5.com/vrtyz/lvlt/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "In Star Light, completing S-T-A-R lights the right eject hole for the lock, while the ten numbered star rollovers build constellation value. Shoot the lit eject hole to lock the ball; the served ball's first playfield switch begins two-ball Multiball with double scoring. Complete L-I-G-H-T to raise the spinner from 1,000 to 2,000, and use the lit ADV X target or orbit to raise Bonus X. Completing both S-T-A-R and L-I-G-H-T lights Bonus Holdover; on the final ball that same award becomes timed Bonus Time.",
+      "simpleOverview": "Complete S-T-A-R, then shoot the lit right eject hole to lock a ball; the next served ball starts two-ball Multiball on its first playfield switch, with scoring doubled. Light all ten numbered stars for constellations, complete L-I-G-H-T to raise the spinner, and complete both words to light Bonus Holdover.",
+      "summary": "Start Multiball through S-T-A-R and the right eject hole, while using lane change to finish missing numbered stars. Build L-I-G-H-T and Bonus X between lock attempts so the same controlled shots improve spinner and end-of-ball value.",
+      "quickInfo": [
+        {
+          "name": "Light the Lock",
+          "summary": "Complete S-T-A-R."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Shoot the lit right eject hole, then register a switch with the served ball."
+        },
+        {
+          "name": "Build Constellations",
+          "summary": "Light all ten numbered stars."
+        },
+        {
+          "name": "Raise Spinner Value",
+          "summary": "Complete L-I-G-H-T."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the S-T-A-R standups to light the right eject hole for a ball lock.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit right eject hole; after the replacement ball is served, its first playfield switch starts two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, keep balls moving through the spinner and numbered star rollovers while all scoring is doubled.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use the separate right-side lane-change button to steer top-lane feeds toward missing numbered stars.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Constellation and spinner route",
+          "when": "Use this while S-T-A-R is incomplete or the right eject hole is rejecting shots.",
+          "steps": [
+            {
+              "text": "Light all ten numbered stars to complete a constellation and add 10,000 to its base value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete L-I-G-H-T to light the spinner for 1,000; later completions raise it to 2,000 while flashing.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit the currently lit ADV X feature to raise Bonus X before draining.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Bonus Holdover and Bonus Time",
+        "steps": [
+          {
+            "text": "Complete both S-T-A-R and L-I-G-H-T to light the right lane for Bonus Holdover.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On the final ball, collect the same lit lane for timed Bonus Time: one second per star plus ten seconds per constellation.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the S-T-A-R and L-I-G-H-T standups, right eject hole and lock, both trough switches, spinner, ten numbered star rollovers, ADV X features, and right-side holdover lane.",
+        "Confirm that the separate cabinet lane-change button works independently of the flippers and that the final-ball holdover award starts timed Bonus Time rather than another normal ball."
+      ],
+      "cautions": [
+        {
+          "issue": "Lane change uses a separate cabinet button.",
+          "response": "Do not assume a flipper press rotates the top lanes; test and use the dedicated right-side button before the ball reaches them.",
+          "sourceUrl": "https://www.firepowerpinball.com/2ya/7-sl.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

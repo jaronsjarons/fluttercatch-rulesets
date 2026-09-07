@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPx2",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete A-B-C-D at the top to raise the Hole Value. Shoot a Roto target only when it shows a missing number. Then return to top play and favor the lit side Hole Value lanes.",
+        "quickInfo": [
+          {
+            "name": "A-B-C-D lanes",
+            "summary": "Each completed top letter raises the center hole and lit side Hole Value lanes by 1,000, to a maximum of 5,000."
+          },
+          {
+            "name": "Roto targets",
+            "summary": "The two exposed Roto targets collect the numbers that they show from the seven-number set."
+          },
+          {
+            "name": "Hole Value lanes",
+            "summary": "A lit side Hole Value lane collects the built value without the direct risk of a center-hole shot."
+          },
+          {
+            "name": "Center hole",
+            "summary": "The center hole collects the same built value, but its direct shot is tighter and more dangerous."
+          },
+          {
+            "name": "Number Specials",
+            "summary": "Four consecutive collected numbers from 1 through 7 award Special under the factory replay rules."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through a missing A-B-C-D lane."
+          },
+          {
+            "text": "Send controlled balls to the top until A-B-C-D is complete and the Hole Value reaches 5,000."
+          },
+          {
+            "text": "Read both exposed Roto numbers before each lower-playfield shot."
+          },
+          {
+            "text": "Hit a Roto target only when it shows a number that is still missing."
+          },
+          {
+            "text": "When both exposed numbers are already complete, send the ball to the top instead."
+          },
+          {
+            "text": "After most numbers are complete, use top play and the lit side Hole Value lanes for repeatable scoring."
+          },
+          {
+            "text": "Avoid the center hole unless its shot and return are clearly safer on this machine."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: A-B-C-D and top play",
+          "when": "Recovery pivot: Use this when the Roto targets, center hole, or side-lane gaps reject shots dangerously.",
+          "steps": [
+            {
+              "text": "Ignore direct Roto and center-hole shots."
+            },
+            {
+              "text": "Send the ball to the top through the widest controlled route."
+            },
+            {
+              "text": "Complete A-B-C-D to raise the Hole Value to 5,000."
+            },
+            {
+              "text": "Take lit side Hole Value lanes only when upper play feeds them naturally."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Controlled center-hole collect",
+            "when": "When trailing, use this distinct scoreboard route: use this only when the center-hole shot is reliable and its return is known.",
+            "steps": [
+              {
+                "text": "Complete as many A-B-C-D letters as practical."
+              },
+              {
+                "text": "Build the center-hole value toward 5,000."
+              },
+              {
+                "text": "Shoot the center hole from a controlled flipper."
+              },
+              {
+                "text": "Return to side-lane and top play after one dangerous miss."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "5,000 Hole Value and a useful number set",
+          "steps": [
+            {
+              "text": "Complete A-B-C-D to raise Hole Value to 5,000."
+            },
+            {
+              "text": "Collect missing Roto numbers only when they face a flipper."
+            },
+            {
+              "text": "Stop shooting Roto targets when both exposed numbers are complete."
+            },
+            {
+              "text": "Convert later top play into lit side-lane Hole Value collects."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "Roto target",
+            "label": "Number Roto target",
+            "description": "Rotating target used to collect missing numbers for the Hole Value route.",
+            "precision": "unverified",
+            "context": "Shoot only a Roto target showing a missing number."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Curved-plastic top feed",
+            "instruction": "Shoot beside an outer bumper. The curved plastic can deflect the ball toward the A-B-C-D lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPx2-M5RRk"
+          },
+          {
+            "name": "Roto-number selection",
+            "instruction": "Read both exposed numbers before you shoot. Use a Roto target only when its number is missing.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPx2-M5RRk"
+          },
+          {
+            "name": "Side-lane collect",
+            "instruction": "Thread a lit side Hole Value lane from control, or let a top return enter it. Prefer this collect to the center hole.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPx2-M5RRk"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The direct center-hole shot is not worth its normal drain risk.",
+            "response": "Use a lit side Hole Value lane or return to the top. Test the center hole only when its geometry is unusually safe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPx2-M5RRk"
+          },
+          {
+            "issue": "Exposed bumpers can send the ball out of control or directly to a drain.",
+            "response": "Prepare both flippers before the ball leaves the upper area. Do not assume a stable bumper exit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPx2-M5RRk"
+          },
+          {
+            "issue": "The major shots and side gaps are tight, so misses can return without control.",
+            "response": "Test each gap early. Use the widest top route after repeated rejects.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPx2-M5RRk"
+          }
+        ],
+        "simpleOverview": "Spin Out uses A-B-C-D to raise a shared Hole Value, then lets either side lane or the tighter center hole collect it. Complete the top letters for 5,000, take missing roto numbers only when they face a flipper, and favor the lit side Hole Value lanes.",
+        "overview": "Spin Out uses A-B-C-D to raise a shared Hole Value, then lets either side lane or the tighter center hole collect it. Repeat upper play to finish A-B-C-D, shoot only missing roto numbers, then stop targeting the rotos once both exposed numbers are complete. Convert later top feeds into the safer lit side-lane collects instead of forcing the center hole.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete A-B-C-D at the top to raise the Hole Value. Shoot a Roto target only when it shows a missing number. Then return to top play and favor the lit side Hole Value lanes.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through a missing A-B-C-D lane."
+          },
+          {
+            "text": "Send controlled balls to the top until A-B-C-D is complete and the Hole Value reaches 5,000."
+          },
+          {
+            "text": "Read both exposed Roto numbers before each lower-playfield shot."
+          },
+          {
+            "text": "Hit a Roto target only when it shows a number that is still missing."
+          },
+          {
+            "text": "When both exposed numbers are already complete, send the ball to the top instead."
+          },
+          {
+            "text": "After most numbers are complete, use top play and the lit side Hole Value lanes for repeatable scoring."
+          },
+          {
+            "text": "Avoid the center hole unless its shot and return are clearly safer on this machine."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "A-B-C-D lanes",
+            "summary": "Each completed top letter raises the center hole and lit side Hole Value lanes by 1,000, to a maximum of 5,000."
+          },
+          {
+            "name": "Roto targets",
+            "summary": "The two exposed Roto targets collect the numbers that they show from the seven-number set."
+          },
+          {
+            "name": "Hole Value lanes",
+            "summary": "A lit side Hole Value lane collects the built value without the direct risk of a center-hole shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: A-B-C-D and top play",
+          "when": "Recovery pivot: Use this when the Roto targets, center hole, or side-lane gaps reject shots dangerously.",
+          "steps": [
+            {
+              "text": "Ignore direct Roto and center-hole shots."
+            },
+            {
+              "text": "Send the ball to the top through the widest controlled route."
+            },
+            {
+              "text": "Complete A-B-C-D to raise the Hole Value to 5,000."
+            },
+            {
+              "text": "Take lit side Hole Value lanes only when upper play feeds them naturally."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The direct center-hole shot is not worth its normal drain risk.",
+          "text": "Use a lit side Hole Value lane or return to the top. Test the center hole only when its geometry is unusually safe."
+        }
+      }
+    }
+  ]
+}

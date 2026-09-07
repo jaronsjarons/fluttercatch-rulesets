@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "id": "GLWBV",
+  "title": "Oktoberfest",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Rulesheets Oktoberfest guide",
+      "url": "https://pinballrulesheets.com/american-pinball/oktoberfest-pinball-on-tap-rulesheet"
+    },
+    "supportingSources": [
+      {
+        "label": "Official American Pinball Oktoberfest page",
+        "url": "https://americanpinball.com/oktoberfest/"
+      },
+      {
+        "label": "Official American Pinball game updates",
+        "url": "https://americanpinball.com/support/updates/"
+      },
+      {
+        "label": "Final-code-era Oktoberfest tutorial stream",
+        "url": "https://www.youtube.com/watch?v=l3-0tPe57qg"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Tent modes, persistent steins, two lock Multiballs, Food Stand, and playfield multipliers can strengthen one another. Prepare two Corkscrew locks, begin a compatible Tent mode, then take the third lock and work its shots alongside the moving Multiball jackpots.",
+      "simpleOverview": "Complete TENT and shoot the scoop to choose a Tent mode. Complete OKTOBERFEST and lock two balls on the lowered Coaster ramp, start a compatible Tent, then take the third lock to add Corkscrew Multiball.",
+      "summary": "Collect a useful stein, prepare two Corkscrew locks, and complete TENT. Start a compatible Tent mode at the scoop, then take the third Coaster lock. During Multiball, follow the mode shots and red jackpots before returning to the Coaster ramp for the Super.",
+      "quickInfo": [
+        {
+          "name": "Tent modes",
+          "summary": "Complete TENT through the return lanes and scoop progress, shoot the Tent scoop, and use the flippers to choose an available mode."
+        },
+        {
+          "name": "Corkscrew Multiball",
+          "summary": "Complete the OKTOBER and FEST banks, then collect three locks on the lowered left Coaster ramp."
+        },
+        {
+          "name": "Beer Barrel Multiball",
+          "summary": "Complete PROST to light a lock, then use the upper flipper to shoot the side ramp; repeat for three locks."
+        },
+        {
+          "name": "Beer steins",
+          "summary": "Hit the Bar door until it opens, then shoot inside to choose a permanent benefit. A linked stein also multiplies its Tent mode's scoring."
+        },
+        {
+          "name": "Food Stand",
+          "summary": "Hit the center drop and spinner until Food lights, then shoot the center scoop during single-ball play."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the Bar door until it opens, then shoot inside. Choose a stein that improves the Tent mode or lock route you intend to play.",
+          "kinds": [
+            "item"
+          ]
+        },
+        {
+          "text": "Complete the OKTOBER and FEST target banks, then shoot the lowered Coaster ramp twice to hold two Corkscrew locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete TENT in the return lanes or through scoop progress. Shoot the Tent scoop and use the flippers to choose a compatible mode; do not choose Looper for the Corkscrew stack.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After the Tent begins, shoot the Coaster ramp for the third lock and start Corkscrew Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect the red Multiball jackpots while making the active Tent shots. Complete OKTOBER or FEST again, then shoot the Coaster ramp when the Super Jackpot lights.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use the top lanes and available MagNabs to raise or extend the playfield multiplier when that route does not pull you away from a ready Super.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Beer Barrel route",
+        "when": "Use this when the Coaster ramp rejects but PROST and the upper-flipper side ramp are feeding cleanly.",
+        "steps": [
+          {
+            "text": "Complete PROST to light a Beer Barrel lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the upper flipper to shoot the side ramp and lock a ball; repeat the PROST-to-ramp sequence for three locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Beer Barrel Multiball, collect the lit jackpots and relock a ball in the Barrel to multiply the following jackpots.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Food preparation",
+          "when": "Use this between Multiballs when the center drop, spinner, and Food Stand scoop are controllable.",
+          "steps": [
+            {
+              "text": "Build the next Food mode at the center drop and spinner, then start it at the center scoop during single-ball play.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect its calories before starting the next Multiball; calories are fixed when that Multiball begins.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "After Food is active, add a Tent mode or prepared Multiball when the game leaves those starts available.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Festival finales",
+        "steps": [
+          {
+            "text": "Complete all thirteen Tent modes to reach Flipper Miestro.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect every different stein to reach Stein Slinging.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep using the persistent stein benefits and built Food values while working the remaining festival features.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Tent mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Corkscrew Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Beer Barrel Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Food Stand",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "playfield multiplier",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Flipper staging",
+          "techniqueSlug": "flipper-staging",
+          "instruction": "Partially press the right flipper button when the switch permits it so the lower flipper can stay controlled while the upper flipper takes the Beer Barrel ramp.",
+          "sourceUrl": "https://www.youtube.com/watch?v=l3-0tPe57qg"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Looper lowers the Coaster ramp for its own mode and does not stack with Corkscrew Multiball.",
+          "response": "Choose a different Tent mode before taking the third Corkscrew lock.",
+          "sourceUrl": "https://www.youtube.com/watch?v=l3-0tPe57qg"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

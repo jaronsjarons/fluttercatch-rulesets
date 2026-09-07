@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "G5n38",
+  "title": "Millionaire",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Millionaire rules and strategy",
+      "url": "https://www.jeff-z.com/pinball/mill/rules/rules.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Millionaire operations manual",
+        "url": "https://www.manualslib.com/manual/4191662/Williams-Millionaire.html"
+      },
+      {
+        "label": "Millionaire machine overview",
+        "url": "https://www.kineticist.com/games/pinball/millionaire"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Millionaire has no lock qualification. Shoot the right orbit to place a ball in the left wire-ramp lock, and shoot the left plastic ramp to place a ball in the right horseshoe lock. Filling both starts two-ball Multiball. Re-lock both balls during Multiball for the progressive Emerald, Ruby, Diamond, then repeating Hotshot payoffs.",
+      "simpleOverview": "Shoot the right orbit for the left lock and the left plastic ramp for the right lock; there are no prerequisites. The second lock starts two-ball Multiball. During Multiball, re-lock both balls to collect Emerald, Ruby, Diamond, then 500K Hotshot payoffs.",
+      "summary": "With no prerequisites, shoot the right orbit and left plastic ramp to fill the two opposite-side locks. The second lock starts two-ball Multiball. Re-lock both balls for Emerald, Ruby, Diamond, then Hotshot payoffs.",
+      "quickInfo": [
+        {
+          "name": "Left Lock",
+          "summary": "Shoot the right orbit; it lands in the left wire-ramp lock."
+        },
+        {
+          "name": "Right Lock",
+          "summary": "Shoot the left plastic ramp; it lands in the right horseshoe lock."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Fill both locks in either order."
+        },
+        {
+          "name": "Collect Payoffs",
+          "summary": "During Multiball, re-lock both balls for each progressive award."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the right orbit to lock a ball at the left wire ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left plastic ramp to lock a ball in the right horseshoe; the second filled lock starts two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot both lock routes again to re-lock both balls and collect the current payoff.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Repeat for Emerald, Ruby, Diamond, then the fixed Hotshot payoff on later completions.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Spin the Wheel of Riches",
+          "when": "Use this when an opposing inlane has lit an eject hole.",
+          "steps": [
+            {
+              "text": "Shoot a lit eject hole to spin the physical Wheel of Riches.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Multiball occupies two of the twelve wheel positions, but the result is random; use the direct locks for a guaranteed start.",
+              "kinds": [
+                "multiball",
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Improve the plunge",
+        "steps": [
+          {
+            "text": "Use the moving shooter-lane guide to reach the upper-left Gold Bar targets.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Advance the targets for 2x, 3x, and 5x end-of-ball bonus while briefly opening the right outlane return gate.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm lock stealing, Wheel of Riches extra-ball and Special settings, and progressive payoff values.",
+        "Test both lock routes and releases, moving shooter-lane guide, Gold Bar targets, both eject holes, physical prize wheel, outlane gates, and trough."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Payoffs",
+          "tone": "indigo",
+          "kind": "multiball"
+        },
+        {
+          "label": "Wheel of Riches",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A shot toward an already occupied lock swaps the balls instead of adding another lock.",
+          "response": "Track which side is occupied and shoot the opposite route to start Multiball.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/mill/rules/rules.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "GrNqO",
+  "title": "World Cup",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Silverball Rules World Cup strategy",
+      "url": "https://rules.silverballmania.com/rules/GrNqO-MRjzl"
+    },
+    "supportingSources": [
+      {
+        "label": "David Gersic's independent World Cup rulesheet",
+        "url": "https://pinball.org/rules/worldcup.html"
+      },
+      {
+        "label": "Williams World Cup confirmed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Williams/Williams_World_Cup_instruction_cards.zip"
+      },
+      {
+        "label": "World Cup exact-machine physical gameplay",
+        "url": "https://www.youtube.com/watch?v=7CvOc5g4O9U"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "World Cup is a goal-based bonus game. The left orbit is the best repeatable route because it immediately lights Goal, feeds the top lanes for S-T-A-R, and raises its own carried-over value as goals accumulate. Spell S-T-A-R for 2x, 3x, and 5x Bonus; goals carry across balls, but the multiplier does not.",
+      "simpleOverview": "Keep shooting the left orbit. It lights Goal and feeds the top lanes, where you can score goals and S-T-A-R letters. Spell STAR for 2x, 3x, then 5x Bonus.",
+      "summary": "Go up the left side all day, let the top and side kickouts find goals and STAR letters, and protect the large goal bonus instead of forcing the center spinner.",
+      "quickInfo": [
+        {
+          "name": "Light Goal",
+          "summary": "Shoot the left orbit, Corner Kick, or upper-right Super Ball lane."
+        },
+        {
+          "name": "Score Goal",
+          "summary": "Enter either lit side saucer or the lit top-center Goal lane."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Spell S-T-A-R for 2x, 3x, then 5x."
+        },
+        {
+          "name": "Best Repeat",
+          "summary": "Use the left orbit to light Goal and return up top."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the left orbit to light Goal and feed the top arch."
+        },
+        {
+          "text": "Use the top lanes and side kickouts to collect S-T-A-R letters and let the ball find a lit goal saucer."
+        },
+        {
+          "text": "Repeat S-T-A-R completions to raise Bonus X from 2x to 3x to 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Keep building the carried-over goal count and preserve the multiplied end-of-ball bonus."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Corner Kick goal",
+          "when": "Use this when the right-side lane is naturally available rather than forcing it from a trapless flipper return.",
+          "steps": [
+            {
+              "text": "Enter the Corner Kick lane to light Goal."
+            },
+            {
+              "text": "Let the lane feed the right goal saucer."
+            },
+            {
+              "text": "Use the saucer kickout or flipper-elbow cup to set up the next left-orbit shot."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "18 goals at 5x",
+        "steps": [
+          {
+            "text": "Keep Goal lit and score goals early because goal count carries across balls."
+          },
+          {
+            "text": "Complete S-T-A-R three times during the current ball for 5x."
+          },
+          {
+            "text": "Drain without tilting to collect the maximum 180,000 goal bonus."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test both goal saucers and kickouts, top-center Goal lane, left orbit, Corner Kick, S-T-A-R switches, flipper-elbow cups, goal lamps, and bonus lamps.",
+        "Confirm liberal or normal STAR thresholds, Special and Extra Ball conversion, three- or five-ball play, and the tilt penalty that can erase collected goals."
+      ],
+      "cautions": [
+        {
+          "issue": "The flipper layout has no normal inlanes, and tilting can erase the accumulated goals.",
+          "response": "Use catches and the kickout cups instead of expecting a cradle, and protect the carried-over goal count with restrained nudging.",
+          "sourceUrl": "https://pinball.org/rules/worldcup.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

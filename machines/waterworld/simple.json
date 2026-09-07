@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "G4JK7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the broad half-pipe to spell W-A-T-E-R-W-O-R-L-D and qualify boat locks, collect three physical locks for four-ball play, then shoot the Jackpot or Super shots shown on the display.",
+        "quickInfo": [
+          {
+            "name": "Half-pipe",
+            "summary": "The central ramp can spell WATERWORLD or hold balls in the rotating boat when lock is active."
+          },
+          {
+            "name": "Boat locks",
+            "summary": "Three balls retained in the boat are dumped to start the game's four-ball physical-lock multiball."
+          },
+          {
+            "name": "Other multiballs",
+            "summary": "Without an auto-plunger, non-boat multiballs are generally limited to two balls."
+          },
+          {
+            "name": "Dive Hole",
+            "summary": "The deep center hole awards a 3-by-3 grid containing feature choices, Jackpot, and other awards."
+          },
+          {
+            "name": "Dirt",
+            "summary": "Collect and trade Dirt using the award thresholds printed on the machine; read the current offer before cashing it."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the half-pipe return, boat optos, Dive Hole eject, Harpoon kicker, Curvy lane, and orbits before choosing the route."
+          },
+          {
+            "text": "Repeat the half-pipe while its return reaches a controlled flipper, using it to spell WATERWORLD and qualify boat locks."
+          },
+          {
+            "text": "When lock is active, send three balls into the boat and watch the display after each shot for the registered lock."
+          },
+          {
+            "text": "Start the four-ball boat multiball when the mechanism turns and releases the retained balls.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Read the display and collect only the currently lit Jackpot or Super shots; the order can vary by ROM or game state.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between starts, use the Dive Hole grid for feature or Jackpot progress when its eject is safer than the Harpoon lane."
+          },
+          {
+            "text": "Trade Dirt only after reading the current threshold and award on the apron or display."
+          }
+        ],
+        "fallback": {
+          "title": "Dive Hole award grid",
+          "when": "Use this when the half-pipe rejects or the boat fails to register locks.",
+          "steps": [
+            {
+              "text": "Shoot the Dive Hole from a settled feed."
+            },
+            {
+              "text": "Take the useful feature or center Jackpot award shown in the grid."
+            },
+            {
+              "text": "Resume the half-pipe only when its return is controlled and its optos are registering."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Harpoon and Curvy lane",
+            "when": "Use this when the extreme-right Curvy lane is proven makeable and the Harpoon kicker returns safely.",
+            "steps": [
+              {
+                "text": "Shoot the Curvy lane from the left-flipper tip."
+              },
+              {
+                "text": "Collect the resulting Harpoon award."
+              },
+              {
+                "text": "Return to half-pipe work if the kicker cannot complete its wireform return."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeat boat multiball",
+          "steps": [
+            {
+              "text": "Shoot the half-pipe to spell WATERWORLD and qualify the boat."
+            },
+            {
+              "text": "Register three physical locks."
+            },
+            {
+              "text": "Use the four-ball release to collect the displayed Jackpot route."
+            },
+            {
+              "text": "Requalify only while the half-pipe and boat optos remain reliable.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Boat Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "W-A-T-E-R-W-O-R-L-D",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Dirt",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Dive Hole",
+            "tone": "plum",
+            "kind": "shot"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "half-pipe",
+            "label": "Half-pipe ramp",
+            "description": "Broad central ramp used for WATERWORLD progress and boat locks.",
+            "precision": "unverified",
+            "context": "half-pipe: Broad central ramp used for WATERWORLD progress and boat locks."
+          },
+          {
+            "term": "boat",
+            "label": "Rotating boat",
+            "description": "Physical lock that holds and releases balls for four-ball multiball.",
+            "precision": "unverified",
+            "context": "boat: Physical lock that holds and releases balls for four-ball multiball."
+          },
+          {
+            "term": "Dive Hole",
+            "label": "Dive Hole",
+            "description": "Deep center sinkhole used for the 3-by-3 award grid.",
+            "precision": "unverified",
+            "context": "Dive Hole: Deep center sinkhole used for the 3-by-3 award grid."
+          },
+          {
+            "term": "Harpoon",
+            "label": "Harpoon lane",
+            "description": "Difficult left-side award lane with a kicker return.",
+            "precision": "unverified",
+            "context": "Harpoon: Difficult left-side award lane with a kicker return."
+          },
+          {
+            "term": "Curvy lane",
+            "label": "Curvy lane",
+            "description": "Extreme-right lane that can feed the Harpoon area.",
+            "precision": "unverified",
+            "context": "Curvy lane: Extreme-right lane that can feed the Harpoon area."
+          },
+          {
+            "term": "orbits",
+            "label": "Outer orbits",
+            "description": "Left and right orbit shots used for general feature progress.",
+            "precision": "unverified",
+            "context": "orbits: Left and right orbit shots used for general feature progress."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Boat-lock confirmation",
+            "instruction": "Watch the lock indication after every half-pipe shot; the boat relies on optos rather than individual lock switches.",
+            "sourceUrl": "https://www.pinball.org/rules/waterworld.html"
+          },
+          {
+            "name": "Display-led multiball",
+            "instruction": "Follow the lit Jackpot and Super lamps during Multiball.",
+            "sourceUrl": "https://www.pinball.org/rules/waterworld.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Half-pipe shots can fall down the center or fail to register in the boat.",
+            "response": "Stop repeating the ramp when its return or optos become unreliable and switch to the Dive Hole route.",
+            "sourceUrl": "https://www.pinball.org/rules/waterworld.html"
+          },
+          {
+            "issue": "The Harpoon kicker may fail to complete its 180-degree wireform return.",
+            "response": "Test it before choosing Curvy-to-Harpoon as a primary route.",
+            "sourceUrl": "https://www.pinball.org/rules/waterworld.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm installed ROM and boat mechanism behavior.",
+          "Test boat locks, half-pipe switches, Dirt awards, and ball saves."
+        ],
+        "simpleOverview": "Waterworld uses the broad half-pipe to spell WATERWORLD and place three balls in the rotating boat. The boat then releases four-ball Multiball for the displayed Jackpot route. Use the Dive Hole and Dirt awards as supporting choices when their feeds are safer than another half-pipe shot.",
+        "overview": "Spelling WATERWORLD at the half-pipe and placing three physical balls in the boat starts Waterworld's four-ball Multiball. Repeat the half-pipe only while its return is controlled, watch the display after each lock, then shoot the currently lit Jackpot or Super shots. Use Dive Hole features, Harpoon, and Dirt trades between starts.",
+        "machineSetup": [
+          "Confirm installed ROM and boat mechanism behavior.",
+          "Test boat locks, half-pipe switches, Dirt awards, and ball saves."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Use the broad half-pipe to spell W-A-T-E-R-W-O-R-L-D and qualify boat locks, collect three physical locks for four-ball play, then shoot the Jackpot or Super shots shown on the display.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the half-pipe return, boat optos, Dive Hole eject, Harpoon kicker, Curvy lane, and orbits before choosing the route."
+          },
+          {
+            "text": "Repeat the half-pipe while its return reaches a controlled flipper, using it to spell WATERWORLD and qualify boat locks."
+          },
+          {
+            "text": "When lock is active, send three balls into the boat and watch the display after each shot for the registered lock."
+          },
+          {
+            "text": "Start the four-ball boat multiball when the mechanism turns and releases the retained balls.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Read the display and collect only the currently lit Jackpot or Super shots; the order can vary by ROM or game state.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between starts, use the Dive Hole grid for feature or Jackpot progress when its eject is safer than the Harpoon lane."
+          },
+          {
+            "text": "Trade Dirt only after reading the current threshold and award on the apron or display."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Half-pipe",
+            "summary": "The central ramp can spell WATERWORLD or hold balls in the rotating boat when lock is active."
+          },
+          {
+            "name": "Boat locks",
+            "summary": "Three balls retained in the boat are dumped to start the game's four-ball physical-lock multiball."
+          },
+          {
+            "name": "Other multiballs",
+            "summary": "Without an auto-plunger, non-boat multiballs are generally limited to two balls."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Dive Hole award grid",
+          "when": "Use this when the half-pipe rejects or the boat fails to register locks.",
+          "steps": [
+            {
+              "text": "Shoot the Dive Hole from a settled feed."
+            },
+            {
+              "text": "Take the useful feature or center Jackpot award shown in the grid."
+            },
+            {
+              "text": "Resume the half-pipe only when its return is controlled and its optos are registering."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

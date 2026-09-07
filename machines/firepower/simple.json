@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "id": "G5VDd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit each 1-6 target once to light the left spinner, shoot it from the right flipper into the top F-I-R-E lanes, and use Lane Change to complete F-I-R-E repeatedly for 5x Bonus X.",
+        "steps": [
+          {
+            "text": "Before the plunge, inspect Shield and the three eject-hole lamps.",
+            "modeNotes": [
+              "Shield: This one-use left-outlane kicker returns a ball to play. Complete the configured target set to light it. An outlane save spends it. It can be earned again.",
+              "A Shield adjustment selects its qualifying targets. The adjustment does not prove that Shield starts lit. Read the lamp."
+            ]
+          },
+          {
+            "text": "Read the 1-6 targets. A flashing number is needed. A solid number is collected."
+          },
+          {
+            "text": "Plunge to an unlit F-I-R-E lane. Rotate the lamps with the right flipper button before the rollover.",
+            "modeNotes": [
+              "FIRE: This four-lane top collection raises Bonus X. The right flipper button moves the lane progress.",
+              "Bonus X: Each FIRE completion raises this end-of-ball multiplier one step, to 5x. Treat it as per-ball progress unless the start lamps prove otherwise."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "On the first controlled ball, test the left spinner from the right flipper."
+          },
+          {
+            "text": "If the spinner is unlit, shoot only the needed 1-6 targets."
+          },
+          {
+            "text": "Each target scores 1,000. A newly collected flashing target adds one base-bonus advance."
+          },
+          {
+            "text": "Under factory settings, complete 1-2-3 or 4-5-6 to light Shield."
+          },
+          {
+            "text": "Complete all of 1-6 once.",
+            "modeNotes": [
+              "The spinner lights for 1,000 per spin for the rest of the ball. It scores 100 per spin before qualification.",
+              "Two diagonal jet bumpers light. Lit jets score 1,000. Unlit jets score 100.",
+              "Factory three-ball rules also qualify two eject holes for lock."
+            ]
+          },
+          {
+            "text": "Transfer the ball to the right flipper. Shoot the lit left spinner."
+          },
+          {
+            "text": "Use the spinner feed to reach the top FIRE lanes."
+          },
+          {
+            "text": "Use Lane Change to guide the ball through a missing FIRE letter."
+          },
+          {
+            "text": "Repeat spinner and FIRE shots while their returns remain controlled."
+          },
+          {
+            "text": "Relight Shield with the configured target set after an outlane save spends it."
+          },
+          {
+            "text": "Let target, lane, and bumper hits build base bonus to 29,000. Finish the ball without tilting to collect as much as 145,000 at 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Shield, targets, and controlled spinner feeds",
+          "when": "Use this plan when the direct spinner rejects or the left-flipper transfer is poor.",
+          "steps": [
+            {
+              "text": "Cradle on the left flipper."
+            },
+            {
+              "text": "If Shield is off, hit the missing target in 1-2-3 or 4-5-6 under factory settings."
+            },
+            {
+              "text": "Confirm that Shield lights."
+            },
+            {
+              "text": "If the spinner is unlit, continue only the missing 1-6 targets."
+            },
+            {
+              "text": "Stop direct target shots after Shield and the spinner are ready."
+            },
+            {
+              "text": "Use a controlled transfer to the right flipper."
+            },
+            {
+              "text": "If the transfer is unsafe, shoot a qualified left eject hole."
+            },
+            {
+              "text": "If no left hole flashes, use the right orbit to reach the top lanes."
+            },
+            {
+              "text": "Use Lane Change for a missing FIRE letter."
+            },
+            {
+              "text": "Let the top feed return before another spinner attempt."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Firepower Multiball",
+            "when": "Use this plan when eject-hole feeds are controlled and a three-ball safety net helps the normal scoring route.",
+            "steps": [
+              {
+                "text": "Complete 1-6 once and read the flashing eject holes.",
+                "modeNotes": [
+                  "Lock Lamp: This stored qualification belongs to an eject hole. A flashing hole spends one lamp by holding the ball. A lit occupied hole remains filled until multiball or a rule release.",
+                  "Firepower Multiball: Three held balls start three-ball play. Normal scoring remains active. There is no jackpot, scoring multiplier, or exclusive multiball shot.",
+                  "Factory three-ball rules flash two eject holes after the first 1-6 completion."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot a flashing eject hole. It scores 10,000 and holds the ball."
+              },
+              {
+                "text": "An unlit eject hole scores 1,000 and returns the same ball."
+              },
+              {
+                "text": "Use the served replacement ball to complete 1-6 a second time."
+              },
+              {
+                "text": "The second same-ball completion qualifies the third hole and lights all four jets."
+              },
+              {
+                "text": "Fill the remaining flashing holes. The third lock releases all three balls.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During multiball, use spinner, lane, target, bumper, bonus, and Shield scoring.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Multiball ends when one ball remains. Requalify and fill all three holes for another start.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "FIRE and Extra Ball",
+            "when": "Use this plan when spinner or orbit feeds make Lane Change reliable and replay balls have tournament value.",
+            "steps": [
+              {
+                "text": "Send the ball through the spinner or right orbit to the top lanes."
+              },
+              {
+                "text": "Use Lane Change to move a missing FIRE letter under the ball."
+              },
+              {
+                "text": "Each lane scores 1,000. A newly collected lane adds one base-bonus advance."
+              },
+              {
+                "text": "Roll through all four F-I-R-E lanes; the completed set lights FIRE and raises Bonus X.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Repeat until Bonus X reaches 5x.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Under factory rules, complete FIRE once more after 5x.",
+                "modeNotes": [
+                  "POWER: This three-target middle-right bank scores 10,000 when complete. It lights POWER and both inlanes. Each lit inlane scores 3,000 and adds three base-bonus advances.",
+                  "Extra Ball: This replay award lights at the center POWER target. Hitting the target spends the lit award. SHOOT AGAIN serves the replay ball after the current drain."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "When Extra Ball lights at the center POWER target, hit that target to collect it."
+              },
+              {
+                "text": "If the Extra Ball insert does not light, leave this route and return to the spinner."
+              },
+              {
+                "text": "No more than two Extra Balls can be awarded on one ball."
+              }
+            ]
+          },
+          {
+            "title": "POWER and Firepower Bonus",
+            "when": "Use this plan when the three middle-right targets are safe or complete incidentally.",
+            "steps": [
+              {
+                "text": "Complete the three POWER targets.",
+                "modeNotes": [
+                  "Firepower Bonus: This stored 10,000, 30,000, or 50,000 award needs both FIRE and POWER. Completing the pair collects the lit value. The next pair advances the value."
+                ]
+              },
+              {
+                "text": "Complete FIRE at the top."
+              },
+              {
+                "text": "Complete whichever of F-I-R-E or P-O-W-E-R remains; completing the pair collects the current Firepower Bonus."
+              },
+              {
+                "text": "The factory sequence is 10,000, then 30,000, then 50,000."
+              },
+              {
+                "text": "Repeat POWER and FIRE for the next value."
+              },
+              {
+                "text": "After the factory 50,000 collect, read the outlane Special lamps.",
+                "modeNotes": [
+                  "Special: This configured replay award lights one or both outlanes after a selected Firepower Bonus collect. It can award a credit, Extra Ball, or points."
+                ]
+              },
+              {
+                "text": "Use the Special only when an outlane Special lamp is on; one or both outlanes can be active."
+              },
+              {
+                "text": "Do not shoot P-O-W-E-R solely for Shield unless the Shield lamp confirms that target set is active."
+              }
+            ]
+          },
+          {
+            "title": "Lit-bumper route",
+            "when": "Use this scoring only when the ball reaches the jet bumpers naturally.",
+            "steps": [
+              {
+                "text": "Complete 1-6 once. Two diagonal jet bumpers light."
+              },
+              {
+                "text": "Each jet hit changes which two jets are lit."
+              },
+              {
+                "text": "A lit jet scores 1,000. An unlit jet scores 100."
+              },
+              {
+                "text": "Complete 1-6 a second time on the same ball."
+              },
+              {
+                "text": "All four jets light for the rest of that ball."
+              },
+              {
+                "text": "Do not force a center-target rebound only to enter the jets."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "5x, 145,000 bonus, and three-ball multiball",
+          "steps": [
+            {
+              "text": "Complete 1-6 once to light the spinner and first lock lamps."
+            },
+            {
+              "text": "When the left-outlane Shield lamp is off, complete the active Shield target set shown by the machine's target lamps."
+            },
+            {
+              "text": "Shoot the lit spinner for 1,000 per spin."
+            },
+            {
+              "text": "Complete FIRE repeatedly to reach 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use target, lane, and bumper hits to build base bonus to 29,000."
+            },
+            {
+              "text": "Complete 1-6 again to qualify the third lock."
+            },
+            {
+              "text": "Fill all three eject holes. Start Firepower Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use multiball to complete FIRE and POWER without a jackpot obligation.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Drain without tilting to collect up to 145,000 bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Firepower Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "2x",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "3x",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "4x",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "5x",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Shield",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lock Lamp",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "FIRE",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "POWER",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Firepower Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Special",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original Williams code and production 1-6 standups. Prototypes and replacement rules ROMs can use different targets or rules.",
+          "Read Functions 30 and 31. Factory three-ball play uses Function 31 setting 03; Williams recommends setting 02 for five-ball play.",
+          "Read Function 32 before using Shield. Factory setting 01 accepts either 1-2-3 or 4-5-6 on one ball, or a stored 1-6 completion."
+        ],
+        "techniques": [
+          {
+            "name": "Right-flipper spinner shot",
+            "instruction": "Transfer controlled balls to the right flipper. Shoot the left spinner from there.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          },
+          {
+            "name": "Thumb plunge lock",
+            "instruction": "When the upper-right eject hole flashes, use a firm thumb plunge. The ball can rebound from the one-way gate into the hole. Do not use a fist strike.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/firepower"
+          },
+          {
+            "name": "Lane Change",
+            "instruction": "Tap the right flipper button before a top rollover. Rotate a missing FIRE letter under the ball.",
+            "sourceUrl": "https://www.pinball.org/rules/firepower.html"
+          },
+          {
+            "name": "Target-edge graze",
+            "instruction": "Graze the edge of a needed target when a full hit returns dangerously. Test this only after the rebound is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "During a spinner feed, use a small legal nudge toward a missing FIRE lane. Combine it with Lane Change.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO",
+            "techniqueSlug": "nudging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A soft spinner miss can hit the orbit rubber and drain through the center.",
+            "response": "Make a firm shot or prepare for the same-side feed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          },
+          {
+            "issue": "Center 1-6 target rebounds can drain.",
+            "response": "Hit only the missing target. Stop after Shield and the spinner are ready.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          },
+          {
+            "issue": "A slow ball can fall between the jet bumpers and drain through the center.",
+            "response": "Keep both flippers ready until the ball exits the bumper area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          },
+          {
+            "issue": "A tilt can erase lock and Bonus X progress.",
+            "response": "Use smaller nudges after locks or 5x are ready.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          },
+          {
+            "issue": "Eject-hole kickouts are normally controlled feeds, but copies differ.",
+            "response": "Use one early eject to learn the return before depending on it as a transfer.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VDd-MJpqO"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Hit each 1-6 target once to light the left spinner, shoot it from the right flipper into the top F-I-R-E lanes, and use Lane Change to complete F-I-R-E repeatedly for 5x Bonus X."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete 1-6 once to light the spinner and first lock lamps."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Shield, targets, and controlled spinner feeds: Use this plan when the direct spinner rejects or the left-flipper transfer is poor."
+          },
+          {
+            "name": "Lock settings",
+            "summary": "Functions 27 and 33-35 change replay treatment, Firepower Bonus memory, Extra Ball, and outlane Special behavior."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "1-6 targets",
+            "label": "1-6 targets",
+            "description": "Six numbered standups used for Shield, spinner, and lock qualification.",
+            "precision": "unverified",
+            "context": "Six numbered standups used for Shield, spinner, and lock qualification."
+          },
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Primary repeat shot after completing 1-6.",
+            "precision": "unverified",
+            "context": "Primary repeat shot after completing 1-6."
+          },
+          {
+            "term": "eject holes",
+            "label": "Three eject holes",
+            "description": "Physical locks used to start Firepower Multiball.",
+            "precision": "unverified",
+            "context": "Physical locks used to start Firepower Multiball."
+          },
+          {
+            "term": "F-I-R-E lanes",
+            "label": "F-I-R-E lanes",
+            "description": "Four top rollover lanes used with Lane Change to raise Bonus X.",
+            "precision": "unverified",
+            "context": "Four top rollover lanes used with Lane Change to raise Bonus X."
+          },
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "Alternate feed to the top F-I-R-E lanes.",
+            "precision": "unverified",
+            "context": "Alternate feed to the top F-I-R-E lanes."
+          },
+          {
+            "term": "P-O-W-E-R targets",
+            "label": "P-O-W-E-R targets",
+            "description": "Three middle-right targets used for Firepower Bonus, inlanes, and Extra Ball.",
+            "precision": "unverified",
+            "context": "Three middle-right targets used for Firepower Bonus, inlanes, and Extra Ball."
+          },
+          {
+            "term": "inlanes",
+            "label": "Left and right inlanes",
+            "description": "Lanes lit by completing P-O-W-E-R.",
+            "precision": "unverified",
+            "context": "Lanes lit by completing P-O-W-E-R."
+          },
+          {
+            "term": "jet bumpers",
+            "label": "Four jet bumpers",
+            "description": "Upper bumpers whose lit values change after 1-6 completions.",
+            "precision": "unverified",
+            "context": "Upper bumpers whose lit values change after 1-6 completions."
+          },
+          {
+            "term": "Shield",
+            "label": "Left-outlane Shield kicker",
+            "description": "One-use kicker that returns a left-outlane drain to play when lit.",
+            "precision": "unverified",
+            "context": "One-use kicker that returns a left-outlane drain to play when lit."
+          },
+          {
+            "term": "outlane Special lamps",
+            "label": "Outlane Special lamps",
+            "description": "One or two outlane lamps used for the configured Special award.",
+            "precision": "unverified",
+            "context": "One or two outlane lamps used for the configured Special award."
+          }
+        ],
+        "simpleOverview": "Completing targets 1 through 6 in Firepower lights the left spinner. That spinner feeds the top F-I-R-E lanes, and each completed F-I-R-E set raises Bonus X. The built bonus scores when the ball ends without a tilt.",
+        "overview": "Firepower is a bonus-building game centered on the 1-6 targets, the left spinner, and F-I-R-E. Complete 1-6, repeat the lit spinner into the top lanes, and use Lane Change to finish F-I-R-E until Bonus X reaches 5x. During Multiball, keep using that same bonus and spinner loop because Multiball adds no Jackpot ladder.",
+        "machineSetup": [
+          "Confirm original Williams code and production 1-6 standups. Prototypes and replacement rules ROMs can use different targets or rules.",
+          "Read Functions 30 and 31. Factory three-ball play uses Function 31 setting 03; Williams recommends setting 02 for five-ball play.",
+          "Read Function 32 before using Shield. Factory setting 01 accepts either 1-2-3 or 4-5-6 on one ball, or a stored 1-6 completion."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete the 1-6 targets to light the left spinner, use that spinner to feed the top F-I-R-E lanes, and finish F-I-R-E repeatedly with Lane Change until Bonus X reaches 5x.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Light the left spinner",
+            "text": "Hit each numbered 1-6 target once. Completing all six lights the left spinner for 1,000 points per spin for the rest of the ball."
+          },
+          {
+            "title": "Complete F-I-R-E",
+            "text": "Settle the ball on the right flipper and shoot the lit left spinner into the four top F-I-R-E lanes. Before each rollover, tap the right flipper button to move a missing F-I-R-E letter under the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Reach 5x and collect",
+            "text": "Repeat the left-spinner and F-I-R-E cycle; each completed F-I-R-E set raises Bonus X one step, up to 5x. Target, lane, and bumper hits build base bonus to 29,000; finish the ball without tilting to collect as much as 145,000 at 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Hit each 1-6 target once to light the left spinner, shoot it from the right flipper into the top F-I-R-E lanes, and use Lane Change to complete F-I-R-E repeatedly for 5x Bonus X."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete 1-6 once to light the spinner and first lock lamps."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Shield, targets, and controlled spinner feeds: Use this plan when the direct spinner rejects or the left-flipper transfer is poor."
+          }
+        ],
+        "warning": {
+          "title": "A soft spinner miss can hit the orbit rubber and drain through the center.",
+          "text": "Make a firm shot or prepare for the same-side feed."
+        }
+      }
+    }
+  ]
+}

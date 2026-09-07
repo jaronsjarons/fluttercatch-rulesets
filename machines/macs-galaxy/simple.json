@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Z6n",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Repeated drop-target-bank completions open the main Mac's Galaxy awards. The first lights upper-lane Extra Ball, center-target Bonus X, and 50,000 at the upper-left target; the second adds center-target Extra Ball, and the third adds left-outlane Special. The captive ball advances Hole Bonus and lights 50,000 at the center target, while completing M-A-C lights the right-outlane Special.",
+        "simpleOverview": "In Mac's Galaxy, complete the drop-target bank once for upper-lane Extra Ball, center-target Bonus X, and 50,000 at the upper-left target. The second completion adds center-target Extra Ball; the third adds left-outlane Special. Hit the captive ball to advance Hole Bonus, and complete M-A-C to light Special at the right outlane.",
+        "summary": "Repeat the drop-target bank because each completion adds another useful collect. Use captive-ball hits to build Hole Bonus, then collect it at the right hole or preserve it for the end of the game. Take M-A-C lanes whenever the ball reaches the top.",
+        "quickInfo": [
+          {
+            "name": "First bank completion",
+            "summary": "Light upper-lane Extra Ball, center-target Bonus X, and 50,000 at the upper-left target."
+          },
+          {
+            "name": "Second bank completion",
+            "summary": "Keep the first awards and add Extra Ball at the center target."
+          },
+          {
+            "name": "Third bank completion",
+            "summary": "Keep the earlier awards and add Special at the left outlane."
+          },
+          {
+            "name": "Hole Bonus",
+            "summary": "Hit the captive ball to advance it; collect at the right hole or at game end."
+          },
+          {
+            "name": "M-A-C Special",
+            "summary": "Complete the top M-A-C lanes to light the right outlane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the drop-target bank once to light upper-lane Extra Ball, center-target Bonus X, and 50,000 at the upper-left target.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the bank a second time to add Extra Ball at the center target, then a third time to add Special at the left outlane."
+          },
+          {
+            "text": "Hit the captive ball to advance Hole Bonus and light 50,000 at the center target."
+          },
+          {
+            "text": "When Hole Bonus reaches 5, hit the captive ball for 20,000; collect Hole Bonus at the right hole or let it score at the end of the game."
+          },
+          {
+            "text": "Complete M-A-C in the top lanes to light Special at the right outlane."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Hole Bonus route",
+            "when": "Use this when the captive ball is safer than a full target-bank cycle.",
+            "steps": [
+              {
+                "text": "Repeat the captive ball to advance Hole Bonus."
+              },
+              {
+                "text": "At Hole Bonus 5, hit the captive ball for 20,000."
+              },
+              {
+                "text": "Shoot the right hole to collect Hole Bonus, or preserve the progress for the end of the game."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Bonus X, both Extra Balls, and both Specials",
+          "steps": [
+            {
+              "text": "Complete the drop-target bank three times to open its full award sequence.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete M-A-C for the right-outlane Special."
+            },
+            {
+              "text": "Build Hole Bonus with the captive ball and collect it at the right hole."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm whether the blue- or yellow-memory ROM is installed, then verify the drop-bank award order, Bonus X ceiling, Extra Ball conversion, Special conversion, and balls per game.",
+          "Test every M-A-C lane, all four drop targets, the captive ball, center and upper-left targets, both Special outlanes, the upper Extra Ball lane, and the right Hole Bonus collect."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "drop-target bank",
+            "label": "Four-target bank",
+            "description": "Left-side bank whose first three completions open the main award sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-lane Extra Ball",
+            "label": "Upper Extra Ball lane",
+            "description": "Top lane lit by the first drop-bank completion.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center target",
+            "description": "Target used for Bonus X, 50,000, and the second-completion Extra Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "label": "Captive ball",
+            "description": "Upper-left captive ball that advances Hole Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right hole",
+            "label": "Right Hole Bonus collect",
+            "description": "Right-side hole that cashes the built Hole Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "M-A-C",
+            "label": "M-A-C lanes",
+            "description": "Three top lanes that light Special at the right outlane.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the drop-target bank because each completion adds another useful collect. Use captive-ball hits to build Hole Bonus, then collect it at the right hole or preserve it for the end of the game. Take M-A-C lanes whenever the ball reaches the top.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the drop-target bank once to light upper-lane Extra Ball, center-target Bonus X, and 50,000 at the upper-left target.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the bank a second time to add Extra Ball at the center target, then a third time to add Special at the left outlane."
+          },
+          {
+            "text": "Hit the captive ball to advance Hole Bonus and light 50,000 at the center target."
+          },
+          {
+            "text": "When Hole Bonus reaches 5, hit the captive ball for 20,000; collect Hole Bonus at the right hole or let it score at the end of the game."
+          },
+          {
+            "text": "Complete M-A-C in the top lanes to light Special at the right outlane."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "First bank completion",
+            "summary": "Light upper-lane Extra Ball, center-target Bonus X, and 50,000 at the upper-left target."
+          },
+          {
+            "name": "Second bank completion",
+            "summary": "Keep the first awards and add Extra Ball at the center target."
+          },
+          {
+            "name": "Third bank completion",
+            "summary": "Keep the earlier awards and add Special at the left outlane."
+          }
+        ]
+      }
+    }
+  ]
+}

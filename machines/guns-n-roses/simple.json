@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "id": "GqZZ1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use Booster Multiballs to collect all seven band members and lock balls, start the offered song at the center scoop, and collect the Applause Jackpot there during the final ten seconds.",
+        "quickInfo": [
+          {
+            "name": "Band members and locks",
+            "summary": "Each collected band member enables one lock, and more locked balls increase the starting Song Level and song ball-save time."
+          },
+          {
+            "name": "Booster Multiballs",
+            "summary": "Make Some Noise, Throw the Lights, Ignite the Flames, and Turn It Up can collect band members, locks, and Song Level progress."
+          },
+          {
+            "name": "Song choice",
+            "summary": "The scoop starts the qualified song; manually changing the offered song costs 15 Song Levels, so the default is normally the scoring choice."
+          },
+          {
+            "name": "Song stages",
+            "summary": "Shoot the currently lit song arrows, then shoot the scoop to advance. During Multiball the scoop advances and adds a ball, while single-ball play offers a cash-out decision."
+          },
+          {
+            "name": "Rock-It Meter",
+            "summary": "Lit shots refill it, inactivity or cradling drains it, zero ends the song, and a full meter at completion awards an Encore."
+          },
+          {
+            "name": "Applause Jackpot",
+            "summary": "The scoop collects the built Song Jackpot near the end of the song, and missing it forfeits that jackpot."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Build one or more Booster Multiballs before starting the song. A flashing Booster insert means that Multiball is ready.",
+            "modeNotes": [
+              "Make Some Noise: Spell NOISE through skill shots, then shoot below the upper-right flipper.",
+              "Throw the Lights: Hit the upper Lights target three consecutive times on Limited or Collector's Edition, or make successive left ramps on Standard Edition.",
+              "Ignite the Flames: Hit the Pyro target behind the spinning record four times.",
+              "Turn It Up: Complete AMP at the far-left inlane to start it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Booster Multiball, collect the lit band-member shots and their available ball locks.",
+            "modeNotes": [
+              "Each collected band member enables one ball lock.",
+              "Booster progress can raise the Song Level and advance the game toward a song start.",
+              "Six locked balls automatically start the current song, so stop at fewer locks when you still need a setup feature."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After collecting all seven band members, shoot the center scoop to start the offered song. Accepting that song adds 15 Song Levels; manually changing it costs that award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the song, keep making lit shots and use the scoop to advance each completed stage.",
+            "modeNotes": [
+              "In multiball, a stage-advance scoop adds a ball and continues the song.",
+              "In single-ball play, the scoop offers the built Song Jackpot or a continue choice. Continuing adds a ball but does not begin a new ball save.",
+              "Live and Let Die is the shortest straightforward introductory song when deliberate selection is worth the Song Level cost."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep making lit shots to refill the Rock-It Meter. A raised flipper drains the meter faster, so trap only long enough to find the next lit shot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When song play overlaps Multiball, relock balls on the upper playfield for a Power Chord.",
+            "modeNotes": [
+              "Each larger Power Chord requires one more locked ball, releases the held balls, and adds a ball.",
+              "The same Power Chord level can be collected only once in a song."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Near the song's finish, prioritize the center scoop for the Applause Jackpot. Do not let a final optional shot strand the built value.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "If the Rock-It Meter is full at completion, continue the Encore with the carried Song Level, scoring, and pre-song lock state.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Single Booster Multiball route",
+          "when": "This stops after one Booster Multiball instead of building the complete song setup.",
+          "steps": [
+            {
+              "text": "Start any Booster Multiball whose insert is flashing."
+            },
+            {
+              "text": "Use the Booster ball save to collect band members and lock progress.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Follow the Booster's lit shots through its Jackpot cycle.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to band-member and lock progress after the multiball instead of forcing a low-level song."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Short-song route",
+            "when": "Use this when Live and Let Die is available and a shorter completion attempt is more valuable than preserving 15 Song Levels.",
+            "steps": [
+              {
+                "text": "Use the album targets or action button to select Live and Let Die."
+              },
+              {
+                "text": "Shoot the four targets, then the center spinner for the first wave.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete the lit ramps and loops, then return to the center spinner.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Finish the final lit set and collect the Applause Jackpot at the scoop.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Album-mode route",
+            "when": "Use this when one album already has substantial song time and its album mode is close.",
+            "steps": [
+              {
+                "text": "Keep later song starts in the same album until at least three minutes of its songs have been played."
+              },
+              {
+                "text": "Start the qualified album mode at its lit shot.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use the action button for the mode-specific attack, acceleration, cannon, or streak rule.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Finish quickly to protect the completion bonus and improve the album record level.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Album modes, Tour Multiball, and No Sympathy for the Devil",
+          "steps": [
+            {
+              "text": "Play at least three minutes of songs from an album to qualify its album mode."
+            },
+            {
+              "text": "Play longer within the same album to improve Silver, Gold, and Platinum album scoring."
+            },
+            {
+              "text": "Collect cities at the loops and complete On the Road features toward Tour Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the long-form band, song, album, and tour objectives shown on the official rules flowchart."
+            },
+            {
+              "text": "Enter No Sympathy for the Devil ready for changing flipper and action-button controls.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Booster qualification and physical lock feed",
+            "pro": "Standard Edition uses successive left-ramp shots for Throw the Lights and routes lock progress through its Standard-specific feed.",
+            "premium": "Limited and Collector's Edition use the upper-playfield Lights target and Gibson Headstock lock hardware.",
+            "sourceUrl": "https://tiltforums.com/t/guns-n-roses-jjp-rulesheet/6803"
+          },
+          {
+            "feature": "COMA outlane save",
+            "pro": "Standard and Limited Edition do not include the Collector's Edition COMA outlane-save hardware.",
+            "premium": "Collector's Edition adds the COMA outlane ball save, changing recovery from the left outlane.",
+            "sourceUrl": "https://jerseyjackpinball.com/collections/guns-and-roses-pinball"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Booster Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Make Some Noise",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Throw the Lights",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Ignite the Flames",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Turn It Up",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Tour Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Live and Let Die",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "No Sympathy for the Devil",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Song Level",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Rock-It Meter",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Applause Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Power Chord",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Encore",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center scoop",
+            "context": "Use the center scoop to start songs, advance stages, and collect the Applause Jackpot.",
+            "label": "Center scoop",
+            "description": "Central eject used for song starts, stage decisions, and the final Applause Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "record spinner",
+            "context": "Shoot the record spinner for Ignite the Flames and Slash Solo.",
+            "label": "Spinning record",
+            "description": "Center record assembly with the Pyro target behind it.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Gibson Headstock",
+            "context": "Use the Gibson Headstock area for locks, Power Chord, and Throw the Lights.",
+            "label": "Gibson Headstock upper playfield",
+            "description": "Upper lock and Lights-target area on Limited and Collector's Edition games.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Band-member and lock ramp",
+            "description": "Collects Duff progress and supplies Standard Edition lock progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "album targets",
+            "label": "Album selection targets",
+            "description": "Four standups beside the ramps used to change the offered song.",
+            "precision": "unverified"
+          },
+          {
+            "term": "action button",
+            "label": "Action button",
+            "description": "Changes the pending song and controls several Booster, album-mode, and wizard features.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Lights target",
+            "label": "Throw the Lights target",
+            "description": "Upper-playfield target that qualifies Throw the Lights on Limited and Collector's Edition games.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Pyro target",
+            "label": "Ignite the Flames target",
+            "description": "Target behind the spinning record used to qualify Ignite the Flames.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Default-song preservation",
+            "instruction": "Accept the offered song when score is the priority so the game does not subtract 15 Song Levels for a manual choice.",
+            "sourceUrl": "https://tiltforums.com/t/guns-n-roses-jjp-rulesheet/6803"
+          },
+          {
+            "name": "Brief song traps",
+            "instruction": "Trap only long enough to read the next lit shot, then resume shooting before the Rock-It Meter decays sharply.",
+            "sourceUrl": "https://tiltforums.com/t/guns-n-roses-jjp-rulesheet/6803"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The sixth lock starts the selected song automatically.",
+            "response": "Stop at fewer locks until the desired Booster, song, and Song Level setup is ready.",
+            "sourceUrl": "https://tiltforums.com/t/guns-n-roses-jjp-rulesheet/6803"
+          },
+          {
+            "issue": "Continuing a song from the single-ball scoop adds a ball without a fresh ball save.",
+            "response": "The added ball can drain immediately, so compare the built Song Jackpot with the remaining song time before choosing Continue.",
+            "sourceUrl": "https://tiltforums.com/t/guns-n-roses-jjp-rulesheet/6803"
+          }
+        ],
+        "simpleOverview": "Guns N' Roses uses seven band members to qualify a song, and each collected member enables one ball lock that raises the Song Level and extends the song's ball save. Collect all seven members, lock as many balls as you want (six starts the song automatically), then shoot the center scoop to start the offered song. Make the lit song shots, return to the scoop after each completed stage, and shoot the scoop during the final ten seconds for the Applause Jackpot.",
+        "overview": "Guns N' Roses turns seven band members and up to six ball locks into a song-long scoring mode. Use Booster Multiballs to collect the members and locks, let the sixth lock start the song automatically or shoot the center scoop sooner, then accept the offered song to preserve its 15 Song Levels. Make the lit song shots, use the scoop to advance stages, relock balls for Power Chords, and return to the scoop during the final ten seconds for the Applause Jackpot.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Collect all seven band members, lock balls to raise the Song Level and ball-save time, then start the offered song at the center scoop.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Collect the band",
+            "text": "Collect Axl at the top lanes, Slash at the spinning record, Duff at the bass ramp or two left ramps, Dizzy and Melissa at the keyboard inserts, Richard at the center spinner, and Frank at the pop bumpers or right ramp. Collecting all seven qualifies a song at the center scoop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Lock balls for the song",
+            "text": "Each collected band member enables one lock. On Standard Edition, shoot the left ramp twice for each virtual lock; on Limited or Collector's Edition, shoot the upper lock. Each lock raises the starting Song Level and extends the song's ball save. The sixth lock starts the offered song automatically.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start and play the song",
+            "text": "After collecting all seven band members, shoot the center scoop to start the offered song. Make its lit shots and return to the scoop after each completed stage. During the final ten seconds, shoot the scoop for the Applause Jackpot.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Live and Let Die",
+              "reason": "It is the shortest song, but selecting it manually gives up the 15 Song Levels awarded for accepting the offered song.",
+              "play": "Make the lit song shots and use the center scoop to advance each completed stage. Near the end, return to the scoop for the Applause Jackpot."
+            }
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Band members and locks",
+            "summary": "Each collected band member enables one lock, and more locked balls increase the starting Song Level and song ball-save time."
+          },
+          {
+            "name": "Booster Multiballs",
+            "summary": "Make Some Noise, Throw the Lights, Ignite the Flames, and Turn It Up can collect band members, locks, and Song Level progress."
+          },
+          {
+            "name": "Song choice",
+            "summary": "The scoop starts the qualified song; manually changing the offered song costs 15 Song Levels, so the default is normally the scoring choice."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Live and Let Die",
+          "when": "This is the shortest song, but manual selection gives up the 15 Song Levels awarded for accepting the offered song.",
+          "steps": [
+            {
+              "text": "Use the album targets or action button to select Live and Let Die, then shoot the center scoop to start it.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

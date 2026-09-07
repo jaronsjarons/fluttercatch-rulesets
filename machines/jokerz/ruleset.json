@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "Gry3j",
+  "title": "Jokerz!",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Jokerz! rules and strategy",
+      "url": "https://pinball.org/rules/jokerz.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Jokerz! operations manual",
+        "url": "https://online.fliphtml5.com/vrtyz/yuyk/"
+      },
+      {
+        "label": "Exact-machine Jokerz! competitive play",
+        "url": "https://www.youtube.com/watch?v=S_SOW58DDyk"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Hit the center target to raise the center ramp, then shoot the ramp to lock a ball. Repeat the target-and-ramp sequence to lock the second ball and start two-ball Multiball. During Multiball, make four center-ramp shots to collect the Jackpot; hit the upper-left gate target for a timed playfield doubler.",
+      "simpleOverview": "Hit the center target to raise the ramp, then shoot the ramp to lock a ball. Do that again to start two-ball Multiball, then make four center-ramp shots for the Jackpot. Hit the upper-left gate target during Multiball to double playfield scoring for 20 seconds.",
+      "summary": "Raise the center ramp with its target and shoot the ramp to lock. Repeat for two-ball Multiball. Make four center-ramp shots for the Jackpot, and use the upper-left gate target for timed double scoring.",
+      "quickInfo": [
+        {
+          "name": "Raise the ramp",
+          "summary": "Hit the center target."
+        },
+        {
+          "name": "Lock a ball",
+          "summary": "Shoot the raised center ramp."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Repeat the center target and ramp for the second lock."
+        },
+        {
+          "name": "Collect Jackpot",
+          "summary": "Make four center-ramp shots during Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the center target to raise the center ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the raised ramp to lock the first ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the center target again, then shoot the raised ramp to lock the second ball and start two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, make four center-ramp shots to collect the Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the upper-left gate target during Multiball to double playfield values for 20 seconds.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Start Millions",
+          "when": "Use this when the three drop banks are nearly complete.",
+          "steps": [
+            {
+              "text": "Complete all three drop-target banks to start the timed Millions feature.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete a drop bank during the timer to score one million.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Build card hands",
+        "steps": [
+          {
+            "text": "Send the ball through the upper-playfield card rollovers to complete poker hands.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons to move the lit card lanes before the ball reaches them.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Take completed-hand bonus and Extra Ball progress when the upper feed is safer than the center target.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Jackpot carryover, Extra Ball, Special, and lock-sharing settings before competitive play.",
+        "Test the center target and lift ramp, physical lock, upper-left gate target, all three drop banks, card rollovers, and lock release."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Jackpot",
+          "tone": "indigo",
+          "kind": "multiball"
+        },
+        {
+          "label": "Millions",
+          "tone": "oxblood",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Jackpot progress or carryover can vary with the operator setup.",
+          "response": "Check the ramp inserts at the start of each Multiball and plan for four new ramp shots unless the machine visibly preserves progress.",
+          "sourceUrl": "https://pinball.org/rules/jokerz.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

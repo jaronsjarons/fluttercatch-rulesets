@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "G48NB",
+  "title": "BMX",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bally BMX factory instruction cards",
+      "url": "https://www.pinballrebel.com/pinball/cards/Bally/Bally_BMX_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "District 82 BMX machine and strategy notes",
+        "url": "https://district82.com/game-list/bmx-pinball-machine/"
+      },
+      {
+        "label": "PinWiki BMX technical reference",
+        "url": "https://www.pinwiki.com/wiki/index.php/BMX"
+      },
+      {
+        "label": "Understanding Pinball BMX tutorial",
+        "url": "https://www.youtube.com/watch?v=9bKy4_kro1Q"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "BMX rewards quick decisions on its upper playfield. Hitting any top drop target stops the scanning value; clearing the whole top bank collects the flashing value and lights the top Extra Ball arrow. Complete whichever colored target bank is flashing to add its color bonus light, up to four. Eleven Wheel Sprocket lights qualify Wheel Sprocket Special, while the factory card also permits an eight-light setting. When an outlane button is lit, the matching extra cabinet button controls that outlane's Flex Save.",
+      "simpleOverview": "Hit a top drop target to stop the scanning value, then clear the whole top bank to collect that value and light the top Extra Ball arrow. Complete the flashing colored target bank to add its bonus light. When an outlane button is lit, use its extra cabinet button to activate the Flex Save.",
+      "summary": "Take the upper-left skill shot, finish the top bank before its eight-second window closes, and work the currently flashing colored bank rather than splitting progress. Save each lit Flex Save for a ball already committed to that outlane.",
+      "quickInfo": [
+        {
+          "name": "Stop the Scanner",
+          "summary": "Hit any top drop target."
+        },
+        {
+          "name": "Light Extra Ball",
+          "summary": "Clear the entire top drop bank."
+        },
+        {
+          "name": "Build Color Bonus",
+          "summary": "Complete the currently flashing colored bank."
+        },
+        {
+          "name": "Use Flex Save",
+          "summary": "Press the matching outlane button only when its lamp is lit."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge for the upper-left 2x or 3x skill-shot lane before another switch ends the opportunity.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Hit one top drop target to stop the scanning value, then clear the remaining top drops within the active window to collect it and light Extra Ball."
+        },
+        {
+          "text": "Hit the lit top Extra Ball target to collect the award."
+        },
+        {
+          "text": "Complete the colored target bank that is flashing to add its matching color bonus light; repeat for up to four colors."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Wheel Sprocket route",
+          "when": "Use this while the upper drops are down or the flashing colored bank is feeding poorly.",
+          "steps": [
+            {
+              "text": "Collect Wheel Sprocket lights around the wheel."
+            },
+            {
+              "text": "At the installed eight- or eleven-light threshold, shoot the top saucer or a flashing colored bank for the qualified Wheel Sprocket Special."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Upper-playfield awards",
+        "steps": [
+          {
+            "text": "Clear the top drops for their scanning value and Extra Ball qualification."
+          },
+          {
+            "text": "Build all four colored bonus lights from flashing banks."
+          },
+          {
+            "text": "Collect enough Wheel Sprocket lights to qualify its Special."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the top drop bank and its reset, scanning-value lamps, colored target banks, Wheel Sprocket lamps, top and center saucers, magnet, four flippers, and all upper-playfield switches.",
+        "Test both extra outlane buttons and Flex Save mechanisms independently, and record whether Wheel Sprocket Special requires eight or eleven lights and whether Extra Ball or Special awards points instead."
+      ],
+      "cautions": [
+        {
+          "issue": "The Wheel Sprocket threshold and award behavior are adjustable.",
+          "response": "Check the instruction card and lamps on the installed machine before promising an eight-light Special or an Extra Ball instead of points.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Bally/Bally_BMX_instruction_cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

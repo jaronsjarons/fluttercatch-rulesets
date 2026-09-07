@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "id": "Gweel",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete Earl's Court and its Tour Multiball. During Zeppelin Multiball, complete the next Tour's objectives and finish combos at all four target banks to light Icarus X for its valuable scoring window.",
+        "steps": [
+          {
+            "text": "Shoot the green left eject and select Earl's Court.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the current Earl's Court objective. The default first objective is 70 spinner spins.",
+            "modeNotes": [
+              "Tour objective: Completing it stores one Tour lock. Complete all current objectives to light Tour Multiball at the left eject.",
+              "The first Tour has one objective and starts with two balls. Later Tours add objectives and balls, up to four objectives and five balls."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Return to the left eject to start Earl's Court Tour Multiball.",
+            "modeNotes": [
+              "Complete LED, ZEP, and ROCK target banks for jackpots.",
+              "LED builds a Super at the left eject. ZEP builds one at the right orbit. ROCK builds one at the left ramp.",
+              "Each unique Super adds 1x to later Supers during this multiball.",
+              "Hit Icarus three times to add a ball. The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Tour Multiball, make the required flashing green right-ramp shots and select the next Tour at the left eject.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the first Zeppelin Multiball, shoot the left ramp three times to lock balls and start it. On later attempts, complete ROCK before each left-ramp lock.",
+            "modeNotes": [
+              "Tour objectives and Tour locks can advance during a non-Tour multiball.",
+              "A Tour Multiball cannot start during another multiball. A running Tour objective stays ready for later start."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Zeppelin Multiball. Collect its four red jackpots and their paired double jackpots.",
+            "modeNotes": [
+              "Left-orbit jackpot lights the upper side shot for double. Left-ramp jackpot lights the right orbit.",
+              "Center-ramp jackpot lights the right orbit. Right-ramp jackpot lights the left eject.",
+              "After all four resolve, collect a Super at the left eject or upper side shot. The upper side-shot Super is 2x.",
+              "Complete LED, ZEP, and ROCK while Supers are lit. Each bank adds 1x, up to 4x.",
+              "Hit Icarus three times to add a ball. The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Zeppelin Multiball, complete the current Tour objectives. After multiball ends, shoot the left eject to start the completed Tour."
+          },
+          {
+            "text": "During either multiball, finish bank-ending combos at all four target banks. Hit Icarus to start Icarus X when a valuable Super or Tour payoff is ready.",
+            "modeNotes": [
+              "Each combo shot adds 0.1x to the ending bank. The four bank values multiply together.",
+              "Icarus X runs for 15 seconds. Each upper side shot adds five seconds, and an Icarus hit recalculates the multiplier.",
+              "Build Icarus X under multiball protection instead of forcing the target banks during single-ball play."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use a stored Band Boost to finish a valuable running combo. Save a red Super Band Boost for add-a-ball.",
+            "modeNotes": [
+              "Band Boost: A stored action-button award. Green completes the running combo at the lowest bank and scores a 5x combo.",
+              "Super Band Boost: Made from three stored boosts. Red completes the two lowest banks and scores a 10x combo.",
+              "During multiball, green spots one Icarus hit. Red adds a ball."
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Tours",
+            "summary": "Choose one at the left eject, complete its current objectives, then return there to start its multiball."
+          },
+          {
+            "name": "Earl's Court Tour",
+            "summary": "Its first objective is normally 70 spinner spins and its multiball rewards LED, ZEP, and ROCK banks."
+          },
+          {
+            "name": "Zeppelin Multiball",
+            "summary": "Three left-ramp locks start four jackpot-to-double-jackpot pairs and a Super at either eject shot."
+          },
+          {
+            "name": "Icarus X",
+            "summary": "Finish combos at all four banks, then hit Icarus for a 15-second general playfield multiplier."
+          },
+          {
+            "name": "Band Boost",
+            "summary": "The action button finishes a combo in single-ball play or supplies Icarus and add-a-ball help during multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Zeppelin Multiball first",
+          "when": "Use this plan when the left Tour eject is not under control.",
+          "steps": [
+            {
+              "text": "Complete ROCK if left-ramp locks are not lit."
+            },
+            {
+              "text": "Shoot the left ramp three times and start Zeppelin Multiball."
+            },
+            {
+              "text": "Collect the four red jackpots."
+            },
+            {
+              "text": "Use ball save for the upper side shot only when a double jackpot or Super is available."
+            },
+            {
+              "text": "Complete the current Tour objectives during multiball."
+            },
+            {
+              "text": "After multiball, shoot the left eject once to start the completed Tour."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Mothership Multiball",
+          "steps": [
+            {
+              "text": "Complete five songs. Shoot the lit right orbit into the eject to start Mothership Multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Earl's Court Tour",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Tour objective",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Tour Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Zeppelin Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Mothership Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Icarus X",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Band Boost",
+            "tone": "teal",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Tour requirements, locks, Extra Ball, ball save, and Icarus behavior can change with operator settings.",
+          "Check Competition Install; it changes Icarus building, Record Sales during active features, and Icarus interaction with song modes in multiball.",
+          "Test both ejects, three ramps, upper side shot, Icarus, target banks, left outlane, tilt sensitivity, and flipper strength."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left eject",
+            "label": "Left eject",
+            "description": "The green-lit shot used to select Tours and start a completed Tour Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "The lock shot used to start Zeppelin Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp",
+            "description": "The green shot used to relight Tour selection after Tour Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Icarus",
+            "label": "Icarus target",
+            "description": "The target that starts Icarus X after all four bank-ending combos are complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper side shot",
+            "label": "Upper side shot",
+            "description": "The upper shot used for doubled Jackpots and the higher-value Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "target banks",
+            "label": "LED, ZEP, ROCK, and Ball Saver banks",
+            "description": "The four banks whose completed combos build Icarus X.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the left ramp when the same-side shot is safer than transferring; use the forehand if the copy rejects it.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.youtube.com/watch?v=0rmTGcnVTlM&t=1170s"
+          },
+          {
+            "name": "Center-ramp loop",
+            "instruction": "Loop the center ramp from the left flipper when its return stays controlled.",
+            "sourceUrl": "https://www.kineticist.com/news/led-zeppelin-pinball-tutorial"
+          },
+          {
+            "name": "Two-ball backflip",
+            "instruction": "With two balls trapped on one flipper, use a backflip to send one ball toward the left eject. Test the local feed first.",
+            "sourceUrl": "https://www.youtube.com/watch?v=0rmTGcnVTlM&t=1140s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper side shot can return toward the right outlane.",
+            "response": "Avoid it without ball save unless a double jackpot or Super is ready.",
+            "sourceUrl": "https://www.youtube.com/watch?v=0rmTGcnVTlM&t=30s"
+          },
+          {
+            "issue": "A missed left ramp can drain through the center.",
+            "response": "Prefer the controlled backhand when the copy accepts it. Stop repeating a rejecting ramp.",
+            "sourceUrl": "https://www.kineticist.com/news/led-zeppelin-pinball-tutorial"
+          },
+          {
+            "issue": "The wide layout creates horizontal motion above the slings.",
+            "response": "Regain control before starting another cross-playfield shot.",
+            "sourceUrl": "https://www.kineticist.com/news/led-zeppelin-pinball-tutorial"
+          },
+          {
+            "issue": "A tournament copy can drain repeatedly through the left outlane.",
+            "response": "Use the Ball Saver target bank when the local left-outlane feed is active.",
+            "sourceUrl": "https://www.youtube.com/watch?v=0rmTGcnVTlM&t=300s"
+          }
+        ],
+        "overview": "Led Zeppelin's Song runs during Tours and Multiballs; Tour objectives advance during Zeppelin Multiball. Choose Earl's Court at the green-lit left eject, finish its spinner objective, then return for Tour Multiball. Shoot right ramp to relight Tours, choose another, shoot left ramp three times for Zeppelin Multiball, finish its Tour objectives, complete combos at four target banks, then hit Icarus for playfield X.",
+        "simpleOverview": "Led Zeppelin runs Song shot patterns throughout the ball; Tours and Zeppelin Multiball are separate scoring routes. Shoot the green-lit left eject, choose a Tour, complete its shown objectives, then return for Tour Multiball. Shoot the left ramp three times for the first Zeppelin Multiball; finish a combo at each target bank, then hit the lit Icarus target for 15-second playfield X.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Austrian Pinball Open 2021 warmup final, a finalist selected a Tour before starting Zeppelin Multiball, then completed the Tour objective during Multiball."
+          ]
+        },
+        "machineSetup": [
+          "Tour requirements, locks, Extra Ball, ball save, and Icarus behavior can change with operator settings.",
+          "Check Competition Install; it changes Icarus building, Record Sales during active features, and Icarus interaction with song modes in multiball.",
+          "Test both ejects, three ramps, upper side shot, Icarus, target banks, left outlane, tilt sensitivity, and flipper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the green left eject for a Tour, the left ramp for Zeppelin Multiball, and the four target banks for Icarus X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Earl's Court",
+            "text": "Shoot the green left eject and select Earl's Court.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Earl's Court",
+              "reason": "Choose it because its first objective is normally a direct spinner total.",
+              "play": "Make 70 spinner spins for the default first objective, then return to the left eject to start Earl's Court Tour Multiball."
+            }
+          },
+          {
+            "title": "Start Zeppelin Multiball",
+            "text": "Shoot the left ramp for three locks. The third lock starts Zeppelin Multiball. Later attempts require R-O-C-K to light the locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Icarus X",
+            "text": "Finish a bank-ending combo at each of the four target banks, then hit Icarus to start the 15-second playfield multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Tours",
+            "summary": "Choose one at the left eject, complete its current objectives, then return there to start its multiball."
+          },
+          {
+            "name": "Earl's Court Tour",
+            "summary": "Its first objective is normally 70 spinner spins and its multiball rewards LED, ZEP, and ROCK banks."
+          },
+          {
+            "name": "Zeppelin Multiball",
+            "summary": "Three left-ramp locks start four jackpot-to-double-jackpot pairs and a Super at either eject shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Earl's Court Tour Multiball",
+          "when": "Use this when the left eject and center spinner are controlled.",
+          "steps": [
+            {
+              "text": "Complete Earl's Court's displayed Tour objective, then return to the green left eject to start its Tour Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

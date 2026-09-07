@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPpb",
+  "title": "Jacks Open",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Jacks Open tournament strategy via Bob's Guide",
+      "url": "https://www.kineticist.com/games/pinball/jacks-open-lucky-hand"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Jacks Open guide",
+        "url": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+      },
+      {
+        "label": "Silverball Rules Lucky Hand guide",
+        "url": "https://rules.silverballmania.com/rules/GrPpb-MLOZq"
+      },
+      {
+        "label": "INDISC 2022 Jacks Open playoff with top players",
+        "url": "https://www.youtube.com/watch?v=-Yvdb6tdLuI&t=18106s"
+      },
+      {
+        "label": "Primary Jacks Open 3-ball and 5-ball score cards",
+        "url": "https://www.pinrepair.com/gtb/jackopen.zip"
+      },
+      {
+        "label": "PinRepair Jacks Open rules and hand sequence",
+        "url": "https://www.pinrepair.com/gtb/jackopen.htm"
+      },
+      {
+        "label": "MAACA Jacks Open strategy review",
+        "url": "https://www.maaca.org/viewtopic.php?t=8256"
+      },
+      {
+        "label": "Andrew Rosa II at Free Play Florida 2019 Classics — Semifinals",
+        "url": "https://pinballvideos.com/v/3657/6605"
+      },
+      {
+        "label": "INDISC 2022 Classics I Jacks Open tiebreaker",
+        "url": "https://pinballvideos.com/v/4697/7728"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "On Jacks Open, hold three suits and milk 4,000-point drops; on Lucky Hand, finish hands quickly to reach repeatable 50,000-point Wows.",
+      "steps": [
+        {
+          "text": "Read the title and instruction card: Jacks Open is the replay game, while Lucky Hand is the add-a-ball version with different scoring."
+        },
+        {
+          "text": "Plunge an uncollected center suit. The center lanes are harder to reach during play."
+        },
+        {
+          "text": "On Jacks Open, build exactly three of the four suits before attacking the drop targets.",
+          "modeNotes": [
+            "Suit progress: Four stored top-rollover states. Each completed suit adds 1,000 to every standing drop target.",
+            "At three suits, each standing drop scores 4,000.",
+            "The fourth suit scores 5,000, resets the suits and drop value, advances the hand, and usually resets the bank."
+          ]
+        },
+        {
+          "text": "On Jacks Open, knock down every non-required target first and save the required hand targets for last.",
+          "modeNotes": [
+            "Hand ladder: The lit card targets show the required hand. Completing it scores 5,000, resets the bank, and advances the next hand.",
+            "A full nine-target standing bank at three suits scores 36,000 before the 5,000 hand award."
+          ]
+        },
+        {
+          "text": "On Lucky Hand with add-a-balls disabled for points, finish each hand quickly instead of milking drops."
+        },
+        {
+          "text": "After Lucky Hand reaches Royal Flush, keep completing the five lit Royal Flush targets for 50,000-point Wows."
+        },
+        {
+          "text": "Save the center Queen and other dangerous required targets for last, then use the edition-specific payoff until the ball drains."
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Edition",
+          "summary": "Jacks Open is the replay version; Lucky Hand is the add-a-ball version and changes the best scoring route."
+        },
+        {
+          "name": "Suit lanes",
+          "summary": "An uncollected suit scores 5,000, and each completed suit raises every standing drop target by 1,000."
+        },
+        {
+          "name": "Jacks Open",
+          "summary": "Stop at three suits for 4,000-point drops, then clear non-required targets before completing the lit hand."
+        },
+        {
+          "name": "Lucky Hand",
+          "summary": "Finish hands quickly; after Royal Flush, the five lit targets can score repeatable 50,000-point Wows when configured for points."
+        },
+        {
+          "name": "Flipper guides",
+          "summary": "A held flipper can let an inbound ball roll through the outer guide gap, so test catches and bounces before relying on them."
+        }
+      ],
+      "fallback": {
+        "title": "Take the safer hand progress",
+        "when": "Use this plan when center-drop rebounds are not controlled.",
+        "steps": [
+          {
+            "text": "On Jacks Open, hold at two suits if the third-suit plunge is unavailable; standing drops are still worth 3,000."
+          },
+          {
+            "text": "Shoot outside drops first. Avoid exposed bare rubber behind a down target."
+          },
+          {
+            "text": "Save the center Queen until the hand requires it. Hit one edge, not the center."
+          },
+          {
+            "text": "On Jacks Open, complete the fourth suit if the last required target is worse than accepting a reset."
+          },
+          {
+            "text": "On Lucky Hand, keep advancing the required hand; the Royal Flush Wows are worth more than extended drop-target milking."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Special line",
+          "when": "Use this only when the replay converts to useful tournament points.",
+          "steps": [
+            {
+              "text": "On five-ball rules, complete Two Jacks, Three Queens, Full House, and Royal Flush."
+            },
+            {
+              "text": "On five-ball rules, clear the five red Royal Flush targets again to collect special."
+            },
+            {
+              "text": "On three-ball rules, complete Three Queens and Full House. This lights Royal Flush and special."
+            },
+            {
+              "text": "On three-ball rules, clear the five red targets to collect special."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Royal Flush and the edition payoff",
+        "steps": [
+          {
+            "text": "Knock down the lit card targets for each displayed hand, then repeat for the next hand shown on the installed card."
+          },
+          {
+            "text": "On Jacks Open, keep the suit value at three while clearing non-required drops first."
+          },
+          {
+            "text": "On Lucky Hand, reach Royal Flush quickly and repeat its five 50,000-point Wows."
+          },
+          {
+            "text": "On Jacks Open, complete the red Royal Flush targets when Special is useful.",
+            "modeNotes": [
+              "Special: A replay award. Tournament rules can disable it, ignore it, or convert it to points."
+            ]
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Center-suit skill plunge",
+          "instruction": "Choose an uncollected center suit on the plunge. Leave the easier side suits for later top feeds.",
+          "sourceUrl": "https://www.youtube.com/watch?v=-Yvdb6tdLuI&t=18245s"
+        },
+        {
+          "name": "One-time shot",
+          "instruction": "Use a One-time shot when the return is too slow for a transfer but too fast for a held cradle.",
+          "techniqueSlug": "one-time-shot",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "Dead bounce only a tested, safe-speed rebound, and watch the open guide behind each flipper.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "A same-side flipper can backhand the nearby target bank. Test the rebound before you repeat it.",
+          "sourceUrl": "https://www.youtube.com/watch?v=-Yvdb6tdLuI&t=18380s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Center-Queen edge shot",
+          "instruction": "Hit one edge of the center Queen. Do not hit its face squarely.",
+          "sourceUrl": "https://www.youtube.com/watch?v=-Yvdb6tdLuI&t=18768s"
+        },
+        {
+          "name": "Late side-lane nudge",
+          "instruction": "Wait until the ball reaches the post below the outside edge of the lane. Then nudge. Do not nudge early.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A down target exposes bare rubber that can return the ball straight down the middle.",
+          "response": "Shoot standing targets. Avoid the exposed center rubber when it is not required.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        },
+        {
+          "issue": "The center Queen has a high center-drain risk.",
+          "response": "Save it for last. Hit one edge instead of the center face.",
+          "sourceUrl": "https://www.youtube.com/watch?v=-Yvdb6tdLuI&t=18187s"
+        },
+        {
+          "issue": "An open flipper guide can let a cradled ball roll behind a raised flipper and drain.",
+          "response": "Test the speed. Shoot on the fly when a held cradle is not safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        },
+        {
+          "issue": "A fast dead bounce can roll up and out through the guide gap.",
+          "response": "Use the dead bounce only after a safe-speed copy test.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        },
+        {
+          "issue": "Top and side-lane feeds change between copies.",
+          "response": "Observe the first feed. Use a small, late nudge only on the known dangerous speed and path.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPpb-ML3pn"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Jacks Open versus Lucky Hand, the installed ball-count card, and whether replay, Special, add-a-ball, and Wow awards convert to points.",
+        "Confirm suit, hand, target-reset, carry, rollover, side-lane, replay, and tilt settings before choosing the Jacks Open or Lucky Hand payoff.",
+        "Test all suit lanes, nine drops, center Queen, side-lane exits, flipper-guide gaps, target rebounds, and Royal Flush lamps during practice."
+      ],
+      "simpleOverview": "Jacks Open and Lucky Hand reward different drop-target plans. In Jacks Open, collect exactly three suits so each standing drop scores 4,000, then clear non-required targets before finishing the displayed poker hand. In Lucky Hand, complete each hand quickly; after Royal Flush, repeat its five lit targets for 50,000-point Wows.",
+      "overview": "In Jacks Open, three collected suits raise every standing drop to 4,000, while the fourth suit resets the suits and advances the hand. Stop at three suits, clear non-required drops first, and save the displayed hand targets for last. In Lucky Hand, advance the printed hand ladder without milking drops, then repeat the five Royal Flush targets for 50,000-point Wows.",
+      "machineSetup": [
+        "Confirm Jacks Open versus Lucky Hand, the installed ball-count card, and whether replay, Special, add-a-ball, and Wow awards convert to points.",
+        "Confirm suit, hand, target-reset, carry, rollover, side-lane, replay, and tilt settings before choosing the Jacks Open or Lucky Hand payoff.",
+        "Test all suit lanes, nine drops, center Queen, side-lane exits, flipper-guide gaps, target rebounds, and Royal Flush lamps during practice."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "id": "G43W4",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Hells Bells, backhand the safer ramp to start Jam Multiball, use the bell for 2x or 3x playfield scoring, then cash a large Song Jackpot.",
+        "steps": [
+          {
+            "text": "Choose Hells Bells. Take the flashing A-X-E lane skill shot for a VIP Pass.",
+            "modeNotes": [
+              "Hells Bells: Bell hits light the five major shots. Song points also build the Song Jackpot.",
+              "VIP Pass: During multiball, it spots one major shot toward add-a-ball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Backhand the safer ramp until Jam Multiball is lit at the right ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Jam Multiball. Hit ramps for jackpots.",
+            "modeNotes": [
+              "Jam Multiball: Ramp shots score jackpots. Hit all five major shots to add a ball.",
+              "Hells Bells continues through Multiball with no timer. Its mode points keep building the Song Jackpot."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the bell three times for 20 seconds of 2x playfield scoring, then hit it three more times during 2x for 20 seconds of 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If four add-a-ball shots are complete, use a VIP Pass to spot the fifth shot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+            "modeNotes": [
+              "Song Jackpot: Mode points build its value. A drain removes the uncollected value.",
+              "Pass the collect only when the ramps are controlled and another 2x or 3x Jam window can justify losing the stored value."
+            ]
+          }
+        ],
+        "simpleOverview": "AC/DC's modes are Songs. Choose one before plunging; it stays active through Multiball, and its points build a Song Jackpot. That lets Hells Bells, Jam Jackpots, and the bell multiplier score together, but the uncollected Song Jackpot is lost when the ball drains.",
+        "quickInfo": [
+          {
+            "name": "Hells Bells",
+            "summary": "Bell hits light the five major shots, and all song points also build the Song Jackpot."
+          },
+          {
+            "name": "Jam Multiball",
+            "summary": "Ramp progress lights it at the right ramp; ramps score Jackpots and all five major shots add a ball."
+          },
+          {
+            "name": "Playfield multiplier",
+            "summary": "Three bell hits start 20 seconds of 2x playfield scoring; three more during 2x start 20 seconds of 3x."
+          },
+          {
+            "name": "Song Jackpot",
+            "summary": "Spell F-I-R-E three times, shoot the right ramp, then fire the cannon at its flashing target before a drain erases the value."
+          },
+          {
+            "name": "VIP Pass",
+            "summary": "During Multiball, spend one after four major shots to spot the fifth and collect the add-a-ball."
+          },
+          {
+            "name": "Song and Multiball",
+            "summary": "The selected Song mode continues during Multiball, has no timer, carries between balls, and ends only when you change songs."
+          }
+        ],
+        "fallback": {
+          "title": "Rock N Roll Train and Jam",
+          "when": "Use this plan when the bell return is unsafe.",
+          "steps": [
+            {
+              "text": "Choose Rock N Roll Train.",
+              "modeNotes": [
+                "Rock N Roll Train: Left-ramp hits light the five major song shots."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Backhand the left ramp to score the mode and light Jam.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Play Jam without forcing bell shots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the Song Jackpot before the ball drains."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "War Machine spinner",
+            "when": "Use this plan only when the left spinner is strong and its return is safe.",
+            "steps": [
+              {
+                "text": "Choose War Machine. Repeat the left spinner.",
+                "modeNotes": [
+                  "War Machine: Spinner hits light the five major song shots."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use loop shots to advance Tour Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect the Song Jackpot before the ball drains."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Encore (wizard)",
+          "steps": [
+            {
+              "text": "Change songs until all 12 songs are complete.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Change the song one more time to start Encore.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Hells Bells",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Rock N Roll Train",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "War Machine",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Encore",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jam Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Tour Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "2x playfield scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x playfield scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Song Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "VIP Pass",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-X-E lane",
+            "label": "A-X-E skill-shot lanes",
+            "description": "Choose Hells Bells. Take the flashing A-X-E lane skill shot for a VIP Pass.",
+            "xPercent": 57.53,
+            "yPercent": 12.9,
+            "widthPercent": 14.93,
+            "heightPercent": 5.64,
+            "precision": "area"
+          },
+          {
+            "term": "bell",
+            "label": "Bell shot",
+            "description": "Choose Hells Bells, backhand the safer ramp to start Jam Multiball, use the bell for 2x or 3x playfield scoring, then cash a large Song Jackpot.",
+            "xPercent": 44.83,
+            "yPercent": 18.73,
+            "widthPercent": 7.2,
+            "heightPercent": 4.32,
+            "precision": "area"
+          },
+          {
+            "term": "drop targets",
+            "label": "drop targets",
+            "description": "A cannon shot at the left drop targets can feed the right outlane.",
+            "xPercent": 27.84,
+            "yPercent": 44.35,
+            "widthPercent": 4.46,
+            "heightPercent": 12.19,
+            "precision": "area"
+          },
+          {
+            "term": "F-I-R-E",
+            "label": "F-I-R-E lanes",
+            "description": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+            "xPercent": 14.11,
+            "yPercent": 65.39,
+            "widthPercent": 3.44,
+            "heightPercent": 6.94,
+            "precision": "area"
+          },
+          {
+            "term": "F-I-R-E",
+            "label": "F-I-R-E lanes",
+            "description": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+            "xPercent": 21.24,
+            "yPercent": 63.95,
+            "widthPercent": 2.57,
+            "heightPercent": 6.16,
+            "precision": "area"
+          },
+          {
+            "term": "F-I-R-E",
+            "label": "F-I-R-E lanes",
+            "description": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+            "xPercent": 71.94,
+            "yPercent": 64.47,
+            "widthPercent": 4.81,
+            "heightPercent": 6.42,
+            "precision": "area"
+          },
+          {
+            "term": "F-I-R-E",
+            "label": "F-I-R-E lanes",
+            "description": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+            "xPercent": 78.64,
+            "yPercent": 65.91,
+            "widthPercent": 4.8,
+            "heightPercent": 5.9,
+            "precision": "area"
+          },
+          {
+            "term": "left drop targets",
+            "label": "left drop targets",
+            "description": "A cannon shot at the left drop targets can feed the right outlane.",
+            "xPercent": 27.67,
+            "yPercent": 44.09,
+            "widthPercent": 5.66,
+            "heightPercent": 13.77,
+            "precision": "area"
+          },
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "Choose Rock N Roll Train, then backhand the left ramp to score the mode and light Jam Multiball.",
+            "xPercent": 38.14,
+            "yPercent": 31.58,
+            "widthPercent": 9.27,
+            "heightPercent": 7.21,
+            "precision": "area"
+          },
+          {
+            "term": "left spinner",
+            "label": "War Machine spinner",
+            "description": "Use this plan only when the left spinner is strong and its return is safe.",
+            "xPercent": 29.1,
+            "yPercent": 33.15,
+            "widthPercent": 6.28,
+            "heightPercent": 4.92,
+            "precision": "area"
+          },
+          {
+            "term": "right outlane",
+            "label": "right outlane",
+            "description": "A cannon shot at the left drop targets can feed the right outlane.",
+            "xPercent": 78.76,
+            "yPercent": 65.93,
+            "widthPercent": 4.73,
+            "heightPercent": 6.04,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp and cannon feed",
+            "description": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+            "xPercent": 63.17,
+            "yPercent": 32.93,
+            "widthPercent": 6.37,
+            "heightPercent": 6.05,
+            "precision": "area"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Test each ramp from the same-side flipper. Use the safer backhand to build Jam without a full cross-playfield shot.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The bell can drain on a miss or on a made shot.",
+            "response": "Test the return. Build Jam with safer ramp backhands, and take bell shots during multiball when possible.",
+            "sourceUrl": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+          },
+          {
+            "issue": "A cannon shot at the left drop targets can feed the right outlane.",
+            "response": "Fire only for a valuable award. If several targets are lit, aim between two targets.",
+            "sourceUrl": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Pro or Premium/LE hardware, song list, ball count, Extra Ball conversion, Competition mode, and tournament adjustments.",
+          "Confirm Jam, Tour, and Album requirements, bell multiplier timing, VIP Pass behavior, Song Jackpot carry, and Encore qualification.",
+          "Test both ramp backhands and returns, bell entry and eject, loops, spinner, top saucer, cannon aim, target rebounds, and outlanes."
+        ],
+        "overview": "AC/DC's Songs stay active through Multiball, their scoring builds a Song Jackpot, and bell hits can multiply the entire stack. Choose Hells Bells, start Jam Multiball from the safer ramp, then use the bell for 2x or 3x. Collect the built Song Jackpot before the ball drains.",
+        "machineSetup": [
+          "Confirm Pro or Premium/LE hardware, song list, ball count, Extra Ball conversion, Competition mode, and tournament adjustments.",
+          "Confirm Jam, Tour, and Album requirements, bell multiplier timing, VIP Pass behavior, Song Jackpot carry, and Encore qualification.",
+          "Test both ramp backhands and returns, bell entry and eject, loops, spinner, top saucer, cannon aim, target rebounds, and outlanes."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Before plunging, choose Hells Bells. Repeat either ramp until Jam Multiball flashes at the right ramp, start it there, shoot ramps for Jackpots, and use bell hits for 2x or 3x playfield scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Choose Hells Bells",
+            "text": "Choose Hells Bells before plunging. Keep it running while you build and play Jam Multiball.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Hells Bells",
+              "reason": "It has a clear scoring loop: bell hits light the five major shots, and every song shot adds to the Song Jackpot.",
+              "play": "Hit the bell to light the five major arrows. Shoot the left loop, left ramp, bell, right ramp, or right loop while its arrow is lit to score song points and raise the Song Jackpot."
+            }
+          },
+          {
+            "title": "Build and start Jam Multiball",
+            "text": "Repeat either ramp until the Jam insert flashes at the right ramp, then shoot the right ramp to start Jam Multiball. During Multiball, shoot either ramp for Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Use the bell for 2x or 3x",
+            "text": "During Jam Multiball, hit the bell three times to start 20 seconds of 2x playfield scoring. Hit it three more times while 2x is running to start 20 seconds of 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Song and Multiball",
+            "summary": "Hells Bells continues during Jam Multiball, carries between balls, and ends only when you change songs."
+          },
+          {
+            "name": "Collect the Song Jackpot",
+            "summary": "Complete F-I-R-E on the return lanes three times, shoot the lit right ramp to load the cannon, then fire at the flashing target. A drain removes the uncollected value."
+          },
+          {
+            "name": "Add-a-ball",
+            "summary": "During Jam Multiball, shoot the left loop, left ramp, bell, right ramp, and right loop. After four are complete, a VIP Pass can spot the fifth shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Rock N Roll Train",
+          "when": "Choose this before plunging when the left-ramp return is more reliable than the bell.",
+          "steps": [
+            {
+              "text": "Choose Rock N Roll Train before plunging. Repeat the left ramp until Jam Multiball flashes at the right ramp, then shoot that ramp to start it.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

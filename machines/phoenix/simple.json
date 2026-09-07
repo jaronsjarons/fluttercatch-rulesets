@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "GRQp6",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the top lanes to build base bonus and PHOENIX progress, complete either four-bank until Bonus X reaches 5x, then shoot the bullseye only after its rebound is safe.",
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Lanes and targets build base bonus to 29,000, and 5x Bonus produces a maximum 145,000 collect."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Each completion of either four-bank advances Bonus X toward 5x."
+          },
+          {
+            "name": "A and B targets",
+            "summary": "Each center target scores 10,000 and one bonus advance, then remains down until its matching lane relights it."
+          },
+          {
+            "name": "PHOENIX bullseye",
+            "summary": "Each 1-through-5 lane completion adds a PHOENIX letter and raises the bullseye to the displayed letter value."
+          },
+          {
+            "name": "Lit spinner",
+            "summary": "The left spinner lights only while base bonus is from 10,000 through 20,000."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On ball one, plunge for top lane 1. On later plunges, choose a missing 1-through-5 lane."
+          },
+          {
+            "text": "Send the ball to the top. Use the lanes to build base bonus and advance the 1-through-5 set."
+          },
+          {
+            "text": "Complete the safer four-bank. Repeat bank completions until Bonus X reaches 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the left spinner while base bonus is from 10,000 through 20,000."
+          },
+          {
+            "text": "Use the A and B center targets for 10,000 only from a controlled feed. Relight A with top lane 2 or the left return lane."
+          },
+          {
+            "text": "Relight B with top lane 4 or the right return lane. Shoot the PHOENIX bullseye only after its rebound is known."
+          }
+        ],
+        "fallback": {
+          "title": "A-B and lit spinner",
+          "when": "Use this when drop-bank or bullseye rebounds are not safe.",
+          "steps": [
+            {
+              "text": "Collect A or B from a controlled flipper for 10,000 and one bonus advance."
+            },
+            {
+              "text": "Return the ball to the top to relight the collected target."
+            },
+            {
+              "text": "Use the left spinner while base bonus is in its lit range."
+            },
+            {
+              "text": "Protect the built bonus instead of forcing the four-banks."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "PHOENIX bullseye route",
+            "when": "Use this only when the bullseye rebound is safe on this machine.",
+            "steps": [
+              {
+                "text": "Complete the 1-through-5 lanes to add one PHOENIX letter."
+              },
+              {
+                "text": "Repeat the lane set to raise the displayed bullseye value."
+              },
+              {
+                "text": "Shoot the bullseye from control."
+              },
+              {
+                "text": "Stop if its rebound reaches the center or an outlane."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "5x Bonus and a raised bullseye",
+          "steps": [
+            {
+              "text": "Score top lanes, return lanes, and targets until base bonus reaches 29,000."
+            },
+            {
+              "text": "Complete either four-bank until Bonus X reaches 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete 1-through-5 sets to add PHOENIX letters."
+            },
+            {
+              "text": "Shoot the bullseye to collect its displayed PHOENIX value only when the return is controlled."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Lane 1",
+            "context": "Lane 1",
+            "label": "Lane 1",
+            "description": "The top lane targeted by the preferred skill plunge.",
+            "precision": "unverified"
+          },
+          {
+            "term": "bullseye",
+            "context": "bullseye",
+            "label": "Bullseye target",
+            "description": "The center target whose return must be tested before repeated shots.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lane-1 skill shot",
+            "instruction": "On ball one, adjust the plunge for lane 1. This is the only lane in the 1-through-5 set that is available only at the top.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQp6-MJ5Wq"
+          },
+          {
+            "name": "Bullseye-return test",
+            "instruction": "Watch whether the upper-left drop changes the bullseye rebound. Leave that drop standing or remove it based on the safer result.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQp6-MJ5Wq"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The PHOENIX bullseye can return directly toward the center drain.",
+            "response": "Test the rebound before you build around this shot. Use top play if the return is not controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQp6-MJ5Wq"
+          },
+          {
+            "issue": "The four-bank targets are required for Bonus X but can give dangerous rebounds.",
+            "response": "Use the safer bank. Stop direct target play when a rebound reaches the center or an outlane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQp6-MJ5Wq"
+          },
+          {
+            "issue": "Bumper exits can make the ball move quickly toward the lower playfield.",
+            "response": "Keep both flippers ready after every top shot. Nudge before the ball reaches the slingshots.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRQp6-MJ5Wq"
+          }
+        ],
+        "simpleOverview": "Phoenix builds a 29,000 base bonus through lanes and targets, while either four-bank advances Bonus X to 5x. Build both values, use the 1-through-5 lanes to add P-H-O-E-N-I-X letters, and shoot the bullseye only after its return is proven.",
+        "overview": "Phoenix builds a 29,000 base bonus through lanes and targets, while either four-bank advances Bonus X to 5x. Build base and multiplier together, using the A and B targets when they are relit by their matching lanes. Add letters through complete 1-through-5 sets, then convert the bullseye value only from a controlled angle and preserve the 145,000 end-of-ball bonus.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the top lanes to build base bonus and PHOENIX progress, complete either four-bank until Bonus X reaches 5x, then shoot the bullseye only after its rebound is safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "On ball one, plunge for top lane 1. On later plunges, choose a missing 1-through-5 lane."
+          },
+          {
+            "text": "Send the ball to the top. Use the lanes to build base bonus and advance the 1-through-5 set."
+          },
+          {
+            "text": "Complete the safer four-bank. Repeat bank completions until Bonus X reaches 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the left spinner while base bonus is from 10,000 through 20,000."
+          },
+          {
+            "text": "Use the A and B center targets for 10,000 only from a controlled feed. Relight A with top lane 2 or the left return lane."
+          },
+          {
+            "text": "Relight B with top lane 4 or the right return lane. Shoot the PHOENIX bullseye only after its rebound is known."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus",
+            "summary": "Lanes and targets build base bonus to 29,000, and 5x Bonus produces a maximum 145,000 collect."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Each completion of either four-bank advances Bonus X toward 5x."
+          },
+          {
+            "name": "A and B targets",
+            "summary": "Each center target scores 10,000 and one bonus advance, then remains down until its matching lane relights it."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: A-B and lit spinner",
+          "when": "Use this when drop-bank or bullseye rebounds are not safe.",
+          "steps": [
+            {
+              "text": "Collect A or B from a controlled flipper for 10,000 and one bonus advance."
+            },
+            {
+              "text": "Return the ball to the top to relight the collected target."
+            },
+            {
+              "text": "Use the left spinner while base bonus is in its lit range."
+            },
+            {
+              "text": "Protect the built bonus instead of forcing the four-banks."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The PHOENIX bullseye can return directly toward the center drain.",
+          "text": "Test the rebound before you build around this shot. Use top play if the return is not controlled."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "GRLzj",
+  "title": "TX-Sector",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "TX-Sector complete rulesheet",
+      "url": "https://www.pinball.org/rules/tx-sector.txt"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb instruction-card archive",
+        "url": "https://www.pinballrebel.com/game/pins/instruction/index.htm"
+      },
+      {
+        "label": "Karl DeAngelo at Free Play Florida 2018",
+        "url": "https://pinballvideos.com/v/2177/5078"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build Energy with the safer dead-end and bumper shots, collect the lit 9x teleport, reach Energy Level 10, lock a ball, then use two-ball Multiball to rebuild Energy for the next start.",
+      "quickInfo": [
+        {
+          "name": "Lit spinners",
+          "summary": "The lit spinner is the reliable scoring route; the right inlane lights the center spinner when it is unlit."
+        },
+        {
+          "name": "Energy Level",
+          "summary": "Lit dead ends, drop targets, and the rear target advance the ten-step Energy ladder."
+        },
+        {
+          "name": "Teleport",
+          "summary": "The staged captive ball selects the active teleport, which collects the current countdown value."
+        },
+        {
+          "name": "9x countdown",
+          "summary": "Hit the left-ramp blocker, then make a lit teleport before the countdown ends."
+        },
+        {
+          "name": "Multiball",
+          "summary": "Energy Level 10 lights one ball lock that starts two-ball play."
+        },
+        {
+          "name": "Play More",
+          "summary": "The right-side posts can return an outlane ball, but their physical behavior varies by machine."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use a soft plunge. Learn the upper-left-flipper feed and watch which spinner is lit."
+        },
+        {
+          "text": "Shoot the lit spinner. When the center spinner is unlit, roll through the right inlane to light it, then shoot it from the left flipper."
+        },
+        {
+          "text": "Use the spinner return and bumper garden to build Energy. Hit the rear standup when the feed reaches it; use a lit dead end only when its return is controlled."
+        },
+        {
+          "text": "Hit the left-ramp blocker to start the 9x countdown. Shoot the lit teleport before the count expires.",
+          "modeNotes": [
+            "Teleport award: The base award rises with the current Energy Level. The blocker starts a 9x-to-1x countdown that multiplies that award.",
+            "Teleport side: The staged captive ball selects the active teleport. Watch the lit insert before you shoot."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Reach Energy Level 10. Shoot the lit Lock to start two-ball Multiball.",
+          "modeNotes": [
+            "Multiball qualification: Energy advances from 0 to 10. Level 10 lights Lock. The lock starts two-ball play."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, continue the safer Energy shots. Energy resets at the start but can rebuild before Multiball ends.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Keep shooting the lit spinners during Multiball. Use rebuilt Energy to shorten the next qualification, and take another 9x teleport only when the blocker and a safe teleport align.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Bumper-garden Energy",
+        "when": "Use this when the teleports, drop banks, or left-ramp blocker return the ball dangerously.",
+        "steps": [
+          {
+            "text": "Feed the bumper garden and collect Energy from the rear target."
+          },
+          {
+            "text": "Use the safer lit dead end when the ball returns under control."
+          },
+          {
+            "text": "At Energy Level 10, start Multiball instead of forcing the 9x countdown.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Rebuild Energy during Multiball and repeat the protection route.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Drop-bank finish",
+          "when": "Use this only when one target remains and the rebound is acceptable.",
+          "steps": [
+            {
+              "text": "Let incidental hits clear most of a four-target bank."
+            },
+            {
+              "text": "Shoot the final target to collect its Energy advance."
+            },
+            {
+              "text": "Return to the dead ends or bumper garden. Do not repeat full-bank attacks from a bad feed."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeat Multiball and 9x teleports",
+        "steps": [
+          {
+            "text": "Score lit dead-end shots, drop targets, and the rear target until Energy reaches Level 10, then shoot the lit Lock to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Rebuild Energy during Multiball so the next qualification is shorter.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the blocker and lit teleport when a controlled 9x collect is available.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat these two engines. TX-Sector has no separate conventional wizard mode."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "9x countdown",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Energy Level",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Teleport",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Soft-plunge upper feed",
+          "instruction": "Plunge softly to reach the upper-left flipper. A hard plunge can take a less controlled hop through the top area.",
+          "sourceUrl": "https://www.pinball.org/rules/tx-sector.txt"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The drop banks can produce fast lateral rebounds.",
+          "response": "Use incidental hits and finish a bank only when one target remains. Prefer the lit dead ends and bumper garden for Energy.",
+          "sourceUrl": "https://www.pinball.org/rules/tx-sector.txt"
+        },
+        {
+          "issue": "The right outlane can enter the Play More posts, and a machine shake can affect the return or tilt the game.",
+          "response": "Learn the local tilt sensitivity before you depend on the posts. Do not use a large shake in competition.",
+          "sourceUrl": "https://www.pinball.org/rules/tx-sector.txt"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Energy memory and three-ball or five-ball scoring.",
+        "Test soft-plunge feed, teleports, blockers, and dead-end returns."
+      ],
+      "simpleOverview": "TX-Sector uses lit dead ends and targets to raise Energy, while the captive ball selects a Teleport collect. Build to Energy Level 10, take the 9x Teleport when lit, lock one ball, then use two-ball play to rebuild Energy for the next start.",
+      "overview": "TX-Sector uses lit dead ends and targets to raise Energy, while the captive ball selects a Teleport collect. Favor the lit spinner and safer dead ends, use the left-ramp blocker to start the 9x countdown, then take a lit Teleport. At Energy 10, start Multiball and rebuild toward the next lock while protected.",
+      "machineSetup": [
+        "Confirm Energy memory and three-ball or five-ball scoring.",
+        "Test soft-plunge feed, teleports, blockers, and dead-end returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

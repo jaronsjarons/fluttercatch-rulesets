@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr37O",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Sharpshooter links three progress systems: base bonus from the S-H-A-R-P lanes and S-H-O-O-T-E-R drops, Bonus X from completing either group or shooting the kickout hole, and spinner value once 2x Bonus is reached. The kickout begins at 5,000 and can be advanced through 2x–5x by the upper loop rollover. Most scoring comes from building a strong end-of-ball bonus, then using the lit spinner from the left flipper.",
+        "simpleOverview": "Complete S-H-A-R-P, complete the S-H-O-O-T-E-R drop bank, or shoot the kickout hole to raise Bonus X toward 5x. Reaching 2x lights the spinner for 1,000 per spin. Build base bonus with lanes and drops, then shoot the lit spinner from the left flipper.",
+        "summary": "Raise Bonus X early because 2x activates the spinner and every later bonus advance improves the end-of-ball payout. Use the right flipper for the S-H-O-O-T-E-R bank and the left for the spinner; take the kickout when its direct advance is safer than finishing a scattered bank.",
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete S-H-A-R-P, complete S-H-O-O-T-E-R, or shoot the kickout."
+          },
+          {
+            "name": "Light the Spinner",
+            "summary": "Reach 2x Bonus."
+          },
+          {
+            "name": "Build Base Bonus",
+            "summary": "Collect S-H-A-R-P lanes, drops, and scoring rollovers."
+          },
+          {
+            "name": "Advance Kickout Value",
+            "summary": "Roll through the upper loop rollover."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete S-H-A-R-P, the S-H-O-O-T-E-R drop bank, or the kickout hole once to raise Bonus X to 2x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "With the spinner lit for 1,000 per spin, shoot it from the left flipper whenever the feed is controlled."
+          },
+          {
+            "text": "Use the right flipper to finish S-H-O-O-T-E-R and keep building base bonus."
+          },
+          {
+            "text": "Continue completing S-H-A-R-P, S-H-O-O-T-E-R, or the kickout to reach 5x before protecting the accumulated end-of-ball bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Kickout-and-loop route",
+            "when": "Use this when target rebounds are especially dangerous.",
+            "steps": [
+              {
+                "text": "Shoot the kickout hole for a direct Bonus X advance.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Use the upper loop rollover to advance the kickout award through its multiplied values."
+              },
+              {
+                "text": "Return to the lit spinner after reaching 2x Bonus."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "145,000 end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Build the base bonus toward 29,000 with letters, drops, and rollovers."
+            },
+            {
+              "text": "Raise Bonus X toward 5x with the three available completion routes.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Keep the ball safe once both values are high; 29,000 at 5x pays 145,000 at the drain."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test every S-H-A-R-P lane, the full S-H-O-O-T-E-R drop bank and reset, kickout hole and eject, upper loop rollover, spinner, both standups, and all bonus lamps.",
+          "Confirm Extra Ball and Special settings, Bonus X and feature carryover, kickout-hole award progression, and whether the saucer eject and spinner return are controllable."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "S-H-A-R-P lanes",
+            "label": "S-H-A-R-P lanes",
+            "description": "Five lanes that build bonus and raise Bonus X when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "S-H-O-O-T-E-R drop bank",
+            "label": "S-H-O-O-T-E-R drop bank",
+            "description": "Eight-target bank that builds bonus and raises Bonus X when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "kickout hole",
+            "label": "Kickout hole",
+            "description": "Saucer that raises Bonus X and pays its currently lit value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper loop rollover",
+            "label": "Upper loop rollover",
+            "description": "Upper loop switch that advances the kickout-hole award.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "Repeatable shot worth 1,000 per spin after 2x Bonus is reached.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Most lit features carry between balls, but the drop bank resets.",
+            "response": "Read the S-H-A-R-P, kickout, and Bonus X lamps at the start of each ball instead of assuming the whole playfield reset.",
+            "sourceUrl": "https://www.gameplanpinball.com/machine-sharpshooter-rulesofplay.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Raise Bonus X early because 2x activates the spinner and every later bonus advance improves the end-of-ball payout. Use the right flipper for the S-H-O-O-T-E-R bank and the left for the spinner; take the kickout when its direct advance is safer than finishing a scattered bank.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete S-H-A-R-P, the S-H-O-O-T-E-R drop bank, or the kickout hole once to raise Bonus X to 2x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "With the spinner lit for 1,000 per spin, shoot it from the left flipper whenever the feed is controlled."
+          },
+          {
+            "text": "Use the right flipper to finish S-H-O-O-T-E-R and keep building base bonus."
+          },
+          {
+            "text": "Continue completing S-H-A-R-P, S-H-O-O-T-E-R, or the kickout to reach 5x before protecting the accumulated end-of-ball bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete S-H-A-R-P, complete S-H-O-O-T-E-R, or shoot the kickout."
+          },
+          {
+            "name": "Light the Spinner",
+            "summary": "Reach 2x Bonus."
+          },
+          {
+            "name": "Build Base Bonus",
+            "summary": "Collect S-H-A-R-P lanes, drops, and scoring rollovers."
+          }
+        ]
+      }
+    }
+  ]
+}

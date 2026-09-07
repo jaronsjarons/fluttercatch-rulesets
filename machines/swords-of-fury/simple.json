@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPzV",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On stock LA-2, use the already-lit locks to start Titan Multiball quickly. Shoot the right ramp and flashing Magic target for Jackpot, then spend the short 3x and 2x scoring windows on the safest repeatable shots.",
+        "quickInfo": [
+          {
+            "name": "Stock locks",
+            "summary": "LA-2 begins with all three locks lit. Shoot the left lock lane three times to start Titan Multiball."
+          },
+          {
+            "name": "Titan Multiball",
+            "summary": "Three locks start multiball. Stock 3x and 2x playfield scoring use short timers instead of lasting until another ball drains."
+          },
+          {
+            "name": "Jackpot and Lionman Frenzy",
+            "summary": "Shoot the right ramp, then the flashing Magic target. The collect starts a frenzy at major switches except the left spinner."
+          },
+          {
+            "name": "Lionman",
+            "summary": "Repeat the unlit center ramp to raise Lionman, complete A-V-E-N-G-E-R, then collect the lit center ramp before its timer ends."
+          },
+          {
+            "name": "Ogre's Alley",
+            "summary": "Use the white side to advance the award and the green side to collect it. Stock code does not add the Richie ROM's repeat window."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the plunge to test the mini-playfield flipper, Magic-target resets, and the left lock-lane return."
+          },
+          {
+            "text": "Shoot the lit left lane to lock ball 1. Repeat it for ball 2."
+          },
+          {
+            "text": "Before the third lock, build Lionman Frenzy Value with controlled Magic-spinner shots.",
+            "modeNotes": [
+              "Frenzy Value: Magic-spinner spins build the value used after a Jackpot collect.",
+              "Stop building when the U-turn return is less valuable than starting multiball safely."
+            ]
+          },
+          {
+            "text": "Shoot the lit left lane a third time to start Titan Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the right flipper button to select the center-ramp path before a controlled ramp shot."
+          },
+          {
+            "text": "Shoot the right ramp to enter the mini-playfield, then hit the flashing Magic target for Jackpot.",
+            "modeNotes": [
+              "Jackpot: The right ramp opens the collect. The flashing drop target awards Jackpot and starts Lionman Frenzy.",
+              "Finish this sequence before Titan Multiball reaches one ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "While stock 3x or 2x is still flashing, use safe major switches for Lionman Frenzy and repeatable scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the multiplier timer ends, protect the remaining balls and finish any safe Magic or Ogre's Alley collect.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "At one ball, rebuild Lionman or relock three balls for another Titan Multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Build and collect Lionman",
+          "when": "Use this when the U-turn or left lock lane rejects toward a drain.",
+          "steps": [
+            {
+              "text": "Shoot the center ramp while Lionman is unlit."
+            },
+            {
+              "text": "Repeat the unlit center ramp to raise Lionman through 100,000, 125,000, 175,000, 250,000, 350,000, 475,000, 625,000, 800,000, and 1,000,000."
+            },
+            {
+              "text": "Hit each unlit A-V-E-N-G-E-R standup."
+            },
+            {
+              "text": "Use either inlane to spot the next letter when its feed is safe."
+            },
+            {
+              "text": "Complete A-V-E-N-G-E-R to light the center ramp."
+            },
+            {
+              "text": "Shoot the center ramp before the Lionman timer ends."
+            },
+            {
+              "text": "The collect resets Lionman to 100,000."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Stock Ogre's Alley collect",
+            "when": "Use this when the upper flipper gives a controlled Alley shot.",
+            "steps": [
+              {
+                "text": "Shoot the white Advance side to raise the lit value."
+              },
+              {
+                "text": "Shoot the green Collect side once the value justifies the return risk."
+              },
+              {
+                "text": "Return to the Advance side after the stock collect resets the opportunity."
+              },
+              {
+                "text": "Take a ready collect during a timed playfield multiplier instead of rebuilding through an unsafe feed.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Magic value and Bonus X",
+            "when": "Use this when the mini-playfield flipper and target resets are reliable.",
+            "steps": [
+              {
+                "text": "Hit each flashing Magic target once."
+              },
+              {
+                "text": "Complete all five for the current Magic value and one Bonus X advance."
+              },
+              {
+                "text": "Use U-turn spins to raise Magic by 50,000 per threshold."
+              },
+              {
+                "text": "The value ranges from 50,000 through 250,000."
+              },
+              {
+                "text": "A mini-playfield exit lowers Magic by 50,000 to its minimum."
+              },
+              {
+                "text": "Repeat only while the longer target-reset delays remain manageable."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Fast stock Titan Multiball and timed Jackpot scoring",
+          "steps": [
+            {
+              "text": "Use the three lit locks instead of qualifying Lock Spins."
+            },
+            {
+              "text": "Build Frenzy Value only while the Magic-spinner return stays controlled."
+            },
+            {
+              "text": "Start Titan Multiball at the third left-lane lock.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the right ramp and flashing Magic target for Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the remaining 3x or 2x timer on Lionman Frenzy and safe repeat shots.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Titan Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "3x",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Lock Spins",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Frenzy Value",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lionman Frenzy",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lionman",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Magic Value",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Ogre's Alley",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "A-V-E-N-G-E-R",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Sheild Kickback",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left lock lane",
+            "label": "Titan lock lane",
+            "description": "Left lane used to lock three balls and start Titan Multiball.",
+            "precision": "unverified",
+            "context": "Lock three balls at the left lane before shooting the Jackpot sequence."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Mini-playfield target timing",
+            "instruction": "Wait for the flashing target line, then use the small right flipper. Do not aim at an unlit target during Jackpot.",
+            "sourceUrl": "https://gamefaqs.gamespot.com/pinball/915958-swords-of-fury/faqs/1481"
+          },
+          {
+            "name": "Two-way U-turn",
+            "instruction": "Shoot the U-turn from either entrance. Use the controlled flipper instead of forcing one direction.",
+            "sourceUrl": "https://gamefaqs.gamespot.com/pinball/915958-swords-of-fury/faqs/1481"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A down Magic target leaves an open exit at the back of the mini-playfield.",
+            "response": "Prepare the main upper flipper when the ball approaches an open target slot.",
+            "sourceUrl": "https://gamefaqs.gamespot.com/pinball/915958-swords-of-fury/faqs/1481"
+          },
+          {
+            "issue": "Magic targets stay down longer after repeated mini-playfield visits.",
+            "response": "Stop forcing a full set when too many open slots remove the ball before a controlled flip.",
+            "sourceUrl": "https://gamefaqs.gamespot.com/pinball/915958-swords-of-fury/faqs/1481"
+          }
+        ],
+        "simplePilotKey": "GrPzV:stock-la-2",
+        "checkBeforePlay": [
+          "Confirm stock LA-2: locks begin lit, and the 3x and 2x playfield multipliers are timed.",
+          "Test the physical lock, kickback, Jackpot value, and multiplayer lock-stealing behavior."
+        ],
+        "simpleOverview": "Swords of Fury begins with all three Titan locks lit. Lock three balls at the left lane, then shoot the right ramp and flashing Magic target for Jackpot. Use the short 3x and 2x scoring windows on controlled Magic-spinner and Ogre's Alley shots.",
+        "overview": "All three Titan locks begin lit in Swords of Fury. Lock three balls at the left lane, then shoot the right ramp and flashing Magic target for Jackpot and Lionman Frenzy. Use the short 3x and 2x scoring windows on controlled Magic-spinner and Ogre's Alley shots while more than one ball remains.",
+        "machineSetup": [
+          "Confirm stock LA-2: locks begin lit, and the 3x and 2x playfield multipliers are timed.",
+          "Test the physical lock, kickback, Jackpot value, and multiplayer lock-stealing behavior."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Lock three balls in the left lane to start Titan Multiball, then shoot the right ramp and flashing MAGIC drop target for Jackpot while the playfield is multiplied.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Titan Multiball",
+            "text": "Shoot the lit left lock lane three times. The third lock starts Titan Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect the Jackpot",
+            "text": "During Titan Multiball, shoot the right ramp to reach the upper playfield, then hit the flashing MAGIC drop target for Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Use the playfield multiplier",
+            "text": "Keep all three balls in play for 3x scoring on every score except Jackpot and Lionman. With two balls, those scores are 2x.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Stock locks",
+            "summary": "LA-2 begins with all three locks lit. Shoot the left lock lane three times to start Titan Multiball."
+          },
+          {
+            "name": "Titan Multiball",
+            "summary": "Three locks start multiball. Stock 3x and 2x playfield scoring use short timers instead of lasting until another ball drains."
+          },
+          {
+            "name": "Jackpot and Lionman Frenzy",
+            "summary": "Shoot the right ramp, then the flashing Magic target. The collect starts a frenzy at major switches except the left spinner."
+          }
+        ]
+      }
+    }
+  ]
+}

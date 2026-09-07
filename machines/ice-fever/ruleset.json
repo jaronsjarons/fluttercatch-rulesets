@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "G43DV",
+  "title": "Ice Fever",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Ice Fever factory instruction cards",
+      "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Ice_Fever_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Ice Fever competitive rules",
+        "url": "https://rules.silverballmania.com/rules/G43DV-MQYKB"
+      },
+      {
+        "label": "Ice Fever machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/ice-fever"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Use the alternating lit return lane to light the right spinner, then shoot that spinner from the left flipper for 10,000 per spin instead of 1,000. Keep returning to that two-shot sequence. For Bonus X, clear the drops in front of the captive ball and score three captive-ball goals for a hat trick. Complete the top I-C-E lanes when Extra Ball remains available.",
+      "simpleOverview": "Roll through the lit return lane, then shoot the right spinner from the left flipper while it is worth 10,000 per spin. Repeat that route. Clear the captive-ball drops and score three goals for a hat trick and a Bonus X advance.",
+      "summary": "Use the lit return lane to raise the right spinner to 10,000 per spin, then shoot it from the left flipper and repeat. Clear the captive-ball drops and score three goals for a hat trick and Bonus X.",
+      "quickInfo": [
+        {
+          "name": "Light the Spinner",
+          "summary": "Roll through the alternating lit return lane."
+        },
+        {
+          "name": "Shoot the Right Spinner",
+          "summary": "Its lit value is 10,000 per spin instead of 1,000."
+        },
+        {
+          "name": "Score a Hat Trick",
+          "summary": "Clear the drops and hit the captive ball for three goals."
+        },
+        {
+          "name": "Complete I-C-E",
+          "summary": "The top lanes light a cycling Extra Ball lane when enabled."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Guide the ball through the alternating lit return lane to light the right spinner.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Settle the ball on the left flipper and shoot the lit right spinner for 10,000 per spin; repeat the return-lane and spinner cycle.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Clear the drops in front of the captive ball, then hit the exposed captive ball to score a goal.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Score three goals for a hat trick and one Bonus X advance; continue spinner play between safe goal opportunities.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Qualify the cycling Extra Ball lane",
+          "when": "Use this when the top I-C-E lanes are one controlled feed from completion and Extra Ball is not converted.",
+          "steps": [
+            {
+              "text": "Complete the three top I-C-E lanes to light one of them for Extra Ball.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Track the lit lane as it moves with switch hits, then send a controlled top feed through it.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Keep the spinner at its lit value",
+        "steps": [
+          {
+            "text": "Choose control and a repeatable return-lane feed over low-value target rebounds.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use captive-ball goals only when the drops are open and the rebound is acceptable.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Extra Ball and Special conversions, Bonus X maximum, ball count, return-lane lamp behavior, and whether the lit spinner remains 10,000 per spin.",
+        "Test both return-lane switches and lamps, right spinner, captive-ball drops and goal switch, top I-C-E lanes and cycling lamp, bumpers, and trough."
+      ],
+      "techniques": [
+        {
+          "name": "Shatz pass",
+          "instruction": "Shatz a controlled return-lane feed when it safely transfers the ball to the flipper that has the spinner shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43DV-MQYKB",
+          "techniqueSlug": "shatz-pass"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Right spinner",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Hat trick",
+          "tone": "forest",
+          "kind": "multiplier"
+        },
+        {
+          "label": "I-C-E",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The lit return lane alternates, so a passive feed may light the wrong side for the next shot.",
+          "response": "Read the lamp before the ball reaches the lanes and plan the receiving flipper before committing to the spinner.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43DV-MQYKB"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

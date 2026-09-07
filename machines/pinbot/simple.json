@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "id": "G41Z8",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Read the Solar Value and flashing rainbow line. Hit the exact flashing target to open the visor, lock both eye saucers, and start Visor Multiball. Relock one ball, then shoot the ramp with the other for repeatable Solar Value collects.",
+        "quickInfo": [
+          {
+            "name": "Rainbow grid",
+            "summary": "Hit the exact flashing target to open the visor immediately, or complete all 25 grid lights."
+          },
+          {
+            "name": "Visor Multiball",
+            "summary": "Hit the exact flashing rainbow target, or complete the grid, to open the visor. Lock one ball in each eye saucer to start two-ball 2x play."
+          },
+          {
+            "name": "Solar Value",
+            "summary": "Ramp shots build a carried value from 100,000 to 5,000,000. During Multiball, relock one ball and shoot the ramp with the other before time expires to collect it."
+          },
+          {
+            "name": "Energy Value",
+            "summary": "Bumper hits build Energy Value. Hit the target whose lamp is on in the left drop bank, then shoot the raised ramp to collect it."
+          },
+          {
+            "name": "Vortex Multiplier",
+            "summary": "Each served or returned plunge raises the lit Vortex award by 1x to a 10x maximum."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before the plunge, read Solar Value and the flashing rainbow line. Dial the center Vortex only if the plunge is repeatable."
+          },
+          {
+            "text": "From control, hit the exact flashing rainbow target to open the visor immediately.",
+            "modeNotes": [
+              "Rainbow grid: A correct flashing target opens the visor; a miss means that all 25 grid lights must be completed."
+            ]
+          },
+          {
+            "text": "If the direct target is unsafe, complete the rainbow grid in rows. When Energy Value is worthwhile, hit the lit left drop target and shoot the raised ramp to collect it."
+          },
+          {
+            "text": "After the visor opens, lock one ball in each eye saucer to start Visor Multiball.",
+            "modeNotes": [
+              "Visor Multiball is two-ball full-playfield 2x scoring. Preserve one controlled ball because the eye-saucer ejects can end the feature quickly."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Relock either ball in one eye saucer. The ramp lights the current Solar Value for a timed collect.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the free ball to shoot the ramp and collect Solar Value before the timer expires.",
+            "modeNotes": [
+              "Solar Value collect: The award resets to 100,000 after collection, so rebuild it before the next relock."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the eye relock and ramp collect while two balls remain. Visor Multiball ends when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Multiball, rebuild the grid and Solar Value. Do not chase planets; use Advance Planet only when its carried bonus can decide the game."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Full grid and ramp value",
+          "when": "Recovery pivot: Use this when the flashing rainbow target or eye saucers reject.",
+          "steps": [
+            {
+              "text": "Complete the 25 rainbow-grid lights in controlled groups."
+            },
+            {
+              "text": "For Energy Value, hit the lit left drop target and shoot the raised ramp."
+            },
+            {
+              "text": "Build Solar Value with repeatable ramp shots."
+            },
+            {
+              "text": "Hit the final safe grid target to open the visor."
+            },
+            {
+              "text": "Protect the carried Solar Value instead of forcing an eye lock."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Left saucer awards",
+            "when": "When trailing, use this higher-ceiling route: use this when the saucer is lit for a useful award and its kickout is controlled.",
+            "steps": [
+              {
+                "text": "Shoot the upper-left saucer for its lit award."
+              },
+              {
+                "text": "Use the returned plunge to raise the Vortex Multiplier."
+              },
+              {
+                "text": "Resume grid or ramp progress after the top feed."
+              }
+            ]
+          },
+          {
+            "title": "Vortex plunge value",
+            "when": "Use this when a center-Vortex plunge can be repeated without losing control.",
+            "steps": [
+              {
+                "text": "Dial the center Vortex on each served or returned plunge."
+              },
+              {
+                "text": "Send each served or returned plunge through the center Vortex to raise its multiplier toward 10x.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Stop after a plunge that misses the Vortex or gives an unsafe feed."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Solar Value cycles",
+          "steps": [
+            {
+              "text": "Build Solar Value toward 5,000,000 with ramp shots."
+            },
+            {
+              "text": "Hit the flashing rainbow target to open the visor, then lock both eye saucers to start Visor Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Relock one ball in an eye saucer."
+            },
+            {
+              "text": "Collect Solar Value at the ramp before its timer expires."
+            },
+            {
+              "text": "Repeat the relock and collect while two balls remain."
+            },
+            {
+              "text": "The visor cycle is the main long-term objective; PIN-BOT has no separate wizard mode."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Visor Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Vortex Multiplier",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Solar Value",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Energy Value",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Rainbow grid",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Visor targets",
+            "context": "Visor targets",
+            "label": "Visor targets",
+            "description": "The target bank that opens the visor and exposes the eye saucers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Solar ramp",
+            "context": "Solar ramp",
+            "label": "Solar ramp",
+            "description": "The ramp used for Solar Value and timed multiball scoring.",
+            "precision": "unverified"
+          },
+          {
+            "term": "eye saucer",
+            "context": "eye saucer",
+            "label": "Eye saucers",
+            "description": "The two saucers used to lock balls and collect multiball awards.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Exact flashing target",
+            "instruction": "Read the flashing rainbow line before you trap, then shoot only that target to open the visor in one hit.",
+            "sourceUrl": "https://www.kineticist.com/news/pin-bot-pinball-tutorial"
+          },
+          {
+            "name": "One-ball relock control",
+            "instruction": "During Visor Multiball, trap one ball and use the other for an eye saucer before the timed ramp collect.",
+            "sourceUrl": "https://www.kineticist.com/news/pin-bot-pinball-tutorial"
+          },
+          {
+            "name": "Timed Solar ramp",
+            "instruction": "After an eye relock, shoot the ramp immediately instead of building another feature.",
+            "sourceUrl": "https://www.kineticist.com/news/pin-bot-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The center rainbow targets can reject toward the drain.",
+            "response": "Shoot only the exact flashing target from control, or use safer grid progress.",
+            "sourceUrl": "https://www.kineticist.com/news/pin-bot-pinball-tutorial"
+          },
+          {
+            "issue": "The eye-saucer kickouts can return without a clean cradle.",
+            "response": "Keep both flippers ready until the ball passes the slings and lower guides.",
+            "sourceUrl": "https://www.kineticist.com/news/pin-bot-pinball-tutorial"
+          },
+          {
+            "issue": "Visor Multiball begins with both balls exposed to the eye-saucer ejects.",
+            "response": "Do not shoot both balls at the eye area together; keep one ball controlled when possible.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/pinbot"
+          }
+        ],
+        "simpleOverview": "PIN-BOT uses the flashing rainbow target to open the visor, then one lock in each eye starts Multiball. Hit the exact flashing target, lock both eyes, relock one ball during Multiball, and shoot the ramp with the other for Solar Value.",
+        "overview": "On PIN-BOT, the flashing rainbow target opens the visor, and one lock in each eye starts Multiball. Read the flashing rainbow line and Solar Value, hit the exact target, and lock both eyes. During Multiball, relock one ball to light the timed ramp collect, shoot the ramp before the Solar Value timer expires, and repeat while two balls remain.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Read the Solar Value and flashing rainbow line. Hit the exact flashing target to open the visor, lock both eye saucers, and start Visor Multiball. Relock one ball, then shoot the ramp with the other for repeatable Solar Value collects.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before the plunge, read Solar Value and the flashing rainbow line. Dial the center Vortex only if the plunge is repeatable."
+          },
+          {
+            "text": "From control, hit the exact flashing rainbow target to open the visor immediately.",
+            "details": [
+              "Rainbow grid: A correct flashing target opens the visor; a miss means that all 25 grid lights must be completed."
+            ]
+          },
+          {
+            "text": "If the direct target is unsafe, complete the rainbow grid in rows. When Energy Value is worthwhile, hit the lit left drop target and shoot the raised ramp to collect it."
+          },
+          {
+            "text": "After the visor opens, lock one ball in each eye saucer to start Visor Multiball.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "details": [
+              "Visor Multiball is two-ball full-playfield 2x scoring. Preserve one controlled ball because the eye-saucer ejects can end the feature quickly."
+            ]
+          },
+          {
+            "text": "Relock either ball in one eye saucer. The ramp lights the current Solar Value for a timed collect.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the free ball to shoot the ramp and collect Solar Value before the timer expires.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Solar Value collect: The award resets to 100,000 after collection, so rebuild it before the next relock."
+            ]
+          },
+          {
+            "text": "Repeat the eye relock and ramp collect while two balls remain. Visor Multiball ends when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Multiball, rebuild the grid and Solar Value. Do not chase planets; use Advance Planet only when its carried bonus can decide the game."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Rainbow grid",
+            "summary": "Hit the exact flashing target to open the visor immediately, or complete all 25 grid lights."
+          },
+          {
+            "name": "Visor Multiball",
+            "summary": "Hit the exact flashing rainbow target, or complete the grid, to open the visor. Lock one ball in each eye saucer to start two-ball 2x play."
+          },
+          {
+            "name": "Solar Value",
+            "summary": "Ramp shots build a carried value from 100,000 to 5,000,000. During Multiball, relock one ball and shoot the ramp with the other before time expires to collect it."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Full grid and ramp value",
+          "when": "Recovery pivot: Use this when the flashing rainbow target or eye saucers reject.",
+          "steps": [
+            {
+              "text": "Complete the 25 rainbow-grid lights in controlled groups."
+            },
+            {
+              "text": "For Energy Value, hit the lit left drop target and shoot the raised ramp."
+            },
+            {
+              "text": "Build Solar Value with repeatable ramp shots."
+            },
+            {
+              "text": "Hit the final safe grid target to open the visor."
+            },
+            {
+              "text": "Protect the carried Solar Value instead of forcing an eye lock."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The center rainbow targets can reject toward the drain.",
+          "text": "Shoot only the exact flashing target from control, or use safer grid progress."
+        }
+      }
+    }
+  ]
+}

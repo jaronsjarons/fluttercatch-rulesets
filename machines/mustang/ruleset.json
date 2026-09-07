@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPOR",
+  "title": "Mustang",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Mustang rulesheet",
+      "url": "https://tiltforums.com/t/mustang-wiki-rulesheet/643"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA Mustang gameplay",
+        "url": "https://pinballvideos.com/v/24/420"
+      },
+      {
+        "label": "Pinball Expo 2014 match",
+        "url": "https://pinballvideos.com/v/595/12589"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the G-E-A-R-S bank to reach Gear 4, then start Gear Shift Multiball at the scoop. Make a drop-target or mini-Jackpot shot to light the Super Jackpot. Complete the three small N2O targets, then hit the far-left N2O Boost target for 2x before collecting it.",
+      "quickInfo": [
+        {
+          "name": "Gear Shift Multiball",
+          "summary": "Reach gear 3 or higher, then shoot the scoop to start that gear's one-time Multiball."
+        },
+        {
+          "name": "N2O",
+          "summary": "Complete the three small N2O targets, then hit the far-left N2O Boost target to start temporary 2x playfield scoring."
+        },
+        {
+          "name": "FORD add-a-ball",
+          "summary": "Spell FORD in the bottom lanes, then shoot the scoop during Multiball."
+        },
+        {
+          "name": "Burnout Multiball",
+          "summary": "Spell 1-8-0 at the captive ball, then shoot the lit scoop to start Burnout Multiball."
+        },
+        {
+          "name": "Silverball Stampede",
+          "summary": "Complete the required modes and Multiballs to reach the final feature."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hold the left flipper during the plunge. Hit the A segment of the G-E-A-R-S bank while it is lit to advance two gears, up to Gear 4."
+        },
+        {
+          "text": "Complete the G-E-A-R-S drop targets to shift one gear at a time. Continue until Gear 4 is reached.",
+          "modeNotes": [
+            "Gear Shift qualification: Gear 3 lights the scoop. Gears 5 and 6 need the standup targets after the bank within short timers."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Reach gear 4 and shoot the scoop to start Gear 4 Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Make the first lit drop or mini-Jackpot to light the Super Jackpot. Collect the Super Jackpot at the indicated shot.",
+          "modeNotes": [
+            "On code 1.45, the Gear 4 Super Jackpot has a 10,000,000 base value."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete the three small N2O targets, then hit the far-left N2O Boost target to start temporary 2x playfield scoring before the Super Jackpot.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Spell FORD in the bottom lanes. Shoot the scoop to add a ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete the three RPM targets to start their timed scoring, then keep hitting the bank to restart its timer.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Gear 3 Multiball",
+        "when": "Use this as the first available Gear Shift Multiball.",
+        "steps": [
+          {
+            "text": "Complete G-E-A-R-S until Gear 3 lights the scoop."
+          },
+          {
+            "text": "Shoot the scoop to start Gear 3 Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Spell F-O-R-D in the bottom lanes, then shoot the scoop during Multiball to add a ball."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Burnout Multiball",
+          "when": "Use this as the separate captive-ball Multiball route.",
+          "steps": [
+            {
+              "text": "Spell 1-8-0 at the captive ball."
+            },
+            {
+              "text": "Shoot the lit scoop to start Burnout Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp, captive ball, and right orbit for the opening Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Mustang Multiball and Silverball Stampede",
+        "steps": [
+          {
+            "text": "Play each unique Gear Shift Multiball once.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Spell MUSTANG to qualify the four-ball Mustang Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the six modes and the other required features.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Silverball Stampede after the final qualification is complete.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Gear Shift Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Burnout Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Mustang Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Silverball Stampede",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "N2O",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Super Skill Shot gear advance",
+          "instruction": "Hold the left flipper during the plunge. Time the A shot to advance two gears, but stop before gear 5.",
+          "sourceUrl": "https://tiltforums.com/t/mustang-wiki-rulesheet/643"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The gear 5 and 6 qualifications require timed standup hits after the GEARS bank.",
+          "response": "Gear 3 and Gear 4 do not require the timed standup sequence used by Gears 5 and 6.",
+          "sourceUrl": "https://tiltforums.com/t/mustang-wiki-rulesheet/643"
+        },
+        {
+          "issue": "Code 1.45 can carry a Burnout Combo Jackpot value between competition games.",
+          "response": "A competition organizer should reset the machine before play so the carried value does not affect the game.",
+          "sourceUrl": "https://tiltforums.com/t/mustang-wiki-rulesheet/643"
+        }
+      ],
+      "simpleOverview": "Mustang uses the G-E-A-R-S drop bank to raise the current gear; once Gear 3 is reached, the scoop starts that gear's one-time Gear Shift Multiball. Spell 1-8-0 at the captive ball, then shoot the lit scoop to start Burnout Multiball. Complete the three small N2O targets, then hit the far-left N2O Boost target to start temporary 2x playfield scoring.",
+      "overview": "Mustang makes each Gear Shift Multiball available only once, with higher gears raising its Super Jackpot value. Complete the G-E-A-R-S bank until Gear 4 is reached, then shoot the scoop to start Gear 4 Multiball. Make a drop-target or mini-Jackpot shot to light the Super Jackpot; complete the three small N2O targets and hit the far-left N2O Boost target to start 2x before collecting it.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

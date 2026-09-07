@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "G4llj",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build Lamp Spins and Bonus X while preparing Genie Multiball, use Make A Wish for difficult jewels, then build the Jackpot at the Lamp during multiball, collect it at Genie, and relight it at the orbit.",
+        "quickInfo": [
+          {
+            "name": "Lamp Spins",
+            "summary": "Every 15 spins starts Lightning Lamp and lights Make A Wish, with completed 15-spin thresholds carrying between balls."
+          },
+          {
+            "name": "Make A Wish",
+            "summary": "Collect at the Bazaar for a jewel or contextual award, using it to skip difficult Tales when no jewel is already lit."
+          },
+          {
+            "name": "Genie Multiball",
+            "summary": "Hit Genie five times, lock two balls, then hit Genie to start, with Lamp spins building the Jackpot and Genie collecting it."
+          },
+          {
+            "name": "Harem Multiball",
+            "summary": "Enter the Harem sneak-in three times or spell HAREM, after which every switch scores the Harem Jackpot during two-ball play."
+          },
+          {
+            "name": "Genie Battle",
+            "summary": "Collect all seven Tale jewels, defeat the skeleton phase, then finish the unlimited-ball battle against Genie."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Spin the Lamp early. Every 15-spin threshold gives Lightning Lamp and lights Make A Wish."
+          },
+          {
+            "text": "Hit a captive ball fully to raise Bonus X. Use safe Tale shots and collect completed jewels at the ramp.",
+            "kinds": [
+              "multiplier",
+              "mode"
+            ]
+          },
+          {
+            "text": "Use Make A Wish for Ali Baba, Flying Horse, or another difficult jewel. Do not use it while a jewel is already lit at the ramp.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "If HAREM is ready from controlled orbit or sneak-in feeds, start Harem Multiball and use its ball save to make safer Tale, Lamp, or Genie progress.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit Genie five times to light two locks. Lock two balls at the orbits or center lock lane, then hit Genie to start three-ball Genie Multiball.",
+            "modeNotes": [
+              "Genie Multiball: Spin the Lamp to build the Jackpot. Hit Genie to collect it. Shoot the lit orbit to relight Genie.",
+              "Rematch: If no Jackpot is collected before one ball remains, the Bazaar can light for a timed Genie Multiball restart."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Genie Multiball, use the ball save to spin the Lamp, collect Genie, and make the lit relight orbit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue Tale progress and use Lamp chaos to reach all seven jewels for Genie Battle.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Lamp bonus engine",
+          "when": "Use this when Genie, Bazaar, or the lock shots reject dangerously.",
+          "steps": [
+            {
+              "text": "Build Lamp Spins in complete 15-spin groups."
+            },
+            {
+              "text": "Make full captive-ball hits to raise Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use controlled Tiger Loops when the Lamp is vertically aligned."
+            },
+            {
+              "text": "Protect the large end-of-ball bonus instead of forcing a Tale or lock shot."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Genie Battle",
+          "steps": [
+            {
+              "text": "Complete each Tale and collect its jewel at the ramp.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Ruby with Make A Wish to collect two jewels from one award when available."
+            },
+            {
+              "text": "After all seven jewels, hit the required Golden Symbols and orbs to defeat the skeletons."
+            },
+            {
+              "text": "Finish the unlimited-ball phase by making lit shots that pull the princess away from Genie.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Genie Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Harem Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Tale",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Tale selection",
+            "instruction": "Use the left flipper before launch to choose the lit Tale.",
+            "sourceUrl": "https://www.pinball.org/rules/talesofthearabiannights.html"
+          },
+          {
+            "name": "Lamp orientation",
+            "instruction": "When the Lamp posts are horizontal, hit the farther post for spins. When they are vertical, avoid the Lamp and use the open Genie or lock path.",
+            "sourceUrl": "https://www.pinball.org/rules/talesofthearabiannights.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A vertically aligned Lamp can reject the ball toward the center drain.",
+            "response": "Use Tiger Loops or the open Genie path until the Lamp turns to a safer angle.",
+            "sourceUrl": "https://www.pinball.org/rules/talesofthearabiannights.html"
+          },
+          {
+            "issue": "The Bazaar scoop and right standup bank can send the ball toward a drain.",
+            "response": "Take them from controlled feeds or under multiball protection. Do not force Make A Wish when a jewel is already lit.",
+            "sourceUrl": "https://www.pinball.org/rules/talesofthearabiannights.html"
+          },
+          {
+            "issue": "Shooting Star pins can cause airballs, and their compensation is disabled during multiball.",
+            "response": "Keep both flippers ready after the ball hits a star post. Do not assume the game will compensate during multiball.",
+            "sourceUrl": "https://www.pinball.org/rules/talesofthearabiannights.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original Williams ROM 1.4, not an enhanced rules package.",
+          "Test the Lamp, Genie magnet, locks, and Bazaar eject."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Lamp",
+            "label": "Magic Lamp",
+            "description": "Central spinning toy used for Lamp Spins and Jackpot growth.",
+            "precision": "unverified",
+            "context": "Central spinning toy used for Lamp Spins and Jackpot growth."
+          },
+          {
+            "term": "Genie",
+            "label": "Genie target",
+            "description": "Center target used to qualify and score Genie Multiball.",
+            "precision": "unverified",
+            "context": "Center target used to qualify and score Genie Multiball."
+          },
+          {
+            "term": "Bazaar",
+            "label": "Bazaar scoop",
+            "description": "Right-side scoop used for awards and Make A Wish.",
+            "precision": "unverified",
+            "context": "Right-side scoop used for awards and Make A Wish."
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Orbit used for locks, Harem, and Jackpot relights.",
+            "precision": "unverified",
+            "context": "Orbit used for locks, Harem, and Jackpot relights."
+          }
+        ],
+        "simpleOverview": "Tales of the Arabian Nights uses Lamp spins for Make A Wish and Genie hits for a two-lock Multiball. Build Lamp and Bonus X, use Bazaar wishes for difficult jewels, then during Genie Multiball spin Lamp to build the Jackpot and hit Genie to collect it.",
+        "overview": "Every 15 Lamp Spins lights Make A Wish in Tales of the Arabian Nights. Seven Tale jewels qualify Genie Battle, while five Genie hits and two locks qualify Genie Multiball. Use Make A Wish to cover difficult Tales, start Multiball, build its Jackpot at the Lamp, collect at Genie, and relight through the orbit. Continue jewel progress toward the final skeleton and Genie battle.",
+        "machineSetup": [
+          "Confirm original Williams ROM 1.4, not an enhanced rules package.",
+          "Test the Lamp, Genie magnet, locks, and Bazaar eject."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Build Lamp Spins and Bonus X while preparing Genie Multiball, use Make A Wish for difficult jewels, then build the Jackpot at the Lamp during multiball, collect it at Genie, and relight it at the orbit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Spin the Lamp early. Every 15-spin threshold gives Lightning Lamp and lights Make A Wish."
+          },
+          {
+            "text": "Hit a captive ball fully to raise Bonus X. Use safe Tale shots and collect completed jewels at the ramp.",
+            "kinds": [
+              "multiplier",
+              "mode"
+            ]
+          },
+          {
+            "text": "Use Make A Wish for Ali Baba, Flying Horse, or another difficult jewel. Do not use it while a jewel is already lit at the ramp.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "If HAREM is ready from controlled orbit or sneak-in feeds, start Harem Multiball and use its ball save to make safer Tale, Lamp, or Genie progress.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit Genie five times to light two locks. Lock two balls at the orbits or center lock lane, then hit Genie to start three-ball Genie Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Genie Multiball: Spin the Lamp to build the Jackpot. Hit Genie to collect it. Shoot the lit orbit to relight Genie.",
+              "Rematch: If no Jackpot is collected before one ball remains, the Bazaar can light for a timed Genie Multiball restart."
+            ]
+          },
+          {
+            "text": "During Genie Multiball, use the ball save to spin the Lamp, collect Genie, and make the lit relight orbit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue Tale progress and use Lamp chaos to reach all seven jewels for Genie Battle.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Lamp Spins",
+            "summary": "Every 15 spins starts Lightning Lamp and lights Make A Wish, with completed 15-spin thresholds carrying between balls."
+          },
+          {
+            "name": "Make A Wish",
+            "summary": "Collect at the Bazaar for a jewel or contextual award, using it to skip difficult Tales when no jewel is already lit."
+          },
+          {
+            "name": "Genie Multiball",
+            "summary": "Hit Genie five times, lock two balls, then hit Genie to start, with Lamp spins building the Jackpot and Genie collecting it."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Lamp bonus engine",
+          "when": "Use this when Genie, Bazaar, or the lock shots reject dangerously.",
+          "steps": [
+            {
+              "text": "Build Lamp Spins in complete 15-spin groups."
+            },
+            {
+              "text": "Make full captive-ball hits to raise Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use controlled Tiger Loops when the Lamp is vertically aligned."
+            },
+            {
+              "text": "Protect the large end-of-ball bonus instead of forcing a Tale or lock shot."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A vertically aligned Lamp can reject the ball toward the center drain.",
+          "text": "Use Tiger Loops or the open Genie path until the Lamp turns to a safer angle."
+        }
+      }
+    }
+  ]
+}

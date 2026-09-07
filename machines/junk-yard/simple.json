@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 1,
+  "id": "GRLlj",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use a controlled plunge to collect chosen junk, spell MULTIBALL at the crane and target banks, start at the Crane shot, then repeat that shot for Jackpot and Super Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Junk",
+            "summary": "Skill shots, lit ramps, video-mode wins, and awards collect parts; collecting each required set completes its invention automatically, and the parts remain after Outer Space."
+          },
+          {
+            "name": "Fireworks",
+            "summary": "Adventure shots and awards add this stored resource; Outer Space converts the total into time and an opening bonus."
+          },
+          {
+            "name": "Toast",
+            "summary": "Sewer awards add ammunition; Save the Girl uses it, and five pieces buy one Firework at the Toaster Gun target."
+          },
+          {
+            "name": "Main Multiball",
+            "summary": "Spell MULTIBALL and shoot the lit Crane shot for three-ball play; collect Jackpot there, then repeat for 3,000,000 Super Jackpots."
+          },
+          {
+            "name": "Crane Multiball",
+            "summary": "Complete both lower banks and cross a lit return lane, then collect Crane Hurry-Up at the wrecking ball to start two-ball play."
+          },
+          {
+            "name": "D-O-G video mode",
+            "summary": "Spell D-O-G at its scoop, then shoot the scoop again to start Run From Spike or Save the Girl."
+          },
+          {
+            "name": "Adventure",
+            "summary": "A completed invention lights its timed objective at the Sewer; a completion adds Fireworks and advances Outer Space qualification."
+          },
+          {
+            "name": "Radar Adventure",
+            "summary": "Collect the television and weathervane, start at the Sewer, then shoot each of the five flashing major-shot arrows before time ends."
+          },
+          {
+            "name": "The Great Jalopy Race",
+            "summary": "Collect the bathtub, fan, and bicycle wheels, start at the Sewer, then shoot all five flashing arrows before time ends."
+          },
+          {
+            "name": "The Great Toilet Adventure",
+            "summary": "Add the fishbowl to the Jalopy, start at the Sewer, then collect five Fireworks at the Toilet or Sewer."
+          },
+          {
+            "name": "Air Tactical Combat",
+            "summary": "Add the propeller to the Jalopy, start at the Sewer, then hit the wrecking ball five times before time ends."
+          },
+          {
+            "name": "Outer Space",
+            "summary": "Collect all ten parts and play four Adventures, start at the Sewer, then clear five lit shots before Fireworks reach zero."
+          },
+          {
+            "name": "Time Machine",
+            "summary": "The skill shot, Magic Bus, or cuckoo clock lights it, and the Sewer starts one of four short homage modes."
+          },
+          {
+            "name": "Ball Recycle",
+            "summary": "Each lower three-bank lights its matching outlane; a drain there spends the save and returns the ball for another skill shot."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Skill shots and awards raise this persistent end-of-ball multiplier to 6X; further advances score 250,000."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before plunging, use the left flipper to select the needed junk item.",
+            "modeNotes": [
+              "Junk: Collect Junk awards the flashing part. Parts combine automatically into five inventions and remain after Outer Space."
+            ]
+          },
+          {
+            "text": "Use a weak plunge when it gives the few spinner turns needed for Collect Junk."
+          },
+          {
+            "text": "Delay the Hair Dryer until its invention becomes necessary.",
+            "modeNotes": [
+              "Hair Dryer: This part completes the Toaster Gun. It replaces the easier Run From Spike video mode with Save the Girl."
+            ]
+          },
+          {
+            "text": "Hit the wrecking ball into a car target to add one MULTIBALL letter.",
+            "modeNotes": [
+              "MULTIBALL letters: Each lower-bank completion also adds one letter. A center sneak-in while the crane is down adds three letters."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete either lower three-bank when its rebound remains controlled. Each completion adds one letter.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After spelling MULTIBALL, shoot the lit Crane shot to start three-ball Multiball.",
+            "modeNotes": [
+              "Main Multiball: The Crane shot releases two more balls. New Adventures, video modes, and ball-holding features cannot start during it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Crane shot for the first Jackpot.",
+            "modeNotes": [
+              "Jackpot: This Multiball collect starts at 1,000,000. The first collect lowers the wrecking ball and lights Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Crane shot while the wrecking ball is down for each 3,000,000 Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Multiball ends before Jackpot, use the short Crane-shot restart before it expires.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After a successful Multiball, resume chosen-junk collection and start each completed invention at the Sewer."
+          }
+        ],
+        "fallback": {
+          "title": "Junk and video-mode route",
+          "when": "Use this plan when the wrecking-ball return or Crane shot is unsafe.",
+          "steps": [
+            {
+              "text": "Select Collect Junk before each useful skill shot."
+            },
+            {
+              "text": "Shoot the lit Collect Junk ramp when its feed remains safe."
+            },
+            {
+              "text": "Shoot the D-O-G scoop three times to spell D-O-G."
+            },
+            {
+              "text": "Before the Toaster Gun is complete, shoot the scoop again for Run From Spike.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Tap both flipper buttons rapidly to win Run From Spike and collect one junk item.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start each completed invention at the Sewer and finish its five required objectives.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Crane Hurry-Up and two-ball play",
+            "when": "Use this when both lower banks are safe and one return lane is easy to reach.",
+            "steps": [
+              {
+                "text": "Complete both lower three-banks to light both return lanes."
+              },
+              {
+                "text": "Cross either lit return lane to start Crane Hurry-Up.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the wrecking ball before its value falls from 50,000 to 25,000.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "The collect starts two-ball Crane Multiball and fixes its shot value.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Hit upper or lower car targets for the collected value until one ball remains.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Time Machine route",
+            "when": "Use this when the Sewer is reliable and Time Machine is already lit.",
+            "steps": [
+              {
+                "text": "Shoot the lit Sewer to start one random Time Machine mode.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Move Your Car, repeat the Crane shot for rising values and more time.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Mamushka, keep the ball active for timed switch scoring.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Knight Mission, make the first Crane shot quickly to extend its short timer.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Saucer Attack, hold either flipper to aim the continuously firing cannon.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Adventure and Multiball stack",
+            "when": "Use this only when Multiball is ready before Radar Adventure or Great Toilet Adventure starts.",
+            "steps": [
+              {
+                "text": "Start Radar Adventure or Great Toilet Adventure at the Sewer.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start the already lit Main Multiball at the Crane shot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Continue the Adventure objectives during Multiball."
+              },
+              {
+                "text": "The Adventure still ends after five objectives or its normal timer."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Outer Space and Crazy Bob",
+          "steps": [
+            {
+              "text": "Collect all ten junk items."
+            },
+            {
+              "text": "Start Radar, Jalopy Race, Great Toilet, and Air Tactical Combat at the Sewer.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete each Adventure when possible to add Fireworks to the stored total.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After all four Adventures, shoot the lit Sewer to start four-ball Outer Space.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Outer Space awards 50,000 per Firework and adds 10,000,000 when at least 20 are stored.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot each of the five lit major shots before Fireworks reach zero.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Clearing all five defeats Crazy Bob. Zero Fireworks ends the attempt."
+            },
+            {
+              "text": "Afterward, Adventures and Fireworks reset. Collected junk remains."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Main Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Crane Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Outer Space",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Crane Hurry-Up",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Radar Adventure",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "The Great Jalopy Race",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "The Great Toilet Adventure",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Air Tactical Combat",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Run From Spike",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Save the Girl",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Time Machine",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Move Your Car",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Mamushka",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Knight Mission",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Saucer Attack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Junk",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Fireworks",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Toast",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Ball Recycle",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Crane shot",
+            "label": "Crane center lane",
+            "description": "The lane behind the wrecking ball starts Main Multiball and collects its Jackpot and Super Jackpots.",
+            "xPercent": 50,
+            "yPercent": 35,
+            "precision": "area"
+          },
+          {
+            "term": "wrecking ball",
+            "label": "Wrecking ball and car targets",
+            "description": "Hits on the suspended ball into the upper car targets add MULTIBALL letters and collect Crane Hurry-Up.",
+            "xPercent": 50,
+            "yPercent": 29,
+            "precision": "area"
+          },
+          {
+            "term": "lower three-bank",
+            "label": "Lower standup banks",
+            "description": "The two lower three-banks add MULTIBALL letters and light their matching outlane Recycles.",
+            "xPercent": 50,
+            "yPercent": 58,
+            "precision": "area"
+          },
+          {
+            "term": "D-O-G scoop",
+            "label": "D-O-G video-mode scoop",
+            "description": "The right-center scoop spells D-O-G and starts the qualified video mode.",
+            "xPercent": 72,
+            "yPercent": 43,
+            "precision": "area"
+          },
+          {
+            "term": "Sewer",
+            "label": "Sewer sinkhole",
+            "description": "The right-center sinkhole starts Adventures and Time Machine and collects several lit awards.",
+            "xPercent": 67,
+            "yPercent": 54,
+            "precision": "area"
+          },
+          {
+            "term": "Toaster Gun target",
+            "label": "Toaster Gun standup",
+            "description": "The standup beside D-O-G converts five Toast into one Firework.",
+            "xPercent": 63,
+            "yPercent": 46,
+            "precision": "area"
+          },
+          {
+            "term": "toilet ramp",
+            "label": "Great Toilet ramp",
+            "description": "The far-left ramp collects toilet spins, Window Shopping, and related Adventure objectives.",
+            "xPercent": 16,
+            "yPercent": 33,
+            "precision": "area"
+          },
+          {
+            "term": "bus ramp",
+            "label": "Magic Bus ramp",
+            "description": "The adjacent inner-left ramp collects Bus Rides, Junk, and Magic Bus awards.",
+            "xPercent": 29,
+            "yPercent": 31,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm stock 1.2, 1.2C competition code, or licensed REV2; each changes video modes, Time Machine, Bonus X, and Super Skill Shot.",
+          "Check tournament play, Extra Ball timing, Ball Recycle, Super Skill Shot, Time Machine, and adventure-stack adjustments.",
+          "Test the Crane lane, wrecking ball, Sewer, D-O-G scoop, both ramps, lower banks, outlanes, and under-playfield returns."
+        ],
+        "techniques": [
+          {
+            "name": "Selectable junk skill shot",
+            "instruction": "Move the flashing item with the left flipper, then use a weak plunge for the needed spinner count.",
+            "sourceUrl": "https://pinball.org/rules/junkyard.html"
+          },
+          {
+            "name": "Run From Spike input",
+            "instruction": "Tap both flipper buttons rapidly until the runner escapes. A win awards one junk item.",
+            "sourceUrl": "https://pinball.org/rules/junkyard.html"
+          },
+          {
+            "name": "Save the Girl aim",
+            "instruction": "Use the left and right flipper buttons to fire toast through their matching openings.",
+            "sourceUrl": "https://pinball.org/rules/junkyard.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Sewer is difficult and collects Adventures, Time Machine, Extra Ball, and Super Skill Shot.",
+            "response": "Use Super Skill Shot attempts to learn the entrance before an important Adventure start.",
+            "sourceUrl": "https://pinball.org/rules/junkyard.html"
+          },
+          {
+            "issue": "The outlane openings are large.",
+            "response": "Complete the matching lower three-bank to light its Ball Recycle before repeated target work.",
+            "sourceUrl": "https://pinball.org/rules/junkyard.html"
+          },
+          {
+            "issue": "Collecting the Hair Dryer replaces the easier Run From Spike with Save the Girl.",
+            "response": "Delay the Hair Dryer until you need the Toaster Gun or its related Adventures.",
+            "sourceUrl": "https://pinball.org/rules/junkyard.html"
+          }
+        ],
+        "simpleOverview": "The wrecking ball and two lower target banks spell M-U-L-T-I-B-A-L-L in Junk Yard, then the Crane shot starts and scores Multiball. Add letters with controlled wrecking-ball and bank hits, start at the lit Crane, then repeat the Crane for Jackpot and Super Jackpots.",
+        "overview": "The wrecking ball and two lower target banks spell M-U-L-T-I-B-A-L-L in Junk Yard, then the Crane shot starts and scores Multiball. Spell the Multiball letters with the wrecking ball and lower banks, then repeat the Crane for Jackpot and Super Jackpots. Resume selected junk collection afterward and start completed inventions at the Sewer when their objectives can be controlled.",
+        "machineSetup": [
+          "Confirm stock 1.2, 1.2C competition code, or licensed REV2; each changes video modes, Time Machine, Bonus X, and Super Skill Shot.",
+          "Check tournament play, Extra Ball timing, Ball Recycle, Super Skill Shot, Time Machine, and adventure-stack adjustments.",
+          "Test the Crane lane, wrecking ball, Sewer, D-O-G scoop, both ramps, lower banks, outlanes, and under-playfield returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Build Main Multiball at the wrecking ball and lower target banks, start it at the Crane shot, then return there for the Jackpot and Super Jackpots. Collected junk lights Adventures at the Sewer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "How to start Main Multiball",
+            "text": "Hit the wrecking ball into a car target to add one MULTIBALL letter. Completing either lower three-bank also adds one letter. After MULTIBALL is complete, shoot the lit Crane shot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "How to score Main Multiball",
+            "text": "Shoot the Crane shot for the Jackpot. The wrecking ball then drops; repeat the Crane shot while it is down for 3,000,000-point Super Jackpots. If Multiball ends before the first Jackpot, shoot the Crane shot during the short restart window.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "How to collect junk and start an Adventure",
+            "text": "Before plunging, use the left flipper to choose the flashing junk item. Land on Collect Junk with the skill-shot spinner to award it. Required junk items automatically form an invention; when its Adventure lights, shoot the Sewer to start it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "How Ball Recycle works",
+            "text": "Complete the left lower three-bank to light the left outlane, or the right bank to light the right outlane. A drain through a lit outlane returns the ball to the plunger for another skill shot."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Junk",
+            "summary": "Skill shots, lit ramps, video-mode wins, and awards collect parts; collecting each required set completes its invention automatically, and the parts remain after Outer Space."
+          },
+          {
+            "name": "Fireworks",
+            "summary": "Adventure shots and awards add this stored resource; Outer Space converts the total into time and an opening bonus."
+          },
+          {
+            "name": "Toast",
+            "summary": "Sewer awards add ammunition; Save the Girl uses it, and five pieces buy one Firework at the Toaster Gun target."
+          }
+        ]
+      }
+    }
+  ]
+}

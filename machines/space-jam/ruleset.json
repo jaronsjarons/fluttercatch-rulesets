@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "G482d",
+  "title": "Space Jam",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Space Jam rulesheet",
+      "url": "https://www.pinball.org/rules/spacejam.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Kevin Manne tutorial",
+        "url": "https://pinballvideos.com/v/1740/226"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Collect three locks at the Jump Shot, complete the multiball's ramp, orbit, and Jump Shot waves, then collect the captive-ball Super and timed Super Duper.",
+      "quickInfo": [
+        {
+          "name": "Locks",
+          "summary": "The Jump Shot lights and collects locks; three locks start the main multiball."
+        },
+        {
+          "name": "Jackpot waves",
+          "summary": "The first wave uses ramps, the second uses both orbits and the Jump Shot, and the third lights the captive-ball Super."
+        },
+        {
+          "name": "Super Duper",
+          "summary": "After the Super, the right ramp briefly lights the captive ball for the larger award."
+        },
+        {
+          "name": "Seven planets",
+          "summary": "SLAM, In Yer Face, FIRE, SPACE JAM, Rebound, Fast Break, and a multiball Super qualify Final Jam."
+        },
+        {
+          "name": "Modes and Multiball",
+          "summary": "Only one mode runs at a time. Starting the main Multiball pauses a running mode until Multiball ends."
+        },
+        {
+          "name": "Final Jam",
+          "summary": "The left ramp starts five-ball Final Jam; switches build the basket collect."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the Jump Shot eject, both ramps, both orbits, and captive-ball rebound before qualifying locks."
+        },
+        {
+          "text": "Shoot the Jump Shot to light and collect three locks; later multiballs require additional qualification shots."
+        },
+        {
+          "text": "At multiball start, collect the easier lit ramp from control, then take any remaining ramp required by the current wave.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Follow the displayed wave instead of repeating an unlit shot.",
+          "modeNotes": [
+            "Opening wave: lit ramp jackpot or jackpots.",
+            "Second wave: left orbit, right orbit, and Jump Shot.",
+            "Third wave: captive-ball Super Jackpot.",
+            "Fourth wave: right ramp to light the timed captive-ball Super Duper."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the Super, shoot the right ramp only when the following captive-ball hit is available inside its timer.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Between multiballs, finish the safest missing planet requirements while keeping the lock lane as the default route."
+        },
+        {
+          "text": "When all seven planets are lit, shoot the left ramp to start Final Jam and repeat controlled basket feeds.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Fast Break ramp scoring",
+        "when": "Use this when the Jump Shot rejects but both orbit feeds and the right ramp are controlled.",
+        "steps": [
+          {
+            "text": "Complete the required left- and right-orbit shots."
+          },
+          {
+            "text": "Start Fast Break."
+          },
+          {
+            "text": "Repeat the right ramp while its increasing value and return remain safe.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Planet progress",
+          "when": "Use this when several planet requirements are already close through incidental play.",
+          "steps": [
+            {
+              "text": "Complete the safest of SLAM, FIRE, Rebound, or SPACE JAM."
+            },
+            {
+              "text": "Use multiball to secure its Super planet."
+            },
+            {
+              "text": "Return to locks unless Final Jam is within one controlled requirement."
+            }
+          ]
+        },
+        {
+          "title": "Wabbit Hole award",
+          "when": "Use this when the two 23 targets are already nearly complete.",
+          "steps": [
+            {
+              "text": "Finish the 23 targets without forcing a dangerous rebound."
+            },
+            {
+              "text": "Collect the stacked Wabbit Hole award."
+            },
+            {
+              "text": "Use any awarded multiball or frenzy as protection, not as a replacement for the main route."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Final Jam",
+        "steps": [
+          {
+            "text": "Complete all seven planet objectives to light their inserts."
+          },
+          {
+            "text": "Include the captive-ball Super from the main multiball."
+          },
+          {
+            "text": "Shoot the left ramp to start Final Jam."
+          },
+          {
+            "text": "Build value through safe switches and collect it at the basket.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Space Jam Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Fast Break",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Final Jam",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Planet",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Wave reading",
+          "instruction": "Check which shots are lit after every collect; each multiball wave changes the required route.",
+          "sourceUrl": "https://www.pinball.org/rules/spacejam.html"
+        },
+        {
+          "name": "Super Duper setup",
+          "instruction": "Shoot the right ramp only when a controlled ball can reach the captive ball during the brief collect window.",
+          "sourceUrl": "https://www.pinball.org/rules/spacejam.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Jump Shot VUK can return the ball at very different speeds.",
+          "response": "Observe its first eject before attempting a one-timed follow-up shot.",
+          "sourceUrl": "https://www.pinball.org/rules/spacejam.html"
+        },
+        {
+          "issue": "Modes and the ball save end without a grace period.",
+          "response": "Start timed scoring only with an immediate feed and do not assume a late trough switch will be rescued.",
+          "sourceUrl": "https://www.pinball.org/rules/spacejam.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Sega Space Jam ROM, lock difficulty, ball save, mode timers, and award conversions.",
+        "Test the Jump Shot, captive ball, both ramps, both orbits, and basket feeds."
+      ],
+      "simpleOverview": "Three Jump Shot locks start Space Jam's Multiball, which moves through ramp, orbit, Jump Shot, and captive-ball waves. Follow the currently lit wave, collect Super at the captive ball, and attempt the timed right-ramp-to-captive-ball Super Duper only from a controlled feed.",
+      "overview": "Three Jump Shot locks start Space Jam's Multiball, which moves through ramp, orbit, Jump Shot, and captive-ball waves. Prioritize Jump Shot locks and clear each displayed Jackpot wave in order, finishing with the captive-ball Super and a controlled Super Duper attempt. Between starts, complete the safest missing planet, remembering that main Multiball pauses rather than stacks with a running mode.",
+      "machineSetup": [
+        "Confirm Sega Space Jam ROM, lock difficulty, ball save, mode timers, and award conversions.",
+        "Test the Jump Shot, captive ball, both ramps, both orbits, and basket feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

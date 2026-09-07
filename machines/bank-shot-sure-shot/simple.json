@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "GrqL6",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge the center lane for ball 1. Collect the pool balls that raise the two upper saucers, then repeat the safer saucer.",
+        "quickInfo": [
+          {
+            "name": "Ball 1 skill shot",
+            "summary": "The center top lane is the only feature that collects pool ball 1."
+          },
+          {
+            "name": "Pool-ball bonus",
+            "summary": "Each different collected pool ball adds 1,000 to the end-of-ball bonus."
+          },
+          {
+            "name": "Saucer values",
+            "summary": "Each upper saucer scores 1,000 per collected keyed number and 100 per unlit keyed number."
+          },
+          {
+            "name": "Keyed pool balls",
+            "summary": "Nine pool balls raise one of the two upper saucers, as shown by playfield arrows."
+          },
+          {
+            "name": "Fifteen-ball reset",
+            "summary": "Completing all fifteen balls lights Special but removes the built saucer values when the numbers reset."
+          },
+          {
+            "name": "Bank Shot versus Sure Shot",
+            "summary": "Bank Shot is the add-a-ball edition and spots six numbers after a reset; Sure Shot instead raises its bumpers after completing 1–5 and 6–9."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge the center lane to collect pool ball 1."
+          },
+          {
+            "text": "After ball 1 is lit, plunge any top lane that collects a missing pool ball."
+          },
+          {
+            "text": "Read the playfield arrows and prioritize missing balls that raise either upper saucer."
+          },
+          {
+            "text": "Shoot each upper saucer once early to learn its kickout."
+          },
+          {
+            "text": "Use lanes and necessary standup targets until most keyed balls are lit."
+          },
+          {
+            "text": "If Special has no point value, leave one pool ball unlit."
+          },
+          {
+            "text": "Shoot the upper saucer with the safer kickout and the stronger current value."
+          },
+          {
+            "text": "Repeat that saucer while its kickout remains controlled."
+          }
+        ],
+        "fallback": {
+          "title": "Early saucer collect",
+          "when": "Use this plan when another standup or lane feed is more dangerous than the current saucer value justifies.",
+          "steps": [
+            {
+              "text": "Stop direct attempts at the unsafe pool ball."
+            },
+            {
+              "text": "Compare the current values of the two upper saucers."
+            },
+            {
+              "text": "Choose the saucer with the safer tested kickout."
+            },
+            {
+              "text": "Collect its current value instead of forcing another pool-ball shot."
+            },
+            {
+              "text": "Repeat the saucer while the return remains controlled."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Enabled Special route",
+            "when": "Use this plan only when Special awards points or another tournament benefit.",
+            "steps": [
+              {
+                "text": "Collect the remaining pool balls until all fifteen are lit."
+              },
+              {
+                "text": "Confirm that the top center lane and both saucers light for Special."
+              },
+              {
+                "text": "Shoot the lit top-center 1-ball lane or either lit upper saucer, choosing the shot with the safest return."
+              },
+              {
+                "text": "Use the six spotted numbers as the start of the next saucer-value build."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "High-value saucer repeat",
+          "steps": [
+            {
+              "text": "Collect pool ball 1 from the center lane."
+            },
+            {
+              "text": "Collect the arrow-marked balls for both saucers."
+            },
+            {
+              "text": "Leave one ball unlit when Special has no value."
+            },
+            {
+              "text": "Choose the upper saucer with the safer kickout."
+            },
+            {
+              "text": "Repeat that saucer at its preserved value."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Ten-eleven lane nudge",
+            "instruction": "Track the ball from lane 10 or 11. Nudge it into an unlit 6 or 9 lane before it reaches the outside post.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrqL6-MQ5Rn"
+          },
+          {
+            "name": "Six-nine exit nudge",
+            "instruction": "Nudge a 6 or 9 lane exit toward return lane 2 or 3. Otherwise, guide it toward the center flipper area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrqL6-MQ5Rn"
+          },
+          {
+            "name": "Saucer kickout test",
+            "instruction": "Shoot each upper saucer early. Track its full kickout before you select one saucer for repeated collects.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrqL6-MQ5Rn"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A slow exit from lane 6 or 9 can hit the lower post, slingshot, and outlane in sequence.",
+            "response": "Nudge before the first post contact. Prepare for the outlane if the ball reaches the slingshot edge.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrqL6-MQ5Rn"
+          },
+          {
+            "issue": "The standup targets are risky even when a missing pool ball makes them necessary.",
+            "response": "Shoot only the needed target. Stop target play when the current saucer value becomes the better award.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrqL6-MQ5Rn"
+          },
+          {
+            "issue": "Completing all fifteen balls can reset valuable saucer progress for a worthless Special.",
+            "response": "Check the Special award before play. Leave one ball unlit when Special does not score points.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrqL6-MQ5Rn"
+          }
+        ],
+        "checkBeforePlay": [
+          "Identify Bank Shot model 391A or Sure Shot model 385 from the backglass and instruction card before using edition-specific awards.",
+          "On Bank Shot, confirm add-a-ball and WOW treatment plus the six spotted reset numbers; on Sure Shot, confirm the 1,000-point bumper groups.",
+          "Confirm ball count, replay and Special treatment, full-game tilt consequence, and whether Special has a point conversion."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center lane",
+            "label": "Center plunge lane",
+            "description": "Top lane used to collect pool ball 1.",
+            "precision": "unverified",
+            "context": "Top lane used to collect pool ball 1."
+          },
+          {
+            "term": "upper saucer",
+            "label": "Upper saucers",
+            "description": "Two saucers used for repeatable keyed-ball value collects.",
+            "precision": "unverified",
+            "context": "Two saucers used for repeatable keyed-ball value collects."
+          },
+          {
+            "term": "playfield arrows",
+            "label": "Pool-ball arrows",
+            "description": "Arrowed lanes and targets used to collect missing pool balls.",
+            "precision": "unverified",
+            "context": "Arrowed lanes and targets used to collect missing pool balls."
+          }
+        ],
+        "simpleOverview": "Bank Shot / Sure Shot assigns collected pool balls to two upper-saucer values. Plunge the center lane for ball 1, collect the numbered balls that raise the safer saucer, and repeat that saucer while leaving one number unlit when completing all fifteen would reset the built value.",
+        "overview": "Bank Shot / Sure Shot assigns collected pool balls to two upper-saucer values. Secure ball 1 on the plunge, use playfield arrows to prioritize numbers keyed to the safer saucer, and learn both kickouts early. Preserve one missing number when the Special has no value, then repeat the stronger saucer.",
+        "machineSetup": [
+          "Identify Bank Shot model 391A or Sure Shot model 385 from the backglass and instruction card before using edition-specific awards.",
+          "On Bank Shot, confirm add-a-ball and WOW treatment plus the six spotted reset numbers; on Sure Shot, confirm the 1,000-point bumper groups.",
+          "Confirm ball count, replay and Special treatment, full-game tilt consequence, and whether Special has a point conversion."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge the center lane for ball 1. Collect the pool balls that raise the two upper saucers, then repeat the safer saucer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the center lane to collect pool ball 1."
+          },
+          {
+            "text": "After ball 1 is lit, plunge any top lane that collects a missing pool ball."
+          },
+          {
+            "text": "Read the playfield arrows and prioritize missing balls that raise either upper saucer."
+          },
+          {
+            "text": "Shoot each upper saucer once early to learn its kickout."
+          },
+          {
+            "text": "Use lanes and necessary standup targets until most keyed balls are lit."
+          },
+          {
+            "text": "If Special has no point value, leave one pool ball unlit."
+          },
+          {
+            "text": "Shoot the upper saucer with the safer kickout and the stronger current value."
+          },
+          {
+            "text": "Repeat that saucer while its kickout remains controlled."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Ball 1 skill shot",
+            "summary": "The center top lane is the only feature that collects pool ball 1."
+          },
+          {
+            "name": "Pool-ball bonus",
+            "summary": "Each different collected pool ball adds 1,000 to the end-of-ball bonus."
+          },
+          {
+            "name": "Saucer values",
+            "summary": "Each upper saucer scores 1,000 per collected keyed number and 100 per unlit keyed number."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Early saucer collect",
+          "when": "Use this plan when another standup or lane feed is more dangerous than the current saucer value justifies.",
+          "steps": [
+            {
+              "text": "Stop direct attempts at the unsafe pool ball."
+            },
+            {
+              "text": "Compare the current values of the two upper saucers."
+            },
+            {
+              "text": "Choose the saucer with the safer tested kickout."
+            },
+            {
+              "text": "Collect its current value instead of forcing another pool-ball shot."
+            },
+            {
+              "text": "Repeat the saucer while the return remains controlled."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A slow exit from lane 6 or 9 can hit the lower post, slingshot, and outlane in sequence.",
+          "text": "Nudge before the first post contact. Prepare for the outlane if the ball reaches the slingshot edge."
+        }
+      }
+    }
+  ]
+}

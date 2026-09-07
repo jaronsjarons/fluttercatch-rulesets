@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "G4eyp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge the A lane, repeat the right spinner for M-A-G-I-C and bonus, and use the left spinner to feed the three-bank when its return is controlled.",
+        "steps": [
+          {
+            "text": "Plunge the orange A lane. Watch which spinner lights for the 1,000-point add-on.",
+            "modeNotes": [
+              "A-lane add-on: The A lane lights one spinner for 1,000 extra points per spin. Slingshot hits move the lit add-on between spinners.",
+              "The A plunge also sends the ball from the 1,000-point top bumper toward the drop bank."
+            ]
+          },
+          {
+            "text": "From the left flipper, shoot the right spinner to send the ball to the top lanes.",
+            "modeNotes": [
+              "Right spinner: A completed shot advances one M-A-G-I-C letter and adds one bonus unit before the ball returns from the top.",
+              "Completing M-A-G-I-C raises spinner scoring and can light Extra Ball when the operator enables it."
+            ]
+          },
+          {
+            "text": "When the right-spinner return is controlled, repeat it. Prefer the spinner that has the lit 1,000-point add-on.",
+            "modeNotes": [
+              "Spinner value: Both spinners start at a lower value. The A-lane add-on and M-A-G-I-C completions raise their scoring."
+            ]
+          },
+          {
+            "text": "Shoot the left spinner when its feed can reach the upper three-bank. Complete the bank to raise bonus X.",
+            "modeNotes": [
+              "Drop bank: Completing all three lightning-bolt targets raises the end-of-ball bonus multiplier by one step, up to 5x.",
+              "The left spinner feeds the upper drop-bank area. Use the feed; do not force a square standup-target hit."
+            ]
+          },
+          {
+            "text": "Keep raising bonus and spinner value. Collect the upper-left bonus saucer only when a large bonus is ready.",
+            "modeNotes": [
+              "Collect Bonus: The hidden upper-left saucer immediately scores the current bonus. It is mainly reached by a bumper bounce, not a direct shot.",
+              "Maximum end-of-ball bonus is 19,000 at 5x, or 95,000."
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Drop-bank bonus",
+          "when": "Use this route when one or both spinner shots fail to reach the top safely.",
+          "steps": [
+            {
+              "text": "Use natural top-bumper feeds to finish the three lightning-bolt drop targets."
+            },
+            {
+              "text": "Complete the bank again when it resets to raise Bonus X toward 5x."
+            },
+            {
+              "text": "Use safe return lanes and incidental M-A-G-I-C letters to build base bonus. Protect the multiplied bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Return-lane value",
+            "when": "Use this route when the lower star and return lanes can be reached without an outlane feed.",
+            "steps": [
+              {
+                "text": "Roll over the red center star. Then use controlled return-lane rolls for points and bonus.",
+                "modeNotes": [
+                  "Return-lane value: The center star raises each return lane from 2,000 to 4,000, then 6,000, then 8,000.",
+                  "Each return lane also advances bonus twice."
+                ]
+              },
+              {
+                "text": "Stop this route when a return-lane attempt crosses directly into the outlane."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "95,000 maximum bonus",
+          "steps": [
+            {
+              "text": "Build base bonus to 19,000 with top lanes, spinners, targets, and return lanes."
+            },
+            {
+              "text": "Complete the three-bank enough times to reach 5x Bonus X."
+            },
+            {
+              "text": "Drain without tilting, or collect the upper-left bonus saucer when it appears safely."
+            }
+          ]
+        },
+        "quickInfo": [
+          {
+            "name": "A lane",
+            "summary": "The skill shot lights one spinner for a 1,000-point add-on and feeds the top bumper toward the drops."
+          },
+          {
+            "name": "Right spinner",
+            "summary": "A full right-spinner shot advances M-A-G-I-C, adds bonus, and returns through the top lanes."
+          },
+          {
+            "name": "Left spinner",
+            "summary": "The left spinner deflects the ball toward the three lightning-bolt drop targets."
+          },
+          {
+            "name": "Three-bank",
+            "summary": "Each completion scores an escalating award and advances end-of-ball Bonus X toward 5x."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The upper-left saucer immediately scores the current bonus and is usually reached by bumper action."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A lane",
+            "label": "A skill-shot lane",
+            "description": "The orange top lane lights the spinner add-on and feeds the top bumper.",
+            "context": "Plunge the orange A lane.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right spinner",
+            "label": "Right spinner",
+            "description": "The right spinner feeds the top lanes and advances M-A-G-I-C and bonus.",
+            "context": "Shoot the right spinner to reach the top lanes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "The left spinner deflects the ball toward the upper three-bank.",
+            "context": "Shoot the left spinner to feed the drop bank.",
+            "precision": "unverified"
+          },
+          {
+            "term": "three lightning-bolt drop targets",
+            "label": "Lightning-bolt three-bank",
+            "description": "Completing the upper three-bank advances Bonus X and escalating bank awards.",
+            "context": "Complete the three lightning-bolt drop targets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-left bonus saucer",
+            "label": "Collect Bonus saucer",
+            "description": "The hidden upper-left saucer immediately scores the current bonus.",
+            "context": "Collect the upper-left bonus saucer when a large bonus is ready.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red center star",
+            "label": "Center star rollover",
+            "description": "The lower center star raises return-lane values.",
+            "context": "Roll over the red center star before using return lanes.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "A-lane skill shot",
+            "instruction": "Plunge the orange A lane. Use it to light the spinner add-on and send the top-bumper rebound toward the drop bank.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/magic"
+          },
+          {
+            "name": "Left-spinner bank feed",
+            "instruction": "Shoot through the left spinner. Let the upper deflection move the ball toward the three lightning-bolt targets.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/magic"
+          },
+          {
+            "name": "Shatz pass",
+            "instruction": "Shatz pass into a return lane only after a safe test on this copy; stop after any outlane crossover.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/magic"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A spinner attempt that does not reach the top can return toward a drain.",
+            "response": "Test both spinner power requirements. Use the drop-bank fallback when either spinner repeatedly rejects the ball.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/magic"
+          },
+          {
+            "issue": "The four side G-I-C-M standup targets are high-risk letter shots.",
+            "response": "Do not shoot them directly. Take M-A-G-I-C letters from spinner shots and incidental rebounds.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/magic"
+          },
+          {
+            "issue": "A return-lane Shatz can continue through the adjacent outlane.",
+            "response": "Use the shot only after a safe test. Stop immediately after one inlane-to-outlane feed.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/magic"
+          },
+          {
+            "issue": "The upper-left Collect Bonus saucer is not a reliable direct shot.",
+            "response": "Do not aim at the surrounding posts. Let pop-bumper action find the saucer after a large bonus is ready.",
+            "sourceUrl": "https://www.youtube.com/watch?v=9MfJo7SEwLk&t=223s"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the 1979 Stern Magic, not Capcom Pinball Magic, plus ball count, Extra Ball, Special, replay, and tournament conversion.",
+          "Confirm drop-bank awards, Bonus X progression, M-A-G-I-C reset, spinner add-on, return-lane values, bonus memory, and tilt.",
+          "Test both spinner feeds, three-bank resets, top bumper, Collect Bonus saucer, center star, return lanes, outlanes, and flipper strength."
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Great Lakes Open 2021, Erik Thoren repeatedly used the lit spinners, completed the three-bank for Bonus X, and collected the built bonus during a 419,000-point game.",
+            "At DFW Carpool PinMasters 2025, Robert Byers, Garrett Shahan, Hadi Seyed-Ali, and Brian Hayden repeatedly returned to the lit 1,000-point add-on spinners while using the drop bank for Bonus X."
+          ]
+        },
+        "simpleOverview": "In Magic, plunge the A lane to add 1,000 per spin to one spinner, then shoot the right spinner to advance M-A-G-I-C and return the ball to the top. Repeat the spinner carrying the lit add-on. When the left-spinner feed is controlled, use it to reach the upper three-bank and complete that bank until Bonus X reaches 5x.",
+        "overview": "In Magic, the A lane gives one spinner a 1,000-point add-on, right-spinner shots advance M-A-G-I-C, and each upper three-bank completion raises Bonus X. Plunge A, repeat the spinner carrying the add-on, and use the right spinner's top return to continue the loop. Feed the three-bank through the left spinner when safe, build 19,000 base bonus at 5x, and take the upper-left Bonus Collect only when it arrives naturally.",
+        "machineSetup": [
+          "Confirm the 1979 Stern Magic, not Capcom Pinball Magic, plus ball count, Extra Ball, Special, replay, and tournament conversion.",
+          "Confirm drop-bank awards, Bonus X progression, M-A-G-I-C reset, spinner add-on, return-lane values, bonus memory, and tilt.",
+          "Test both spinner feeds, three-bank resets, top bumper, Collect Bonus saucer, center star, return lanes, outlanes, and flipper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge the A lane, repeat the right spinner for M-A-G-I-C and bonus, then use the left spinner to feed the upper three-bank for Bonus X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start with the right spinner",
+            "text": "Plunge the orange A lane, then shoot the right spinner from the left flipper to return the ball to the top lanes."
+          },
+          {
+            "title": "Collect letters and raise bonus",
+            "text": "Repeat the right spinner while its return is controlled. Prefer whichever spinner has the lit 1,000-point add-on."
+          },
+          {
+            "title": "Raise Bonus X",
+            "text": "Shoot the left spinner when its feed can reach the upper three-bank, then complete that bank to raise Bonus X. Shoot the upper-left saucer only after a large bonus is ready."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "A lane",
+            "summary": "The skill shot lights one spinner for a 1,000-point add-on and feeds the top bumper toward the drops."
+          },
+          {
+            "name": "Right spinner",
+            "summary": "A full right-spinner shot advances M-A-G-I-C, adds bonus, and returns through the top lanes."
+          },
+          {
+            "name": "Left spinner",
+            "summary": "The left spinner deflects the ball toward the three lightning-bolt drop targets."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: drop-bank bonus",
+          "when": "Use this when one or both spinner shots fail to reach the top.",
+          "steps": [
+            {
+              "text": "Use natural top-bumper feeds to complete the three lightning-bolt drops."
+            },
+            {
+              "text": "Complete the bank again after it resets to raise Bonus X toward 5x, then protect the multiplied bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A spinner attempt that does not reach the top can return toward a drain.",
+          "text": "Test both spinner power requirements. Use the drop-bank fallback when either spinner repeatedly rejects the ball."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "G43BW",
+  "title": "Austin Powers",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Austin Powers rulesheet",
+      "url": "https://pinball.org/rules/austinpowers.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Austin Powers feature review",
+        "url": "https://www.pinballnews.com/games/austinpowers/index4.html"
+      },
+      {
+        "label": "Austin Powers gameplay",
+        "url": "https://pinballvideos.com/v/185"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Prepare Mini-Me Hurryup or Sub-Drill, then start Fat Bastard Multiball so four-ball play protects its repeated shots. Start all six main modes for Virtucon Multiball and complete all six for Moonbase Multiball.",
+      "quickInfo": [
+        {
+          "name": "Six main modes",
+          "summary": "Repeated major shots start Mini-Me, Fat Bastard, Frickin' Laser, Time Machine, Sub-Drill, and Henchmen; solid inserts mark completed modes."
+        },
+        {
+          "name": "Fat Bastard Multiball",
+          "summary": "The fourth toilet-ramp shot starts four-ball play; make each of the six major shots four times to complete it."
+        },
+        {
+          "name": "Time Machine Multiball",
+          "summary": "The fourth Time Machine shot starts two-ball play; make all six major shots once to relight the set."
+        },
+        {
+          "name": "Mojo Multiball",
+          "summary": "Spell MOJO, hit Dr. Evil ten times, then clear the six major shots and collect the Time Machine Super Jackpot."
+        },
+        {
+          "name": "Virtucon and Moonbase",
+          "summary": "Starting all six main modes lights Virtucon Multiball, while completing all six lights Moonbase Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the opening save to test the toilet ramp, Mini-Me spinner, Time Machine, outer ramps, loops, Dr. Evil target, and their returns."
+        },
+        {
+          "text": "Shoot the toilet ramp three times, leaving Fat Bastard Multiball one shot from starting.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start Mini-Me Hurryup at the spinner or Sub-Drill by completing both outer ramps four times within its timer.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the toilet ramp again to start Fat Bastard Multiball. Make each of the six major shots four times; the fourth hit on each scores its Super Jackpot.",
+          "modeNotes": [
+            "Fat Bastard Multiball: The fourth toilet-ramp shot starts four-ball play with a generous ball save. Each major shot needs four hits to finish the mode.",
+            "Mode stack: Mini-Me and Sub-Drill can remain active during this multiball, and their timers pause while multiball runs."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "After multiball, start the remaining main modes from the safest major shots. Finish a mode until its five inserts are solid before treating it as complete.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After all six modes have started, play Virtucon Multiball. Repeat completed-mode shots for double jackpots; complete the normal six-shot set to relight it.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete all six main modes to light Moonbase Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Time Machine Multiball",
+        "when": "Use this when the toilet-ramp return is unsafe but the Time Machine entry and release are controlled.",
+        "steps": [
+          {
+            "text": "Shoot the Time Machine four times to start two-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make each of the six lit major shots once for a Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete all six to relight the set while two balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After returning to one ball, switch to another unstarted main mode.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Mojo Multiball",
+          "when": "Use this when the MOJO standups and Dr. Evil target are safer than either ramp multiball route.",
+          "steps": [
+            {
+              "text": "Spell MOJO at the two left standups to start two-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit Dr. Evil ten times to lower him and light the six major shots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Clear the six shots, then shoot the Time Machine for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the Dr. Evil and six-shot cycle while two balls remain.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Virtucon and Moonbase Multiballs",
+        "steps": [
+          {
+            "text": "Start Mini-Me, Fat Bastard, Frickin' Laser, Time Machine, Sub-Drill, and Henchmen.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Virtucon Multiball after all six modes have begun.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Finish every main mode so all five inserts at each major shot are solid.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Moonbase Multiball after all six modes are complete.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Mini-Me Hurryup",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Sub-Drill",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Fat Bastard Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Time Machine Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Mojo Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Virtucon Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Moonbase Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "main mode",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Completion tracking",
+          "instruction": "Use the solid mode inserts to avoid spending controlled shots on an already completed mode.",
+          "sourceUrl": "https://pinball.org/rules/austinpowers.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Each main mode has specific completion rules that can be missed if only its start shot is repeated.",
+          "response": "Read the lit objectives and finish the current mode before qualifying another route.",
+          "sourceUrl": "https://pinball.org/rules/austinpowers.html"
+        },
+        {
+          "issue": "No new main mode can start during a multiball.",
+          "response": "Start Mini-Me or Sub-Drill before Fat Bastard; do not leave an unstarted mode one shot away and expect to add it during multiball.",
+          "sourceUrl": "https://pinball.org/rules/austinpowers.html"
+        },
+        {
+          "issue": "A completed Time Machine mode no longer provides its single-ball scoring save.",
+          "response": "Treat later Time Machine shots as normal dangerous ramp shots and do not expect an automatic relaunch.",
+          "sourceUrl": "https://pinball.org/rules/austinpowers.html"
+        },
+        {
+          "issue": "Mini-Me, Time Machine, and left-ramp switches can fail to register cleanly.",
+          "response": "Watch the inserts and display for confirmed progress instead of assuming that every physical shot counted.",
+          "sourceUrl": "https://pinball.org/rules/austinpowers.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the installed CPU 2.01 and display A2.00 revisions, tournament settings, ball count, Extra Ball conversion, and mode or multiball difficulty.",
+        "Check mode timers, ball-save durations, and whether all six mode-start and completion inserts register correctly.",
+        "Test the toilet ramp, Time Machine entry and release, Mini-Me spinner, outer ramps, laser cannon, Austin scoop, and Dr. Evil target."
+      ],
+      "simpleOverview": "Austin Powers cannot start a new main mode during Multiball. Leave Fat Bastard one toilet-ramp shot from starting, begin Mini-Me Hurryup or Sub-Drill first, then shoot the toilet ramp and use four-ball play to finish the running mode.",
+      "overview": "Starting all six main modes lights Virtucon Multiball in Austin Powers; completing all six lights Moonbase Multiball. Prepare Fat Bastard, start Mini-Me or Sub-Drill before it, then use four-ball play for the six major-shot sets. Finish the remaining modes from their safest starts, and use Time Machine or Mojo when either qualification is already close.",
+      "machineSetup": [
+        "Confirm the installed CPU 2.01 and display A2.00 revisions, tournament settings, ball count, Extra Ball conversion, and mode or multiball difficulty.",
+        "Check mode timers, ball-save durations, and whether all six mode-start and completion inserts register correctly.",
+        "Test the toilet ramp, Time Machine entry and release, Mini-Me spinner, outer ramps, laser cannon, Austin scoop, and Dr. Evil target."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

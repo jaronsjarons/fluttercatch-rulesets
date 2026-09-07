@@ -1,0 +1,32 @@
+name: Validate rulesets
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rulesets-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22.14.0
+      - run: npm run check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ruleset-preview
+          path: dist/
+          retention-days: 14

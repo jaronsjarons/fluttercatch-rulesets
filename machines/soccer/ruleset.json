@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoJk",
+  "title": "Soccer",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "PinRescue Williams Soccer restoration and instruction reference",
+      "url": "https://pinrescue.com/games/soccer2.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Williams Soccer identity reference",
+        "url": "https://www.kineticist.com/games/pinball/soccer"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Select the team whose top rollover is easiest to hit, then advance that color through upper play. Take the center shooter or matching eject pocket when it offers a controlled goal, and chase ten goals only when the replay conversion has tournament value.",
+      "quickInfo": [
+        {
+          "name": "Team selection",
+          "summary": "The first top rollover selects the red or blue team for the rest of the game."
+        },
+        {
+          "name": "Team advance",
+          "summary": "The top Advance bumper, two rollover buttons, color targets, and lit jet bumpers move the selected team toward goal."
+        },
+        {
+          "name": "Goal shots",
+          "summary": "The center shooter and the red or blue eject pockets can score goals directly."
+        },
+        {
+          "name": "Goal award",
+          "summary": "The restored Williams instruction card awards a replay for ten goals."
+        },
+        {
+          "name": "Bottom Special",
+          "summary": "Each bottom rollover can score Special when its lamp is lit."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before the plunge, compare the red and blue top-rollover paths and confirm how ten goals and Special are scored."
+        },
+        {
+          "text": "Plunge toward the more repeatable color rollover because the first top rollover locks your team for the game."
+        },
+        {
+          "text": "After selection, use upper-playfield shots that reach the top Advance bumper, rollover buttons, matching color targets, and lit jets."
+        },
+        {
+          "text": "Track the selected team's progress on the playfield and backglass."
+        },
+        {
+          "text": "When a controlled shot is available, use the center shooter or the eject pocket that scores for your selected color."
+        },
+        {
+          "text": "Test the return from each goal feature before you repeat it."
+        },
+        {
+          "text": "If ten goals have a useful conversion, continue advancing and scoring for the selected team."
+        },
+        {
+          "text": "If goals and Special have no tournament value, repeat the safest scoring and Advance feed instead of forcing a goal hole."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Selected-color upper play",
+        "when": "Recovery pivot: Use this plan when the center shooter or matching eject pocket has an unsafe entry or return.",
+        "steps": [
+          {
+            "text": "Stop shooting the unsafe goal feature."
+          },
+          {
+            "text": "Keep the ball in the upper playfield."
+          },
+          {
+            "text": "Use the top Advance bumper, rollover buttons, matching targets, and lit jets for selected-team progress."
+          },
+          {
+            "text": "Watch for a natural entry into a goal feature."
+          },
+          {
+            "text": "Return to direct goal shots only after you have a controlled angle."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Direct ten-goal plan",
+          "when": "When trailing, use this distinct scoreboard route: use this plan when ten goals award useful tournament points and one goal feature has a repeatable return.",
+          "steps": [
+            {
+              "text": "Select the color whose matching goal pocket has the safer tested feed."
+            },
+            {
+              "text": "Use upper play to move that team toward goal."
+            },
+            {
+              "text": "Shoot the repeatable center shooter or matching eject pocket when controlled."
+            },
+            {
+              "text": "Count the registered goals on the backglass."
+            },
+            {
+              "text": "Reach ten goals, collect the configured conversion, and repeat the safe goal route."
+            }
+          ]
+        },
+        {
+          "title": "Score-only position play",
+          "when": "Use this plan when replay and Special awards are disabled or have no point conversion.",
+          "steps": [
+            {
+              "text": "Ignore the ten-goal threshold as a primary objective."
+            },
+            {
+              "text": "Use broad upper-playfield feeds to reach lit jets and Advance features."
+            },
+            {
+              "text": "Take a goal hole only when it is the safest continuation of play."
+            },
+            {
+              "text": "Avoid a lit bottom Special rollover unless the ball enters it naturally."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Ten selected-team goals when the award is useful",
+        "steps": [
+          {
+            "text": "Select red or blue with the first top rollover."
+          },
+          {
+            "text": "Hit the top Advance bumper, rollover buttons, matching-color targets, and lit jets to advance the selected team."
+          },
+          {
+            "text": "Score goals through the center shooter and matching eject pocket."
+          },
+          {
+            "text": "Track the goal total on the backglass."
+          },
+          {
+            "text": "Reach ten goals for the configured replay or tournament conversion."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Team-select plunge",
+          "instruction": "Aim the opening plunge through the red or blue top rollover that gives the more repeatable path into upper play.",
+          "sourceUrl": "https://pinrescue.com/games/soccer2.html"
+        },
+        {
+          "name": "Goal-feature test",
+          "instruction": "Use the first natural center-shooter or matching-pocket entry to track the full kickout before you choose a feature to repeat.",
+          "sourceUrl": "https://pinrescue.com/games/soccer2.html"
+        },
+        {
+          "name": "Selected-color read",
+          "instruction": "Check the team-selection lamp and goal counters before each controlled shot so you do not work the wrong color.",
+          "sourceUrl": "https://pinrescue.com/games/soccer2.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The first top rollover fixes the selected team for the full game.",
+          "response": "Choose the preferred color before the plunge and use a controlled launch toward that rollover.",
+          "sourceUrl": "https://pinrescue.com/games/soccer2.html"
+        },
+        {
+          "issue": "Ten goals normally award a replay, which may have no value under tournament settings.",
+          "response": "Confirm the conversion before you chase ten goals, and use safer point scoring when the award is disabled.",
+          "sourceUrl": "https://pinrescue.com/games/soccer2.html"
+        },
+        {
+          "issue": "The current Bob page for this ID contains rules for Gottlieb Soccer from 1975, not Williams Soccer from 1964.",
+          "response": "Do not transfer its spinner, bonus, saucer, gate, or Super Soccer rules to this machine.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRoJk-MQk40"
+        }
+      ],
+      "simpleOverview": "Soccer fixes the player's team when the first red or blue top rollover is collected. Choose the more repeatable color on the plunge, use the top Advance bumper, rollover buttons, matching targets, and lit jets to move that team downfield, then score at the center shooter or matching eject pocket.",
+      "overview": "Soccer fixes the player's team when the first red or blue top rollover is collected. Select the safer red or blue top lane, advance that team through controlled upper play, then use the center shooter or matching eject pocket when its return is known. Continue toward ten goals only when the configured replay or conversion matters to the match.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

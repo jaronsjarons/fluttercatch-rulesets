@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "GrdqX",
+  "title": "Gaucho",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Gaucho",
+      "url": "https://rules.silverballmania.com/rules/GrdqX-MLW81"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Gaucho machine guide",
+        "url": "https://www.kineticist.com/games/pinball/gaucho"
+      },
+      {
+        "label": "Gottlieb Gaucho period advertisement",
+        "url": "https://electronicsandbooks.com/edt/manual/Magazine/C/Cash%20Box%20US/60s/1963/CB-1963-04-27.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Send the ball up top to build a roto-target multiplier. Shoot the roto-target only at 100X with a useful visible value.",
+      "quickInfo": [
+        {
+          "name": "Top advance lanes",
+          "summary": "The upper lanes advance the purple left multiplier or the yellow right multiplier."
+        },
+        {
+          "name": "Roto-target award",
+          "summary": "A roto-target hit scores the visible value at the active multiplier and then resets that multiplier."
+        },
+        {
+          "name": "Preferred collect",
+          "summary": "A 100X multiplier with a visible value of 3 or more creates the preferred roto-target collect."
+        },
+        {
+          "name": "Roto-Star",
+          "summary": "The star position awards an extra ball instead of points when the machine permits the award."
+        },
+        {
+          "name": "Scoring bumpers",
+          "summary": "The standups beside the roto-targets light the red left bumper and yellow right bumper."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge a top lane that advances either roto-target multiplier."
+        },
+        {
+          "text": "Send controlled flipper shots through the narrow routes to the upper playfield."
+        },
+        {
+          "text": "Nudge upper bumper action toward another multiplier-advance lane."
+        },
+        {
+          "text": "Read both multipliers and both visible roto-target values after every spin."
+        },
+        {
+          "text": "Continue upper play while neither multiplier is at 100X."
+        },
+        {
+          "text": "At 100X, wait for either window to show 3 or more."
+        },
+        {
+          "text": "Shoot the aligned roto-target only when its rebound is survivable."
+        },
+        {
+          "text": "After the multiplier resets, return immediately to upper-playfield building."
+        }
+      ],
+      "fallback": {
+        "title": "Upper-playfield scoring",
+        "when": "Use this plan when direct roto-target rebounds do not reach a flipper safely.",
+        "steps": [
+          {
+            "text": "Stop direct roto-target shots."
+          },
+          {
+            "text": "Send the ball through the safer upper route."
+          },
+          {
+            "text": "Use bumper action to collect advance lanes and lit-bumper points."
+          },
+          {
+            "text": "Read the roto values without forcing a collect."
+          },
+          {
+            "text": "Repeat upper play while its exits remain safer than the center rebound."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Roto-Star collect",
+          "when": "Use this plan when extra balls count and the star is visible before multiplier progress begins.",
+          "steps": [
+            {
+              "text": "Confirm that the event permits the extra-ball award."
+            },
+            {
+              "text": "Confirm that the active multiplier has no valuable progress."
+            },
+            {
+              "text": "Wait until the star appears in the aligned window."
+            },
+            {
+              "text": "Shoot the roto-target and then rebuild the reset multiplier."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "High-value roto collect",
+        "steps": [
+          {
+            "text": "Advance one multiplier through its upper lanes."
+          },
+          {
+            "text": "Use spin bumpers to change the visible values."
+          },
+          {
+            "text": "Reach 100X on either side."
+          },
+          {
+            "text": "Wait for a visible value of 3 or more."
+          },
+          {
+            "text": "Collect the aligned roto-target and restart the build."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Nudging",
+          "instruction": "Track each bumper rebound. Nudge before the ball crosses an advance lane or escapes the upper area.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrdqX-MLW81",
+          "techniqueSlug": "nudging"
+        },
+        {
+          "name": "Two-window read",
+          "instruction": "Read both multipliers and both target windows before each center shot. Use only the aligned high-value side.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrdqX-MLW81"
+        },
+        {
+          "name": "Roto rebound test",
+          "instruction": "Test one centered roto-target hit at low multiplier value. Continue only when its rebound reaches a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrdqX-MLW81"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The narrow routes beside the roto assembly make upper-playfield access difficult.",
+          "response": "Favor the cleaner route on the current machine. Do not force a blocked center entry.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrdqX-MLW81"
+        },
+        {
+          "issue": "Most imperfect roto-target hits rebound away from a controlled flipper return.",
+          "response": "Collect only after a safe rebound test. Use upper play when the test rebound is uncontrolled.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrdqX-MLW81"
+        },
+        {
+          "issue": "The original two-inch flippers leave a large center drain gap.",
+          "response": "Prepare both flippers for every upper exit. Avoid late flips that widen the open center path.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrdqX-MLW81"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Gottlieb Gaucho and tournament treatment of add-a-ball awards.",
+        "Test top lanes, roto-target rebound, bumpers, and side-lane exits."
+      ],
+      "simpleOverview": "In Gaucho, the left top lane raises the left roto-target multiplier and the right top lane raises the right one. Keep sending the ball to the upper playfield until one side reaches 100x, wait for that roto window to show 3 or more, then shoot the aligned target and begin the multiplier cycle again.",
+      "overview": "In Gaucho, the left top lane raises the left roto-target multiplier and the right top lane raises the right one. Use controlled upper feeds to advance either side to 100x, read both visible windows after each spin, and collect only a survivable target showing 3 or more. After the collect resets that side, return to the same upper-playfield loop.",
+      "machineSetup": [
+        "Confirm Gottlieb Gaucho and tournament treatment of add-a-ball awards.",
+        "Test top lanes, roto-target rebound, bumpers, and side-lane exits."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

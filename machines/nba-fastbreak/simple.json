@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "GrO0D",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the six Trophy tasks through baskets, combos, concession modes, and the two multiballs. Start Trophy Multiball, win the required games, and value Rings above ordinary points.",
+        "quickInfo": [
+          {
+            "name": "Trophy tasks",
+            "summary": "Goals, 20 Points, four Combos, Stadium Goodies, Shoot Around Multiball, and Around the World Multiball qualify Trophy."
+          },
+          {
+            "name": "Combos",
+            "summary": "Start at the lit orbit or ramp and finish at the required ramp before the short window closes."
+          },
+          {
+            "name": "Power Hoops",
+            "summary": "Bumper hits during eligible single-ball play start three timed shooting modes, followed by Multiball Hoops. Playing all four completes the Trophy task."
+          },
+          {
+            "name": "Mode priority",
+            "summary": "Starting Stadium Goodies or Shoot Around Multiball postpones a running Power Hoops mode. The Power Hoops timer resumes after the new feature ends."
+          },
+          {
+            "name": "Trophy Multiball",
+            "summary": "Complete the required game wins to earn a Ring; a Ring outranks any no-Ring point total."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Start the opening Tip-Off combo and finish it at the center ramp."
+          },
+          {
+            "text": "Take clean two- and three-point basket feeds while completing the remaining ramp and orbit combos."
+          },
+          {
+            "text": "Start each Stadium Goodies mode at the left saucer; finish Pizza, Hot Dog, and Trivia when their feeds are controlled.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Shoot Around and Around the World when qualified, using the extra balls to finish their required shots.",
+            "modeNotes": [
+              "Trophy qualification: Both multiballs need to be started, but repeated low-value play can wait until the six-task set is close."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Feed the bumpers during eligible single-ball play until every Power Hoops mode has started. Finish the points task, then collect Trophy Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Trophy, prioritize the lit basket route that advances the game win; secure the Ring before chasing ordinary points.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Basket and combo points",
+          "when": "Recovery pivot: Use this when a Trophy task requires dangerous standups or a bad saucer feed.",
+          "steps": [
+            {
+              "text": "Repeat the safest basket ramp."
+            },
+            {
+              "text": "Start a lit combo from the orbit or ramp."
+            },
+            {
+              "text": "Finish it at the center ramp."
+            },
+            {
+              "text": "Return to Trophy tasks after reaching the required match score."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Nearest-task conversion",
+            "when": "When trailing, use this distinct scoreboard route: use this when one multiball or Stadium Goodies mode is already one shot away.",
+            "steps": [
+              {
+                "text": "Identify the nearest unfinished Trophy task."
+              },
+              {
+                "text": "Complete that task before adding fresh combo risk."
+              },
+              {
+                "text": "Use its ball save or controlled return for the next task."
+              },
+              {
+                "text": "Collect Trophy as soon as all six are complete.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Championship Ring",
+          "steps": [
+            {
+              "text": "Complete all six Trophy tasks."
+            },
+            {
+              "text": "Start Trophy Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Win the required multiball games."
+            },
+            {
+              "text": "Collect the Ring before ordinary point farming."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Trophy Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Shoot Around Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Around the World Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Ring",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center ramp",
+            "context": "center ramp",
+            "label": "Basket and combo finish",
+            "description": "Center ramp feeds the basket and completes several combos.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "context": "left saucer",
+            "label": "Stadium Goodies",
+            "description": "Left saucer starts the concession modes and collects lit extras.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top saucers",
+            "context": "top saucers",
+            "label": "Power Hoops",
+            "description": "Four top saucers feed the basket and start Power Hoops modes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "basket",
+            "context": "basket",
+            "label": "Goal shot",
+            "description": "Basket collects goals and Trophy objectives.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Combo finish",
+            "instruction": "Trap before starting a combo whenever its center-ramp finish cannot be made on the fly.",
+            "sourceUrl": "https://www.pinball.org/rules/nbafastbreak.html"
+          },
+          {
+            "name": "Task triage",
+            "instruction": "Finish the closest Trophy task instead of repeating a completed low-value task.",
+            "sourceUrl": "https://www.pinball.org/rules/nbafastbreak.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Basket compensation, top-saucer behavior, and rules for two connected cabinets depend on switches and setup.",
+            "response": "Confirm credited baskets on the display and do not assume every missed physical basket was compensated.",
+            "sourceUrl": "https://www.pinball.org/rules/nbafastbreak.html"
+          }
+        ],
+        "simpleOverview": "NBA Fastbreak uses six Trophy tasks to qualify Trophy Multiball and a Championship Ring. Complete baskets, combos, Stadium Goodies, both named Multiballs, and every Power Hoops mode, then start Trophy and prioritize the basket route that wins the required games rather than ordinary points.",
+        "overview": "NBA Fastbreak values Championship Rings above every no-Ring point total. Complete the six Trophy tasks through goals, points, combos, Stadium Goodies, Shoot Around Multiball, and Around the World Multiball, then collect Trophy immediately. During Trophy Multiball, favor shots that win the current game and secure the Ring before returning to point scoring.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete the six Trophy tasks through baskets, combos, concession modes, and the two multiballs. Start Trophy Multiball, win the required games, and value Rings above ordinary points.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Start the opening Tip-Off combo and finish it at the center ramp."
+          },
+          {
+            "text": "Take clean two- and three-point basket feeds while completing the remaining ramp and orbit combos."
+          },
+          {
+            "text": "Start each Stadium Goodies mode at the left saucer; finish Pizza, Hot Dog, and Trivia when their feeds are controlled.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Shoot Around and Around the World when qualified, using the extra balls to finish their required shots.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Trophy qualification: Both multiballs need to be started, but repeated low-value play can wait until the six-task set is close."
+            ]
+          },
+          {
+            "text": "Feed the bumpers during eligible single-ball play until every Power Hoops mode has started. Finish the points task, then collect Trophy Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Trophy, prioritize the lit basket route that advances the game win; secure the Ring before chasing ordinary points.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Trophy tasks",
+            "summary": "Goals, 20 Points, four Combos, Stadium Goodies, Shoot Around Multiball, and Around the World Multiball qualify Trophy."
+          },
+          {
+            "name": "Combos",
+            "summary": "Start at the lit orbit or ramp and finish at the required ramp before the short window closes."
+          },
+          {
+            "name": "Power Hoops",
+            "summary": "Bumper hits during eligible single-ball play start three timed shooting modes, followed by Multiball Hoops. Playing all four completes the Trophy task."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Basket and combo points",
+          "when": "Recovery pivot: Use this when a Trophy task requires dangerous standups or a bad saucer feed.",
+          "steps": [
+            {
+              "text": "Repeat the safest basket ramp."
+            },
+            {
+              "text": "Start a lit combo from the orbit or ramp."
+            },
+            {
+              "text": "Finish it at the center ramp."
+            },
+            {
+              "text": "Return to Trophy tasks after reaching the required match score."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

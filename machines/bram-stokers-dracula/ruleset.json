@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "id": "G41do",
+  "title": "Bram Stoker's Dracula",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Bram Stoker's Dracula tournament guide",
+      "url": "https://www.kineticist.com/news/how-to-play-dracula-pinball"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA Dracula tutorial with Bowen Kerins",
+        "url": "https://www.youtube.com/watch?v=cR5mvi_edM4&t=94s"
+      },
+      {
+        "label": "Keith Elwin and Adam Lefkoff Dracula strategy",
+        "url": "https://www.youtube.com/watch?v=X0WSUMGx5Hg&t=50s"
+      },
+      {
+        "label": "Bram Stoker's Dracula detailed rulesheet",
+        "url": "https://www.pinball.org/rules/dracula.html"
+      },
+      {
+        "label": "L-2C competition ROM release notes",
+        "url": "https://www.vpforums.org/index.php?showtopic=34329"
+      },
+      {
+        "label": "2019 IFPA World Championship final",
+        "url": "https://www.youtube.com/watch?v=VMmCJ21ZhaM"
+      },
+      {
+        "label": "Daniele Celestino Acciari at IFPA 16 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/2254/11379"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot the Castle ramp five times to light Mist, stage two Castle locks, and stage two Coffin locks; start the safest multiball, finish the other two under protection, then relock twice at Castle and collect the multiplied Jackpot at the Tunnel.",
+      "steps": [
+        {
+          "text": "Trap the first controllable feed. Test both ramps.",
+          "modeNotes": [
+            "The Castle ramp is the long left ramp; each completed shot counts as a Loop. The Coffin ramp is the shorter upper-right ramp. Learn how both return before committing to the stack."
+          ]
+        },
+        {
+          "text": "Shoot three Castle ramps to start Bats.",
+          "modeNotes": [
+            "Bats is a timed switch mode. Complete its switch requirement quickly for a larger award. Once completed, its value returns in every remaining end-of-ball bonus.",
+            "Bats uses the multiball multiplier active when it starts, making later Bats modes especially valuable during 2X or 3X."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Make five Castle ramps to light Mist Multiball. Keep it ready.",
+          "modeNotes": [
+            "Mist Multiball starts at the Tunnel. Knock the magnet-carried ball free to begin its two-ball multiball.",
+            "Major shots score 10M Mist Jackpots, increased to 20M with two active multiballs and 30M with all three."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Stage two Castle locks.",
+          "modeNotes": [
+            "Complete a target bank, take a Castle-ramp bonus, or collect Mystery to light a Castle Lock. Shoot the Castle ramp before the lock times out.",
+            "The third lock starts Castle Multiball, so stop after two while preparing the stack."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Coffin until it opens, then shoot into it twice to stage both Coffin locks.",
+          "modeNotes": [
+            "Repeat the Coffin ramp until it rises, then shoot the exposed Coffin for a lock.",
+            "The third lock starts Coffin Multiball. Coffin shots then spell D-R-A-C-U-L-A; completing the word scores a rising Coffin Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start the safest ready multiball and finish the other two under its protection.",
+          "modeNotes": [
+            "Start the safest ready multiball, then use its protection to complete the other two."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Keep at least two balls alive after completing the stack.",
+          "modeNotes": [
+            "Two active multiballs multiply every jackpot by 2. All three multiply them by 3.",
+            "Mist Multiball now adds 30M to major shots. Unless D-R-A-C-U-L-A is nearly complete, prioritize Castle Multiball over Coffin Multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Relock two balls on the Castle ramp.",
+          "modeNotes": [
+            "The first relock lights a Castle Jackpot at the Tunnel. With at least three balls in play, the second relock doubles it and parks both balls safely away from the flippers."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Tunnel and repeat the relock cycle.",
+          "modeNotes": [
+            "Castle's base jackpot advances from approximately 20M through 80M. The second relock doubles it, and the triple stack multiplies it by 3, producing a maximum near 480M."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete Bats or Rats during 3X when available.",
+          "modeNotes": [
+            "Rats is another timed switch mode, started through repeated Altar shots.",
+            "Like Bats, its completed value carries into later bonuses and benefits from the multiplier active when it begins."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Mist Multiball",
+        "when": "Use this when the complete stack is too far away, the ramps reject dangerously, or a smaller score can win.",
+        "steps": [
+          {
+            "text": "Shoot the Castle ramp five times to light Mist Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Mist Multiball at the Tunnel.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the safest major shots for 10M each.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue Castle loops only while their return remains controlled."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Protected comeback stack",
+          "when": "Use this when Mist Multiball and Coffin Multiball are ready but Castle Multiball needs more work.",
+          "steps": [
+            {
+              "text": "Start Mist Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Add Coffin Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the final Castle locks under multiball protection.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start Castle Multiball for 3X.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Relock two balls and collect at the Tunnel.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Triple-multiball Castle jackpots",
+        "steps": [
+          {
+            "text": "Start Bats and light Mist Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Stage two Castle locks and two Coffin locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start all three multiballs for 3X scoring.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Relock two balls on the Castle ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the multiplied Castle Jackpot at the Tunnel.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Castle Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Coffin Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Mist Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bats",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Rats",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Dead bounce",
+          "instruction": "Dead bounce a clean lightning-flipper feed, then trap before the next ramp shot.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-dracula-pinball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Production games use short lightning flippers, and pop-bumper exits can move across the playfield.",
+          "response": "Use dead bounces and traps. Stop the side-to-side motion before you shoot.",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-dracula-pinball"
+        },
+        {
+          "issue": "A rejected left ramp can return toward the center.",
+          "response": "Shoot it from a stable trap. Use the short fallback when full shots still reject.",
+          "sourceUrl": "https://www.youtube.com/watch?v=cR5mvi_edM4&t=2283s"
+        },
+        {
+          "issue": "A tilt warning during the drain can erase the full Bats bonus.",
+          "response": "Do not make a final desperation shove when the stored Bats value is large.",
+          "sourceUrl": "https://www.pinball.org/rules/dracula.html"
+        },
+        {
+          "issue": "The Mist magnet or another mechanism can hold a ball incorrectly.",
+          "response": "Do not shake the machine while the live ball drains. Stop and call the tournament director.",
+          "sourceUrl": "https://www.ifpapinball.com/rules/"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm production L-1 or prototype P-0 code, ball count, tilt, Extra Ball conversion, Castle-lock timer, ball-three Mist, Mystery, and tournament settings.",
+        "Confirm Bats and Rats timers and carry, Castle and Coffin lock progress, Mist qualification, ball-save time, and whether physical or virtual locks are used.",
+        "Test the lightning flippers, both ramp returns and rejects, Coffin lift, Castle and Tunnel locks, Mist magnet, pop exits, target banks, and ball-search behavior."
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Prepare Dracula's three stackable multiballs: Mist Multiball makes every major shot a jackpot, Coffin Multiball scores by spelling D-R-A-C-U-L-A, and Castle Multiball creates escalating jackpots through relocks."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Start Bats and light Mist Multiball."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Mist Multiball: Use this when the complete stack is too far away, the ramps reject dangerously, or a smaller score can win."
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "Bowen Kerins lit Mist with Castle ramps, staged Castle and Coffin locks, and used one running Multiball to finish the other two qualifications before pursuing the multiplied Castle Jackpot."
+        ]
+      },
+      "simpleOverview": "Bram Stoker's Dracula allows Mist, Castle, and Coffin Multiballs to run together. Shoot the Castle ramp five times for Mist, stage two Castle locks and two Coffin locks, then start the safest Multiball and finish the other two under protection. Relock twice at Castle and collect the multiplied Jackpot at the Tunnel.",
+      "overview": "Starting Mist, Castle, and Coffin Multiballs together raises playfield scoring to 3x in Bram Stoker's Dracula. Prepare Mist, two Castle locks, and two Coffin locks before starting the safest ready feature, then complete the others while multiple balls are active. Relock twice at Castle and shoot the Tunnel for the multiplied Jackpot.",
+      "machineSetup": [
+        "Confirm production L-1 or prototype P-0 code, ball count, tilt, Extra Ball conversion, Castle-lock timer, ball-three Mist, Mystery, and tournament settings.",
+        "Confirm Bats and Rats timers and carry, Castle and Coffin lock progress, Mist qualification, ball-save time, and whether physical or virtual locks are used.",
+        "Test the lightning flippers, both ramp returns and rejects, Coffin lift, Castle and Tunnel locks, Mist magnet, pop exits, target banks, and ball-search behavior."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "l-1",
+      "items": [
+        {
+          "id": "l-1",
+          "label": "Stock L-1"
+        },
+        {
+          "id": "l-2c",
+          "label": "L-2C ROM",
+          "strategy": {
+            "summary": "Prepare Dracula's three stackable multiballs: Mist Multiball makes every major shot a jackpot, Coffin Multiball scores by spelling D-R-A-C-U-L-A, and Castle Multiball creates escalating jackpots through relocks. Start whichever is safely ready, use it to finish the other two, then convert the triple stack through Castle Multiball.",
+            "steps": [
+              {
+                "text": "Trap the first controllable feed. Test both ramps.",
+                "modeNotes": [
+                  "The Castle ramp is the long left ramp; each completed shot counts as a Loop. The Coffin ramp is the shorter upper-right ramp. Learn how both return before committing to the stack."
+                ]
+              },
+              {
+                "text": "Shoot three Castle ramps to start Bats.",
+                "modeNotes": [
+                  "Bats is a timed switch mode. Complete its switch requirement quickly for a larger award. Once completed, its value returns in every remaining end-of-ball bonus.",
+                  "Bats uses the multiball multiplier active when it starts, making later Bats modes especially valuable during 2X or 3X."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Make five Castle ramps to light Mist Multiball. Keep it ready.",
+                "modeNotes": [
+                  "Mist Multiball starts at the Tunnel. Knock the magnet-carried ball free to begin its two-ball multiball.",
+                  "Major shots score 10M Mist Jackpots, increased to 20M with two active multiballs and 30M with all three."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Stage two Castle locks.",
+                "modeNotes": [
+                  "Complete a target bank, take a Castle-ramp bonus, or collect Mystery to light a Castle Lock. Shoot the Castle ramp before the lock times out.",
+                  "The third lock starts Castle Multiball, so stop after two while preparing the stack."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the Coffin until it opens, then shoot into it twice to stage both Coffin locks.",
+                "modeNotes": [
+                  "Repeat the Coffin ramp until it rises, then shoot the exposed Coffin for a lock.",
+                  "The third lock starts Coffin Multiball. Coffin shots then spell D-R-A-C-U-L-A; completing the word scores a rising Coffin Jackpot."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start the safest ready multiball and finish the other two under its protection.",
+                "modeNotes": [
+                  "Start the safest ready multiball, then use its protection to complete the other two."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Keep at least two balls alive after completing the stack.",
+                "modeNotes": [
+                  "Two active multiballs multiply every jackpot by 2. All three multiply them by 3.",
+                  "Mist Multiball now adds 30M to major shots. Unless D-R-A-C-U-L-A is nearly complete, prioritize Castle Multiball over Coffin Multiball."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Relock two balls on the Castle ramp.",
+                "modeNotes": [
+                  "The first relock lights a Castle Jackpot at the Tunnel. With at least three balls in play, the second relock doubles it and parks both balls safely away from the flippers."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the Tunnel and repeat the relock cycle.",
+                "modeNotes": [
+                  "Castle's base jackpot advances from approximately 20M through 80M. The second relock doubles it, and the triple stack multiplies it by 3, producing a maximum near 480M."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Complete Bats or Rats during 3X when available.",
+                "modeNotes": [
+                  "Rats is another timed switch mode, started through repeated Altar shots.",
+                  "Like Bats, its completed value carries into later bonuses and benefits from the multiplier active when it begins."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ],
+            "fallback": {
+              "title": "Mist Multiball",
+              "when": "Use this when the complete stack is too far away, the ramps reject dangerously, or a smaller score can win.",
+              "steps": [
+                {
+                  "text": "Shoot the Castle ramp five times to light Mist Multiball.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Start Mist Multiball at the Tunnel.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Shoot the safest major shots for 10M each.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Continue Castle loops only while their return remains controlled."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Protected comeback stack",
+                "when": "Use this when Mist Multiball and Coffin Multiball are ready but Castle Multiball needs more work.",
+                "steps": [
+                  {
+                    "text": "Start Mist Multiball.",
+                    "kinds": [
+                      "multiball"
+                    ]
+                  },
+                  {
+                    "text": "Add Coffin Multiball.",
+                    "kinds": [
+                      "multiball"
+                    ]
+                  },
+                  {
+                    "text": "Complete the final Castle locks under multiball protection.",
+                    "kinds": [
+                      "multiball"
+                    ]
+                  },
+                  {
+                    "text": "Start Castle Multiball for 3X.",
+                    "kinds": [
+                      "multiball"
+                    ]
+                  },
+                  {
+                    "text": "Relock two balls and collect at the Tunnel.",
+                    "kinds": [
+                      "multiball"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Triple-multiball Castle jackpots",
+              "steps": [
+                {
+                  "text": "Start Bats and light Mist Multiball.",
+                  "kinds": [
+                    "mode",
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Stage two Castle locks and two Coffin locks.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Start all three multiballs for 3X scoring.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Relock two balls on the Castle ramp.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Collect the multiplied Castle Jackpot at the Tunnel.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Castle Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Coffin Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Mist Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Bats",
+                "tone": "navy",
+                "kind": "mode",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Rats",
+                "tone": "navy",
+                "kind": "mode",
+                "kindIsExplicit": true
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Dead bounce",
+                "instruction": "Dead bounce a clean lightning-flipper feed, then trap before the next ramp shot.",
+                "techniqueSlug": "dead-bounce",
+                "sourceUrl": "https://www.kineticist.com/news/how-to-play-dracula-pinball"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Production games use short lightning flippers, and pop-bumper exits can move across the playfield.",
+                "response": "Use dead bounces and traps. Stop the side-to-side motion before you shoot.",
+                "sourceUrl": "https://www.kineticist.com/news/how-to-play-dracula-pinball"
+              },
+              {
+                "issue": "A rejected left ramp can return toward the center.",
+                "response": "Shoot it from a stable trap. Use the short fallback when full shots still reject.",
+                "sourceUrl": "https://www.youtube.com/watch?v=cR5mvi_edM4&t=2283s"
+              },
+              {
+                "issue": "A tilt warning during the drain can erase the full Bats bonus.",
+                "response": "Do not make a final desperation shove when the stored Bats value is large.",
+                "sourceUrl": "https://www.pinball.org/rules/dracula.html"
+              },
+              {
+                "issue": "The Mist magnet or another mechanism can hold a ball incorrectly.",
+                "response": "Do not shake the machine while the live ball drains. Stop and call the tournament director.",
+                "sourceUrl": "https://www.ifpapinball.com/rules/"
+              }
+            ],
+            "checkBeforePlay": [
+              "Check Tournament Play, minimum-volume override, the Off-to-15-second ball saver, and fixed 500,000 Mystery behavior.",
+              "Check Bats and Rats timers and carry, Castle and Coffin lock progress, Mist qualification, Extra Ball conversion, and physical or virtual locks.",
+              "Test the lightning flippers, both ramp returns and rejects, Coffin lift, Castle and Tunnel locks, Mist magnet, pop exits, target banks, and ball search."
+            ],
+            "quickInfo": [
+              {
+                "name": "Triple stack",
+                "summary": "Stage two Castle locks and two Coffin locks, light Mist Multiball, then use the safest ready multiball to complete the three-way stack."
+              },
+              {
+                "name": "Castle Multiball",
+                "summary": "Relock two balls at the Castle ramp, then collect the escalating Castle Jackpot at the Tunnel."
+              },
+              {
+                "name": "Mist Multiball",
+                "summary": "Five Castle ramps light Mist at the Tunnel; major shots score larger Mist Jackpots as more multiballs run together."
+              },
+              {
+                "name": "Bats and Rats",
+                "summary": "Complete these timed switch modes during a two- or three-multiball stack when their multiplied values justify the risk."
+              },
+              {
+                "name": "L-2C changes",
+                "summary": "Core gameplay matches L-1, while pop-bumper action pauses the ball saver and Mystery always awards 500,000."
+              }
+            ],
+            "simpleOverview": "Bram Stoker's Dracula allows Mist, Castle, and Coffin Multiballs to run together. Shoot the Castle ramp five times for Mist, stage two Castle locks and two Coffin locks, then start the safest Multiball and finish the other two under protection. Relock twice at Castle and collect the multiplied Jackpot at the Tunnel.",
+            "overview": "Starting Mist, Castle, and Coffin Multiballs together raises playfield scoring to 3x in Bram Stoker's Dracula. Prepare Mist, two Castle locks, and two Coffin locks before starting the safest ready feature, then complete the others while multiple balls are active. Relock twice at Castle and shoot the Tunnel for the multiplied Jackpot.",
+            "machineSetup": [
+              "Check Tournament Play, minimum-volume override, the Off-to-15-second ball saver, and fixed 500,000 Mystery behavior.",
+              "Check Bats and Rats timers and carry, Castle and Coffin lock progress, Mist qualification, Extra Ball conversion, and physical or virtual locks.",
+              "Test the lightning flippers, both ramp returns and rejects, Coffin lift, Castle and Tunnel locks, Mist magnet, pop exits, target banks, and ball search."
+            ],
+            "rulesNotes": []
+          },
+          "differences": {
+            "changes": [
+              "Pop-bumper activity pauses the ball saver instead of consuming its timer.",
+              "Mystery always awards 500,000."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

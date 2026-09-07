@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "id": "G5V8q",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot a feature five times to start its Challenge, win its trophies, and add new Challenges during Multiball. Score bumper revs or make the Super Skill Shot to raise the playfield multiplier, then activate it during stacked Challenges or Final Challenge.",
+        "quickInfo": [
+          {
+            "name": "Challenge modes",
+            "summary": "Five shots to a feature start its Challenge, where repeating that feature earns bronze, silver, and gold trophies."
+          },
+          {
+            "name": "Full Throttle Multiball",
+            "summary": "Hit a green standup to light a lock, shoot an orbit, then collect major-shot Jackpots after the start."
+          },
+          {
+            "name": "Playfield multiplier",
+            "summary": "Build up to 6x with bumper revs or the super skill shot, then press Start to use it for about ten seconds."
+          },
+          {
+            "name": "Races",
+            "summary": "Spell RACE and shoot the scoop, then complete each flashing major shot that moves your position upward. Shoot the spinner after reaching first place to win."
+          },
+          {
+            "name": "Final Challenge",
+            "summary": "Play all five Challenges, return to one ball, then lock a ball, with trophy quality setting each feature-shot value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose a Challenge feature: captive ball for Stunt, either ramp for Moto Cross, center spinner for Drag, inner loop for Circuit, or either outer orbit for Street."
+          },
+          {
+            "text": "Make five shots to that feature to start its Challenge. Repeat the feature for bronze, silver, then gold.",
+            "modeNotes": [
+              "Challenge scoring: The defining feature advances the trophy. Other major shots score Jackpots during the Challenge.",
+              "Challenge stack: Qualification for the other Challenges continues. Starting another Challenge adds a ball, raises Jackpot scoring, and starts a new ball save."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Continue qualifying other Challenges. Starting another Challenge adds a ball, raises Jackpot scoring, and starts a new ball save.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Build the playfield multiplier with pop-bumper revs or the Super Skill Shot. Do not press Start yet.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Press Start when multiple Challenges or valuable Jackpots are active. Use the short 2x-to-6x window on the feature shots.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After all five Challenges have played and one ball remains, lock a ball to start Final Challenge.",
+            "modeNotes": [
+              "Final Challenge: Each feature shot scores from its earned trophy. Gold is worth more than silver, bronze, or no trophy, and the playfield multiplier applies."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Race route",
+          "when": "Use this as a separate route through the seven national Races.",
+          "steps": [
+            {
+              "text": "Spell RACE from the inlanes and green-target spots."
+            },
+            {
+              "text": "Start the Race at the scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Make each flashing major shot until you reach first place. Shoot the center spinner to win.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat races toward World Champion. Shoot the captive ball to add time when needed.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Direct Full Throttle Multiball",
+            "when": "Use this as a direct three-lock Multiball route.",
+            "steps": [
+              {
+                "text": "Hit either green standup target to light Lock."
+              },
+              {
+                "text": "Shoot either orbit to lock a ball. Repeat the target-and-orbit sequence for three locks; the third lock starts Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the major shots for Jackpots. Later Multiballs require additional hits to the green targets before each lock.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Final Challenge and World Champion",
+          "steps": [
+            {
+              "text": "Play all five Challenges. Better trophies raise Final Challenge values.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Final Challenge after returning to one ball."
+            },
+            {
+              "text": "Win all seven national races to become World Champion.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the playfield multiplier during stacked Challenges or Final Challenge.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Full Throttle Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Challenge modes",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Races",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "playfield multiplier",
+            "tone": "rust",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "green standup",
+            "context": "green standup",
+            "label": "Lock-light target",
+            "description": "The green standup that lights a Full Throttle Multiball lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "inner loop",
+            "context": "inner loop",
+            "label": "Fast-Lap loop",
+            "description": "The inner loop used for Fast-Lap repeats and Challenge progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "scoop",
+            "context": "scoop",
+            "label": "Race start scoop",
+            "description": "The scoop that starts a qualified Race.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Ramp repeat",
+            "instruction": "Each ramp returns to the opposite flipper. Use that feed to repeat the ramp or transfer into another prepared Challenge shot.",
+            "sourceUrl": "https://www.pinballnews.com/games/fullthrottle/index11.html"
+          },
+          {
+            "name": "Fast-Lap repeat",
+            "instruction": "A complete inner loop can feed the left flipper for another loop. Stop when the rising return speed makes the repeat unsafe.",
+            "sourceUrl": "https://www.pinballnews.com/games/fullthrottle/index11.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak inner-loop shot can enter the left inlane and outlane area.",
+            "response": "Use the inner loop only after its first return is known. Stop the repeat as ball speed rises.",
+            "sourceUrl": "https://www.pinballnews.com/games/fullthrottle/index11.html"
+          },
+          {
+            "issue": "The middle left lane is the true outlane and has little recovery help.",
+            "response": "Do not confuse it with the fast outer inlane. Nudge before the ball reaches the lane divider.",
+            "sourceUrl": "https://www.pinballnews.com/games/fullthrottle/index11.html"
+          },
+          {
+            "issue": "The four spinning playfield wheels change ball direction, and inductive sensors can obscure switch registration.",
+            "response": "Watch the display for confirmed progress. Keep both flippers ready after a wheel contact.",
+            "sourceUrl": "https://www.pinballnews.com/games/fullthrottle/index11.html"
+          }
+        ],
+        "simpleOverview": "Full Throttle turns each five-shot Challenge into a stackable Multiball, while trophies set Final Challenge values and revs build the timed playfield multiplier. Make five shots to one feature to start its Challenge, then repeat that feature for bronze, silver, and gold trophies. Starting another Challenge adds a ball and a fresh ball save; build the multiplier with pop-bumper revs or the Super Skill Shot, then press Start during stacked Challenges or save it for Final Challenge.",
+        "overview": "Full Throttle turns five Challenge features into stackable Multiballs, then uses their trophies to set Final Challenge values. Make five shots to one feature to start its Challenge, repeat it for bronze, silver, and gold, and continue qualifying other Challenges; each new Challenge adds a ball and ball save. Build 2x to 6x with pop-bumper revs or the Super Skill Shot, press Start during the stack, then after all five Challenges and a return to one ball, lock a ball to start Final Challenge.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Start a Challenge with five shots to its feature, add other Challenges as balls during play, and use the timed playfield multiplier on the combined scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Challenge",
+            "text": "Shoot one Challenge feature five times: the captive ball for Stunt, either ramp for Moto Cross, the center spinner for Drag, the inner loop for Circuit, or either outer orbit for Street.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "The Challenge on your chosen feature",
+              "reason": "Each Challenge starts after five shots to its own feature.",
+              "play": "Repeat the feature for bronze, silver, and gold trophies. Other major shots score Jackpots during the Challenge."
+            }
+          },
+          {
+            "title": "Add multiball play",
+            "text": "Prepare a second Challenge with five hits to another feature, then start it while the first Challenge is running. The new Challenge adds a ball and starts a new ball save.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start playfield X",
+            "text": "Build the multiplier with pop-bumper revs or the Super Skill Shot, then press Start while Challenges or valuable Jackpots are active. The short scoring window runs from 2x to 6x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Challenge modes",
+            "summary": "Five shots to a feature start its Challenge, where repeating that feature earns bronze, silver, and gold trophies."
+          },
+          {
+            "name": "Full Throttle Multiball",
+            "summary": "Hit a green standup to light a lock, shoot an orbit, then collect major-shot Jackpots after the start."
+          },
+          {
+            "name": "Playfield multiplier",
+            "summary": "Build up to 6x with bumper revs or the super skill shot, then press Start to use it for about ten seconds."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Race",
+          "when": "Use this as a separate route through the seven national Races.",
+          "steps": [
+            {
+              "text": "Spell RACE from the inlanes and green-target spots, then shoot the scoop to start the Race.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot each flashing major shot to move toward first place, then shoot the center spinner to win.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

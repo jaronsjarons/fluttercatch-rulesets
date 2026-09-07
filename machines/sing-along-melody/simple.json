@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPkZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit the center standup once to light the bumpers, then shoot the left saucer and follow the ball through the four-saucer chain. Each saucer scores 10 plus 10 for each lit number of its color. Repeat the left saucer from the right-flipper return when that feed is controllable.",
+        "steps": [
+          {
+            "text": "Hit the center 100-point standup to light the bumpers."
+          },
+          {
+            "text": "Shoot the left saucer. The ball advances through the saucers from left to right and ejects from the right saucer toward the right flipper."
+          },
+          {
+            "text": "If the right-saucer eject reaches the right flipper cleanly, shoot the left saucer again."
+          },
+          {
+            "text": "If the saucer loop is not repeatable, send the ball up top. Relight the bumpers only after the ball passes through the Bumpers Off gate."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Saucer value",
+            "summary": "Each saucer scores 10 plus 10 for each lit number of its color."
+          },
+          {
+            "name": "Melody and Harmony editions",
+            "summary": "Melody and the Italian Harmony are add-a-ball versions. Completing all four numbers of one color lights that color's saucer for an added ball when the award is enabled."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center 100-point standup",
+            "context": "center 100-point standup",
+            "label": "Bumper-light target",
+            "description": "The center target that turns on the bumpers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "context": "left saucer",
+            "label": "Left saucer",
+            "description": "Starts the four-saucer chain.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right saucer",
+            "context": "right saucer",
+            "label": "Right saucer",
+            "description": "The last saucer in the chain and its return to the right flipper.",
+            "precision": "unverified"
+          },
+          {
+            "term": "color numbers",
+            "context": "lit number of its color",
+            "label": "Color-number groups",
+            "description": "The matching 1 through 4 inserts that raise a saucer's value and qualify the add-a-ball award on Melody and Harmony.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Bumpers Off gate",
+            "context": "Bumpers Off gate",
+            "label": "Bumpers Off gate",
+            "description": "The upper-center gate that turns the bumpers off.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The two center gaps can punish a mistimed flip around the center post.",
+            "response": "Let the post make the save when the ball settles there; flip only after the ball moves to a usable flipper angle.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPkZ-MJZk7"
+          }
+        ],
+        "simpleOverview": "Sing Along uses one center target to light its bumpers and a four-saucer chain that moves the ball from left to right. Each saucer scores 10 plus 10 for each lit number of its color. The right-saucer eject decides whether the left saucer can become a repeatable scoring loop.",
+        "overview": "Sing Along raises lit-bumper scoring through a four-saucer chain. Each saucer scores 10 plus 10 for every lit number of its color; on Melody and Harmony, completing a color's 1 through 4 lights that saucer for an added ball when enabled. Hit the center standup once, shoot the left saucer, and repeat the chain only when the right-saucer eject reaches the right flipper cleanly.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Hit the center standup once to light the bumpers, then shoot the left saucer. Each saucer scores 10 plus 10 for each lit number of its color; repeat the four-saucer chain when the right-saucer eject reaches the right flipper cleanly.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Light the bumpers",
+            "text": "Hit the center 100-point standup once. Hit it again only after the Bumpers Off gate turns the bumpers off."
+          },
+          {
+            "title": "Repeat the saucer chain",
+            "text": "Shoot the left saucer. Each saucer scores 10 plus 10 for each lit number of its color. After the ball advances through all four saucers and ejects from the right, shoot the left saucer again from the right flipper."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Saucer value",
+            "summary": "Each saucer scores 10 plus 10 for each lit number of its color."
+          },
+          {
+            "name": "Melody and Harmony editions",
+            "summary": "Melody and the Italian Harmony are add-a-ball versions. Completing all four numbers of one color lights that color's saucer for an added ball when the award is enabled."
+          }
+        ]
+      }
+    }
+  ]
+}

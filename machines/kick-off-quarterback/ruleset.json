@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "GRzed",
+  "title": "Kick Off / Quarterback",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Kick Off",
+      "url": "https://rules.silverballmania.com/rules/GRzed-MDBl4"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Kick Off and Quarterback machine guide",
+        "url": "https://www.kineticist.com/games/pinball/kick-off-quarterback"
+      },
+      {
+        "label": "New York Pinball Kick Off flyer index",
+        "url": "https://nypinball.com/alphabetical-letter/k/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge a lit top lane, advance the ball through the safest field-progress shot, collect the 5,000-point goal, and protect the built bonus with controlled upper play.",
+      "quickInfo": [
+        {
+          "name": "Lit-lane plunge",
+          "summary": "The two lit top lanes alternate as switch hits register, so aim for one lit lane on every plunge."
+        },
+        {
+          "name": "Field progress",
+          "summary": "The left spinner, right drop targets, and upper-right route advance the ball downfield."
+        },
+        {
+          "name": "Goal value",
+          "summary": "Completing the field scores a 5,000-point goal before any enabled replay or extra-ball award."
+        },
+        {
+          "name": "Base bonus",
+          "summary": "One bonus advance is awarded for each 20 yards of field progress, up to 15,000."
+        },
+        {
+          "name": "Staggered flippers",
+          "summary": "The paired upper and lower flippers favor continuous shots and make long cradles difficult."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge one of the two lit top lanes."
+        },
+        {
+          "text": "Watch the first upper-playfield exit and learn which flipper receives the ball."
+        },
+        {
+          "text": "Test the left spinner when its entry and return are controlled."
+        },
+        {
+          "text": "Use the spinner as the main field-progress shot while it continues to return safely."
+        },
+        {
+          "text": "Use the upper-right route when the spinner entry is poor."
+        },
+        {
+          "text": "Shoot the right drop bank only after you have seen a safe rebound from it."
+        },
+        {
+          "text": "Complete the field and collect the 5,000-point goal."
+        },
+        {
+          "text": "Repeat the safest progress route and protect the built bonus until the ball ends."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Upper-right field progress",
+        "when": "Recovery pivot: Use this plan when the spinner rejects shots or the right drop bank returns the ball out of control.",
+        "steps": [
+          {
+            "text": "Stop shooting the unsafe spinner or drop bank."
+          },
+          {
+            "text": "Send the ball toward the upper-right field-progress route."
+          },
+          {
+            "text": "Hold the receiving upper flipper only when that improves the rebound from its rubbered post."
+          },
+          {
+            "text": "Let upper-playfield action add field and bonus progress."
+          },
+          {
+            "text": "Resume the spinner only after its feed becomes reliable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Controlled drop-bank finish",
+          "when": "When trailing, use this distinct scoreboard route: use this plan when only a small amount of field progress remains and the right-bank rebound is predictable.",
+          "steps": [
+            {
+              "text": "Wait for a clean lower-flipper angle to the needed drop target."
+            },
+            {
+              "text": "Shoot only the target that advances the field."
+            },
+            {
+              "text": "Prepare the opposite flipper for the rebound."
+            },
+            {
+              "text": "Stop direct target play after the goal is complete or the rebound becomes unsafe."
+            }
+          ]
+        },
+        {
+          "title": "Final-ball bonus play",
+          "when": "Use this plan on a ball that automatically doubles bonus under the installed edition and settings.",
+          "steps": [
+            {
+              "text": "Confirm the bonus-double schedule on the instruction card."
+            },
+            {
+              "text": "Shoot the left spinner, right drop targets, or top lanes to move the field in 20-yard steps."
+            },
+            {
+              "text": "Favor the safest upper route after the base bonus is high."
+            },
+            {
+              "text": "Do not risk a dangerous target only to finish another goal."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated goals with 15,000 bonus",
+        "steps": [
+          {
+            "text": "Use the left spinner, right drop targets, or top lanes, choosing the route with the safest return, to advance the field."
+          },
+          {
+            "text": "Add one bonus step for each 20 yards."
+          },
+          {
+            "text": "Complete the field for a 5,000-point goal."
+          },
+          {
+            "text": "Repeat the field-progress shots; each 20 yards adds 1,000 base bonus, up to 15,000."
+          },
+          {
+            "text": "Preserve the bonus through controlled upper play."
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Confirm Kick Off or Quarterback and read the ball-count and automatic Double Bonus schedule on the instruction card.",
+        "Check whether replay, Extra Ball, and Special awards remain enabled or score points in tournament play.",
+        "Test spinner strength, drop-bank rebounds, bumper exits, staggered-flipper feeds, tilt sensitivity, and switch registration before choosing a repeat shot."
+      ],
+      "techniques": [
+        {
+          "name": "Alternating-lane plunge",
+          "instruction": "Read the two lit top lanes before the plunge and change plunge strength or aim to enter either lit lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRzed-MDBl4"
+        },
+        {
+          "name": "Cradle",
+          "instruction": "Track the ball across the staggered flipper pair and shoot the left spinner without waiting for a full cradle.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRzed-MDBl4",
+          "techniqueSlug": "cradle"
+        },
+        {
+          "name": "Upper-flipper post return",
+          "instruction": "When the ball reaches the rubbered post below an upper outlane, test whether holding the nearby upper flipper guides the rebound toward a lower flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRzed-MDBl4"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A ball that approaches a raised lower flipper can roll up its edge and reach the outlane.",
+          "response": "Do not hold the lower flipper without a clear reason. Release it before a slow ball reaches its outside edge.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRzed-MDBl4"
+        },
+        {
+          "issue": "The upper bumpers produce many of the common center drains.",
+          "response": "Keep both lower flippers ready until the full bumper exit is clear, and stop nudging after the ball has entered a lower lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRzed-MDBl4"
+        },
+        {
+          "issue": "Direct shots at the right drop bank can return sharply toward the center or an outlane.",
+          "response": "Test one controlled target shot, then replace the bank with spinner or upper-right progress if the rebound is unsafe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRzed-MDBl4"
+        }
+      ],
+      "simpleOverview": "Kick Off / Quarterback advances a ball downfield through the left spinner, right drop targets, and upper-right route. Plunge a lit top lane, repeat the safest progress shot until the field is complete, collect the 5,000-point goal, and preserve the bonus earned for every 20 yards.",
+      "overview": "Kick Off / Quarterback advances a ball downfield through the left spinner, right drop targets, and upper-right route. Use a lit top-lane plunge, learn the staggered-flipper return, and favor the left spinner or upper-right route over the drop bank until its rebound is known. Complete the field for 5,000, then repeat the same controlled route while protecting the built bonus.",
+      "machineSetup": [
+        "Confirm Kick Off or Quarterback and read the ball-count and automatic Double Bonus schedule on the instruction card.",
+        "Check whether replay, Extra Ball, and Special awards remain enabled or score points in tournament play.",
+        "Test spinner strength, drop-bank rebounds, bumper exits, staggered-flipper feeds, tilt sensitivity, and switch registration before choosing a repeat shot."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

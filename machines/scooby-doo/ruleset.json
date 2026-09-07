@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "GllPz",
+  "title": "Scooby-Doo",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Scooby-Doo rules document",
+      "url": "https://www.spookypinball.com/wp-content/uploads/2025/01/Scooby-Doo-Rules.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Scooby-Doo code and release notes",
+        "url": "https://www.spookypinball.com/game-support/"
+      },
+      {
+        "label": "Scooby-Doo rulesheet",
+        "url": "https://tiltforums.com/t/scooby-doo-where-are-you-rulesheet/8008"
+      },
+      {
+        "label": "Official Scooby-Doo maintenance manual",
+        "url": "https://www.spookypinball.com/wp-content/uploads/2024/09/Scooby-Doo-Maintenance-Manual.pdf"
+      },
+      {
+        "label": "Scooby-Doo edition overview",
+        "url": "https://www.kineticist.com/news/spooky-pinball-announces-scooby-doo-pinball"
+      },
+      {
+        "label": "Official Scooby-Doo tutorial on code 2023.4.18.17",
+        "url": "https://www.youtube.com/watch?v=gf12b6I04ec"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Choose Velma, collect three white investigation shots, and start the first Case at the Mystery Machine before taking the second apron lock. During Scooby Snack Multiball, Snack Jackpots refill Bravery, and either apron lock scores the Super Jackpot and relights every Snack.",
+      "quickInfo": [
+        {
+          "name": "Scooby Snacks",
+          "summary": "Drop-bank completions light Snacks that advance Bravery, Scooby Snack Multiball, Mystery Machine progress, Bonus X, and end-of-ball bonus."
+        },
+        {
+          "name": "Cases",
+          "summary": "Collect the required white investigation shots, start the Case at the Mystery Machine, collect clues, make trap shots, then return to the Mystery Machine to unmask the villain."
+        },
+        {
+          "name": "Scooby Snack Multiball",
+          "summary": "Collect enough Snacks, lock one ball in each apron, then shoot lit Snacks for jackpots and an apron lock for a Super Jackpot and relight."
+        },
+        {
+          "name": "Mystery Machine Multiball",
+          "summary": "Spinner hits light three locks at the Mystery Machine. During multiball, repeat each character orbit to light its Jackpot, then shoot the Mystery Machine to lock matched progress."
+        },
+        {
+          "name": "Bravery Meter",
+          "summary": "Bravery is both the Case timer and its scoring multiplier, and Scooby Snacks refill it."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Choose Velma before plunging for easier Case starts.",
+          "modeNotes": [
+            "Velma makes Cases easier to start. Scooby begins each ball with Ruh-Roh Save lit. Fred makes Mystery Machine Multiball easier to start."
+          ]
+        },
+        {
+          "text": "Select the drop-target skill shot with the flippers, then complete it to spawn four Scooby Snacks.",
+          "modeNotes": [
+            "The other skill-shot choices raise the Trap Door or fully tier up the selected character orbit."
+          ]
+        },
+        {
+          "text": "Clear either drop-target bank to light three Snacks, then collect the lit Snacks at the character orbits and spinners.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After four Snacks, use the exposed VUK behind the drop banks for the left apron lock. Rebuild the Snack requirement, then reach the upper playfield and shoot its middle orbit for the right apron lock.",
+          "modeNotes": [
+            "The first apron lock needs four Snacks. Each later lock in the game needs one more, up to twelve."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Before taking the second apron lock, collect the required white investigation shots and start the chosen Case at the Mystery Machine.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Start Scooby Snack Multiball with the second apron lock while the Case is active.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During the stack, collect the Case's clue shots and the lit Snacks. Make the required trap shots, then shoot the Mystery Machine to unmask the villain.",
+          "modeNotes": [
+            "Scooby Snacks remain lit after collection while Scooby Snack Multiball is stacked with another feature. The Snacks refill Bravery during the Case."
+          ],
+          "kinds": [
+            "mode",
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot an apron lock for the Scooby Snack Super Jackpot. This also relights all Snacks for another jackpot cycle.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Mystery Machine Multiball",
+        "when": "This is the separate three-lock Multiball route.",
+        "steps": [
+          {
+            "text": "Rip either spinner until a lock lights at the Mystery Machine."
+          },
+          {
+            "text": "Shoot the Mystery Machine to lock a ball. Repeat for three locks and start Mystery Machine Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot one character orbit three times to light its Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Mystery Machine while jackpots are lit to lock them in for later orbit shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If all five character orbits reach the same level before jackpots are locked, shoot the Mystery Machine for the multiplied Super Jackpot.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Captain Cutler Multiball",
+          "when": "This route stays on the upper playfield.",
+          "steps": [
+            {
+              "text": "Reach the upper playfield through the center ramp and bookcase diverter."
+            },
+            {
+              "text": "Complete three hits to each hand target, the mini orbit, and the dive helmet."
+            },
+            {
+              "text": "Hit the dive helmet again to start the first three-ball Captain Cutler Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit the helmet to spawn jackpots, then collect the three lit shots before the tide resets their value.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Three wizard-mode routes",
+        "steps": [
+          {
+            "text": "Start all seven Cases to qualify Would've Gotten Away With It at the Mystery Machine.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start all five Character Modes to qualify The Gang's All Here.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect 100 Scooby Snacks and shoot behind the drop targets to start Scooby-Doo Where Are You!",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Standard, Blood Sucker, and Collector's editions",
+          "pro": "The Standard Edition has the complete widebody playfield, upper playfield, dual apron locks, Mystery Machine lock, secret passage, and shared rules.",
+          "premium": "Blood Sucker and Collector's editions add trim, lighting, art, sculpts, shaker, or topper equipment. The main Case and multiball rules remain shared.",
+          "sourceUrl": "https://www.kineticist.com/news/spooky-pinball-announces-scooby-doo-pinball"
+        },
+        {
+          "feature": "Optional Bookcase Topper",
+          "pro": "A game without the optional Bookcase Topper does not have the topper's Ghost of Elias Kingston feature.",
+          "premium": "A game with the topper can qualify Ghost of Elias Kingston from rapid center-ramp shots and start it at the Secret Passage.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2025/01/Scooby-Doo-Rules.pdf"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Scooby Snack Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Mystery Machine Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Captain Cutler Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Case",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Bravery Meter",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Scooby Snacks",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Super Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Bookcase upper-playfield entry",
+          "instruction": "Shoot the center ramp and use the left flipper button to activate the bookcase flipper when an upper-playfield entry is needed.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2025/01/Scooby-Doo-Rules.pdf"
+        },
+        {
+          "name": "Ruh-Roh lane change",
+          "instruction": "Use the flipper buttons to move the lit Ruh and Roh inserts. Complete both left outlanes to arm the save.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2025/01/Scooby-Doo-Rules.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The two physical apron locks are shared between players.",
+          "response": "A ball locked by one player can be taken by another. If the opposite lock is ready, collect it before ending the turn.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2025/01/Scooby-Doo-Rules.pdf"
+        },
+        {
+          "issue": "A Mystery award can reverse the flippers for the next feature.",
+          "response": "Reverse Flippers changes the controls for the next Mode or Multiball and awards 2x scoring while it runs.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2025/01/Scooby-Doo-Rules.pdf"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test the Mystery Machine, both spinners, both apron locks, the left VUK, and the upper playfield's middle orbit."
+      ],
+      "simpleOverview": "Scooby-Doo starts Cases from white investigation shots and the Mystery Machine, while Scooby Snacks prepare the apron locks for Scooby Snack Multiball. Choose Velma before plunging, collect three white investigation shots for the first Case, then shoot the Mystery Machine to start it. For Scooby Snack Multiball, collect four Snacks and lock a ball through the left VUK, then collect five Snacks and lock the second ball through the upper playfield's middle orbit.",
+      "overview": "Scooby-Doo lets Scooby Snack Multiball run with a Case while its Snack Jackpots refill the Case's Bravery timer and scoring multiplier. Choose Velma, collect three white investigation shots, and start the first Case at the Mystery Machine before taking the second apron lock. During the stack, collect clues and Snacks, make the Case's trap shots, return to the Mystery Machine to unmask the villain, and shoot either apron lock for the Scooby Snack Super Jackpot and Snack relight.",
+      "machineSetup": [
+        "Test the Mystery Machine, both spinners, both apron locks, the left VUK, and the upper playfield's middle orbit."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

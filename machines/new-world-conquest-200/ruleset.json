@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "G4E88",
+  "title": "New World / Conquest 200",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Conquest 200",
+      "url": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist New World and Conquest 200 machine guide",
+        "url": "https://www.kineticist.com/games/pinball/new-world-conquest-200"
+      },
+      {
+        "label": "PinballRebel Playmatic instruction-card index",
+        "url": "https://www.pinballrebel.com/pinball/cards/Playmatic.htm"
+      },
+      {
+        "label": "New York Pinball flyer index",
+        "url": "https://nypinball.com/flyers/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge the lit 50,000-point top lane, hit both red targets, and complete A-B-C for Double Bonus. Build base bonus through lit orbits and collect Add Bonus at the center target to qualify Triple Bonus, but use the repeatable top-lane route when the standups are unsafe.",
+      "quickInfo": [
+        {
+          "name": "Lit top lane",
+          "summary": "One of the two top lanes is always lit for 50,000, and the white rollover knobs change the lit lane."
+        },
+        {
+          "name": "Red targets",
+          "summary": "Each red target lights the orbit on the same side to add bonus, and both targets light the center Spin collector."
+        },
+        {
+          "name": "Spin awards",
+          "summary": "The spinners change the selected Spin item among 6,000, Extra Ball, and Add Bonus awards."
+        },
+        {
+          "name": "Base and Double Bonus",
+          "summary": "Base bonus builds to 100,000, and completing A-B-C qualifies Double Bonus."
+        },
+        {
+          "name": "Triple Bonus",
+          "summary": "Collecting Add Bonus and completing A-B-C in either order qualifies a lit left orbit or right outlane for Triple Bonus."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the lit top lane before the plunge."
+        },
+        {
+          "text": "Plunge the lit lane for 50,000 and to light the bumpers."
+        },
+        {
+          "text": "Test one red target and track its complete rebound."
+        },
+        {
+          "text": "Hit both red targets when their rebounds remain controlled."
+        },
+        {
+          "text": "Complete A-B-C to qualify Double Bonus."
+        },
+        {
+          "text": "Use the lit orbits and upper play to build base bonus toward 100,000."
+        },
+        {
+          "text": "When the Spin display shows Add Bonus, shoot the lit center target from a controlled angle."
+        },
+        {
+          "text": "If the left orbit lights for Triple Bonus, collect it and return to the 50,000-point top-lane route."
+        }
+      ],
+      "fallback": {
+        "title": "Repeat the lit top lane",
+        "when": "Use this plan when the red or center standup rebounds are too dangerous for the bonus-multiplier route.",
+        "steps": [
+          {
+            "text": "Stop shooting the unsafe standup targets."
+          },
+          {
+            "text": "Use the white rollover knobs to change the lit top lane when needed."
+          },
+          {
+            "text": "Send the ball through an orbit to the upper playfield."
+          },
+          {
+            "text": "Collect the lit top lane for 50,000."
+          },
+          {
+            "text": "Repeat while the orbit return remains controlled."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Spin-to-Triple conversion",
+          "when": "Use this plan when both red targets are complete, Double Bonus is ready, and Add Bonus appears on the Spin display.",
+          "steps": [
+            {
+              "text": "Confirm that the center target is lit to collect Spin."
+            },
+            {
+              "text": "Wait until Add Bonus is the selected award."
+            },
+            {
+              "text": "Shoot the center target once from a controlled angle."
+            },
+            {
+              "text": "Read which Triple Bonus feature lights."
+            },
+            {
+              "text": "Shoot a lit left orbit, but do not aim for a lit right outlane."
+            }
+          ]
+        },
+        {
+          "title": "Score-position top loop",
+          "when": "Use this plan when another 50,000-point top-lane collect is enough and a target rebound could end the ball.",
+          "steps": [
+            {
+              "text": "Ignore the center target and unfinished multiplier progress."
+            },
+            {
+              "text": "Choose the orbit with the safer return."
+            },
+            {
+              "text": "Use the white rollover to align the lit top lane if needed."
+            },
+            {
+              "text": "Collect 50,000 and repeat only while the feed remains safe."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "100,000 base bonus at 3x",
+        "steps": [
+          {
+            "text": "Hit both red targets to light bonus orbits and the center collector."
+          },
+          {
+            "text": "Complete A-B-C for Double Bonus."
+          },
+          {
+            "text": "Build base bonus to 100,000 through lit orbits, inlanes, and center collects."
+          },
+          {
+            "text": "Collect Add Bonus from the selected Spin award."
+          },
+          {
+            "text": "Collect the safely lit Triple Bonus feature for a maximum 300,000 bonus."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Lit-lane change",
+          "instruction": "Use a white rollover knob to swap the lit top lane, then send the ball through the orbit that reaches that lane cleanly.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+        },
+        {
+          "name": "Orbit return read",
+          "instruction": "Test both orbits early and repeat the one whose upper exit and lower return give the best flipper control.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+        },
+        {
+          "name": "Timed Spin collect",
+          "instruction": "Watch the Spin display as spinner hits change it, and shoot the center target only while the desired Add Bonus award is selected.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The two red targets and center Spin target can return the ball sharply toward the drain.",
+          "response": "Test one target at a time from a controlled flipper and replace unsafe target play with orbit and top-lane scoring.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+        },
+        {
+          "issue": "Upper bumpers can produce an uncontrolled center feed after the lit top lane.",
+          "response": "Keep both flippers ready until the bumper exit is clear and do not flip early at a ball that is still changing direction.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+        },
+        {
+          "issue": "Triple Bonus can light the right outlane instead of the shootable left orbit.",
+          "response": "Do not aim for the outlane. Continue safe top-lane scoring and treat an outlane collect only as incidental protection for a bad feed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E88-MLEo0"
+        }
+      ],
+      "checkBeforePlay": [
+        "Identify Playmatic New World or Conquest 200 and confirm ball count and award conversions.",
+        "Test both orbits, rollover knobs, red targets, center target, top lanes, and Spin display."
+      ],
+      "simpleOverview": "New World / Conquest 200 uses one lit top lane for 50,000, two red targets to light the side orbits, and A-B-C for Double Bonus. Plunge the lit lane, hit both red targets from control, then use the lit orbits and the center Add Bonus collect to reach Triple Bonus.",
+      "overview": "New World / Conquest 200 uses one lit top lane for 50,000, two red targets to light the side orbits, and A-B-C for Double Bonus. Use white rollover knobs to reach the lit top lane, hit both red targets to light the orbits and center collector, then complete A-B-C. Collect Add Bonus at center only when the Spin display offers it and the standup return is controlled.",
+      "machineSetup": [
+        "Identify Playmatic New World or Conquest 200 and confirm ball count and award conversions.",
+        "Test both orbits, rollover knobs, red targets, center target, top lanes, and Spin display."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

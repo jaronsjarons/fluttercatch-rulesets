@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Obw",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Viper Night Drivin' uses the left ramp for six events, the lower targets for Post-Save, and the two center lock holes for four-ball Multiball. Work the lock holes until Lock is lit, then lock one ball on each side; the second lock starts Multiball. Light Post-Save before beginning a dangerous feature, because the Launch button can then raise the center post.",
+        "simpleOverview": "Shoot the two center lock holes until Lock is lit, then lock one ball on each side; the second lock starts four-ball Multiball. Before starting, complete the lower targets to light Post-Save, which the Launch button activates.",
+        "summary": "Build Lock at the two center holes, then lock one ball on each side to start four-ball Multiball. During it, shoot the center ramp for the first Jackpot, relock both balls for Double Jackpot, then use the two side ramps for Super Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Four-ball Multiball",
+            "summary": "Build Lock at the center holes, then lock one ball on each side."
+          },
+          {
+            "name": "Post-Save",
+            "summary": "Complete the lower targets, then press Launch when Post-Save is lit."
+          },
+          {
+            "name": "Notepad events",
+            "summary": "Build the required miles, then shoot the flashing left ramp."
+          },
+          {
+            "name": "Rabid Raccoons",
+            "summary": "Hit a jumping raccoon after an inlane; complete R-A-C-C-O-O-N-S to begin the feature."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the two center lock holes until the Lock lamps are ready, then put one ball into each lit side lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "The second locked ball starts four-ball Multiball; shoot the center ramp for the first Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the center-ramp Jackpot, relock one ball in each side hole to collect the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the left- and right-ramp Super Jackpots, returning to the center ramp when the sequence relights it.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Notepad event route",
+            "when": "Use this when the left ramp is safer than the center lock holes.",
+            "steps": [
+              {
+                "text": "Build the displayed mileage while no other event is running.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "When the left ramp flashes for Notepad, shoot it to start the selected event.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "After an event, build another 20 miles to relight the Notepad route.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Mancow's Morning Madhouse",
+          "steps": [
+            {
+              "text": "Complete the six Notepad events by qualifying each one with mileage and starting it at the flashing left ramp.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Keep Post-Save ready before an event or Multiball: complete the lower targets, then press Launch only when the save is needed.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After all Notepad events are complete, follow the flashing left-ramp and display direction into Mancow's Morning Madhouse.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Prefer CPU and display 2.01. ROM inventories also preserve 1.02, so verify the installed version before relying on event values or thresholds.",
+          "Check both center lock holes, all three ramps, lower Post-Save targets, Launch button, center post, inlanes, and both raccoon targets before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "center lock holes",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "four-ball Multiball",
+            "tone": "rust",
+            "kind": "multiball"
+          },
+          {
+            "label": "Post-Save",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "left ramp",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center lock holes",
+            "label": "Multiball locks",
+            "description": "The paired lock shots used to build Lock and hold the first two balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "label": "First Multiball Jackpot",
+            "description": "The center ramp that opens the relock and side-ramp Jackpot sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower targets",
+            "label": "Post-Save qualification",
+            "description": "The lower standups completed to light the Launch-button center post.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Notepad event start",
+            "description": "The ramp that flashes when a mileage-qualified event can begin.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The center holes, ramp returns, and raccoon targets can reject the ball toward the middle.",
+            "response": "Light Post-Save before committing to those shots, then use the Launch button to raise the center post when a rebound threatens the drain.",
+            "sourceUrl": "https://www.vpforums.org/index.php?showtopic=45824"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Lock at the two center holes, then lock one ball on each side to start four-ball Multiball. During it, shoot the center ramp for the first Jackpot, relock both balls for Double Jackpot, then use the two side ramps for Super Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the two center lock holes until the Lock lamps are ready, then put one ball into each lit side lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "The second locked ball starts four-ball Multiball; shoot the center ramp for the first Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the center-ramp Jackpot, relock one ball in each side hole to collect the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the left- and right-ramp Super Jackpots, returning to the center ramp when the sequence relights it.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Four-ball Multiball",
+            "summary": "Build Lock at the center holes, then lock one ball on each side."
+          },
+          {
+            "name": "Post-Save",
+            "summary": "Complete the lower targets, then press Launch when Post-Save is lit."
+          },
+          {
+            "name": "Notepad events",
+            "summary": "Build the required miles, then shoot the flashing left ramp."
+          }
+        ],
+        "warning": {
+          "title": "The center holes, ramp returns, and raccoon targets can reject the ball toward the middle.",
+          "text": "Light Post-Save before committing to those shots, then use the Launch button to raise the center post when a rebound threatens the drain."
+        }
+      }
+    }
+  ]
+}

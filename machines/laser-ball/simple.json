@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBXl",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Return the ball to the numbered top lanes, raise and collect the AE value through B-A-L-L, and pursue Bonus X only after the base bonus is large.",
+        "quickInfo": [
+          {
+            "name": "Numbers 1-10",
+            "summary": "Top lanes can score one or two needed numbers, and the ten center star rollovers score one number each."
+          },
+          {
+            "name": "AE value",
+            "summary": "Each completed set of ten numbers raises the AE value by 10K, from 10K to a maximum of 60K."
+          },
+          {
+            "name": "B-A-L-L",
+            "summary": "Complete the upper-right B-A-L-L drop targets to collect the current AE value."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "The left bullseye or upper-right saucer advances Bonus X through 2x, 3x, and 5x."
+          },
+          {
+            "name": "Lit spinners",
+            "summary": "After Bonus X reaches 5x, one more multiplier shot lights the spinners for 1K per spin."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for a numbered top lane that you still need."
+          },
+          {
+            "text": "Repeat the two orbit shots to return the ball to the top lanes."
+          },
+          {
+            "text": "Complete numbers 1-10 to raise the AE value by 10K."
+          },
+          {
+            "text": "After the AE value is useful, complete B-A-L-L to collect it."
+          },
+          {
+            "text": "Build the base bonus through top returns, outlanes, the left standup, and B-A-L-L."
+          },
+          {
+            "text": "When the base bonus is large, shoot the safer Bonus X feature to reach 5x."
+          },
+          {
+            "text": "Make one more Bonus X shot to light the spinners, then repeat the safer spinner."
+          }
+        ],
+        "fallback": {
+          "title": "Opposite-orbit route",
+          "when": "Use this when one orbit return or one lower-flipper shot is unreliable.",
+          "steps": [
+            {
+              "text": "Use the orbit that reaches the top with the safer return."
+            },
+            {
+              "text": "Nudge toward a missing numbered lane because the game has no lane change."
+            },
+            {
+              "text": "Let bumper action collect incidental B-A-L-L and saucer progress."
+            },
+            {
+              "text": "Stop using the orbit if its top exit begins to feed an outlane."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "High AE collect",
+            "when": "Use this when the AE value is near 60K and B-A-L-L targets are safe.",
+            "steps": [
+              {
+                "text": "Complete sets of ten numbers to raise the AE value."
+              },
+              {
+                "text": "Move the ball to the flipper that has the cleanest B-A-L-L angle."
+              },
+              {
+                "text": "Complete B-A-L-L to collect the current AE value."
+              },
+              {
+                "text": "Return to the top lanes instead of attacking L-A-S-E-R."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "60K AE and 145K bonus",
+          "steps": [
+            {
+              "text": "Complete the ten numbers five times to raise AE from 10K to 60K."
+            },
+            {
+              "text": "Complete B-A-L-L to collect the maximum AE value."
+            },
+            {
+              "text": "Score top and return lanes, outlanes, the left standup, and B-A-L-L targets until base bonus reaches 29K."
+            },
+            {
+              "text": "Shoot the left bullseye or upper-right saucer until Bonus X reaches 5x for a possible 145K end-of-ball bonus."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "5x",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "numbered top lane",
+            "label": "Numbered top lanes",
+            "description": "The ten numbered lanes across the upper playfield build the current AE set.",
+            "xPercent": 50,
+            "yPercent": 13,
+            "precision": "area"
+          },
+          {
+            "term": "orbit shots",
+            "label": "Left and right top-return orbits",
+            "description": "The two outside shots return the ball to the numbered upper lanes.",
+            "xPercent": 50,
+            "yPercent": 31,
+            "precision": "area"
+          },
+          {
+            "term": "center star rollovers",
+            "label": "Center numbered star rollovers",
+            "description": "The ten center stars score individual numbers but expose dangerous rebounds.",
+            "xPercent": 50,
+            "yPercent": 47,
+            "precision": "area"
+          },
+          {
+            "term": "B-A-L-L",
+            "label": "B-A-L-L drop bank",
+            "description": "The upper-right bank collects the currently built AE value when completed.",
+            "xPercent": 76,
+            "yPercent": 32,
+            "precision": "area"
+          },
+          {
+            "term": "left bullseye",
+            "label": "Left Bonus X bullseye",
+            "description": "The left bullseye is one of two shots that advances end-of-ball Bonus X.",
+            "xPercent": 19,
+            "yPercent": 28,
+            "precision": "area"
+          },
+          {
+            "term": "upper-right saucer",
+            "label": "Right Bonus X saucer",
+            "description": "The saucer beside the upper lanes is the alternate Bonus X advance.",
+            "xPercent": 81,
+            "yPercent": 24,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Laser Ball and the installed L-2 ROM, then read ball-count, Bonus X, Extra Ball, Special, and replay settings.",
+          "Verify numbered lanes, center stars, B-A-L-L, AE lamps, Bonus X shots, spinner lamps, and bonus carry behavior.",
+          "Test both orbit returns, upper-right flipper deflections, bank rebounds, bumper exits, tilt sensitivity, and lower-flipper strength."
+        ],
+        "techniques": [
+          {
+            "name": "Needed-number plunge",
+            "instruction": "Aim the plunge at a top lane with a missing number. Do not let the ball continue down the right orbit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBXl-MLq9k"
+          },
+          {
+            "name": "Upper-right flipper deflection",
+            "instruction": "When possible, hold the upper-right flipper up and let the ball deflect safely. Do not make an unnecessary shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBXl-MLq9k"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Balls leaving the top can enter the slingshots, outlane dividers, or center drain.",
+            "response": "Watch one complete top exit before you repeat an orbit. Nudge before the ball reaches a divider.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBXl-MLq9k"
+          },
+          {
+            "issue": "L-A-S-E-R targets and center star rollovers can reject toward the center or right drain.",
+            "response": "Use orbit play for number progress. Take these targets only from a controlled and proven angle.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBXl-MLq9k"
+          },
+          {
+            "issue": "Shots from the lower-right flipper often miss more than shots from the other flippers.",
+            "response": "Move the ball to the lower-left flipper when possible. Do not force a weak lower-right shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBXl-MLq9k"
+          }
+        ],
+        "simpleOverview": "Laser Ball uses numbered top lanes and star rollovers to raise an A-E value, then B-A-L-L collects it. Return upstairs until all ten numbers have been completed five times, finish B-A-L-L for the 60K collect, and work on Bonus X only after base bonus is large.",
+        "overview": "Laser Ball uses numbered top lanes and star rollovers to raise an A-E value, then B-A-L-L collects it. Repeat safe upper feeds until A-E reaches 60K, then complete B-A-L-L. Build 29K base before advancing to 5x, and take one more multiplier shot for lit 1K spinners only after the bonus is secure.",
+        "machineSetup": [
+          "Confirm Williams Laser Ball and the installed L-2 ROM, then read ball-count, Bonus X, Extra Ball, Special, and replay settings.",
+          "Verify numbered lanes, center stars, B-A-L-L, AE lamps, Bonus X shots, spinner lamps, and bonus carry behavior.",
+          "Test both orbit returns, upper-right flipper deflections, bank rebounds, bumper exits, tilt sensitivity, and lower-flipper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Return the ball to the numbered top lanes, raise and collect the AE value through B-A-L-L, and pursue Bonus X only after the base bonus is large.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a numbered top lane that you still need."
+          },
+          {
+            "text": "Repeat the two orbit shots to return the ball to the top lanes."
+          },
+          {
+            "text": "Complete numbers 1-10 to raise the AE value by 10K."
+          },
+          {
+            "text": "After the AE value is useful, complete B-A-L-L to collect it."
+          },
+          {
+            "text": "Build the base bonus through top returns, outlanes, the left standup, and B-A-L-L."
+          },
+          {
+            "text": "When the base bonus is large, shoot the safer Bonus X feature to reach 5x."
+          },
+          {
+            "text": "Make one more Bonus X shot to light the spinners, then repeat the safer spinner."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Numbers 1-10",
+            "summary": "Top lanes can score one or two needed numbers, and the ten center star rollovers score one number each."
+          },
+          {
+            "name": "AE value",
+            "summary": "Each completed set of ten numbers raises the AE value by 10K, from 10K to a maximum of 60K."
+          },
+          {
+            "name": "B-A-L-L",
+            "summary": "Complete the upper-right B-A-L-L drop targets to collect the current AE value."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Opposite-orbit route",
+          "when": "Use this when one orbit return or one lower-flipper shot is unreliable.",
+          "steps": [
+            {
+              "text": "Use the orbit that reaches the top with the safer return."
+            },
+            {
+              "text": "Nudge toward a missing numbered lane because the game has no lane change."
+            },
+            {
+              "text": "Let bumper action collect incidental B-A-L-L and saucer progress."
+            },
+            {
+              "text": "Stop using the orbit if its top exit begins to feed an outlane."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Balls leaving the top can enter the slingshots, outlane dividers, or center drain.",
+          "text": "Watch one complete top exit before you repeat an orbit. Nudge before the ball reaches a divider."
+        }
+      }
+    }
+  ]
+}

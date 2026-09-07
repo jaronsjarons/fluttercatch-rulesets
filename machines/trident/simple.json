@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "GR0KD",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the ordered drop sets for 5x Bonus X. Hit all five upper-right standups to make one spinner worth 2,000 per spin, then shoot that spinner from a moving ball.",
+        "steps": [
+          {
+            "text": "Plunge for the top saucer. Test both spinner returns, the right-flipper roll-up, the center post, and the bumper exits."
+          },
+          {
+            "text": "Hit all five colored upper-right standups to raise the spinner values.",
+            "modeNotes": [
+              "White and orange each add 400 to the left spinner. Green and yellow each add 400 to the right spinner.",
+              "Pink adds 1,000 to the spinner with the alternating pink lamp. Bumper and sling hits move that lamp.",
+              "After all five colors, one spinner is worth 2,000 per spin and the other is worth 1,000."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Watch the pink lamp. Transfer to the flipper that shoots the 2,000 spinner."
+          },
+          {
+            "text": "Take a clean spinner shot even before it is fully built. Add more standup value when the upper feed supplies it; do not pass up repeatable spinner points to force a target."
+          },
+          {
+            "text": "When the ball descends the left chute, shoot the spinner on the move. Use its incoming speed for more spins."
+          },
+          {
+            "text": "After the spinner values are built, abandon the standups. Repeat the better spinner and protect the end-of-ball bonus.",
+            "modeNotes": [
+              "Maximum end-of-ball bonus: 19,000 at 5x, or 95,000. All target, spinner, bonus, and multiplier progress resets each ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Partial spinner build",
+          "when": "Use this when the drop bank or one upper-right standup has a dangerous rebound.",
+          "steps": [
+            {
+              "text": "Collect the safe colored standups and raised drop targets."
+            },
+            {
+              "text": "Use the spinner with the larger current value."
+            },
+            {
+              "text": "Accept a lower Bonus X rather than forcing the dangerous target."
+            },
+            {
+              "text": "Let the upper slingshots, both return lanes, and the right outlane add base bonus. Take upper-right standups only when their rebounds are safe."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bonus X and end-of-ball bonus",
+            "when": "Use this when the ordered upper-left drops are safe and the current bonus is worth protecting.",
+            "steps": [
+              {
+                "text": "Complete the upper-left drops in their raised order: 2 and 4, then 1-3-5, then 1-2-4-5, then all five.",
+                "modeNotes": [
+                  "Ordered drop bank: The four sets raise Bonus X to 2x, 3x, 4x, then 5x. The required targets reset and change after each award.",
+                  "The first three completions also raise the top saucer from 5,000 to 10,000, 20,000, then 30,000."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Let upper-right standups, upper slingshots, both return lanes, and the right outlane add base bonus, then drain without tilting to collect it at the current Bonus X.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Repeatable Special",
+            "when": "Use this only when a Special scores 100,000 and the drop-bank Special is not limited to once per ball.",
+            "steps": [
+              {
+                "text": "Reach 5x through the four ordered drop sets.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete all five drops again for Special."
+              },
+              {
+                "text": "Repeat while the rebounds remain controlled."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Two-thousand spinner and 95,000 bonus",
+          "steps": [
+            {
+              "text": "Complete all five colored standups and follow the pink 1,000 lamp."
+            },
+            {
+              "text": "Complete the four ordered drop sets for 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Let upper-right standups, upper slingshots, both return lanes, and the right outlane add base bonus until it reaches 19,000. Drain without tilting."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Flow spinner shot",
+            "instruction": "Flip as the ball descends the left chute. Use the ball's speed to drive a harder spinner rip than a cradle shot.",
+            "sourceUrl": "https://rules.silverballmania.com/guide"
+          },
+          {
+            "name": "Spinner-side transfer",
+            "instruction": "Move the ball to the flipper that has the clean shot at the spinner carrying the pink 1,000 add-on lamp.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR0KD-MJpnr"
+          },
+          {
+            "name": "Right-outlane post return",
+            "instruction": "When speed and alignment permit, nudge a right-outlane ball onto the lower return post so it rebounds into the inlane above the right flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR0KD-MJpnr"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A fast ball can roll up the right-flipper inlane rail and fall into the outlane while you try to cradle or dead bounce.",
+            "response": "Keep the ball moving. Do not force a right-flipper cradle until the incoming speed is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR0KD-MJpnr"
+          },
+          {
+            "issue": "Bumper and upper-sling exits can reach either outlane, the center, or another sling.",
+            "response": "Track the first exits and nudge early. Avoid extra target shots after both spinner and bonus values are built.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR0KD-MJpnr"
+          },
+          {
+            "issue": "A partial spinner shot can fall back to a sling or center drain.",
+            "response": "Use the on-the-fly power shot when safe. Stop the spinner route when the ball no longer clears the lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR0KD-MJpnr"
+          },
+          {
+            "issue": "The center post can be missing or have no rubber in competition.",
+            "response": "Inspect it before play. Do not depend on a center-post save until one works on this copy.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR0KD-MJpnr"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Hit all five upper-right standups to make one spinner worth 2,000, then use flow shots through that spinner."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete all five colored standups and follow the pink 1,000 lamp."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Partial spinner build: Use this when the drop bank or one upper-right standup has a dangerous rebound."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-left drops",
+            "label": "Upper-left drops",
+            "description": "Drop bank used for feature progress.",
+            "precision": "unverified",
+            "context": "Drop bank used for feature progress."
+          },
+          {
+            "term": "upper-right standups",
+            "label": "Upper-right standups",
+            "description": "Targets used for qualification.",
+            "precision": "unverified",
+            "context": "Targets used for qualification."
+          },
+          {
+            "term": "spinners",
+            "label": "Spinners",
+            "description": "Repeatable scoring and upper-feed shots.",
+            "precision": "unverified",
+            "context": "Repeatable scoring and upper-feed shots."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Great Lakes Open 2021, Jane Verwys repeatedly used the spinners, while Erik Thoren and Keith Elwin backhanded the ordered drop bank for Bonus X.",
+            "At the IFPA Women's World Championship 2023, Leslie Ruckman and Kassidy Milanowski prioritized the built spinners instead of deliberately chasing bonus through the higher-risk ordered drop targets."
+          ]
+        },
+        "simpleOverview": "In Trident, hit the five colored upper-right standups to raise one spinner to 2,000 per spin; the alternating pink lamp determines which spinner gets the final 1,000. Repeat that spinner once it is ready. When the upper-left drops are controlled, complete their displayed sets in order to raise Bonus X to 5x.",
+        "overview": "In Trident, the five colored upper-right standups raise one spinner to 2,000 per spin, while four ordered upper-left drop sets raise Bonus X to 5x. Follow the alternating pink lamp, repeat the higher-value spinner, and use the drop-bank route only when its rebounds are controlled. Build 19,000 base bonus and protect the 95,000 end-of-ball collect.",
+        "machineSetup": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the ordered upper-left drop sets for 5x Bonus X, hit all five upper-right standups, then shoot the spinner worth 2,000 per spin on the move.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Reach 5x Bonus X",
+            "text": "Complete the upper-left drops in their raised order: 2 and 4, then 1-3-5, then 1-2-4-5, then all five."
+          },
+          {
+            "title": "Raise the spinner values",
+            "text": "Hit all five colored upper-right standups, then watch the pink lamp and transfer to the flipper that shoots the 2,000-point spinner."
+          },
+          {
+            "title": "Shoot the spinner on the move",
+            "text": "As the ball descends the left chute, shoot the lit spinner on the move. Repeat the better spinner and protect the end-of-ball bonus."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Hit all five upper-right standups to make one spinner worth 2,000, then use flow shots through that spinner."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete all five colored standups and follow the pink 1,000 lamp."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Partial spinner build: Use this when the drop bank or one upper-right standup has a dangerous rebound."
+          }
+        ],
+        "warning": {
+          "title": "A fast ball can roll up the right-flipper inlane rail and fall into the outlane while you try to cradle or dead bounce.",
+          "text": "Keep the ball moving. Do not force a right-flipper cradle until the incoming speed is known."
+        }
+      }
+    }
+  ]
+}

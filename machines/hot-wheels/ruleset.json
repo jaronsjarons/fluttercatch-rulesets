@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "id": "GEL31",
+  "title": "Hot Wheels",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Tilt Forums Hot Wheels rulesheet",
+      "url": "https://tiltforums.com/t/hot-wheels-rulesheet-wip/6633"
+    },
+    "supportingSources": [
+      {
+        "label": "Official American Pinball Hot Wheels code and release notes",
+        "url": "https://americanpinball.com/support/updates/"
+      },
+      {
+        "label": "Official American Pinball Hot Wheels manual",
+        "url": "https://s4.american-pinball.com/img/support/2021-10/Hot-Wheels-Manual-10-14-2021.pdf"
+      },
+      {
+        "label": "Official American Pinball Hot Wheels game rules overview",
+        "url": "https://americanpinball.com/hot-wheels/"
+      },
+      {
+        "label": "Flavio Baddaria at November Rain 2021 Warm-up Finals",
+        "url": "https://pinballvideos.com/v/2884/4436"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build tach first with the RPM targets, start a prepared Battle, then combine Loop Crash and Victory Lap at the left orbit for five-ball play.",
+      "quickInfo": [
+        {
+          "name": "Tach and gear",
+          "summary": "The tach is a playfield-scoring multiplier for almost every award; RPM targets raise it, and each Red Line Mania raises the next gear's minimum."
+        },
+        {
+          "name": "Victory Lap Multiball",
+          "summary": "Advance through the race-position shots and finish at the left orbit for four-ball play."
+        },
+        {
+          "name": "Loop Crash Multiball",
+          "summary": "Alternate the left inner loop and right orbit to qualify it, then use the left orbit to start and to set up its magnet Super Jackpot."
+        },
+        {
+          "name": "Five-ball stack",
+          "summary": "If Victory Lap and Loop Crash are both ready, the left orbit starts both together."
+        },
+        {
+          "name": "Turbo Boost",
+          "summary": "Pop bumpers qualify the kickback, and Turbo starts a 15-second 10x playfield-scoring multiplier based on the tach value at activation."
+        },
+        {
+          "name": "Battles and Epic features",
+          "summary": "Both can stack with every main multiball, so start a prepared Battle before the left-orbit multiball stack."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Soft-plunge through the numbered rollover zones, then shoot the lit left orbit for the Super Skill Shot.",
+          "modeNotes": [
+            "Each passed rollover adds tach progress.",
+            "The left-orbit Super Skill Shot also awards the first race position and can place the ball on the loop magnet."
+          ]
+        },
+        {
+          "text": "Hit flashing RPM targets whenever the tach falls. Do not let passive decay erase the multiplier before a major collect.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Follow the blinking race-position shots from 12th place through 1st, but leave the final left-orbit checkered flag uncollected while Loop Crash is still being qualified.",
+          "modeNotes": [
+            "Race positions move among the left orbit, inner loop, ramps, and right orbit.",
+            "The checkered flag finishes the race and starts Victory Lap Multiball at the left orbit."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Alternate the left inner loop and right orbit six times to qualify the first Loop Crash at the left orbit.",
+          "modeNotes": [
+            "Later Loop Crash qualifications add two shots, up to twelve."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If BATTLE is complete, start the selected Battle at the right saucer before collecting the left-orbit multiball start.",
+          "modeNotes": [
+            "Battle modes stack with all main multiballs.",
+            "The first two Battles can also start at the left saucer.",
+            "Lit BATTLE targets add time during a running Battle; completing the bank adds a larger amount."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the left orbit when both Loop Crash and Victory Lap are ready to start their five-ball stack.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For Victory Lap, collect the four major Jackpots, then shoot the kickback for the Super Jackpot.",
+          "modeNotes": [
+            "The left ramp, left orbit, right ramp, and right orbit score progressive Jackpots.",
+            "The collected Jackpot progress determines the Super Jackpot multiplier."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For Loop Crash, make loop, orbit, and pop crashes. At ten crashes, shoot the left orbit to hold a ball on the magnet, then hit the left orbit again to knock it free for the Super Jackpot.",
+          "modeNotes": [
+            "Later Super Jackpots require more crashes."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When Turbo is lit and the tach is high, shoot the kickback and use the 15-second window on active Battle or Jackpot shots.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After the stack, rebuild tach first. Resume race, Loop Crash, BATTLE, and EPIC progress from the playfield inserts."
+        }
+      ],
+      "fallback": {
+        "title": "Track Builder Unlimited",
+        "when": "This Multiball starts from four Track Builder hits instead of the longer Loop Crash and Victory Lap qualifications.",
+        "steps": [
+          {
+            "text": "Hit the Track Builder drop or left saucer four times to build the base Jackpot."
+          },
+          {
+            "text": "Shoot the green-lit left saucer to start two-ball Track Builder Unlimited.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Within 15 seconds, shoot the right saucer to add a third ball and double the base Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect loop and orbit Jackpots until the left saucer lights for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the Super, shoot the kickback promptly for the Mega Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Battle-first route",
+          "when": "A prepared Battle can start before any ready main Multiball because Battles stack with all of them.",
+          "steps": [
+            {
+              "text": "Complete BATTLE, using the spinners to cycle the selected incomplete creature."
+            },
+            {
+              "text": "Start the Battle at the right saucer.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the displayed wave shots and use relit BATTLE targets to refill fuel.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Stack any ready main multiball without waiting for the other left-orbit multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Red Line Mania route",
+          "when": "Red Line Mania begins when the tach reaches maximum.",
+          "steps": [
+            {
+              "text": "Keep hitting flashing RPM targets until the tach reaches maximum."
+            },
+            {
+              "text": "Red Line Mania starts automatically and pauses other running progress.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Clear the seven red shots for a Super Jackpot, then repeat the cycle until time ends.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Resume the paused game in the next gear with a higher minimum tach and end-of-ball Bonus X."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Hero Cars and Legend Multiball",
+        "steps": [
+          {
+            "text": "Complete Car Chaos for Twin Mill.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete Draven after the four creature Battles for Rodger Dodger.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Ultimate Epic after Cars, Loops, Pops, and Ramps for Bone Shaker.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Red Line Mania for Rip Rod.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Play Victory Lap, Loop Crash, and Track Builder Multiballs for Sharkruiser.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all five Hero Cars, shoot either saucer to start two-minute Legend Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Classic and Deluxe gameplay",
+          "pro": "Classic contains the full standard playfield and rules package.",
+          "premium": "Deluxe adds cabinet hardware and finish upgrades, but shares its playfield and rules with Classic.",
+          "sourceUrl": "https://americanpinball.com/hot-wheels/"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "tach",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Turbo Boost",
+          "tone": "oxblood",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Victory Lap Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Loop Crash Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Track Builder Unlimited",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Car Chaos",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Legend Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Battle",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Red Line Mania",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Draven",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Ultimate Epic",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Hero Cars",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Loop Crash and Victory Lap double start",
+          "instruction": "Qualify both modes before shooting the left orbit so one shot begins the five-ball stack.",
+          "sourceUrl": "https://tiltforums.com/t/hot-wheels-rulesheet-wip/6633"
+        },
+        {
+          "name": "High-tach Turbo",
+          "instruction": "Wait until tach is high before activating Turbo because the feature locks in ten times the tach value at activation.",
+          "sourceUrl": "https://tiltforums.com/t/hot-wheels-rulesheet-wip/6633"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Turbo is limited to one activation per gear and a lit Turbo is lost on a drain.",
+          "response": "Do not spend it at a low tach value or carry a lit activation through unnecessary risk.",
+          "sourceUrl": "https://tiltforums.com/t/hot-wheels-rulesheet-wip/6633"
+        }
+      ],
+      "simpleOverview": "Hot Wheels multiplies nearly every award by the tach value, while Battles and Multiballs can run together. Hit flashing RPM targets first to raise and briefly hold the tach. Complete B-A-T-T-L-E, use either spinner to select an incomplete creature, and shoot the right saucer to start the Battle; start any ready Multiball while the Battle runs.",
+      "overview": "Hot Wheels multiplies nearly every award by the tach value, and Battles can run with every main Multiball. Build tach first with flashing RPM targets, then complete B-A-T-T-L-E, use either spinner to select an incomplete creature, and shoot the right saucer to start the Battle. Follow the race-position inserts for Victory Lap and alternate the left inner loop with the right orbit six times for the first Loop Crash; when both are ready, shoot the left orbit to start them together as five-ball play.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "G5B9Z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Send the ball through the right orbit to the upper playfield, make its two lock shots, then shoot the red ramp to release the locks and start three-ball Multiball. Before starting it, complete targets 1 through 7 or the three top lanes to raise the Multiball Bonus multiplier. During Multiball, switches score the Multiball Bonus, so use the upper playfield, drop banks, and Heat bumper while the multiplier is high.",
+        "simpleOverview": "Use the right orbit to reach the upper playfield and make both lock shots, then shoot the red ramp for three-ball Multiball. Build the Multiball Bonus first by completing targets 1 through 7 or the three top lanes, then keep hitting switches during Multiball.",
+        "summary": "Reach the upper playfield through the right orbit, fill its two locks, then shoot the red ramp for three-ball Multiball. Build the Multiball Bonus with targets 1 through 7 or the top lanes before starting.",
+        "quickInfo": [
+          {
+            "name": "Reach the Locks",
+            "summary": "Shoot the right orbit to the upper playfield."
+          },
+          {
+            "name": "Lock Two Balls",
+            "summary": "Make both upper-playfield lock shots."
+          },
+          {
+            "name": "Build the Bonus",
+            "summary": "Complete targets 1–7 or all three top lanes."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the red ramp after both locks are filled."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the right orbit to reach the upper playfield, then make its two lock shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Before releasing the locks, complete targets 1 through 7 or all three top lanes to raise the Multiball Bonus multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the red ramp after both locks are filled to release them and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, work the upper playfield, drop banks, and Heat bumper for repeated multiplied switch scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build P-I-N-B-A-L-L",
+            "when": "Use this when the top lanes or red ramp are already feeding safely.",
+            "steps": [
+              {
+                "text": "Use the top rollover sequence or the red ramp outside its Multiball-release state to add P-I-N-B-A-L-L letters.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete P-I-N-B-A-L-L to light Special at the rollunder, subject to tournament conversion.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Raise the drop-bank value",
+          "steps": [
+            {
+              "text": "Complete both flashing drop-target banks to advance their shared completion value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the banks during Multiball after the Multiball Bonus has been raised.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- versus five-ball scoring, Extra Ball and Special conversions, lock sharing, and Multiball Bonus carry between balls.",
+          "Test the right-orbit upper-playfield feed, both upper lock shots and releases, red ramp, targets 1–7, top lanes, both drop banks, and Heat bumper."
+        ],
+        "termStyles": [
+          {
+            "label": "Multiball Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "P-I-N-B-A-L-L",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "The shot that feeds the upper playfield and its two locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper playfield",
+            "label": "Upper playfield locks",
+            "description": "The upper area containing the two lock shots needed for Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red ramp",
+            "label": "Red release ramp",
+            "description": "The ramp that releases two locked balls and starts three-ball Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The red ramp starts Multiball only after both upper-playfield locks are filled.",
+            "response": "Use the right orbit to finish the two locks first; otherwise treat the ramp as feature and letter progress.",
+            "sourceUrl": "https://nickelcitypinball.com/games-list/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Reach the upper playfield through the right orbit, fill its two locks, then shoot the red ramp for three-ball Multiball. Build the Multiball Bonus with targets 1 through 7 or the top lanes before starting.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the right orbit to reach the upper playfield, then make its two lock shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Before releasing the locks, complete targets 1 through 7 or all three top lanes to raise the Multiball Bonus multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the red ramp after both locks are filled to release them and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, work the upper playfield, drop banks, and Heat bumper for repeated multiplied switch scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Reach the Locks",
+            "summary": "Shoot the right orbit to the upper playfield."
+          },
+          {
+            "name": "Lock Two Balls",
+            "summary": "Make both upper-playfield lock shots."
+          },
+          {
+            "name": "Build the Bonus",
+            "summary": "Complete targets 1–7 or all three top lanes."
+          }
+        ]
+      }
+    }
+  ]
+}

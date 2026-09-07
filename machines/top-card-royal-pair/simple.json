@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "G4JND",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use card targets to light all three bumpers and cycle the star rollovers to 1,000. Then avoid the targets and keep the ball in the top area for rollovers and bumper scoring.",
+        "quickInfo": [
+          {
+            "name": "Star rollover value",
+            "summary": "Each card-target hit cycles every star rollover from 10 to 100 to 1,000 and then back to 10."
+          },
+          {
+            "name": "Ace target",
+            "summary": "Hit the Ace standup to light the lower bumper."
+          },
+          {
+            "name": "Left card group",
+            "summary": "Complete the five 2-6 targets on the left to light the left bumper."
+          },
+          {
+            "name": "Right card group",
+            "summary": "Complete the five 9-K targets on the right to light the right bumper."
+          },
+          {
+            "name": "Persistent rollover value",
+            "summary": "A new game starts with the rollover value left by the previous game."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through the top star rollovers. Guide the ball inside a top bumper toward the Ace target."
+          },
+          {
+            "text": "Hit card targets until the star rollover value reaches 1,000."
+          },
+          {
+            "text": "Complete the Ace, left 2-6 group, and right 9-K group to light all three bumpers."
+          },
+          {
+            "text": "When the star rollovers show 1,000, stop shooting card targets.",
+            "modeNotes": [
+              "Rollover cycle: Each card hit changes the star value from 10 to 100 to 1,000 and then back to 10."
+            ]
+          },
+          {
+            "text": "Bank the ball off a card standup into the top of the playfield."
+          },
+          {
+            "text": "Nudge within the tilt limit to collect star rollovers and lit-bumper hits."
+          },
+          {
+            "text": "Resume card-target shots only when the rollover value changes or an important bumper remains unlit."
+          }
+        ],
+        "fallback": {
+          "title": "Restore the 1,000 rollover value",
+          "when": "Use this when the star value is 10 or 100 and broad target-bank completion is unsafe.",
+          "steps": [
+            {
+              "text": "Choose the card target with the safest rebound."
+            },
+            {
+              "text": "Hit one target and read the new star rollover value."
+            },
+            {
+              "text": "Repeat only until the value reaches 1,000."
+            },
+            {
+              "text": "Return the ball to the top and avoid more card targets."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Immediate 1,000-value top play",
+            "when": "Use this when the previous game left the star rollover value at 1,000.",
+            "steps": [
+              {
+                "text": "Confirm the 1,000 rollover value before the first plunge."
+              },
+              {
+                "text": "Choose the first-player position if the event permits that choice."
+              },
+              {
+                "text": "Plunge for repeated star rollovers and upper-bumper action."
+              },
+              {
+                "text": "Avoid the card targets until the 1,000 value changes."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Three lit bumpers with 1,000 rollovers",
+          "steps": [
+            {
+              "text": "Hit the Ace to light the lower bumper."
+            },
+            {
+              "text": "Complete 2-6 to light the left bumper."
+            },
+            {
+              "text": "Complete 9-K to light the right bumper."
+            },
+            {
+              "text": "Stop the card-target cycle at a 1,000 rollover value."
+            },
+            {
+              "text": "Use repeated top play for the combined rollover and bumper scoring."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Top-lane skill plunge",
+            "instruction": "Plunge for several star rollovers. Guide the ball to the inner side of a top bumper so it can reach the Ace target.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8"
+          },
+          {
+            "name": "Card-target bank shot",
+            "instruction": "Use a controlled bank shot off a card standup to return the ball toward the upper playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Learn the nudge that guides a slow side feed around the return-lane post. Stay within the machine's tilt limit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8",
+            "techniqueSlug": "nudging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Another card-target hit after the 1,000 state resets the rollover value to 10.",
+            "response": "Read the rollover lamps after every target hit. Stop target shooting as soon as 1,000 is active.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8"
+          },
+          {
+            "issue": "Bumper exits and balls that graze an upper slingshot can drain through the center.",
+            "response": "Prepare both flippers before the ball leaves the top. Do not assume that a weak slingshot contact is safe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8"
+          },
+          {
+            "issue": "The angled return lanes can guide a side feed to the outlane instead of the flipper.",
+            "response": "Observe the first side feed. Use only the nudge that the post position and tilt permit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8"
+          },
+          {
+            "issue": "The rollover value can carry from the previous game and give one starting position an advantage.",
+            "response": "Check the value before player order is set. Follow the event ruling for persistent mechanical state.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4JND-MJ5K8"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Top Card, Royal Pair, or Royal King edition.",
+          "Read ball count, rollover value, posts, and bumper strength."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "card targets",
+            "label": "Card targets",
+            "description": "Standups that change rollover value and light bumpers.",
+            "precision": "unverified",
+            "context": "Standups that change rollover value and light bumpers."
+          },
+          {
+            "term": "star rollovers",
+            "label": "Star rollovers",
+            "description": "Top rollovers whose value cycles through three levels.",
+            "precision": "unverified",
+            "context": "Top rollovers whose value cycles through three levels."
+          },
+          {
+            "term": "Ace target",
+            "label": "Ace target",
+            "description": "Target used to light the bottom bumper.",
+            "precision": "unverified",
+            "context": "Target used to light the bottom bumper."
+          }
+        ],
+        "simpleOverview": "Top Card uses card-target hits to light three bumpers and cycle every star rollover from 10 to 100 to 1,000. Complete the Ace, 2-6, and 9-K objectives, stop the rollovers at 1,000, then leave the card targets alone and keep the ball in the upper area.",
+        "overview": "Top Card uses card-target hits to light three bumpers and cycle every star rollover from 10 to 100 to 1,000. Complete the three card objectives and stop the cycle at 1,000, then shift entirely to upper-playfield rollovers and lit bumpers. Check the starting rollover value because it persists from the previous game.",
+        "machineSetup": [
+          "Confirm Top Card, Royal Pair, or Royal King edition.",
+          "Read ball count, rollover value, posts, and bumper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use card targets to light all three bumpers and cycle the star rollovers to 1,000. Then avoid the targets and keep the ball in the top area for rollovers and bumper scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through the top star rollovers. Guide the ball inside a top bumper toward the Ace target."
+          },
+          {
+            "text": "Hit card targets until the star rollover value reaches 1,000."
+          },
+          {
+            "text": "Complete the Ace, left 2-6 group, and right 9-K group to light all three bumpers."
+          },
+          {
+            "text": "When the star rollovers show 1,000, stop shooting card targets.",
+            "details": [
+              "Rollover cycle: Each card hit changes the star value from 10 to 100 to 1,000 and then back to 10."
+            ]
+          },
+          {
+            "text": "Bank the ball off a card standup into the top of the playfield."
+          },
+          {
+            "text": "Nudge within the tilt limit to collect star rollovers and lit-bumper hits."
+          },
+          {
+            "text": "Resume card-target shots only when the rollover value changes or an important bumper remains unlit."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Star rollover value",
+            "summary": "Each card-target hit cycles every star rollover from 10 to 100 to 1,000 and then back to 10."
+          },
+          {
+            "name": "Ace target",
+            "summary": "Hit the Ace standup to light the lower bumper."
+          },
+          {
+            "name": "Left card group",
+            "summary": "Complete the five 2-6 targets on the left to light the left bumper."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Restore the 1,000 rollover value",
+          "when": "Use this when the star value is 10 or 100 and broad target-bank completion is unsafe.",
+          "steps": [
+            {
+              "text": "Choose the card target with the safest rebound."
+            },
+            {
+              "text": "Hit one target and read the new star rollover value."
+            },
+            {
+              "text": "Repeat only until the value reaches 1,000."
+            },
+            {
+              "text": "Return the ball to the top and avoid more card targets."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Bumper exits and balls that graze an upper slingshot can drain through the center.",
+          "text": "Prepare both flippers before the ball leaves the top. Do not assume that a weak slingshot contact is safe."
+        }
+      }
+    }
+  ]
+}

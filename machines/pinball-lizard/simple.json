@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9ko",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Pinball Lizard rewards an early upper-left saucer: it raises Bonus X and lights the right spinner for the rest of the game. After that, keep sending the ball up top with the safer orbit, spinner, or saucer route; the narrow left 50,000 lane is valuable only when its miss and rebound are under control.",
+        "simpleOverview": "Shoot the upper-left saucer early to raise Bonus X and light the right spinner. Then keep sending the ball up top; use the narrow left 50,000 lane only if you can hit it safely.",
+        "summary": "Get the saucer once, build the persistent multiplier through A-B-C-D-E, PINBALL, or more saucer shots, and favor repeatable up-top feeds over risky standups.",
+        "quickInfo": [
+          {
+            "name": "First Priority",
+            "summary": "Shoot the upper-left saucer to raise Bonus X and light the spinner."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete A-B-C-D-E, complete PINBALL, or shoot the saucer."
+          },
+          {
+            "name": "Build Base Bonus",
+            "summary": "Each drop target adds 1,000."
+          },
+          {
+            "name": "High-Risk Value",
+            "summary": "The narrow left lane scores 50,000."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the upper-left saucer once as early as possible; it raises Bonus X and lights the right spinner.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right spinner, saucer, or left-side star-rollover orbit to return the ball to the top."
+          },
+          {
+            "text": "Complete A-B-C-D-E or both PINBALL banks to raise the multiplier, which carries across balls."
+          },
+          {
+            "text": "Build base bonus with drop targets and keep using the safest up-top route."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "50,000 lane",
+            "when": "Use this only when the narrow left lane is hittable and a miss does not create uncontrolled side-to-side action.",
+            "steps": [
+              {
+                "text": "Settle the ball on the right flipper."
+              },
+              {
+                "text": "Shoot the narrow far-left lane for 50,000."
+              },
+              {
+                "text": "Return to the up-top plan after any dangerous rejection."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "29,000 at 5x",
+          "steps": [
+            {
+              "text": "Raise Bonus X through the saucer, lane set, or PINBALL banks."
+            },
+            {
+              "text": "Advance the base bonus with drop targets toward 29,000."
+            },
+            {
+              "text": "Protect the ball and preserve the multiplied end-of-ball payout."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test the upper-left saucer and eject, right spinner, A-B-C and D-E lanes, both PINBALL banks, left 50,000 lane, and bonus lamps.",
+          "Confirm Bonus X carryover, Extra Ball and Special conversion, and whether the left-lane miss is recoverable."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-left saucer",
+            "label": "Bonus X saucer",
+            "description": "Upper-left saucer that raises Bonus X and lights the spinner.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right spinner",
+            "label": "Right spinner",
+            "description": "Up-top return shot lit by the saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "50,000 lane",
+            "label": "Left 50,000 lane",
+            "description": "Tight high-value lane on the far left.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Get the saucer once, build the persistent multiplier through A-B-C-D-E, PINBALL, or more saucer shots, and favor repeatable up-top feeds over risky standups.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the upper-left saucer once as early as possible; it raises Bonus X and lights the right spinner.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right spinner, saucer, or left-side star-rollover orbit to return the ball to the top."
+          },
+          {
+            "text": "Complete A-B-C-D-E or both PINBALL banks to raise the multiplier, which carries across balls."
+          },
+          {
+            "text": "Build base bonus with drop targets and keep using the safest up-top route."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "First Priority",
+            "summary": "Shoot the upper-left saucer to raise Bonus X and light the spinner."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete A-B-C-D-E, complete PINBALL, or shoot the saucer."
+          },
+          {
+            "name": "Build Base Bonus",
+            "summary": "Each drop target adds 1,000."
+          }
+        ]
+      }
+    }
+  ]
+}

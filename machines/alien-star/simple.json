@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xwQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete ALIEN, use the spinner to select 5x, then start two-ball play at the left saucer. During multiball, repeat the spinner and use the right return lane for short 10x spinner windows.",
+        "quickInfo": [
+          {
+            "name": "ALIEN letters",
+            "summary": "Complete the five ALIEN standups to qualify the left saucer for two-ball play."
+          },
+          {
+            "name": "Multiplier selection",
+            "summary": "The spinner changes the lit scoring multiplier, so time the shot to select 5x before the multiball start."
+          },
+          {
+            "name": "Alien Star Multiball",
+            "summary": "Shoot the qualified left saucer to start two-ball play with the selected multiplier applied to feature scoring."
+          },
+          {
+            "name": "10x spinner",
+            "summary": "The right return lane starts a short 10x spinner window, so shoot the spinner immediately when the feed permits it."
+          },
+          {
+            "name": "Bonus",
+            "summary": "ALIEN and playfield progress build end-of-ball bonus, which you should protect when the multiball route is not ready."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the ALIEN standups. Favor controlled or incidental hits over direct center rebounds."
+          },
+          {
+            "text": "Shoot the spinner until 5x is selected. Then avoid the spinner while you finish ALIEN, so the saucer start keeps the selected 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the left saucer to start Alien Star Multiball.",
+            "modeNotes": [
+              "Alien Star Multiball: Complete ALIEN, select a multiplier with the spinner, then shoot the left saucer to release the locked ball for two-ball play."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the spinner during multiball. Use the second ball as protection for the fast center return.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the right return lane lights 10x spinner, take the spinner immediately if the feed is controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After one ball remains, rebuild ALIEN. Restore 5x only if later spinner contact moved the selection away from it.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Right-return spinner",
+          "when": "Use this when the left saucer or ALIEN standups are rejecting dangerously.",
+          "steps": [
+            {
+              "text": "Move the ball to the left flipper with a controlled transfer."
+            },
+            {
+              "text": "Shatz pass through the right return lane to start the short 10x spinner window.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the spinner at once. Do not spend the timer trying to regain a perfect cradle.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Return to ALIEN progress when the center feed is stable."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "5x spinner without multiball",
+            "when": "Use this when the spinner is safe but the left saucer is not.",
+            "steps": [
+              {
+                "text": "Use spinner hits to move the lit value to 5x.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Repeat the spinner from controlled feeds."
+              },
+              {
+                "text": "Keep the qualified saucer available until its eject has been tested."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 5x multiballs",
+          "steps": [
+            {
+              "text": "Complete ALIEN to qualify the left saucer."
+            },
+            {
+              "text": "Select 5x before each start.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Start two-ball play and use its protection for spinner scoring.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Requalify ALIEN after multiball and repeat the route.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Alien Star Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "5x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "10x spinner",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Shatz pass to the right return lane",
+            "instruction": "Shatz pass through the right return lane from the left flipper, then shoot the spinner from the receiving right flipper during the 10x window.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xwQ-MQpVO"
+          },
+          {
+            "name": "Spinner repeat",
+            "instruction": "Watch which flipper receives the spinner return. Trap once, then repeat only while the center feed remains predictable.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xwQ-MQpVO"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The left saucer eject can return quickly or toward the center.",
+            "response": "Observe the first eject with both flippers ready. Do not make the saucer the main until the return is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xwQ-MQpVO"
+          },
+          {
+            "issue": "Direct ALIEN standup shots can rebound toward the drain.",
+            "response": "Take letters from controlled angles or collect them incidentally during spinner work.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xwQ-MQpVO"
+          },
+          {
+            "issue": "The 10x spinner window is short.",
+            "response": "Use the right-lane feed only when the spinner follow-up is already available.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xwQ-MQpVO"
+          },
+          {
+            "issue": "Every spinner hit changes the selected Multiball multiplier and can move a ready 5x away.",
+            "response": "Once 5x is lit, finish ALIEN without using the spinner and convert the saucer before you resume spinner scoring.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4xwQ-MQpVO"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the installed System 80 settings, ball count, Extra Ball and Special treatment, and whether ALIEN and lock progress carry between balls.",
+          "Read the active 2x, 3x, or 5x selector before shooting the qualified saucer.",
+          "Test the left-saucer eject, center-spinner return, right-return-lane feed, and ALIEN-target rebounds before choosing the route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "ALIEN standups",
+            "label": "ALIEN targets",
+            "description": "Complete the ALIEN standups. Favor controlled or incidental hits over direct center rebounds.",
+            "xPercent": 68.25,
+            "yPercent": 37.02,
+            "widthPercent": 7.98,
+            "heightPercent": 14.23,
+            "precision": "area"
+          },
+          {
+            "term": "left saucer",
+            "label": "Alien Star saucer",
+            "description": "Complete ALIEN, use the spinner to select 5x, then start two-ball play at the left saucer. During multiball, repeat the spinner and use the right return lane for short 10x spinner windows.",
+            "xPercent": 18.14,
+            "yPercent": 29.13,
+            "widthPercent": 8.32,
+            "heightPercent": 5.11,
+            "precision": "area"
+          },
+          {
+            "term": "return lane",
+            "label": "return lane",
+            "description": "Complete ALIEN, use the spinner to select 5x, then start two-ball play at the left saucer. During multiball, repeat the spinner and use the right return lane for short 10x spinner windows.",
+            "xPercent": 68.94,
+            "yPercent": 53.81,
+            "widthPercent": 6.13,
+            "heightPercent": 8.82,
+            "precision": "area"
+          },
+          {
+            "term": "right-lane",
+            "label": "right-lane",
+            "description": "Use the right-lane feed only when the spinner follow-up is already available.",
+            "xPercent": 69.18,
+            "yPercent": 53.66,
+            "widthPercent": 5.2,
+            "heightPercent": 10,
+            "precision": "area"
+          },
+          {
+            "term": "spinner",
+            "label": "Center spinner",
+            "description": "Alien Star uses A-L-I-E-N to qualify two-ball play and the spinner to select its scoring multiplier. Choose 5x before starting two-ball play, repeat the spinner while protected, and shoot it immediately after a right-return-lane feed activates the brief 10x window.",
+            "xPercent": 27.33,
+            "yPercent": 23.68,
+            "widthPercent": 10.29,
+            "heightPercent": 5.93,
+            "precision": "area"
+          }
+        ],
+        "simpleOverview": "Alien Star uses A-L-I-E-N to qualify two-ball play and the spinner to select its scoring multiplier. Complete the letters, time a spinner shot for 5x, start at the left saucer, then use the right return lane for short 10x spinner windows.",
+        "overview": "Alien Star uses A-L-I-E-N to qualify two-ball play and the spinner to select its scoring multiplier. Choose 5x before starting two-ball play, repeat the spinner while protected, and shoot it immediately after a right-return-lane feed activates the brief 10x window.",
+        "machineSetup": [
+          "Confirm the installed System 80 settings, ball count, Extra Ball and Special treatment, and whether ALIEN and lock progress carry between balls.",
+          "Read the active 2x, 3x, or 5x selector before shooting the qualified saucer.",
+          "Test the left-saucer eject, center-spinner return, right-return-lane feed, and ALIEN-target rebounds before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete ALIEN, use the spinner to select 5x, then start two-ball play at the left saucer. During multiball, repeat the spinner and use the right return lane for short 10x spinner windows.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the ALIEN standups. Favor controlled or incidental hits over direct center rebounds."
+          },
+          {
+            "text": "Shoot the spinner until 5x is selected. Then avoid the spinner while you finish ALIEN, so the saucer start keeps the selected 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the left saucer to start Alien Star Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Alien Star Multiball: Complete ALIEN, select a multiplier with the spinner, then shoot the left saucer to release the locked ball for two-ball play."
+            ]
+          },
+          {
+            "text": "Repeat the spinner during multiball. Use the second ball as protection for the fast center return.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the right return lane lights 10x spinner, take the spinner immediately if the feed is controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After one ball remains, rebuild ALIEN. Restore 5x only if later spinner contact moved the selection away from it.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "ALIEN letters",
+            "summary": "Complete the five ALIEN standups to qualify the left saucer for two-ball play."
+          },
+          {
+            "name": "Multiplier selection",
+            "summary": "The spinner changes the lit scoring multiplier, so time the shot to select 5x before the multiball start."
+          },
+          {
+            "name": "Alien Star Multiball",
+            "summary": "Shoot the qualified left saucer to start two-ball play with the selected multiplier applied to feature scoring."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Right-return spinner",
+          "when": "Use this when the left saucer or ALIEN standups are rejecting dangerously.",
+          "steps": [
+            {
+              "text": "Move the ball to the left flipper with a controlled transfer."
+            },
+            {
+              "text": "Shatz pass through the right return lane to start the short 10x spinner window.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the spinner at once. Do not spend the timer trying to regain a perfect cradle.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Return to ALIEN progress when the center feed is stable."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Direct ALIEN standup shots can rebound toward the drain.",
+          "text": "Take letters from controlled angles or collect them incidentally during spinner work."
+        }
+      }
+    }
+  ]
+}

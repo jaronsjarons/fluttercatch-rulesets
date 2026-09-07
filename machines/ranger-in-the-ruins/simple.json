@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "GLWWV",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot a standup target or the captive ball, then shoot the raised wall scoop to collect the offered item. Every shot displays its point value; Multiball keeps those values and has no Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Collect an item",
+            "summary": "Hit any one of the four standup targets or the captive ball, then shoot the randomly raised wall scoop to collect the item."
+          },
+          {
+            "name": "Visible shot values",
+            "summary": "Every shot displays its point value, which changes with the configured number of balls."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Some items lock balls or start an instant Multiball, which has no Jackpots or Super Jackpots and keeps the normal shot values active."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit any one of the four standup targets or the captive ball. One wall scoop rises at random."
+          },
+          {
+            "text": "Shoot the raised wall scoop to collect the offered item. Each item can help, hinder, change scoring, lock balls, or start an instant Multiball."
+          },
+          {
+            "text": "Read the point value displayed at each shot. Making that shot scores the displayed value."
+          },
+          {
+            "text": "If an item starts Multiball, continue shooting the displayed values. There are no Jackpots or Super Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "wall scoop",
+            "context": "Shoot the raised wall scoop to collect the offered item.",
+            "label": "Raised item scoop",
+            "description": "One scoop in the moving wall rises after a standup-target or captive-ball hit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "context": "Hit any one of the four standup targets or the captive ball.",
+            "label": "Captive ball",
+            "description": "The captive ball is one of the five shots that selects a wall scoop.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Not every item helps the player.",
+            "response": "Watch the display and visible playfield changes after every item collect; an item's effect is not guaranteed to be beneficial.",
+            "sourceUrl": "https://www.kineticist.com/news/ranger-in-the-ruins-deep-dive"
+          },
+          {
+            "issue": "The game has no tilt warnings.",
+            "response": "Nudge cautiously because a tilt ends the game.",
+            "sourceUrl": "https://www.kineticist.com/news/ranger-in-the-ruins-deep-dive"
+          }
+        ],
+        "simpleOverview": "Ranger in the Ruins is an item-collection game. Hit one of the four standup targets or the captive ball to raise a random wall scoop, then shoot that scoop to collect its item. If an item starts Multiball, keep shooting the displayed values because Multiball does not add Jackpots.",
+        "overview": "Ranger in the Ruins is an item-collection game. Hit one of the four standup targets or the captive ball to raise a random wall scoop, then shoot that scoop to collect its item. Some items add balls or start Multiball; the displayed shot values remain active, with no Jackpots or Super Jackpots.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Collect items through a standup target or the captive ball and the raised wall scoop. Every shot displays its point value; Multiball keeps those values and has no Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "How to collect an item",
+            "text": "Hit any one of the four standup targets or the captive ball. One wall scoop rises at random; shoot that scoop to collect the offered item."
+          },
+          {
+            "title": "How scoring is shown",
+            "text": "Read the point value displayed at each shot. Making that shot scores the displayed value."
+          },
+          {
+            "title": "How Multiball works",
+            "text": "Some items lock balls or start an instant Multiball. During Multiball, continue shooting the displayed values; there are no Jackpots or Super Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Collect an item",
+            "summary": "Hit any one of the four standup targets or the captive ball, then shoot the randomly raised wall scoop to collect the item."
+          },
+          {
+            "name": "Visible shot values",
+            "summary": "Every shot displays its point value, which changes with the configured number of balls."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Some items lock balls or start an instant Multiball, which has no Jackpots or Super Jackpots and keeps the normal shot values active."
+          }
+        ]
+      }
+    }
+  ]
+}

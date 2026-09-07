@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Bnl",
+  "title": "Mystic",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Classic Pinball Machines",
+      "url": "https://rules.silverballmania.com/rules/G5Bnl-MLnw6"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA 18 tournament strategy discussion",
+        "url": "https://tiltforums.com/t/papa-18-strategies-wiki/244"
+      },
+      {
+        "label": "PinballCards Mystic rules card",
+        "url": "https://pinballcards.net/mystic-1979"
+      },
+      {
+        "label": "Raymond Davidson at INDISC 2019 Classics I — Finals",
+        "url": "https://pinballvideos.com/v/2269/2055"
+      },
+      {
+        "label": "District 82 Mystic 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=HikUR1RCQK4"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the side-bank drop targets to build matching tic-tac-toe lines on ball one. Let rebounds work on the center bank, then raise Bonus X at the captive ball.",
+      "steps": [
+        {
+          "text": "Plunge for the center saucer. Nudge only enough to keep a near miss in the upper area."
+        },
+        {
+          "text": "Read the Eye and Pyramid lamp at each three-target bank. Hit a side-bank target when it places the symbol needed for a three-square line.",
+          "modeNotes": [
+            "Tic-tac-toe grid: Each drop target controls one grid square. Ten-point switches change the active Eye or Pyramid symbol for each bank.",
+            "A matching horizontal, vertical, or diagonal line adds a 9,000 bonus circle."
+          ]
+        },
+        {
+          "text": "Complete the two side banks first. Let rebounds and sling action work on the center bank."
+        },
+        {
+          "text": "Complete all nine grid squares to reset the grid. Keep building matching lines on ball one.",
+          "modeNotes": [
+            "Each filled square adds 3,000 bonus. Filled squares and completed 9,000 circles hold for the whole game.",
+            "One full same-symbol grid makes eight lines. Its 72,000 line value plus 27,000 in squares gives 99,000 base bonus."
+          ]
+        },
+        {
+          "text": "After the base bonus is large, hit the captive ball four times to reach 4x Bonus X.",
+          "modeNotes": [
+            "Captive ball: The first hit scores 5,000. The next three hits award 2x, 3x, and 4x Bonus X.",
+            "The largest held base before the grid resets is 96,000. At 4x, it pays 384,000."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use a lit spinner only when its bumper return is safer than the remaining drop targets."
+        }
+      ],
+      "fallback": {
+        "title": "Lit-spinner route",
+        "when": "Use this when the spinner is strong and the bumper exit returns safely.",
+        "steps": [
+          {
+            "text": "From the right flipper, shoot the left spinner to the upper playfield."
+          },
+          {
+            "text": "Nudge for the center saucer or a needed top star lane."
+          },
+          {
+            "text": "Stop the route if a partial spinner shot or bumper exit reaches a sling or the center drain."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Star lanes",
+          "when": "Use this only when natural feeds leave one star lane close to completion.",
+          "steps": [
+            {
+              "text": "Complete the two top and two return-lane stars for 10,000."
+            },
+            {
+              "text": "Complete the set twice for extra ball or its configured point value."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "4x collect from a 96,000 base",
+        "steps": [
+          {
+            "text": "Complete matching lines, reset the nine-square grid, then fill eight more squares to reach 96,000 base bonus."
+          },
+          {
+            "text": "Reach 4x at the captive ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Protect the bonus. A tilt removes its end-of-ball collect."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Cradle on the right flipper. Backhand the captive ball when that angle is repeatable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Bnl-MLnw6",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Banked captive-ball hit",
+          "instruction": "Bank the ball off the right-side drop bank into the captive ball when the direct shot is not aligned.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Bnl-MLnw6"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The center drop bank has the highest direct rebound risk.",
+          "response": "Save it for last. Let rebounds from the side banks and slings complete it when possible.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Bnl-MLnw6"
+        },
+        {
+          "issue": "Spinner shots enter the bumpers, where exits can drain or hit a sling.",
+          "response": "Test the exit before using the spinner route. Return to the side banks when the exit is not controlled.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Bnl-MLnw6"
+        },
+        {
+          "issue": "Every drop target can return the ball toward a drain.",
+          "response": "Prefer the side banks. Be ready for a center return after every target hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Bnl-MLnw6"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Hit the side-bank drop targets to build matching tic-tac-toe lines on ball one."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete matching lines, reset the nine-square grid, then fill eight more squares to reach 96,000 base bonus."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Lit-spinner route: Use this when the spinner is strong and the bumper exit returns safely."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Mystic, ball count, award conversions, and any tournament setting changes.",
+        "Test the saucer, grid banks, captive ball, spinner, and upper feeds."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At INDISC 2019, Keith Elwin raised the carried Bonus X early and used the lit spinner as a separate scoring route."
+        ]
+      },
+      "simpleOverview": "Mystic carries its tic-tac-toe grid between balls and multiplies it at the captive ball. Use the side banks to place needed symbols, complete the nine-square grid repeatedly, then raise Bonus X to 4x. Protect the stored bonus rather than forcing the center bank.",
+      "overview": "Mystic carries its tic-tac-toe grid between balls and multiplies it at the captive ball. Build matching lines through the two side banks, let incidental rebounds handle the center, and reset the completed grid for more base bonus. After the base is large, reach 4x and preserve the drain collect.",
+      "machineSetup": [
+        "Confirm Bally Mystic, ball count, award conversions, and any tournament setting changes.",
+        "Test the saucer, grid banks, captive ball, spinner, and upper feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

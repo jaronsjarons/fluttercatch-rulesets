@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoWo",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Hit the Deck and Neptune ask you to complete six red cards and six black cards. Labeled lanes collect most cards, while the top and bottom holes award cards of their indicated colors; the replay card then turns a completed color into stronger card values and a lit WOW or Special collect. Because few cards are direct shots, the repeatable route is to send the ball between the center and left bumpers and let upper-playfield action find the needed lanes.",
+        "simpleOverview": "Collect six red cards and six black cards through the labeled lanes. The top and bottom holes also award cards of their indicated colors. Shoot between the center and left bumpers to feed the lanes; use the lower-left Queen and King standups only when one of those cards is still missing. After completing a color, follow the installed card's lit WOW or Special collect.",
+        "summary": "Keep the ball in the upper playfield and let lanes, bumpers, and holes fill the two card rows. Take the dangerous lower-left standups only to finish a color, then collect the version-specific lit award instead of assuming every Hit the Deck or Neptune is configured alike.",
+        "quickInfo": [
+          {
+            "name": "Complete Red",
+            "summary": "Collect all six red cards through lanes and the red-card hole."
+          },
+          {
+            "name": "Complete Black",
+            "summary": "Collect all six black cards through lanes and the black-card hole."
+          },
+          {
+            "name": "Award Needed Card",
+            "summary": "Use the top or bottom hole for a card of the indicated color."
+          },
+          {
+            "name": "Collect WOW or Special",
+            "summary": "After completing a color, shoot the lit collect named on the installed instruction card."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for a card you still need; on the first ball, favor the 10 when its lane is available."
+          },
+          {
+            "text": "Shoot between the center and left bumpers so upper-playfield action reaches card lanes and either card-award hole."
+          },
+          {
+            "text": "If the lower-left Queen or King is the last needed card, take that standup from a controlled ball; otherwise keep using the upper route."
+          },
+          {
+            "text": "After completing one color, follow the installed instruction card to the lit WOW or Special collect and exploit the raised card values."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Missing-card route",
+            "when": "Use this when one card is preventing a completed color sequence.",
+            "steps": [
+              {
+                "text": "Identify whether the missing card has a labeled lane, a lower-left standup, or must come from a card-award hole."
+              },
+              {
+                "text": "Use the top or bottom hole when the missing card cannot be shot safely as a lane or standup."
+              },
+              {
+                "text": "Return to the upper-playfield route after the color sequence completes."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Completed color sequence",
+          "steps": [
+            {
+              "text": "Collect all six cards of one color."
+            },
+            {
+              "text": "Read which WOW or Special collect the installed version lights."
+            },
+            {
+              "text": "Collect the lit award, then continue toward the other color or repeatable raised card values."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Identify Hit the Deck, Neptune, Poseidon, or the licensed regional version; test every red and black card lane, both card-award holes and ejects, the lower-left Queen and King standups, the top-left chute, and the ball kicker.",
+          "Read the installed instruction card before play. Confirm three- or five-ball settings, replay versus add-a-ball rules, the value of WOW or Special, which completed color lights which hole, and whether card progress carries from ball to ball."
+        ],
+        "techniques": [
+          {
+            "name": "Upper-playfield nudging",
+            "instruction": "Nudge before a bumper exit commits to a card lane or an exposed center rebound; do not wait until the ball is already beside an outlane.",
+            "techniqueSlug": "nudging",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRoWo-MDzOZ"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "card lanes",
+            "label": "Red and black card lanes",
+            "description": "Labeled lanes that collect individual cards toward each six-card sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top hole",
+            "label": "Top card-award hole",
+            "description": "Upper hole that awards a card or a lit version-specific feature.",
+            "precision": "unverified"
+          },
+          {
+            "term": "bottom hole",
+            "label": "Bottom card-award hole",
+            "description": "Lower hole that awards a card or a lit version-specific feature.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Queen and King standups",
+            "label": "Lower-left Queen and King targets",
+            "description": "Direct card targets used only when those cards are still needed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-left chute",
+            "label": "Top-left Joker chute",
+            "description": "Upper-left chute used by the replay rules after a color sequence is complete.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The catalog groups multiple replay and add-a-ball editions whose completed-sequence awards differ.",
+            "response": "Use the installed apron card as the authority for WOW, Special, hole, kicker, score, and reset behavior; the shared two-color card route remains the same.",
+            "sourceUrl": "https://www.pinballaustralia.com/zip/Gottlieb_1978_Neptune_Reproduction_Score_and_Instruction_Cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball in the upper playfield and let lanes, bumpers, and holes fill the two card rows. Take the dangerous lower-left standups only to finish a color, then collect the version-specific lit award instead of assuming every Hit the Deck or Neptune is configured alike.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a card you still need; on the first ball, favor the 10 when its lane is available."
+          },
+          {
+            "text": "Shoot between the center and left bumpers so upper-playfield action reaches card lanes and either card-award hole."
+          },
+          {
+            "text": "If the lower-left Queen or King is the last needed card, take that standup from a controlled ball; otherwise keep using the upper route."
+          },
+          {
+            "text": "After completing one color, follow the installed instruction card to the lit WOW or Special collect and exploit the raised card values."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Complete Red",
+            "summary": "Collect all six red cards through lanes and the red-card hole."
+          },
+          {
+            "name": "Complete Black",
+            "summary": "Collect all six black cards through lanes and the black-card hole."
+          },
+          {
+            "name": "Award Needed Card",
+            "summary": "Use the top or bottom hole for a card of the indicated color."
+          }
+        ]
+      }
+    }
+  ]
+}

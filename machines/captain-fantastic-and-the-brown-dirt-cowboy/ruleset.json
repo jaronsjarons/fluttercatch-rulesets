@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "GRveZ",
+  "title": "Captain Fantastic and the Brown Dirt Cowboy",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Captain Fantastic tournament guide",
+      "url": "https://www.kineticist.com/games/pinball/captain-fantastic-and-the-brown-dirt-cowboy"
+    },
+    "supportingSources": [
+      {
+        "label": "Bob's Guide to Captain Fantastic",
+        "url": "https://rules.silverballmania.com/rules/GRveZ-MNE38"
+      },
+      {
+        "label": "Legacy Captain Fantastic rulesheet",
+        "url": "https://pinball.org/rules/captainfantastic.html"
+      },
+      {
+        "label": "PinballCards Captain Fantastic card",
+        "url": "https://pinballcards.net/captain-fantastic-and-the-brown-dirt-cowboy-1975"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Send the ball to the top until the right gate is open, A and B are complete, and base bonus is 15,000, protect the 30,000 end-of-ball bonus, then repeat the safer top route or shoot the left drop bank from the lower-right flipper.",
+      "steps": [
+        {
+          "text": "On the plunge, read the three top-lane lamps."
+        },
+        {
+          "text": "When the center lane is lit, guide the ball through it.",
+          "modeNotes": [
+            "Gate: Roll through the lit center top lane to open the gate beside the right outlane. A later right-outlane ball returns to the right inlane."
+          ]
+        },
+        {
+          "text": "When an outer top lane is lit, collect it for three bonus advances."
+        },
+        {
+          "text": "Return the ball to the top from either lower flipper.",
+          "modeNotes": [
+            "Return-to-top lanes: Shoot the left lane from the lower right flipper. Shoot the right lane from the lower left flipper."
+          ]
+        },
+        {
+          "text": "Collect the left top lane for A and the right top lane for B.",
+          "modeNotes": [
+            "Double Bonus: A plus B changes the end-of-ball bonus from 1x to 2x for this ball."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Continue the top route until base bonus reaches 15,000. Protect the prepared 30,000 collect.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "If the top route stays safe, continue it for lane, bumper, and rollover points."
+        },
+        {
+          "text": "If the top route becomes unsafe, shoot the left drop bank from the lower right flipper. Do not use an upper flipper until both possible rebounds are known."
+        }
+      ],
+      "fallback": {
+        "title": "Left drop-bank fallback",
+        "when": "Use this plan after Double Bonus is lit and base bonus is near 15,000, or when the return-to-top lanes are unsafe.",
+        "steps": [
+          {
+            "text": "Cradle on the lower right flipper. Shoot one left drop target at a time."
+          },
+          {
+            "text": "Each target scores 500. A full bank scores 3,000 and resets the bank."
+          },
+          {
+            "text": "The first completion can light Extra Ball at the right inlane. The second lights Special at the left outlane."
+          },
+          {
+            "text": "Later completions award Special directly."
+          },
+          {
+            "text": "Stop when the bank rebound begins to threaten either outlane."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Base-bonus-only route",
+          "when": "Use this plan when A or B will not fall safely.",
+          "steps": [
+            {
+              "text": "Continue lit outer top lanes and lit return-to-top stars."
+            },
+            {
+              "text": "Roll through lit outer top lanes and lit return-to-top stars until base bonus reaches 15,000."
+            },
+            {
+              "text": "Protect the 15,000 collect instead of forcing the missing A or B lane."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "30,000 end-of-ball bonus",
+        "steps": [
+          {
+            "text": "Roll through the lit center top lane to open the right gate."
+          },
+          {
+            "text": "Collect A and B for Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through lit outer top lanes and lit return-to-top stars until base bonus reaches 15,000."
+          },
+          {
+            "text": "Drain without tilting to collect 30,000."
+          },
+          {
+            "text": "Repeat on the next ball. No progress carries between balls."
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Confirm this is the standard coin-operated machine, not the different 1977 home model.",
+        "Confirm whether Extra Ball and Special are enabled or converted to points before extending the drop-bank route past its 3,000 completion value."
+      ],
+      "termStyles": [
+        {
+          "label": "Double Bonus",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "2x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Open Gate",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Base Bonus",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Upper-right hold",
+          "instruction": "Hold the upper right flipper up as a ball descends beside it. A useful deflection sends the ball toward the lower left flippers. Test the feed first.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/captain-fantastic-and-the-brown-dirt-cowboy"
+        },
+        {
+          "name": "Lower-flipper return-to-top shots",
+          "instruction": "Shoot the left lane from the lower right flipper. Shoot the right lane from the lower left flipper.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/captain-fantastic-and-the-brown-dirt-cowboy"
+        },
+        {
+          "name": "Lower-right drop-bank line",
+          "instruction": "Shoot the left bank from the lower right flipper. Do not use an upper flipper unless the rebound is proven safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRveZ-MNE38"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "An upper-flipper drop-bank shot can drain on either side.",
+          "response": "Use the lower right flipper. A low miss can enter the left outlane, and a completed hit can rebound toward the right outlane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRveZ-MNE38"
+        },
+        {
+          "issue": "Bumper exits can drain directly or reach a slingshot at speed.",
+          "response": "Keep both lower sides ready until the feed is clear.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRveZ-MNE38"
+        },
+        {
+          "issue": "A score roll at 100,000 triggers a loud buzzer.",
+          "response": "Expect the sound so it does not interrupt the next flip.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/captain-fantastic-and-the-brown-dirt-cowboy"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Send the ball to the top until the right gate is open, A and B are complete, and base bonus is 15,000."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Roll through the lit center top lane to open the right gate."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Left drop-bank fallback: Use this plan after Double Bonus is lit and base bonus is near 15,000, or when the return-to-top lanes are unsafe."
+        }
+      ],
+      "simpleOverview": "Captain Fantastic sends the ball back to the top to collect lit lanes, A and B, and base-bonus advances. Keep returning upstairs until base bonus reaches 15,000, then protect the 30,000 Double Bonus collect. Use the left drop bank only when the top route becomes unsafe.",
+      "overview": "Captain Fantastic builds base bonus through lit top lanes and doubles it after A and B are collected. Return the ball to the top until base bonus reaches 15,000, then protect the 30,000 end-of-ball collect. Continue the top route for controlled scoring, or shoot the left drop bank from the lower-right flipper when the upper feed becomes unsafe.",
+      "machineSetup": [
+        "Confirm this is the standard coin-operated machine, not the different 1977 home model.",
+        "Confirm whether Extra Ball and Special are enabled or converted to points before extending the drop-bank route past its 3,000 completion value."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

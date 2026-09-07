@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "G57lj",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Keep sending the ball up top and collect the upper saucer, favoring 55,000 or Double Bonus when either award is lit. Use the lit spinner or STINGRAY lane only when the saucer award is not available.",
+        "steps": [
+          {
+            "text": "Plunge or shoot the ball toward the upper saucer. Its lit award changes with switch hits."
+          },
+          {
+            "text": "Collect the saucer when 55,000 is lit. Double Bonus is the next-best scoring award when a useful base bonus has been built.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If the saucer lights the spinner or STINGRAY lane instead, shoot that feature while it is worth 1,000 per switch."
+          },
+          {
+            "text": "Continue sending the ball up top. Do not force the tight center saucer when the upper route is available."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Saucer sequence",
+            "summary": "The saucer cycles among 55,000, Double Bonus, lit spinner and STINGRAY lane, an Extra Ball award, and lower-value 5,000 awards."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper saucer",
+            "context": "upper saucer",
+            "label": "Upper saucer",
+            "description": "Collects the currently lit award in the circular display.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "context": "lights the spinner",
+            "label": "Left spinner",
+            "description": "Scores 1,000 per spin after its saucer award is collected.",
+            "precision": "unverified"
+          },
+          {
+            "term": "STINGRAY lane",
+            "context": "STINGRAY lane",
+            "label": "STINGRAY lane",
+            "description": "The right-side button lane that scores 1,000 per switch when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center saucer",
+            "context": "center saucer",
+            "label": "Center saucer",
+            "description": "A riskier alternate collect for the same lit saucer award.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The center saucer has severe miss and rejection risk.",
+            "response": "Use the upper saucer route unless the center shot and its kickout are proven safe on this copy.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57lj-MJwxY"
+          }
+        ],
+        "simpleOverview": "Stingray's upper saucer cycles through several awards as switches are hit. The important scoring choices are 55,000, Double Bonus after building base bonus, or a temporarily lit spinner or STINGRAY lane.",
+        "overview": "Stingray revolves around a changing upper-saucer award, with the spinner and STINGRAY lane as temporary follow-up shots. Keep returning the ball up top and collect 55,000 when it appears; take Double Bonus when the base is useful. Use a lit 1,000-per-switch feature when neither saucer award is available.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Keep sending the ball to the upper saucer. Collect 55,000 when it is lit; take Double Bonus next when the base bonus is useful.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Collect the upper saucer",
+            "text": "Plunge or shoot the ball up top. The saucer's award moves with switch hits, so take 55,000 when it is lit."
+          },
+          {
+            "title": "Use secondary awards",
+            "text": "Take Double Bonus when the base bonus is useful. If the saucer lights the spinner or STINGRAY lane, shoot that feature while it is worth 1,000 per switch.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Saucer sequence",
+            "summary": "The saucer cycles among 55,000, Double Bonus, lit spinner and STINGRAY lane, an Extra Ball award, and lower-value 5,000 awards."
+          }
+        ]
+      }
+    }
+  ]
+}

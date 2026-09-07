@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "GvBQX",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start a controllable Stage Mode or Movie Mode before Trunk and Seance Multiball, use the overlap for HOUDINI letters, and activate the Milkcan playfield multiplier only from a controlled Milkcan-loop-to-ramp combo.",
+        "quickInfo": [
+          {
+            "name": "Master Magician",
+            "summary": "Seven HOUDINI letters track Stage modes, Movies, Magic Shop items, Jail Escapes, Secret Missions, and jackpot goals in both major multiballs."
+          },
+          {
+            "name": "Stage Mode",
+            "summary": "Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the mode; a clean Stage Alley entry starts it at 2x."
+          },
+          {
+            "name": "Mode order",
+            "summary": "A Stage Mode and Movie Mode cannot run together and must start before a multiball to overlap it."
+          },
+          {
+            "name": "Trunk Multiball",
+            "summary": "Use the right inner loop for locks, make the required jackpot shots, then return to the trunk for the Super Jackpot."
+          },
+          {
+            "name": "Seance Multiball",
+            "summary": "Spell SEANCE, then complete the ordered jackpot sequence toward its Super Jackpot."
+          },
+          {
+            "name": "Milkcan multiplier",
+            "summary": "A Milkcan loop followed by the ramp starts or raises a timed 2x, 3x, or 4x playfield-scoring multiplier."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the selected mode."
+          },
+          {
+            "text": "Select a Stage Mode or Movie Mode whose marked shots remain accessible during Multiball, then start it before any Multiball. A clean Stage Alley entry starts a Stage Mode at 2x.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "While the mode is active, complete its marked shots and use orbit shots for added Stage time when needed.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Trunk or Seance Multiball, then add the other if it is ready.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Trunk Multiball, collect the lit jackpot shots and return to the trunk for the Super Jackpot; secure at least three Trunk jackpots for its HOUDINI letter.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Seance Multiball, follow the lit sequence and collect at least two jackpots for its HOUDINI letter.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the Milkcan loop-to-ramp playfield multiplier only when both shots feed safely, then place the remaining mode and multiball shots inside that window.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Master Magician",
+          "steps": [
+            {
+              "text": "Complete each of the ten Stage Mode features and five Movie Mode features.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect eight Magic Shop items."
+            },
+            {
+              "text": "Complete five Jail Escapes and five Secret Missions."
+            },
+            {
+              "text": "Collect three Trunk Multiball jackpots and two Seance Multiball jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the seven completed objectives to enter Master Magician."
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Rules package",
+            "pro": "The original production game uses the common Houdini rules and service platform.",
+            "premium": "Later cabinet packages and accessories do not establish a separate rules edition; installed code and operator adjustments remain decisive.",
+            "sourceUrl": "https://americanpinball.com/support/updates/"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Stage Mode",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Movie Mode",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Trunk Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Seance Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Milkcan multiplier",
+            "tone": "rust",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Secret Mission",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jail Escape",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Master Magician",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "stage curtain",
+            "context": "Open the stage curtain with controlled hits.",
+            "label": "Stage curtain",
+            "description": "Center stage entrance opened to start Stage modes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Stage Alley",
+            "context": "Use a clean Stage Alley entry when its feed is controlled.",
+            "label": "Stage Alley",
+            "description": "Stage-entry lane whose clean route can start a Stage mode at 2x.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right inner loop",
+            "context": "Use the right inner loop for Trunk locks.",
+            "label": "Trunk lock loop",
+            "description": "Inner loop used to catapult balls into the trunk locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Milkcan loop",
+            "context": "Use the Milkcan loop before the ramp.",
+            "label": "Milkcan loop",
+            "description": "Loop used before the ramp to build the timed multiplier.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Magic target area",
+            "context": "Test the Magic target area during ball save.",
+            "label": "Magic targets",
+            "description": "Target area associated with the game's playfield magnets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "scoop",
+            "context": "Start the next Secret Mission at the scoop.",
+            "label": "Secret Mission scoop",
+            "description": "Scoop used for Secret Mission starts and other awards.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Mode-first stacking",
+            "instruction": "Start one Stage or Movie mode before Trunk or Seance Multiball because those single-ball modes cannot be added after multiball begins.",
+            "sourceUrl": "https://tiltforums.com/t/houdini-rulesheet/3934"
+          },
+          {
+            "name": "Clean Stage Alley start",
+            "instruction": "Use the Stage Alley entry when its feed is controlled to begin the next Stage mode at 2x.",
+            "sourceUrl": "https://pinballrulesheets.com/american-pinball/houdini-rulesheet"
+          },
+          {
+            "name": "Milkcan multiplier placement",
+            "instruction": "Complete Milkcan loop-to-ramp immediately before the safest valuable mode shots instead of letting the timed multiplier decay during setup.",
+            "sourceUrl": "https://tiltforums.com/t/houdini-rulesheet/3934"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Magic target area can activate magnets and produce an uncontrolled return.",
+            "response": "Test the installed magnet behavior during ball save and avoid forcing the targets without a useful award ready.",
+            "sourceUrl": "https://tiltforums.com/t/houdini-rulesheet/3934"
+          },
+          {
+            "issue": "The detailed rules baseline is 18.12.12, older than the official 21.10.25 package.",
+            "response": "Use the current display and operator menu for exact timers, awards, and difficulty adjustments.",
+            "sourceUrl": "https://americanpinball.com/support/updates/"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm official v21.10.25; earlier 18.12.12 behavior can differ in timers, values, awards, and stacking.",
+          "Confirm Stage, Movie, Escape, Mission, Magic Shop, Milkcan, lock, Extra Ball, ball-save, and Master Magician adjustments.",
+          "Test Stage Alley, curtain, both trunk locks, catapult, Milkcan loop, ramp, magnets, scoop eject, key lane, and inner-loop returns."
+        ],
+        "simpleOverview": "A Stage mode can continue into Multiball, but it must start first. Hit the curtain four times, make a clean Stage Alley shot, or complete the Key Lane and red Key Target to open the curtain. Shoot the Stage before Multiball because a mode cannot be added afterward; the right inner loop builds Trunk Multiball, and the Milkcan loop-to-ramp combo starts playfield X.",
+        "overview": "Seven major objectives award HOUDINI letters. Hit the curtain four times, make a clean Stage Alley shot, or complete the Key Lane and red Key Target to open the curtain. Shoot the Stage before Trunk or Seance Multiball because modes cannot be added after Multiball starts; use the Milkcan loop-to-ramp combo when the active shots are ready for playfield X.",
+        "machineSetup": [
+          "Confirm official v21.10.25; earlier 18.12.12 behavior can differ in timers, values, awards, and stacking.",
+          "Confirm Stage, Movie, Escape, Mission, Magic Shop, Milkcan, lock, Extra Ball, ball-save, and Master Magician adjustments.",
+          "Test Stage Alley, curtain, both trunk locks, catapult, Milkcan loop, ramp, magnets, scoop eject, key lane, and inner-loop returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the Stage entrance for a mode, the right inner loop for Trunk Multiball, and the Milkcan loop-to-ramp combo for playfield X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Stage mode",
+            "text": "Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Then shoot the Stage to start the selected mode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start Trunk Multiball",
+            "text": "Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Milkcan playfield X",
+            "text": "Shoot the Milkcan loop, then complete the lit ramp while the multiplier is available. Use this only when both returns are controlled.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Master Magician",
+            "summary": "Seven HOUDINI letters track Stage modes, Movies, Magic Shop items, Jail Escapes, Secret Missions, and jackpot goals in both major multiballs."
+          },
+          {
+            "name": "Stage Mode",
+            "summary": "Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the mode; a clean Stage Alley entry starts it at 2x."
+          },
+          {
+            "name": "Mode order",
+            "summary": "A Stage Mode and Movie Mode cannot run together and must start before a multiball to overlap it."
+          }
+        ]
+      }
+    }
+  ]
+}

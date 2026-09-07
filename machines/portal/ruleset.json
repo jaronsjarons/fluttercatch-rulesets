@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "GpebN",
+  "title": "Portal",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Portal Extended maintained rulesheet",
+      "url": "https://pinballrulesheets.com/multimorphic/portal-extended-edition-rulesheet"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Multimorphic Portal gameplay guide",
+        "url": "https://www.multimorphic.com/portal/"
+      },
+      {
+        "label": "Official Portal 1.2.3.0 update note",
+        "url": "https://www.multimorphic.com/news/public-update-march-2026/"
+      },
+      {
+        "label": "Portal Extended full tutorial and gameplay",
+        "url": "https://www.youtube.com/watch?v=DLvSFph-rEs"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "In Portal Extended, work in the Hub to prepare Turret, Faith Plate, and Edgeless Safety Cube Multiballs. Start Turret first if you want a three-Multiball stack, then add the other two before returning to the Test Chambers.",
+      "simpleOverview": "Hit the Elevator Call Button and then the raised far-left scoop to start a Test Chamber. For a big Hub stack, start Turret Multiball first, then add Faith Plate and Edgeless Safety Cube.",
+      "summary": "In the Hub, prepare Test Chambers and three stackable Multiballs. Hit the Elevator Call Button and Elevator Scoop for a chamber. For the full Multiball stack, collect three Turret locks and start Turret first, then add Aerial Faith Plate and Edgeless Safety Cube.",
+      "checkBeforePlay": [
+        "This shot map is for Portal Extended. Portal Standard omits the lower extension and substitutes some required shots in software.",
+        "Confirm that the game is on Portal 1.2.3.0 with module driver 1.0.3.4 or newer before relying on current jackpot and option behavior."
+      ],
+      "quickInfo": [
+        {
+          "name": "Start a Test Chamber",
+          "summary": "Hit the Elevator Call Button, then shoot the raised far-left Elevator Scoop."
+        },
+        {
+          "name": "Turret Multiball",
+          "summary": "Hit the Turret Lock standup, collect the red Turret Control Center scoop, and repeat for three locks."
+        },
+        {
+          "name": "Aerial Faith Plate Multiball",
+          "summary": "Enter the L.O.F.T., push the Companion Cube back, then hit three lit Faith Plate shots."
+        },
+        {
+          "name": "Edgeless Safety Cube Multiball",
+          "summary": "Hit the ESC captive ball twice, then hit the Ramp Control Target while the virtual ball crosses the display."
+        }
+      ],
+      "steps": [
+        {
+          "text": "In the Hub, hit the Elevator Call Button standup and shoot the raised far-left Elevator Scoop when you want to enter the selected Test Chamber.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Before leaving the Hub for a large stack, hit the Turret Lock standup and collect the red Turret Control Center scoop three times. Start Turret Multiball first.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Prepare Faith Plate by raising the left ramp, shooting under it into the L.O.F.T., and using the right white flipper button to push the Companion Cube back through its portal.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit three lit Faith Plate shots to start Aerial Faith Plate Multiball. It can be added after Turret has started.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the ESC captive ball twice, then hit the Ramp Control Target while the virtual ball travels across the screen to start Edgeless Safety Cube Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Once the Hub stack is spent, return to Test Chambers. Main Multiballs cannot progress in a chamber, and a chamber cannot start during a main Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "GLaDOS final battle",
+        "steps": [
+          {
+            "text": "Start Test Chambers 1 through 6. Completion helps, but starting each one is enough for final qualification.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Unlock and start Test Chamber 7, Turret Manufacturing.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all seven chambers have been played, the final wizard mode begins automatically.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Test Chamber",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Turret Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Aerial Faith Plate Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Edgeless Safety Cube Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Portal Standard and Extended share software but not the same physical shot map.",
+          "response": "Use these exact locations on Extended. On Standard, follow the lit substitute shots chosen by the hardware-aware software.",
+          "sourceUrl": "https://www.multimorphic.com/portal/"
+        },
+        {
+          "issue": "Portal 1.2.3.0 changed Multiball, jackpot, item, and bonus behavior after the November 2025 tutorial.",
+          "response": "Use the current starts and stacking behavior; read the display for current values.",
+          "sourceUrl": "https://www.multimorphic.com/news/public-update-march-2026/"
+        }
+      ],
+      "machineSetup": [
+        "This shot map is for Portal Extended. Portal Standard omits the lower extension and substitutes some required shots in software.",
+        "Confirm that the game is on Portal 1.2.3.0 with module driver 1.0.3.4 or newer before relying on current jackpot and option behavior."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

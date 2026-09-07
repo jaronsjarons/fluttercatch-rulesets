@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr3J1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build the 20,000-point bonus while keeping the ball moving as vertically as possible. Use the side slings and their small rollover buttons for safer upper feeds, and treat captive-ball cross-loops as optional because their lateral returns can drain centrally.",
+        "quickInfo": [
+          {
+            "name": "Bonus-first scoring",
+            "summary": "Bonus dominates ordinary switch points and advances as high as 20,000."
+          },
+          {
+            "name": "Bonus sources",
+            "summary": "Top lanes, captive-ball cross-loops, two small buttons beside the horseshoe, and outlanes advance bonus; a lit top lane advances twice."
+          },
+          {
+            "name": "Last-ball double",
+            "summary": "Bonus doubles automatically only on the final ball and cannot be doubled early through another shot."
+          },
+          {
+            "name": "Safer direction",
+            "summary": "Straight vertical returns are more likely to reach a flipper or an elbow scoop than side-to-side motion."
+          },
+          {
+            "name": "Sibling identity",
+            "summary": "Darling is the two-player version of Williams' 1973 Jubilee, which is the four-player version of the same layout."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the current bonus and whether either top lane is lit for a two-step advance."
+          },
+          {
+            "text": "Plunge for a lit top lane when available; otherwise favor the lane with the straighter return."
+          },
+          {
+            "text": "From a controlled flipper, send the ball up a side sling and try to cross one of the small rollover buttons."
+          },
+          {
+            "text": "Keep the shot as vertical as the layout allows so the return approaches a flipper or elbow scoop."
+          },
+          {
+            "text": "Accept top-lane and small-button bonus advances before considering a captive-ball loop."
+          },
+          {
+            "text": "Shoot a captive ball across the horseshoe only after its return direction has proved controllable on this machine."
+          },
+          {
+            "text": "On the final ball, prioritize survival because every additional bonus step is doubled at drain."
+          },
+          {
+            "text": "When bonus reaches 20,000, stop forcing lateral scoring shots and protect the built value."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Vertical survival plan",
+          "when": "Recovery pivot: Use this when captive-ball loops or side-to-side rebounds repeatedly threaten the center gap.",
+          "steps": [
+            {
+              "text": "Stop shooting the captive balls."
+            },
+            {
+              "text": "Choose the side sling with the straighter upper return."
+            },
+            {
+              "text": "Aim over its nearby small rollover button when that does not distort the shot."
+            },
+            {
+              "text": "Let an elbow scoop return settle before the next flip."
+            },
+            {
+              "text": "Repeat the safer vertical route while tracking bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Captive-ball bonus loop",
+            "when": "When trailing, use this distinct scoreboard route: use this only when the cross-loop completes reliably and its lateral exit is controllable.",
+            "steps": [
+              {
+                "text": "Trap on the flipper with the cleaner line into the horseshoe."
+              },
+              {
+                "text": "Strike the captive ball squarely enough to send it to the opposite side."
+              },
+              {
+                "text": "Prepare both flippers before the lateral return leaves the enclosure."
+              },
+              {
+                "text": "Abandon the loop after any center-directed exit."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum last-ball bonus",
+          "steps": [
+            {
+              "text": "Use lit top lanes for two bonus steps when available."
+            },
+            {
+              "text": "Collect small-button and safe side-feed advances."
+            },
+            {
+              "text": "Add captive-ball loops only if their returns are proven."
+            },
+            {
+              "text": "Reach or approach the 20,000 cap."
+            },
+            {
+              "text": "Keep the final ball alive to preserve the automatic doubled collect."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "captive ball",
+            "context": "captive ball",
+            "label": "Captive ball",
+            "description": "The captive ball used by the cross-playfield scoring loop.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side feed",
+            "context": "side feed",
+            "label": "Side feed",
+            "description": "The side return controlled with the secondary cabinet button.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Small-button side feed",
+            "instruction": "Aim up a side sling so the ball crosses the nearby small rollover button without creating a broad lateral rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr3J1-Mx0kk"
+          },
+          {
+            "name": "Vertical-return reading",
+            "instruction": "Prefer shots whose exits fall nearly straight toward a flipper or elbow scoop, and reject routes that sweep across the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr3J1-Mx0kk"
+          },
+          {
+            "name": "Captive-ball cross-loop",
+            "instruction": "Strike a captive ball squarely enough to carry it through the horseshoe to the opposite side, then prepare for a lateral exit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr3J1-Mx0kk"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Side-to-side motion can produce both center drains and outlanes.",
+            "response": "Favor vertical upper feeds and make any legal correction before the ball reaches the lower playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr3J1-Mx0kk"
+          },
+          {
+            "issue": "Captive-ball loops expose the ball to a dangerous lateral return.",
+            "response": "Use them only after observing a safe repeatable exit; otherwise build bonus through lanes and small buttons.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr3J1-Mx0kk"
+          },
+          {
+            "issue": "This Williams 1973 family shares the Jubilee name with an unrelated Gottlieb game from 1955.",
+            "response": "Confirm the Williams or Darling artwork and central horseshoe before using this card.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/jubilee-darling"
+          }
+        ],
+        "simpleOverview": "Jubilee / Darling raises base bonus to 20,000 through top lanes, side rollover buttons, and optional captive-ball cross-loops. Favor straight upper feeds from the side slings, accept the safe bonus advances, and avoid lateral captive-ball shots until their return direction is understood.",
+        "overview": "Jubilee / Darling is a bonus-first game whose 20,000 base doubles automatically on the final ball. Keep the ball moving vertically through lit top lanes and small side buttons, use the elbow scoops and flippers to preserve control, and add captive-ball cross-loops only after their sideways return proves safe. Stop forcing shots once the bonus is full.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Build the 20,000-point bonus while keeping the ball moving as vertically as possible. Use the side slings and their small rollover buttons for safer upper feeds, and treat captive-ball cross-loops as optional because their lateral returns can drain centrally.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the current bonus and whether either top lane is lit for a two-step advance."
+          },
+          {
+            "text": "Plunge for a lit top lane when available; otherwise favor the lane with the straighter return."
+          },
+          {
+            "text": "From a controlled flipper, send the ball up a side sling and try to cross one of the small rollover buttons."
+          },
+          {
+            "text": "Keep the shot as vertical as the layout allows so the return approaches a flipper or elbow scoop."
+          },
+          {
+            "text": "Accept top-lane and small-button bonus advances before considering a captive-ball loop."
+          },
+          {
+            "text": "Shoot a captive ball across the horseshoe only after its return direction has proved controllable on this machine."
+          },
+          {
+            "text": "On the final ball, prioritize survival because every additional bonus step is doubled at drain."
+          },
+          {
+            "text": "When bonus reaches 20,000, stop forcing lateral scoring shots and protect the built value."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus-first scoring",
+            "summary": "Bonus dominates ordinary switch points and advances as high as 20,000."
+          },
+          {
+            "name": "Bonus sources",
+            "summary": "Top lanes, captive-ball cross-loops, two small buttons beside the horseshoe, and outlanes advance bonus; a lit top lane advances twice."
+          },
+          {
+            "name": "Last-ball double",
+            "summary": "Bonus doubles automatically only on the final ball and cannot be doubled early through another shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Vertical survival plan",
+          "when": "Recovery pivot: Use this when captive-ball loops or side-to-side rebounds repeatedly threaten the center gap.",
+          "steps": [
+            {
+              "text": "Stop shooting the captive balls."
+            },
+            {
+              "text": "Choose the side sling with the straighter upper return."
+            },
+            {
+              "text": "Aim over its nearby small rollover button when that does not distort the shot."
+            },
+            {
+              "text": "Let an elbow scoop return settle before the next flip."
+            },
+            {
+              "text": "Repeat the safer vertical route while tracking bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Side-to-side motion can produce both center drains and outlanes.",
+          "text": "Favor vertical upper feeds and make any legal correction before the ball reaches the lower playfield."
+        }
+      }
+    }
+  ]
+}

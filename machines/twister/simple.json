@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwbv",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Repeat lit Wind orbits toward Cow Multibull, use the five-ball orbit jackpots for the safest ceiling, and take Chase or Cannister Multiball when their ramp or lock routes are already close.",
+        "quickInfo": [
+          {
+            "name": "Cow Multibull",
+            "summary": "Lit Wind orbits advance the five-ball mode; both orbits then score growing jackpots."
+          },
+          {
+            "name": "Chase Multiball",
+            "summary": "Repeated ramp shots start five-ball play; switches light an add-a-ball Jackpot at the ramp."
+          },
+          {
+            "name": "Cannister Multiball",
+            "summary": "Drop the lock target and lock the required balls; ramp Jackpots lead to a lock-hole Super."
+          },
+          {
+            "name": "Super Lock",
+            "summary": "The left orbit locks a hurry-up value and the lock hole repeatedly collects it during three-ball play."
+          },
+          {
+            "name": "Weathervane",
+            "summary": "Weathervane stops most other game activity; intentionally miss that skill-shot award when stronger progress is ready."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test both orbit magnets, the ramp return, lock-hole eject, spinning-disk release, and compass targets."
+          },
+          {
+            "text": "Shoot the currently lit Wind orbit; successive controlled orbits can add extra progress toward Cow Multibull."
+          },
+          {
+            "text": "Start Cow Multibull and alternate the two orbit jackpots from the safest receiving flipper.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When an orbit magnet captures or rejects unpredictably, repeat the ramp until Chase Multiball starts."
+          },
+          {
+            "text": "If the Twister targets award Double Scoring, start whichever prepared multiball has the safer feed and use its repeatable jackpot shots while 2x is active.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Chase, score switches until the ramp Jackpot is lit, then collect it for value and add-a-ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Cannister locks are already near completion, finish them and repeat the ramp for single, double, and triple Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After any three Cannister Jackpots, shoot the lock hole for the Super before its timer expires.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Chase Multiball ramp route",
+          "when": "Recovery pivot: Use this when orbit magnets or feeds are inconsistent but the ramp is repeatable.",
+          "steps": [
+            {
+              "text": "Repeat the ramp until Chase starts."
+            },
+            {
+              "text": "Hit switches until the ramp Jackpot lights."
+            },
+            {
+              "text": "Collect the lit ramp Jackpot and add-a-ball, then repeat through the F-levels.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Cannister jackpot ladder",
+            "when": "When trailing, use this distinct scoreboard route: use this when the lock target and hole are safer than the orbit magnets.",
+            "steps": [
+              {
+                "text": "Drop the target and lock the required balls."
+              },
+              {
+                "text": "Repeat the ramp for single, double, and triple Jackpots."
+              },
+              {
+                "text": "Shoot the lock hole for the sum-of-jackpots Super.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Cow Multibull orbit sets",
+          "steps": [
+            {
+              "text": "Advance Wind at the lit orbit."
+            },
+            {
+              "text": "Start Cow Multibull."
+            },
+            {
+              "text": "Alternate both growing orbit jackpots."
+            },
+            {
+              "text": "Rebuild Wind with the orbit feed already understood.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Cow Multibull",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Chase Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Cannister Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Double Scoring",
+            "tone": "rust",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "orbits",
+            "label": "Wind orbits",
+            "description": "Left and right orbit shots used to advance Wind and score Cow Multibull jackpots.",
+            "precision": "unverified",
+            "context": "orbits: Left and right orbit shots used to advance Wind and score Cow Multibull jackpots."
+          },
+          {
+            "term": "ramp",
+            "label": "Chase ramp",
+            "description": "Single ramp used to qualify Chase and collect Chase or Cannister jackpots.",
+            "precision": "unverified",
+            "context": "ramp: Single ramp used to qualify Chase and collect Chase or Cannister jackpots."
+          },
+          {
+            "term": "lock target",
+            "label": "Cannister target",
+            "description": "Drop target that exposes the Cannister lock hole.",
+            "precision": "unverified",
+            "context": "lock target: Drop target that exposes the Cannister lock hole."
+          },
+          {
+            "term": "lock hole",
+            "label": "Cannister hole",
+            "description": "Hole used for locks, Super Lock awards, and Cannister Super Jackpot.",
+            "precision": "unverified",
+            "context": "lock hole: Hole used for locks, Super Lock awards, and Cannister Super Jackpot."
+          },
+          {
+            "term": "spinning disk",
+            "label": "Twister disk",
+            "description": "Magnet disk used during skill shot and Cannister release.",
+            "precision": "unverified",
+            "context": "spinning disk: Magnet disk used during skill shot and Cannister release."
+          },
+          {
+            "term": "compass targets",
+            "label": "Compass bank",
+            "description": "Targets used to award background modes.",
+            "precision": "unverified",
+            "context": "compass targets: Targets used to award background modes."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lit-orbit discipline",
+            "instruction": "Shoot the currently lit Wind orbit and use successive orbit returns only while the magnet and feed remain predictable.",
+            "sourceUrl": "https://www.pinball.org/rules/twister.html"
+          },
+          {
+            "name": "Cannister Super timer",
+            "instruction": "After any three ramp Jackpots, stop building and shoot the lock hole before the Super timer expires.",
+            "sourceUrl": "https://www.pinball.org/rules/twister.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The orbit and spinning-disk magnets can release balls unpredictably.",
+            "response": "Test both mechanisms before using Cow or Cannister as the primary route.",
+            "sourceUrl": "https://www.pinball.org/rules/twister.html"
+          },
+          {
+            "issue": "Weathervane pauses most other game activity.",
+            "response": "Intentionally miss that skill-shot award when a stronger mode or multiball is prepared.",
+            "sourceUrl": "https://www.pinball.org/rules/twister.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ROM, lock counts, Jackpot timers, and ball saves.",
+          "Test Wind orbits, magnets, cannister locks, and ramp returns."
+        ],
+        "simpleOverview": "In Twister, lit Wind orbits advance Cow Multibull, repeated ramp shots start Chase, and the lock target and hole qualify Cannister. Choose the route with the safest current feed, then repeat its orbit or ramp Jackpots instead of mixing qualifications from uncontrolled returns.",
+        "overview": "Twister qualifies Cow Multibull through lit Wind orbits, Chase Multiball through repeated ramp shots, and Cannister Multiball through its lock target and hole. Favor Cow when the orbit magnets behave, use Chase when the ramp is safer, or finish Cannister when its locks are close. Take Double Scoring when it is ready without delaying a prepared Multiball.",
+        "machineSetup": [
+          "Confirm ROM, lock counts, Jackpot timers, and ball saves.",
+          "Test Wind orbits, magnets, cannister locks, and ramp returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Repeat lit Wind orbits toward Cow Multibull, use the five-ball orbit jackpots for the safest ceiling, and take Chase or Cannister Multiball when their ramp or lock routes are already close.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test both orbit magnets, the ramp return, lock-hole eject, spinning-disk release, and compass targets."
+          },
+          {
+            "text": "Shoot the currently lit Wind orbit; successive controlled orbits can add extra progress toward Cow Multibull."
+          },
+          {
+            "text": "Start Cow Multibull and alternate the two orbit jackpots from the safest receiving flipper.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When an orbit magnet captures or rejects unpredictably, repeat the ramp until Chase Multiball starts."
+          },
+          {
+            "text": "If the Twister targets award Double Scoring, start whichever prepared multiball has the safer feed and use its repeatable jackpot shots while 2x is active.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Chase, score switches until the ramp Jackpot is lit, then collect it for value and add-a-ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Cannister locks are already near completion, finish them and repeat the ramp for single, double, and triple Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After any three Cannister Jackpots, shoot the lock hole for the Super before its timer expires.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Cow Multibull",
+            "summary": "Lit Wind orbits advance the five-ball mode; both orbits then score growing jackpots."
+          },
+          {
+            "name": "Chase Multiball",
+            "summary": "Repeated ramp shots start five-ball play; switches light an add-a-ball Jackpot at the ramp."
+          },
+          {
+            "name": "Cannister Multiball",
+            "summary": "Drop the lock target and lock the required balls; ramp Jackpots lead to a lock-hole Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Chase Multiball ramp route",
+          "when": "Recovery pivot: Use this when orbit magnets or feeds are inconsistent but the ramp is repeatable.",
+          "steps": [
+            {
+              "text": "Repeat the ramp until Chase starts."
+            },
+            {
+              "text": "Hit switches until the ramp Jackpot lights."
+            },
+            {
+              "text": "Collect the lit ramp Jackpot and add-a-ball, then repeat through the F-levels.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

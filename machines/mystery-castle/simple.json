@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vZZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Mystery Castle is a scavenger hunt across five item lanes, with quick Mega Mode starts and the Crown finale. Shoot a lane under a flashing white arrow to collect the current item; bumpers advance the item, while the Change Item standup moves its collection arrow and can also advance the item after an inlane. The first three right-ramp shots light Mega Mode at both the Trap and Pit.",
+        "simpleOverview": "Shoot any lane with a flashing white arrow to collect the current item. The bumpers advance the item; hit the Change Item standup to move its white arrow, or roll through an inlane first if you also want to advance the item. For quick two-ball Mega Mode, shoot the right ramp three times, then shoot the lit Trap or Pit.",
+        "summary": "Shoot the current item at any white-arrow lane. Bumpers advance the item; Change Item moves its collection arrow, or advances both after an inlane. Three right ramps light both Mega Mode starts; shoot Trap or Pit. Collect all items, then take the Crown for Ultimate Experience.",
+        "quickInfo": [
+          {
+            "name": "Collect an item",
+            "summary": "Shoot the Bridge, Dungeon, Tower, Ballroom, or Catwalk lane when its white arrow is flashing."
+          },
+          {
+            "name": "Change the item",
+            "summary": "Send the ball through the bumpers to advance the active item."
+          },
+          {
+            "name": "Move the item lane",
+            "summary": "Hit the Change Item standup; after an inlane it flashes and also advances the active item."
+          },
+          {
+            "name": "Mega Mode",
+            "summary": "Shoot the right ramp three times, then shoot the lit Trap or Pit."
+          },
+          {
+            "name": "Ultimate Experience",
+            "summary": "Collect all fourteen items, then collect the Crown at its flashing lane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the lane under a flashing white arrow to collect the current scavenger-hunt item.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Send the ball through the bumpers to advance the item. Hit the Change Item standup to move its collection arrow; after an inlane the standup flashes and also advances the item.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For quick two-ball Mega Mode, shoot the right ramp three times; the first ramp-award cycle lights both the Trap and Pit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot either lit scoop to start Mega Mode.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Start Doom Mode",
+            "when": "Use this after the Skull becomes the flashing scavenger-hunt item.",
+            "steps": [
+              {
+                "text": "Collect the Skull at whichever of the five white-arrow lanes is flashing.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the open Secret Door from the left-orbit side to start Doom Mode and two-ball play.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Reach the Ultimate Experience",
+          "steps": [
+            {
+              "text": "Collect each of the fourteen non-Crown items at a flashing Bridge, Dungeon, Tower, Ballroom, or Catwalk lane.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use bumper hits to advance the item and the Change Item standup to move its collection arrow; an inlane makes the standup advance both.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "When the Crown is the active item, shoot its flashing lane to start the Ultimate Experience.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Rev. 3-era behavior, because earlier software and this game's unfinished edge cases can differ.",
+          "Test the five item lanes, both bumpers, both inlanes, Change Item standup, right ramp, Trap, Pit, Secret Door, and ball serve before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "Mega Mode",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Doom Mode",
+            "tone": "oxblood",
+            "kind": "mode"
+          },
+          {
+            "label": "Crown",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "Ultimate Experience",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Bridge",
+            "label": "Bridge item lane",
+            "description": "One of five lanes that collects the current item when its white arrow flashes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Change Item standup",
+            "label": "Change Item target",
+            "description": "The standup that moves the item collection arrow; after an inlane it flashes and also advances the active item.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Ramp-award shot",
+            "description": "Every third shot advances the repeating award cycle; its first award lights both Mega Mode starts.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Trap",
+            "label": "Trap scoop",
+            "description": "One of two scoops that starts Mega Mode when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Pit",
+            "label": "Pit scoop",
+            "description": "The second scoop that starts Mega Mode when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Secret Door",
+            "label": "Secret Door shot",
+            "description": "The hidden left-orbit-side shot used to start Skull's Doom Mode.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Mystery Castle has known unfinished-code behavior and some features can behave unexpectedly.",
+            "response": "Use the physical starts above, but do not depend on an unverified scoring value or on a feature recovering cleanly after a software fault.",
+            "sourceUrl": "https://www.youtube.com/watch?v=70KptBpezbs"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the current item at any white-arrow lane. Bumpers advance the item; Change Item moves its collection arrow, or advances both after an inlane. Three right ramps light both Mega Mode starts; shoot Trap or Pit. Collect all items, then take the Crown for Ultimate Experience.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the lane under a flashing white arrow to collect the current scavenger-hunt item.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Send the ball through the bumpers to advance the item. Hit the Change Item standup to move its collection arrow; after an inlane the standup flashes and also advances the item.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For quick two-ball Mega Mode, shoot the right ramp three times; the first ramp-award cycle lights both the Trap and Pit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot either lit scoop to start Mega Mode.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Collect an item",
+            "summary": "Shoot the Bridge, Dungeon, Tower, Ballroom, or Catwalk lane when its white arrow is flashing."
+          },
+          {
+            "name": "Change the item",
+            "summary": "Send the ball through the bumpers to advance the active item."
+          },
+          {
+            "name": "Move the item lane",
+            "summary": "Hit the Change Item standup; after an inlane it flashes and also advances the active item."
+          }
+        ]
+      }
+    }
+  ]
+}

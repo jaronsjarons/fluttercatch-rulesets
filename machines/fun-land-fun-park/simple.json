@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwqx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot either vertical spinner whenever a clean entry is available and hope it stops on 500. That single result dwarfs ordinary scoring, so preserve the ball and prefer upper exits through a spinner or side lane.",
+        "quickInfo": [
+          {
+            "name": "Stop-value spinners",
+            "summary": "Each vertical spinner awards one value where it stops (5, 50, or 500) instead of scoring every revolution."
+          },
+          {
+            "name": "500-point result",
+            "summary": "A spinner stopping on 500 is the dominant scoring event and is worth far more than routine playfield action."
+          },
+          {
+            "name": "Ordinary scoring",
+            "summary": "Bumpers and slings score 1 or 10, while lanes and standup targets score 50."
+          },
+          {
+            "name": "Safer upper exits",
+            "summary": "Balls leaving the bumpers through a spinner or upper side lane are generally safer than other bumper exits."
+          },
+          {
+            "name": "High variance",
+            "summary": "Spinner stop position is luck-driven, so strong decisions improve access and survival but cannot guarantee the 500 award."
+          },
+          {
+            "name": "Edition scope",
+            "summary": "Fun Land and add-a-ball Fun Park share the playfield route; confirm how added balls are treated."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Observe which vertical spinner has the cleaner entry and safer return on this copy."
+          },
+          {
+            "text": "When the ball reaches a controlled flipper, shoot the reachable spinner instead of a 50-point standup."
+          },
+          {
+            "text": "Let the spinner stop completely and read its 5, 50, or 500 value."
+          },
+          {
+            "text": "Prepare both flippers while the ball moves through the upper bumpers."
+          },
+          {
+            "text": "Favor exits through either spinner or an upper side lane over raw bumper exits."
+          },
+          {
+            "text": "If the ball returns safely, set up the cleaner spinner again."
+          },
+          {
+            "text": "Use ordinary lanes and targets only when reached naturally or when no spinner entry is available."
+          },
+          {
+            "text": "Repeat the survival-and-spinner plan for every ball, regardless of the previous stop value."
+          }
+        ],
+        "fallback": {
+          "title": "Natural 50-point survival",
+          "when": "Use this plan when neither spinner can be reached from a controlled angle.",
+          "steps": [
+            {
+              "text": "Do not force a spinner shot through a post or sling."
+            },
+            {
+              "text": "Take a natural 50-point side lane or standup only when it preserves an upper path."
+            },
+            {
+              "text": "Track the next bumper exit with both flippers ready."
+            },
+            {
+              "text": "Regain control before selecting another shot."
+            },
+            {
+              "text": "Return to the cleaner spinner as soon as its lane opens."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Copy-specific spinner selection",
+            "when": "Use this plan when one spinner consistently returns more safely than the other.",
+            "steps": [
+              {
+                "text": "Test each spinner once from a controlled flipper."
+              },
+              {
+                "text": "Compare whether the exits reach a flipper, sling underside, or center."
+              },
+              {
+                "text": "Choose the spinner with the safer return even if the other is easier to hit."
+              },
+              {
+                "text": "Repeat only while that return remains predictable."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated chances at 500",
+          "steps": [
+            {
+              "text": "Preserve control rather than chasing low-value targets."
+            },
+            {
+              "text": "Enter a vertical spinner cleanly."
+            },
+            {
+              "text": "Accept the stop value without changing the next decision."
+            },
+            {
+              "text": "Use spinner and side-lane exits to survive upper play."
+            },
+            {
+              "text": "Create another controlled spinner attempt."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "vertical spinner",
+            "context": "vertical spinner",
+            "label": "Vertical spinners",
+            "description": "The two vertical spinners that award the value where they stop.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper side lane",
+            "context": "upper side lane",
+            "label": "Upper side lanes",
+            "description": "The upper exits preferred when they avoid the lower slingshots.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Clean spinner entry",
+            "instruction": "Shoot through the center of the reachable vertical spinner. Avoid glancing a nearby post or the lower edge of a sling.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwqx-MNE6X"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "When a legal nudge can influence the bumper exit, favor a spinner or upper side lane rather than an open fall through the middle.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwqx-MNE6X",
+            "techniqueSlug": "nudging"
+          },
+          {
+            "name": "Sling-bottom read",
+            "instruction": "Track the ball below each spinner and side lane. Prepare for a sudden deflection when it contacts the bottom of the sling above a flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwqx-MNE6X"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A clean spinner shot can still stop on only 5 or 50.",
+            "response": "Treat each attempt as another chance at 500 and do not compensate by taking a dangerous immediate shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwqx-MNE6X"
+          },
+          {
+            "issue": "Bumper exits that miss the spinners and side lanes are much riskier.",
+            "response": "Keep both flippers ready and use only a small legal nudge before the ball reaches the lower slings.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwqx-MNE6X"
+          },
+          {
+            "issue": "A spinner or side-lane return can strike the bottom of a sling and change direction sharply.",
+            "response": "Do not relax after the upper exit. Track the ball until it reaches a flipper or a clearly safe roll.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRwqx-MNE6X"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Fun Land or add-a-ball Fun Park and tournament treatment of extra balls.",
+          "Test both vertical spinners, upper exits, slings, and center target returns."
+        ],
+        "simpleOverview": "Fun Land / Fun Park is dominated by two vertical spinners that stop on 5, 50, or 500 rather than scoring every revolution. Shoot the spinner with the cleaner entry, prepare for its bumper exit, and repeat whenever the ball returns safely; ordinary lanes and standups are secondary.",
+        "overview": "Fun Land / Fun Park is a high-variance spinner game in which a 500 stop outweighs routine scoring. Improve access and survival by choosing the cleaner spinner, favoring upper exits through a spinner or side lane, and resetting control after each return. The stop value is random, so do not change a safe route after a low result.",
+        "machineSetup": [
+          "Confirm Fun Land or add-a-ball Fun Park and tournament treatment of extra balls.",
+          "Test both vertical spinners, upper exits, slings, and center target returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Shoot either vertical spinner whenever a clean entry is available and hope it stops on 500. That single result dwarfs ordinary scoring, so preserve the ball and prefer upper exits through a spinner or side lane.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Observe which vertical spinner has the cleaner entry and safer return on this copy."
+          },
+          {
+            "text": "When the ball reaches a controlled flipper, shoot the reachable spinner instead of a 50-point standup."
+          },
+          {
+            "text": "Let the spinner stop completely and read its 5, 50, or 500 value."
+          },
+          {
+            "text": "Prepare both flippers while the ball moves through the upper bumpers."
+          },
+          {
+            "text": "Favor exits through either spinner or an upper side lane over raw bumper exits."
+          },
+          {
+            "text": "If the ball returns safely, set up the cleaner spinner again."
+          },
+          {
+            "text": "Use ordinary lanes and targets only when reached naturally or when no spinner entry is available."
+          },
+          {
+            "text": "Repeat the survival-and-spinner plan for every ball, regardless of the previous stop value."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Stop-value spinners",
+            "summary": "Each vertical spinner awards one value where it stops (5, 50, or 500) instead of scoring every revolution."
+          },
+          {
+            "name": "500-point result",
+            "summary": "A spinner stopping on 500 is the dominant scoring event and is worth far more than routine playfield action."
+          },
+          {
+            "name": "Ordinary scoring",
+            "summary": "Bumpers and slings score 1 or 10, while lanes and standup targets score 50."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Natural 50-point survival",
+          "when": "Use this plan when neither spinner can be reached from a controlled angle.",
+          "steps": [
+            {
+              "text": "Do not force a spinner shot through a post or sling."
+            },
+            {
+              "text": "Take a natural 50-point side lane or standup only when it preserves an upper path."
+            },
+            {
+              "text": "Track the next bumper exit with both flippers ready."
+            },
+            {
+              "text": "Regain control before selecting another shot."
+            },
+            {
+              "text": "Return to the cleaner spinner as soon as its lane opens."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

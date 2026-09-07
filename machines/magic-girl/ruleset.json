@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "GBLkP",
+  "title": "Magic Girl",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "myPinballs current Magic Girl software and rules project",
+      "url": "https://www.mypinballs.com/magicgirl/"
+    },
+    "supportingSources": [
+      {
+        "label": "Retro Refurbs restored-machine rules and hardware report",
+        "url": "https://www.retrorefurbs.com/finishing-magic-girl/"
+      },
+      {
+        "label": "Kineticist original-release and incomplete-shipment history",
+        "url": "https://www.kineticist.com/news/magic-girl-pinball-machine-first-stream-features-more"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "On a restored Magic Girl running myPinballs software v1.0, complete the four lower lanes to light locks, lock one ball on each ramp, and take the third lock at the Kings Chamber / spirit ring to start three-ball Multiball. The longer route completes five color-coded Master challenges at the Magic Shoppe before Excalibur.",
+      "simpleOverview": "On a restored software-v1.0 machine, complete the four lower lanes to light locks. Lock one ball on each ramp, then take the third lock at the Kings Chamber / spirit ring to start three-ball Multiball.",
+      "summary": "Complete the four inlane and outlane letters to light locks, then lock one ball on each ramp. Take the third lock at the Kings Chamber / spirit ring to start three-ball Multiball; follow the rear-box targets and left loop for its ordered Jackpots.",
+      "quickInfo": [
+        {
+          "name": "Light locks",
+          "summary": "Complete the four lower inlane and outlane letters."
+        },
+        {
+          "name": "Three-ball Multiball",
+          "summary": "Lock one ball on each ramp, then take the third lock at the Kings Chamber / spirit ring."
+        },
+        {
+          "name": "Multiball Jackpots",
+          "summary": "Hit the rear Kings Chamber box targets to light the left loop, then collect Bronze through Platinum in order."
+        },
+        {
+          "name": "Newton two-ball",
+          "summary": "Hit the captive ball five times, then shoot the Kings Chamber."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the four lower inlane and outlane letters to light the ball locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Lock one ball on the left ramp and one on the right ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Send the third ball to the Kings Chamber / spirit ring to start three-ball Multiball; if the installed software explicitly directs the early third lock back to a ramp, follow that lit insert.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, hit the rear Kings Chamber box targets to light the left-loop award, then collect Bronze, Copper, Silver, Gold, and Platinum in order.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Newton two-ball Multiball",
+          "when": "Use this route when the captive ball is safer than the two-ramp lock sequence.",
+          "steps": [
+            {
+              "text": "Hit the Newton captive ball five times to qualify the feature.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the Kings Chamber to start two-ball Multiball, then return to the captive ball for its Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Excalibur",
+        "steps": [
+          {
+            "text": "When a Master challenge is lit, shoot the Magic Shoppe scoop and select the available challenge.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Elements, Potions, Lightning, Optics, and Magnetism by following their matching colored shots and display prompts.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all five Master challenges are complete, return to the lit Magic Shoppe to start Excalibur; the restored rules define it as an adjustable six-ball finale.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm that the machine runs myPinballs software v1.0 with the rule document identified as revision 1.8 or a compatible later restoration release.",
+        "Verify that both ramp locks, their gates, the Kings Chamber / spirit ring, auto-launcher, Newton captive ball, rear box targets, left loop, and Magic Shoppe scoop work. Original as-shipped machines may not have functional hardware for this route."
+      ],
+      "termStyles": [
+        {
+          "label": "four lower lanes",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "Kings Chamber",
+          "tone": "rust",
+          "kind": "multiball"
+        },
+        {
+          "label": "left loop",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Magic Shoppe",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The originally shipped commercial machines were incomplete and may not support these rules or physical locks.",
+          "response": "Confirm compatible myPinballs software and restoration hardware; otherwise treat the display and working hardware as authoritative.",
+          "sourceUrl": "https://www.retrorefurbs.com/finishing-magic-girl/"
+        },
+        {
+          "issue": "Software v1.0 with revision 1.8 differs from the unfinished original shipment.",
+          "response": "Check the installed version before play and keep altered values or later restoration changes display-led.",
+          "sourceUrl": "https://www.mypinballs.com/magicgirl/"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

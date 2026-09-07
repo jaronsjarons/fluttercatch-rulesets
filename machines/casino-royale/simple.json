@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEn8",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Advance the roulette-style spinner to Special, stop it, and collect it at the center saucer, which lights both orbits and outlanes for 50,000, then favor the safer left orbit while upper play builds a 100,000 double bonus.",
+        "quickInfo": [
+          {
+            "name": "Spinner advance",
+            "summary": "Either inner upper standup advances the spinner when that target is lit."
+          },
+          {
+            "name": "Stop and collect",
+            "summary": "The lower-left standup stops the spinner, and the center saucer collects the displayed value."
+          },
+          {
+            "name": "Special collect",
+            "summary": "Collecting the spinner on Special lights both orbits and both outlanes for 50,000."
+          },
+          {
+            "name": "Bonus ladder",
+            "summary": "The two outer upper standups and the small top rollover advance bonus toward 100,000."
+          },
+          {
+            "name": "Double bonus",
+            "summary": "Each top lane lights its corresponding bumper; lighting all three bumpers doubles bonus."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the small top advance-bonus rollover."
+          },
+          {
+            "text": "Use upper-playfield action to find whichever inner standup is lit and advance the spinner."
+          },
+          {
+            "text": "Continue controlled upper feeds until the spinner reaches Special."
+          },
+          {
+            "text": "Hit the lower-left standup to stop the spinner on Special."
+          },
+          {
+            "text": "From the right flipper, shoot the center saucer only after the ball is settled."
+          },
+          {
+            "text": "Confirm that the Special collect lights the orbit and outlane awards for 50,000."
+          },
+          {
+            "text": "Repeat whichever lit orbit has the safer tested return; favor the left orbit when both are equally controlled."
+          },
+          {
+            "text": "Let top-lane and bumper action finish the 100,000 double bonus instead of forcing extra center shots."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-playfield bonus plan",
+          "when": "Use this plan when the spinner-advance targets or center saucer are rejecting clean shots.",
+          "steps": [
+            {
+              "text": "Shoot the safer orbit or right-side lane back toward the top."
+            },
+            {
+              "text": "Collect the small top rollover and outer standups to advance bonus."
+            },
+            {
+              "text": "Complete all three top lanes to light every bumper and double bonus."
+            },
+            {
+              "text": "Keep feeding the top until the spinner or saucer becomes a controlled shot."
+            }
+          ]
+        },
+        "alternatives": [],
+        "buildsToward": {
+          "title": "Special scoring plus 200,000 bonus",
+          "steps": [
+            {
+              "text": "Advance, stop, and collect the spinner on Special."
+            },
+            {
+              "text": "Use the lit 50,000 orbit to keep sending the ball upward."
+            },
+            {
+              "text": "Roll over the small top disk or hit the two outer standups near the top to advance base bonus to 100,000."
+            },
+            {
+              "text": "Complete the three top lanes to light double bonus."
+            },
+            {
+              "text": "Protect the ball and preserve the doubled end-of-ball value."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Spinner-state check",
+            "instruction": "Before shooting a standup, read both the lit target and the spinner position. Advance only from the target that is currently enabled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEn8-MJ6yX"
+          },
+          {
+            "name": "Right-flipper saucer shot",
+            "instruction": "Settle the ball on the right flipper and aim through the center of the saucer opening. Do not shoot while the ball is still rolling quickly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEn8-MJ6yX"
+          },
+          {
+            "name": "Orbit-return test",
+            "instruction": "Watch one complete orbit return before repeating it. Continue only when the ball avoids the outside wall and reaches a predictable lower-playfield feed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEn8-MJ6yX"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A missed center-saucer shot can rebound dangerously through the middle.",
+            "response": "Attempt the collect only from a settled right flipper with Special already displayed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEn8-MJ6yX"
+          },
+          {
+            "issue": "Balls leaving the bumpers can graze the outside walls and change direction suddenly.",
+            "response": "Track the ball through the full exit and prepare to nudge before it reaches an outlane divider.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEn8-MJ6yX"
+          },
+          {
+            "issue": "The 50,000 outlane award does not make an outlane drain desirable.",
+            "response": "Treat it as consolation value. Keep choosing the lit orbit that preserves the ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEn8-MJ6yX"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the 1976 Segasa Casino Royale, not a later namesake, plus ball count, tilt, replay, Extra Ball and Special conversion, and tournament scoring.",
+          "Confirm the 100,000 base-bonus maximum, three-lane end-of-ball double bonus, spinner stepping and stopping, and that a collected Special lights both orbits and outlanes for 50,000.",
+          "Test both spinner-advance standups, stop target, center-saucer registration and kickout, upper lamps and bumpers, left orbit, right lane, and outside-wall feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center targets",
+            "label": "Center targets",
+            "description": "Targets used to advance the main feature.",
+            "precision": "unverified",
+            "context": "Targets used to advance the main feature."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Saucer used to collect the qualified award.",
+            "precision": "unverified",
+            "context": "Saucer used to collect the qualified award."
+          }
+        ],
+        "simpleOverview": "Casino Royale uses upper standups to advance a roulette-style spinner, a lower-left standup to stop it, and the center saucer to collect it. Advance to Special, stop the spinner, collect at center, then repeat the safer lit orbit for 50,000 while upper play raises a doubled bonus.",
+        "overview": "Casino Royale uses upper standups to advance a roulette-style spinner, a lower-left standup to stop it, and the center saucer to collect it. Use upper action to reach Special, stop it at the lower-left standup, and collect from a settled right flipper. Afterward, repeat the safer lit orbit and let top lanes and bumpers finish the bonus.",
+        "machineSetup": [
+          "Confirm the 1976 Segasa Casino Royale, not a later namesake, plus ball count, tilt, replay, Extra Ball and Special conversion, and tournament scoring.",
+          "Confirm the 100,000 base-bonus maximum, three-lane end-of-ball double bonus, spinner stepping and stopping, and that a collected Special lights both orbits and outlanes for 50,000.",
+          "Test both spinner-advance standups, stop target, center-saucer registration and kickout, upper lamps and bumpers, left orbit, right lane, and outside-wall feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Advance the roulette-style spinner to Special, stop it, and collect it at the center saucer, which lights both orbits and outlanes for 50,000, then favor the safer left orbit while upper play builds a 100,000 double bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the small top advance-bonus rollover."
+          },
+          {
+            "text": "Use upper-playfield action to find whichever inner standup is lit and advance the spinner."
+          },
+          {
+            "text": "Continue controlled upper feeds until the spinner reaches Special."
+          },
+          {
+            "text": "Hit the lower-left standup to stop the spinner on Special."
+          },
+          {
+            "text": "From the right flipper, shoot the center saucer only after the ball is settled."
+          },
+          {
+            "text": "Confirm that the Special collect lights the orbit and outlane awards for 50,000."
+          },
+          {
+            "text": "Repeat whichever lit orbit has the safer tested return; favor the left orbit when both are equally controlled."
+          },
+          {
+            "text": "Let top-lane and bumper action finish the 100,000 double bonus instead of forcing extra center shots."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Spinner advance",
+            "summary": "Either inner upper standup advances the spinner when that target is lit."
+          },
+          {
+            "name": "Stop and collect",
+            "summary": "The lower-left standup stops the spinner, and the center saucer collects the displayed value."
+          },
+          {
+            "name": "Special collect",
+            "summary": "Collecting the spinner on Special lights both orbits and both outlanes for 50,000."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-playfield bonus plan",
+          "when": "Use this plan when the spinner-advance targets or center saucer are rejecting clean shots.",
+          "steps": [
+            {
+              "text": "Shoot the safer orbit or right-side lane back toward the top."
+            },
+            {
+              "text": "Collect the small top rollover and outer standups to advance bonus."
+            },
+            {
+              "text": "Complete all three top lanes to light every bumper and double bonus."
+            },
+            {
+              "text": "Keep feeding the top until the spinner or saucer becomes a controlled shot."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Balls leaving the bumpers can graze the outside walls and change direction suddenly.",
+          "text": "Track the ball through the full exit and prepare to nudge before it reaches an outlane divider."
+        }
+      }
+    }
+  ]
+}

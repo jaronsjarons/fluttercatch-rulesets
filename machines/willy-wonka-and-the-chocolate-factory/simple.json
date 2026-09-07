@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "id": "GYWBZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Repeat ramp shots to build Wonka Bars while collecting three Gobstopper locks at the Most Secret Machine. During Gobstopper Multiball, collect three ramp Jackpots, shoot the Most Secret Machine for the five-times Gobstopper Jackpot, and hit the factory target for add-a-ball when lit.",
+        "quickInfo": [
+          {
+            "name": "Gobstopper Multiball",
+            "summary": "Hit the Gobstopper target and lock three balls, then use ramp jackpots to light a five-times Gobstopper Jackpot at the Most Secret Machine."
+          },
+          {
+            "name": "Factory Tour",
+            "summary": "The right ramp, orbits, and captive ball qualify blue, purple, and orange features at the TV saucer."
+          },
+          {
+            "name": "Wonka Bars",
+            "summary": "Ramps collect Bars for end-of-ball bonus, Golden Bonus holds, Computer Awards, and the late-ball Wonka Bar Ransom."
+          },
+          {
+            "name": "Kid Multiball",
+            "summary": "Finish a Kid's required shots or collect that Kid, shoot the captive ball, then start at the left target. More Kids add balls and improve their jackpot lanes."
+          },
+          {
+            "name": "Golden Tickets",
+            "summary": "Five long-term objectives each award a Golden Ticket; one Ticket starts the wizard ladder, while all five light Pure Imagination."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Soft-plunge into the TV saucer for one WONKA letter, or soft-plunge to the upper flipper and shoot the center ramp for a Computer Award and five Candy Jar units.",
+            "modeNotes": [
+              "The center-ramp skill shot lights a Computer Award and adds five Candy Jar units. The saucer skill shot is the simpler controlled option."
+            ]
+          },
+          {
+            "text": "Hit the Gobstopper target to open the Most Secret Machine, then shoot the hole to lock a ball. Repeat until two balls are locked.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between lock shots, repeat the ramps for Wonka Bars. The center ramp awards three Bars, the right ramp awards two, and the left ramp awards one.",
+            "modeNotes": [
+              "Wonka Bars qualify Computer Awards and are multiplied by Bonus X at end of ball. Golden Bonus thresholds hold the accumulated Bar count."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot either orbit until the desired purple Super X is lit, then shoot the TV saucer to start it. Hit the captive ball until orange Collect Bonus is lit, then return to the TV saucer before Super X expires to collect the multiplied bonus.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the Gobstopper target to open the Most Secret Machine, then shoot the hole for the third lock and the Gobstopper Multiball start.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the center ramp for a Double Jackpot when its plunge-lane return is controlled. Use the left and right ramps for single Jackpots.",
+            "modeNotes": [
+              "Three ramp Jackpots light the Most Secret Machine for a Gobstopper Jackpot worth five times the normal Jackpot. A center-ramp Double counts as two toward qualification."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect the lit Gobstopper Jackpot at the Most Secret Machine. Repeat the three-Jackpot cycle.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the factory target when add-a-ball is lit. If a weak multiball ends with almost no jackpots, use the short restart at the Most Secret Machine.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Wonka Bars and Computer Awards",
+          "when": "This route converts ramp shots into Wonka Bars, Computer Awards, and a multiplied bonus collect.",
+          "steps": [
+            {
+              "text": "Repeat the safest ramp to collect Wonka Bars."
+            },
+            {
+              "text": "When Computer Award lights at the TV saucer, shoot the standup beside the center ramp to cycle to a useful available award."
+            },
+            {
+              "text": "Collect the selected Computer Award at the saucer."
+            },
+            {
+              "text": "Use Golden Bonus thresholds to hold Wonka Bars and preserve end-of-ball value.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "When Collect Bonus is available as an orange Factory Tour award, combine it with a running purple Super X before cashing out.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Kid Multiball",
+            "when": "A qualified Kid enables this independent Multiball start.",
+            "steps": [
+              {
+                "text": "Complete one accessible Kid objective. Violet begins from the GUM targets; Mike begins with right orbit, saucer, then center ramp."
+              },
+              {
+                "text": "Shoot the captive ball when Collect Kid is lit, then shoot the left target to start Kid Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect the qualified Kid's lit jackpot lane. Use the always-lit center ramp for Double Jackpots.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "After five Jackpots, shoot the left lane for the Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Wonkavator Multiball",
+            "when": "Super Locks carry between games by default, so existing spinner progress can shorten this route.",
+            "steps": [
+              {
+                "text": "Collect three lit Super Locks at the spinner to start Wonkavator Multiball."
+              },
+              {
+                "text": "In wave one, collect six major-shot Jackpots, hit the Gobstopper target, then lock all but one ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the spinner for the Super Jackpot multiplied by the number of locked balls.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete the second and third Jackpot waves and their Super Jackpots to earn the Wonkavator Golden Ticket.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Pure Imagination",
+          "steps": [
+            {
+              "text": "Start all twelve Factory Tour modes for the Factory Tour Golden Ticket.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect five Gobstopper Jackpots for its Golden Ticket.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect one jackpot for each Kid during Kid Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete all three Wonkavator Super Jackpot waves and find the Gumball Machine ticket.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After all five Golden Tickets, shoot the TV saucer to start Pure Imagination.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Wonkavator locks",
+            "pro": "Standard Edition games use virtual locks for Wonkavator Multiball.",
+            "premium": "Limited and Collector's Edition games physically lock balls in the Wonkavator. Qualification and the three jackpot waves are shared, but release timing and feeds differ.",
+            "sourceUrl": "https://tiltforums.com/t/wonka-rulesheet/5406"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Gobstopper Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Kid Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Wonkavator Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Factory Tour",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super X",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Wonka Bars",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Golden Ticket",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Pure Imagination",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Most Secret Machine",
+            "context": "Collect the lit Gobstopper Jackpot at the Most Secret Machine.",
+            "label": "Most Secret Machine",
+            "description": "The center-left target and lock hole qualify Gobstopper locks, jackpots, and the four-ticket wizard mode.",
+            "precision": "unverified"
+          },
+          {
+            "term": "TV saucer",
+            "context": "Start a Factory Tour feature at the TV saucer.",
+            "label": "TV saucer",
+            "description": "The upper-right saucer starts Factory Tour modes, Computer Awards, and Pure Imagination.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "context": "Shoot the center ramp for a Double Jackpot.",
+            "label": "Camera ramp",
+            "description": "The upper-flipper ramp scores three Wonka Bars and Double Jackpots in the main multiballs.",
+            "precision": "unverified"
+          },
+          {
+            "term": "factory target",
+            "context": "Shoot the factory target when add-a-ball is lit.",
+            "label": "Factory target",
+            "description": "The standup near the left inlane adds mode time, completes a WONKA hurry-up, and can add a ball during Gobstopper Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Center-ramp plunge collect",
+            "instruction": "When a locked ball returns to the shooter lane during Gobstopper Multiball, use the manual plunge only after confirming the center-ramp Double Jackpot is lit and the upper flipper is ready.",
+            "sourceUrl": "https://tiltforums.com/t/wonka-rulesheet/5406"
+          },
+          {
+            "name": "Computer Award selection",
+            "instruction": "Use the standup to the right of the center ramp to change the lit Computer Award, then collect it at the TV saucer.",
+            "sourceUrl": "https://tiltforums.com/t/wonka-rulesheet/5406"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Gobstopper locks return balls through the plunger lane.",
+            "response": "Watch the shooter lane during every lock and multiball start. Do not let an auto-plunged ball reach the upper flipper unattended.",
+            "sourceUrl": "https://tiltforums.com/t/wonka-rulesheet/5406"
+          },
+          {
+            "issue": "Super Locks carry between games on default settings.",
+            "response": "Use any Super Lock already lit at the spinner toward the three-lock Wonkavator start.",
+            "sourceUrl": "https://tiltforums.com/t/wonka-rulesheet/5406"
+          }
+        ],
+        "checkBeforePlay": [
+          "Standard Edition uses virtual Wonkavator locks; Limited and Collector's Editions use physical locks.",
+          "Gobstopper locks return balls through the plunger lane."
+        ],
+        "simpleOverview": "Willy Wonka gives a Gobstopper lock each time you knock down the Gobstopper target and shoot the Most Secret Machine. The third lock starts Gobstopper Multiball. Collect three ramp Jackpots (the center ramp counts as two), then shoot the Most Secret Machine for the five-times Gobstopper Jackpot. For Kid Multiball, qualify a Kid, shoot the captive ball when Collect Kid is lit, then shoot the left target.",
+        "overview": "Willy Wonka & The Chocolate Factory advances toward five Golden Tickets through Factory Tour modes and its three main Multiballs. Repeat ramp shots to build Wonka Bars while collecting three Gobstopper locks at the Most Secret Machine. During Gobstopper Multiball, collect three ramp Jackpots (the center ramp counts as two), then shoot the Most Secret Machine for the five-times Gobstopper Jackpot. Hit the factory target for add-a-ball when lit.",
+        "machineSetup": [
+          "Standard Edition uses virtual Wonkavator locks; Limited and Collector's Editions use physical locks.",
+          "Gobstopper locks return balls through the plunger lane."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Use the Gobstopper target and Most Secret Machine for three Gobstopper locks. Factory Tour features start at the TV saucer, and a qualified Kid enables Kid Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Multiply a bonus collect",
+            "text": "Shoot either orbit until the desired purple Super X is lit, then shoot the TV saucer to start it. Hit the captive ball until orange Collect Bonus is lit, then return to the TV saucer before Super X expires.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Collect Bonus, when it is available",
+              "reason": "Choose the orange Collect Bonus feature when purple Super X can multiply its cashout.",
+              "play": "Shoot either orbit to light purple Super X and start it at the TV saucer. Hit the captive ball to light orange Collect Bonus, then shoot the TV saucer again before Super X expires."
+            }
+          },
+          {
+            "title": "Start Gobstopper Multiball",
+            "text": "Hit the Gobstopper target to open the Most Secret Machine, then shoot the hole to lock a ball. Repeat until the third lock starts Gobstopper Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gobstopper Multiball",
+            "summary": "Hit the Gobstopper target and lock three balls, then use ramp jackpots to light a five-times Gobstopper Jackpot at the Most Secret Machine."
+          },
+          {
+            "name": "Factory Tour",
+            "summary": "The right ramp, orbits, and captive ball qualify blue, purple, and orange features at the TV saucer."
+          },
+          {
+            "name": "Wonka Bars",
+            "summary": "Ramps collect Bars for end-of-ball bonus, Golden Bonus holds, Computer Awards, and the late-ball Wonka Bar Ransom."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Kid Multiball",
+          "when": "A qualified Kid enables this independent Multiball start.",
+          "steps": [
+            {
+              "text": "Complete a Kid objective, shoot the captive ball when Collect Kid is lit, then shoot the left target to start Kid Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

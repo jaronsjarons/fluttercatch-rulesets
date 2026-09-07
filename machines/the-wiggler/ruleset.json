@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "G4x9D",
+  "title": "The Wiggler",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to The Wiggler",
+      "url": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist The Wiggler machine guide",
+        "url": "https://www.kineticist.com/games/pinball/the-wiggler"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the left yellow bumper to set the Wiggler chute to 500. Hit the center blue bumper to close the zipper flippers. Settle the ball, then shoot the upper-left chute.",
+      "quickInfo": [
+        {
+          "name": "Center blue bumper",
+          "summary": "The center blue bumper closes the zipper flippers and releases locked balls into multiball."
+        },
+        {
+          "name": "Yellow bumpers",
+          "summary": "A hit on either yellow mushroom bumper reopens the zipper flippers."
+        },
+        {
+          "name": "Wiggler value",
+          "summary": "The left yellow bumper cycles the upper-left chute from 100 to 300 to 500, then back to 100."
+        },
+        {
+          "name": "Upper-left chute",
+          "summary": "The upper-left chute scores its lit value, opens the flippers, and opens the lower-right return gate."
+        },
+        {
+          "name": "Right saucers",
+          "summary": "Each right saucer locks a ball, and its marked value scores only when the blue bumper releases that ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge across the lit top rubber, then guide the ball into the center lane for 200."
+        },
+        {
+          "text": "While the flippers are open, graze the left yellow bumper until the Wiggler chute shows 500."
+        },
+        {
+          "text": "Stop left-yellow hits when the chute reaches 500."
+        },
+        {
+          "text": "Once the Wiggler chute reads 500, use the center blue bumper to close the zipper flippers."
+        },
+        {
+          "text": "Let the ball settle on the closed flippers."
+        },
+        {
+          "text": "Shoot the upper-left Wiggler chute for 500."
+        },
+        {
+          "text": "After the chute reopens the flippers, hit the center blue bumper again."
+        },
+        {
+          "text": "Repeat the 500-point chute while its entry and return remain controlled."
+        }
+      ],
+      "fallback": {
+        "title": "Right-saucer multiball",
+        "when": "Use this plan when the upper-left chute is not reliable from the closed flippers.",
+        "steps": [
+          {
+            "text": "Shoot a controlled ball into either right saucer to lock it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With the replacement ball, hit the center blue bumper."
+          },
+          {
+            "text": "Let the released ball settle on the closed flippers before a yellow-bumper hit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep both balls alive and use controlled shots at the upper-left chute.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Current-value chute loop",
+          "when": "Use this plan when another left-yellow hit is more dangerous than the current chute value justifies.",
+          "steps": [
+            {
+              "text": "Accept the current 100 or 300 chute value."
+            },
+            {
+              "text": "Hit the center blue bumper to close the flippers."
+            },
+            {
+              "text": "Settle the ball on the closed flippers."
+            },
+            {
+              "text": "Shoot the upper-left chute without another left-yellow hit."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "500-point Wiggler loop",
+        "steps": [
+          {
+            "text": "Cycle the upper-left chute value to 500."
+          },
+          {
+            "text": "Close the zipper flippers with the center blue bumper."
+          },
+          {
+            "text": "Settle the ball on the closed flippers."
+          },
+          {
+            "text": "Repeat the upper-left chute and reclose the flippers after each collect."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Closed-flipper settle",
+          "instruction": "After a blue-bumper hit, wait for the ball to settle on the closed flippers. Shoot only after the ball stops moving.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+        },
+        {
+          "name": "Bumper edge graze",
+          "instruction": "Graze the edge of the needed bumper. Avoid a direct hit that sends the ball toward the slingshots or a drain.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+        },
+        {
+          "name": "Lower-saucer release read",
+          "instruction": "Track the lower-saucer release first. Its kickout is usually safer than the upper-saucer kickout.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Either yellow bumper reopens the zipper flippers.",
+          "response": "Avoid both yellow bumpers after the blue bumper closes the flippers. Prepare for the center gap after any yellow hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+        },
+        {
+          "issue": "Most bumper rebounds can reach a slingshot or a drain.",
+          "response": "Use bumper-edge contacts. Nudge before the ball reaches the slingshots, within the machine's tilt limit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+        },
+        {
+          "issue": "The upper-saucer kickout often sends the ball into a bumper.",
+          "response": "Track the kickout until it clears the bumpers. Do not assume that the released ball will reach a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4x9D-MJjE5"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Wiggler edition, ball count, zipper timing, and awards.",
+        "Test bumper strength, zipper closure, and upper-left chute."
+      ],
+      "simpleOverview": "The Wiggler uses the left yellow bumper to cycle the upper-left chute value and the center blue bumper to close the zipper flippers. Stop the chute at 500, close the flippers, settle the ball, and shoot the upper-left chute before reclosing them for another collect.",
+      "overview": "The Wiggler uses the left yellow bumper to cycle the upper-left chute value and the center blue bumper to close the zipper flippers. Hit the left yellow bumper until the chute shows 500, then use the center blue bumper to close the flippers and settle the ball before shooting the chute. Repeat the 500-point route; use the same blue bumper to release stored balls when Multiball is prepared.",
+      "machineSetup": [
+        "Confirm Wiggler edition, ball count, zipper timing, and awards.",
+        "Test bumper strength, zipper closure, and upper-left chute."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

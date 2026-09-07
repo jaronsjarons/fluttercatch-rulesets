@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEWx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the far-left white lane from the right flipper. Use its upper return to collect all three Jokers. Then shoot the drop bank from the left flipper at 4,000 per target. Return to the white lane after the bank is complete.",
+        "quickInfo": [
+          {
+            "name": "Jokers",
+            "summary": "White, pink, and green Jokers each raise every drop-target value by 1,000."
+          },
+          {
+            "name": "Far-left white lane",
+            "summary": "The lit lane scores 3,000 and returns the ball to the upper Joker lanes."
+          },
+          {
+            "name": "Drop bank",
+            "summary": "Each of the nine drops scores 1,000 plus 1,000 for each collected Joker."
+          },
+          {
+            "name": "Card bonus",
+            "summary": "Specific target sets build the drain bonus, and all five sets total 15,000."
+          },
+          {
+            "name": "Open Gate",
+            "summary": "The lit right-side lane opens a gate that returns one right-outlane ball to the shooter lane."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "It applies on ball 5 in five-ball play and on balls 2 and 3 in three-ball play."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the white Joker lane at the upper left.",
+            "modeNotes": [
+              "White Joker: It lights the far-left white lane and the right-side Open Gate lane for 3,000."
+            ]
+          },
+          {
+            "text": "Trap on the right flipper and test the far-left white lane."
+          },
+          {
+            "text": "Repeat the far-left lane until white, pink, and green Jokers are collected.",
+            "modeNotes": [
+              "Jokers: Each collected color adds 1,000 to every drop-target value.",
+              "Lane value: A white, pink, or green lane scores 500 when unlit or 3,000 when lit."
+            ]
+          },
+          {
+            "text": "Transfer a left-flipper ball to the right flipper until all three Jokers are collected."
+          },
+          {
+            "text": "After all three Jokers are lit, shoot the drop bank from the left flipper.",
+            "modeNotes": [
+              "Maximum drop value: Each target now scores 4,000.",
+              "Target order: Shoot both Jacks, three Queens, both Kings, the Ace, then the Ten."
+            ]
+          },
+          {
+            "text": "After all drops are down, shoot the center 3,000 pad from the left flipper."
+          },
+          {
+            "text": "Return to the far-left white lane from the right flipper."
+          },
+          {
+            "text": "On a Double Bonus ball, start the drop-target sets earlier when their drain value is worth the risk.",
+            "modeNotes": [
+              "Double Bonus: It applies on ball 5 in five-ball play and on balls 2 and 3 in three-ball play."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Repeat the far-left white lane",
+          "when": "Recovery pivot: Use this when drop-target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Trap the ball on the right flipper."
+            },
+            {
+              "text": "Shoot the far-left white lane."
+            },
+            {
+              "text": "Collect missing Joker lanes when the ball returns to the upper playfield."
+            },
+            {
+              "text": "Repeat while the lane feed remains controlled."
+            },
+            {
+              "text": "Stop after a return reaches the center or an outlane."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Open the right outlane gate",
+            "when": "When trailing, use this higher-ceiling route: use this when the Jack targets are controlled.",
+            "steps": [
+              {
+                "text": "Collect the white Joker to light the right-side lane."
+              },
+              {
+                "text": "Shoot the Jack targets from the left flipper."
+              },
+              {
+                "text": "A Jack rebound can enter the lit right-side lane and open the gate."
+              },
+              {
+                "text": "The gate returns one right-outlane ball to the shooter lane."
+              },
+              {
+                "text": "Return to the main route after the gate opens."
+              }
+            ]
+          },
+          {
+            "title": "Build one safe card-bonus set",
+            "when": "Use this when a target set is nearly complete.",
+            "steps": [
+              {
+                "text": "Complete either Jack pair or King pair for 1,000 bonus."
+              },
+              {
+                "text": "Complete both pairs for the 2,000 bonus set."
+              },
+              {
+                "text": "Complete all three Queens for 3,000."
+              },
+              {
+                "text": "Add either pair to the Queens for the 4,000 Full House."
+              },
+              {
+                "text": "Stop after the nearby target set if lower-bank rebounds become unsafe."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "15,000 Card Bonus",
+          "steps": [
+            {
+              "text": "Complete both Jacks, both Kings, three Queens, and the five red Royal Flush targets."
+            },
+            {
+              "text": "The five target sets total 15,000 drain bonus."
+            },
+            {
+              "text": "Double Bonus multiplies that value on the assigned ball."
+            },
+            {
+              "text": "After all drops are down, use the left white lane and center pad for direct scoring."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Jokers",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Far-left white lane",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Drop bank",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Card bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Open Gate",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Royal Flush or Card Whiz, not the 1983 Royal Flush Deluxe remake.",
+          "Use the displayed center-pad value instead of assuming 3,000 or 5,000."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "far-left white lane",
+            "label": "White Joker lane",
+            "description": "Far-left lane used for repeat scoring and upper-playfield Joker access.",
+            "precision": "unverified",
+            "context": "Repeat the far-left white lane from the right flipper."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Far-left lane repeat",
+            "instruction": "Shoot the far-left white lane from the right flipper and repeat only after you confirm its return.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/royal-flush-card-whiz"
+          },
+          {
+            "name": "Backhand",
+            "techniqueSlug": "backhand",
+            "instruction": "After the Jokers are complete, use controlled backhands from the left flipper for the drop bank.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEWx-MJNpE"
+          },
+          {
+            "name": "White Joker skill shot",
+            "instruction": "Plunge for the center white lane in the upper-left three-lane group.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/royal-flush-card-whiz"
+          },
+          {
+            "name": "Jack gate rebound",
+            "instruction": "Shoot the Jacks first because a rebound can enter the right-side lane and open the outlane gate.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEWx-MJNpE"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball that exits the upper playfield on the right can drain through the center.",
+            "response": "Use the far-left white lane to return the ball to the upper Joker lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEWx-MJNpE"
+          },
+          {
+            "issue": "Either long white lane can hit its lower rubber and return out of control.",
+            "response": "Watch the first feed and stop the lane repeat if it reaches a sling, outlane, or center drain.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEWx-MJNpE"
+          },
+          {
+            "issue": "The lower drop targets have more dangerous rebounds than the upper targets.",
+            "response": "Complete the upper Jacks and Queens first, then stop the bank route after a dangerous rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEWx-MJNpE"
+          },
+          {
+            "issue": "The right saucer and direct Joker standups are riskier than the far-left lane.",
+            "response": "Do not aim at them; accept an incidental collect and return to the white lane.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/royal-flush-card-whiz"
+          }
+        ],
+        "simpleOverview": "Royal Flush and Card Whiz use the far-left lane to collect the white, pink, and green Jokers, which raise every drop-target value. Collect all three colors, then shoot the drop bank from the left flipper and return to the far-left lane after the bank is down.",
+        "overview": "In Royal Flush and Card Whiz, each colored Joker lane adds 1,000 to every card drop target. Repeat the far-left lane from the right flipper until all three Jokers are collected, then attack the drop bank from the left flipper. After the bank is down, use the center pad and return to the far-left lane.",
+        "machineSetup": [
+          "Confirm Royal Flush or Card Whiz, not the 1983 Royal Flush Deluxe remake.",
+          "Use the displayed center-pad value instead of assuming 3,000 or 5,000."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the far-left white lane from the right flipper. Use its upper return to collect all three Jokers. Then shoot the drop bank from the left flipper at 4,000 per target. Return to the white lane after the bank is complete.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the white Joker lane at the upper left.",
+            "details": [
+              "White Joker: It lights the far-left white lane and the right-side Open Gate lane for 3,000."
+            ]
+          },
+          {
+            "text": "Trap on the right flipper and test the far-left white lane."
+          },
+          {
+            "text": "Repeat the far-left lane until white, pink, and green Jokers are collected.",
+            "details": [
+              "Jokers: Each collected color adds 1,000 to every drop-target value.",
+              "Lane value: A white, pink, or green lane scores 500 when unlit or 3,000 when lit."
+            ]
+          },
+          {
+            "text": "Transfer a left-flipper ball to the right flipper until all three Jokers are collected."
+          },
+          {
+            "text": "After all three Jokers are lit, shoot the drop bank from the left flipper.",
+            "details": [
+              "Maximum drop value: Each target now scores 4,000.",
+              "Target order: Shoot both Jacks, three Queens, both Kings, the Ace, then the Ten."
+            ]
+          },
+          {
+            "text": "After all drops are down, shoot the center 3,000 pad from the left flipper."
+          },
+          {
+            "text": "Return to the far-left white lane from the right flipper."
+          },
+          {
+            "text": "On a Double Bonus ball, start the drop-target sets earlier when their drain value is worth the risk.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Double Bonus: It applies on ball 5 in five-ball play and on balls 2 and 3 in three-ball play."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Jokers",
+            "summary": "White, pink, and green Jokers each raise every drop-target value by 1,000."
+          },
+          {
+            "name": "Far-left white lane",
+            "summary": "The lit lane scores 3,000 and returns the ball to the upper Joker lanes."
+          },
+          {
+            "name": "Drop bank",
+            "summary": "Each of the nine drops scores 1,000 plus 1,000 for each collected Joker."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Repeat the far-left white lane",
+          "when": "Recovery pivot: Use this when drop-target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Trap the ball on the right flipper."
+            },
+            {
+              "text": "Shoot the far-left white lane."
+            },
+            {
+              "text": "Collect missing Joker lanes when the ball returns to the upper playfield."
+            },
+            {
+              "text": "Repeat while the lane feed remains controlled."
+            },
+            {
+              "text": "Stop after a return reaches the center or an outlane."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A ball that exits the upper playfield on the right can drain through the center.",
+          "text": "Use the far-left white lane to return the ball to the upper Joker lanes."
+        }
+      }
+    }
+  ]
+}

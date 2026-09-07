@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "id": "GQKyP",
+  "title": "James Bond 007",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist James Bond 007 tournament strategy",
+      "url": "https://www.kineticist.com/news/james-bond-007-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Tilt Forums James Bond 007 rulesheet",
+        "url": "https://tiltforums.com/t/james-bond-007-rulesheet/7893"
+      },
+      {
+        "label": "Current Stern code index — James Bond 007 1.06",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      },
+      {
+        "label": "Raymond Davidson full James Bond 007 tour",
+        "url": "https://www.youtube.com/watch?v=FbSbZDtegVk"
+      },
+      {
+        "label": "James Bond ball-one strategy by The Pinball Company",
+        "url": "https://www.youtube.com/watch?v=jZSMnmYLXM0"
+      },
+      {
+        "label": "Jared Garvey at City of Concord Champ 2024, first round",
+        "url": "https://pinballvideos.com/v/6175"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Start a Villain before Jetpack Multiball and a Henchman before Bird One Multiball, then use the Bond Women they award to raise 007 Scoring.",
+      "steps": [
+        {
+          "text": "Shoot the left eject to light Jetpack Multiball. Test its feed, both ramps, the center lane, and the upper loop."
+        },
+        {
+          "text": "Shoot the right ramp to start a timed Villain mode before Jetpack.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit left ramp to start Jetpack Multiball. Shoot the center lane first.",
+          "modeNotes": [
+            "Jetpack Multiball: The center lane locks a hurry-up that starts at 3,000,000. Later Jetpacks add 1,000,000.",
+            "Shoot five flashing jackpots. Then shoot the left ramp for a double jackpot.",
+            "On Pro, shoot the moving right-to-left arrow for the Super Jackpot. On Premium or LE, shoot the Dragon Tank when the jetpack reaches it.",
+            "The first Super Jackpot adds a ball. The feature ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the side ramp to start a Henchman mode. Complete the Osato drop targets, then shoot the center lane to lock three balls and start Bird One Multiball.",
+          "modeNotes": [
+            "Henchman mode: Each Henchman is a timed two-stage mode. Follow the lit sequence on the display and use Bird One to protect its timed shots.",
+            "Bird One Multiball: During the short opening, make three upper-flipper double jackpots to qualify one automatic two-ball restart.",
+            "Shoot green jackpots until the rocket Super Jackpot lights. The first Super requires three jackpots; each collected Super adds one to the next requirement.",
+            "Clear all single jackpots to light doubles. Clear all doubles to light triples.",
+            "Shoot the rocket for the Super. Its base is the accumulated jackpot bases and is capped at 300,000,000."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect flashing Bond Women at the upper loop. Save them for a valuable multiball or Bond, James Bond.",
+          "modeNotes": [
+            "Collected Bond Woman: Each one adds 1x and 10 seconds to 007 Scoring. A drain removes collected Women unless the corresponding film's four mode types have been played.",
+            "007 Scoring: Press the pink action button to spend all collected Women on 2x playfield scoring for 20 seconds through 7x for 70 seconds.",
+            "Starting 7x also gives 30 seconds of ball save."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After one Villain mode, one Henchman mode, Jetpack, and Bird One, shoot the lit right ramp or left eject to start Bond, James Bond Multiball.",
+          "modeNotes": [
+            "Bond, James Bond: Gives 70 seconds of unlimited ball save. Shoot ten lit shots once each.",
+            "Standard shots score 2,500,000. The side loop and upper loop score 5,000,000.",
+            "Shoot the side ramp for the Super Jackpot and extra ball. The Super or timer ends the feature."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start 007 Scoring before the valuable feature; if Bond Women are short, use Bond, James Bond's unlimited ball save to collect them, then activate the strongest practical playfield multiplier.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Early multiplier cash-out",
+        "when": "Use this plan when the last Bond Woman or Bird One bank is not safe.",
+        "steps": [
+          {
+            "text": "Use the available 2x to 4x playfield scoring during Jetpack or Bird One.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Do not lose collected Women while chasing 7x."
+          },
+          {
+            "text": "Repeat Jetpack when the center lane and left ramp are more reliable than the rocket bank."
+          },
+          {
+            "text": "Use a Smart Missile to collect the hardest lit mode shot."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Henchman stack in Bird One",
+          "when": "Use this when the center-lane-to-side-ramp combo is controlled.",
+          "steps": [
+            {
+              "text": "Shoot the side ramp to start a Henchman mode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the rocket bank, then shoot the center lane to qualify and collect the Bird One locks."
+            },
+            {
+              "text": "Use the center-lane-to-side-ramp combo to carry the Henchman mode into Bird One."
+            },
+            {
+              "text": "Use the multiball to complete the timed Henchman shots."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Bond, James Bond and later mini-wizards",
+        "steps": [
+          {
+            "text": "Start one Villain, one Henchman, Jetpack Multiball, and Bird One Multiball to qualify Bond, James Bond.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the Villain, Henchman, Q Branch, and SPECTRE ladders to qualify their later mini-wizards. Follow the lit start shown by the installed display.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Jetpack Super Jackpot",
+          "pro": "Shoot the moving right-to-left arrow when the Super is ready.",
+          "premium": "Shoot the Dragon Tank when the jetpack reaches it.",
+          "sourceUrl": "https://tiltforums.com/t/james-bond-007-rulesheet/7893"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Villain mode",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Henchman mode",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Jetpack Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bird One Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bond, James Bond Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "007 Scoring",
+          "tone": "rust",
+          "kind": "multiplier",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bond Women",
+          "tone": "plum",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check competition settings, mode timers, Bird One thresholds, and whether Bird One uses physical or virtual locks.",
+        "Check Bond Women persistence, 007 Scoring duration, ball-save settings, Smart Missile restrictions, and Extra Ball conversion.",
+        "Test both ejects, three ramps, center lane, upper loop, rocket targets, Dragon Tank or roving Super, DB5, and action button."
+      ],
+      "techniques": [
+        {
+          "name": "Under-flipper left eject",
+          "instruction": "Hold the upper flipper before the left-eject attempt. Shoot under it. Release the upper flipper when the ball reaches the apex.",
+          "sourceUrl": "https://www.kineticist.com/news/james-bond-007-pinball-tutorial"
+        },
+        {
+          "name": "Center-lane upper-loop feed",
+          "instruction": "Shoot the center lane from a left-flipper cradle. Use its feed to time the upper loop.",
+          "sourceUrl": "https://www.kineticist.com/news/james-bond-007-pinball-tutorial"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Test a same-side backhand to the rocket bank and rocket lane. Use it when its return is safer than the forehand.",
+          "sourceUrl": "https://www.kineticist.com/news/james-bond-007-pinball-tutorial",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Jetpack timing test",
+          "instruction": "Use Jetpack ball save and auto-plunges to learn the upper-flipper timing before Bird One.",
+          "sourceUrl": "https://www.youtube.com/watch?v=jZSMnmYLXM0&t=551s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Dragon Tank is a direct-drain risk.",
+          "response": "Avoid it during single-ball play unless a mode requires it. Take its Jetpack Super while multiball protection is active.",
+          "sourceUrl": "https://www.kineticist.com/news/james-bond-007-pinball-tutorial"
+        },
+        {
+          "issue": "The last right-orbit Bond Woman can require a hard, dangerous shot.",
+          "response": "Use the lower multiplier when the right orbit is not dialed in.",
+          "sourceUrl": "https://www.youtube.com/watch?v=FbSbZDtegVk&t=1565s"
+        },
+        {
+          "issue": "A modified DB5 can return differently from the stock mechanism.",
+          "response": "Judge the local feed. Do not transfer technique from an aftermarket DB5 machine without a copy test.",
+          "sourceUrl": "https://www.youtube.com/watch?v=ivQLbmRK6Ic"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Start a Villain before Jetpack and a Henchman before Bird One, then use those multiballs to secure Bond Women before activating 007 Scoring over the best cashout."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Start one Villain mode, one Henchman mode, Jetpack, and Bird One for Bond, James Bond."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Early multiplier cash-out: Use this plan when the last Bond Woman or Bird One bank is not safe."
+        }
+      ],
+      "overview": "James Bond 007 pairs Villain and Jetpack, Henchman and Bird One; Bond Women build 007 Scoring. Shoot the right ramp to start Villain, then the left eject to light Jetpack and left ramp to start it. Shoot the side ramp to start Henchman, complete Osato drop targets, shoot the center lane for three Bird One locks, collect upper-loop Women, activate 007 Scoring during Multiball.",
+      "simpleOverview": "James Bond 007 pairs modes with Multiballs. Shoot the right ramp to start a Villain, then shoot the left eject to light Jetpack and the left ramp to start it. Shoot the side ramp to start a Henchman, complete Osato drop targets, and shoot the center lane for three Bird One locks. Collect upper-loop Bond Women, press the pink action button for 007 Scoring.",
+      "machineSetup": [
+        "Check competition settings, mode timers, Bird One thresholds, and whether Bird One uses physical or virtual locks.",
+        "Check Bond Women persistence, 007 Scoring duration, ball-save settings, Smart Missile restrictions, and Extra Ball conversion.",
+        "Test both ejects, three ramps, center lane, upper loop, rocket targets, Dragon Tank or roving Super, DB5, and action button."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vXk",
+  "title": "Star God",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Star God instruction cards",
+      "url": "https://www.zaccaria-pinball.com/gen1/stargod/Cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Star God rules and machine guide",
+        "url": "https://www.kineticist.com/games/pinball/star-god"
+      },
+      {
+        "label": "Star God operator manual",
+        "url": "https://www.zaccaria-pinball.com/gen1/stargod/zaccaria-stargod_manual.pdf"
+      },
+      {
+        "label": "Star God play guide",
+        "url": "https://www.thegameisafootarcade.com/pinball-tables/s/star-god-virtual/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Star God links S-T-A-R, G-O-D, and the left drop bank. Complete the S-T-A-R rollovers to light the black target for its award. Repeated completions of the eight upper-right targets spell G-O-D; completing G-O-D lights the red Special target. Each completion of the four left drop targets raises Bonus X from 2x through 5x. The spinner scores more when its lamp is lit.",
+      "simpleOverview": "Complete the S-T-A-R rollovers, then hit the lit black target. Complete the eight upper-right targets three times to spell G-O-D, then hit the red target for Special. Complete the four left drop targets repeatedly to raise Bonus X from 2x to 5x, and shoot the spinner while it is lit.",
+      "summary": "Finish the target group closest to completion. Use S-T-A-R for the black-target award, repeat the upper-right set for G-O-D and Special, and keep returning to the left bank until Bonus X reaches 5x.",
+      "quickInfo": [
+        {
+          "name": "Spell S-T-A-R",
+          "summary": "Complete the top and left-canal rollovers."
+        },
+        {
+          "name": "Spell G-O-D",
+          "summary": "Complete the eight upper-right targets three times."
+        },
+        {
+          "name": "Collect Special",
+          "summary": "Hit the red target after G-O-D."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete the four left drops repeatedly."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the S-T-A-R rollovers to light the black target, then hit that target for its displayed award.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the eight upper-right targets once for G, again for O, and a third time for D.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After G-O-D is complete, hit the lit red target to collect Special.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the four left drop targets repeatedly to advance Bonus X from 2x to 5x; use the spinner while its higher value is lit.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build Bonus X first",
+          "when": "Use this when the left drop bank is partly down.",
+          "steps": [
+            {
+              "text": "Finish the four-target bank for the next Bonus X step.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Return to S-T-A-R or the upper-right targets after the bank resets.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Complete G-O-D",
+        "steps": [
+          {
+            "text": "Finish full sets of the eight upper-right targets rather than leaving several partial routes.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the third set, prioritize the red Special target.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check Bonus X, black-target awards, G-O-D difficulty, spinner values, and Special awards.",
+        "Test every S-T-A-R rollover, all eight upper-right targets, black and red targets, four left drops, spinner, and progress lamps."
+      ],
+      "termStyles": [
+        {
+          "label": "S-T-A-R",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "G-O-D",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Black Target",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The black and red targets can award different values by setup.",
+          "response": "Use their lamps and award card rather than assuming a replay or extra ball.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen1/stargod/settings.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

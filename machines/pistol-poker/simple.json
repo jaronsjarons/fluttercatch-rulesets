@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "GRLL9",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Pistol Poker builds five poker hands, converts each completed hand into a chip at the gun saucer, and turns those chips into the longer trip toward Pistol Mania. Megamode runs alongside that hand progression: advance every suit from 10 through Ace for four Jackpots, then shoot the Joker for its Super Jackpot.",
+        "simpleOverview": "Hit the flashing cards needed for the current poker hand, then shoot a flashing Complete Hand shot. Shoot the gun saucer for the chip and a flipper-selected prize; after all five chips, shoot the Joker for Pistol Mania.",
+        "summary": "Follow the flashing cards for the current hand, shoot a flashing Complete Hand shot, then collect the chip at the gun saucer. Choose Megamode when it is offered, advance all four suits through their Aces, and shoot the red-lit Joker after every suit is complete.",
+        "quickInfo": [
+          {
+            "name": "Poker hands",
+            "summary": "The five hands arrive in order: one pair, two pair, three of a kind, full house, then royal flush. Only the flashing cards belong to the current hand."
+          },
+          {
+            "name": "Collecting a chip",
+            "summary": "After completing the hand, shoot the gun saucer. Use the left or right flipper to choose one of the two displayed prizes."
+          },
+          {
+            "name": "Megamode",
+            "summary": "Start it at a blue-lit Joker, by choosing it after a chip, or from Mystery. Each suit advances 10, Jack, Queen, King, then Ace."
+          },
+          {
+            "name": "Backbox gun",
+            "summary": "Gun-saucer shots advance Ready, Aim, and Fire. Select a suit, then press a flipper button while the desired coin is lit to spot the card under it."
+          },
+          {
+            "name": "Pistol Mania",
+            "summary": "Collect all five hand chips, then shoot the Joker. Additional balls are served and switches score until only one ball remains."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the flashing card targets needed for the current poker hand. When the hand is ready, shoot any playfield shot whose Complete Hand lamp is flashing.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the gun saucer to collect that hand's chip. Read the two displayed prizes and press the flipper for the one you want; take Megamode when it appears if you want the multiball route.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Megamode is not already running, shoot the Joker when its blue lamp is lit. It can also begin from Mystery or the chip-prize choice.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Megamode, hit the flashing card in each suit to advance from 10 through Ace. The upper loop can spot a Spade, while the lit Collect Card shots can spot their named suit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Each collected Ace awards that suit's Jackpot. After all four suits are complete, shoot the Joker while its red lamp is lit for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "To grow two-ball Megamode into three-ball play, lock one ball at the Joker, then shoot the gun so the game locks the second and serves a third ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Pistol Mania",
+          "steps": [
+            {
+              "text": "Complete and collect the chips for one pair, two pair, three of a kind, full house, and royal flush.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After the fifth chip is collected, shoot the Joker.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Keep the served balls alive and hit switches; Pistol Mania continues until only one ball remains.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Poker hand",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "Megamode",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Pistol Mania",
+            "tone": "indigo",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Joker",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "gun saucer",
+            "label": "Gun and chip saucer",
+            "description": "The center saucer that collects a completed hand's chip and advances Ready-Aim-Fire.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Joker",
+            "label": "Upper Joker lock hole",
+            "description": "The upper lock hole used by Mystery, Megamode, its Super Jackpot, and Pistol Mania.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper loop",
+            "label": "Upper loop",
+            "description": "The loop across the upper playfield that can spot a Spade during Megamode.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "AG10/R3 leaves some individual mode timing and prize values incomplete.",
+            "response": "Use the visible lamps and display for individual mode timing, prize values, and unfinished features.",
+            "sourceUrl": "https://www.pinball.org/rules/pistolpoker.html"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Follow the flashing cards for the current hand, shoot a flashing Complete Hand shot, then collect the chip at the gun saucer. Choose Megamode when it is offered, advance all four suits through their Aces, and shoot the red-lit Joker after every suit is complete.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the flashing card targets needed for the current poker hand. When the hand is ready, shoot any playfield shot whose Complete Hand lamp is flashing.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the gun saucer to collect that hand's chip. Read the two displayed prizes and press the flipper for the one you want; take Megamode when it appears if you want the multiball route.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Megamode is not already running, shoot the Joker when its blue lamp is lit. It can also begin from Mystery or the chip-prize choice.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Megamode, hit the flashing card in each suit to advance from 10 through Ace. The upper loop can spot a Spade, while the lit Collect Card shots can spot their named suit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Each collected Ace awards that suit's Jackpot. After all four suits are complete, shoot the Joker while its red lamp is lit for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "To grow two-ball Megamode into three-ball play, lock one ball at the Joker, then shoot the gun so the game locks the second and serves a third ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Poker hands",
+            "summary": "The five hands arrive in order: one pair, two pair, three of a kind, full house, then royal flush. Only the flashing cards belong to the current hand."
+          },
+          {
+            "name": "Collecting a chip",
+            "summary": "After completing the hand, shoot the gun saucer. Use the left or right flipper to choose one of the two displayed prizes."
+          },
+          {
+            "name": "Megamode",
+            "summary": "Start it at a blue-lit Joker, by choosing it after a chip, or from Mystery. Each suit advances 10, Jack, Queen, King, then Ace."
+          }
+        ]
+      }
+    }
+  ]
+}

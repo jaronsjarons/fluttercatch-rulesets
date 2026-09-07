@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G5z71",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Zankor rewards deliberate upper-playfield progress. Hit either upper fixed-target group or make the upper ramp to raise the Red Special moving ramp, then send the ball over that ramp and into the Special target. The drop-target bank advances Orange Special, collected at the lit Special target. Lateral targets raise the rollover values. The rotating target starts the Super Score Flash sequence; while the Time Super Score lamps are lit, scoring is multiplied by five.",
+        "simpleOverview": "Hit the upper fixed-target groups or make the upper ramp to raise the Red Special moving ramp, then shoot across it and hit the Special target. Complete the drop bank to advance Orange Special. Hit the rotating target to start Super Score Flash; scoring is 5x while its Time lamps are lit.",
+        "summary": "Hit either upper target group or make the upper ramp to raise the moving ramp, then cross it to the Special target. Use the drop bank for Orange Special, and start Super Score Flash only when you can immediately reach valuable shots during its 5x timer.",
+        "quickInfo": [
+          {
+            "name": "Raise the Moving Ramp",
+            "summary": "Use either upper target group or the upper ramp."
+          },
+          {
+            "name": "Collect Red Special",
+            "summary": "Cross the raised ramp and hit the Special target."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Complete the drop-target bank."
+          },
+          {
+            "name": "Start 5x Scoring",
+            "summary": "Hit the rotating target for Super Score Flash."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit either upper fixed-target group or make the upper ramp to raise the Red Special moving ramp.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Send the ball over the raised moving ramp and into the Special target to advance or collect the lit sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the drop-target bank to advance Orange Special, then hit its lit Special collect.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the rotating target to light Super Score Flash; use the timed 5x scoring on the most valuable available shots.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build rollover value",
+            "when": "Use this when the upper moving-ramp route is not ready.",
+            "steps": [
+              {
+                "text": "Hit the lateral targets to advance the rollover scoring sequence.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use the upper-level target line for its 500,000-point precision award when that lane is controllable.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Use Super Score Flash well",
+          "steps": [
+            {
+              "text": "Prepare a raised moving ramp, a lit Special, or a valuable upper shot before starting the timer.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit the rotating target, then take the prepared shots while the Time Super Score lamps show 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check the Red and Orange Special difficulty settings and the configured Special awards.",
+          "Test both upper target groups, the upper ramp, moving ramp, Special target, drop bank, lateral targets, rotating target, and Time Super Score lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "Moving Ramp",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Red Special",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Orange Special",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Score Flash",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper target groups",
+            "label": "Upper target groups",
+            "description": "Two upper fixed-target groups that raise the moving ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "moving ramp",
+            "label": "Red Special moving ramp",
+            "description": "Raised route into the Special target.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop-target bank",
+            "label": "Drop-target bank",
+            "description": "Three center targets that advance Orange Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "rotating target",
+            "label": "Rotating target",
+            "description": "Starts the timed Super Score Flash sequence.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Super Score Flash is timed.",
+            "response": "Prepare a valuable route before hitting the rotating target so its 5x window is not spent recovering control.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/gen2/zankor/Cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Hit either upper target group or make the upper ramp to raise the moving ramp, then cross it to the Special target. Use the drop bank for Orange Special, and start Super Score Flash only when you can immediately reach valuable shots during its 5x timer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit either upper fixed-target group or make the upper ramp to raise the Red Special moving ramp.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Send the ball over the raised moving ramp and into the Special target to advance or collect the lit sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the drop-target bank to advance Orange Special, then hit its lit Special collect.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the rotating target to light Super Score Flash; use the timed 5x scoring on the most valuable available shots.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raise the Moving Ramp",
+            "summary": "Use either upper target group or the upper ramp."
+          },
+          {
+            "name": "Collect Red Special",
+            "summary": "Cross the raised ramp and hit the Special target."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Complete the drop-target bank."
+          }
+        ]
+      }
+    }
+  ]
+}

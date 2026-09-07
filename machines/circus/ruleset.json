@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xXK",
+  "title": "Circus",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Archive Circus rules",
+      "url": "https://www.pinball.org/rules/cache/Circus-rules.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Circus owner strategy discussion",
+        "url": "https://pinside.com/pinball/forum/topic/gottliebs-circus"
+      },
+      {
+        "label": "Kineticist Circus machine guide",
+        "url": "https://www.kineticist.com/games/pinball/circus"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Collect 1-2-3-4, hit each matching lit drop target to reach 5x, collect both blue side lanes to light the center spinner, build 20,000 base bonus, then collect 100,000 at the lower-left saucer.",
+      "steps": [
+        {
+          "text": "On the plunge, collect a lit 1, 2, 3, or 4 top lane."
+        },
+        {
+          "text": "Shoot the Roto-Target when a missing number is in the center position.",
+          "modeNotes": [
+            "Center number: It scores 1,000 times the shown number and spots that number.",
+            "Center star: It scores 5,000 and spots all four numbers."
+          ]
+        },
+        {
+          "text": "Each collected number lights its matching numbered drop target."
+        },
+        {
+          "text": "Hit each matching lit drop target to raise Bonus X one step. Repeat until Bonus X reaches 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Collect both blue side lanes.",
+          "modeNotes": [
+            "Lit Spinner: After both blue lanes, the center spinner stays lit for the rest of the ball. Each spin scores 1,000 and adds one base-bonus step."
+          ]
+        },
+        {
+          "text": "Shoot the lit center spinner until base bonus reaches 20,000."
+        },
+        {
+          "text": "Shoot the lower-left saucer.",
+          "modeNotes": [
+            "Bonus Collect: At 20,000 base bonus, the saucer awards base bonus times Bonus X. It resets base bonus to 1,000 and keeps Bonus X."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Rebuild base bonus with the lit spinner. Repeat the saucer collect while its feed remains safe."
+        },
+        {
+          "text": "Protect the multiplier. All progress resets at the drain.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Lit spinner and repeated Bonus Collect",
+        "when": "Use this plan after Bonus X is useful, or when the Roto-Target and numbered drops are unsafe.",
+        "steps": [
+          {
+            "text": "Collect both blue side lanes."
+          },
+          {
+            "text": "Shoot the center spinner for 1,000 per spin and one bonus advance per spin."
+          },
+          {
+            "text": "Reach 20,000 base bonus."
+          },
+          {
+            "text": "Shoot the lower-left saucer for the multiplied Bonus Collect.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep Bonus X. Repeat the spinner, then the saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "A-B-C value route",
+          "when": "Use this plan when the three standups are safe.",
+          "steps": [
+            {
+              "text": "Hit lit A, B, and C standups."
+            },
+            {
+              "text": "A lights drops 1 and 4, plus both outlanes, for 5,000 instead of 500."
+            },
+            {
+              "text": "B lights drop 2 and the left inlane for 5,000. C lights drop 3 and the right inlane for 5,000."
+            },
+            {
+              "text": "Use the lit drops while they also advance Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Read the Roto-Target insert to confirm which replay award the completed letters light."
+            }
+          ]
+        },
+        {
+          "title": "Roto-Target completion route",
+          "when": "Use this plan when the mini-flipper shots are controlled.",
+          "steps": [
+            {
+              "text": "Collect all four numbers at the top lanes or center Roto-Target."
+            },
+            {
+              "text": "Clear all four drop targets. The lane between the mini-flippers lights for 5,000."
+            },
+            {
+              "text": "Wait for the star to reach the center of the Roto-Target."
+            },
+            {
+              "text": "Read the insert before collecting the lit Extra Ball or Special award.",
+              "modeNotes": [
+                "Read the lit Extra Ball and Special inserts at the Roto-Target before taking the center-star collect."
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "5x and repeated 100,000 Bonus Collects",
+        "steps": [
+          {
+            "text": "Collect 1-2-3-4."
+          },
+          {
+            "text": "Hit the four matching lit drop targets to reach 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect both blue side lanes to light the spinner."
+          },
+          {
+            "text": "Use the spinner to reach 20,000 base bonus."
+          },
+          {
+            "text": "Collect 20,000 at 5x for 100,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Rebuild base bonus. Bonus X stays at 5x until the ball drains.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Read the lit Extra Ball and Special inserts at the Roto-Target before taking the center-star collect.",
+        "Confirm whether replay awards have tournament value. The repeated Bonus Collect route does not depend on them."
+      ],
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "5x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Lit Spinner",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus Collect",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Roto-Target",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Center-star Roto-Target timing",
+          "instruction": "Wait until the star is centered before a lit Extra Ball or Special collect. A side hit scores only its side value.",
+          "sourceUrl": "https://www.pinball.org/rules/cache/Circus-rules.html"
+        },
+        {
+          "name": "Numbered-target pairing",
+          "instruction": "Collect a top-lane or center-roto number. Then hit its matching numbered drop while it is lit to advance Bonus X.",
+          "sourceUrl": "https://www.pinball.org/rules/cache/Circus-rules.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Extra Ball and Special assignments vary between rule revisions.",
+          "response": "Read the lit Roto-Target insert before taking the center-star collect. Use the bonus route when the replay award has no tournament value.",
+          "sourceUrl": "https://www.pinball.org/rules/cache/Circus-rules.html"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Collect 1-2-3-4."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect 1-2-3-4."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Lit spinner and repeated Bonus Collect: Use this plan after Bonus X is useful, or when the Roto-Target and numbered drops are unsafe."
+        }
+      ],
+      "simpleOverview": "In Circus, collect numbers 1 through 4, then hit each matching lit drop target to raise Bonus X to 5x. Collect both blue side lanes to light the center spinner, use it to build 20,000 base bonus, and shoot the lower-left saucer for the 100,000 collect.",
+      "overview": "Circus turns four numbered lanes and their matching lit drop targets into 5x Bonus. After both blue side lanes light the center spinner, repeat it until base bonus reaches 20,000, then shoot the lower-left saucer for 100,000. Rebuild base bonus and repeat the saucer while its feed remains safe.",
+      "machineSetup": [
+        "Confirm whether replay awards have tournament value. The repeated Bonus Collect route does not depend on them."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "GoEEx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Grand Slam Rally serves one physical ball for each baseball pitch. Time a flip to meet the pitch, then aim for the safest high-value label among the five Cannon Lagoon lanes. Raised red scoops turn a hit into an out, and both the lane labels and out positions can change on the next pitch.",
+        "simpleOverview": "Watch the five lane labels and raised red out scoops before each pitch. Time the flip to contact the ball, then aim for the best open base, run, or home-run lane.",
+        "summary": "Read the five changing outcomes and raised red out scoops, time the swing, and send the pitched ball through the best safe lane. Recheck the layout before every pitch because the labels and outs move.",
+        "quickInfo": [
+          {
+            "name": "Pitch",
+            "summary": "Each countdown serves one ball with a trajectory and speed that can vary."
+          },
+          {
+            "name": "Scoring lane",
+            "summary": "The five lane labels show the current baseball result, including bases, runs, and home runs."
+          },
+          {
+            "name": "Out scoop",
+            "summary": "A raised red scoop catches the ball and records an out instead of the lane's scoring result."
+          },
+          {
+            "name": "Live settings",
+            "summary": "Allowable flips and optional balls are adjustable; check the machine's live behavior and scoreboard."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before the countdown finishes, read all five lane outcomes and identify every raised red out scoop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Choose the best open result rather than aiming through a red scoop for a larger printed award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Time the flip to meet the changing pitch, then direct the ball toward the chosen lane.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use any remaining swing allowed by the machine only if the first contact did not finish the pitch.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the play, read the scoreboard and reassess the new lane labels before the next pitch.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "A longer rally",
+          "steps": [
+            {
+              "text": "Protect the inning by choosing a clean single or run lane over a blocked home-run lane.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Adjust flip timing when the next pitch arrives faster, slower, or on a different trajectory.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Continue until the scoreboard records the final out, then use the game summary to compare runs.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "out scoop",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "home run",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "pitch",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "five lane labels",
+            "label": "Five Cannon Lagoon lanes",
+            "description": "The five upper lanes whose displayed baseball outcomes change between pitches.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red out scoop",
+            "label": "Raised red out scoop",
+            "description": "A pop-up scoop that catches the hit and records an out.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The release walkthrough uses version 1.0 and an operator-selected flip allowance.",
+            "response": "The pitch, dynamic-lane, and out-scoop rules remain stable; check the live game for allowed swings and optional balls.",
+            "sourceUrl": "https://www.youtube.com/watch?v=rpqeb9p2nUI"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Read the five changing outcomes and raised red out scoops, time the swing, and send the pitched ball through the best safe lane. Recheck the layout before every pitch because the labels and outs move.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before the countdown finishes, read all five lane outcomes and identify every raised red out scoop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Choose the best open result rather than aiming through a red scoop for a larger printed award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Time the flip to meet the changing pitch, then direct the ball toward the chosen lane.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use any remaining swing allowed by the machine only if the first contact did not finish the pitch.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the play, read the scoreboard and reassess the new lane labels before the next pitch.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Pitch",
+            "summary": "Each countdown serves one ball with a trajectory and speed that can vary."
+          },
+          {
+            "name": "Scoring lane",
+            "summary": "The five lane labels show the current baseball result, including bases, runs, and home runs."
+          },
+          {
+            "name": "Out scoop",
+            "summary": "A raised red scoop catches the ball and records an out instead of the lane's scoring result."
+          }
+        ]
+      }
+    }
+  ]
+}

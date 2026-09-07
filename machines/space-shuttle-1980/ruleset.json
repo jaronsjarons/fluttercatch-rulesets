@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jyz",
+  "title": "Space Shuttle",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Space Shuttle operator manual",
+      "url": "https://www.zaccaria-pinball.com/gen1/spaceshuttle/zaccaria-spaceshuttle_manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Space Shuttle machine guide and playfield",
+        "url": "https://www.kineticist.com/games/pinball/space-shuttle"
+      },
+      {
+        "label": "Strictly Pinball Space Shuttle machine guide",
+        "url": "https://strictlypinball.com/machines/space-shuttle"
+      },
+      {
+        "label": "Space Shuttle operator settings",
+        "url": "https://www.zaccaria-pinball.com/gen1/spaceshuttle/settings.html"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "The five top rollovers score their lit values and lower Space Mission targets. Complete all six targets three times to light Blast Off, then hit the center Blast Off target to light the center hole for Special. The three upper targets advance Bonus X. Two inline targets in the upper-left canal light that canal's Special hole when both are down.",
+      "simpleOverview": "Use the five top rollovers to lower Space Mission targets, and complete all six targets three times. Then hit the center Blast Off target to light the center hole for Special. Hit the three upper targets for Bonus X, and knock down both upper-left inline targets to light that canal's Special hole.",
+      "summary": "Keep finishing the six Space Mission targets instead of spreading shots across unfinished features. After the third completion, switch to Blast Off and then the center hole. Use the three upper targets when Bonus X is the safer progress shot.",
+      "quickInfo": [
+        {
+          "name": "Build Space Mission",
+          "summary": "Complete all six mission targets three times."
+        },
+        {
+          "name": "Light Special",
+          "summary": "Hit Blast Off after the third completion."
+        },
+        {
+          "name": "Collect Special",
+          "summary": "Shoot the lit center hole."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Hit the three upper targets."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the five top rollovers to lower Space Mission targets, then finish all six targets for one completion.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the six Space Mission targets three times to light the center Blast Off target.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the lit Blast Off target, then shoot the center hole while Special is lit.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the three upper targets to advance Bonus X; knock down both upper-left inline targets to light the canal hole for its Special award.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build the canal Special",
+          "when": "Use this when one upper-left inline target is already down.",
+          "steps": [
+            {
+              "text": "Finish the second inline target.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the upper-left canal hole while its Special lamp is lit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Launch Blast Off",
+        "steps": [
+          {
+            "text": "Finish three complete sets of the six Space Mission targets.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit Blast Off and then the lit center hole.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check the Space Mission completion requirement, Bonus X limit, Special awards, and extra-ball or replay settings.",
+        "Test all five top rollovers, six Space Mission targets, Blast Off target, center hole, three upper targets, two canal inline targets, and both Special lamps."
+      ],
+      "termStyles": [
+        {
+          "label": "Space Mission",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Blast Off",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Canal Special",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Special awards and difficulty can be operator-adjusted.",
+          "response": "Follow the insert lamps and verify the setup before assuming a fixed award.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen1/spaceshuttle/settings.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "GRLbz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Split Second combines a lit-spinner route with a captive-ball release ladder. Spell S-P-L-I-T S-E-C-O-N-D to raise the spinner, use either center three-bank for Bonus X up to 15x, and release captive balls with drop-bank completions or the lit 50,000 Release All target.",
+        "simpleOverview": "Spell SPLIT SECOND to raise the spinner, and complete either center three-bank to raise Bonus X. Drop banks release one captive ball; when Release All is lit, hit the 50,000 target to release the group.",
+        "summary": "Build the spinner through SPLIT SECOND, raise Bonus X with the center banks, and use controlled captive-ball releases rather than forcing dangerous rebound shots.",
+        "quickInfo": [
+          {
+            "name": "Raise Spinner",
+            "summary": "Complete SPLIT SECOND; the slings move the lit letter."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete either center three-bank, up to 15x."
+          },
+          {
+            "name": "Release One",
+            "summary": "Complete a captive-ball drop bank."
+          },
+          {
+            "name": "Release All",
+            "summary": "Complete SPLIT SECOND, then hit the lit 50,000 target."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use sling hits to move the lit letter, then score the matching target or lane until SPLIT SECOND is complete."
+          },
+          {
+            "text": "Shoot the now-lit spinner for its raised per-spin value."
+          },
+          {
+            "text": "Complete either center three-bank to raise Bonus X toward 15x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a captive-ball drop bank to release one ball, or hit the lit 50,000 Release All target after completing SPLIT SECOND."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Left-orbit captive-ball route",
+            "when": "Use this when the left orbit and captive-ball feed are safer than direct center-bank rebounds.",
+            "steps": [
+              {
+                "text": "Send the ball around the left orbit toward the captive-ball area."
+              },
+              {
+                "text": "Take incidental captive and letter progress."
+              },
+              {
+                "text": "Return to the spinner when its value is built."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Lit spinner with 15x bonus",
+          "steps": [
+            {
+              "text": "Complete SPLIT SECOND to build the spinner and light Release All."
+            },
+            {
+              "text": "Complete center three-banks until Bonus X reaches 15x."
+            },
+            {
+              "text": "Use the spinner and a controlled captive-ball release for the scoring finish."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test letter movement from both slings, the spinner value lamps, both center three-banks, captive-ball drop banks, release mechanisms, and 50,000 target.",
+          "Confirm Extra Ball, Bonus Ball, and Special conversion before competitive play."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "spinner",
+            "label": "Left spinner",
+            "description": "Spinner whose value grows through SPLIT SECOND letters.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center three-banks",
+            "label": "Bonus X drop banks",
+            "description": "Paired three-target banks that raise Bonus X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "50,000 target",
+            "label": "Release All target",
+            "description": "Center target used to release captive balls when lit.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build the spinner through SPLIT SECOND, raise Bonus X with the center banks, and use controlled captive-ball releases rather than forcing dangerous rebound shots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use sling hits to move the lit letter, then score the matching target or lane until SPLIT SECOND is complete."
+          },
+          {
+            "text": "Shoot the now-lit spinner for its raised per-spin value."
+          },
+          {
+            "text": "Complete either center three-bank to raise Bonus X toward 15x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a captive-ball drop bank to release one ball, or hit the lit 50,000 Release All target after completing SPLIT SECOND."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raise Spinner",
+            "summary": "Complete SPLIT SECOND; the slings move the lit letter."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete either center three-bank, up to 15x."
+          },
+          {
+            "name": "Release One",
+            "summary": "Complete a captive-ball drop bank."
+          }
+        ]
+      }
+    }
+  ]
+}

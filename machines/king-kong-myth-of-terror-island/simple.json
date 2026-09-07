@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "id": "GEL0V",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Pterodactyl Attack before Giant Spider Pit Multiball, then use a normal Island Scene with King Kong Multiball when its locks are ready.",
+        "steps": [
+          {
+            "text": "Plunge the river skill shot. Record the plunger strength. Test the center spinner, gong backhand, cave backhand, and upper-flipper feed."
+          },
+          {
+            "text": "On Premium or LE, shoot the gong to qualify the first Island Scene. On Pro, collect one white Island arrow and shoot the lit scene-start shot. Select Pterodactyl Attack when its drop-to-cave sequence is safe.",
+            "modeNotes": [
+              "Premium or LE: Shoot the gong to qualify the first scene. Pro: Collect one white Island arrow, then shoot the lit scene-start shot.",
+              "Island Scene: Runs for 60 seconds. One gong hit can add 15 seconds.",
+              "Pterodactyl Attack: Hit the flashing moving drop, then shoot the Kong Cave. Repeat for three cave awards.",
+              "A normal cave scores 2x the drop award. A clean rollover scores 3x. The third cave completes the scene and awards a Map Segment."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the Pit three times to light Pit Multiball. Before the fourth hit, start Pterodactyl Attack.",
+            "modeNotes": [
+              "Pit Multiball: The fourth Pit hit starts the first attempt. Later attempts need two more hits.",
+              "When one hit remains, the selected Pit mode changes every 10 seconds. Wait for Giant Spider."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Giant Spider Pit Multiball. Collect switches, raise its multiplier at the ramps, and shoot the Pit for jackpots.",
+            "modeNotes": [
+              "Giant Spider: Collect 30 switches for the first jackpot. Each later jackpot needs five more switches.",
+              "Shoot each lit ramp once to raise the jackpot multiplier, up to 4x.",
+              "Shoot the Pit to collect the lit jackpot. The feature ends when one ball remains.",
+              "Collect a lit Island Mystery during this multiball for the first add-a-ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the drop bank twice to light three King Kong locks. Shoot the center ramp three times.",
+            "modeNotes": [
+              "Premium or LE: The third physical lock starts King Kong Multiball.",
+              "Pro: The third virtual lock lights the right orbit. Shoot the right orbit to start.",
+              "Later attempts require a drop-bank completion for each lock."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start a normal Island Scene before King Kong Multiball. During multiball, build green awards and collect jackpots.",
+            "modeNotes": [
+              "Shoot the green left orbit, center ramp, and cave awards. The side-ramp Kong award scores 5x the arrow award.",
+              "First round: Hit any drop. Shoot the center spinner or punchback for a 1x jackpot.",
+              "Later rounds: Complete the full drop bank. Shoot punchback for 1x or Cliffs for 2x.",
+              "After either jackpot, shoot the side ramp for the built Super Jackpot before its timer ends.",
+              "Collect all green awards and relock at the center ramp for 20 seconds of 2x jackpots and Supers.",
+              "Shoot the gong twice for add-a-ball. The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Island Scenes",
+            "summary": "On Premium or LE, shoot the gong to qualify a Scene. On Pro, collect one white Island arrow and shoot the lit scene-start shot. One gong hit can add 15 seconds."
+          },
+          {
+            "name": "Pterodactyl Attack",
+            "summary": "Hit the moving drop and Kong Cave three times; clean cave rollovers improve only that scene's award."
+          },
+          {
+            "name": "Giant Spider Pit Multiball",
+            "summary": "Collect 30 switch hits, raise the Pit Jackpot with both ramps, and collect it at the Pit while looking for the first Mystery add-a-ball."
+          },
+          {
+            "name": "King Kong Multiball",
+            "summary": "Complete the drop bank twice, lock three balls by edition, then build green awards before Jackpot and timed side-ramp Super Jackpot collects."
+          },
+          {
+            "name": "Crash the Gate",
+            "summary": "Play all five normal Island Scenes to qualify it; completed scenes contribute unused time to its start."
+          }
+        ],
+        "fallback": {
+          "title": "Biplane spinner",
+          "when": "Use this plan when the gong, cave, or upper-flipper feeds are not controlled.",
+          "steps": [
+            {
+              "text": "Use the center spinner as the safe bailout. Let its return bounce or roll to a cradle."
+            },
+            {
+              "text": "Shoot the side ramp three times to start Biplane Attack. Rip the lit spinner. Then shoot the side ramp to collect the built jackpot.",
+              "modeNotes": [
+                "Biplane Attack: A 30-second spinner mode. It must start during single-ball play, but it continues if a multiball starts."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect a yellow Climb arrow when only one remains in the set."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Island Lock scene",
+            "when": "Use this after Climb progress lights an Island Lock and the Cliffs-to-Pit route is controlled.",
+            "steps": [
+              {
+                "text": "Collect the lit right-orbit Island Lock. Start the next Island Scene as a two-ball scene.",
+                "modeNotes": [
+                  "Island Lock: A stored lock from 200 or 500 feet of Climb progress. The next scene spends it and starts with two balls."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Make a scene shot. Shoot Cliffs to light the Pit. Shoot the Pit for the Island Jackpot."
+              },
+              {
+                "text": "Knock the held ball into the Pit within five seconds for another 2x Island Jackpot."
+              },
+              {
+                "text": "Complete the scene with two balls to start its Victory Challenge."
+              },
+              {
+                "text": "Other multiballs cannot start or advance until play returns to one ball."
+              }
+            ]
+          },
+          {
+            "title": "Cross the Chasm first",
+            "when": "Choose this route when the Cliffs and U-turn feeds are safer than Pterodactyl.",
+            "steps": [
+              {
+                "text": "Shoot the river entrance to raise the Log Bridge."
+              },
+              {
+                "text": "Shoot the Cliffs ramp and save six explorers."
+              },
+              {
+                "text": "Use the U-turn after each Cliffs shot for the growing multiplied value."
+              }
+            ]
+          },
+          {
+            "title": "Crash the Gate cashout",
+            "when": "Use this deeper route when Island Locks, 2x playfield scoring, and the side ramp are controlled.",
+            "steps": [
+              {
+                "text": "Use Island Locks on the safest Island Scenes. After completing a two-ball Scene, continue its Victory Challenge while two balls remain to raise that Scene's final value."
+              },
+              {
+                "text": "Play all five normal Island Scenes to light Crash the Gate. Completed Scenes carry their unused time into the mode, up to a two-minute total."
+              },
+              {
+                "text": "Complete the four orange X targets. Immediately before Crash the Gate, hit the moving orange target to start 2x playfield scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Start Crash the Gate. Shoot each lit Scene shot, then the gong for its hurry-up. The mode clock pauses during each hurry-up.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "After five hurry-ups, either shoot the side ramp for the accumulated Super Jackpot or complete another five-shot wave to double the Super multiplier from 2x to 4x, 8x, and higher.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Cash the side-ramp Super before the ball save, timer, or shot control collapses. Do not chase another wave solely for its multiplier."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Later Island goals",
+          "steps": [
+            {
+              "text": "Play all five normal Island Scenes to light Crash the Gate. Completion is not required.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Play all three normal Pit Multiballs to light Spider Queen as the fourth Pit multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the third Lost Temple Treasure to light Lost Temple Multiball at the gong.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Spell KING KONG once to qualify T-Rex Battle and twice to qualify T-Rex Boss Battle. Use each lit start shown by the display.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "First Island Scene qualification",
+            "pro": "Collect one white Island arrow, then shoot the lit scene-start shot.",
+            "premium": "Shoot the gong to qualify the first scene.",
+            "sourceUrl": "https://tiltforums.com/t/king-kong-myth-of-terror-island-rulesheet/9514"
+          },
+          {
+            "feature": "King Kong Multiball start",
+            "pro": "The third virtual lock lights the right orbit; shoot the right orbit to start.",
+            "premium": "The third physical lock starts King Kong Multiball immediately.",
+            "sourceUrl": "https://tiltforums.com/t/king-kong-myth-of-terror-island-rulesheet/9514"
+          }
+        ],
+        "earlyCode": true,
+        "termStyles": [
+          {
+            "label": "Pterodactyl Attack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Biplane Attack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Crash the Gate",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "T-Rex Battle",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "T-Rex Boss Battle",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Giant Spider Pit Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "King Kong Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Spider Queen",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Lost Temple Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "river skill shot",
+            "label": "River plunge lane",
+            "description": "The hidden river path is reached by a controlled plunge.",
+            "xPercent": 89,
+            "yPercent": 18,
+            "precision": "area"
+          },
+          {
+            "term": "center spinner",
+            "label": "Center spinner",
+            "description": "The center spinner is the safer bailout and one King Kong Jackpot collect.",
+            "xPercent": 49,
+            "yPercent": 45,
+            "precision": "area"
+          },
+          {
+            "term": "gong",
+            "label": "Gong bash target",
+            "description": "The gong qualifies Premium and LE scenes, adds scene time, and advances major features.",
+            "xPercent": 67,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "Kong Cave",
+            "label": "Kong Cave scoop",
+            "description": "The left-center cave is the Pterodactyl collect and a King Kong green award.",
+            "xPercent": 29,
+            "yPercent": 43,
+            "precision": "area"
+          },
+          {
+            "term": "Pit",
+            "label": "Giant Spider Pit",
+            "description": "The Pit magnet shot qualifies and collects Pit Multiball jackpots.",
+            "xPercent": 78,
+            "yPercent": 37,
+            "precision": "area"
+          },
+          {
+            "term": "drop bank",
+            "label": "Lost Temple drop bank",
+            "description": "The four drops qualify King Kong locks and expose the hidden Treasure target.",
+            "xPercent": 38,
+            "yPercent": 29,
+            "precision": "area"
+          },
+          {
+            "term": "center ramp",
+            "label": "King Kong lock ramp",
+            "description": "The center ramp collects King Kong locks and relocks balls for its later phase.",
+            "xPercent": 50,
+            "yPercent": 33,
+            "precision": "area"
+          },
+          {
+            "term": "side ramp",
+            "label": "Biplane side ramp",
+            "description": "The side ramp starts Biplane Attack and collects King Kong Super Jackpots.",
+            "xPercent": 17,
+            "yPercent": 35,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Scene requirements, timers, values, ball saves, and Competition Install behavior can change with operator settings.",
+          "Test river plunge strength, spinner, gong, cave, Pit magnet, drops, mini-flipper, ramps, punchback, Log Bridge, and orbit returns."
+        ],
+        "techniques": [
+          {
+            "name": "Center-spinner bailout",
+            "instruction": "Shoot the center spinner. Let the return bounce, roll, cradle, or pass to the safer flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=1s"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the gong early or use a rolling backhand into Kong Cave when the feed presents either same-side angle.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=63s"
+          },
+          {
+            "name": "Micro flip",
+            "instruction": "Use a micro-flip to catch or pass a difficult gong or cave return. Shoot center ramp or left orbit when a catch is less safe.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=126s",
+            "techniqueSlug": "micro-flip"
+          },
+          {
+            "name": "Log Bridge action timing",
+            "instruction": "Press the action button before the right-spinner ball reaches the river. One press spends one stored Log Bridge Use.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=222s"
+          },
+          {
+            "name": "Short mini-flipper tap",
+            "instruction": "Use short taps at the Lost Temple drops. A full stroke can trap the ball below the mini-flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=252s"
+          },
+          {
+            "name": "Pro start-lane block",
+            "instruction": "Hold the right flipper to block an accidental right-orbit King Kong Multiball start while you aim for the gong.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=285s"
+          },
+          {
+            "name": "River skill-shot brace",
+            "instruction": "Read the plunger scale. Brace the hand against the hip. Keep sideways pressure off the plunger.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=315s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Gong and cave returns can be too fast for a forced catch.",
+            "response": "Use a micro-flip, center ramp, or left orbit instead of forcing the catch.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=95s"
+          },
+          {
+            "issue": "A full mini-flipper stroke can trap the ball below the flipper.",
+            "response": "Use short taps at Lost Temple drops.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=252s"
+          },
+          {
+            "issue": "A late gong attempt on Pro can enter a lit right-orbit King Kong start.",
+            "response": "Hold the right flipper to block that lane while you aim for the gong.",
+            "sourceUrl": "https://www.youtube.com/watch?v=LDtHZAUjcSY&t=285s"
+          },
+          {
+            "issue": "A weak left orbit can exit the right orbit at high speed.",
+            "response": "Use the center spinner until the orbit strength is known.",
+            "sourceUrl": "https://www.kineticist.com/news/stern-king-kong-tutorial"
+          },
+          {
+            "issue": "A forehand gong hit can ricochet into the orange X targets.",
+            "response": "Test the backhand. Use it when the recovery is safer on the local copy.",
+            "sourceUrl": "https://www.kineticist.com/news/stern-king-kong-tutorial"
+          }
+        ],
+        "overview": "King Kong allows Pterodactyl Attack during Pit Multiball and normal Scenes during King Kong Multiball. Premium/LE: the gong qualifies the first Scene. Pro: collect one white Island arrow, then shoot a lit Scene start. Start Pterodactyl and make the fourth Pit shot. Complete the drop bank while Light Kong Lock flashes, then shoot the center ramp for each lock. The third lock starts Multiball on Premium/LE or lights the right-orbit start on Pro.",
+        "simpleOverview": "In King Kong, the gong qualifies the first Island Scene on Premium or LE; on Pro, collect a white Island arrow and shoot the lit Scene start. Three Pit hits prepare Giant Spider Pit Multiball, and the fourth starts it. Begin Pterodactyl Attack before that fourth hit when the center shots are controlled.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the UK Open 2025, Nick Stein brought Pterodactyl Attack into Giant Spider Pit Multiball, collected a doubled 20-million Island Jackpot, and finished the ball above 300 million."
+          ]
+        },
+        "machineSetup": [
+          "Scene requirements, timers, values, ball saves, and Competition Install behavior can change with operator settings.",
+          "Test river plunge strength, spinner, gong, cave, Pit magnet, drops, mini-flipper, ramps, punchback, Log Bridge, and orbit returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the gong shot for Pterodactyl Attack, the Pit for multiball, or repeated side ramps for Biplane Attack.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Pterodactyl Attack",
+            "text": "On Pro, shoot one white Island arrow, then shoot the lit gong shot. On Premium or LE, hit the gong until it opens, then shoot the saucer behind it. Select Pterodactyl Attack.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Pterodactyl Attack",
+              "reason": "Choose it when the moving drop and Kong Cave are controlled shots.",
+              "play": "Hit the flashing moving drop, then shoot the Kong Cave. Repeat that pair for three Cave awards."
+            }
+          },
+          {
+            "title": "Start Giant Spider Pit Multiball",
+            "text": "Hit the Pit three times to light Pit Multiball, then hit the Pit once more to start it.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Island Scenes",
+            "summary": "On Premium or LE, shoot the gong to qualify a Scene. On Pro, collect one white Island arrow and shoot the lit scene-start shot. One gong hit can add 15 seconds."
+          },
+          {
+            "name": "Pterodactyl Attack",
+            "summary": "Hit the moving drop and Kong Cave three times; clean cave rollovers improve only that scene's award."
+          },
+          {
+            "name": "Giant Spider Pit Multiball",
+            "summary": "Collect 30 switch hits, raise the Pit Jackpot with both ramps, and collect it at the Pit while looking for the first Mystery add-a-ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Biplane Attack",
+          "when": "Use this when the center spinner is the safer repeatable shot.",
+          "steps": [
+            {
+              "text": "Shoot the side ramp three times to start Biplane Attack.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

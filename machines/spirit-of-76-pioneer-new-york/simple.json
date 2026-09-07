@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "GrlPK",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Spirit of 76 builds two independent objectives around the center saucer. Completing A-B-C-D-E lights the saucer intermittently for Extra Ball, while clearing all eight drops lights it intermittently for double bonus; finishing both qualifies Special. After double bonus is collected, another drop-bank completion can raise the next saucer collection to 4x bonus.",
+        "simpleOverview": "Complete A-B-C-D-E, then clear all eight drop targets. The center saucer cycles among its lit awards: letters qualify Extra Ball, drops qualify double bonus, and both objectives qualify Special. After collecting double bonus, clear the drops again to make a later lit saucer collection worth 4x bonus.",
+        "summary": "Go to the top until the five letters are complete, then pick off the drop bank from controlled feeds. Watch the saucer lamp cycle and shoot only when the desired award is lit; a premature collect can waste the stronger bonus state.",
+        "quickInfo": [
+          {
+            "name": "Qualify Extra Ball",
+            "summary": "Complete A-B-C-D-E."
+          },
+          {
+            "name": "Qualify Double Bonus",
+            "summary": "Clear all eight drop targets."
+          },
+          {
+            "name": "Qualify Special",
+            "summary": "Complete both the letters and the drops."
+          },
+          {
+            "name": "Collect Award",
+            "summary": "Shoot the center saucer while the desired lamp is lit."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot to the top until A-B-C-D-E is complete."
+          },
+          {
+            "text": "Clear the eight drop targets from controlled side feeds."
+          },
+          {
+            "text": "Watch the center saucer cycle and shoot it while double bonus or the desired configured award is lit.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After a double-bonus collect, clear the drops again to qualify a 4x bonus saucer collection.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Letter-first route",
+            "when": "Use this when the low drop-bank rebounds are dangerous.",
+            "steps": [
+              {
+                "text": "Keep sending the ball through the upper letters and star rollovers."
+              },
+              {
+                "text": "Build base bonus while waiting for clean side-angle drop shots."
+              },
+              {
+                "text": "Finish the bank only when the center saucer's stronger award can be collected safely."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Four-times bonus collection",
+          "steps": [
+            {
+              "text": "Build base bonus with lit rollovers and controlled upper-playfield action."
+            },
+            {
+              "text": "Complete the drops and collect double bonus at the center saucer.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete the drops again and collect the saucer when 4x bonus is lit.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Identify Spirit of 76, Pioneer, New York, or the grouped licensed variant; test A-B-C-D-E, all eight drops and reset, star rollovers, center saucer and eject, cycling lamps, and bonus ladder.",
+          "Confirm three- or five-ball rules, Extra Ball and Special awards, saucer timing, and whether drop and letter progress carries between balls on the installed version."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B-C-D-E",
+            "label": "A-B-C-D-E letters",
+            "description": "Five-letter objective that qualifies the center saucer for Extra Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "eight drop targets",
+            "label": "Eight drop targets",
+            "description": "Full bank whose completion qualifies double bonus at the center saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center saucer",
+            "label": "Center saucer",
+            "description": "Kickout hole that cycles through the currently qualified awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "star rollovers",
+            "label": "Star rollovers",
+            "description": "Lit rollovers that add bonus after their matching letters are collected.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "This catalog family groups rethemes and player-count variants.",
+            "response": "Use the actual apron card for award and carryover settings; the guide follows the shared Spirit of 76 playfield rule set rather than assuming identical cabinet configuration.",
+            "sourceUrl": "https://www.pinballrebel.com/game/pins/instruction/spirit-of-76.tif"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Go to the top until the five letters are complete, then pick off the drop bank from controlled feeds. Watch the saucer lamp cycle and shoot only when the desired award is lit; a premature collect can waste the stronger bonus state.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot to the top until A-B-C-D-E is complete."
+          },
+          {
+            "text": "Clear the eight drop targets from controlled side feeds."
+          },
+          {
+            "text": "Watch the center saucer cycle and shoot it while double bonus or the desired configured award is lit.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After a double-bonus collect, clear the drops again to qualify a 4x bonus saucer collection.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Qualify Extra Ball",
+            "summary": "Complete A-B-C-D-E."
+          },
+          {
+            "name": "Qualify Double Bonus",
+            "summary": "Clear all eight drop targets."
+          },
+          {
+            "name": "Qualify Special",
+            "summary": "Complete both the letters and the drops."
+          }
+        ]
+      }
+    }
+  ]
+}

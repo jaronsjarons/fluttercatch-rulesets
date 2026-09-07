@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "id": "G6l8V",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Phantom Ship makes the yellow, green, and red drop targets the direct path to its largest awards. The first complete clear prepares Extra Ball at the center-right lane; time that lane for the cannon's EXTRA BALL light. A second complete clear prepares Special; pass the same lane when the cannon shows PREPARE SPECIAL, then collect Special at an outlane. Yellow drops raise Bonus X from 2x through 5x, green drops raise pop-bumper value, and red drops raise spinner value. The right-flipper lanes step the points awarded by each drop target.",
+        "simpleOverview": "A first clear of every yellow, green, and red drop target prepares Extra Ball; shoot the center-right lane when the cannon points to EXTRA BALL. A second clear prepares Special; pass the same lane when the cannon points to PREPARE SPECIAL, then collect Special at an outlane.",
+        "summary": "Shoot the yellow, green, and red drops deliberately, with yellow first when Bonus X matters. Once an award is prepared, stop shooting drops and wait for the cannon lamp before taking the center-right lane.",
+        "quickInfo": [
+          {
+            "name": "Prepare Extra Ball",
+            "summary": "First clear of every drop target."
+          },
+          {
+            "name": "Collect Extra Ball",
+            "summary": "Center-right lane when the cannon shows EXTRA BALL."
+          },
+          {
+            "name": "Prepare Special",
+            "summary": "Second clear of every drop target."
+          },
+          {
+            "name": "Collect Special",
+            "summary": "Prepare it at the center-right lane, then drain through a lit outlane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Clear the yellow, green, and red drop targets once; yellow advances Bonus X, green raises bumper value, and red raises spinner value.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Watch the rotating cannon lamps and shoot the center-right lane when EXTRA BALL aligns.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Clear every colored drop target a second time to prepare Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Pass the center-right lane when the cannon shows PREPARE SPECIAL, then collect Special at either lit outlane.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Value-building route",
+            "when": "Use this when clearing every drop target is unsafe or only one color is reachable.",
+            "steps": [
+              {
+                "text": "Favor yellow drops for Bonus X, green drops for higher bumper scoring, or red drops for a stronger spinner.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Use the right-flipper lanes to step drop-target value from 15,000 to 20,000 and then 25,000 before returning to that bank.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Second-Clear Special",
+          "steps": [
+            {
+              "text": "Collect or finish the first full-bank Extra Ball route.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Clear all colored drops again, time PREPARE SPECIAL at the center-right lane, and take a lit outlane.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test every colored drop target, the right-flipper value lanes, spinner, three bumpers, center-right lane, rotating cannon lamps, and both outlane Special switches.",
+          "Confirm the cannon lamp advances reliably and explain that the Special collect is an intentional lit outlane, not an ordinary safe playfield shot."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "yellow drop targets",
+            "label": "Yellow drop bank",
+            "description": "Drop targets that advance Bonus X from 2x through 5x.",
+            "precision": "unverified"
+          },
+          {
+            "term": "green drop targets",
+            "label": "Green drop bank",
+            "description": "Drop targets that raise pop-bumper value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red drop targets",
+            "label": "Red drop bank",
+            "description": "Drop targets that raise spinner value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center-right lane",
+            "label": "Center-right cannon lane",
+            "description": "Lane that collects Extra Ball or prepares outlane Special when its cannon lamp aligns.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right-flipper lanes",
+            "label": "Right-flipper value lanes",
+            "description": "Lanes that step the points awarded by drop targets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "outlanes",
+            "label": "Special outlanes",
+            "description": "Drain lanes that collect Special after the cannon preparation step.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Post Pass",
+            "instruction": "Post-pass to the right flipper when the safer next action is a right-flipper value lane or the center-right cannon lane.",
+            "sourceUrl": "https://www.recreativas.org/phantom-ship-2687-playmatic",
+            "techniqueSlug": "post-pass"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Preparing an award is not the same as collecting it.",
+            "response": "After each full clear, read the rotating cannon and time the center-right lane; Special then requires a separate lit outlane collect.",
+            "sourceUrl": "https://www.recreativas.org/archivo/phantom-ship-playmatic-manual.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the yellow, green, and red drops deliberately, with yellow first when Bonus X matters. Once an award is prepared, stop shooting drops and wait for the cannon lamp before taking the center-right lane.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Clear the yellow, green, and red drop targets once; yellow advances Bonus X, green raises bumper value, and red raises spinner value.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Watch the rotating cannon lamps and shoot the center-right lane when EXTRA BALL aligns.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Clear every colored drop target a second time to prepare Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Pass the center-right lane when the cannon shows PREPARE SPECIAL, then collect Special at either lit outlane.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Prepare Extra Ball",
+            "summary": "First clear of every drop target."
+          },
+          {
+            "name": "Collect Extra Ball",
+            "summary": "Center-right lane when the cannon shows EXTRA BALL."
+          },
+          {
+            "name": "Prepare Special",
+            "summary": "Second clear of every drop target."
+          }
+        ],
+        "warning": {
+          "title": "Preparing an award is not the same as collecting it.",
+          "text": "After each full clear, read the rotating cannon and time the center-right lane; Special then requires a separate lit outlane collect."
+        }
+      }
+    }
+  ]
+}

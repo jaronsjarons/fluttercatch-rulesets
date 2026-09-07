@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "GRvJV",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete the five center drops in order from right to left, then use the upper P-O-O-L lanes to raise Bonus X. Next hit the recessed 6-ball at lower left, the recessed 7-ball at lower right, and the 8-ball at the far upper left through a strong right orbit. After the first rack, the same route continues through balls 9–15, while P-O-O-L and B-A-L-L provide safer progress.",
+        "simpleOverview": "Hit the five center drops in order from right to left, then complete P-O-O-L lanes for Bonus X. Finish the rack with the recessed 6-ball, recessed 7-ball, and far upper-left 8-ball reached through the right orbit.",
+        "summary": "Complete the center drops from right to left, build Bonus X with P-O-O-L, then hit the recessed 6- and 7-ball targets and the far upper-left 8-ball through the right orbit. Repeat the numbered-ball route for the next rack.",
+        "quickInfo": [
+          {
+            "name": "Clear Drops Right to Left",
+            "summary": "Out-of-order hits reset the target sequence."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete P-O-O-L lanes up top."
+          },
+          {
+            "name": "Finish 6, 7, and 8",
+            "summary": "Use both recessed targets, then the far upper-left 8-ball."
+          },
+          {
+            "name": "Use B-A-L-L",
+            "summary": "A completed set spots the next numbered ball and lights the spinner."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the five center drop targets in order from right to left; an out-of-order hit resets the sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Send the ball up top and complete P-O-O-L to advance end-of-ball Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the recessed 6-ball at lower left, then the recessed 7-ball at lower right.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot a strong right orbit to reach the far upper-left 8-ball and complete the first rack; then repeat the route for balls 9–15.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Spot the next ball",
+            "when": "Use this when the required numbered target is unsafe or a B-A-L-L set is nearly complete.",
+            "steps": [
+              {
+                "text": "Complete B-A-L-L to spot the next numbered ball and light the left spinner.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete P-O-O-L for Bonus X and one B-A-L-L letter, then resume the numbered rack.",
+                "kinds": [
+                  "multiplier",
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Grow a large end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Keep numbered-ball progress moving while P-O-O-L raises Bonus X through 5x, 7x, 10x, 15x, and 20x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "At 10x or higher, account for the setting that returns Bonus X to 5x after the ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Extra Ball and Special conversions, Bonus X carry and maximum, first-rack double spotting, lane change, and whether B-A-L-L spots the next ball.",
+          "Test all five ordered center drops, recessed 6/14 and 7/15 targets, right orbit and 8-ball, P-O-O-L lanes, B-A-L-L and C-U-E targets, upper mini-flipper, left spinner, and trough."
+        ],
+        "techniques": [
+          {
+            "name": "Dead bounce",
+            "instruction": "After the 7-ball rebound, use a tested dead bounce from the paired right flippers to the left before shooting the 8-ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvJV-MJ4bR",
+            "techniqueSlug": "dead-bounce"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Numbered-ball rack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "P-O-O-L",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "B-A-L-L",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center five drops",
+            "label": "Center ordered drops",
+            "description": "The five drops completed from right to left for balls 1–5 and later 9–13.",
+            "precision": "unverified"
+          },
+          {
+            "term": "6-ball target",
+            "label": "Recessed 6/14 target",
+            "description": "The recessed lower-left numbered-ball target.",
+            "precision": "unverified"
+          },
+          {
+            "term": "7-ball target",
+            "label": "Recessed 7/15 target",
+            "description": "The recessed lower-right numbered-ball target.",
+            "precision": "unverified"
+          },
+          {
+            "term": "8-ball",
+            "label": "Far upper-left 8-ball",
+            "description": "The final first-rack target reached through a strong right orbit.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The paired right flippers can trap or lose a ball between them during a passive bounce.",
+            "response": "Test the 6–7–8 combo on this copy and use an active catch when the return does not cross the pair cleanly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvJV-MJ4bR"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the center drops from right to left, build Bonus X with P-O-O-L, then hit the recessed 6- and 7-ball targets and the far upper-left 8-ball through the right orbit. Repeat the numbered-ball route for the next rack.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the five center drop targets in order from right to left; an out-of-order hit resets the sequence.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Send the ball up top and complete P-O-O-L to advance end-of-ball Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the recessed 6-ball at lower left, then the recessed 7-ball at lower right.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot a strong right orbit to reach the far upper-left 8-ball and complete the first rack; then repeat the route for balls 9–15.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Clear Drops Right to Left",
+            "summary": "Out-of-order hits reset the target sequence."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete P-O-O-L lanes up top."
+          },
+          {
+            "name": "Finish 6, 7, and 8",
+            "summary": "Use both recessed targets, then the far upper-left 8-ball."
+          }
+        ]
+      }
+    }
+  ]
+}

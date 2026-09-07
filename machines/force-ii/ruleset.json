@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Wpk",
+  "title": "Force II",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Force II factory-instruction reconstruction",
+      "url": "https://pinballnirvana.com/forums/resources/force-ii-gottlieb-1981-vp8.2910/"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Force II strategy",
+        "url": "https://rules.silverballmania.com/rules/G5Wpk-MDWpy"
+      },
+      {
+        "label": "Single Ball Play Force II tournament notes",
+        "url": "https://singleballplay.com/pinball-guides"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Force II starts Multiball through its red, white, and blue chain. Roll through a colored top lane to light the matching standup: red at upper right, white at middle left, or blue at lower left. Hit that lit standup to light both Second Ball Launchers, then shoot either lit launcher to capture the ball and serve another. Multiball begins when the served ball reaches a playfield switch and releases the captured ball. During Multiball, drop targets grow in value and the two upper-left lanes score from lit red and blue targets.",
+      "simpleOverview": "Soft-plunge a red, white, or blue top lane, then hit the matching colored standup to light both Second Ball Launchers. Shoot either lit launcher to capture the ball and serve another; Multiball begins when the served ball hits a playfield switch and releases the captured ball.",
+      "summary": "Take any colored lane on the plunge and finish its matching standup before chasing drop targets. That single color chain lights both launchers and is the shortest Multiball route. During Multiball, use the upper-left lanes and completed drop banks for their growing values.",
+      "quickInfo": [
+        {
+          "name": "Light a Colored Standup",
+          "summary": "Roll through its matching top lane."
+        },
+        {
+          "name": "Light Both Launchers",
+          "summary": "Hit any lit colored standup."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Capture the ball in a lit launcher, then validate the served ball."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete any drop bank or collect a lit inlane or outlane."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Soft-plunge through any red, white, or blue top lane to light the matching standup target."
+        },
+        {
+          "text": "Hit that lit colored standup: red is upper right, white is middle left, and blue is lower left. Both Second Ball Launchers now light."
+        },
+        {
+          "text": "Shoot either lit launcher to capture the current ball and send a replacement to the shooter lane."
+        },
+        {
+          "text": "Plunge the served ball; its first playfield switch releases the captured ball and starts two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Recover a missed color",
+          "when": "Use this when the plunge misses every colored top lane.",
+          "steps": [
+            {
+              "text": "Feed the far upper-left flipper and shoot through the top spinner toward the colored lanes."
+            },
+            {
+              "text": "Once a color is collected, hit its matching standup and continue to either launcher."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Persistent target value",
+        "steps": [
+          {
+            "text": "Complete drop banks to raise Bonus X and add lit target value.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot drop banks for 5,000 per target plus completion value based on their lit targets.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send balls through the two far upper-left lanes for value based on the lit red and blue targets.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test all three top colored lanes, their red, white, and blue standups, both Second Ball Launchers and kickouts, the shooter-lane serve, all three drop banks, four flippers, and the top spinner.",
+        "Confirm whether target and lane progress is remembered between balls, whether Extra Ball is enabled, and that both launchers capture and release cleanly before competition play."
+      ],
+      "cautions": [
+        {
+          "issue": "A target bank or launcher may appear active while a switch is failing.",
+          "response": "Verify the blue standup and both launcher switches before play; weak switch behavior can make the intended Multiball route appear inconsistent.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Wpk-MDWpy"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

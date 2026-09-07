@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr8PN",
+  "title": "Motordome",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Motordome factory operating manual",
+      "url": "https://manuals.plus/m/43527f37b37351253b8bba7a8c7c6b622a8f5e6e1cb770d58a1d0148f0f17380.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Motordome factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Bally/Bally_Motordome_instruction_cards.zip"
+      },
+      {
+        "label": "Motordome machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/motordome"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Before the first plunge, use the right flipper to choose level I, II, or III; the choice lasts all game. On each plunge, time the shooter-lane switch for the blue Rider light and 50,000 points. Build **MILLION with the flashing center standup or a lit-SPOT ramp shot, then shoot the Turbo Saucer after the full phrase is lit for 1,000,000.",
+      "simpleOverview": "Before the first plunge, choose level I, II, or III with the right flipper. Time each plunge for the blue Rider light. Shoot the flashing center standup or a lit-SPOT ramp to build **MILLION, then shoot the Turbo Saucer for 1,000,000.",
+      "summary": "Choose a skill level before the first plunge, time the blue Rider skill shot, build **MILLION at the flashing center standup or lit-SPOT ramp, then shoot the Turbo Saucer for 1,000,000.",
+      "quickInfo": [
+        {
+          "name": "Choose a Level",
+          "summary": "Use the right flipper before the first shooter-lane switch."
+        },
+        {
+          "name": "Make the Skill Shot",
+          "summary": "Stop the moving Rider light on blue for 50,000."
+        },
+        {
+          "name": "Build **MILLION",
+          "summary": "Use the flashing center standup or the ramp after SPOT is lit."
+        },
+        {
+          "name": "Collect a Million",
+          "summary": "Shoot the Turbo Saucer after the full phrase is lit."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before the first plunge reaches the shooter-lane switch, press the right flipper to select level I, II, or III.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Time the plunge so the moving Rider lights stop on blue for the 50,000-point skill shot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the ramp repeatedly until SPOT lights, then use the ramp or the flashing center standup to add **MILLION letters.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After **MILLION is complete, shoot the Turbo Saucer for 1,000,000 points.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Complete the Lightning Bolts",
+          "when": "Use this when the outside targets are safer than the center standup and ramp.",
+          "steps": [
+            {
+              "text": "Complete the Lightning Bolt targets; level I allows any order, while levels II and III require the sequence.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "The completion awards 25,000 on level I, Extra Ball on level II, or Special on level III before operator conversions.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Choose risk before the plunge",
+        "steps": [
+          {
+            "text": "Level I scores 1x with easier target rules and requires both stars before **MILLION.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Level II scores 2x and starts with one star; level III scores 3x, starts with both stars, and uses the hardest timed target rules.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Extra Ball and Special conversions, ball count, and whether the level-selection display and right-flipper input respond before the first plunge.",
+        "Test the Rider shooter-lane lights, ramp and SPOT threshold, center standup, Turbo Saucer, Lightning Bolt targets, star lamps, and target-bank reset timing."
+      ],
+      "termStyles": [
+        {
+          "label": "**MILLION",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Turbo Saucer",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "Skill Level",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The skill level locks for the rest of the game when the first shooter-lane switch closes.",
+          "response": "Make the level choice before plunging; do not expect the flipper buttons to change it afterward.",
+          "sourceUrl": "https://manuals.plus/m/43527f37b37351253b8bba7a8c7c6b622a8f5e6e1cb770d58a1d0148f0f17380.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

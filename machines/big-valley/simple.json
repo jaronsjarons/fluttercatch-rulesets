@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr1lY",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit the upper Up Post disc to raise the center post, then shoot the open Gopher Gate. When the gate is closed, return the ball to the top to light bumpers and lock balls in the two saucers.",
+        "quickInfo": [
+          {
+            "name": "Center post",
+            "summary": "The upper Up Post disc raises the center post, while either small rollover above a lower slingshot lowers it."
+          },
+          {
+            "name": "Right lock",
+            "summary": "A ball in the right saucer opens the 2,200-point Gopher Gate, which releases that locked ball when scored."
+          },
+          {
+            "name": "Left lock",
+            "summary": "A ball in the left saucer opens the 1,100-point Fox Gate, and Big Pine Pass can release that locked ball."
+          },
+          {
+            "name": "Big Valley Multiball",
+            "summary": "Two locked balls raise the top-center lane to 5K, and that lane releases the locks for Multiball."
+          },
+          {
+            "name": "Persistent locks",
+            "summary": "Locked balls carry between balls, players, and games, so a new player can inherit or release another player's locks."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before the plunge, check both saucers and note which balls are already locked."
+          },
+          {
+            "text": "Guide the plunge over the Up Post disc to raise the center post."
+          },
+          {
+            "text": "If the right saucer is empty, guide the upper ball into it to open the Gopher Gate."
+          },
+          {
+            "text": "When the Gopher Gate is open, shoot it from a controlled flipper."
+          },
+          {
+            "text": "When the gate is closed, shoot around the left side of the pop bumpers to reach the top."
+          },
+          {
+            "text": "Use upper nudges to hit needed light-bumper targets and guide balls into open saucers."
+          },
+          {
+            "text": "With balls in both saucers, guide the ball through the 5K top-center lane to start Big Valley Multiball.",
+            "modeNotes": [
+              "Big Valley Multiball: Lock one ball in each saucer, then score the 5K top-center lane to release both balls."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Closed-gate upper route",
+          "when": "Use this plan when the Gopher Gate is closed or no controlled gate shot is available.",
+          "steps": [
+            {
+              "text": "Shoot around the left side of the pop bumpers."
+            },
+            {
+              "text": "In the upper area, choose the Up Post disc if the center post is down."
+            },
+            {
+              "text": "Otherwise, choose a light-bumper target or an empty saucer."
+            },
+            {
+              "text": "Return to the Gopher Gate after the right saucer opens it."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Inherited two-lock Multiball",
+            "when": "Use this plan when both saucers already contain locked balls at the start of your turn.",
+            "steps": [
+              {
+                "text": "Confirm that both saucers contain balls before the plunge."
+              },
+              {
+                "text": "Prioritize the lit 5K top-center lane over the post or bumper-light switches."
+              },
+              {
+                "text": "Score the top-center lane to release both balls and start Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Relock balls in either saucer during Multiball when the feed permits it.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Left-lock release",
+            "when": "Use this plan when the left saucer contains a ball and the ball reaches Big Pine Pass naturally.",
+            "steps": [
+              {
+                "text": "Do not force the narrow Big Pine Pass shot from a flipper."
+              },
+              {
+                "text": "Let an upper or slingshot rebound enter the pass."
+              },
+              {
+                "text": "Collect 2,000 when the pass releases the left locked ball."
+              },
+              {
+                "text": "Use the released ball for Multiball control or another saucer lock.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Two locks and 5K Multiball start",
+          "steps": [
+            {
+              "text": "Hit the upper Up Post disc to raise the center post."
+            },
+            {
+              "text": "Lock one ball in the right saucer."
+            },
+            {
+              "text": "Lock one ball in the left saucer."
+            },
+            {
+              "text": "Score the 5K top-center lane to release both locks.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Big Valley Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Micro flip at the center post",
+            "instruction": "Micro flip a ball trapped on the raised center post into a flipper cradle.",
+            "techniqueSlug": "micro-flip",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          },
+          {
+            "name": "Upper-area nudge",
+            "instruction": "Choose the needed upper switch before the ball reaches it. Guide toward Up Post, a light-bumper target, an open saucer, or the 5K lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          },
+          {
+            "name": "Lock-state audit",
+            "instruction": "Check both saucers before every plunge. Change the skill-shot goal when one or both locks are already occupied.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Most shots other than an open Gopher Gate enter the bumpers and can drain through the center or right outlane.",
+            "response": "Shoot the open Gopher Gate from control. Use the upper route only while the gate is closed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          },
+          {
+            "issue": "Either small rollover above the lower slingshots lowers the center post.",
+            "response": "Check the post after either rollover scores. Hit the upper Up Post disc again before you depend on the post for control.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          },
+          {
+            "issue": "The Fox Gate and Big Pine Pass are difficult to enter with a direct flipper shot.",
+            "response": "Do not force either entry. Let upper-play or slingshot rebounds feed them.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          },
+          {
+            "issue": "Persistent locks can give one player balls that another player locked.",
+            "response": "Inspect the lock state before play. Confirm the event procedure for inherited locks and restarts.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr1lY-MJ55W"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm four-player Bally Big Valley, ball count, tilt, replay and Extra Ball treatment, and the event procedure for locks inherited across balls, players, or games.",
+          "Inspect both locked-ball saucers before every plunge; confirm gate lamps, top-center 5K state, lock releases, and whether Big Pine Pass releases the left lock.",
+          "Test the Up Post and lowering rollovers, center-post control, Gopher and Fox gates, bumper and upper feeds, saucer acceptance, and release timing."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right saucer",
+            "label": "Right lock saucer",
+            "description": "Saucer used to lock a ball and open Gopher Gate.",
+            "precision": "unverified",
+            "context": "Saucer used to lock a ball and open Gopher Gate."
+          },
+          {
+            "term": "left saucer",
+            "label": "Left lock saucer",
+            "description": "Second ball lock used for Big Valley Multiball.",
+            "precision": "unverified",
+            "context": "Second ball lock used for Big Valley Multiball."
+          },
+          {
+            "term": "top-center lane",
+            "label": "5K release lane",
+            "description": "Top-center lane used to release both locks.",
+            "precision": "unverified",
+            "context": "Top-center lane used to release both locks."
+          },
+          {
+            "term": "Up Post",
+            "label": "Up Post disc",
+            "description": "Upper switch used to raise the center post.",
+            "precision": "unverified",
+            "context": "Upper switch used to raise the center post."
+          }
+        ],
+        "simpleOverview": "Big Valley uses an upper disc to raise its center post and two saucers to store balls across balls, players, and games. Hit the Up Post disc, lock one ball in each saucer, then shoot the 5K top-center lane to release both locks for Multiball.",
+        "overview": "Big Valley uses an upper disc to raise its center post and two saucers to store balls across balls, players, and games. Hit the Up Post disc before working the locks, then fill the right and left saucers. Shoot the 5K top-center lane to release both balls for Multiball; with only one lock, use its matching Gopher Gate, Fox Gate, or Big Pine Pass release instead.",
+        "machineSetup": [
+          "Confirm four-player Bally Big Valley, ball count, tilt, replay and Extra Ball treatment, and the event procedure for locks inherited across balls, players, or games.",
+          "Inspect both locked-ball saucers before every plunge; confirm gate lamps, top-center 5K state, lock releases, and whether Big Pine Pass releases the left lock.",
+          "Test the Up Post and lowering rollovers, center-post control, Gopher and Fox gates, bumper and upper feeds, saucer acceptance, and release timing."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit the upper Up Post disc to raise the center post, then shoot the open Gopher Gate. When the gate is closed, return the ball to the top to light bumpers and lock balls in the two saucers.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before the plunge, check both saucers and note which balls are already locked."
+          },
+          {
+            "text": "Guide the plunge over the Up Post disc to raise the center post."
+          },
+          {
+            "text": "If the right saucer is empty, guide the upper ball into it to open the Gopher Gate."
+          },
+          {
+            "text": "When the Gopher Gate is open, shoot it from a controlled flipper."
+          },
+          {
+            "text": "When the gate is closed, shoot around the left side of the pop bumpers to reach the top."
+          },
+          {
+            "text": "Use upper nudges to hit needed light-bumper targets and guide balls into open saucers."
+          },
+          {
+            "text": "With balls in both saucers, guide the ball through the 5K top-center lane to start Big Valley Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Big Valley Multiball: Lock one ball in each saucer, then score the 5K top-center lane to release both balls."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Center post",
+            "summary": "The upper Up Post disc raises the center post, while either small rollover above a lower slingshot lowers it."
+          },
+          {
+            "name": "Right lock",
+            "summary": "A ball in the right saucer opens the 2,200-point Gopher Gate, which releases that locked ball when scored."
+          },
+          {
+            "name": "Left lock",
+            "summary": "A ball in the left saucer opens the 1,100-point Fox Gate, and Big Pine Pass can release that locked ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Closed-gate upper route",
+          "when": "Use this plan when the Gopher Gate is closed or no controlled gate shot is available.",
+          "steps": [
+            {
+              "text": "Shoot around the left side of the pop bumpers."
+            },
+            {
+              "text": "In the upper area, choose the Up Post disc if the center post is down."
+            },
+            {
+              "text": "Otherwise, choose a light-bumper target or an empty saucer."
+            },
+            {
+              "text": "Return to the Gopher Gate after the right saucer opens it."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Most shots other than an open Gopher Gate enter the bumpers and can drain through the center or right outlane.",
+          "text": "Shoot the open Gopher Gate from control. Use the upper route only while the gate is closed."
+        }
+      }
+    }
+  ]
+}

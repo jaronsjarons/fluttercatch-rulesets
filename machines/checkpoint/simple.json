@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Jdp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Advance the tachometer to 8000 RPM for Red Line Multiball, raise the Jackpot with C-A-R-R-E-R-A, then use the Checkpoint shot to double a controlled ramp collect.",
+        "quickInfo": [
+          {
+            "name": "RPM",
+            "summary": "L-A-P, the CARRERA bank, pop bumpers, fast ramps, and Pit Stop awards can advance the tachometer."
+          },
+          {
+            "name": "Multiballs",
+            "summary": "6000 RPM starts two-ball Checkpoint Multiball; 8000 RPM starts three-ball Red Line Multiball."
+          },
+          {
+            "name": "Jackpot",
+            "summary": "The Checkered Flag target lights the ramp briefly; CARRERA completions raise the next jackpot."
+          },
+          {
+            "name": "Checkpoint",
+            "summary": "With three balls in play, Checkpoint can double the next jackpot; with two, it can return a ball."
+          },
+          {
+            "name": "FAST",
+            "summary": "Spell F-A-S-T, then shoot Checkpoint for a short all-switch scoring mode that is strongest during multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use L-A-P, the safer CARRERA bank targets, and clean ramp shots to move the tachometer toward 8000 RPM."
+          },
+          {
+            "text": "Read the RPM awards before choosing the next risk.",
+            "modeNotes": [
+              "6000 RPM: Checkpoint starts a two-ball multiball.",
+              "7000 RPM: Checkpoint or Pit Stop starts a two-ball multiball.",
+              "8000 RPM: Red Line starts with three balls."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Enter Red Line Multiball with CARRERA already near completion when the target rebounds are controllable.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the Checkered Flag target to light the ramp jackpot, then collect the ramp before its short light expires.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete CARRERA between collects to raise the jackpot, but stop at 4 million because another completion wraps it to 2 million.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With three balls still alive, shoot Checkpoint before the next ramp collect to double that jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If FAST is ready, start it during protected play and favor dense switches without abandoning a lit jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Checkpoint Multiball cashout",
+          "when": "Use this when 6000 RPM is ready but reaching 8000 RPM would require unsafe target rebounds.",
+          "steps": [
+            {
+              "text": "Shoot Checkpoint at 6000 RPM to start two-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the extra ball to finish CARRERA or F-A-S-T progress."
+            },
+            {
+              "text": "Return to ramp and RPM work after one ball remains."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Ramp and country route",
+            "when": "Use this when the ramp is repeatable and the standups are rejecting.",
+            "steps": [
+              {
+                "text": "Repeat the ramp to light country flags and advance the consecutive-ramp award."
+              },
+              {
+                "text": "Use the ramp return to regain control rather than forcing CARRERA."
+              },
+              {
+                "text": "Resume RPM progress when a controlled CARRERA drop-target shot is available."
+              }
+            ]
+          },
+          {
+            "title": "FAST switch window",
+            "when": "Use this when F-A-S-T is complete and a multiball start is close.",
+            "steps": [
+              {
+                "text": "Hold the FAST start at Checkpoint until protected play is ready.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start FAST, then start the available multiball.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Take controlled switch feeds while preserving any lit jackpot."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated doubled Red Line jackpots",
+          "steps": [
+            {
+              "text": "Reach 8000 RPM with CARRERA near completion."
+            },
+            {
+              "text": "Start Red Line and light the ramp jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use Checkpoint to double a collect while three balls remain."
+            },
+            {
+              "text": "Complete CARRERA to raise the Jackpot, then hit the Checkered Flag target to relight the ramp."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Red Line Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Checkpoint Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "6000 RPM",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "7000 RPM",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "8000 RPM",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "FAST",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "RPM",
+            "tone": "olive",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Checkpoint",
+            "context": "Checkpoint",
+            "label": "Checkpoint shot",
+            "description": "Center-left shot used to start Checkpoint Multiball, start FAST, and modify Red Line play.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramp",
+            "context": "ramp",
+            "label": "Main ramp",
+            "description": "Primary jackpot and country-flag shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "CARRERA bank",
+            "context": "CARRERA bank",
+            "label": "CARRERA targets",
+            "description": "Standup bank used for RPM and jackpot growth.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Checkered Flag target",
+            "context": "Checkered Flag target",
+            "label": "Jackpot-light target",
+            "description": "Target that lights the ramp jackpot during Red Line Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Pit Stop",
+            "context": "Pit Stop",
+            "label": "Pit Stop shot",
+            "description": "Award shot that can contribute RPM and start qualified multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Jackpot-light discipline",
+            "instruction": "Hit the Checkered Flag only when a ball can be sent to the ramp during the brief light.",
+            "sourceUrl": "https://www.pinball.org/rules/checkpoint.html"
+          },
+          {
+            "name": "Three-ball Checkpoint timing",
+            "instruction": "Take Checkpoint before the ramp collect while three balls remain; do not wait until the double function has become a two-ball add-a-ball.",
+            "sourceUrl": "https://www.pinball.org/rules/checkpoint.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "CARRERA and the Checkered Flag can rebound toward the center drain.",
+            "response": "Use protected play or a settled flipper feed for target work.",
+            "sourceUrl": "https://www.pinball.org/rules/checkpoint.html"
+          },
+          {
+            "issue": "FAST and the ramp jackpot have short active windows.",
+            "response": "Finish their qualification first, then use Checkpoint or the Checkered Flag target only when the next scoring feed is available.",
+            "sourceUrl": "https://www.pinball.org/rules/checkpoint.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm A1.07 game code with CP80 display code, ball count, RPM memory, Multiball saves, and Extra Ball conversion.",
+          "Confirm the pop-hit RPM threshold and whether the lit 1-million ramp award repeats during its ten-second window.",
+          "Test the Checkered Flag drop, ramp, CARRERA bank, Checkpoint, and Pit Stop; all mode timers end without a grace period."
+        ],
+        "simpleOverview": "Checkpoint uses L-A-P, CARRERA, bumpers, ramps, and Pit Stop awards to move its tachometer toward Multiball. Reach 8000 RPM for three-ball Red Line, hit the Checkered Flag target to light the ramp Jackpot, then use Checkpoint before a ramp collect to double it while three balls remain.",
+        "overview": "Checkpoint starts two-ball Checkpoint Multiball at 6000 RPM and three-ball Red Line at 8000 RPM. Favor 8000 RPM when CARRERA is controllable, hit the Checkered Flag target before each ramp Jackpot, and use Checkpoint to double the next collect while three balls remain. Take the earlier start when more target work would cost control.",
+        "machineSetup": [
+          "Confirm A1.07 game code with CP80 display code, ball count, RPM memory, Multiball saves, and Extra Ball conversion.",
+          "Confirm the pop-hit RPM threshold and whether the lit 1-million ramp award repeats during its ten-second window.",
+          "Test the Checkered Flag drop, ramp, CARRERA bank, Checkpoint, and Pit Stop; all mode timers end without a grace period."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Advance the tachometer to 8000 RPM for Red Line Multiball, raise the Jackpot with C-A-R-R-E-R-A, then use the Checkpoint shot to double a controlled ramp collect.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use L-A-P, the safer CARRERA bank targets, and clean ramp shots to move the tachometer toward 8000 RPM."
+          },
+          {
+            "text": "Read the RPM awards before choosing the next risk.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "6000 RPM: Checkpoint starts a two-ball multiball.",
+              "7000 RPM: Checkpoint or Pit Stop starts a two-ball multiball.",
+              "8000 RPM: Red Line starts with three balls."
+            ]
+          },
+          {
+            "text": "Enter Red Line Multiball with CARRERA already near completion when the target rebounds are controllable.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the Checkered Flag target to light the ramp jackpot, then collect the ramp before its short light expires.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete CARRERA between collects to raise the jackpot, but stop at 4 million because another completion wraps it to 2 million.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With three balls still alive, shoot Checkpoint before the next ramp collect to double that jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If FAST is ready, start it during protected play and favor dense switches without abandoning a lit jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "RPM",
+            "summary": "L-A-P, the CARRERA bank, pop bumpers, fast ramps, and Pit Stop awards can advance the tachometer."
+          },
+          {
+            "name": "Multiballs",
+            "summary": "6000 RPM starts two-ball Checkpoint Multiball; 8000 RPM starts three-ball Red Line Multiball."
+          },
+          {
+            "name": "Jackpot",
+            "summary": "The Checkered Flag target lights the ramp briefly; CARRERA completions raise the next jackpot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Checkpoint Multiball cashout",
+          "when": "Use this when 6000 RPM is ready but reaching 8000 RPM would require unsafe target rebounds.",
+          "steps": [
+            {
+              "text": "Shoot Checkpoint at 6000 RPM to start two-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the extra ball to finish CARRERA or F-A-S-T progress."
+            },
+            {
+              "text": "Return to ramp and RPM work after one ball remains."
+            }
+          ]
+        },
+        "warning": {
+          "title": "CARRERA and the Checkered Flag can rebound toward the center drain.",
+          "text": "Use protected play or a settled flipper feed for target work."
+        }
+      }
+    }
+  ]
+}

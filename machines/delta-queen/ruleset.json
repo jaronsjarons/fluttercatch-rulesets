@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "G5bez",
+  "title": "Delta Queen",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Delta Queen",
+      "url": "https://rules.silverballmania.com/rules/G5bez-M0oEW"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Delta Queen factory instructions and parts list",
+        "url": "https://www.pinballaustralia.com/PDF/Bally_Delta_Queen_997_Instructions_and_Parts_list.pdf"
+      },
+      {
+        "label": "Kineticist Delta Queen machine guide",
+        "url": "https://www.kineticist.com/games/pinball/delta-queen"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build bonus through the top-right arc and return lanes, hit A and B for double bonus, then repeatedly collect the doubled value at the upper-left saucer, which pays bonus without resetting it.",
+      "quickInfo": [
+        {
+          "name": "Skill shot",
+          "summary": "The center top lane lights both side bumpers; either outside lane lights the opposite bumper."
+        },
+        {
+          "name": "Bonus advances",
+          "summary": "The three top-right arc buttons, both return lanes, and two advance-bonus standups each add 1,000."
+        },
+        {
+          "name": "Double bonus",
+          "summary": "Hitting both A and B standups beside the center saucer lights double bonus until the ball ends or the game is tilted."
+        },
+        {
+          "name": "Reusable collect",
+          "summary": "The upper-left bonus hole collects the current bonus without resetting its lit value."
+        },
+        {
+          "name": "Outhole reset",
+          "summary": "The outhole collects the current bonus, then resets the base value to 1,000 for the next ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge the center top lane when possible to light both side bumpers."
+        },
+        {
+          "text": "From the left flipper, shoot the top-right arc and cross its three white rollover buttons."
+        },
+        {
+          "text": "Use return-lane and advance-bonus switches to keep building base bonus."
+        },
+        {
+          "text": "Delay the A and B standups until the base bonus is high enough to justify their rebound risk."
+        },
+        {
+          "text": "Hit both A and B to light double bonus."
+        },
+        {
+          "text": "From the right flipper, shoot the upper-left bonus saucer."
+        },
+        {
+          "text": "Confirm that the saucer collects bonus without resetting the lit base value."
+        },
+        {
+          "text": "Repeat the upper-left saucer while its return remains safe, rebuilding through the top-right arc as needed."
+        }
+      ],
+      "fallback": {
+        "title": "Base-bonus survival plan",
+        "when": "Use this plan when the A-B standups or upper-left saucer are rebounding toward the center.",
+        "steps": [
+          {
+            "text": "Continue the broad top-right arc from the left flipper."
+          },
+          {
+            "text": "Take return-lane and side-target advances through natural play."
+          },
+          {
+            "text": "Let the outhole collect the accumulated base bonus if no controlled collect appears."
+          },
+          {
+            "text": "Reattempt A-B only after the ball reaches a stable flipper feed."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Undoubled saucer collect",
+          "when": "Use this plan when base bonus is high but one A-B target has proved too dangerous on this machine.",
+          "steps": [
+            {
+              "text": "Preserve the built base bonus instead of forcing the missing standup."
+            },
+            {
+              "text": "Shoot the upper-left bonus saucer from a controlled right-flipper feed."
+            },
+            {
+              "text": "Confirm that the base value remains lit after the collect."
+            },
+            {
+              "text": "Repeat the safer saucer or return to top-right bonus advances."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated doubled-bonus collects",
+        "steps": [
+          {
+            "text": "Build base bonus through the top-right arc, return lanes, and advance targets."
+          },
+          {
+            "text": "Hit A and B to light double bonus."
+          },
+          {
+            "text": "Collect the doubled value at the upper-left saucer."
+          },
+          {
+            "text": "Use the non-resetting saucer collect to preserve the base value."
+          },
+          {
+            "text": "Repeat the collect while the ball remains controlled."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Top-right arc feed",
+          "instruction": "From the left flipper, send the ball through the broad right arc with enough speed to cross the white rollover buttons without striking their outside posts.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5bez-M0oEW"
+        },
+        {
+          "name": "A-B timing",
+          "instruction": "Wait until base bonus is valuable, then shoot only the missing A or B target from a settled ball. Stop after both lamps confirm double bonus.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5bez-M0oEW"
+        },
+        {
+          "name": "Non-resetting collect check",
+          "instruction": "After the upper-left saucer scores, read the bonus ladder before the next flip. Continue only if the expected base value remains lit.",
+          "sourceUrl": "https://www.pinballaustralia.com/PDF/Bally_Delta_Queen_997_Instructions_and_Parts_list.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A missed center-saucer shot can rebound toward the drain, and a made ball may pass through the opening.",
+          "response": "Ignore the center saucer's 5,000-point award unless the machine presents an unusually safe feed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5bez-M0oEW"
+        },
+        {
+          "issue": "A and B are valuable but expose the ball to standup-target rebounds.",
+          "response": "Build base bonus first, then take one deliberate target shot from control rather than repeated on-the-fly attempts.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5bez-M0oEW"
+        },
+        {
+          "issue": "Balls falling from the upper area can leave the smooth side paths and enter the center unpredictably.",
+          "response": "Track every top exit and prepare both flippers before the ball clears the bumpers.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5bez-M0oEW"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Double bonus",
+          "tone": "olive",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally model 997 Delta Queen, ball count, replay or novelty scoring, Extra Ball and Special conversion, and tilt behavior.",
+        "Confirm the bonus ladder, A-B double-bonus state, upper-left non-resetting collect, center-saucer award, and bumper-light rules.",
+        "Test the top-right arc, white rollovers, A-B rebounds, upper-left saucer eject, center saucer, side paths, and return-lane switches."
+      ],
+      "simpleOverview": "Delta Queen raises base bonus through the top-right arc, return lanes, and Advance Bonus standups. Build the base first, hit both A and B for Double Bonus, then repeat the upper-left bonus saucer because its collect does not reset the value.",
+      "overview": "In Delta Queen, the upper-left saucer scores the built bonus without resetting it, while the drain collect resets the base. Use the left flipper for the top-right arc and its three buttons, delay A-B until the base is valuable, then light Double Bonus and repeat the saucer from the right flipper. Stop when its return no longer reaches control.",
+      "machineSetup": [
+        "Confirm Bally model 997 Delta Queen, ball count, replay or novelty scoring, Extra Ball and Special conversion, and tilt behavior.",
+        "Confirm the bonus ladder, A-B double-bonus state, upper-left non-resetting collect, center-saucer award, and bumper-light rules.",
+        "Test the top-right arc, white rollovers, A-B rebounds, upper-left saucer eject, center saucer, side paths, and return-lane switches."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

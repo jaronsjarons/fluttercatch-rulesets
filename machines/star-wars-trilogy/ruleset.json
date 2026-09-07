@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "GrybN",
+  "title": "Star Wars Trilogy",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Star Wars Trilogy contemporary rulesheet",
+      "url": "https://www.pinball.org/rules/starwarstrilogy.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Original Sega Star Wars Trilogy instruction card",
+        "url": "https://www.pinballrebel.com/game/pins/instruction/star-wars-tri.gif"
+      },
+      {
+        "label": "Final CPU 4.03 Sega service bulletin",
+        "url": "https://arcarc.xmission.com/Pinball/Stern%20Service%20Bulletins/sb/sb100.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Star Wars Trilogy starts its two Multiballs through Tie Fighters and the X-Wing or through F-A-L-C-O-N, while six feature lamps track the road to Darth Vader Redemption. Destroy the Tie Fighters and use the X-Wing for the main Multiball, spell F-A-L-C-O-N at the ramp for the second, and use the upper VUK for Heroic modes while the six lamps show which wizard requirement remains.",
+      "simpleOverview": "Destroy all Tie Fighters, load the X-Wing at the lit ramp or upper hole, then fire through the open drop-target gap to start Star Wars Multiball. Spell F-A-L-C-O-N at the ramp for Millennium Falcon Multiball, and shoot the upper VUK twice to qualify and start a Heroic mode.",
+      "summary": "Work the Tie Fighter drops until the ramp or upper VUK lights to load the X-Wing, then fire through the drop-target opening for Star Wars Multiball. Spell F-A-L-C-O-N at the ramp and start Heroic modes at the upper VUK while completing feature lamps for Darth Vader Redemption.",
+      "quickInfo": [
+        {
+          "name": "Star Wars Multiball",
+          "summary": "Destroy all Tie Fighters, load the X-Wing at the lit ramp or upper VUK, and press Launch when it points through the open drop-target gap."
+        },
+        {
+          "name": "Millennium Falcon Multiball",
+          "summary": "Repeat the ramp to spell F-A-L-C-O-N. During Multiball, make playfield targets until the ramp lights for the Falcon Jackpot."
+        },
+        {
+          "name": "Heroic modes",
+          "summary": "Shoot the upper VUK while unlit to qualify the next Heroic mode, then return there when lit to start it and follow the DMD objective."
+        },
+        {
+          "name": "F-O-R-C-E hurry-ups",
+          "summary": "Complete the five F-O-R-C-E targets, then shoot the lit big hole to start the displayed roving hurry-up."
+        },
+        {
+          "name": "Darth Vader Redemption",
+          "summary": "Complete all six feature lamps, then shoot the upper VUK to begin the final mode."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Knock down all Tie Fighter targets. When Load X-Wing lights, shoot either the lit ramp or upper VUK to place a ball in the cannon.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Watch the rotating X-Wing and press the Launch button when it points at the opening in the drop targets. A successful shot through the gap starts Star Wars Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Star Wars Multiball, shoot the ramp for the Jackpot, complete F-O-R-C-E, reload the X-Wing, and fire through the opening again for the Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Outside that build, repeat the ramp to spell F-A-L-C-O-N and start Millennium Falcon Multiball. Make playfield targets until the ramp qualifies for the Falcon Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the upper VUK while it is unlit to qualify the next Heroic mode, then return when lit to start it. Read the DMD because each Heroic has a different shot objective.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete F-O-R-C-E to light a roving hurry-up at the big hole. Use the six feature lamps to choose whichever Super, Falcon, Heroic, hurry-up, Han Solo, or Landspeeder requirement is still missing.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Falcon-and-Heroics route",
+        "when": "Use this when the Tie Fighter bank or rotating X-Wing is not returning controllably.",
+        "steps": [
+          {
+            "text": "Repeat the ramp to spell F-A-L-C-O-N and start Millennium Falcon Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the extra balls to make playfield targets, then return to the lit ramp for the Falcon Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Multiball, use the upper VUK to qualify and start the next Heroic mode instead of forcing the Tie Fighter drops.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Darth Vader Redemption",
+        "steps": [
+          {
+            "text": "Collect a Super Jackpot during Star Wars Multiball and a Falcon Jackpot during Millennium Falcon Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete one Heroic mode and one F-O-R-C-E hurry-up.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish the displayed Han Solo and Landspeeder requirements; trust the six feature lamps for their current progress.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When all six lamps are complete, shoot the upper VUK to start Darth Vader Redemption.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Star Wars Multiball",
+          "tone": "oxblood",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Millennium Falcon Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Heroic mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "F-O-R-C-E",
+          "tone": "teal",
+          "kind": "mode"
+        },
+        {
+          "label": "Darth Vader Redemption",
+          "tone": "rust",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The production instruction card originally printed a launch-button skill shot that the manufacturer later removed.",
+          "response": "Do not expect a launch-button skill shot; begin with the lit playfield objectives above.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/Stern%20Service%20Bulletins/sb/sb100.pdf"
+        },
+        {
+          "issue": "Star Wars Multiball's ball count can vary by ROM or setup.",
+          "response": "The qualification and start do not require that number; rely on the lit state instead.",
+          "sourceUrl": "https://www.pinballrebel.com/game/pins/instruction/swtse.jpg"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

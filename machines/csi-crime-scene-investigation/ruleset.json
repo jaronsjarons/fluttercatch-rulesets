@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "GRokz",
+  "title": "CSI: Crime Scene Investigation",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org CSI rulesheet",
+      "url": "https://www.pinball.org/rules/csi.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Jim Belsito at Pinmasters 2017",
+        "url": "https://pinballvideos.com/v/1503/15914"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot the evidence loop early, prepare Skull Multiball, then start it just before Centrifuge Multiball so both protected scoring systems run together.",
+      "quickInfo": [
+        {
+          "name": "Skull Multiball",
+          "summary": "Ramp shots light and collect two skull locks, then four staged shot groups cycle for as long as two balls survive."
+        },
+        {
+          "name": "Centrifuge Multiball",
+          "summary": "Spin the centrifuge count to zero, lock a ball, build the award, then release it for escalating jackpots."
+        },
+        {
+          "name": "Microscope Multiball",
+          "summary": "Shoot the evidence loop, collect five pieces of one color, then shoot the microscope."
+        },
+        {
+          "name": "Evidence",
+          "summary": "Evidence progress is most efficient before Skull starts; Skull and Microscope are poor stack partners."
+        },
+        {
+          "name": "DNA Lab",
+          "summary": "Complete DNA for a Lab award; during multiball the award can help restore ball count."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the opening single-ball time to light evidence at the evidence loop and test the ramp, centrifuge, skull feed, and DNA bank."
+        },
+        {
+          "text": "Shoot the ramp to light and collect the two Skull locks, then leave Skull ready while spinning Centrifuge close to zero."
+        },
+        {
+          "text": "Start Skull Multiball immediately before completing Centrifuge, then bring Centrifuge into the protected window.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Score each Multiball through its own lit shots while both are running.",
+          "modeNotes": [
+            "Skull: use the major shots, bullet targets, skull, and Morgue route to advance its staged awards.",
+            "Centrifuge: build the trapped-ball award, release it, then collect the available jackpot level.",
+            "DNA Lab: if the final DNA hit was left ready, complete it and take the Lab award when restoring ball count matters more than another setup shot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When Centrifuge has a ball trapped, use controlled flipper movement to keep the mechanism spinning without losing the live ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the stack, rebuild evidence and choose Microscope only when one color is already close to five."
+        },
+        {
+          "text": "Stack Fingerprint Frenzy, Suspect Shakedown, or Ballistics only with an already controlled Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Standalone Centrifuge",
+        "when": "Use this when the ramp or skull locks are rejecting but the centrifuge feed is reliable.",
+        "steps": [
+          {
+            "text": "Reduce the centrifuge count to zero."
+          },
+          {
+            "text": "Lock the ball and build a practical jackpot value."
+          },
+          {
+            "text": "Release the locked ball and collect the escalating awards before control breaks down.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Microscope evidence route",
+          "when": "Use this when one evidence color is nearly complete before Skull begins.",
+          "steps": [
+            {
+              "text": "Shoot the evidence loop."
+            },
+            {
+              "text": "Collect five pieces of the same color."
+            },
+            {
+              "text": "Shoot the microscope to begin its staged multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Do not start Skull until the evidence-dependent work is finished."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Deep Microscope and case progress",
+        "steps": [
+          {
+            "text": "Collect complete evidence-color sets during safe single-ball windows."
+          },
+          {
+            "text": "Convert Microscope stages without wasting evidence under Skull."
+          },
+          {
+            "text": "Use repeat multiballs and cases to open the deeper laboratory awards."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Skull Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Centrifuge Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Microscope Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Fingerprint Frenzy",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Suspect Shakedown",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Ballistics",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Evidence",
+          "tone": "olive",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Skull-before-Centrifuge order",
+          "instruction": "Leave Centrifuge one safe action away, start Skull, then bring Centrifuge into the same protected window.",
+          "sourceUrl": "https://www.pinball.org/rules/csi.html"
+        },
+        {
+          "name": "Centrifuge pump",
+          "instruction": "While one ball is trapped, move the flippers only enough to sustain centrifuge motion while keeping the live ball controlled.",
+          "sourceUrl": "https://www.pinball.org/rules/csi.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Evidence cannot be advanced efficiently during Skull Multiball.",
+          "response": "Finish the needed evidence work before Skull; do not force a Skull-plus-Microscope stack.",
+          "sourceUrl": "https://www.pinball.org/rules/csi.html"
+        },
+        {
+          "issue": "The central devices and standups can return the ball quickly down the middle.",
+          "response": "Use multiball protection for mechanism work and avoid unnecessary center hits in single-ball play.",
+          "sourceUrl": "https://www.pinball.org/rules/csi.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm installed CSI code against the revision 2.4 rules, ball count, Extra Ball conversion, Multiball saves, and competition settings.",
+        "Confirm Skull lock difficulty, Centrifuge spin count, Evidence requirements, Jackpot values, timers, Lab awards, and maximum balls in play.",
+        "Test the Skull ramp and release, Centrifuge disk and post, Microscope magnet, Morgue, upper flipper, DNA bank, and saucer eject."
+      ],
+      "simpleOverview": "The three Multiball qualifications in CSI: Crime Scene Investigation interact. Shoot the evidence loop before Skull begins, collect two Skull locks at the ramp, and leave Centrifuge one safe action from starting. Start Skull first, then add Centrifuge so their protected scoring runs together.",
+      "overview": "CSI: Crime Scene Investigation uses ramp locks for Skull Multiball, centrifuge spins and a trapped ball for Centrifuge Multiball, and five same-color evidence pieces for Microscope Multiball. Collect the evidence during single-ball play, prepare two Skull locks and a nearly ready Centrifuge, then start Skull before Centrifuge. Finish the evidence before Skull rather than forcing Microscope into that overlap.",
+      "machineSetup": [
+        "Confirm installed CSI code against the revision 2.4 rules, ball count, Extra Ball conversion, Multiball saves, and competition settings.",
+        "Confirm Skull lock difficulty, Centrifuge spin count, Evidence requirements, Jackpot values, timers, Lab awards, and maximum balls in play.",
+        "Test the Skull ramp and release, Centrifuge disk and post, Microscope magnet, Morgue, upper flipper, DNA bank, and saucer eject."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

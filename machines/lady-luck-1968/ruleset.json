@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "G5pzQ",
+  "title": "Lady Luck",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Williams Lady Luck factory instruction manual",
+      "url": "https://pinballaustralia.com/PDF/Williams_1968_Lady_Luck_Instruction_Manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Manifold Matter Lady Luck exact-machine tutorial",
+        "url": "https://www.youtube.com/watch?v=2aRYVaAwC9s"
+      },
+      {
+        "label": "Kineticist Lady Luck machine archive",
+        "url": "https://www.kineticist.com/games/pinball/lady-luck-1968"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Lady Luck plays one blackjack hand until the ball drains. The top rollovers add 10, the center bumper and standup add 1, and the eject holes or lit outlanes add the currently lit card. Advance Card rollovers rotate that card. Stay at 21 or below, because exceeding 21 opens the right recovery gate but loses the hand if the ball drains.",
+      "simpleOverview": "Build the hand toward 20 or 21. Use the top rollovers for 10-point jumps, then use the center bumper or standup as safer 1-point finishers. Take an eject hole or lit outlane only when its lit card cannot bust the hand. At 21, stop adding cards and accept the drain resolution only when the configured 300-point and Shoot Again or replay award is worth it.",
+      "summary": "Use 10-point lanes early and 1-point center switches late. Avoid lit card-value holes and outlanes when they can push the hand over 21, and never bust intentionally just to open the right gate.",
+      "quickInfo": [
+        {
+          "name": "Top rollovers",
+          "summary": "Each adds 10 to the player's card score."
+        },
+        {
+          "name": "Center switches",
+          "summary": "The center bumper and standup add 1, making them useful finishers near 21."
+        },
+        {
+          "name": "Lit card value",
+          "summary": "The eject holes and lit outlanes add the card currently selected around the center card display."
+        },
+        {
+          "name": "Drain resolution",
+          "summary": "A hand at 21 receives the configured exact-21 award; otherwise the player must beat the dealer without busting."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the player and dealer card scores before choosing another scoring switch."
+        },
+        {
+          "text": "Use the top rollovers for 10-point progress while the hand is low enough that another 10 cannot bust."
+        },
+        {
+          "text": "Near 21, favor the center bumper or standup for single-point progress."
+        },
+        {
+          "text": "Before entering an eject hole or lit outlane, confirm that its displayed card value keeps the hand at 21 or below."
+        },
+        {
+          "text": "At 21, stop adding cards and take the drain resolution only when the configured award makes that exchange worthwhile."
+        },
+        {
+          "text": "If the hand has already busted, use the opened right gate only as an opportunistic shooter-lane recovery; do not aim to bust for it."
+        }
+      ],
+      "buildsToward": {
+        "title": "A safe 20- or 21-point hand",
+        "steps": [
+          {
+            "text": "Build the first 10 or 20 points through the top rollovers."
+          },
+          {
+            "text": "Finish with the center 1-point switches or a safe lit card value."
+          },
+          {
+            "text": "Resolve the hand without taking another switch that can bust it."
+          }
+        ]
+      },
+      "cautions": [
+        {
+          "issue": "A score above 21 opens the right gate, but the gate may open too late to save the ball and a drain loses the busted hand.",
+          "response": "Treat the gate as a recovery chance after an accidental bust, never as the goal of a deliberate shot.",
+          "sourceUrl": "https://www.youtube.com/watch?v=2aRYVaAwC9s"
+        },
+        {
+          "issue": "The factory exact-21 and dealer-win awards can be converted or disabled for tournament play.",
+          "response": "Confirm Shoot Again, replay, point conversion, ball count, and dealer behavior before valuing a deliberate drain resolution.",
+          "sourceUrl": "https://pinballaustralia.com/PDF/Williams_1968_Lady_Luck_Instruction_Manual.pdf"
+        }
+      ],
+      "machineSetup": [
+        "Confirm exact Williams Lady Luck model 341, ball count, dealer behavior, and whether exact 21 or beating the dealer awards Shoot Again, a replay, points, or no award.",
+        "Test the player and dealer score units, both 10-point top rollovers, center 1-point bumper and standup, both eject holes, lit outlanes, Advance Card rollovers and card stepper, right recovery gate, shooter-lane return, Shoot Again lamp, flippers, and tilt response."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

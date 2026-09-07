@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVw2",
+  "title": "Farfalla",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Farfalla instruction cards",
+      "url": "https://www.zaccaria-pinball.com/gen2/farfalla/Cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Farfalla rules",
+        "url": "https://www.zaccaria-pinball.com/rulesheets/farfalla.html"
+      },
+      {
+        "label": "Farfalla operator settings",
+        "url": "https://www.zaccaria-pinball.com/gen2/farfalla/settings.html"
+      },
+      {
+        "label": "Farfalla operator manual",
+        "url": "https://www.zaccaria-pinball.com/gen2/farfalla/Zaccaria_1983_Farfalla_Manual.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Farfalla links its red, yellow, and blue target groups to three Special ladders and REACT outlane protection. Complete all three colors, then hit the Multi Special target for the combined award. On the upper level, knock down every yellow target before the ball leaves to light the upper-left Special. Spell L-O-V-E for Bonus X, and use the Special Bonus collect when lit to take the accumulated bonus and advance Multi Special.",
+      "simpleOverview": "Complete the red, yellow, and blue target groups, then hit Multi Special after all three colors are ready. Clear all yellow targets during one upper-playfield visit for the upper-left Special. Spell L-O-V-E for Bonus X, and take the lit Special Bonus collect for the stored bonus.",
+      "summary": "Stay with the color group closest to completion. Finish all three colors before shooting Multi Special, and use a controlled upper-playfield visit to clear yellow targets without leaving early.",
+      "quickInfo": [
+        {
+          "name": "Build Color Specials",
+          "summary": "Complete the red, yellow, and blue target groups."
+        },
+        {
+          "name": "Collect Multi Special",
+          "summary": "Finish all three colors, then hit Multi Special."
+        },
+        {
+          "name": "Upper Special",
+          "summary": "Clear every yellow target before leaving the upper level."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Spell L-O-V-E."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the red, yellow, and blue target groups to advance their Special ladders and light REACT.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After all three colors are complete, hit the Multi Special target to collect the combined award.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "On the upper playfield, knock down every yellow target before the ball leaves to light the upper-left Special.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Spell L-O-V-E to advance Bonus X; take Special Bonus when lit to collect the built bonus and advance Multi Special.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build the orange route",
+          "when": "Use this when a color bank is dangerous or has just reset.",
+          "steps": [
+            {
+              "text": "Complete the orange three-bank to advance Orange Special.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the color groups when one is within a safe completion.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Finish Multi Special",
+        "steps": [
+          {
+            "text": "Complete each color group rather than spreading hits evenly across all three.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Once red, yellow, and blue are ready, prioritize the Multi Special target.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check color-bank difficulty, Special Bonus requirements, Multi Special requirements, REACT behavior, and Special awards.",
+        "Test every colored target, Multi Special target, upper yellow bank and upper-left lane, L-O-V-E lanes, orange bank, Special Bonus collect, and REACT buttons."
+      ],
+      "termStyles": [
+        {
+          "label": "Color Specials",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multi Special",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Special Bonus",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Upper yellow progress depends on keeping the ball on the upper level.",
+          "response": "Favor control over speed; leaving before the bank is clear loses the immediate Special opportunity.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/rulesheets/farfalla.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "GrZxD",
+  "title": "Attila the Hun",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Attila the Hun",
+      "url": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Attila the Hun machine guide",
+        "url": "https://www.kineticist.com/games/pinball/attila-the-hun"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build the center grid by spreading shots among the six A-T-T-I-L-A drops, three H-U-N lanes, and captive ball. Prefer a 50,000-point column, then protect the resulting end-of-ball bonus.",
+      "quickInfo": [
+        {
+          "name": "Center grid",
+          "summary": "The 4-by-3 grid records the six drop targets, three top lanes, and three captive-ball hits."
+        },
+        {
+          "name": "Grid lines",
+          "summary": "A completed row scores 25,000, while a completed column scores 50,000."
+        },
+        {
+          "name": "A-T-T-I-L-A drops",
+          "summary": "Each of the six drop targets fills its matching grid position and adds base bonus."
+        },
+        {
+          "name": "H-U-N lanes",
+          "summary": "Completing the three top lanes advances the bonus multiplier as well as filling the grid."
+        },
+        {
+          "name": "T-H-E captive ball",
+          "summary": "Three captive-ball hits complete T-H-E and advance the bonus multiplier."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before plunging, read the center grid and choose the H-U-N lane that advances the best column."
+        },
+        {
+          "text": "Plunge for that needed H-U-N lane."
+        },
+        {
+          "text": "When the ball reaches a flipper, identify the shortest unfinished 50,000-point column."
+        },
+        {
+          "text": "Hit only the A-T-T-I-L-A drop target or captive-ball letter needed for that column."
+        },
+        {
+          "text": "Send a controlled ball back to the top when a missing H-U-N lane is the next column item."
+        },
+        {
+          "text": "After completing a column, choose the next line with the most already-filled positions."
+        },
+        {
+          "text": "Complete H-U-N or T-H-E when either set is one shot from a bonus-multiplier advance.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Once the bonus is strong, favor the safe spinner route and protect the end-of-ball value."
+        }
+      ],
+      "fallback": {
+        "title": "Safe spinner survival",
+        "when": "Use this plan when the needed drop or captive-ball rebound is not controllable.",
+        "steps": [
+          {
+            "text": "Stop shooting the exposed target that returned dangerously."
+          },
+          {
+            "text": "Use the spinner route to move the ball away from the lower targets."
+          },
+          {
+            "text": "Read the center grid while the ball is in the upper playfield."
+          },
+          {
+            "text": "Resume the main plan only after the ball returns to a controlled flipper."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Finish a 25,000-point row",
+          "when": "Use this plan when a row needs one item and every column needs several.",
+          "steps": [
+            {
+              "text": "Identify the row with exactly one empty grid position."
+            },
+            {
+              "text": "Match that position to its drop target, top lane, or captive-ball hit."
+            },
+            {
+              "text": "Take the single completion shot."
+            },
+            {
+              "text": "Return to column-first planning after the row scores."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Completed grid with multiplied bonus",
+        "steps": [
+          {
+            "text": "Fill grid positions by collecting all six A-T-T-I-L-A drops."
+          },
+          {
+            "text": "Complete all three H-U-N top lanes."
+          },
+          {
+            "text": "Complete three T-H-E captive-ball hits."
+          },
+          {
+            "text": "Take 50,000-point columns before 25,000-point rows when both are available."
+          },
+          {
+            "text": "Protect the accumulated end-of-ball bonus after the high-value lines are complete."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Grid-first shot selection",
+          "instruction": "Read the center grid before each controlled shot. Choose the item that completes a column or leaves one item in a column.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+        },
+        {
+          "name": "Balanced objective rotation",
+          "instruction": "Move among the drops, top lanes, and captive ball instead of repeating an item whose grid position is already filled.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+        },
+        {
+          "name": "Spinner escape",
+          "instruction": "Use the spinner when an exposed scoring target has produced an unsafe rebound and the ball needs a safer route upward.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Captive-ball rebounds can drain.",
+          "response": "Shoot the captive ball only for an unfilled grid position or a needed T-H-E completion, then track the rebound immediately.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+        },
+        {
+          "issue": "Drop-target rebounds can drain.",
+          "response": "Do not repeat a completed letter. Shoot only the target that improves the current grid line and abandon the bank after a dangerous return.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+        },
+        {
+          "issue": "Repeating one feature leaves the high-value grid incomplete.",
+          "response": "Spread shots across all three objective groups and prioritize columns, which score twice as much as rows.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrZxD-MLO4Y"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the exact 1984 Game Plan game, ball count, Bonus X, Extra Ball, Special, and replay treatment.",
+        "Read the center grid and verify that every A-T-T-I-L-A, H-U-N, and T-H-E lamp registers before planning a line.",
+        "Test the captive-ball and drop-target rebounds, spinner return, upper-playfield exits, and tilt sensitivity before choosing the route."
+      ],
+      "simpleOverview": "Attila the Hun fills a center grid from six A-T-T-I-L-A drops, three H-U-N lanes, and three captive-ball hits. Spread shots among those three groups, prioritize completed 50,000-point columns over 25,000-point rows, and preserve the resulting end-of-ball bonus.",
+      "overview": "Attila the Hun records six A-T-T-I-L-A drops, three H-U-N lanes, and three T-H-E captive-ball hits in a four-by-three grid. Complete each group while seeking 50,000-point columns before 25,000-point rows; the H-U-N lanes and captive ball also advance Bonus X. After the valuable lines are complete, protect the accumulated end-of-ball bonus.",
+      "machineSetup": [
+        "Confirm the exact 1984 Game Plan game, ball count, Bonus X, Extra Ball, Special, and replay treatment.",
+        "Read the center grid and verify that every A-T-T-I-L-A, H-U-N, and T-H-E lamp registers before planning a line.",
+        "Test the captive-ball and drop-target rebounds, spinner return, upper-playfield exits, and tilt sensitivity before choosing the route."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

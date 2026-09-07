@@ -1,0 +1,146 @@
+# Alice's Adventures in Wonderland
+
+[View on FlutterCatch](https://fluttercatch.com/machine/alices-adventures-in-wonderland) · [Propose a correction](https://github.com/jaronsjarons/fluttercatch-rulesets/issues/new/choose)
+
+Generated reading copy. Edit [ruleset.json](ruleset.json), [simple.json](simple.json), or [mappings.json](mappings.json) to contribute.
+
+## Simple strategy
+
+### Summary Title
+
+The goal
+
+### Summary
+
+Use pop-bumper hits to select a story mode, shoot the ramp to qualify it, and shoot the scoop to begin. Complete EATME and collect its playfield multiplier at the left orbit first when safe. Between modes, build Jabberwocky locks and WONDERS progress.
+
+### Steps
+
+- Use pop-bumper hits to move the lit mode selection to the story mode you want to play.
+
+- Shoot the ramp once to qualify that mode. The scoop becomes the start shot.
+
+- Before taking the scoop, complete the EATME side targets and shoot the left orbit if the multiplier is ready and the shot is under control.
+
+- Shoot the scoop to begin the selected story mode, then follow its flashing shots. The rollover under the clock adds mode time until the machine reaches its cap.
+
+- Between modes, hit both ramp targets to activate Jabberwocky locks and send three balls through the right orbit. Starting Jabberwocky also awards a WONDERS letter.
+
+- Use Quick Croquet as the shorter side route: hit the main captive ball five times outside a mode, then complete five jackpot shots for its WONDERS letter.
+
+### Quick Info
+
+- Start a story mode
+
+Summary
+
+Use pop-bumper hits to change the selection, shoot the ramp to qualify it, then shoot the scoop to start it.
+
+- EATME multiplier
+
+Summary
+
+Complete the two side target banks to spell EATME, then shoot the left orbit for a 2X, 3X, or 4X playfield multiplier.
+
+- Jabberwocky Multiball
+
+Summary
+
+Hit the left- and right-ramp targets to activate locks, then shoot the right orbit for each of three locks.
+
+## Full strategy
+
+### Overview
+
+In Alice, qualify a selected story mode at the ramp and start it at the scoop. Build EATME before the start when possible, then collect its playfield multiplier at the left orbit and play the mode under the boost.
+
+### Simple Overview
+
+Shoot the ramp to qualify the selected story mode, then shoot the scoop to start it. Complete EATME and collect at the left orbit first when you can safely add a playfield multiplier.
+
+### Summary
+
+Use pop-bumper hits to select a story mode, shoot the ramp to qualify it, and shoot the scoop to begin. Complete EATME and collect its playfield multiplier at the left orbit first when safe. Between modes, build Jabberwocky locks and WONDERS progress.
+
+### Quick Info
+
+- Start a story mode
+
+Summary
+
+Use pop-bumper hits to change the selection, shoot the ramp to qualify it, then shoot the scoop to start it.
+
+- EATME multiplier
+
+Summary
+
+Complete the two side target banks to spell EATME, then shoot the left orbit for a 2X, 3X, or 4X playfield multiplier.
+
+- Jabberwocky Multiball
+
+Summary
+
+Hit the left- and right-ramp targets to activate locks, then shoot the right orbit for each of three locks.
+
+- Quick Croquet Multiball
+
+Summary
+
+Hit the main-playfield captive ball five times while no mode is running.
+
+### Steps
+
+- Use pop-bumper hits to move the lit mode selection to the story mode you want to play.
+
+- Shoot the ramp once to qualify that mode. The scoop becomes the start shot.
+
+- Before taking the scoop, complete the EATME side targets and shoot the left orbit if the multiplier is ready and the shot is under control.
+
+- Shoot the scoop to begin the selected story mode, then follow its flashing shots. The rollover under the clock adds mode time until the machine reaches its cap.
+
+- Between modes, hit both ramp targets to activate Jabberwocky locks and send three balls through the right orbit. Starting Jabberwocky also awards a WONDERS letter.
+
+- Use Quick Croquet as the shorter side route: hit the main captive ball five times outside a mode, then complete five jackpot shots for its WONDERS letter.
+
+### Builds Toward
+
+Queen of Hearts
+
+Steps
+
+- Collect all seven WONDERS letters from story modes and side features.
+
+- Start all six story modes; they do not all have to be completed.
+
+- Start Jabberwocky Multiball and collect all four Suits of Wonderland.
+
+- When the requirements are complete, enter the Queen of Hearts showdown and defeat the remaining guards.
+
+### Cautions
+
+- Issue
+
+Version 1.00 behavior can differ from the current 1.05 release.
+
+Response
+
+Use these physical start paths, but read the display for later scoring, timing, or balance changes.
+
+Source Url
+
+[Source](https://dutchpinball.com/games/alices-adventures-in-wonderland)
+
+## Sources
+
+- [Official Dutch Pinball Alice rulesheet (software 1.00)](https://cms.dutchpinball.com/uploads/AAIW_20_Rulesheet_4e45b2c32e.pdf)
+- [Official Dutch Pinball Alice page and current 1.05 download](https://dutchpinball.com/games/alices-adventures-in-wonderland)
+- [Alice community rulesheet](https://tiltforums.com/t/alice-s-adventures-in-wonderland-rulesheet/10083)
+- [June 2026 exact-machine Alice gameplay](https://www.youtube.com/watch?v=H9ecDTpbMAk)
+
+## Playfield
+
+[View the current playfield image](https://img.opdb.org/78d46059-b1ee-4b93-beec-6ae4d0f5d122-large.jpg).
+
+[Image credit and rights](image.json) · [Crop recipe](crop.json) · [Mappings](mappings.json)
+
+Ruleset text and mapping data: CC BY-SA 4.0, FlutterCatch contributors. External images retain their separate rights.

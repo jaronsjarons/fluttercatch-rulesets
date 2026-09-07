@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "G4kBL",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "The Lost World: Jurassic Park spreads the trip to San Diego across Raptor, Baby T-Rex, GPS, Mobile Lab, and Site B, while the dinosaur-brain drops build a separate Jeep-locked Multiball. Complete all five features to light the scoop for San Diego; Multiball can protect difficult shots, but do not assume every timed feature stacks with it.",
+        "simpleOverview": "Raptor, Baby T-Rex, GPS, Mobile Lab, and Site B each have their own visible qualification. Complete all five to light the scoop for San Diego, while using the flashing dinosaur-brain drop targets to build the separate Jeep Multiball.",
+        "summary": "Work on whichever of the five feature starts is safely available, and hit the flashing dinosaur-brain drop target when misses are controlled. Load three balls into the Jeep for Multiball, and after all five feature lamps are complete, shoot the flashing scoop for San Diego.",
+        "quickInfo": [
+          {
+            "name": "Raptor",
+            "summary": "Hit the cycling lit RAPTOR targets, then hit another flashing Raptor target to begin two-ball play. Alternate the inner-orbit Jackpot with the target bank to finish."
+          },
+          {
+            "name": "Baby T-Rex",
+            "summary": "Shoot the scoop for Lost World Mystery, then make two more scoop shots to hatch the egg. Return to the scoop three times during the timed feature."
+          },
+          {
+            "name": "GPS and Site B",
+            "summary": "Spell GPS on both ramps and return to a flashing ramp to start GPS. Complete SITE B and hit another flashing target to start Site B."
+          },
+          {
+            "name": "Mobile Lab",
+            "summary": "Complete T-R-E-X in the paired top lanes. Use each side’s flipper to move only that side’s lit lane, then make the displayed spinner count after the feature starts."
+          },
+          {
+            "name": "Jeep Multiball",
+            "summary": "Hit the flashing dinosaur-brain drop until all brain inserts are solid, then shoot the lit lock orbits so the snagger loads the Jeep."
+          }
+        ],
+        "steps": [
+          {
+            "text": "For Raptor, hit the cycling lit RAPTOR targets. After the bank flashes, hit another Raptor target to start two-ball play; shoot the inner orbit for a Jackpot, return to the targets, then collect the next inner-orbit Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "For Baby T-Rex, shoot the scoop for Lost World Mystery, then shoot it twice more to hatch the egg. Return to the scoop three times before the timed value expires.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For GPS, spell G-P-S on each ramp, then shoot either flashing ramp to start. Keep making the displayed number of ramp shots; later GPS rounds can require more than the first.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For Mobile Lab, use the flippers to complete T-R-E-X in the paired top lanes. After it starts, make the displayed spinner count to add a ball, then collect the displayed Jackpots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "For Site B, complete S-I-T-E-B and hit another flashing target. During the feature, move the lit position with the flippers and hit the adjacent target indicated by the display three times.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Between feature shots, hit the flashing dinosaur-brain drop until all brain inserts are solid. Shoot the lit lock orbits until the Jeep holds three balls and Multiball starts.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Jeep Multiball, shoot the two ramps, then the two orbits, then the inner loop for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "San Diego",
+          "steps": [
+            {
+              "text": "Complete Raptor, Baby T-Rex, GPS, Mobile Lab, and Site B; starting a feature is not enough.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After the fifth feature completes and every major shot flashes, shoot the scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the flashing shots and display during San Diego; its complete scoring rules are not established well enough to publish a narrower route.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Raptor",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "Baby T-Rex",
+            "tone": "teal",
+            "kind": "mode"
+          },
+          {
+            "label": "GPS",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Mobile Lab",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "Site B",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "scoop",
+            "label": "Lost World scoop",
+            "description": "The upper scoop used by Lost World Mystery, Baby T-Rex, and the final San Diego start.",
+            "precision": "unverified"
+          },
+          {
+            "term": "dinosaur-brain drop",
+            "label": "Brain lock-progress drop target",
+            "description": "The central flashing drop target whose brain inserts build the Jeep locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "inner loop",
+            "label": "Inner-orbit and Super Jackpot shot",
+            "description": "The tight central loop used for Raptor Jackpots and the Jeep Multiball Super Jackpot.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Later feature rounds increase some qualification or completion counts.",
+            "response": "Read the display for the current GPS, Mobile Lab, and lock requirements instead of applying the first-round count to the whole game.",
+            "sourceUrl": "https://www.youtube.com/watch?v=iVs5Ye8h5R4"
+          },
+          {
+            "issue": "The walkthrough briefly questions whether GPS stacks with Multiball.",
+            "response": "GPS can remain active afterward, but stacking can vary by ROM or game state; do not assume a universal rule.",
+            "sourceUrl": "https://www.youtube.com/watch?v=iVs5Ye8h5R4"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Work on whichever of the five feature starts is safely available, and hit the flashing dinosaur-brain drop target when misses are controlled. Load three balls into the Jeep for Multiball, and after all five feature lamps are complete, shoot the flashing scoop for San Diego.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "For Raptor, hit the cycling lit RAPTOR targets. After the bank flashes, hit another Raptor target to start two-ball play; shoot the inner orbit for a Jackpot, return to the targets, then collect the next inner-orbit Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "For Baby T-Rex, shoot the scoop for Lost World Mystery, then shoot it twice more to hatch the egg. Return to the scoop three times before the timed value expires.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For GPS, spell G-P-S on each ramp, then shoot either flashing ramp to start. Keep making the displayed number of ramp shots; later GPS rounds can require more than the first.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For Mobile Lab, use the flippers to complete T-R-E-X in the paired top lanes. After it starts, make the displayed spinner count to add a ball, then collect the displayed Jackpots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "For Site B, complete S-I-T-E-B and hit another flashing target. During the feature, move the lit position with the flippers and hit the adjacent target indicated by the display three times.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Between feature shots, hit the flashing dinosaur-brain drop until all brain inserts are solid. Shoot the lit lock orbits until the Jeep holds three balls and Multiball starts.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Jeep Multiball, shoot the two ramps, then the two orbits, then the inner loop for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raptor",
+            "summary": "Hit the cycling lit RAPTOR targets, then hit another flashing Raptor target to begin two-ball play. Alternate the inner-orbit Jackpot with the target bank to finish."
+          },
+          {
+            "name": "Baby T-Rex",
+            "summary": "Shoot the scoop for Lost World Mystery, then make two more scoop shots to hatch the egg. Return to the scoop three times during the timed feature."
+          },
+          {
+            "name": "GPS and Site B",
+            "summary": "Spell GPS on both ramps and return to a flashing ramp to start GPS. Complete SITE B and hit another flashing target to start Site B."
+          }
+        ]
+      }
+    }
+  ]
+}

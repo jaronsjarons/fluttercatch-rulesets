@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Dz7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On original Williams FunHouse L-9, use the Mirror and center ramp to build the clock, prepare Frenzy, lock two balls, and start Midnight Multiball at Rudy.",
+        "steps": [
+          {
+            "text": "Soft-plunge through the jet-advance lane. Test the bumper return, center-ramp feed, Hidden Hallway, and Rudy shot."
+          },
+          {
+            "text": "Collect useful Mystery Mirror awards at the Wind Tunnel. Give priority to Jet Bumpers at Maximum.",
+            "modeNotes": [
+              "Mystery Mirror: Hit Rudy's jaw to light it. The far-right inlane can also light it for about four seconds.",
+              "Jet hits move the flashing selection. The Wind Tunnel collects the selected award.",
+              "Jet Bumpers at Maximum: All three jets flash for the rest of the ball. Each jet hit then adds 10 clock minutes."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build the clock to 11:30. Use the center ramp and flashing jets when they return safely.",
+            "modeNotes": [
+              "Center ramp: Adds 15, 20, 25, then 30 minutes on successive shots during the ball.",
+              "Wind Tunnel: Adds 15 minutes. Hidden Hallway, trapdoor, or trapdoor loop: Adds 10 minutes.",
+              "Lit jet: Adds 5 minutes. Flashing jet: Adds 10 minutes. Manhole: Adds 30 minutes."
+            ]
+          },
+          {
+            "text": "Before the second lock, collect Light Frenzy at the Steps. Then shoot the lit trapdoor to start Frenzy.",
+            "modeNotes": [
+              "Frenzy: A 20-second feature. Qualifying switches add 50,000 to a stored Frenzy Bonus.",
+              "The game pays Frenzy Bonus at the end of the ball. A tilt loses it.",
+              "Another Frenzy award adds 20 seconds. Frenzy can run during Midnight Multiball.",
+              "In the 2015 Louisville Arcade Expo match, Zach Sharpe lit Frenzy before the second lock. That order lets Midnight Multiball's switch traffic build the stored pot."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "At 11:30, shoot Hidden Hallway to lock ball 1 and advance the clock to 11:45.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Hidden Hallway again to lock ball 2 and advance the clock to midnight.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Rudy's open mouth with the upper flipper. This scores 1,000,000 and starts three-ball Midnight Multiball.",
+            "modeNotes": [
+              "Midnight Multiball: The trapdoor collects Million+. The center ramp relights it.",
+              "The first Million+ is 2,000,000. Each trapdoor collect raises the next value by 1,000,000, up to 10,000,000.",
+              "The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cradle the two remaining balls, then alternate the Trap Door collect and center-ramp relight.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If no Million+ was collected, shoot Hidden Hallway during its short relight for one two-ball restart. One collected Million+ removes this restart.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, use Jet Bumpers at Maximum to rebuild the reset clock."
+          }
+        ],
+        "fallback": {
+          "title": "Mirror and Super Frenzy",
+          "when": "Use this plan when Rudy, the trapdoor, or a lock feed is not reliable.",
+          "steps": [
+            {
+              "text": "Soft-plunge and relight Mystery Mirror through Rudy's jaw or the far-right inlane.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect all six Mirror awards at the Wind Tunnel.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect Mirror again to start Super Frenzy. Use the safest repeatable switches and jets.",
+              "modeNotes": [
+                "Super Frenzy: Starts with a 1,500,000 stored pot. Qualifying hits add 100,000 for 20 seconds.",
+                "A normal Frenzy award adds 20 seconds and keeps Super Frenzy active.",
+                "The game pays the pot at the end of the ball. A tilt loses it."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Quick Multiball",
+            "when": "Use this plan when the Mirror offers Quick Multiball early.",
+            "steps": [
+              {
+                "text": "Collect Quick Multiball at the Wind Tunnel. Shoot Rudy for 1,000,000 per hit.",
+                "modeNotes": [
+                  "Quick Multiball: Serves a second ball. It ends when one ball remains.",
+                  "The clock cannot advance past 11:25. The trapdoor and Mirror are disabled until the feature ends."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the two balls to test feeds and build clock time.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Light Million at midnight",
+            "when": "Use this plan when Light Million appears before Midnight Multiball.",
+            "steps": [
+              {
+                "text": "Collect Light Million from the Mirror. Save it for the Rudy shot that starts Midnight Multiball.",
+                "modeNotes": [
+                  "Hit Rudy while Light Million is on to score 1,000,000 and consume the light."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "The start shot then scores its normal 1,000,000 plus the stored Light Million.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Super Frenzy and repeat Midnight Multiball",
+          "steps": [
+            {
+              "text": "Collect all six Mystery Mirror awards to qualify Super Frenzy.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After a completed Midnight Multiball, use maximum jets to rebuild the reset clock.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Soft plunge",
+            "instruction": "Use a soft plunge to advance a jet and receive a slower feed. Use the full Hideout plunge only after its fast return is known.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=85s"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "On a clean feed, leave the first flipper down and let the ball bounce to the other flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=107s",
+            "techniqueSlug": "dead-bounce"
+          },
+          {
+            "name": "Banked Wind Tunnel",
+            "instruction": "From the left flipper, bank the ball off the Superdog targets and into the Wind Tunnel.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=134s"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "Use a tested post transfer to move the ball into position for Hidden Hallway. A small finishing tap can complete the transfer.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=250s",
+            "techniqueSlug": "post-pass"
+          },
+          {
+            "name": "Ramp-to-lock sequence",
+            "instruction": "Use the center-ramp return for a direct Hidden Hallway shot. The same sequence relights and collects Million+.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=639s"
+          },
+          {
+            "name": "Cradle separation",
+            "instruction": "Hold one ball on a flipper. Shoot the other ball at the trapdoor or center ramp.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=831s",
+            "techniqueSlug": "cradle-separation"
+          },
+          {
+            "name": "Shatz pass",
+            "instruction": "Test the alley pass before you depend on it. The ball can run behind the flipper or out of the return lane.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=1085s",
+            "techniqueSlug": "shatz-pass"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A hard Hidden Hallway shot can jump or reject past the lock diverter.",
+            "response": "After one clean reject, test a slower or banked entry. If the lock still rejects, pivot to Mirror and Super Frenzy instead of forcing Midnight Multiball.",
+            "sourceUrl": "https://pinballvideos.com/v/752/17933"
+          },
+          {
+            "issue": "The slingshots can send the ball out of control.",
+            "response": "Reduce sling-to-sling play. Use a trap or a tested dead bounce when the feed permits it.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=546s"
+          },
+          {
+            "issue": "A full-power Hideout plunge returns quickly.",
+            "response": "Start with the soft plunge. Use full power only after you know the return.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=272s"
+          },
+          {
+            "issue": "Trapdoor timing changes with upper-flipper strength.",
+            "response": "Test one Rudy and trapdoor sequence before you build the full plan around Million+.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=639s"
+          },
+          {
+            "issue": "A tilt removes the complete stored Frenzy or Super Frenzy pot.",
+            "response": "Use smaller nudges after Frenzy starts. Protect the end-of-ball payout.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=1165s"
+          },
+          {
+            "issue": "An alley pass can run behind the flipper and drain.",
+            "response": "Use it only after a successful copy test. Use a normal transfer when the path is not clean.",
+            "sourceUrl": "https://www.youtube.com/watch?v=wI8Z6R1ss8I&t=1085s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the Mirror and center ramp to build the clock."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Collect all six Mystery Mirror awards to qualify Super Frenzy."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Mirror and Super Frenzy: Use this plan when Rudy, the trapdoor, or a lock feed is not reliable."
+          },
+          {
+            "name": "Code scope",
+            "summary": "This route covers original Williams L-9; Tournament Mode can force Quick Multiball as the first Mirror award."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original Williams FunHouse L-9 and exclude remake or conversion rules.",
+          "Test the Mirror, center ramp, Rudy, Wind Tunnel, lock, and plunge feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Mirror",
+            "label": "Mirror",
+            "description": "Left feature shot used to advance the clock and collect awards.",
+            "precision": "unverified",
+            "context": "Left feature shot used to advance the clock and collect awards."
+          },
+          {
+            "term": "center ramp",
+            "label": "Center ramp",
+            "description": "Clock-advance and main scoring route.",
+            "precision": "unverified",
+            "context": "Clock-advance and main scoring route."
+          },
+          {
+            "term": "Rudy",
+            "label": "Rudy shot",
+            "description": "Center head shot used to advance and start Midnight Multiball.",
+            "precision": "unverified",
+            "context": "Center head shot used to advance and start Midnight Multiball."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Louisville Arcade Expo 2015 final, Zach Sharpe advanced the clock to 11:30, prepared Frenzy, then locked balls and used Rudy and the Trap Door during Multiball."
+          ]
+        },
+        "simpleOverview": "Funhouse uses Mystery Mirror and the center ramp to build the clock toward Midnight Multiball. Collect useful Mirror awards, prepare Frenzy before the second lock, then lock twice at Hidden Hallway and shoot Rudy at midnight. Alternate the Trap Door collect with the center-ramp relight.",
+        "overview": "Funhouse uses Mystery Mirror and the center ramp to build the clock toward Midnight Multiball. Build 11:30 and Frenzy before taking both locks, then shoot Rudy for Midnight Multiball. Cradle extra balls and alternate Trap Door Million+ with the center-ramp relight, using maximum jets to rebuild afterward.",
+        "machineSetup": [
+          "Confirm original Williams FunHouse L-9 and exclude remake or conversion rules.",
+          "Test the Mirror, center ramp, Rudy, Wind Tunnel, lock, and plunge feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "On original Williams FunHouse L-9, use the Mirror and center ramp to build the clock, prepare Frenzy, lock two balls, and start Midnight Multiball at Rudy.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Soft-plunge through the jet-advance lane. Test the bumper return, center-ramp feed, Hidden Hallway, and Rudy shot."
+          },
+          {
+            "text": "Collect useful Mystery Mirror awards at the Wind Tunnel. Give priority to Jet Bumpers at Maximum.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Mystery Mirror: Hit Rudy's jaw to light it. The far-right inlane can also light it for about four seconds.",
+              "Jet hits move the flashing selection. The Wind Tunnel collects the selected award.",
+              "Jet Bumpers at Maximum: All three jets flash for the rest of the ball. Each jet hit then adds 10 clock minutes."
+            ]
+          },
+          {
+            "text": "Build the clock to 11:30. Use the center ramp and flashing jets when they return safely.",
+            "details": [
+              "Center ramp: Adds 15, 20, 25, then 30 minutes on successive shots during the ball.",
+              "Wind Tunnel: Adds 15 minutes. Hidden Hallway, trapdoor, or trapdoor loop: Adds 10 minutes.",
+              "Lit jet: Adds 5 minutes. Flashing jet: Adds 10 minutes. Manhole: Adds 30 minutes."
+            ]
+          },
+          {
+            "text": "Before the second lock, collect Light Frenzy at the Steps. Then shoot the lit trapdoor to start Frenzy.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Frenzy: A 20-second feature. Qualifying switches add 50,000 to a stored Frenzy Bonus.",
+              "The game pays Frenzy Bonus at the end of the ball. A tilt loses it.",
+              "Another Frenzy award adds 20 seconds. Frenzy can run during Midnight Multiball.",
+              "In the 2015 Louisville Arcade Expo match, Zach Sharpe lit Frenzy before the second lock. That order lets Midnight Multiball's switch traffic build the stored pot."
+            ]
+          },
+          {
+            "text": "At 11:30, shoot Hidden Hallway to lock ball 1 and advance the clock to 11:45.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Hidden Hallway again to lock ball 2 and advance the clock to midnight.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Rudy's open mouth with the upper flipper. This scores 1,000,000 and starts three-ball Midnight Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Midnight Multiball: The trapdoor collects Million+. The center ramp relights it.",
+              "The first Million+ is 2,000,000. Each trapdoor collect raises the next value by 1,000,000, up to 10,000,000.",
+              "The feature ends when one ball remains."
+            ]
+          },
+          {
+            "text": "Cradle the two remaining balls, then alternate the Trap Door collect and center-ramp relight.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If no Million+ was collected, shoot Hidden Hallway during its short relight for one two-ball restart. One collected Million+ removes this restart.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, use Jet Bumpers at Maximum to rebuild the reset clock."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the Mirror and center ramp to build the clock."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Collect all six Mystery Mirror awards to qualify Super Frenzy."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Mirror and Super Frenzy: Use this plan when Rudy, the trapdoor, or a lock feed is not reliable."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Mirror and Super Frenzy",
+          "when": "Use this plan when Rudy, the trapdoor, or a lock feed is not reliable.",
+          "steps": [
+            {
+              "text": "Soft-plunge and relight Mystery Mirror through Rudy's jaw or the far-right inlane.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect all six Mirror awards at the Wind Tunnel.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect Mirror again to start Super Frenzy. Use the safest repeatable switches and jets.",
+              "kinds": [
+                "mode"
+              ],
+              "details": [
+                "Super Frenzy: Starts with a 1,500,000 stored pot. Qualifying hits add 100,000 for 20 seconds.",
+                "A normal Frenzy award adds 20 seconds and keeps Super Frenzy active.",
+                "The game pays the pot at the end of the ball. A tilt loses it."
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "An alley pass can run behind the flipper and drain.",
+          "text": "Use it only after a successful copy test. Use a normal transfer when the path is not clean."
+        }
+      }
+    }
+  ]
+}

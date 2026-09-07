@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "GRozL",
+  "title": "Bugs Bunny's Birthday Ball",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bugs Bunny's Birthday Ball factory operator handbook",
+      "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Bugs%20Bunny%20Operators%20Handbook.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Independent preserved Bugs Bunny rules summary",
+        "url": "https://pinballnirvana.com/forums/resources/bugs-bunnys-birthday-ball-bally-1990-vp8.2811/"
+      },
+      {
+        "label": "Exact physical-machine layout and gameplay demonstration",
+        "url": "https://www.youtube.com/watch?v=Pl75l44Tphs"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "This is a single-ball feature game rather than a Multiball build. Work the center ramp through its Shopping Spree packages, use the reversed upper standups to raise the Tweety ramp award, and complete LOONEY TUNES to light the lower 1 Million collect. The Watchdog targets lead to the Daffy captured-ball award and relight Speedy's kickout.",
+      "simpleOverview": "Shoot the center ramp for Shopping Spree packages. Complete the three reversed square targets to light and raise Tweety's ramp award, and clear the timed drop bank to help spell LOONEY TUNES for the lower 1 Million shot.",
+      "summary": "Use the center ramp for Shopping Spree and its later Extra Ball, complete the three reversed square standups before collecting Tweety's ramp award, and clear the timed drop bank to spot LOONEY TUNES letters. The two round Watchdog targets light the Daffy captured ball.",
+      "quickInfo": [
+        {
+          "name": "Shopping Spree",
+          "summary": "The center ramp collects the current package. After a package, pop-bumper hits advance playfield bonus until the ball leaves that area."
+        },
+        {
+          "name": "Tweety Bonus",
+          "summary": "Complete the three reversed square standups to light and advance the Tweety ramp, then shoot the ramp to collect its current award."
+        },
+        {
+          "name": "Daffy captured ball",
+          "summary": "Hit the two flashing round Watchdog targets to flash the captured-ball award. Any captured-ball hit relights Speedy's kickout."
+        },
+        {
+          "name": "LOONEY TUNES",
+          "summary": "Complete the flashing letter targets. Clearing the timed drop bank before it resets spots a letter; the completed word lights a lower square target for 1 Million."
+        },
+        {
+          "name": "Birthday candles",
+          "summary": "Shoot the Bugs eject to blow out a random number of candles and collect the displayed award."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the flippers to lane-change the P-O-P top lanes and complete them for the next bonus multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the center ramp for the current Shopping Spree package. After a package, use the pop bumpers to raise playfield bonus until the ball leaves the bumper area.",
+          "kinds": [
+            "mode",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete the three reversed square standups on the upper mini-playfield to light and advance the Tweety ramp award, then shoot that ramp to collect it.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the two round Watchdog standups while they flash, then hit the Daffy captured ball for its award. Captured-ball hits also relight Speedy's kickout.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Clear the timed drop bank before it resets to spot a LOONEY TUNES letter, and finish the remaining flashing letters at their standups.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When LOONEY TUNES is complete, shoot the flashing lower square target for 1 Million.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Later Shopping Spree packages",
+        "steps": [
+          {
+            "text": "Keep returning to the center ramp after each package is collected.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the temporary pop-bumper window after each package to raise playfield bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Watch the ramp insert for the later package that lights Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Shopping Spree",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "Tweety Bonus",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "LOONEY TUNES",
+          "tone": "indigo",
+          "kind": "mode"
+        },
+        {
+          "label": "Daffy captured ball",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Bugs Bunny's Birthday Ball does not have a Multiball mode.",
+          "response": "Treat the installed second ball as part of the mechanism, not a lock or Multiball objective. Follow the lit single-ball features instead.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Bugs%20Bunny%20Operators%20Handbook.pdf"
+        },
+        {
+          "issue": "The Bugs eject and some lit awards are random.",
+          "response": "Take the displayed result; do not count on a particular candle, Honey Bunny, or package value.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Bugs%20Bunny%20Operators%20Handbook.pdf"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

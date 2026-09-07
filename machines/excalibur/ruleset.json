@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPbb",
+  "title": "Excalibur",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Excalibur",
+      "url": "https://rules.silverballmania.com/rules/GrPbb-MJZX6"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Excalibur rules and machine record",
+        "url": "https://www.kineticist.com/games/pinball/excalibur"
+      },
+      {
+        "label": "PinballCards Excalibur strategy",
+        "url": "https://pinballcards.net/excalibur-1988"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Knock down all four targets for each required lit color, shoot the center ramp to lock a ball, and plunge the replacement ball to start two-ball Multiball. During Multiball, repeat the center ramp; afterward, hit whichever drop target is flashing before its timer ends for Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Required target colors",
+          "summary": "The first Multiball requires all four targets in one lit color. Each later start adds another required color until all four colors are needed."
+        },
+        {
+          "name": "Skill plunge",
+          "summary": "Time the plunge to choose the first required color. The orange upper targets are commonly preferred because they are easier and return more safely than red."
+        },
+        {
+          "name": "Two-ball Multiball",
+          "summary": "Knock down all four targets for each required lit color, shoot the center ramp to lock, then plunge the replacement ball to begin two-ball play."
+        },
+        {
+          "name": "Center ramp",
+          "summary": "During Multiball, the ramp scores 100,000 and advances the Shield bonus multiplier."
+        },
+        {
+          "name": "Jackpot",
+          "summary": "Drop-target hits raise the Jackpot value. After Multiball, hit whichever drop target is flashing before the timer ends to collect it."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Time the plunge so orange lights first; the orange upper targets are usually safer than the red upper targets or the lower target banks."
+        },
+        {
+          "text": "Knock down all four targets for each required lit color. Later Multiballs require additional colors."
+        },
+        {
+          "text": "Shoot the center ramp to lock one ball."
+        },
+        {
+          "text": "Plunge the replacement ball to start two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the center ramp for 100,000 points and to advance the Shield bonus multiplier.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After Multiball ends, watch the drop targets and hit whichever target is flashing before the timer expires to collect Jackpot."
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated Multiballs and larger Jackpots",
+        "steps": [
+          {
+            "text": "Knock down all four targets for each required lit color."
+          },
+          {
+            "text": "Drop-target hits raise the Jackpot value."
+          },
+          {
+            "text": "Start two-ball Multiball at the center ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the center ramp or knock down all four targets of one color during Multiball to raise the Shield bonus multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After Multiball, hit whichever drop target is flashing to collect Jackpot."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Two-ball Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Shield bonus multiplier",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Jackpot",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A rejected center-ramp shot can drain between the flippers.",
+          "response": "Shoot the ramp only from control and stop after a dangerous reject.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPbb-MJZX6"
+        },
+        {
+          "issue": "The rubbers above the lower flippers do not kick the ball like slingshots.",
+          "response": "Read their first rebounds before relying on them to send the ball away from an outlane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrPbb-MJZX6"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Gottlieb Excalibur from 1988, ball count, Extra Ball or Special conversion, and Jackpot timer.",
+        "Test the center-ramp reject, upper-playfield exits, passive-rubber rebounds, and all four target banks."
+      ],
+      "simpleOverview": "Excalibur assigns one or more colors to four-target sets. Completing every required color lights a center-ramp lock; the replacement plunge starts two-ball Multiball, and the drop targets build a Jackpot collected only after Multiball ends.",
+      "overview": "Completing every required four-target color in Excalibur lights the center-ramp lock. Lock one ball and plunge to start two-ball Multiball. During Multiball, the center ramp scores 100,000 and advances the Shield bonus multiplier; afterward, hit the flashing drop target before the Jackpot timer expires.",
+      "machineSetup": [
+        "Confirm Gottlieb Excalibur from 1988, ball count, Extra Ball or Special conversion, and Jackpot timer.",
+        "Test the center-ramp reject, upper-playfield exits, passive-rubber rebounds, and all four target banks."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

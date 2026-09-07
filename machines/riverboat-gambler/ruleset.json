@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "G4E0z",
+  "title": "Riverboat Gambler",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Riverboat Gambler rules and strategy",
+      "url": "https://www.pinball.org/rules/riverboatgambler.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Riverboat Gambler operator handbook",
+        "url": "https://wwyss.ch/Arcades_Manuals/Manuals/Pinball/RIVERBOAT_GAMBLER_OPERATORS_HANDBOOK.pdf"
+      },
+      {
+        "label": "Riverboat Gambler tutorial and play",
+        "url": "https://www.youtube.com/watch?v=Y27HEv7IO9I"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Build chips while completing the six C-A-S-I-N-O features. The first Multiball needs a Slot Shot: open its ramp with consecutive Winning Streak loops or the lit right return lane, then shoot down the ramp to lock a ball. The machine serves a second ball for a skill shot and begins two-ball Winning Streak Multiball.",
+      "simpleOverview": "Make consecutive Winning Streak loops or roll through the lit right return lane to open the Slot Shot. Shoot down the open ramp to lock a ball and begin two-ball Winning Streak Multiball. Use Multiball to build chips on the loop and safely finish Blackjack because the Bust target is disabled.",
+      "summary": "Make consecutive Winning Streak loops or use the lit right return lane to open the Slot Shot, then shoot down its ramp to lock a ball and start two-ball Winning Streak Multiball. Loop Winning Streak for chips; use the disabled Bust target to finish Blackjack safely.",
+      "quickInfo": [
+        {
+          "name": "Open Slot Shot",
+          "summary": "Make consecutive Winning Streak loops or roll through the lit right return lane."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Shoot down the open Slot Shot ramp; the lock serves a second ball and starts two-ball play."
+        },
+        {
+          "name": "Build chips",
+          "summary": "Loop Winning Streak during Multiball."
+        },
+        {
+          "name": "Light Jackpot",
+          "summary": "Fill the Win Meter, then use Roulette to risk chips for the displayed Jackpot."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Make consecutive Winning Streak loops, or use the lit right return lane, to lower the Slot Shot ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot down the open Slot Shot ramp to lock a ball; play the served skill shot and continue into two-ball Winning Streak Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, repeat the Winning Streak loop to advance the Win Meter and collect chips.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Prepare Blackjack at two sevens before Multiball, then hit the center target while Bust is disabled to collect it safely.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Complete C-A-S-I-N-O",
+          "when": "Use this after the first Multiball route is under control.",
+          "steps": [
+            {
+              "text": "Collect Five Card, Blackjack, Slot, the served Skill Shot, Roulette, and CHIPS to spell C-A-S-I-N-O.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Royal Flush as the final letter when possible; it can remain available for another collection after C-A-S-I-N-O is completed.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Turn chips into Jackpot chances",
+        "steps": [
+          {
+            "text": "Collect casino wins, loop Winning Streak, and complete C-A-S-I-N-O features to advance the Win Meter.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When Roulette is lit for Jackpot, shoot it only with enough chips to accept losing half of the current bank.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep the loop route as the dependable scorer; the Jackpot is a Roulette result, not a standard Multiball shot.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm the Roulette risk, extra-ball, and progressive-Jackpot settings before competitive play.",
+        "Test the Winning Streak loop, right return lane, Slot Shot lift and lock, skill-shot lanes, center Blackjack target, and Roulette saucer."
+      ],
+      "termStyles": [
+        {
+          "label": "Winning Streak Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "C-A-S-I-N-O",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Roulette",
+          "tone": "oxblood",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Winning Streak Multiball does not use a conventional Jackpot shot.",
+          "response": "Use its loop to build chips and the Win Meter; the eventual Jackpot chance is collected through Roulette.",
+          "sourceUrl": "https://www.pinball.org/rules/riverboatgambler.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

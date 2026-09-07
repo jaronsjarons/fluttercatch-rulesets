@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "GRL60",
+  "title": "Playboy 35th Anniversary",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Data East Playboy 35th Anniversary operations manual",
+      "url": "https://online.gameex.com/media/pinballx/all/addmedia/playboy%2035th%20anniversary%20%28data%20east%201989%29/English%20Manual%20%28with%20schematics%29.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Playboy 35th Anniversary instruction card",
+        "url": "https://maypin.eu/pinsdata/playboy_card1.pdf"
+      },
+      {
+        "label": "Playboy 35th Anniversary machine overview",
+        "url": "https://www.kineticist.com/games/pinball/playboy-35th-anniversary"
+      },
+      {
+        "label": "Playboy 35th Anniversary walkthrough",
+        "url": "https://www.youtube.com/watch?v=BwvU-ZpZOV8"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Lock two balls in the Grotto, then shoot either ramp to release them and start three-ball Multiball. Every ramp shot during Multiball awards a Jackpot and advances P-I-N-B-A-L-L; completing that word lights Extra Ball at the spinner. Outside Multiball, repeated ramps spell M-A-N-S-I-O-N and begin a falling-value Mansion collect.",
+      "simpleOverview": "Lock two balls in the Grotto, then shoot either ramp for three-ball Multiball. During Multiball, every ramp scores a Jackpot and advances P-I-N-B-A-L-L; finish the word to light Extra Ball at the spinner. Repeated ramps also spell M-A-N-S-I-O-N for a timed value on the next ramp.",
+      "summary": "Lock two balls in the Grotto, then shoot either ramp for three-ball Multiball. Every Multiball ramp scores a Jackpot and advances P-I-N-B-A-L-L. Spell M-A-N-S-I-O-N outside Multiball, then shoot a ramp for its falling value.",
+      "quickInfo": [
+        {
+          "name": "Lock Balls",
+          "summary": "Shoot two balls into the Grotto."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "With two balls locked, shoot either ramp."
+        },
+        {
+          "name": "Score Jackpots",
+          "summary": "Shoot either ramp during Multiball; each ramp awards one."
+        },
+        {
+          "name": "Build Mansion",
+          "summary": "Repeat ramps to spell M-A-N-S-I-O-N, then shoot a ramp for the falling value."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot two balls into the Grotto to fill both locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "With both balls locked, shoot either ramp to release them and start three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, repeat either ramp for Jackpots and one P-I-N-B-A-L-L letter per shot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete P-I-N-B-A-L-L to light Extra Ball at the spinner.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build playfield scoring",
+          "when": "Use this before Multiball when the animal targets are available.",
+          "steps": [
+            {
+              "text": "Complete the animal targets to start the timed playfield multiplier.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Continue completing the bank to raise the timed multiplier, then attack ramps and the Grotto while it is active.",
+              "kinds": [
+                "multiplier",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Collect Mansion",
+        "steps": [
+          {
+            "text": "Shoot ramps to spell M-A-N-S-I-O-N.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the Mansion countdown begins, return to either ramp before the displayed value falls.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use H-M-H top-lane completions to raise bonus up to 5x and eventually light Extra Ball at the spinner.",
+            "kinds": [
+              "multiplier",
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm extra-ball, playfield-multiplier duration, and Jackpot settings before competitive play.",
+        "Test both Grotto locks, both ramps and releases, animal targets, H-M-H lanes, spinner, and PLAYBOY targets."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "P-I-N-B-A-L-L",
+          "tone": "indigo",
+          "kind": "multiball"
+        },
+        {
+          "label": "M-A-N-S-I-O-N",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The playfield multiplier is timed.",
+          "response": "Finish the animal bank only when you can immediately attack ramps, locks, or another high-value repeat shot.",
+          "sourceUrl": "https://online.gameex.com/media/pinballx/all/addmedia/playboy%2035th%20anniversary%20%28data%20east%201989%29/English%20Manual%20%28with%20schematics%29.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "id": "G5one",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build W-A-R and one color bank, start Two-Ball Multiball at its base, relock both balls in different bases, then hit all nine color targets before collecting Ion Cannon at the ramp.",
+        "quickInfo": [
+          {
+            "name": "W-A-R",
+            "summary": "Complete the top lanes to advance Bonus X and add value to the three color bonuses."
+          },
+          {
+            "name": "Two-Ball Multiball",
+            "summary": "Complete a color bank, lock at its lit base, and plunge the replacement ball to start it."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "During two-ball play, lock both balls in different bases and plunge the served ball to start it."
+          },
+          {
+            "name": "Ion Cannon Jackpot",
+            "summary": "Each of the nine color targets adds 100,000 before the ramp collects the built value."
+          },
+          {
+            "name": "Ramp Multiplier",
+            "summary": "Repeat the ramp while its lamp remains lit to raise the ramp's own value through 5x."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through an unlit W, A, or R lane. Use the right flipper to move the lit letters before the ball commits."
+          },
+          {
+            "text": "Complete W-A-R to advance Bonus X toward 5x.",
+            "modeNotes": [
+              "W-A-R: W adds 2,000 to red, A adds 2,000 to yellow, and R adds 2,000 to blue."
+            ]
+          },
+          {
+            "text": "Watch one full pop-bumper exit. Choose the color bank with the safest standup returns."
+          },
+          {
+            "text": "Complete all three targets in one color. Shoot that color's lit base and plunge the served ball.",
+            "modeNotes": [
+              "Two-Ball Multiball: The base holds the first ball; the replacement plunge releases it and starts two-ball play."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock the first ball in any base. Send the second ball to a different base before the first ball ejects.",
+            "modeNotes": [
+              "Two-base relock: Both balls must be held in different bases to qualify the next phase."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After both balls are held, plunge the served ball to release them and start Three-Ball Multiball.",
+            "modeNotes": [
+              "Three-Ball Multiball: The objective stays active until one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit all nine red, yellow, and blue targets before you shoot the ramp.",
+            "modeNotes": [
+              "Ion Cannon Jackpot: Each color target adds 100,000, so all nine targets build the collect to 1,000,000."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the ramp to collect Ion Cannon. After one ball remains, resume Bonus X and color-bonus play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Bonus and one safe base",
+          "when": "Recovery pivot: Use this when the two-base relock is unreliable.",
+          "steps": [
+            {
+              "text": "Spell W-A-R with right-flipper lane change."
+            },
+            {
+              "text": "Build one color bonus with its targets, top lane, and base."
+            },
+            {
+              "text": "Complete that color bank and start Two-Ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use two-ball protection to test the other base returns."
+            },
+            {
+              "text": "Do not force the second relock if one base feed is dangerous."
+            },
+            {
+              "text": "Protect the end-of-ball bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Ramp multiplier loop",
+            "when": "When trailing, use this higher-ceiling route: use this when the ramp is repeatable in single-ball play.",
+            "steps": [
+              {
+                "text": "Shoot the ramp once and confirm that the Ramp Multiplier lamp is lit."
+              },
+              {
+                "text": "Repeat the ramp while the Ramp Multiplier lamp remains lit to add 1x."
+              },
+              {
+                "text": "Continue to the 5x ramp-value maximum while the lamp and feed remain safe."
+              },
+              {
+                "text": "When multiball starts, change to the Ion Cannon target-and-ramp route."
+              }
+            ]
+          },
+          {
+            "title": "Base-number awards",
+            "when": "Use this when all three base lanes return safely.",
+            "steps": [
+              {
+                "text": "Shoot all three bases with number 1 flashing, then collect 100,000 at the ramp."
+              },
+              {
+                "text": "Shoot all three bases with number 2 flashing, then collect Hold Bonuses at the ramp."
+              },
+              {
+                "text": "The number 3 set lights Extra Ball; its tournament value depends on settings."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum Ion Cannon and bonus",
+          "steps": [
+            {
+              "text": "Start Three-Ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit all nine color targets before the ramp."
+            },
+            {
+              "text": "Collect the 1,000,000 Ion Cannon Jackpot."
+            },
+            {
+              "text": "Hit each color's three targets, matching W-A-R top lane, and base until all three color bonuses reach 31,000. Complete W-A-R until Bonus X reaches 5x."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Two-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Three-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Ion Cannon Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Ramp Multiplier",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "W-A-R",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "W, A, or R lane",
+            "label": "W-A-R top lanes",
+            "description": "The three rollover lanes above the pop bumpers advance Bonus X and their matching color values.",
+            "xPercent": 50,
+            "yPercent": 13,
+            "precision": "area"
+          },
+          {
+            "term": "red targets",
+            "label": "Red color bank",
+            "description": "The left-side three-target bank qualifies the red base when completed.",
+            "xPercent": 25,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "yellow targets",
+            "label": "Yellow color bank",
+            "description": "The center three-target bank qualifies the yellow base when completed.",
+            "xPercent": 50,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "blue targets",
+            "label": "Blue color bank",
+            "description": "The right-side three-target bank qualifies the blue base when completed.",
+            "xPercent": 75,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "base",
+            "label": "Red, yellow, and blue bases",
+            "description": "The three base shots lock balls and advance the numbered base awards.",
+            "xPercent": 50,
+            "yPercent": 59,
+            "precision": "area"
+          },
+          {
+            "term": "ramp",
+            "label": "Ion Cannon ramp",
+            "description": "The single ramp collects Ion Cannon during three-ball play and returns toward the right flipper.",
+            "xPercent": 35,
+            "yPercent": 35,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Data East Laser War ROM 8.3 and read ball-count, Bonus X, Bonus Hold, Extra Ball, Special, and tournament settings.",
+          "Verify all nine color targets, three bases, W-A-R lane change, ramp multiplier lamp, Ion Cannon, and numbered base awards.",
+          "Test each base eject, ramp entrance and wireform return, pop exits, target rebounds, tilt sensitivity, and flipper strength."
+        ],
+        "techniques": [
+          {
+            "name": "Two-base relock",
+            "instruction": "Trap one ball when possible, lock the other, then use the controlled ball for a different base.",
+            "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Laser_War_755-5001-01.pdf"
+          },
+          {
+            "name": "Immediate ramp loop",
+            "instruction": "The ramp returns to the right flipper. Repeat it while the Ramp Multiplier remains lit.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/laser-war-data-east-1987-vp8.4703/"
+          }
+        ],
+        "cautions": [],
+        "simpleOverview": "Completing one red, green, or blue target bank in Laser War lights that color's base for two-ball play. Relock the two active balls in different bases to start three-ball Multiball. Complete W-A-R to raise Bonus X, then hit all nine color targets before shooting the ramp for Ion Cannon.",
+        "overview": "Completing one red, green, or blue target bank in Laser War lights that color's base for two-ball play. Complete one color and start two-ball play, store both balls in different bases, then release them for three-ball Multiball. Hit all nine color targets before the ramp to build the full Ion Cannon collect.",
+        "machineSetup": [
+          "Confirm Data East Laser War ROM 8.3 and read ball-count, Bonus X, Bonus Hold, Extra Ball, Special, and tournament settings.",
+          "Verify all nine color targets, three bases, W-A-R lane change, ramp multiplier lamp, Ion Cannon, and numbered base awards.",
+          "Test each base eject, ramp entrance and wireform return, pop exits, target rebounds, tilt sensitivity, and flipper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Build W-A-R and one color bank, start Two-Ball Multiball at its base, relock both balls in different bases, then hit all nine color targets before collecting Ion Cannon at the ramp.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through an unlit W, A, or R lane. Use the right flipper to move the lit letters before the ball commits."
+          },
+          {
+            "text": "Complete W-A-R to advance Bonus X toward 5x.",
+            "details": [
+              "W-A-R: W adds 2,000 to red, A adds 2,000 to yellow, and R adds 2,000 to blue."
+            ]
+          },
+          {
+            "text": "Watch one full pop-bumper exit. Choose the color bank with the safest standup returns."
+          },
+          {
+            "text": "Complete all three targets in one color. Shoot that color's lit base and plunge the served ball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Two-Ball Multiball: The base holds the first ball; the replacement plunge releases it and starts two-ball play."
+            ]
+          },
+          {
+            "text": "Lock the first ball in any base. Send the second ball to a different base before the first ball ejects.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Two-base relock: Both balls must be held in different bases to qualify the next phase."
+            ]
+          },
+          {
+            "text": "After both balls are held, plunge the served ball to release them and start Three-Ball Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Three-Ball Multiball: The objective stays active until one ball remains."
+            ]
+          },
+          {
+            "text": "Hit all nine red, yellow, and blue targets before you shoot the ramp.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Ion Cannon Jackpot: Each color target adds 100,000, so all nine targets build the collect to 1,000,000."
+            ]
+          },
+          {
+            "text": "Shoot the ramp to collect Ion Cannon. After one ball remains, resume Bonus X and color-bonus play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "W-A-R",
+            "summary": "Complete the top lanes to advance Bonus X and add value to the three color bonuses."
+          },
+          {
+            "name": "Two-Ball Multiball",
+            "summary": "Complete a color bank, lock at its lit base, and plunge the replacement ball to start it."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "During two-ball play, lock both balls in different bases and plunge the served ball to start it."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Bonus and one safe base",
+          "when": "Recovery pivot: Use this when the two-base relock is unreliable.",
+          "steps": [
+            {
+              "text": "Spell W-A-R with right-flipper lane change."
+            },
+            {
+              "text": "Build one color bonus with its targets, top lane, and base."
+            },
+            {
+              "text": "Complete that color bank and start Two-Ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use two-ball protection to test the other base returns."
+            },
+            {
+              "text": "Do not force the second relock if one base feed is dangerous."
+            },
+            {
+              "text": "Protect the end-of-ball bonus."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

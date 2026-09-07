@@ -1,0 +1,756 @@
+{
+  "schemaVersion": 1,
+  "id": "G4EJB",
+  "editions": [
+    {
+      "id": "G4EJB-MJdE1",
+      "title": "Gulfstream",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://img.opdb.org/1dfc926d-1f1f-4bfe-98dd-f4c112b1c61d-large.jpg",
+        "sourceUrl": "https://opdb.org/search?q=G4EJB-MJdE1",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Collect useful lit 1–9 numbers at the center target, redirect repeats into SPECIAL lanes, then collect the safest center, saucer, or return-lane award.",
+            "quickInfo": [
+              {
+                "name": "Center target",
+                "summary": "The center standup collects the currently lit number from the 1-9 grid."
+              },
+              {
+                "name": "Number change",
+                "summary": "Each 100-point switch changes which 1-9 number is lit for the center target."
+              },
+              {
+                "name": "Number patterns",
+                "summary": "Three numbers in a row or all four corners light the center target and both side saucers for major awards."
+              },
+              {
+                "name": "SPECIAL letters",
+                "summary": "Complete the S-P-E-C-I-A-L lanes to light both return lanes for major awards."
+              },
+              {
+                "name": "Edition scoring",
+                "summary": "Tropic Fun uses ten-times Gulfstream scoring and replaces replay-focused awards with add-a-ball behavior."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the lit number below the center target before each controlled shot."
+              },
+              {
+                "text": "If the number extends a row or adds a missing corner, shoot the center target."
+              },
+              {
+                "text": "If the lit number is already collected, shoot a safe lettered lane instead."
+              },
+              {
+                "text": "Use 100-point switch play to move the lit number. Read the new number before another center shot."
+              },
+              {
+                "text": "After three in a row or all four corners, collect a lit center-target or side-saucer award.",
+                "modeNotes": [
+                  "Number pattern: Gulfstream lights the center target and both saucers for 5,000. Tropic Fun awards 50,000 for a line and 100,000 for four corners."
+                ]
+              },
+              {
+                "text": "Complete S-P-E-C-I-A-L through the lettered lanes."
+              },
+              {
+                "text": "Collect a lit return lane when its feed is safer than another center-target rebound."
+              }
+            ],
+            "fallback": {
+              "title": "SPECIAL lane route",
+              "when": "Use this when the lit number repeats or center-target rebounds are not controlled.",
+              "steps": [
+                {
+                  "text": "Identify a missing S-P-E-C-I-A-L letter."
+                },
+                {
+                  "text": "Shoot the safer lettered lane."
+                },
+                {
+                  "text": "Complete all seven letters to light both return lanes."
+                },
+                {
+                  "text": "Collect the safer lit return lane."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Number-pattern route",
+                "when": "Use this when the center target returns safely and the lit number advances a row or the four corners.",
+                "steps": [
+                  {
+                    "text": "Choose a three-number row or the four corner pattern."
+                  },
+                  {
+                    "text": "Use 100-point switches until an uncollected pattern number lights."
+                  },
+                  {
+                    "text": "Shoot the center target to collect that number."
+                  },
+                  {
+                    "text": "After the pattern is complete, collect the safest lit major award."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Number pattern plus SPECIAL",
+              "steps": [
+                {
+                  "text": "Collect three numbers in a row or all four corners."
+                },
+                {
+                  "text": "Complete three numbers in a row or all four corners to light the center target and both side saucers."
+                },
+                {
+                  "text": "Complete all seven S-P-E-C-I-A-L letters."
+                },
+                {
+                  "text": "Collect the safest lit major award from each completed system."
+                }
+              ]
+            },
+            "techniques": [
+              {
+                "name": "Lit-number selection",
+                "instruction": "Read the lit 1-9 number before the center shot. Shoot only when that number extends your chosen pattern.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "name": "Duplicate-number redirect",
+                "instruction": "When the lit number is already collected, send the ball through the A or L lane instead of the center target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The center standup has rebound risk, but it is the only shot that collects the lit 1-9 number.",
+                "response": "Shoot it only for useful pattern progress. Use the letter route when the number repeats.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Bumper exits can reach the slingshots, center drain, or outlanes without flipper control.",
+                "response": "Prepare both flippers before the ball leaves the bumpers. Stop forcing switch play after an unsafe exit.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Gulfstream and Tropic Fun use different score scales and award handling.",
+                "response": "Identify the edition before play. Do not apply Tropic Fun's ten-times values or add-a-ball rules to Gulfstream.",
+                "sourceUrl": "https://www.kineticist.com/games/pinball/gulfstream-tropic-fun"
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "center target",
+                "label": "Lit-number target",
+                "description": "Center standup used to collect the currently lit 1–9 number.",
+                "precision": "unverified"
+              },
+              {
+                "term": "1-9 grid",
+                "label": "1–9 number grid",
+                "description": "Nine-number display used to track lines and corner patterns.",
+                "precision": "unverified"
+              },
+              {
+                "term": "side saucer",
+                "label": "Side saucers",
+                "description": "Two upper holes lit by completing a line or all four corners.",
+                "precision": "unverified"
+              },
+              {
+                "term": "S-P-E-C-I-A-L lanes",
+                "label": "SPECIAL lanes",
+                "description": "Seven lettered lanes used to light both return lanes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "return lane",
+                "label": "Lit return lanes",
+                "description": "Lower lanes lit for the major award after SPECIAL is complete.",
+                "precision": "unverified"
+              }
+            ],
+            "checkBeforePlay": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "simpleOverview": "Gulfstream and Tropic Fun use the center target to collect lit numbers on a changing 1-through-9 grid. Form three in a row or four corners for major awards; complete S-P-E-C-I-A-L when its lane returns are safe to light both return lanes.",
+            "overview": "In Gulfstream and Tropic Fun, the center target records whichever number is lit on the 1-through-9 grid. Completing a row or all four corners lights the center target and both saucers for their larger awards. Completing S-P-E-C-I-A-L lights both return lanes; Tropic Fun uses ten-times scoring and add-a-ball treatment.",
+            "machineSetup": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Collect useful lit 1–9 numbers at the center target, redirect repeats into SPECIAL lanes, then collect the safest center, saucer, or return-lane award.",
+            "quickInfo": [
+              {
+                "name": "Center target",
+                "summary": "The center standup collects the currently lit number from the 1-9 grid."
+              },
+              {
+                "name": "Number change",
+                "summary": "Each 100-point switch changes which 1-9 number is lit for the center target."
+              },
+              {
+                "name": "Number patterns",
+                "summary": "Three numbers in a row or all four corners light the center target and both side saucers for major awards."
+              },
+              {
+                "name": "SPECIAL letters",
+                "summary": "Complete the S-P-E-C-I-A-L lanes to light both return lanes for major awards."
+              },
+              {
+                "name": "Edition scoring",
+                "summary": "Tropic Fun uses ten-times Gulfstream scoring and replaces replay-focused awards with add-a-ball behavior."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the lit number below the center target before each controlled shot."
+              },
+              {
+                "text": "If the number extends a row or adds a missing corner, shoot the center target."
+              },
+              {
+                "text": "If the lit number is already collected, shoot a safe lettered lane instead."
+              },
+              {
+                "text": "Use 100-point switch play to move the lit number. Read the new number before another center shot."
+              },
+              {
+                "text": "After three in a row or all four corners, collect a lit center-target or side-saucer award.",
+                "modeNotes": [
+                  "Number pattern: Gulfstream lights the center target and both saucers for 5,000. Tropic Fun awards 50,000 for a line and 100,000 for four corners."
+                ]
+              },
+              {
+                "text": "Complete S-P-E-C-I-A-L through the lettered lanes."
+              },
+              {
+                "text": "Collect a lit return lane when its feed is safer than another center-target rebound."
+              }
+            ],
+            "fallback": {
+              "title": "SPECIAL lane route",
+              "when": "Use this when the lit number repeats or center-target rebounds are not controlled.",
+              "steps": [
+                {
+                  "text": "Identify a missing S-P-E-C-I-A-L letter."
+                },
+                {
+                  "text": "Shoot the safer lettered lane."
+                },
+                {
+                  "text": "Complete all seven letters to light both return lanes."
+                },
+                {
+                  "text": "Collect the safer lit return lane."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Number-pattern route",
+                "when": "Use this when the center target returns safely and the lit number advances a row or the four corners.",
+                "steps": [
+                  {
+                    "text": "Choose a three-number row or the four corner pattern."
+                  },
+                  {
+                    "text": "Use 100-point switches until an uncollected pattern number lights."
+                  },
+                  {
+                    "text": "Shoot the center target to collect that number."
+                  },
+                  {
+                    "text": "After the pattern is complete, collect the safest lit major award."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Number pattern plus SPECIAL",
+              "steps": [
+                {
+                  "text": "Collect three numbers in a row or all four corners."
+                },
+                {
+                  "text": "Complete three numbers in a row or all four corners to light the center target and both side saucers."
+                },
+                {
+                  "text": "Complete all seven S-P-E-C-I-A-L letters."
+                },
+                {
+                  "text": "Collect the safest lit major award from each completed system."
+                }
+              ]
+            },
+            "techniques": [
+              {
+                "name": "Lit-number selection",
+                "instruction": "Read the lit 1-9 number before the center shot. Shoot only when that number extends your chosen pattern.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "name": "Duplicate-number redirect",
+                "instruction": "When the lit number is already collected, send the ball through the A or L lane instead of the center target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The center standup has rebound risk, but it is the only shot that collects the lit 1-9 number.",
+                "response": "Shoot it only for useful pattern progress. Use the letter route when the number repeats.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Bumper exits can reach the slingshots, center drain, or outlanes without flipper control.",
+                "response": "Prepare both flippers before the ball leaves the bumpers. Stop forcing switch play after an unsafe exit.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Gulfstream and Tropic Fun use different score scales and award handling.",
+                "response": "Identify the edition before play. Do not apply Tropic Fun's ten-times values or add-a-ball rules to Gulfstream.",
+                "sourceUrl": "https://www.kineticist.com/games/pinball/gulfstream-tropic-fun"
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "center target",
+                "label": "Lit-number target",
+                "description": "Center standup used to collect the currently lit 1–9 number.",
+                "precision": "unverified"
+              },
+              {
+                "term": "1-9 grid",
+                "label": "1–9 number grid",
+                "description": "Nine-number display used to track lines and corner patterns.",
+                "precision": "unverified"
+              },
+              {
+                "term": "side saucer",
+                "label": "Side saucers",
+                "description": "Two upper holes lit by completing a line or all four corners.",
+                "precision": "unverified"
+              },
+              {
+                "term": "S-P-E-C-I-A-L lanes",
+                "label": "SPECIAL lanes",
+                "description": "Seven lettered lanes used to light both return lanes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "return lane",
+                "label": "Lit return lanes",
+                "description": "Lower lanes lit for the major award after SPECIAL is complete.",
+                "precision": "unverified"
+              }
+            ],
+            "checkBeforePlay": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "simpleOverview": "Gulfstream and Tropic Fun use the center target to collect lit numbers on a changing 1-through-9 grid. Form three in a row or four corners for major awards; complete S-P-E-C-I-A-L when its lane returns are safe to light both return lanes.",
+            "overview": "In Gulfstream and Tropic Fun, the center target records whichever number is lit on the 1-through-9 grid. Completing a row or all four corners lights the center target and both saucers for their larger awards. Completing S-P-E-C-I-A-L lights both return lanes; Tropic Fun uses ten-times scoring and add-a-ball treatment.",
+            "machineSetup": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "G4EJB-ML0ez",
+      "title": "Tropic Fun",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/tropic-fun.webp",
+        "sourceUrl": "https://vpuniverse.com/files/file/10900-tropic-fun-williams-1973/",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Collect useful lit 1–9 numbers at the center target, redirect repeats into SPECIAL lanes, then collect the safest center, saucer, or return-lane award.",
+            "quickInfo": [
+              {
+                "name": "Center target",
+                "summary": "The center standup collects the currently lit number from the 1-9 grid."
+              },
+              {
+                "name": "Number change",
+                "summary": "Each 100-point switch changes which 1-9 number is lit for the center target."
+              },
+              {
+                "name": "Number patterns",
+                "summary": "Three numbers in a row or all four corners light the center target and both side saucers for major awards."
+              },
+              {
+                "name": "SPECIAL letters",
+                "summary": "Complete the S-P-E-C-I-A-L lanes to light both return lanes for major awards."
+              },
+              {
+                "name": "Edition scoring",
+                "summary": "Tropic Fun uses ten-times Gulfstream scoring and replaces replay-focused awards with add-a-ball behavior."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the lit number below the center target before each controlled shot."
+              },
+              {
+                "text": "If the number extends a row or adds a missing corner, shoot the center target."
+              },
+              {
+                "text": "If the lit number is already collected, shoot a safe lettered lane instead."
+              },
+              {
+                "text": "Use 100-point switch play to move the lit number. Read the new number before another center shot."
+              },
+              {
+                "text": "After three in a row or all four corners, collect a lit center-target or side-saucer award.",
+                "modeNotes": [
+                  "Number pattern: Gulfstream lights the center target and both saucers for 5,000. Tropic Fun awards 50,000 for a line and 100,000 for four corners."
+                ]
+              },
+              {
+                "text": "Complete S-P-E-C-I-A-L through the lettered lanes."
+              },
+              {
+                "text": "Collect a lit return lane when its feed is safer than another center-target rebound."
+              }
+            ],
+            "fallback": {
+              "title": "SPECIAL lane route",
+              "when": "Use this when the lit number repeats or center-target rebounds are not controlled.",
+              "steps": [
+                {
+                  "text": "Identify a missing S-P-E-C-I-A-L letter."
+                },
+                {
+                  "text": "Shoot the safer lettered lane."
+                },
+                {
+                  "text": "Complete all seven letters to light both return lanes."
+                },
+                {
+                  "text": "Collect the safer lit return lane."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Number-pattern route",
+                "when": "Use this when the center target returns safely and the lit number advances a row or the four corners.",
+                "steps": [
+                  {
+                    "text": "Choose a three-number row or the four corner pattern."
+                  },
+                  {
+                    "text": "Use 100-point switches until an uncollected pattern number lights."
+                  },
+                  {
+                    "text": "Shoot the center target to collect that number."
+                  },
+                  {
+                    "text": "After the pattern is complete, collect the safest lit major award."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Number pattern plus SPECIAL",
+              "steps": [
+                {
+                  "text": "Collect three numbers in a row or all four corners."
+                },
+                {
+                  "text": "Complete three numbers in a row or all four corners to light the center target and both side saucers."
+                },
+                {
+                  "text": "Complete all seven S-P-E-C-I-A-L letters."
+                },
+                {
+                  "text": "Collect the safest lit major award from each completed system."
+                }
+              ]
+            },
+            "techniques": [
+              {
+                "name": "Lit-number selection",
+                "instruction": "Read the lit 1-9 number before the center shot. Shoot only when that number extends your chosen pattern.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "name": "Duplicate-number redirect",
+                "instruction": "When the lit number is already collected, send the ball through the A or L lane instead of the center target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The center standup has rebound risk, but it is the only shot that collects the lit 1-9 number.",
+                "response": "Shoot it only for useful pattern progress. Use the letter route when the number repeats.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Bumper exits can reach the slingshots, center drain, or outlanes without flipper control.",
+                "response": "Prepare both flippers before the ball leaves the bumpers. Stop forcing switch play after an unsafe exit.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Gulfstream and Tropic Fun use different score scales and award handling.",
+                "response": "Identify the edition before play. Do not apply Tropic Fun's ten-times values or add-a-ball rules to Gulfstream.",
+                "sourceUrl": "https://www.kineticist.com/games/pinball/gulfstream-tropic-fun"
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "center target",
+                "label": "Lit-number target",
+                "description": "Center standup used to collect the currently lit 1–9 number.",
+                "precision": "unverified"
+              },
+              {
+                "term": "1-9 grid",
+                "label": "1–9 number grid",
+                "description": "Nine-number display used to track lines and corner patterns.",
+                "precision": "unverified"
+              },
+              {
+                "term": "side saucer",
+                "label": "Side saucers",
+                "description": "Two upper holes lit by completing a line or all four corners.",
+                "precision": "unverified"
+              },
+              {
+                "term": "S-P-E-C-I-A-L lanes",
+                "label": "SPECIAL lanes",
+                "description": "Seven lettered lanes used to light both return lanes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "return lane",
+                "label": "Lit return lanes",
+                "description": "Lower lanes lit for the major award after SPECIAL is complete.",
+                "precision": "unverified"
+              }
+            ],
+            "checkBeforePlay": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "simpleOverview": "Gulfstream and Tropic Fun use the center target to collect lit numbers on a changing 1-through-9 grid. Form three in a row or four corners for major awards; complete S-P-E-C-I-A-L when its lane returns are safe to light both return lanes.",
+            "overview": "In Gulfstream and Tropic Fun, the center target records whichever number is lit on the 1-through-9 grid. Completing a row or all four corners lights the center target and both saucers for their larger awards. Completing S-P-E-C-I-A-L lights both return lanes; Tropic Fun uses ten-times scoring and add-a-ball treatment.",
+            "machineSetup": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Collect useful lit 1–9 numbers at the center target, redirect repeats into SPECIAL lanes, then collect the safest center, saucer, or return-lane award.",
+            "quickInfo": [
+              {
+                "name": "Center target",
+                "summary": "The center standup collects the currently lit number from the 1-9 grid."
+              },
+              {
+                "name": "Number change",
+                "summary": "Each 100-point switch changes which 1-9 number is lit for the center target."
+              },
+              {
+                "name": "Number patterns",
+                "summary": "Three numbers in a row or all four corners light the center target and both side saucers for major awards."
+              },
+              {
+                "name": "SPECIAL letters",
+                "summary": "Complete the S-P-E-C-I-A-L lanes to light both return lanes for major awards."
+              },
+              {
+                "name": "Edition scoring",
+                "summary": "Tropic Fun uses ten-times Gulfstream scoring and replaces replay-focused awards with add-a-ball behavior."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the lit number below the center target before each controlled shot."
+              },
+              {
+                "text": "If the number extends a row or adds a missing corner, shoot the center target."
+              },
+              {
+                "text": "If the lit number is already collected, shoot a safe lettered lane instead."
+              },
+              {
+                "text": "Use 100-point switch play to move the lit number. Read the new number before another center shot."
+              },
+              {
+                "text": "After three in a row or all four corners, collect a lit center-target or side-saucer award.",
+                "modeNotes": [
+                  "Number pattern: Gulfstream lights the center target and both saucers for 5,000. Tropic Fun awards 50,000 for a line and 100,000 for four corners."
+                ]
+              },
+              {
+                "text": "Complete S-P-E-C-I-A-L through the lettered lanes."
+              },
+              {
+                "text": "Collect a lit return lane when its feed is safer than another center-target rebound."
+              }
+            ],
+            "fallback": {
+              "title": "SPECIAL lane route",
+              "when": "Use this when the lit number repeats or center-target rebounds are not controlled.",
+              "steps": [
+                {
+                  "text": "Identify a missing S-P-E-C-I-A-L letter."
+                },
+                {
+                  "text": "Shoot the safer lettered lane."
+                },
+                {
+                  "text": "Complete all seven letters to light both return lanes."
+                },
+                {
+                  "text": "Collect the safer lit return lane."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Number-pattern route",
+                "when": "Use this when the center target returns safely and the lit number advances a row or the four corners.",
+                "steps": [
+                  {
+                    "text": "Choose a three-number row or the four corner pattern."
+                  },
+                  {
+                    "text": "Use 100-point switches until an uncollected pattern number lights."
+                  },
+                  {
+                    "text": "Shoot the center target to collect that number."
+                  },
+                  {
+                    "text": "After the pattern is complete, collect the safest lit major award."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Number pattern plus SPECIAL",
+              "steps": [
+                {
+                  "text": "Collect three numbers in a row or all four corners."
+                },
+                {
+                  "text": "Complete three numbers in a row or all four corners to light the center target and both side saucers."
+                },
+                {
+                  "text": "Complete all seven S-P-E-C-I-A-L letters."
+                },
+                {
+                  "text": "Collect the safest lit major award from each completed system."
+                }
+              ]
+            },
+            "techniques": [
+              {
+                "name": "Lit-number selection",
+                "instruction": "Read the lit 1-9 number before the center shot. Shoot only when that number extends your chosen pattern.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "name": "Duplicate-number redirect",
+                "instruction": "When the lit number is already collected, send the ball through the A or L lane instead of the center target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The center standup has rebound risk, but it is the only shot that collects the lit 1-9 number.",
+                "response": "Shoot it only for useful pattern progress. Use the letter route when the number repeats.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Bumper exits can reach the slingshots, center drain, or outlanes without flipper control.",
+                "response": "Prepare both flippers before the ball leaves the bumpers. Stop forcing switch play after an unsafe exit.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G4EJB-MJdE1"
+              },
+              {
+                "issue": "Gulfstream and Tropic Fun use different score scales and award handling.",
+                "response": "Identify the edition before play. Do not apply Tropic Fun's ten-times values or add-a-ball rules to Gulfstream.",
+                "sourceUrl": "https://www.kineticist.com/games/pinball/gulfstream-tropic-fun"
+              }
+            ],
+            "playfieldReferences": [
+              {
+                "term": "center target",
+                "label": "Lit-number target",
+                "description": "Center standup used to collect the currently lit 1–9 number.",
+                "precision": "unverified"
+              },
+              {
+                "term": "1-9 grid",
+                "label": "1–9 number grid",
+                "description": "Nine-number display used to track lines and corner patterns.",
+                "precision": "unverified"
+              },
+              {
+                "term": "side saucer",
+                "label": "Side saucers",
+                "description": "Two upper holes lit by completing a line or all four corners.",
+                "precision": "unverified"
+              },
+              {
+                "term": "S-P-E-C-I-A-L lanes",
+                "label": "SPECIAL lanes",
+                "description": "Seven lettered lanes used to light both return lanes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "return lane",
+                "label": "Lit return lanes",
+                "description": "Lower lanes lit for the major award after SPECIAL is complete.",
+                "precision": "unverified"
+              }
+            ],
+            "checkBeforePlay": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "simpleOverview": "Gulfstream and Tropic Fun use the center target to collect lit numbers on a changing 1-through-9 grid. Form three in a row or four corners for major awards; complete S-P-E-C-I-A-L when its lane returns are safe to light both return lanes.",
+            "overview": "In Gulfstream and Tropic Fun, the center target records whichever number is lit on the 1-through-9 grid. Completing a row or all four corners lights the center target and both saucers for their larger awards. Completing S-P-E-C-I-A-L lights both return lanes; Tropic Fun uses ten-times scoring and add-a-ball treatment.",
+            "machineSetup": [
+              "Identify Gulfstream replay, Tropic Fun add-a-ball, or licensed Segasa Gulfstream before applying score scale and award rules.",
+              "Confirm ball count, Extra Ball and Special handling, tilt, and whether replay awards receive tournament point substitutes.",
+              "Test the lit-number stepper, center-target rebound, both saucers, SPECIAL lanes, return-lane feeds, bumpers, and posts before choosing a route."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  ]
+}

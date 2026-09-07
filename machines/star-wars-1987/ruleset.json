@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "G5w67",
+  "title": "Star Wars",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Star Wars exact-machine rules reconstruction",
+      "url": "https://pinballnirvana.com/forums/resources/star-wars-sonic-1987-vp8.3205/"
+    },
+    "supportingSources": [
+      {
+        "label": "Sonic Star Wars factory parts and operator manual",
+        "url": "https://www.recreativas.org/archivo/star-wars-pinball-manual.pdf"
+      },
+      {
+        "label": "Sonic Star Wars exact-machine archive and photographs",
+        "url": "https://www.recreativas.org/star-wars-1705-sega-sonic"
+      },
+      {
+        "label": "Physical Star Wars gameplay recorded in 2026",
+        "url": "https://www.youtube.com/watch?v=T1BHR_gKSJw"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Star Wars turns the lit STAR WARS targets, upper passages, Fire Laser, and Cyclotron into an attack on enemy ships. Complete A-B-C to activate Cyclotron and raise Bonus X; shoot the upper loop to activate Fire Laser. Completing S-T-A-R twice lights Extra Ball at the upper loop. Completing W-A-R-S four times in one ball lights Special at Fire Laser, while destroying the enemy ships twice lights Special at the side rollovers.",
+      "simpleOverview": "Complete A-B-C to activate Cyclotron and raise Bonus X, then shoot the lit STAR WARS attack targets and use Cyclotron to finish any surviving enemy ships. Complete S-T-A-R twice and shoot the upper loop for Extra Ball; complete W-A-R-S four times in one ball to light Fire Laser Special.",
+      "summary": "Build A-B-C early so Cyclotron can finish an incomplete attack. When S-T-A-R is close, preserve that progress and take the upper-loop Extra Ball before chasing the longer W-A-R-S Special.",
+      "quickInfo": [
+        {
+          "name": "Activate Cyclotron",
+          "summary": "Complete A-B-C."
+        },
+        {
+          "name": "Activate Fire Laser",
+          "summary": "Shoot the upper loop."
+        },
+        {
+          "name": "Extra Ball",
+          "summary": "Complete S-T-A-R twice, then shoot the upper loop."
+        },
+        {
+          "name": "Fire Laser Special",
+          "summary": "Complete W-A-R-S four times in one ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete A-B-C to activate Cyclotron and raise the end-of-ball Bonus X.",
+          "kinds": [
+            "mode",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot whichever STAR WARS targets, upper passages, Fire Laser, or Cyclotron shots are lit during the enemy-ship attack.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use Cyclotron to complete the destruction when an attack ends with enemy ships still remaining.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete S-T-A-R twice, then shoot the upper loop while Extra Ball is lit.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Special route",
+          "when": "Use this when W-A-R-S is already advancing cleanly within the current ball.",
+          "steps": [
+            {
+              "text": "Complete W-A-R-S four times before the ball ends.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit Fire Laser while Special is lit; destroying the enemy ships twice also lights Special at the side rollovers.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Destroy the Enemy Fleet",
+        "steps": [
+          {
+            "text": "Activate Cyclotron with A-B-C and keep taking the currently lit attack features.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish two complete enemy-ship destructions to light Special at the side rollovers.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the A-B-C targets, S-T-A-R and W-A-R-S target groups, upper loop, Fire Laser target, Cyclotron, upper passages, and both side rollovers.",
+        "Confirm that the attack lamps step visibly, Cyclotron completes remaining ships, and the installed Extra Ball and Special settings match the displayed inserts."
+      ],
+      "techniques": [
+        {
+          "name": "Dead Bounce",
+          "instruction": "Let a predictable upper-loop return cross to the opposite flipper before aiming a letter target or Cyclotron again.",
+          "sourceUrl": "https://www.youtube.com/watch?v=T1BHR_gKSJw",
+          "techniqueSlug": "dead-bounce"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "W-A-R-S Special requires four completions during one ball.",
+          "response": "Do not abandon a nearly finished S-T-A-R Extra Ball route for it unless W-A-R-S is already well advanced.",
+          "sourceUrl": "https://pinballnirvana.com/forums/resources/star-wars-sonic-1987-vp8.3205/"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

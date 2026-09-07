@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPKO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "The long progression is collecting all 12 Playmates for Mansion Mania: every 25 Rabbit Heads qualifies a month, and the left ramp collects every flashing month. Centerfold Multiball is the shorter objective at the center ramp, while each group of four collected Playmates offers Pajama Party Multiball along the way.",
+        "simpleOverview": "Make major shots to collect Rabbit Heads, then shoot the left ramp when Collect Playmates flashes. Four collected months light Pajama Party; all 12 light the left ramp for Mansion Mania. Four center-ramp shots start Centerfold Multiball.",
+        "summary": "Build Rabbit Heads until Playmates flash, then shoot the left ramp to collect them. Use the center ramp for Centerfold Multiball, take Pajama Party after each four months, and return to the left ramp after all 12 Playmates are solid for Mansion Mania.",
+        "quickInfo": [
+          {
+            "name": "Collect Playmates",
+            "summary": "Every 25 Rabbit Heads qualifies one month. When Collect Playmates flashes, the left ramp turns every flashing month solid."
+          },
+          {
+            "name": "Pajama Party",
+            "summary": "Each group of four collected Playmates lights a hurry-up. Collect it to begin two-ball Pajama Party Multiball."
+          },
+          {
+            "name": "Centerfold Multiball",
+            "summary": "Shoot the center ramp four times to open the Centerfold and begin three-ball play. Keeping all three balls alive lights the Triple Jackpot toy."
+          },
+          {
+            "name": "Mansion Mania",
+            "summary": "Collect all 12 Playmates, then shoot the left ramp. The game's reveal mechanisms and major shots become active together."
+          },
+          {
+            "name": "Magazine skill shot",
+            "summary": "Plunge lightly enough to open the magazine. A successful skill shot can help spot the flashing Playmate month."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge lightly to open the magazine for the skill shot and a chance to spot the flashing Playmate month.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit major shots to collect Rabbit Heads. Each set of 25 qualifies one Playmate; qualified months flash above the flippers.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the left ramp says Collect Playmates, shoot it to turn every flashing month solid. You can wait and collect several flashing months with one ramp shot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After each group of four solid Playmates, follow the Pajama Party hurry-up lamp and collect it to begin the two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "For the shorter Multiball, shoot the center ramp four times. The Centerfold opens and three-ball play begins; keep all three balls alive to light the Triple Jackpot toy.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue collecting Rabbit Heads and using the left ramp until all 12 Playmates are solid, then shoot that ramp once more for Mansion Mania.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Mansion Mania",
+          "steps": [
+            {
+              "text": "Qualify all 12 monthly Playmates by collecting Rabbit Heads.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp whenever Collect Playmates flashes so the qualified months become solid.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "With every month solid, shoot the lit left ramp to enter the Mansion and follow the flashing major shots.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Playmate",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "Pajama Party Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Centerfold Multiball",
+            "tone": "indigo",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Mansion Mania",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "Left Playmate ramp",
+            "description": "The ramp used to collect flashing Playmates and start Mansion Mania after all 12 are solid.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "label": "Centerfold ramp",
+            "description": "The center shot that opens the mechanical Centerfold and starts its Multiball on the fourth completion.",
+            "precision": "unverified"
+          },
+          {
+            "term": "magazine",
+            "label": "Shooter-lane magazine",
+            "description": "The opening magazine mechanism used by the light-plunge skill shot.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Several side-feature counts vary by ROM or setup.",
+            "response": "Follow the lamps and display for Peek-a-Boo, Splash, Photo Shoot, Tease, and Grotto. None of those uncertain counts is needed for the Playmate route.",
+            "sourceUrl": "https://www.youtube.com/watch?v=4xCStH3_KTE"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Rabbit Heads until Playmates flash, then shoot the left ramp to collect them. Use the center ramp for Centerfold Multiball, take Pajama Party after each four months, and return to the left ramp after all 12 Playmates are solid for Mansion Mania.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge lightly to open the magazine for the skill shot and a chance to spot the flashing Playmate month.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit major shots to collect Rabbit Heads. Each set of 25 qualifies one Playmate; qualified months flash above the flippers.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the left ramp says Collect Playmates, shoot it to turn every flashing month solid. You can wait and collect several flashing months with one ramp shot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After each group of four solid Playmates, follow the Pajama Party hurry-up lamp and collect it to begin the two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "For the shorter Multiball, shoot the center ramp four times. The Centerfold opens and three-ball play begins; keep all three balls alive to light the Triple Jackpot toy.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue collecting Rabbit Heads and using the left ramp until all 12 Playmates are solid, then shoot that ramp once more for Mansion Mania.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Collect Playmates",
+            "summary": "Every 25 Rabbit Heads qualifies one month. When Collect Playmates flashes, the left ramp turns every flashing month solid."
+          },
+          {
+            "name": "Pajama Party",
+            "summary": "Each group of four collected Playmates lights a hurry-up. Collect it to begin two-ball Pajama Party Multiball."
+          },
+          {
+            "name": "Centerfold Multiball",
+            "summary": "Shoot the center ramp four times to open the Centerfold and begin three-ball play. Keeping all three balls alive lights the Triple Jackpot toy."
+          }
+        ]
+      }
+    }
+  ]
+}

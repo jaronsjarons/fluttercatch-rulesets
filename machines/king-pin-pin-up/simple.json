@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6DZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "King Pin puts ten bowling-pin drops across the upper playfield. The indicated pin scores 5,000 instead of 500, and the center star rollover moves that indication. Completing all ten drops scores 5,000 and resets the bank. Plunge the lit upper saucer for 5,000, then use bank shots off the upper slings to hit lit pins while preserving control.",
+        "simpleOverview": "In King Pin, plunge the lit upper saucer for 5,000. Shoot the indicated bowling-pin drop for 5,000 instead of 500; the center star rollover moves the lit pin. Completing all ten drops scores another 5,000 and resets the bank. Bank controlled shots off the upper slings rather than firing blindly at the target row.",
+        "summary": "Start with the 5,000 saucer skill shot, then bank toward a lit pin from the opposite upper sling. Unlit targets still contribute to the 5,000 bank completion, so finish the row when only a few remain.",
+        "quickInfo": [
+          {
+            "name": "Skill shot",
+            "summary": "Plunge the lit upper saucer for 5,000 instead of 500."
+          },
+          {
+            "name": "Indicated drop",
+            "summary": "Score 5,000 instead of the base 500."
+          },
+          {
+            "name": "Center star rollover",
+            "summary": "Move the indicated bowling pin."
+          },
+          {
+            "name": "Complete all ten drops",
+            "summary": "Score 5,000 and reset the bank."
+          },
+          {
+            "name": "Three-ball completion",
+            "summary": "Alternate the lit Special after a full bank."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge the lit upper saucer for 5,000; nudge only enough to prevent the ball missing both saucers.",
+            "kinds": [
+              "skill-shot"
+            ]
+          },
+          {
+            "text": "Identify the lit bowling pin and choose the opposite upper sling as a bank surface."
+          },
+          {
+            "text": "Shoot the bank so the rebound reaches the lit drop for 5,000 and can return toward the other flipper."
+          },
+          {
+            "text": "Take unlit drops when they complete the ten-pin row or provide a safer rebound."
+          },
+          {
+            "text": "Finish all ten drops for 5,000 and a bank reset, then repeat with the newly indicated pin."
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated lit-pin and bank-completion awards",
+          "steps": [
+            {
+              "text": "Collect the 5,000 upper saucer on the plunge."
+            },
+            {
+              "text": "Hit indicated drops for 5,000 whenever their bank angle is controlled."
+            },
+            {
+              "text": "Finish the ten-pin row for another 5,000 and a fresh bank."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play because the completion awards differ, then confirm Special conversion, lit-pin behavior, and saucer value lamps.",
+          "Test both upper saucers, all ten drops and their reset, indicated-pin lamps, center star rollover, upper slings, four flippers, top side-lane feeds, and outlane bounce behavior."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper saucer",
+            "label": "Lit upper skill-shot saucer",
+            "description": "One of two top holes, worth 5,000 when indicated.",
+            "precision": "unverified"
+          },
+          {
+            "term": "bowling-pin drops",
+            "label": "Ten bowling-pin drop targets",
+            "description": "Full-width target row with one elevated lit value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center star rollover",
+            "label": "Center star rollover",
+            "description": "Rollover that moves the lit-pin indication.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper slings",
+            "label": "Upper sling bank surfaces",
+            "description": "Triangular rubbers used to bank controlled shots into the target row.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Start with the 5,000 saucer skill shot, then bank toward a lit pin from the opposite upper sling. Unlit targets still contribute to the 5,000 bank completion, so finish the row when only a few remain.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the lit upper saucer for 5,000; nudge only enough to prevent the ball missing both saucers.",
+            "kinds": [
+              "skill-shot"
+            ]
+          },
+          {
+            "text": "Identify the lit bowling pin and choose the opposite upper sling as a bank surface."
+          },
+          {
+            "text": "Shoot the bank so the rebound reaches the lit drop for 5,000 and can return toward the other flipper."
+          },
+          {
+            "text": "Take unlit drops when they complete the ten-pin row or provide a safer rebound."
+          },
+          {
+            "text": "Finish all ten drops for 5,000 and a bank reset, then repeat with the newly indicated pin."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Skill shot",
+            "summary": "Plunge the lit upper saucer for 5,000 instead of 500."
+          },
+          {
+            "name": "Indicated drop",
+            "summary": "Score 5,000 instead of the base 500."
+          },
+          {
+            "name": "Center star rollover",
+            "summary": "Move the indicated bowling pin."
+          }
+        ]
+      }
+    }
+  ]
+}

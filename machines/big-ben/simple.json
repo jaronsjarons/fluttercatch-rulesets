@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBo3",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Send the ball to the top until the base bonus is full and B-I-G is complete. Then complete B-E-N for Double Bonus. Resume top shots and collect the lit right saucer when its feed is safe.",
+        "quickInfo": [
+          {
+            "name": "B-I-G lanes",
+            "summary": "Each top B-I-G lane advances the base bonus, and a completed set lights the right saucer for 5,000."
+          },
+          {
+            "name": "B-E-N drops",
+            "summary": "Complete the three large B-E-N drop targets to enable Double Bonus for the current ball."
+          },
+          {
+            "name": "Right saucer",
+            "summary": "The right saucer is worth 5,000 after one B-I-G completion, but a later completion can change it to Special."
+          },
+          {
+            "name": "Left rollovers",
+            "summary": "The three rollovers on the left side score 1,000 each and add value during safe top play."
+          },
+          {
+            "name": "Skill shot",
+            "summary": "Plunge through a missing B-I-G lane, because a weak plunge can fall through the open gap left of the lanes."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through a B-I-G lane that is not complete."
+          },
+          {
+            "text": "Use both flippers to send the ball to the top. Build the base bonus to its maximum."
+          },
+          {
+            "text": "Continue top shots until B-I-G lights the right saucer for 5,000."
+          },
+          {
+            "text": "Test one B-E-N drop-target rebound. Complete B-E-N only while the returns remain controlled.",
+            "modeNotes": [
+              "Double Bonus: Complete all three large B-E-N drop targets. The game then doubles the end-of-ball bonus."
+            ]
+          },
+          {
+            "text": "From the right flipper, resume the safer shot to the top."
+          },
+          {
+            "text": "From the left flipper, collect the lit right saucer only when the shot and kickout are safe."
+          },
+          {
+            "text": "Read the saucer lamp after another B-I-G completion. Do not shoot it when Special gives no tournament points."
+          }
+        ],
+        "fallback": {
+          "title": "Top play only",
+          "when": "Use this when B-E-N rebounds or right-saucer misses threaten a drain.",
+          "steps": [
+            {
+              "text": "Ignore the B-E-N drop targets."
+            },
+            {
+              "text": "Send each controlled ball to the top."
+            },
+            {
+              "text": "Use B-I-G lanes and the left rollovers to build score and bonus."
+            },
+            {
+              "text": "Keep Double Bonus unqualified rather than risk a dangerous rebound."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Lit right-saucer scoring",
+            "when": "Use this when the saucer shot and its kickout return cleanly to control.",
+            "steps": [
+              {
+                "text": "Complete B-I-G once to light the right saucer for 5,000."
+              },
+              {
+                "text": "Catch the ball on the left flipper when the feed permits it."
+              },
+              {
+                "text": "Shoot the lit right saucer."
+              },
+              {
+                "text": "Return to top play after an unsafe miss or kickout."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum base bonus at Double Bonus",
+          "steps": [
+            {
+              "text": "Use B-I-G lanes to reach the maximum base bonus."
+            },
+            {
+              "text": "Complete B-E-N for Double Bonus only after its rebounds prove safe."
+            },
+            {
+              "text": "Keep the ball in the top area after the doubled bonus is ready."
+            },
+            {
+              "text": "Collect the right saucer only while its 5,000 lamp remains lit."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Missing-letter plunge",
+            "instruction": "Aim the plunge through a missing B-I-G lane. Use enough force to clear the open gap left of the lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBo3-MLv0z"
+          },
+          {
+            "name": "Flipper-based route choice",
+            "instruction": "Use the right flipper for the top shot. Use the left flipper for the lit saucer only after its return is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBo3-MLv0z"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "B-E-N drop-target rebounds can drain through the center.",
+            "response": "Test one target before you commit to the bank. Use top play if the rebound is dangerous.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBo3-MLv0z"
+          },
+          {
+            "issue": "A missed right-saucer shot can produce a dangerous return.",
+            "response": "Shoot the saucer only from a controlled left flipper. Stop after one unsafe miss.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBo3-MLv0z"
+          },
+          {
+            "issue": "A second B-I-G completion can replace the 5,000 saucer value with Special.",
+            "response": "Read the lamp before each saucer shot. Ignore Special when the event gives it no point value.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRBo3-MLv0z"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams 1975 or licensed Segasa edition, ball count, replay and Special treatment, tilt, and maximum base bonus.",
+          "Read the right-saucer lamp after each B-I-G completion; confirm whether Special has tournament point value before collecting it.",
+          "Test B-E-N rebounds, the right-saucer kickout, top-lane registration, the open-gap plunge, and both routes back to the top."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "B-I-G lane",
+            "label": "B-I-G lanes",
+            "description": "Top lanes used to build bonus and light the right saucer.",
+            "precision": "unverified",
+            "context": "Top lanes used to build bonus and light the right saucer."
+          },
+          {
+            "term": "B-E-N",
+            "label": "B-E-N drops",
+            "description": "Drop bank used to qualify Double Bonus.",
+            "precision": "unverified",
+            "context": "Drop bank used to qualify Double Bonus."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Saucer used to collect the currently lit award.",
+            "precision": "unverified",
+            "context": "Saucer used to collect the currently lit award."
+          }
+        ],
+        "simpleOverview": "Big Ben uses B-I-G top lanes to build base bonus and light the right saucer for 5,000, while the B-E-N drops enable Double Bonus. Fill the base through top play, complete B-E-N only from safe angles, then protect the doubled bonus and take the saucer while 5,000 remains lit.",
+        "overview": "Big Ben uses B-I-G top lanes to build base bonus and light the right saucer for 5,000, while the B-E-N drops enable Double Bonus. Maximize the base through the top, complete B-E-N only after its rebounds are proven, then return upstairs and preserve the doubled collect. Shoot the right saucer only while its 5,000 lamp is lit because a later B-I-G completion can change it to Special.",
+        "machineSetup": [
+          "Confirm Williams 1975 or licensed Segasa edition, ball count, replay and Special treatment, tilt, and maximum base bonus.",
+          "Read the right-saucer lamp after each B-I-G completion; confirm whether Special has tournament point value before collecting it.",
+          "Test B-E-N rebounds, the right-saucer kickout, top-lane registration, the open-gap plunge, and both routes back to the top."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Send the ball to the top until the base bonus is full and B-I-G is complete. Then complete B-E-N for Double Bonus. Resume top shots and collect the lit right saucer when its feed is safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through a B-I-G lane that is not complete."
+          },
+          {
+            "text": "Use both flippers to send the ball to the top. Build the base bonus to its maximum."
+          },
+          {
+            "text": "Continue top shots until B-I-G lights the right saucer for 5,000."
+          },
+          {
+            "text": "Test one B-E-N drop-target rebound. Complete B-E-N only while the returns remain controlled.",
+            "details": [
+              "Double Bonus: Complete all three large B-E-N drop targets. The game then doubles the end-of-ball bonus."
+            ]
+          },
+          {
+            "text": "From the right flipper, resume the safer shot to the top."
+          },
+          {
+            "text": "From the left flipper, collect the lit right saucer only when the shot and kickout are safe."
+          },
+          {
+            "text": "Read the saucer lamp after another B-I-G completion. Do not shoot it when Special gives no tournament points."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "B-I-G lanes",
+            "summary": "Each top B-I-G lane advances the base bonus, and a completed set lights the right saucer for 5,000."
+          },
+          {
+            "name": "B-E-N drops",
+            "summary": "Complete the three large B-E-N drop targets to enable Double Bonus for the current ball."
+          },
+          {
+            "name": "Right saucer",
+            "summary": "The right saucer is worth 5,000 after one B-I-G completion, but a later completion can change it to Special."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Top play only",
+          "when": "Use this when B-E-N rebounds or right-saucer misses threaten a drain.",
+          "steps": [
+            {
+              "text": "Ignore the B-E-N drop targets."
+            },
+            {
+              "text": "Send each controlled ball to the top."
+            },
+            {
+              "text": "Use B-I-G lanes and the left rollovers to build score and bonus."
+            },
+            {
+              "text": "Keep Double Bonus unqualified rather than risk a dangerous rebound."
+            }
+          ]
+        },
+        "warning": {
+          "title": "B-E-N drop-target rebounds can drain through the center.",
+          "text": "Test one target before you commit to the bank. Use top play if the rebound is dangerous."
+        }
+      }
+    }
+  ]
+}

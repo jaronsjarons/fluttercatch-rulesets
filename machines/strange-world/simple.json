@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "GRYox",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete two number sets at their top lane, green target, and yellow target so matching shots score 5,000 instead of 500. When 2 and 4 are complete, send the ball up the right side so it can score 4 and continue through 2 for 10,000.",
+        "overview": "Strange World is a number-completion game with three physical locations for each number. Complete a number at its top lane, green target, and yellow target, then repeat any matching shot for 5,000. Complete at least two sets; completed 2 and 4 can score together on one right-side feed for 10,000.",
+        "quickInfo": [
+          {
+            "name": "Three-ball or five-ball rules",
+            "summary": "In three-ball play, hitting 2 or 3 awards both numbers. In five-ball play, complete those numbers separately."
+          },
+          {
+            "name": "Number sets",
+            "summary": "Complete the top, green, and yellow shot carrying the same number. Every shot with that number then scores 5,000 instead of 500."
+          },
+          {
+            "name": "Top lanes",
+            "summary": "The top lanes supply one completion for each number. In three-ball play, 2 or 3 awards both; in five-ball play, complete them separately."
+          },
+          {
+            "name": "Green targets",
+            "summary": "The green stand-up targets supply the second completion, and the upper disk rollover substitutes for green 4. Green 2 and 3 share credit in three-ball play but are separate in five-ball play."
+          },
+          {
+            "name": "Yellow targets",
+            "summary": "The yellow stand-up targets supply the third completion, while the right-side lane substitutes for yellow 2. Yellow 2 and 3 share credit in three-ball play but are separate in five-ball play."
+          },
+          {
+            "name": "5,000 number lanes",
+            "summary": "After a set is complete, every lane or target carrying that number scores 5,000 instead of 500."
+          },
+          {
+            "name": "Left saucer",
+            "summary": "The left saucer scores a fixed 5,000, and its kickout is usually safe."
+          },
+          {
+            "name": "Pop bumpers",
+            "summary": "The factory cards list 1,000 per bumper hit in three-ball play and 100 in five-ball play."
+          },
+          {
+            "name": "Special",
+            "summary": "Complete 1-2-3-4 in one color to make the left saucer occasionally award Special."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On three-ball rules, plunge top lane 2 or 3; either scores both top numbers, so choose one to finish first. On five-ball rules, plunge the number you want to build and do not rely on that shortcut."
+          },
+          {
+            "text": "Hit the chosen number's green stand-up target and yellow stand-up target. For green 4, roll over the upper disk; for yellow 2, use the right-side lane."
+          },
+          {
+            "text": "Complete all three locations for one number; every matching lane and target then scores 5,000 instead of 500."
+          },
+          {
+            "text": "Complete two number sets. With 2 and 4 complete, send the ball up the right side to roll through 4 and continue through 2 for 10,000. Repeat that feed; take another completed 5,000 shot only when it is cleanly presented."
+          }
+        ],
+        "alternatives": [],
+        "termStyles": [
+          {
+            "label": "Number sets",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "5,000 number lanes",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Left saucer",
+            "tone": "navy",
+            "kind": "shot"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top lane",
+            "context": "The top lane group supplies the first completion for each numbered set.",
+            "label": "Numbered top lanes",
+            "description": "Plunge lanes across the top of the playfield. Lanes 2 and 3 award both numbers in three-ball play and score separately in five-ball play.",
+            "precision": "unverified"
+          },
+          {
+            "term": "green 2 and green 3 stand-up targets",
+            "context": "The green 2 and green 3 stand-up targets share credit in three-ball play and score separately in five-ball play.",
+            "label": "Green 2 and 3 targets",
+            "description": "Green stand-up targets that share credit in three-ball play and score separately in five-ball play.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right-side lane",
+            "context": "The right-side lane can substitute for the yellow 2 stand-up target.",
+            "label": "Yellow 2 side lane",
+            "description": "Lane on the right side that supplies the yellow completion for number 2.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower-right #3 target",
+            "context": "The lower-right #3 target supplies yellow 3 and can be backhanded.",
+            "label": "Yellow 3 target",
+            "description": "Low stand-up target on the right side of the playfield.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper disk rollover",
+            "context": "The upper disk rollover can substitute for the green 4 target.",
+            "label": "Green 4 disk rollover",
+            "description": "Round rollover above the upper target and bumper area.",
+            "precision": "unverified"
+          },
+          {
+            "term": "#4 lane",
+            "context": "The #4 lane can feed the #2 rollover for a second numbered collect.",
+            "label": "Number 4 lane",
+            "description": "Upper numbered lane that can continue into the number 2 rollover.",
+            "precision": "unverified"
+          },
+          {
+            "term": "#2 rollover",
+            "context": "The #2 rollover sits below the #4 lane and can score after that feed.",
+            "label": "Number 2 rollover",
+            "description": "Rollover below the number 4 lane on the right side.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "context": "The left saucer always awards 5,000 before kicking the ball back into play.",
+            "label": "5,000 saucer",
+            "description": "Kickout hole on the left side with a fixed 5,000-point award.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lower-right target backhand",
+            "techniqueSlug": "backhand",
+            "instruction": "Backhand the lower-right #3 stand-up target from the right flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRYox-MJV2B"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The lower stand-up targets and left saucer are extremely late shots because the flippers are low and flat.",
+            "response": "Wait longer than usual before flipping at those lower shots.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRYox-MJV2B"
+          },
+          {
+            "issue": "A ball entering left of the bumpers from above can deflect from the side rubbers into the right outlane.",
+            "response": "Be ready at the right outlane whenever the ball enters that upper-left area from above.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRYox-MJV2B"
+          },
+          {
+            "issue": "The #3 lane can strike the plastic below it or the #1 target and leave through the left outlane.",
+            "response": "Watch the first #3-lane exit before choosing that lane again.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRYox-MJV2B"
+          },
+          {
+            "issue": "The far-right #2-lane exit and the center side of the bumper triangle can feed the center drain, while target rebounds often reach the slingshots.",
+            "response": "Keep both flippers ready for the #2-lane exit and every stand-up-target rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRYox-MJV2B"
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Northwest Pinball Championships 2025, Zach McCarthy repeatedly used completed 2 and 4 together, including the 10,000-point right-side 4-to-2 feed."
+          ]
+        },
+        "simpleOverview": "Strange World repeats each number across a top lane, green target, and yellow target. Completing all three locations makes every shot carrying that number worth 5,000 instead of 500, so completing two compatible numbers creates the repeatable scoring route.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete each number at its top lane, green target, and yellow target, then send the ball up top through completed-number lanes for 5,000-point scores.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Choose the first number",
+            "text": "On three-ball rules, plunge top lane 2 or 3; either scores both top numbers. On five-ball rules, plunge the number you want to complete."
+          },
+          {
+            "title": "Complete that numbered set",
+            "text": "Hit the matching green and yellow targets. Completing all three locations makes that number's lanes and targets score 5,000 instead of 500."
+          },
+          {
+            "title": "Score the completed lanes",
+            "text": "After most sets are complete, send the ball up top. Use completed #4 when it safely continues through completed #2; otherwise use completed #1 or #2."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Three-ball or five-ball rules",
+            "summary": "In three-ball play, hitting 2 or 3 awards both numbers. In five-ball play, complete those numbers separately."
+          },
+          {
+            "name": "Number sets",
+            "summary": "Complete the top, green, and yellow shot carrying the same number. Every shot with that number then scores 5,000 instead of 500."
+          },
+          {
+            "name": "Top lanes",
+            "summary": "The top lanes supply one completion for each number. In three-ball play, 2 or 3 awards both; in five-ball play, complete them separately."
+          }
+        ],
+        "warning": {
+          "title": "A ball entering left of the bumpers from above can deflect from the side rubbers into the right outlane.",
+          "text": "Be ready at the right outlane whenever the ball enters that upper-left area from above."
+        }
+      }
+    }
+  ]
+}

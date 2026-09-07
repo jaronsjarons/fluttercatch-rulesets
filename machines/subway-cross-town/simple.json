@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEQy",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the plunge to light a useful bumper, build the red and yellow center values with bumper hits, then shoot the center target only when both values match.",
+        "quickInfo": [
+          {
+            "name": "Colored top lanes",
+            "summary": "The plunge can light one bumper to improve its value while it advances its center-value color."
+          },
+          {
+            "name": "Red value",
+            "summary": "Red-bumper hits advance the red center light through its value sequence."
+          },
+          {
+            "name": "Yellow value",
+            "summary": "Yellow-bumper hits advance the yellow center light through its value sequence."
+          },
+          {
+            "name": "Center target",
+            "summary": "The center target scores only 10 points unless the red and yellow lights match, when it can score up to 300 points."
+          },
+          {
+            "name": "Upper play",
+            "summary": "Shots beside the bumpers return the ball to the top lanes and can advance both color values."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for a colored top lane. Note which bumper becomes lit."
+          },
+          {
+            "text": "Send controlled shots beside the bumpers to return the ball to the upper playfield."
+          },
+          {
+            "text": "Use red-bumper hits to advance the red center value."
+          },
+          {
+            "text": "Use yellow-bumper hits to advance the yellow center value."
+          },
+          {
+            "text": "Compare the two center lights after each bumper sequence. Do not shoot the center target while the values differ."
+          },
+          {
+            "text": "When both colors show the same value, shoot the center target. Repeat the upper-play route for the next match."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-play scoring",
+          "when": "Use this when the center target rebound is unsafe or the two values are far apart.",
+          "steps": [
+            {
+              "text": "Shoot beside the bumpers instead of at the center target."
+            },
+            {
+              "text": "Use the top lanes and lit bumper for steady scoring."
+            },
+            {
+              "text": "Watch the two color values as the bumpers advance them."
+            },
+            {
+              "text": "Return to the center target only after a useful match appears."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Low-value center collect",
+            "when": "Use this when the values match and the center target has a predictable rebound.",
+            "steps": [
+              {
+                "text": "Confirm that the red and yellow values match."
+              },
+              {
+                "text": "Shoot the center target from the controlled flipper."
+              },
+              {
+                "text": "Return the next safe feed to the upper playfield."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "300-point center collect",
+          "steps": [
+            {
+              "text": "Advance both color lights through repeated bumper hits."
+            },
+            {
+              "text": "Let a color roll past Special and return to 50 when needed."
+            },
+            {
+              "text": "Match the red and yellow lights at 300."
+            },
+            {
+              "text": "Shoot the center target before another bumper changes either value."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "center target",
+            "label": "Center value target",
+            "description": "Center target that collects when the red and yellow values match.",
+            "precision": "unverified",
+            "context": "Shoot the center target only when both values match."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Useful plunge lane",
+            "instruction": "Adjust the plunge to enter the top lane that lights the most useful bumper on this machine.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEQy-MQYkj"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Bumper exits can feed the center drain or the slingshots.",
+            "response": "Keep both flippers ready. Do not flip the ball back into a bumper from a poor feed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEQy-MQYkj"
+          },
+          {
+            "issue": "Side lanes can enter a slingshot and continue toward an outlane.",
+            "response": "Watch the first side-lane exit. Nudge only after you learn its normal path.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrEQy-MQYkj"
+          }
+        ],
+        "simpleOverview": "Subway and Cross Town use red- and yellow-bumper hits to move two center values. Plunge a colored top lane to light its bumper, build both colors until their displayed values match, then shoot the center target for the combined award.",
+        "overview": "In Subway and Cross Town, each colored top lane lights the matching bumper. Red-bumper hits raise the red value below the center target, and yellow-bumper hits raise the yellow value. Shoot the center target only when the two displayed values match because an unmatched pair pays just 10 points.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Use the plunge to light a useful bumper, build the red and yellow center values with bumper hits, then shoot the center target only when both values match.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a colored top lane. Note which bumper becomes lit."
+          },
+          {
+            "text": "Send controlled shots beside the bumpers to return the ball to the upper playfield."
+          },
+          {
+            "text": "Use red-bumper hits to advance the red center value."
+          },
+          {
+            "text": "Use yellow-bumper hits to advance the yellow center value."
+          },
+          {
+            "text": "Compare the two center lights after each bumper sequence. Do not shoot the center target while the values differ."
+          },
+          {
+            "text": "When both colors show the same value, shoot the center target. Repeat the upper-play route for the next match."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Colored top lanes",
+            "summary": "The plunge can light one bumper to improve its value while it advances its center-value color."
+          },
+          {
+            "name": "Red value",
+            "summary": "Red-bumper hits advance the red center light through its value sequence."
+          },
+          {
+            "name": "Yellow value",
+            "summary": "Yellow-bumper hits advance the yellow center light through its value sequence."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-play scoring",
+          "when": "Use this when the center target rebound is unsafe or the two values are far apart.",
+          "steps": [
+            {
+              "text": "Shoot beside the bumpers instead of at the center target."
+            },
+            {
+              "text": "Use the top lanes and lit bumper for steady scoring."
+            },
+            {
+              "text": "Watch the two color values as the bumpers advance them."
+            },
+            {
+              "text": "Return to the center target only after a useful match appears."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Bumper exits can feed the center drain or the slingshots.",
+          "text": "Keep both flippers ready. Do not flip the ball back into a bumper from a poor feed."
+        }
+      }
+    }
+  ]
+}

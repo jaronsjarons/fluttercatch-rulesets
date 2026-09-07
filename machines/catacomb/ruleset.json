@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoQ6",
+  "title": "Catacomb",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Catacomb operation manual",
+      "url": "https://www.mamechannel.it/files_free/arcade_manuals_unpacked/catacomp.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Catacomb owner rules and physical-play notes",
+        "url": "https://pinside.com/pinball/forum/topic/catacomb-club/page/5"
+      },
+      {
+        "label": "Kineticist Catacomb machine guide",
+        "url": "https://www.kineticist.com/games/pinball/catacomb"
+      },
+      {
+        "label": "Trent Augenstein at PAPA Circuit Final 2017-18",
+        "url": "https://pinballvideos.com/v/1772/5033"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Short-plunge the far-right Advance Spinner lane, complete drop banks only when they show a missing grid number, use each completed color to raise Bonus X and release held balls for Catacomb Multiball, then use the 1,500 spinner when the grid route becomes unsafe.",
+      "steps": [
+        {
+          "text": "Before plunging, check both hidden side lock saucers for captive balls."
+        },
+        {
+          "text": "Short plunge the far-right top lane.",
+          "modeNotes": [
+            "Advance Spinner: Each collect raises the spinner from 100 to 500, then 1,000, then 1,500 per spin."
+          ]
+        },
+        {
+          "text": "Read the rotating colored number at the A, B, C, and D drop banks. Choose a bank whose number is missing from the 16-number grid."
+        },
+        {
+          "text": "Complete that three-target bank.",
+          "modeNotes": [
+            "Grid award: The last target spots the number lit at that bank. A duplicate number gives no additional grid progress."
+          ]
+        },
+        {
+          "text": "Use a top-left stop lane when a useful red or yellow number is available.",
+          "modeNotes": [
+            "Far-left stop lane: It can spot #6 and hold all banks on red numbers.",
+            "Near-left stop lane: It can spot #1 and hold all banks on yellow numbers."
+          ]
+        },
+        {
+          "text": "Complete all four numbers of one color.",
+          "modeNotes": [
+            "Bonus X: Each completed color raises the multiplier one step, to 5x.",
+            "Catacomb Multiball: A completed color releases every ball in the hidden lock saucers. There are no jackpots or playfield multipliers. The multiball ends when one ball remains."
+          ],
+          "kinds": [
+            "multiplier",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Catacomb Multiball, continue useful banks and spinner shots. If another ball enters a lock, complete a different color to release it and add a ball again.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When the spinner is 1,500 and few useful grid numbers remain, shoot the spinner instead of forcing a poor bank."
+        },
+        {
+          "text": "Protect the carried base bonus and Bonus X. A tilt loses the current bonus collect.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After the drain, finish the Backbox Bonus Game before the next player starts.",
+          "modeNotes": [
+            "Backbox Bonus Game: The left flipper selects a bank color. The right flipper launches the backbox ball toward A, B, C, or D. A new number extends the turn. A duplicate ends it."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Spinner and carried bonus",
+        "when": "Use this plan when the needed grid numbers are difficult or the bank rebounds are unsafe.",
+        "steps": [
+          {
+            "text": "Roll through the far-right top lane to raise the spinner to 1,500."
+          },
+          {
+            "text": "Complete a color to raise Bonus X, stopping at 4x or higher when practical.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the center spinner. A full shot can continue into the B or C bank."
+          },
+          {
+            "text": "Return to a bank only when it shows a missing number."
+          },
+          {
+            "text": "Protect the carried bonus and multiplier."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Backbox Bonus Game control",
+          "when": "Use this plan after every drain.",
+          "steps": [
+            {
+              "text": "Read which grid numbers are missing."
+            },
+            {
+              "text": "Tap the left flipper to select and hold the most useful bank color."
+            },
+            {
+              "text": "Use the right flipper to send the backbox ball toward A, B, C, or D."
+            },
+            {
+              "text": "A made letter spots the selected bank number. A new number extends the turn. A duplicate ends it."
+            },
+            {
+              "text": "If a color completes, Bonus X rises. Held balls release after the next playfield ball validates.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Do not plunge for the next player until the game returns control."
+            }
+          ]
+        },
+        {
+          "title": "A-B-C-D Extra Ball route",
+          "when": "Use this plan only when Extra Ball is enabled or converted to useful points.",
+          "steps": [
+            {
+              "text": "Complete bank A while its A letter is lit."
+            },
+            {
+              "text": "Complete B, then C, then D on the same ball."
+            },
+            {
+              "text": "Extra Ball alternates between the two inlanes. Collect the lit inlane."
+            },
+            {
+              "text": "Keep the grid-number and Bonus X plan as the main scoring route.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "5x, a complete grid, and 136,000 Super Bonus",
+        "steps": [
+          {
+            "text": "Complete colored four-number sets to reach 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Fill all 16 grid numbers with drop banks and the Backbox Bonus Game.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use each completed color to release one or two locked balls for Catacomb Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Drain with the full grid lit. The game collects normal bonus and clears the grid.",
+            "modeNotes": [
+              "Super Bonus: A full-grid drain lights a carried 136,000 collect for the next ball."
+            ]
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Inspect both hidden side lock saucers before the first plunge. They can already contain balls locked by another player.",
+        "Confirm Extra Ball and Special treatment. Extra Ball can be disabled; novelty play scores Special as 100,000.",
+        "Do not start the next player's ball until the previous player finishes the Backbox Bonus Game."
+      ],
+      "termStyles": [
+        {
+          "label": "Catacomb Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Backbox Bonus Game",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "4x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "5x",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Super Bonus",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "16-number grid",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Advance Spinner",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backbox color select",
+          "instruction": "Tap the left flipper to rotate the held color before the right flipper launches the backbox ball.",
+          "sourceUrl": "https://www.mamechannel.it/files_free/arcade_manuals_unpacked/catacomp.pdf"
+        }
+      ],
+      "cautions": [],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Short plunge the far-right Advance Spinner lane."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete colored four-number sets to reach 5x."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Spinner and carried bonus: Use this plan when the needed grid numbers are difficult or the bank rebounds are unsafe."
+        }
+      ],
+      "simpleOverview": "Catacomb uses four colored number sets to fill a 16-number grid, raise Bonus X, and release held balls. Short-plunge Advance Spinner, complete only banks showing missing numbers, then use the 1,500 spinner when the remaining grid choices are poor. The bonus and multiplier carry between balls.",
+      "overview": "Catacomb uses four colored number sets to fill a 16-number grid, raise Bonus X, and release held balls. Start with Advance Spinner, choose banks whose displayed number is missing, and complete colors to release held balls and raise Bonus X. Shift to the 1,500 spinner when the grid offers no safe useful bank.",
+      "machineSetup": [
+        "Inspect both hidden side lock saucers before the first plunge. They can already contain balls locked by another player.",
+        "Confirm Extra Ball and Special treatment. Extra Ball can be disabled; novelty play scores Special as 100,000.",
+        "Do not start the next player's ball until the previous player finishes the Backbox Bonus Game."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "G4EPE",
+  "title": "Super Orbit",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Super Orbit complete rulesheet",
+      "url": "https://www.pinball.org/rules/cache/Superorbit-rules.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Super Orbit tournament guide",
+        "url": "https://rules.silverballmania.com/rules/G4EPE-ML14r"
+      },
+      {
+        "label": "Raymond Davidson at Pinburgh 2015",
+        "url": "https://pinballvideos.com/v/913/16377"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat the right spinner to build Orbit bonus, collect it at the upper-right rollunder, and add Double Bonus only after a safe level-six vari-target test.",
+      "quickInfo": [
+        {
+          "name": "Orbit lamps",
+          "summary": "Spinner spins, bumpers, and selected targets advance the ten-lamp ring, whose completion adds 10,000 bonus."
+        },
+        {
+          "name": "Bonus collect",
+          "summary": "The upper-right rollunder collects and resets the built bonus, then gives a new plunge."
+        },
+        {
+          "name": "Vari-target",
+          "summary": "Deeper hits score and advance more bonus, and a level-six hit lights Double Bonus."
+        },
+        {
+          "name": "Double Bonus",
+          "summary": "A full vari-target hit lights Double Bonus, which is also active on the last ball under standard settings."
+        },
+        {
+          "name": "Lower gate",
+          "summary": "The left inlane opens the right-outlane gate, which can award the current bonus during an outlane escape."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge the center top lane for one bonus advance. Keep the flippers ready for a direct center return."
+        },
+        {
+          "text": "Shoot the right spinner to advance the Orbit lamps and feed the upper bumpers.",
+          "modeNotes": [
+            "Orbit lamps: A complete ten-lamp revolution adds one 10,000 bonus unit. Base bonus can reach 190,000.",
+            "Bumpers: Lit bumpers score more and advance Orbit lamps faster on standard three-ball settings."
+          ]
+        },
+        {
+          "text": "Guide the ball through the upper-right rollunder when the route appears. This collects and resets the built bonus."
+        },
+        {
+          "text": "Use the free plunge to restart the spinner and bumper build."
+        },
+        {
+          "text": "Test the vari-target only when a deep hit returns to the left flipper. Reach level six to light Double Bonus.",
+          "modeNotes": [
+            "Vari-target: Each deeper level adds more bonus. Level six lights Double Bonus and can also collect a lit Special."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When Double Bonus is active, continue spinner and rollunder cycles. Do not force another target hit solely for value.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Spinner and bumper build",
+        "when": "Use this when the vari-target rebound is unsafe or the flippers cannot reach level six.",
+        "steps": [
+          {
+            "text": "Repeat the right spinner."
+          },
+          {
+            "text": "Use lit bumper action to move the Orbit lamps."
+          },
+          {
+            "text": "Guide the ball through the upper-right rollunder to collect bonus."
+          },
+          {
+            "text": "Use the next plunge to begin another cycle."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Level-six vari-target",
+          "when": "Use this when the target accepts a full hit and returns the ball to a controlled left-flipper position.",
+          "steps": [
+            {
+              "text": "Cradle on the left flipper after a known feed."
+            },
+            {
+              "text": "Shoot the vari-target for a level-six hit."
+            },
+            {
+              "text": "Use the lit Double Bonus on later bonus builds and collects.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "190,000 bonus and repeated collects",
+        "steps": [
+          {
+            "text": "Advance the Orbit lamps through spinner spins and bumper hits."
+          },
+          {
+            "text": "Complete ten-lamp Orbit revolutions until the displayed base bonus reaches 190,000. Each revolution adds 10,000."
+          },
+          {
+            "text": "Collect bonus at the upper-right rollunder before the ball drains."
+          },
+          {
+            "text": "Repeat the build and collect cycle. Add Double Bonus when the vari-target is safe.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Double Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Spinner-to-collect route",
+          "instruction": "Shoot the right spinner. Nudge only when the bumper feed gives a clear path through the upper-right bonus rollunder.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4EPE-ML14r"
+        },
+        {
+          "name": "Cradle",
+          "instruction": "Cradle on the left flipper before testing the vari-target; stop if a deep hit does not return safely.",
+          "techniqueSlug": "cradle",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4EPE-ML14r"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The center skill-shot lane can return the ball through the middle of the flippers.",
+          "response": "Watch the entire plunge. Keep both flippers ready before the ball leaves the top.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4EPE-ML14r"
+        },
+        {
+          "issue": "Vari-target rebounds can center-drain or reach the left outlane.",
+          "response": "Use the spinner route until one test hit proves that the target return is safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4EPE-ML14r"
+        },
+        {
+          "issue": "Upper bumper action is the highest-risk part of the main route.",
+          "response": "Keep both flippers ready and nudge before a bumper exit reaches an outlane divider.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4EPE-ML14r"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm three-ball or five-ball settings because lit-bumper Orbit advances differ, and the last ball normally has Double Bonus.",
+        "Test whether the vari-target reaches level six and whether its rebound returns safely to the left flipper.",
+        "Learn the right-spinner, upper-bumper, and upper-right bonus-rollunder feeds before committing to repeated cycles."
+      ],
+      "simpleOverview": "Super Orbit turns spinner and bumper hits into a ten-lamp Orbit bonus that the upper-right rollunder collects and resets. Repeat the right spinner, collect before the ball drains, and attempt the vari-target for Double Bonus only after its deepest return is proven safe.",
+      "overview": "Super Orbit turns spinner and bumper hits into a ten-lamp Orbit bonus that the upper-right rollunder collects and resets. Repeat the right spinner and upper bumper action, take the rollunder collect, then rebuild. Add Double Bonus only after a controlled level-six vari-target test, and use the left inlane to open the right-outlane bonus gate when available.",
+      "machineSetup": [
+        "Confirm three-ball or five-ball settings because lit-bumper Orbit advances differ, and the last ball normally has Double Bonus.",
+        "Test whether the vari-target reaches level six and whether its rebound returns safely to the left flipper.",
+        "Learn the right-spinner, upper-bumper, and upper-right bonus-rollunder feeds before committing to repeated cycles."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

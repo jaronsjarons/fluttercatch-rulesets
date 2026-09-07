@@ -1,0 +1,146 @@
+# Paddock / Post Time
+
+[View on FlutterCatch](https://fluttercatch.com/machine/paddock-post-time) · [Propose a correction](https://github.com/jaronsjarons/fluttercatch-rulesets/issues/new/choose)
+
+Generated reading copy. Edit [ruleset.json](ruleset.json), [simple.json](simple.json), or [mappings.json](mappings.json) to contribute.
+
+## Simple strategy
+
+### Summary Title
+
+The goal
+
+### Summary
+
+A-B-C-D and horse progress share the safer upper route. C and D are especially useful because each gives three race advances. Time a C or D hit from position four to land exactly on Finish, then take a lit horseshoe lane only from a natural feed.
+
+### Steps
+
+- Plunge the top-center lane for three race advances, or collect a missing A or B lane.
+
+- Shoot up either side to score A-B-C-D and build horse progress through upper action.
+
+- When the horse reaches position four, hit C or D to advance three spaces to Finish.
+
+- Complete A-B-C-D, then shoot the lit center target for 3,000.
+
+- On Post Time, take a lit bottom horseshoe lane from a natural feed or controlled shatz pass.
+
+### Quick Info
+
+- A-B-C-D
+
+Summary
+
+Complete the four upper letters to light the center target for 3,000.
+
+- Race advances
+
+Summary
+
+C, D, and the top-center lane add three; A, B, the center bumper, and a lit track button add one.
+
+- Reach Finish
+
+Summary
+
+Advance the horse to position seven; a C or D hit from position four gets there exactly.
+
+## Full strategy
+
+### Overview
+
+Paddock and add-a-ball Post Time combine an A-B-C-D scoring route with a seven-position horse race. Shoot up the sides to collect A-B-C-D and light the center target for 3,000. Advance the horse with lanes, targets, the center bumper, and lit track buttons; from position four, a C or D target reaches Finish and lights the bottom horseshoe lanes on Post Time.
+
+### Simple Overview
+
+In Paddock or Post Time, shoot up the sides to collect A-B-C-D, then shoot the lit center target for 3,000. Watch the horse race: at position four, hit C or D for three advances and reach Finish. On Post Time, Finish lights the bottom horseshoe lanes for an additional ball when enabled.
+
+### Summary
+
+A-B-C-D and horse progress share the safer upper route. C and D are especially useful because each gives three race advances. Time a C or D hit from position four to land exactly on Finish, then take a lit horseshoe lane only from a natural feed.
+
+### Quick Info
+
+- A-B-C-D
+
+Summary
+
+Complete the four upper letters to light the center target for 3,000.
+
+- Race advances
+
+Summary
+
+C, D, and the top-center lane add three; A, B, the center bumper, and a lit track button add one.
+
+- Reach Finish
+
+Summary
+
+Advance the horse to position seven; a C or D hit from position four gets there exactly.
+
+- Post Time award
+
+Summary
+
+At Finish, the bottom horseshoe lanes light for an additional ball when enabled.
+
+### Steps
+
+- Plunge the top-center lane for three race advances, or collect a missing A or B lane.
+
+- Shoot up either side to score A-B-C-D and build horse progress through upper action.
+
+- When the horse reaches position four, hit C or D to advance three spaces to Finish.
+
+- Complete A-B-C-D, then shoot the lit center target for 3,000.
+
+- On Post Time, take a lit bottom horseshoe lane from a natural feed or controlled shatz pass.
+
+### Builds Toward
+
+A finished race and lit center target
+
+Steps
+
+- Shoot the A-B-C-D features, center bumper, and lit track buttons to advance the horse.
+
+- Use C or D from position four to reach Finish.
+
+- Collect the center-target points and the copy-specific bottom-lane award.
+
+### Techniques
+
+- Shatz pass
+
+Instruction
+
+Use a controlled return-lane shatz only when it can send the ball through a lit Post Time horseshoe without exposing the outlane.
+
+Source Url
+
+[Source](https://rules.silverballmania.com/rules/GR0W9-MJrpk)
+
+Technique Slug
+
+shatz-pass
+
+### Machine Setup
+
+- Identify Paddock versus add-a-ball Post Time and confirm what Finish, completed races, the bottom horseshoes, and the center target award under tournament settings.
+
+- Test A-B-C-D targets and lamps, top-center lane, center bumper, lit track buttons, horse advance unit and Finish lamp, center target, both bottom horseshoe lanes, and automatic added-ball serve.
+
+## Sources
+
+- [Williams Post Time factory instruction cards](https://www.pinballrebel.com/pinball/cards/Williams/Williams_Post_Time_instruction_cards.zip)
+- [Silverball Rules Post Time strategy](https://rules.silverballmania.com/rules/GR0W9-MJrpk)
+
+## Playfield
+
+[View the current playfield image](https://img.opdb.org/bccf7e1e-d644-44aa-b1ec-64b0373690e7-large.jpg).
+
+[Image credit and rights](image.json) · [Crop recipe](crop.json) · [Mappings](mappings.json)
+
+Ruleset text and mapping data: CC BY-SA 4.0, FlutterCatch contributors. External images retain their separate rights.

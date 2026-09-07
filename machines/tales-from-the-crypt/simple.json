@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6wO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Crypt Multiball, collect the left-ramp Jackpot and right-ramp Double Jackpot, add Frenzy, use captive-ball add-a-balls before the Double Jackpot, then spell CRYPT for five more add-a-balls and the Monster Jackpot.",
+        "steps": [
+          {
+            "text": "On the first launch, time the moving Guillotine light. Hit the lit drop target. Keep the initial ball save for the drop-bank return.",
+            "modeNotes": [
+              "Skill Shot: The three Guillotine targets cycle. A lit hit scores 2,000,000 on ball 1 and one million more on each later ball."
+            ]
+          },
+          {
+            "text": "Use either spinner to light the Electric Chair. Press the door-handle launch button when the wanted Creature Feature flashes. Shoot the Electric Chair scoop.",
+            "modeNotes": [
+              "Creature Feature: A spinner changes the selected mode unless the door handle locks it. Most modes can run together. Their timers continue during the Crypt Multiball opening animation."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the Tombstone to spell CRYPT. The C starts spotted. Before the first multiball, ball starts can also spot letters.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When CRYPT is complete, shoot the open Crypt with the upper-right flipper. On the first start, the center spinner can also start the multiball. Later starts require the Crypt.",
+            "modeNotes": [
+              "Crypt Multiball: It starts with three balls. The left ramp scores a base 25,000,000 Jackpot. Left-spinner spins and Crypt shots raise it. The multiball ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Before the Double Jackpot, hit the captive ball from control. Each registered hit adds a ball. This add-a-ball stops after the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for the Jackpot. Then shoot the right ramp for the Double Jackpot.",
+            "modeNotes": [
+              "Double Jackpot: Its base is twice the collected left-ramp Jackpot. Right-spinner spins and Crypt shots raise it before collection. A flashing right-ramp Frenzy can start on the same shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the Double Jackpot, hit the raised Tombstone five times to spell CRYPT. Wait for each added ball to enter play before you hit the next letter.",
+            "modeNotes": [
+              "First CRYPT cycle after Double Jackpot: Each letter adds one ball. Completing CRYPT lights the Monster Jackpot. Later CRYPT cycles do not add balls."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the open Crypt for the Monster Jackpot.",
+            "modeNotes": [
+              "Monster Jackpot: It scores 50,000,000 plus the collected Double Jackpot, with a 100,000,000 minimum. Each later Monster Jackpot adds 50,000,000."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the multiball, shoot the right ramp once to light the next Frenzy and again to start it. Rip the spinners.",
+            "modeNotes": [
+              "Frenzy: Living Dead scores 250,000 per switch, Chainsaw 500,000, Grave Digger 750,000, and Play the Organ 1,000,000. The value is stored in end-of-ball bonus. A tilt loses it."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the multiball ends before the left-ramp Jackpot, shoot the Crypt or center spinner within 12 seconds to restart it.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Creature Features and Frenzies",
+          "when": "Use this plan when the Tombstone or Crypt shot is unreliable.",
+          "steps": [
+            {
+              "text": "Use a spinner to light the Electric Chair. Lock a feature that matches the safe shots. Shoot the scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Frightmare when the right orbit is safe. Make 25 spinner turns in 25 seconds.",
+              "modeNotes": [
+                "Frightmare: Spinner turns score during 25 seconds. A full right orbit can register both spinners. The 25th turn awards 25,000,000."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Super Guillotine Targets when the center bank is safe. Hit the resetting drops during 25 seconds.",
+              "modeNotes": [
+                "Super Guillotine Targets: Each target hit raises the value. The bank resets during the timed mode."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Robbing the Crypt only when the upper-right flipper can loop the Crypt. Keep the four-second timer alive and finish CRYPT.",
+              "modeNotes": [
+                "Robbing the Crypt: Each Crypt shot scores 10,000,000 and resets the timer. The final T scores 25,000,000 and ends the mode."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Super Crypt Kicker before a long ball.",
+              "modeNotes": [
+                "Super Crypt Kicker: The left kickback stays lit for the rest of the ball."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the right ramp to light and start the highest available Frenzy. Rip spinners. Do not tilt away the stored bonus.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Creature Feature completion route",
+            "when": "Use this route when the Electric Chair and spinners are reliable and Crypt Jam is reachable.",
+            "steps": [
+              {
+                "text": "In Thunder Storm, shoot either ramp during 20 seconds.",
+                "modeNotes": [
+                  "Thunder Storm: Ramp values grow from 1,000,000 to a 15,000,000 cap during the timer."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Skull Cracking, hit the captive ball during 20 seconds.",
+                "modeNotes": [
+                  "Skull Cracking: The first registered hit adds a ball. Up to five balls can be added. Later hits score more when more balls are in play."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "In Door Prize Select, use the flippers to select a door. Press the door handle to open it.",
+                "modeNotes": [
+                  "Door Prize Select: A points award continues the video mode. The hanging figure ends it."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Psycho Pops, make 25 pop hits in 25 seconds.",
+                "modeNotes": [
+                  "Psycho Pops: The 25th pop hit awards 25,000,000."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Lite Extra Ball, shoot the center spinner.",
+                "modeNotes": [
+                  "Lite Extra Ball: The center spinner collects the lit Extra Ball. Tournament settings can disable Extra Balls."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Werewolf Countdown, shoot the left spinner before the hurry-up reaches zero.",
+                "modeNotes": [
+                  "Werewolf Countdown: The award begins at 30,000,000 and counts down until the left spinner collects it."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "In Electric Chair, shoot the scoop while two or more balls remain.",
+                "modeNotes": [
+                  "Electric Chair: Six-ball play starts. Each scoop scores 1,000,000 times the balls in play. It ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "In Super Keeper Targets, hit the six KEEPER standups.",
+                "modeNotes": [
+                  "Super Keeper Targets: Target values rise. Completing all six scores 99,000,000."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Frenzy stack",
+            "when": "Use this plan when the right ramp and spinners are the safest repeatable shots.",
+            "steps": [
+              {
+                "text": "Shoot the right ramp to light a Frenzy. Shoot it again to start.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start a Creature Feature first when its spinner or ramp shots overlap.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Crypt Multiball while the Frenzy is ready, or start the Frenzy during the multiball.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot spinners. More active balls make more switch hits.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Preserve the ball to receive the stored Fast Goring Frenzy bonus. Bonus X does not multiply it.",
+                "modeNotes": [
+                  "A tilt removes the stored Fast Goring Frenzy bonus."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Crypt Jam",
+          "steps": [
+            {
+              "text": "Start all 12 Creature Features. You do not have to complete them.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Electric Chair when Crypt Jam is ready.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Keep at least two balls in play. Every switch scores 1,000,000.",
+              "modeNotes": [
+                "Crypt Jam: It starts six-ball play with a 25-second ball save. It ends when one ball remains."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Crypt Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Crypt Jam",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Electric Chair",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Skull Cracking",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Creature Feature",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Thunder Storm",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Frightmare",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Psycho Pops",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Robbing the Crypt",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Guillotine Targets",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Werewolf Countdown",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Crypt Kicker",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Keeper Targets",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Frenzy",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Double Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "captive ball",
+            "context": "Before the Double Jackpot, hit the captive ball from control.",
+            "label": "Captive ball",
+            "description": "The captive ball is beside the KEE targets on the left-middle playfield.",
+            "xPercent": 14,
+            "yPercent": 43,
+            "precision": "area"
+          },
+          {
+            "term": "left ramp",
+            "context": "Shoot the left ramp for the Jackpot.",
+            "label": "Left ramp Jackpot",
+            "description": "The left ramp is in the upper-left area.",
+            "xPercent": 27,
+            "yPercent": 25,
+            "precision": "area"
+          },
+          {
+            "term": "Electric Chair scoop",
+            "context": "Shoot the Electric Chair scoop.",
+            "label": "Electric Chair scoop",
+            "description": "The Electric Chair scoop is in the upper-center-left area.",
+            "xPercent": 40,
+            "yPercent": 27,
+            "precision": "area"
+          },
+          {
+            "term": "Tombstone",
+            "context": "Hit the Tombstone to spell CRYPT.",
+            "label": "Tombstone and Crypt",
+            "description": "The Tombstone blocks the Crypt in the upper-center area.",
+            "xPercent": 51,
+            "yPercent": 23,
+            "precision": "area"
+          },
+          {
+            "term": "center spinner",
+            "context": "On the first start, the center spinner can also start the multiball.",
+            "label": "Center spinner",
+            "description": "The center spinner is in the upper-center-right lane.",
+            "xPercent": 61,
+            "yPercent": 22,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "context": "Then shoot the right ramp for the Double Jackpot.",
+            "label": "Right ramp Double Jackpot and Frenzy",
+            "description": "The right ramp is on the upper-right side.",
+            "xPercent": 80,
+            "yPercent": 34,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Older 2.x ROMs and newer 3.x ROMs use different scoring values; confirm the installed ROM before relying on exact values.",
+          "Tournament settings can disable Extra Balls."
+        ],
+        "techniques": [
+          {
+            "name": "Upper-flipper Electric Chair shot",
+            "instruction": "Use the upper-right flipper. The scoop is open toward that flipper and is easier there than from the lower flippers.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "name": "Upper-flipper Tombstone and Crypt shot",
+            "instruction": "Use the upper-right flipper for the Tombstone and open Crypt. The Electric Chair blocks part of the lower-flipper line.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "name": "Safe auto-launch return",
+            "instruction": "If launch drains through the Guillotine bank, hold the upper-right flipper on a relaunch. The ball can deflect to the lower-right flipper.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "name": "Right-ramp trick shot",
+            "instruction": "A partial right-ramp shot can land on its return wireform and register as a completed ramp plus 5,000,000. Do not force it on a copy that rejects toward the center.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Tombstone hits can fail to register.",
+            "response": "Use a direct upper-flipper shot. Stop repeated attempts when clean hits do not advance CRYPT. Use Creature Features and Frenzies instead.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "issue": "The captive ball can need a hard hit.",
+            "response": "Test it during ball save or early multiball. Do not depend on its add-a-ball when hard shots do not register.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "issue": "The left kickback may not reach the intended upper spinner.",
+            "response": "Watch the first kickback. Hold the upper-right flipper or prepare the lower flippers for the actual feed.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "issue": "Mode timers continue during the multiball opening animation.",
+            "response": "Do not start a short mode immediately before Crypt Multiball unless the overlapping shots justify the lost time.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          },
+          {
+            "issue": "Frenzy points are paid in end-of-ball bonus.",
+            "response": "Do not make a large recovery move after the ball is lost. A tilt removes the stored value.",
+            "sourceUrl": "https://pinball.org/rules/talesfromthecrypt.html"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the Electric Chair scoop for Creature Features."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start all 12 Creature Features."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Creature Features and Frenzies: Use this plan when the Tombstone or Crypt shot is unreliable."
+          }
+        ],
+        "simpleOverview": "Spelling C-R-Y-P-T opens the Crypt for three-ball Multiball in Tales from the Crypt. Shoot the left ramp for Jackpot, use the captive ball for add-a-balls before collecting the right-ramp Double Jackpot, then spell C-R-Y-P-T again on the raised Tombstone and return to the Crypt for Monster Jackpot.",
+        "overview": "In Tales from the Crypt, spelling C-R-Y-P-T opens the Crypt for three-ball Multiball. Shoot the left ramp for Jackpot, use the captive ball for add-a-balls before collecting the right-ramp Double Jackpot, then spell C-R-Y-P-T again on the raised Tombstone. Shoot the open Crypt for Monster Jackpot and use the right ramp to add a lit Frenzy.",
+        "machineSetup": [
+          "Older 2.x ROMs and newer 3.x ROMs use different scoring values; confirm the installed ROM before relying on exact values.",
+          "Tournament settings can disable Extra Balls."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Start Crypt Multiball, collect the left-ramp Jackpot and right-ramp Double Jackpot, add Frenzy, use captive-ball add-a-balls before the Double Jackpot, then spell CRYPT for five more add-a-balls and the Monster Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "On the first launch, time the moving Guillotine light. Hit the lit drop target. Keep the initial ball save for the drop-bank return.",
+            "details": [
+              "Skill Shot: The three Guillotine targets cycle. A lit hit scores 2,000,000 on ball 1 and one million more on each later ball."
+            ]
+          },
+          {
+            "text": "Use either spinner to light the Electric Chair. Press the door-handle launch button when the wanted Creature Feature flashes. Shoot the Electric Chair scoop.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Creature Feature: A spinner changes the selected mode unless the door handle locks it. Most modes can run together. Their timers continue during the Crypt Multiball opening animation."
+            ]
+          },
+          {
+            "text": "Hit the Tombstone to spell CRYPT. The C starts spotted. Before the first multiball, ball starts can also spot letters.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When CRYPT is complete, shoot the open Crypt with the upper-right flipper. On the first start, the center spinner can also start the multiball. Later starts require the Crypt.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Crypt Multiball: It starts with three balls. The left ramp scores a base 25,000,000 Jackpot. Left-spinner spins and Crypt shots raise it. The multiball ends when one ball remains."
+            ]
+          },
+          {
+            "text": "Before the Double Jackpot, hit the captive ball from control. Each registered hit adds a ball. This add-a-ball stops after the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for the Jackpot. Then shoot the right ramp for the Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Double Jackpot: Its base is twice the collected left-ramp Jackpot. Right-spinner spins and Crypt shots raise it before collection. A flashing right-ramp Frenzy can start on the same shot."
+            ]
+          },
+          {
+            "text": "After the Double Jackpot, hit the raised Tombstone five times to spell CRYPT. Wait for each added ball to enter play before you hit the next letter.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "First CRYPT cycle after Double Jackpot: Each letter adds one ball. Completing CRYPT lights the Monster Jackpot. Later CRYPT cycles do not add balls."
+            ]
+          },
+          {
+            "text": "Shoot the open Crypt for the Monster Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Monster Jackpot: It scores 50,000,000 plus the collected Double Jackpot, with a 100,000,000 minimum. Each later Monster Jackpot adds 50,000,000."
+            ]
+          },
+          {
+            "text": "During the multiball, shoot the right ramp once to light the next Frenzy and again to start it. Rip the spinners.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "details": [
+              "Frenzy: Living Dead scores 250,000 per switch, Chainsaw 500,000, Grave Digger 750,000, and Play the Organ 1,000,000. The value is stored in end-of-ball bonus. A tilt loses it."
+            ]
+          },
+          {
+            "text": "If the multiball ends before the left-ramp Jackpot, shoot the Crypt or center spinner within 12 seconds to restart it.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the Electric Chair scoop for Creature Features."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start all 12 Creature Features."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Creature Features and Frenzies: Use this plan when the Tombstone or Crypt shot is unreliable."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Creature Features and Frenzies",
+          "when": "Use this plan when the Tombstone or Crypt shot is unreliable.",
+          "steps": [
+            {
+              "text": "Use a spinner to light the Electric Chair. Lock a feature that matches the safe shots. Shoot the scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Frightmare when the right orbit is safe. Make 25 spinner turns in 25 seconds.",
+              "kinds": [
+                "mode"
+              ],
+              "details": [
+                "Frightmare: Spinner turns score during 25 seconds. A full right orbit can register both spinners. The 25th turn awards 25,000,000."
+              ]
+            },
+            {
+              "text": "Use Super Guillotine Targets when the center bank is safe. Hit the resetting drops during 25 seconds.",
+              "kinds": [
+                "mode"
+              ],
+              "details": [
+                "Super Guillotine Targets: Each target hit raises the value. The bank resets during the timed mode."
+              ]
+            },
+            {
+              "text": "Use Robbing the Crypt only when the upper-right flipper can loop the Crypt. Keep the four-second timer alive and finish CRYPT.",
+              "kinds": [
+                "mode"
+              ],
+              "details": [
+                "Robbing the Crypt: Each Crypt shot scores 10,000,000 and resets the timer. The final T scores 25,000,000 and ends the mode."
+              ]
+            },
+            {
+              "text": "Use Super Crypt Kicker before a long ball.",
+              "kinds": [
+                "mode"
+              ],
+              "details": [
+                "Super Crypt Kicker: The left kickback stays lit for the rest of the ball."
+              ]
+            },
+            {
+              "text": "Shoot the right ramp to light and start the highest available Frenzy. Rip spinners. Do not tilt away the stored bonus.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

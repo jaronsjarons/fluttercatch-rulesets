@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "id": "G50Oy",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build the base bonus to 20,000 through the top lanes and Advance buttons. Complete targets 1 through 4, then repeat the spinner at 1,000 while its return remains safe.",
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "The lit top lane and the two Advance rollover buttons build base bonus to 20,000."
+          },
+          {
+            "name": "Spinner value",
+            "summary": "Completing drop targets 1 through 4 raises the spinner from 100 to 1,000."
+          },
+          {
+            "name": "Drop-bank award",
+            "summary": "Completing targets 1 through 4 also lights both outlanes for Extra Ball when that award is enabled."
+          },
+          {
+            "name": "Top-lane change",
+            "summary": "Playfield switch hits toggle which top lane is lit for a bonus advance."
+          },
+          {
+            "name": "Double bonus",
+            "summary": "Double bonus is awarded only on balls 3 and 5 on this setup."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before the plunge, read the lit top lane and the current base bonus."
+          },
+          {
+            "text": "Plunge across both Advance buttons when possible, then guide the ball through the lit top lane."
+          },
+          {
+            "text": "During single-ball play, send controlled shots to the top to collect more bonus advances."
+          },
+          {
+            "text": "Build the base bonus to 20,000 before you accept repeated drop-target risk."
+          },
+          {
+            "text": "Read targets 1 through 4 and shoot only the missing targets from controlled flipper positions."
+          },
+          {
+            "text": "After the bank is complete, confirm that the spinner now scores 1,000."
+          },
+          {
+            "text": "Repeat the spinner while the entry avoids the bumper behind it and the return stays controlled."
+          },
+          {
+            "text": "If the spinner return becomes unsafe, go back to broad upper-playfield shots."
+          }
+        ],
+        "fallback": {
+          "title": "Bonus-only upper play",
+          "when": "Use this plan when the drop targets or spinner send the ball toward the center drain.",
+          "steps": [
+            {
+              "text": "Stop shooting the unsafe feature."
+            },
+            {
+              "text": "Read which top lane is lit."
+            },
+            {
+              "text": "Send the ball to the top through the broadest available path."
+            },
+            {
+              "text": "Use the Advance buttons and lit lane to build base bonus."
+            },
+            {
+              "text": "Return to the main route only after you have a controlled target or spinner angle."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Enabled Extra Ball route",
+            "when": "Use this plan only when the lit-outlane award has tournament value.",
+            "steps": [
+              {
+                "text": "Confirm how Extra Ball is handled before the game starts."
+              },
+              {
+                "text": "Build base bonus through the top while you wait for controlled drop-target shots."
+              },
+              {
+                "text": "Complete targets 1 through 4 to light both outlanes."
+              },
+              {
+                "text": "Do not aim at an outlane after it lights."
+              },
+              {
+                "text": "Collect the award only through natural play, then use the 1,000-point spinner."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "20,000 bonus and the 1,000-point spinner",
+          "steps": [
+            {
+              "text": "Use the Advance buttons and lit top lane to reach 20,000 base bonus."
+            },
+            {
+              "text": "Complete missing targets from 1 through 4."
+            },
+            {
+              "text": "Confirm that the spinner value has increased to 1,000."
+            },
+            {
+              "text": "Repeat the spinner only while its feed remains controlled."
+            },
+            {
+              "text": "Take the double-bonus ball when the current ball number allows it."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "spinner",
+            "label": "Right-side spinner",
+            "description": "Spinner used for the repeat scoring route after targets 1 through 4.",
+            "precision": "unverified",
+            "context": "Repeat the spinner after completing targets 1 through 4."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Two-button plunge",
+            "instruction": "Set the plunge so the ball crosses both Advance buttons before it enters the currently lit top lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G50Oy-MJ7yl"
+          },
+          {
+            "name": "Spinner-angle test",
+            "instruction": "Use the first controlled spinner shot to learn whether the ball clears the bumper behind the spinner before you repeat it.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G50Oy-MJ7yl"
+          },
+          {
+            "name": "Missing-target selection",
+            "instruction": "Read the numbered bank before each shot and aim only at an unlit target from a settled flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G50Oy-MJ7yl"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A straight spinner shot can hit the underside of the bumper behind it and return down the middle.",
+            "response": "Test the spinner angle once and abandon the repeat if the ball does not pass the bumper cleanly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G50Oy-MJ7yl"
+          },
+          {
+            "issue": "Targets 3 and 4 can produce dangerous rebounds when they are the last targets needed.",
+            "response": "Wait for a controlled flipper angle and return to upper play when the target face is not safe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G50Oy-MJ7yl"
+          },
+          {
+            "issue": "A poor exit from the top can travel directly toward the center drain.",
+            "response": "Track the full upper exit and use one early legal nudge before the ball gains speed toward the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G50Oy-MJ7yl"
+          }
+        ],
+        "checkBeforePlay": [
+          "Identify Bally Sky Rider or add-a-ball Hi-Flyer and confirm ball count and award conversions.",
+          "Test the Advance buttons, top lanes, numbered targets, spinner clearance, upper exits, and tilt."
+        ],
+        "simpleOverview": "Sky Rider / Hi-Flyer raises base bonus through the lit top lane and two Advance buttons, then turns the spinner from 100 to 1,000 by completing targets 1 through 4. Fill the 20,000 bonus first, finish only the missing drops from control, then repeat the lit spinner while its return stays safe.",
+        "overview": "Sky Rider / Hi-Flyer raises base bonus through the lit top lane and two Advance buttons, then turns the spinner from 100 to 1,000 by completing targets 1 through 4. Use plunges and upper feeds for the lit lane and Advance buttons, then complete targets 1 through 4 after the bonus is secure. Repeat the 1,000 spinner only while the bumper behind it and the lower return remain predictable.",
+        "machineSetup": [
+          "Identify Bally Sky Rider or add-a-ball Hi-Flyer and confirm ball count and award conversions.",
+          "Test the Advance buttons, top lanes, numbered targets, spinner clearance, upper exits, and tilt."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Build the base bonus to 20,000 through the top lanes and Advance buttons. Complete targets 1 through 4, then repeat the spinner at 1,000 while its return remains safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before the plunge, read the lit top lane and the current base bonus."
+          },
+          {
+            "text": "Plunge across both Advance buttons when possible, then guide the ball through the lit top lane."
+          },
+          {
+            "text": "During single-ball play, send controlled shots to the top to collect more bonus advances."
+          },
+          {
+            "text": "Build the base bonus to 20,000 before you accept repeated drop-target risk."
+          },
+          {
+            "text": "Read targets 1 through 4 and shoot only the missing targets from controlled flipper positions."
+          },
+          {
+            "text": "After the bank is complete, confirm that the spinner now scores 1,000."
+          },
+          {
+            "text": "Repeat the spinner while the entry avoids the bumper behind it and the return stays controlled."
+          },
+          {
+            "text": "If the spinner return becomes unsafe, go back to broad upper-playfield shots."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Base bonus",
+            "summary": "The lit top lane and the two Advance rollover buttons build base bonus to 20,000."
+          },
+          {
+            "name": "Spinner value",
+            "summary": "Completing drop targets 1 through 4 raises the spinner from 100 to 1,000."
+          },
+          {
+            "name": "Drop-bank award",
+            "summary": "Completing targets 1 through 4 also lights both outlanes for Extra Ball when that award is enabled."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Bonus-only upper play",
+          "when": "Use this plan when the drop targets or spinner send the ball toward the center drain.",
+          "steps": [
+            {
+              "text": "Stop shooting the unsafe feature."
+            },
+            {
+              "text": "Read which top lane is lit."
+            },
+            {
+              "text": "Send the ball to the top through the broadest available path."
+            },
+            {
+              "text": "Use the Advance buttons and lit lane to build base bonus."
+            },
+            {
+              "text": "Return to the main route only after you have a controlled target or spinner angle."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A poor exit from the top can travel directly toward the center drain.",
+          "text": "Track the full upper exit and use one early legal nudge before the ball gains speed toward the center."
+        }
+      }
+    }
+  ]
+}

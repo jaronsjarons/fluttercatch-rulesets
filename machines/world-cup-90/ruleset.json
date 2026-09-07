@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "G56Y8",
+  "title": "World Cup '90",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "World Cup '90 exact-machine rules reconstruction",
+      "url": "https://pinballnirvana.com/forums/resources/world-cup-90-mr-game-1990-vp8.3298/"
+    },
+    "supportingSources": [
+      {
+        "label": "Mr Game history and World Cup '90 play description",
+        "url": "https://zaccaria-pinball.com/corti/m.html"
+      },
+      {
+        "label": "MAME Mr Game hardware and timed-game reference",
+        "url": "https://github.com/mamedev/mame/blob/master/src/mame/pinball/mrgame.cpp"
+      },
+      {
+        "label": "World Cup '90 exact-machine gameplay",
+        "url": "https://www.youtube.com/watch?v=oJahI0IbVEU"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "World Cup '90 is a timed soccer match rather than a normal points race. Enter the Attack Zone by making the lower center lane, completing either corner target, or completing the center targets. Beat the defense there to earn an open shot at goal. Complete the K-I-C-K targets to qualify a corner kick. Win before Game Time expires to advance to the next round; if time expires with the match tied, the game sends you to a video shootout.",
+      "simpleOverview": "Enter the Attack Zone with the lower center lane, either corner target, or the center targets. Beat the defense for an open shot at goal. Complete K-I-C-K for a corner kick, and finish ahead before Game Time expires; a tie goes to the video shootout.",
+      "summary": "Treat possession as a short sequence: qualify the Attack Zone with the safest available feature, beat the defense, then finish the goal before rebuilding. Use K-I-C-K when the center is rejecting shots.",
+      "quickInfo": [
+        {
+          "name": "Enter Attack",
+          "summary": "Center lane, either corner, or center targets."
+        },
+        {
+          "name": "Open the Goal",
+          "summary": "Beat the defense in the Attack Zone."
+        },
+        {
+          "name": "Corner Kick",
+          "summary": "Complete K-I-C-K."
+        },
+        {
+          "name": "Tied at Time",
+          "summary": "Play the video shootout."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Enter the Attack Zone through the lower center lane, a completed corner target, or the completed center targets.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Beat the defense during the Attack Zone to open the goal shot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the open goal before the possession ends, then repeat until you lead the match.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete K-I-C-K for a corner kick when that route is safer than forcing the center sequence.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Shootout route",
+          "when": "This occurs only when Game Time expires with the score tied.",
+          "steps": [
+            {
+              "text": "Keep the match level if there is not enough time to build another safe attack.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the cabinet controls in the video shootout to decide the tied match.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Win the Match",
+        "steps": [
+          {
+            "text": "Enter the Attack Zone and beat the defense.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Score more goals than the opponent before Game Time expires to advance.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm the match timer, goal and defense switches, K-I-C-K targets, both corner targets, lower center lane, video monitor, and shootout controls before competitive play.",
+        "World Cup '90 is a timed game in which a normal drain does not end the ball in the usual way; explain the timer and tie-break procedure before starting."
+      ],
+      "techniques": [
+        {
+          "name": "Live Catch",
+          "instruction": "Live-catch a predictable return when the timer allows it, then aim the next Attack Zone or goal shot rather than returning the ball immediately to traffic.",
+          "sourceUrl": "https://www.youtube.com/watch?v=oJahI0IbVEU",
+          "techniqueSlug": "live-catch"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The monitor is part of the scoring and tie-break flow, not decoration.",
+          "response": "Do not use the machine competitively if the match display or video shootout cannot be read and controlled reliably.",
+          "sourceUrl": "https://zaccaria-pinball.com/corti/m.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

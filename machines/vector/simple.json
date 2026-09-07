@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "G486B",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Clear the left Defender drops from left to right to open the left ramp, then shoot the ramp to lock a ball. Complete H-Y-P-E from left to right to start two-ball Multiball with one lock. For the larger start, lock a second ball and complete H-Y-P-E in order; a third physical lock starts four-ball Multiball immediately. During Multiball, another ordered H-Y-P-E completion scores the built HYPE bonus at 2x or 3x.",
+        "simpleOverview": "Clear the left Defender drops from left to right, shoot the opened left ramp to lock a ball, then complete H-Y-P-E from left to right to start Multiball. Lock two balls before H-Y-P-E for three-ball play, or take a third lock to start four-ball Multiball immediately.",
+        "summary": "Clear the Defender bank in order, lock at the left ramp, and complete H-Y-P-E in order. One lock starts two-ball Multiball; two locks start three-ball; the third lock starts four-ball immediately.",
+        "quickInfo": [
+          {
+            "name": "Open the Ramp",
+            "summary": "Clear the left Defender drops from left to right."
+          },
+          {
+            "name": "Lock Balls",
+            "summary": "Shoot the left ramp once it opens."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Complete H-Y-P-E from left to right."
+          },
+          {
+            "name": "Cash HYPE",
+            "summary": "Repeat ordered H-Y-P-E during Multiball for 2x or 3x."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the left Defender drops from left to right; out-of-order hits restore the earlier row and delay the ramp opening.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the opened left ramp to lock one ball, then repeat the Defender route if you want a second lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete H-Y-P-E from left to right: one lock starts two-ball Multiball, while two locks start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, complete H-Y-P-E in order again to score the built HYPE bonus at its active multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Start four-ball Multiball",
+            "when": "Use this when two balls are already locked and the Defender route remains controlled.",
+            "steps": [
+              {
+                "text": "Open the ramp again and take the third lock; it starts four-ball Multiball immediately.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Raise the HYPE collect",
+          "steps": [
+            {
+              "text": "Add 3,000 to the held HYPE bonus with each H-Y-P-E target hit.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Preserve the ordered completion for Multiball, where the collect can be doubled or tripled.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count, lock memory, Extra Ball and Special conversions, and whether locked balls are physically present.",
+          "Test both Defender rows, left ramp and lock releases, all H-Y-P-E targets, X-Y-Z drops and return lanes, and all four balls."
+        ],
+        "termStyles": [
+          {
+            "label": "Defender",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "H-Y-P-E",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Defender drops",
+            "label": "Left Defender banks",
+            "description": "Ordered drop banks that open the left ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Left lock ramp",
+            "description": "Ramp used to lock balls after Defender is cleared.",
+            "precision": "unverified"
+          },
+          {
+            "term": "H-Y-P-E targets",
+            "label": "H-Y-P-E targets",
+            "description": "Ordered targets that start Multiball and collect the HYPE bonus.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Out-of-order Defender or H-Y-P-E hits do not complete their ordered sequence.",
+            "response": "Read the active lamps and shoot the next required target instead of spraying the bank.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G486B-MrRwE"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Clear the Defender bank in order, lock at the left ramp, and complete H-Y-P-E in order. One lock starts two-ball Multiball; two locks start three-ball; the third lock starts four-ball immediately.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the left Defender drops from left to right; out-of-order hits restore the earlier row and delay the ramp opening.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the opened left ramp to lock one ball, then repeat the Defender route if you want a second lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete H-Y-P-E from left to right: one lock starts two-ball Multiball, while two locks start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, complete H-Y-P-E in order again to score the built HYPE bonus at its active multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Open the Ramp",
+            "summary": "Clear the left Defender drops from left to right."
+          },
+          {
+            "name": "Lock Balls",
+            "summary": "Shoot the left ramp once it opens."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Complete H-Y-P-E from left to right."
+          }
+        ]
+      }
+    }
+  ]
+}

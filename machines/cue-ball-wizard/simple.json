@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vPd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Cue Ball Wizard turns the ramp into a repeating Wheel-mode starter and builds a separate two-ball Multiball through the flashing solids or stripes and the 8-ball. Wheel rounds can run during that Multiball, which makes a Side Pocket round plus the three color-coded Jackpots the most useful stack.",
+        "simpleOverview": "Shoot the lit ramp for the flashing Wheel round. For two-ball Multiball, clear the flashing solids or stripes, sink the 8-ball in the Side Pocket, then shoot the lit ramp.",
+        "summary": "Use the lit ramp to start Wheel rounds, but build two-ball Multiball by clearing the flashing solids or stripes and sinking the 8-ball. When Side Pocket is the flashing Wheel award, start it and Multiball together, then use the cue ball to collect all three colored Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Wagon Wheel",
+            "summary": "The ramp starts the currently flashing round when lit. If it is dark, the Corner Pocket relights it."
+          },
+          {
+            "name": "Two-ball Multiball",
+            "summary": "Clear the flashing solids or stripes, sink the 8-ball in the Side Pocket, then shoot the lit ramp."
+          },
+          {
+            "name": "Multiball Jackpots",
+            "summary": "Knock the cue ball into each of the three colored target groups. After all three Jackpots, shoot the ramp for the Super Jackpot."
+          },
+          {
+            "name": "Pool Ball Mania",
+            "summary": "Complete all five Wheel rounds to light the ramp for the three-ball switch frenzy. Its total is awarded after the balls drain, so a tilt loses it."
+          },
+          {
+            "name": "Nine Ball Play",
+            "summary": "After Pool Ball Mania, shoot the temporarily lit ramp, clear solids 1–7, sink the 8-ball, then hit the timed 9 target."
+          }
+        ],
+        "steps": [
+          {
+            "text": "When the ramp's red lamps flash, shoot it to start the Wheel round shown above the flippers. If the ramp is dark, shoot the Corner Pocket to relight it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For two-ball Multiball, clear whichever bank of solids or stripes is flashing, then hit the cue ball into the Side Pocket to light the ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Wait for Side Pocket to be the flashing Wheel round when practical, then shoot the lit ramp to start the round and two-ball Multiball together.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During two-ball Multiball, use the cue ball to hit each of the three colored target groups for its Jackpot. Hit the drop targets between Jackpots to raise the remaining values.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all three colored Jackpots are collected, shoot the ramp for the Super Jackpot. The sequence resets and can be repeated until one ball drains.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue completing the five different Wheel rounds. When Pool Ball Mania is lit, wait until two-ball Multiball has ended before starting it if you want the third ball to be served.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Pool Ball Mania and Nine Ball Play",
+          "steps": [
+            {
+              "text": "Complete Rowdy Ramp, Horseshoe Extra Ball, No Way, Spell Double, and Combo Shots from the Wheel.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the ramp for Pool Ball Mania. Keep the ball alive and avoid tilting, because its accumulated total is paid only after the balls drain.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After Pool Ball Mania, shoot the ramp while Nine Ball Play is lit, clear solids 1–7, sink the 8-ball, then hit the flashing 9 target before its timer expires.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Wagon Wheel",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "Two-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Pool Ball Mania",
+            "tone": "indigo",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Nine Ball Play",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Corner Pocket",
+            "label": "Corner Pocket",
+            "description": "The left eject hole above the left outlane; it relights a dark Wheel ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Side Pocket",
+            "label": "8-ball Side Pocket targets",
+            "description": "The colored targets behind the cue ball used by Multiball qualification and Jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramp",
+            "label": "Wagon Wheel ramp",
+            "description": "The central ramp that starts Wheel rounds, Multiball, Pool Ball Mania, and Nine Ball Play when lit.",
+            "precision": "unverified"
+          }
+        ],
+        "machineSetup": [
+          "Cue-ball hardware: Some machines have the physical cue ball removed. On those copies, the No Way target and two white Side Pocket targets replace the normal Jackpot contacts.",
+          "Difficulty: Hard settings lower some feature values. The shot order remains useful, but do not expect every printed value to match."
+        ],
+        "cautions": [
+          {
+            "issue": "Starting Pool Ball Mania during two-ball Multiball does not serve a third ball.",
+            "response": "Finish two-ball Multiball first when the extra Pool Ball Mania ball matters more than starting immediately.",
+            "sourceUrl": "https://www.pinball.org/rules/cueballwizard.html"
+          },
+          {
+            "issue": "A tilt forfeits the Pool Ball Mania total.",
+            "response": "Settle the game after that mode instead of using an aggressive save that risks losing the entire accumulated award.",
+            "sourceUrl": "https://www.pinball.org/rules/cueballwizard.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the lit ramp to start Wheel rounds, but build two-ball Multiball by clearing the flashing solids or stripes and sinking the 8-ball. When Side Pocket is the flashing Wheel award, start it and Multiball together, then use the cue ball to collect all three colored Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "When the ramp's red lamps flash, shoot it to start the Wheel round shown above the flippers. If the ramp is dark, shoot the Corner Pocket to relight it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For two-ball Multiball, clear whichever bank of solids or stripes is flashing, then hit the cue ball into the Side Pocket to light the ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Wait for Side Pocket to be the flashing Wheel round when practical, then shoot the lit ramp to start the round and two-ball Multiball together.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During two-ball Multiball, use the cue ball to hit each of the three colored target groups for its Jackpot. Hit the drop targets between Jackpots to raise the remaining values.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all three colored Jackpots are collected, shoot the ramp for the Super Jackpot. The sequence resets and can be repeated until one ball drains.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue completing the five different Wheel rounds. When Pool Ball Mania is lit, wait until two-ball Multiball has ended before starting it if you want the third ball to be served.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Wagon Wheel",
+            "summary": "The ramp starts the currently flashing round when lit. If it is dark, the Corner Pocket relights it."
+          },
+          {
+            "name": "Two-ball Multiball",
+            "summary": "Clear the flashing solids or stripes, sink the 8-ball in the Side Pocket, then shoot the lit ramp."
+          },
+          {
+            "name": "Multiball Jackpots",
+            "summary": "Knock the cue ball into each of the three colored target groups. After all three Jackpots, shoot the ramp for the Super Jackpot."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "G5WJw",
+  "title": "Aerobatics",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide Aerobatics tournament rules",
+      "url": "https://rules.silverballmania.com/rules/G5WJw-MkP98"
+    },
+    "supportingSources": [
+      {
+        "label": "Zaccaria Aerobatics rules reference",
+        "url": "https://www.zaccaria-pinball.com/rulesheets/aerobatics.html"
+      },
+      {
+        "label": "Kineticist Aerobatics guide",
+        "url": "https://www.kineticist.com/games/pinball/aerobatics"
+      },
+      {
+        "label": "Aerobatics promotional flyer",
+        "url": "https://nypinball.com/flyers/aerobatics"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the top area to build bonus and reach 10x Bonus. Shoot the left saucer when 10x is lit. After bonus reaches 100,000 at 10x, shoot the red drops for 100,000 each.",
+      "quickInfo": [
+        {
+          "name": "Loop the Loop",
+          "summary": "The top-left feature changes its lit award, and the left saucer collects the current award."
+        },
+        {
+          "name": "10x Bonus",
+          "summary": "Collect the left saucer when Loop the Loop shows 10x Bonus to secure the maximum multiplier."
+        },
+        {
+          "name": "Base bonus",
+          "summary": "Top play builds base bonus to a maximum of 100,000."
+        },
+        {
+          "name": "Red drops",
+          "summary": "Each red drop target scores 100,000 after base bonus is maximum and 10x Bonus is lit."
+        },
+        {
+          "name": "Bonus Ball",
+          "summary": "The left saucer awards a bonus ball when that feature is lit and Extra Balls are enabled."
+        }
+      ],
+      "steps": [
+        {
+          "text": "From the left flipper, shoot the right spinner to send the ball into the top area."
+        },
+        {
+          "text": "Use top play to build base bonus toward 100,000."
+        },
+        {
+          "text": "From the right flipper, shoot the left saucer when its current feature is not 10x Bonus."
+        },
+        {
+          "text": "When 10x Bonus is lit, shoot the left saucer from the right flipper to collect it.",
+          "modeNotes": [
+            "Loop the Loop: The feature changes its lit award. The left saucer collects the award that is lit.",
+            "Read the lit Loop the Loop award before every saucer shot; its current selection changes the value of that shot."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Continue top play until base bonus reaches 100,000.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After 100,000 base bonus and 10x Bonus are ready, shoot the red drops for 100,000 each.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Top play only",
+        "when": "Use this when the left-saucer shot or its return is unreliable.",
+        "steps": [
+          {
+            "text": "Move the ball to the left flipper when a safe transfer is available."
+          },
+          {
+            "text": "Repeat the right spinner into the top area."
+          },
+          {
+            "text": "Shoot the right spinner into the top area and score top switches until base bonus reaches 100,000."
+          },
+          {
+            "text": "Delay the left saucer until its award and return are useful."
+          }
+        ]
+      },
+      "alternatives": [],
+      "buildsToward": {
+        "title": "100,000 base bonus, 10x Bonus, and 100,000 red drops",
+        "steps": [
+          {
+            "text": "Shoot the right spinner into the top area and score top switches until base bonus reaches 100,000."
+          },
+          {
+            "text": "Shoot the left saucer until Loop the Loop shows 10x Bonus."
+          },
+          {
+            "text": "Collect 10x Bonus at the left saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the lit red drops for 100,000 each."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "10x Bonus",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Flipper-side shot choice",
+          "instruction": "Use the left flipper for the right spinner and the right flipper for the left saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5WJw-MkP98"
+        },
+        {
+          "name": "Outlane bounce-back",
+          "instruction": "Nudge as the ball reaches an outlane. Try to bounce it from the white mini post onto the rail that returns to a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5WJw-MkP98"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Balls that leave the bumpers can move toward the center or an outlane.",
+          "response": "Watch every top exit. Nudge before the ball reaches the lower guides.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5WJw-MkP98"
+        },
+        {
+          "issue": "The red drops give strong rebounds after they become valuable.",
+          "response": "Shoot them only after 100,000 base bonus and 10x Bonus are ready. Stop after an unsafe rebound.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5WJw-MkP98"
+        },
+        {
+          "issue": "A bounce-back attempt near an outlane can cause a tilt.",
+          "response": "Use one short, early nudge. Do not make repeated cabinet moves after the ball reaches the mini post.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5WJw-MkP98"
+        }
+      ],
+      "checkBeforePlay": [
+        "Aerobatics is a one-player electromechanical game. Confirm how the event assigns separate copies or another tournament format.",
+        "Read the lit Loop the Loop award before every saucer shot; its current selection changes the value of that shot.",
+        "Confirm Bonus Ball, Extra Ball, Special, replay, ball count, and tilt treatment before pursuing a replay award."
+      ],
+      "simpleOverview": "Aerobatics uses top play to build base bonus and a changing Loop the Loop award at the left saucer. Reach 100,000 base, cycle the display to 10x Bonus, collect it at the saucer, then shoot the red drops for 100,000 each.",
+      "overview": "Aerobatics uses top play to build base bonus and a changing Loop the Loop award at the left saucer. Build 100,000 through the top, wait for 10x Bonus at the left saucer, and collect it. Once both conditions are ready, switch to the lit red drops for 100,000 per target while protecting the 1,000,000 end-of-ball bonus.",
+      "machineSetup": [
+        "Aerobatics is a one-player electromechanical game. Confirm how the event assigns separate copies or another tournament format.",
+        "Confirm Bonus Ball, Extra Ball, Special, replay, ball count, and tilt treatment before pursuing a replay award."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

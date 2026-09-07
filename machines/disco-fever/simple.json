@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "id": "G5o9o",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Learn the banana flippers, use the right flipper for the left drop bank, build the printed 20,000 bonus and 5x Bonus X, then collect a built right bullseye and protect the drain bonus.",
+        "quickInfo": [
+          {
+            "name": "Base Bonus",
+            "summary": "Lanes and target banks add 2,000 until the printed ladder reaches 20,000."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Each D-I-S-C-O completion advances the multiplier through 2x, 3x, and 5x."
+          },
+          {
+            "name": "Spot Bonus X",
+            "summary": "The lit upper-left horseshoe advances Bonus X without clearing the current D-I-S-C-O letters."
+          },
+          {
+            "name": "Right Bullseye",
+            "summary": "Each A-B completion raises the collect from 5,000 to a 30,000 maximum."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the lit A or B lane. Watch one complete top exit before you repeat the plunge."
+          },
+          {
+            "text": "Test one normal forehand and one early Backhand before you choose a target route.",
+            "modeNotes": [
+              "Banana flippers: The curved bats change the normal release point, so a forehand usually needs a later release."
+            ]
+          },
+          {
+            "text": "Transfer to the right flipper when the feed permits it. Use that flipper for the left three-drop bank."
+          },
+          {
+            "text": "Build Base Bonus with A-B lanes, return lanes, the left drop bank, and safe upper targets.",
+            "modeNotes": [
+              "Base Bonus: Each advance adds 2,000. The printed ladder starts at 2,000 and ends at 20,000.",
+              "Confirm 20,000 maximum Base Bonus, 5x Bonus X, bullseye ladder and reset, plus carried A-B, D-I-S-C-O, and bullseye progress."
+            ]
+          },
+          {
+            "text": "Spell D-I-S-C-O. Use a lit Spot Bonus X horseshoe when the horseshoe feed is safe.",
+            "modeNotes": [
+              "Bonus X: A D-I-S-C-O completion advances 2x, 3x, then 5x.",
+              "Spot Bonus X: The lit horseshoe advances the multiplier without clearing D-I-S-C-O progress."
+            ]
+          },
+          {
+            "text": "Prefer the left drop bank to the two center drops. Both advance bonus, but the center rebound is less controlled."
+          },
+          {
+            "text": "Complete A-B until the far-right bullseye is worth at least 20,000. Shoot it only from control.",
+            "modeNotes": [
+              "Right Bullseye: A-B raises the value through 5,000, 10,000, 15,000, 20,000, and 30,000; the collect resets it to 5,000."
+            ]
+          },
+          {
+            "text": "Protect the 5x drain bonus when the opponent's score does not require another rebound target."
+          }
+        ],
+        "fallback": {
+          "title": "Far-left lane and bonus",
+          "when": "Use this when both drop banks reject toward the drain.",
+          "steps": [
+            {
+              "text": "Control the ball on the right flipper."
+            },
+            {
+              "text": "Shoot the far-left side lane for 5,000 and the needed A or B letter."
+            },
+            {
+              "text": "Use return lanes and incidental targets to build Base Bonus."
+            },
+            {
+              "text": "Take Spot Bonus X only when the upper-left horseshoe returns safely."
+            },
+            {
+              "text": "Drain safely with the built bonus instead of forcing a standup."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Built right bullseye",
+            "when": "Use this when the far-left lane and right bullseye are repeatable.",
+            "steps": [
+              {
+                "text": "Complete A-B with top lanes, return lanes, or the far-left lane."
+              },
+              {
+                "text": "Complete A-B again until the bullseye reaches 20,000 or 30,000."
+              },
+              {
+                "text": "Trap on the left flipper and shoot the far-right bullseye."
+              },
+              {
+                "text": "Repeat only after the value rebuilds."
+              }
+            ]
+          },
+          {
+            "title": "F-E-V-E-R awards",
+            "when": "Use this only when Extra Ball or Special has a useful tournament award.",
+            "steps": [
+              {
+                "text": "Complete F-E-V-E-R twice to light Extra Ball at the horseshoe."
+              },
+              {
+                "text": "A third completion alternates Special between the outlanes."
+              },
+              {
+                "text": "Stop this route when those awards give no tournament points."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum bonus and bullseye",
+          "steps": [
+            {
+              "text": "Use A-B lanes, return lanes, the left drop bank, and safe upper targets until Base Bonus reaches the printed 20,000 maximum."
+            },
+            {
+              "text": "Spell D-I-S-C-O until 5x is lit."
+            },
+            {
+              "text": "Complete A-B until the far-right bullseye reaches 30,000."
+            },
+            {
+              "text": "Collect the bullseye and protect the 100,000 drain bonus."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "olive",
+            "kind": "item"
+          },
+          {
+            "label": "Spot Bonus X",
+            "tone": "olive",
+            "kind": "item"
+          },
+          {
+            "label": "D-I-S-C-O",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "F-E-V-E-R",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Base Bonus",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Right Bullseye",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Banana-flipper calibration",
+            "instruction": "Use low-value shots to learn the curved flippers before you aim at a valuable target.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          },
+          {
+            "name": "Right-flipper route",
+            "instruction": "Transfer to the right flipper and use it for the left bank and upper-left D-I-S-C-O target.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand a low-value same-side shot while calibrating the banana flippers before using that release on a scoring target.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          },
+          {
+            "name": "Tap pass",
+            "instruction": "Attempt a Tap pass only after testing the curved flipper's response on a low-value ball position.",
+            "techniqueSlug": "tap-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "Attempt a Post pass only after confirming that the banana flipper can move the ball across without opening a center drain.",
+            "techniqueSlug": "post-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Most target shots have strong rebound risk.",
+            "response": "Use the left drop bank instead of the center drops and shoot standups only from control.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          },
+          {
+            "issue": "A slow counterclockwise horseshoe exit can feed the center drain.",
+            "response": "Nudge before the ball leaves the upper-left horseshoe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          },
+          {
+            "issue": "Banana flippers make Tap passes and Post passes less reliable.",
+            "response": "Do not use an untested transfer on a tournament ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5o9o-MQpN2"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Disco Fever, ball count, Extra Ball and Special conversion, replay settings, tilt, and tournament scoring.",
+          "Confirm 20,000 maximum Base Bonus, 5x Bonus X, bullseye ladder and reset, plus carried A-B, D-I-S-C-O, and bullseye progress.",
+          "Test both banana flippers, left and center drop rebounds, upper-left horseshoe exit, far-right bullseye, lanes, and top exits before choosing the route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "Repeatable scoring shot used in the main route.",
+            "precision": "unverified",
+            "context": "Repeatable scoring shot used in the main route."
+          },
+          {
+            "term": "drop bank",
+            "label": "Drop-target bank",
+            "description": "Bank used to qualify the collect.",
+            "precision": "unverified",
+            "context": "Bank used to qualify the collect."
+          }
+        ],
+        "simpleOverview": "Disco Fever is a bonus-and-bullseye game played with banana flippers. Use the right flipper for the left drop bank, complete D-I-S-C-O for Bonus X, repeat A-B to raise the far-right bullseye, then collect it from control and protect the multiplied drain bonus.",
+        "overview": "Disco Fever is a bonus-and-bullseye game played with banana flippers. Learn the banana-flipper angles, favor the left bank over the dangerous center drops, reach 5x and 20,000 base, then complete A-B until the far-right bullseye is worth 30,000 and shoot it from control.",
+        "machineSetup": [
+          "Confirm Williams Disco Fever, ball count, Extra Ball and Special conversion, replay settings, tilt, and tournament scoring.",
+          "Test both banana flippers, left and center drop rebounds, upper-left horseshoe exit, far-right bullseye, lanes, and top exits before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Learn the banana flippers, use the right flipper for the left drop bank, build the printed 20,000 bonus and 5x Bonus X, then collect a built right bullseye and protect the drain bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the lit A or B lane. Watch one complete top exit before you repeat the plunge."
+          },
+          {
+            "text": "Test one normal forehand and one early Backhand before you choose a target route.",
+            "details": [
+              "Banana flippers: The curved bats change the normal release point, so a forehand usually needs a later release."
+            ]
+          },
+          {
+            "text": "Transfer to the right flipper when the feed permits it. Use that flipper for the left three-drop bank."
+          },
+          {
+            "text": "Build Base Bonus with A-B lanes, return lanes, the left drop bank, and safe upper targets.",
+            "details": [
+              "Base Bonus: Each advance adds 2,000. The printed ladder starts at 2,000 and ends at 20,000.",
+              "Confirm 20,000 maximum Base Bonus, 5x Bonus X, bullseye ladder and reset, plus carried A-B, D-I-S-C-O, and bullseye progress."
+            ]
+          },
+          {
+            "text": "Spell D-I-S-C-O. Use a lit Spot Bonus X horseshoe when the horseshoe feed is safe.",
+            "details": [
+              "Bonus X: A D-I-S-C-O completion advances 2x, 3x, then 5x.",
+              "Spot Bonus X: The lit horseshoe advances the multiplier without clearing D-I-S-C-O progress."
+            ]
+          },
+          {
+            "text": "Prefer the left drop bank to the two center drops. Both advance bonus, but the center rebound is less controlled."
+          },
+          {
+            "text": "Complete A-B until the far-right bullseye is worth at least 20,000. Shoot it only from control.",
+            "details": [
+              "Right Bullseye: A-B raises the value through 5,000, 10,000, 15,000, 20,000, and 30,000; the collect resets it to 5,000."
+            ]
+          },
+          {
+            "text": "Protect the 5x drain bonus when the opponent's score does not require another rebound target."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Base Bonus",
+            "summary": "Lanes and target banks add 2,000 until the printed ladder reaches 20,000."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Each D-I-S-C-O completion advances the multiplier through 2x, 3x, and 5x."
+          },
+          {
+            "name": "Spot Bonus X",
+            "summary": "The lit upper-left horseshoe advances Bonus X without clearing the current D-I-S-C-O letters."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Far-left lane and bonus",
+          "when": "Use this when both drop banks reject toward the drain.",
+          "steps": [
+            {
+              "text": "Control the ball on the right flipper."
+            },
+            {
+              "text": "Shoot the far-left side lane for 5,000 and the needed A or B letter."
+            },
+            {
+              "text": "Use return lanes and incidental targets to build Base Bonus."
+            },
+            {
+              "text": "Take Spot Bonus X only when the upper-left horseshoe returns safely."
+            },
+            {
+              "text": "Drain safely with the built bonus instead of forcing a standup."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A slow counterclockwise horseshoe exit can feed the center drain.",
+          "text": "Nudge before the ball leaves the upper-left horseshoe."
+        }
+      }
+    }
+  ]
+}

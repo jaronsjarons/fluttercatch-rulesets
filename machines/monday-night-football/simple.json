@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "G5zZ7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete either ordered drop-target bank to qualify a ball lock, then collect the lit left and right lock shots. With both balls locked, shoot the Long Bomb ramp to release them and start three-ball Multiball. During Multiball, complete the center targets to raise the ramp, then shoot it for the displayed Jackpot.",
+        "simpleOverview": "Hit an ordered drop-target bank to light a lock, then shoot the lit left or right lock. Repeat for the other lock. With both balls held, shoot the Long Bomb ramp for three-ball Multiball. During Multiball, complete the center targets to raise the ramp and shoot it for the Jackpot.",
+        "summary": "Complete ordered drop targets to qualify the left and right locks, collect both, then shoot the Long Bomb ramp for three-ball Multiball. Complete the center targets to raise the Jackpot ramp and shoot it.",
+        "quickInfo": [
+          {
+            "name": "Qualify a Lock",
+            "summary": "Complete the left or right drop-target bank in order."
+          },
+          {
+            "name": "Collect Locks",
+            "summary": "Shoot the lit left and right lock shots."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "With both balls locked, shoot the Long Bomb ramp."
+          },
+          {
+            "name": "Score Jackpot",
+            "summary": "Complete the center targets to raise the ramp, then shoot it during Multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete an ordered drop-target bank to qualify a ball lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit lock, then repeat the bank-and-lock route for the lock on the other side.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With both balls locked, shoot the Long Bomb ramp to release them and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, complete the center targets to raise the Jackpot ramp, then shoot the raised ramp for the displayed award.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Play the touchdown route",
+            "when": "Use this from every plunge and when the field-progress shots are safer than the locks.",
+            "steps": [
+              {
+                "text": "Plunge into a flashing kickoff light for a touchdown or the displayed yardage.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "March 100 yards for a touchdown, then shoot through the raised uprights for the extra point.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Loop the uprights again while available to light one million at the Long Bomb ramp.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Convert field position",
+          "steps": [
+            {
+              "text": "Inside the 30-yard line, complete the U-P targets to raise the ramp for a field-goal attempt.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use clean upright loops to improve the football score and build the Long Bomb award.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the drop banks between scoring drives so the physical locks stay in progress.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm whether physical locks are shared between players and how extra ball is configured.",
+          "Test both ordered drop banks, both physical lock shots, Long Bomb ramp, center targets, raising uprights and ramp, and kickoff lanes."
+        ],
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Long Bomb",
+            "tone": "indigo",
+            "kind": "multiball"
+          },
+          {
+            "label": "Touchdown",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "ordered drop-target bank",
+            "label": "Ordered drop banks",
+            "description": "The left and right banks that qualify physical ball locks when completed in order.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left and right lock shots",
+            "label": "Physical locks",
+            "description": "The two lit lock positions that hold balls for three-ball Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Long Bomb ramp",
+            "label": "Long Bomb ramp",
+            "description": "The ramp that releases both locks to start Multiball and can score one million after upright loops.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center targets",
+            "label": "Ramp-raise targets",
+            "description": "The targets that raise the Multiball Jackpot ramp.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The physical locks can be shared between players.",
+            "response": "Check the setup before play and do not assume a ball you qualified will remain available on your next turn.",
+            "sourceUrl": "https://district82.com/game-list/monday-night-football-pinball/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete ordered drop targets to qualify the left and right locks, collect both, then shoot the Long Bomb ramp for three-ball Multiball. Complete the center targets to raise the Jackpot ramp and shoot it.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete an ordered drop-target bank to qualify a ball lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit lock, then repeat the bank-and-lock route for the lock on the other side.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With both balls locked, shoot the Long Bomb ramp to release them and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, complete the center targets to raise the Jackpot ramp, then shoot the raised ramp for the displayed award.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Qualify a Lock",
+            "summary": "Complete the left or right drop-target bank in order."
+          },
+          {
+            "name": "Collect Locks",
+            "summary": "Shoot the lit left and right lock shots."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "With both balls locked, shoot the Long Bomb ramp."
+          }
+        ]
+      }
+    }
+  ]
+}

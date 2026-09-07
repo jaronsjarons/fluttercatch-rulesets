@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr3EW",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Prepare Bride, Wolf Man, and Creature while leaving Frankenstein ready. Start those modes before Frankenstein Multiball, then use the protected stack to work toward Monster Bash or Monsters of Rock. Keep Mosh Pit lit as insurance.",
+        "quickInfo": [
+          {
+            "name": "Monster modes",
+            "summary": "Start Mummy, Wolf Man, Creature, Bride, Dracula, and Frankenstein during the game to qualify Monster Bash."
+          },
+          {
+            "name": "Frankenstein Multiball",
+            "summary": "Hit the body-part target until Frankenstein lowers, then shoot the exposed ramp to start three-ball jackpot play."
+          },
+          {
+            "name": "Mosh Pit Multiball",
+            "summary": "Six spinner shots light it at the scoop; the first two spinner shots add balls, and ten Frankenstein ramps light its Super."
+          },
+          {
+            "name": "Monster Bash",
+            "summary": "Start all six monster modes and shoot the scoop for a four-ball wizard multiball."
+          },
+          {
+            "name": "Monsters of Rock",
+            "summary": "Complete every monster objective to earn all six instruments, then shoot the scoop to start the final four-ball wizard multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the scoop from both flippers. Test the right-ramp return and one orbit return before you build a stack."
+          },
+          {
+            "text": "Shoot either orbit four times to start Full Moon Fever. Complete its four orbit hurry-ups if those returns remain controlled.",
+            "modeNotes": [
+              "Full Moon Fever: Four orbit shots start four decreasing orbit hurry-ups; collect all four for the Wolf Man instrument."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the Creature saucer enough times to start Creature Feature. Complete its five lit major shots if the saucer return is safe.",
+            "modeNotes": [
+              "Creature Feature: The first major shot locks a hurry-up value; the next four shots score that value at 2x through 5x."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot each outer ramp three times to start Ball & Chain. Make three more shots to each ramp during the mode.",
+            "modeNotes": [
+              "Ball & Chain: The 30-second mode scores double base value at each ramp; the first three spinner hits can reset its timer."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the Frankenstein standup until one body-part hit remains. Leave the final hit ready while you prepare Bride, Wolf Man, and Creature."
+          },
+          {
+            "text": "Start the prepared Bride, Wolf Man, and Creature modes before collecting Frankenstein's final body part.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect the final body part and shoot the exposed ramp to start Frankenstein Multiball.",
+            "modeNotes": [
+              "Frankenstein Multiball: Three balls play lit major-shot jackpots; the Frankenstein shot scores Super Jackpot.",
+              "Super levels: One regular jackpot lights Double Super and two regular jackpots light Triple Super."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the stack, shoot any major that advances two running modes. Favor the outer ramps while Ball & Chain is active.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Running monster-mode timers pause during Multiball and resume when it ends.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "If the stack falls apart early, use a ready Mosh Pit Multiball as the recovery route. Otherwise, prepare the missing Mummy or Dracula mode."
+          },
+          {
+            "text": "After all six monster modes have started, shoot the scoop for Monster Bash.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Frankenstein plus one safe mode",
+          "when": "Use this when a larger stack needs dangerous target or ramp shots.",
+          "steps": [
+            {
+              "text": "Prepare Frankenstein until one body-part hit remains."
+            },
+            {
+              "text": "Start Creature Feature, Mummy Mayhem, or Full Moon Fever when its start is safe.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect the final body part and start Frankenstein Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use multiball to finish the running mode and score regular jackpots."
+            },
+            {
+              "text": "Take the Frankenstein Super only when the shot is open."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Mosh Pit Multiball",
+            "when": "Use this when the center spinner is clean and other modes are not ready.",
+            "steps": [
+              {
+                "text": "Make six center-spinner shots to light Mosh Pit."
+              },
+              {
+                "text": "Start Mosh Pit at the scoop.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Make the first two spinner shots to add one ball each while switches score the running value.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Make ten Frankenstein ramps, then collect the lit Mosh Pit Super there.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "After Multiball, resume qualification for the next missing monster mode."
+              }
+            ]
+          },
+          {
+            "title": "Ball & Chain ramp flow",
+            "when": "Use this when both non-Frankenstein ramps return safely.",
+            "steps": [
+              {
+                "text": "Alternate the two ramps three times each to start Ball & Chain.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Repeat both ramp sets during the mode."
+              },
+              {
+                "text": "Hit the spinner only when its return is controlled."
+              },
+              {
+                "text": "Take victory laps during the remaining timer."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Monster Bash and Monsters of Rock",
+          "steps": [
+            {
+              "text": "Start all six monster modes to light Monster Bash.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the scoop for four-ball Monster Bash.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete each monster objective to earn its instrument."
+            },
+            {
+              "text": "Collect all six instruments to light Monsters of Rock."
+            },
+            {
+              "text": "Shoot the scoop for four-ball Monsters of Rock.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "During Monsters of Rock, complete each monster shot before you repeat it at the higher level."
+            }
+          ]
+        },
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the 2012–13 PAPA Circuit Final, Steven Bowden prepared several monster modes before starting multiball, reached Monster Bash, and passed 200 million.",
+            "In the same final, Cayle George described Bride, Wolf Man, and Creature into Frankenstein Multiball as his normal route toward Monster Bash or Monsters of Rock, with Mosh",
+            "Pit kept ready as insurance."
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Creature Feature",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Ball & Chain",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Mummy Mayhem",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Full Moon Fever",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Drac Attack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Frankenstein Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Mosh Pit Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Monster Bash",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Monsters of Rock",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Double Super",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Triple Super",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "scoop",
+            "label": "Center scoop",
+            "description": "Starts lit monster modes, Mosh Pit, Monster Bash, and Monsters of Rock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "orbits",
+            "label": "Left and right orbits",
+            "description": "Advance and start Full Moon Fever while feeding the upper pop area.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Creature saucer",
+            "label": "Creature saucer",
+            "description": "The left-side saucer used to qualify and start Creature Feature.",
+            "precision": "unverified"
+          },
+          {
+            "term": "non-Frankenstein ramp",
+            "label": "Bride ramps",
+            "description": "The left and right ramps used to qualify and complete Ball & Chain.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Frankenstein standup",
+            "label": "Frankenstein target",
+            "description": "The center target that builds Frankenstein's body and lowers the figure.",
+            "precision": "unverified"
+          },
+          {
+            "term": "exposed ramp",
+            "label": "Frankenstein ramp",
+            "description": "The ramp behind Frankenstein that starts Multiball after the figure lowers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red Dracula targets",
+            "label": "Dracula targets",
+            "description": "The red standups used to spell D-R-A-C-U-L-A and qualify Drac Attack.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center spinner",
+            "label": "Mosh Pit spinner",
+            "description": "The center spinner that qualifies Mosh Pit and scores its jackpots.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the scoop from the right flipper if the copy permits it; test the shot before a major start is lit.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          },
+          {
+            "name": "Multiball target cover",
+            "instruction": "Use an extra ball to hit the dangerous red Dracula standups while another ball stays controlled.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          },
+          {
+            "name": "Mode-overlap shooting",
+            "instruction": "During a stack, choose a shot that is lit for two or more active modes.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          },
+          {
+            "name": "Ramp alternation",
+            "instruction": "Alternate the Bride ramps when both returns are safe; the sequence qualifies and completes Ball & Chain.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A missed right ramp can feed the center drain.",
+            "response": "Test its return and prefer the left ramp when the right shot rejects.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          },
+          {
+            "issue": "The red Dracula targets can feed the left outlane.",
+            "response": "Use multiball protection or a controlled shot instead of forcing the bank in single-ball play.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          },
+          {
+            "issue": "A missed center spinner can drain down the middle.",
+            "response": "Do not chase Mosh Pit when the spinner is not clean.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          },
+          {
+            "issue": "Phantom Flip takes control of the flippers and can reject toward an outlane.",
+            "response": "Check whether the feature is enabled and wait for a possible compensation save after a no-switch flip.",
+            "sourceUrl": "https://www.kineticist.com/news/monster-bash-pinball-tutorial"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original Williams or Chicago Gaming remake, installed code, ball count, tournament settings, Extra Ball conversion, and monster-mode difficulty.",
+          "Confirm body-part, Mosh Pit, mode-start, jackpot, ball-save, and Monsters of Rock requirements before relying on exact counts.",
+          "Test the scoop, Bride ramps, Frankenstein target and ramp, spinner, Creature saucer, Dracula targets, orbit returns, and pop exits."
+        ],
+        "simpleOverview": "Monster Bash uses six monster modes whose starts lead to Monster Bash and whose completed objectives lead to Monsters of Rock. Prepare Bride, Wolf Man, and Creature while leaving Frankenstein one hit away, start those modes, then finish Frankenstein and use Multiball to work on their shots.",
+        "overview": "Monster Bash uses six monster modes whose starts lead to Monster Bash and whose completed objectives lead to Monsters of Rock. Prepare Bride, Wolf Man, and Creature while leaving Frankenstein one body-part hit ready, start the prepared modes, then collect the final Frankenstein hit and shoot its ramp for Multiball. Use overlapping major shots during the protected stack, recover with Mosh Pit only when needed, and start Monster Bash at the scoop after all six modes have begun.",
+        "machineSetup": [
+          "Confirm original Williams or Chicago Gaming remake, installed code, ball count, tournament settings, Extra Ball conversion, and monster-mode difficulty.",
+          "Confirm body-part, Mosh Pit, mode-start, jackpot, ball-save, and Monsters of Rock requirements before relying on exact counts.",
+          "Test the scoop, Bride ramps, Frankenstein target and ramp, spinner, Creature saucer, Dracula targets, orbit returns, and pop exits."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the Creature saucer or the orbits for one safe monster mode, lower Frankenstein for Multiball, then use the extra balls to finish the mode and collect Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a monster mode",
+            "text": "Shoot the Creature saucer to start Creature Feature, or make four orbit shots to start Full Moon Fever. During the mode, follow its lit major shots.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start Frankenstein Multiball",
+            "text": "Hit the Frankenstein standup until the body lowers, then shoot the exposed ramp to start Frankenstein Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Use the overlap",
+            "text": "During Multiball, shoot major shots that also finish the running mode. Lit major shots score regular Jackpots, and the Frankenstein ramp scores the Super Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Monster modes",
+            "summary": "Start Mummy, Wolf Man, Creature, Bride, Dracula, and Frankenstein during the game to qualify Monster Bash."
+          },
+          {
+            "name": "Frankenstein Multiball",
+            "summary": "Hit the body-part target until Frankenstein lowers, then shoot the exposed ramp to start three-ball jackpot play."
+          },
+          {
+            "name": "Mosh Pit Multiball",
+            "summary": "Six spinner shots light it at the scoop; the first two spinner shots add balls, and ten Frankenstein ramps light its Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Mosh Pit Multiball",
+          "when": "Use this when the center spinner returns more safely than Frankenstein.",
+          "steps": [
+            {
+              "text": "Shoot the center spinner six times, then shoot the scoop to start Mosh Pit Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the spinner twice to add two balls, then repeat the Frankenstein ramp toward the Mosh Pit Super.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

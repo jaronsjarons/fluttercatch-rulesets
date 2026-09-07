@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "id": "Grxvy",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the three-bank for each left-ramp lock, start five-ball Multiball, collect all five mode-shot Jackpots, then take both Super Jackpots and the roving Baywatch Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Five-ball Multiball",
+            "summary": "Complete the three-bank to light a lock at the left-ramp trap door; the third lock releases five balls."
+          },
+          {
+            "name": "Swimmer Jackpots",
+            "summary": "The left ramp, center ramp, upper VUK, right ramp, and spinner lane each collect a regular Jackpot."
+          },
+          {
+            "name": "Jackpot doubler",
+            "summary": "A spinner-lane ball is held in the upper launch for ten seconds, doubling regular Jackpot values during the hold."
+          },
+          {
+            "name": "Super Jackpots",
+            "summary": "After five Jackpots, collect the SHARK scoop Super and side-ramp Double Super to light the 500M roving Baywatch Jackpot."
+          },
+          {
+            "name": "Baywatch modes",
+            "summary": "The fourth cumulative shot at any mode shot starts its 30-second vertical mode; across all five shots, lamp rows start Guard and Tourist Season."
+          },
+          {
+            "name": "Search & Rescue",
+            "summary": "Complete all five vehicle standups to light a mystery award at the spinner; Tournament Mode fixes its award order."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the opening save to test the three-bank rebounds, left-ramp trap door, five mode-shot returns, and shark-fin feed."
+          },
+          {
+            "text": "Complete the three-bank to light one or more locks at the left-ramp trap door."
+          },
+          {
+            "text": "Shoot the lit left ramp to lock a ball; repeat the displayed qualification until the third lock starts five-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the left-ramp, center-ramp, upper-VUK, right-ramp, and spinner-lane Swimmer Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use a spinner-lane hold to double remaining regular Jackpot values for ten seconds, but do not delay safer lit shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all five Jackpots, collect the SHARK scoop Super and side-ramp Double Super, then follow the roving 500M Baywatch Jackpot.",
+            "modeNotes": [
+              "Multiball ladder: Five mode-shot Jackpots, SHARK scoop Super, side-ramp Double Super, then the roving Baywatch Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Vertical-mode route",
+          "when": "Use this when drop-bank rebounds are dangerous but one mode shot returns safely.",
+          "steps": [
+            {
+              "text": "Choose the safest of the five mode shots."
+            },
+            {
+              "text": "Make its fourth cumulative hit to start the corresponding 30-second mode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow that mode's lit shots only while their returns remain controlled.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After the timer, resume lock work or advance a different safe mode shot."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bonus and Search & Rescue",
+            "when": "Use this when top play is controllable but the drop bank and left ramp are not.",
+            "steps": [
+              {
+                "text": "Use the flippers to complete SPF and advance the bonus multiplier toward 10x."
+              },
+              {
+                "text": "Take safe vehicle standups until all five light Search & Rescue at the spinner."
+              },
+              {
+                "text": "Collect Search & Rescue only after confirming its Tournament Mode or normal-play award order."
+              },
+              {
+                "text": "Protect the multiplied bonus rather than forcing a rejecting lock shot."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Baywatch Jackpot and Earth Quake",
+          "steps": [
+            {
+              "text": "Collect all five Multiball Jackpots and both Super Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Follow the roving mode-shot sequence for the 500M Baywatch Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Across normal play, finish all five vertical modes plus Guard and Tourist Season.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Earth Quake at the upper VUK and repeatedly collect the five lit mode-shot values.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Five-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Baywatch modes",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "vertical mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Guard",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Tourist Season",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Earth Quake",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Search & Rescue",
+            "tone": "mist",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "three-bank",
+            "context": "three-bank",
+            "label": "Lock-qualifying drops",
+            "description": "The three drop targets used to light left-ramp locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left-ramp trap door",
+            "context": "left-ramp trap door",
+            "label": "Multiball lock",
+            "description": "The left-ramp diverter that sends qualified balls to the under-playfield lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner lane",
+            "context": "spinner lane",
+            "label": "Jackpot doubler",
+            "description": "The mode shot that sends a ball to the upper launch for a ten-second regular-Jackpot doubler.",
+            "precision": "unverified"
+          },
+          {
+            "term": "SHARK scoop",
+            "context": "SHARK scoop",
+            "label": "Super Jackpot scoop",
+            "description": "The upper-right scoop reached from the shark-fin flipper for the regular Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side ramp",
+            "context": "side ramp",
+            "label": "Double Super ramp",
+            "description": "The upper-left-flipper ramp used for the Double Super and later Tourist Season Jackpots.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Mode-shot triage",
+            "instruction": "During a timed mode, take its required shots only while their returns remain safe; stop before a known reject.",
+            "sourceUrl": "https://www.flipperservice.de/flipperteile-handbuch/Baywatch_Manual.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Search & Rescue is a mystery award, not a multiball or ball-protection feature.",
+            "response": "Collect it for its displayed award; do not postpone the real three-lock Multiball route expecting protection.",
+            "sourceUrl": "https://www.flipperservice.de/flipperteile-handbuch/Baywatch_Manual.pdf"
+          },
+          {
+            "issue": "The SHARK scoop, side ramp, center ramp, and lock trap door can reject or fail to register.",
+            "response": "Test each under ball save and switch routes when the next high-value shot cannot register safely.",
+            "sourceUrl": "https://www.flipperservice.de/flipperteile-handbuch/Baywatch_Manual.pdf"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Sega Baywatch, production code or unofficial 4.02, Tournament Mode, ball count, Extra Ball conversion, and mode timers.",
+          "Confirm lock difficulty, physical or virtual locks, trough count, Multiball ball save, restart criterion, and Search & Rescue order.",
+          "Test the three-bank, trap door, five mode shots, upper launcher, SHARK scoop, side ramp, shark-fin flipper, and Laser Kick."
+        ],
+        "simplePilotKey": "Grxvy:stock-4.00",
+        "simpleOverview": "Baywatch lights each left-ramp lock by completing the three-bank; the third lock starts five-ball Multiball. During Multiball, collect the five different Swimmer Jackpots, then take the SHARK and side-ramp Supers before following the roving Baywatch Jackpot. Normal modes and Search & Rescue supply progress between starts.",
+        "overview": "Baywatch lights each left-ramp lock by completing the three-bank; the third lock starts five-ball Multiball. Prioritize the drop-bank and left-ramp lock route, clear all five Swimmer Jackpots, then convert both Supers and the roving 500M Baywatch Jackpot. Use safe vertical modes, Search & Rescue, and Bonus X work only when they support the next protected scoring window.",
+        "machineSetup": [
+          "Confirm Sega Baywatch, production code or unofficial 4.02, Tournament Mode, ball count, Extra Ball conversion, and mode timers.",
+          "Confirm lock difficulty, physical or virtual locks, trough count, Multiball ball save, restart criterion, and Search & Rescue order.",
+          "Test the three-bank, trap door, five mode shots, upper launcher, SHARK scoop, side ramp, shark-fin flipper, and Laser Kick."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Knock down all three drop targets to light locks at the left ramp, collect three locks to start five-ball Multiball, then collect the five Swimmer Jackpots and both Super Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Multiball",
+            "text": "Knock down all three drop targets to light one or more locks, then shoot the left ramp. Collect three locks to start five-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect five Swimmer Jackpots",
+            "text": "During Multiball, shoot the lit left ramp, center ramp, upper VUK, right ramp, and spinner lane once each for their Swimmer Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect the Supers",
+            "text": "After all five Jackpots, shoot the Shark Super Scoop for Super Jackpot, then the side ramp for Double Super Jackpot. Follow the lit Surf Board insert through the left ramp, center ramp, upper VUK, right ramp, and spinner lane for the Baywatch Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Five-ball Multiball",
+            "summary": "Complete the three-bank to light a lock at the left-ramp trap door; the third lock releases five balls."
+          },
+          {
+            "name": "Swimmer Jackpots",
+            "summary": "The left ramp, center ramp, upper VUK, right ramp, and spinner lane each collect a regular Jackpot."
+          },
+          {
+            "name": "Jackpot doubler",
+            "summary": "A spinner-lane ball is held in the upper launch for ten seconds, doubling regular Jackpot values during the hold."
+          }
+        ]
+      }
+    }
+  ]
+}

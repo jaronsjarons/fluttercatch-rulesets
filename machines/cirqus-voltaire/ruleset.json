@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVjJ",
+  "title": "Cirqus Voltaire",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Williams Cirqus Voltaire rules",
+      "url": "https://www.planetarypinball.com/mm5/Williams/games/cirqus/rules.html"
+    },
+    "supportingSources": [
+      {
+        "label": "GameFAQs Cirqus Voltaire reference",
+        "url": "https://gamefaqs.gamespot.com/pinball/915938-cirqus-voltaire/faqs/1451"
+      },
+      {
+        "label": "Official Cirqus Voltaire manual",
+        "url": "https://www.planetarypinball.com/reference/gamemanuals/Cirqus_Voltaire/files/assets/basic-html/toc.html"
+      },
+      {
+        "label": "Official production ROM information",
+        "url": "https://www.planetarypinball.com/mm5/Williams/games/cirqus/tech.html"
+      },
+      {
+        "label": "Cirqus Voltaire tutorial and gameplay with Adam Lefkoff",
+        "url": "https://www.youtube.com/watch?v=7dGgw2ytMAU"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Defeat Ringmaster 1, prepare Ringmaster 2, start Highwire Multiball and Strike-an-Arc Multiball with one left-ramp shot, defeat Ringmaster 2 to add Ringmaster Frenzie, then collect each Jackpot and the grace-period Multiple Jackpots.",
+      "steps": [
+        {
+          "text": "Hit any WOW target once to raise Ringmaster 1. Hit the Ringmaster five times. Then shoot the hole to defeat it.",
+          "modeNotes": [
+            "Ringmaster 1: The first WOW needs one hit. This Ringmaster does not start a multiball."
+          ]
+        },
+        {
+          "text": "Spell WOW to raise Ringmaster 2. Hit the Ringmaster five times to expose the finish, but do not shoot the hole."
+        },
+        {
+          "text": "Complete the LIGHT and LOCK targets around the left ramp. Shoot the left ramp to lock ball 1. Repeat for ball 2.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Count left-ramp shots. Make the third Highwire lock on the shot that completes the first five-ramp Strike-an-Arc requirement.",
+          "modeNotes": [
+            "Highwire Multiball: Three left-ramp locks start three-ball play. At first, both orbits and the left entrance to the Ringmaster loop score 1,000,000 Jackpots. Later Jackpots move.",
+            "Strike-an-Arc Multiball: The first start needs five left-ramp shots and launches a second ball. Switches charge the arc. A full arc scores a 500,000 Jackpot. Later Jackpots add 100,000 and need more switches."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During the Highwire and Strike stack, defeat Ringmaster 2 to add Ringmaster Frenzie.",
+          "modeNotes": [
+            "Stack rule: A normal Ringmaster multiball can join an active multiball. After a Ringmaster multiball starts, no new multiball can start."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Ringmaster hole repeatedly for 250,000, 500,000, 750,000, and 1,000,000 in quick succession.",
+          "modeNotes": [
+            "Ringmaster Frenzie: Quick hole repeats raise the award. The multiball ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect at least one Highwire Jackpot and one Strike-an-Arc Jackpot before the stack ends.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When one ball remains, shoot the left ramp during the short grace period.",
+          "modeNotes": [
+            "Voltaire's Multiple Jackpots: The left ramp awards one Jackpot from each multiball that was active before play returned to one ball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Ringmasters all day",
+        "when": "Use this plan when the left-ramp locks or exact stack timing are unsafe.",
+        "steps": [
+          {
+            "text": "Spell WOW to raise each Ringmaster, hit it five times to expose its hole, then shoot the hole to defeat it."
+          },
+          {
+            "text": "During each normal Ringmaster multiball, make fast Ringmaster-hole combos.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Defeat the fourth Ringmaster to qualify Ringmaster Battle.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the magnet ball save. Watch each throw before you repeat the shot."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Juggler Multiball",
+          "when": "Use this route when the left orbit is safer than the left ramp.",
+          "steps": [
+            {
+              "text": "Shoot the left orbit three times to light Juggler locks. Shoot it three more times to lock three balls and start Juggler Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot a ball into the Juggler for a 500,000 Jackpot. Put a second ball into the Juggler within about 10 seconds for the 1,000,000 Double Jackpot.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Put a third ball into the Juggler within the next 10 seconds for the 2,000,000 Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Juggler can stack with Strike-an-Arc and a normal Ringmaster multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ringmaster Battle",
+          "when": "Use this route after four Ringmasters when controlled magnet shots are available.",
+          "steps": [
+            {
+              "text": "Defeat Ringmaster 4 to finish the Ringmaster Frenzie, Razz, and Special sequence."
+            },
+            {
+              "text": "Spell WOW to raise Ringmaster 5. Hit it five times, then shoot the exposed hole to start Ringmaster Battle.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit the Ringmaster and its side targets repeatedly for 1,000,000 each. Keep making progress before the Ringmaster removes recent hits.",
+              "modeNotes": [
+                "Ringmaster Battle: After the short ball save, a drain re-serves the ball but strengthens the Ringmaster. A win scores 10,000,000 and lights Extra Ball. The mode does not stack."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Nine Marvels and Join the Cirqus",
+        "steps": [
+          {
+            "text": "Collect nine Marvels: Ringmaster Frenzie, one Side Show award, Highwire, Juggler, Defeat All Ringmasters, Acrobats, Menagerie, Boom, and Spin.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make four right-ramp shots for Acrobats. Make five wall or target hits for Menagerie. Collect one built Boom value. Keep the right spinner running for Spin."
+          },
+          {
+            "text": "After all nine Marvels are lit and the active multiball ends, shoot a lit orbit to start Join the Cirqus.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the four Join the Cirqus levels.",
+            "modeNotes": [
+              "Level 1: Spell C-I-R-Q-U-S at six major shots during three-ball play.",
+              "Level 2: Alternate the Ringmaster and left ramp until five Ringmaster hits are complete.",
+              "Level 3: Shoot the roving Jackpot at the two orbits and left Ringmaster loop. Each Jackpot adds a ball. Collect six Jackpots.",
+              "Level 4 Party: Major shots score 1,000,000. Pop bumpers score the built Boom value. The Party ends when one ball remains."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Highwire Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Strike-an-Arc Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Juggler Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Ringmaster Frenzie",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Ringmaster Razz",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Ringmaster Special",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Ringmaster Battle",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Join the Cirqus",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Voltaire's Multiple Jackpots",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Side Show",
+          "tone": "teal",
+          "kind": "item"
+        },
+        {
+          "label": "Stack rule",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Official production ROM 1.4 is the baseline for these rules.",
+        "Unofficial Home ROM 2.0H changes bug handling; identify the installed ROM before relying on Home-ROM behavior."
+      ],
+      "techniques": [],
+      "cautions": [],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Defeat Ringmaster 1."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect nine Marvels: Ringmaster Frenzie, one Side Show award, Highwire, Juggler, Defeat All Ringmasters, Acrobats, Menagerie, Boom, and Spin."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Ringmasters all day: Use this plan when the left-ramp locks or exact stack timing are unsafe."
+        }
+      ],
+      "simpleOverview": "In Cirqus Voltaire, Highwire and Strike-an-Arc can be active before Ringmaster Frenzie starts. Defeat Ringmaster 1, prepare Ringmaster 2, align the third Highwire lock with the fifth left-ramp shot, then defeat Ringmaster 2 while both Multiballs are running. Collect each Jackpot and the left-ramp awards during their grace period.",
+      "overview": "In Cirqus Voltaire, Highwire and Strike-an-Arc can be active before Ringmaster Frenzie starts. Prepare Ringmaster 2, time the third Highwire lock with the fifth left-ramp shot, then defeat Ringmaster 2 while both Multiballs are running. Collect both Multiball Jackpots, the Ringmaster-hole values, and the left-ramp awards during their grace period.",
+      "machineSetup": [
+        "Official production ROM 1.4 is the baseline for these rules.",
+        "Unofficial Home ROM 2.0H changes bug handling; identify the installed ROM before relying on Home-ROM behavior."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

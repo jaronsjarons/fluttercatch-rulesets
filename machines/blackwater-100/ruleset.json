@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "G5K6X",
+  "title": "Blackwater 100",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Blackwater 100 rules and strategy",
+      "url": "https://www.pinball.org/rules/blackwater100.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Blackwater 100 operations manual",
+        "url": "https://device.report/manual/6702790"
+      },
+      {
+        "label": "Blackwater 100 walkthrough and play",
+        "url": "https://www.youtube.com/watch?v=CgxP0NUU-sE"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Blackwater 100 is played as three Heats rather than a normal three-ball game. At each Heat, plunge three balls into the Starting Gate, wait for the countdown, and press the green button at GO for the Holeshot. Complete the eight course Sections to finish a lap; progress carries into the next Heat.",
+      "simpleOverview": "Each Heat begins by plunging three balls into the Starting Gate. At GO, press the green button for the Holeshot. Use the green buttons to move the flashing Section, then complete the eight course Sections for a lap. Spell R-A-I-N on the reverse playfield to raise scoring for the rest of that Heat.",
+      "summary": "Plunge three balls into the Starting Gate, then press the green button at GO for the Holeshot. Move the flashing Section with the green buttons and complete all eight Sections for a lap. Spell R-A-I-N to raise scoring for the rest of the Heat.",
+      "quickInfo": [
+        {
+          "name": "Start a Heat",
+          "summary": "Plunge all three balls into the Starting Gate and press green at GO."
+        },
+        {
+          "name": "Choose a Section",
+          "summary": "Use the left or right green button to move the flashing Section."
+        },
+        {
+          "name": "Finish a Lap",
+          "summary": "Complete all eight course Sections; progress carries between Heats."
+        },
+        {
+          "name": "Raise scoring",
+          "summary": "Complete R-A-I-N on the reverse playfield for 2x, then 3x and 4x in that Heat."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge three balls into the Starting Gate before the Heat begins.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "At GO, press the green button to release the gate and collect the Holeshot timing award.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the left and right green buttons to move the flashing Section toward a shot you can make safely.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the eight course Sections to finish a lap; continue any unfinished lap in the next Heat.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build Heat multiplier",
+          "when": "Use this while you still have enough active balls to reach the reverse playfield safely.",
+          "steps": [
+            {
+              "text": "Complete R-A-I-N on the reverse playfield to raise scoring to 2x for the rest of the Heat.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Repeat the completion to reach 3x and then 4x before cashing controllable Section and loop shots.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Manage the race",
+        "steps": [
+          {
+            "text": "Use upper alternating loops to advance Bonus X while completing course Sections.",
+            "kinds": [
+              "multiplier",
+              "mode"
+            ]
+          },
+          {
+            "text": "Park balls in the saucers briefly when reducing the number of loose balls makes the flashing Section safer.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Prioritize the flashing Section when possible because it generally scores more than an unlit completion.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Heat length, Holeshot timing, center-post behavior, extra-ball, and special settings before competitive play.",
+        "Test the Starting Gate, all three trough feeds, both green buttons, eight Section switches, reverse R-A-I-N area, saucers, and upper loops."
+      ],
+      "termStyles": [
+        {
+          "label": "Heat",
+          "tone": "oxblood",
+          "kind": "mode"
+        },
+        {
+          "label": "Holeshot",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "R-A-I-N",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "This is a three-Heat race with several balls launched at each start, not a conventional three-ball ruleset or a qualified Multiball mode.",
+          "response": "Track Heat and lap progress on the display and plan around the remaining Heats rather than waiting for a Multiball start.",
+          "sourceUrl": "https://www.pinball.org/rules/blackwater100.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

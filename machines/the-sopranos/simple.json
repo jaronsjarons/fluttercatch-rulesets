@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "G5WoB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start an Episode at the inner loop, then start Stugots or Bing Multiball while the Episode is running. Advance rank through the four envelopes and inner loop, or hit and enter the Safe.",
+        "quickInfo": [
+          {
+            "name": "Episodes",
+            "summary": "Spell THE SOPRANOS, then use the inner spinner loop to start the lit Episode."
+          },
+          {
+            "name": "Stugots Multiball",
+            "summary": "Knock down the blocker, light locks, and put two balls in the yacht."
+          },
+          {
+            "name": "Bing Multiball",
+            "summary": "Start Party at the Bing from the left ramp and finish its requirements to reach the multiball."
+          },
+          {
+            "name": "Rank",
+            "summary": "Complete four envelope shots and collect the inner loop, or crack and enter the Safe, to climb toward Underboss and BOSS."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Short-plunge to a flipper and trap the ball. Before the third playfield switch validates the ball, a drain returns the same ball, so use that window to knock down the Stugots blocker and prepare the first lock."
+          },
+          {
+            "text": "Spell THE SOPRANOS through controlled shots, then start the selected Episode at the inner spinner loop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Knock down the Stugots blocker and collect two yacht locks when its return is reliable."
+          },
+          {
+            "text": "Start Stugots Multiball while the Episode is active, then follow the lit jackpot shots.",
+            "modeNotes": [
+              "Stack choice: An active Episode adds protected progress, but do not risk a ready multiball solely to finish a dangerous mode qualification."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between multiballs, complete the four envelope shots and collect Advance Rank at the inner loop."
+          },
+          {
+            "text": "Crack and enter the Safe when that route is closer than another envelope set, then protect the rank and bonus from a tilt."
+          }
+        ],
+        "fallback": {
+          "title": "Safe and rank",
+          "when": "Use this when Stugots rejects but direct Safe hits return to a flipper.",
+          "steps": [
+            {
+              "text": "Hit the Safe until it opens."
+            },
+            {
+              "text": "After the Safe opens, shoot its eject saucer."
+            },
+            {
+              "text": "Collect the rank advance."
+            },
+            {
+              "text": "Return to Episode or multiball progress after the Safe closes."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bing route",
+            "when": "Use this when the left ramp is safer than the yacht lock.",
+            "steps": [
+              {
+                "text": "Shoot the left ramp to start Party at the Bing.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Finish the lit Party shots."
+              },
+              {
+                "text": "Start Bing Multiball when qualified.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use its protection to resume Episode or rank progress."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "BOSS",
+          "steps": [
+            {
+              "text": "Complete the four envelope shots and collect the inner loop, or hit the Safe until it opens and enter its saucer, to advance rank."
+            },
+            {
+              "text": "Play Episodes and the two primary multiballs.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Reach Underboss and complete its required work."
+            },
+            {
+              "text": "Start BOSS after the remaining game requirements are satisfied.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Stugots Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Bing Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Episodes",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "BOSS",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "inner loop",
+            "label": "Episode and rank lane",
+            "description": "Spinner lane used to start Episodes and collect rank advances.",
+            "precision": "unverified",
+            "context": "inner loop: Spinner lane used to start Episodes and collect rank advances."
+          },
+          {
+            "term": "Stugots",
+            "label": "Yacht lock",
+            "description": "Two-ball lock behind a drop target.",
+            "precision": "unverified",
+            "context": "Stugots: Two-ball lock behind a drop target."
+          },
+          {
+            "term": "left ramp",
+            "label": "Bing ramp",
+            "description": "Ramp used to start Party at the Bing.",
+            "precision": "unverified",
+            "context": "left ramp: Ramp used to start Party at the Bing."
+          },
+          {
+            "term": "Safe",
+            "label": "Safe mechanism",
+            "description": "Central target that opens to reveal a rank-advance saucer.",
+            "precision": "unverified",
+            "context": "Safe: Central target that opens to reveal a rank-advance saucer."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Opening validation setup",
+            "instruction": "Short-plunge to a flipper, trap up, knock down the Stugots blocker, and take the lock before a third playfield switch ends the opening drain protection.",
+            "sourceUrl": "https://www.youtube.com/watch?v=0fkNHC5lZds"
+          },
+          {
+            "name": "Envelope rotation",
+            "instruction": "Complete the four lit envelope shots, then collect the inner loop before starting another set.",
+            "sourceUrl": "https://pinball.org/rules/sopranos.pdf"
+          },
+          {
+            "name": "Safe-return test",
+            "instruction": "Watch the exposed-saucer eject once before repeating Safe hits as the primary rank route.",
+            "sourceUrl": "https://pinball.org/rules/sopranos.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Stugots locks, the moving Safe, and loop-to-pop feeds can vary with maintenance.",
+            "response": "Change to Bing or envelope progress after a rejected Stugots shot or unsafe Safe eject.",
+            "sourceUrl": "https://pinball.org/rules/sopranos.pdf"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test the Safe, Stugots, inner loop, and Fish eject."
+        ],
+        "simpleOverview": "The Sopranos lets an active Episode continue into Stugots or Bing Multiball, but an Episode cannot be started after Multiball begins. Spell THE SOPRANOS with the inner-loop spinner or yellow standups, start the Episode at the inner loop, then start a prepared Multiball. Resume rank progress through envelopes or the Safe after the stack ends.",
+        "overview": "The Sopranos lets an active Episode continue into Stugots or Bing Multiball, but an Episode cannot be started after Multiball begins. Spell THE SOPRANOS, start a useful Episode at the inner loop, then start a prepared Multiball. Between stacks, advance rank by collecting all four envelopes and the inner loop, or by hitting the Safe until it opens and entering its saucer.",
+        "machineSetup": [
+          "Test the Safe, Stugots, inner loop, and Fish eject."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Spell THE SOPRANOS and shoot the inner loop to start an Episode. While it runs, knock down the Stugots target and lock two balls in the yacht to start Stugots Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start an Episode",
+            "text": "Shoot the inner-loop spinner or either yellow standup to spell THE SOPRANOS. Shoot the inner loop again to start the lit Episode, then follow its red flashing arrows.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start Stugots Multiball",
+            "text": "Knock down the target in front of the Stugots yacht to light Lock, then shoot the yacht. Repeat for the second lock to start two-ball Stugots Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Advance your rank",
+            "text": "Shoot the envelope at each ramp and orbit, then shoot the inner loop for Advance Rank."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Episodes",
+            "summary": "Spell THE SOPRANOS, then use the inner spinner loop to start the lit Episode."
+          },
+          {
+            "name": "Stugots Multiball",
+            "summary": "Knock down the blocker, light locks, and put two balls in the yacht."
+          },
+          {
+            "name": "Bing Multiball",
+            "summary": "Start Party at the Bing from the left ramp and finish its requirements to reach the multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: the Safe",
+          "when": "Use this when direct Safe hits return more safely than the Stugots shot.",
+          "steps": [
+            {
+              "text": "Hit the Safe until it opens, then shoot the eject hole behind it to advance your rank."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

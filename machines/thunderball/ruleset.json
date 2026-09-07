@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "G4J3k",
+  "title": "Thunderball",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Thunderball exact rules reconstruction",
+      "url": "https://pinballnirvana.com/forums/resources/thunderball-williams-1982-vp8.3247/"
+    },
+    "supportingSources": [
+      {
+        "label": "Strictly Pinball Thunderball machine guide",
+        "url": "https://strictlypinball.com/machines/thunderball"
+      },
+      {
+        "label": "Kineticist Thunderball machine reference",
+        "url": "https://www.kineticist.com/games/pinball/thunderball"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Thunderball begins in Regular Wave. Complete all six numbered target banks to start the timed Superwave, which repeatedly serves balls and can put six into play. Use the extra left and right Fire buttons to choose the inlane for each served ball. During Superwave, completing all six banks raises playfield scoring from 2x through 5x and adds ten seconds. Lit Reload holes return the ball; flashing ones also score the matching bank value. When time expires, the playfield goes dead and the remaining balls drain.",
+      "simpleOverview": "Complete all six numbered target banks to start timed Superwave Multiball. Use the left and right Fire buttons to choose where each served ball enters. During Superwave, clear all six banks again to raise playfield scoring and add ten seconds.",
+      "summary": "Finish the safest banks first and leave a controlled final bank for the Superwave start. During timed play, use the Fire buttons to feed balls toward missing banks and take lit Reload holes instead of risking the horseshoe.",
+      "quickInfo": [
+        {
+          "name": "Start Superwave",
+          "summary": "Complete all six numbered target banks."
+        },
+        {
+          "name": "Choose the Serve",
+          "summary": "Press the left or right Fire button."
+        },
+        {
+          "name": "Raise Scoring",
+          "summary": "Clear all six banks again during Superwave."
+        },
+        {
+          "name": "Extend Time",
+          "summary": "Each full-bank cycle during Superwave adds ten seconds."
+        }
+      ],
+      "steps": [
+        {
+          "text": "During Regular Wave, complete each of the six numbered target banks."
+        },
+        {
+          "text": "Finish the last incomplete bank to start timed Superwave Multiball with repeated ball serves.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Press the left or right Fire button to choose the inlane for each new ball and direct it toward an incomplete bank.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Clear all six banks during Superwave to raise the playfield multiplier and add ten seconds; repeat until scoring reaches 5x.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Reload control",
+          "when": "Use this when several balls are loose and the numbered banks are not safely available.",
+          "steps": [
+            {
+              "text": "Shoot a lit Reload hole to return the ball to play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Prefer a flashing Reload hole when available because it also awards that bank's value.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "5x Superwave",
+        "steps": [
+          {
+            "text": "Start Superwave by clearing all six banks once.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat full-bank cycles to move from 2x through 5x while adding ten seconds per cycle.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test all six numbered target banks and resets, all seven Reload holes, the six-ball trough and serve path, the Superwave timer, and the horseshoe gate.",
+        "Verify both cabinet Fire buttons select the correct left or right inlane and that multiplier and ten-second extension awards register after a complete Superwave bank cycle."
+      ],
+      "cautions": [
+        {
+          "issue": "A slow horseshoe attempt can fall below the ramp and drain.",
+          "response": "Use Reload holes and bank shots unless the horseshoe can be made with enough speed to complete the route.",
+          "sourceUrl": "https://strictlypinball.com/machines/thunderball"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

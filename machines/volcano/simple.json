@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEzp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Volcano starts three-ball Multiball by capturing three balls in lit craters. The crater lamps cycle; press the right action button to freeze them briefly, then shoot the lit crater. Each captured ball is replaced at the shooter lane, and the third capture releases all three balls from the Volcano Shaft. Individually lit drop targets build the Seismic Multiplier and light the left-button ball save, while craters 2 through 4 can start timed playfield multipliers.",
+        "simpleOverview": "Watch the cycling crater lamps, press the right action button to freeze one briefly, and shoot that lit crater. Each successful capture serves another ball; the third capture releases all three balls for Multiball. Hit individually lit drops to raise the Seismic Multiplier and light the left-button ball save. Craters 2, 3, and 4 can also start timed playfield multipliers.",
+        "summary": "Prioritize lit crater captures because they build toward Multiball. Freeze a crater only when the ball is controlled, and use the left-button save before a likely outlane drain. During Multiball, favor safe crater and spinner feeds while doubled playfield scoring is active on the three-ball setup.",
+        "quickInfo": [
+          {
+            "name": "Freeze Crater Lamps",
+            "summary": "Press the right action button; make a scoring switch before freezing again."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Capture three balls in lit craters."
+          },
+          {
+            "name": "Raise Seismic Multiplier",
+            "summary": "Hit the individually lit drop target."
+          },
+          {
+            "name": "Use Ball Save",
+            "summary": "After lighting it at a drop, press the left action button before an outlane drain."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Control the ball, watch the cycling crater lamps, and press the right action button when a reachable crater is lit."
+          },
+          {
+            "text": "Shoot the frozen lit crater to capture the ball; make a scoring switch before trying to freeze the lamps again."
+          },
+          {
+            "text": "Repeat the freeze-and-capture sequence until the third captured ball releases all three balls from the Volcano Shaft.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep shooting controlled crater or spinner feeds while the configured doubled playfield scoring remains active."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Seismic route",
+            "when": "Use this when crater entries reject dangerously or their lamps cannot be timed reliably.",
+            "steps": [
+              {
+                "text": "Hit the individually lit drop target to raise the Seismic Multiplier and light the left-button ball save.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Use the lit ball save before a likely left-outlane drain instead of waiting until the ball is gone."
+              },
+              {
+                "text": "When the Seismic Bonus reaches its maximum, shoot the lit top hole to collect it."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Three-ball Multiball",
+          "steps": [
+            {
+              "text": "Freeze and shoot one lit crater to capture the first ball."
+            },
+            {
+              "text": "Repeat for a second lit crater capture."
+            },
+            {
+              "text": "Capture the third ball to release all three from the Volcano Shaft.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test all four crater switches, cycling lamps, capture and release hardware, both action buttons, the moving shooter guide, every drop target and lamp, left-outlane ball save, top hole, spinner, Volcano Shaft, and Lava Level indicators.",
+          "Confirm three- or five-ball play, whether Multiball doubles playfield scoring, captured-ball carryover, Extra Ball and Special conversion, and action-button timing before relying on those features in competition."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "craters",
+            "label": "Four Volcano craters",
+            "description": "Upper crater holes; a lit crater captures a ball toward Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Volcano Shaft",
+            "label": "Volcano Shaft",
+            "description": "Upper release path that serves captured balls when Multiball begins.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop targets",
+            "label": "Seismic drop targets",
+            "description": "Individually lit targets that raise the Seismic Multiplier and light the ball save.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top hole",
+            "label": "Top collect hole",
+            "description": "Hole that collects maximum Seismic Bonus or Special when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Volcano Shaft spinner",
+            "description": "Repeatable scoring switch at the shaft entrance.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Three- and five-ball cards differ in Multiball scoring and carryover behavior.",
+            "response": "Check the installed card before play; the three-lit-crater start remains stable, but doubled scoring and saved captures can differ by setup.",
+            "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Volcano_instruction_cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Prioritize lit crater captures because they build toward Multiball. Freeze a crater only when the ball is controlled, and use the left-button save before a likely outlane drain. During Multiball, favor safe crater and spinner feeds while doubled playfield scoring is active on the three-ball setup.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Control the ball, watch the cycling crater lamps, and press the right action button when a reachable crater is lit."
+          },
+          {
+            "text": "Shoot the frozen lit crater to capture the ball; make a scoring switch before trying to freeze the lamps again."
+          },
+          {
+            "text": "Repeat the freeze-and-capture sequence until the third captured ball releases all three balls from the Volcano Shaft.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep shooting controlled crater or spinner feeds while the configured doubled playfield scoring remains active."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Freeze Crater Lamps",
+            "summary": "Press the right action button; make a scoring switch before freezing again."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Capture three balls in lit craters."
+          },
+          {
+            "name": "Raise Seismic Multiplier",
+            "summary": "Hit the individually lit drop target."
+          }
+        ]
+      }
+    }
+  ]
+}

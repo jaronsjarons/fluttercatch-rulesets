@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "GryyO",
+  "title": "Surfers",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Surfers",
+      "url": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Surfers machine guide",
+        "url": "https://www.kineticist.com/games/pinball/surfers"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the blue bumpers until the Ring-a-Ding saucer reaches 300. Hit the red bumper to close the zipper flippers. Settle the ball, then repeat the saucer through the right loop.",
+      "quickInfo": [
+        {
+          "name": "Hang Five skill shot",
+          "summary": "Plunge into the top Hang Five saucer for 100 points and an upper-flipper feed."
+        },
+        {
+          "name": "Blue bumpers",
+          "summary": "Hits on the blue mushroom bumpers raise the Ring-a-Ding saucer value."
+        },
+        {
+          "name": "Red bumper",
+          "summary": "A hit on the red mushroom bumper closes the lower zipper flippers."
+        },
+        {
+          "name": "Yellow bumpers",
+          "summary": "A hit on either yellow mushroom bumper reopens the zipper flippers."
+        },
+        {
+          "name": "Ring-a-Ding route",
+          "summary": "The right loop feeds the Ring-a-Ding saucer, which is the repeatable scoring shot at 300."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge for the top Hang Five saucer."
+        },
+        {
+          "text": "Use the upper flipper to graze a blue bumper while the Ring-a-Ding value is below 300."
+        },
+        {
+          "text": "Stop blue-bumper hits when the Ring-a-Ding value reaches 300."
+        },
+        {
+          "text": "Hit the red mushroom bumper to close the lower flippers."
+        },
+        {
+          "text": "Use a legal nudge to settle the ball on the closed flippers."
+        },
+        {
+          "text": "Shoot through the right loop into the Ring-a-Ding saucer."
+        },
+        {
+          "text": "Flip the saucer eject directly back into the saucer when the feed permits it."
+        },
+        {
+          "text": "Otherwise, settle the ball on the closed flippers and repeat the right-loop shot."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Right-flipper backhand",
+        "when": "Recovery pivot: Use this plan when the two-flipper right-loop shot is not reliable.",
+        "steps": [
+          {
+            "text": "Close the zipper flippers with the red bumper."
+          },
+          {
+            "text": "Use small flips to move the settled ball onto the right flipper."
+          },
+          {
+            "text": "Backhand the Ring-a-Ding saucer from the right flipper."
+          },
+          {
+            "text": "Repeat the backhand while the saucer eject remains controlled."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Hang Five repeat",
+          "when": "When trailing, use this distinct scoreboard route: use this plan when the Hang Five eject returns cleanly to the upper flipper.",
+          "steps": [
+            {
+              "text": "Plunge or feed the ball into the Hang Five saucer."
+            },
+            {
+              "text": "Read the eject before the ball reaches the upper flipper."
+            },
+            {
+              "text": "Flip the ball directly back into Hang Five."
+            },
+            {
+              "text": "Stop the repeat when the eject no longer reaches the upper flipper cleanly."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeatable 300-value saucer",
+        "steps": [
+          {
+            "text": "Hit the blue bumpers until the Ring-a-Ding saucer value reaches 300."
+          },
+          {
+            "text": "Close the zipper flippers with the red bumper."
+          },
+          {
+            "text": "Settle the ball on the closed flippers."
+          },
+          {
+            "text": "Repeat the Ring-a-Ding saucer through the right loop."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Two-flipper loop shot",
+          "instruction": "Flip both lower flippers almost together. Start the left flipper slightly earlier if a simultaneous flip misses the right loop.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+        },
+        {
+          "name": "Backhand",
+          "techniqueSlug": "backhand",
+          "instruction": "Use small flips on the closed flippers. Move the ball onto the right flipper before the saucer backhand.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+        },
+        {
+          "name": "Bumper edge graze",
+          "instruction": "Contact the edge of a needed bumper. Avoid a direct hit that can send the ball toward a drain.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A yellow-bumper hit reopens the zipper flippers.",
+          "response": "Avoid the yellow bumpers after the red bumper closes the flippers. Prepare both flippers if a yellow hit occurs.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+        },
+        {
+          "issue": "A direct bumper hit can create an uncontrolled rebound.",
+          "response": "Graze only the needed bumper edge. Stop blue-bumper shots when the saucer reaches 300.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+        },
+        {
+          "issue": "The right outlane gate opens only after its white rollover is lit and scored.",
+          "response": "Read the gate before you depend on it. Treat an unconfirmed gate as closed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryyO-MJw7z"
+        }
+      ],
+      "simpleOverview": "Surfers uses blue-bumper hits to raise the Ring-a-Ding saucer and the red bumper to close the zipper flippers. Bring the saucer to 300, close the flippers, settle the ball, and repeat the right loop into Ring-a-Ding.",
+      "overview": "Surfers uses blue-bumper hits to raise the Ring-a-Ding saucer and the red bumper to close the zipper flippers. Use the Hang Five plunge for upper play, raise Ring-a-Ding to 300 with blue-bumper hits, then close and settle the flippers before repeating the right loop. Reclose the flippers whenever a yellow-bumper hit opens them.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

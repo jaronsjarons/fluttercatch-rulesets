@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "Grypn",
+  "title": "Flash",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Flash",
+      "url": "https://rules.silverballmania.com/rules/Grypn-MQdbe"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Flash machine guide",
+        "url": "https://www.kineticist.com/games/pinball/flash"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the left five-bank until the left spinner is lit, then repeat the spinner. Build 3x bonus through top lanes when the safer upper route is available.",
+      "quickInfo": [
+        {
+          "name": "Lit spinner",
+          "summary": "Completing the left five-bank lights the left spinner for its high value."
+        },
+        {
+          "name": "Top lanes",
+          "summary": "Lanes 1, 2, and 3 award 2x bonus, and all four lanes award 3x bonus."
+        },
+        {
+          "name": "Base bonus",
+          "summary": "Base bonus builds to 29,000 before the end-of-ball multiplier is applied."
+        },
+        {
+          "name": "Center bank",
+          "summary": "Successive center-bank completions award Thunder, Lightning, Tempest, and Super Flash."
+        },
+        {
+          "name": "Right saucer",
+          "summary": "Bank completions increase the right-saucer award."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the left five-bank and the spinner lamp before the first controlled shot."
+        },
+        {
+          "text": "From the right flipper, shoot missing left-bank targets until the spinner is lit."
+        },
+        {
+          "text": "From the left flipper, shoot the lit spinner and assess its upper return."
+        },
+        {
+          "text": "Repeat the spinner while the ball clears the lane and returns under control."
+        },
+        {
+          "text": "Use safe top entries to complete lanes 1 through 4 and reach 3x bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Return to bank and spinner work after every safe upper-playfield feed."
+        }
+      ],
+      "fallback": {
+        "title": "Bonus route",
+        "when": "Use this when the spinner or left bank creates dangerous center returns.",
+        "steps": [
+          {
+            "text": "Stop shooting the unsafe feature."
+          },
+          {
+            "text": "Send the ball to the upper lanes through the safer saucer or star-lane path."
+          },
+          {
+            "text": "Complete lanes 1, 2, and 3 for 2x, then add lane 4 for 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After completing the top lanes for 3x, return to the left-bank and spinner route."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Center-bank awards",
+          "when": "Use this when the center bank takes clean full hits and the spinner is unreliable.",
+          "steps": [
+            {
+              "text": "Complete the center bank once for Thunder."
+            },
+            {
+              "text": "Repeat for Lightning, Tempest, and Super Flash only while rebounds remain controlled."
+            },
+            {
+              "text": "Stop after any target return threatens the center drain."
+            }
+          ]
+        },
+        {
+          "title": "Built saucer collect",
+          "when": "Use this when bank progress has raised the saucer and its kickout is safe.",
+          "steps": [
+            {
+              "text": "Complete target banks to raise the saucer value."
+            },
+            {
+              "text": "Transfer the ball to the flipper that has a clean saucer angle."
+            },
+            {
+              "text": "Collect the saucer, then control its kickout before choosing another feature."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit spinner and 87,000 maximum bonus",
+        "steps": [
+          {
+            "text": "Complete the left five-bank to light the spinner."
+          },
+          {
+            "text": "Complete all four top lanes for 3x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the lit spinner while its feed stays safe."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "2x bonus",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "3x bonus",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Super Flash",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The standups and drop banks can rebound toward the center drain.",
+          "response": "Shoot only from a settled flipper and abandon a bank after one unsafe rebound.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/Grypn-MQdbe"
+        },
+        {
+          "issue": "The left bumper exit and left rubber can send the ball toward the drain.",
+          "response": "Track the upper exit and nudge before the ball accelerates below the bumper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/Grypn-MQdbe"
+        },
+        {
+          "issue": "A right-saucer collect is poor value when its kickout is uncontrolled.",
+          "response": "Test the kickout before you build a strategy around repeated saucer collects.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/Grypn-MQdbe"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Flash ball count, carryover, Extra Ball conversion, and bonus settings.",
+        "Test the left bank, both spinners, top lanes, and target rebounds."
+      ],
+      "simpleOverview": "In Flash, completing the left five-bank lights the spinner for repeatable scoring. Complete all four top lanes for 3x Bonus, build base bonus to 29,000 through safe upper returns, and protect the resulting end-of-ball value.",
+      "overview": "In Flash, the left five-bank lights the spinner, while all four top lanes raise Bonus X to 3x. Complete the left bank and repeat the spinner when its feed is controlled, while using safe upper returns to reach 3x and 29,000 base bonus. Take later center-bank or saucer value only when its target rebounds are proven.",
+      "machineSetup": [
+        "Confirm Flash ball count, carryover, Extra Ball conversion, and bonus settings.",
+        "Test the left bank, both spinners, top lanes, and target rebounds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

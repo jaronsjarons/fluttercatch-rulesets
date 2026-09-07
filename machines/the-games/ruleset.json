@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9NZ",
+  "title": "The Games",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Tilt Forums The Games competition-ROM changelog",
+      "url": "https://tiltforums.com/t/new-competition-roms-car-hop-swords-of-fury-police-force-transporter-ice-fever-the-games/9991"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist The Games machine record",
+        "url": "https://www.kineticist.com/games/pinball/the-games"
+      },
+      {
+        "label": "Pinball Therapy ROM availability",
+        "url": "https://pinballtherapy.com/rom-downloads/"
+      },
+      {
+        "label": "PI-80 The Games settings table",
+        "url": "https://www.flippp.fr/media/manual/menus_PI-80_en.pdf"
+      },
+      {
+        "label": "Gottlieb The Games reproduction instruction card",
+        "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_The_Games_instruction_cards.zip"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "On the INDISC competition build, collect safely available Gold Medals to raise Bonus X. After collecting the lit spinner medal, repeat the spinner until base bonus reaches at least 20,000, then shoot the lit saucer for base bonus times 5 times Bonus X.",
+      "quickInfo": [
+        {
+          "name": "INDISC competition build",
+          "summary": "This competition build changes scoring but does not show a version number as of August 25, 2026."
+        },
+        {
+          "name": "Gold Medals",
+          "summary": "Each collected medal advances Bonus X. Five medals reach 6x and light Hold Bonus."
+        },
+        {
+          "name": "Bonus Collect",
+          "summary": "At 20,000 or more base bonus, the lit saucer scores base bonus times 5 times Bonus X. The collected base bonus is not held."
+        },
+        {
+          "name": "Hold Bonus",
+          "summary": "Five medals protect unspent base bonus after a drain. Base bonus collected at the saucer is not held."
+        },
+        {
+          "name": "INDISC spinner",
+          "summary": "The spinner scores 1,500 per spin. After its feature is fully lit and its lit medal is collected, each later spin also adds one base-bonus advance."
+        },
+        {
+          "name": "Captive ball",
+          "summary": "Each scoring switch is worth 30,000 on the INDISC build, with a 110,000 maximum."
+        },
+        {
+          "name": "Pole Vault",
+          "summary": "Weak vari-target hits preserve lit progress but do not automatically count as an advance."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the spinner for 1,500 per spin. Follow its lamps until the spinner feature is fully lit and its lit medal is collected."
+        },
+        {
+          "text": "After collecting that medal, keep using controlled spinner shots. Every spin also adds one base-bonus advance."
+        },
+        {
+          "text": "Use controlled captive-ball hits for 30,000 per scoring switch, up to the 110,000 maximum."
+        },
+        {
+          "text": "Use the vari-target for Pole Vault only when its rebound is safe. Weak hits keep lit progress but are not guaranteed to advance it."
+        },
+        {
+          "text": "Collect safely available Gold Medals to raise Bonus X. Five medals reach 6x and light Hold Bonus."
+        },
+        {
+          "text": "After collecting the lit spinner medal, repeat the spinner until base bonus reaches at least 20,000, then shoot the lit saucer for base bonus times 5 times Bonus X."
+        },
+        {
+          "text": "At 6x and the 29,000 base-bonus maximum, the saucer scores 870,000."
+        }
+      ],
+      "fallback": {
+        "title": "Competition spinner and early collect",
+        "when": "Use this when the captive ball or vari-target gives dangerous returns.",
+        "steps": [
+          {
+            "text": "Fully light the spinner feature and collect its lit medal."
+          },
+          {
+            "text": "Repeat the spinner for 1,500 per spin and one base-bonus advance per spin."
+          },
+          {
+            "text": "Repeat the spinner until base bonus reaches at least 20,000."
+          },
+          {
+            "text": "Shoot the lit saucer for base bonus times 5 times the current Bonus X."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Captive-ball points",
+          "when": "Use this when the spinner, saucer, or Pole Vault return is unsafe.",
+          "steps": [
+            {
+              "text": "Use controlled captive-ball hits."
+            },
+            {
+              "text": "Each scoring switch is worth 30,000, up to the 110,000 maximum."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "INDISC Bonus Collect",
+        "steps": [
+          {
+            "text": "Collect safely available Gold Medals to raise Bonus X."
+          },
+          {
+            "text": "Fully light the spinner feature and collect its lit medal so later spinner spins also advance base bonus."
+          },
+          {
+            "text": "Repeat the spinner until base bonus reaches at least 20,000."
+          },
+          {
+            "text": "Shoot the lit saucer for base bonus times 5 times Bonus X."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Gold Medals",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "INDISC competition build",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "INDISC spinner",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus Collect",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Hold Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "5x",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "6x",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [],
+      "cautions": [],
+      "simpleOverview": "The Games is a bonus-building game. Collect Gold Medals to raise Bonus X, use the spinner and other controlled scoring switches to raise base bonus, then shoot the lit saucer when the multiplied Bonus Collect is ready.",
+      "overview": "The Games uses Gold Medals to raise Bonus X while controlled spinner and captive-ball shots build base bonus. Collect safely available medals, then protect the multiplied end-of-ball value. Five medals activate Hold Bonus, allowing the built bonus to carry to another ball.",
+      "machineSetup": [],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "indisc",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Stock ROM",
+          "strategy": {
+            "summary": "Win Gold Medals to raise Bonus X. Five medals activate Hold Bonus, which preserves the built bonus for another ball when collected.",
+            "quickInfo": [
+              {
+                "name": "Gold Medals",
+                "summary": "Discus, Pole Vault, Javelin, Shot Put, and Hammer are the five medals. Each medal advances Bonus X."
+              },
+              {
+                "name": "Hold Bonus",
+                "summary": "Winning all five medals activates Hold Bonus. The factory card says the bonus level is restored when Hold Bonus is collected."
+              },
+              {
+                "name": "Extra Ball",
+                "summary": "The configured medal threshold lights the left and right spot targets. Complete both lit targets twice to earn Extra Ball."
+              },
+              {
+                "name": "Special",
+                "summary": "Completing the Pole Vault vari-target sequence lights Special."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Choose a lit Gold Medal shot whose return is controlled."
+              },
+              {
+                "text": "Follow its playfield lamps until the game awards the medal. Each medal advances Bonus X."
+              },
+              {
+                "text": "Repeat safely available medal shots, using the spinner and captive ball only when their returns remain controlled."
+              },
+              {
+                "text": "After the fifth medal activates Hold Bonus, protect the multiplied end-of-ball value."
+              }
+            ],
+            "fallback": {
+              "title": "Four-medal multiplier route",
+              "when": "Use this when the fifth medal requires an unsafe vari-target or side shot.",
+              "steps": [
+                {
+                  "text": "Collect the four safely available medals."
+                },
+                {
+                  "text": "Protect the multiplied end-of-ball bonus instead of forcing the fifth medal."
+                }
+              ]
+            },
+            "alternatives": [],
+            "buildsToward": {
+              "title": "Five medals and Hold Bonus",
+              "steps": [
+                {
+                  "text": "Collect safely available Gold Medals to raise Bonus X."
+                },
+                {
+                  "text": "Win all five medals to activate Hold Bonus."
+                },
+                {
+                  "text": "Protect the multiplied end-of-ball value after Hold Bonus activates."
+                },
+                {
+                  "text": "Use Hold Bonus to preserve the built level for another ball."
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Gold Medals",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Hold Bonus",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Bonus X",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "techniques": [],
+            "cautions": [],
+            "noteDetails": {
+              "label": "Settings that change play",
+              "items": [
+                "The stock instruction cards document medal-based Bonus X, Hold Bonus, configurable Extra Ball qualification, and a Pole Vault Special.",
+                "Ball count, Medal Setting, and Player Level change thresholds or whether bonus is remembered. Exact stock spinner progression, event selection, captive-ball scoring, saucer qualification, and bonus-reset behavior remain unverified."
+              ]
+            },
+            "simpleOverview": "The Games is a bonus-building game. Collect Gold Medals to raise Bonus X, use the spinner and other controlled scoring switches to raise base bonus, then shoot the lit saucer when the multiplied Bonus Collect is ready.",
+            "overview": "The Games uses Gold Medals to raise Bonus X while controlled spinner and captive-ball shots build base bonus. Collect safely available medals, then protect the multiplied end-of-ball value. Five medals activate Hold Bonus, allowing the built bonus to carry to another ball.",
+            "machineSetup": [],
+            "rulesNotes": []
+          }
+        },
+        {
+          "id": "indisc",
+          "label": "INDISC competition build",
+          "differences": {
+            "changes": [
+              "The spinner scores 1,500 per spin; after its lit medal is collected, later spins also advance base bonus.",
+              "Each captive-ball scoring switch awards 30,000, with a 110,000 maximum.",
+              "Weak Pole Vault hits no longer remove lit progress.",
+              "At 20,000 or more base bonus, the lit saucer collects base bonus times 5 times Bonus X."
+            ]
+          },
+          "strategy": {
+            "summary": "On the INDISC competition build, collect safely available Gold Medals to raise Bonus X. After collecting the lit spinner medal, repeat the spinner until base bonus reaches at least 20,000, then shoot the lit saucer for base bonus times 5 times Bonus X.",
+            "quickInfo": [
+              {
+                "name": "Gold Medals",
+                "summary": "Each collected medal advances Bonus X. Five medals reach 6x and light Hold Bonus."
+              },
+              {
+                "name": "Bonus Collect",
+                "summary": "At 20,000 or more base bonus, the lit saucer scores base bonus times 5 times Bonus X. The collected base bonus is not held."
+              },
+              {
+                "name": "Hold Bonus",
+                "summary": "Five medals protect unspent base bonus after a drain. Base bonus collected at the saucer is not held."
+              },
+              {
+                "name": "INDISC spinner",
+                "summary": "The spinner scores 1,500 per spin. After its feature is fully lit and its lit medal is collected, each later spin also adds one base-bonus advance."
+              },
+              {
+                "name": "Captive ball",
+                "summary": "Each scoring switch is worth 30,000 on the INDISC build, with a 110,000 maximum."
+              },
+              {
+                "name": "Pole Vault",
+                "summary": "Weak vari-target hits preserve lit progress but do not automatically count as an advance."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Shoot the spinner for 1,500 per spin. Follow its lamps until the spinner feature is fully lit and its lit medal is collected."
+              },
+              {
+                "text": "After collecting that medal, keep using controlled spinner shots. Every spin also adds one base-bonus advance."
+              },
+              {
+                "text": "Use controlled captive-ball hits for 30,000 per scoring switch, up to the 110,000 maximum."
+              },
+              {
+                "text": "Use the vari-target for Pole Vault only when its rebound is safe. Weak hits keep lit progress but are not guaranteed to advance it."
+              },
+              {
+                "text": "Collect safely available Gold Medals to raise Bonus X. Five medals reach 6x and light Hold Bonus."
+              },
+              {
+                "text": "After collecting the lit spinner medal, repeat the spinner until base bonus reaches at least 20,000, then shoot the lit saucer for base bonus times 5 times Bonus X."
+              },
+              {
+                "text": "At 6x and the 29,000 base-bonus maximum, the saucer scores 870,000."
+              }
+            ],
+            "fallback": {
+              "title": "Competition spinner and early collect",
+              "when": "Use this when the captive ball or vari-target gives dangerous returns.",
+              "steps": [
+                {
+                  "text": "Fully light the spinner feature and collect its lit medal."
+                },
+                {
+                  "text": "Repeat the spinner for 1,500 per spin and one base-bonus advance per spin."
+                },
+                {
+                  "text": "Repeat the spinner until base bonus reaches at least 20,000."
+                },
+                {
+                  "text": "Shoot the lit saucer for base bonus times 5 times the current Bonus X."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Captive-ball points",
+                "when": "Use this when the spinner, saucer, or Pole Vault return is unsafe.",
+                "steps": [
+                  {
+                    "text": "Use controlled captive-ball hits."
+                  },
+                  {
+                    "text": "Each scoring switch is worth 30,000, up to the 110,000 maximum."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "INDISC Bonus Collect",
+              "steps": [
+                {
+                  "text": "Collect safely available Gold Medals to raise Bonus X."
+                },
+                {
+                  "text": "Fully light the spinner feature and collect its lit medal so later spinner spins also advance base bonus."
+                },
+                {
+                  "text": "Repeat the spinner until base bonus reaches at least 20,000."
+                },
+                {
+                  "text": "Shoot the lit saucer for base bonus times 5 times Bonus X."
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Gold Medals",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "INDISC competition build",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "INDISC spinner",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Bonus Collect",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Hold Bonus",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Bonus X",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "5x",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "6x",
+                "tone": "indigo",
+                "kind": "item"
+              }
+            ],
+            "techniques": [],
+            "cautions": [],
+            "checkBeforePlay": [],
+            "simpleOverview": "The Games is a bonus-building game. Collect Gold Medals to raise Bonus X, use the spinner and other controlled scoring switches to raise base bonus, then shoot the lit saucer when the multiplied Bonus Collect is ready.",
+            "overview": "The Games uses Gold Medals to raise Bonus X while controlled spinner and captive-ball shots build base bonus. Collect safely available medals, then protect the multiplied end-of-ball value. Five medals activate Hold Bonus, allowing the built bonus to carry to another ball.",
+            "machineSetup": [],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  }
+}

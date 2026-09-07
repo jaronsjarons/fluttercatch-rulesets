@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "id": "GPBdK",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use upper bumper action to complete GRANADA or numbers 1 through 10, switching to safe 5,000-point Shatz passes when the bumpers are weak.",
+        "quickInfo": [
+          {
+            "name": "GRANADA letters",
+            "summary": "Completing the GRANADA letter lanes enables its center Special target and lights the left saucer for 5,000."
+          },
+          {
+            "name": "Number set",
+            "summary": "Completing standups 1 through 10 enables its center Special target and lights the right saucer for 5,000."
+          },
+          {
+            "name": "Double award",
+            "summary": "Completing both sets before the center Special can award two extra balls when the machine permits them."
+          },
+          {
+            "name": "Bumper dependency",
+            "summary": "Most letters and numbered targets require upper bumper action because the flippers cannot shoot them directly."
+          },
+          {
+            "name": "Return lanes",
+            "summary": "Each return lane scores 5,000 and can support repeated reverse-lane passes when its exit is safe."
+          },
+          {
+            "name": "Edition scope",
+            "summary": "This route and image cover Williams Granada; Spanish Eyes is a related layout, not the same named edition."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Confirm whether extra balls score or remain playable in the event."
+          },
+          {
+            "text": "Send the ball to the upper bumpers through the safest open route."
+          },
+          {
+            "text": "Nudge bumper action toward missing GRANADA lanes and numbered standups."
+          },
+          {
+            "text": "Track which of the two feature sets is nearer completion."
+          },
+          {
+            "text": "Complete that set and confirm its matching 5,000-point saucer lights."
+          },
+          {
+            "text": "If extra balls count, shoot the matching center Special target."
+          },
+          {
+            "text": "If extra balls do not count, continue upper scoring without forcing the center target."
+          },
+          {
+            "text": "Shatz pass through a safe return lane for 5,000 when upper action is weak."
+          }
+        ],
+        "fallback": {
+          "title": "Return-lane repeat",
+          "when": "Use this plan when weak bumpers make letter and number progress too slow.",
+          "steps": [
+            {
+              "text": "Test one Shatz pass through a 5,000-point return lane."
+            },
+            {
+              "text": "Track the complete lane exit."
+            },
+            {
+              "text": "Repeat from the opposite flipper only when the exit reaches control."
+            },
+            {
+              "text": "Stop after any sling, outlane, or center-drain feed."
+            },
+            {
+              "text": "Return to upper play when a clean opportunity appears."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Two-extra-ball collect",
+            "when": "Use this plan when extra balls remain playable and both feature sets are close to completion.",
+            "steps": [
+              {
+                "text": "Complete the remaining GRANADA letter."
+              },
+              {
+                "text": "Complete the remaining numbered target."
+              },
+              {
+                "text": "Confirm that both center Special indicators are active."
+              },
+              {
+                "text": "Shoot the center Special target for the combined award."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Completed feature set",
+          "steps": [
+            {
+              "text": "Choose GRANADA letters or numbers 1 through 10."
+            },
+            {
+              "text": "Use upper bumper action for the missing items."
+            },
+            {
+              "text": "Complete the chosen set."
+            },
+            {
+              "text": "Confirm that its 5,000-point saucer lights."
+            },
+            {
+              "text": "Collect the enabled center award only when the event gives it value."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Nudging",
+            "instruction": "Track each upper rebound. Nudge toward a missing letter lane or numbered target before the ball leaves the bumper area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GPBdK-M0o99",
+            "techniqueSlug": "nudging"
+          },
+          {
+            "name": "Shatz pass",
+            "instruction": "Shatz pass through the opposite return lane only when its exit settles safely.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GPBdK-M0o99"
+          },
+          {
+            "name": "Feature-set tracking",
+            "instruction": "Read both progress sets after each upper sequence. Finish the nearer set instead of dividing attempts evenly.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GPBdK-M0o99"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Weak bumpers can prevent most letters and numbers from registering during upper play.",
+            "response": "Test bumper strength early. Switch to safe return-lane passes when feature progress remains poor.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GPBdK-M0o99"
+          },
+          {
+            "issue": "A reverse return-lane pass can feed a sling, outlane, or center drain on an unsafe unit.",
+            "response": "Test one pass before repeating. Abandon the route after the first uncontrolled exit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GPBdK-M0o99"
+          },
+          {
+            "issue": "The center Special target has little value when the event disables extra balls and gives no substitute award.",
+            "response": "Confirm the event rule before play. Do not force the center target without a scoring benefit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GPBdK-M0o99"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "GRANADA letter lanes",
+            "label": "GRANADA lanes",
+            "description": "Upper letter lanes whose completion lights the left saucer and its center Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbers 1 through 10",
+            "label": "1–10 standups",
+            "description": "Upper numbered standups whose completion lights the right saucer and its center Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Special target",
+            "label": "Center Special targets",
+            "description": "Two center targets used to collect one or two qualified added balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "label": "Left 5,000 saucer",
+            "description": "Left hole lit for 5,000 by completing GRANADA.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right saucer",
+            "label": "Right 5,000 saucer",
+            "description": "Right hole lit for 5,000 by completing 1–10.",
+            "precision": "unverified"
+          },
+          {
+            "term": "return lane",
+            "label": "5,000 return lanes",
+            "description": "Lower return lanes that can support a repeatable Shatz pass.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the Williams Granada playfield; do not transfer these rules to Spanish Eyes or a licensed copy with different switches.",
+          "Confirm ball count and whether added balls remain playable, are disabled, or receive a point substitute.",
+          "Test bumper strength, both 5,000 saucers, both return-lane exits, center targets, and tilt sensitivity before choosing upper play or Shatz passes."
+        ],
+        "simpleOverview": "Granada uses upper bumper action to complete either G-R-A-N-A-D-A letters or numbered targets 1 through 10. Feed the upper playfield, follow bumper action toward the nearer set, then collect its lit 5,000-point saucer or use a safe return-lane Shatz pass when upper action is weak.",
+        "overview": "In Granada, completing G-R-A-N-A-D-A lights the left 5,000 saucer and completing targets 1 through 10 lights the right 5,000 saucer. Work the nearer set through bumper action, collect its saucer when safe, and use 5,000-point return lanes as the controlled fallback. Do not force the center target when its configured extra-ball award has no value.",
+        "machineSetup": [
+          "Confirm the Williams Granada playfield; do not transfer these rules to Spanish Eyes or a licensed copy with different switches.",
+          "Confirm ball count and whether added balls remain playable, are disabled, or receive a point substitute.",
+          "Test bumper strength, both 5,000 saucers, both return-lane exits, center targets, and tilt sensitivity before choosing upper play or Shatz passes."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use upper bumper action to complete GRANADA or numbers 1 through 10, switching to safe 5,000-point Shatz passes when the bumpers are weak.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Confirm whether extra balls score or remain playable in the event."
+          },
+          {
+            "text": "Send the ball to the upper bumpers through the safest open route."
+          },
+          {
+            "text": "Nudge bumper action toward missing GRANADA lanes and numbered standups."
+          },
+          {
+            "text": "Track which of the two feature sets is nearer completion."
+          },
+          {
+            "text": "Complete that set and confirm its matching 5,000-point saucer lights."
+          },
+          {
+            "text": "If extra balls count, shoot the matching center Special target."
+          },
+          {
+            "text": "If extra balls do not count, continue upper scoring without forcing the center target."
+          },
+          {
+            "text": "Shatz pass through a safe return lane for 5,000 when upper action is weak."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "GRANADA letters",
+            "summary": "Completing the GRANADA letter lanes enables its center Special target and lights the left saucer for 5,000."
+          },
+          {
+            "name": "Number set",
+            "summary": "Completing standups 1 through 10 enables its center Special target and lights the right saucer for 5,000."
+          },
+          {
+            "name": "Double award",
+            "summary": "Completing both sets before the center Special can award two extra balls when the machine permits them."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Return-lane repeat",
+          "when": "Use this plan when weak bumpers make letter and number progress too slow.",
+          "steps": [
+            {
+              "text": "Test one Shatz pass through a 5,000-point return lane."
+            },
+            {
+              "text": "Track the complete lane exit."
+            },
+            {
+              "text": "Repeat from the opposite flipper only when the exit reaches control."
+            },
+            {
+              "text": "Stop after any sling, outlane, or center-drain feed."
+            },
+            {
+              "text": "Return to upper play when a clean opportunity appears."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A reverse return-lane pass can feed a sling, outlane, or center drain on an unsafe unit.",
+          "text": "Test one pass before repeating. Abandon the route after the first uncontrolled exit."
+        }
+      }
+    }
+  ]
+}

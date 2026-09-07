@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr2L0",
+  "title": "Harley Davidson",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Chuck's rules and strategy guide to the original Bally Harley Davidson",
+      "url": "https://www.pinball.org/rules/harleydavidson-bally.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Original Bally Harley-Davidson operations manual",
+        "url": "https://www.flipperservice.de/flipperteile-handbuch/Bally_1991_Harley-Davidson.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Harley Davidson connects B-I-K-E lane control to a cross-country city route, with lit orbits spotting cities and the right eject collecting a growing Jackpot after the map is complete. The same eject also handles Speed Bonus and the second Multiball lock, while Multiball can continue collecting cities without being required for the Jackpot.",
+      "simpleOverview": "Use lane change to complete B-I-K-E, then shoot the orbit lit by those letters to spot another city. Complete the map and shoot the right eject for Jackpot; the left and right ejects build a separate Multiball.",
+      "summary": "Complete B-I-K-E with lane change, shoot the lit orbit for another city, and keep alternating the lanes and orbits until Jackpot lights at the right eject. Take that collect first; build Multiball separately by advancing the left eject to Lock, then shooting the lit right eject.",
+      "quickInfo": [
+        {
+          "name": "B-I-K-E and cities",
+          "summary": "Completing B-I-K-E spots a city. B or I lights the right orbit, while K or E lights the left orbit for another city."
+        },
+        {
+          "name": "Orbit Millions",
+          "summary": "A lit orbit spots a city and then remains lit briefly for a Million. Clean loops can collect more than one city as the ball crosses both directions."
+        },
+        {
+          "name": "Jackpot",
+          "summary": "Complete the city map to light Jackpot at the right eject. Later completed maps multiply the next Jackpot."
+        },
+        {
+          "name": "Multiball",
+          "summary": "Advance the left eject until it locks a ball, then shoot the right eject while Lock is lit to start Multiball."
+        },
+        {
+          "name": "HARLEY and DAVIDSON",
+          "summary": "The HAR and LEY drops advance the HARLEY bonus. Completing DAVIDSON lights Speed Bonus at the right eject; twice on one ball lights Extra Ball there."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use lane change to complete B-I-K-E. B or I lights the right orbit; K or E lights the left orbit.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit orbit to spot another city. After the loop, that orbit stays lit briefly for a Million, so take the repeat when the feed is controlled.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Repeat the B-I-K-E and lit-orbit cycle until every city is complete. Shoot the right eject when Jackpot is lit; complete another map to multiply the next Jackpot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Between city shots, shoot the left eject to advance its value ladder. When it reaches Lock, the ball locks and the right eject lights for the second lock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the right eject while Lock is lit to start Multiball. City progress and lit-orbit collects remain available during the mode.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, complete the HAR and LEY drop banks plus every DAVIDSON standup. Completing both words awards the Multiball collect and lights both orbits for the rest of the mode.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Multiplied city Jackpots",
+        "steps": [
+          {
+            "text": "Finish the city map through B-I-K-E and lit-orbit advances.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect Jackpot at the right eject; this collect does not require Multiball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the cities again and return to the right eject. The second completed map awards a double Jackpot, the third a triple Jackpot, and later maps continue the progression.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "HARLEY and Speed route",
+          "when": "Use this when the drop targets and DAVIDSON standups are safer than the orbit feeds.",
+          "steps": [
+            {
+              "text": "Complete the HAR and LEY drop banks to light their spinners and advance the HARLEY bonus.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the DAVIDSON standups to light Speed Bonus at the right eject.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the right eject for the lit Speed Bonus; a second DAVIDSON completion on the same ball lights Extra Ball there.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "City",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "Jackpot",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "HARLEY",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The city Jackpot is independent of Multiball.",
+          "response": "Collect a lit Jackpot at the right eject when it is safely available; do not wait for Multiball and risk losing the ball first.",
+          "sourceUrl": "https://www.pinball.org/rules/harleydavidson-bally.html"
+        },
+        {
+          "issue": "HARLEY and Speed bonuses cannot be collected during Multiball, even though city progress continues.",
+          "response": "Use Multiball for city and orbit progress, then return to one-ball play for the separate HARLEY and Speed collects.",
+          "sourceUrl": "https://www.pinball.org/rules/harleydavidson-bally.html"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

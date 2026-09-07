@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "G41E2",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On Gridiron, repeat the center spinner into the top lanes, use the upper flippers for controlled returns, and attack a vari-target only when a full hit and rebound are safe.",
+        "quickInfo": [
+          {
+            "name": "Center spinner",
+            "summary": "The spinner advances yardage; Gridiron scores 1,000 per spin while Pro-Football scores one tenth as much."
+          },
+          {
+            "name": "Touchdown",
+            "summary": "Both editions award a Touchdown at 100 yards, but only Pro-Football gives partial vari-target yardage."
+          },
+          {
+            "name": "Vari-target",
+            "summary": "A deeper hit scores more points; Pro-Football adds up to 50 yards, while a full Gridiron hit awards a Touchdown."
+          },
+          {
+            "name": "Top lanes",
+            "summary": "Pro-Football's best lanes add 50 yards and 500 points; Gridiron's lit lanes score 1,000, 3,000, or 5,000."
+          },
+          {
+            "name": "Paired flippers",
+            "summary": "Each side has a lower scoring flipper and a steeper upper flipper for controlled top returns."
+          },
+          {
+            "name": "Edition scope",
+            "summary": "Gridiron and Pro-Football share the layout but use different lane, spinner, and vari-target scoring."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Press the right flipper to launch the ball. Watch the center return before you choose a shot."
+          },
+          {
+            "text": "Use a lower flipper to shoot through the center spinner. Favor a clean spinner pass over a partial vari-target hit."
+          },
+          {
+            "text": "Use the upper flippers to return the ball to the bumper and top-lane area.",
+            "modeNotes": [
+              "Top play: The center and outside top lanes award the best listed yardage. Bumpers can move the ball between them.",
+              "Touchdown: Both editions award one after each 100 yards; Gridiron does not award partial yardage from its vari-targets."
+            ]
+          },
+          {
+            "text": "Repeat the spinner and top return. Nudge only after you learn the outer return paths."
+          },
+          {
+            "text": "Test one vari-target only when the flipper can push it fully back and the rebound stays in play."
+          },
+          {
+            "text": "Use the vari-target route when its full hit is repeatable. Return to the spinner when the hit is shallow or uncontrolled."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-flipper top return",
+          "when": "Use this when the spinner gap is unreliable or a spinner miss reaches the outlanes.",
+          "steps": [
+            {
+              "text": "Use either upper flipper to send the ball into the bumper area."
+            },
+            {
+              "text": "Guide the ball toward a 50-yard top lane when the movement is safe."
+            },
+            {
+              "text": "Collect yardage until the next Touchdown."
+            },
+            {
+              "text": "Return to the center spinner after the lower-flipper feed becomes controlled."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Deep vari-target route",
+            "when": "Use this when a strong flipper makes a full target hit and the rebound is safe.",
+            "steps": [
+              {
+                "text": "Let the ball roll down the flipper face to add speed to the shot."
+              },
+              {
+                "text": "Push the vari-target as deep as possible."
+              },
+              {
+                "text": "Take the points and yardage. Stop after any center or outlane rebound."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Touchdowns",
+          "steps": [
+            {
+              "text": "Use the spinner and top lanes to add yardage."
+            },
+            {
+              "text": "Reach 100 yards to score a Touchdown."
+            },
+            {
+              "text": "Repeat the safe yardage route for each later Touchdown."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Touchdown",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center spinner",
+            "label": "Center spinner",
+            "description": "Central spinner used for points, yardage, and repeat upper-playfield access.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top lanes",
+            "label": "Top yardage lanes",
+            "description": "Upper lanes with edition-specific point and yardage values.",
+            "precision": "unverified"
+          },
+          {
+            "term": "vari-target",
+            "label": "Side vari-targets",
+            "description": "Two variable-depth side targets with edition-specific yardage behavior.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper flippers",
+            "label": "Upper flippers",
+            "description": "Steeper flippers used to return the ball toward bumpers and top lanes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower flipper",
+            "label": "Lower flippers",
+            "description": "Shallower flippers with the cleaner center-spinner angle.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lower-flipper spinner shot",
+            "instruction": "Use a lower flipper for the flatter angle through the center spinner.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41E2-ME00b"
+          },
+          {
+            "name": "Rolling vari-target shot",
+            "instruction": "Let the ball move down the flipper face before the flip. Use the added speed only after you know the rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41E2-ME00b"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak launch can return through the center before it reaches useful switches.",
+            "response": "Keep both lower flippers ready when you press the launch flipper. Do not look away from the center feed.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/gridiron-pro-football"
+          },
+          {
+            "issue": "Vari-target rebounds and the outside vari-target chutes can send the ball to an outlane or the center drain.",
+            "response": "Test one target hit. Use the spinner and top route when the rebound is not controlled.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41E2-ME00b"
+          },
+          {
+            "issue": "The upper and lower flippers have different shot angles.",
+            "response": "Learn each pair before you commit to a narrow target. Use lower flippers for the spinner and upper flippers for top returns.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41E2-ME00b"
+          }
+        ],
+        "checkBeforePlay": [
+          "Identify 1973 Pro-Football or 1977 Gridiron; spinner, lane, and vari-target yardage values differ substantially.",
+          "Test the right-button autolaunch, all four flippers, spinner strength, vari-target depth, top-lane lamps, and both outer return paths.",
+          "Confirm ball count, tilt, Touchdown scoring, and whether side-drain Touchdowns or replay awards receive tournament value."
+        ],
+        "simpleOverview": "Gridiron and Pro-Football use the center spinner and top lanes to advance yardage toward each 100-yard Touchdown. Repeat that safe route with the paired upper flippers, and shoot the vari-target only when a full hit and its rebound are controlled.",
+        "overview": "Gridiron and Pro-Football share a spinner, top lanes, paired upper flippers, and a variable-depth target, but their point and yardage values differ. Use the spinner and controlled top returns as the base route to each 100-yard Touchdown. Add the vari-target only when its deepest hit is reliable, accounting for the installed edition before relying on its yardage or scoring.",
+        "machineSetup": [
+          "Identify 1973 Pro-Football or 1977 Gridiron; spinner, lane, and vari-target yardage values differ substantially.",
+          "Test the right-button autolaunch, all four flippers, spinner strength, vari-target depth, top-lane lamps, and both outer return paths.",
+          "Confirm ball count, tilt, Touchdown scoring, and whether side-drain Touchdowns or replay awards receive tournament value."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "On Gridiron, repeat the center spinner into the top lanes, use the upper flippers for controlled returns, and attack a vari-target only when a full hit and rebound are safe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Press the right flipper to launch the ball. Watch the center return before you choose a shot."
+          },
+          {
+            "text": "Use a lower flipper to shoot through the center spinner. Favor a clean spinner pass over a partial vari-target hit."
+          },
+          {
+            "text": "Use the upper flippers to return the ball to the bumper and top-lane area.",
+            "details": [
+              "Top play: The center and outside top lanes award the best listed yardage. Bumpers can move the ball between them.",
+              "Touchdown: Both editions award one after each 100 yards; Gridiron does not award partial yardage from its vari-targets."
+            ]
+          },
+          {
+            "text": "Repeat the spinner and top return. Nudge only after you learn the outer return paths."
+          },
+          {
+            "text": "Test one vari-target only when the flipper can push it fully back and the rebound stays in play."
+          },
+          {
+            "text": "Use the vari-target route when its full hit is repeatable. Return to the spinner when the hit is shallow or uncontrolled."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Center spinner",
+            "summary": "The spinner advances yardage; Gridiron scores 1,000 per spin while Pro-Football scores one tenth as much."
+          },
+          {
+            "name": "Touchdown",
+            "summary": "Both editions award a Touchdown at 100 yards, but only Pro-Football gives partial vari-target yardage."
+          },
+          {
+            "name": "Vari-target",
+            "summary": "A deeper hit scores more points; Pro-Football adds up to 50 yards, while a full Gridiron hit awards a Touchdown."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-flipper top return",
+          "when": "Use this when the spinner gap is unreliable or a spinner miss reaches the outlanes.",
+          "steps": [
+            {
+              "text": "Use either upper flipper to send the ball into the bumper area."
+            },
+            {
+              "text": "Guide the ball toward a 50-yard top lane when the movement is safe."
+            },
+            {
+              "text": "Collect yardage until the next Touchdown."
+            },
+            {
+              "text": "Return to the center spinner after the lower-flipper feed becomes controlled."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Vari-target rebounds and the outside vari-target chutes can send the ball to an outlane or the center drain.",
+          "text": "Test one target hit. Use the spinner and top route when the rebound is not controlled."
+        }
+      }
+    }
+  ]
+}

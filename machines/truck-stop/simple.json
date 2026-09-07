@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Y6O",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Spot the flashing city lights to qualify a lock at the Truck Stop gas station. Shoot the gas station to lock a ball, then shoot it again before the Release lamp goes out to start two-ball Multiball. Build the five-city grid with ramp and lit-mushroom shots; once full, spell C-I-T-Y on the ramp before the Jackpot timer expires.",
+        "simpleOverview": "Spot flashing city lights until Lock is lit, then shoot the Truck Stop gas station to hold a ball. Shoot the gas station again before Release goes out for two-ball Multiball. Keep making city shots to fill the grid; when it is full, make the four C-I-T-Y ramp shots before the Jackpot value times out.",
+        "summary": "Spot flashing city lights, lock at the Truck Stop gas station, then shoot the gas station again before Release goes out for two-ball Multiball. Fill the city grid, then spell C-I-T-Y on the ramp before the Jackpot timer expires.",
+        "quickInfo": [
+          {
+            "name": "Light Lock",
+            "summary": "Spot the flashing city lights."
+          },
+          {
+            "name": "Lock a Ball",
+            "summary": "Shoot the Truck Stop gas station while Lock is lit."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the gas station again before the Release lamp goes out."
+          },
+          {
+            "name": "Collect Jackpot",
+            "summary": "Fill the city grid, then complete C-I-T-Y on the ramp before time expires."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Spot the flashing city lights until Lock is lit at the Truck Stop gas station.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the gas station to lock a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the gas station again before the Release lamp goes out to release the lock and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Build the city grid with ramp and lit-mushroom shots; after the grid is full, complete the four C-I-T-Y ramp letters before the Jackpot timer expires.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Spot a whole city",
+            "when": "Use this when the six blue targets are safer than individual city shots.",
+            "steps": [
+              {
+                "text": "Complete the six blue targets to light Spot City at the ramp.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the lit ramp to fill the current city grid at once.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Build route and bonus together",
+          "steps": [
+            {
+              "text": "Use ramp and lit-mushroom shots to collect city letters between lock attempts.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the inline drops to begin the bonus timer, then hit the center green target before it expires to raise Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Hit both orange targets within their timer to light Extra Ball at the dock saucer.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Release-lamp time, Jackpot timer, extra-ball, and bonus settings before competitive play.",
+          "Test the gas-station lock and release, city lamps, ramp, mushrooms, six blue targets, inline drops, center green target, orange targets, and dock saucer."
+        ],
+        "termStyles": [
+          {
+            "label": "Truck Stop Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "C-I-T-Y",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Truck Stop gas station",
+            "label": "Gas-station lock",
+            "description": "The lock and timed release shot used to start two-ball Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "city grid",
+            "label": "Five-city grid",
+            "description": "The route progress built by ramp, mushroom, and Spot City awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "six blue targets",
+            "label": "Spot City targets",
+            "description": "The target group that lights a full-city spot at the ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "inline drops",
+            "label": "Bonus-X timer drops",
+            "description": "The drops that start the timer for the center green Bonus X target.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The second gas-station shot must arrive before the Release lamp goes out.",
+            "response": "After locking, prioritize the return to the gas station instead of assuming the lock will wait indefinitely.",
+            "sourceUrl": "https://www.youtube.com/watch?v=g_cKcaaW4vM"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Spot flashing city lights, lock at the Truck Stop gas station, then shoot the gas station again before Release goes out for two-ball Multiball. Fill the city grid, then spell C-I-T-Y on the ramp before the Jackpot timer expires.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Spot the flashing city lights until Lock is lit at the Truck Stop gas station.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the gas station to lock a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the gas station again before the Release lamp goes out to release the lock and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Build the city grid with ramp and lit-mushroom shots; after the grid is full, complete the four C-I-T-Y ramp letters before the Jackpot timer expires.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Lock",
+            "summary": "Spot the flashing city lights."
+          },
+          {
+            "name": "Lock a Ball",
+            "summary": "Shoot the Truck Stop gas station while Lock is lit."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the gas station again before the Release lamp goes out."
+          }
+        ]
+      }
+    }
+  ]
+}

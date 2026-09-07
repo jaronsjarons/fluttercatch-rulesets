@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "GyVV1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Petaco advances Bonus and a three-step Combination through either drop-target bank. Every drop scores 5,000 and advances Bonus; finish a bank to reset it and advance the Combination. Step one lights Extra Ball and Double Bonus in the upper lanes and makes each captive ball worth 50,000. Step two moves Extra Ball and Double Bonus to the captive balls. Step three lights Special in the lower lane.",
+        "simpleOverview": "In Petaco, each drop target scores 5,000 and advances Bonus. Finish either bank to reset it and advance the Combination. The first completion lights upper-lane Extra Ball and Double Bonus plus 50,000 at the captive balls. The second moves Extra Ball and Double Bonus to the captive balls. The third lights Special in the lower lane.",
+        "summary": "Work the safer drop bank because each completion advances the same three-step award ladder. Collect the upper-lane awards after the first completion, the captive-ball awards after the second, and the lower-lane Special after the third. Every drop also builds the end-of-ball Bonus.",
+        "quickInfo": [
+          {
+            "name": "Each drop target",
+            "summary": "Score 5,000 and advance Bonus."
+          },
+          {
+            "name": "Finish either bank",
+            "summary": "Reset that bank and advance the Combination."
+          },
+          {
+            "name": "Combination 1",
+            "summary": "Light upper-lane Extra Ball and Double Bonus; captive balls score 50,000."
+          },
+          {
+            "name": "Combination 2",
+            "summary": "Light Extra Ball and Double Bonus at the captive balls."
+          },
+          {
+            "name": "Combination 3",
+            "summary": "Light Special in the lower lane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Knock down targets in either side bank for 5,000 and one Bonus advance per target."
+          },
+          {
+            "text": "Finish the bank to reset it and advance the Combination."
+          },
+          {
+            "text": "After the first completion, take the lit upper lanes for Extra Ball and Double Bonus; the captive balls are also worth 50,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Finish a bank again, then hit the captive balls for the lit Extra Ball and Double Bonus awards.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Finish a bank a third time, then take the lit lower lane for Special."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Bonus-first route",
+            "when": "Use this when a lit award collect is dangerous but one target bank remains controllable.",
+            "steps": [
+              {
+                "text": "Continue controlled target hits to add 10,000-per-step end-of-ball Bonus."
+              },
+              {
+                "text": "Finish the safer bank to advance the Combination without crossing to the opposite side."
+              },
+              {
+                "text": "Collect Double Bonus only when its upper lane or captive-ball feed is acceptable.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Extra Ball, Double Bonus, and Special",
+          "steps": [
+            {
+              "text": "Complete one bank and collect the upper-lane Extra Ball or Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete another bank and collect the captive-ball Extra Ball or Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete a third bank and collect Special in the lower lane."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play, Extra Ball and Special conversion, Bonus multiplier behavior, score-threshold awards, and whether Combination progress carries between balls.",
+          "Test both drop-target banks, both captive balls, three upper award lanes, two upper Bonus lanes, lower Special lane, return lanes, Bonus lamps, and award lamps."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "drop-target bank",
+            "label": "Side drop-target banks",
+            "description": "Left and right banks whose completions reset and advance the Combination.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper lanes",
+            "label": "Upper award lanes",
+            "description": "Top lanes that collect Extra Ball or Double Bonus after Combination step one.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive balls",
+            "label": "Captive-ball shots",
+            "description": "Two captive balls worth 50,000 at step one and used for Extra Ball or Double Bonus at step two.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower lane",
+            "label": "Lower Special lane",
+            "description": "Lower lane that collects Special after Combination step three.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Bonus",
+            "label": "End-of-ball Bonus",
+            "description": "Bonus advanced by each drop target and paid at 10,000 per step before any lit multiplier.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Work the safer drop bank because each completion advances the same three-step award ladder. Collect the upper-lane awards after the first completion, the captive-ball awards after the second, and the lower-lane Special after the third. Every drop also builds the end-of-ball Bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Knock down targets in either side bank for 5,000 and one Bonus advance per target."
+          },
+          {
+            "text": "Finish the bank to reset it and advance the Combination."
+          },
+          {
+            "text": "After the first completion, take the lit upper lanes for Extra Ball and Double Bonus; the captive balls are also worth 50,000.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Finish a bank again, then hit the captive balls for the lit Extra Ball and Double Bonus awards.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Finish a bank a third time, then take the lit lower lane for Special."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Each drop target",
+            "summary": "Score 5,000 and advance Bonus."
+          },
+          {
+            "name": "Finish either bank",
+            "summary": "Reset that bank and advance the Combination."
+          },
+          {
+            "name": "Combination 1",
+            "summary": "Light upper-lane Extra Ball and Double Bonus; captive balls score 50,000."
+          }
+        ]
+      }
+    }
+  ]
+}

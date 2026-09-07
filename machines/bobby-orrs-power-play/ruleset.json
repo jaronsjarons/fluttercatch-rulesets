@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "G4en0",
+  "title": "Bobby Orr's Power Play",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Bobby Orr's Power Play guide",
+      "url": "https://www.kineticist.com/games/pinball/bobby-orrs-power-play"
+    },
+    "supportingSources": [
+      {
+        "label": "Bob's Guide to Bobby Orr's Power Play",
+        "url": "https://rules.silverballmania.com/rules/G4en0-MJ5vB"
+      },
+      {
+        "label": "PinballCards Bobby Orr's Power Play card",
+        "url": "https://pinballcards.net/bobby-orrs-power-play-1977"
+      },
+      {
+        "label": "Philippe Craul at Bulls&Balls Okayest Weekend 2022 Warmup",
+        "url": "https://pinballvideos.com/v/3507/4610"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete either four-bank three times for 5x, favor lower-flipper shots when upper-flipper play creates unsafe side movement, build base bonus to 29,000, and protect the 145,000 end-of-ball collect.",
+      "steps": [
+        {
+          "text": "On the plunge, pass over the top star rollover and fall into the top saucer when possible.",
+          "modeNotes": [
+            "Center-post skill shot: The top rollover raises the center post. The saucer starts at 3,000 and adds 3,000 per collect, to 15,000."
+          ]
+        },
+        {
+          "text": "Test one drop-bank rebound from each lower flipper. Watch the upper-flipper and bumper exits."
+        },
+        {
+          "text": "Complete either four-bank once for 2x."
+        },
+        {
+          "text": "Complete either bank again for 3x."
+        },
+        {
+          "text": "Complete either bank a third time for 5x.",
+          "modeNotes": [
+            "Shared reset: On default settings, completing either bank raises both banks for the next award."
+          ]
+        },
+        {
+          "text": "Build base bonus with drops, orbits, lanes, the center target, and the top saucer.",
+          "modeNotes": [
+            "Maximum bonus: Base bonus reaches 29,000. At 5x, the maximum end-of-ball bonus is 145,000."
+          ]
+        },
+        {
+          "text": "Continue either bank only when the displayed Extra Ball or Special gives useful tournament points."
+        },
+        {
+          "text": "If the top feed is reliable, shoot either orbit for repeat saucer collects."
+        },
+        {
+          "text": "Hit the center-post standup before a center feed settles to raise the post."
+        }
+      ],
+      "fallback": {
+        "title": "Orbits and the top saucer",
+        "when": "Use this plan when the drop-bank rebounds are unsafe.",
+        "steps": [
+          {
+            "text": "Shoot either orbit to return the ball to the top."
+          },
+          {
+            "text": "Nudge for the top rollover when the center post is down. Guide the ball into the top saucer."
+          },
+          {
+            "text": "The saucer scores 3,000, 6,000, 9,000, 12,000, then 15,000 on later collects."
+          },
+          {
+            "text": "The 6,000 collect lights the left-orbit stars for bonus advances."
+          },
+          {
+            "text": "The 12,000 collect lights the right-orbit stars and alternating outlane Special."
+          },
+          {
+            "text": "Repeat only while the orbit and saucer feeds remain controlled."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Center-post control",
+          "when": "Use this plan when the post is raised and the ball is moving through the center.",
+          "steps": [
+            {
+              "text": "Do not flip immediately. Let the ball settle against the raised post and one lower flipper."
+            },
+            {
+              "text": "Micro flip the settled ball to a controlled shooting position."
+            },
+            {
+              "text": "Shoot a drop bank or orbit."
+            },
+            {
+              "text": "Do not use this plan after an inlane or lower-center rollover. Those switches lower the post."
+            }
+          ]
+        },
+        {
+          "title": "Upper-flipper target shots",
+          "when": "Use this plan only when the upper flippers are strong and the cross-playfield rebound is safe.",
+          "steps": [
+            {
+              "text": "Use an upper flipper for the opposite four-bank."
+            },
+            {
+              "text": "Flip early enough to avoid a direct outlane angle."
+            },
+            {
+              "text": "If the shot adds unsafe horizontal speed, let the next ball pass to a lower flipper."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "5x and 145,000 end-of-ball bonus",
+        "steps": [
+          {
+            "text": "Complete either four-bank three times for 5x."
+          },
+          {
+            "text": "Score drops, orbits, lanes, the center target, and the top saucer until base bonus reaches 29,000."
+          },
+          {
+            "text": "Hit the center-post standup before a center feed to raise the post."
+          },
+          {
+            "text": "Protect the ball through the end-of-ball collect."
+          },
+          {
+            "text": "Continue bank awards only when Extra Ball or Special scores useful tournament points."
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Confirm 1977 Bally Bobby Orr's Power Play, ball count, tilt, and switch 14's conservative or liberal 5x, Extra Ball, and Special ladder.",
+        "Confirm switch 22 bank resets, switches 31 and 32 award conversions, 29K base maximum, Bonus X reset, and the five-step saucer ladder.",
+        "Test both banks, upper flippers, center-post raise and lower switches, top rollover and saucer, orbits, bumpers, return lanes, and cross-playfield rebounds."
+      ],
+      "termStyles": [
+        {
+          "label": "Center Post",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Top Saucer",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Center-post settle",
+          "instruction": "Micro flip a center-post trap into a controlled flipper position before choosing the next shot.",
+          "techniqueSlug": "micro-flip",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bobby-orrs-power-play"
+        },
+        {
+          "name": "Upper-flipper soft deflection",
+          "instruction": "When a direct upper-flipper target shot is unsafe, hold or tap the flipper to reduce speed and feed a lower flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4en0-MJ5vB"
+        },
+        {
+          "name": "Orbit-to-saucer nudge",
+          "instruction": "After an orbit, guide the ball over the top rollover when the post is down, then toward the saucer. Use only a controlled nudge.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4en0-MJ5vB"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Upper-flipper shots can send the ball across the game and into an outlane.",
+          "response": "Prefer lower-flipper bank shots until the cross-shot is proven safe.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bobby-orrs-power-play"
+        },
+        {
+          "issue": "Inlanes and the two lower-center rollovers lower the center post.",
+          "response": "Check the post before allowing a center feed to settle.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bobby-orrs-power-play"
+        },
+        {
+          "issue": "A late upper-flipper hit can create a side drain.",
+          "response": "Let the ball pass or use a soft deflection when the timing is uncertain.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/bobby-orrs-power-play"
+        },
+        {
+          "issue": "Bumper exits and upper-flipper rebounds are the main uncontrolled feeds.",
+          "response": "Keep both lower flippers ready. Trust an orbit return only after it misses the top of a sling mount.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4en0-MJ5vB"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Complete either four-bank three times for 5x."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete either four-bank three times for 5x."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Orbits and the top saucer: Use this plan when the drop-bank rebounds are unsafe."
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the Bulls&Balls Okayest Weekend 2022, the players first built base bonus, then completed drop banks for Bonus X and protected the multiplied end-of-ball collect."
+        ]
+      },
+      "simpleOverview": "In Bobby Orr's Power Play, each completion of either four-bank raises Bonus X from 2x to 3x and then 5x. Complete a controlled bank three times, build base bonus to 29,000, and protect the 145,000 end-of-ball collect.",
+      "overview": "Bobby Orr's Power Play raises Bonus X with repeated completions of either four-bank. Reach 5x through three controlled bank completions, then use drops, orbits, lanes, the center target, and the top saucer to build 29,000 base bonus. Protect the 145,000 collect and use the raised center post for control when available.",
+      "machineSetup": [
+        "Confirm 1977 Bally Bobby Orr's Power Play, ball count, tilt, and switch 14's conservative or liberal 5x, Extra Ball, and Special ladder.",
+        "Confirm switch 22 bank resets, switches 31 and 32 award conversions, 29K base maximum, Bonus X reset, and the five-step saucer ladder.",
+        "Test both banks, upper flippers, center-post raise and lower switches, top rollover and saucer, orbits, bumpers, return lanes, and cross-playfield rebounds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

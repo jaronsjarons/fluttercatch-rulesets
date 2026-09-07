@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoDo",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Collect 1-5. Complete the white and green banks. Then repeat the lit left orbit.",
+        "steps": [
+          {
+            "text": "Plunge for a missing 1-4 top lane. Collect 5 at the right standup target.",
+            "modeNotes": [
+              "Number: Each collected number lights one white drop target and one star rollover in the left orbit."
+            ]
+          },
+          {
+            "text": "Use the left orbit to return to the top until at least three numbers are collected."
+          },
+          {
+            "text": "Hit the lit white drop targets. Each hit advances the end-of-ball bonus faster."
+          },
+          {
+            "text": "Complete all five white drop targets to light 2x bonus.",
+            "modeNotes": [
+              "Bonus: Drop targets build a maximum 19,000 base bonus. The 2x award raises the maximum payout to 38,000."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the four green drop targets. Each target adds 1,000 to the upper-right saucer, up to 5,000."
+          },
+          {
+            "text": "After 1-5 is complete, repeat the left orbit. Its five star rollovers score 1,000 each, and the orbit scores 5,000."
+          },
+          {
+            "text": "Use the top lanes and bumpers after each orbit. Then shoot the orbit again from the right flipper."
+          }
+        ],
+        "fallback": {
+          "title": "Bonus only",
+          "when": "Use this plan when the left-orbit return is unsafe.",
+          "steps": [
+            {
+              "text": "Collect numbers 1-4 through the top lanes. Collect number 5 at its standup target only when its rebound is controlled."
+            },
+            {
+              "text": "Hit the matching lit white targets."
+            },
+            {
+              "text": "Complete the white bank for 2x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Stop forcing the orbit. Protect the 38,000 maximum bonus payout."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Green bank and saucer",
+            "when": "Use this plan when the center-bank rebounds and the saucer feed are predictable.",
+            "steps": [
+              {
+                "text": "Complete the four green targets."
+              },
+              {
+                "text": "Shoot the upper-right saucer for 5,000.",
+                "modeNotes": [
+                  "Saucer: Its value starts at 1,000. Each green target adds 1,000, and the 5,000 value stays lit after the bank is complete."
+                ]
+              },
+              {
+                "text": "Return to the bonus or left-orbit plan after the kickout."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "38,000 bonus and repeat orbits",
+          "steps": [
+            {
+              "text": "Build the base bonus to 19,000 with drop targets."
+            },
+            {
+              "text": "Complete the white bank for 2x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete 1-5 to light all five left-orbit stars."
+            },
+            {
+              "text": "Repeat the 5,000 orbit and its five 1,000-point star rollovers."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Left-orbit repeat",
+            "instruction": "Shoot the left orbit from the right flipper. Use its top-lane return to collect numbers, then repeat after 1-5 is complete.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRoDo-MDv3l"
+          },
+          {
+            "name": "Missing-number plunge",
+            "instruction": "Change plunge strength to reach a missing 1-4 lane. Avoid a plunge that falls back down the left orbit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRoDo-MDv3l"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball that rolls from the center wedge behind the green bank can enter the right outlane or rebound to the center drain.",
+            "response": "Test this feed before you repeat the center bank. Use the left-orbit route when the wedge feed is not controllable.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRoDo-MDv3l"
+          },
+          {
+            "issue": "The angled drop-target banks can send a hard rebound toward the center drain.",
+            "response": "Stop direct bank shots when this copy produces repeated center rebounds; use the orbit and bonus route instead.",
+            "sourceUrl": "https://www.youtube.com/watch?v=CdqI330zf08&t=267s"
+          },
+          {
+            "issue": "Rapid switch hits can finish before the EM score motor records the second score or bonus advance.",
+            "response": "Check the bonus lamp after a fast combination. Do not plan the next shot from an unconfirmed advance.",
+            "sourceUrl": "https://www.youtube.com/watch?v=XFOWDVpeZWM&t=93s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect 1-5."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Build the base bonus to 19,000 with drop targets."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Bonus only: Use this plan when the left-orbit return is unsafe."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Vulcan, ball count, target resets, and award conversions.",
+          "Test the orbit, white and green banks, saucer, and upper feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Repeatable route to upper play.",
+            "precision": "unverified",
+            "context": "Repeatable route to upper play."
+          },
+          {
+            "term": "white bank",
+            "label": "White target bank",
+            "description": "Bank used for progression.",
+            "precision": "unverified",
+            "context": "Bank used for progression."
+          },
+          {
+            "term": "upper-right saucer",
+            "label": "Upper-right saucer",
+            "description": "Saucer used for lit awards.",
+            "precision": "unverified",
+            "context": "Saucer used for lit awards."
+          }
+        ],
+        "simpleOverview": "In Vulcan, collect numbers 1 through 4 in the top lanes and number 5 at the right standup. Each number lights one white drop target; complete all five white drops to light 2x Bonus. Once all five numbers are lit, repeat the left orbit for its five star rollovers and 5,000-point orbit award.",
+        "overview": "In Vulcan, the left orbit returns the ball to the numbered top lanes, and collected numbers light the matching white drops and left-orbit stars. Use that orbit to finish 1 through 5, complete the white bank for 2x Bonus, then repeat the fully lit orbit. Complete the green bank and collect the upper-right saucer only when its kickout is controlled.",
+        "machineSetup": [
+          "Confirm Gottlieb Vulcan, ball count, target resets, and award conversions.",
+          "Test the orbit, white and green banks, saucer, and upper feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Collect 1-5. Complete the white and green banks. Then repeat the lit left orbit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a missing 1-4 top lane. Collect 5 at the right standup target.",
+            "details": [
+              "Number: Each collected number lights one white drop target and one star rollover in the left orbit."
+            ]
+          },
+          {
+            "text": "Use the left orbit to return to the top until at least three numbers are collected."
+          },
+          {
+            "text": "Hit the lit white drop targets. Each hit advances the end-of-ball bonus faster."
+          },
+          {
+            "text": "Complete all five white drop targets to light 2x bonus.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus: Drop targets build a maximum 19,000 base bonus. The 2x award raises the maximum payout to 38,000."
+            ]
+          },
+          {
+            "text": "Complete the four green drop targets. Each target adds 1,000 to the upper-right saucer, up to 5,000."
+          },
+          {
+            "text": "After 1-5 is complete, repeat the left orbit. Its five star rollovers score 1,000 each, and the orbit scores 5,000."
+          },
+          {
+            "text": "Use the top lanes and bumpers after each orbit. Then shoot the orbit again from the right flipper."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect 1-5."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Build the base bonus to 19,000 with drop targets."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Bonus only: Use this plan when the left-orbit return is unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Bonus only",
+          "when": "Use this plan when the left-orbit return is unsafe.",
+          "steps": [
+            {
+              "text": "Collect numbers 1-4 through the top lanes. Collect number 5 at its standup target only when its rebound is controlled."
+            },
+            {
+              "text": "Hit the matching lit white targets."
+            },
+            {
+              "text": "Complete the white bank for 2x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Stop forcing the orbit. Protect the 38,000 maximum bonus payout."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A ball that rolls from the center wedge behind the green bank can enter the right outlane or rebound to the center drain.",
+          "text": "Test this feed before you repeat the center bank. Use the left-orbit route when the wedge feed is not controllable."
+        }
+      }
+    }
+  ]
+}

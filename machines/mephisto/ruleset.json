@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "GrqXv",
+  "title": "Mephisto",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Mephisto Stargame technical manual",
+      "url": "https://www.recreativas.org/archivo/mephisto-stargame-manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Mephisto factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Various/Unidesa_Mephisto_instruction_cards.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Mephisto can start Multiball with one or two captured balls. On the normal setting, shoot the right ramp once to light its arrow and again to capture the ball. Hit the drop target three times or route four balls through the opposite ramp path to light all three left-ramp arrows, then shoot the left ramp to capture another ball. Shoot the center eject with one capture for two-ball Multiball or with both captures for three-ball Multiball.",
+      "simpleOverview": "Shoot the right ramp once to light its arrow and again to capture a ball. Hit the drop target three times or feed the opposite ramp path four times to light all three left-ramp arrows, then capture at the left ramp. Shoot the center eject with one capture for two-ball Multiball or both captures for three-ball Multiball.",
+      "summary": "Prepare and capture at either ramp, then shoot the center eject to start Multiball. One capture starts two-ball play; both captures start three-ball play.",
+      "quickInfo": [
+        {
+          "name": "Prepare the Right Ramp",
+          "summary": "On normal settings, the first shot lights and the second captures."
+        },
+        {
+          "name": "Light the Left Arrows",
+          "summary": "Hit the drop target three times or use four opposite-ramp feeds."
+        },
+        {
+          "name": "Capture at the Ramps",
+          "summary": "One capture is enough; two produce the larger start."
+        },
+        {
+          "name": "Start at Center",
+          "summary": "Shoot the center eject for two- or three-ball Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On the normal setting, shoot the right ramp once to light its capture arrow and a second time to capture the ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For the other lock, light all three left-ramp arrows by lowering the drop target three times or feeding four balls through the opposite ramp route.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lit left ramp to capture the second ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the center eject with one ball captured to start two-ball Multiball, or with both captured to start three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Start with one capture",
+          "when": "Use this when the second ramp is feeding dangerously or the larger start is taking too long.",
+          "steps": [
+            {
+              "text": "After either ramp captures one ball, shoot the center eject immediately for two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Raise Bonus X while preparing the left ramp",
+        "steps": [
+          {
+            "text": "Each drop-target hit advances Bonus X, so use the three required hits to improve the end-of-ball collect while lighting the left-ramp arrows.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the four standups for Extra Ball and the five white lanes for alternating Specials when those routes are enabled.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm whether ramp capture is set to easy or normal, ball count, Extra Ball and Special conversions, and whether locked balls carry between players or balls.",
+        "Test both ramp arrows and captures, the drop target, opposite-ramp feed, center eject and releases, four Extra Ball standups, five white lanes, and all three balls."
+      ],
+      "techniques": [
+        {
+          "name": "Dead bounce",
+          "instruction": "Let a predictable ramp return cross to the opposite flipper when that creates the safer next capture shot.",
+          "sourceUrl": "https://www.recreativas.org/archivo/mephisto-stargame-manual.pdf",
+          "techniqueSlug": "dead-bounce"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Ramps",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Easy settings shorten the ramp-capture qualification.",
+          "response": "Read the ramp arrows on the installed game and do not assume both qualification counts match the normal setting.",
+          "sourceUrl": "https://www.recreativas.org/archivo/mephisto-stargame-manual.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

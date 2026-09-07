@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vDW",
+  "title": "Heat Wave",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Heat Wave",
+      "url": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Heat Wave machine guide",
+        "url": "https://www.kineticist.com/games/pinball/heat-wave"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Roll over lit buttons and hit A-B to raise the center target to 400 or 500. Collect it before the next advance changes it to Special, then rebuild and repeat.",
+      "quickInfo": [
+        {
+          "name": "Center target",
+          "summary": "The center drop target starts at 100 and can rise to 500 in 100-point steps."
+        },
+        {
+          "name": "Target advances",
+          "summary": "Lit rollover buttons and hits on the A-B swinging targets raise the center target value."
+        },
+        {
+          "name": "A-B reset",
+          "summary": "After the center target drops, another A-B completion raises and relights it."
+        },
+        {
+          "name": "Top bumper",
+          "summary": "The top bumper scores 100 when lit and supplies the other major points route."
+        },
+        {
+          "name": "Special limit",
+          "summary": "The next advance after 500 changes the center target to Special instead of a point value."
+        },
+        {
+          "name": "Outlane salvage",
+          "summary": "Either outlane scores the current center-target value, while a center drain does not collect it."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Check whether Special awards points before the first ball."
+        },
+        {
+          "text": "Read the center target value and the lit rollover buttons."
+        },
+        {
+          "text": "Use lit rollover buttons to advance the center target when the upper route is open."
+        },
+        {
+          "text": "Hit the A and B swinging targets when those advances are available."
+        },
+        {
+          "text": "Stop advancing the center target at 400 or 500."
+        },
+        {
+          "text": "Shoot the center drop target to collect its displayed point value."
+        },
+        {
+          "text": "Hit both A and B again to raise and relight the center target."
+        },
+        {
+          "text": "Repeat the build and collect route while the center rebound remains survivable."
+        }
+      ],
+      "fallback": {
+        "title": "Strong-flipper upper route",
+        "when": "Use this plan when the flippers reach the upper playfield reliably and target rebounds are worse.",
+        "steps": [
+          {
+            "text": "Send the ball toward the upper playfield without hitting a bumper face."
+          },
+          {
+            "text": "Use lit rollover buttons to advance the center target."
+          },
+          {
+            "text": "Score the top bumper when its lit face is reachable through natural upper play."
+          },
+          {
+            "text": "Repeat the upper route while the flippers remain strong and accurate."
+          },
+          {
+            "text": "Collect the center target before another advance changes 500 to Special."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Early 400 collect",
+          "when": "Use this plan when reaching 500 would require another dangerous advance.",
+          "steps": [
+            {
+              "text": "Stop the build when the center target reaches 400."
+            },
+            {
+              "text": "Settle the ball before the center shot."
+            },
+            {
+              "text": "Shoot the center target for 400."
+            },
+            {
+              "text": "Complete A and B to raise the target again."
+            }
+          ]
+        },
+        {
+          "title": "Outlane salvage",
+          "when": "Use this only when a drain is already unavoidable and the ball can still be nudged away from the center gap.",
+          "steps": [
+            {
+              "text": "Note the current center-target value before the ball reaches the drain area."
+            },
+            {
+              "text": "Use one legal nudge toward the nearer outlane rather than accepting a zero-value center drain."
+            },
+            {
+              "text": "Do not abandon a controllable ball solely to collect the outlane value."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeatable 500-point center target",
+        "steps": [
+          {
+            "text": "Advance the center target with lit rollovers and A-B hits."
+          },
+          {
+            "text": "Stop when the display reaches 500."
+          },
+          {
+            "text": "Collect the center target before another advance."
+          },
+          {
+            "text": "Complete A and B to raise and relight the target."
+          },
+          {
+            "text": "Repeat the 500-point collect."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Center-wedge read",
+          "instruction": "Watch the ball contact the triangular wedge. Flip after a hard deflection, or wait when the ball can settle.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+        },
+        {
+          "name": "Lit-rollover advance",
+          "instruction": "Read the rollover lamp before the ball arrives. Use only a lit button when the target needs another 100-point advance.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+        },
+        {
+          "name": "A-B target rebuild",
+          "instruction": "Hit both swinging targets after a center collect. Confirm that the center target rises before another direct shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A shot at either swinging target can hit the rubber behind it and rebound toward a drain.",
+          "response": "Aim at the target face. Stop the A-B route if either direct hit or miss repeatedly produces a drain feed.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+        },
+        {
+          "issue": "The center target can return the ball toward the wide center gap.",
+          "response": "Prepare both flippers before the shot. Read the triangular wedge before you choose to flip or settle.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+        },
+        {
+          "issue": "An advance beyond 500 changes the center target to Special and can remove its point value.",
+          "response": "Check the Special award before play. Stop all target advances at 500 when Special does not award points.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5vDW-MJw9y"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm this is the single-player 1964 Williams Heat Wave and check ball count, replay, Special, and tilt settings.",
+        "Test all seven lit rollover buttons, A-B, center-target reset and rebound, top bumper, outlane scoring, wedge feeds, and flipper strength.",
+        "Verify that either outlane scores the current center-target value and that advancing beyond 500 changes the target to Special."
+      ],
+      "simpleOverview": "Heat Wave uses lit rollovers and the A-B swinging targets to advance the center target from 100 to 500. Stop at 500, knock down the center target for points before another advance changes it to Special, then complete A-B to relight and repeat it.",
+      "overview": "Heat Wave raises the center-target value through lit rollovers and A-B hits; the lit top bumper provides the other major scoring route. Reach 500, collect the center target before its next advance becomes Special, then complete A-B to raise and relight it. Repeat the 500-point collect and use an outlane only as a salvage collect.",
+      "machineSetup": [
+        "Confirm this is the single-player 1964 Williams Heat Wave and check ball count, replay, Special, and tilt settings.",
+        "Test all seven lit rollover buttons, A-B, center-target reset and rebound, top bumper, outlane scoring, wedge feeds, and flipper strength.",
+        "Verify that either outlane scores the current center-target value and that advancing beyond 500 changes the target to Special."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "GBLLd",
+  "title": "Ultraman: Kaiju Rumble (SE)",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Pinball Rulesheets Ultraman rulesheet",
+      "url": "https://pinballrulesheets.com/spooky/ultraman-wiki-rulesheet"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Spooky Ultraman v1.18.1 support and release notes",
+        "url": "https://www.spookypinball.com/game-support/ultraman/"
+      },
+      {
+        "label": "Pinbolls Ultraman code 1.18.1 gameplay",
+        "url": "https://www.youtube.com/watch?v=2d__NMJV14Q"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Clear the center drops and shoot the Beta Capsule to choose a Kaiju Battle. Start the Battle before a Multiball when you want to keep control of the selection.",
+      "simpleOverview": "Clear the center drops, shoot the Beta Capsule, and choose a Kaiju Battle. If you start a Multiball first, the game starts the easiest unfinished Battle for you.",
+      "summary": "Clear the center drop bank, shoot the lit Beta Capsule/right scoop, choose a Kaiju with the flippers, and double-flip to start. Choose the Battle before starting a Multiball; otherwise the game automatically starts the easiest unfinished Battle.",
+      "quickInfo": [
+        {
+          "name": "Quick Battle",
+          "summary": "Clear the center drops, shoot the lit Beta Capsule, choose with the flippers, and double-flip to start."
+        },
+        {
+          "name": "Baltan Multiball",
+          "summary": "Shoot each of the three far-left scoops once."
+        },
+        {
+          "name": "Bemular Multiball",
+          "summary": "On the middle playfield, complete drop-and-scoop, both wheel standups, then drop-and-scoop again; Multiball starts when the ball exits."
+        },
+        {
+          "name": "Jirahs Multiball",
+          "summary": "Complete Baltan and Bemular, then shoot the center ramp to the upper playfield when the diverter opens."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Clear all three center drop targets to light the Beta Capsule/right scoop.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit scoop, choose an available Kaiju Battle with the flippers, and double-flip to start it.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Start the Battle before a Multiball when selection matters. A Multiball started first automatically begins the easiest unfinished Battle.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "For Baltan Multiball, shoot each of the three far-left scoops once.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For Bemular Multiball, shoot the middle-playfield drop and scoop, hit both wheel standups, then repeat the drop and scoop. Multiball starts when the ball leaves the middle playfield.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Completing Baltan and Bemular qualifies Jirahs. When the upper-playfield diverter opens, shoot the center ramp to start Jirahs.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Quick Battle",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

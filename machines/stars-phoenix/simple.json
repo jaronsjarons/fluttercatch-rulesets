@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "G5VYY",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Star's Phoenix starts two-ball Multiball through the Bowling targets, Capture Ball lamp, and Skill Shot lane. Hit the Bowling targets until Capture Ball is lit. Shoot the Skill Shot lane to hold the first ball in the upper hole and release a second ball. Send that second ball into the same lane to release both balls and start Multiball. The G-A-M-E lanes advance Orange Special and open the upper-hole gate; spot targets also open the gate and advance the Amusement hole lamp.",
+        "simpleOverview": "Hit the Bowling targets until Capture Ball is lit. Shoot the Skill Shot lane to hold the first ball in the upper hole and release a second ball, then send the second ball into the same lane to release both and start two-ball Multiball. Use G-A-M-E lanes and spot targets to open the upper-hole gate and advance the other awards.",
+        "summary": "Build Capture Ball at the Bowling targets, lock through the Skill Shot lane, then make the same lane with the second ball to start two-ball Multiball. Use G-A-M-E and the spot targets to keep the upper gate and Amusement sequence moving.",
+        "quickInfo": [
+          {
+            "name": "Light Capture Ball",
+            "summary": "Hit the Bowling targets until its lamp turns on."
+          },
+          {
+            "name": "Lock the First Ball",
+            "summary": "Shoot the Skill Shot lane while Capture Ball is lit."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Send the released second ball into the same lane."
+          },
+          {
+            "name": "Open the Upper Gate",
+            "summary": "Use G-A-M-E lanes or spot targets."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the Bowling targets until Capture Ball is lit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Skill Shot lane while Capture Ball is lit; the ball is held in the upper hole and a second ball is served.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send the second ball into the same Skill Shot lane to release both balls and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During single-ball play, use G-A-M-E lanes and spot targets to open the upper-hole gate and advance the Amusement hole lamp.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Specials and Bonus X",
+            "when": "Use this when the Skill Shot lane is rejecting the ball or Capture Ball is not yet lit.",
+            "steps": [
+              {
+                "text": "Keep using Bowling targets to advance both Red and Orange Special while building Capture Ball.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the two center targets and A-B-C-D rollovers to advance the bonus multiplier.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Advance the Amusement sequence",
+          "steps": [
+            {
+              "text": "Use spot targets to open the upper gate and advance the Amusement hole lamp.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Amusement hole while lit to advance its sequence, then return to the Bowling targets for the Multiball route.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm whether this is Star's Phoenix or New Star's Phoenix, then verify the Bowling, Capture Ball, Skill Shot, G-A-M-E, and Amusement lamps match this route.",
+          "Test the five Bowling targets, Skill Shot lane, upper capture and release, second-ball serve, G-A-M-E lanes, spot targets, upper gate, and both balls."
+        ],
+        "termStyles": [
+          {
+            "label": "Bowling",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Capture Ball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Skill Shot",
+            "tone": "amber",
+            "kind": "multiball"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Bowling targets",
+            "label": "Bowling targets",
+            "description": "Five-target bank that advances Specials and lights Capture Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Skill Shot lane",
+            "label": "Skill Shot lane",
+            "description": "Lane that captures the first ball and starts Multiball when made by the second.",
+            "precision": "unverified"
+          },
+          {
+            "term": "G-A-M-E lanes",
+            "label": "G-A-M-E lanes",
+            "description": "Top lanes that advance Orange Special and open the upper gate.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Amusement hole",
+            "label": "Amusement hole",
+            "description": "Lit hole that advances the Amusement sequence.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The first Skill Shot lane shot does not start Multiball by itself.",
+            "response": "After the first ball is held and the second is served, make the same lane again to release both balls.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/stars-phoenix-zaccaria-1987-vp8.3206/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Capture Ball at the Bowling targets, lock through the Skill Shot lane, then make the same lane with the second ball to start two-ball Multiball. Use G-A-M-E and the spot targets to keep the upper gate and Amusement sequence moving.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the Bowling targets until Capture Ball is lit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Skill Shot lane while Capture Ball is lit; the ball is held in the upper hole and a second ball is served.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send the second ball into the same Skill Shot lane to release both balls and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During single-ball play, use G-A-M-E lanes and spot targets to open the upper-hole gate and advance the Amusement hole lamp.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Capture Ball",
+            "summary": "Hit the Bowling targets until its lamp turns on."
+          },
+          {
+            "name": "Lock the First Ball",
+            "summary": "Shoot the Skill Shot lane while Capture Ball is lit."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Send the released second ball into the same lane."
+          }
+        ]
+      }
+    }
+  ]
+}

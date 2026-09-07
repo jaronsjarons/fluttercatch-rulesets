@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBxQ",
+  "title": "Gilligan's Island",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Gilligan's Island tutorial",
+      "url": "https://www.kineticist.com/news/ballys-gilligans-island-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Pinball.org Gilligan's Island rulesheet",
+        "url": "https://www.pinball.org/rules/gilligansisland.html"
+      },
+      {
+        "label": "Gilligan's Island game manual",
+        "url": "https://www.planetarypinball.com/reference/gamemanuals/Gilligans_Island/files/assets/basic-html/toc.html"
+      },
+      {
+        "label": "Angela Pecora at CLEPIN 2022 Women's",
+        "url": "https://pinballvideos.com/v/4385/3135"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Protect the kickback, collect the seven Lava Seltzer ingredients through controlled shots, then shoot the right VUK to brew the seltzer. Shoot the ramp through all five paths, then keep shooting it for 50 million while time remains.",
+      "quickInfo": [
+        {
+          "name": "KONA",
+          "summary": "Collect all seven ingredients, shoot the right VUK to brew the Lava Seltzer, then complete all five ramp paths before repeating the ramp for 50 million."
+        },
+        {
+          "name": "Kickback",
+          "summary": "Lane-change the Advance Kickback light to the receiving inlane; stop advancing after the bonus ball is earned."
+        },
+        {
+          "name": "Skill shot",
+          "summary": "The top saucer can light the kickback; when it is already lit, the award can spot a recipe ingredient."
+        },
+        {
+          "name": "Multiball",
+          "summary": "KONA progress partially continues during Multiball: ingredient shots still count, but the game will not brew Lava Seltzer or deliver it to KONA until single-ball play returns."
+        },
+        {
+          "name": "Jungle Run",
+          "summary": "The jungle routes provide secondary progress when the main ingredient or ramp feed is unsafe."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On the plunge, choose the top-saucer Light Kickback award unless the kickback is already protected."
+        },
+        {
+          "text": "Use flipper lane change to place Advance Kickback on the inlane the ball is approaching."
+        },
+        {
+          "text": "Once the bonus ball stage is reached, move the advance light away from the receiving inlane so the protection is preserved."
+        },
+        {
+          "text": "Collect the seven Lava Seltzer ingredients from only the currently safe feeds.",
+          "modeNotes": [
+            "Use the top saucer to spot an ingredient when its kickback award is already satisfied.",
+            "Take direct ingredient shots only when their return is proven.",
+            "Do not sacrifice kickback control merely to finish the recipe faster."
+          ]
+        },
+        {
+          "text": "After all seven ingredients are collected, shoot the right VUK to brew the Lava Seltzer and lower the ramp."
+        },
+        {
+          "text": "Shoot the ramp through all five paths before the 45-second timer expires."
+        },
+        {
+          "text": "After the fifth path, keep shooting the ramp for 50 million while time remains, then rebuild the seven ingredients."
+        }
+      ],
+      "fallback": {
+        "title": "Kickback and top-play route",
+        "when": "Use this when the ramp rejects or the direct ingredient shots are draining.",
+        "steps": [
+          {
+            "text": "Prioritize the top-saucer kickback award."
+          },
+          {
+            "text": "Use lane change to keep the next inlane return protected."
+          },
+          {
+            "text": "Take top-lane and safer Jungle Run progress until an ingredient can be collected without a dangerous rebound."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Lagoon multiball cashout",
+          "when": "Use this only when the Lagoon awards multiball without requiring extra risk.",
+          "steps": [
+            {
+              "text": "Accept the random two-ball start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect any safe missing ingredients, or repeat the lowered ramp for 1,000,000 per shot.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Do not shoot to brew Lava Seltzer or deliver it to KONA; those actions are disabled until one ball remains.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to the VUK and KONA ramp sequence after one ball remains."
+            }
+          ]
+        },
+        {
+          "title": "Jungle Run recovery",
+          "when": "Use this when KONA progress is stalled by a bad direct-shot feed.",
+          "steps": [
+            {
+              "text": "Take the safer lit jungle route."
+            },
+            {
+              "text": "Use its return to rebuild top access or kickback position."
+            },
+            {
+              "text": "Resume ingredients only after control is restored."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated KONA completions",
+        "steps": [
+          {
+            "text": "Secure kickback and keep it available."
+          },
+          {
+            "text": "Collect all seven Lava Seltzer ingredients."
+          },
+          {
+            "text": "Shoot the right VUK, complete the five ramp paths, then repeat the ramp for 50 million."
+          },
+          {
+            "text": "Rebuild the recipe without giving away the protected inlane."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "KONA",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Lagoon Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Kickback",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Jungle Run",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Receiving-inlane lane change",
+          "instruction": "Move Advance Kickback onto the inlane the ball will reach, then move the light away after the desired protection is earned.",
+          "sourceUrl": "https://www.pinball.org/rules/gilligansisland.html"
+        },
+        {
+          "name": "Controlled KONA repeat",
+          "instruction": "Repeat the ramp only while its return lands on a predictable flipper; stop when the feed changes.",
+          "sourceUrl": "https://www.pinball.org/rules/gilligansisland.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Continuing to advance after the bonus-ball kickback stage can waste the protection.",
+          "response": "Lane-change the advance light away from the receiving inlane once the useful stage is secured.",
+          "sourceUrl": "https://www.pinball.org/rules/gilligansisland.html"
+        },
+        {
+          "issue": "Lagoon Multiball is random and its ramp awards are not the main scoring ceiling.",
+          "response": "Take it when awarded, but do not abandon a controlled KONA route to hunt for it.",
+          "sourceUrl": "https://www.pinball.org/rules/gilligansisland.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Gilligan's Island and Extra Ball or replay conversion.",
+        "Test ingredient shots, KONA ramp, lagoon, top saucer, and kickback lane change."
+      ],
+      "simpleOverview": "Gilligan's Island revolves around seven Lava Seltzer ingredients, a protected inlane, and the KONA ramp sequence. Use the top saucer and flipper lane change to secure the kickback, collect only the ingredient shots that return safely, then shoot the right VUK and complete all five ramp paths before repeating the ramp for 50 million.",
+      "overview": "Collecting seven Lava Seltzer ingredients lights brewing at Gilligan's Island's right VUK, followed by five ramp paths and a repeat ramp for 50 million. Preserve the kickback with lane change and collect ingredients from controlled feeds. Ingredient shots still count during LAGOON Multiball, but brewing and delivery wait until single-ball play.",
+      "machineSetup": [
+        "Confirm Bally Gilligan's Island and Extra Ball or replay conversion.",
+        "Test ingredient shots, KONA ramp, lagoon, top saucer, and kickback lane change."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

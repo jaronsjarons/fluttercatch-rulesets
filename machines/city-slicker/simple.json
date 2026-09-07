@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEVb",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete C-I-T-Y and S-L-I-C-K-E-R, or collect all four $ rollovers, to qualify Shoot-Out in Uptown. Shoot the qualified top saucer to capture a ball and bring the second ball into play. During the timed Shoot-Out, hit Uptown targets 1, 2, and 3 in order; completing the sequence scores the lit $ value.",
+        "simpleOverview": "Complete C-I-T-Y and S-L-I-C-K-E-R, or all four $ rollovers, then shoot the qualified top saucer. With two balls in play, hit Uptown targets 1, 2, and 3 in order before the Shoot-Out timer expires to score the lit $ value.",
+        "summary": "Complete C-I-T-Y and S-L-I-C-K-E-R or all four $ rollovers, shoot the qualified top saucer, then hit Uptown targets 1, 2, and 3 in order during the timed two-ball Shoot-Out.",
+        "quickInfo": [
+          {
+            "name": "Qualify Shoot-Out",
+            "summary": "Complete C-I-T-Y and S-L-I-C-K-E-R, or all four $ rollovers."
+          },
+          {
+            "name": "Capture a Ball",
+            "summary": "Shoot the qualified top saucer."
+          },
+          {
+            "name": "Play Uptown",
+            "summary": "Hit Uptown targets 1, 2, and 3 in order before time expires."
+          },
+          {
+            "name": "Raise the Award",
+            "summary": "Repeat the ordered Uptown sequence to advance the lit $ value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete C-I-T-Y and S-L-I-C-K-E-R, or collect all four $ rollovers, to qualify Shoot-Out in Uptown.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the qualified top saucer to capture the ball and bring a second ball into play for Shoot-Out.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "During the timed Shoot-Out, hit Uptown targets 1, 2, and 3 in order.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the ordered targets to score the lit $ value; repeat the sequence to advance through the available awards.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use the $ rollovers",
+            "when": "Use this when the letter targets are scattered or the upper feed is already controlled.",
+            "steps": [
+              {
+                "text": "Collect all four $ rollovers instead of finishing both letter words.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Read the top-saucer qualifier before committing to the capture shot.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Climb the $ values",
+          "steps": [
+            {
+              "text": "Finish Uptown 1, 2, and 3 within its short timer to collect the currently lit award.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete C-I-T-Y and S-L-I-C-K-E-R or the four $ rollovers again, then repeat the ordered target sequence for the next $ value.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Shoot-Out timer, Extra Ball and Special conversions, carry of CITY-SLICKER and $ progress, and behavior when a capture is already occupied.",
+          "Test every CITY-SLICKER and $ switch, top and middle saucers, two-ball serve and release, Uptown targets 1–3, upper flippers, gates, and trough."
+        ],
+        "termStyles": [
+          {
+            "label": "Shoot-Out in Uptown",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Two-ball play",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "$ value",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top saucer",
+            "label": "Top capture saucer",
+            "description": "The qualified saucer that captures a ball for Shoot-Out play.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Uptown targets",
+            "label": "Uptown 1–3",
+            "description": "The three upper targets that must be hit in order during Shoot-Out.",
+            "precision": "unverified"
+          },
+          {
+            "term": "$ rollovers",
+            "label": "Four $ rollovers",
+            "description": "The alternate group whose completion qualifies Shoot-Out in Uptown.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Uptown targets must be hit in the displayed 1–2–3 order within the short timer.",
+            "response": "Do not spray the upper targets; use the upper flippers to follow the lit number.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Uc0t4iXfURs"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete C-I-T-Y and S-L-I-C-K-E-R or all four $ rollovers, shoot the qualified top saucer, then hit Uptown targets 1, 2, and 3 in order during the timed two-ball Shoot-Out.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete C-I-T-Y and S-L-I-C-K-E-R, or collect all four $ rollovers, to qualify Shoot-Out in Uptown.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the qualified top saucer to capture the ball and bring a second ball into play for Shoot-Out.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "During the timed Shoot-Out, hit Uptown targets 1, 2, and 3 in order.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the ordered targets to score the lit $ value; repeat the sequence to advance through the available awards.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Qualify Shoot-Out",
+            "summary": "Complete C-I-T-Y and S-L-I-C-K-E-R, or all four $ rollovers."
+          },
+          {
+            "name": "Capture a Ball",
+            "summary": "Shoot the qualified top saucer."
+          },
+          {
+            "name": "Play Uptown",
+            "summary": "Hit Uptown targets 1, 2, and 3 in order before time expires."
+          }
+        ]
+      }
+    }
+  ]
+}

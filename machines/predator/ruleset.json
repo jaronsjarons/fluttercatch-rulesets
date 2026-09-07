@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "Gwe3B",
+  "title": "Predator",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Predator maintained rulesheet",
+      "url": "https://pinballrulesheets.com/pinball-brothers/predator-rulesheet-pinball-brothers"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Predator Quick Game Rules",
+        "url": "https://pinballbrothers.freshdesk.com/support/solutions/articles/80001186425-predator-quick-game-rules-v0-90-"
+      },
+      {
+        "label": "Official Predator 1.0.1 update page",
+        "url": "https://pinballbrothers.freshdesk.com/support/solutions/articles/80001185762-predator-game-updates"
+      },
+      {
+        "label": "Predator tutorial on code 0.95",
+        "url": "https://www.youtube.com/watch?v=jGEuW4amFaQ"
+      },
+      {
+        "label": "Official Predator gameplay",
+        "url": "https://www.youtube.com/watch?v=qJkQ5I9tf_0"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Build crew, ammo, and a stronger weapon while qualifying a Special Mission at the white arrows. Start the Mission at the right Helicopter ramp, then add a prepared Multiball when extra balls will help finish its lit shots.",
+      "simpleOverview": "Hit white arrows to qualify a Special Mission and shoot the right Helicopter ramp to start it. Complete GUN, equip at the left reverso ramp, and collect crew before the Mission to raise its value and make its shots easier to finish.",
+      "summary": "Collect crew and improve your weapon while hitting white Special Mission arrows. Complete GUN and shoot the left reverso ramp to equip. When START MISSION lights, shoot the right Helicopter ramp, then add a prepared Multiball when extra balls help finish the mode.",
+      "quickInfo": [
+        {
+          "name": "Start a Special Mission",
+          "summary": "Complete the required white arrows, then shoot the lit right Helicopter ramp."
+        },
+        {
+          "name": "Equip a weapon",
+          "summary": "Complete the center GUN bank, then shoot the left reverso ramp; sweeping all three targets collects and equips at once."
+        },
+        {
+          "name": "Get to the Choppa Multiball",
+          "summary": "Shoot the right ramp until LIGHT LOCK is ready, then collect two locks at that ramp."
+        },
+        {
+          "name": "Hunter Multiball",
+          "summary": "Collect the full crew, then shoot the lit Hunter start shown by the game."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Collect crew from their character shots; each active crew member adds to Special Mission scoring.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the center GUN targets and shoot the left reverso ramp to equip the weapon. Build ammo through A-M-M-O and the left-inlane hurry-up.",
+          "kinds": [
+            "item"
+          ]
+        },
+        {
+          "text": "Hit the white arrows until START MISSION lights at the right Helicopter ramp, then shoot that ramp to begin the selected Special Mission.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "During the Mission, prioritize its purple progress shots. Use the weapon when the display says it can advance the current task; yellow shots generally build the eventual collect.",
+          "kinds": [
+            "mode",
+            "item"
+          ]
+        },
+        {
+          "text": "Prepare Get to the Choppa with repeated right-ramp shots and two locks, or collect the full crew for Hunter Multiball. Start the Mission first when you want a Multiball to help complete it.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Finish Jungle Events and Hunts for Items. The Item paired with a Special Mission strengthens that Mission and supports the long Final Battle route.",
+          "kinds": [
+            "mode",
+            "item"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "The Final Battle",
+        "steps": [
+          {
+            "text": "Play through all Special Missions; completing them also qualifies Mission Commander.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Assemble the entire crew and finish the whole Jungle Map.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Find all Special Items.",
+            "kinds": [
+              "item"
+            ]
+          },
+          {
+            "text": "Play Get to the Choppa, Camp Attack, and Jungle Blast Multiballs.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the resulting Final Battle to reach Victory Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Special Mission",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Get to the Choppa Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Hunter Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "weapon",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Item",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The detailed video tutorial is on 0.95, while production code is 1.0.1.",
+          "response": "Use the tutorial for the supported physical starts only. Current code adds Mission Commander, Final Battle, Victory Multiball, and later fixes.",
+          "sourceUrl": "https://pinballbrothers.freshdesk.com/support/solutions/articles/80001185762-predator-game-updates"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

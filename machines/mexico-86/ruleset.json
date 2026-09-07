@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "GrxeN",
+  "title": "Mexico 86",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Mexico 86 instruction cards",
+      "url": "https://www.zaccaria-pinball.com/gen2/mexico86/Cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Mexico 86 operator settings",
+        "url": "https://www.zaccaria-pinball.com/gen2/mexico86/settings.html"
+      },
+      {
+        "label": "Mexico 86 operator manual",
+        "url": "https://www.zaccaria-pinball.com/gen2/mexico86/zaccaria-Mexico-86_manual.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Mexico 86 turns the upper-left Attack Zone into its central objective. Knock down the moving defenders to expose the goal, then hit the center goal target. Each goal lights another M-E-X-I-C-O letter; completing the word lights Red Special. The upper-right Cross Shot sends the ball directly toward the Attack Zone and adds time. The left and right drop banks advance Orange Special and Time Special, while upper lanes and fixed targets advance the bonus multiplier.",
+      "simpleOverview": "Knock down the moving defenders in the upper-left Attack Zone, then hit the exposed goal target. Each goal advances M-E-X-I-C-O toward Red Special. Use the upper-right Cross Shot for a direct attack and more time. Complete the side drop banks for Orange and Time Special, and use upper lanes for Bonus X.",
+      "summary": "Keep the Attack Zone alive: clear its moving defenders, hit the goal, and use the Cross Shot to add time and re-enter the zone. Take a nearly complete drop bank when the goal route is not ready.",
+      "quickInfo": [
+        {
+          "name": "Open the Goal",
+          "summary": "Knock down every moving defender in the Attack Zone."
+        },
+        {
+          "name": "Score a Goal",
+          "summary": "Hit the exposed center goal target."
+        },
+        {
+          "name": "Add Attack Time",
+          "summary": "Shoot the upper-right Cross Shot."
+        },
+        {
+          "name": "Build Specials",
+          "summary": "Complete the left or right drop banks."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Knock down all moving defenders in the upper-left Attack Zone to expose the goal target.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the exposed goal target; each goal advances one M-E-X-I-C-O letter toward Red Special.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the upper-right Cross Shot to send the ball toward the Attack Zone and add Attack Zone time.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the side drop banks to advance Orange Special and Time Special, then collect the corresponding lit target.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build Bonus X",
+          "when": "Use this when the Attack Zone is closed or its timer is nearly gone.",
+          "steps": [
+            {
+              "text": "Use the upper rollovers and the two fixed multiplier targets to advance Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Return to the Cross Shot when it can add time to a fresh Attack Zone attempt.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Finish M-E-X-I-C-O",
+        "steps": [
+          {
+            "text": "Repeat the defender-clear and goal sequence for each letter.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete M-E-X-I-C-O to light Red Special, then take its lit collect.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check the number of goal or moving-target hits required for Red Special, the drop-bank requirement for Orange Special, and the Time Special award.",
+        "Test every moving defender, the center goal target, Cross Shot, both drop banks, upper lanes, fixed multiplier targets, and all three Special lamps."
+      ],
+      "termStyles": [
+        {
+          "label": "Attack Zone",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Cross Shot",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Red Special",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus Multiplier",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Red and Orange Special requirements vary by operator setting.",
+          "response": "Read the lamps and do not assume another goal or bank completion is the final one.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen2/mexico86/settings.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

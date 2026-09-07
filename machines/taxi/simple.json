@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "GrN90",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On ball 1, plunge Spinout to spot a passenger, then lock at the right eject and shoot the left Airport ramp for Multiball. Collect both Express Lanes, use the remaining balls for difficult passenger banks, light Carry Passengers, and collect the fifth-passenger Jackpot at Gorbie.",
+        "steps": [
+          {
+            "text": "On ball 1, plunge Spinout for 25,000 plus Spot Passenger. On later balls under the default Medium setting, choose between Spot Passenger and the ball-number-multiplied 100,000 award."
+          },
+          {
+            "text": "Lock a ball in the right eject marked Lock, then make the left Airport ramp to release it and start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the same right Lock eject for Express Lane 1, then shoot the center-left Drac hole for Express Lane 2. The second lock scores 300,000 and lights both ramps for 100,000 Airport Rides until Multiball ends.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After both Express Lanes, collect the flashing passenger: Gorbie through the upper Joyride entrance, Pin•Bot at the right drop bank, Drac at the center-left hole, Lola or Marilyn at the center bank, or Santa through lower Joyride. Use Multiball especially for the timed target banks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Completing either the Pin•Bot bank or the Lola or Marilyn bank lights Carry Passengers. Backhand the small upper-left target from the left flipper to retain the passengers already collected for the next ball."
+          },
+          {
+            "text": "The fifth passenger lights Jackpot. Shoot the next Gorbie/Jackpot shot before its timer expires. After Multiball, collect any flashing passenger to relight Lock, then take Multiball again as soon as it is available.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Airport Million",
+            "when": "Use this only when both ramps have proved reliable.",
+            "steps": [
+              {
+                "text": "Roll through an inlane to light the opposite Airport ramp."
+              },
+              {
+                "text": "Shoot the lit ramp to collect and advance its Airport value through 20,000, 40,000, 60,000, 80,000, and 100,000."
+              },
+              {
+                "text": "If the left Airport ramp is difficult and Drac is not lit for pickup, shoot the Drac hole; its eject feeds the lit right ramp and advances the left-ramp Airport value."
+              },
+              {
+                "text": "After a 100,000 Airport award lights Airport Million, shoot the Joyride hole to collect 1,000,000."
+              }
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "L-3 and L-4",
+            "summary": "L-3 names the center-bank passenger Marilyn; L-4 names her Lola. The rules below call out that difference where it matters."
+          },
+          {
+            "name": "Airport difficulty",
+            "summary": "Airport Million is untimed on Medium. Hard and Extra Hard use 20- and 15-second timers."
+          },
+          {
+            "name": "Lock stealing",
+            "summary": "Lock starts lit at the beginning of the game. After Multiball, any flashing passenger relights it. Another player's locked ball can leave the left ramp ready to start your Multiball."
+          },
+          {
+            "name": "Jackpot timers",
+            "summary": "At factory Medium, Raise Jackpot lasts 10 seconds and the Gorbie/Jackpot collect lasts 15 seconds. Both timers are operator-adjustable."
+          },
+          {
+            "name": "Raise Jackpot",
+            "summary": "Completing C-A-B advances Bonus X and lights Raise Jackpot. On default Medium, switches during its 10-second window add 2,000 to the held 500,000-to-4,000,000 Jackpot. The fifth passenger, not C-A-B, lights Jackpot."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Spinout",
+            "label": "Spinout",
+            "description": "Plunge saucer whose revolutions select the skill-shot award.",
+            "precision": "unverified",
+            "context": "Plunge saucer whose revolutions select the skill-shot award."
+          },
+          {
+            "term": "right eject marked Lock",
+            "label": "Right Lock eject",
+            "description": "Eject used for the initial lock and Express Lane 1 during Multiball.",
+            "precision": "unverified",
+            "context": "Eject used for the initial lock and Express Lane 1 during Multiball."
+          },
+          {
+            "term": "left Airport ramp",
+            "label": "Left Airport ramp",
+            "description": "Ramp that releases the locked ball and starts Multiball.",
+            "precision": "unverified",
+            "context": "Ramp that releases the locked ball and starts Multiball."
+          },
+          {
+            "term": "Drac hole",
+            "label": "Drac hole",
+            "description": "Center-left hole used for Drac and Express Lane 2.",
+            "precision": "unverified",
+            "context": "Center-left hole used for Drac and Express Lane 2."
+          },
+          {
+            "term": "upper/right semi-orbit entrance to Joyride",
+            "label": "Gorbie/Jackpot entrance",
+            "description": "Upper entrance to Joyride that picks up Gorbie and collects Jackpot.",
+            "precision": "unverified",
+            "context": "Upper entrance to Joyride that picks up Gorbie and collects Jackpot."
+          },
+          {
+            "term": "Carry Passengers",
+            "label": "Carry Passengers target",
+            "description": "Small upper-left target that preserves collected passengers when lit.",
+            "precision": "unverified",
+            "context": "Small upper-left target that preserves collected passengers when lit."
+          },
+          {
+            "term": "Joyride",
+            "label": "Joyride",
+            "description": "Upper-left feature whose lower entrance collects Santa.",
+            "precision": "unverified",
+            "context": "Upper-left feature whose lower entrance collects Santa."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "From a left-flipper cradle, thread a backhand between the bumpers to the small Carry Passengers target. Use it while the target is flashing.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Ul5Zp5z4mpU&t=287s",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Spinout short-side control",
+            "instruction": "Set the plunge to stop one step short of an overrun. A short result keeps its award; an extra spin after 100,000 resets to 1,000.",
+            "sourceUrl": "https://www.pinball.org/rules/taxi.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A rejected left Airport-ramp shot can return toward the center drain.",
+            "response": "Make the ramp cleanly and be ready for the fast reject.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Ul5Zp5z4mpU&t=137s"
+          },
+          {
+            "issue": "The center and right drop banks reset if their timed completion window expires.",
+            "response": "Use Multiball for the timed Pin•Bot and Lola or Marilyn banks. They reset after about fifteen and ten seconds, respectively.",
+            "sourceUrl": "https://www.pinball.org/rules/taxi.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Read the Jackpot Timer and difficulty settings, then test the right Lock, left-ramp reject, Drac feed, Carry target, and both Joyride entrances."
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At Pinburgh 2011, Keith Elwin used Spot Passenger at the plunge, started Multiball, completed the Express Lanes, and collected remaining passengers only when their banks were controlled.",
+            "At Pinburgh 2025, Aleksander Kaczmarczyk completed both Express Lanes before collecting all five passengers and the timed Jackpot; Paul Englert chose ramps when passenger targets were unsafe."
+          ]
+        },
+        "overview": "Taxi uses its right Lock eject and left Airport ramp to start Multiball, where the two Express Lanes support the harder passenger pickups. Plunge Spinout to spot a passenger, start Multiball, collect both Express Lanes, then use the remaining balls for the timed Pin-Bot and Lola or Marilyn banks. Complete either bank and backhand Carry Passengers so collected passengers survive the drain; the fifth passenger lights the timed Jackpot at the Gorbie shot. When both ramps are reliable, raise an Airport value to 100,000 and shoot Joyride for Airport Million.",
+        "simpleOverview": "Taxi is a passenger-collection game. Plunge Spinout to spot a passenger, lock one ball at the right eject, then shoot the left Airport ramp to start Multiball. Collect Express Lane 1 at the right eject and Express Lane 2 at Drac, then use the remaining balls to collect passengers. Complete a passenger bank to light Carry Passengers; the fifth passenger lights the timed Jackpot at the Gorbie shot.",
+        "machineSetup": [
+          "Read the Jackpot Timer and difficulty settings, then test the right Lock, left-ramp reject, Drac feed, Carry target, and both Joyride entrances."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Lock one ball in the right eject and shoot the left Airport ramp for Multiball, complete both Express Lanes, then use the second ball to collect and carry passengers toward the timed Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Multiball",
+            "text": "On ball 1, plunge Spinout for 25,000 plus Spot Passenger. Lock a ball in the right eject marked Lock, then shoot the left Airport ramp to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "How to collect passengers",
+            "text": "Shoot the right Lock eject for Express Lane 1, then the center-left Drac hole for Express Lane 2. Collect Gorbie through the upper/right semi-orbit entrance to Joyride, Pin•Bot at the right drop bank, Drac at the center-left hole, Lola or Marilyn at the center drop bank, or Santa through the lower entrance to Joyride.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Carry passengers and collect Jackpot",
+            "text": "Completing either the Pin•Bot bank or the Lola or Marilyn bank lights Carry Passengers. Backhand the small upper-left target to retain the passengers already collected. After the fifth passenger, shoot the upper/right semi-orbit entrance to Joyride before the Jackpot timer expires."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "L-3 and L-4",
+            "summary": "L-3 names the center-bank passenger Marilyn; L-4 names her Lola. The rules below call out that difference where it matters."
+          },
+          {
+            "name": "Airport difficulty",
+            "summary": "Airport Million is untimed on Medium. Hard and Extra Hard use 20- and 15-second timers."
+          },
+          {
+            "name": "Lock stealing",
+            "summary": "Lock starts lit at the beginning of the game. After Multiball, any flashing passenger relights it. Another player's locked ball can leave the left ramp ready to start your Multiball."
+          }
+        ],
+        "warning": {
+          "title": "A rejected left Airport-ramp shot can return toward the center drain.",
+          "text": "Make the ramp cleanly and be ready for the fast reject."
+        }
+      }
+    }
+  ]
+}

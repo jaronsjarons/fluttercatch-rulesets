@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qqv",
+  "title": "Secret Service",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Data East Secret Service operations manual",
+      "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Secret%20Service%20Manual%20and%20Schematics.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Secret Service exact-machine tutorial",
+        "url": "https://www.youtube.com/watch?v=Gy6v7RUFNkA"
+      },
+      {
+        "label": "Secret Service machine overview",
+        "url": "https://www.kineticist.com/games/pinball/secret-service"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Secret Service starts two-ball Multiball from the White House lock and timed five-bank, while the target grid and KGB Hideout lead to three-ball Multiball. For two-ball play, lock at the White House ramp, then complete the timed five-bank. For three-ball play, complete the three standups to light a grid row; hitting the currently flashing target first can light the row immediately. Shoot the raised KGB Hideout to lock and start it.",
+      "simpleOverview": "For two-ball Multiball, lock a ball from the ramp in the White House, then complete the timed five-bank. For three-ball Multiball, complete the three standups, or hit the flashing one first, to light a grid row, then shoot the raised KGB Hideout. During three-ball play, shoot the ramp for Jackpots.",
+      "summary": "Lock at the White House ramp and finish the timed five-bank for two-ball Multiball. Or light a grid row with the three standups, then shoot the raised KGB Hideout for three-ball Multiball. Shoot the ramp for three-ball Jackpots.",
+      "quickInfo": [
+        {
+          "name": "Start 2-Ball",
+          "summary": "Lock at the White House ramp, then complete the timed five-bank."
+        },
+        {
+          "name": "Light KGB Hideout",
+          "summary": "Hit all three grid-row standups. When one flashes, hit that standup first to light the row immediately."
+        },
+        {
+          "name": "Start 3-Ball",
+          "summary": "Shoot the raised KGB Hideout after a grid row is lit."
+        },
+        {
+          "name": "Score Jackpot",
+          "summary": "Shoot the ramp during three-ball Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the ramp to lock a ball in the White House.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "With that ball locked, complete the timed five-bank to begin instant two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For three-ball Multiball, complete the three standups to light a grid row; hit the currently flashing standup first to light the row at once when offered.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the raised KGB Hideout to lock the ball and immediately start three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During three-ball Multiball, shoot the ramp for the Jackpot and the Hideout for its lit values.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Start timed 2x",
+          "when": "Use this during two-ball play when a controlled feature shot is available.",
+          "steps": [
+            {
+              "text": "During two-ball Multiball, shoot the ramp, Spy Bar, or ball eater to start timed 2x scoring.",
+              "kinds": [
+                "multiplier",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Spend the multiplier on repeat ramp and spinner shots before the timer expires.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Use the lane control",
+        "steps": [
+          {
+            "text": "Roll through an inlane to light the opposite Super Spinner and raise the center up-post.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit spinner while the return protection is active.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Return to the three standups whenever their flashing shortcut offers a fast KGB Hideout qualification.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm five-bank timer, grid-row, Jackpot, and extra-ball settings before competitive play.",
+        "Test the White House ramp and lock, timed five-bank, three standups and lamps, KGB Hideout lift and ball eater, Spy Bar, inlanes, spinners, and up-post."
+      ],
+      "termStyles": [
+        {
+          "label": "White House",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "KGB Hideout",
+          "tone": "oxblood",
+          "kind": "multiball"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The five-bank route is timed after the White House lock.",
+          "response": "Do not take the lock until the target bank is reset and you are ready to attack it immediately.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Secret%20Service%20Manual%20and%20Schematics.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

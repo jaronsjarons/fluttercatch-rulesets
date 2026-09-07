@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "id": "G5DYX",
+  "title": "Class of 1812",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Gottlieb Class of 1812 manual rules extract",
+      "url": "https://pinballnirvana.com/forums/resources/class-of-1812-gottlieb-1991-vp8.2830/"
+    },
+    "supportingSources": [
+      {
+        "label": "Class of 1812 machine overview",
+        "url": "https://en.wikipedia.org/wiki/Class_of_1812_%28pinball%29"
+      },
+      {
+        "label": "IPDB Class of 1812 record",
+        "url": "https://www.ipdb.org/machine.cgi?id=528"
+      },
+      {
+        "label": "Escher Lefkoff at NWPC 2025",
+        "url": "https://pinballvideos.com/v/5586/27795"
+      },
+      {
+        "label": "Pinballso Class of 1812 tournament tutorial",
+        "url": "https://www.youtube.com/watch?v=XoG0stHuOP4"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Take the available right-ramp Crypt lock, then repeat the left ramp for 1 million during two-ball Multiball. To relight Multiball, complete the left drop bank, collect Zom-B Bonus, complete the bank again, and return to the right-ramp lock.",
+      "quickInfo": [
+        {
+          "name": "Multiball Madness",
+          "summary": "Take the available right-ramp lock and plunge the replacement ball for two-ball play. During Multiball, each left ramp scores 1 million."
+        },
+        {
+          "name": "Relight Multiball",
+          "summary": "Complete the left drop bank, collect Zom-B Bonus at the flashing left target, complete the bank again, then lock at the right ramp."
+        },
+        {
+          "name": "C-O-F-F-I-N Jackpot",
+          "summary": "Either lit ramp adds a letter, consecutive ramps escalate, and completing the word scores a fixed 2 million."
+        },
+        {
+          "name": "Countdown Round",
+          "summary": "Complete the left drops, then finish the flashing left spot-target sequence for the displayed countdown value."
+        },
+        {
+          "name": "Million Round",
+          "summary": "Complete the right drops, then finish the flashing right spot-target sequence for 2 million and a restarted timer."
+        },
+        {
+          "name": "BAT-O-METER",
+          "summary": "Complete the three center spot targets to raise the spinner value."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test both ramps, the two drop banks, the top kicker, and the bottom upkicker before choosing a repeatable route."
+        },
+        {
+          "text": "Backhand the available right-ramp Crypt lock when that shot is stable; plunge the replacement ball to start two-ball Multiball Madness.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, repeat the left ramp for 1 million whenever its return is controlled.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After Multiball, complete the left drop bank and hit the flashing left target to collect Zom-B Bonus.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the left drop bank again to relight the Crypt lock, then return to the right ramp and repeat the Multiball route.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Take lit ramps for C-O-F-F-I-N letters and its fixed 2-million Jackpot when those shots fit the Multiball route; do not abandon a controlled left-ramp million to chase it."
+        }
+      ],
+      "fallback": {
+        "title": "BAT-O-METER spinner route",
+        "when": "Use this when both ramps and the drop banks reject but the center spots and spinner return safely.",
+        "steps": [
+          {
+            "text": "Complete the three center spot targets to advance the BAT-O-METER."
+          },
+          {
+            "text": "Shoot the spinner only from a controlled feed and keep raising its displayed value."
+          },
+          {
+            "text": "Use the top rollovers for Bonus X only when the upper feed is predictable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "C-O-F-F-I-N Jackpot",
+          "when": "Use this when both lit ramps are repeatable but Multiball is not ready.",
+          "steps": [
+            {
+              "text": "Shoot either lit ramp to add a C-O-F-F-I-N letter."
+            },
+            {
+              "text": "Keep using controlled consecutive ramps until the word is complete."
+            },
+            {
+              "text": "Complete C-O-F-F-I-N to collect the fixed 2-million Jackpot."
+            }
+          ]
+        },
+        {
+          "title": "Million Round pivot",
+          "when": "Use this when the right drop bank and right spot targets are safer than either ramp.",
+          "steps": [
+            {
+              "text": "Complete the four right drop targets to start Million Round.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish the flashing right spot-target sequence for 2 million and a fresh timer.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat only while the required spot-target return remains controlled.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated Multiball",
+        "steps": [
+          {
+            "text": "Complete the left drop bank and collect Zom-B Bonus at the flashing left target."
+          },
+          {
+            "text": "Complete the left drop bank again to relight the right-ramp Crypt lock."
+          },
+          {
+            "text": "Lock at the right ramp and plunge the replacement ball for Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the left ramp for 1 million while both balls remain in play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Multiball Madness",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Countdown Round",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Million Round",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "BAT-O-METER",
+          "tone": "olive",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the right-ramp Crypt lock when the same-side angle is repeatable; transfer only when that shot rejects.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://pinballnirvana.com/forums/resources/class-of-1812-gottlieb-1991-vp8.2830/"
+        },
+        {
+          "name": "Ramp-loop control",
+          "instruction": "After a clean left-ramp return, repeat the ramp only while the ball reaches the same controllable flipper position.",
+          "sourceUrl": "https://pinballnirvana.com/forums/resources/class-of-1812-gottlieb-1991-vp8.2830/"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The drop banks and right-ramp lock can reject unpredictably on worn copies.",
+          "response": "Test registration and return direction before committing to repeated shots.",
+          "sourceUrl": "https://pinballnirvana.com/forums/resources/class-of-1812-gottlieb-1991-vp8.2830/"
+        },
+        {
+          "issue": "Consecutive-ramp scoring and the ramp-sequence start are adjustable.",
+          "response": "Read the lamps and display before treating a remembered ramp count as exact.",
+          "sourceUrl": "https://pinballnirvana.com/forums/resources/class-of-1812-gottlieb-1991-vp8.2830/"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ball count, Extra Ball conversion, lock difficulty, Multiball save, and whether the opening Crypt lock is flashing.",
+        "Test both ramps, both drop banks, the top kicker, bottom upkicker, spinner, and spot-target registration before choosing a route."
+      ],
+      "simpleOverview": "Class of 1812 gives you an available right-ramp Crypt lock at the start. Lock the ball, plunge into two-ball Multiball, and repeat the left ramp for 1 million. After Multiball, use the left drop bank and Zom-B Bonus sequence to relight the lock.",
+      "overview": "Take the available right-ramp Crypt lock, then repeat the left ramp for 1 million during two-ball Multiball. To relight the lock, complete the left drop bank, collect Zom-B Bonus at the flashing left target, complete the bank again, and return to the right ramp. Spell C-O-F-F-I-N and use the timed drop-bank rounds for additional scoring.",
+      "machineSetup": [
+        "Confirm ball count, Extra Ball conversion, lock difficulty, Multiball save, and whether the opening Crypt lock is flashing.",
+        "Test both ramps, both drop banks, the top kicker, bottom upkicker, spinner, and spot-target registration before choosing a route."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

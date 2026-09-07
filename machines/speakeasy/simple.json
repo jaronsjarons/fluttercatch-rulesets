@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "GRbl7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Speakeasy rewards ordered card sequences and long bonus management. Complete the top 5-6-7-8-9 Hearts in sequence for two added balls; an out-of-sequence light can be cancelled at the end of the ball for 25,000 points each. Flip the center 10-through-Ace Spades in sequence for another added ball. Completing either five-card group in any order lights Bonus X, while four passes through the right Joker lane add a ball. The left and right saucers spin the roulette wheel, whose result can add points, add a ball, or subtract a ball.",
+        "simpleOverview": "Complete the top 5-6-7-8-9 Hearts in sequence for two added balls. Flip the center 10-through-Ace Spades in sequence for another added ball. Completing either five-card group in any order advances Bonus X, and four right-lane Jokers add a ball. The side saucers spin the roulette wheel, which can also subtract a ball.",
+        "summary": "Prioritize ordered Hearts and Spades while the sequence is clean, use the Joker lane for repeatable added-ball progress, and build Bonus X before accepting repeated roulette risk.",
+        "quickInfo": [
+          {
+            "name": "Two Added Balls",
+            "summary": "Complete 5 through 9 in sequence."
+          },
+          {
+            "name": "Center Added Ball",
+            "summary": "Complete 10 through Ace in sequence."
+          },
+          {
+            "name": "Joker Added Ball",
+            "summary": "Light four Jokers in the right lane."
+          },
+          {
+            "name": "Spin Roulette",
+            "summary": "Shoot either side saucer."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Collect top Hearts 5, 6, 7, 8, and 9 in the active sequence order for two added balls.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Flip the center Spades 10, Jack, Queen, King, and Ace in sequence for another added ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use any-order completions of either five-card group to advance Bonus X, then build bonus toward its 119,000 maximum.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right saucer to feed the Joker lane when safe; four lit Jokers award an added ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Repair the Hearts sequence",
+            "when": "Use this at ball end when one or more out-of-sequence Hearts would block the next ordered completion.",
+            "steps": [
+              {
+                "text": "Use the Sacrifice option while the out-of-sequence light flashes.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Spend 25,000 points per cancelled light to restore the sequence route.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "10x Bonus and Added Balls",
+          "steps": [
+            {
+              "text": "Complete the Hearts and Spades groups in any order to climb the multiplier ladder.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Preserve ordered sequence opportunities and Joker progress for added balls while building bonus.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check the Hearts sequence direction, maximum balls, Special and Extra Ball awards, roulette add/subtract behavior, chip threshold, and Bonus X carryover.",
+          "Test all five top Hearts, five flyaway Spades and reset, Sacrifice button, both saucers, roulette wheel and sensors, Joker lane, spinner, bonus lamps, and ball-count display."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top Hearts",
+            "label": "5-9 Hearts rollovers",
+            "description": "Top sequence that awards two added balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Spades",
+            "label": "10-Ace flyaway targets",
+            "description": "Center sequence that adds a ball and advances chip value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Joker lane",
+            "label": "Right Joker lane",
+            "description": "Lane that lights Jokers toward an added ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side saucers",
+            "label": "Roulette saucers",
+            "description": "Left and right saucers that spin the roulette wheel.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Sacrifice button",
+            "label": "Sacrifice button",
+            "description": "Cabinet control used to cancel out-of-sequence Hearts for points.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Post Catch",
+            "instruction": "Settle a return on the flipper post before choosing a narrow top rollover or the flyaway target needed next in sequence.",
+            "sourceUrl": "https://skill-shot.com/learn-to-love-speakeasy/",
+            "techniqueSlug": "post-catch"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Roulette can subtract a ball, and tilting does not cancel the end-of-ball spin once it begins.",
+            "response": "Treat roulette as controlled variance, not the default route when ordered cards or Joker progress are available.",
+            "sourceUrl": "https://skill-shot.com/learn-to-love-speakeasy/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Prioritize ordered Hearts and Spades while the sequence is clean, use the Joker lane for repeatable added-ball progress, and build Bonus X before accepting repeated roulette risk.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Collect top Hearts 5, 6, 7, 8, and 9 in the active sequence order for two added balls.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Flip the center Spades 10, Jack, Queen, King, and Ace in sequence for another added ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use any-order completions of either five-card group to advance Bonus X, then build bonus toward its 119,000 maximum.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the right saucer to feed the Joker lane when safe; four lit Jokers award an added ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Two Added Balls",
+            "summary": "Complete 5 through 9 in sequence."
+          },
+          {
+            "name": "Center Added Ball",
+            "summary": "Complete 10 through Ace in sequence."
+          },
+          {
+            "name": "Joker Added Ball",
+            "summary": "Light four Jokers in the right lane."
+          }
+        ]
+      }
+    }
+  ]
+}

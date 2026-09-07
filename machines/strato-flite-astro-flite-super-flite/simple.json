@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "GrdlQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Strato-Flite starts at the top saucer. Let the two small slings cycle its award and plunge for the open lower gate first or 5,000 second. During play, bank shots off the A and D standup areas send the ball back up while collecting all copies of one letter lights the first star for Double Bonus; a second letter group lights Triple Bonus.",
+        "simpleOverview": "In Strato-Flite, plunge the top saucer when it shows open lower gate or 5,000. Then use bank shots around the A and D standups to send the ball back up. Collect every copy of one letter to light Double Bonus, then complete a second letter group to light Triple Bonus.",
+        "summary": "Favor repeatable top shots while completing two letter groups. The first completed group lights one star and Double Bonus; the second lights a second star and Triple Bonus. If the lower gate is open, accept its 5,000 and free return to the shooter lane.",
+        "quickInfo": [
+          {
+            "name": "Top saucer",
+            "summary": "Its cycling award can open either gate, score 500 or 5,000, and is the skill-shot target."
+          },
+          {
+            "name": "First letter group",
+            "summary": "Collect all copies of one letter to light the first star and Double Bonus."
+          },
+          {
+            "name": "Second letter group",
+            "summary": "Collect all copies of another letter to light the second star and Triple Bonus."
+          },
+          {
+            "name": "Open lower gate",
+            "summary": "Scores 5,000 and returns the ball to the shooter lane for another plunge."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Time the plunge for the top saucer when its small slings have selected open lower gate or 5,000."
+          },
+          {
+            "text": "Shoot bank shots around the A and D standup areas to send the ball back to the upper playfield."
+          },
+          {
+            "text": "Finish every copy of one letter to light the first star and Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a second letter group to light the second star and Triple Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Take the open lower gate whenever the ball is already heading there; it scores 5,000 and gives another plunge."
+          }
+        ],
+        "buildsToward": {
+          "title": "Triple Bonus through two completed letter groups",
+          "steps": [
+            {
+              "text": "Keep returning the ball up top through controlled bank shots."
+            },
+            {
+              "text": "Finish one letter group for Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Finish a second group for Triple Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Extra Ball and Special conversion, tilt penalty, and the exact saucer award cycle before the first meaningful plunge.",
+          "Test the top saucer and both award-cycling slings, upper and lower gates, every A-B-C-D switch, both star lamps, Bonus unit, lower-gate return, and the center standup rebound."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top saucer",
+            "label": "Top award saucer",
+            "description": "Skill-shot hole whose cycling award can open a gate or score points.",
+            "precision": "unverified"
+          },
+          {
+            "term": "A and D standup areas",
+            "label": "A and D standup areas",
+            "description": "Outside target areas used for bank shots back to the upper playfield.",
+            "precision": "unverified"
+          },
+          {
+            "term": "letter group",
+            "label": "A-B-C-D letter groups",
+            "description": "Repeated letter sets whose first two completions raise the Bonus multiplier.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower gate",
+            "label": "Lower side gate",
+            "description": "Gate worth 5,000 that returns the ball to the shooter lane when open.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Favor repeatable top shots while completing two letter groups. The first completed group lights one star and Double Bonus; the second lights a second star and Triple Bonus. If the lower gate is open, accept its 5,000 and free return to the shooter lane.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Time the plunge for the top saucer when its small slings have selected open lower gate or 5,000."
+          },
+          {
+            "text": "Shoot bank shots around the A and D standup areas to send the ball back to the upper playfield."
+          },
+          {
+            "text": "Finish every copy of one letter to light the first star and Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a second letter group to light the second star and Triple Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Take the open lower gate whenever the ball is already heading there; it scores 5,000 and gives another plunge."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Top saucer",
+            "summary": "Its cycling award can open either gate, score 500 or 5,000, and is the skill-shot target."
+          },
+          {
+            "name": "First letter group",
+            "summary": "Collect all copies of one letter to light the first star and Double Bonus."
+          },
+          {
+            "name": "Second letter group",
+            "summary": "Collect all copies of another letter to light the second star and Triple Bonus."
+          }
+        ]
+      }
+    }
+  ]
+}

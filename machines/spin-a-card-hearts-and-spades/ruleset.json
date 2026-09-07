@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ZQv",
+  "title": "Spin-A-Card / Hearts and Spades",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Spin-A-Card",
+      "url": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN"
+    },
+    "supportingSources": [
+      {
+        "label": "Bob's Guide to Hearts and Spades",
+        "url": "https://rules.silverballmania.com/rules/G4ZQv-MeP8n"
+      },
+      {
+        "label": "Kineticist Spin-A-Card and Hearts and Spades guide",
+        "url": "https://www.kineticist.com/games/pinball/spin-a-card-hearts-and-spades"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Send the ball to the upper playfield beside the small saucers. Use side lanes to light the bumpers, and avoid direct shots at the center, 2, and King targets.",
+      "quickInfo": [
+        {
+          "name": "Edition skill shot",
+          "summary": "Spin-A-Card favors the 500-point top-center lane, while Hearts and Spades favors a soft plunge to the far-right bumper lane."
+        },
+        {
+          "name": "Bumper lights",
+          "summary": "The right-side lanes light the yellow bumpers, and the matching left-side lanes light the green bumpers."
+        },
+        {
+          "name": "Spin saucers",
+          "summary": "Each small saucer scores points, spots a random card, and ejects the ball upward between a bumper and the center triangle."
+        },
+        {
+          "name": "Center fan target",
+          "summary": "After all ten cards are complete, the center fan target awards Special on Spin-A-Card or Extra Ball on Hearts and Spades."
+        },
+        {
+          "name": "Edition scoring",
+          "summary": "Spin-A-Card emphasizes its 500-point top lane, while Hearts and Spades gives lit bumpers more relative value."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Confirm whether the machine is Spin-A-Card or Hearts and Spades."
+        },
+        {
+          "text": "On Spin-A-Card, plunge the top-center lane for 500 points."
+        },
+        {
+          "text": "On Hearts and Spades, soft plunge the far-right lane to light the yellow bumpers."
+        },
+        {
+          "text": "Shoot beside a small saucer and barely graze the bumper above it so the ball continues upward."
+        },
+        {
+          "text": "Nudge upper play so the ball enters a side lane that lights an unlit bumper color."
+        },
+        {
+          "text": "Accept a saucer only when the ball approaches it slowly during a natural upper-playfield feed."
+        },
+        {
+          "text": "Repeat the upper route and do not shoot directly at the center fan, number 2, or King target."
+        }
+      ],
+      "fallback": {
+        "title": "Tested cross-Shatz route",
+        "when": "Use this plan only when the opposite return-lane shot scores and returns without an up-and-out drain.",
+        "steps": [
+          {
+            "text": "Test one low-force shot up the opposite return lane."
+          },
+          {
+            "text": "Watch whether the ball scores and returns to the lower playfield."
+          },
+          {
+            "text": "Stop immediately if the shot reaches an outlane or loses control."
+          },
+          {
+            "text": "Repeat the cross-Shatz only while its return remains safe."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Enabled card award",
+          "when": "Use this plan only when all ten cards are complete and Special or Extra Ball is enabled.",
+          "steps": [
+            {
+              "text": "Use natural saucer entries to spot missing cards."
+            },
+            {
+              "text": "Confirm that all ten cards are complete."
+            },
+            {
+              "text": "Shoot the center fan target once for the edition's lit award."
+            },
+            {
+              "text": "Return to upper play after the collect."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Sustained lit-bumper top play",
+        "steps": [
+          {
+            "text": "Make the edition-specific skill shot."
+          },
+          {
+            "text": "Thread shots beside the saucers and into the upper playfield."
+          },
+          {
+            "text": "Use the right-side lanes to light yellow bumpers."
+          },
+          {
+            "text": "Use the left-side lanes to light green bumpers."
+          },
+          {
+            "text": "Repeat upper play without direct shots at the dangerous lower targets."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Saucer-side thread",
+          "instruction": "Aim beside a small saucer. Barely touch the bumper above it so the ball continues into the upper playfield.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN"
+        },
+        {
+          "name": "Nudging",
+          "instruction": "When a slow ball falls near a saucer, nudge it toward the opening instead of shooting the saucer directly.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN",
+          "techniqueSlug": "nudging"
+        },
+        {
+          "name": "Cross-Shatz test",
+          "techniqueSlug": "shatz-pass",
+          "instruction": "Use low force up the opposite return lane. Continue only when the ball scores and returns without reaching the outlane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A head-on bumper hit can rebound directly toward a drain.",
+          "response": "Graze the bumper edge and keep the ball moving upward. Stop using an approach that produces a face-on hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN"
+        },
+        {
+          "issue": "The number 2, King, and center fan targets can produce draining rebounds.",
+          "response": "Do not shoot them during normal point play. Use the fan target only for an enabled award after ten cards.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN"
+        },
+        {
+          "issue": "Feeds from the number 3 and Queen lanes can center drain at an unfavorable speed.",
+          "response": "Watch the exit speed and nudge before the ball reaches the lower divider area.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ZQv-MDeNN"
+        }
+      ],
+      "checkBeforePlay": [
+        "Identify Spin-A-Card or Hearts and Spades; skill shots, cards, and awards differ.",
+        "Test both saucers, bumper lights, side lanes, lower targets, flippers, and tilt."
+      ],
+      "simpleOverview": "Spin-A-Card and Hearts and Spades share upper saucers, card progress, and bumper-lighting side lanes, but their plunge priorities differ. Make the edition's useful skill shot, thread the ball beside the small saucers, and use the side lanes to light the matching yellow or green bumpers.",
+      "overview": "Spin-A-Card and Hearts and Spades share a card-spotting upper playfield but value its routes differently. Use the 500-point top-center lane on Spin-A-Card or the far-right bumper lane on Hearts and Spades, then feed the small saucers and light bumpers through the matching side lanes. Avoid direct shots at the exposed center, 2, and King targets; the center fan award matters only after all ten cards are complete.",
+      "machineSetup": [
+        "Identify Spin-A-Card or Hearts and Spades; skill shots, cards, and awards differ.",
+        "Test both saucers, bumper lights, side lanes, lower targets, flippers, and tilt."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

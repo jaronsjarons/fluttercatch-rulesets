@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qbD",
+  "title": "South Park",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org South Park rulesheet",
+      "url": "https://www.pinball.org/rules/southpark.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Austin Trent at D82 Summer Pinball Classic 2022",
+        "url": "https://pinballvideos.com/v/4530/13555"
+      },
+      {
+        "label": "District 82 South Park 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=IAyFO3iH_7A"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete Kenny and one more character mode, hit the Mr. Hankey targets five times, then shoot the ramp to start Multiball. Use completed character shots for Double Jackpots and collect the ramp Super Jackpot after five Mr. Hankey Jackpots.",
+      "quickInfo": [
+        {
+          "name": "Character modes",
+          "summary": "Hit one character's shot four times to start that mode. A completed character stays solidly lit on the playfield."
+        },
+        {
+          "name": "Kenny",
+          "summary": "Hit Kenny four times to start his hurry-up, then hit him once more to collect it and complete the mode."
+        },
+        {
+          "name": "Mr. Hankey Multiball",
+          "summary": "Hit the three Mr. Hankey targets five times, then shoot the lit ramp to start five-ball play."
+        },
+        {
+          "name": "Double and Super Jackpots",
+          "summary": "Completed character shots score Double Jackpots. Five Mr. Hankey Jackpots light the ramp for the Super Jackpot."
+        },
+        {
+          "name": "Volcano",
+          "summary": "Complete all five character modes to qualify the final five-ball Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit Kenny four times to start his hurry-up, then hit Kenny once more to collect it.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit another character's shot four times to start its mode, then make that mode's lit objective shots until its character insert stays solidly lit.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the three Mr. Hankey targets five times, then shoot the lit ramp to start Mr. Hankey Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the Mr. Hankey targets for Jackpots and the completed character shots for Double Jackpots.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After five Mr. Hankey Jackpots, shoot the ramp for the Super Jackpot. Collecting it doubles the value of the next Jackpot round.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Volcano",
+        "steps": [
+          {
+            "text": "Start and complete Stan's mode."
+          },
+          {
+            "text": "Complete the other four character modes in the safest order."
+          },
+          {
+            "text": "Confirm all five completion inserts."
+          },
+          {
+            "text": "Start Volcano and use the five balls for lit major shots.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Character Mode",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Mr. Hankey Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Double Jackpot",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Super Jackpot",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Volcano",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Kenny first",
+          "instruction": "Hit Kenny four times, then hit him once more for the collect. His single objective makes him the shortest character mode to finish.",
+          "sourceUrl": "https://www.youtube.com/watch?v=IAyFO3iH_7A"
+        },
+        {
+          "name": "Cartman kickout",
+          "instruction": "Keep both flippers ready and learn the sinkhole eject before repeating Cartman.",
+          "sourceUrl": "https://www.pinball.org/rules/southpark.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Ramp exits, character-shot counts, uncensored sound, post configuration, and ball saves vary by ROM and operator setup.",
+          "response": "Verify mode completion on the display and choose a different character when the current feed is unsafe.",
+          "sourceUrl": "https://www.pinball.org/rules/southpark.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Sega South Park ROM, character qualification, mode timers, ball save, and award conversions.",
+        "Test Cartman, left lane, ramp, character shots, bumpers, and all kickouts."
+      ],
+      "simpleOverview": "South Park starts each character mode after four hits to that character, while five Mr. Hankey target completions light Multiball at the ramp. Complete Kenny and one other character before the ramp start. During Multiball, use those completed character shots for Double Jackpots and collect five Hankey Jackpots to light the ramp Super.",
+      "overview": "South Park starts each character mode after four hits to that character, while five Mr. Hankey Multiball. Complete Kenny and another practical mode before hitting the Hankey targets five times, then use Multiball to score regular and completed-character Double Jackpots. Convert five Hankey Jackpots into the ramp Super, while finishing all character modes over time toward Volcano.",
+      "machineSetup": [
+        "Confirm Sega South Park ROM, character qualification, mode timers, ball save, and award conversions.",
+        "Test Cartman, left lane, ramp, character shots, bumpers, and all kickouts."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

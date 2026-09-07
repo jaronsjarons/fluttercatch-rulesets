@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "GrZnn",
+  "title": "Pinball Magic",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Pinball Magic production-game tutorial and strategy",
+      "url": "https://www.kineticist.com/news/pinball-magic-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Capcom Pinball Magic V1.03 service bulletin",
+        "url": "https://pfutz.us/Capcom/bulletin/bul13.htm"
+      },
+      {
+        "label": "Preliminary Pinball.org Pinball Magic rulesheet",
+        "url": "https://www.pinball.org/rules/pinballmagic.html"
+      },
+      {
+        "label": "Pinball Magic CPU V1.03 tournament gameplay and commentary",
+        "url": "https://www.youtube.com/watch?v=y5wLLloRL5k"
+      },
+      {
+        "label": "Pinball Magic CPU V1.03 Magna Matra gameplay and commentary",
+        "url": "https://www.youtube.com/watch?v=04QtzPHizFM"
+      },
+      {
+        "label": "Escher Lefkoff at INDISC 2022 High Stakes",
+        "url": "https://pinballvideos.com/v/4661/17808"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the current round's lit magician shots while preparing the Morph targets and trunk locks. With two balls locked, start Magic Mayhem at the hat, then repeat the left-ramp Jackpot, right-loop build, and timed left-ramp collect.",
+      "quickInfo": [
+        {
+          "name": "Magician rounds",
+          "summary": "Each round assigns named magicians to loops, ramp, stage, captive ball, and other major shots."
+        },
+        {
+          "name": "Trunk locks",
+          "summary": "Complete the Morph Chamber or M-A-G-I-C to light each left-ramp lock. One lock prepares two-ball Mini Mayhem; two locks prepare three-ball Magic Mayhem."
+        },
+        {
+          "name": "Magic Mayhem",
+          "summary": "With two balls locked, start at the right sinkhole or plunge into the hat. Shoot the right loop to light and build Jackpot, then shoot the left ramp to collect it."
+        },
+        {
+          "name": "Three rounds",
+          "summary": "Complete the named magician assignments in each round. Round Three ends with Magna Matra across the major shots, then the round sequence restarts."
+        },
+        {
+          "name": "How the features relate",
+          "summary": "The magician rounds and Mayhem locks can be prepared during the same ball, but Magic Mayhem has its own Jackpot sequence."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the left loop, right loop, main ramp, stage ramp, magic hat, and magic trunk returns."
+        },
+        {
+          "text": "Complete the current magician shots, favoring the loop or ramp that returns to control."
+        },
+        {
+          "text": "Complete the three Morph Chamber targets or knock down M-A-G-I-C to light Lock, then shoot the left ramp to lock the first ball."
+        },
+        {
+          "text": "Complete either target bank again, then shoot the left ramp for the second lock. Shoot the right sinkhole or plunge into the hat to start three-ball Magic Mayhem.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Magic Mayhem, shoot the right loop to light and build Jackpot, then shoot the left ramp to collect it. Repeat while at least two balls remain.",
+          "modeNotes": [
+            "Mayhem scoring: Each right-loop shot raises the three-ball Jackpot by 10 million, up to 90 million. Mini Mayhem keeps the Jackpot at 20 million."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After multiball, complete the remaining round shots and return to the lock route."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Controlled magician round",
+        "when": "Recovery pivot: Use this when the trunk or right sinkhole rejects but one loop and ramp are dialed in.",
+        "steps": [
+          {
+            "text": "Read the currently lit magician location."
+          },
+          {
+            "text": "Complete the repeatable loop and ramp assignments."
+          },
+          {
+            "text": "Use the captive ball's Advance Trick award for a difficult assignment when that award is available."
+          },
+          {
+            "text": "Return to locks after the current trick is complete."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Early Mini Mayhem",
+          "when": "When trailing, use this distinct scoreboard route: use this when one lock is ready and immediate ball protection matters more than the larger start.",
+          "steps": [
+            {
+              "text": "Complete the Morph Chamber or M-A-G-I-C, then shoot the left ramp for one lock."
+            },
+            {
+              "text": "Shoot the right sinkhole or plunge into the hat to start two-ball Mini Mayhem."
+            },
+            {
+              "text": "Use the second ball to complete difficult magician shots or advance the captive-ball awards."
+            },
+            {
+              "text": "Resume the two-lock plan after control returns."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Defeat Matra Magna",
+        "steps": [
+          {
+            "text": "Complete the six magician tricks and the seventh Matra Magna trick in Round One."
+          },
+          {
+            "text": "Complete the seven Round Two tricks, ending with Triple Power Play and three-ball Magic Mayhem."
+          },
+          {
+            "text": "Complete the first six Round Three tricks."
+          },
+          {
+            "text": "For the final trick, make 100 switch hits to defeat Matra Magna for 500 million points."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Magic Mayhem",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Mini Mayhem",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Magna Matra",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Magician",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Round reading",
+          "instruction": "Read the currently lit magician set before shooting; completed locations change by round.",
+          "sourceUrl": "https://www.pinball.org/rules/pinballmagic.html"
+        },
+        {
+          "name": "Multiball cleanup",
+          "instruction": "Use Mayhem to finish the least controllable lit magician shots first.",
+          "sourceUrl": "https://www.pinball.org/rules/pinballmagic.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The trunk, hat, stage, and levitation mechanisms can alter feeds or fail to register cleanly.",
+          "response": "Confirm each lock and award on the display, and switch to controlled round progress when a mechanism is unreliable.",
+          "sourceUrl": "https://www.pinball.org/rules/pinballmagic.html"
+        }
+      ],
+      "simpleOverview": "Pinball Magic assigns named magicians to different shots across three rounds, while the Morph Chamber or M-A-G-I-C targets prepare separate Multiballs. Complete the current magician shot, qualify and collect two left-ramp locks, then start Magic Mayhem at the right sinkhole or hat. During Mayhem, shoot the right loop to light and build Jackpot, then the left ramp to collect.",
+      "overview": "Pinball Magic assigns different shots to named magicians across three fixed rounds. Work through the current tricks while completing the Morph Chamber or M-A-G-I-C targets for two left-ramp locks. Start Magic Mayhem at the right sinkhole or hat, repeat right-loop builds and left-ramp Jackpots, then resume the tricks toward the 100-switch Matra Magna finale.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

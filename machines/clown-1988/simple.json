@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "G9zz0",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "In Clown, the three-bank lights the upper-horseshoe Extra Ball on its first completion and center-target Special on its second. Targets 3, 4, 5, and 6 light captive-ball Extra Ball; 3+5 or 4+6 lights a lower-lane Extra Ball; 1+3+5 or 2+4+6 lights an upper-lane Extra Ball; all six light captive-ball Special. The ramp prepares Extra Ball at the left kickout. When the horseshoe is not collecting its award, repeat it to raise the kickout bonus collect to 3x and 5x.",
+        "simpleOverview": "Complete the three-bank once to light Extra Ball at the upper horseshoe, then a second time to light center-target Special. Complete useful numbered-target combinations for lane or captive-ball Extra Balls, or shoot the ramp to prepare Extra Ball at the left kickout.",
+        "summary": "Take the three-bank first because its first completion creates a direct Extra Ball collect. Use the numbered targets when a safe rebound spots a useful combination, and take the ramp only when you are ready for the left kickout feed.",
+        "quickInfo": [
+          {
+            "name": "Horseshoe Extra Ball",
+            "summary": "Complete the three-bank once."
+          },
+          {
+            "name": "Center Special",
+            "summary": "Complete the three-bank twice."
+          },
+          {
+            "name": "Kickout Extra Ball",
+            "summary": "Shoot the ramp to prepare it."
+          },
+          {
+            "name": "Captive-Ball Special",
+            "summary": "Complete numbered targets 1 through 6."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the three drop targets once, then shoot the lit upper horseshoe for Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the bank a second time and hit the center target while Special is lit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use numbered targets 3+5 for the lower-left lane or 4+6 for the lower-right lane; add 1 or 2 to the matching odd or even set for an upper-lane Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the ramp is safe, shoot it to prepare Extra Ball at the left kickout, then collect the lit kickout.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Captive-ball route",
+            "when": "Use this when the six numbered targets are safer than the drop bank and horseshoe.",
+            "steps": [
+              {
+                "text": "Complete targets 3, 4, 5, and 6 to light Extra Ball at the captive-ball target.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Finish targets 1 through 6 to replace that route with the captive-ball Special.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Six-Target Special",
+          "steps": [
+            {
+              "text": "Complete fixed targets 1 through 6.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit the captive-ball target while Special is lit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm whether the second three-bank completion removes the first Extra Ball, the two-Extra-Balls-per-ball limit, and whether Special awards a replay or another configured value.",
+          "Test all three drops, numbered targets 1-6, upper horseshoe, center target, captive-ball target, ramp, left kickout, and all four award lanes."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "three-bank",
+            "label": "Three drop-target bank",
+            "description": "Lower-left bank that lights horseshoe Extra Ball and then center Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper horseshoe",
+            "label": "Upper horseshoe",
+            "description": "Upper-right return shot that collects the first bank Extra Ball and can raise kickout bonus value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbered targets 1 through 6",
+            "label": "Fixed targets 1-6",
+            "description": "Six standups whose odd, even, and full combinations light lane and captive-ball awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramp",
+            "label": "Left ramp",
+            "description": "Side ramp that prepares Extra Ball at the kickout.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left kickout",
+            "label": "Left kickout",
+            "description": "Side kickout that collects the ramp-prepared Extra Ball or multiplied bonus.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Dead Bounce",
+            "instruction": "Let a predictable horseshoe or kickout return cross safely before shooting the narrow three-bank or numbered standups again.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/clown-inder-1988-vp8.2833/",
+            "techniqueSlug": "dead-bounce"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Extra Ball availability and the interaction between the first and second bank completions are adjustable.",
+            "response": "Read the lamps after each bank completion and confirm the installed setting before assuming both awards remain available.",
+            "sourceUrl": "https://www.recreativas.org/archivo/clown-inder-pinball-manual.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Take the three-bank first because its first completion creates a direct Extra Ball collect. Use the numbered targets when a safe rebound spots a useful combination, and take the ramp only when you are ready for the left kickout feed.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the three drop targets once, then shoot the lit upper horseshoe for Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the bank a second time and hit the center target while Special is lit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use numbered targets 3+5 for the lower-left lane or 4+6 for the lower-right lane; add 1 or 2 to the matching odd or even set for an upper-lane Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the ramp is safe, shoot it to prepare Extra Ball at the left kickout, then collect the lit kickout.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Horseshoe Extra Ball",
+            "summary": "Complete the three-bank once."
+          },
+          {
+            "name": "Center Special",
+            "summary": "Complete the three-bank twice."
+          },
+          {
+            "name": "Kickout Extra Ball",
+            "summary": "Shoot the ramp to prepare it."
+          }
+        ]
+      }
+    }
+  ]
+}

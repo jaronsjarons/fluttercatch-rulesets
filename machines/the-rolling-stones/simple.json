@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "id": "GredR",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the Lock Lane once to qualify a Records mode and again to start it, then spell R-O-C-K-S-T-A-R and hit either Rock Star target for Multiball. Collect three orange-target Jackpots, six major-shot Double Jackpots, and a Rock Star target Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Shot multiplier",
+            "summary": "Top-lane completions assign two times scoring to one major shot for the rest of the ball."
+          },
+          {
+            "name": "Rock Star Multiball",
+            "summary": "Spell ROCKSTAR, start two-ball play at a Rock Star target, and use early target hits to add balls."
+          },
+          {
+            "name": "Album Multiball",
+            "summary": "Hit moving Mick twice at each of six positions to start its two-ball Jackpot sequence."
+          },
+          {
+            "name": "World Tour",
+            "summary": "Four orbit shots qualify a sequence of timed orbit hurry-ups that keeps its progress."
+          },
+          {
+            "name": "Records modes",
+            "summary": "Shoot the Lock Lane once to qualify a Records mode and again to start it, then collect the lit record shots before time expires."
+          },
+          {
+            "name": "Licks",
+            "summary": "Spell ROLLING STONES with ramp combos, then make ten major shots during the timed mode."
+          },
+          {
+            "name": "Encore",
+            "summary": "Complete all seven ladder features to qualify the final shot sequence at the Lock Lane."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the Lock Lane once to qualify the first Records mode, then shoot the Lock Lane again to start it. A successful super skill shot through the Lock Lane can supply the qualification shot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the Records mode, shoot the lit record shots. Complete V-I-P once to add mode time.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons to change the lit top lanes. Complete the lanes, then make the next unmultiplied major shot to give it 2x scoring for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Build Licks with ramp combos or spell ROCKSTAR at the orange targets while the Records mode runs. Start the ready feature before Multiball because a new mode cannot start during Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Spell ROCKSTAR at the orange targets. Hit either Rock Star target to start two-ball Rock Star Multiball.",
+            "modeNotes": [
+              "Rock Star start: During the first 20 seconds, the two Rock Star targets can add up to two balls."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect three orange-target Jackpots. Then shoot each of the six major shots for its Double Jackpot.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After all six Double Jackpots, shoot a Rock Star target for the Super Jackpot.",
+            "modeNotes": [
+              "Rock Star Super Jackpot: The value is the sum of the six collected Double Jackpots."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the overlap, collect the running mode's lit shots and the multiplied Multiball shots.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the VIP bank for more mode time or a Multiball add-a-ball when that award is active.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "World Tour orbit route",
+          "when": "Use this as the separate orbit-based route.",
+          "steps": [
+            {
+              "text": "Shoot either orbit four times; the fourth shot starts World Tour automatically.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Keep shooting either orbit for timed city awards.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete seven World Tour awards. Progress remains after the timer ends.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the top lanes and make an orbit the next unmultiplied major shot to give it 2x scoring for the rest of the ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Album Multiball",
+            "when": "Use this as the separate moving-Mick route.",
+            "steps": [
+              {
+                "text": "Hit moving Mick twice at each of his six positions."
+              },
+              {
+                "text": "During Album Multiball, hit Mick for the position Jackpot. Then shoot its related major shot for the Double Jackpot.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete all six pairs. Move Mick, then hit the blocked Rock Star target for the Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Hit Mick 20 more times to complete the feature.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Fast Scoring or Licks stack",
+            "when": "Prepare either timed feature before Multiball.",
+            "steps": [
+              {
+                "text": "For Fast Scoring, make the required pop hits and enter the pop lane. Then collect switch hits during the timer.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "For Licks, use ramp combos to spell ROLLING STONES. Shoot a ramp to start the mode, then make ten major shots.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start the selected mode before Multiball and continue it under protection.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Encore and Encore Multiball",
+          "steps": [
+            {
+              "text": "Complete each ladder feature until all seven inserts are lit or flashing."
+            },
+            {
+              "text": "Shoot the Lock Lane to start Encore."
+            },
+            {
+              "text": "Complete the six major shots twice and hit Mick six times.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Move Mick and shoot the Lock Lane for the Super Jackpot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "If all seven inserts were flashing before the start, continue into Encore Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Rock Star Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Album Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Encore Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Shot multiplier",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Records modes",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "World Tour",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Licks",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Fast Scoring",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Encore",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Orbit behind Mick",
+            "instruction": "Shoot the orbit path behind moving Mick when it registers more safely than a direct front hit.",
+            "sourceUrl": "https://www.pinballnews.com/games/rollingstones/index4b.html"
+          },
+          {
+            "name": "Weak plunge",
+            "instruction": "Use a weak plunge when the full plunge through the pop bumpers returns toward the left outlane.",
+            "sourceUrl": "https://www.pinballnews.com/games/rollingstones/index4b.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Direct hits on moving Mick or the front targets can rebound toward the center drain.",
+            "response": "Use the orbit behind Mick when it registers. Work direct hits under Multiball protection when possible.",
+            "sourceUrl": "https://www.pinballnews.com/games/rollingstones/index4b.html"
+          },
+          {
+            "issue": "A full plunge through the pop bumpers can feed the left outlane.",
+            "response": "Test the first full plunge. Use a weak plunge if the pop exit is not controlled.",
+            "sourceUrl": "https://www.pinballnews.com/games/rollingstones/index4b.html"
+          },
+          {
+            "issue": "Moving Mick changes which major shots are open.",
+            "response": "Read his current position before each shot. Do not shoot a blocked lane by memory.",
+            "sourceUrl": "https://www.pinballnews.com/games/rollingstones/index4b.html"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Rock Star targets",
+            "label": "Rock Star targets",
+            "description": "Orange targets used to start and score Rock Star Multiball.",
+            "precision": "unverified",
+            "context": "Orange targets used to start and score Rock Star Multiball."
+          },
+          {
+            "term": "Lock Lane",
+            "label": "Lock Lane",
+            "description": "Ball-lock shot used to prepare Rock Star Multiball.",
+            "precision": "unverified",
+            "context": "Ball-lock shot used to prepare Rock Star Multiball."
+          },
+          {
+            "term": "VIP bank",
+            "label": "VIP targets",
+            "description": "Target bank used for mode time and add-a-ball awards.",
+            "precision": "unverified",
+            "context": "Target bank used for mode time and add-a-ball awards."
+          },
+          {
+            "term": "moving Mick",
+            "label": "Moving Mick",
+            "description": "Moving shot whose return must be tested before use.",
+            "precision": "unverified",
+            "context": "Moving shot whose return must be tested before use."
+          }
+        ],
+        "simpleOverview": "The Rolling Stones lets a running timed mode continue into Rock Star Multiball, while top-lane completions add permanent 2x scoring to individual major shots. The fourth orbit shot starts World Tour automatically; spell R-O-C-K-S-T-A-R at the orange targets and hit either Rock Star target to start Multiball. Complete the top lanes, then make the next unmultiplied major shot to give it 2x scoring for the rest of the ball.",
+        "overview": "The Rolling Stones allows a running timed mode to continue into Rock Star Multiball, while top-lane completions add permanent 2x scoring to individual major shots. Shoot the Lock Lane once to qualify a Records mode and again to start it, then spell R-O-C-K-S-T-A-R and hit either Rock Star target for Multiball. Collect three orange-target Jackpots, six major-shot Double Jackpots, and a Rock Star target Super Jackpot.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use four orbit shots for World Tour, spell R-O-C-K-S-T-A-R for Rock Star Multiball, and use the top lanes to multiply one major shot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start World Tour",
+            "text": "Shoot either orbit four times; the fourth shot starts World Tour automatically. Keep shooting either orbit for timed city awards, and collect seven awards across attempts to complete World Tour.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "World Tour",
+              "reason": "Both orbits qualify and score the same timed feature.",
+              "play": "Shoot either orbit for city awards. Progress toward the seventh award carries into later World Tour attempts."
+            }
+          },
+          {
+            "title": "Start Rock Star Multiball",
+            "text": "Spell R-O-C-K-S-T-A-R at the orange targets, then hit either Rock Star target to start two-ball Rock Star Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Multiply a major shot",
+            "text": "Use the flipper buttons to change the lit top lanes. Complete the lanes, then make the next unmultiplied major shot to give it permanent 2x scoring for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Shot multiplier",
+            "summary": "Top-lane completions assign two times scoring to one major shot for the rest of the ball."
+          },
+          {
+            "name": "Rock Star Multiball",
+            "summary": "Spell ROCKSTAR, start two-ball play at a Rock Star target, and use early target hits to add balls."
+          },
+          {
+            "name": "Album Multiball",
+            "summary": "Hit moving Mick twice at each of six positions to start its two-ball Jackpot sequence."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Licks",
+          "when": "Use ramp combos for the separate Licks route.",
+          "steps": [
+            {
+              "text": "Use ramp combos to spell ROLLING STONES, then shoot a ramp to start Licks and make ten major shots.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

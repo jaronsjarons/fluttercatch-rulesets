@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "GRDkX",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Lock up to two balls behind the single center tank target. Clear the three inline tank drops, then hit the standup behind them to light Release Hostages at the right ramp. Shoot the lit right ramp to release the locks and start Multiball. During Multiball, hit the standup or any ramp to light Escape, then shoot the Helicopter ramp for the Escape Bonus.",
+        "simpleOverview": "Lock two balls behind the single center tank target. Clear the three inline tank drops and hit the standup behind them, then shoot the lit right ramp to start Multiball. Hit the standup or any ramp to light Escape, then collect it at the Helicopter ramp.",
+        "summary": "Lock up to two balls behind the center tank, clear the three inline drops, hit the standup behind them, then shoot the lit right ramp for Multiball. Hit the standup or any ramp to light Escape, then collect it at the Helicopter ramp.",
+        "quickInfo": [
+          {
+            "name": "Capture Hostages",
+            "summary": "Lock up to two balls behind the single center tank target."
+          },
+          {
+            "name": "Light Release",
+            "summary": "Clear the three inline drops, then hit their rear standup."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the lit right ramp to release the hostages."
+          },
+          {
+            "name": "Collect Escape",
+            "summary": "Hit the standup or a ramp to light Escape, then shoot the Helicopter ramp."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Lock up to two balls behind the single center tank target.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the three inline tank drops, then hit the standup behind them to light Release Hostages.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit right ramp to release the locked balls and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, hit the rear standup or any ramp to light Escape, then shoot the Helicopter ramp for the Escape Bonus.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use rockets on the tanks",
+            "when": "Use this when direct inline-drop shots are rejecting dangerously.",
+            "steps": [
+              {
+                "text": "Spell R-O-C-K-E-T to load a rocket.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Press a lit yellow cabinet button to fire; a rocket can knock down a tank drop and advance the release route.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Load and drop bombs",
+          "steps": [
+            {
+              "text": "Spell B-O-M-B to load the helicopter.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Helicopter ramp to drop loaded bombs and raise the bumper value while working back toward Escape.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm lock sharing, Extra Ball and Special conversions, Escape Bonus behavior, and whether cabinet-button rockets are enabled for competition.",
+          "Test both yellow cabinet buttons, ROCKET and BOMB targets, single tank lock, three inline drops and rear standup, right release ramp, Helicopter ramp, and all ball releases."
+        ],
+        "termStyles": [
+          {
+            "label": "Release Hostages",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Escape Bonus",
+            "tone": "indigo",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "single center tank target",
+            "label": "Center tank lock",
+            "description": "The center target and lock area used to capture up to two balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "inline tank drops",
+            "label": "Three inline tank drops",
+            "description": "The drops cleared before hitting the rear standup to light Release Hostages.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Release Hostages ramp",
+            "description": "The right ramp that starts Multiball after Release Hostages is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Helicopter ramp",
+            "label": "Helicopter ramp",
+            "description": "The ramp used to collect Escape Bonus and drop loaded bombs.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Lock up to two balls behind the center tank, clear the three inline drops, hit the standup behind them, then shoot the lit right ramp for Multiball. Hit the standup or any ramp to light Escape, then collect it at the Helicopter ramp.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Lock up to two balls behind the single center tank target.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the three inline tank drops, then hit the standup behind them to light Release Hostages.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit right ramp to release the locked balls and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, hit the rear standup or any ramp to light Escape, then shoot the Helicopter ramp for the Escape Bonus.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Capture Hostages",
+            "summary": "Lock up to two balls behind the single center tank target."
+          },
+          {
+            "name": "Light Release",
+            "summary": "Clear the three inline drops, then hit their rear standup."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the lit right ramp to release the hostages."
+          }
+        ]
+      }
+    }
+  ]
+}

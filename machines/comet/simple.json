@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "Gryd3",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the left Duck bank (and the right Rabbit bank when required) to light the center ramp. Shoot the ramp before its value times out, then repeat the sequence.",
+        "steps": [
+          {
+            "text": "Complete the four left Duck targets. On copies that require both banks, also complete the right Rabbit targets."
+          },
+          {
+            "text": "When the center ramp lights, shoot it before the timer expires. Its sequence advances through 30,000, 50,000, 100,000, and 100,000."
+          },
+          {
+            "text": "Keep making the center ramp while its next value flashes. If the timer expires, the sequence steps back one level instead of resetting completely."
+          },
+          {
+            "text": "Repeat the target-bank and center-ramp cycle."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Timed playfield multiplier and Cycle Jump",
+            "when": "Use this when the top lanes and left corkscrew are returning safely.",
+            "steps": [
+              {
+                "text": "Complete the 1-9-8-6 top lanes to start the timed playfield multiplier.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot the right Cycle Jump ramp while the timer is running. Its top opening scores 200,000 before the playfield multiplier.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Duck targets",
+            "context": "Duck targets",
+            "label": "Duck targets",
+            "description": "The four left standups that light the corkscrew collect and help qualify the center ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Rabbit targets",
+            "context": "Rabbit targets",
+            "label": "Rabbit targets",
+            "description": "The right standup bank that lights the saucer collect and may be required for the center ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "context": "center ramp",
+            "label": "Comet ramp",
+            "description": "The timed progressive-value center ramp.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Cycle Jump ramp",
+            "context": "Cycle Jump ramp",
+            "label": "Cycle Jump ramp",
+            "description": "The right jump ramp with three scoring openings.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The bumper exits can feed either outlane.",
+            "response": "Favor the center ramp after it is lit; use the upper routes only when their returns are surviving.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gryd3-MLqjd"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete the left Duck bank (and the right Rabbit bank when required) to light the center ramp."
+          }
+        ],
+        "simpleOverview": "Comet uses its Duck and Rabbit targets to light a timed center-ramp sequence. Each ramp collect advances the next value, while a timeout drops the sequence only one level. Complete the top lanes to light the timed playfield multiplier at Cycle Jump.",
+        "overview": "Comet lights its timed center-ramp ladder through the Duck and Rabbit banks. Keep shooting the lit ramp through its rising values. When the upper route is controlled, complete 1-9-8-6 and collect the timed playfield multiplier at the right Cycle Jump.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete the target bank or banks that light the center ramp, then shoot the ramp before its next value times out.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Light the center ramp",
+            "text": "Complete the four left Duck targets. If the ramp remains unlit, complete the right Rabbit targets too."
+          },
+          {
+            "title": "Run the ramp sequence",
+            "text": "Shoot the lit center ramp before its timer expires. Keep shooting it as the value rises through 30,000, 50,000, and 100,000."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete the left Duck bank (and the right Rabbit bank when required) to light the center ramp."
+          }
+        ],
+        "warning": {
+          "title": "The bumper exits can feed either outlane.",
+          "text": "Favor the center ramp after it is lit; use the upper routes only when their returns are surviving."
+        }
+      }
+    }
+  ]
+}

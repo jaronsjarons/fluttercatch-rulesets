@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "GRWyB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the right ramp to light the Temple and collect jewels through its A-B-C lanes while qualifying regular Multiball, then alternate center and right-ramp Jackpots before collecting the upper-loop Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Temple",
+            "summary": "The right ramp lights a visit, then the center ramp and upper inner loop complete the 3x3 jewel grid."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Reach Lite Lock at the shrunken head, lock two balls on the right ramp, then start three-ball play at the head."
+          },
+          {
+            "name": "RIPOFF Multiball",
+            "summary": "Hit or sink the vari-target five times, then shoot the right ramp to start the alternate multiball."
+          },
+          {
+            "name": "Continents",
+            "summary": "Start at the lit vari-target or scoop and complete a continent to earn its R-I-P-L-E-Y-S letter."
+          },
+          {
+            "name": "Two-ball Continents",
+            "summary": "North America, Africa, and Antarctica begin with a second ball and end when either ball drains. During one of these modes, a helper award at the scoop can add another ball."
+          },
+          {
+            "name": "Africa and Multiball",
+            "summary": "Start Africa before regular or RIPOFF Multiball. Africa continues during Multiball, letting ramp Jackpots and the Idol relight run under multiball protection."
+          },
+          {
+            "name": "Atlantis",
+            "summary": "Complete all seven continents, then start the mystery eighth continent at the vari-target."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the right ramp to light Temple and advance toward the two regular Multiball locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the center ramp and upper inner loop to arrange Temple rows or columns. Prioritize Light Super Jackpot and 2x scoring when available.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Advance the shrunken-head awards to Lite Lock. Lock two balls on the right ramp, then shoot the head to start regular Multiball.",
+            "modeNotes": [
+              "Regular Multiball qualification: Shrunken-head awards reach Lite Lock. Two right-ramp locks prepare the three-ball start at the head."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Alternate the center and right-ramp Jackpots for the first cycle.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After both opening Jackpots, complete the center ramp, right ramp, and lower loop. Shoot the upper loop for the Super Jackpot.",
+            "modeNotes": [
+              "Recurring cycle: Complete the three lit main Jackpots to light the upper-loop Super Jackpot. Repeat at the new value."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When Africa is ready, start it just before regular or RIPOFF Multiball. Use ramp Jackpots and the Idol relight under protection.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "RIPOFF Multiball",
+          "when": "Use this when the shrunken head or regular-lock sequence is unsafe.",
+          "steps": [
+            {
+              "text": "Hit or sink the vari-target five times to spell RIPOFF."
+            },
+            {
+              "text": "Shoot the right ramp to start RIPOFF Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the same three main Jackpot shots and upper-loop Super Jackpot cycle.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to Temple progress after one ball remains."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Africa stack",
+            "when": "Use this when the ramps and Idol are safer than the center scoop and shrunken head.",
+            "steps": [
+              {
+                "text": "Start Africa at the lit vari-target. Preserve the scoop for a helper award.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start regular or RIPOFF Multiball while Africa is running.",
+                "kinds": [
+                  "multiball",
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the ramps for Africa Jackpots and the Idol to relight them.",
+                "kinds": [
+                  "multiball",
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Atlantis and Frog Frenzy",
+          "steps": [
+            {
+              "text": "Complete each continent goal to earn all seven R-I-P-L-E-Y-S letters.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Atlantis at the vari-target after all seven continents are complete.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect all six game Super Jackpots, then qualify and collect the next Super Jackpot for Frog Frenzy."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "RIPOFF Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Continents",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Africa",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "2x scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          }
+        ],
+        "checkBeforePlay": [
+          "Code 0.95 behavior can differ from later releases; confirm the installed code before relying on Atlantis, Frog Frenzy, or helper awards.",
+          "Tournament Mode does not normalize every random or Extra Ball award."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right ramp",
+            "label": "Temple and lock ramp",
+            "description": "Right ramp used for Temple access and regular Multiball locks.",
+            "precision": "unverified",
+            "context": "Shoot the right ramp to build Temple access and lock progress."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Right-ramp backhand",
+            "techniqueSlug": "backhand",
+            "instruction": "Backhand the right ramp from the right flipper when it is the cleanest route to Temple access or a lock.",
+            "sourceUrl": "https://tiltforums.com/t/ripleys-believe-it-or-not-league-tournament-scoring-strategy/2527"
+          },
+          {
+            "name": "Multiball ball parks",
+            "instruction": "Use the head magnet, ramps, right loop, scoop, or vari-target to hold balls while you aim the active Jackpot. Avoid the scoop when you are preserving its helper award.",
+            "sourceUrl": "https://tiltforums.com/t/ripleys-believe-it-or-not-league-tournament-scoring-strategy/2527"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The stock inlane and outlane guides have little post protection, especially on the right.",
+            "response": "Nudge a right-wall return above the outlane toward the slings before it reaches the lower guide.",
+            "sourceUrl": "https://tiltforums.com/t/ripleys-believe-it-or-not-league-tournament-scoring-strategy/2527"
+          },
+          {
+            "issue": "The main scoop and South America head can reject the ball dangerously.",
+            "response": "Use the vari-target to start continents when possible. Stack South America with a two-ball continent for protection.",
+            "sourceUrl": "https://tiltforums.com/t/ripleys-believe-it-or-not-league-tournament-scoring-strategy/2527"
+          },
+          {
+            "issue": "The VUK skill shot can be too dangerous on a hard tournament setup.",
+            "response": "Use a safer plunge when no ball saver protects the VUK return.",
+            "sourceUrl": "https://tiltforums.com/t/ripleys-believe-it-or-not-league-tournament-scoring-strategy/2527"
+          }
+        ],
+        "simpleOverview": "Ripley's Believe It or Not! uses the right ramp to light Temple visits and prepare two locks for regular Multiball. Collect Temple jewels through its lanes, start Multiball at the shrunken head, then alternate center and right-ramp Jackpots before the upper-loop Super Jackpot.",
+        "overview": "The right ramp in Ripley's Believe It or Not! lights Temple visits and prepares two locks for regular Multiball. Start Multiball at the shrunken head, then complete the center ramp, right ramp, and lower loop before the upper-loop Super Jackpot. Choose useful Temple jewel rows or columns and start Africa first when its protected stack is available.",
+        "machineSetup": [
+          "Code 0.95 behavior can differ from later releases; confirm the installed code before relying on Atlantis, Frog Frenzy, or helper awards.",
+          "Tournament Mode does not normalize every random or Extra Ball award."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the right ramp to light the Temple and collect jewels through its A-B-C lanes while qualifying regular Multiball, then alternate center and right-ramp Jackpots before collecting the upper-loop Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the right ramp to light Temple and advance toward the two regular Multiball locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the center ramp and upper inner loop to arrange Temple rows or columns. Prioritize Light Super Jackpot and 2x scoring when available.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Advance the shrunken-head awards to Lite Lock. Lock two balls on the right ramp, then shoot the head to start regular Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Regular Multiball qualification: Shrunken-head awards reach Lite Lock. Two right-ramp locks prepare the three-ball start at the head."
+            ]
+          },
+          {
+            "text": "Alternate the center and right-ramp Jackpots for the first cycle.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After both opening Jackpots, complete the center ramp, right ramp, and lower loop. Shoot the upper loop for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Recurring cycle: Complete the three lit main Jackpots to light the upper-loop Super Jackpot. Repeat at the new value."
+            ]
+          },
+          {
+            "text": "When Africa is ready, start it just before regular or RIPOFF Multiball. Use ramp Jackpots and the Idol relight under protection.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Temple",
+            "summary": "The right ramp lights a visit, then the center ramp and upper inner loop complete the 3x3 jewel grid."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Reach Lite Lock at the shrunken head, lock two balls on the right ramp, then start three-ball play at the head."
+          },
+          {
+            "name": "RIPOFF Multiball",
+            "summary": "Hit or sink the vari-target five times, then shoot the right ramp to start the alternate multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: RIPOFF Multiball",
+          "when": "Use this when the shrunken head or regular-lock sequence is unsafe.",
+          "steps": [
+            {
+              "text": "Hit or sink the vari-target five times to spell RIPOFF."
+            },
+            {
+              "text": "Shoot the right ramp to start RIPOFF Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the same three main Jackpot shots and upper-loop Super Jackpot cycle.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to Temple progress after one ball remains."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The stock inlane and outlane guides have little post protection, especially on the right.",
+          "text": "Nudge a right-wall return above the outlane toward the slings before it reaches the lower guide."
+        }
+      }
+    }
+  ]
+}

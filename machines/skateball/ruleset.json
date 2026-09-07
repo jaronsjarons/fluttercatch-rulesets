@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "GrNpx",
+  "title": "Skateball",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Classic Pinball Machines",
+      "url": "https://rules.silverballmania.com/rules/GrNpx-M2YZq"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA Skateball tutorial with Bowen Kerins",
+        "url": "https://www.youtube.com/watch?v=PZCo9rcyg4w"
+      },
+      {
+        "label": "Skateball tournament rules discussion",
+        "url": "https://tiltforums.com/t/skateball-rules-need-a-refresher/1674"
+      },
+      {
+        "label": "Official Bally Skateball manual",
+        "url": "https://online.gameex.com/media/PinballX/all/addmedia/skateball%20%28bally%201980%29/English%20Manual.pdf"
+      },
+      {
+        "label": "Zach Sharpe at PAPA 20 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/1436/21505"
+      },
+      {
+        "label": "District 82 Skateball 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=jHtQuQQ07eE"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete S-K-A-T-E twice. Stop before B-A-L-L completes. Then repeat the 100,000 right saucer and collect a large bonus there.",
+      "steps": [
+        {
+          "text": "Test the right-saucer kickout. Also test the reversed left lanes and the reverse-direction lane change.",
+          "modeNotes": [
+            "Right-saucer kickout: Each copy can feed differently. Hold the upper flipper, hold then drop it, let the ball roll, or flip at S-K-A-T-E. Use the first safe result.",
+            "Left lanes: The return lane and outlane are opposite the usual positions."
+          ]
+        },
+        {
+          "text": "From the right flipper, complete S-K-A-T-E once for a 50,000 saucer. Complete it a second time for a 100,000 saucer.",
+          "modeNotes": [
+            "Right saucer value: It starts at 20,000. S-K-A-T-E completions raise it to 50,000, then 100,000.",
+            "Each S-K-A-T-E completion also adds base bonus."
+          ]
+        },
+        {
+          "text": "Do not complete S-K-A-T-E a third time. Transfer to the left flipper and shoot the right saucer for 100,000.",
+          "modeNotes": [
+            "B-A-L-L: The third S-K-A-T-E completion finishes B-A-L-L and lights an extra ball at the saucer. Collecting it resets the repeatable saucer value.",
+            "Tournament extra balls are usually disabled or converted. Keep the 100,000 saucer instead."
+          ]
+        },
+        {
+          "text": "Use the controlled kickout to regain the right flipper. Transfer back to the left flipper and repeat the 100,000 saucer."
+        },
+        {
+          "text": "Advance Bonus X with the 1-2-3 top lanes or the upper-left arrow bank while its green X lamp is on.",
+          "modeNotes": [
+            "Bonus X: It reaches 5x. It carries between balls only when that operator setting is enabled.",
+            "Base bonus: It reaches 70,000. Reaching 20,000, 40,000, or 60,000 establishes that Super Bonus checkpoint as the starting base on later balls."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When base bonus is large, complete the flashing upper-left arrow bank. Then shoot the right saucer to collect bonus.",
+          "modeNotes": [
+            "Collect Bonus: The lit saucer scores base bonus times Bonus X. It does not reset either value.",
+            "Do not enable or collect it early when direct upper-bank hits are not worth the risk."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Bonus first",
+        "when": "Use this when the saucer value resets, the saucer shot rejects, or its kickout is not controlled.",
+        "steps": [
+          {
+            "text": "Use the spinner and top 1-2-3 lanes to advance base bonus and Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the upper-left flipper for the arrow bank. Avoid lower-flipper shots at that bank until the bonus is large."
+          },
+          {
+            "text": "Complete the flashing upper-left arrow bank to light Collect Bonus, then take one valuable saucer collect when its return is acceptable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Third S-K-A-T-E completion",
+          "when": "Use this only when the event gives useful points for the extra ball or when the repeatable 100,000 saucer is not available.",
+          "steps": [
+            {
+              "text": "Complete S-K-A-T-E a third time to finish B-A-L-L."
+            },
+            {
+              "text": "Collect the lit extra ball or point award at the saucer."
+            },
+            {
+              "text": "Rebuild the saucer from 20,000."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeatable 100,000 saucer and 350,000 bonus collect",
+        "steps": [
+          {
+            "text": "Keep the saucer at 100,000 by stopping after two S-K-A-T-E completions."
+          },
+          {
+            "text": "Knock down drop targets, enter the saucer, roll over lit side buttons, and complete the top lanes until base bonus reaches 70,000. Complete 1-2-3 or the green-X upper-left bank until Bonus X reaches 5x; do not assume it carries unless the setting is enabled.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the flashing upper-left arrow bank to light Collect Bonus, then shoot the saucer for up to 350,000 without resetting the bonus."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Test a right-flipper backhand to the right saucer. Use it only when it is safer than transferring to the left flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrNpx-M2YZq",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Post pass",
+          "instruction": "Move the ball from the right flipper to the left flipper. Then shoot the right saucer with a forehand.",
+          "sourceUrl": "https://www.youtube.com/watch?v=PZCo9rcyg4w&t=819s",
+          "techniqueSlug": "post-pass"
+        },
+        {
+          "name": "Hold-and-drop kickout control",
+          "instruction": "Hold the upper flipper as the saucer ejects. Drop it as the ball reaches the flipper if that produces the safe feed on this copy.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrNpx-M2YZq"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right-saucer kickout can feed the right outlane, a sling, or the center.",
+          "response": "Test hold, hold-and-drop, and no-flip returns. Use the most repeatable result before you loop the saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrNpx-M2YZq"
+        },
+        {
+          "issue": "The center three-bank is high risk and has little strategic value.",
+          "response": "Do not shoot it. Use S-K-A-T-E, the saucer, the spinner, and the upper-left bank.",
+          "sourceUrl": "https://www.youtube.com/watch?v=PZCo9rcyg4w&t=975s"
+        },
+        {
+          "issue": "Bumper exits and direct upper-bank or S-K-A-T-E rebounds can drain.",
+          "response": "Use the upper-left flipper for the upper bank. Prefer lower-flipper S-K-A-T-E shots over the upper-right-flipper angle.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrNpx-M2YZq"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Complete S-K-A-T-E twice."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Keep the saucer at 100,000 by stopping after two S-K-A-T-E completions."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Bonus first: Use this when the saucer value resets, the saucer shot rejects, or its kickout is not controlled."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Skateball, ball count, Bonus X carry, and award conversions.",
+        "Test the saucer, both banks, lane change, and upper-playfield feeds."
+      ],
+      "simpleOverview": "In Skateball, two S-K-A-T-E completions raise the right saucer from 20,000 to 100,000, but a third completion finishes B-A-L-L and resets that value after its award. Stop after two sets and repeat the 100,000 saucer. When bonus is large, complete the flashing upper-left arrow bank and return to the saucer to collect base bonus times Bonus X.",
+      "overview": "In Skateball, completing S-K-A-T-E twice raises the right saucer to a repeatable 100,000, while a third completion finishes B-A-L-L and resets the saucer after its extra-ball award. Stop after two sets, control the kickout, and repeat the saucer. Build Bonus X through the top lanes or the upper-left arrow bank, then complete that bank while its green X lamp is on and shoot the saucer for the multiplied Bonus Collect.",
+      "machineSetup": [
+        "Confirm Bally Skateball, ball count, Bonus X carry, and award conversions.",
+        "Test the saucer, both banks, lane change, and upper-playfield feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

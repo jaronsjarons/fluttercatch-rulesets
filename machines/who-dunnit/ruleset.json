@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "G50kj",
+  "title": "WHO dunnit",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org WHO dunnit rulesheet",
+      "url": "https://www.pinball.org/rules/whodunnit.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Evan Bingham at Pittsburgh Pinball Open 2015",
+        "url": "https://pinballvideos.com/v/1001/15475"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use Super Skill Shots and the Basement elevator floor to start Basement Multiball, repeat its Jackpot route, then solve cases through clues, phone calls, and Catch the Killer.",
+      "quickInfo": [
+        {
+          "name": "Basement Multiball",
+          "summary": "Lock three balls through the Super Skill Shot or visit the Basement floor to start three-ball play."
+        },
+        {
+          "name": "Jackpot growth",
+          "summary": "Pop-bumper hits raise the multiball Jackpot; the Revolver increases that growth."
+        },
+        {
+          "name": "Cases",
+          "summary": "Collect clues, interrogate suspects at the Phone, choose a killer, then complete Catch the Killer."
+        },
+        {
+          "name": "Catch the Killer",
+          "summary": "Finish the Taxi Chase and Phone sequence to start four-ball scoring at the captured hurry-up value."
+        },
+        {
+          "name": "Penthouse Party",
+          "summary": "The Penthouse Key opens a lucrative elevator-shot mode; repeat controlled Elevator hits."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On each plunge, attempt the Super Skill Shot into the Lock Entry when its feed is controllable; also read the pop bumpers and Mystery Target returns."
+        },
+        {
+          "text": "Use the Elevator to reach useful floors, prioritizing Basement Multiball, clues, evidence, equipment, and the Penthouse route."
+        },
+        {
+          "text": "After three locks or a Basement visit, start multiball and use bumper feeds to build the Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect the lit Jackpot from the displayed shot, then repeat the build-and-collect cycle while ball count permits.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Between multiballs, spell T-A-X-I or run Taxi Chase for clues; answer the lit Phone to interrogate or identify the killer."
+        },
+        {
+          "text": "After the correct suspect or Roof access, complete the lit Taxi Chase and Phone sequence to catch the killer."
+        },
+        {
+          "text": "Use the resulting four-ball mode to repeat lit shots at the captured hurry-up value.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Penthouse Party elevator loop",
+        "when": "Use this when the Penthouse Key is ready and the Elevator feed is safer than the Lock Entry.",
+        "steps": [
+          {
+            "text": "Collect the Penthouse Key."
+          },
+          {
+            "text": "Reach the Penthouse floor."
+          },
+          {
+            "text": "Repeat controlled Elevator shots until the mode timer ends.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Taxi and clue route",
+          "when": "Use this when multiball locks are distant but an inlane can start Taxi Chase.",
+          "steps": [
+            {
+              "text": "Roll through the lit inlane to start Taxi Chase."
+            },
+            {
+              "text": "Alternate lit orbits for T-A-X-I letters and added time."
+            },
+            {
+              "text": "Answer the Phone after collecting a clue."
+            }
+          ]
+        },
+        {
+          "title": "Clue-first case control",
+          "when": "Use this when five clues can be reached safely before selecting a suspect.",
+          "steps": [
+            {
+              "text": "Delay the killer choice long enough to collect the useful clue threshold."
+            },
+            {
+              "text": "Secure the lit extra ball or its tournament replacement at the Phone."
+            },
+            {
+              "text": "Then choose the killer and proceed to Catch the Killer."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Five solved cases and wizard award",
+        "steps": [
+          {
+            "text": "Collect clues and interrogate suspects."
+          },
+          {
+            "text": "Identify and catch the killer in each case."
+          },
+          {
+            "text": "Use equipment and Elevator floors to shorten later cases."
+          },
+          {
+            "text": "Complete all five cases and enter the final wizard award.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Basement Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Catch the Killer",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Penthouse Party",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Clue",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Super Skill Shot lock",
+          "instruction": "Plunge for the Lock Entry when its path is available; it adds a lock, clue, and multiplier progress together.",
+          "sourceUrl": "https://www.pinball.org/rules/whodunnit.html"
+        },
+        {
+          "name": "Clue-before-killer choice",
+          "instruction": "When the next clue threshold is safely reachable, collect it before choosing the correct suspect so the case progress also earns its award.",
+          "sourceUrl": "https://www.pinball.org/rules/whodunnit.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Roulette can erase the current score and is not required for the deterministic case route.",
+          "response": "Decline the bet when match position values certainty; use it only when the wager is strategically acceptable.",
+          "sourceUrl": "https://www.pinball.org/rules/whodunnit.html"
+        },
+        {
+          "issue": "A lit outlane can produce only a conditional slot-based second chance, not a guaranteed kickback.",
+          "response": "Do not rely on the pseudo-kickback to save a dangerous nudge or feed.",
+          "sourceUrl": "https://www.pinball.org/rules/whodunnit.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ROM, Tournament Mode, case logic, and lock state.",
+        "Test Elevator, Phone, Roulette, and Basement returns."
+      ],
+      "simpleOverview": "In WHO dunnit, Super Skill Shots or the Basement elevator floor award three locks for Basement Multiball, and pop-bumper hits raise its Jackpot. Between Multiballs, collect clues, use the Phone, identify the killer, and finish the Taxi Chase and Phone sequence for each detective case.",
+      "overview": "Solving five cases leads to Catch the Killer in WHO dunnit, while Basement Multiball and Elevator awards support the case work. Use Super Skill Shots or the Basement to collect locks, repeat the growing Jackpot, then use Taxi, clues, and Phone calls to solve the current case. Preserve useful Elevator items while working toward all five solved cases.",
+      "machineSetup": [
+        "Confirm ROM, Tournament Mode, case logic, and lock state.",
+        "Test Elevator, Phone, Roulette, and Basement returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

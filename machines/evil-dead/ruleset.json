@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "id": "GYWvw",
+  "title": "Evil Dead",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Genie Evil Dead go-to strategy",
+      "url": "https://pinball-genie.com/machines/evil-dead"
+    },
+    "supportingSources": [
+      {
+        "label": "Electric Bat Evil Dead tutorial",
+        "url": "https://www.youtube.com/watch?v=-Z_gNqBGhOA"
+      },
+      {
+        "label": "Tilt Forums Evil Dead rulesheet",
+        "url": "https://tiltforums.com/t/evil-dead-by-spooky-pinball-rulesheet/9720"
+      },
+      {
+        "label": "Spooky Pinball current code and release notes",
+        "url": "https://www.spookypinball.com/evildead/"
+      },
+      {
+        "label": "Nic Stein at UK Open 2025 — Semifinals",
+        "url": "https://pinballvideos.com/v/5401/23870"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Choose Evil Dead 1 and select Undying Love. Prepare the scoring multipliers, Cabin Multiball, and Double Deadite Multiball. Start the mode, then add both Multiballs.",
+      "steps": [
+        {
+          "text": "Choose Evil Dead 1. Plunge at the roving lit GROOVY target.",
+          "modeNotes": [
+            "Evil Dead 1: This movie contains Undying Love and It Won't Let Us Leave, the modes used by the main and alternative routes.",
+            "Standard Skill Shot: The lit GROOVY target scores the award and advances the GROOVY sequence."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot one white-lit ramp. Hit the Necronomicon captive ball until Undying Love is selected. If a different mode is already waiting at the scoop, press the Action button to defer it, then shoot another white-lit ramp before selecting again.",
+          "modeNotes": [
+            "Mode qualification: The first mode needs one white-lit ramp. Each later mode needs one more white-lit ramp than the prior mode.",
+            "Necronomicon captive ball: Before a mode starts, a hit changes the selected mode when another qualified choice is available."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Prepare Cabin Multiball. Knock down the Cabin drops and shoot the Cabin VUK to lock a ball. Repeat until the next lock will start the multiball.",
+          "modeNotes": [
+            "Cabin Multiball: Three locked balls start it. Drop and lock progress persists between balls and players. Another player can steal a prepared lock."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Prepare Double Deadite Multiball. Collect the four orange arrows and roll through both inlanes to raise the Deadites. Leave both raised until Undying Love is running.",
+          "modeNotes": [
+            "Double Deadite Multiball: Knock down a raised Deadite, then shoot the jackpot behind it. A second pass through the Deadites starts Deadite Frenzy. This multiball stacks with all modes and multiballs."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Build the scoring multipliers. Complete GROOVY in order, complete the three Blood Flood targets, and prepare the Dagger multiplier.",
+          "modeNotes": [
+            "GROOVY: Complete the six in-line drops in order. All scoring increases by 20% for the rest of the ball.",
+            "Blood Flood: Complete the three standups in the pop-bumper nest to start a playfield multiplier.",
+            "Dagger multiplier: An inlane lights the opposite orbit. Shoot that orbit. Double-tap the upper-flipper button and press Launch to run the 10-second multiplier build."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the scoop under the right ramp to start Undying Love. Then hit the left ramp and right ramp in either order.",
+          "modeNotes": [
+            "Undying Love: The two ramps chain Linda. A faster ramp-to-ramp combo gives a larger speed bonus."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the open Cellar Door. On the lower playfield, make five loops to dig the grave. This starts two-ball play.",
+          "modeNotes": [
+            "Undying Love multiball: Red shots score Jackpots. Necklace-target hits raise the Jackpot. The right ramp is the repeatable scoring shot. The mode ends when the multiball ends."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start Cabin Multiball from its final lock while Undying Love is running. Follow the lit mode and multiball shots; running timers remain paused during the Cabin startup.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Knock down both raised Deadites to start Double Deadite Multiball. Shoot behind each lowered Deadite for Jackpots, while continuing Undying Love's red shots and right ramp.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During each standard multiball, hit the green captive ball three times. Then shoot the green right orbit to collect one Book Hold. Return to jackpots after the hold.",
+          "modeNotes": [
+            "Book Hold: The right-orbit magnet holds one ball temporarily. Only one Book Hold is available in each standard multiball. Three Book Holds qualify Hero From The Sky."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Cabin Multiball",
+        "when": "Use this while learning mode selection or when you want the easiest Multiball route.",
+        "steps": [
+          {
+            "text": "Take the standard GROOVY skill shot."
+          },
+          {
+            "text": "Knock down the Cabin drops. Shoot the Cabin VUK to lock a ball. Repeat for three locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Cabin Multiball, use the extra balls to qualify a story mode, advance GROOVY, complete Blood Flood targets, or collect orange Deadite arrows.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the captive ball three times. Shoot the green right orbit for a Book Hold before the multiball ends.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "It Won't Let Us Leave",
+          "when": "Use this mode when you prefer its shot-frenzy sequence over the Undying Love ramp and Cellar sequence.",
+          "steps": [
+            {
+              "text": "Shoot the required white-lit ramps, hit the Necronomicon captive ball until It Won't Let Us Leave is selected, then shoot the scoop under the right ramp to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the four randomly lit green ramps or orbits to reach the frenzy.",
+              "modeNotes": [
+                "It Won't Let Us Leave: Phase 1 gives about 60 seconds to complete four green shots. Phase 2 starts a repeating Scare Jackpot sequence."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For 20 seconds, shoot red Scare Jackpots. When the timer ends, shoot the Cellar to collect the built value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat the red-shot period and Cellar collect three more times to complete the mode. Add Cabin or Double Deadite Multiball when ready.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Double-Barrel Boomstick Multiball",
+          "when": "Use this separate route when the shell targets are complete and you want the higher-risk lower-playfield Multiball.",
+          "steps": [
+            {
+              "text": "Hit shell 1, shell 2, then both shells together to load the Boomstick.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "When the game indicates that the cellar is ready, press the Action button to lower the Cellar Door, then shoot through the open door. The lower playfield stays available for about 15 seconds or three lower-playfield drains.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit Lock and Load below. Press Launch on the spoken firing cue to start Double-Barrel Boomstick Multiball.",
+              "modeNotes": [
+                "Double-Barrel Boomstick Multiball: Purple shots score Jackpots. Reload the shell targets to relight the Action-button Jackpot. The second phase can add balls."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit the green captive ball three times, then the green right orbit for a Book Hold. Return to purple Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Hero From The Sky, Cheryl Multiball, and Destroy the Book",
+        "steps": [
+          {
+            "text": "Collect one Book Hold in each of three standard multiballs. The same multiball can be repeated in three separate starts.",
+            "modeNotes": [
+              "Hero From The Sky: After the third Book Hold, finish the current multiball and shoot the scoop under the right ramp. Follow the lit shots and on-screen instructions through its phases."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete any two Evil Dead 1 modes. Hit the rising Cheryl bank to start Cheryl Multiball.",
+            "modeNotes": [
+              "Cheryl Multiball: Performance in the second mode phase selects one of two multiball versions. A missed start can be restarted."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete all four Evil Dead 1 modes to light Destroy the Book. Enter the Cellar and hit the Necronomicon target on the lower playfield.",
+            "modeNotes": [
+              "Destroy the Book: Use the lower-playfield loop to return to the Book target until the wizard mode is complete."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Undying Love",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "It Won't Let Us Leave",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Cabin Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Double Deadite Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Double-Barrel Boomstick Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Cheryl Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Hero From The Sky",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Destroy the Book",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "From the left flipper, backhand the left ramp. Its return can set up the same shot again. Use the repeat for modes, combos, and Delta 88 progress.",
+          "sourceUrl": "https://pinball-genie.com/machines/evil-dead",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "From the right flipper, backhand the right ramp and the mode-start area. Test the return before you depend on it.",
+          "sourceUrl": "https://www.youtube.com/watch?v=-Z_gNqBGhOA",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Hidden sling flipper",
+          "instruction": "The upper-left cabinet button fires the hidden flipper in place of the left slingshot. Test it for the left orbit, left ramp, left Deadite, and drop targets.",
+          "sourceUrl": "https://pinball-genie.com/machines/evil-dead"
+        },
+        {
+          "name": "Cradle",
+          "instruction": "Hold the upper-right flipper on a right-ramp return to stop the ball. Wait for the moving Hand to reach a usable position before you shoot it.",
+          "sourceUrl": "https://www.youtube.com/watch?v=-Z_gNqBGhOA",
+          "techniqueSlug": "cradle"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Deadite and Hand hits can reject the ball straight down the middle.",
+          "response": "Shoot these toys only from a controlled ball. Use multiball protection when the reject is not predictable.",
+          "sourceUrl": "https://pinball-genie.com/machines/evil-dead"
+        },
+        {
+          "issue": "The right orbit can return unpredictably on some copies.",
+          "response": "Test it before a valuable Book Hold. Keep both flippers ready for the return.",
+          "sourceUrl": "https://pinball-genie.com/machines/evil-dead"
+        },
+        {
+          "issue": "The lower playfield has its own drain and limited access time.",
+          "response": "Enter only for a required mode or qualified Boomstick start. Make the called shot before you chase extra value.",
+          "sourceUrl": "https://tiltforums.com/t/evil-dead-by-spooky-pinball-rulesheet/9720"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Choose Evil Dead 1 and select Undying Love."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect one Book Hold in each of three standard multiballs."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Cabin Multiball: Use this while learning mode selection or when you want the easiest Multiball route."
+        }
+      ],
+      "simpleOverview": "Evil Dead begins with a choice between its two movies, which fixes the four story modes available for that game. Choose Evil Dead 1, shoot one white-lit ramp to qualify the first mode, hit the Necronomicon captive ball to select Undying Love, then shoot the scoop under the right ramp to start it. Undying Love uses both ramps, the Cellar Door, and the lower-playfield loop before becoming two-ball play. Cabin Multiball separately needs three Cabin VUK locks, while the three Blood Flood standups start a playfield multiplier.",
+      "overview": "Evil Dead begins with a movie choice, then uses white-lit ramps to qualify story modes, the Necronomicon captive ball to select one, and the scoop under the right ramp to start it. Cabin and Double Deadite Multiballs can join a running Evil Dead 1 mode after GROOVY, Blood Flood, and the Dagger multiplier are ready. Choose Evil Dead 1 and Undying Love, prepare the Cabin locks and orange Deadite arrows, build the multipliers, then start Undying Love at the scoop before adding both Multiballs.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

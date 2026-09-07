@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "GrZwo",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Collect the five center stars to raise the upper-right hole to 5,000. Repeat the hole. Use a lit side lane for 2x, or 3x on the final ball.",
+        "steps": [
+          {
+            "text": "Test the left-orbit feed, upper-right-hole kickout, side-lane exits, and the spinner rebound. Plunge a lit top lane when its feed is safer than the left orbit.",
+            "modeNotes": [
+              "Surfer is the two-player version of Surf Champ. Both games have the same playfield rules."
+            ]
+          },
+          {
+            "text": "Shoot through the five center star rollovers. Use paths that continue to a drop target or the upper-right hole.",
+            "modeNotes": [
+              "Star rollovers: Each collected star changes the hole through 500, 1,400, 2,300, 3,200, 4,100, then 5,000.",
+              "All five stars also light the spinner for the rest of the ball and light the side-lane multiplier award."
+            ]
+          },
+          {
+            "text": "After several stars are collected, shoot the upper-right hole from the left flipper. Repeat it at 5,000 when the kickout is controlled."
+          },
+          {
+            "text": "Send the ball up the left orbit or through safe upper shots. Use lit top lanes to build base bonus faster.",
+            "modeNotes": [
+              "Top lanes: Each scores 500. An unlit lane adds one bonus step. The one lit lane adds two, three, or five steps, based on settings.",
+              "Spinner hits move the lit top lane."
+            ]
+          },
+          {
+            "text": "After all five stars are collected, roll through a lit side lane to raise Bonus X once on that ball.",
+            "modeNotes": [
+              "Side-lane multiplier: Raises 1x to 2x on normal balls. On the final ball, which starts at 2x, it raises bonus to 3x.",
+              "The award can be collected only once per ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through the top lanes and upper-left lane until base bonus reaches 15,000. Protect it at 2x, or 3x on the final ball.",
+            "modeNotes": [
+              "Maximum bonus: 30,000 on normal balls and 45,000 on the final ball. Base bonus and Bonus X reset after collection."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Bonus and left orbit",
+          "when": "Use this when the upper-right hole rejects or its kickout is not controlled.",
+          "steps": [
+            {
+              "text": "Repeat the left orbit when its return is safe."
+            },
+            {
+              "text": "Roll through the top lanes and upper-left lane until base bonus reaches a useful value."
+            },
+            {
+              "text": "Collect a lit side lane for 2x, or 3x on the final ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Do not force the upper-right hole."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Drop-bank award",
+            "when": "Use this when the drop rebounds are controlled and several targets are already down.",
+            "steps": [
+              {
+                "text": "Collect all five center stars."
+              },
+              {
+                "text": "Finish all five drops. The bank resets and scores 5,000."
+              },
+              {
+                "text": "The left outlane lights for extra ball and the right outlane lights for Special. Use them only when the event gives useful value."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 5,000 hole and 45,000 final-ball bonus",
+          "steps": [
+            {
+              "text": "Collect all five stars and repeat the upper-right hole."
+            },
+            {
+              "text": "On the final ball, collect the lit side lane for 3x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Roll through the top lanes and upper-left lane until base bonus reaches 15,000. Drain without tilting."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the two upper-right drop targets from the left flipper. The right-flipper forehand is blocked by the spinner post.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZwo-MJNlQ",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Right-flipper left orbit",
+            "instruction": "Shoot the left orbit from the right flipper to return the ball to the top. Use it only after its lower exit is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZwo-MJNlQ"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper-right-hole kickout fires the ball into the right bumper.",
+            "response": "Watch the first eject. Repeat the hole only when the bumper exit is recoverable.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZwo-MJNlQ"
+          },
+          {
+            "issue": "The second star rollover from the right feeds the right bumper and can rebound toward a drain.",
+            "response": "Collect it through a controlled angled shot or safe ricochet. Do not force a direct shot after the hole is already valuable.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZwo-MJNlQ"
+          },
+          {
+            "issue": "Side-lane exits can drain through the center or hit a sling mount and become uncontrolled.",
+            "response": "Watch the first exit from each side. Nudge before the ball reaches the lower post or sling mount.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZwo-MJNlQ"
+          },
+          {
+            "issue": "Direct drop-target and spinner rebounds can head toward the bumpers or center.",
+            "response": "Use the star-to-hole route when these rebounds are not controlled. Shoot drops only when the bank award is close.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZwo-MJNlQ"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect the five center stars to raise the upper-right hole to 5,000."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Collect all five stars and repeat the upper-right hole."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Bonus and left orbit: Use this when the upper-right hole rejects or its kickout is not controlled."
+          }
+        ],
+        "checkBeforePlay": [
+          "Identify Gottlieb Surf Champ or Surfer and confirm ball count and award settings.",
+          "Test the star rollovers, upper-right hole, left orbit, and side lanes."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center star rollovers",
+            "label": "Star rollovers",
+            "description": "Center rollovers used for qualification.",
+            "precision": "unverified",
+            "context": "Center rollovers used for qualification."
+          },
+          {
+            "term": "upper-right hole",
+            "label": "Upper-right hole",
+            "description": "Hole used for lit awards.",
+            "precision": "unverified",
+            "context": "Hole used for lit awards."
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Orbit used for the safer repeatable route.",
+            "precision": "unverified",
+            "context": "Orbit used for the safer repeatable route."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At INDISC 2023, Gene Lewin used the five-star progress into the upper-right-hole route while building bonus and looking for the lit side lane multiplier, finishing with 73,230."
+          ]
+        },
+        "simpleOverview": "In Surf Champ or Surfer, rolling over the five center stars raises the upper-right hole to 5,000 and lights the side-lane Bonus X award. Collect all five stars, repeat the upper-right hole while its kickout is controlled, then roll through a lit side lane for 2x Bonus (or 3x on the final ball).",
+        "overview": "In Surf Champ or Surfer, each center star raises the upper-right hole, and all five stars light the spinner and side-lane Bonus X award. Complete the stars, repeat the 5,000 hole, then collect a lit side lane for 2x Bonus (or 3x on the final ball). Use top lanes and drop targets to build 15,000 base bonus before the drain.",
+        "machineSetup": [
+          "Identify Gottlieb Surf Champ or Surfer and confirm ball count and award settings.",
+          "Test the star rollovers, upper-right hole, left orbit, and side lanes."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Collect the five center stars to raise the upper-right hole to 5,000. Repeat the hole. Use a lit side lane for 2x, or 3x on the final ball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the left-orbit feed, upper-right-hole kickout, side-lane exits, and the spinner rebound. Plunge a lit top lane when its feed is safer than the left orbit.",
+            "details": [
+              "Surfer is the two-player version of Surf Champ. Both games have the same playfield rules."
+            ]
+          },
+          {
+            "text": "Shoot through the five center star rollovers. Use paths that continue to a drop target or the upper-right hole.",
+            "details": [
+              "Star rollovers: Each collected star changes the hole through 500, 1,400, 2,300, 3,200, 4,100, then 5,000.",
+              "All five stars also light the spinner for the rest of the ball and light the side-lane multiplier award."
+            ]
+          },
+          {
+            "text": "After several stars are collected, shoot the upper-right hole from the left flipper. Repeat it at 5,000 when the kickout is controlled."
+          },
+          {
+            "text": "Send the ball up the left orbit or through safe upper shots. Use lit top lanes to build base bonus faster.",
+            "details": [
+              "Top lanes: Each scores 500. An unlit lane adds one bonus step. The one lit lane adds two, three, or five steps, based on settings.",
+              "Spinner hits move the lit top lane."
+            ]
+          },
+          {
+            "text": "After all five stars are collected, roll through a lit side lane to raise Bonus X once on that ball.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Side-lane multiplier: Raises 1x to 2x on normal balls. On the final ball, which starts at 2x, it raises bonus to 3x.",
+              "The award can be collected only once per ball."
+            ]
+          },
+          {
+            "text": "Roll through the top lanes and upper-left lane until base bonus reaches 15,000. Protect it at 2x, or 3x on the final ball.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Maximum bonus: 30,000 on normal balls and 45,000 on the final ball. Base bonus and Bonus X reset after collection."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect the five center stars to raise the upper-right hole to 5,000."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Collect all five stars and repeat the upper-right hole."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Bonus and left orbit: Use this when the upper-right hole rejects or its kickout is not controlled."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Bonus and left orbit",
+          "when": "Use this when the upper-right hole rejects or its kickout is not controlled.",
+          "steps": [
+            {
+              "text": "Repeat the left orbit when its return is safe."
+            },
+            {
+              "text": "Roll through the top lanes and upper-left lane until base bonus reaches a useful value."
+            },
+            {
+              "text": "Collect a lit side lane for 2x, or 3x on the final ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Do not force the upper-right hole."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The second star rollover from the right feeds the right bumper and can rebound toward a drain.",
+          "text": "Collect it through a controlled angled shot or safe ricochet. Do not force a direct shot after the hole is already valuable."
+        }
+      }
+    }
+  ]
+}

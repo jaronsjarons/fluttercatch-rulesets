@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "GELkO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Lock two balls for Wembley Multiball, start Queen Frenzy, then collect the third Wembley lock while the Frenzy is running. Use switches to build the Audience Jackpot and shoot the center saucer when it lights.",
+        "quickInfo": [
+          {
+            "name": "Songs and Multiball",
+            "summary": "A Multiball interrupts the current Song. On 2.x software, that Song resumes automatically when Multiball ends."
+          },
+          {
+            "name": "Wembley Multiball",
+            "summary": "Complete the three front drop targets to light each lock, then lock a ball at the center or right ramp. The third lock starts Multiball."
+          },
+          {
+            "name": "Queen Frenzy",
+            "summary": "Collect Q-U-E-E-N at the far-right lane, then shoot that lane again to start the Frenzy. Switches build the Audience Jackpot, which is collected at the center saucer when lit."
+          },
+          {
+            "name": "Bohemian Rhapsody",
+            "summary": "Completing four Songs qualifies this mini-wizard Song; the required count is adjustable."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the three front drop targets, then shoot the center or right ramp to lock one ball for Wembley Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the drop targets again and lock a second ball at either Wembley ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the far-right lane until Q-U-E-E-N is complete, then shoot the same lane again to start Queen Frenzy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "While Queen Frenzy is running, complete the front drops a third time and shoot the center or right ramp. The third lock starts Wembley Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make switches to build the Audience Jackpot, then shoot the center saucer when it lights. Continue taking the displayed Wembley Jackpot shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Bohemian Rhapsody",
+          "steps": [
+            {
+              "text": "Complete a Song, then shoot the left VUK to collect its completion and choose the next Song.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat until four Songs are complete, or until the machine's displayed requirement is met.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Choose Bohemian Rhapsody when it appears on the Song-selection wheel.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Songs",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Wembley Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Queen Frenzy",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Audience Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Bohemian Rhapsody",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "front drop targets",
+            "label": "Wembley drop targets",
+            "description": "Three drop targets used to light each Wembley lock.",
+            "precision": "unverified",
+            "context": "front drop targets: Three drop targets used to light each Wembley lock."
+          },
+          {
+            "term": "far-right lane",
+            "label": "Queen Frenzy lane",
+            "description": "Far-right lane used to spell Q-U-E-E-N and start Queen Frenzy.",
+            "precision": "unverified",
+            "context": "far-right lane: Far-right lane used to spell Q-U-E-E-N and start Queen Frenzy."
+          },
+          {
+            "term": "center saucer",
+            "label": "Audience Jackpot saucer",
+            "description": "Center saucer used to collect the lit Audience Jackpot.",
+            "precision": "unverified",
+            "context": "center saucer: Center saucer used to collect the lit Audience Jackpot."
+          }
+        ],
+        "simpleOverview": "Queen begins with a selected Song, but Multiball interrupts it and current software resumes it afterward. Complete the three front drop targets and lock two balls at the center or right ramp, then spell Q-U-E-E-N at the far-right lane and shoot that lane again for Queen Frenzy. Collect the third Wembley lock while the Frenzy is running.",
+        "overview": "Queen begins with a selected Song, but Multiball interrupts it and current software resumes it afterward. Complete the three front drops and lock two balls at the center or right ramp, spell Q-U-E-E-N at the far-right lane, then shoot it again for Queen Frenzy. Complete the drops and collect the third Wembley lock during the Frenzy; switches build the center-saucer Audience Jackpot.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Lock two balls for Wembley Multiball, start Queen Frenzy, then collect the third Wembley lock while the Frenzy is running.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Lock two balls at Wembley",
+            "text": "Knock down all three front drop targets to light a lock, then shoot the center ramp or right ramp to lock a ball. Repeat the drop targets and lock shot for the second ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Queen Frenzy",
+            "text": "Shoot the far-right lane until Q-U-E-E-N is complete, then shoot that lane again to start Queen Frenzy.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Queen Frenzy",
+              "reason": "Starting it before the final Wembley lock lets the two scoring features run together.",
+              "play": "Make switches to build the Audience Jackpot, then shoot the center saucer when it lights."
+            }
+          },
+          {
+            "title": "Start Wembley during the Frenzy",
+            "text": "Complete the three front drop targets again, then shoot the center or right ramp for the third lock. The third lock starts Wembley Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Songs and Multiball",
+            "summary": "A Multiball interrupts the current Song. On 2.x software, that Song resumes automatically when Multiball ends."
+          },
+          {
+            "name": "Wembley Multiball",
+            "summary": "Complete the three front drop targets to light each lock, then lock a ball at the center or right ramp. The third lock starts Multiball."
+          },
+          {
+            "name": "Queen Frenzy",
+            "summary": "Collect Q-U-E-E-N at the far-right lane, then shoot that lane again to start the Frenzy. Switches build the Audience Jackpot, which is collected at the center saucer when lit."
+          }
+        ]
+      }
+    }
+  ]
+}

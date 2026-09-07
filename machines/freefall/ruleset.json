@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "G5W9p",
+  "title": "Freefall",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "PAPA Freefall tutorial",
+      "url": "https://www.youtube.com/watch?v=qIdNCeAak8Q"
+    },
+    "supportingSources": [
+      {
+        "label": "Freefall instruction-card archive",
+        "url": "https://www.pinballrebel.com/game/pins/instruction/index.htm"
+      },
+      {
+        "label": "Keith Elwin at PAPA Circuit Final 2017-18",
+        "url": "https://pinballvideos.com/v/1785/27600"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the center three-bank and left five-bank to raise Bonus X to 14x. Use the two-button lane change to fill the bonus grid. Start three-ball play only when SKY DIVERS and Walker progress come safely.",
+      "quickInfo": [
+        {
+          "name": "Bonus grid",
+          "summary": "The center drops choose columns, a two-button lane change moves the selected row, and completed lines add multiplied bonus."
+        },
+        {
+          "name": "Center three-bank",
+          "summary": "Each target fills its column on the selected grid row, and completing the bank advances Bonus X."
+        },
+        {
+          "name": "Left five-bank",
+          "summary": "Each bank completion advances Bonus X; hitting 1 through 5 in order also scores 50,000 and lights the Altitude-lane Special."
+        },
+        {
+          "name": "14x Bonus X",
+          "summary": "The maximum end-of-ball multiplier makes completed grid lines and preserved bonus the main scoring engine."
+        },
+        {
+          "name": "Three-ball feature",
+          "summary": "Complete SKY DIVERS to light the Walker, load two balls there, then send the third ball through it to start three-ball play."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hold both flipper buttons, then release one once per advance to move the selected bonus-grid row."
+        },
+        {
+          "text": "Complete the center three-bank whenever its rebound is controlled."
+        },
+        {
+          "text": "Complete the left five-bank. When practical, hit 1 through 5 in order for 50,000 and a lit Altitude-lane Special."
+        },
+        {
+          "text": "Repeat both banks until Bonus X reaches 14x."
+        },
+        {
+          "text": "Continue lane-change work to fill high-value grid spaces. Protect the built bonus instead of forcing a low-value target."
+        },
+        {
+          "text": "When SKY DIVERS is complete and two balls are loaded, send the third ball through the Walker to start the three-ball feature.",
+          "modeNotes": [
+            "Three-ball feature: Light SKY DIVERS, load two balls, then send the third ball through the Walker to release three-ball play.",
+            "Protected use: Use the extra balls to finish bank, grid, and Bonus X progress."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During three-ball play, continue the safest Bonus X and grid shots. Return to bonus control after one ball remains.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Grid and 14x bonus",
+        "when": "Use this when Walker progress or SKY DIVERS targets are unsafe.",
+        "steps": [
+          {
+            "text": "Use lane change to complete useful bonus-grid rows."
+          },
+          {
+            "text": "Finish the center three-bank from controlled feeds."
+          },
+          {
+            "text": "Complete the left five-bank; preserve 1-to-5 order only when the needed target is safe."
+          },
+          {
+            "text": "Reach 14x and protect the end-of-ball bonus."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Direct three-ball feature",
+          "when": "Use this when SKY DIVERS and Walker shots are safer than the drop banks.",
+          "steps": [
+            {
+              "text": "Complete the SKY DIVERS runway lights."
+            },
+            {
+              "text": "Shoot the lit Walker once to load the first ball, then shoot it again to load the second."
+            },
+            {
+              "text": "Shoot the Walker a third time to start three-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the extra balls to complete grid and bank progress.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximum bonus card",
+        "steps": [
+          {
+            "text": "Complete upper switch groups until Bonus X reaches 14x."
+          },
+          {
+            "text": "Use lane change to fill the strongest bonus-card rows."
+          },
+          {
+            "text": "Complete SKY DIVERS and load all three Walker positions.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use three-ball play to extend the 14x grid-scoring ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Three-ball feature",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Bonus-grid lane change",
+          "instruction": "Hold both flipper buttons, then release one once for each row advance. Stop when the needed grid row is selected.",
+          "sourceUrl": "https://www.youtube.com/watch?v=qIdNCeAak8Q"
+        },
+        {
+          "name": "Ordered five-bank control",
+          "instruction": "Read the raised targets before you flip. Shoot only the next required target in the 1-to-5 sequence.",
+          "sourceUrl": "https://www.youtube.com/watch?v=qIdNCeAak8Q"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Drop-bank rebounds can remove control before the required target sequence is complete.",
+          "response": "Use a cradle before each bank shot. Do not hit a lowered target or a target that is out of sequence.",
+          "sourceUrl": "https://www.youtube.com/watch?v=qIdNCeAak8Q"
+        },
+        {
+          "issue": "Walker loading adds live balls without a Jackpot or a separate scoring objective.",
+          "response": "Start the feature only when the extra balls protect valuable grid or multiplier progress.",
+          "sourceUrl": "https://www.youtube.com/watch?v=qIdNCeAak8Q"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the 1981 Stern Freefall, ball count, Bonus X carry, card-completion carry, Reserve Bonus, Special and Extra Ball conversion, and tilt.",
+        "Confirm SKY DIVERS and Walker start requirements, numbered-bank award, grid-line values, maximum Extra Balls, and whether tournament scoring rewards Special.",
+        "Test two-button lane change, both drop banks, Walker loading and release, SKY DIVERS switches, kickers, spinner, and outlane posts before choosing the route."
+      ],
+      "simpleOverview": "Freefall turns two drop banks and two-button lane change into a bonus grid multiplied by Bonus X. Complete the center and left banks until 14x, move the selected grid row for valuable lines, and start three-ball play only when SKY DIVERS and Walker shots are safe.",
+      "overview": "Freefall turns two drop banks and two-button lane change into a bonus grid multiplied by Bonus X. Build the multiplier and fill strong grid lines before protecting the result; use the three-ball feature only after SKY DIVERS lights the Walker and two balls are loaded.",
+      "machineSetup": [
+        "Confirm the 1981 Stern Freefall, ball count, Bonus X carry, card-completion carry, Reserve Bonus, Special and Extra Ball conversion, and tilt.",
+        "Confirm SKY DIVERS and Walker start requirements, numbered-bank award, grid-line values, maximum Extra Balls, and whether tournament scoring rewards Special.",
+        "Test two-button lane change, both drop banks, Walker loading and release, SKY DIVERS switches, kickers, spinner, and outlane posts before choosing the route."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

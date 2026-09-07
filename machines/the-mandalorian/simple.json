@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "id": "GBLLP",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Prepare a Mission and Ice Spider or Pirates Multiball, start the Mission first, then start the multiball and add Boba Fett scoring during the stack.",
+        "steps": [
+          {
+            "text": "Hit the center Razor Crest target three times to qualify the first Multiball. Before it is qualified, use BOBA and FETT to select Ice Spider or Pirates. Do not shoot the full center ramp yet.",
+            "modeNotes": [
+              "Razor Crest qualification: Each later Razor Crest feature needs one more direct target hit than the previous one. A full center-ramp shot starts the selected feature."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Prepare Hunter and Scope. Complete the left three-target bank to light Hunter at an inlane. Complete the three blue Scope shots: U-turn or reverse scoop, the left 2x standup, and the right ramp. Scope then lights at the left inlane.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through the Scope inlane. Collect one lit award within five seconds. Any collect starts the 75-second Scope +1x multiplier.",
+            "modeNotes": [
+              "Scope awards: The U-turn or reverse scoop gives two unowned Equipment items. The left 2x standup gives 200 Beskar. The right ramp gives 2,000,000. Each award can be collected once per Scope set."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through the lit Hunter inlane. Shoot the flashing orbit, then the opposite orbit, before the 25-second timer ends.",
+            "modeNotes": [
+              "Hunter: Lit ramps add 25 Beskar during the hunt. Completing the two-orbit sequence awards at least 250 Beskar, starts a 75-second +1x multiplier, and re-enables Razor Crest progress when required."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the full center ramp to start Ice Spider or Pirates Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During multiball, complete the green BOBA and FETT targets. The first completion starts a 30-second Boba Fett +1x multiplier. Scope, Hunter, and Boba use one timer. All three active multipliers give 6x total scoring.",
+            "modeNotes": [
+              "Boba Fett: It is the only playfield multiplier that can start during a multiball. Later activations require more target hits and begin with less time. Starting it when Scope and Hunter are active completes the Fire Triangle."
+            ],
+            "kinds": [
+              "multiplier",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hold the action button until Flamethrower reaches the left orbit. Your next hit to each flaming major shot is 2x. With 6x playfield scoring, each first flaming hit scores 12x.",
+            "modeNotes": [
+              "Flamethrower: One use is ready at game start. Releasing the button stops the right-to-left lighting sequence. A scored flame goes out. Unused flames are lost at the drain."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "In Ice Spider Multiball, make every purple major shot once. Shoot the U-turn Super Jackpot during its 20-second timer. Upper-playfield target hits add five seconds. After the timer, the purple Jackpots relight.",
+            "modeNotes": [
+              "Ice Spider Multiball: The purple Jackpot set lights a repeatable U-turn Super Jackpot. The timed Super phase ends after 20 seconds unless upper targets extend it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "In Pirates Multiball, make each lit Jackpot once in the wave. Use switch and spinner hits to keep the rhydonium stable. Wave 3 lights the U-turn Super Jackpot.",
+            "modeNotes": [
+              "Pirates Multiball: Each later wave adds one Jackpot shot. After the Super collect, Wave 1 restarts and each lit arrow needs two hits."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Amban Rifle is available, wait until the initial multiball ball save ends. After a later drain, press the green action button while the multiball remains active.",
+            "modeNotes": [
+              "Amban Rifle: This Equipment is a stored add-a-ball. The action-button press consumes it and launches one ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Mission and Razor Crest Multiball",
+            "when": "Use this simpler stack instead of preparing the full Fire Triangle.",
+            "steps": [
+              {
+                "text": "Shoot both ramps to light a Mission. Shoot the left scoop to start it, then shoot the full center ramp to start the prepared Razor Crest Multiball.",
+                "modeNotes": [
+                  "Mission: It is a 60-second mode. Make the flashing yellow shots, usually followed by the left scoop. A timeout or drain fails it. A failed Mission cannot replay until This Is The Way."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Jetpack Super Jackpot",
+            "when": "Build the full Fire Triangle when control allows it. If finishing Hunter would risk a ready Jetpack start, use Scope and Boba Fett for the practical 3x route.",
+            "steps": [
+              {
+                "text": "Prepare Scope and Hunter. If Hunter is unsafe when Jetpack is ready, start Scope and take Jetpack instead of forcing the two-orbit Hunter finish.",
+                "kinds": [
+                  "mode",
+                  "multiplier",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start Jetpack at the full center ramp. Alternate major shots. The same shot cannot score twice in a row.",
+                "modeNotes": [
+                  "Jetpack Multiball: Each alternating Jackpot raises the Super Jackpot. The base Super can reach 50,000,000."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Jetpack, hit both BOBA and FETT targets. Scope plus Boba Fett gives 3x total scoring. Add Hunter for the full 6x Fire Triangle.",
+                "kinds": [
+                  "multiplier",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the left ramp to the upper playfield. Complete all six purple targets to add a ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "When one ball remains, the U-turn Super Jackpot lights. Hold Flamethrower until the U-turn is flaming, then collect before the active multipliers expire.",
+                "modeNotes": [
+                  "A 50,000,000 base Super scores 150,000,000 at 3x. A 50,000,000 base Super at 6x, plus the one-shot flame, can score 600,000,000."
+                ],
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "This Is The Way",
+          "steps": [
+            {
+              "text": "Play all three Razor Crest Multiballs, then complete the next Razor Crest qualification and center-ramp start to begin Precious Cargo.",
+              "kinds": [
+                "multiball",
+                "mode"
+              ]
+            },
+            {
+              "text": "Play all five Missions. Shoot both ramps to light the sixth Mission, then shoot the left scoop to start I Like Those Odds.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete all three Encounters, then make seven further left-ramp shots to start You Have What I Want.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After all three mini-wizards have started, make the six lit major shots and shoot the left scoop to start This Is The Way.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Encounter playfield",
+            "pro": "The upper area is static and has one flipper.",
+            "premium": "Premium and LE use a tilting mini-playfield with two flippers.",
+            "sourceUrl": "https://tiltforums.com/t/the-mandalorian-rulesheet/7056"
+          },
+          {
+            "feature": "Ambush and upper collect",
+            "pro": "Use the U-turn shot.",
+            "premium": "Premium and LE use the reverse scoop on the moving upper playfield.",
+            "sourceUrl": "https://tiltforums.com/t/the-mandalorian-rulesheet/7056"
+          },
+          {
+            "feature": "Encounter Equipment",
+            "pro": "Rising Phoenix spots the current Encounter wave.",
+            "premium": "Jet Pack spots the wave and also levels the mini-playfield.",
+            "sourceUrl": "https://tiltforums.com/t/the-mandalorian-rulesheet/7056"
+          },
+          {
+            "feature": "Grogu Force feature",
+            "pro": "There is no Grogu magnet throw.",
+            "premium": "Premium and LE can catch and release the ball through the CHILD-lane area.",
+            "sourceUrl": "https://www.kineticist.com/news/stern-announces-the-mandalorian-pinball"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Mission",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Hunter",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Scope",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Ice Spider Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Pirates Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Jetpack Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Razor Crest Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Boba Fett",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Scope +1x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Hunter +1x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "6x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "12x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Flamethrower",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Precious Cargo",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "I Like Those Odds",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "You Have What I Want",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "This Is The Way",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Signet",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Amban Rifle",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Razor Crest target",
+            "context": "Hit the center Razor Crest target hard enough to register. Use BOBA and FETT to select Ice Spider or Pirates.",
+            "label": "Razor Crest target and ramp",
+            "description": "The direct target is below the ship at the center ramp entrance.",
+            "xPercent": 52,
+            "yPercent": 29,
+            "precision": "area"
+          },
+          {
+            "term": "left scoop",
+            "context": "Shoot the left scoop to start the prepared Mission.",
+            "label": "Mission and Foundry scoop",
+            "description": "The left-center scoop starts Missions and enters the Foundry.",
+            "xPercent": 25,
+            "yPercent": 43,
+            "precision": "area"
+          },
+          {
+            "term": "left ramp",
+            "context": "Shoot the left ramp to the upper playfield. Complete all six purple targets to add a ball.",
+            "label": "Left ramp",
+            "description": "The left ramp feeds the upper Encounter area on Premium and LE.",
+            "xPercent": 38,
+            "yPercent": 31,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "context": "Complete the three blue Scope shots: U-turn or reverse scoop, the left 2x standup, and the right ramp.",
+            "label": "Right ramp",
+            "description": "The green right ramp is the right-side Scope collect and a Mission qualifier.",
+            "xPercent": 73,
+            "yPercent": 42,
+            "precision": "area"
+          },
+          {
+            "term": "left three-target bank",
+            "context": "Complete the left three-target bank to light Hunter at an inlane.",
+            "label": "Hunter target bank",
+            "description": "The three orange standups are on the left side.",
+            "xPercent": 12,
+            "yPercent": 42,
+            "precision": "area"
+          },
+          {
+            "term": "BOBA and FETT",
+            "context": "During multiball, hit both green BOBA and FETT targets.",
+            "label": "BOBA and FETT targets",
+            "description": "The two green standups are beside the center-right lanes.",
+            "xPercent": 67,
+            "yPercent": 36,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Competition Play removes the Child, fixes the first five Missions and first three Razor Crest Multiballs in order, and starts Ambush on its first lit shot."
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Prepare Scope, light Hunter, and qualify a Razor Crest Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Play all three Razor Crest Multiballs."
+          }
+        ],
+        "overview": "The Mandalorian lets Scope, Hunter, and Boba Fett combine for 6x scoring during Razor Crest Multiball. Prepare Scope and Hunter before Multiball, then complete BOBA and FETT while it runs. A Mission can instead run with the Multiball as a simpler stack, while Jetpack Multiball saves its Super Jackpot for single-ball play.",
+        "simpleOverview": "The Mandalorian lets a running Mission continue into Razor Crest Multiball; BOBA and FETT can then start a temporary playfield multiplier. Shoot both ramps and start the Mission at the left scoop before starting the selected Multiball at the full center ramp. The first Multiball needs three Razor Crest target hits; during Multiball, complete BOBA and FETT for the multiplier.",
+        "machineSetup": [
+          "Competition Play removes the Child, fixes the first five Missions and first three Razor Crest Multiballs in order, and starts Ambush on its first lit shot."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use both ramps for a Mission, the Razor Crest for multiball, and green BOBA and FETT targets for a scoring multiplier.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Mission",
+            "text": "Shoot both ramps to light a Mission, then shoot the left scoop to start the selected Mission.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start a Razor Crest Multiball",
+            "text": "Hit the center Razor Crest target three times for the first Multiball. Before it is qualified, use BOBA and FETT to select Ice Spider or Pirates, then shoot the full center ramp to start it. Each later Razor Crest feature needs one more target hit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Boba Fett scoring",
+            "text": "During Multiball, complete the green BOBA and FETT targets to start the first 30-second Boba Fett +1x playfield multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Prepare Scope, light Hunter, and qualify a Razor Crest Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Play all three Razor Crest Multiballs."
+          }
+        ]
+      }
+    }
+  ]
+}

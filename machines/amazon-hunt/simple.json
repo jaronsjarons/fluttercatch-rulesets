@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "GrJkp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Amazon Hunt links the A-B-C lanes to Bonus X, Extra Ball, and both side Specials. Complete A-B-C to advance Bonus X and light the top-center rollover for Extra Ball. Complete A-B-C plus the left drop bank to light the left hole for Special, or pair A-B-C with the right bank to light the right hole. Lit spot targets, drops, and rollovers add bonus. After both five-target banks are down, only the two black center targets return; each is then worth 50,000. The final ball starts with 2x Bonus and an A-B-C completion raises it to 3x.",
+        "simpleOverview": "Complete A-B-C to advance Bonus X and light Extra Ball at the top-center rollover. Complete A-B-C plus either five-target drop bank, then shoot the matching side hole for Special. On the final ball, A-B-C raises the starting 2x Bonus to 3x.",
+        "summary": "Take A-B-C whenever the lanes are controllable, then choose the safer side bank and matching hole instead of splitting progress across both. On the final ball, prioritize A-B-C early so the larger multiplier applies to every later bonus advance.",
+        "quickInfo": [
+          {
+            "name": "Advance Bonus X",
+            "summary": "Complete A-B-C."
+          },
+          {
+            "name": "Extra Ball",
+            "summary": "Complete A-B-C, then roll through the lit top-center lane."
+          },
+          {
+            "name": "Left Special",
+            "summary": "Complete A-B-C and the left bank, then shoot the left hole."
+          },
+          {
+            "name": "Right Special",
+            "summary": "Complete A-B-C and the right bank, then shoot the right hole."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete A-B-C through the top and lower lanes to advance Bonus X and light the top-center rollover for Extra Ball.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through the lit top-center lane to collect Extra Ball when available.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete whichever five-target drop bank is safer; with A-B-C complete, that bank lights its matching side hole for Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit left or right hole to collect Special.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Black-target scoring",
+            "when": "Use this after both five-target banks have been cleared and the center black targets are returning cleanly.",
+            "steps": [
+              {
+                "text": "Clear both drop-target banks so only the two black center targets reset.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the returning black targets for 50,000 each while keeping the rebound away from the center drain.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Final-ball 3x Bonus",
+          "steps": [
+            {
+              "text": "Begin the final ball with the game's automatic 2x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete A-B-C before building more bonus to raise the multiplier to 3x.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test all A-B-C lanes, both five-target banks, the two black center targets, both side holes, the top-center Extra Ball rollover, and the alternating add-bonus spot targets.",
+          "Verify the installed CPU or replacement board preserves final-ball 2x, A-B-C to 3x, and Extra Ball behavior; hybrid and aftermarket boards can handle last-ball carryover differently."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B-C lanes",
+            "label": "A-B-C lanes",
+            "description": "Top and lower lanes that advance Bonus X and qualify other awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left drop bank",
+            "label": "Left five-target bank",
+            "description": "Bank that lights the left Special hole after A-B-C is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right drop bank",
+            "label": "Right five-target bank",
+            "description": "Bank that lights the right Special hole after A-B-C is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side holes",
+            "label": "Left and right Special holes",
+            "description": "Kickout holes that collect their matching lit Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-center rollover",
+            "label": "Top-center Extra Ball rollover",
+            "description": "Top lane that collects Extra Ball after A-B-C.",
+            "precision": "unverified"
+          },
+          {
+            "term": "black center targets",
+            "label": "Black center drop targets",
+            "description": "Targets that return for 50,000 after both banks are cleared.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The two drop banks can return the ball toward the center drain.",
+            "response": "Work one angled bank from a controlled flipper and stop forcing the black-target loop when rebounds become straight down the middle.",
+            "sourceUrl": "https://www.ataricompendium.com/archives/magazines/video_games/video_games_nov83.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Take A-B-C whenever the lanes are controllable, then choose the safer side bank and matching hole instead of splitting progress across both. On the final ball, prioritize A-B-C early so the larger multiplier applies to every later bonus advance.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete A-B-C through the top and lower lanes to advance Bonus X and light the top-center rollover for Extra Ball.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through the lit top-center lane to collect Extra Ball when available.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete whichever five-target drop bank is safer; with A-B-C complete, that bank lights its matching side hole for Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit left or right hole to collect Special.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Advance Bonus X",
+            "summary": "Complete A-B-C."
+          },
+          {
+            "name": "Extra Ball",
+            "summary": "Complete A-B-C, then roll through the lit top-center lane."
+          },
+          {
+            "name": "Left Special",
+            "summary": "Complete A-B-C and the left bank, then shoot the left hole."
+          }
+        ],
+        "warning": {
+          "title": "The two drop banks can return the ball toward the center drain.",
+          "text": "Work one angled bank from a controlled flipper and stop forcing the black-target loop when rebounds become straight down the middle."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "GrNJO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Liberty Bell builds Bonus through both spinners and turns B-E or L-L target pairs into two larger opportunities. Each completed pair advances the top eject from 500 through 5,000, 10,000, 20,000, and 30,000. Completing either pair also lights both side ejects; shoot one to activate Double Bonus. The base Bonus can reach 100,000, so the lit side eject becomes the priority late in a ball.",
+        "simpleOverview": "In Liberty Bell, shoot either spinner to build Bonus. Complete the B-E or L-L target pair to raise the top eject value and light both side ejects. Shoot a lit side eject to activate Double Bonus. Keep using the spinners, but collect Double Bonus once the base Bonus is large enough to justify the side shot.",
+        "summary": "Send the ball through the spinners while watching for incidental B-E and L-L completions. Those pairs increase the top eject award and light the side ejects. Once a side eject is lit and the base Bonus is substantial, make that collect before returning to spinner shots.",
+        "quickInfo": [
+          {
+            "name": "Both spinners",
+            "summary": "Advance Bonus; a lit spinner scores 1,000 per spin."
+          },
+          {
+            "name": "Complete B-E or L-L",
+            "summary": "Advance the top eject value and light both side ejects."
+          },
+          {
+            "name": "Lit side eject",
+            "summary": "Activate Double Bonus."
+          },
+          {
+            "name": "Top eject ladder",
+            "summary": "Advance from 500 to 5,000, 10,000, 20,000, and 30,000."
+          },
+          {
+            "name": "Maximum base Bonus",
+            "summary": "Build as high as 100,000 before doubling."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot either spinner to advance Bonus and keep the ball in the upper playfield."
+          },
+          {
+            "text": "Complete the B-E pair or the L-L pair to light both side ejects and raise the top eject value."
+          },
+          {
+            "text": "Continue spinner shots while the base Bonus is still small."
+          },
+          {
+            "text": "When a side eject is lit and the accumulated Bonus is valuable, shoot that eject to activate Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to the spinners and the growing top eject after securing the multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "A large doubled Bonus",
+          "steps": [
+            {
+              "text": "Build the base Bonus through repeated spinner passes."
+            },
+            {
+              "text": "Complete B-E or L-L to light the side ejects."
+            },
+            {
+              "text": "Shoot a lit side eject to activate Double Bonus before the ball ends.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play because spinner and bumper values change, then confirm Double Bonus behavior, Extra Ball or Special conversion, and the adjustment for the third or fourth star award.",
+          "Test both spinners, all four B-E-L-L targets, both side ejects, the top eject and its value lamps, Bonus unit, bottom rollover lanes, and pop bumpers."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "spinners",
+            "label": "Left and right spinners",
+            "description": "Two upper feeds that advance Bonus and score 1,000 per spin when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "B-E or L-L",
+            "label": "B-E-L-L drop targets",
+            "description": "Four letter targets whose paired completions light the side ejects and advance the top eject.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side ejects",
+            "label": "Double Bonus side ejects",
+            "description": "Left and right holes that activate Double Bonus when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top eject",
+            "label": "Top eject hole",
+            "description": "Upper hole whose award rises through five values as letter pairs are completed.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Send the ball through the spinners while watching for incidental B-E and L-L completions. Those pairs increase the top eject award and light the side ejects. Once a side eject is lit and the base Bonus is substantial, make that collect before returning to spinner shots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot either spinner to advance Bonus and keep the ball in the upper playfield."
+          },
+          {
+            "text": "Complete the B-E pair or the L-L pair to light both side ejects and raise the top eject value."
+          },
+          {
+            "text": "Continue spinner shots while the base Bonus is still small."
+          },
+          {
+            "text": "When a side eject is lit and the accumulated Bonus is valuable, shoot that eject to activate Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to the spinners and the growing top eject after securing the multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Both spinners",
+            "summary": "Advance Bonus; a lit spinner scores 1,000 per spin."
+          },
+          {
+            "name": "Complete B-E or L-L",
+            "summary": "Advance the top eject value and light both side ejects."
+          },
+          {
+            "name": "Lit side eject",
+            "summary": "Activate Double Bonus."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "GRD2P",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Silverball Mania links its tight center horseshoe to both bonus and title progress. Each successful horseshoe raises Bonus X toward 5x, lights the center-bottom kicker, and awards one or two S-I-L-V-E-R-B-A-L-L M-A-N-I-A letters. Completing the title lights one spinner for 1,000 per spin, while a horseshoe after 5x lights the center target for the configured Extra Ball or point award.",
+        "simpleOverview": "Shoot the tight center horseshoe to raise Bonus X toward 5x, light the center-bottom kicker, and add one or two SILVERBALL MANIA letters. Complete the title to light one spinner for 1,000 per spin. After reaching 5x, shoot the horseshoe once more to light the center target for the configured Extra Ball or point award.",
+        "summary": "Treat the horseshoe as the primary shot because it multiplies the carried base bonus and advances the title without relying on outlanes. When the title completes, switch briefly to the lit spinner; take the center target only after the extra horseshoe lights its award.",
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Shoot the center horseshoe, up to 5x."
+          },
+          {
+            "name": "Add Title Letters",
+            "summary": "Shoot labeled features or make the center horseshoe for one or two letters."
+          },
+          {
+            "name": "Light Spinner",
+            "summary": "Complete SILVERBALL MANIA."
+          },
+          {
+            "name": "Light Center Award",
+            "summary": "After reaching 5x, make one more horseshoe."
+          }
+        ],
+        "steps": [
+          {
+            "text": "From a controlled ball, shoot the center horseshoe to raise Bonus X and add SILVERBALL MANIA letters.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the horseshoe while it returns safely; a full trip across both internal rollovers awards two letters."
+          },
+          {
+            "text": "When SILVERBALL MANIA is complete, shoot the lit spinner for 1,000 per spin."
+          },
+          {
+            "text": "After Bonus X reaches 5x, make one more horseshoe, then hit the lit center target for the configured Extra Ball or point award."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Upper-playfield route",
+            "when": "Use this when the horseshoe rejects dangerously or has oversized guarding rubbers.",
+            "steps": [
+              {
+                "text": "Send the ball through the left orbit or a spinner to the top."
+              },
+              {
+                "text": "Collect labeled letter switches and add base bonus through upper-playfield action."
+              },
+              {
+                "text": "Return to the horseshoe only when its entry is controlled enough to justify the rejection risk."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum multiplied bonus",
+          "steps": [
+            {
+              "text": "Complete SILVERBALL MANIA once, then continue adding letters toward the held base-bonus ceiling."
+            },
+            {
+              "text": "Raise Bonus X to 5x with the center horseshoe.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Protect the ball after both the carried base bonus and current-ball multiplier are valuable."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test the center horseshoe and both internal rollovers, all SILVERBALL MANIA letter switches and lamps, both spinners and their alternating light, center-bottom kicker and eject, center target, top lanes, and the full bonus and multiplier ladders.",
+          "Confirm three- or five-ball play, replay, Extra Ball, or novelty settings; whether the 5x center-target award is enabled; Special behavior; title-letter and base-bonus carryover; and whether larger rubbers make the horseshoe materially narrower than factory geometry."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center horseshoe",
+            "label": "Center horseshoe",
+            "description": "Tight loop that raises Bonus X, lights the kicker, and advances title letters.",
+            "precision": "unverified"
+          },
+          {
+            "term": "internal rollovers",
+            "label": "Horseshoe rollovers",
+            "description": "Two switches inside the horseshoe; a complete trip can award two title letters.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center-bottom kicker",
+            "label": "Center-bottom kicker",
+            "description": "Kickout that scores 5,000 and can collect the configured Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center N target",
+            "description": "Target lit for Extra Ball or points after a horseshoe beyond 5x.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinners",
+            "label": "Side spinners",
+            "description": "One alternately lights for 1,000 per spin after completing the title.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Operator switches change the 5x center-target award, Special behavior, and title feature behavior.",
+            "response": "Check the installed instruction card and switch settings; do not assume Extra Ball or replay behavior in competition.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Silverball%20Mania%20Manual.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Treat the horseshoe as the primary shot because it multiplies the carried base bonus and advances the title without relying on outlanes. When the title completes, switch briefly to the lit spinner; take the center target only after the extra horseshoe lights its award.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "From a controlled ball, shoot the center horseshoe to raise Bonus X and add SILVERBALL MANIA letters.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the horseshoe while it returns safely; a full trip across both internal rollovers awards two letters."
+          },
+          {
+            "text": "When SILVERBALL MANIA is complete, shoot the lit spinner for 1,000 per spin."
+          },
+          {
+            "text": "After Bonus X reaches 5x, make one more horseshoe, then hit the lit center target for the configured Extra Ball or point award."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Shoot the center horseshoe, up to 5x."
+          },
+          {
+            "name": "Add Title Letters",
+            "summary": "Shoot labeled features or make the center horseshoe for one or two letters."
+          },
+          {
+            "name": "Light Spinner",
+            "summary": "Complete SILVERBALL MANIA."
+          }
+        ]
+      }
+    }
+  ]
+}

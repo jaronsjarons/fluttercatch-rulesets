@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "id": "GrleW",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge the lit B lane to light the spinner and advance Strike. Repeat the spinner for 1,000 per spin. Use safe trips up top to build 5x and a 30,000 Strike.",
+        "steps": [
+          {
+            "text": "Plunge the top B lane while its white Automatic Strike lamp is on. It lights the left spinner for the rest of the ball.",
+            "modeNotes": [
+              "B lane: Scores and advances the held Strike value when the white lamp is on. The lamp can stay on or alternate with switch hits.",
+              "Any B-lane collect lights the spinner, even when Automatic Strike is off."
+            ]
+          },
+          {
+            "text": "Trap on the right flipper and repeat the lit left spinner for 1,000 per spin.",
+            "modeNotes": [
+              "Spinner: It scores 10 per spin when unlit and 1,000 when lit. Its lit state ends at the drain."
+            ]
+          },
+          {
+            "text": "When control is lost or the spinner is not available, use the right orbit to return the ball to A-B-C."
+          },
+          {
+            "text": "Complete A-B-C repeatedly. Prefer B whenever the spinner is unlit or Automatic Strike is on.",
+            "modeNotes": [
+              "First A-B-C completion: Lights 2x bonus and the center bumper for 1,000 per hit.",
+              "Second completion: Lights 3x bonus. Third completion: Lights 5x bonus.",
+              "Fourth completion: Scores 5,000. Later completions light Special. Settings can combine or shift these awards.",
+              "Current A-B-C set progress carries across balls. Bonus X normally resets at the drain."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Take the upper-right saucer only when it arrives naturally or its value and kickout are safe. It advances Strike and adds three bonus steps.",
+            "modeNotes": [
+              "Strike value: 1,000, 5,000, 10,000, 15,000, 20,000, 30,000, then Special. It is held between balls.",
+              "After a Special collect, Strike returns to 30,000 and stays there."
+            ]
+          },
+          {
+            "text": "Keep the ball up top and repeat the lit spinner. Protect a large 29,000 base bonus at 5x.",
+            "modeNotes": [
+              "Bonus: Lanes and SPARE targets add one step. The saucer adds three. Maximum is 29,000 at 5x, or 145,000.",
+              "Base bonus resets after each ball and cannot be collected during play."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Right orbit and A-B-C",
+          "when": "Use this when the spinner is weak, rejects, or cannot be reached from a controlled right flipper.",
+          "steps": [
+            {
+              "text": "Repeat the right orbit to return the ball to the top."
+            },
+            {
+              "text": "Complete A-B-C for 2x, 3x, then 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use lit center-bumper and upper-saucer awards when they occur naturally."
+            },
+            {
+              "text": "Collect the built bonus without tilting."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "SPARE extra ball",
+            "when": "Use this only when extra balls are enabled or converted to useful points.",
+            "steps": [
+              {
+                "text": "Hit all five lit SPARE standups in one ball."
+              },
+              {
+                "text": "The first completion lights an alternating inlane for extra ball."
+              },
+              {
+                "text": "Collect the lit inlane before the ball drains. SPARE progress and its lit award reset at the drain."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "30,000 Strike and 145,000 end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Advance the held Strike value with lit B-lane, saucer, or ten-pin completion hits."
+            },
+            {
+              "text": "Complete A-B-C three times for 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score lanes and SPARE targets, plus safe upper-saucer entries, until base bonus reaches 29,000. Drain without tilting."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Center-lane skill plunge",
+            "instruction": "Set the plunger for the B lane. Time the plunge when the white Automatic Strike lamp is on when that lamp alternates.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrleW-MYeod"
+          },
+          {
+            "name": "Saucer-kickout nudge",
+            "instruction": "Watch the first saucer eject. Nudge before the ball reaches the center or a sling, and use the flipper only after its path is clear.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrleW-MYeod"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper-saucer kickout can feed straight down the middle or into a sling.",
+            "response": "Test one natural eject. Do not aim for the saucer until its return has a repeatable save.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrleW-MYeod"
+          },
+          {
+            "issue": "A ball can rim the saucer or lip out and drain through the center.",
+            "response": "Do not assume a near-make is safe. Be ready before every saucer approach and eject.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrleW-MYeod"
+          },
+          {
+            "issue": "Bumper action and direct center-target rebounds can become uncontrolled.",
+            "response": "Use the spinner and right orbit. Ignore the ten pin rollovers and standups unless a single safe hit completes an award.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrleW-MYeod"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Plunge the lit B lane to light the spinner and advance Strike."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Advance the held Strike value with lit B-lane, saucer, or ten-pin completion hits."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Right orbit and A-B-C: Use this when the spinner is weak, rejects, or cannot be reached from a controlled right flipper."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Bally Strikes and Spares, ball count, Bonus X, and award conversions.",
+          "Test the B lane, spinner, saucer, orbit, and lane-change buttons."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "B lane",
+            "label": "B lane",
+            "description": "Top lane used for the qualification sequence.",
+            "precision": "unverified",
+            "context": "Top lane used for the qualification sequence."
+          },
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Repeatable scoring shot.",
+            "precision": "unverified",
+            "context": "Repeatable scoring shot."
+          },
+          {
+            "term": "upper saucer",
+            "label": "Upper saucer",
+            "description": "Saucer used for lit awards.",
+            "precision": "unverified",
+            "context": "Saucer used for lit awards."
+          }
+        ],
+        "simpleOverview": "In Strikes and Spares, plunge the B lane to light the left spinner for the rest of the ball, then repeat that spinner for 1,000 per spin. Return through the right orbit to complete A-B-C three times for 5x Bonus, and let the upper-right saucer advance the held Strike value when its kickout is controlled.",
+        "overview": "In Strikes and Spares, the B lane lights the left spinner, three A-B-C completions raise Bonus X to 5x, and the upper-right saucer advances the held Strike value. Repeat the 1,000-per-spin left spinner, use the right orbit to revisit A-B-C, and take natural saucer entries. Build 29,000 base bonus and protect the 145,000 end-of-ball collect.",
+        "machineSetup": [
+          "Confirm Bally Strikes and Spares, ball count, Bonus X, and award conversions.",
+          "Test the B lane, spinner, saucer, orbit, and lane-change buttons."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge the lit B lane to light the spinner and advance Strike. Repeat the spinner for 1,000 per spin. Use safe trips up top to build 5x and a 30,000 Strike.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the top B lane while its white Automatic Strike lamp is on. It lights the left spinner for the rest of the ball.",
+            "details": [
+              "B lane: Scores and advances the held Strike value when the white lamp is on. The lamp can stay on or alternate with switch hits.",
+              "Any B-lane collect lights the spinner, even when Automatic Strike is off."
+            ]
+          },
+          {
+            "text": "Trap on the right flipper and repeat the lit left spinner for 1,000 per spin.",
+            "details": [
+              "Spinner: It scores 10 per spin when unlit and 1,000 when lit. Its lit state ends at the drain."
+            ]
+          },
+          {
+            "text": "When control is lost or the spinner is not available, use the right orbit to return the ball to A-B-C."
+          },
+          {
+            "text": "Complete A-B-C repeatedly. Prefer B whenever the spinner is unlit or Automatic Strike is on.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "First A-B-C completion: Lights 2x bonus and the center bumper for 1,000 per hit.",
+              "Second completion: Lights 3x bonus. Third completion: Lights 5x bonus.",
+              "Fourth completion: Scores 5,000. Later completions light Special. Settings can combine or shift these awards.",
+              "Current A-B-C set progress carries across balls. Bonus X normally resets at the drain."
+            ]
+          },
+          {
+            "text": "Take the upper-right saucer only when it arrives naturally or its value and kickout are safe. It advances Strike and adds three bonus steps.",
+            "details": [
+              "Strike value: 1,000, 5,000, 10,000, 15,000, 20,000, 30,000, then Special. It is held between balls.",
+              "After a Special collect, Strike returns to 30,000 and stays there."
+            ]
+          },
+          {
+            "text": "Keep the ball up top and repeat the lit spinner. Protect a large 29,000 base bonus at 5x.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus: Lanes and SPARE targets add one step. The saucer adds three. Maximum is 29,000 at 5x, or 145,000.",
+              "Base bonus resets after each ball and cannot be collected during play."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Plunge the lit B lane to light the spinner and advance Strike."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Advance the held Strike value with lit B-lane, saucer, or ten-pin completion hits."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Right orbit and A-B-C: Use this when the spinner is weak, rejects, or cannot be reached from a controlled right flipper."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Right orbit and A-B-C",
+          "when": "Use this when the spinner is weak, rejects, or cannot be reached from a controlled right flipper.",
+          "steps": [
+            {
+              "text": "Repeat the right orbit to return the ball to the top."
+            },
+            {
+              "text": "Complete A-B-C for 2x, 3x, then 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use lit center-bumper and upper-saucer awards when they occur naturally."
+            },
+            {
+              "text": "Collect the built bonus without tilting."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The upper-saucer kickout can feed straight down the middle or into a sling.",
+          "text": "Test one natural eject. Do not aim for the saucer until its return has a repeatable save."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPbb",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Knock down all four targets for each required lit color, shoot the center ramp to lock a ball, and plunge the replacement ball to start two-ball Multiball. During Multiball, repeat the center ramp; afterward, hit whichever drop target is flashing before its timer ends for Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Required target colors",
+            "summary": "The first Multiball requires all four targets in one lit color. Each later start adds another required color until all four colors are needed."
+          },
+          {
+            "name": "Skill plunge",
+            "summary": "Time the plunge to choose the first required color. The orange upper targets are commonly preferred because they are easier and return more safely than red."
+          },
+          {
+            "name": "Two-ball Multiball",
+            "summary": "Knock down all four targets for each required lit color, shoot the center ramp to lock, then plunge the replacement ball to begin two-ball play."
+          },
+          {
+            "name": "Center ramp",
+            "summary": "During Multiball, the ramp scores 100,000 and advances the Shield bonus multiplier."
+          },
+          {
+            "name": "Jackpot",
+            "summary": "Drop-target hits raise the Jackpot value. After Multiball, hit whichever drop target is flashing before the timer ends to collect it."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Time the plunge so orange lights first; the orange upper targets are usually safer than the red upper targets or the lower target banks."
+          },
+          {
+            "text": "Knock down all four targets for each required lit color. Later Multiballs require additional colors."
+          },
+          {
+            "text": "Shoot the center ramp to lock one ball."
+          },
+          {
+            "text": "Plunge the replacement ball to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the center ramp for 100,000 points and to advance the Shield bonus multiplier.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After Multiball ends, watch the drop targets and hit whichever target is flashing before the timer expires to collect Jackpot."
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated Multiballs and larger Jackpots",
+          "steps": [
+            {
+              "text": "Knock down all four targets for each required lit color."
+            },
+            {
+              "text": "Drop-target hits raise the Jackpot value."
+            },
+            {
+              "text": "Start two-ball Multiball at the center ramp.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the center ramp or knock down all four targets of one color during Multiball to raise the Shield bonus multiplier.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "After Multiball, hit whichever drop target is flashing to collect Jackpot."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Two-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Shield bonus multiplier",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "orange targets",
+            "context": "Time the plunge so orange lights first.",
+            "label": "Orange upper targets",
+            "description": "Four upper drop targets used when orange is required for the next lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "red targets",
+            "label": "Red upper targets",
+            "description": "Four upper drop targets used when red is required for the next lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower target banks",
+            "label": "Green and blue lower banks",
+            "description": "The two lower four-target banks used when green or blue is required for the next lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "context": "Shoot the center ramp to lock one ball.",
+            "label": "Lock ramp",
+            "description": "The center ramp used to lock a ball and score during Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "flashing drop target",
+            "label": "Flashing Jackpot target",
+            "description": "The moving flashing drop-target opportunity used to collect Jackpot after Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A rejected center-ramp shot can drain between the flippers.",
+            "response": "Shoot the ramp only from control and stop after a dangerous reject.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPbb-MJZX6"
+          },
+          {
+            "issue": "The rubbers above the lower flippers do not kick the ball like slingshots.",
+            "response": "Read their first rebounds before relying on them to send the ball away from an outlane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrPbb-MJZX6"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Excalibur from 1988, ball count, Extra Ball or Special conversion, and Jackpot timer.",
+          "Test the center-ramp reject, upper-playfield exits, passive-rubber rebounds, and all four target banks."
+        ],
+        "simpleOverview": "Excalibur assigns one or more colors to four-target sets. Completing every required color lights a center-ramp lock; the replacement plunge starts two-ball Multiball, and the drop targets build a Jackpot collected only after Multiball ends.",
+        "overview": "Completing every required four-target color in Excalibur lights the center-ramp lock. Lock one ball and plunge to start two-ball Multiball. During Multiball, the center ramp scores 100,000 and advances the Shield bonus multiplier; afterward, hit the flashing drop target before the Jackpot timer expires.",
+        "machineSetup": [
+          "Confirm Gottlieb Excalibur from 1988, ball count, Extra Ball or Special conversion, and Jackpot timer.",
+          "Test the center-ramp reject, upper-playfield exits, passive-rubber rebounds, and all four target banks."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Knock down all four targets for each required lit color, lock one ball at the center ramp, then plunge the replacement ball to start two-ball Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Complete each required color",
+            "text": "Time the plunge to light orange when possible, then knock down all four orange targets. The first Multiball needs one lit color; each later start adds another color until all four are required."
+          },
+          {
+            "title": "Start Multiball",
+            "text": "Shoot the center ramp to lock one ball, then plunge the replacement ball to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Score the ramp and Jackpot",
+            "text": "During Multiball, repeat the center ramp for 100,000 and one Shield bonus-multiplier advance. After Multiball, watch the drop targets and hit whichever target is flashing before its timer ends for Jackpot.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Required target colors",
+            "summary": "The first Multiball requires all four targets in one lit color. Each later start adds another required color until all four colors are needed."
+          },
+          {
+            "name": "Skill plunge",
+            "summary": "Time the plunge to choose the first required color. The orange upper targets are commonly preferred because they are easier and return more safely than red."
+          },
+          {
+            "name": "Two-ball Multiball",
+            "summary": "Knock down all four targets for each required lit color, shoot the center ramp to lock, then plunge the replacement ball to begin two-ball play."
+          }
+        ]
+      }
+    }
+  ]
+}

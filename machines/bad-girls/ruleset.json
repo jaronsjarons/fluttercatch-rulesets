@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "G5WOo",
+  "title": "Bad Girls",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bad Girls instruction cards",
+      "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Bad_Girls_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Bad Girls machine overview",
+        "url": "https://www.kineticist.com/games/pinball/bad-girls"
+      },
+      {
+        "label": "Bad Girls exact-machine review",
+        "url": "https://www.flippers.be/pinball/gottlieb/badgirls/bad_girls.html"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Knock down the 8-ball target to expose and light the pocket behind it, then shoot through the opening to lock a ball. The next served ball starts two-ball Multiball as soon as it hits a playfield switch and automatically releases the lock. For the longer scoring route, clear solids or stripes, then make the flashing 8-ball to light R-E-R-A-C-K.",
+      "simpleOverview": "Knock down the 8-ball target, then shoot into the pocket behind it to lock a ball. Plunge the served ball; its first playfield hit releases the lock and starts two-ball Multiball. Clear solids or stripes and hit the flashing 8-ball to light R-E-R-A-C-K.",
+      "summary": "Drop the 8-ball target and shoot the pocket behind it. Plunge the served ball; its first playfield switch releases the lock for two-ball Multiball. Clear a pool-ball group, hit flashing 8-ball, then spell R-E-R-A-C-K.",
+      "quickInfo": [
+        {
+          "name": "Open Lock",
+          "summary": "Knock down the 8-ball target."
+        },
+        {
+          "name": "Lock a Ball",
+          "summary": "Shoot through the opening into the pocket behind the 8-ball."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Plunge the served ball and hit any playfield switch; the lock releases automatically."
+        },
+        {
+          "name": "Light RERACK",
+          "summary": "Complete solids or stripes, then make the flashing 8-ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Knock down the 8-ball target to expose and light the lock pocket behind it.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot through the dropped target into the pocket to lock the ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Plunge the served ball and make any playfield switch; the lock releases automatically for two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use Multiball to finish pool-ball drops, then make the flashing 8-ball and complete R-E-R-A-C-K.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build Pop Jackpot",
+          "when": "Use this when the bumpers are already flashing in sequence.",
+          "steps": [
+            {
+              "text": "Hit the consecutive flashing pop bumpers without breaking the sequence on another playfield switch.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect the displayed Pop Jackpot, then return to the 8-ball route.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Cash the pool table",
+        "steps": [
+          {
+            "text": "Complete solids or stripes to reset and relight the 8-ball objective.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the flashing 8-ball to light R-E-R-A-C-K, then complete those targets before the value expires.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the Break Shot to raise the end-of-ball multiplier before a large RERACK bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm extra-ball and replay conversions, RERACK timer, and whether pool-ball progress carries between balls.",
+        "Test every pool-ball drop, 8-ball drop and pocket, automatic release, both spinners, pop sequence, vari-target, Break Shot, and RERACK targets."
+      ],
+      "termStyles": [
+        {
+          "label": "8-Ball Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "R-E-R-A-C-K",
+          "tone": "indigo",
+          "kind": "mode"
+        },
+        {
+          "label": "Break Shot",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The locked ball releases on the served ball's first playfield switch.",
+          "response": "Be ready to control two balls immediately after the plunge rather than waiting for a separate start shot.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Bad_Girls_instruction_cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

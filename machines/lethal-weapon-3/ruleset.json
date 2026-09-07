@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "id": "GRokL",
+  "title": "Lethal Weapon 3",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Lethal Weapon 3 complete rulesheet",
+      "url": "https://www.pinball.org/rules/lethalweapon3.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Data East operator manual",
+        "url": "https://files.stardustarcade.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Lethal%20Weapon%203%20Manual.pdf"
+      },
+      {
+        "label": "Data East instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Lethal_Weapon_3_755-5032-00.pdf"
+      },
+      {
+        "label": "Lethal Weapon 3 gameplay",
+        "url": "https://pinballvideos.com/v/661/286"
+      },
+      {
+        "label": "Lethal Weapon 3 at Louisville Arcade Expo 2015",
+        "url": "https://pinballvideos.com/v/746/5300"
+      },
+      {
+        "label": "Lethal Weapon 3 official and unofficial ROM notes",
+        "url": "https://www.pinballcode.com/downloads"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat both orbits to build all six Uzi bullets, then win the Shoot Out with the launch trigger. Complete one drop bank for Lotsaballs, start it at the upper VUK, collect the left-ramp Jackpot, and use a saucer to relight it.",
+      "quickInfo": [
+        {
+          "name": "Lotsaballs",
+          "summary": "Complete either three-target bank and shoot the upper VUK to start multiball, while the other bank can qualify a later start."
+        },
+        {
+          "name": "Lotsaballs Jackpot",
+          "summary": "Shoot the left ramp for a Jackpot, then use any saucer to relight it after a collect."
+        },
+        {
+          "name": "Double and Quadruple Jackpot",
+          "summary": "Send two balls quickly up the left ramp for Double or through the left orbit for Quadruple."
+        },
+        {
+          "name": "Freeway",
+          "summary": "Repeat the left ramp for increasing Millions and a possible extra-ball light, with later Looping making each timed repeat worth 10M."
+        },
+        {
+          "name": "Shoot Out",
+          "summary": "Build six Uzi bullets with both orbits, then use the launch trigger during the DMD duel while the live ball remains in play."
+        },
+        {
+          "name": "Stunts during Lotsaballs",
+          "summary": "Stunt progress continues during Multiball: completing all three saucers awards the current Stunt, but its display animation is skipped."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test both orbit returns, the left-ramp return, and the VUK-hole release before committing to a repeatable shot."
+        },
+        {
+          "text": "Repeat the safer left and right orbits to light Uzi bullets. Complete both orbits once for each bullet.",
+          "modeNotes": [
+            "Shoot Out: Six bullets start the DMD duel. Pull the launch trigger before the opponent fires while keeping the live playfield ball under control.",
+            "The third Shoot Out lights Super Spinners. The sixth starts Looping, which makes timed left-ramp repeats worth 10,000,000."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "While the orbit route is under control, complete either three-target drop bank to qualify Lotsaballs."
+        },
+        {
+          "text": "Shoot the upper VUK to start Lotsaballs.",
+          "modeNotes": [
+            "Lotsaballs qualification: Complete either three-target bank. The upper VUK then starts multiball. The other bank can qualify another start."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Lotsaballs, shoot the left ramp for a Jackpot. Shoot any saucer to relight it.",
+          "modeNotes": [
+            "Lotsaballs Jackpot: The left ramp collects the lit Jackpot. The left, center, or right saucer relights it.",
+            "Completing all three saucers during Multiball also awards the current Stunt without showing its animation."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "When two balls are controlled, send both up the left ramp within the award window for a Double Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For the larger award, send two balls through the left orbit and subway within the award window for a Quadruple Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If ball separation breaks down, collect one safe Jackpot and use a saucer relight. Do not force the two-ball combo.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Freeway repeats",
+        "when": "Use this when the drop banks, VUK, or two-ball timing is unsafe.",
+        "steps": [
+          {
+            "text": "Trap on the right flipper."
+          },
+          {
+            "text": "Repeat the left Freeway ramp."
+          },
+          {
+            "text": "Collect its increasing Millions and extra-ball progress when enabled."
+          },
+          {
+            "text": "If Looping is active, continue the ramp before its timer ends.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Shoot Out ladder",
+          "when": "Use this when both orbits are safer than the drop banks and ramp.",
+          "steps": [
+            {
+              "text": "Complete both left and right orbits to light an Uzi bullet."
+            },
+            {
+              "text": "Repeat until all six bullets are lit."
+            },
+            {
+              "text": "During Shoot Out, use the launch trigger to fire before the opponent fires. Continue to control the live playfield ball.",
+              "modeNotes": [
+                "Shoot Out: The DMD presents an opponent. A later trigger press can score more, but waiting too long loses the duel. The playfield ball does not stop."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Repeat Shoot Outs to advance the fixed award ladder toward Super Lethal Weapon.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Unlimited Millions",
+          "when": "Use this when the center bank and colored wire targets are under control.",
+          "steps": [
+            {
+              "text": "Hit the center target on either drop bank to start Red Wire or Blue Wire."
+            },
+            {
+              "text": "Hit the matching colored wire target."
+            },
+            {
+              "text": "Repeat the lower-left target while Unlimited Millions is active.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Super Lethal Weapon",
+        "steps": [
+          {
+            "text": "Complete both orbits repeatedly to build all six Uzi bullets."
+          },
+          {
+            "text": "Win each Shoot Out with the launch trigger while you protect the live ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Advance through the six earlier Shoot Out awards."
+          },
+          {
+            "text": "Win the seventh Shoot Out to collect Super Lethal Weapon.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Lotsaballs",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Double Jackpot",
+          "tone": "indigo"
+        },
+        {
+          "label": "Quadruple Jackpot",
+          "tone": "indigo"
+        },
+        {
+          "label": "Shoot Out",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Unlimited Millions",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Looping",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Two-ball left-ramp pair",
+          "instruction": "Control two balls on the lower flippers. Send both up the left ramp before the Double Jackpot window closes.",
+          "sourceUrl": "https://www.pinball.org/rules/lethalweapon3.html"
+        },
+        {
+          "name": "Two-ball orbit pair",
+          "instruction": "Separate two controlled balls. Send both through the left orbit and subway before the Quadruple Jackpot window closes.",
+          "sourceUrl": "https://www.pinball.org/rules/lethalweapon3.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A rejected left-ramp shot can return quickly toward the center drain.",
+          "response": "Test the ramp during ball save. Stop repeating it after a weak reject and switch to the safer orbit or single Jackpot route.",
+          "sourceUrl": "https://pinballvideos.com/v/661/286"
+        },
+        {
+          "issue": "The upper VUK can kick the ball back into live traffic.",
+          "response": "Have both flippers ready before starting Lotsaballs or taking another VUK collect.",
+          "sourceUrl": "https://pinballvideos.com/v/661/286"
+        },
+        {
+          "issue": "Saucer relights can eject into an uncontrolled feed.",
+          "response": "Watch one eject before relying on repeated Jackpot relights. Use the saucer with the cleanest return on this copy.",
+          "sourceUrl": "https://pinballvideos.com/v/661/286"
+        },
+        {
+          "issue": "The playfield ball stays live during Shoot Out while the DMD asks for a launch-trigger decision.",
+          "response": "Trap the ball before the duel when possible. Keep your eyes on the playfield between trigger presses.",
+          "sourceUrl": "https://www.pinball.org/rules/lethalweapon3.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm official CPU 2.08 or unofficial 3.01; the unofficial update changes behavior beyond the factory rules.",
+        "Confirm Lotsaballs difficulty, ramp awards, Shoot Out awards, Extra Ball, Special, ball count, and tournament settings.",
+        "Test both drop banks, upper VUK, left ramp, both orbits, subway, three saucers, launch trigger, and their returns."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the Louisville Arcade Expo 2015, Daniele Acciari, Jon Replogle, Bob Matthews, and Roy Wils repeatedly used the orbits while combining them with Lotsaballs, Super Spinners, and Jackpot collects.",
+          "At the North East Summer Slam 2024, Zoe Vrabel won on a modern tournament build by repeatedly using the Freeway ramp, while Bowen Kerins used Lotsaballs and collected Double Jackpots."
+        ]
+      },
+      "simpleOverview": "Lethal Weapon 3 uses either three-target bank and the upper VUK to start Lotsaballs. Complete a bank, start Multiball, shoot the left ramp for Jackpot, and use any saucer to relight it. Orbit shots build Uzi bullets for Shoot Out.",
+      "overview": "Lethal Weapon 3 uses either three-target bank and the upper VUK to start Lotsaballs. Complete a bank and shoot the upper VUK, then alternate the left ramp with any saucer while multiple balls protect the route. Between Multiballs, repeat both orbits for six Uzi bullets and use the launch trigger during each DMD duel without losing the live ball.",
+      "machineSetup": [
+        "Confirm official CPU 2.08 or unofficial 3.01; the unofficial update changes behavior beyond the factory rules.",
+        "Confirm Lotsaballs difficulty, ramp awards, Shoot Out awards, Extra Ball, Special, ball count, and tournament settings.",
+        "Test both drop banks, upper VUK, left ramp, both orbits, subway, three saucers, launch trigger, and their returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

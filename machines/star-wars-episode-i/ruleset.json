@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "GRL9r",
+  "title": "Star Wars Episode I",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Star Wars Episode I rulesheet (software 1.3)",
+      "url": "https://www.pinball.org/rules/starwarsepisodei.txt"
+    },
+    "supportingSources": [
+      {
+        "label": "Pinball.org independent Star Wars Episode I rulesheet",
+        "url": "https://www.pinball.org/rules/starwarsepisodei2.html"
+      },
+      {
+        "label": "Star Wars Episode I tournament finals",
+        "url": "https://www.youtube.com/watch?v=70vathiVcQM"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Keep a scene running, then lock one ball in each side saucer to bring it into Multiball. Completed scenes build J-E-D-I and eventually light Saber Battle at the center target.",
+      "simpleOverview": "Activate the projector at the center, choose a scene with the action buttons, and catch another center shot to start it. Lock both side saucers to add Multiball while that scene runs.",
+      "summary": "Activate the projector at the center target, choose a scene with the action buttons, and catch another center shot to start it. While the scene runs, lock one ball in each side saucer to start Multiball, then collect center, both ramps, and the three-shot Super Jackpot set.",
+      "quickInfo": [
+        {
+          "name": "Start a scene",
+          "summary": "Hit the center to activate the projector, choose with the action buttons, then catch another center shot to begin the selected scene."
+        },
+        {
+          "name": "Later scenes",
+          "summary": "After the first scene, hit the center target three times to activate the projector, then catch the next center shot to start the selection."
+        },
+        {
+          "name": "Multiball",
+          "summary": "Lock one ball in Watto's Junk Shop and one in Mos Espa. A running scene continues into Multiball; a new one cannot start until Multiball ends."
+        },
+        {
+          "name": "Saber Battle",
+          "summary": "Completed scenes award J-E-D-I letters. After spelling J-E-D-I and finishing the active scene, catch the center target to start Saber Battle."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the center target to activate the projector. Use either action button to choose an available scene, then catch the next center shot to start it.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Keep a scene running whenever possible. After the first scene, hit the center target three times to activate the projector and catch the following center shot to start the next selection.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "While a scene runs, lock one ball in Watto's Junk Shop and one in Mos Espa to start three-ball Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, collect the center Jackpot, both ramp Jackpots, then the center-and-both-ramps set; the last shot of that set scores the Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "A running scene continues into Multiball, but the projector stays unavailable after that scene finishes until Multiball ends.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Saber Battle",
+        "steps": [
+          {
+            "text": "Complete scenes to collect J-E-D-I letters.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After J-E-D-I is complete, finish the scene that is still running.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the projector changes to the lightsaber, catch the center shot to start Saber Battle.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "scene",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Saber Battle",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The detailed rulesheets document software 1.3 while production ROM 1.4 is available.",
+          "response": "Use the center-target start path and read the display rather than relying on side-target projector hits or exact scoring values.",
+          "sourceUrl": "https://www.pinball.org/rules/starwarsepisodei.txt"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

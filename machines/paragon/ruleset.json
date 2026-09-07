@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "id": "GrXy3",
+  "title": "Paragon",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Paragon tournament strategy guide",
+      "url": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA Paragon tutorial with Bowen Kerins",
+        "url": "https://www.youtube.com/watch?v=S75vg7Wtf7w"
+      },
+      {
+        "label": "Bob's Guide to Classic Pinball Machines",
+        "url": "https://rules.silverballmania.com/rules/GrXy3-ML0Ey"
+      },
+      {
+        "label": "Robert Gagno at Pinburgh 2016",
+        "url": "https://pinballvideos.com/v/1389/4977"
+      },
+      {
+        "label": "Daniel Rone on Paragon at North East Summer Slam 2024",
+        "url": "https://www.youtube.com/watch?v=PxZSPrAdPUM&t=19988s"
+      },
+      {
+        "label": "District 82 Paragon 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=Z2x8t58NGP8"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Reach 20,000 Super Bonus early. Use the Valley of Demons for safe bonus and 5x. Then raise the bonus toward 49,000 at 5x.",
+      "steps": [
+        {
+          "text": "Plunge for Golden Cliffs. Use the PARAGON saucer only when letters advance in a fixed order."
+        },
+        {
+          "text": "Test both right flippers, the Valley of Demons return, the waterfall exit, and both top-saucer kickouts."
+        },
+        {
+          "text": "From a right flipper, shoot the Valley of Demons inline drops. Use the upper-left flipper as a diverter on the return.",
+          "modeNotes": [
+            "Valley of Demons: The inline drops add bonus. The third target gives 2x, the fourth gives 3x, and the saucer behind them gives 5x.",
+            "The first saucer visit gives 5x. The next visit gives an extra ball or its configured point value."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Reach 20,000 bonus as early as possible. Then work toward 30,000 and 40,000.",
+          "modeNotes": [
+            "Super Bonus: Reaching 20,000, 30,000, or 40,000 makes that base value the starting bonus on every later ball."
+          ]
+        },
+        {
+          "text": "After 5x, keep using the Valley. Use the spinner only when it is strong and the waterfall exit is safe.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Build to 49,000 at 5x. Protect the ball and avoid a tilt before the end-of-ball collect.",
+          "modeNotes": [
+            "Maximum bonus: 49,000 at 5x scores 245,000. There is no live bonus collect; it scores only when the ball ends."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Spinner to 20,000",
+        "when": "Use this when the Valley rejects, but the spinner is active and the waterfall exit is controlled.",
+        "steps": [
+          {
+            "text": "From the right flipper, shoot the spinner."
+          },
+          {
+            "text": "Use top-playfield nudges to seek a saucer and more bonus advances."
+          },
+          {
+            "text": "Stop after reaching the next Super Bonus threshold if the bumper or waterfall return becomes unsafe."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Golden Cliffs",
+          "when": "Use this after bonus is established and the ball is already in the top area.",
+          "steps": [
+            {
+              "text": "Nudge the ball into the upper-left Golden Cliffs saucer.",
+              "modeNotes": [
+                "Golden Cliffs: It starts at 2,000 and rises by 2,000 per visit to a 20,000 maximum. Its value holds between balls."
+              ]
+            },
+            {
+              "text": "Keep the ball in the upper area for another saucer visit when a small nudge is sufficient."
+            }
+          ]
+        },
+        {
+          "title": "Sequential PARAGON",
+          "when": "Use this only when the letters advance in order or Valley hits also spot letters.",
+          "steps": [
+            {
+              "text": "Collect letters at the upper-right PARAGON saucer."
+            },
+            {
+              "text": "Complete PARAGON for 25,000 and a special or its configured point value."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "245,000 maximum bonus",
+        "steps": [
+          {
+            "text": "Lock in the 20,000, 30,000, and 40,000 Super Bonus thresholds."
+          },
+          {
+            "text": "Reach 5x through the Valley of Demons.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep shooting the Valley of Demons or the spinner until base bonus reaches 49,000. Do not tilt."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Test a left-flipper backhand from the tip. Use it only when it reaches the inline targets without entering the Beast's Lair.",
+          "sourceUrl": "https://www.youtube.com/watch?v=S75vg7Wtf7w&t=315s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Gentle 5x lob",
+          "instruction": "Transfer the ball to a flipper tip. Lob it softly into the saucer behind the inline drops. A hard shot often rejects.",
+          "sourceUrl": "https://www.youtube.com/watch?v=S75vg7Wtf7w&t=432s"
+        },
+        {
+          "name": "Upper-left flipper diverter",
+          "instruction": "Hold the upper-left flipper as a Valley return arrives. Guide the ball away from the left sling and toward the right flippers.",
+          "sourceUrl": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+        },
+        {
+          "name": "Drop catch",
+          "instruction": "Use a drop catch instead of a live catch on a fast Valley return. Do not trap on the lower right flipper.",
+          "sourceUrl": "https://www.youtube.com/watch?v=S75vg7Wtf7w&t=370s",
+          "techniqueSlug": "drop-catch"
+        },
+        {
+          "name": "Flutter control into 5x",
+          "instruction": "On a fast lower return, use a short flip-and-release to remove speed without stopping the ball. Continue directly into the Valley drop route when the return line is clean.",
+          "sourceUrl": "https://www.youtube.com/watch?v=PxZSPrAdPUM&t=19988s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The lower-right scissor flippers can drain the ball between them.",
+          "response": "Keep both flippers down when possible. Use quick flips and drop catches. Do not trap on the lower right flipper.",
+          "sourceUrl": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+        },
+        {
+          "issue": "The center Advance Bonus target is a direct center-drain risk.",
+          "response": "Do not aim at it. Advance bonus through the Valley, spinner, and natural top action.",
+          "sourceUrl": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+        },
+        {
+          "issue": "A hard 5x saucer shot can hit the plastic and reject at high speed.",
+          "response": "Use a gentle lob. Be ready for a fast return when the shot rejects.",
+          "sourceUrl": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+        },
+        {
+          "issue": "The waterfall exit can reach either flipper, a sling, or the center drain.",
+          "response": "Read its first exit before using the spinner fallback. Stop if the exit is not predictable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrXy3-ML0Ey"
+        },
+        {
+          "issue": "The Beast's Lair replaces the left outlane and is difficult to escape.",
+          "response": "Avoid shots that arc left. If the ball enters, use small rightward and upward nudges and the upper-left flipper to find the escape passage.",
+          "sourceUrl": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+        },
+        {
+          "issue": "A hard, centered Bally drop-target hit may not lower the target and can return fast.",
+          "response": "Use a softer or slightly off-center hit. Prepare for a faster return after a brick.",
+          "sourceUrl": "https://www.kineticist.com/news/paragon-pinball-tutorial"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Reach 20,000 Super Bonus early."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Lock in the 20,000, 30,000, and 40,000 Super Bonus thresholds."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Spinner to 20,000: Use this when the Valley rejects, but the spinner is active and the waterfall exit is controlled."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Paragon, ball count, Special and Extra Ball conversion, and Valley award settings.",
+        "Test both saucers, Waterfall, Valley of Demons, spinner, and top feeds."
+      ],
+      "simpleOverview": "Paragon carries Super Bonus thresholds while the Valley of Demons raises Bonus X. Reach 20,000 early, use controlled Valley shots toward 5x, then continue toward the 49,000 base maximum. Use the spinner only when its waterfall return is safe.",
+      "overview": "In Paragon, reaching 20,000, 30,000, and 40,000 carries each Super Bonus threshold to later balls, while Valley of Demons shots raise Bonus X to 5x. Secure each threshold, then build the remaining base toward 49,000 and avoid tilting away the 245,000 collect.",
+      "machineSetup": [
+        "Confirm Bally Paragon, ball count, Special and Extra Ball conversion, and Valley award settings.",
+        "Test both saucers, Waterfall, Valley of Demons, spinner, and top feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

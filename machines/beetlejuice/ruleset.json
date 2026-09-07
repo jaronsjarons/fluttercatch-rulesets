@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "id": "GqZVo",
+  "title": "Beetlejuice",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Genie Beetlejuice strategy guide",
+      "url": "https://pinball-genie.com/machines/beetlejuice"
+    },
+    "supportingSources": [
+      {
+        "label": "Current Tilt Forums rulesheet",
+        "url": "https://tiltforums.com/t/beetlejuice-rulesheet/10249"
+      },
+      {
+        "label": "PinballCards tournament strategy",
+        "url": "https://pinballcards.net/beetlejuice-2026/"
+      },
+      {
+        "label": "Flip N Out rules tutorial",
+        "url": "https://www.youtube.com/watch?v=GaZ4gKbqo50"
+      },
+      {
+        "label": "Spooky Pinball code history",
+        "url": "https://www.spookypinball.com/beetlejuice/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Ready Couch Multiball, bank a useful Wheel Super, and arm Returning Souls. Start the three features together. Build the Jackpot at the Knock loop, relock a ball, and collect the Super while the multiplier is active.",
+      "steps": [
+        {
+          "text": "Time the plunge for the lit Standard Skill Shot. If the Super Skill Shot lights, shoot the left ramp, right ramp, then spinner while their arrows are lit.",
+          "modeNotes": [
+            "Super Skill Shot: This is a three-shot award after a successful plunge. A miss on the plunge is normally caught by the center magnet without using your stored Magna-Save."
+          ]
+        },
+        {
+          "text": "Repeat the left ramp for one or two Wheel spins. Press the Action Button to stop the wheel. Prefer the 5x award that matches a shot you can repeat.",
+          "modeNotes": [
+            "Wheel Super: Super Pops, Ramps, Spinner, or Worm scores that feature at 5x. The wheel can also award points, an Extra Ball, or You Lose."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Repeat the Upper Loop around the couch to light locks. Shoot the raised right ramp for two couch locks. Leave the third lock ready.",
+          "modeNotes": [
+            "Afterlife Couch Multiball: The Upper Loop lights Knock locks. Each raised right-ramp shot puts a ball on the couch. Lock 3 starts the three-ball multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Arm Returning Souls. Hit the pops to spawn a Lost Soul. Hit its random lit shot. Then shoot the front door of the center scoop. Repeat when safe.",
+          "modeNotes": [
+            "Returning Souls: Each returned soul raises the stored playfield multiplier by 1x and adds 30 seconds. The maximum is 5x.",
+            "The front door is the center-scoop entrance from the lower playfield. The back door is the entrance under the upper flipper."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When lock 3, Returning Souls, and a useful Wheel Super are ready, collect the Wheel award. Do not delay if its 5x timer starts.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the back door of the center scoop to start Returning Souls. Then shoot the raised right ramp for lock 3 and Couch Multiball.",
+          "kinds": [
+            "multiplier",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Couch Multiball, shoot the green jackpots and repeat the Knock loop to build value. Re-lock one ball to light the Super at the Spinner or Juno Scoop, then follow the lit Super shot.",
+          "modeNotes": [
+            "Couch Super Jackpot: The re-lock lights this award. Take it while Returning Souls and the matching Wheel Super are active.",
+            "The playfield multiplier starts at its highest stored level. It then falls by 1x after each 30-second stage until normal scoring returns.",
+            "Lost Souls playfield X can reach 5x and falls by one level after each 30-second stage."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use the Action Button if the ball heads for an outlane or the center. After a use, hit the Handbook target. Press the button when the fly and button are green to requalify the save.",
+          "modeNotes": [
+            "Magna-Save: The center magnet throws a draining ball back into play. It is ready at the start of each ball. The default game allows it to be requalified more than once."
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Strange and Unusual Multiball",
+        "when": "Use this plan when the Upper Loop or raised right ramp is not reliable.",
+        "steps": [
+          {
+            "text": "Roll through an inlane to light the center Camera targets.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit each Camera target once to start the two-ball multiball.",
+            "modeNotes": [
+              "Strange and Unusual Multiball: The two center Camera targets start it after both have been hit while lit."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the ramps for jackpots. Complete each flashing Camera-target set to add a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the extra ball in play to finish a purple mode or prepare Returning Souls after the multiball ends.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Purple story mode",
+          "when": "Use this route before multiball when three safe purple shots are available.",
+          "steps": [
+            {
+              "text": "Hit any purple-lit major shot three times. Use the Mode Change switch to select a mode. Press Launch to lock the choice. Shoot the right orbit to start it.",
+              "modeNotes": [
+                "As Seen on TV: Make 7 lit shots. Then hit the captive ball. Hold the Action Button to stop the shot value from falling.",
+                "Grave Dig: Make 3 scoop shots, the headstone, the ramps, then the right orbit.",
+                "Day-O Dinner Party: The game controls the flippers. Lit shots keep the mode alive and add balls. Pops, slings, couch, Sandworm, and Beetlejuice hits raise its multiplier. The flippers stop when time ends.",
+                "Head Shrink: Build switch hits, distract the Sandworm, collect the jackpot, then repeat.",
+                "Charades: White shots reveal colors. Find 3 matching pairs. Then collect the hurry-up.",
+                "Beetle Snake: Make 3 pop hits, 30 spinner spins, and 3 ramp shots.",
+                "'Til Death: Shoot blue shots. The spinner raises the multiplier. The right ramp raises shot value. Hit the drop target or right orbit four times to interrupt the ceremony.",
+                "Otho's Seance: Hit the Handbook target, clear the green shots, then hit the Handbook again."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish the mode before you start the main stack. A new mode cannot qualify or start during multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "It's Showtime Multiball",
+          "when": "Use this route when yellow shots are easy and you can delay the selected purple mode.",
+          "steps": [
+            {
+              "text": "Shoot any purple-lit major shot three times, but leave the flashing right-orbit start uncollected. Shoot yellow major shots to spell S-H-O-W-T-I-M-E.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the right orbit. Press the Action Button to start the multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Make 3 jackpots, then one more after each completed set. Shoot the right orbit to lock a ball. Hit its drop target to ricochet the locked ball into the vari-target.",
+              "modeNotes": [
+                "Strength Test Super Jackpot: The drop-target ricochet scores it. The first Super also adds a ball."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sandworm Battle",
+          "when": "Use this route when the three wall targets are safe or when the worm is already damaged.",
+          "steps": [
+            {
+              "text": "Clear the three wall targets to start a Sandworm Battle.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Follow the battle instruction to lower the wall and place the mouth. In Walk With Rhythm, press the Action Button rapidly.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the mouth to remove health. Current code keeps lost health after a failed battle.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Singing in the Stairwell",
+        "steps": [
+          {
+            "text": "Complete 2 purple modes, or start 4 purple modes, to light the mini-wizard multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Singing in the Stairwell. Use its built-in add-a-balls to keep more than one ball alive.",
+            "modeNotes": [
+              "Singing in the Stairwell: This is the current mini-wizard multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Juno Scoop and press the Action Button to collect its Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "'Til Death",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "From a controlled right flipper, test a backhand to the right ramp. Use it for repeat ramp value or a couch lock only if it clears cleanly on this copy.",
+          "sourceUrl": "https://www.youtube.com/watch?v=GaZ4gKbqo50&t=275s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "From a controlled left flipper, backhand the left ramp to work toward a Wheel spin. Confirm that the return stays controlled on this copy.",
+          "sourceUrl": "https://www.youtube.com/watch?v=GaZ4gKbqo50&t=195s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Back-door scoop feed",
+          "instruction": "When the ball enters the upper-flipper lane, hold the upper flipper up. The ball can roll under it into the back door of the center scoop. Test the feed before a timed stack.",
+          "sourceUrl": "https://www.youtube.com/watch?v=GaZ4gKbqo50&t=134s"
+        },
+        {
+          "name": "Right-orbit repeat",
+          "instruction": "A clean right orbit can feed the left flipper. Trap the return or repeat the orbit only after you see the feed on this copy.",
+          "sourceUrl": "https://www.youtube.com/watch?v=GaZ4gKbqo50&t=311s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right-side gate can change the same lane from an inlane into an outlane.",
+          "response": "Watch the gate before the ball reaches it. Keep the Magna-Save ready and press the Action Button as the ball commits to the drain.",
+          "sourceUrl": "https://tiltforums.com/t/beetlejuice-rulesheet/10249"
+        },
+        {
+          "issue": "A spinner shot can rattle into the pops or upper playfield instead of reaching the Juno Scoop cleanly.",
+          "response": "Do not assume a controlled return. Keep both lower flippers down until you see the exit.",
+          "sourceUrl": "https://tiltforums.com/t/beetlejuice-rulesheet/10249"
+        },
+        {
+          "issue": "The right orbit can stop at its drop target or magnet and return toward the lower playfield.",
+          "response": "Test the right-orbit return during ball save. Do not repeat it blind when the Magna-Save is spent.",
+          "sourceUrl": "https://www.youtube.com/watch?v=GaZ4gKbqo50&t=311s"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Ready Couch Multiball, bank a useful Wheel Super, and arm Returning Souls."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete 2 purple modes, or start 4 purple modes, to light the mini-wizard multiball."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Strange and Unusual Multiball: Use this plan when the Upper Loop or raised right ramp is not reliable."
+        }
+      ],
+      "checkBeforePlay": [
+        "Check the Magna-Save limit and disabled-feature settings.",
+        "Lost Souls playfield X can reach 5x and falls by one level after each 30-second stage."
+      ],
+      "simpleOverview": "Beetlejuice uses three purple-lit major shots to qualify a Story mode. Use the Mode Change switch to choose one, press Launch to lock the choice, then shoot the right orbit to start it. For Couch Multiball, repeat the Upper Loop around the couch and lock three balls at the raised right ramp. For Lost Souls playfield X, hit the pop bumpers to spawn a soul, shoot its random lit shot, then shoot the front door of the center scoop; repeat that sequence, then shoot the scoop's back door to start the multiplier.",
+      "overview": "Beetlejuice uses three purple-lit major shots, the Mode Change switch, Launch, and the right orbit to qualify, select, and start a Story mode. Finish the mode before Multiball because another mode cannot qualify or start during multiball. For the main stack, prepare the third Couch lock, return Lost Souls through the center scoop's front door, and collect a useful 5x Wheel Super. Shoot the scoop's back door to start Lost Souls playfield X, then take the third raised-right-ramp lock for Couch Multiball. Build the Jackpot at the Upper Loop, relock one ball, and collect the Super while both multipliers are running.",
+      "machineSetup": [
+        "Check the Magna-Save limit and disabled-feature settings."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

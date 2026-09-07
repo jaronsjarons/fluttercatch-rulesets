@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "GRKKk",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Flipper Football is a timed soccer game rather than a normal three-ball ruleset. One to six players can play against the machine, head-to-head, or in teams. Clear the goalie drop targets with the upper flippers, then shoot through the exposed upper goal; protect the center drain because it counts as your own goal.",
+        "simpleOverview": "Clear the goalie drop targets with the upper flippers, then shoot through the exposed upper goal to score. The game is timed, and a center drain counts as your own goal.",
+        "summary": "Use the lower flippers to feed the ball into upper-playfield control, knock down the goalie drop targets with the upper flippers, and shoot through the open upper goal. Keep the ball away from the center drain, which is treated as your own goal.",
+        "quickInfo": [
+          {
+            "name": "Score a goal",
+            "summary": "Clear the goalie drop targets, then shoot through the upper goal."
+          },
+          {
+            "name": "Own goal",
+            "summary": "A center drain scores against you."
+          },
+          {
+            "name": "Player vs. game",
+            "summary": "Score as many goals as possible before the timer ends."
+          },
+          {
+            "name": "Versus play",
+            "summary": "Up to six players can join player-versus-player or team-versus-team play."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the lower flippers to send the ball toward the upper playfield, then take over with the two upper flippers."
+          },
+          {
+            "text": "Knock down the goalie drop targets to expose the opponent's upper goal."
+          },
+          {
+            "text": "Shoot the ball through the open upper goal before the goalie bank resets."
+          },
+          {
+            "text": "Recover to the lower flippers when the attack breaks down; the center drain is your own goal, not the end of a normal pinball ball."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Head-to-head or team play",
+            "when": "Use this when two to six people are playing together.",
+            "steps": [
+              {
+                "text": "Choose player-versus-player or team-versus-team and join the timed match as prompted."
+              },
+              {
+                "text": "Attack the upper goal during your possession and protect the center drain when the ball returns."
+              },
+              {
+                "text": "Play to the score when time expires; this machine does not use a conventional three-ball finish."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Create repeatable attacks",
+          "steps": [
+            {
+              "text": "Favor feeds that arrive at an upper flipper under control instead of striking the goalie bank from the lower playfield."
+            },
+            {
+              "text": "Clear the goalie bank first; an early goal shot into standing targets wastes the attack."
+            },
+            {
+              "text": "After each goal or rejection, regain lower-playfield control quickly so the timer is spent attacking rather than trading own goals."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm the selected match type, player or team count, and timer before play; this is a timed game rather than a ball-count game.",
+          "Test all four flippers, the goalie drop-target bank, upper goal switch, center-drain goal switch, ball serve, and backbox soccer-ball display before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "goalie drop targets",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "upper goal",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "center drain",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "timed",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "goalie drop targets",
+            "label": "Goalie bank",
+            "description": "The drop-target bank guarding the opponent's goal at the top of the playfield.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper goal",
+            "label": "Opponent goal",
+            "description": "The scoring opening behind the goalie bank.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper flippers",
+            "label": "Attacking flippers",
+            "description": "The pair used to clear the goalie and shoot the goal.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drain",
+            "label": "Own goal",
+            "description": "The lower opening that scores for the opponent.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Flipper Football does not follow ordinary ball-count pinball structure.",
+            "response": "Manage the clock and the score. A drain is an own goal, and play continues until the timed match ends.",
+            "sourceUrl": "https://www.pinballrebel.com/game/pins/instruction/flipper-football-inst.jpg"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the lower flippers to feed the ball into upper-playfield control, knock down the goalie drop targets with the upper flippers, and shoot through the open upper goal. Keep the ball away from the center drain, which is treated as your own goal.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the lower flippers to send the ball toward the upper playfield, then take over with the two upper flippers."
+          },
+          {
+            "text": "Knock down the goalie drop targets to expose the opponent's upper goal."
+          },
+          {
+            "text": "Shoot the ball through the open upper goal before the goalie bank resets."
+          },
+          {
+            "text": "Recover to the lower flippers when the attack breaks down; the center drain is your own goal, not the end of a normal pinball ball."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Score a goal",
+            "summary": "Clear the goalie drop targets, then shoot through the upper goal."
+          },
+          {
+            "name": "Own goal",
+            "summary": "A center drain scores against you."
+          },
+          {
+            "name": "Player vs. game",
+            "summary": "Score as many goals as possible before the timer ends."
+          }
+        ],
+        "warning": {
+          "title": "Flipper Football does not follow ordinary ball-count pinball structure.",
+          "text": "Manage the clock and the score. A drain is an own goal, and play continues until the timed match ends."
+        }
+      }
+    }
+  ]
+}

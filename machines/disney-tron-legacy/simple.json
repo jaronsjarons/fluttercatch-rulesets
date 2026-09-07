@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "id": "GrkL5",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Make any major shot and immediately shoot the scoop to collect End of Line before the ball drains; light four different major-shot inserts and shoot the scoop to start Light Cycle Multiball.",
+        "quickInfo": [
+          {
+            "name": "End of Line",
+            "summary": "Make any major shot, then immediately shoot the scoop to cash a carried value that is lost on a drain."
+          },
+          {
+            "name": "Light Cycle Multiball",
+            "summary": "Shoot four different major shots to light their inserts, start Light Cycle at the scoop, then shoot left ramp, Quorra, and right ramp in order."
+          },
+          {
+            "name": "Quorra Multiball",
+            "summary": "Make five left-inner-loop shots, start at the scoop, then repeat Quorra jackpots and collect the Super at Gem."
+          },
+          {
+            "name": "Disc Multiball",
+            "summary": "Clear the Recognizer bank, feed the disc seven times, then complete its Jackpot and Double Jackpot stages."
+          },
+          {
+            "name": "TRON modes",
+            "summary": "A Zen lane makes the next T-R-O-N target start the currently strobed Double Scoring, Super Bumpers, or Super Spinners."
+          },
+          {
+            "name": "Finales",
+            "summary": "Flashing every ladder insert qualifies Sea of Simulation; solidly completing all nine qualifies four-ball The Portal."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Soft-plunge the ball off Flynn's divider into the scoop for the reliable skill shot."
+          },
+          {
+            "text": "Make any major orbit, ramp, or inner-loop shot. Immediately shoot the scoop to collect the flashing End of Line combo.",
+            "modeNotes": [
+              "End of Line starts at 500,000, grows as combos are built, carries between collects, and is lost if the ball drains before the scoop cashout."
+            ]
+          },
+          {
+            "text": "Shoot four different major shots to light four of the six Light Cycle inserts.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Light Cycle Multiball, shoot the left ramp jackpot, then the Quorra left inner loop for a Super Jackpot, then the right ramp for the Double Super Jackpot.",
+            "modeNotes": [
+              "The left ramp, Quorra, and right ramp form the defined Light Cycle scoring sequence."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue making End of Line combos during modes and multiballs. Shoot the scoop immediately after each major shot because the value is lost on a drain."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Quorra Multiball",
+            "when": "Use this after five left-inner-loop shots have lit Quorra at the scoop.",
+            "steps": [
+              {
+                "text": "Make five left-inner-loop shots, then start Quorra Multiball at the scoop.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat Quorra for unlimited Jackpots and use Recognizer completions to add balls.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect the growing Super Jackpot at the Gem loop while ball count protects the shot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Disc Multiball with Double Scoring",
+            "when": "Use this after the Recognizer bank is complete and seven disc feeds have qualified Disc Multiball.",
+            "steps": [
+              {
+                "text": "Clear the Recognizer bank and feed the disc seven times to prepare Disc Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the Zen lane and a T-R-O-N target to start Double Scoring during protected play.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete ten Jackpots, three Double Jackpots, and the Super while the 2x window survives.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Light Cycle Double Super Jackpot",
+          "steps": [
+            {
+              "text": "Shoot four different major shots to light four Light Cycle inserts."
+            },
+            {
+              "text": "Start Light Cycle Multiball at the scoop.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot left ramp, then Quorra for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the right ramp for the Double Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Light Cycle Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Quorra Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Disc Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "End of Line Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Double Scoring",
+            "tone": "rust",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Terminate Clu",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Zuse Fast Scoring",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Find Flynn",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Follow Gem",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Sea of Simulation",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "The Portal",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "End of Line",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Double Super Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "scoop",
+            "label": "Mode, Multiball, and combo scoop",
+            "description": "Center scoop used for the skill shot, End of Line cashout, and qualified feature starts.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Light Cycle Jackpot ramp",
+            "description": "Opening Jackpot in the Light Cycle chain and LE D-A-F-T-P-U-N-K progress shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Quorra",
+            "label": "Left inner loop",
+            "description": "Left inner loop used for the Light Cycle Super and Quorra Multiball qualification and Jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Double Super ramp",
+            "description": "Final shot in the Light Cycle ramp-loop-ramp chain.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Recognizer bank",
+            "label": "Disc qualification bank",
+            "description": "Target bank used to qualify Disc Multiball and add balls during Quorra.",
+            "precision": "unverified"
+          },
+          {
+            "term": "disc",
+            "label": "Disc Multiball toy",
+            "description": "Spinning disc fed repeatedly to qualify the flagship Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Zen lane",
+            "label": "TRON mode shortcut",
+            "description": "Lane that makes the next T-R-O-N target start the currently strobed scoring boost.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "One-time shot",
+            "instruction": "Shoot the scoop directly from the flipper return after a major shot; trapping first lets the End of Line combo window expire.",
+            "techniqueSlug": "one-time-shot",
+            "sourceUrl": "https://pinball-genie.com/machines/tron-legacy"
+          },
+          {
+            "name": "Left-flipper staging",
+            "instruction": "During Light Cycle Multiball, stage the left button so the lower-left flipper stays held while the upper-left flipper fires independently. Confirm the button-switch stack on the local copy first.",
+            "techniqueSlug": "flipper-staging",
+            "sourceUrl": "https://www.youtube.com/watch?v=7lB_Kr1857Y&t=19068s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "TRON is fast, and failed inner-loop or ramp shots can return immediately between the flippers.",
+            "response": "Expect an immediate center return after a rejected inner-loop or ramp shot.",
+            "sourceUrl": "https://pinball-genie.com/machines/tron-legacy"
+          },
+          {
+            "issue": "The spinning disc creates random lateral exits.",
+            "response": "Keep both flippers ready after every disc hit.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/tron-legacy"
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Fairfax Pinball Open 2014, Trent Augenstein built End of Line with combos, cashed it during Multiball, and used Light Cycle as the accessible Multiball route."
+          ]
+        },
+        "simpleOverview": "TRON rewards each of its six major shots with an immediate scoop cashout called End of Line. Make either orbit, either ramp, or either inner loop, then shoot the scoop before the ball drains; the value starts at 500,000 and keeps growing between collects. Shoot four different major shots to light four Light Cycle inserts, then shoot the scoop to start Light Cycle Multiball and complete the left ramp, Quorra left inner loop, and right ramp sequence.",
+        "overview": "Disney TRON: Legacy uses nine progress-ladder inserts to track its modes and Multiballs; flashing all nine lights Sea of Simulation at the scoop, and completing all nine lights The Portal there. The strongest repeatable route is End of Line: make any major shot and immediately shoot the scoop to collect its growing value before a drain. Add Light Cycle when four different major shots have lit its inserts, then shoot the scoop and complete the left-ramp, Quorra, right-ramp Jackpot sequence.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Make any major shot and immediately shoot the scoop to collect End of Line; shoot four different major shots and the scoop to start Light Cycle Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Light Cycle Multiball",
+            "text": "Shoot four of the six major orbits, ramps, or inner loops to light their Light Cycle inserts, then shoot the scoop to start Light Cycle Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Score Light Cycle Multiball",
+            "text": "Shoot the left ramp Jackpot, then the Quorra left inner loop for the Super Jackpot, then the right ramp for the Double Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "End of Line",
+            "summary": "Make any major shot, then immediately shoot the scoop to cash a carried value that is lost on a drain."
+          },
+          {
+            "name": "Light Cycle Multiball",
+            "summary": "Shoot four different major shots to light their inserts, start Light Cycle at the scoop, then shoot left ramp, Quorra, and right ramp in order."
+          },
+          {
+            "name": "Quorra Multiball",
+            "summary": "Make five left-inner-loop shots, start at the scoop, then repeat Quorra jackpots and collect the Super at Gem."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: End of Line",
+          "when": "Use this whenever a major-shot return gives an immediate shot at the scoop.",
+          "steps": [
+            {
+              "text": "Make either orbit, either ramp, or either inner loop, then immediately shoot the scoop to collect the flashing End of Line value before the ball drains."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

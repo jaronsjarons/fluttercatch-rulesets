@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "id": "G4835",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Prepare three Quick Draw Bad Guys and two Gold Mine locks, start Gold Mine Multiball, hit the waiting Bad Guy to add Showdown, use its drop-set add-a-ball loop, then complete five unique Jackpots and collect Mother Lode at the Gold Mine.",
+        "steps": [
+          {
+            "text": "Test both orbit kickouts and the Gold Mine return. Use the first safe feed to test the Gold Mine shot.",
+            "modeNotes": [
+              "Gold Mine: The upper-left mine entrance lights Lock and collects the Mother Lode. The game can return a mine shot from either orbit."
+            ]
+          },
+          {
+            "text": "Shoot the Gold Mine to light Lock, then shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+            "modeNotes": [
+              "Gold Mine Multiball: The five ramps and orbits score one Jackpot each. A full set lights Mother Lode at the Gold Mine. More full sets raise its multiplier. The multiball ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start Quick Draws. Complete the left target bank or right target bank to light its inlane. Roll through the lit inlane to raise a Bad Guy. Hit the raised target before its value counts down.",
+            "modeNotes": [
+              "Quick Draw: A defeated Bad Guy stays down. Defeat the required Bad Guys to qualify Showdown Multiball. Bounty, Lasso, and Gun Fight also raise rank."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "On Extended software, defeat three Bad Guys. Complete a target bank and roll through its lit inlane to raise the last Bad Guy, but do not hit it. Collect two Gold Mine locks and leave the third lock ready.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Gold Mine to start Gold Mine Multiball. Then hit the last raised Bad Guy to add Showdown Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the Extended stack, clear all but one Bad Guy drop while three balls are active. Complete the set when two balls remain. Then collect the five Gold Mine Jackpots and shoot the Gold Mine for Mother Lode.",
+            "modeNotes": [
+              "Extended Showdown Multiball: A full four-drop set adds a ball, up to three balls, and keeps the save active. Repeat the set to replace later drained balls.",
+              "Mother Lode: Five unique Gold Mine Jackpots light it. Each additional full set before collection raises its multiplier."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Repeat Gold Mine Multiball",
+          "when": "Use this plan when Quick Draw returns, Boss Bart, or Showdown timing is unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the Gold Mine to light Lock.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the lit Gold Mine to lock a ball. A Bounty award or the Lasso Skill Shot can also lock a ball. The third lock starts Gold Mine Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "During multiball, collect the five unique ramp and orbit Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the Gold Mine for Mother Lode. Repeat a full Jackpot set before collection only while two or more balls remain under control.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Quick Draw position play",
+            "when": "Use this when Gold Mine rejects but the target-bank returns are controlled.",
+            "steps": [
+              {
+                "text": "Complete the safer Quick Draw target bank."
+              },
+              {
+                "text": "Roll through its lit inlane to raise the Bad Guy."
+              },
+              {
+                "text": "Settle the return, then hit the raised target before its value expires."
+              },
+              {
+                "text": "Stop after three defeated Bad Guys and prepare the Gold Mine stack.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "High Noon and Marshall",
+          "steps": [
+            {
+              "text": "Collect Mother Lode, complete Showdown, make 10 combos, score all five Stampede Jackpots, and defeat all required Barts.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the five major shots in single-ball play to qualify Stampede. During Stampede Multiball, shoot all five again for Jackpots.",
+              "modeNotes": [
+                "Stampede qualification does not advance during another multiball."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the Gold Mine when High Noon is ready.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "In Extended High Noon, hit 20 Bad Guy targets before time ends. Drained balls return while the timer runs.",
+              "modeNotes": [],
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Gold Mine Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Showdown Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Showdown",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Stampede Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Drunken Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Marshall Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Quick Draw",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Gunfight",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Saloon Fight",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "High Noon",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Marshall",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Mother Lode",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Gold Mine",
+            "context": "Shoot the Gold Mine to light Lock, then shoot the lit Gold Mine to lock a ball.",
+            "label": "Gold Mine entrance",
+            "description": "The mine entrance is the upper-left shot.",
+            "xPercent": 35,
+            "yPercent": 21,
+            "precision": "area"
+          },
+          {
+            "term": "Bounty",
+            "context": "A Bounty award or the Lasso Skill Shot can also lock a ball.",
+            "label": "Bounty collect",
+            "description": "The Bounty award is collected beneath the Bart Brothers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Lasso Skill Shot",
+            "context": "A Bounty award or the Lasso Skill Shot can also lock a ball.",
+            "label": "Lasso skill-shot bowl",
+            "description": "The shooter lane feeds the lasso bowl for the skill shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "orbit kickouts",
+            "context": "Test both orbit kickouts and the Gold Mine return.",
+            "label": "Orbit kickouts",
+            "description": "The left and right orbit exits return the ball to the flippers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit inlane",
+            "context": "Roll through the lit inlane to raise a Bad Guy.",
+            "label": "Quick Draw inlane",
+            "description": "The lit inlane connected to a completed target bank raises its Bad Guy.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Bart",
+            "context": "In Showdown, clear a drop set, then make a lit Jackpot shot. Complete the sequence, hit Boss Bart for the Super Jackpot, and shoot Victory Laps.",
+            "label": "Bart and Saloon",
+            "description": "Bart rises in front of the Saloon in the upper-right-center area.",
+            "xPercent": 67,
+            "yPercent": 22,
+            "precision": "area"
+          },
+          {
+            "term": "left target bank",
+            "context": "Complete the left target bank or right target bank to light its inlane.",
+            "label": "Left Quick Draw bank",
+            "description": "The left three-target bank raises a Quick Draw Bad Guy through its lit inlane.",
+            "xPercent": 15,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "right target bank",
+            "context": "Complete the left target bank or right target bank to light its inlane.",
+            "label": "Right Quick Draw bank",
+            "description": "The right three-target bank raises a Quick Draw Bad Guy through its lit inlane.",
+            "xPercent": 86,
+            "yPercent": 48,
+            "precision": "area"
+          },
+          {
+            "term": "Beer Mug",
+            "context": "Hit the Beer Mug for the one cashout.",
+            "label": "Beer Mug target",
+            "description": "The Beer Mug standup is beside the lower-right return.",
+            "xPercent": 87,
+            "yPercent": 67,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+          "Confirm Showdown drop sets add a ball before planning the replacement loop."
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "From a left-flipper cradle, test the backhand to the Gold Mine. Use it only when the mine door and return are predictable.",
+            "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Orbit-return control",
+            "instruction": "On a slow orbit return, let the ball dead-bounce from the left flipper to the right flipper, or catch it on the left. Test the return before you repeat it.",
+            "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Orbit kickouts can change speed and angle.",
+            "response": "Watch each orbit feed once. Keep both flippers ready. Trap only after the ball is below the slingshots.",
+            "sourceUrl": "https://digitalpinballfans.com/threads/cc-tactics-and-strategies.3838/"
+          },
+          {
+            "issue": "Lyman saloon doors block Bart during a fight.",
+            "response": "Do not fire repeated uncontrolled shots into closed doors. Wait for a controlled shot or a feature that opens them.",
+            "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+          },
+          {
+            "issue": "The Lyman spinner is copy-dependent; a full rip can register roughly 40 to 150 spins.",
+            "response": "Test one rip before you choose Saloon Fight as the main route.",
+            "sourceUrl": "https://tiltforums.com/t/cactus-canyon-remake-lyman-sheats-complete-upgrade-rulesheet/10018"
+          },
+          {
+            "issue": "Drunken Multiball reverses the flipper buttons.",
+            "response": "Cradle before the start when possible. Map the left button to the right flipper and the right button to the left flipper before the Beer Mug Super Jackpot.",
+            "sourceUrl": "https://www.chicago-gaming.com/coinop/cactus-canyon/upgrade"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Gold Mine Multiball",
+            "summary": "Shoot the Gold Mine to light Lock, then shoot it while Lock is lit. The third lock starts Multiball."
+          },
+          {
+            "name": "Mother Lode",
+            "summary": "Collect one Jackpot at each of the five major ramps and orbits, then shoot the Gold Mine for Mother Lode."
+          },
+          {
+            "name": "Quick Draw",
+            "summary": "Complete either target bank, roll through its lit inlane, then hit the raised Bad Guy before its value counts down."
+          }
+        ],
+        "overview": "In Cactus Canyon, Gold Mine and Showdown can run together. Defeat three Bad Guys, complete a target bank and roll through its lit inlane to raise the fourth without hitting it, then collect two Gold Mine locks. Start Gold Mine with the third lock, hit the waiting Bad Guy to add Showdown, use complete drop sets for add-a-balls, and collect the five Gold Mine Jackpots before returning to the mine for Mother Lode.",
+        "simpleOverview": "Cactus Canyon starts Gold Mine Multiball after three locks at the Gold Mine. Shoot the mine once to light Lock and again to lock each ball, then collect one Jackpot at each of the five ramps and orbits and return to the mine for Mother Lode. Quick Draw is a separate option: complete either target bank, roll through its lit inlane, and hit the raised Bad Guy.",
+        "machineSetup": [
+          "Test both orbit kickouts, the Gold Mine return, and Bad Guy target rebounds.",
+          "Confirm Showdown drop sets add a ball before planning the replacement loop."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Start Gold Mine Multiball at the Gold Mine, collect one Jackpot at each of the five major shots, then return to the Gold Mine for Mother Lode. Quick Draw is a separate option when the target-bank returns are controlled.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "How to start Gold Mine Multiball",
+            "text": "Shoot the Gold Mine to light Lock, then shoot the lit Gold Mine to lock a ball. Repeat until the third lock starts Gold Mine Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "How to score Gold Mine Multiball",
+            "text": "Shoot each of the five major ramps and orbits once for a Jackpot. After all five Jackpots, shoot the Gold Mine for Mother Lode.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "How to start a Quick Draw",
+            "text": "Complete the left target bank or right target bank to light its inlane. Roll through the lit inlane to raise a Bad Guy, then hit the raised target before its value counts down.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gold Mine Multiball",
+            "summary": "Shoot the Gold Mine to light Lock, then shoot it while Lock is lit. The third lock starts Multiball."
+          },
+          {
+            "name": "Mother Lode",
+            "summary": "Collect one Jackpot at each of the five major ramps and orbits, then shoot the Gold Mine for Mother Lode."
+          },
+          {
+            "name": "Quick Draw",
+            "summary": "Complete either target bank, roll through its lit inlane, then hit the raised Bad Guy before its value counts down."
+          }
+        ]
+      }
+    }
+  ]
+}

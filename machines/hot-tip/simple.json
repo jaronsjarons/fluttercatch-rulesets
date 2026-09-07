@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "Grep0",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the center saucer to light double bonus, then complete H-O-T T-I-P once. Use the left flipper for safe drops and the right flipper for the lit spinner.",
+        "steps": [
+          {
+            "text": "Plunge the center saucer. Try to collect double bonus. Count top-switch hits because they move the lit saucer award.",
+            "modeNotes": [
+              "Center saucer: The lit award moves when a top switch scores. Double bonus and Light Captive Ball are the two important awards."
+            ]
+          },
+          {
+            "text": "If double bonus is not lit, use the right flipper to shoot the spinner back to the top and try the saucer again."
+          },
+          {
+            "text": "Complete all six H-O-T T-I-P drops once to light the spinner; the EM then scores 1,000 per spin, while solid-state scoring differs."
+          },
+          {
+            "text": "From the right flipper, shoot the lit spinner. A strong shot can score many spins."
+          },
+          {
+            "text": "On the EM edition, take a controlled full captive-ball hit only after its 30,000 award is lit; otherwise favor the spinner."
+          },
+          {
+            "text": "After base bonus is full, use the left flipper for safe drop targets and the right flipper for the lit spinner."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Edition",
+            "summary": "The 1,300-unit EM and 4,903-unit solid-state editions share a layout but use different scoring scales and feature values."
+          },
+          {
+            "name": "Center saucer",
+            "summary": "Top-switch hits move its lit award; collect double end-of-ball bonus before building the drain bonus."
+          },
+          {
+            "name": "H-O-T T-I-P",
+            "summary": "The first complete drop-bank cycle lights the spinner; later EM cycles raise target values and light other awards."
+          },
+          {
+            "name": "Spinner",
+            "summary": "The right-flipper spinner is the repeatable scoring route after it is lit."
+          },
+          {
+            "name": "Captive ball",
+            "summary": "On EM, a full hit advances bonus twice and scores 30,000 only after the saucer lights that award."
+          }
+        ],
+        "fallback": {
+          "title": "Spinner route",
+          "when": "Use this plan when the captive-ball return or left-side control is unsafe.",
+          "steps": [
+            {
+              "text": "From the left flipper, complete all six H-O-T T-I-P drops once."
+            },
+            {
+              "text": "Move the ball to the right flipper only when the transfer is controlled."
+            },
+            {
+              "text": "Repeat the lit spinner from the right flipper."
+            },
+            {
+              "text": "Use spinner shots to return the ball to the center saucer until double bonus is lit."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Drop-target route",
+            "when": "Use this plan when the drops are safer than the spinner.",
+            "steps": [
+              {
+                "text": "Complete all six H-O-T T-I-P drops once to light the spinner."
+              },
+              {
+                "text": "Complete them a second time. On the EM edition, this lights the left saucer for extra ball."
+              },
+              {
+                "text": "Complete them again after they reset. Their value increases from 100 to 1,000, then to 10,000 per target on the EM model."
+              }
+            ]
+          },
+          {
+            "title": "Captive-ball route",
+            "when": "Use this plan when the left flipper has a repeatable full captive-ball shot.",
+            "steps": [
+              {
+                "text": "Collect Light Captive Ball at the center saucer."
+              },
+              {
+                "text": "Trap on the left flipper."
+              },
+              {
+                "text": "Repeat full captive-ball hits for 30,000 and two bonus advances each."
+              },
+              {
+                "text": "After base bonus is full, change to the drops or lit spinner."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Lit spinner and doubled drain bonus",
+          "steps": [
+            {
+              "text": "Collect double bonus at the center saucer."
+            },
+            {
+              "text": "Complete H-O-T T-I-P once to light the spinner."
+            },
+            {
+              "text": "Build base bonus through controlled play, using the captive ball only on the EM when its award justifies the rebound."
+            },
+            {
+              "text": "Repeat the lit spinner and preserve the doubled end-of-ball bonus."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "center saucer",
+            "context": "center saucer",
+            "label": "Center saucer",
+            "description": "Upper-center saucer whose moving lamps include double bonus and captive-ball awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "context": "captive ball",
+            "label": "Captive ball",
+            "description": "Left-side captive ball used for bonus advances and an edition-dependent lit award.",
+            "precision": "unverified"
+          },
+          {
+            "term": "H-O-T T-I-P drops",
+            "context": "H-O-T T-I-P drops",
+            "label": "Drop-target banks",
+            "description": "Two three-target banks that light the spinner after their first complete cycle.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "context": "lit spinner",
+            "label": "Left spinner",
+            "description": "Primary repeatable scoring shot from the right flipper after H-O-T T-I-P is completed.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce only a short, slow feed; raise the receiving flipper for fast balls descending from the upper playfield.",
+            "techniqueSlug": "dead-bounce",
+            "sourceUrl": "https://www.youtube.com/watch?v=8pSvP-PD_K4&t=1678s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The center saucer can reject the plunge or eject toward the center drain on a specific copy.",
+            "response": "Test a soft plunge and the kickout before you depend on repeated saucer collects.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8pSvP-PD_K4&t=981s"
+          },
+          {
+            "issue": "A full captive-ball shot can return without control, and the ball can be hard to see behind the captive ball.",
+            "response": "Use the shot only after a controlled trap. Stop repeating it if the return is not predictable.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8pSvP-PD_K4&t=1698s"
+          },
+          {
+            "issue": "EM copies can have bouncy flippers and sensitive slings.",
+            "response": "Use a small dead bounce on a short feed. Do not trust a high-speed feed to stay on the opposite flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8pSvP-PD_K4&t=1678s"
+          }
+        ],
+        "checkBeforePlay": [
+          "Identify the 1977 EM or solid-state edition; spinner, captive-ball, drop-target, lane, and bonus values differ substantially.",
+          "Confirm ball count, double-bonus behavior, Extra Ball and Special conversion, target resets, and tilt before choosing exact award values.",
+          "Test the center-saucer plunge and eject, spinner return, captive-ball rebound, drop-bank rebounds, slings, and upper-playfield feeds."
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the NKY Open 2022 final, the field repeatedly used the lit spinner and center-saucer double bonus; Carlos Delaserda also used the captive-ball alternative when its rebound was manageable."
+          ]
+        },
+        "simpleOverview": "The center saucer in Hot Tip cycles through awards that include Double Bonus. Completing H-O-T T-I-P lights the spinner for repeatable scoring. Collect Double Bonus before building the drain bonus, then repeat the lit spinner from the right flipper while its return remains controlled.",
+        "overview": "The center saucer in Hot Tip cycles through awards that include Double Bonus. Use spinner returns to revisit the saucer until Double Bonus is lit, complete the six drops once, then repeat the lit spinner while building base bonus. Use the captive ball only when its displayed award justifies the rebound.",
+        "machineSetup": [
+          "Identify the 1977 EM or solid-state edition; spinner, captive-ball, drop-target, lane, and bonus values differ substantially.",
+          "Confirm ball count, double-bonus behavior, Extra Ball and Special conversion, target resets, and tilt before choosing exact award values.",
+          "Test the center-saucer plunge and eject, spinner return, captive-ball rebound, drop-bank rebounds, slings, and upper-playfield feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the center saucer to light double bonus, then complete H-O-T T-I-P once. Use the left flipper for safe drops and the right flipper for the lit spinner.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the center saucer. Try to collect double bonus. Count top-switch hits because they move the lit saucer award.",
+            "details": [
+              "Center saucer: The lit award moves when a top switch scores. Double bonus and Light Captive Ball are the two important awards."
+            ]
+          },
+          {
+            "text": "If double bonus is not lit, use the right flipper to shoot the spinner back to the top and try the saucer again."
+          },
+          {
+            "text": "Complete all six H-O-T T-I-P drops once to light the spinner; the EM then scores 1,000 per spin, while solid-state scoring differs."
+          },
+          {
+            "text": "From the right flipper, shoot the lit spinner. A strong shot can score many spins."
+          },
+          {
+            "text": "On the EM edition, take a controlled full captive-ball hit only after its 30,000 award is lit; otherwise favor the spinner."
+          },
+          {
+            "text": "After base bonus is full, use the left flipper for safe drop targets and the right flipper for the lit spinner."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Edition",
+            "summary": "The 1,300-unit EM and 4,903-unit solid-state editions share a layout but use different scoring scales and feature values."
+          },
+          {
+            "name": "Center saucer",
+            "summary": "Top-switch hits move its lit award; collect double end-of-ball bonus before building the drain bonus."
+          },
+          {
+            "name": "H-O-T T-I-P",
+            "summary": "The first complete drop-bank cycle lights the spinner; later EM cycles raise target values and light other awards."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Spinner route",
+          "when": "Use this plan when the captive-ball return or left-side control is unsafe.",
+          "steps": [
+            {
+              "text": "From the left flipper, complete all six H-O-T T-I-P drops once."
+            },
+            {
+              "text": "Move the ball to the right flipper only when the transfer is controlled."
+            },
+            {
+              "text": "Repeat the lit spinner from the right flipper."
+            },
+            {
+              "text": "Use spinner shots to return the ball to the center saucer until double bonus is lit."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The center saucer can reject the plunge or eject toward the center drain on a specific copy.",
+          "text": "Test a soft plunge and the kickout before you depend on repeated saucer collects."
+        }
+      }
+    }
+  ]
+}

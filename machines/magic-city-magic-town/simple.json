@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "G57xp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the top rollover and MAGIC lanes, shoot the center star target after completing MAGIC, then return up top and score the lit upper blue bumper.",
+        "quickInfo": [
+          {
+            "name": "Skill shot",
+            "summary": "The skill shot crosses the top Advance and On Bumpers rollover, then enters a needed MAGIC letter lane."
+          },
+          {
+            "name": "MAGIC lanes",
+            "summary": "Each MAGIC lane scores 100 points and advances the set that qualifies the center star target."
+          },
+          {
+            "name": "Center star",
+            "summary": "After MAGIC is complete, the center standup awards the star and lights the upper blue bumper for 100."
+          },
+          {
+            "name": "Blue bumper",
+            "summary": "The upper blue bumper becomes the main top-play scoring target after the star lights it for 100."
+          },
+          {
+            "name": "CITY letters",
+            "summary": "The CITY letters qualify replay or Extra Ball awards and do not improve the normal points route."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge across the top Advance and On Bumpers rollover."
+          },
+          {
+            "text": "Guide the plunge into a MAGIC letter lane that is still unlit."
+          },
+          {
+            "text": "Send the ball back to the upper playfield instead of shooting lower targets."
+          },
+          {
+            "text": "Nudge above the three upper bumpers so the ball travels up one MAGIC lane and down another."
+          },
+          {
+            "text": "After MAGIC is complete, shoot the center standup target once to collect the star."
+          },
+          {
+            "text": "Return the ball to the upper playfield and score the lit blue bumper for 100."
+          },
+          {
+            "text": "Repeat the upper route and avoid CITY progress unless its award is enabled and useful."
+          }
+        ],
+        "fallback": {
+          "title": "Controlled center advance",
+          "when": "Use this plan when MAGIC is incomplete and repeated upper play does not collect missing letters.",
+          "steps": [
+            {
+              "text": "Trap the ball before you aim at the center standup."
+            },
+            {
+              "text": "Shoot the target only when its miss and rebound have been safe on this machine."
+            },
+            {
+              "text": "Use the target to advance MAGIC toward the star."
+            },
+            {
+              "text": "Stop after an unsafe rebound and return to upper play."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Enabled CITY award",
+            "when": "Use this plan only when the replay or Extra Ball award is enabled and useful for the current format.",
+            "steps": [
+              {
+                "text": "Read the CITY lamps and installed instruction card."
+              },
+              {
+                "text": "Use only natural CITY progress during the normal MAGIC route."
+              },
+              {
+                "text": "Collect the qualified award only when its shot does not replace a safer MAGIC shot."
+              },
+              {
+                "text": "Return to MAGIC and the lit blue bumper after the award."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Lit-blue-bumper top play",
+          "steps": [
+            {
+              "text": "Collect a missing MAGIC letter on the plunge."
+            },
+            {
+              "text": "Use upper-bumper nudges to collect more MAGIC lanes."
+            },
+            {
+              "text": "Complete MAGIC."
+            },
+            {
+              "text": "Shoot the center standup for the star."
+            },
+            {
+              "text": "Return up top and repeat the blue bumper at 100."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Upper-bumper lane nudge",
+            "instruction": "Nudge while the ball is above the three upper bumpers. Guide it up one MAGIC lane and down another.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57xp-MQp1q"
+          },
+          {
+            "name": "Lower-bumper restraint",
+            "instruction": "When the ball moves near the lower bumper, wait to flip until the stroke can send the ball upward.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57xp-MQp1q"
+          },
+          {
+            "name": "Center advance test",
+            "instruction": "Use one controlled center-target shot to test its rebound. Continue only when the ball returns safely.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57xp-MQp1q"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Upper-bumper action can send the ball away from the needed MAGIC lanes.",
+            "response": "Nudge before the ball contacts the top of a bumper. Guide it toward an unlit letter lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57xp-MQp1q"
+          },
+          {
+            "issue": "The center standup can produce a dangerous miss or rebound.",
+            "response": "Prefer upper play. Use the center target only for the star or a tested MAGIC advance.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57xp-MQp1q"
+          },
+          {
+            "issue": "A poorly timed lower flipper stroke can let the ball drain under that flipper.",
+            "response": "Do not flip near the lower bumper unless the stroke clearly moves the ball higher.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G57xp-MQp1q"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Advance and On Bumpers rollover",
+            "label": "Top advance rollover",
+            "description": "The top rollover advances and activates bumper scoring before the plunge enters a MAGIC lane.",
+            "context": "Plunge across the top Advance and On Bumpers rollover.",
+            "precision": "unverified"
+          },
+          {
+            "term": "MAGIC lanes",
+            "label": "MAGIC lanes",
+            "description": "Five upper lanes spell MAGIC and score the game's largest standard lane value.",
+            "context": "Guide the plunge into an unlit MAGIC lane.",
+            "precision": "unverified"
+          },
+          {
+            "term": "three upper bumpers",
+            "label": "Upper bumper cluster",
+            "description": "The three upper bumpers can move the ball through multiple MAGIC lanes.",
+            "context": "Nudge above the three upper bumpers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center standup target",
+            "label": "Center star target",
+            "description": "The center standup advances MAGIC before completion and awards the star after MAGIC is complete.",
+            "context": "Shoot the center standup target after completing MAGIC.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper blue bumper",
+            "label": "Lit blue bumper",
+            "description": "The upper blue bumper scores 100 after the center star is collected.",
+            "context": "Return up top and score the lit upper blue bumper.",
+            "precision": "unverified"
+          },
+          {
+            "term": "CITY letters",
+            "label": "CITY award letters",
+            "description": "CITY qualifies replay on Magic City or an added-ball award on Magic Town.",
+            "context": "Use CITY only when its installed award is useful.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Magic City replay or Magic Town add-a-ball; both 1967 Williams editions retain CITY on the playfield.",
+          "Confirm ball count, CITY award conversion, replay, added-ball, tilt, star, MAGIC advance, and bumper-value settings.",
+          "Test the plunge rollover, MAGIC lanes, all four bumpers, center target, upper exits, lower feeds, slingshots, and drains."
+        ],
+        "simpleOverview": "Magic City uses the top rollover and M-A-G-I-C lanes to qualify the center star target. Collect the missing letters upstairs, shoot the center target after M-A-G-I-C is complete, then return up top and repeat the now-lit blue bumper for 100.",
+        "overview": "Magic City uses the top rollover and M-A-G-I-C lanes to qualify the center star target. Use the plunge and upper nudges to finish M-A-G-I-C, then shoot the center standup to award the star and light the blue bumper for 100. Return upstairs and repeat that bumper; C-I-T-Y advances replay or Extra Ball rather than the normal points route.",
+        "machineSetup": [
+          "Confirm Magic City replay or Magic Town add-a-ball; both 1967 Williams editions retain CITY on the playfield.",
+          "Confirm ball count, CITY award conversion, replay, added-ball, tilt, star, MAGIC advance, and bumper-value settings.",
+          "Test the plunge rollover, MAGIC lanes, all four bumpers, center target, upper exits, lower feeds, slingshots, and drains."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the top rollover and MAGIC lanes, shoot the center star target after completing MAGIC, then return up top and score the lit upper blue bumper.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge across the top Advance and On Bumpers rollover."
+          },
+          {
+            "text": "Guide the plunge into a MAGIC letter lane that is still unlit."
+          },
+          {
+            "text": "Send the ball back to the upper playfield instead of shooting lower targets."
+          },
+          {
+            "text": "Nudge above the three upper bumpers so the ball travels up one MAGIC lane and down another."
+          },
+          {
+            "text": "After MAGIC is complete, shoot the center standup target once to collect the star."
+          },
+          {
+            "text": "Return the ball to the upper playfield and score the lit blue bumper for 100."
+          },
+          {
+            "text": "Repeat the upper route and avoid CITY progress unless its award is enabled and useful."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Skill shot",
+            "summary": "The skill shot crosses the top Advance and On Bumpers rollover, then enters a needed MAGIC letter lane."
+          },
+          {
+            "name": "MAGIC lanes",
+            "summary": "Each MAGIC lane scores 100 points and advances the set that qualifies the center star target."
+          },
+          {
+            "name": "Center star",
+            "summary": "After MAGIC is complete, the center standup awards the star and lights the upper blue bumper for 100."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Controlled center advance",
+          "when": "Use this plan when MAGIC is incomplete and repeated upper play does not collect missing letters.",
+          "steps": [
+            {
+              "text": "Trap the ball before you aim at the center standup."
+            },
+            {
+              "text": "Shoot the target only when its miss and rebound have been safe on this machine."
+            },
+            {
+              "text": "Use the target to advance MAGIC toward the star."
+            },
+            {
+              "text": "Stop after an unsafe rebound and return to upper play."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A poorly timed lower flipper stroke can let the ball drain under that flipper.",
+          "text": "Do not flip near the lower bumper unless the stroke clearly moves the ball higher."
+        }
+      }
+    }
+  ]
+}

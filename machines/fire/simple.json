@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "G41Lo",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Put out all three lit fire targets on one side building; the opposite orbit entrance drops so a shot there travels over the top and locks in the extinguished building. Repeat for the other building. With one ball locked in each side, shoot the lower horseshoe to raise the center Ladder Ramp, then shoot through the window to start three-ball Multiball.",
+        "simpleOverview": "Clear all three lit fire targets for one building, then shoot the opposite orbit entrance to lock there. Repeat on the other side. After both locks, shoot the lower horseshoe to raise the center Ladder Ramp, then shoot the window for three-ball Multiball.",
+        "summary": "Extinguish a three-target building bank and use the opposite orbit entrance to lock there; repeat on the other side. Shoot the horseshoe to raise the Ladder Ramp, then shoot the window for three-ball Multiball.",
+        "quickInfo": [
+          {
+            "name": "Light a Lock",
+            "summary": "Put out all three lit fires on one building."
+          },
+          {
+            "name": "Collect a Lock",
+            "summary": "Shoot the opposite-side orbit entrance after it drops."
+          },
+          {
+            "name": "Raise the Ladder",
+            "summary": "After both side locks, shoot the lower horseshoe."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot through the raised center window."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Put out all three lit fire targets on one building.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the opposite orbit entrance after it drops to route the ball into the extinguished building's lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the fire-bank and opposite-orbit sequence to lock one ball in the other building.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lower horseshoe to raise the center Ladder Ramp, then shoot through the window to start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Spot a fire with the loop",
+            "when": "Use this when a direct standup target is dangerous.",
+            "steps": [
+              {
+                "text": "Send the ball through the main loop to spot one currently lit fire target.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Finish the remaining target bank, then take the lowered opposite-side lock route.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Collect the Million",
+          "steps": [
+            {
+              "text": "During Multiball, put out every currently lit fire while at least two balls remain in play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the final lit fire for the one-million award; keep one ball controlled when attacking the standups.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Fire Plug time, Ladder Ramp time, extra-ball conversion, and whether locks are shared between players.",
+          "Test all twelve fire targets, both orbit lifts, both physical locks and releases, lower horseshoe, Ladder Ramp, window, Fire Plug, and Save the Girl ramps."
+        ],
+        "termStyles": [
+          {
+            "label": "Building Locks",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Ladder Ramp",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Million",
+            "tone": "indigo",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "fire targets",
+            "label": "Building fire banks",
+            "description": "The four three-target banks used to qualify the side locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "opposite orbit entrance",
+            "label": "Opposite-side lock route",
+            "description": "The lowered orbit entrance that routes over the top into the extinguished building.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower horseshoe",
+            "label": "Lower horseshoe",
+            "description": "The turnaround that raises the Ladder Ramp after both locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Ladder Ramp",
+            "label": "Ladder Ramp window",
+            "description": "The timed center shot that starts Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Each extinguished building is entered from the opposite orbit side.",
+            "response": "Follow the lowered entrance rather than shooting back toward the fire bank you just completed.",
+            "sourceUrl": "https://www.pinball.org/rules/fire.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Extinguish a three-target building bank and use the opposite orbit entrance to lock there; repeat on the other side. Shoot the horseshoe to raise the Ladder Ramp, then shoot the window for three-ball Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Put out all three lit fire targets on one building.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the opposite orbit entrance after it drops to route the ball into the extinguished building's lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the fire-bank and opposite-orbit sequence to lock one ball in the other building.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lower horseshoe to raise the center Ladder Ramp, then shoot through the window to start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light a Lock",
+            "summary": "Put out all three lit fires on one building."
+          },
+          {
+            "name": "Collect a Lock",
+            "summary": "Shoot the opposite-side orbit entrance after it drops."
+          },
+          {
+            "name": "Raise the Ladder",
+            "summary": "After both side locks, shoot the lower horseshoe."
+          }
+        ]
+      }
+    }
+  ]
+}

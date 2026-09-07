@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "GJ2K0",
+  "title": "Looney Tunes",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Spooky Pinball Looney Tunes rules",
+      "url": "https://www.spookypinball.com/wp-content/uploads/2024/12/Looney-Tunes-Rule.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Spooky Pinball Looney Tunes code and change log",
+        "url": "https://www.spookypinball.com/game-support/"
+      },
+      {
+        "label": "Tilt Forums Looney Tunes rulesheet",
+        "url": "https://tiltforums.com/t/looney-tunes-rulesheet/9499"
+      },
+      {
+        "label": "Official Spooky Pinball Looney Tunes maintenance manual",
+        "url": "https://www.spookypinball.com/wp-content/uploads/2025/02/Looney-Tunes-Maintenance-Manual.pdf"
+      },
+      {
+        "label": "Looney Tunes Collector's Edition tutorial (December 2024; software not identified)",
+        "url": "https://www.youtube.com/watch?v=3mJQqSW3gRg"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "earlyCode": true,
+      "summary": "Collect three white film arrows, start an episode at the Crate or Vault, stack a prepared Anvil or Giant Rocket multiball, and collect Encore afterward.",
+      "quickInfo": [
+        {
+          "name": "Episodes",
+          "summary": "Three white film-reel shots light an episode at the ACME Crate or Vault, and most episodes are not conventionally timed."
+        },
+        {
+          "name": "Encore",
+          "summary": "Completing an episode lights the Vault for a hurry-up starting at 10% of episode points, doubled when the Vault is reached without touching adjacent targets."
+        },
+        {
+          "name": "Anvil Frenzy",
+          "summary": "Left ramp then Crate scores an Anvil hurry-up and lights a virtual lock, while two locks start two-ball Anvil Frenzy."
+        },
+        {
+          "name": "Giant Rocket Multiball",
+          "summary": "Five strong captive-ball hits light a right-orbit lock, and three locks start the first three-ball rocket multiball."
+        },
+        {
+          "name": "Mode stacking",
+          "summary": "Main multiballs do not stack with one another, and episodes must begin before multiball except that TNT Add-A-Ball can join in either order."
+        },
+        {
+          "name": "Blueprints",
+          "summary": "The hidden upper-left lane builds playfield X; a lit return lane activates it for 30 seconds."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Time the launch to hit the strobing ACME Vault target, or press the action button before launching and shoot the upper-left loop for the Super Skill Shot."
+        },
+        {
+          "text": "Collect three white film arrows. Re-hit the Vault when later episodes reduce the number of white arrows available at once."
+        },
+        {
+          "text": "Shoot the ACME Crate or Vault, choose an episode with the flipper buttons, and press the action button to start it.",
+          "modeNotes": [
+            "Hare-Raising Hare alternates four ramp shots with the spinner.",
+            "Rabbit Fire alternates left-side and right-side ramps, then finishes at the Crate.",
+            "What's Opera Doc uses five major shots, repeated left ramps, then a Crate hurry-up.",
+            "Rabbit Punch is unavailable until the jab, hook, and uppercut combo jackpots are collected."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Before completing the episode, prepare one multiball without starting it.",
+          "modeNotes": [
+            "Anvil route: Shoot the left ramp, collect the hurry-up at the Crate, and repeat for two virtual locks.",
+            "Giant Rocket route: Hit the captive ball strongly enough to count down the fuse, then collect three locks at the right orbit.",
+            "TNT route: Complete TNT and shoot the lane below the upper-right flipper for a true add-a-ball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start the episode first, then start the prepared Anvil or Giant Rocket multiball so the mode continues under multiball protection.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "In Anvil Frenzy, collect the major-shot Jackpots, raise them at the left ramp, then shoot the Crate for the Super Jackpot.",
+          "modeNotes": [
+            "While the magnet holds the Super Jackpot ball, knock it into the open Crate with the other ball for the Mega Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "In Giant Rocket Multiball, collect five major-shot Jackpots to relight the fuse, then hit the captive ball promptly for the declining Super Jackpot.",
+          "modeNotes": [
+            "The next rocket qualification alternates to the more valuable Rocket Skates Multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After completing the episode, shoot the ACME Vault without touching its adjacent targets to double Encore.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Press the action button to use the selected ACME item; use the secondary flipper buttons to cycle through multiple held items."
+        }
+      ],
+      "fallback": {
+        "title": "Roadrunner and Hare Restore",
+        "when": "Use this as a separate scoring loop when an Episode or Multiball is not ready.",
+        "steps": [
+          {
+            "text": "Loop the upper Roadrunner shots to build speed, bonus multiplier, and the 12-light Roadrunner Jackpot."
+          },
+          {
+            "text": "Continue consecutive loops to multiply the Roadrunner Jackpot."
+          },
+          {
+            "text": "Hit five upper carrot targets to light both outlane Hare Restore saves."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Rocket Skates cash-out",
+          "when": "Use this on the second rocket qualification.",
+          "steps": [
+            {
+              "text": "After the third lock, use the three extra lock opportunities at the left ramp, Crate, or TNT lane."
+            },
+            {
+              "text": "Collect yellow Jackpots, then revisit those shots for red 2x Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After three 2x Jackpots, shoot the Crate for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Preserve balls because the Super is multiplied by balls in play and by collected 2x Jackpots, then ends the multiball."
+            }
+          ]
+        },
+        {
+          "title": "Area 51¾ route",
+          "when": "Use this after the left-orbit spinner qualifies one of the three Marvin modes at the left ramp.",
+          "steps": [
+            {
+              "text": "Advance spinner progress at the left orbit."
+            },
+            {
+              "text": "Shoot the left ramp to start one of the three mutually exclusive Marvin modes.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the mode to unlock its associated ACME item."
+            },
+            {
+              "text": "Use the item during a later episode or multiball when its boost applies."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Taz-Mania, Factory Mayhem, and Duck Amuck",
+        "steps": [
+          {
+            "text": "Collect red arrows spawned by Crate hits to fill the tornado and start Taz-Mania at the Crate or Vault.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For Factory Mayhem, play all Marvin modes, play Anvil Frenzy, open five Crates, collect the three punch jackpots, and play Rocket Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use each completed Factory Mayhem requirement's permanent 10% scoring increase during the rest of the game.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Play every episode to make Duck Amuck available as the final episode.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Looney Tunes edition",
+          "pro": "The production run uses one shared Looney Tunes playfield and rules package.",
+          "premium": "Serial cosmetics and operator setup do not create a separate gameplay edition.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2025/02/Looney-Tunes-Maintenance-Manual.pdf"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "episode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Encore",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Anvil Frenzy",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Giant Rocket Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Rocket Skates Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "TNT Add-A-Ball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Blueprint",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Hare Restore",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Episode-before-multiball stack",
+          "instruction": "Start the episode before Anvil or Rocket multiball because those multiballs block new mode starts while active.",
+          "sourceUrl": "https://tiltforums.com/t/looney-tunes-rulesheet/9499"
+        },
+        {
+          "name": "Direct Vault Encore",
+          "instruction": "After an episode completion, reach the Vault without touching its adjacent targets to double the Encore hurry-up.",
+          "sourceUrl": "https://tiltforums.com/t/looney-tunes-rulesheet/9499"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Main multiballs are mutually exclusive and prevent new episode starts.",
+          "response": "Start the episode first; use TNT Add-A-Ball when a mode must begin after the extra ball is already active.",
+          "sourceUrl": "https://tiltforums.com/t/looney-tunes-rulesheet/9499"
+        },
+        {
+          "issue": "Rocket Skates ends immediately when its Super Jackpot is collected.",
+          "response": "Finish desired episode shots and 2x Jackpots before cashing the Crate Super.",
+          "sourceUrl": "https://tiltforums.com/t/looney-tunes-rulesheet/9499"
+        }
+      ],
+      "simpleOverview": "Looney Tunes turns white film arrows into Episodes, while Anvil Frenzy and Giant Rocket Multiball can protect an Episode that is already running. Collect three white film arrows, shoot the ACME Crate or Vault, choose an Episode with the flipper buttons, and confirm it with the action button. Start the Episode before either main Multiball because a new Episode cannot begin during one.",
+      "overview": "A running Episode can continue during either main Multiball in Looney Tunes, but the two Multiballs cannot run together. Collect three white film arrows, shoot the ACME Crate or Vault, choose with the flipper buttons, and confirm with the action button. Start the Episode before the prepared Multiball, finish the Episode under protection, then shoot the Vault for Encore.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

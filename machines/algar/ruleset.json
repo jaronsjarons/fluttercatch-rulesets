@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "G5nQQ",
+  "title": "Algar",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Algar tournament rules",
+      "url": "https://rules.silverballmania.com/rules/G5nQQ-MLbbp"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Algar operator manual",
+        "url": "https://www.pinrepair.com/sys37/manuals/wms6-algar-op.pdf"
+      },
+      {
+        "label": "Damien Charléty, Keith Elwin, Robert Gagno, and Salem Ayoob at Pinburgh 2014",
+        "url": "https://pinballvideos.com/v/535/3643"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the eject hole to open the right gate and spot KORA. Hit three different captive balls for 30K, 40K, and 50K, reset them at the upper-left chamber, and carry a large bonus at 5x.",
+      "quickInfo": [
+        {
+          "name": "Eject hole",
+          "summary": "The eject-hole skill shot opens the right gate and spots one KORA letter when the setting permits it."
+        },
+        {
+          "name": "Captive-ball ladder",
+          "summary": "The first different captive ball scores 30K, the second 40K, and the third 50K; resetting their positions does not lower the value."
+        },
+        {
+          "name": "Reset ball chamber",
+          "summary": "The upper-left chamber returns every captive ball already hit to a reachable position without resetting its value."
+        },
+        {
+          "name": "KORA",
+          "summary": "Complete K-O-R-A in the top lanes to raise end-of-ball Bonus X. The open right gate feeds the ball back toward those lanes."
+        },
+        {
+          "name": "5x Bonus",
+          "summary": "Bonus X stops at 5x, so preserve the ball after the multiplier and bonus have grown."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge for the eject hole. Confirm that it opens the right gate and spots a KORA letter."
+        },
+        {
+          "text": "Shoot the safer captive ball from a controlled flipper for 30K. That ball moves out of reach."
+        },
+        {
+          "text": "Hit a different captive ball for 40K, then the remaining ball for 50K."
+        },
+        {
+          "text": "Shoot the upper-left reset ball chamber to return the hit captive balls to reachable positions. Their raised value remains.",
+          "modeNotes": [
+            "Check captive-ball values and whether their progress and Bonus X carry between balls."
+          ]
+        },
+        {
+          "text": "Send the ball through the open right gate, then complete K-O-R-A in the top lanes to raise Bonus X toward 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After resetting the balls, repeat the safest captive ball at the raised value while its rebound remains controlled."
+        },
+        {
+          "text": "After 5x is ready, stop forcing dangerous captive-ball hits. Protect the built bonus with safer top play.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "KORA and bonus",
+        "when": "Use this when captive-ball rebounds are too dangerous.",
+        "steps": [
+          {
+            "text": "Feed the top lanes through the eject hole or an open right gate."
+          },
+          {
+            "text": "Complete K-O-R-A in the top lanes to advance Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Send the ball through the eject hole or open right gate and score the top lanes to build base bonus."
+          },
+          {
+            "text": "Return to a captive ball only from a trapped, repeatable feed."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Chamber-release route",
+          "when": "Use this when captive hits are safe but the full 50K ladder is not needed.",
+          "steps": [
+            {
+              "text": "Hit the safest captive ball once for 30K."
+            },
+            {
+              "text": "Shoot the upper-left reset ball chamber to return it to reach without lowering the next captive value."
+            },
+            {
+              "text": "Repeat that controlled captive-ball and reset sequence while it remains safer than changing captive balls."
+            },
+            {
+              "text": "Return to KORA and Bonus X when the reset-chamber feed is uncontrolled.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "50K captive balls and 5x Bonus",
+        "steps": [
+          {
+            "text": "Hit three different captive balls to raise the value from 30K to 40K to 50K."
+          },
+          {
+            "text": "Use the upper-left reset ball chamber to make the hit captive balls reachable again."
+          },
+          {
+            "text": "Use the open right gate to feed the top lanes, then complete K-O-R-A until Bonus X reaches 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Carry the maximum multiplier into a large end-of-ball bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus X",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "5x Bonus",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Eject-hole skill shot",
+          "instruction": "Set the plunge so the ball reaches the eject hole. Use the award to open the right gate before normal play begins.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nQQ-MLbbp"
+        },
+        {
+          "name": "Captive-ball selection",
+          "instruction": "Test both captive balls. Repeat the one that gives the safer return to a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nQQ-MLbbp"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Direct captive-ball hits can rebound toward the center drain.",
+          "response": "Shoot a captive ball only from control. Change sides if one rebound is not recoverable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nQQ-MLbbp"
+        },
+        {
+          "issue": "The right side has two outlane paths, and a weak gate shot can return near them.",
+          "response": "Use the gate only after its return is known. Nudge before the ball reaches the lane dividers.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nQQ-MLbbp"
+        },
+        {
+          "issue": "A closing gate can reject the ball into uncontrolled play.",
+          "response": "Confirm the gate lamp before the shot. Keep both flippers ready for a rejected entry.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nQQ-MLbbp"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm whether the top-center eject hole spots KORA and opens the right gate.",
+        "Check captive-ball values and whether their progress and Bonus X carry between balls.",
+        "Confirm Extra Ball, Special, replay, ball count, and tilt treatment before pursuing those awards."
+      ],
+      "simpleOverview": "Algar uses three different captive balls for a 30K, 40K, and 50K ladder, while the upper-left chamber restores every struck ball to reach. Shoot the eject hole to open the right gate, hit all three captive balls, reset them, and repeat while building K-O-R-A and 5x Bonus.",
+      "overview": "The eject-hole skill shot in Algar opens the right gate and spots a K-O-R-A letter. Three different captive balls score a 30K, 40K, and 50K ladder, and the upper-left chamber returns struck balls without lowering that value. Collect all three values, reset the balls, and use the open gate to reach the K-O-R-A lanes that advance Bonus X to 5x.",
+      "machineSetup": [
+        "Confirm whether the top-center eject hole spots KORA and opens the right gate.",
+        "Confirm Extra Ball, Special, replay, ball count, and tilt treatment before pursuing those awards."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPKV",
+  "title": "Guns N' Roses",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Guns N' Roses rulesheet",
+      "url": "https://www.pinball.org/rules/gunsnroses.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Steven Bowden at Pittsburgh Pinball Open 2017",
+        "url": "https://pinballvideos.com/v/1640/5999"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Collect five band members, start a useful mode, then play Regular Multiball through two ramp-pair and right-hole cycles before collecting the mini-loop Super Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Band members",
+          "summary": "The right hole collects lit band members; six members start the six-ball regular multiball."
+        },
+        {
+          "name": "Five-member start",
+          "summary": "At five members, the G ramp and Rose Plunger can select the jackpot base and begin a five-ball version."
+        },
+        {
+          "name": "Jackpot cycle",
+          "summary": "Both ramps score jackpots, the right hole scores the large completion award, and a later mini-loop shot starts the Super."
+        },
+        {
+          "name": "Modes",
+          "summary": "Use the gun trigger to lock the desired mode; normal modes can continue during regular multiball."
+        },
+        {
+          "name": "Coma",
+          "summary": "Coma can overlap another mode and creates a strong protected scoring stack."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the Rose Plunger and right-hole feed to collect band members while testing both ramps and the mini loop."
+        },
+        {
+          "text": "Use the gun trigger to hold a mode whose lit shots overlap the ramps and right hole."
+        },
+        {
+          "text": "Start the selected mode before collecting the sixth band member or using the five-member G-ramp start.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Start Regular Multiball, then collect one Jackpot at each ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the right hole for 100M, collect both ramp Jackpots again, then return to the right hole for another 100M.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the mini loop for the 250M Super Jackpot after the second right-hole award; bumper hits raise it by 1M before collection.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If multiball drains to one ball before a jackpot, use the available G-ramp or right-hole restart immediately.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Between starts, complete normal modes toward Riot while preserving a prepared Coma stack.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Immediate five-member multiball",
+        "when": "Use this when five members are collected and the sixth right-hole feed is unsafe.",
+        "steps": [
+          {
+            "text": "Shoot the G ramp and use the Rose Plunger selection."
+          },
+          {
+            "text": "Choose the practical jackpot base and start the five-ball version.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cash both ramps and the right hole before attempting deeper cycles."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Coma mode stack",
+          "when": "Use this when Coma and another useful mode are both close before multiball.",
+          "steps": [
+            {
+              "text": "Lock the desired normal mode with the gun trigger."
+            },
+            {
+              "text": "Start Coma with the other mode prepared.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Bring regular multiball into the overlapping scoring window.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ramp-combo control",
+          "when": "Use this when the right hole eject is dangerous but the ramps feed predictably.",
+          "steps": [
+            {
+              "text": "Alternate the two ramps for combo and mode progress."
+            },
+            {
+              "text": "Backhand the right ramp when that is the safer geometry."
+            },
+            {
+              "text": "Return to the right hole only during multiball protection or from a settled feed."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Riot",
+        "steps": [
+          {
+            "text": "Complete all nine normal modes."
+          },
+          {
+            "text": "Enter the six-ball Riot sequence.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the required switch phases."
+          },
+          {
+            "text": "Finish at the mini loop for the billion-point award."
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "1994 Data East game",
+          "pro": "The 1994 Data East machine uses band-member collects, the Rose Plunger, and its original mode rules.",
+          "premium": "Jersey Jack's 2020 Guns N' Roses is a different machine and its songs, locks, and wizard progression do not apply here.",
+          "sourceUrl": "https://www.pinball.org/rules/gunsnroses.html"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Regular Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Coma",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Riot",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Band Member",
+          "tone": "olive",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Mode-before-multiball order",
+          "instruction": "Lock and start the desired mode before collecting the final band member so its lit shots run under multiball protection.",
+          "sourceUrl": "https://www.pinball.org/rules/gunsnroses.html"
+        },
+        {
+          "name": "Two-ramp completion cycle",
+          "instruction": "Collect one jackpot at each ramp before shooting the right hole; repeat the same order for the next cycle.",
+          "sourceUrl": "https://www.pinball.org/rules/gunsnroses.html"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the right ramp when its same-side return is more repeatable than transferring the ball.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://www.pinball.org/rules/gunsnroses.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right-hole and mini-loop feeds can break control.",
+          "response": "Use multiball protection or a known settled feed before depending on them.",
+          "sourceUrl": "https://www.pinball.org/rules/gunsnroses.html"
+        },
+        {
+          "issue": "The third regular multiball qualification is stricter than the first two.",
+          "response": "Do not assume all early progress will carry; confirm the current lock and member state before choosing the start.",
+          "sourceUrl": "https://www.pinball.org/rules/gunsnroses.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm this is Data East's 1994 game, not Jersey Jack's 2020 machine.",
+        "Check the installed ROM; revisions after CPU and display 2.00 can change values and lock behavior.",
+        "Verify buy-in, modesty, Extra Ball, ball-save, and competition settings before depending on restarts or mode values."
+      ],
+      "simpleOverview": "In Guns N' Roses, collecting the band members starts Multiball, and a selected mode can continue while it runs. Choose a mode that uses the ramps, start it before collecting the last member, then make both ramp Jackpots and the right-hole award twice before shooting the mini loop for Super Jackpot.",
+      "overview": "Guns N' Roses lets normal modes, Coma, and Regular Multiball overlap, while band-member collects control the start. Prepare a useful mode, begin Multiball with five or six members, then complete two ramp-pair and right-hole cycles before the mini-loop Super. Use Coma only when it strengthens this existing shot pattern.",
+      "machineSetup": [
+        "Confirm this is Data East's 1994 game, not Jersey Jack's 2020 machine.",
+        "Check the installed ROM; revisions after CPU and display 2.00 can change values and lock behavior.",
+        "Verify buy-in, modesty, Extra Ball, ball-save, and competition settings before depending on restarts or mode values."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

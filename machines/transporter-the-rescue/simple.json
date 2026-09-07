@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "id": "G5n2D",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build Transport Value before 1,000,000 points, lock two balls through R-E-S-C-U-E, then start Three-Ball Multiball and collect the red X and ordered Jackpot before the short multiplier timer ends.",
+        "quickInfo": [
+          {
+            "name": "R-E-S-C-U-E locks",
+            "summary": "Complete the left R-E-S bank and center C-U-E bank, then shoot the left U.N. Orion ramp for each of two locks."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "With two balls locked, shoot the lower-right Transporter scoop to release all three balls."
+          },
+          {
+            "name": "Jackpot sequence",
+            "summary": "During Multiball, hit R, E, S, C, U, and E in order before one ball remains."
+          },
+          {
+            "name": "Transport Value",
+            "summary": "Left-ramp shots and Transporter-cup spins build the award. A lit red X target collects it."
+          },
+          {
+            "name": "Score threshold",
+            "summary": "After 1,000,000 points, drop, ramp, cup, and spinner values become less favorable. Build early."
+          },
+          {
+            "name": "Timed Playfield X",
+            "summary": "Stock 3x and 2x scoring expire quickly. Prioritize the lit red X and the ordered R-E-S-C-U-E Jackpot sequence."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge softly into the spinner path. Retry when a short plunge returns to the shooter lane."
+          },
+          {
+            "text": "Cradle the first controlled return. Test the left ramp, Transporter scoop feed, and upper-right flipper strength."
+          },
+          {
+            "text": "Before reaching 1,000,000 points, use controlled cup spins and left-ramp shots to build Transport Value."
+          },
+          {
+            "text": "Shoot the left ramp while its lock is unlit to light the red X collect."
+          },
+          {
+            "text": "Complete R-E-S-C-U-E, then shoot the lit left ramp to lock ball 1."
+          },
+          {
+            "text": "Repeat R-E-S-C-U-E and the left ramp to lock ball 2."
+          },
+          {
+            "text": "Before starting multiball, keep Transport Value high and confirm that the red X target is lit."
+          },
+          {
+            "text": "Shoot the lower-right Transporter scoop to start Three-Ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Immediately collect the red X while stock 3x is active.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit R, E, S, C, U, and E in order for the stock Jackpot shown on the backglass.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use any remaining 2x timer on the safest controlled repeat shot, then rebuild locks at one ball.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Stock single-ball Transport Value",
+          "when": "Use this when drop-target rebounds or the lock ramp make multiball unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the Transporter scoop before two balls are locked."
+            },
+            {
+              "text": "Hold the upper-right flipper as the ball arrives."
+            },
+            {
+              "text": "Shoot the bridge into the cup for Transport Value advances."
+            },
+            {
+              "text": "Shoot the left ramp to add more advances and light the red X target."
+            },
+            {
+              "text": "Collect the red X before the score threshold reduces stock scoring."
+            },
+            {
+              "text": "Relight it with another left-ramp shot and repeat while the feed stays controlled."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Direct stock multiball",
+            "when": "Use this when the drop targets and left ramp are safer than the upper bridge.",
+            "steps": [
+              {
+                "text": "Complete R-E-S-C-U-E and lock ball 1."
+              },
+              {
+                "text": "Repeat the target bank and lock ball 2."
+              },
+              {
+                "text": "Shoot the Transporter scoop to start Three-Ball Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the brief playfield multiplier on the red X if it is ready.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete R-E-S-C-U-E in order for Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "S-O-S and end-of-ball bonus",
+            "when": "Use this when top-lane feeds are controlled and the major shots reject.",
+            "steps": [
+              {
+                "text": "Use lane change when enabled to complete the three S-O-S top lanes."
+              },
+              {
+                "text": "Each completion raises Bonus X by one through 5x.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "After 5x, later completions can light the fixed center lane for Extra Ball."
+              },
+              {
+                "text": "Return up top through the spinner lane or a lower-right shot into the bumpers."
+              },
+              {
+                "text": "Preserve the ball because base bonus and Bonus X reset after the ball."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Early Transport Value and stock timed Multiball",
+          "steps": [
+            {
+              "text": "Build and light Transport Value before the 1,000,000-point scoring change."
+            },
+            {
+              "text": "Lock two balls through R-E-S-C-U-E and the left ramp."
+            },
+            {
+              "text": "Start Three-Ball Multiball at the Transporter scoop.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the red X during the short 3x timer.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete ordered R-E-S-C-U-E for the stock Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "LX-4.1",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Transport Value",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Xcelerator Value",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "R-E-S-C-U-E",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Three-Ball Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Playfield X",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "2x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Repeatable skill plunge",
+            "instruction": "Plunge softly into the spinner path below U.N. Orion, and retry when a short plunge returns to the shooter lane.",
+            "sourceUrl": "https://pinball.org/rules/transporter.html"
+          },
+          {
+            "name": "Upper-flipper trap",
+            "instruction": "Hold the upper-right flipper as the Transporter scoop feeds it, then aim the bridge after the ball settles.",
+            "sourceUrl": "https://tiltforums.com/t/new-competition-roms-car-hop-swords-of-fury-police-force-transporter-ice-fever-the-games/9991"
+          },
+          {
+            "name": "Live catch",
+            "instruction": "Live catch the Transporter-scoop return on the left flipper before repeating the shot.",
+            "sourceUrl": "https://pinball.org/rules/transporter.html",
+            "techniqueSlug": "live-catch"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "Post pass a fast inlane return to the opposite flipper when the center-post rebound is controlled.",
+            "sourceUrl": "https://pinball.org/rules/transporter.html",
+            "techniqueSlug": "post-pass"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Repeated Transporter shots can return without control and create a center drain.",
+            "response": "Catch the return on the left flipper before another scoop attempt.",
+            "sourceUrl": "https://pinball.org/rules/transporter.html"
+          },
+          {
+            "issue": "The center-post transfer is not reliable and can send the ball between the flippers.",
+            "response": "Test it once on a fast inlane feed, then stop if the transfer misses the opposite flipper.",
+            "sourceUrl": "https://pinball.org/rules/transporter.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test the upper-flipper trap, Transporter cup, scoop, and red X target."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Transporter scoop",
+            "label": "Transporter scoop",
+            "description": "Lower-right scoop that feeds the upper flipper and starts Multiball.",
+            "precision": "unverified",
+            "context": "Lower-right scoop that feeds the upper flipper and starts Multiball."
+          },
+          {
+            "term": "Transporter cup",
+            "label": "Transporter cup",
+            "description": "Upper shot used to build Transport Value.",
+            "precision": "unverified",
+            "context": "Upper shot used to build Transport Value."
+          },
+          {
+            "term": "U.N. Orion ramp",
+            "label": "U.N. Orion lock",
+            "description": "Left ramp used to collect Multiball locks.",
+            "precision": "unverified",
+            "context": "Left ramp used to collect Multiball locks."
+          },
+          {
+            "term": "red X target",
+            "label": "Transport Value target",
+            "description": "Target used to collect the lit Transport Value.",
+            "precision": "unverified",
+            "context": "Target used to collect the lit Transport Value."
+          },
+          {
+            "term": "R-E-S drop targets",
+            "label": "R-E-S drop bank",
+            "description": "Left three-drop bank used with C-U-E to qualify a lock and score the ordered Jackpot.",
+            "precision": "unverified",
+            "context": "Left three-drop bank used with C-U-E to qualify a lock and score the ordered Jackpot."
+          },
+          {
+            "term": "C-U-E drop targets",
+            "label": "C-U-E drop bank",
+            "description": "Center three-drop bank used with R-E-S to qualify a lock and score the ordered Jackpot.",
+            "precision": "unverified",
+            "context": "Center three-drop bank used with R-E-S to qualify a lock and score the ordered Jackpot."
+          },
+          {
+            "term": "upper-right flipper",
+            "label": "Upper-right flipper",
+            "description": "Upper flipper fed by the Transporter scoop and used for the Transporter-bridge shot.",
+            "precision": "unverified",
+            "context": "Upper flipper fed by the Transporter scoop and used for the Transporter-bridge shot."
+          },
+          {
+            "term": "Transporter bridge",
+            "label": "Transporter bridge",
+            "description": "Clear upper-right-flipper route into the Transporter cup.",
+            "precision": "unverified",
+            "context": "Clear upper-right-flipper route into the Transporter cup."
+          },
+          {
+            "term": "spinner lane",
+            "label": "Spinner lane",
+            "description": "Soft-plunge route and timed spinner-scoring shot.",
+            "precision": "unverified",
+            "context": "Soft-plunge route and timed spinner-scoring shot."
+          },
+          {
+            "term": "S-O-S lanes",
+            "label": "S-O-S top lanes",
+            "description": "Three top lanes used with Lane Change to raise Bonus X.",
+            "precision": "unverified",
+            "context": "Three top lanes used with Lane Change to raise Bonus X."
+          },
+          {
+            "term": "inlanes",
+            "label": "Left and right inlanes",
+            "description": "Lower lanes used for Easy Lock spotting and Xcelerator or spinner qualification.",
+            "precision": "unverified",
+            "context": "Lower lanes used for Easy Lock spotting and Xcelerator or spinner qualification."
+          },
+          {
+            "term": "center post",
+            "label": "Center post",
+            "description": "Post between the flippers used for a setting-dependent transfer.",
+            "precision": "unverified",
+            "context": "Post between the flippers used for a setting-dependent transfer."
+          },
+          {
+            "term": "left kickback",
+            "label": "Left-outlane kickback",
+            "description": "Kickback relit by completing R-E-S-C-U-E.",
+            "precision": "unverified",
+            "context": "Kickback relit by completing R-E-S-C-U-E."
+          },
+          {
+            "term": "outlane Specials",
+            "label": "Outlane Special lamps",
+            "description": "Alternating awards lit by a Multiball shot through U.N. Orion.",
+            "precision": "unverified",
+            "context": "Alternating awards lit by a Multiball shot through U.N. Orion."
+          }
+        ],
+        "simpleOverview": "Transporter the Rescue uses the six R-E-S-C-U-E targets to light two left-ramp locks, then the Transporter scoop starts three-ball Multiball. Complete both target banks, take each lock at the left ramp, start at the scoop, then hit R-E-S-C-U-E in order for Jackpot.",
+        "overview": "Transporter the Rescue uses the six R-E-S-C-U-E targets to light two left-ramp locks, then the Transporter scoop starts three-ball Multiball. Build and light the red-X collect before the second lock, start three-ball Multiball at the Transporter scoop, collect Transport Value while more balls remain, then complete R-E-S-C-U-E in order for Jackpot.",
+        "machineSetup": [
+          "Test the upper-flipper trap, Transporter cup, scoop, and red X target."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete both R-E-S-C-U-E drop banks and lock a ball at the left U.N. Orion ramp, repeat for a second lock, then shoot the lower-right Transporter scoop and complete R-E-S-C-U-E in order for the Multiball Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Lock two balls",
+            "text": "Complete the left R-E-S three-drop bank and the center C-U-E three-drop bank. Shoot the lit left U.N. Orion ramp to lock ball 1, then repeat both banks and the ramp to lock ball 2.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Three-Ball Multiball",
+            "text": "With two balls locked, shoot the lower-right Transporter scoop. The scoop releases all three balls to the upper-right flipper and starts Three-Ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect the Jackpot",
+            "text": "Before Multiball reaches one ball, hit the six drop targets in this order: R, E, S, C, U, E. Completing that ordered sequence collects the current Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "R-E-S-C-U-E locks",
+            "summary": "Complete the left R-E-S bank and center C-U-E bank, then shoot the left U.N. Orion ramp for each of two locks."
+          },
+          {
+            "name": "Three-Ball Multiball",
+            "summary": "With two balls locked, shoot the lower-right Transporter scoop to release all three balls."
+          },
+          {
+            "name": "Jackpot sequence",
+            "summary": "During Multiball, hit R, E, S, C, U, and E in order before one ball remains."
+          }
+        ],
+        "warning": {
+          "title": "Drop-target rebounds can head between the flippers.",
+          "text": "After each hit on the left R-E-S or center C-U-E bank, keep both flippers ready before shooting the next letter."
+        }
+      }
+    }
+  ]
+}

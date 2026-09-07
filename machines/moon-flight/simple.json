@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "GreN3",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Moon Flight links the Module ladder to O-R-B-I-T while the upper rollovers build bonus. Red targets advance Module by their shown amounts. Completing Module lights the next O-R-B-I-T letter; after O-R-B-I-T is complete, the center target and alternating lower red rollovers light for replay. The four top rollovers advance bonus, and completing that group leaves one lit for an extra-ball award.",
+        "simpleOverview": "Hit the red targets to advance Module. Each completed Module lights the next O-R-B-I-T letter. After O-R-B-I-T is complete, hit the lit center target or alternating lower red rollover for replay. Use the four top rollovers to advance bonus; complete the group, then take the rollover that remains lit for extra ball.",
+        "summary": "Take red targets with the largest useful Module advance, then finish the last needed step instead of overshooting the ladder. Build O-R-B-I-T one Module at a time, and use the upper rollovers to improve bonus and qualify the lit rollover award.",
+        "quickInfo": [
+          {
+            "name": "Advance Module",
+            "summary": "Hit red targets for their shown amounts."
+          },
+          {
+            "name": "Spell O-R-B-I-T",
+            "summary": "Complete Module once per letter."
+          },
+          {
+            "name": "Collect Replay",
+            "summary": "Finish O-R-B-I-T, then hit a lit red collect."
+          },
+          {
+            "name": "Build Bonus",
+            "summary": "Use the four top rollovers and yellow advances."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit red targets to advance Module by the amount printed at each target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the Module ladder to light the next O-R-B-I-T letter, and repeat until the word is complete.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After O-R-B-I-T is complete, hit the lit center target or alternating lower red rollover to collect replay.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the four top rollovers and lit yellow targets to advance bonus; complete the top group, then take the rollover left lit for extra ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Finish the bonus route",
+            "when": "Use this when the top rollover group is one lane from completion.",
+            "steps": [
+              {
+                "text": "Complete the missing top rollover.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Take the rollover that remains lit for its extra-ball award, then return to Module.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Complete O-R-B-I-T",
+          "steps": [
+            {
+              "text": "Finish one Module ladder for each letter.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "When the word is complete, prioritize whichever red replay collect is lit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check replay and extra-ball awards, bonus limits, Double Bonus behavior, and Module step values.",
+          "Test every red Module target, O-R-B-I-T lamps, center and lower red replay collects, four top rollovers, yellow bonus targets, top-left rollover, and rocket lamp."
+        ],
+        "termStyles": [
+          {
+            "label": "Module",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "O-R-B-I-T",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Replay Collect",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "red targets",
+            "label": "Module targets",
+            "description": "Targets that advance Module by their shown amounts.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Module ladder",
+            "label": "Module",
+            "description": "Progress ladder that adds one O-R-B-I-T letter when complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center replay target",
+            "description": "Lit replay collect after O-R-B-I-T is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top rollovers",
+            "label": "Four top rollovers",
+            "description": "Upper group that advances bonus and qualifies a lit rollover award.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Replay and extra-ball behavior depends on the installed award card and setup.",
+            "response": "Use the lit lamps and local card to confirm the actual award before choosing a risky collect.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/em/moonflight/Cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Take red targets with the largest useful Module advance, then finish the last needed step instead of overshooting the ladder. Build O-R-B-I-T one Module at a time, and use the upper rollovers to improve bonus and qualify the lit rollover award.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit red targets to advance Module by the amount printed at each target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the Module ladder to light the next O-R-B-I-T letter, and repeat until the word is complete.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After O-R-B-I-T is complete, hit the lit center target or alternating lower red rollover to collect replay.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the four top rollovers and lit yellow targets to advance bonus; complete the top group, then take the rollover left lit for extra ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Advance Module",
+            "summary": "Hit red targets for their shown amounts."
+          },
+          {
+            "name": "Spell O-R-B-I-T",
+            "summary": "Complete Module once per letter."
+          },
+          {
+            "name": "Collect Replay",
+            "summary": "Finish O-R-B-I-T, then hit a lit red collect."
+          }
+        ]
+      }
+    }
+  ]
+}

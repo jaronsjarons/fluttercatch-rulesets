@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "Grxk8",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge the top saucer for 5, then send controlled shots into the numbered chamber. Nudge for missing numbers and open the right outlane gate when its rollover is available.",
+        "quickInfo": [
+          {
+            "name": "Number chamber",
+            "summary": "A chamber at the upper right scores three of its nine numbered rollovers during each pass."
+          },
+          {
+            "name": "Set awards",
+            "summary": "Numbers 1 through 6 score 3,000, numbers 7 through 9 score 5,000, and all nine score 10,000."
+          },
+          {
+            "name": "Outside numbers",
+            "summary": "The mushroom bumpers can collect 1, 2, 4, and 6, while the top saucer collects 5."
+          },
+          {
+            "name": "Zipper flippers",
+            "summary": "The side mushroom bumpers and every chamber entry open the flippers when they are closed."
+          },
+          {
+            "name": "Right gate",
+            "summary": "The white rollover above and right of the right flipper opens the right outlane save gate."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the top saucer to collect number 5."
+          },
+          {
+            "text": "From the right flipper, send the ball along the left wall toward the top mushroom bumper and chamber area."
+          },
+          {
+            "text": "From the left flipper, shoot through the gate at the upper right to enter the numbered chamber."
+          },
+          {
+            "text": "Nudge while the ball moves through the chamber so it crosses numbers that are still unlit."
+          },
+          {
+            "text": "Guide a natural chamber exit across the white gate rollover when the right outlane gate is closed."
+          },
+          {
+            "text": "Repeat the chamber route while its entry and exit remain predictable."
+          },
+          {
+            "text": "If 1, 2, or 6 completes a set, graze the inner side of its mushroom bumper and keep the ball moving upward."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Missing-number recovery",
+          "when": "Recovery pivot: Use this plan when one outside number completes the next chamber award.",
+          "steps": [
+            {
+              "text": "Read the numbered lamps before you shoot."
+            },
+            {
+              "text": "Choose only number 1, 2, or 6 when that number completes a set."
+            },
+            {
+              "text": "Graze the inner side of the matching mushroom bumper."
+            },
+            {
+              "text": "Stop direct bumper shots after the needed number scores."
+            },
+            {
+              "text": "Return to the chamber route."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Right-gate setup",
+            "when": "When ahead, use this distinct scoreboard route: use this plan when the right outlane gate is closed and the gate rollover is reachable without a late shot.",
+            "steps": [
+              {
+                "text": "First try to nudge a chamber exit across the white rollover."
+              },
+              {
+                "text": "If the ball is controlled on the zipped right flipper, use an early backhand toward the rollover."
+              },
+              {
+                "text": "Avoid the late left-flipper shot when a miss reaches the right outlane."
+              },
+              {
+                "text": "After the gate opens, resume chamber shots."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 10,000 chamber sets",
+          "steps": [
+            {
+              "text": "Collect 5 from the plunge when possible."
+            },
+            {
+              "text": "Use chamber passes for groups of three numbers."
+            },
+            {
+              "text": "Use the outside mushrooms only for a needed 1, 2, or 6."
+            },
+            {
+              "text": "Complete numbers 1 through 6 for 3,000."
+            },
+            {
+              "text": "Complete numbers 7 through 9 for 5,000."
+            },
+            {
+              "text": "Complete all nine numbers for 10,000, then continue the chamber route."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "chamber",
+            "context": "chamber",
+            "label": "Upper chamber",
+            "description": "The upper scoring area entered through the central route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "gate",
+            "context": "gate",
+            "label": "Return gate",
+            "description": "The upper gate whose exit feed should be tested before repeating the route.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Nudging",
+            "instruction": "Watch the chamber lamps. Nudge before the ball reaches a divider so it crosses an unlit numbered rollover.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Grxk8-MJdwl",
+            "techniqueSlug": "nudging"
+          },
+          {
+            "name": "Inner bumper graze",
+            "instruction": "Contact only the inner edge of a needed mushroom bumper. Keep the rebound pointed toward the upper playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Grxk8-MJdwl"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Face-on hits to regular and mushroom bumpers can produce draining rebounds.",
+            "response": "Use chamber shots and inner-edge grazes. Do not repeat a bumper shot after an unsafe rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Grxk8-MJdwl"
+          },
+          {
+            "issue": "The slingshots cause more drains than direct paths to the drain.",
+            "response": "Keep the ball moving toward the upper playfield and nudge before a falling ball reaches a slingshot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Grxk8-MJdwl"
+          },
+          {
+            "issue": "A late left-flipper shot at the gate rollover can miss into the right outlane.",
+            "response": "Prefer a natural chamber exit or an early right-flipper backhand when the flippers are zipped.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Grxk8-MJdwl"
+          }
+        ],
+        "simpleOverview": "Joust collects nine numbers through an upper-right chamber, outside mushroom bumpers, and the top saucer. Plunge the saucer for 5, repeat chamber passes for groups of three numbers, and use the outside mushrooms only for a missing 1, 2, 4, or 6.",
+        "overview": "Joust collects nine numbers through an upper-right chamber, outside mushroom bumpers, and the top saucer. Use the top saucer for 5 and repeat controlled chamber passes for three-number groups, then use outside mushroom bumpers only for specific missing numbers. Roll over the white switch above the right flipper to open the right outlane gate because chamber entries can reopen the zipper flippers.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Plunge the top saucer for 5, then send controlled shots into the numbered chamber. Nudge for missing numbers and open the right outlane gate when its rollover is available.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the top saucer to collect number 5."
+          },
+          {
+            "text": "From the right flipper, send the ball along the left wall toward the top mushroom bumper and chamber area."
+          },
+          {
+            "text": "From the left flipper, shoot through the gate at the upper right to enter the numbered chamber."
+          },
+          {
+            "text": "Nudge while the ball moves through the chamber so it crosses numbers that are still unlit."
+          },
+          {
+            "text": "Guide a natural chamber exit across the white gate rollover when the right outlane gate is closed."
+          },
+          {
+            "text": "Repeat the chamber route while its entry and exit remain predictable."
+          },
+          {
+            "text": "If 1, 2, or 6 completes a set, graze the inner side of its mushroom bumper and keep the ball moving upward."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Number chamber",
+            "summary": "A chamber at the upper right scores three of its nine numbered rollovers during each pass."
+          },
+          {
+            "name": "Set awards",
+            "summary": "Numbers 1 through 6 score 3,000, numbers 7 through 9 score 5,000, and all nine score 10,000."
+          },
+          {
+            "name": "Outside numbers",
+            "summary": "The mushroom bumpers can collect 1, 2, 4, and 6, while the top saucer collects 5."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Missing-number recovery",
+          "when": "Recovery pivot: Use this plan when one outside number completes the next chamber award.",
+          "steps": [
+            {
+              "text": "Read the numbered lamps before you shoot."
+            },
+            {
+              "text": "Choose only number 1, 2, or 6 when that number completes a set."
+            },
+            {
+              "text": "Graze the inner side of the matching mushroom bumper."
+            },
+            {
+              "text": "Stop direct bumper shots after the needed number scores."
+            },
+            {
+              "text": "Return to the chamber route."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Face-on hits to regular and mushroom bumpers can produce draining rebounds.",
+          "text": "Use chamber shots and inner-edge grazes. Do not repeat a bumper shot after an unsafe rebound."
+        }
+      }
+    }
+  ]
+}

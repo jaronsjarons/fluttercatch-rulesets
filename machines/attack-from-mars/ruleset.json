@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "G4do5",
+  "title": "Attack from Mars",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Attack From Mars tournament strategy guide",
+      "url": "https://www.kineticist.com/news/attack-from-mars-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA tutorial with Bowen Kerins",
+        "url": "https://www.youtube.com/watch?v=xri-ffVoPqo"
+      },
+      {
+        "label": "Attack From Mars detailed rulesheet",
+        "url": "https://www.pinball.org/rules/attackfrommars2.html"
+      },
+      {
+        "label": "Pinball Cards Attack From Mars tournament strategy",
+        "url": "https://pinballcards.net/attack-from-mars-2017/"
+      },
+      {
+        "label": "Chicago Gaming Attack From Mars Remake manual",
+        "url": "https://www.chicago-gaming.com/manuals/AFM_MANUAL_REV_1.5.pdf"
+      },
+      {
+        "label": "Keith Elwin at California Extreme 2016",
+        "url": "https://pinballvideos.com/v/1222/28092"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot each side loop and ramp twice, then make each third shot while the four hurry-ups overlap. The fourth completion starts four-ball Total Annihilation for 1 billion. Repeat a lit loop or ramp for Jackpots, then shoot the lock ramp for the Annihilation Jackpot.",
+      "steps": [
+        {
+          "text": "Shoot the left loop, left ramp, right ramp, and right loop twice each."
+        },
+        {
+          "text": "Make the third shot at each one while the previous hurry-up is still running. The fourth completion awards 1 billion and starts four-ball Total Annihilation.",
+          "modeNotes": [
+            "Hurry-up stack: The first completed shot starts 100 million. The next two raise it to 300 million and 500 million. The fourth shot collects 1 billion and starts Total Annihilation."
+          ]
+        },
+        {
+          "text": "During Total Annihilation, repeat the safest lit loop or ramp for Jackpots.",
+          "modeNotes": [
+            "Total Annihilation: This is a four-ball multiball. The left loop, left ramp, right ramp, and right loop are always lit for Jackpots. The lock ramp is always lit for the Annihilation Jackpot. You can repeat the same safe shot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the lock ramp (the center ramp labeled Light Lock) for the Annihilation Jackpot, then repeat the Jackpot and lock-ramp cycle.",
+          "modeNotes": [
+            "Annihilation Jackpot: Each Jackpot adds its value to the Annihilation Jackpot. Shoot the lock ramp to collect it; its value then returns to its base.",
+            "Repeat value: Each new Total Annihilation starts 25 million higher per Jackpot. The first starts at 50 million per Jackpot, the second at 75 million, and the third at 100 million."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Alternative route: Attack Wave and Regular Multiball",
+        "when": "Use this higher-risk route when the center shots are controllable; saucer scoring is worth more than Regular Multiball jackpots.",
+        "steps": [
+          {
+            "text": "Hit the three raised force-field targets to lower the bank and start an Attack Wave.",
+            "modeNotes": [
+              "Attack Wave: Hit the exposed center targets until the damage meter is empty, then shoot the center hole to destroy the saucer."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lock ramp as directed by the Light Lock and Lock inserts. Shoot it when Lock is lit to collect three locks; the third lock starts Regular Multiball.",
+            "modeNotes": [
+              "On default three-ball original settings, the first lock-ramp shot lights all three locks and the next three shots collect them. On default five-ball play and later multiballs, each lock must be lit separately."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During ball save, hit the exposed center targets until the saucer's damage meter is empty, then shoot the center hole to destroy the saucer.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After destroying the saucer, shoot both loops and all three ramps once for five Jackpots.",
+            "modeNotes": [
+              "Regular Multiball jackpots: The two loops, left and right ramps, and center ramp must each be collected once. This lights the Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Trap a ball and shoot the roving Super Jackpot when it reaches a reliable shot; the collect relights all five Jackpots.",
+            "modeNotes": [
+              "Regular Super Jackpot: Sweeps across all five Jackpot shots. A collect relights all five Jackpots. If multiball ends first, it stays lit briefly as Last Chance."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Martian Attack Multiball",
+          "when": "Use this stack when Martian Attack and Total Annihilation can be prepared together.",
+          "steps": [
+            {
+              "text": "Hit the flashing M-A-R-T-I-A-N targets to light Martian Attack, then shoot the scoop to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "While Martian Attack is running, make the remaining required loop and ramp shots to start Total Annihilation.",
+              "modeNotes": [
+                "Total Annihilation: Complete the left loop, left ramp, right ramp, and right loop three times each while their hurry-ups overlap."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "After Total Annihilation starts, hit the last martian to add Martian Attack Multiball. If a stored Martian Bomb will kill it, press the launch button to use the Bomb.",
+              "modeNotes": [
+                "Martian Bomb: A stored award. Spell M-A-R-T-I-A-N again while Martian Attack is lit to collect one.",
+                "During Martian Attack, one Bomb kills one random active martian."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Rule the Universe",
+        "steps": [
+          {
+            "text": "Collect a regular Multiball Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make 100 jet-bumper hits to start Super Jets. Play Martian Attack Multiball and Total Annihilation.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Destroy five saucers. In the sixth Attack Wave, shoot the center hole ten times to destroy Mars.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete a five-way combo."
+          },
+          {
+            "text": "Shoot the scoop when Rule the Universe is lit.",
+            "modeNotes": [
+              "Rule the Universe: A wizard multiball that combines the main jackpot rules. Score 5 billion before you return to one ball to receive another 5 billion."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "overview": "In Attack from Mars, three shots to each side loop and ramp start Total Annihilation, while force-field hits expose the saucer for Attack Waves and Regular Multiball. Prioritize the repeatable loop-and-ramp route; use the higher-value saucer route when center shots are controlled, and add Martian Attack when it is ready. Both routes advance Rule the Universe, but Total Annihilation alone does not satisfy its saucer requirement.",
+      "simpleOverview": "Shooting each side loop and side ramp three times starts Total Annihilation in Attack from Mars. Force-field hits expose the saucer for Attack Waves, while the lock ramp prepares Regular Multiball. Repeat Total Annihilation when its outside returns are reliable; use the center route when those returns are controlled.",
+      "termStyles": [
+        {
+          "label": "Rule the Universe",
+          "tone": "forest",
+          "kind": "multiball",
+          "symbolKinds": [
+            "mode",
+            "multiball"
+          ],
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Banked center-martian hit",
+          "instruction": "Bank MAR into I or AN into T. This avoids a direct hit on the dangerous center martian.",
+          "sourceUrl": "https://www.kineticist.com/news/attack-from-mars-pinball-tutorial"
+        },
+        {
+          "name": "Super skill shot",
+          "instruction": "Hold the left flipper during launch, then shoot the left loop, left ramp, right ramp, or right loop to spot all three hits for that shot. This does not start that shot's hurry-up.",
+          "sourceUrl": "https://www.pinball.org/rules/attackfrommars2.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Direct force-field and saucer shots can return down the middle.",
+          "response": "Use a super skill shot to lower the shield, or attack the center during a multiball ball save. Do not force repeated center shots in single-ball play.",
+          "sourceUrl": "https://www.kineticist.com/news/attack-from-mars-pinball-tutorial"
+        },
+        {
+          "issue": "The center T and I martians are dangerous direct targets.",
+          "response": "Bank a shot from MAR into I or from AN into T instead of shooting the center target directly.",
+          "sourceUrl": "https://www.kineticist.com/news/attack-from-mars-pinball-tutorial"
+        },
+        {
+          "issue": "The Light Lock ramp can reject a weak shot before it reaches the lock switch.",
+          "response": "Require a clean ramp completion before counting lock progress. If repeated rejects break control, continue the outer-shot Total Annihilation progress instead.",
+          "sourceUrl": "https://pinballvideos.com/v/5246/11717"
+        }
+      ],
+      "checkBeforePlay": [
+        "This route covers the shared core of the 1995 Bally/Williams game and Chicago Gaming remake. Confirm edition, software, ball count, and tournament settings.",
+        "On the original game, lock qualification changes with ball count and difficulty. Follow the Light Lock and Lock inserts on the installed game.",
+        "Test the left loop, left ramp, lock ramp, right ramp, right loop, and force-field return."
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Shoot each side loop and ramp twice, then make each third shot while the four hurry-ups overlap."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect a regular Multiball Super Jackpot."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Alternative route: Attack Wave and Regular Multiball: Use this higher-risk route when the center shots are controllable; saucer scoring is worth more than Regular Multiball jackpots."
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At California Extreme 2016, Keith Elwin chose another Total Annihilation instead of continuing toward Rule the Universe after repeated starts had raised the Jackpot values.",
+          "At the UK Open 2023 final, Raymond Davidson built Regular Multiball and Total Annihilation, collected the four overlapping hurry-ups for 1 billion, then added Martian Attack."
+        ]
+      },
+      "machineSetup": [
+        "This route covers the shared core of the 1995 Bally/Williams game and Chicago Gaming remake. Confirm edition, software, ball count, and tournament settings.",
+        "On the original game, lock qualification changes with ball count and difficulty. Follow the Light Lock and Lock inserts on the installed game.",
+        "Test the left loop, left ramp, lock ramp, right ramp, right loop, and force-field return."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

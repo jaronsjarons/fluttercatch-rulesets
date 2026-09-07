@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "G4x3Y",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Metal Man rewards repeat castle collections and laps around its long loop. Complete the drop bank to advance the castle awards, then shoot a lit castle saucer twice: the first visit prepares its sequence and the next collects it. Loop laps build toward extra-ball and 500,000-point awards.",
+        "simpleOverview": "Complete the drop bank to advance the castle awards, then shoot a lit castle saucer twice: once to prepare it and again to collect it. Keep shooting the long loop; three laps light extra ball at the lower-right lane, and five laps add extra ball plus 500,000 points at the hole.",
+        "summary": "Complete the drop bank to advance the castle awards. Shoot a lit castle saucer once to prepare it and again to collect it. Make three loop laps to light the lower-right extra ball; five laps add extra ball plus 500,000 at the hole.",
+        "quickInfo": [
+          {
+            "name": "Castle awards",
+            "summary": "Complete the drop bank to advance the available castle prizes."
+          },
+          {
+            "name": "Collect a castle prize",
+            "summary": "Shoot its lit saucer once to prepare the sequence, then return for the award."
+          },
+          {
+            "name": "Three laps",
+            "summary": "Lights extra ball at the lower-right lane."
+          },
+          {
+            "name": "Five laps",
+            "summary": "Adds extra ball and 500,000 points at the hole."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the drop-target bank to advance the available castle award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the corresponding castle saucer once to prepare its sequence, then return to collect the lit award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the long loop to build the lap count.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After three laps, collect the lit extra ball at the lower-right lane; after five laps, shoot the hole for extra ball and 500,000 points.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build the INDER specials",
+            "when": "Use this when the loop or castle returns are not settling cleanly.",
+            "steps": [
+              {
+                "text": "Complete the five INDER letters to light the special at the castle and lower target.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Collect whichever lit special presents the safer return on this machine.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeat the high-value castle cycle",
+          "steps": [
+            {
+              "text": "Finish the drop bank repeatedly; its first three completions progress from 100,000 to extra ball to special at the associated target.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use loop shots between bank completions so the lap awards advance at the same time.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to a prepared castle saucer to cash the current prize before building the next one.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm how extra ball and special are configured before competitive play; several central routes award them directly.",
+          "Test the drop bank, long loop, castle saucers, launcher, lower-right lane, and lap counter before relying on the repeat route."
+        ],
+        "termStyles": [
+          {
+            "label": "Castle",
+            "tone": "oxblood",
+            "kind": "mode"
+          },
+          {
+            "label": "INDER",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "forest",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "drop-target bank",
+            "label": "Castle-award drop bank",
+            "description": "The drop targets whose completions advance the awards available at the castle.",
+            "precision": "unverified"
+          },
+          {
+            "term": "castle saucer",
+            "label": "Castle award saucer",
+            "description": "A top saucer that prepares its sequence on one visit and awards it on the next.",
+            "precision": "unverified"
+          },
+          {
+            "term": "long loop",
+            "label": "Lap loop",
+            "description": "The loop that builds the lap count and feeds the launcher back toward the top.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower-right lane",
+            "label": "Lower-right extra-ball lane",
+            "description": "The lane that lights for extra ball after three laps.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The exact value collected from a castle saucer depends on which prize its drop-bank progress has lit.",
+            "response": "Read the lit insert before shooting; use the repeat-visit rule for the physical collection and let the machine identify the current award.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Mowl3lfioSc"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the drop bank to advance the castle awards. Shoot a lit castle saucer once to prepare it and again to collect it. Make three loop laps to light the lower-right extra ball; five laps add extra ball plus 500,000 at the hole.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the drop-target bank to advance the available castle award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the corresponding castle saucer once to prepare its sequence, then return to collect the lit award.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the long loop to build the lap count.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After three laps, collect the lit extra ball at the lower-right lane; after five laps, shoot the hole for extra ball and 500,000 points.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Castle awards",
+            "summary": "Complete the drop bank to advance the available castle prizes."
+          },
+          {
+            "name": "Collect a castle prize",
+            "summary": "Shoot its lit saucer once to prepare the sequence, then return for the award."
+          },
+          {
+            "name": "Three laps",
+            "summary": "Lights extra ball at the lower-right lane."
+          }
+        ]
+      }
+    }
+  ]
+}

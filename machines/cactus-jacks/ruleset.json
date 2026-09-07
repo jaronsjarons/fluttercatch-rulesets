@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "G5bxy",
+  "title": "Cactus Jack's",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Cactus Jack's complete narrated tournament game",
+      "url": "https://www.youtube.com/watch?v=BtwDoz9S8ow&t=583s"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Cactus Jack's confirmed factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Cactus_Jack_instruction_cards.zip"
+      },
+      {
+        "label": "Cactus Jack's exact-machine physical gameplay",
+        "url": "https://www.youtube.com/watch?v=oS5zQur5lc4"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Cactus Jack's starts two-ball Multiball at the center hole. Flashing target pairs advance the current fruit, and loops or the center throw that fruit for rising awards. Consecutive ramp shots light Million and then Jack's Pot; after Multiball, the upper green target relights the start.",
+      "simpleOverview": "Shoot the center hole to start two-ball Multiball. Hit flashing target pairs to advance fruit, then shoot loops or the center to throw the lit fruit. Consecutive ramp shots light Million and Jack's Pot.",
+      "summary": "Start the easy center-hole Multiball, build fruit on controlled returns, and use consecutive ramps for Million and Jack's Pot while the extra ball protects misses.",
+      "quickInfo": [
+        {
+          "name": "Start Multiball",
+          "summary": "Shoot the center hole."
+        },
+        {
+          "name": "Advance Fruit",
+          "summary": "Hit the flashing paired targets."
+        },
+        {
+          "name": "Throw Fruit",
+          "summary": "Shoot a loop or the center fruit throw."
+        },
+        {
+          "name": "Ramp Ladder",
+          "summary": "Consecutive ramps light Million, then Jack's Pot."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the center hole to start two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During controlled single-ball or Multiball play, hit the flashing target pair to advance the current fruit."
+        },
+        {
+          "text": "Shoot either loop or the center fruit throw to cash the lit fruit; later fruit awards are larger."
+        },
+        {
+          "text": "Make consecutive ramp shots to light Million and then Jack's Pot; keep repeating the ramp for the lit award."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Mystery-assisted start",
+          "when": "Use this when a Mystery hole is safely available and the center-hole start is not under control.",
+          "steps": [
+            {
+              "text": "Shoot a lit Mystery hole."
+            },
+            {
+              "text": "Take an instant Multiball if Mystery awards it."
+            },
+            {
+              "text": "Otherwise return to the center-hole start rather than assuming Mystery will repeat the award."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Jack's Pot",
+        "steps": [
+          {
+            "text": "Make a ramp shot to begin the consecutive-ramp sequence."
+          },
+          {
+            "text": "Repeat the ramp to light Million, then continue to light Jack's Pot."
+          },
+          {
+            "text": "Shoot the ramp again to collect the lit award; later ramp shots award one million on the confirmed card."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the center-hole capture and two-ball release, both loops, fruit targets and lamps, ramp switches, Mystery holes, upper green relight target, and display callouts.",
+        "Confirm Extra Ball and Special conversion and whether tournament settings alter Mystery awards."
+      ],
+      "cautions": [
+        {
+          "issue": "Mystery can award instant Multiball, but its result is not deterministic.",
+          "response": "Treat Mystery as an opportunistic shortcut and use the center hole as the reliable start.",
+          "sourceUrl": "https://www.youtube.com/watch?v=BtwDoz9S8ow&t=583s"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

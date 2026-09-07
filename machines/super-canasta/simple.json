@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "GLWLl",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Super Canasta became the commercial production game Super Hoop and keeps the same completed play structure. Shoot the upper scoop to choose among six basketball games. The dependable Multiball route is to complete A-S-S-I-S-T twice, then send three balls into the lit lock; three upper loops instead start the shorter Alley Oop Multiball.",
+        "simpleOverview": "Shoot the upper scoop when a game is ready, use the flippers to choose, and press both flippers to start it. For three-ball Multiball, complete A-S-S-I-S-T twice and then lock three balls.",
+        "summary": "Shoot the upper scoop to choose one of the six games; use the flippers to move the selection and press both together to start. For three-ball Multiball, complete A-S-S-I-S-T twice to light Lock, then send three balls into the lit lock.",
+        "quickInfo": [
+          {
+            "name": "Choose a game",
+            "summary": "Shoot the upper scoop, cycle with either flipper, and press both flippers to confirm."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Complete A-S-S-I-S-T twice, then lock three balls."
+          },
+          {
+            "name": "Alley Oop Multiball",
+            "summary": "Complete three upper loops to start the two-ball feature."
+          },
+          {
+            "name": "21",
+            "summary": "Hit the 1, 2, or 3 target, then make the basket to add that amount without going over 21."
+          }
+        ],
+        "steps": [
+          {
+            "text": "When a game is ready, shoot the upper scoop, move through the six choices with the flippers, and press both flippers to start the selected game.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the main Multiball, complete A-S-S-I-S-T twice to light the physical lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send three balls into the lit lock; the third locked ball starts three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During three-ball Multiball, collect Jackpots at the right ramp and basket, then shoot the left ramp for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Shorter Alley Oop route",
+            "when": "Use this when the upper loop is safer than completing A-S-S-I-S-T and the lock.",
+            "steps": [
+              {
+                "text": "Complete three upper loops to start two-ball Alley Oop Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Alley Oop Multiball, shoot the left ramp for Jackpots.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish the six basketball games",
+          "steps": [
+            {
+              "text": "Return to the upper scoop after a game ends and choose an unfinished game.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "In 21, hit a 1, 2, or 3 target and then make the basket to add that number; stop at 21 without exceeding it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Work through 3PT, Slam Dunk, 21, Skills, Horse, and Super Stars by following each game's lit shots and display prompts.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "This catalog family began as Super Canasta and reached commercial production as Super Hoop. Confirm which title and software the machine displays before play.",
+          "Check that the upper scoop, A-S-S-I-S-T targets, ball lock, basket, upper loop, and both ramps register; each is required by a start or Jackpot route."
+        ],
+        "termStyles": [
+          {
+            "label": "upper scoop",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "A-S-S-I-S-T",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "lit lock",
+            "tone": "rust",
+            "kind": "multiball"
+          },
+          {
+            "label": "Alley Oop Multiball",
+            "tone": "indigo",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper scoop",
+            "label": "Game selector",
+            "description": "The upper scoop that opens the six-game selection.",
+            "precision": "unverified"
+          },
+          {
+            "term": "A-S-S-I-S-T",
+            "label": "Assist targets",
+            "description": "The target sequence completed twice to light the main ball lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit lock",
+            "label": "Three-ball Multiball lock",
+            "description": "The physical lock used three times to start the main Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "basket",
+            "label": "Basket shot",
+            "description": "A Jackpot shot and the number-collect shot used by 21.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The catalog title and the completed production title differ.",
+            "response": "Use this route for the Super Canasta design as completed and sold as Super Hoop; do not transfer it to an unrelated canasta-themed game.",
+            "sourceUrl": "https://www.kineticist.com/manufacturers/quetzal-pinball"
+          },
+          {
+            "issue": "A selected basketball game's interaction with either Multiball can vary by software or game state.",
+            "response": "Choose a game and build Multiball as separate goals unless the machine's current display explicitly shows both active.",
+            "sourceUrl": "https://www.kineticist.com/news/super-hoop-revealed"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the upper scoop to choose one of the six games; use the flippers to move the selection and press both together to start. For three-ball Multiball, complete A-S-S-I-S-T twice to light Lock, then send three balls into the lit lock.",
+        "showBirdEyeView": false,
+        "steps": [
+          {
+            "text": "When a game is ready, shoot the upper scoop, move through the six choices with the flippers, and press both flippers to start the selected game.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the main Multiball, complete A-S-S-I-S-T twice to light the physical lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send three balls into the lit lock; the third locked ball starts three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During three-ball Multiball, collect Jackpots at the right ramp and basket, then shoot the left ramp for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Choose a game",
+            "summary": "Shoot the upper scoop, cycle with either flipper, and press both flippers to confirm."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Complete A-S-S-I-S-T twice, then lock three balls."
+          },
+          {
+            "name": "Alley Oop Multiball",
+            "summary": "Complete three upper loops to start the two-ball feature."
+          }
+        ]
+      }
+    }
+  ]
+}

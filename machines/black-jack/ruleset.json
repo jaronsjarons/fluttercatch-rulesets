@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "G5nbD",
+  "title": "Black Jack",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Black Jack tournament strategy",
+      "url": "https://www.kineticist.com/games/pinball/black-jack"
+    },
+    "supportingSources": [
+      {
+        "label": "Bob's Guide to Black Jack",
+        "url": "https://rules.silverballmania.com/rules/G5nbD-MDyXb"
+      },
+      {
+        "label": "Robert Byers at INDISC 2023 High Stakes — Finals",
+        "url": "https://pinballvideos.com/v/5054/147"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "When Player Wins is lit, shoot the right saucer for 2x, 3x, then 5x Bonus. Otherwise, complete the four suit lanes to light the left spinner at 1,000 per spin, then repeat the spinner to build bonus and change the player hand.",
+      "steps": [
+        {
+          "text": "If Player Wins is already lit, soft-plunge off the upper-left rubber toward the saucer; otherwise plunge a missing suit."
+        },
+        {
+          "text": "Compare the player hand with the dealer hand. When Player Wins is lit and the saucer return is controlled, shoot the right saucer from the left flipper."
+        },
+        {
+          "text": "Collect the first three winning saucers for 2x, 3x, then 5x Bonus."
+        },
+        {
+          "text": "When Player Wins is not lit, shoot the left spinner. It feeds the top suit lanes, changes the player hand, and builds base bonus.",
+          "modeNotes": [
+            "Confirm player and dealer hand changes, winning-saucer order, 29K base-bonus maximum, suit lamps, lit spinner, bumper, and 50K outlane behavior."
+          ]
+        },
+        {
+          "text": "Complete all four suits to light the spinner at 1,000 per spin. Repeat the lit spinner while its feed remains controlled."
+        },
+        {
+          "text": "Hit a red player target or yellow dealer target only when one exact hand change is needed."
+        },
+        {
+          "text": "After reaching 5x Bonus, take another winning saucer only when Extra Ball or Special awards useful tournament points."
+        }
+      ],
+      "fallback": {
+        "title": "Spinner recovery",
+        "when": "Use this plan when the saucer rejects repeated shots or its eject is uncontrolled.",
+        "steps": [
+          {
+            "text": "Shoot the spinner and use the top lanes to change the hand."
+          },
+          {
+            "text": "Use a direct red or yellow hand target only when one exact change is necessary."
+          },
+          {
+            "text": "Return to the saucer when Player Wins lights."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Spinner-only route",
+          "when": "Use this plan when the spinner feed is safer than the saucer eject.",
+          "steps": [
+            {
+              "text": "Complete the top lanes to light the spinner."
+            },
+            {
+              "text": "Repeat the spinner and collect top-lane value."
+            },
+            {
+              "text": "Continue even during a winning hand while the spinner remains controlled."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximum 5x bonus",
+        "steps": [
+          {
+            "text": "Collect three winning saucers for 5x bonus."
+          },
+          {
+            "text": "Repeat the left spinner and top suit lanes until base bonus reaches 29,000."
+          },
+          {
+            "text": "Collect up to 145,000 in end-of-ball bonus."
+          },
+          {
+            "text": "Use later winning saucers for extra ball and repeatable special value."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Tap pass to the saucer flipper",
+          "instruction": "Tap pass to the left flipper when Player Wins is lit; avoid a post pass beside the close sling post.",
+          "techniqueSlug": "tap-pass",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nbD-MDyXb"
+        },
+        {
+          "name": "Shatz pass to the saucer flipper",
+          "instruction": "Use a tested Shatz pass when it transfers the ball to the left flipper more safely than the tap pass.",
+          "techniqueSlug": "shatz-pass",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nbD-MDyXb"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm the four-player 1977 Bally solid-state Black Jack, not the two-player EM; verify ball count, tie rule, tilt, Extra Ball, Special, and award conversions.",
+        "Confirm player and dealer hand changes, winning-saucer order, 29K base-bonus maximum, suit lamps, lit spinner, bumper, and 50K outlane behavior.",
+        "Test the right-saucer entry and eject, soft-plunge rebound, left spinner and post, hand-target rebounds, suit-lane feeds, and tap or Shatz transfer."
+      ],
+      "cautions": [
+        {
+          "issue": "Hard saucer shots can hit the rim and reject.",
+          "response": "Use a softer shot or let the ball fall into the saucer from above.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nbD-MDyXb"
+        },
+        {
+          "issue": "The saucer eject can return the ball without control.",
+          "response": "Use the spinner-only route when its return is safer.",
+          "sourceUrl": "https://www.youtube.com/watch?v=3csBt5-btHw&t=516s"
+        },
+        {
+          "issue": "Direct hand targets can send the ball down the middle.",
+          "response": "Change the hand through the spinner and top lanes when possible.",
+          "sourceUrl": "https://www.youtube.com/watch?v=3csBt5-btHw&t=773s"
+        },
+        {
+          "issue": "The post beside the spinner can reject the shot into danger.",
+          "response": "Test the spinner feed before you commit to a spinner-only route.",
+          "sourceUrl": "https://www.youtube.com/watch?v=3csBt5-btHw&t=369s"
+        },
+        {
+          "issue": "The sling post is close to the flipper, so post passes can fail.",
+          "response": "Use a tap pass or an alley pass instead.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nbD-MDyXb"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "When Player Wins is lit, shoot the right saucer for 2x, 3x, then 5x Bonus."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Collect three winning saucers for 5x bonus."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Spinner recovery: Use this plan when the saucer rejects repeated shots or its eject is uncontrolled."
+        }
+      ],
+      "simpleOverview": "Black Jack grows end-of-ball Bonus X through winning hands at the right saucer. When Player Wins is lit, collect the saucer three times for 2x, 3x, and 5x; otherwise use the spinner and top suit lanes to change the hand and build base bonus.",
+      "overview": "Black Jack grows end-of-ball Bonus X through winning hands at the right saucer. Use the spinner and suit lanes until Player Wins lights, then collect the saucer three times for 5x. Afterward, repeat the lit spinner while building the 29,000 base bonus and protect the multiplied drain collect.",
+      "machineSetup": [
+        "Confirm the four-player 1977 Bally solid-state Black Jack, not the two-player EM; verify ball count, tie rule, tilt, Extra Ball, Special, and award conversions.",
+        "Test the right-saucer entry and eject, soft-plunge rebound, left spinner and post, hand-target rebounds, suit-lane feeds, and tap or Shatz transfer."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

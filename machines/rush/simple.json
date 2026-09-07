@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "id": "G2Lkd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Prepare Time Machine Multiball, start Tom Sawyer or Working Man first, then begin the multiball and use a matching stored Album Weapon.",
+        "steps": [
+          {
+            "text": "Short-plunge to the upper flipper. Take a controlled side-loop, side-ramp, or upper-scoop skill shot.",
+            "modeNotes": [
+              "Skill shot: Any upper-flipper shot scores it and extends ball save. The upper scoop scores 3x. The side ramp scores 2x.",
+              "A full plunge sends the ball into the bumpers. Use it only after the bumper exit is known."
+            ]
+          },
+          {
+            "text": "Shoot the Time Machine ramp until green Multiball is ready. Then stop one shot before the start.",
+            "modeNotes": [
+              "Time Machine Multiball: The first attempt needs three power-up shots and one start shot. Later attempts need more shots. Time Machine decades reduce that requirement.",
+              "The dead-end shot changes Red Barchetta, Subdivisions, or Fly by Night. Do not force the selector when its return is unsafe."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect cyan records for Tom Sawyer or orange records for Working Man. Shoot the red-lit Time Machine to start the song mode.",
+            "modeNotes": [
+              "Song mode: Flashing record shots qualify an untimed mode. The color with the most records selects the mode.",
+              "More records add 10% to mode scoring. Matching-color record shots score 2x. Six matching records make all mode shots 3x.",
+              "Qualification order: Collect the matching records before starting the ready song and Time Machine Multiball stack.",
+              "Tom Sawyer: Shoot both orbits, then both ramps, then all major shots.",
+              "Working Man: Shoot orange shots to move the clock from nine in the morning to five in the afternoon. The left orbit, side loop, and side ramp move it faster. Shoot the left orbit to clock out."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start the ready Time Machine Multiball. Use the ball save to advance the song mode and the multiball sequence.",
+            "modeNotes": [
+              "Red Barchetta: Score lit jackpots. Use bumpers to shift gears. Each gear ends with a Super Jackpot.",
+              "Subdivisions: Shoot the Time Machine, then the fast-flashing inner jackpots. The lit shots spread outward. Return to the Time Machine for the Super Jackpot.",
+              "Fly by Night: Shoot red jackpots and fast-flashing double jackpots. When the playfield becomes dark, shoot the strobing blue Super Jackpot.",
+              "Time Machine Multiballs start with two balls. Time Machine upgrades can add balls and ball-save time. The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If a matching Album is stored, hold the lit action button during the song mode or multiball.",
+            "modeNotes": [
+              "Album: Complete its shown 1-2-3 shot sequence. Collect the Combo Jackpot at the yellow-lit Time Machine.",
+              "Weapon: A stored Album power. During its song mode, it spots lit mode shots. During its multiball, it adds a ball and ball-save time. One use spends the Album.",
+              "A short action-button press changes the ramp diverter. A long press uses the Weapon."
+            ],
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "For the first Far Cry Multiball, complete LIGHT and LOCK. Collect the first lock at the upper scoop, then collect the second at either scoop.",
+            "modeNotes": [
+              "Far Cry Multiball: Later attempts become harder. Follow the display, including the right ramp when it is required. The second collected lock starts multiball.",
+              "Shoot the rainbow-colored jackpots. Fifteen jackpots light the Super Jackpot at the Time Machine.",
+              "A Super Jackpot adds five years. A flawless set adds ten years. A matching Snakes & Arrows Weapon adds a ball.",
+              "The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the Drum Clock reaches midnight, shoot the right orbit during another multiball to add Headlong Flight.",
+            "modeNotes": [
+              "Drum Clock: Pop-bumper hits move the clock from 5 p.m. to midnight; progress persists until the first Headlong Flight starts.",
+              "Headlong Flight is the only multiball that can start during another multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "La Villa single-ball combo",
+          "when": "Use this plan when scoop locks or multiball control are unreliable, but the major shots are dialed in.",
+          "steps": [
+            {
+              "text": "Collect purple records. Shoot the Time Machine to start La Villa Strangiato.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start at the right ramp. Follow the 12-shot sequence. Make the next shot before the combo timer ends.",
+              "modeNotes": [
+                "La Villa Strangiato: A fixed 12-shot sequence. Each fast successive shot increases the combo multiplier.",
+                "The mode is untimed. Stop and regain control when a feed is not safe."
+              ],
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Far Cry first",
+            "when": "Use this when the right ramp and both scoop feeds are safer than the Time Machine return.",
+            "steps": [
+              {
+                "text": "Complete LIGHT and LOCK. Collect the first lock at the upper scoop and the second at either scoop."
+              },
+              {
+                "text": "Collect the Snakes & Arrows Album before the second lock when its 1-2-3 sequence is controlled."
+              },
+              {
+                "text": "Start a song mode. Lock the second ball and start Far Cry.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the Weapon after ball save starts to add a ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect 15 jackpots and the Time Machine Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Cygnus X-1 and 2112",
+          "steps": [
+            {
+              "text": "Start all six named multiballs. The sixth start lights Cygnus X-1 Book 1 at the Time Machine.",
+              "kinds": [
+                "multiball",
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete all six song modes. The sixth completion lights Cygnus X-1 Book 2 at the Time Machine.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect 100 years and play both Cygnus modes. Shoot the Time Machine to start 2112.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Short-plunge upper-flipper feed",
+            "instruction": "Short-plunge to the upper flipper. Use the side loop, side ramp, or upper scoop for a skill shot and more ball-save time.",
+            "sourceUrl": "https://www.kineticist.com/news/rush-through-time"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Test a left-flipper backhand to the lower scoop. Use it when the return is safer than the forehand.",
+            "sourceUrl": "https://www.kineticist.com/news/rush-through-time",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Upper-scoop orbit feed",
+            "instruction": "Shoot the left orbit and hold the upper flipper. Let the orbit momentum guide the ball into the upper scoop.",
+            "sourceUrl": "https://www.kineticist.com/news/rush-through-time"
+          },
+          {
+            "name": "Ramp diverter control",
+            "instruction": "Tap the action button when no Weapon is lit. Use the diverter to send the next ramp return to the preferred flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=6vgpfHUL4YM&t=224s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A full plunge sends the ball into dangerous bumpers.",
+            "response": "Short-plunge to the upper flipper. Use a full plunge only after the bumper exit is known.",
+            "sourceUrl": "https://www.kineticist.com/news/rush-through-time"
+          },
+          {
+            "issue": "The right orbit and the lane behind the upper flipper feed the bumpers.",
+            "response": "Ignore these shots unless a lit feature makes the risk necessary.",
+            "sourceUrl": "https://www.kineticist.com/news/rush-through-time"
+          },
+          {
+            "issue": "The lower-scoop kickout can vary by copy.",
+            "response": "Test the first kickout before you depend on scoop locks or mystery. Regain control before the next precision shot.",
+            "sourceUrl": "https://tiltforums.com/t/stern-rush-rulesheet/7409"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Drum Clock",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Short-plunge to the upper flipper."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start all six multiballs to light Cygnus X-1 Book 1 at the Time Machine."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "La Villa single-ball combo: Use this plan when scoop locks or multiball control are unreliable, but the major shots are dialed in."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Stern Rush code and edition before relying on exact values, timers, or song rules.",
+          "Test Time Machine, both scoops, orbits, ramps, and upper-flipper feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Time Machine",
+            "label": "Time Machine ramp",
+            "description": "Ramp used for song and multiball progress.",
+            "precision": "unverified",
+            "context": "Ramp used for song and multiball progress."
+          },
+          {
+            "term": "upper scoop",
+            "label": "Upper scoop",
+            "description": "Scoop used for mode and award starts.",
+            "precision": "unverified",
+            "context": "Scoop used for mode and award starts."
+          },
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "Orbit used for combos and progression.",
+            "precision": "unverified",
+            "context": "Orbit used for combos and progression."
+          }
+        ],
+        "overview": "Rush lets a Song continue into one Multiball, but Songs cannot start during Multiball. Collect cyan records for Tom Sawyer or orange for Working Man; leave Time Machine one shot from Multiball, start the Song at red-lit Time Machine, then shoot Time Machine again for Multiball. If its Album is stored, hold the lit action button during the overlap to use its Weapon.",
+        "simpleOverview": "Rush lets an untimed Song continue into one Multiball, but a Song cannot start after Multiball begins. Shoot any flashing record to qualify a Song, then shoot the red-lit Time Machine to start it. Shoot the Time Machine ramp three times and once more to start the first Time Machine Multiball.",
+        "machineSetup": [
+          "Confirm Stern Rush code and edition before relying on exact values, timers, or song rules.",
+          "Test Time Machine, both scoops, orbits, ramps, and upper-flipper feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use colored records for a song, the Time Machine ramp for multiball, or purple records for La Villa Strangiato.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a song mode",
+            "text": "Shoot flashing cyan record shots to qualify Tom Sawyer, or flashing orange record shots to qualify Working Man. Shoot the red-lit Time Machine to start the qualified song.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Tom Sawyer",
+              "reason": "Choose it when the two orbits and two ramps are comfortable shots.",
+              "play": "Shoot both orbits, then both ramps, then finish the remaining lit major shots."
+            }
+          },
+          {
+            "title": "Start Time Machine Multiball",
+            "text": "Keep shooting the Time Machine ramp until the green Multiball start is ready, then shoot the ramp again.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Short-plunge to the upper flipper."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Start all six multiballs to light Cygnus X-1 Book 1 at the Time Machine."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "La Villa single-ball combo: Use this plan when scoop locks or multiball control are unreliable, but the major shots are dialed in."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: La Villa Strangiato",
+          "when": "Use this when the purple record shots are safer.",
+          "steps": [
+            {
+              "text": "Shoot flashing purple record shots, then shoot the Time Machine to start La Villa Strangiato.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

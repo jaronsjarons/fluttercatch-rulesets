@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "GRWvz",
+  "title": "Guardians of the Galaxy",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball for Mortals Guardians strategy",
+      "url": "https://www.pinballformortals.com/2019/05/13/guardians-of-the-galaxy-pinball-guide/"
+    },
+    "supportingSources": [
+      {
+        "label": "Current Tilt rulesheet",
+        "url": "https://tiltforums.com/t/guardians-of-the-galaxy-pinball-rulesheet/3338"
+      },
+      {
+        "label": "Official instruction card",
+        "url": "https://pinball-universe.de/mediafiles/pdf/stern-pinball/instruction-cards/gotg-instruction-card-en.pdf"
+      },
+      {
+        "label": "Eric Stone at IFPA 17 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/4109/29092"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Choose Knowhere before plunging, make eight red ramp or orbit shots, then use Groot's mouth to start Multiball and the right orbit for Knowhere's 5x Jackpots and Super Loops.",
+      "quickInfo": [
+        {
+          "name": "Groot Multiball",
+          "summary": "Hit Groot to open his mouth, then shoot the mouth to lock three balls for the first start."
+        },
+        {
+          "name": "Groot Super ladder",
+          "summary": "Each of eight character shots holds three Jackpots; Groot scores Supers after 9 and 18, then the Double Super after all 24."
+        },
+        {
+          "name": "Groot 2x or 3x playfield scoring",
+          "summary": "Relock one ball during Groot Multiball for 20 seconds of 2x scoring and a second for 20 seconds of 3x."
+        },
+        {
+          "name": "Knowhere",
+          "summary": "Make eight red shots at either orbit or ramp; the right-scoop Upgrade turns on all four for one advance and raises orbit values."
+        },
+        {
+          "name": "Orb Multiball",
+          "summary": "Complete the Orb drop and standup sequence three times to qualify its lock and start."
+        },
+        {
+          "name": "Yaka Arrow",
+          "summary": "The timed arrow mode can run into Groot Multiball when its start is prepared first."
+        },
+        {
+          "name": "Hadron Enforcer",
+          "summary": "The action button spots the leftmost valid mode or Multiball shot, but it cannot collect final Supers."
+        },
+        {
+          "name": "Rocket's Rampage 2x playfield scoring",
+          "summary": "Complete RAMPAGE at Rocket for 45 seconds of 2x scoring, then hit Rocket again for ten-second extensions."
+        },
+        {
+          "name": "Save Xandar",
+          "summary": "Complete all modes and both main Multiballs to qualify the final feature."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before plunging, use the flippers to choose Knowhere. Plunge to start it."
+        },
+        {
+          "text": "During Knowhere, make eight red shots at the left orbit, left ramp, right ramp, or right orbit. Shoot the right scoop for Upgrade to light all four shots for one advance and raise the orbit values.",
+          "modeNotes": [
+            "Knowhere: Eight red shots complete it; either orbit or either ramp advances, and orbit shots score more.",
+            "Upgrade: The right scoop turns on both orbits and both ramps for one advance and raises the mode's orbit scoring."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Make the eighth red ramp or orbit shot. Knowhere's completion marks the right orbit for 5x Groot Jackpots and starts its ten Super Loops.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit Groot to open his mouth. Shoot the mouth to lock three balls for the first Groot Multiball.",
+          "modeNotes": [
+            "Groot qualification: The first start needs three locks. Later starts need four."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Groot Multiball, shoot the right orbit for Knowhere's 5x Jackpots and continue its Super Loop sequence.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the eight flashing character-shot arrows; each holds three Jackpots. After Jackpot 9 and Jackpot 18, shoot Groot's open mouth for a Super Jackpot. After all 24 Jackpots, shoot Groot while his mouth repeatedly opens and closes for the Double Super Jackpot.",
+          "modeNotes": [
+            "Groot Super ladder: Each of the eight flashing character-shot arrows supplies three Jackpots. The Super thresholds are 9, 18, and 24 total Jackpots."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Relock one ball in Groot for 20 seconds of 2x playfield scoring, then relock another for 20 seconds of 3x playfield scoring.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Hit the flashing Guardians target until G-U-A-R-D-I-A-N-S is complete, then shoot the right scoop during Multiball. The first Mystery collected during Multiball adds a ball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Yaka Arrow into Groot",
+        "when": "Use this as an alternate character-mode route into Groot Multiball.",
+        "steps": [
+          {
+            "text": "Hit Groot to open his mouth and shoot the open mouth for each of the first two locks. Leave the third lock ready."
+          },
+          {
+            "text": "Before the next plunge, use the flippers to select Yaka Arrow. Plunge to start it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the always-available Yondu dead-end lane and use ten pop-bumper hits to spot and move its other arrow. Hit Groot, then shoot the open mouth for the third lock while Yaka Arrow runs.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use Hadron charges to spot the leftmost valid mode or Multiball shots. Do not use Hadron for a final Super."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Orb Multiball",
+          "when": "Use this as the separate Orb target and standup route.",
+          "steps": [
+            {
+              "text": "Knock down the Orb target and hit its standup. Repeat this sequence three times."
+            },
+            {
+              "text": "At the start, hit the Orb drop to lock the first ball and release the third ball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot each flashing Jackpot arrow once. Hit the Orb target to double the next Jackpot for about three seconds.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After every flashing Jackpot arrow has been collected, hit the Orb target for the Double Jackpot, then quickly hit the Orb drop target for the Super Jackpot. The first Super adds a ball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rocket's Rampage stack",
+          "when": "Use this when RAMPAGE and a Multiball start are both nearly complete.",
+          "steps": [
+            {
+              "text": "Hit Rocket until R-A-M-P-A-G-E is complete; the final letter starts 45 seconds of 2x playfield scoring.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Start the prepared mode or Multiball immediately.",
+              "kinds": [
+                "mode",
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Hit Rocket during the timer for ten-second extensions.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Cherry Bomb, Immolation, and Save Xandar",
+        "steps": [
+          {
+            "text": "Finish four character modes, then shoot the red-pulsing right scoop to start Cherry Bomb.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Reach at least halfway in all eight character modes and start both main Multiballs, then shoot the right scoop to start Immolation.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Finish all eight character modes and both main Multiballs, then shoot the right scoop to start Save Xandar.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Knowhere",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Groot Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Orb Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Yaka Arrow",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Hadron Enforcer",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Cherry Bomb",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Immolation",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Save Xandar",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "2x playfield scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "3x playfield scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Rocket's Rampage 2x playfield scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the right scoop from a settled right-flipper cradle when its return gives a stable angle.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://www.pinballformortals.com/2019/05/13/guardians-of-the-galaxy-pinball-guide/"
+        },
+        {
+          "name": "Animation cancel",
+          "instruction": "Press both flipper buttons to cancel supported animations. Keep both flippers ready for the scoop kickout.",
+          "sourceUrl": "https://www.pinballformortals.com/2019/05/13/guardians-of-the-galaxy-pinball-guide/"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Orb target, eject, and magnets can produce fast or changing returns.",
+          "response": "Test the Orb under ball save. Stop forcing it if the return reaches the center or an outlane.",
+          "sourceUrl": "https://tiltforums.com/t/guardians-of-the-galaxy-pinball-rulesheet/3338"
+        },
+        {
+          "issue": "Mode timers continue during other features and animations.",
+          "response": "Start a stack only when the qualifying shots and Multiball start are ready.",
+          "sourceUrl": "https://tiltforums.com/t/guardians-of-the-galaxy-pinball-rulesheet/3338"
+        }
+      ],
+      "overview": "Guardians of the Galaxy turns completed character modes into 5x character shots during Groot Multiball. Before plunging, choose Knowhere and plunge to start it; make eight red shots at either orbit or ramp to complete it and light ten Super Loops. Hit Groot to open his mouth, then shoot the mouth for three locks. Use the right orbit for its 5x Jackpots while working the 24-Jackpot ladder; relock balls in Groot for timed 2x and 3x playfield scoring.",
+      "simpleOverview": "Guardians of the Galaxy lets a completed character mode strengthen its matching shot during Groot Multiball. Before plunging, use the flippers to choose Knowhere and plunge to start it; make eight red shots at either orbit or ramp to complete it. Hit Groot to open his mouth, shoot the mouth for three locks, then use the right orbit for 5x Jackpots during Groot Multiball.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

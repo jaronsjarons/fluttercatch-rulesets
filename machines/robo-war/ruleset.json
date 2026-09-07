@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "GryK3",
+  "title": "Robo-War",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Gottlieb Robo-War instruction cards",
+      "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Robo-War_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Premier ROBO-WAR flyer rules side",
+        "url": "https://nypinball.com/wp-content/uploads/2019/01/robo-warB-2.jpg"
+      },
+      {
+        "label": "Colin Urban at INDISC 2018",
+        "url": "https://pinballvideos.com/v/1720/9381"
+      },
+      {
+        "label": "District 82 Robo-War 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=a1ATFfnql7s"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Roll through the right inlane to light the spinner, cradle on the left flipper, and backhand the flashing spinner for 10,000 per spin. Relight it at the right inlane and repeat.",
+      "quickInfo": [
+        {
+          "name": "ADV X multiplier",
+          "summary": "Hitting a playfield target while its ADV X lamp is lit advances the multiplier."
+        },
+        {
+          "name": "Ball-count values",
+          "summary": "Both three-ball and five-ball settings score 5,000 times the multiplier for each drop-target hit during Multiball."
+        },
+        {
+          "name": "Left ramp and lock hole",
+          "summary": "Shoot the left ramp into the hole to lock a ball in single-ball play. During Multiball, the same ramp-into-hole shot collects Multi-Bonus."
+        },
+        {
+          "name": "Stargate spot target",
+          "summary": "Hit the Stargate target under the raised ramp to release the locked ball, lower the ramp, and start two-ball Multiball. It also advances the multiplier when its ADV X lamp is lit."
+        },
+        {
+          "name": "Multi-Bonus",
+          "summary": "Drop-target hits add multiplied values to Multi-Bonus during Multiball. Shoot the left ramp into the hole to collect the stored value."
+        },
+        {
+          "name": "Spinner",
+          "summary": "Roll through the right inlane to make the spinner flash for a timed period. Each spin scores 1,000 unlit or 10,000 while flashing."
+        },
+        {
+          "name": "ROBOWAR",
+          "summary": "Complete the R-O-B-O top rollovers or the strobing B-E-T-A drop sequence to add an R-O-B-O-W-A-R letter. Each letter scores 10,000 times the multiplier at the end of the ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Roll through the right inlane to make the spinner flash for a timed period."
+        },
+        {
+          "text": "Cradle on the left flipper, then backhand the flashing spinner for 10,000 per spin."
+        },
+        {
+          "text": "When the spinner stops flashing, roll through the right inlane to relight it, regain control, and repeat the backhand."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Multi-Bonus",
+          "when": "Use this route when the left ramp and Stargate target are safer than the spinner backhand. Spinner points do not add to Multi-Bonus.",
+          "steps": [
+            {
+              "text": "Before Multiball, take safely available targets while their ADV X lamps are lit to raise the multiplier.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp into the hole to lock one ball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit the Stargate target under the raised ramp to release the locked ball, lower the ramp, and start two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "During Multiball, hit the drop targets to add 5,000 times the multiplier to Multi-Bonus per hit.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp into the hole to collect Multi-Bonus. Hit more drop targets, then repeat the ramp collect while Multiball lasts.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "ROBOWAR Special",
+        "steps": [
+          {
+            "text": "Complete the R-O-B-O top rollovers or the strobing B-E-T-A drop sequence to add one R-O-B-O-W-A-R letter."
+          },
+          {
+            "text": "Repeat either completion until R-O-B-O-W-A-R is complete and Special lights."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "ADV X multiplier",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Two-ball Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Multi-Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "R-O-B-O-W-A-R",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Flashing spinner",
+          "tone": "olive",
+          "kind": "shot"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Cradle on the left flipper and backhand the spinner while it is flashing.",
+          "sourceUrl": "https://pinballvideos.com/v/1720/9381",
+          "techniqueSlug": "backhand"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A tilt erases the stored Multi-Bonus before its end-of-ball collect.",
+          "response": "When Multi-Bonus is large, favor controlled saves and collect it through the left ramp during Multiball.",
+          "sourceUrl": "https://pinballvideos.com/v/1720/9381"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check ball count, carryover, and competition-game settings",
+        "Check Extra Ball and Special conversion",
+        "Use the first ball to read the most important return and reject"
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "Colin Urban used the spinner route for an approximately eight-million game earlier at INDISC 2018.",
+          "Robert Gagno and Zach Sharpe also chose the timed spinner during the INDISC 2018 finals.",
+          "Jim Belsito repeatedly collected million-point Multi-Bonuses on the same tournament machine.",
+          "At the 2023 North American Pinball Championship, players used the lit spinner to build several-hundred-thousand-point buffers on the difficult setup."
+        ]
+      },
+      "simpleOverview": "In ROBO-WAR, the right inlane lights the timed spinner at 10,000 per spin. The left ramp locks a ball, Stargate starts Multiball, and drop-target hits add to Multi-Bonus before the ramp and hole collect it.",
+      "overview": "ROBO-WAR lights the spinner for a timed 10,000 per spin and stores drop-target values in Multi-Bonus during Multiball. Repeat the spinner when its return is controlled. Otherwise, raise the multiplier, lock at the left ramp, start Multiball at Stargate, add drop-target values to Multi-Bonus, and collect it through the ramp and hole.",
+      "machineSetup": [
+        "Check ball count, carryover, and competition-game settings",
+        "Check Extra Ball and Special conversion",
+        "Use the first ball to read the most important return and reject"
+      ],
+      "rulesNotes": []
+    }
+  }
+}

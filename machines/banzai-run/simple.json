@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9lZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the main ramp for laps and target spots, qualify racers at their lower-playfield banks, then enter the Hill through the left-spinner lane to pass them. Defeat four racers, lock on the Hill, and use Time Lock to collect the King of the Hill million.",
+        "quickInfo": [
+          {
+            "name": "Hill races",
+            "summary": "Complete a racer's three lower targets, enter through the left-spinner Hill lane, then make that racer's lit backbox shot."
+          },
+          {
+            "name": "Banzai Run Multiball",
+            "summary": "After the required race progress, lock one ball and complete the start to begin two-ball play."
+          },
+          {
+            "name": "Bumper Saucer Time Lock",
+            "summary": "During multiball, lock one ball in the lower bumper saucer for about 20 seconds while the other enters the Hill for the captive-ball shot."
+          },
+          {
+            "name": "King of the Hill",
+            "summary": "Hit the Hill captive ball during its qualified window for the one-million award."
+          },
+          {
+            "name": "Victory Laps",
+            "summary": "After King of the Hill, repeated qualified lap shots score 250K each."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Repeat the main-playfield ramp for laps and to spot a racer target. Use the racer banks only when a controlled shot can finish a three-target set."
+          },
+          {
+            "text": "When a racer is flashing, enter the Hill through the lane behind the left spinner and make that racer's lit backbox shot.",
+            "modeNotes": [
+              "Hill race: Complete Green Machine, Blue Beard, Yellow Belly, or Red Hot's three lower targets to challenge that racer. The Hill entrance is the lane behind the left spinner."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat qualification and Hill entries until all four racers are defeated. When possible, defeat Red Hot early so the final racer leaves the nearby Hill lock lit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit Hill lock. The second ball serves to the plunger; make a lower-playfield switch to release the locked ball and begin two-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock one ball at the lower bumper saucer for Time Lock, then send the other through the Hill entrance and hit the upper captive ball for King of the Hill and one million.",
+            "modeNotes": [
+              "Bumper Saucer Time Lock: During multiball, the lower bumper saucer holds one ball for about 20 seconds. Its timer pauses while the other ball is on the Hill.",
+              "King of the Hill: Hit the upper captive ball during Time Lock for one million. Complete A-B-C and the captive ball on the same Hill visit for the million plus Extra Ball when enabled."
+            ],
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "After King of the Hill, repeat the main ramp for a 250K Victory Lap and two laps while multiball remains active.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, rebuild racers and laps from the main ramp; do not mistake it for the Hill entrance."
+          }
+        ],
+        "fallback": {
+          "title": "Main-ramp laps and captive ball",
+          "when": "Use this when Hill entry or backbox control is unreliable.",
+          "steps": [
+            {
+              "text": "Repeat the main ramp to add laps, bonus, lower captive-ball value, and pre-multiball racer-target spots."
+            },
+            {
+              "text": "After seven laps, take the lower captive ball for its 50K value only from a controlled feed."
+            },
+            {
+              "text": "Enter the Hill through the left-spinner lane only when its magnet and backbox flipper are reliable."
+            },
+            {
+              "text": "Return to racer progress after one safe Hill visit is established.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Fast racer progression",
+            "when": "Use this when the Hill ramp and backbox flipper are reliable but main-playfield control is poor.",
+            "steps": [
+              {
+                "text": "Complete the lower target bank for a racer, then enter through the left-spinner Hill lane."
+              },
+              {
+                "text": "Defeat the four racers in separate backbox visits.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Take the available lock and multiball as soon as they are ready.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "King of the Hill and Victory Laps",
+          "steps": [
+            {
+              "text": "Defeat all four Hill racers.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Defeat all four racers, shoot the lit Hill lock, then hit a lower-playfield switch to start two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the Time Lock to complete the King of the Hill captive-ball shot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect repeatable 250K Victory Laps after the million-point award.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Banzai Run Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Hill races",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "King of the Hill",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Victory Laps",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lower-ramp repeat",
+            "instruction": "Watch the main-playfield return after each Hill visit. Trap before repeating the ramp when the exit does not feed a safe live shot.",
+            "sourceUrl": "https://pinball.org/rules/banzairun.html"
+          },
+          {
+            "name": "Hill flipper timing",
+            "instruction": "Use the first Hill entry to learn the backbox flipper delay and ball speed. Make the lit race shot only after the ball reaches a predictable flipper position.",
+            "sourceUrl": "https://pinball.org/rules/banzairun.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak lower-ramp shot can reject toward the center or right outlane.",
+            "response": "Shoot the ramp from a full cradle. Stop repeating it when the entrance begins to reject.",
+            "sourceUrl": "https://pinball.org/rules/banzairun.html"
+          },
+          {
+            "issue": "A miss on the upper Hill playfield can exit quickly and return without flipper control.",
+            "response": "Keep the main flippers ready during every Hill exit. Do not look only at the backbox after the upper shot.",
+            "sourceUrl": "https://pinball.org/rules/banzairun.html"
+          },
+          {
+            "issue": "Right-side rebounds and returns can feed the right outlane.",
+            "response": "Nudge before the ball reaches the right lane divider. Favor a cradle over a fast repeat when the return is shallow.",
+            "sourceUrl": "https://pinball.org/rules/banzairun.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm installed software, target-bank and lap requirements, lock memory, Time Lock duration, Extra Ball conversion, and tournament settings.",
+          "Check whether the backbox Hill is open; closed-Hill software compensates at the Hill entrance and removes normal Hill and Cycle Jump play.",
+          "Test the Hill magnet, backbox flippers and center post, Hill exits, main-ramp return, bumper-saucer hold, and both spinner feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "main-playfield ramp",
+            "label": "Main ramp",
+            "description": "Ramp used for laps, target spots, and Victory Laps.",
+            "precision": "unverified",
+            "context": "Ramp used for laps, target spots, and Victory Laps."
+          },
+          {
+            "term": "Hill",
+            "label": "Hill entrance",
+            "description": "Lane behind the left spinner used to enter the backbox race.",
+            "precision": "unverified",
+            "context": "Lane behind the left spinner used to enter the backbox race."
+          },
+          {
+            "term": "lower bumper saucer",
+            "label": "Time Lock saucer",
+            "description": "Lower saucer used to hold a ball during multiball.",
+            "precision": "unverified",
+            "context": "Lower saucer used to hold a ball during multiball."
+          },
+          {
+            "term": "captive ball",
+            "label": "King of the Hill target",
+            "description": "Upper captive ball used for the one-million collect.",
+            "precision": "unverified",
+            "context": "Upper captive ball used for the one-million collect."
+          }
+        ],
+        "simpleOverview": "Banzai Run uses lower racer banks to qualify backbox races, then the Hill lane and backbox flipper to defeat them. Beat all four racers, take the Hill lock for two-ball play, use Time Lock, and hit the Hill captive ball for King of the Hill.",
+        "overview": "Banzai Run uses lower racer banks to qualify backbox races, then the Hill lane and backbox flipper to defeat them. Defeat all racers, start two-ball play, hold one ball below, and send the other up the Hill for the million-point captive-ball shot. Repeat the main ramp for 250K Victory Laps afterward.",
+        "machineSetup": [
+          "Confirm installed software, target-bank and lap requirements, lock memory, Time Lock duration, Extra Ball conversion, and tournament settings.",
+          "Check whether the backbox Hill is open; closed-Hill software compensates at the Hill entrance and removes normal Hill and Cycle Jump play.",
+          "Test the Hill magnet, backbox flippers and center post, Hill exits, main-ramp return, bumper-saucer hold, and both spinner feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use the main ramp for laps and target spots, qualify racers at their lower-playfield banks, then enter the Hill through the left-spinner lane to pass them. Defeat four racers, lock on the Hill, and use Time Lock to collect the King of the Hill million.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Repeat the main-playfield ramp for laps and to spot a racer target. Use the racer banks only when a controlled shot can finish a three-target set."
+          },
+          {
+            "text": "When a racer is flashing, enter the Hill through the lane behind the left spinner and make that racer's lit backbox shot.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Hill race: Complete Green Machine, Blue Beard, Yellow Belly, or Red Hot's three lower targets to challenge that racer. The Hill entrance is the lane behind the left spinner."
+            ]
+          },
+          {
+            "text": "Repeat qualification and Hill entries until all four racers are defeated. When possible, defeat Red Hot early so the final racer leaves the nearby Hill lock lit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit Hill lock. The second ball serves to the plunger; make a lower-playfield switch to release the locked ball and begin two-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock one ball at the lower bumper saucer for Time Lock, then send the other through the Hill entrance and hit the upper captive ball for King of the Hill and one million.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ],
+            "details": [
+              "Bumper Saucer Time Lock: During multiball, the lower bumper saucer holds one ball for about 20 seconds. Its timer pauses while the other ball is on the Hill.",
+              "King of the Hill: Hit the upper captive ball during Time Lock for one million. Complete A-B-C and the captive ball on the same Hill visit for the million plus Extra Ball when enabled."
+            ]
+          },
+          {
+            "text": "After King of the Hill, repeat the main ramp for a 250K Victory Lap and two laps while multiball remains active.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, rebuild racers and laps from the main ramp; do not mistake it for the Hill entrance."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Hill races",
+            "summary": "Complete a racer's three lower targets, enter through the left-spinner Hill lane, then make that racer's lit backbox shot."
+          },
+          {
+            "name": "Banzai Run Multiball",
+            "summary": "After the required race progress, lock one ball and complete the start to begin two-ball play."
+          },
+          {
+            "name": "Bumper Saucer Time Lock",
+            "summary": "During multiball, lock one ball in the lower bumper saucer for about 20 seconds while the other enters the Hill for the captive-ball shot."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Main-ramp laps and captive ball",
+          "when": "Use this when Hill entry or backbox control is unreliable.",
+          "steps": [
+            {
+              "text": "Repeat the main ramp to add laps, bonus, lower captive-ball value, and pre-multiball racer-target spots."
+            },
+            {
+              "text": "After seven laps, take the lower captive ball for its 50K value only from a controlled feed."
+            },
+            {
+              "text": "Enter the Hill through the left-spinner lane only when its magnet and backbox flipper are reliable."
+            },
+            {
+              "text": "Return to racer progress after one safe Hill visit is established.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "A weak lower-ramp shot can reject toward the center or right outlane.",
+          "text": "Shoot the ramp from a full cradle. Stop repeating it when the entrance begins to reject."
+        }
+      }
+    }
+  ]
+}

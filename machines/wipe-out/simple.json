@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "id": "G5w3q",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Wipe Out rewards its three-ball Avalanche Multiball and rising Super Jackpots. Shoot the Ski Lift on the opening plunge to lock the first ball; otherwise clear the four left drop targets to open it. Lock two balls in the Ski Lift, then shoot the Start Round scoop. During Multiball, complete the three lit Slalom lanes and shoot Rip the Crud for the Super Jackpot.",
+        "simpleOverview": "Shoot the Ski Lift on the opening plunge to lock the first ball. Clear the four left drop targets whenever the Lift is closed, lock a second ball, then shoot the Start Round scoop for Avalanche Multiball. Complete the three lit Slalom lanes and shoot the left Rip the Crud ramp for the Super Jackpot.",
+        "summary": "Lock one ball at the Ski Lift from the plunge. Clear four left drops to reopen it and lock another. Shoot the Start Round scoop for Avalanche Multiball, complete three lit Slalom lanes, then shoot the left Rip the Crud ramp for the Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "First lock",
+            "summary": "Shoot the Ski Lift on the opening plunge, or clear the four left drops to open it later."
+          },
+          {
+            "name": "Avalanche Multiball",
+            "summary": "Lock two balls in the Ski Lift, then shoot the Start Round scoop."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "Complete all three lit Slalom lanes, then shoot the left Rip the Crud ramp."
+          },
+          {
+            "name": "Winter Slalom",
+            "summary": "After one lock, hit Light Slalom and shoot the Ski Lift for a player-controlled run."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On the first plunge, shoot the Ski Lift to take the immediate first lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the Lift is closed, clear the four left drop targets to open it, then shoot the Lift for the second lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Start Round scoop to begin three-ball Avalanche Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cradle the served ball on the right flipper while the two locked balls descend from the Ski Lift.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons to steer the tilting Slalom board and complete its three lit lanes; each correct lane scores a Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all three lanes are complete, shoot the left Rip the Crud ramp for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Single-ball Slalom scoring",
+            "when": "Use this after one ball is locked if you are not ready to finish Multiball qualification.",
+            "steps": [
+              {
+                "text": "Hit the Light Slalom standup to light the Ski Lift.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the Lift, then steer the Slalom board with the flipper buttons to collect one, two, or all three correct lanes.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeat the Super Jackpot",
+          "steps": [
+            {
+              "text": "After collecting the Super Jackpot, clear the four left drops to reopen the Ski Lift.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Send balls back through the Lift until all three Slalom lanes are complete again.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to Rip the Crud; each Super Jackpot in the sequence increases by 100 million.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Use the preserved production Rev. 2 rules; do not transfer behavior from a differently initialized virtual table.",
+          "Test the four left drops, Ski Lift belt and optos, tilting Slalom board, Start Round scoop, both ramps, Light Slalom target, and all ball positions before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "Avalanche Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Ski Lift",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Slalom",
+            "tone": "teal",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "indigo",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Ski Lift",
+            "label": "Ski Lift lock",
+            "description": "The center-rear lift that holds balls and carries them to the Slalom board.",
+            "precision": "unverified"
+          },
+          {
+            "term": "four left drop targets",
+            "label": "Ski Lift drop bank",
+            "description": "The four-bank that opens the Ski Lift when completed outside a Round.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Start Round scoop",
+            "label": "Start Round scoop",
+            "description": "The left-center scoop that starts Avalanche after two balls are locked.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Slalom",
+            "label": "Winter Slalom board",
+            "description": "The player-controlled tilting upper board with three lit Jackpot lanes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Rip the Crud",
+            "label": "Rip the Crud ramp",
+            "description": "The left ramp used to collect the lit Super Jackpot.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cradle",
+            "techniqueSlug": "cradle",
+            "instruction": "Trap the ball served to the right flipper at the start of Avalanche while the Ski Lift balls descend, then attack the Slalom and Super Jackpot with one controlled ball.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/wipe-out-gottlieb-1993-vp9.2719/"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Starting a Round closes the Ski Lift, and completing its drop bank during that Round does not reopen it.",
+            "response": "Finish Multiball qualification before starting a Round when Avalanche is your priority.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/wipe-out-gottlieb-1993-vp9.2719/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Lock one ball at the Ski Lift from the plunge. Clear four left drops to reopen it and lock another. Shoot the Start Round scoop for Avalanche Multiball, complete three lit Slalom lanes, then shoot the left Rip the Crud ramp for the Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "On the first plunge, shoot the Ski Lift to take the immediate first lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the Lift is closed, clear the four left drop targets to open it, then shoot the Lift for the second lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Start Round scoop to begin three-ball Avalanche Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cradle the served ball on the right flipper while the two locked balls descend from the Ski Lift.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons to steer the tilting Slalom board and complete its three lit lanes; each correct lane scores a Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all three lanes are complete, shoot the left Rip the Crud ramp for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "First lock",
+            "summary": "Shoot the Ski Lift on the opening plunge, or clear the four left drops to open it later."
+          },
+          {
+            "name": "Avalanche Multiball",
+            "summary": "Lock two balls in the Ski Lift, then shoot the Start Round scoop."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "Complete all three lit Slalom lanes, then shoot the left Rip the Crud ramp."
+          }
+        ]
+      }
+    }
+  ]
+}

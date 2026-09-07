@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "GRY9k",
+  "title": "Beat the Clock",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Beat the Clock Bally Midway parts and operating manual",
+      "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Beat%20the%20Clock%20Part%20and%20Operating%20Manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Beat the Clock competitive rules",
+        "url": "https://rules.silverballmania.com/rules/GRY9k-MQr4w"
+      },
+      {
+        "label": "Beat the Clock machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/beat-the-clock"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Stop the clock with the four upper-right S-T-O-P targets, then knock down the single right drop and repeat the right orbit to raise Bonus X. The right orbit also lights the far upper-left saucer; collect the built bonus there because a drain does not collect it. If time is short, clear the left drops and complete the exposed T-I-M-E-R standups for 25 more time units.",
+      "simpleOverview": "Complete the upper-right S-T-O-P targets, then use the right orbit to build Bonus X and light the far upper-left Collect Bonus saucer. Shoot that saucer to cash the bonus. Clear the left drops and complete T-I-M-E-R when you need 25 more time units.",
+      "summary": "Stop the clock with S-T-O-P, build Bonus X at the right orbit, and cash the bonus at the far upper-left saucer. For more time, clear the left drop bank and complete the exposed T-I-M-E-R standups.",
+      "quickInfo": [
+        {
+          "name": "Stop the Clock",
+          "summary": "Complete the four upper-right S-T-O-P targets."
+        },
+        {
+          "name": "Build Bonus X",
+          "summary": "Knock down the right drop, then repeat the right orbit."
+        },
+        {
+          "name": "Collect Bonus",
+          "summary": "Shoot the lit far upper-left saucer; drains do not collect bonus."
+        },
+        {
+          "name": "Add Time",
+          "summary": "Clear the left drops and complete T-I-M-E-R for 25 time units."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the four upper-right S-T-O-P standups to stop the running clock.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Knock down the single drop guarding the right orbit, then repeat that orbit to advance Bonus X and build base bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the far upper-left Collect Bonus saucer after the right orbit lights it; this is the scoring collect, because a drain does not cash bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When time is low, clear the left drop bank and complete the exposed T-I-M-E-R standups for 25 more time units.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Use temporary playfield multipliers",
+          "when": "Use this when the top A-B-C-D lanes are close to completion during a controlled orbit feed.",
+          "steps": [
+            {
+              "text": "Complete A-B-C-D once for 2x playfield scoring.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete A-B-C-D again while 2x is running for 3x playfield scoring; the multiplier does not increase the Collect Bonus award.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Cash a large timed bonus",
+        "steps": [
+          {
+            "text": "Keep the clock stopped while right-orbit shots raise Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Take the upper-left saucer before a dangerous feed costs the current multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm starting time, tilt-time penalty, score awards, Special and Extra Ball conversions, and whether temporary 2x and 3x scoring are enabled.",
+        "Test all four S-T-O-P targets, both green clock-start rollovers, the left drops and T-I-M-E-R standups, right drop and orbit, upper-left saucer, top A-B-C-D lanes, and both flippers."
+      ],
+      "termStyles": [
+        {
+          "label": "S-T-O-P",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        },
+        {
+          "label": "T-I-M-E-R",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The two green star rollovers restart the clock, and running out of time does not end the current ball immediately.",
+          "response": "Rebuild time before the drain; the game ends when the ball drains with no time remaining.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRY9k-MQr4w"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

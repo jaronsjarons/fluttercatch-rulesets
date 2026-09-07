@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "G59ZY",
+  "title": "Radical!",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "PAPA Radical tutorial with Bowen Kerins",
+      "url": "https://www.youtube.com/watch?v=iqyxn1EH1OA"
+    },
+    "supportingSources": [
+      {
+        "label": "Pinball Archive Radical rulesheet",
+        "url": "https://pinball.org/rules/radical.html"
+      },
+      {
+        "label": "Bally Radical operator handbook",
+        "url": "https://online.gameex.com/media/pinballx/all/addmedia/radical%21%20%28midway%201990%29/Operator%20Handbook.pdf"
+      },
+      {
+        "label": "Escher Lefkoff at Free Play Florida 2018",
+        "url": "https://pinballvideos.com/v/2180/3562"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the top drops and Snake Run for safe awards. Spell RADICAL for each lock. In multiball, collect Mega-Million and rebuild it.",
+      "steps": [
+        {
+          "text": "Plunge through the left ramp when the needed RADICAL letter is lit. Test the four flipper feeds and both outlanes."
+        },
+        {
+          "text": "Complete the three top drop targets. Then shoot the lit Snake Run behind them.",
+          "modeNotes": [
+            "Snake Run: A timed random award. Awards include Skate or Die, extra ball, stored feature totals, points, or 1,000,000.",
+            "Skate or Die: Immediately lights the three lock shots without a RADICAL completion."
+          ]
+        },
+        {
+          "text": "Complete RADICAL through the seven major shots. Use the bottom drops and Spot Letter target when a direct ramp is unsafe.",
+          "modeNotes": [
+            "RADICAL: Snake Lane, vertical ramp, left orbit, right ramp, bottom drops, left ramp, and right orbit each own one letter.",
+            "A completion lights Skate or Die, relights the left kickback, lights Bottom Million, and adds 100,000 carried bonus."
+          ]
+        },
+        {
+          "text": "Lock the first ball at the Snake Lane, left ramp, or right ramp. Complete RADICAL again. Then make a lit lock shot to start two-ball multiball.",
+          "modeNotes": [
+            "First lock: RADICAL and its letter values reset. The second lock needs a new RADICAL completion unless Snake Run awards Skate or Die."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During multiball, shoot the left ramp for Mega-Million.",
+          "modeNotes": [
+            "Mega-Million: A jackpot selected from 3,000,000 to 10,000,000 on standard code. Tournament settings can fix the value.",
+            "The left ramp remains lit briefly if one ball drains."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the jackpot, spell RADICAL. Put both balls into the lock lane within about three seconds. Then shoot the left ramp again.",
+          "modeNotes": [
+            "Jackpot relight: During multiball, RADICAL lights the lock lane. Two fast re-locks relight Mega-Million."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If one ball drains before both re-locks, finish RADICAL and take one lit physical lock for the next multiball.",
+          "modeNotes": [
+            "At Free Play Florida 2018, Escher Lefkoff collected the opening Mega-Million, then ended the multiball with one ball physically locked for the next build."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Snake Run awards",
+        "when": "Use this when several letter shots or the upper-left flipper feed are not controlled.",
+        "steps": [
+          {
+            "text": "Complete the top drop bank to light Snake Run."
+          },
+          {
+            "text": "Shoot the target behind the bank before its timer ends."
+          },
+          {
+            "text": "Take Skate or Die when awarded. Otherwise, repeat for points, 1,000,000, or another useful award."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Tail Sliders",
+          "when": "Use this when the left ramp safely feeds the upper-right flipper.",
+          "steps": [
+            {
+              "text": "Collect the second A in RADICAL to light Tail Slider."
+            },
+            {
+              "text": "From the upper-right flipper, repeat the left ramp for 100,000 per Tail Slider.",
+              "modeNotes": [
+                "Tail Slider: A self-feeding left-ramp loop. The diverter ends the run after two shots, then three, then four on later runs."
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeat Mega-Million jackpots",
+        "steps": [
+          {
+            "text": "Complete RADICAL twice and start multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect Mega-Million at the left ramp."
+          },
+          {
+            "text": "Complete RADICAL and re-lock both balls for each additional jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Shatz pass",
+          "instruction": "Use a controlled alley pass from the left flipper to set up the vertical ramp or Snake area from the right.",
+          "sourceUrl": "https://www.youtube.com/watch?v=iqyxn1EH1OA&t=117s",
+          "techniqueSlug": "shatz-pass"
+        },
+        {
+          "name": "Right-orbit upper-flipper feed",
+          "instruction": "Shoot the right orbit with speed. Use its feed to the upper-left flipper for the right ramp on the fly.",
+          "sourceUrl": "https://pinball.org/rules/radical.html"
+        },
+        {
+          "name": "Drop catch",
+          "instruction": "Use a drop catch on a controlled upper-flipper feed before shooting the ramp.",
+          "sourceUrl": "https://www.youtube.com/watch?v=iqyxn1EH1OA&t=1668s",
+          "techniqueSlug": "drop-catch"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The upper-left flipper has no guide and usually receives an uncontrolled bumper feed.",
+          "response": "Do not depend on it for a critical right-ramp letter. Use Spot Letter or Snake Run when the feed is not clean.",
+          "sourceUrl": "https://www.youtube.com/watch?v=iqyxn1EH1OA&t=75s"
+        },
+        {
+          "issue": "The right inlane and outlane area can be difficult to save.",
+          "response": "Nudge before the ball settles there. Use the sling top or nearby post to move the ball back toward the playfield.",
+          "sourceUrl": "https://www.youtube.com/watch?v=iqyxn1EH1OA&t=382s"
+        },
+        {
+          "issue": "Both drop banks remove ball control and can return the ball toward a drain.",
+          "response": "Use them for Snake Run, Spot Letter, or Bonus X only. Be ready before every rebound.",
+          "sourceUrl": "https://pinball.org/rules/radical.html"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Use the top drops and Snake Run for safe awards."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete RADICAL twice and start multiball."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Snake Run awards: Use this when several letter shots or the upper-left flipper feed are not controlled."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Radical code, ball count, lock behavior, and tournament award conversions.",
+        "Test Snake Run, Snake Lane, both ramps, locks, and upper-flipper feeds."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At Free Play Florida 2018, Escher Lefkoff repeatedly spelled R-A-D-I-C-A-L for locks, started Multiball, collected its rising Jackpot sequence, and resumed the same lock cycle afterward."
+        ]
+      },
+      "simpleOverview": "In Radical!, complete R-A-D-I-C-A-L to light a lock at the Snake Lane, left ramp, or right ramp. Lock one ball, complete the letters again, then shoot a lit lock to start two-ball Multiball. Shoot the left ramp for Mega-Million; to relight it, complete R-A-D-I-C-A-L and put both balls into the lock lane within about three seconds.",
+      "overview": "In Radical!, each R-A-D-I-C-A-L completion lights one of three lock shots, and the second lock starts two-ball Multiball. Use the top drop bank and Snake Run for safe awards, complete the letters twice, then shoot the left ramp for Mega-Million. Complete the letters again and relock both balls quickly to relight that Jackpot, or preserve one physical lock for the next Multiball if one ball drains.",
+      "machineSetup": [
+        "Confirm Bally Radical code, ball count, lock behavior, and tournament award conversions.",
+        "Test Snake Run, Snake Lane, both ramps, locks, and upper-flipper feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

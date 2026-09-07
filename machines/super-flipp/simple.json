@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "G4X1D",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Super Flipp is a purely mechanical marble game attached to a gumball vendor. Insert a coin and turn the knob: one gumball vends immediately while a marble moves to the shooter. Keep the marble away from the left 0 hole, use the right 50 hole to return it to the shooter for another attempt, and send it into the upper 100 hole to win the marble.",
+        "simpleOverview": "In Super Flipp, insert a coin and turn the knob to vend a gumball and load a marble at the shooter. Avoid the left 0 hole, which loses the marble. The right 50 hole sends it back to the shooter for another attempt, while the upper 100 hole awards the marble to the player.",
+        "summary": "The only progression is physical: preserve the marble through the right 50 return hole and aim the next plunge or flipper contact toward the upper 100 award hole. The left 0 hole ends the attempt.",
+        "quickInfo": [
+          {
+            "name": "Start play",
+            "summary": "Insert a coin and turn the knob to vend a gumball and load a marble."
+          },
+          {
+            "name": "Keep the marble",
+            "summary": "Land in the right 50 hole to return the marble to the shooter."
+          },
+          {
+            "name": "Win the marble",
+            "summary": "Land in the upper 100 hole."
+          },
+          {
+            "name": "Avoid the drain hole",
+            "summary": "The left 0 hole loses the marble."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Insert a coin and turn the knob; collect the vended gumball and use the shooter to launch the marble."
+          },
+          {
+            "text": "Use the two mechanical flippers to keep the marble away from the left 0 hole."
+          },
+          {
+            "text": "Aim for the right 50 hole when you need another launch; it returns the marble to the shooter."
+          },
+          {
+            "text": "Aim for the upper 100 hole to award the marble and finish the successful route."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Return-and-retry",
+            "when": "Use this when the upper 100 hole is not available from the current rebound.",
+            "steps": [
+              {
+                "text": "Guide the marble into the right 50 hole."
+              },
+              {
+                "text": "Set up the shooter for another launch."
+              },
+              {
+                "text": "Use the new launch to attack the upper 100 hole."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "The upper 100 award hole",
+          "steps": [
+            {
+              "text": "Avoid the left 0 hole."
+            },
+            {
+              "text": "Use the right 50 hole to preserve the marble and reset at the shooter."
+            },
+            {
+              "text": "Land in the upper 100 hole to win the marble."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm that the coin-and-knob cycle vends one gumball and transfers one marble to the shooter without binding.",
+          "Test both flippers, the left 0 drain, the right 50 return path, the upper 100 award path, and the marble payout before play."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left 0 hole",
+            "label": "Left 0 hole",
+            "description": "Hole that loses the active marble.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right 50 hole",
+            "label": "Right 50 return hole",
+            "description": "Hole that moves the marble back to the shooter for another attempt.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper 100 hole",
+            "label": "Upper 100 award hole",
+            "description": "Hole that awards the marble to the player.",
+            "precision": "unverified"
+          },
+          {
+            "term": "shooter",
+            "label": "Marble shooter",
+            "description": "Manual shooter that launches the marble after the coin-and-knob cycle or a 50-hole return.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "The only progression is physical: preserve the marble through the right 50 return hole and aim the next plunge or flipper contact toward the upper 100 award hole. The left 0 hole ends the attempt.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Insert a coin and turn the knob; collect the vended gumball and use the shooter to launch the marble."
+          },
+          {
+            "text": "Use the two mechanical flippers to keep the marble away from the left 0 hole."
+          },
+          {
+            "text": "Aim for the right 50 hole when you need another launch; it returns the marble to the shooter."
+          },
+          {
+            "text": "Aim for the upper 100 hole to award the marble and finish the successful route."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Start play",
+            "summary": "Insert a coin and turn the knob to vend a gumball and load a marble."
+          },
+          {
+            "name": "Keep the marble",
+            "summary": "Land in the right 50 hole to return the marble to the shooter."
+          },
+          {
+            "name": "Win the marble",
+            "summary": "Land in the upper 100 hole."
+          }
+        ]
+      }
+    }
+  ]
+}

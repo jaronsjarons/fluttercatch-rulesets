@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "G56vo",
+  "title": "Big Bang Bar",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Big Bang Bar rulesheet",
+      "url": "https://www.pinball.org/rules/bigbangbar.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Mike Lukianoff at the Big Bang Bar tutorial",
+        "url": "https://pinballvideos.com/v/1554"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Choose a controllable bar mode, start it at the main ramp, then spell B-R-A-W-L and collect three ramp locks. During Multi-Brawl, repeat the ramp and take the inner-orbit Double Jackpot only from control.",
+      "quickInfo": [
+        {
+          "name": "Bar modes",
+          "summary": "Bumpers rotate the selection; the center three-bank or lit inlane qualifies the flashing mode, and the main ramp starts it."
+        },
+        {
+          "name": "Multi-Brawl",
+          "summary": "Spell B-R-A-W-L at the captive balls, lock three balls by the ramp, then use ramp and inner-orbit jackpots."
+        },
+        {
+          "name": "Looped in Space",
+          "summary": "Complete both drop banks, lock two balls in the alien mouths, then clear both banks for its Jackpot."
+        },
+        {
+          "name": "The Big Bang",
+          "summary": "Finish all nine modes and five features to light the timed four-ball wizard multiball at the one-bank."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the opening save to test the main ramp, inner orbit, and both drop-bank rebounds."
+        },
+        {
+          "text": "Let the bumpers rotate to a mode whose shots are safe, then qualify it with the center bank or lit inlane."
+        },
+        {
+          "text": "Shoot the main ramp to start the qualified mode and complete its lit objectives.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the captive balls to spell B-R-A-W-L, then use the main ramp to collect each Multi-Brawl lock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multi-Brawl, repeat the main ramp for jackpots and use the inner orbit for a double jackpot when controlled.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After multiball, finish another unplayed bar mode or a nearby feature instead of repeating completed mode qualification.",
+          "modeNotes": [
+            "Big Bang qualification: Every bar mode and each of the five untimed features must be finished before the one-bank lights the wizard."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Looped in Space",
+        "when": "Use this when captive-ball hits or Multi-Brawl lock returns are unsafe.",
+        "steps": [
+          {
+            "text": "Complete the left four-bank and center three-bank."
+          },
+          {
+            "text": "Shoot the ramp to collect each lit alien lock and start Looped in Space.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Clear both banks for its jackpot while the extra ball protects the rebounds.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Bathroom and mode selection",
+          "when": "Use this when no mode is qualified and the ramp return is repeatable.",
+          "steps": [
+            {
+              "text": "Leave the mode unqualified and shoot the ramp for the next Bathroom award."
+            },
+            {
+              "text": "Use bumper hits to rotate away from an unsafe mode."
+            },
+            {
+              "text": "Use the center bank or lit inlane to qualify the chosen mode only after its required feeds are proven, then start it at the ramp."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "The Big Bang",
+        "steps": [
+          {
+            "text": "Play and finish every bar mode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Looped in Space, Multi-Brawl, Ray's Ball Busters, Tube Dancer, and Underground."
+          },
+          {
+            "text": "Hit the lit one-bank to start the timed four-ball Big Bang.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Manually relaunch drained balls and keep as many active as possible; target and Jackpot scoring scales with balls in play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Multi-Brawl",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Looped in Space",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "bar mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "The Big Bang",
+          "tone": "forest",
+          "kind": "multiball"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Mode selection through bumpers",
+          "instruction": "Before qualifying a mode, use bumper hits to rotate to an objective whose shots are safe on this copy.",
+          "sourceUrl": "https://www.pinball.org/rules/bigbangbar.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A rejected main-ramp shot can return toward the center drain.",
+          "response": "Do not force locks or modes until the ramp make point and saver behavior are known.",
+          "sourceUrl": "https://www.pinball.org/rules/bigbangbar.html"
+        },
+        {
+          "issue": "Alien locks, ramp diverters, and the inner-orbit exit can malfunction or trap balls.",
+          "response": "Confirm switches and physical routing before treating missing locks or delayed releases as normal rules.",
+          "sourceUrl": "https://www.pinball.org/rules/bigbangbar.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Capcom or authorized PMI copy, installed ROM, family or adult setting, ball save, extra-ball conversion, and tournament adjustments.",
+        "Test both ramp diverters, alien-mouth locks, captive balls, drop banks, inner-orbit exit, and the lock post above the left slingshot.",
+        "Confirm mode-completion lamps, alien releases, lock memory, and whether Big Bang drains return to the plunger for manual relaunch."
+      ],
+      "simpleOverview": "Big Bang Bar uses the bumpers and center bank to select and qualify bar modes, while captive-ball hits spell B-R-A-W-L for Multi-Brawl. Start a controllable mode at the main ramp, then collect three ramp locks and repeat the ramp for Jackpots during Multiball.",
+      "overview": "Finishing all nine bar modes and all five untimed features lights The Big Bang, Big Bang Bar's final four-ball Multiball. Use bumper hits to select a mode whose shots are safe, qualify it at the center bank or lit inlane, and start it at the main ramp. Spell B-R-A-W-L and collect three ramp locks for the repeatable Multiball route, using the inner-orbit Double only from control.",
+      "machineSetup": [
+        "Confirm Capcom or authorized PMI copy, installed ROM, family or adult setting, ball save, extra-ball conversion, and tournament adjustments.",
+        "Test both ramp diverters, alien-mouth locks, captive balls, drop banks, inner-orbit exit, and the lock post above the left slingshot.",
+        "Confirm mode-completion lamps, alien releases, lock memory, and whether Big Bang drains return to the plunger for manual relaunch."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

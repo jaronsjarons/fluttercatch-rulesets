@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "G4lKk",
+  "title": "See Saw",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to See Saw",
+      "url": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist See Saw machine guide",
+        "url": "https://www.kineticist.com/games/pinball/see-saw"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build the yellow and blue saucer bonuses through upper play. Hit the matching center target to light 10x, then shoot its saucer before the ball drains.",
+      "quickInfo": [
+        {
+          "name": "Two live bonuses",
+          "summary": "Yellow and blue bonuses each build from 100 to 1,000 and score only when the matching saucer collects them."
+        },
+        {
+          "name": "No drain bonus",
+          "summary": "Neither built value scores at the end of the ball, so an uncollected bonus is lost at the drain."
+        },
+        {
+          "name": "Ten-times targets",
+          "summary": "The two center targets light 10x for the matching saucers and can turn a 1,000 bonus into a 10,000 collect."
+        },
+        {
+          "name": "Top gate",
+          "summary": "The two gate lanes at the top open the top-right gate, which scores 3,000 and returns the ball to the plunger lane."
+        },
+        {
+          "name": "Ball protection",
+          "summary": "The center standup opens the lower gate, the center rollover raises the post, and two buttons above the slings lower the post."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge through a top white rollover and then an open gate lane when the feed allows it."
+        },
+        {
+          "text": "Use the right flipper to shoot the three standups left of the bumper group."
+        },
+        {
+          "text": "Build both color bonuses with their standups, nearby white rollovers, and matching top lanes."
+        },
+        {
+          "text": "When either bonus approaches 1,000, hit its center target to light 10x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the matching collect saucer before the ball drains."
+        },
+        {
+          "text": "Collect the other color after its bonus and 10x light are ready.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "If the top gate opens, use the left flipper to shoot it for 3,000 and another plunge."
+        },
+        {
+          "text": "After a collect resets one color to 100, rebuild it through the same upper route."
+        }
+      ],
+      "fallback": {
+        "title": "Single-color cashout",
+        "when": "Use this plan when one collect saucer is reliable and the other color or saucer requires a dangerous shot.",
+        "steps": [
+          {
+            "text": "Choose the color with the safer collect saucer."
+          },
+          {
+            "text": "Build only that bonus through its top lane, standup, and white rollover."
+          },
+          {
+            "text": "Hit the matching center target to light 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect the ready saucer before you attempt the other color."
+          },
+          {
+            "text": "Repeat the safe color after it resets to 100."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Top-gate recycle",
+          "when": "Use this plan when the top-right gate is open and the ball is controlled on the left flipper.",
+          "steps": [
+            {
+              "text": "Shoot the open top-right gate from the left flipper."
+            },
+            {
+              "text": "Collect its 3,000 award and accept the return to the plunger lane."
+            },
+            {
+              "text": "Plunge through a white rollover to light its bumper pair."
+            },
+            {
+              "text": "Use the next top lane to add a color-bonus advance or reopen the gate."
+            },
+            {
+              "text": "Resume the 10x-and-collect route."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "10x yellow and blue bonus collects",
+        "steps": [
+          {
+            "text": "Use upper lanes, standups, and white rollovers to build both bonuses."
+          },
+          {
+            "text": "Use that color's upper lane, standup, and white rollover to raise it toward 1,000."
+          },
+          {
+            "text": "Hit that color's center target to light 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the matching saucer for as much as 10,000."
+          },
+          {
+            "text": "Repeat for the other color before the drain."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Soft-plunge gate feed",
+          "instruction": "Test a soft plunge that crosses the bumper-light rollover and falls into the top-right gate lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        },
+        {
+          "name": "Right-flipper bonus build",
+          "instruction": "From the right flipper, aim at the three standups left of the bumpers. Use the outer targets for bonus and the center target for the lower gate.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        },
+        {
+          "name": "Left-flipper gate shot",
+          "instruction": "When the top-right gate is open, control the ball on the left flipper and shoot through the gate for another plunge.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Built yellow and blue values do not score as end-of-ball bonus.",
+          "response": "Hit the matching center target to light 10x, then collect each useful saucer value before continuing optional upper-playfield work.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        },
+        {
+          "issue": "The two lower mushroom bumpers can produce dangerous rebounds and are not the preferred way to build bonus.",
+          "response": "Use top lanes, standups, and white rollovers for bonus progress. Do not shoot the mushroom bumpers directly.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        },
+        {
+          "issue": "The center post can fall when the ball crosses either down button above the slings.",
+          "response": "Read the post before every center return. Treat the gap as open after either down-button contact.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        },
+        {
+          "issue": "The left-outlane kickback follows the score's tens digit and is not reliable protection on every return.",
+          "response": "Check its lamp before the ball reaches the outlane. Do not plan a save when the lamp is off.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4lKk-MQ59j"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams See Saw, ball count, 10X behavior, gate rules, and award conversions.",
+        "Test both collect saucers, top gate, color targets, white rollovers, and upper feeds."
+      ],
+      "simpleOverview": "See Saw stores one yellow bonus and one blue bonus, and each scores only at its matching saucer rather than at the drain. Use each color's standups, white rollovers, and top lane to raise its value, hit the matching center target for 10x, then shoot that color's saucer before the ball ends.",
+      "overview": "See Saw is a two-color collect game with no end-of-ball bonus. Use upper play to raise the yellow and blue values toward 1,000, hit each color's center target to light 10x, and collect at the matching saucer. Rebuild the reset color only after the other valuable collect and the center-post state are secure.",
+      "machineSetup": [
+        "Confirm Williams See Saw, ball count, 10X behavior, gate rules, and award conversions.",
+        "Test both collect saucers, top gate, color targets, white rollovers, and upper feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

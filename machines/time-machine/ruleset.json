@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "id": "GR99Y",
+  "title": "Time Machine",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Data East Time Machine instruction manual",
+      "url": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Time%20Machine%20Instruction%20Manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Factory Time Machine instruction card",
+        "url": "https://www.pinballrebel.com/game/pins/instruction/Data_East_Time_Machine_instruction_card.pdf"
+      },
+      {
+        "label": "Kineticist Time Machine machine record",
+        "url": "https://www.kineticist.com/games/pinball/time-machine"
+      },
+      {
+        "label": "PinMAME Time Machine ROM record",
+        "url": "https://github.com/vpinball/pinmame/blob/master/src/wpc/degames.c"
+      },
+      {
+        "label": "Time Machine rules and strategy tutorial",
+        "url": "https://www.youtube.com/watch?v=j-qO66V4LUk"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Test all three ramp returns, then travel through the 1970s, 1960s, and 1950s on both outside ramps. The final 1950s ramp starts three-ball Multiball. Hit standups to raise the Jackpot, then collect it at the center ramp.",
+      "quickInfo": [
+        {
+          "name": "Time Travel",
+          "summary": "Each outside ramp advances through the triangle, circle, and square decade lamps until both 1950s lamps start Multiball."
+        },
+        {
+          "name": "Time Machine Multiball",
+          "summary": "The first trip through both 1950s ramp lamps starts three-ball play, which ends when one ball remains."
+        },
+        {
+          "name": "Jackpot",
+          "summary": "The Multiball Jackpot grows by 100,000 at each standup and collects for 100,000 through 1,000,000 at the center ramp."
+        },
+        {
+          "name": "STARWARP",
+          "summary": "Ramps and eligible top-lane completions spot letters until the complete word lights the center ramp for 1,000,000."
+        },
+        {
+          "name": "Mini Jackpot",
+          "summary": "Three center-ramp shots during its timer score 100,000 on ball one, 200,000 on ball two, or 300,000 on ball three."
+        },
+        {
+          "name": "Einstein energy",
+          "summary": "Pop hits build stored energy that an inlane followed by the opposite outside ramp spends as an Einstein Shot."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the first controlled ball to read both outside-ramp returns and the center-ramp return."
+        },
+        {
+          "text": "Confirm that the Laser Kick lamp is on before you accept a left-outlane risk."
+        },
+        {
+          "text": "Shoot each outside ramp once to complete both 1970s triangle lamps.",
+          "modeNotes": [
+            "Time Travel: Each outside ramp has its own decade progress. The triangle lamps identify the 1970s."
+          ]
+        },
+        {
+          "text": "Repeat both outside ramps to complete the 1960s circle lamps."
+        },
+        {
+          "text": "Repeat both outside ramps to complete the 1950s square lamps and start three-ball Multiball.",
+          "modeNotes": [
+            "Time Machine Multiball: The final required 1950s ramp enables three-ball play. The mode ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, hit lit standups to add 100,000 to the Jackpot for each lit decade target.",
+          "modeNotes": [
+            "Jackpot: The center ramp supplies the first 100,000. Lit 1970s, 1960s, and 1950s targets can raise the collect to 1,000,000."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the center ramp to collect the current Jackpot before one ball remains.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After Multiball, repeat the outside-ramp decade route if both returns remain safe."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: STARWARP and Mini Jackpot",
+        "when": "Recovery pivot: Use this when one outside ramp rejects or has an unsafe return.",
+        "steps": [
+          {
+            "text": "Use the safer ramps and factory top-lane spotting to finish STARWARP."
+          },
+          {
+            "text": "Shoot the lit center ramp for 1,000,000 before the factory 20-second timer ends.",
+            "modeNotes": [
+              "STARWARP: The factory setting retains completed letters for the same player across balls."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When Mini Jackpot starts, shoot the center ramp three times before the factory 15-second timer ends.",
+            "modeNotes": [
+              "Mini Jackpot: The completed value is 100,000 on ball one, 200,000 on ball two, and 300,000 on ball three."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Stop the route when center-ramp rejects are no longer controlled."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Einstein energy collect",
+          "when": "When trailing, use this higher-ceiling route: use this when pop hits have built a large energy value and an outside ramp is reliable.",
+          "steps": [
+            {
+              "text": "Let pop-bumper hits build the displayed Einstein energy value."
+            },
+            {
+              "text": "Roll through one return lane to light the opposite outside ramp."
+            },
+            {
+              "text": "Shoot that outside ramp within the factory 12-second timer to collect the energy value."
+            }
+          ]
+        },
+        {
+          "title": "Top-lane awards",
+          "when": "Use this when the top feed is safer than the ramps.",
+          "steps": [
+            {
+              "text": "Complete the top lanes for the displayed back-panel award."
+            },
+            {
+              "text": "Use Bonus Hold or 2X All Scores when the random award lights it.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "After six top-lane completions, collect the lit outlane Extra Ball only when tournament settings permit it."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "A second trip to the 1950s",
+        "steps": [
+          {
+            "text": "Complete both outside ramps through the 1950s and play Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep the surviving ball in play after Multiball ends."
+          },
+          {
+            "text": "Complete both outside-ramp decade ladders again on that ball."
+          },
+          {
+            "text": "With factory Extra Ball 1950 enabled, the second 1950s trip lights one outlane for Extra Ball."
+          },
+          {
+            "text": "Use the right flipper to move the lit Extra Ball between the two outlanes."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Time Machine Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "STARWARP",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Mini Jackpot",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "2X All Scores",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Einstein energy",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Laser Kick",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus Hold",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Einstein transfer",
+          "instruction": "Roll through one return lane, then shoot the opposite outside ramp before the Einstein timer ends.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Time%20Machine%20Instruction%20Manual.pdf"
+        },
+        {
+          "name": "Extra Ball lane change",
+          "instruction": "Press the right flipper to move a lit outlane Extra Ball to the safer side.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Time%20Machine%20Instruction%20Manual.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Laser Kick can use Easy, Factory, or Hard operator behavior.",
+          "response": "Check its lamp before each outlane risk. On Hard, it starts lit only on ball one.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Time%20Machine%20Instruction%20Manual.pdf"
+        },
+        {
+          "issue": "Hard rules disable several factory spotting and memory aids.",
+          "response": "Read the lamps. Do not assume that top lanes spot STARWARP or that decade progress carries to the next ball.",
+          "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Time%20Machine%20Instruction%20Manual.pdf"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Data East Time Machine ROM and ball-count rules.",
+        "Test three ramp returns, Laser Kick, and standup registration."
+      ],
+      "simpleOverview": "Time Machine uses both outside ramps to move through the 1970s, 1960s, and 1950s. Complete each decade on both ramps to start three-ball Multiball, hit lit decade standups to raise the Jackpot, then shoot the center ramp to collect it.",
+      "overview": "Time Machine uses both outside ramps to move through the 1970s, 1960s, and 1950s. Test both ramp returns, complete the 1970s, 1960s, and 1950s in order, then hit lit decade standups during Multiball to raise the Jackpot. Shoot the center ramp before one ball remains, and repeat the decade route only while both returns stay controlled.",
+      "machineSetup": [
+        "Confirm Data East Time Machine ROM and ball-count rules.",
+        "Test three ramp returns, Laser Kick, and standup registration."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

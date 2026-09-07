@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9Nr",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the left-ramp Scene ladder, start a Scene before Storage Facility Multiball, then build the 2x and 3x Gear multipliers for Storage or We Came, We Saw.",
+        "steps": [
+          {
+            "text": "Before the plunge, use the flippers to select the left-ramp Start Scene skill shot. Plunge. Shoot the left ramp.",
+            "modeNotes": [
+              "Start Scene skill shot: The display selects one major shot. Make that shot after the plunge to start the first unplayed scene at that location.",
+              "The left-ramp ladder has We Got One, He Slimed Me, and The Ballroom. Complete them in that order."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the flashing scene shots. Return to the left ramp to start the next scene when it lights.",
+            "modeNotes": [
+              "Scene: A timed single-ball mode. Make its flashing shot sequence before time expires. Scenes do not stack with other scenes.",
+              "A drain ends the current attempt. Completed lower scenes stay complete. The highest scenes can resume under current rules.",
+              "The left-ramp ladder is the main route because its skill shot is easier, its scenes score well, and its final multiball uses three balls instead of two."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "While a left-ramp Scene is active, repeat the left ramp to light and collect three Storage locks. The third lock starts Storage Facility Multiball.",
+            "modeNotes": [
+              "Storage Facility Multiball: Complete the captive-ball award to light all three locks. You can also earn one lock at 10, 30, and 50 collected ghosts.",
+              "A running scene continues into Storage. Start the scene first. A scene cannot start during multiball.",
+              "Storage ends when one ball remains."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Storage, shoot every lit ghost shot for a jackpot and one ghost. After all lit ghosts are collected, shoot the left ramp for three Super Jackpots.",
+            "modeNotes": [
+              "A full ghost set lights three Super Jackpots at the left ramp. After the third Super, the ghost jackpots relight.",
+              "Complete the scene during Storage when possible. If it is the final scene in its ladder, We Came, We Saw can start inside Storage."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Storage, hit the captive ball until Add-A-Ball lights. Then shoot the left scoop.",
+            "modeNotes": [
+              "Storage add-a-ball: Two hits qualify it on some configurations and three on others. The lit scoop launches one ball and restarts ball save.",
+              "Use multiball ball save for the captive-ball hits. Do not force them during single-ball play."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make a Gear Combo. Start both timed multipliers. Keep both targets active for 6x scoring.",
+            "modeNotes": [
+              "Gear Combo: Shoot the left ramp. Then hit the left captive ball or a flashing yellow Gear target.",
+              "The first combo lights the 2x target. The next combo lights the 3x target. Hit each lit target to start its timer.",
+              "The two timers run together for 6x. Hit an active target again to add time.",
+              "Use 6x during Storage, a valuable scene, or We Came, We Saw."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete The Ballroom. Play We Came, We Saw. Alternate jackpots so completed shots relight.",
+            "modeNotes": [
+              "We Came, We Saw: Completing one scene ladder starts this mini-wizard at that ladder's final shot. Its ball count equals the number of scenes in the ladder.",
+              "All major shots start as jackpots. A collected shot turns off. Another jackpot relights it.",
+              "The jackpot starts at 6,250,000 and grows by 750,000 to a 30,000,000 cap. Enough jackpots light a 100,000,000 Super Jackpot.",
+              "The mode ends when one ball remains. Keep 2x and 3x active when possible."
+            ],
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Short scoop ladder",
+          "when": "Use this plan when the left ramp return is too dangerous.",
+          "steps": [
+            {
+              "text": "Select the left-scoop Start Scene skill shot. Start Spooked Librarian.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete Spooked Librarian. Start and complete Back Off, Man!",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Play the two-ball We Came, We Saw from the scoop.",
+              "modeNotes": [
+                "This route needs only two scenes. Its final multiball has only two balls, so it is less forgiving than the main route."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use Gear Combo multipliers only when the captive-ball return is controlled.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Ghost-meter route",
+            "when": "Use this plan when Storage and scene shots are not repeatable but ghost shots occur naturally.",
+            "steps": [
+              {
+                "text": "Collect ghosts. The meter gives Storage locks at 10, 30, and 50 ghosts."
+              },
+              {
+                "text": "At 20 ghosts, collect Tobin's Spirit Guide at the left scoop for several awards."
+              },
+              {
+                "text": "Continue to 60 for Loopin' Supers and 80 for PKE Frenzy."
+              },
+              {
+                "text": "Collect 100 ghosts to start Mass Hysteria.",
+                "modeNotes": [
+                  "Mass Hysteria: The flipper buttons are reversed. Major shots score jackpots. Captive-ball hits temporarily restore normal controls. The ghost meter resets after the multiball."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "We're Ready to Believe You and Are You a God?",
+          "steps": [
+            {
+              "text": "Complete one Scene ladder to start We Came, We Saw. Complete a second ladder to start it again.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete all nine Scenes to start We're Ready to Believe You.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Are You a God? starts only after the required ghost total is reached during that wizard mode; the Build section stops when We're Ready to Believe You begins.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Ball-save captive test",
+            "instruction": "During initial ball save, use a short plunge or the safe validation window to test one captive-ball hit. Stop if the return is not controlled.",
+            "sourceUrl": "https://www.youtube.com/watch?v=3WhGslpP6NM&t=653s"
+          },
+          {
+            "name": "Scoleri graze",
+            "instruction": "Hit the edge of a Scoleri target. Let the ball continue past the target instead of rebounding straight down the middle.",
+            "sourceUrl": "https://www.kineticist.com/news/ghostbusters-pinball-tutorial"
+          },
+          {
+            "name": "Crossed-arm flippers",
+            "instruction": "During Mass Hysteria, cross your arms so each hand remains aligned with the flipper that it controls. Uncross when a captive-ball hit restores normal controls.",
+            "sourceUrl": "https://www.kineticist.com/news/ghostbusters-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The layout has a wide flipper gap and fast side-to-side feeds.",
+            "response": "Use the first ball to test major returns. Nudge early, before the ball reaches the outlane entrance.",
+            "sourceUrl": "https://www.youtube.com/watch?v=3WhGslpP6NM&t=883s"
+          },
+          {
+            "issue": "The center inlane rails can bounce a ball toward an outlane.",
+            "response": "Do not assume a rail feed is safe. Keep both hands ready and nudge before the ball reaches the slings.",
+            "sourceUrl": "https://www.kineticist.com/news/ghostbusters-pinball-tutorial"
+          },
+          {
+            "issue": "A left-ramp return can hit the center-inlane post and leave through an outlane.",
+            "response": "Test the return under ball save. Use the short scoop ladder when the left-ramp feed cannot be saved.",
+            "sourceUrl": "https://www.kineticist.com/news/ghostbusters-pinball-tutorial"
+          },
+          {
+            "issue": "A direct Scoleri hit can return down the middle.",
+            "response": "Graze the edge of the target so the ball continues past it. Make direct hits during multiball when possible.",
+            "sourceUrl": "https://www.kineticist.com/news/ghostbusters-pinball-tutorial"
+          },
+          {
+            "issue": "The left captive ball and right ramp are high-risk precision shots.",
+            "response": "Make captive-ball hits during multiball. Ignore the right ramp unless a selected scene requires it.",
+            "sourceUrl": "https://www.kineticist.com/news/ghostbusters-pinball-tutorial"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Take Start Scene at the left ramp."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete one scene ladder to play We Came, We Saw."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Short scoop ladder: Use this plan when the left ramp return is too dangerous."
+          },
+          {
+            "name": "Settings",
+            "summary": "Scene carryover and chaining, captive-ball lock progress, and Storage add-a-ball qualification can be adjusted by the operator."
+          }
+        ],
+        "checkBeforePlay": [
+          "Check Scene carryover, Scene chaining, captive-ball lock progress, Storage add-a-ball, Extra Ball conversion, and competition settings.",
+          "Test left ramp, Storage Facility, Scoleri targets, captive ball, and flipper geometry."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "Shot used to start Scenes and collect major awards.",
+            "precision": "unverified",
+            "context": "Shot used to start Scenes and collect major awards."
+          },
+          {
+            "term": "Storage Facility",
+            "label": "Storage Facility",
+            "description": "Center lock shot used for Storage Facility Multiball.",
+            "precision": "unverified",
+            "context": "Center lock shot used for Storage Facility Multiball."
+          },
+          {
+            "term": "Scoleri",
+            "label": "Scoleri targets",
+            "description": "Rising targets used during Scoleri Brothers.",
+            "precision": "unverified",
+            "context": "Rising targets used during Scoleri Brothers."
+          }
+        ],
+        "overview": "Ghostbusters uses three ordered Scene ladders, and completing one ladder starts We Came, We Saw with one ball for each Scene in that ladder. Select Start Scene at the left ramp before plunging, make the ramp as the first major shot to start We Got One, then complete the left-ramp ladder. While a Scene runs, collect the third Storage lock at the left ramp so the Scene continues into Storage Facility Multiball. Shoot the left ramp, then the left captive ball or a flashing yellow Gear target to light 2x and 3x; hit both lit targets for 6x playfield scoring. Collect every lit ghost Jackpot, then shoot the left ramp for the three Super Jackpots and the final We Came, We Saw ladder.",
+        "simpleOverview": "The left scoop, left ramp, and right orbit each hold an ordered Scene ladder in Ghostbusters. Before plunging, select Start Scene at the left ramp, then make the ramp as the first major shot to start We Got One. Complete its flashing sequence and return to the lit left ramp for He Slimed Me and The Ballroom. Collect Storage locks at the left ramp after captive-ball progress or 10, 30, and 50 ghosts; a running Scene continues when the third lock starts Storage Facility Multiball. Shoot the left ramp, then the left captive ball or a flashing yellow Gear target to light 2x and 3x; hit both lit targets for 6x playfield scoring.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the INDISC 2017 final, players relit a Scene before starting Storage Facility Multiball so the Scene could run during Storage."
+          ]
+        },
+        "machineSetup": [
+          "Check Scene carryover, Scene chaining, captive-ball lock progress, Storage add-a-ball, Extra Ball conversion, and competition settings.",
+          "Test left ramp, Storage Facility, Scoleri targets, captive ball, and flipper geometry."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the left-ramp skill shot for a Scene, the left ramp for Storage Facility Multiball, and Gear Combos for 2x and 3x.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a left-ramp Scene",
+            "text": "Before plunging, use the flippers to select the left-ramp Start Scene skill shot. Plunge, then shoot the left ramp.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "The left-ramp Scene ladder",
+              "reason": "Choose it because its start shot is direct, its Scenes score well, and its final multiball uses three balls.",
+              "play": "Complete the flashing Scene shots, then return to the left ramp when it lights to start the next Scene in the ladder."
+            }
+          },
+          {
+            "title": "Start Storage Facility Multiball",
+            "text": "Shoot the left ramp to light and collect three Storage locks. The third lock starts Storage Facility Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start 2x and 3x playfield scoring",
+            "text": "Shoot the left ramp, then hit the left captive ball or a flashing yellow Gear target. The first Gear Combo lights 2x and the second lights 3x; hit each lit target to start its timer.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Take Start Scene at the left ramp."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete one scene ladder to play We Came, We Saw."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Short scoop ladder: Use this plan when the left ramp return is too dangerous."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: left-scoop Scene",
+          "when": "Use this when the left-ramp return is dangerous.",
+          "steps": [
+            {
+              "text": "Before plunging, select the left-scoop Start Scene skill shot, then shoot the left scoop to start Spooked Librarian.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

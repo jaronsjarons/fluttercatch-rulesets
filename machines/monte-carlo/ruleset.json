@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "G578Y",
+  "title": "Monte Carlo",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Monte Carlo factory instruction cards",
+      "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Monte_Carlo_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Monte Carlo machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/monte-carlo"
+      },
+      {
+        "label": "Monte Carlo exact-machine tutorial",
+        "url": "https://www.youtube.com/watch?v=64eCVykiKr4"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Shoot the three flashing roulette saucers; each successful saucer locks a ball and spins the roulette display, and filling all three starts Multiball. Before or between locks, shoot flashing number targets to cover roulette numbers. Land on a covered number, shoot the left ramp, or drain to collect the Bet Pool. The right ramp periodically flashes for 10,000,000 and is the direct scoring alternative when its timer is available.",
+      "simpleOverview": "Lock a ball in each of the three flashing roulette saucers; the third lock starts Multiball. Cover roulette numbers with flashing targets and collect the Bet Pool by landing on a covered number or shooting the left ramp. Take the right ramp when it flashes for 10,000,000.",
+      "summary": "Fill the three flashing roulette saucers to start Multiball. Build the Bet Pool with flashing number targets and collect it on a covered roulette number or the left ramp; take the timed right-ramp 10,000,000 when lit.",
+      "quickInfo": [
+        {
+          "name": "Lock Three Balls",
+          "summary": "Shoot each flashing roulette saucer."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Filling the third saucer begins Multiball."
+        },
+        {
+          "name": "Build the Bet Pool",
+          "summary": "Shoot flashing number targets to cover their numbers."
+        },
+        {
+          "name": "Take 10 Million",
+          "summary": "Shoot the right ramp while it is flashing."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot a flashing roulette saucer to lock a ball and spin the roulette display.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        },
+        {
+          "text": "Fill all three flashing saucers; the third lock starts Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot flashing number targets to cover roulette numbers and grow the Bet Pool.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Collect the Bet Pool by landing on a covered roulette number or shooting the left ramp; shoot the right ramp whenever its 10,000,000 lamp flashes.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Play the timed right ramp",
+          "when": "Use this when the 10,000,000 lamp is flashing and a saucer lock is not safely available.",
+          "steps": [
+            {
+              "text": "Watch for the right ramp's random-interval flash.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the ramp before the lamp expires for 10,000,000, then return to the three-saucer lock route.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Grow and cash the Bet Pool",
+        "steps": [
+          {
+            "text": "Cover multiple numbers with the flashing targets before the next roulette spin.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use a covered-number result or the left ramp to cash the accumulated pool instead of relying on the drain collect.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm three- versus five-ball rules, Extra Ball and Special conversions, shared locks, and the operator-set interval for the right-ramp 10,000,000 lamp.",
+        "Test all three saucers and lock releases, roulette display, number targets and lamps, both ramps, Bet Pool collect, top lanes, trough, and live-ball multiplier behavior."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Bet Pool",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "10,000,000",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right-ramp 10,000,000 window is operator-timed and is separate from the three-saucer Multiball route.",
+          "response": "Take it only while flashing; continue filling the saucers for Multiball.",
+          "sourceUrl": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Monte_Carlo_instruction_cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

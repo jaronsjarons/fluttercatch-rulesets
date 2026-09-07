@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "G5KXk",
+  "title": "Eight Ball Deluxe",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Eight Ball Deluxe tournament strategy guide",
+      "url": "https://www.kineticist.com/news/eight-ball-deluxe-rules-strategy"
+    },
+    "supportingSources": [
+      {
+        "label": "Bob's Guide to Eight Ball Deluxe",
+        "url": "https://rules.silverballmania.com/rules/G5KXk-MLB9V"
+      },
+      {
+        "label": "Bowen Kerins tutorial",
+        "url": "https://pinballvideos.com/v/308"
+      },
+      {
+        "label": "Eight Ball Deluxe detailed rulesheet",
+        "url": "https://www.pinball.org/rules/eightballdeluxe.html"
+      },
+      {
+        "label": "Adam Becker at Pinburgh 2014",
+        "url": "https://pinballvideos.com/v/521/1589"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Clear the seven right drop targets and hit the lit 8-ball to complete a rack. Build two early racks, then multiply the carried Super Bonus.",
+      "steps": [
+        {
+          "text": "On balls 1 and 2, shoot the seven right drop targets from the left flipper."
+        },
+        {
+          "text": "When all seven are down, make the lit 8-ball target your first priority."
+        },
+        {
+          "text": "Complete the rack to lock 56,000 into Super Bonus. Complete a second rack to reach 112,000.",
+          "modeNotes": [
+            "Super Bonus: Completed-rack value that carries for the full game and is added before the bonus multiplier."
+          ]
+        },
+        {
+          "text": "After the first rack, use the right flipper for the left orbit. Its value rises to 70,000."
+        },
+        {
+          "text": "On rack 2 or later, shoot the left inline drops from the left flipper to reach 5x bonus.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "On ball 3, compare the score gap with the value of one more multiplier target. Take the points that can win."
+        }
+      ],
+      "fallback": {
+        "title": "Left orbit",
+        "when": "Use this plan when the right drop bank does not return safely.",
+        "steps": [
+          {
+            "text": "Repeat the left orbit from the right flipper."
+          },
+          {
+            "text": "Stop only when its bumper return is no longer controlled."
+          },
+          {
+            "text": "After the orbit reaches 70,000, each full shot scores 70,000 plus a top-lane award."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Late bonus collect",
+          "when": "Use this plan when Super Bonus is large, the upper-right saucer is reliable, and this machine multiplies the collect.",
+          "steps": [
+            {
+              "text": "Confirm that the saucer collect includes Bonus X before prioritizing it.",
+              "modeNotes": [
+                "Confirm the installed setting before treating the saucer as a multiplied bonus collect."
+              ],
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete a rack to add 56,000 to carried Super Bonus. Hit the left inline drops to raise Bonus X before collecting.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the saucer behind the 8-ball to collect the multiplied bonus. If the collect is unmultiplied, stay with racks and the left orbit."
+            }
+          ]
+        },
+        {
+          "title": "Bank Shot",
+          "when": "Use this plan when one controlled shot can secure the match.",
+          "steps": [
+            {
+              "text": "Backhand the target behind the inline drops for 50,000 when that value is enough."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "112,000 carried Super Bonus at 5X",
+        "steps": [
+          {
+            "text": "Clear the seven right drops and hit the lit 8-ball to complete a rack and lock 56,000 into Super Bonus."
+          },
+          {
+            "text": "Complete a second rack to reach the 112,000 Super Bonus maximum."
+          },
+          {
+            "text": "After the racks, shoot the four left inline drops to raise the end-of-ball multiplier to 5X.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "From a controlled flipper, backhand the target behind the inline drops for 50,000. Use it only when that score can secure the match.",
+          "sourceUrl": "https://www.kineticist.com/news/eight-ball-deluxe-rules-strategy",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Upper-flipper 8-ball shot",
+          "instruction": "Use the upper flipper when it gives a softer angle to the 8-ball target than a lower-flipper shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KXk-MLB9V"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Shots across the right drop bank create side-to-side motion toward the outlanes.",
+          "response": "Shoot upward into the bank from the left flipper. Do not use a flat cross-playfield angle.",
+          "sourceUrl": "https://www.kineticist.com/news/eight-ball-deluxe-rules-strategy"
+        },
+        {
+          "issue": "The 8-ball target can rebound down the middle.",
+          "response": "Use the upper flipper when it gives a softer, cleaner angle. Watch the first target return before you repeat it.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KXk-MLB9V"
+        },
+        {
+          "issue": "The left-orbit bumper exit has two common center-drain paths.",
+          "response": "Test the exit early. Stop looping the orbit when the bumpers repeatedly send the ball toward the center.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KXk-MLB9V"
+        },
+        {
+          "issue": "Inline bonus targets can rebound down the middle.",
+          "response": "Shoot them from the left flipper. This angle usually gives the safer return.",
+          "sourceUrl": "https://www.kineticist.com/news/eight-ball-deluxe-rules-strategy"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Complete one rack on each of the first two balls."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete two racks to lock 112,000 in Super Bonus."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Left orbit: Use this plan when the right drop bank does not return safely."
+        }
+      ],
+      "checkBeforePlay": [
+        "Check target spotting, saucer collect, and whether DELUXE resets the rack.",
+        "Test the Bank Shot return, spinner, and target rebounds."
+      ],
+      "overview": "The right drop bank and lit 8-ball complete racks that build carried Super Bonus, making early racks more valuable than early multipliers. After one or two racks, use the left inline drops for Bonus X; the left orbit, Bank Shot, and corner-pocket collect are later alternatives when their returns are safer.",
+      "simpleOverview": "Clear the seven right drops and hit the lit 8-ball to complete a rack, then repeat on the next ball. Once the carried bonus is large, raise Bonus X at the left inline drops; use the left orbit when the bank is unsafe.",
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "Bowen Kerins cleared the numbered rack, took the lit 8-ball immediately, carried the resulting Super Bonus between balls, and then added Bonus X before later collects."
+        ]
+      },
+      "machineSetup": [
+        "Check target spotting, saucer collect, and whether DELUXE resets the rack.",
+        "Test the Bank Shot return, spinner, and target rebounds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

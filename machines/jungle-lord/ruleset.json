@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "G5nkY",
+  "title": "Jungle Lord",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Jungle Lord",
+      "url": "https://rules.silverballmania.com/rules/G5nkY-MDv88"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Jungle Lord instruction booklet",
+        "url": "https://wwyss.ch/Arcades_Manuals/Manuals/Pinball/JUNGLE_LORD_INSTRUCTION_BOOKLET.pdf"
+      },
+      {
+        "label": "Complete Jungle Lord rules",
+        "url": "https://pinball.org/rules/junglelord.html"
+      },
+      {
+        "label": "Kineticist Jungle Lord machine guide",
+        "url": "https://www.kineticist.com/games/pinball/jungle-lord"
+      },
+      {
+        "label": "Jared August at IFPA Pin-Masters 2023",
+        "url": "https://pinballvideos.com/v/4865/17642"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Keep the ball on the upper playfield, complete the progressive five-bank, use Double Trouble for growing awards, then start Multiball after L-O-R-D is complete.",
+      "quickInfo": [
+        {
+          "name": "Upper five-bank",
+          "summary": "Its required pattern grows from one target to all five, then changes to Double Trouble."
+        },
+        {
+          "name": "Double Trouble",
+          "summary": "Timed random targets score 10,000 through 160,000, and partial progress is retained."
+        },
+        {
+          "name": "Double Scoring",
+          "summary": "Completing numbers 1 through 5 starts 2x scoring for the rest of the ball."
+        },
+        {
+          "name": "Multiball",
+          "summary": "Complete L-O-R-D in the upper-left area, then shoot either saucer to start the timed Multiball."
+        },
+        {
+          "name": "Bonus X",
+          "summary": "A return lane briefly lights the horseshoe for multiplier advances through 10x."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the upper flippers to keep the ball on the upper playfield."
+        },
+        {
+          "text": "Complete the lit pattern on the upper five-bank; read the pattern before each shot."
+        },
+        {
+          "text": "After Double Trouble starts, shoot the timed lit target while the angle remains safe.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Collect numbers 1 through 5 for Double Scoring; numbers 4 and 5 come from the return lanes.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete L-O-R-D in the upper-left pachinko area, then shoot either saucer to start Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, use the upper playfield and available saucer extension while 2x scoring is active when possible.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Collect side drop targets only from a controlled angle. Save the stored Magna-Save time for a real outlane threat and press the matching button before the ball reaches the outlane mouth."
+        }
+      ],
+      "fallback": {
+        "title": "Upper-bank survival",
+        "when": "Use this when the L-O-R-D feed or saucer shot is unsafe.",
+        "steps": [
+          {
+            "text": "Keep the ball away from the lower standups."
+          },
+          {
+            "text": "Continue the progressive upper five-bank."
+          },
+          {
+            "text": "Take only safe Double Trouble targets."
+          },
+          {
+            "text": "Build base bonus through upper-bank completions and natural return lanes."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Bonus and horseshoe route",
+          "when": "Use this when a return lane gives a controlled horseshoe shot.",
+          "steps": [
+            {
+              "text": "Collect either return lane to light the horseshoe briefly."
+            },
+            {
+              "text": "Shoot the horseshoe before its timer ends to advance Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Repeat through 10x only while each return remains controlled."
+            },
+            {
+              "text": "At 10x, use the next lit horseshoe to light the outlane save when enabled."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Double Scoring, 10x bonus, and Multiball",
+        "steps": [
+          {
+            "text": "Complete numbers 1 through 5 for Double Scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use lit horseshoe shots to reach 10x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Score return lanes, completed upper or lower drop banks, and the four L-O-R-D lanes until base bonus reaches 30,000."
+          },
+          {
+            "text": "Complete L-O-R-D and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the protected play to finish the strongest active scoring features."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Double Trouble",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Double Scoring",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "10x",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Magna-Save",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Shatz pass",
+          "instruction": "When the feed is slow and controlled, tap the opposite flipper to send the ball across a return lane and light the horseshoe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nkY-MDv88",
+          "techniqueSlug": "shatz-pass"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Fast exits from the upper playfield can drain, especially from the left ramp.",
+          "response": "Track the ramp exit early and prepare the lower flippers before the ball leaves the upper level.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/jungle-lord"
+        },
+        {
+          "issue": "Shots at the lower standups and incomplete ramp shots can rebound through the center.",
+          "response": "Stay on the upper playfield and stop using a ramp after a short return.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nkY-MDv88"
+        },
+        {
+          "issue": "Magna-Save can throw the ball across the playfield instead of trapping it.",
+          "response": "Test each magnet and use it early enough to react to the release.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5nkY-MDv88"
+        }
+      ],
+      "simpleOverview": "Jungle Lord grows its upper five-bank pattern into Double Trouble, while numbered targets supply permanent Double Scoring and L-O-R-D prepares Multiball. Stay upstairs, finish 1-through-5, work the progressive bank, then start Multiball after L-O-R-D is complete.",
+      "overview": "Jungle Lord grows its upper five-bank pattern into Double Trouble, while numbered targets supply permanent Double Scoring and L-O-R-D prepares Multiball. Keep the ball upstairs, complete 1-through-5 and safe horseshoe shots, then finish L-O-R-D before using either saucer. Use Multiball to protect the strongest Double Trouble, 10x bonus, and 30,000 base-bonus work.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

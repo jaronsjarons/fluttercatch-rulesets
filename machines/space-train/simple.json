@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "GrN0J",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Space Train rewards repeated target-bank completions, the three captive balls, and the M-A-C lanes. Complete the target bank to advance its award sequence: Bonus X with upper Extra Ball, then Bonus X with captive-ball Extra Ball, then Bonus X with Extra Ball and Special. Hit the center captive ball to advance Hole Bonus; the right captive ball lights 30,000 on the center balls. Complete M-A-C to light Special at the lower lane.",
+        "simpleOverview": "In Space Train, keep completing the target bank: its sequence adds Bonus X and upper Extra Ball, then captive-ball Extra Ball, then Extra Ball and Special. Hit the center captive ball to advance Hole Bonus and the right captive ball to light 30,000 on the center balls. Complete M-A-C to light Special at the lower lane.",
+        "summary": "Make the target bank the main route because each completion advances the award sequence. Use the right captive ball before the center balls for their 30,000 values, and take M-A-C lanes whenever the ball reaches the top.",
+        "quickInfo": [
+          {
+            "name": "Advance the award sequence",
+            "summary": "Complete the target bank repeatedly for Bonus X, Extra Ball, and Special."
+          },
+          {
+            "name": "Build Hole Bonus",
+            "summary": "Hit the center captive ball to advance Hole Bonus and score 30,000 when lit."
+          },
+          {
+            "name": "Light center-ball value",
+            "summary": "Hit the right captive ball to light 30,000 on the center captive balls."
+          },
+          {
+            "name": "Light lower-lane Special",
+            "summary": "Complete the M-A-C lanes."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the target bank once to advance the combination to Bonus X and upper Extra Ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the bank again for Bonus X and captive-ball Extra Ball, then a third time for Bonus X, Extra Ball, and Special.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the right captive ball to light 30,000 on the center captive balls, then hit the center ball to score the lit value and advance Hole Bonus."
+          },
+          {
+            "text": "Complete M-A-C in the upper lanes to light Special at the lower lane."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Hole Bonus route",
+            "when": "Use this when the captive balls are easier to repeat than the target bank.",
+            "steps": [
+              {
+                "text": "Hit the right captive ball to light 30,000 on the center balls."
+              },
+              {
+                "text": "Repeat the center captive ball to advance Hole Bonus."
+              },
+              {
+                "text": "When upper Hole Bonus reaches 2, collect its Extra Ball at the matching hole."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Bonus X, Extra Ball, and Special",
+          "steps": [
+            {
+              "text": "Repeat complete target-bank cycles through all three award stages.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Build and collect Hole Bonus with the captive balls and matching holes."
+            },
+            {
+              "text": "Complete M-A-C for the lower-lane Special."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test every target-bank switch, all three captive-ball switches, both upper-level shooter holes, the M-A-C lanes, and each lower and upper Hole Bonus collect.",
+          "Confirm the installed target-bank award order, Bonus X ceiling, Extra Ball conversion, Special conversion, and multiball release behavior before competitive play."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "target bank",
+            "label": "Left target bank",
+            "description": "Bank whose repeated completions advance Bonus X, Extra Ball, and Special awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center captive ball",
+            "label": "Center captive ball",
+            "description": "Captive ball that advances Hole Bonus and scores 30,000 when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right captive ball",
+            "label": "Right captive ball",
+            "description": "Captive ball that lights 30,000 on the center captive balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "M-A-C lanes",
+            "label": "M-A-C lanes",
+            "description": "Upper lanes that light Special at the lower lane when completed.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper Hole Bonus",
+            "label": "Upper Hole Bonus",
+            "description": "Hole Bonus that awards Extra Ball at its hole after reaching 2.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Operator settings can change award conversions and the target-bank sequence.",
+            "response": "Read the active Bonus X, Extra Ball, and Special lamps before committing to the next bank completion.",
+            "sourceUrl": "https://img.recreativas.org/2023/06/mp/space-train-mp18588.jpg"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Make the target bank the main route because each completion advances the award sequence. Use the right captive ball before the center balls for their 30,000 values, and take M-A-C lanes whenever the ball reaches the top.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the target bank once to advance the combination to Bonus X and upper Extra Ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the bank again for Bonus X and captive-ball Extra Ball, then a third time for Bonus X, Extra Ball, and Special.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the right captive ball to light 30,000 on the center captive balls, then hit the center ball to score the lit value and advance Hole Bonus."
+          },
+          {
+            "text": "Complete M-A-C in the upper lanes to light Special at the lower lane."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Advance the award sequence",
+            "summary": "Complete the target bank repeatedly for Bonus X, Extra Ball, and Special."
+          },
+          {
+            "name": "Build Hole Bonus",
+            "summary": "Hit the center captive ball to advance Hole Bonus and score 30,000 when lit."
+          },
+          {
+            "name": "Light center-ball value",
+            "summary": "Hit the right captive ball to light 30,000 on the center captive balls."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "id": "G4d8k",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Load one ball in each side Cannon saucer, then shoot the center Cannon with the remaining ball to start three-ball Multiball. Both side loads are lit at game start; after the first Multiball, load the left Cannon before the right one lights. During Multiball, the traveling lit Cannon starts Invincible and its Queen's Rescue target sequence.",
+        "simpleOverview": "Shoot the left and right Cannon saucers to load one ball on each side, then shoot the center Cannon with the third ball for three-ball Multiball. After the first Multiball, the left load must be collected before the right one lights. During Multiball, shoot the lit Cannon to start Invincible, then clear the six center guard targets before time expires.",
+        "summary": "Load both side Cannons, then shoot the center Cannon for three-ball Multiball. Later, load left before right. During Multiball, shoot the traveling lit Cannon for Invincible and clear the six center guard targets to Rescue the Queen.",
+        "quickInfo": [
+          {
+            "name": "Load Cannons",
+            "summary": "At game start, shoot both side Cannon saucers; later, load left before right."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "With both side balls loaded, shoot the center Cannon."
+          },
+          {
+            "name": "Start Invincible",
+            "summary": "During Multiball, shoot whichever Cannon load is lit."
+          },
+          {
+            "name": "Rescue the Queen",
+            "summary": "During Invincible, clear all six center guard targets before time expires."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the left Cannon saucer and right Cannon saucer to load one ball on each side.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With both side balls loaded, shoot the center Cannon with the remaining ball to start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the side Cannon whose load lamp is traveling to start Invincible.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "While Invincible is running, clear all six center guard targets before the timer expires to Rescue the Queen.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the first Multiball, load the left Cannon first; that lights the right Cannon for the next qualification.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Play the King's Chamber",
+            "when": "Use this when the center Cannon is available outside the Multiball start.",
+            "steps": [
+              {
+                "text": "Shoot the center Cannon to fire the miniball through the King's Chamber.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use the flipper buttons to steer the moving shields and collect them.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Collect five shields, then make the next Chamber shot to light Extra Ball.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeat Queen's Rescue",
+          "steps": [
+            {
+              "text": "During Multiball, watch the traveling Cannon lamp and load that side to begin Invincible.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Clear the six guard targets quickly for Queen's Rescue.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After its animation, reload the newly lit Cannon to begin another Invincible attempt while Multiball continues.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm lock sharing, Extra Ball, Special, and Invincible timer settings before competitive play.",
+          "Test both Cannon saucers, the center Cannon, three physical ball positions, all six guard targets, King's Chamber miniball, shields, and lock releases."
+        ],
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Invincible",
+            "tone": "oxblood",
+            "kind": "mode"
+          },
+          {
+            "label": "Queen's Rescue",
+            "tone": "indigo",
+            "kind": "mode"
+          },
+          {
+            "label": "King's Chamber",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left Cannon saucer",
+            "label": "Left Cannon load",
+            "description": "The left-side saucer that captures one Multiball ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right Cannon saucer",
+            "label": "Right Cannon load",
+            "description": "The right-side saucer that captures the second Multiball ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Cannon",
+            "label": "Center Cannon",
+            "description": "The shot that starts Multiball after both side loads and fires the King's Chamber miniball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "six center guard targets",
+            "label": "Queen's guard targets",
+            "description": "The six central targets cleared during Invincible for Queen's Rescue.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The two side Cannon loads begin lit together only for the first Multiball.",
+            "response": "On later qualifications, take the left load first and wait for the right load to light before shooting it.",
+            "sourceUrl": "https://pinball.org/rules/bigguns.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Load both side Cannons, then shoot the center Cannon for three-ball Multiball. Later, load left before right. During Multiball, shoot the traveling lit Cannon for Invincible and clear the six center guard targets to Rescue the Queen.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the left Cannon saucer and right Cannon saucer to load one ball on each side.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "With both side balls loaded, shoot the center Cannon with the remaining ball to start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the side Cannon whose load lamp is traveling to start Invincible.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "While Invincible is running, clear all six center guard targets before the timer expires to Rescue the Queen.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the first Multiball, load the left Cannon first; that lights the right Cannon for the next qualification.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Load Cannons",
+            "summary": "At game start, shoot both side Cannon saucers; later, load left before right."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "With both side balls loaded, shoot the center Cannon."
+          },
+          {
+            "name": "Start Invincible",
+            "summary": "During Multiball, shoot whichever Cannon load is lit."
+          }
+        ]
+      }
+    }
+  ]
+}

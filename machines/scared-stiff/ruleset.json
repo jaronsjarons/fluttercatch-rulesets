@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xbP",
+  "title": "Scared Stiff",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Scared Stiff complete rulesheet",
+      "url": "https://www.pinball.org/rules/scaredstiff.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist tournament tutorial",
+        "url": "https://www.kineticist.com/news/how-to-play-scared-stiff"
+      },
+      {
+        "label": "Zach Sharpe and Michael Trepp at IFPA 12 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/854"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Soft-plunge into Spin Spider and take Coffin, shoot the left ramp and left loop to collect three locks, then alternate ramp Jackpots during Stiff in the Coffin or control one ball and repeat the left ramp.",
+      "quickInfo": [
+        {
+          "name": "Spin Spider",
+          "summary": "A soft plunge can enter the spider, where Coffin advances the lock and awards one Stiff in the Coffin restart."
+        },
+        {
+          "name": "Stiff in the Coffin",
+          "summary": "Shoot the left ramp to light Lock and the left loop to collect it three times, then alternate ramp Jackpots during three-ball play."
+        },
+        {
+          "name": "Terror from the Crate",
+          "summary": "Hit the Crate enough times to start two-ball play with repeatable Crate Jackpots."
+        },
+        {
+          "name": "Double Trouble",
+          "summary": "A timed 2x scoring feature that can overlap a multiball but does not justify delaying a safe start."
+        },
+        {
+          "name": "Scared Stiff",
+          "summary": "Complete all six Tales, then alternate any ramp with the Crate through ten levels to reach Monster Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Soft-plunge just beyond the second gate to enter Spin Spider. Stop it on Coffin."
+        },
+        {
+          "text": "Shoot the left ramp to light a lock. Shoot the left loop to collect it. Repeat for all three locks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start Stiff in the Coffin and alternate the left and right ramp Jackpots.",
+          "modeNotes": [
+            "Stiff in the Coffin: Three locks start three-ball play. Alternate the lit ramp Jackpots.",
+            "Coffin restart: The Coffin Web award restarts this multiball once after it ends."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If alternating ramps breaks control, trap spare balls on the left and shoot one controlled ball. Unlit ramp shots still raise the Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use the right ramp to relight Spin Spider during single-ball play. Collect useful Web awards only before another multiball starts."
+        },
+        {
+          "text": "Continue the six Tale objectives toward Scared Stiff. Do not force the Crate when its rebound is unsafe.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Left-ramp loop",
+        "when": "Use this when the Crate, Coffin lock loop, or upper kickout is unsafe.",
+        "steps": [
+          {
+            "text": "Repeat the left ramp from a controlled feed."
+          },
+          {
+            "text": "Use its growing value and same-flipper return to advance Boney Beast."
+          },
+          {
+            "text": "Take Terror from the Crate only after the Crate restart Web award is collected.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to Coffin progress when the left loop is under control.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Terror from the Crate",
+          "when": "Use this when the Crate is safer than the left-loop lock path.",
+          "steps": [
+            {
+              "text": "Hit the Crate for the displayed qualification requirement."
+            },
+            {
+              "text": "Start two-ball Terror from the Crate.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the Crate for Jackpots. Use the Crate Web award for one restart.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Scared Stiff and Spider Mania",
+        "steps": [
+          {
+            "text": "Complete Stiff in the Coffin, Terror from the Crate, Leapers, Deadheads, Monster's Lab, and Boney Beast."
+          },
+          {
+            "text": "Shoot the Crate to start Scared Stiff. Alternate a ramp with the Crate through ten Stiff-O-Meter levels.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Make the final Crate shot to start four-ball Monster Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect all sixteen unique Web awards to start four-ball Spider Mania.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Stiff in the Coffin",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Terror from the Crate",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Monster Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Double Trouble",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Scared Stiff",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Spin Spider soft plunge",
+          "instruction": "Plunge just hard enough to pass the second gate and fall into Spin Spider.",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-scared-stiff"
+        },
+        {
+          "name": "Controlled Coffin multiball",
+          "instruction": "Trap surplus balls on the left. Use one ball to repeat the reliable ramp when alternating Jackpots is unstable.",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-scared-stiff"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Crate is a dangerous direct shot, and its upper kickout is unpredictable.",
+          "response": "Test the kickout before you make Crate multiball the main. Use Coffin locks or the left-ramp loop when it is unsafe.",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-scared-stiff"
+        },
+        {
+          "issue": "Spin Spider and upper-hole kickouts can return differently on each machine.",
+          "response": "Watch the first feed with both flippers down and ready. Do not assume a repeatable catch until it is tested.",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-scared-stiff"
+        },
+        {
+          "issue": "Ramp returns are fast, and the left-outlane Spell standups are dangerous.",
+          "response": "Do not force Spell standups. Use controlled ramp loops and incidental bank hits.",
+          "sourceUrl": "https://www.kineticist.com/news/how-to-play-scared-stiff"
+        }
+      ],
+      "simpleOverview": "Three left-ramp and left-loop locks start Stiff in the Coffin, while repeated Crate hits start Terror from the Crate in Scared Stiff. Soft-plunge Spin Spider for Coffin, then use the Multiball route whose shots return safely.",
+      "overview": "In Scared Stiff, Coffin shots build Stiff in the Coffin, Crate hits build Terror from the Crate, and six completed Tales qualify Scared Stiff. Use a Coffin award to advance the three-lock route, then alternate ramp Jackpots or control one ball and repeat the left ramp. Build Tales alongside safe Multiballs without delaying a ready start for Double Trouble alone.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

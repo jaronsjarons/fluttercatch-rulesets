@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "id": "G43oq",
+  "title": "Mousin' Around!",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "PAPA Mousin' Around tutorial with Bowen Kerins",
+      "url": "https://www.youtube.com/watch?v=6sfhWDwTeYE"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA 18 tournament strategy discussion",
+        "url": "https://tiltforums.com/t/papa-18-strategies-wiki/244"
+      },
+      {
+        "label": "District 82 Mousin' Around rules summary",
+        "url": "https://district82.com/game-list/mousin-around/"
+      },
+      {
+        "label": "Mousin' Around feature and rules overview",
+        "url": "https://www.thepinballgameroom.com/product/mousin-around-pinball-machine/"
+      },
+      {
+        "label": "Jim Belsito at INDISC 2019 Main — Quarterfinals",
+        "url": "https://pinballvideos.com/v/2665/1645"
+      },
+      {
+        "label": "Soren ROM v5.0 feature notes",
+        "url": "https://mattsbasementarcade.com/soren-new-code-for-mousin-around-theatre-of-magic/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat the ramps to build CHEESE and the jackpot, start Mouse Trap Multiball, re-lock two balls before each jackpot, and add 2x playfield when INCREASE is ready.",
+      "steps": [
+        {
+          "text": "Test both ramps, both Mouse Traps, the center ramp, and the left-orbit return."
+        },
+        {
+          "text": "Repeat the left and right ramps to spell CHEESE. Use the right lane when its return is safe.",
+          "modeNotes": [
+            "CHEESE: Ramp and right-lane shots add letters. The letters add carried end-of-ball bonus and raise the Multiball Jackpot."
+          ]
+        },
+        {
+          "text": "After CHEESE is complete, shoot the right ramp. The diverter sends the ball to the Mouse Hole for Cheezy Bonus and more jackpot value.",
+          "modeNotes": [
+            "Cheezy Bonus: A Mouse Hole award that becomes available after CHEESE. It can also award an extra ball or special on configured copies."
+          ]
+        },
+        {
+          "text": "Complete the MOUSE and TRAP target banks. Lock one ball in each lit Mouse Trap to start three-ball multiball.",
+          "modeNotes": [
+            "Mouse Trap multiball: Spell MOUSE TRAP to light the two physical locks. The left lock is in the left orbit. The right lock is beside the right return lane."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During multiball, re-lock two balls. Shoot the right ramp to send the free ball to the Mouse Hole and collect the jackpot.",
+          "modeNotes": [
+            "Jackpot: Its value comes from CHEESE progress before multiball. The right ramp collects only after both balls are re-locked.",
+            "After a jackpot, re-lock two balls again. Then repeat the right ramp for another jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If INCREASE is lit, hit a Cheese target before the jackpot. This starts 2x playfield scoring.",
+          "modeNotes": [
+            "2x playfield: It doubles playfield awards, including the Million Shot and a multiball jackpot."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "CHEESE",
+          "summary": "Ramp and right-lane shots add letters, carried bonus, and jackpot value before Multiball."
+        },
+        {
+          "name": "Cheezy Bonus",
+          "summary": "After CHEESE, the right-ramp diverter sends the ball to the Mouse Hole for the award."
+        },
+        {
+          "name": "Mouse Trap Multiball",
+          "summary": "Complete MOUSE and TRAP, lock one ball in each lit Mouse Trap, then re-lock two balls before each right-ramp jackpot."
+        },
+        {
+          "name": "2x playfield",
+          "summary": "Hit a Cheese target while INCREASE is lit to double live playfield scoring, including a qualified jackpot."
+        },
+        {
+          "name": "Million Shot",
+          "summary": "Complete the 1-2-3 targets to lower the center bank. Use ramp awards to spell MILLION, then collect it at the Mouse Hole."
+        }
+      ],
+      "fallback": {
+        "title": "Left-orbit loop",
+        "when": "Use this when the ramps or Mouse Trap rebounds are unsafe.",
+        "steps": [
+          {
+            "text": "Repeat the left orbit."
+          },
+          {
+            "text": "Confirm that each return reaches the right flipper without touching the right outlane."
+          },
+          {
+            "text": "Continue while its award rises and the return stays controlled."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Center-ramp Million",
+          "when": "Use this when the center targets and ramp return are controlled.",
+          "steps": [
+            {
+              "text": "Complete the 1-2-3 center bank to lower it and open the center ramp."
+            },
+            {
+              "text": "Make three center-ramp shots to light the left kickback."
+            },
+            {
+              "text": "Use the lit ramp awards to spell MILLION. Then shoot the right ramp to the Mouse Hole for 1,000,000.",
+              "modeNotes": [
+                "Million Shot: Center-ramp progress enables MILLION letters on the ramps. The Mouse Hole collects after all letters are lit."
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximum jackpot",
+        "steps": [
+          {
+            "text": "Repeat the left and right ramps and the right return lane to complete CHEESE, then shoot the right ramp to collect Cheezy Bonus before multiball."
+          },
+          {
+            "text": "Start Mouse Trap multiball after the jackpot is large.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use 2x playfield scoring for the jackpot when INCREASE is available.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Mouse Trap Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Cheezy Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Million Shot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "2x playfield",
+          "tone": "rust",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Ramp-to-ramp combo",
+          "instruction": "Use the left-flipper feed from a made ramp. Shoot the other ramp before trapping when the return is clean.",
+          "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+        },
+        {
+          "name": "Cradle separation",
+          "instruction": "Trap two balls on one flipper. Release one ball for a lock or jackpot shot while the other ball stays controlled.",
+          "techniqueSlug": "cradle-separation",
+          "sourceUrl": "https://www.youtube.com/watch?v=6sfhWDwTeYE&t=1436s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A center-bank or center-ramp miss can return straight down the middle.",
+          "response": "Use the ramp route only after its rebounds are known. Use the side ramps or left orbit when the center is not safe.",
+          "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+        },
+        {
+          "issue": "The fixed outlanes are wide and cannot be adjusted with posts.",
+          "response": "After the 1-2-3 targets lower the center bank, make three center-ramp shots to light the left kickback. Use this route only when the ramp return is controlled.",
+          "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+        },
+        {
+          "issue": "The left orbit can exit near the right inlane and bounce into the right outlane.",
+          "response": "Watch the first orbit return. Stop using the fallback if the exit touches the post or outlane.",
+          "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm stock LA-4, Adjustment 33 center-bank behavior, carry and reset settings, ball count, Extra Ball conversion, and tournament awards.",
+        "Confirm CHEESE, Cheezy Bonus, lock, jackpot, INCREASE, 2x playfield, MILLION, kickback, and center-ramp rules on the installed code.",
+        "Test both ramps, Mouse Hole diverter, MOUSE and TRAP banks, both locks, Cheese target, center bank and ramp, orbit return, and outlanes."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At INDISC 2019, Jim Belsito built the Jackpot with C-H-E-E-S-E, relocked the balls, and collected the right-ramp Jackpot at 2x before its value reset."
+        ]
+      },
+      "simpleOverview": "Mousin' Around! uses ramp shots to build CHEESE, Jackpot value, and Mouse Trap Multiball. Complete CHEESE and its Mouse Hole award, finish MOUSE and TRAP, then lock one ball in each trap. During Multiball, relock two balls before collecting the right-ramp Jackpot.",
+      "overview": "CHEESE letters raise the carried bonus and Multiball Jackpot in Mousin' Around! Completing MOUSE and TRAP lights the two Mouse Trap locks; filling both starts three-ball Multiball. Relock two balls before each right-ramp Jackpot, and add 2x through INCREASE only when its target is controlled.",
+      "machineSetup": [
+        "Confirm stock LA-4, Adjustment 33 center-bank behavior, carry and reset settings, ball count, Extra Ball conversion, and tournament awards.",
+        "Confirm CHEESE, Cheezy Bonus, lock, jackpot, INCREASE, 2x playfield, MILLION, kickback, and center-ramp rules on the installed code.",
+        "Test both ramps, Mouse Hole diverter, MOUSE and TRAP banks, both locks, Cheese target, center bank and ramp, orbit return, and outlanes."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "la-4",
+      "items": [
+        {
+          "id": "la-4",
+          "label": "Stock LA-4"
+        },
+        {
+          "id": "soren-5.0",
+          "label": "Soren v5.0",
+          "strategy": {
+            "summary": "On Soren v5.0, use Adjustment 33's Cheese route for controlled side-ramp progress or its Streak route for center-ramp scoring, then qualify and score Mouse Trap Multiball as usual.",
+            "steps": [
+              {
+                "text": "Test both ramps, the center bank and ramp, Mouse Hole diverter, locks, and left-orbit return."
+              },
+              {
+                "text": "With Cheese selected, spell CHEESE through the side ramps and right lane before using a center-ramp reset.",
+                "modeNotes": [
+                  "Cheese: Cheezy Bonus resets the center bank. A center-ramp shot after CHEESE is complete also closes and resets the bank.",
+                  "If the center ramp itself completes CHEESE, it closes immediately and lights the kickback."
+                ]
+              },
+              {
+                "text": "With Streak selected, lower the 1-2-3 bank and repeat the center ramp only while its return stays controlled.",
+                "modeNotes": [
+                  "Streak: Every center ramp scores 100,000. CHEESE letters collected only at that ramp build the Streak awards through 600,000.",
+                  "The full nine-shot center-ramp sequence is worth up to 1,400,000 before other scoring."
+                ]
+              },
+              {
+                "text": "Use each center-bank close to light the left kickback; its three-ramp progress starts fresh on every ball."
+              },
+              {
+                "text": "Complete MOUSE and TRAP, then lock one ball in each lit Mouse Trap to start three-ball Mouse Trap Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Multiball, re-lock two balls and shoot the right ramp to the Mouse Hole for the jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "When INCREASE is lit, hit the Cheese target before a valuable jackpot to start 2x playfield scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ],
+            "quickInfo": [
+              {
+                "name": "Adjustment 33",
+                "summary": "Cheese and Streak are distinct center-ramp rules; read the installed choice before selecting a route."
+              },
+              {
+                "name": "Cheese setting",
+                "summary": "Cheezy Bonus or a center-ramp shot after CHEESE closes and resets the center bank; closing it lights the kickback."
+              },
+              {
+                "name": "Streak setting",
+                "summary": "Each center ramp scores 100,000, and collecting all six CHEESE letters there builds the Streak awards through 600,000."
+              },
+              {
+                "name": "Mouse Trap Multiball",
+                "summary": "Complete MOUSE and TRAP, lock one ball in each Mouse Trap, then re-lock two balls before each right-ramp jackpot."
+              },
+              {
+                "name": "Kickback reset",
+                "summary": "The three-center-ramp kickback counter resets for each player on every ball instead of being shared."
+              }
+            ],
+            "fallback": {
+              "title": "Side ramps and stock Multiball route",
+              "when": "Use this when the center ramp rejects or the Streak sequence becomes unsafe.",
+              "steps": [
+                {
+                  "text": "Stop shooting the center bank and ramp."
+                },
+                {
+                  "text": "Build CHEESE through the safer side ramp and right lane."
+                },
+                {
+                  "text": "Complete MOUSE and TRAP and start Mouse Trap Multiball.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Re-lock two balls before each right-ramp jackpot.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Add 2x playfield only when the Cheese-target rebound is acceptable.",
+                  "kinds": [
+                    "multiplier"
+                  ]
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Streak center-ramp ladder",
+                "when": "Use this only with Adjustment 33 set to Streak and a repeatable center-ramp return.",
+                "steps": [
+                  {
+                    "text": "Complete the 1-2-3 targets to lower the center bank."
+                  },
+                  {
+                    "text": "Repeat the center ramp for 100,000 per shot."
+                  },
+                  {
+                    "text": "Collect all six CHEESE letters at the center ramp to complete the Streak ladder."
+                  },
+                  {
+                    "text": "Take the lit kickback when the ramp closes, then leave the center after an uncontrolled return."
+                  }
+                ]
+              },
+              {
+                "title": "Cheese reset control",
+                "when": "Use this with Adjustment 33 set to Cheese when closing the center ramp improves control.",
+                "steps": [
+                  {
+                    "text": "Build CHEESE before exposing the center ramp."
+                  },
+                  {
+                    "text": "Complete the 1-2-3 targets to lower the center bank, then make one controlled center-ramp shot."
+                  },
+                  {
+                    "text": "Use the immediate close and reset to light the kickback."
+                  },
+                  {
+                    "text": "Return to side-ramp CHEESE and Multiball progress."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Soren center-ramp value into Mouse Trap jackpots",
+              "steps": [
+                {
+                  "text": "Use the installed Adjustment 33 route for controlled center-ramp value."
+                },
+                {
+                  "text": "After the center bank rises again, make the required center-ramp shot to light the kickback."
+                },
+                {
+                  "text": "Repeat the side ramps and right return lane to complete CHEESE and raise the Mouse Trap jackpot."
+                },
+                {
+                  "text": "Start Mouse Trap Multiball and re-lock two balls.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Start 2x playfield and collect the right-ramp jackpot when both are safely ready.",
+                  "kinds": [
+                    "multiplier",
+                    "multiball"
+                  ]
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Mouse Trap Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Cheezy Bonus",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Million Shot",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "2x playfield",
+                "tone": "rust",
+                "kind": "multiplier"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Ramp-to-ramp combo",
+                "instruction": "Use the left-flipper feed from a made ramp. Shoot the other ramp before trapping when the return is clean.",
+                "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+              },
+              {
+                "name": "Cradle separation",
+                "instruction": "Trap two balls on one flipper. Release one ball for a lock or jackpot shot while the other ball stays controlled.",
+                "techniqueSlug": "cradle-separation",
+                "sourceUrl": "https://www.youtube.com/watch?v=6sfhWDwTeYE&t=1436s"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A center-bank or center-ramp miss can return straight down the middle.",
+                "response": "Use the ramp route only after its rebounds are known. Use the side ramps or left orbit when the center is not safe.",
+                "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+              },
+              {
+                "issue": "The fixed outlanes are wide and cannot be adjusted with posts.",
+                "response": "After the 1-2-3 targets lower the center bank, make three center-ramp shots to light the left kickback. Use this route only when the ramp return is controlled.",
+                "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+              },
+              {
+                "issue": "The left orbit can exit near the right inlane and bounce into the right outlane.",
+                "response": "Watch the first orbit return. Stop using the fallback if the exit touches the post or outlane.",
+                "sourceUrl": "https://bumpercity.blogspot.com/2016/05/mousin-around-at-leisure-lanes.html"
+              }
+            ],
+            "checkBeforePlay": [
+              "Check Adjustment 33 Cheese or Streak, regional difficulty defaults, ball count, Extra Ball conversion, and tournament awards.",
+              "Check center-bank resets, ramp-closing behavior, Streak scoring, kickback counter, CHEESE, locks, jackpots, INCREASE, 2x playfield, and MILLION rules.",
+              "Test both ramps, Mouse Hole diverter, MOUSE and TRAP banks, both locks, Cheese target, center bank and ramp, orbit return, and outlanes."
+            ],
+            "simpleOverview": "Mousin' Around! uses ramp shots to build CHEESE, Jackpot value, and Mouse Trap Multiball. Complete CHEESE and its Mouse Hole award, finish MOUSE and TRAP, then lock one ball in each trap. During Multiball, relock two balls before collecting the right-ramp Jackpot.",
+            "overview": "In Mousin' Around! Soren v5.0, Adjustment 33 selects either side-ramp C-H-E-E-S-E progress or center-ramp Streak scoring before the standard Mouse Trap Multiball route. Use the selected shots until M-O-U-S-E and T-R-A-P are complete, lock one ball in each trap, then relock two balls and shoot the right ramp for Jackpot. Hit the Cheese target while I-N-C-R-E-A-S-E is lit before a valuable collect to start 2x playfield scoring.",
+            "machineSetup": [
+              "Check Adjustment 33 Cheese or Streak, regional difficulty defaults, ball count, Extra Ball conversion, and tournament awards.",
+              "Check center-bank resets, ramp-closing behavior, Streak scoring, kickback counter, CHEESE, locks, jackpots, INCREASE, 2x playfield, and MILLION rules.",
+              "Test both ramps, Mouse Hole diverter, MOUSE and TRAP banks, both locks, Cheese target, center bank and ramp, orbit return, and outlanes."
+            ],
+            "rulesNotes": []
+          },
+          "differences": {
+            "changes": [
+              "Adjustment 33 selects either Cheese rules or Streak rules for the center ramp.",
+              "Under Cheese rules, Cheezy Bonus or a center-ramp shot after CHEESE closes and resets the center bank; closing the ramp lights the kickback.",
+              "Under Streak rules, center ramps score 100,000 and the six CHEESE letters build awards through 600,000.",
+              "The three-center-ramp kickback counter resets for each player at the start of every ball instead of being shared."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

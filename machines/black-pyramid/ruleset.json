@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVnY",
+  "title": "Black Pyramid",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Black Pyramid Bally Midway parts and operating manual",
+      "url": "https://online.gameex.com/media/pinballx/all/addmedia/black%20pyramid%20%28bally%20midway%201984%29/Parts%20and%20Operating%20Manual%20%28with%20paginated%20schematics%29.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Black Pyramid factory instruction cards",
+        "url": "https://pinballrebel.com/pinball/cards/Bally/Bally_Black_Pyramid_instruction_cards.zip"
+      },
+      {
+        "label": "Black Pyramid competitive rules",
+        "url": "https://rules.silverballmania.com/rules/GRVnY-MDz0l"
+      },
+      {
+        "label": "Black Pyramid machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/black-pyramid"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Clear the three right-orbit inline drops for 2x, 3x, and 5x Bonus, then alternate safe orbit shots to spell BLACK PYRAMID. The first completion banks 60,000 Super Bonus and the second banks 120,000, both held across balls. The left orbit also climbs from 20,000 through an Extra Ball award, making it the safer repeat once Bonus X is ready.",
+      "simpleOverview": "Clear the three inline drops on the right orbit to reach 5x Bonus. Then repeat the safer orbit: both sides build BLACK PYRAMID, the first completion banks 60,000 Super Bonus, and the second banks 120,000. The left orbit also grows toward Extra Ball when enabled.",
+      "summary": "Clear the right-orbit inline drops to reach 5x Bonus, then repeat the safer orbit to complete BLACK PYRAMID and bank its held 60,000 and 120,000 Super Bonuses. Use the swinging target only when a large 200,000 collect is one controlled hit away.",
+      "quickInfo": [
+        {
+          "name": "Reach 5x Bonus",
+          "summary": "Clear the three inline drops in the right orbit."
+        },
+        {
+          "name": "Repeat the Orbits",
+          "summary": "Both sides advance BLACK PYRAMID progress."
+        },
+        {
+          "name": "Bank Super Bonus",
+          "summary": "The first two phrase completions bank 60,000, then 120,000."
+        },
+        {
+          "name": "Use the Left Orbit",
+          "summary": "Its value climbs through the Extra Ball award when enabled."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the right orbit through its inline drops to advance Bonus X from 2x to 3x to 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After 5x is ready, repeat whichever orbit gives the safer feed; both sides advance BLACK PYRAMID letters.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete BLACK PYRAMID once to bank 60,000 Super Bonus and again to bank 120,000; the banked value is held.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Keep using the left orbit as its award rises from 20,000 toward Extra Ball, then resets after the award is scored.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Finish the 200,000 collect",
+          "when": "Use this only when five number lamps are already complete and the remaining swinging-target hit is controlled.",
+          "steps": [
+            {
+              "text": "Check how many 200,000 number and star lamps are already lit before aiming at the swinging target.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Take one controlled shot for the final lamp; one or two completed stars double or triple the 200,000 award.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximize held bonus",
+        "steps": [
+          {
+            "text": "Reach 5x before spreading orbit shots across letter progress.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Preserve the held Super Bonus and avoid the swinging target unless its immediate value justifies the rebound.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm Extra Ball and Special conversions, Super Bonus carry, Bonus X maximum, left-orbit award ladder, and whether the swinging-target 200,000 values are factory.",
+        "Test both orbit switches and gates, three right inline drops, BLACK PYRAMID letter lamps, left-orbit award lamps, swinging target and 200,000 lamps, bumpers, and trough."
+      ],
+      "termStyles": [
+        {
+          "label": "5x Bonus",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "BLACK PYRAMID",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "Super Bonus",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The swinging target can return the ball toward the center or an outlane.",
+          "response": "Stay on the orbits unless the 200,000 display is nearly complete and one controlled hit can collect it.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRVnY-MDz0l"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "G5pNW",
+  "title": "Rescue 911",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Rescue 911 rulesheet",
+      "url": "https://www.pinball.org/rules/rescue911.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Jim Belsito at Pinball at the Lake 2019",
+        "url": "https://pinballvideos.com/v/2738/1598"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Start the safest Call 9-1-1 mode, use Jaws of Life or Cave-In multiball for protected life saves, and reach 50 lives for Life Force without forcing the upper-flipper Emergency Room.",
+      "quickInfo": [
+        {
+          "name": "Call 9-1-1",
+          "summary": "The Helipad and upper lock sinkhole start the selected rescue mode."
+        },
+        {
+          "name": "Jaws of Life",
+          "summary": "A protected sequence through the standup, ramp, captive balls, and lock sinkhole."
+        },
+        {
+          "name": "Cave-In",
+          "summary": "Use multiball to clear the upper drop targets and standup."
+        },
+        {
+          "name": "Modes and Multiball",
+          "summary": "Modes and Multiball progress independently, so a Call 9-1-1 mode can start during Multiball. The first Jaws of Life or Cave-In starts two-ball play, or three-ball play if one ball is already locked."
+        },
+        {
+          "name": "Life Force",
+          "summary": "After 50 lives, shoot the ramp and complete the six major lit shots."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the plunge and opening save to test the ramp-to-upper-flipper feed, Helipad, and lock sinkhole."
+        },
+        {
+          "text": "Select the mode whose required shots are safest, then start it at a lit Call 9-1-1 shot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Prefer Jaws of Life or Cave-In when available because their first starts supply multiball protection.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Jaws of Life, follow the lit standup, ramp, captive-ball, and lock-sinkhole sequence.",
+          "modeNotes": [
+            "Mode order: Take the next lit rescue shot rather than repeating a completed shot; each successful stage adds lives toward Life Force."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Cave-In, clear the two upper drops and the exposed standup before the protected balls end.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "At 50 lives, shoot the ramp for Life Force and clear the six lit major shots from controlled feeds.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Lower-play rescue route",
+        "when": "Use this when the upper flipper, Emergency Room, or lock sinkhole rejects.",
+        "steps": [
+          {
+            "text": "Start a mode from the Helipad."
+          },
+          {
+            "text": "Prioritize ramp, captive-ball, and lower standup shots."
+          },
+          {
+            "text": "Take helicopter progress only when its release is predictable."
+          },
+          {
+            "text": "Return to upper shots during multiball protection."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Mode-plus-lock preparation",
+          "when": "Use this when one physical lock can safely add a third ball to Jaws of Life or Cave-In.",
+          "steps": [
+            {
+              "text": "Collect one lock before starting the mode."
+            },
+            {
+              "text": "Start Jaws of Life or Cave-In."
+            },
+            {
+              "text": "Use the added ball for the upper sequence."
+            },
+            {
+              "text": "Resume life progress after the mode."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Life Force",
+        "steps": [
+          {
+            "text": "Save lives across the rescue modes."
+          },
+          {
+            "text": "Use the multiball modes for dangerous upper shots."
+          },
+          {
+            "text": "Reach 50 lives."
+          },
+          {
+            "text": "Shoot the ramp and clear the six Life Force shots.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Jaws of Life",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Cave-In",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Life Force",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Call 9-1-1",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Upper-flipper timing",
+          "instruction": "Learn the ramp feed before aiming the narrow Emergency Room or lock sinkhole.",
+          "sourceUrl": "https://www.pinball.org/rules/rescue911.html"
+        },
+        {
+          "name": "Mode selection",
+          "instruction": "Choose the rescue mode whose sequence matches the shots currently working on the copy.",
+          "sourceUrl": "https://www.pinball.org/rules/rescue911.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The helicopter release, ramp habitrail, upper flipper, and lock feed are maintenance-sensitive.",
+          "response": "Test each device and avoid basing the ball on Emergency Room when the upper feed is weak.",
+          "sourceUrl": "https://www.pinball.org/rules/rescue911.html"
+        }
+      ],
+      "simpleOverview": "Rescue 911 advances lives through Call 9-1-1 rescue modes, with Jaws of Life and Cave-In providing Multiball protection for difficult upper shots. Choose the mode whose physical sequence is safest, use its extra balls to finish the rescue, and continue toward 50 lives and Life Force.",
+      "overview": "Rescue 911 adds every completed rescue to the same life total. Start a Call 9-1-1 mode at the Helipad or upper lock sinkhole; the first Jaws of Life or Cave-In also starts Multiball, and another mode may start while Multiball is running. At 50 lives, shoot the ramp and clear the six Life Force shots.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

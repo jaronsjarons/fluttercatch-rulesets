@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "G417e",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Test the top saucer, collect it four times for 5x Bonus X only when its kickout is safe, then build base bonus through repeatable A-B orbits.",
+        "steps": [
+          {
+            "text": "Try to plunge the ball into the top-center saucer. Watch the kickout before you depend on this shot."
+          },
+          {
+            "text": "If the kickout is safe, lob the ball into the saucer four times.",
+            "modeNotes": [
+              "Top saucer: Each collect scores 3,000 and advances base bonus three times.",
+              "Second collect: Lights 2x and the left outlane for 50,000.",
+              "Third collect: Lights 3x and the right outlane for 50,000.",
+              "Fourth collect: Lights 5x."
+            ]
+          },
+          {
+            "text": "If a kickout heads down the middle, use a small cabinet movement while the ball is in the saucer. Stop if the tilt margin is small."
+          },
+          {
+            "text": "After 5x is lit, use the A-B lanes and orbits to build base bonus. Each A or B scores and advances base bonus by 1,000."
+          },
+          {
+            "text": "Shoot the A-B lanes, orbits, inlanes, and safely presented drop targets until base bonus reaches 29,000. At 5x, the end-of-ball bonus is 145,000."
+          },
+          {
+            "text": "Use the long bottom-to-top orbit when it can collect one letter and feed the ball through the other letter."
+          },
+          {
+            "text": "Do not force the drop bank. Finish it only when six or seven targets are already down, or after base bonus is full."
+          },
+          {
+            "text": "Protect the end-of-ball bonus. If the ball enters a lit outlane, accept the 50,000 rather than risk a tilt."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Top saucer",
+            "summary": "Four collects advance Bonus X to 5x; the second and third also light the left and right outlanes for 50,000."
+          },
+          {
+            "name": "A-B",
+            "summary": "Completing A and B advances its award from 1,000 through 5,000, then Extra Ball and Special."
+          },
+          {
+            "name": "Drop bank",
+            "summary": "Completing all eight drops scores 50,000; the second completion also qualifies the target Special award."
+          },
+          {
+            "name": "Base bonus",
+            "summary": "Targets and lanes build base bonus to 29,000, collected at the end of the ball with the current Bonus X."
+          }
+        ],
+        "fallback": {
+          "title": "A-B orbit loop",
+          "when": "Use this plan when the top-saucer kickout is unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the safer A-B orbit from the bottom toward the top."
+            },
+            {
+              "text": "Try to let one orbit collect both A and B."
+            },
+            {
+              "text": "Each A-B completion raises its award from 1,000 through 5,000."
+            },
+            {
+              "text": "A sixth completion lights extra ball. Later completions can light special."
+            },
+            {
+              "text": "If the event converts extra ball or special to points, keep repeating A-B."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Finish the drop bank",
+            "when": "Use this plan when six or seven drops are down, or when base bonus is full.",
+            "steps": [
+              {
+                "text": "Finish all eight drop targets for 50,000."
+              },
+              {
+                "text": "Finish all eight a second time for 50,000 and special."
+              },
+              {
+                "text": "Stop if the horizontal rebounds are not controlled."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "145,000 maximum bonus",
+          "steps": [
+            {
+              "text": "Collect the top saucer four times for 5x Bonus X."
+            },
+            {
+              "text": "Shoot the A-B lanes, orbits, inlanes, and safely presented drop targets until base bonus reaches 29,000."
+            },
+            {
+              "text": "Drain without tilting to collect 145,000."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "top-center saucer",
+            "label": "Top saucer",
+            "description": "The center kickout scores 3,000, advances bonus three units, and builds Bonus X toward 5x.",
+            "context": "Plunge or lob the ball into the top-center saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "A-B lanes",
+            "label": "A-B lanes and orbits",
+            "description": "Top lanes and both long orbits collect A and B and advance the lit A-B award.",
+            "context": "Use the A-B lanes and orbits to advance base bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop bank",
+            "label": "Eight drop targets",
+            "description": "The symmetric banks total eight targets and score 50,000 when completed.",
+            "context": "Finish the drop bank only from safe rebounds.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left outlane",
+            "label": "Left 50,000 outlane",
+            "description": "The second saucer collect lights the left outlane for 50,000.",
+            "context": "The second saucer collect lights the left outlane.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right outlane",
+            "label": "Right 50,000 outlane",
+            "description": "The third saucer collect lights the right outlane for 50,000.",
+            "context": "The third saucer collect lights the right outlane.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Saucer lob",
+            "instruction": "Use a soft, rising shot that drops into the top saucer. A direct shot can hit the lip and reject.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          },
+          {
+            "name": "Saucer-kickout adjustment",
+            "instruction": "If the kickout heads down the middle, use a small cabinet movement while the ball is in the saucer. Do not move the cabinet when the feed is already safe.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce a clean saucer feed to the opposite flipper when that route reaches a safer cradle.",
+            "techniqueSlug": "dead-bounce",
+            "sourceUrl": "https://www.youtube.com/watch?v=8_RVKPDOGcA&t=147s"
+          },
+          {
+            "name": "Bottom-up A-B orbit",
+            "instruction": "Shoot an A-B orbit from the bottom toward the top. A full orbit can return through the other letter and collect both.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          },
+          {
+            "name": "Side-post nudge",
+            "instruction": "Use a small nudge when the ball reaches a side-lane rubber post. Try to move the ball toward an inlane.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The top-saucer kickout can feed straight down the middle.",
+            "response": "Test it on the plunge. Use a small movement while the ball is in the saucer, or use the A-B fallback.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          },
+          {
+            "issue": "A direct top-saucer shot can hit the lip and reject.",
+            "response": "Use a soft lob that drops into the saucer.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          },
+          {
+            "issue": "An A-B orbit return can skim a sling or reach an outlane.",
+            "response": "Test each orbit. Repeat only the direction with a controlled return.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          },
+          {
+            "issue": "Drop-target hits create horizontal, uncontrolled rebounds.",
+            "response": "Wait until six or seven targets are down, or until base bonus is full.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8_RVKPDOGcA&t=414s"
+          },
+          {
+            "issue": "A save attempt at a lit outlane can tilt away its 50,000 award and the built bonus.",
+            "response": "Accept the drain when 50,000 plus the built bonus reaches the target score.",
+            "sourceUrl": "https://www.kineticist.com/news/how-to-play-mata-hari-pinball"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the stock 1978 Bally rules; aftermarket code can change Bonus X, saucer, A-B, and scoring behavior.",
+          "Confirm Extra Ball and Special conversion, ball count, Bonus X, A-B, drop-bank, outlane, tilt, and tournament settings.",
+          "Test the saucer entry and kickout, both A-B orbits, eight drops, bumper exits, slingshots, side posts, outlanes, and tilt margin."
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the Fairfax Pinball Open 2014, Trent Augenstein and Brian Shepherd used the top saucer to reach 5x, then repeated A-B to fill the 29,000 base bonus."
+          ]
+        },
+        "simpleOverview": "Mata Hari uses four top-saucer collects to reach 5x Bonus, then builds base bonus through the A-B orbits. Repeat the saucer only when its kickout is safe, raise the base to 29,000, and protect the 145,000 end-of-ball collect.",
+        "overview": "In Mata Hari, four top-saucer collects raise Bonus X to 5x, while each A or B lane adds 1,000 to base bonus. Test the saucer kickout before repeating it, then loop A-B toward the 29,000 base maximum. Finish the drop bank only when nearly complete and avoid tilting away the multiplied bonus.",
+        "machineSetup": [
+          "Confirm the stock 1978 Bally rules; aftermarket code can change Bonus X, saucer, A-B, and scoring behavior.",
+          "Confirm Extra Ball and Special conversion, ball count, Bonus X, A-B, drop-bank, outlane, tilt, and tournament settings.",
+          "Test the saucer entry and kickout, both A-B orbits, eight drops, bumper exits, slingshots, side posts, outlanes, and tilt margin."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Test the top saucer, collect it four times for 5x Bonus X only when its kickout is safe, then build base bonus through repeatable A-B orbits.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Try to plunge the ball into the top-center saucer. Watch the kickout before you depend on this shot."
+          },
+          {
+            "text": "If the kickout is safe, lob the ball into the saucer four times.",
+            "details": [
+              "Top saucer: Each collect scores 3,000 and advances base bonus three times.",
+              "Second collect: Lights 2x and the left outlane for 50,000.",
+              "Third collect: Lights 3x and the right outlane for 50,000.",
+              "Fourth collect: Lights 5x."
+            ]
+          },
+          {
+            "text": "If a kickout heads down the middle, use a small cabinet movement while the ball is in the saucer. Stop if the tilt margin is small."
+          },
+          {
+            "text": "After 5x is lit, use the A-B lanes and orbits to build base bonus. Each A or B scores and advances base bonus by 1,000."
+          },
+          {
+            "text": "Shoot the A-B lanes, orbits, inlanes, and safely presented drop targets until base bonus reaches 29,000. At 5x, the end-of-ball bonus is 145,000."
+          },
+          {
+            "text": "Use the long bottom-to-top orbit when it can collect one letter and feed the ball through the other letter."
+          },
+          {
+            "text": "Do not force the drop bank. Finish it only when six or seven targets are already down, or after base bonus is full."
+          },
+          {
+            "text": "Protect the end-of-ball bonus. If the ball enters a lit outlane, accept the 50,000 rather than risk a tilt."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Top saucer",
+            "summary": "Four collects advance Bonus X to 5x; the second and third also light the left and right outlanes for 50,000."
+          },
+          {
+            "name": "A-B",
+            "summary": "Completing A and B advances its award from 1,000 through 5,000, then Extra Ball and Special."
+          },
+          {
+            "name": "Drop bank",
+            "summary": "Completing all eight drops scores 50,000; the second completion also qualifies the target Special award."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: A-B orbit loop",
+          "when": "Use this plan when the top-saucer kickout is unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the safer A-B orbit from the bottom toward the top."
+            },
+            {
+              "text": "Try to let one orbit collect both A and B."
+            },
+            {
+              "text": "Each A-B completion raises its award from 1,000 through 5,000."
+            },
+            {
+              "text": "A sixth completion lights extra ball. Later completions can light special."
+            },
+            {
+              "text": "If the event converts extra ball or special to points, keep repeating A-B."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The top-saucer kickout can feed straight down the middle.",
+          "text": "Test it on the plunge. Use a small movement while the ball is in the saucer, or use the A-B fallback."
+        }
+      }
+    }
+  ]
+}

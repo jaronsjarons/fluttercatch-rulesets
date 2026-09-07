@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "G0lkp",
+  "title": "The Texas Chainsaw Massacre (SE)",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Official Spooky Texas Chainsaw Massacre rules",
+      "url": "https://www.spookypinball.com/wp-content/uploads/2024/07/Texas-Chainsaw-Massacre-Rules.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Texas Chainsaw Massacre v1.00 release history",
+        "url": "https://www.spookypinball.com/2486-2/"
+      },
+      {
+        "label": "January 2026 Texas Chainsaw Massacre tutorial",
+        "url": "https://www.youtube.com/watch?v=PF11xikKiEU"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Choose a character at the grinder scoop, then repeat the lane tied to that story three times to start its next mode. Finish both modes on a lane to light the connected mini-wizard, while keeping Door and Hook Multiballs ready for safer progress.",
+      "simpleOverview": "Choose a character at the grinder scoop and hit the matching major shot three times. Grandpa and Gas Station start at the left ramp; Hitchhiker and Cook qualify at the left orbit and start through the door.",
+      "summary": "Choose a character at the grinder scoop, then make the matching lane shot three times for its next mode. Finish both modes in a lane to light its mini-wizard. Build Door at the center and Hook Multiball with captive-ball hits and right-orbit locks.",
+      "checkBeforePlay": [
+        "Mode-qualification counts can be reduced in the operator menu. Trust the lit progress and door callouts if the machine does not require the default tutorial count.",
+        "Confirm v1.00 or newer if you expect Franklin progression, Super Shot, The Family, and Bonus Ball behavior described here."
+      ],
+      "quickInfo": [
+        {
+          "name": "Start Grandpa or Gas Station",
+          "summary": "Choose the matching character and shoot the left ramp three times for the next mode in that lane."
+        },
+        {
+          "name": "Start Hitchhiker or Cook",
+          "summary": "Shoot the left orbit three times, then hit the captive ball to open the moving door and shoot through it."
+        },
+        {
+          "name": "Door Multiball",
+          "summary": "Hit the center door shot three times, then knock the held ball off its magnet to begin."
+        },
+        {
+          "name": "Hook Multiball",
+          "summary": "Hit the captive ball twice to light a Hook lock, collect at the right orbit, and repeat through the third start."
+        }
+      ],
+      "steps": [
+        {
+          "text": "At the grinder scoop, choose the character tied to the story lane you want to advance.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "For Grandpa and then Gas Station, shoot the left ramp three times. Each third shot starts the next mode in that lane.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "For Hitchhiker and then Cook, shoot the left orbit three times, hit the captive ball to open the moving door, and shoot through the door to start.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Finish the second phase of both modes in a lane to light its connected mini-wizard, then take the lit center start shot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "For Door Multiball, shoot the center door three times, then hit the ball held on the magnet to begin. For Hook Multiball, hit the captive ball twice, collect the right-orbit lock, and repeat.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Build combos for the Super Shot. Double-tap the extra-flipper button to apply the multiplier to the next shot; completing combos and using Super Shot also works toward the v1.00 Bonus Ball.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Dinner and the longer story",
+        "steps": [
+          {
+            "text": "Advance Grandpa and Gas Station, then play their connected mini-wizard.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Advance Hitchhiker and Cook, then play their connected mini-wizard.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Advance Leatherface and The Family, then start Dinner when it lights.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep the additional Franklin progression moving at the inner loop on current code.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "story",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "mini-wizard",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Door Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Hook Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Super Shot",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Mode qualification is operator-adjustable.",
+          "response": "Use the three-shot default only as a baseline and follow the machine's lit progress when settings differ.",
+          "sourceUrl": "https://www.spookypinball.com/2486-2/"
+        }
+      ],
+      "machineSetup": [
+        "Mode-qualification counts can be reduced in the operator menu. Trust the lit progress and door callouts if the machine does not require the default tutorial count.",
+        "Confirm v1.00 or newer if you expect Franklin progression, Super Shot, The Family, and Bonus Ball behavior described here."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

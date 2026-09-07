@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "id": "GrJ2Z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Load Gun at the plunge, start a shell mode at Headquarters, complete the five badge shots, start Multiball at the left ramp or Warehouse, attempt the Super Jackpot, then alternate the right-ramp Jackpot and Warehouse relight.",
+        "quickInfo": [
+          {
+            "name": "Badge shots",
+            "summary": "Headquarters, left ramp, Safehouse, Warehouse, and right ramp complete the Multiball qualification."
+          },
+          {
+            "name": "Gun Multiball",
+            "summary": "A loaded gun gives one shot at the left-ramp Super Jackpot when Multiball starts."
+          },
+          {
+            "name": "Barroom Brawl",
+            "summary": "This ramp-focused shell mode advances the main qualification route."
+          },
+          {
+            "name": "Warehouse Hurry-Up",
+            "summary": "The Warehouse feature can convert into a two-ball Multiball."
+          },
+          {
+            "name": "Crime Wave",
+            "summary": "Complete all seven modes to start the six-ball final Multiball."
+          },
+          {
+            "name": "Playfield Promotion",
+            "summary": "Collect its flashing Magazine award at the Warehouse for short live scoring at the current rank, up to 5x."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose Load Gun for the skill shot. Watch the gun feed and both ramp returns."
+          },
+          {
+            "text": "Shoot Headquarters to start a shell mode. Prefer Barroom Brawl when the ramp shots return safely.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the five badge shots: Headquarters, left ramp, Safehouse, Warehouse, and right ramp.",
+            "modeNotes": [
+              "Multiball qualification: Each badge shot lights one position. Completing all five lights the Multiball start."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Playfield Promotion is the lowest flashing Magazine award, collect it at the Warehouse immediately before Gun Multiball or a ramp-heavy shell mode for up to 5x scoring.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After all five badges, shoot the left ramp or Warehouse to load the gun and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Gun Multiball. Fire the gun at the left ramp for the Super Jackpot.",
+            "modeNotes": [
+              "Gun Super Jackpot: The loaded gun gives one opening cross-playfield attempt. After a miss, the right loop can feed the upper-right flipper for another shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right ramp for the Jackpot. Shoot the Warehouse to relight and increase the Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the right ramp and Warehouse cycle while at least two balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Left-ramp rank and Safehouse",
+          "when": "Use this plan when the gun shot, Warehouse, or full badge route is unreliable.",
+          "steps": [
+            {
+              "text": "Repeat the left ramp to increase rank."
+            },
+            {
+              "text": "Collect the lit Safehouse award when the shot is controlled."
+            },
+            {
+              "text": "When Bank Robber starts, shoot the left loop to collect its hurry-up.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Check the Warehouse lamps before you shoot it. Collect a Magazine award only when it is lit."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Warehouse Hurry-Up",
+            "when": "Use this when the Warehouse feed is safe and the feature is close.",
+            "steps": [
+              {
+                "text": "Repeat the left ramp until a new rank lights Safehouse, then shoot Safehouse. If it awards Bank Robber first, raise rank again and return to Safehouse for Warehouse Hurry-Up."
+              },
+              {
+                "text": "Start Warehouse Hurry-Up and make its required collect.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use the resulting two-ball play to continue badge and rank progress.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Crime Wave",
+          "steps": [
+            {
+              "text": "Play all seven shell modes.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start six-ball Crime Wave Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot Warehouse, Safehouse, and Headquarters for the arrests.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Gun Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Warehouse Hurry-Up",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Crime Wave",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Barroom Brawl",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Bank Robber",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Playfield Promotion",
+            "tone": "rust",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Headquarters",
+            "label": "HQ and mode start",
+            "description": "Badge shot and start for the flashing shotgun-shell mode.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Rank and Super Jackpot ramp",
+            "description": "Badge shot that raises rank and receives the opening gun-fired Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Safehouse",
+            "label": "Safehouse award",
+            "description": "Badge shot that collects the rank-lit Safehouse feature.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Warehouse",
+            "label": "Warehouse collect",
+            "description": "Badge shot that starts Multiball, relights Jackpot, and collects Magazine awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Jackpot ramp",
+            "description": "Badge shot and primary Gun Multiball Jackpot collect.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left loop",
+            "label": "Bank Robber collect",
+            "description": "Loop that collects the Bank Robber hurry-up.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Load Gun skill shot",
+            "instruction": "Select Load Gun before the plunge. Keep the ball controlled after the gun feed so the loaded shot remains useful.",
+            "sourceUrl": "https://www.pinball.org/rules/dirtyharry.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The left ramp is a difficult shot on many copies.",
+            "response": "Test it under ball save. Do not force the Super Jackpot or rank ladder after repeated rejects.",
+            "sourceUrl": "https://www.pinball.org/rules/dirtyharry.html"
+          },
+          {
+            "issue": "The loaded gun gives one cross-playfield Super Jackpot attempt at Multiball start.",
+            "response": "Settle the gun before you fire. Continue with the right-ramp Jackpot plan after a miss.",
+            "sourceUrl": "https://www.pinball.org/rules/dirtyharry.html"
+          },
+          {
+            "issue": "A difficult right ramp or a fast left-orbit feed can make the badge route unreliable.",
+            "response": "Test both feeds early. When they reject repeatedly, collect multiplied Ransom and take an available Multiball instead of forcing the full badge route.",
+            "sourceUrl": "https://pinballvideos.com/v/1107/8587"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm installed code against L-2, tournament mode, fixed skill-shot choices and shell-mode order, ball count, and Extra Ball conversion.",
+          "Confirm Feel Lucky order, Magazine order, Playfield Promotion duration, rank multiplier, Multiball saves, Last Chance, and Warehouse Hurry-Up rules.",
+          "Test the gun aim and feed, both ramps, Headquarters, Warehouse, Safehouse, loops, upper-right flipper, and Magna Force before choosing the route."
+        ],
+        "simpleOverview": "Dirty Harry uses five badge shots to qualify Multiball and the plunge selection to load one Super Jackpot attempt. Choose Load Gun, start Barroom Brawl at Headquarters, finish the badges, then start Multiball and alternate the right-ramp Jackpot with Warehouse relights.",
+        "overview": "Completing all five badge shots lights Multiball in Dirty Harry, and shell shots light modes at Headquarters. A loaded gun gives one left-ramp Super Jackpot attempt when Multiball starts. Choose Load Gun, use Barroom Brawl to advance ramp badges, finish the set, and start from the left ramp or Warehouse. After the Super attempt, alternate right-ramp Jackpots and Warehouse relights.",
+        "machineSetup": [
+          "Confirm installed code against L-2, tournament mode, fixed skill-shot choices and shell-mode order, ball count, and Extra Ball conversion.",
+          "Confirm Feel Lucky order, Magazine order, Playfield Promotion duration, rank multiplier, Multiball saves, Last Chance, and Warehouse Hurry-Up rules.",
+          "Test the gun aim and feed, both ramps, Headquarters, Warehouse, Safehouse, loops, upper-right flipper, and Magna Force before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Choose Load Gun at the plunge, start a shell mode at Headquarters, complete the five badge shots, start Multiball at the left ramp or Warehouse, attempt the Super Jackpot, then alternate the right-ramp Jackpot and Warehouse relight.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose Load Gun for the skill shot. Watch the gun feed and both ramp returns."
+          },
+          {
+            "text": "Shoot Headquarters to start a shell mode. Prefer Barroom Brawl when the ramp shots return safely.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the five badge shots: Headquarters, left ramp, Safehouse, Warehouse, and right ramp.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball qualification: Each badge shot lights one position. Completing all five lights the Multiball start."
+            ]
+          },
+          {
+            "text": "If Playfield Promotion is the lowest flashing Magazine award, collect it at the Warehouse immediately before Gun Multiball or a ramp-heavy shell mode for up to 5x scoring.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After all five badges, shoot the left ramp or Warehouse to load the gun and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Gun Multiball. Fire the gun at the left ramp for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Gun Super Jackpot: The loaded gun gives one opening cross-playfield attempt. After a miss, the right loop can feed the upper-right flipper for another shot."
+            ]
+          },
+          {
+            "text": "Shoot the right ramp for the Jackpot. Shoot the Warehouse to relight and increase the Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the right ramp and Warehouse cycle while at least two balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Badge shots",
+            "summary": "Headquarters, left ramp, Safehouse, Warehouse, and right ramp complete the Multiball qualification."
+          },
+          {
+            "name": "Gun Multiball",
+            "summary": "A loaded gun gives one shot at the left-ramp Super Jackpot when Multiball starts."
+          },
+          {
+            "name": "Barroom Brawl",
+            "summary": "This ramp-focused shell mode advances the main qualification route."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Left-ramp rank and Safehouse",
+          "when": "Use this plan when the gun shot, Warehouse, or full badge route is unreliable.",
+          "steps": [
+            {
+              "text": "Repeat the left ramp to increase rank."
+            },
+            {
+              "text": "Collect the lit Safehouse award when the shot is controlled."
+            },
+            {
+              "text": "When Bank Robber starts, shoot the left loop to collect its hurry-up.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Check the Warehouse lamps before you shoot it. Collect a Magazine award only when it is lit."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

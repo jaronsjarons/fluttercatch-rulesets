@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "G4EKb",
+  "title": "Arena",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "INDISC 2023 Arena quarterfinal",
+      "url": "https://pinballvideos.com/v/4967/1890"
+    },
+    "supportingSources": [
+      {
+        "label": "Arena instruction cards",
+        "url": "https://vpuniverse.com/files/file/19928-arena-premier-1987/"
+      },
+      {
+        "label": "PinballCards Arena reference",
+        "url": "https://pinballcards.net/arena-1978"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge and nudge the ball into the center Pit hole for 1,000,000. Collect T on the return. Shoot the center loop for P and I. Then shoot the lit ramp for another Pit plunge.",
+      "steps": [
+        {
+          "text": "On the first plunge, learn the power and smallest cabinet movement that guide the ball toward the center Pit hole.",
+          "modeNotes": [
+            "Pit rings: The four concentric rings score 25,000, 50,000, 75,000, and 1,000,000 at the center when lit."
+          ]
+        },
+        {
+          "text": "Aim each normal Pit plunge at the center 1,000,000 award."
+        },
+        {
+          "text": "Let the Pit return roll through the T lane."
+        },
+        {
+          "text": "Shoot the center loop. The shot collects P and I and feeds the left inlane.",
+          "modeNotes": [
+            "P-I-T: Completing the three letters lights the left ramp green for another Pit trip."
+          ]
+        },
+        {
+          "text": "Shoot the lit left ramp. It returns the ball to the shooter lane and keeps the return gates closed."
+        },
+        {
+          "text": "Plunge for another center Pit collect. Repeat the T, center-loop, ramp, and plunge cycle."
+        },
+        {
+          "text": "Do not choose a smaller Pit ring unless a useful Extra Ball or Special is lit there."
+        }
+      ],
+      "fallback": {
+        "title": "15x three-ball Multiball",
+        "when": "Use this plan when the center Pit award is disabled or the plunge is not repeatable.",
+        "steps": [
+          {
+            "text": "Complete either C-Y-S target bank until the playfield multiplier is useful.",
+            "modeNotes": [
+              "Playfield X: It multiplies all Multiball scoring, not end-of-ball bonus. It carries between balls and reaches 15x."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the spinner lane to reach the upper L-O-K lanes."
+          },
+          {
+            "text": "Use the right flipper to move the lit lanes. Roll through L, O, and K to lock one ball. Complete three sets.",
+            "modeNotes": [
+              "Three-Ball Multiball: The third L-O-K set starts it. Normal playfield scores use the stored Playfield X. There is no Jackpot or dedicated collect."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the lit 5,000-per-spin spinner only while its return is safe.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the extra balls to complete Wall, Guard, and C-Y-S targets. Multiball ends when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Wall and Guard Extra Ball",
+          "when": "Use this plan when Extra Ball is enabled and the standup rebounds are safe.",
+          "steps": [
+            {
+              "text": "Hit one or two Guard standups while part of the Wall remains raised."
+            },
+            {
+              "text": "Complete the Wall drop bank."
+            },
+            {
+              "text": "During the short beeping timer, finish all three Guard standups."
+            },
+            {
+              "text": "Extra Ball lights at the second Pit ring for one trip. Aim for that ring on the next plunge."
+            }
+          ]
+        },
+        {
+          "title": "Lit-spinner Multiball scoring",
+          "when": "Use this plan only with a useful Playfield X and a controlled spinner return.",
+          "steps": [
+            {
+              "text": "Roll through a lit blue inlane. Shoot the spinner before its short timer ends.",
+              "modeNotes": [
+                "Spinner: Roll through a lit blue inlane to start the timer; spinner hits then score 5,000 per spin until it ends."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Three-Ball Multiball and repeat the lit spinner for multiplied switch value.",
+              "kinds": [
+                "mode",
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Stop when the spinner return is no longer controlled."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 1,000,000 Pit collects",
+        "steps": [
+          {
+            "text": "Make the center Pit skill shot."
+          },
+          {
+            "text": "Collect T on the return. Shoot the center loop for P and I."
+          },
+          {
+            "text": "Shoot the lit ramp for a replunge."
+          },
+          {
+            "text": "Repeat the center Pit skill shot."
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Confirm whether the shooter-lane switch is connected; if disconnected, complete P-I-T to light the center 1,000,000 award.",
+        "Confirm whether Extra Ball and Special are enabled or converted to points before choosing a Wall-and-Guard collect."
+      ],
+      "termStyles": [
+        {
+          "label": "Three-Ball Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Playfield X",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "15x",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Light Spinner",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Pit",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "P-I-T",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "L-O-K",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Plunge and nudge the ball into the center Pit hole for 1,000,000."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Make the center Pit skill shot."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "15x three-ball Multiball: Use this plan when the center Pit award is disabled or the plunge is not repeatable."
+        }
+      ],
+      "simpleOverview": "Arena begins with a plunge toward the center Pit hole for 1,000,000. Let the return collect T, shoot the center loop for P and I, then shoot the lit left ramp to return to the shooter lane. Repeat the Pit, T, center-loop, and ramp cycle.",
+      "overview": "Arena uses each center Pit collect to begin a repeatable P-I-T loop. Plunge the center 1,000,000 Pit hole, collect T on the return, shoot the center loop for P and I, then use the lit left ramp to return to the shooter lane with the gates closed. Repeat while the plunge and ramp feeds remain predictable.",
+      "machineSetup": [
+        "Confirm whether the shooter-lane switch is connected; if disconnected, complete P-I-T to light the center 1,000,000 award.",
+        "Confirm whether Extra Ball and Special are enabled or converted to points before choosing a Wall-and-Guard collect."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

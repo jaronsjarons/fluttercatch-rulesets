@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "G4PXJ",
+  "title": "James Bond 007",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to James Bond 007",
+      "url": "https://rules.silverballmania.com/rules/G4PXJ-MQPlw"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb James Bond 007 technical sheets",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Gottlieb_James_Bond_007_Tech_Sheets.pdf"
+      },
+      {
+        "label": "Gottlieb James Bond 007 rules tutorial",
+        "url": "https://www.youtube.com/watch?v=HK7HIFaz7k8"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build 5x Bonus X, light both ten-unit time awards, then score drop targets while restoring time before the 50-unit cap becomes urgent.",
+      "quickInfo": [
+        {
+          "name": "Time",
+          "summary": "The game starts at 50 time units, removes five units after a drain, and ends after a drain with five or fewer units."
+        },
+        {
+          "name": "Timer start",
+          "summary": "The timer starts after the first top-lane or drop-target hit, but bumper hits do not start it."
+        },
+        {
+          "name": "Lower-left target",
+          "summary": "Four hits raise Bonus X to 5x, and the fifth scores 50K, resets Bonus X, and lights a 10-unit time award."
+        },
+        {
+          "name": "Drop-bank time",
+          "summary": "A completed bank adds three time units and stops the clock, while a two-target hit adds two units and 10K."
+        },
+        {
+          "name": "Upper-left channel",
+          "summary": "Complete all three drop banks on one ball to light the far upper-left channel for ten time units."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the lower-left standup four times to reach 5x Bonus X."
+        },
+        {
+          "text": "Hit it a fifth time for 50K; this resets Bonus X and lights the standup for ten time units."
+        },
+        {
+          "text": "Complete each drop bank. Favor shots that knock down two targets at once."
+        },
+        {
+          "text": "Finish all three banks on the same ball to light the far upper-left channel for ten time units."
+        },
+        {
+          "text": "Rebuild Bonus X by wrapping the drop-target value from 800 to 100, while keeping useful time near the 50-unit cap."
+        },
+        {
+          "text": "When time becomes low, shoot the lit lower-left target or far upper-left channel."
+        },
+        {
+          "text": "After 5x Bonus X returns, continue drop targets and build the base bonus toward 99K."
+        }
+      ],
+      "fallback": {
+        "title": "Time recovery",
+        "when": "Use this when the timer is low or target rebounds waste too much time.",
+        "steps": [
+          {
+            "text": "Complete one safe drop bank for three units and a clock stop."
+          },
+          {
+            "text": "Shoot the lit lower-left target or upper-left channel for ten units."
+          },
+          {
+            "text": "At zero time, use the right bullseye only if it awards 15 time units on this machine."
+          },
+          {
+            "text": "Resume Bonus X and base-bonus work after the time count is stable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Bonus and bullseye",
+          "when": "Use this when the lower-right bullseye has a controlled rebound.",
+          "steps": [
+            {
+              "text": "Hit the lower-left standup until Bonus X reaches 5x before you commit to base-bonus scoring."
+            },
+            {
+              "text": "Shoot the recessed lower-right bullseye for 15K and 15 bonus units."
+            },
+            {
+              "text": "Return to time awards before the clock becomes urgent."
+            },
+            {
+              "text": "Protect the built bonus instead of forcing another dangerous target rebound."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Sustained time, 5x Bonus X, and 99K base bonus",
+        "steps": [
+          {
+            "text": "Activate the lower-left 10-unit award."
+          },
+          {
+            "text": "Complete all three banks to activate the upper-left 10-unit award."
+          },
+          {
+            "text": "Rebuild Bonus X to 5x."
+          },
+          {
+            "text": "Score drop targets and the lower-right bullseye to raise the base bonus toward 99K while you keep time available."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Two-target bank hit",
+          "instruction": "Aim across the face of a drop bank when the angle is controlled. Two targets in one shot award time and 10K.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4PXJ-MQPlw"
+        },
+        {
+          "name": "Linked top-lane plunge",
+          "instruction": "Plunge for the center yellow lane or either side lane. The two side lanes share their progress.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4PXJ-MQPlw"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Target rebounds and bumper hits can keep the ball uncontrolled while the timer continues.",
+          "response": "Choose shots that return quickly to a flipper or another useful feature. Avoid low-value sideways action.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4PXJ-MQPlw"
+        },
+        {
+          "issue": "The wide playfield can produce slow feeds that consume time without useful scoring.",
+          "response": "Regain control quickly. Use an available time award before you start another long target sequence.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4PXJ-MQPlw"
+        },
+        {
+          "issue": "The lower-left time award may not be active below 30 time units on some settings.",
+          "response": "Check its lamp before you shoot. Use a completed bank or the upper-left channel if it is not active.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4PXJ-MQPlw"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Gottlieb's 1980 timed game, starting time, five-unit drain penalty, 50-unit cap, and right-bullseye time versus Special setting.",
+        "Confirm Bonus X, base-bonus, drop-value, bank-time, yellow-lane, lower-left award, replay, tilt, and clock-stop behavior on the installed game.",
+        "Test all drop banks, lower-left standup, yellow lanes, upper-left channel, right bullseye, bumper exits, target rebounds, and timer-start switches."
+      ],
+      "simpleOverview": "James Bond 007 has a countdown that starts with the first top-lane or drop-target hit and can end the game after a drain. Hit the lower-left standup four times for 5x, complete drop banks to restore time, and keep at least one ten-unit time award lit while building bonus.",
+      "overview": "James Bond 007 has a countdown that starts with the first top-lane or drop-target hit and can end the game after a drain. Use four lower-left standup hits for 5x, complete each bank to add time and stop the clock, and finish all three on one ball to light the far upper-left recovery channel. Maintain useful time while raising the base, then protect the built bonus instead of forcing a dangerous target rebound.",
+      "machineSetup": [
+        "Confirm Gottlieb's 1980 timed game, starting time, five-unit drain penalty, 50-unit cap, and right-bullseye time versus Special setting.",
+        "Confirm Bonus X, base-bonus, drop-value, bank-time, yellow-lane, lower-left award, replay, tilt, and clock-stop behavior on the installed game.",
+        "Test all drop banks, lower-left standup, yellow lanes, upper-left channel, right bullseye, bumper exits, target rebounds, and timer-start switches."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "GRo3e",
+  "title": "Heavy Metal Meltdown",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Bally Heavy Metal Meltdown operations manual",
+      "url": "https://www.pinrepair.com/6803/manuals/6803-heavymetal.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Heavy Metal Meltdown strategy discussion",
+        "url": "https://tiltforums.com/t/simple-strategy-for-heavy-metal-melt-down/2932"
+      },
+      {
+        "label": "Heavy Metal Meltdown machine overview",
+        "url": "https://www.kineticist.com/games/pinball/heavy-metal-meltdown"
+      },
+      {
+        "label": "Heavy Metal Meltdown technical chart",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Bally_Heavy_Metal_Meltdown_Tech_Chart.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Shoot the main ramp repeatedly to load balls into the Power Amp. After four balls are held, the machine serves the fifth ball; make its 50,000 skill shot, then shoot the right saucer to start five-ball Meltdown Multiball. During Multiball, each surviving ball raises the playfield multiplier, so preserving all five while looping the ramp is the main scoring route.",
+      "simpleOverview": "Repeat the main ramp until four balls are held in the Power Amp. On the fifth served ball, collect the 50K skill shot and shoot the right saucer for five-ball Meltdown Multiball. Keep as many balls alive as possible because the ball count controls playfield multiplier, then keep shooting the ramp.",
+      "summary": "Load four balls into the Power Amp by repeating the main ramp. On the fifth ball, take the 50K skill shot and shoot the right saucer for five-ball Meltdown. Preserve ball count for higher playfield multiplier and repeat the ramp.",
+      "quickInfo": [
+        {
+          "name": "Load Power Amp",
+          "summary": "Repeat the main ramp until four balls are held."
+        },
+        {
+          "name": "Play Ball 5",
+          "summary": "Use the served ball for the 50K skill shot."
+        },
+        {
+          "name": "Start Meltdown",
+          "summary": "With four balls in the Power Amp, shoot the right saucer."
+        },
+        {
+          "name": "Score",
+          "summary": "Keep all five balls alive for maximum playfield multiplier and repeat the ramp."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the main ramp repeatedly to load four balls into the Power Amp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When the fifth ball is served, plunge for the 50,000 skill shot if it is safely available.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the right saucer while four balls are held to start five-ball Meltdown Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, preserve as many balls as possible and repeat the ramp; the live-ball count sets playfield multiplier.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Start promptly in multiplayer",
+          "when": "Use this when physical locks can be left for the next player.",
+          "steps": [
+            {
+              "text": "Once four balls are held, prioritize the right saucer instead of leaving the Power Amp loaded.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "If the ramp feed is controllable, continue the full five-ball route rather than abandoning lock progress.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Multiply the ramp",
+        "steps": [
+          {
+            "text": "Separate the balls at Multiball start before committing to repeat ramp shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "As balls drain, expect the playfield multiplier to fall; take the safest ramp feed while the multiplier is still high.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm lock sharing, skill-shot value, extra-ball conversion, and live-ball playfield multipliers.",
+        "Test the main ramp and its Power Amp locks, fifth-ball serve, right saucer, all lock releases, top skill-shot lanes, and trough capacity."
+      ],
+      "termStyles": [
+        {
+          "label": "Power Amp",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "Meltdown Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Playfield Multiplier",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Physical lock progress can benefit the next player.",
+          "response": "In multiplayer, finish the four-ramp load and right-saucer start in the same turn whenever possible.",
+          "sourceUrl": "https://tiltforums.com/t/simple-strategy-for-heavy-metal-melt-down/2932"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

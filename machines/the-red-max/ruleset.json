@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "G57W3",
+  "title": "The Red Max",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to The Red Max",
+      "url": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist The Red Max guide",
+        "url": "https://www.kineticist.com/games/pinball/the-red-max"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge the upper-left lane to light the three numbered mushroom bumpers. Relight and hit those bumpers to spell THEREDMAX, then collect the letter bonus at the upper-right saucer.",
+      "quickInfo": [
+        {
+          "name": "Upper-left lane",
+          "summary": "The upper-left lane lights all three numbered mushroom bumpers and is usually available only on the plunge."
+        },
+        {
+          "name": "Bumper relights",
+          "summary": "The center mushroom lights bumper 1, while a full captive-ball hit lights bumpers 2 and 3."
+        },
+        {
+          "name": "THEREDMAX letters",
+          "summary": "Each lit numbered-bumper hit adds one THEREDMAX letter and turns that bumper off."
+        },
+        {
+          "name": "Letter bonus",
+          "summary": "Each lit T-H-E letter adds 1K, each R-E-D letter adds 3K, and each M-A-X letter adds 5K to bonus."
+        },
+        {
+          "name": "Center post",
+          "summary": "The mushroom right of the captive ball raises the center post, while the mushroom left of it lowers the post."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge through the upper-left lane to light all three numbered mushroom bumpers."
+        },
+        {
+          "text": "Hit the mushroom right of the captive ball to raise the center post."
+        },
+        {
+          "text": "Hit each lit numbered mushroom bumper to add a THEREDMAX letter."
+        },
+        {
+          "text": "Use the center mushroom to relight bumper 1."
+        },
+        {
+          "text": "Drive the captive ball fully backward to relight bumpers 2 and 3."
+        },
+        {
+          "text": "Repeat the relight-and-hit cycle to raise the letter bonus."
+        },
+        {
+          "text": "When the built bonus justifies the shot, shoot the upper-right saucer to collect it."
+        }
+      ],
+      "fallback": {
+        "title": "Saucer-miss upper recovery",
+        "when": "Use this plan when a controlled upper-right saucer shot passes over or around the saucer.",
+        "steps": [
+          {
+            "text": "Follow the ball into the upper area after the missed saucer entry."
+          },
+          {
+            "text": "Nudge toward the upper-left lane to relight all three numbered bumpers."
+          },
+          {
+            "text": "If that lane is unavailable, use a white rollover to light a pop-bumper pair."
+          },
+          {
+            "text": "Let the ball approach the saucer from above instead of forcing another direct shot."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Upper pop-bumper scoring",
+          "when": "Use this plan when the ball reaches the upper area but cannot enter the upper-left lane or saucer.",
+          "steps": [
+            {
+              "text": "Guide the ball over the left white rollover to light the yellow pop bumpers."
+            },
+            {
+              "text": "Use the right white rollover to light the green pop bumpers."
+            },
+            {
+              "text": "Keep the ball in the upper area while the lit bumpers score."
+            },
+            {
+              "text": "Return to the numbered-bumper route when the ball reaches the lower playfield."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "THEREDMAX 27K bonus collect",
+        "steps": [
+          {
+            "text": "Plunge the upper-left lane to light the numbered mushroom bumpers."
+          },
+          {
+            "text": "Relight and hit them until THEREDMAX is complete."
+          },
+          {
+            "text": "Hit the mushroom to the right of the captive ball to raise the center post before the collect attempt."
+          },
+          {
+            "text": "Shoot the upper-right saucer to collect the 27K letter bonus."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Micro-flip",
+          "instruction": "Micro-flip a ball resting on the raised center post into a controlled flipper cradle.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl",
+          "techniqueSlug": "micro-flip"
+        },
+        {
+          "name": "Full captive-ball stroke",
+          "instruction": "Drive the captive ball fully backward to light bumpers 2 and 3. A weak or grazing hit can light only bumper 2.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+        },
+        {
+          "name": "Upper-area choice",
+          "instruction": "When the ball returns to the top, guide it to the upper-left lane, a white rollover, or the upper-right saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The upper-right saucer has no backstop, so the ball can skip over or around it.",
+          "response": "Treat each miss as an upper-play opportunity. Do not repeat the direct shot until its entry proves reliable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+        },
+        {
+          "issue": "A numbered mushroom bumper turns off after it awards a letter.",
+          "response": "Relight that bumper before another hit. Do not expect an unlit hit to add a letter.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+        },
+        {
+          "issue": "The mushroom left of the captive ball lowers the center post.",
+          "response": "Check the post before you use it for control. Relight it from the right mushroom when necessary.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+        },
+        {
+          "issue": "A side-lane drain collects letter bonus, but a center drain does not.",
+          "response": "Use the upper-right saucer for an in-ball collect when its entry is reliable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G57W3-MQdzl"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Red Max edition, ball count, and letter-progress behavior.",
+        "Test center post, saucer, rollovers, and side-lane feeds."
+      ],
+      "simpleOverview": "The Red Max turns lit hits on three numbered mushroom bumpers into T-H-E-R-E-D-M-A-X letters and a growing collect. Plunge the upper-left lane to light the bumpers, relight them with the center mushroom or captive ball, then shoot the upper-right saucer after all nine letters are complete.",
+      "overview": "The Red Max turns lit hits on three numbered mushroom bumpers into T-H-E-R-E-D-M-A-X letters and a growing collect. Plunge the upper-left lane to light the bumpers, use the center mushroom and full captive-ball hits to relight them, and collect each T-H-E-R-E-D-M-A-X letter. Hit the right-side mushroom to raise the center post before shooting the saucer for the completed bonus.",
+      "machineSetup": [
+        "Confirm Red Max edition, ball count, and letter-progress behavior.",
+        "Test center post, saucer, rollovers, and side-lane feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

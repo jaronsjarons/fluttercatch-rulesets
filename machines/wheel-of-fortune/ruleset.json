@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "id": "G417d",
+  "title": "Wheel of Fortune",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Tilt Forums Wheel of Fortune rulesheet",
+      "url": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Wheel of Fortune machine record",
+        "url": "https://www.kineticist.com/games/pinball/wheel-of-fortune"
+      },
+      {
+        "label": "Pinball Rulesheets Wheel of Fortune guide",
+        "url": "https://pinballrulesheets.com/stern/wheel-of-fortune-rulesheet-wip"
+      },
+      {
+        "label": "Karl DeAngelo at INDISC 2017",
+        "url": "https://pinballvideos.com/v/1461/3462"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "On official ROM 5.00, clear the right-ramp drops, qualify Wheel of Fortune Multiball and a Bonus Wheel Mode, start the Bonus Wheel Mode at the scoop, then return there for Multiball and complete the Jackpot sequence.",
+      "quickInfo": [
+        {
+          "name": "Right-ramp drops",
+          "summary": "Clear all three inline drops to open the right ramp and qualify Free Spin, Big Money, and Wild Card."
+        },
+        {
+          "name": "Wheel of Fortune Multiball",
+          "summary": "Spell MULTIBALL at the nine green targets, then shoot the lit scoop for three-ball play and a four-Jackpot sequence."
+        },
+        {
+          "name": "Bonus Wheel Modes",
+          "summary": "Collect the five BONUS shots, then shoot the scoop for one random 30-second mode that can start with multiball."
+        },
+        {
+          "name": "Ramp Multipliers",
+          "summary": "One outer ramp doubles the next shot, while a left-ramp and right-ramp combo makes the next shot worth 4x."
+        },
+        {
+          "name": "Trip Multiball",
+          "summary": "Solve a Prize Puzzle or collect a contestant's stored Trip to start its four-shot Jackpot sequence."
+        },
+        {
+          "name": "Official ROM 5.00",
+          "summary": "Trip Jackpot values persist until a power cycle; do not assume a carried value belongs to the current player."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use a controlled plunge to test the Toss-Up loop and the pop-bumper exit."
+        },
+        {
+          "text": "Hit the three inline drops until the right ramp is open.",
+          "modeNotes": [
+            "Inline Awards: The first drop lights two Free Spin lanes. The second lights Big Money. The third lights Wild Card.",
+            "Free Spin: A lit split outlane earns an autoplunge. Unused lit lanes persist between balls.",
+            "Wild Card: The lit lower-left lane scores the built bumper value and a code-dependent award."
+          ]
+        },
+        {
+          "text": "Hit green MULTIBALL targets until the scoop lights for Wheel of Fortune Multiball.",
+          "modeNotes": [
+            "MULTIBALL Letters: On the first qualification, any of the nine green targets adds a letter.",
+            "Later qualifications can require each target once, each target twice, or one specific lit target at a time.",
+            "Extra target hits after qualification add 7,500 to the base Jackpot."
+          ]
+        },
+        {
+          "text": "Collect BONUS at the left loop, left ramp, center ramp, right ramp, and right orbit.",
+          "modeNotes": [
+            "Bonus Wheel Mode: Five BONUS letters qualify one random mode at the scoop. Each mode lasts 30 seconds.",
+            "A mode cannot start during multiball. A qualified mode and Wheel of Fortune Multiball can start together at the scoop.",
+            "Trip Multiball overrides a qualified Bonus Wheel Mode when the same scoop shot would start both."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the scoop when both Wheel of Fortune Multiball and a Bonus Wheel Mode are ready.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Wheel of Fortune Multiball, collect the four lit Jackpots in sequence.",
+          "modeNotes": [
+            "Wheel of Fortune Multiball: The scoop starts three-ball play, or four-ball play when Trip Multiball starts with it.",
+            "Four of six major shots light for Jackpot, Double Jackpot, Triple Jackpot, and 5x Super Jackpot.",
+            "Each Jackpot unlights all shots. Hit any contestant to relight the uncollected Jackpot shots.",
+            "After Super Jackpot, hit a contestant to light all six shots for half-Jackpots.",
+            "Collect all six half-Jackpots to restart the four-Jackpot sequence.",
+            "The multiball ends when one ball remains. Its base Jackpot carries into later Wheel of Fortune Multiballs."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use left-ramp and right-ramp combos before the largest available mode or multiball collect.",
+          "modeNotes": [
+            "Ramp Multiplier: One outer ramp lights 2x for the next shot for approximately five seconds.",
+            "Combo both outer ramps in either order to light 4x for the next shot.",
+            "The right ramp must be open for its combo shot to register."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Prioritize the active mode while extra balls protect the drain."
+        },
+        {
+          "text": "When one ball remains, rebuild MULTIBALL and BONUS from their current progress."
+        }
+      ],
+      "fallback": {
+        "title": "Free Spins, Super Bumpers, and Super Loops",
+        "when": "Use this when the scoop or MULTIBALL standups reject toward a drain.",
+        "steps": [
+          {
+            "text": "Hit the first inline drop to light two Free Spin outlane rollovers."
+          },
+          {
+            "text": "Use the right orbit to raise Bumper X and feed the pop bumpers."
+          },
+          {
+            "text": "Roll through the left inlane to start Super Bumpers."
+          },
+          {
+            "text": "Shoot the right orbit again before Super Bumpers ends."
+          },
+          {
+            "text": "Use the right inlane to start Super Loops."
+          },
+          {
+            "text": "Repeat the left loop within its short timer for rising values."
+          },
+          {
+            "text": "Take the Free Spin autoplunge if the ball reaches a lit outlane."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Trip Multiball through a Prize Puzzle",
+          "when": "Use this on tournament code when the current round is even and puzzle progress is close to completion.",
+          "steps": [
+            {
+              "text": "Hit a lit contestant to reveal a consonant and add its wedge value to that contestant's Prize Bank."
+            },
+            {
+              "text": "Select the contestant with the most useful Prize Bank before the final letters."
+            },
+            {
+              "text": "When approximately two-thirds of the puzzle is revealed, shoot the scoop to solve it."
+            },
+            {
+              "text": "An even tournament round starts three-ball Trip Multiball."
+            },
+            {
+              "text": "Collect the left ramp, scoop, center ramp, and right ramp for single, double, triple, and 5x Super Jackpot."
+            },
+            {
+              "text": "A fast combo doubles the next Trip Jackpot."
+            },
+            {
+              "text": "After Super Jackpot, the base value rises by 100,000 and the sequence relights."
+            }
+          ]
+        },
+        {
+          "title": "Ramp Rampage stack",
+          "when": "Use this only when the random Bonus Wheel starts Ramp Rampage and the outer ramps are open.",
+          "steps": [
+            {
+              "text": "Start Ramp Rampage with Wheel of Fortune Multiball when both are qualified."
+            },
+            {
+              "text": "Shoot the left ramp for 10x the red wedge."
+            },
+            {
+              "text": "Shoot the center ramp for 10x the yellow wedge and a new wheel spin."
+            },
+            {
+              "text": "Shoot the right ramp for 10x the blue wedge."
+            },
+            {
+              "text": "Each repeat adds another 10x to that ramp for the rest of the 30-second mode."
+            },
+            {
+              "text": "Use multiball protection to repeat the most reliable ramp."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 5.00 multiball stacks",
+        "steps": [
+          {
+            "text": "Clear the right-ramp drops and qualify both main features."
+          },
+          {
+            "text": "Stack a Bonus Wheel Mode with Wheel of Fortune Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the four-Jackpot sequence and the six half-Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Treat carried Trip Jackpot values as machine state, not earned progress."
+          },
+          {
+            "text": "Rebuild MULTIBALL and BONUS for the next controlled stack."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Wheel of Fortune Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Trip Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Bonus Wheel Mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Ramp Rampage",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Super Bumpers",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Super Loops",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Ramp Multiplier",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "2x",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "4x",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Free Spin",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Big Money",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Wild Card",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Prize Bank",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Toss-Up skill plunge",
+          "instruction": "Use less than full plunge strength so the ball barely circles the back-right Toss-Up post, then shoot the scoop hurry-up.",
+          "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+        },
+        {
+          "name": "Free Spin outlane nudge",
+          "instruction": "Move the cabinet before the split so the ball enters the lit Free Spin rollover instead of the adjacent unlit rollover.",
+          "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+        },
+        {
+          "name": "Outer-ramp 4x combo",
+          "instruction": "Shoot either outer ramp, combo the opposite ramp, then use the 4x insert on the next large collect before it expires.",
+          "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A weak left-ramp shot can fail to reach its scoring switch.",
+          "response": "Confirm the ramp switch before you depend on the 2x or 4x follow-up award.",
+          "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm official 5.00 or tournament 6.02 ROM.",
+        "Test right-ramp switches, scoop, contestants, and Free Spin lanes."
+      ],
+      "simpleOverview": "Green MULTIBALL targets qualify Wheel of Fortune's Multiball, while five BONUS shots qualify a Bonus Wheel Mode. Clear the three right-ramp drops, start the Bonus Wheel Mode at the scoop, then return there for Multiball and collect its four Jackpots in order.",
+      "overview": "The nine MULTIBALL targets qualify Wheel of Fortune Multiball at the scoop, while five BONUS shots qualify a Bonus Wheel Mode there. Start the Bonus Wheel Mode first because a mode cannot start once Multiball is running. Clear the right-ramp drops, qualify both features, start them in that order, and complete the ordered Jackpot sequence. Use a left-ramp and right-ramp combo before the largest available collect for 4x.",
+      "machineSetup": [
+        "Confirm official 5.00 or tournament 6.02 ROM.",
+        "Test right-ramp switches, scoop, contestants, and Free Spin lanes."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "5.00",
+      "items": [
+        {
+          "id": "5.00",
+          "label": "Stock 5.00"
+        },
+        {
+          "id": "6.02",
+          "label": "Tournament 6.02",
+          "strategy": {
+            "summary": "On tournament ROM 6.02, qualify Wheel of Fortune Multiball and a Bonus Wheel Mode, start both at the scoop, complete the Jackpot sequence, then meet each mode quota while using retries for unfinished modes.",
+            "quickInfo": [
+              {
+                "name": "Right-ramp drops",
+                "summary": "Clear all three inline drops to open the right ramp and qualify Free Spin, Big Money, and Wild Card."
+              },
+              {
+                "name": "Wheel of Fortune Multiball",
+                "summary": "Spell MULTIBALL at the nine green targets, then shoot the lit scoop for three-ball play and a four-Jackpot sequence."
+              },
+              {
+                "name": "Bonus Wheel Modes",
+                "summary": "Collect the five BONUS shots, then shoot the scoop for one random 30-second mode that can start with multiball."
+              },
+              {
+                "name": "Ramp Multipliers",
+                "summary": "One outer ramp doubles the next shot, while a left-ramp and right-ramp combo makes the next shot worth 4x."
+              },
+              {
+                "name": "Trip Multiball",
+                "summary": "Solve a Prize Puzzle or collect a contestant's stored Trip to start its four-shot Jackpot sequence."
+              },
+              {
+                "name": "Tournament ROM 6.02",
+                "summary": "The unofficial tournament build resets Trip values per player and adds mode quotas, retries, and Winnings X."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Use a controlled plunge to test the Toss-Up loop and the pop-bumper exit."
+              },
+              {
+                "text": "Hit the three inline drops until the right ramp is open.",
+                "modeNotes": [
+                  "Inline Awards: The first drop lights two Free Spin lanes. The second lights Big Money. The third lights Wild Card.",
+                  "Free Spin: A lit split outlane earns an autoplunge. Unused lit lanes persist between balls.",
+                  "Wild Card: The lit lower-left lane scores the built bumper value and a code-dependent award."
+                ]
+              },
+              {
+                "text": "Hit green MULTIBALL targets until the scoop lights for Wheel of Fortune Multiball.",
+                "modeNotes": [
+                  "MULTIBALL Letters: On the first qualification, any of the nine green targets adds a letter.",
+                  "Later qualifications can require each target once, each target twice, or one specific lit target at a time.",
+                  "Extra target hits after qualification add 7,500 to the base Jackpot."
+                ]
+              },
+              {
+                "text": "Collect BONUS at the left loop, left ramp, center ramp, right ramp, and right orbit.",
+                "modeNotes": [
+                  "Bonus Wheel Mode: Five BONUS letters qualify one random mode at the scoop. Each mode lasts 30 seconds.",
+                  "A mode cannot start during multiball. A qualified mode and Wheel of Fortune Multiball can start together at the scoop.",
+                  "Trip Multiball overrides a qualified Bonus Wheel Mode when the same scoop shot would start both."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the scoop when both Wheel of Fortune Multiball and a Bonus Wheel Mode are ready.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Wheel of Fortune Multiball, collect the four lit Jackpots in sequence.",
+                "modeNotes": [
+                  "Wheel of Fortune Multiball: The scoop starts three-ball play, or four-ball play when Trip Multiball starts with it.",
+                  "Four of six major shots light for Jackpot, Double Jackpot, Triple Jackpot, and 5x Super Jackpot.",
+                  "Each Jackpot unlights all shots. Hit any contestant to relight the uncollected Jackpot shots.",
+                  "After Super Jackpot, hit a contestant to light all six shots for half-Jackpots.",
+                  "Collect all six half-Jackpots to restart the four-Jackpot sequence.",
+                  "The multiball ends when one ball remains. Its base Jackpot carries into later Wheel of Fortune Multiballs."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use left-ramp and right-ramp combos before the largest available mode or multiball collect.",
+                "modeNotes": [
+                  "Ramp Multiplier: One outer ramp lights 2x for the next shot for approximately five seconds.",
+                  "Combo both outer ramps in either order to light 4x for the next shot.",
+                  "The right ramp must be open for its combo shot to register."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Prioritize the active mode while extra balls protect the drain."
+              },
+              {
+                "text": "When one ball remains, rebuild MULTIBALL and BONUS from their current progress."
+              }
+            ],
+            "fallback": {
+              "title": "Free Spins, Super Bumpers, and Super Loops",
+              "when": "Use this when the scoop or MULTIBALL standups reject toward a drain.",
+              "steps": [
+                {
+                  "text": "Hit the first inline drop to light two Free Spin outlane rollovers."
+                },
+                {
+                  "text": "Use the right orbit to raise Bumper X and feed the pop bumpers."
+                },
+                {
+                  "text": "Roll through the left inlane to start Super Bumpers."
+                },
+                {
+                  "text": "Shoot the right orbit again before Super Bumpers ends."
+                },
+                {
+                  "text": "Use the right inlane to start Super Loops."
+                },
+                {
+                  "text": "Repeat the left loop within its short timer for rising values."
+                },
+                {
+                  "text": "Take the Free Spin autoplunge if the ball reaches a lit outlane."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Trip Multiball through a Prize Puzzle",
+                "when": "Use this on tournament code when the current round is even and puzzle progress is close to completion.",
+                "steps": [
+                  {
+                    "text": "Hit a lit contestant to reveal a consonant and add its wedge value to that contestant's Prize Bank."
+                  },
+                  {
+                    "text": "Select the contestant with the most useful Prize Bank before the final letters."
+                  },
+                  {
+                    "text": "When approximately two-thirds of the puzzle is revealed, shoot the scoop to solve it."
+                  },
+                  {
+                    "text": "An even tournament round starts three-ball Trip Multiball."
+                  },
+                  {
+                    "text": "Collect the left ramp, scoop, center ramp, and right ramp for single, double, triple, and 5x Super Jackpot."
+                  },
+                  {
+                    "text": "A fast combo doubles the next Trip Jackpot."
+                  },
+                  {
+                    "text": "After Super Jackpot, the base value rises by 100,000 and the sequence relights."
+                  }
+                ]
+              },
+              {
+                "title": "Ramp Rampage stack",
+                "when": "Use this only when the random Bonus Wheel starts Ramp Rampage and the outer ramps are open.",
+                "steps": [
+                  {
+                    "text": "Start Ramp Rampage with Wheel of Fortune Multiball when both are qualified."
+                  },
+                  {
+                    "text": "Shoot the left ramp for 10x the red wedge."
+                  },
+                  {
+                    "text": "Shoot the center ramp for 10x the yellow wedge and a new wheel spin."
+                  },
+                  {
+                    "text": "Shoot the right ramp for 10x the blue wedge."
+                  },
+                  {
+                    "text": "Each repeat adds another 10x to that ramp for the rest of the 30-second mode."
+                  },
+                  {
+                    "text": "Use multiball protection to repeat the most reliable ramp."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Completed 6.02 modes between repeated multiballs",
+              "steps": [
+                {
+                  "text": "Clear the right-ramp drops and qualify both main features."
+                },
+                {
+                  "text": "Stack a Bonus Wheel Mode with Wheel of Fortune Multiball.",
+                  "kinds": [
+                    "mode",
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Complete the four-Jackpot sequence and the six half-Jackpots.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Score at least 5,000,000 during the mode to complete it.",
+                  "kinds": [
+                    "mode"
+                  ]
+                },
+                {
+                  "text": "Retry an unfinished mode at 2x, then 3x, before advancing."
+                },
+                {
+                  "text": "Complete all seven modes, then repeat the cycle with another multiball stack.",
+                  "kinds": [
+                    "mode",
+                    "multiball"
+                  ]
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Wheel of Fortune Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Trip Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Bonus Wheel Mode",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Ramp Rampage",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Super Bumpers",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Super Loops",
+                "tone": "navy",
+                "kind": "mode"
+              },
+              {
+                "label": "Ramp Multiplier",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "2x",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "4x",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Free Spin",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Big Money",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Wild Card",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Prize Bank",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Toss-Up skill plunge",
+                "instruction": "Use less than full plunge strength so the ball barely circles the back-right Toss-Up post, then shoot the scoop hurry-up.",
+                "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+              },
+              {
+                "name": "Free Spin outlane nudge",
+                "instruction": "Move the cabinet before the split so the ball enters the lit Free Spin rollover instead of the adjacent unlit rollover.",
+                "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+              },
+              {
+                "name": "Outer-ramp 4x combo",
+                "instruction": "Shoot either outer ramp, combo the opposite ramp, then use the 4x insert on the next large collect before it expires.",
+                "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A weak left-ramp shot can fail to reach its scoring switch.",
+                "response": "Confirm the ramp switch before you depend on the 2x or 4x follow-up award.",
+                "sourceUrl": "https://tiltforums.com/t/wheel-of-fortune-rulesheet-wip/5915"
+              }
+            ],
+            "checkBeforePlay": [
+              "Test right-ramp switches, scoop, contestants, and Free Spin lanes."
+            ],
+            "simpleOverview": "Green MULTIBALL targets qualify Wheel of Fortune's Multiball, while five BONUS shots qualify a Bonus Wheel Mode. Clear the three right-ramp drops, start the Bonus Wheel Mode at the scoop, then return there for Multiball and collect its four Jackpots in order.",
+            "overview": "The nine MULTIBALL targets qualify Wheel of Fortune Multiball at the scoop, while five BONUS shots qualify a Bonus Wheel Mode there. Start the Bonus Wheel Mode first because a mode cannot start once Multiball is running. Clear the right-ramp drops, qualify both features, start them in that order, and complete the ordered Jackpot sequence. Use a left-ramp and right-ramp combo before the largest available collect for 4x.",
+            "machineSetup": [
+              "Test right-ramp switches, scoop, contestants, and Free Spin lanes."
+            ],
+            "rulesNotes": []
+          },
+          "differences": {
+            "changes": [
+              "Trip Multiball Jackpot values reset for each player instead of persisting until the machine is power-cycled.",
+              "Modes have completion quotas; an unfinished mode can return twice at 2x and then 3x scoring.",
+              "The tournament build adds Winnings X."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

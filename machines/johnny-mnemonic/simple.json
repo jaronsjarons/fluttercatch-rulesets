@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6W8",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Backhand the left ramp, collect Throwing Spikes, use the third award as a Cyberlock, arrange three Matrix locks in one row or column for 3x Cyberspace Multiball Jackpots, then use the spinner and selected Jackpot shots.",
+        "quickInfo": [
+          {
+            "name": "Throwing Spikes",
+            "summary": "Left-ramp progress lights sequential right-orbit awards, including GB, points, Spinner Millions, and Quick Multiball."
+          },
+          {
+            "name": "Cyberspace Multiball",
+            "summary": "Place three Matrix locks in a full row or column to triple the three selected Jackpot shots."
+          },
+          {
+            "name": "Quick Multiball",
+            "summary": "The fourth Throwing Spikes award starts two-ball play with repeatable ramp Jackpots."
+          },
+          {
+            "name": "Yakuza Strike",
+            "summary": "Complete both ramp triangles to start the timed lit-shot hurry-up. Yakuza Strike can start or continue during Cyberspace Multiball."
+          },
+          {
+            "name": "Modes and Multiball",
+            "summary": "Starting Multiball pauses a regular center-lane mode. If time remains, that mode resumes when play returns to one ball."
+          },
+          {
+            "name": "Power Down",
+            "summary": "Play all five regular modes and reach the required GB progress to qualify the four-ball wizard mode."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Backhand the left ramp to feed the left inlane and light the next Throwing Spikes award."
+          },
+          {
+            "text": "Collect Throwing Spikes at the right orbit. Use the third award for Spinner Millions and a Cyberlock when the lock is also lit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Crazy Bob's to reveal Matrix awards and relight locks. Choose positions that create one full row or column."
+          },
+          {
+            "text": "Place all three locks in one row or column to start Cyberspace Multiball with 3x Jackpots.",
+            "modeNotes": [
+              "Cyberspace Multiball: The three selected Matrix positions become Jackpot shots. A complete row or column triples their values.",
+              "Later cycles: Initial Jackpots rise on later cycles. Matrix position also controls the single-ball award at each lock."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During multiball, rip the lit spinner and collect the three Matrix Jackpot shots. Use the glove to park balls only when it registers reliably.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When Yakuza Strike is already prepared, start it immediately before the third lock and collect its lit hurry-ups under protection.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Quick Multiball",
+          "when": "Use this when the Data Glove, Matrix placement, or weighted spinner makes the main unreliable.",
+          "steps": [
+            {
+              "text": "Shoot the left ramp so its return rolls through the left inlane, then collect the lit Throwing Spikes award at the right ramp or right orbit. Repeat this cycle until the fourth award is ready."
+            },
+            {
+              "text": "Collect Quick Multiball at the right orbit.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the safest ramp Jackpot during two-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to modes and Power Items after one ball remains."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Power Item route",
+            "when": "Use this when the center VUK and mode shots are safer than the lock matrix.",
+            "steps": [
+              {
+                "text": "Start a mode at the center VUK.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete it to light Crazy Bob's for a Power Item.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Collect useful items and continue the five-mode checklist toward Power Down."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Power Down",
+          "steps": [
+            {
+              "text": "Play all five regular modes and complete the required GB progress."
+            },
+            {
+              "text": "Collect Power Items from completed modes to extend their later availability."
+            },
+            {
+              "text": "Start four-ball Power Down with the major shots lit.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use collected Power Items to keep valuable shots active longer.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Cyberspace Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Quick Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Yakuza Strike",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "3x Jackpots",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "context": "left ramp",
+            "label": "Left ramp",
+            "description": "One of the two ramps used to qualify Yakuza Strike and a repeatable scoring shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "context": "spinner",
+            "label": "Spinner",
+            "description": "The spinner whose value and behavior depend on installed code and progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "glove",
+            "context": "glove",
+            "label": "Cyber Matrix glove",
+            "description": "The hand mechanism used to collect lit matrix awards.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the left ramp to create its left-inlane feed and repeat Throwing Spikes progress.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.kineticist.com/news/johnny-mnemonic-tutorial"
+          },
+          {
+            "name": "Bumper-exit nudge",
+            "instruction": "Use a small early nudge as the ball leaves the bumpers to soften the right-side feed.",
+            "sourceUrl": "https://www.kineticist.com/news/johnny-mnemonic-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Left-orbit returns are very fast, and bumper exits can feed the right sling or outlane.",
+            "response": "Nudge before the ball reaches the lower guide. Do not attempt a late correction at the flipper.",
+            "sourceUrl": "https://www.kineticist.com/news/johnny-mnemonic-tutorial"
+          },
+          {
+            "issue": "The center VUK and drop-target rebounds can return toward the drain.",
+            "response": "Start modes from a controlled feed or under multiball protection.",
+            "sourceUrl": "https://www.kineticist.com/news/johnny-mnemonic-tutorial"
+          },
+          {
+            "issue": "The Data Glove often fails and can run in compensation mode.",
+            "response": "Confirm physical lock registration before you plan a row or column. Compensation mode removes intentional Matrix placement.",
+            "sourceUrl": "https://www.pinball.org/rules/johnnymnemonic.html"
+          }
+        ],
+        "simpleOverview": "Johnny Mnemonic turns left-ramp Throwing Spikes awards into Matrix locks. Backhand the ramp, use the third award for a Cyberlock, place three locks in one row or column for 3x Cyberspace Jackpots, then use the spinner and selected Jackpot shots. The Quick Multiball award starts two-ball play immediately when that shorter route is preferable.",
+        "overview": "Johnny Mnemonic turns left-ramp Throwing Spikes awards into Matrix locks. Arrange three Cyberlocks in one row or column before the start, then use the spinner and chosen 3x shots during Multiball. Add Yakuza Strike when its triangles are nearly complete because it can continue through the stack.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Backhand the left ramp, collect Throwing Spikes, use the third award as a Cyberlock, arrange three Matrix locks in one row or column for 3x Cyberspace Multiball Jackpots, then use the spinner and selected Jackpot shots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Backhand the left ramp to feed the left inlane and light the next Throwing Spikes award."
+          },
+          {
+            "text": "Collect Throwing Spikes at the right orbit. Use the third award for Spinner Millions and a Cyberlock when the lock is also lit.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Crazy Bob's to reveal Matrix awards and relight locks. Choose positions that create one full row or column."
+          },
+          {
+            "text": "Place all three locks in one row or column to start Cyberspace Multiball with 3x Jackpots.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "details": [
+              "Cyberspace Multiball: The three selected Matrix positions become Jackpot shots. A complete row or column triples their values.",
+              "Later cycles: Initial Jackpots rise on later cycles. Matrix position also controls the single-ball award at each lock."
+            ]
+          },
+          {
+            "text": "During multiball, rip the lit spinner and collect the three Matrix Jackpot shots. Use the glove to park balls only when it registers reliably.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When Yakuza Strike is already prepared, start it immediately before the third lock and collect its lit hurry-ups under protection.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Throwing Spikes",
+            "summary": "Left-ramp progress lights sequential right-orbit awards, including GB, points, Spinner Millions, and Quick Multiball."
+          },
+          {
+            "name": "Cyberspace Multiball",
+            "summary": "Place three Matrix locks in a full row or column to triple the three selected Jackpot shots."
+          },
+          {
+            "name": "Quick Multiball",
+            "summary": "The fourth Throwing Spikes award starts two-ball play with repeatable ramp Jackpots."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Quick Multiball",
+          "when": "Use this when the Data Glove, Matrix placement, or weighted spinner makes the main unreliable.",
+          "steps": [
+            {
+              "text": "Shoot the left ramp so its return rolls through the left inlane, then collect the lit Throwing Spikes award at the right ramp or right orbit. Repeat this cycle until the fourth award is ready."
+            },
+            {
+              "text": "Collect Quick Multiball at the right orbit.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the safest ramp Jackpot during two-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to modes and Power Items after one ball remains."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Left-orbit returns are very fast, and bumper exits can feed the right sling or outlane.",
+          "text": "Nudge before the ball reaches the lower guide. Do not attempt a late correction at the flipper."
+        }
+      }
+    }
+  ]
+}

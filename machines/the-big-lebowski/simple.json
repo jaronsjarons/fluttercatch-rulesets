@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "id": "G5WBr",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hold the right flipper during launch and shoot the mini-playfield ramp to light Let's Go Bowling. Collect the Bowling ball for a reliable character to double that Jackpot, place a White Russian on the same shot, spell more character names, then shoot the character saucer for Character Multiball.",
+        "termStyles": [
+          {
+            "label": "Bowling",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Multiball playfield multiplier",
+            "summary": "During any multiball, the mini-playfield ramp raises playfield scoring from 1.5x to 5x, then the multiplier falls quickly."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hold the right flipper during launch and shoot the mini-playfield ramp to light Let's Go Bowling. Shoot the mini-playfield scoop or character saucer to start it.",
+            "kinds": [
+              "mode"
+            ],
+            "modeNotes": [
+              "Bowling: Use the flippers to choose the character whose shot you can repeat most reliably, press Start, then complete the displayed two-ball challenge to collect that character's Bowling ball. A failure scores a zero frame. A success makes the next Bowling qualification require one more letter.",
+              "Bowling ball: Doubles that character's jackpot during Character Multiball."
+            ]
+          },
+          {
+            "text": "Repeat the chosen character shot until the full name is lit. Extra shots build that character's jackpot.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the four right White Russian targets. Shoot the chosen character shot to assign the White Russian there.",
+            "kinds": [
+              "multiplier"
+            ],
+            "modeNotes": [
+              "White Russian: Applies 2x to four shots at that location. Recomplete the ingredient bank to refill a partly used drink. Two White Russians cannot stack on one shot. Bowling and White Russian multipliers combine."
+            ]
+          },
+          {
+            "text": "Repeat other character shots until their names are spelled. Each character lit before the Character Multiball start adds one ball and joins the starting-character jackpot multiplier.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the character saucer to start Character Multiball. If Let's Go Bowling or Mark It Zero is also lit there, press Launch immediately to cancel an accidental start.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "modeNotes": [
+              "Character Multiball start: Serves one ball plus one for each starting character, up to five balls. Only characters lit when multiball starts multiply one another's jackpots; a character added later adds a ball but does not join that multiplier."
+            ]
+          },
+          {
+            "text": "Shoot each active character jackpot once. When the set is complete, return to the prepared character shot after it relights; shoot the mini-playfield scoop to relight every jackpot sooner.",
+            "kinds": [
+              "multiball"
+            ],
+            "modeNotes": [
+              "Mini-playfield scoop: Relights all jackpots; if all are already lit, it adds 25,000 to their values."
+            ]
+          },
+          {
+            "text": "If you spell another character during multiball, shoot the character saucer to add that character and one ball.",
+            "kinds": [
+              "multiball"
+            ],
+            "modeNotes": [
+              "Added character: Joins the active jackpot set but does not join the starting-character jackpot multiplier. Character Multiball ends when one ball remains."
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "The Dude Abides (wizard)",
+          "steps": [
+            {
+              "text": "Collect Mark It Zero four times. Score a Super Jackpot in normal Multiball. Collect all five Bowling balls. Play Character Multiball for all five main characters.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Play all six Rug Modes and all required Car Modes.",
+              "kinds": [
+                "mode"
+              ],
+              "modeNotes": [
+                "Rug Mode: Hit the Rug until it opens. Pops select a mode. Shoot the Rug hole to start its 60-second objective. Fill the progress bar and shoot the Rug hole again. A timed-out mode still becomes unavailable for that game.",
+                "Car Mode: Hit four upper parking targets. Shoot the upper scoop. Kill Dude's Car and Car Impound need car hits. Car Chase needs loop shots and penalizes car hits. Progress survives a drain or timeout."
+              ]
+            },
+            {
+              "text": "When all six goals are complete, shoot the main scoop to start The Dude Abides.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ],
+              "modeNotes": [
+                "Stage 1: In single-ball play, shoot each lit character to open the Rug. Press Launch to bowl when useful. Shoot the Rug hole to advance through all five characters. Progress survives a drain.",
+                "Stage 2: Multiball. Score the five character jackpots, Rug, Car, Nihilist, White Russian, and Mark It Zero jackpots. At one ball, flipper response becomes progressively delayed. The final drain ends the wizard mode."
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Bowling skill shot",
+            "instruction": "Hold the right flipper during launch and make the lit Bowling shot.",
+            "sourceUrl": "https://cms.dutchpinball.com/uploads/TBL_Pinball_Rules_Flowchart_913244f3cf.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The character saucer can start Character Multiball before its jackpots are prepared.",
+            "response": "Delay the character saucer, or press Launch immediately to cancel the start when Let's Go Bowling or Mark It Zero is also lit there.",
+            "sourceUrl": "https://cms.dutchpinball.com/uploads/Dutch_Pinball_2021_The_Big_Lebowski_Pinball_Manual_1_12_f7ce352aaa.pdf"
+          }
+        ],
+        "checkBeforePlay": [],
+        "playfieldReferences": [
+          {
+            "term": "Bowling shot",
+            "label": "Bowling shot",
+            "description": "Hold the right flipper during launch and make the lit Bowling shot.",
+            "xPercent": 40.43,
+            "yPercent": 9.37,
+            "widthPercent": 11.52,
+            "heightPercent": 7.34,
+            "precision": "area"
+          },
+          {
+            "term": "character saucer",
+            "label": "Character saucer",
+            "description": "Saucer used to start and add to Character Multiball.",
+            "xPercent": 21.95,
+            "yPercent": 48.11,
+            "widthPercent": 10.95,
+            "heightPercent": 9.14,
+            "precision": "area"
+          },
+          {
+            "term": "Dude ramp",
+            "label": "Dude ramp",
+            "description": "Ramp used to lock balls and collect the normal Multiball Super Jackpot.",
+            "xPercent": 35.24,
+            "yPercent": 36.87,
+            "widthPercent": 14.22,
+            "heightPercent": 16.53,
+            "precision": "area"
+          },
+          {
+            "term": "Rug hole",
+            "label": "Rug hole",
+            "description": "Center feature used for Rug jackpots, modes, and wizard progress.",
+            "xPercent": 50.71,
+            "yPercent": 25.93,
+            "widthPercent": 11.3,
+            "heightPercent": 9.86,
+            "precision": "area"
+          },
+          {
+            "term": "upper scoop",
+            "label": "upper scoop",
+            "description": "Shoot the upper scoop.",
+            "xPercent": 54.95,
+            "yPercent": 7.86,
+            "widthPercent": 14.65,
+            "heightPercent": 10.89,
+            "precision": "area"
+          },
+          {
+            "term": "White Russian targets",
+            "label": "White Russian targets",
+            "description": "Right-side targets used to assign a character-shot multiplier.",
+            "xPercent": 67.71,
+            "yPercent": 59.15,
+            "widthPercent": 9.46,
+            "heightPercent": 11.91,
+            "precision": "area"
+          },
+          {
+            "term": "Mini-playfield scoop",
+            "label": "Mini-playfield scoop",
+            "description": "Mini-playfield scoop: Relights all jackpots; if all are already lit, it adds 25,000 to their values.",
+            "xPercent": 53.06,
+            "yPercent": 5.52,
+            "widthPercent": 9.46,
+            "heightPercent": 4.77,
+            "precision": "area"
+          }
+        ],
+        "simpleOverview": "The Big Lebowski builds Character Multiball from character names, Bowling balls, and White Russians. Shoot the mini-playfield ramp to light Bowling, then shoot its scoop or the character saucer to start it. Choose a repeatable character, complete its challenge for that Bowling ball, spell the character, raise its Jackpot, assign White Russian 2x to that shot, then start Character Multiball at the character saucer.",
+        "overview": "The Big Lebowski builds Character Multiball around prebuilt character Jackpots. Shoot the mini-playfield ramp to light Bowling, then shoot its scoop or the character saucer to start it. Choose a repeatable character and complete its challenge for that Bowling ball. Spell that character, raise its Jackpot, assign White Russian 2x to the same shot, spell more characters, then start Multiball at the character saucer.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hold the right flipper during launch and shoot the mini-playfield ramp to light Let's Go Bowling. Collect the Bowling ball for the character whose shot you can repeat reliably, raise that character's jackpot, put a White Russian on the same shot, spell more character names, then shoot the character saucer to start Character Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hold the right flipper during launch and shoot the mini-playfield ramp to light Let's Go Bowling.",
+            "title": "Start here"
+          },
+          {
+            "text": "Collect a Bowling ball for a repeatable character shot, repeat that shot to spell the character's name and raise its jackpot, then complete the four White Russian targets and shoot the same character shot.",
+            "title": "Prepare one jackpot",
+            "details": [
+              "Shoot the mini-playfield scoop or character saucer to start Let's Go Bowling. Use the flippers to choose the character whose shot you can repeat most reliably, press Start, then complete its bowling challenge to collect that character's Bowling ball.",
+              "Repeat that character shot until its name is spelled, then keep repeating it to raise its jackpot.",
+              "Hit all four White Russian targets, then shoot that same character shot. Repeat other character shots until more names are spelled."
+            ]
+          },
+          {
+            "text": "Shoot the character saucer to start Character Multiball, then keep relighting the prepared jackpot.",
+            "title": "Collect Character Multiball jackpots",
+            "details": [
+              "When several character names are spelled, shoot the character saucer to start Character Multiball. Every character lit before the start adds a ball and joins the starting-character jackpot multiplier.",
+              "Shoot each active character jackpot once.",
+              "When the set is complete, return to the prepared character shot after it relights; shoot the mini-playfield scoop to relight every jackpot sooner."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Multiball playfield multiplier",
+            "summary": "During any multiball, the mini-playfield ramp raises playfield scoring from 1.5x to 5x, then the multiplier falls quickly."
+          }
+        ]
+      }
+    }
+  ]
+}

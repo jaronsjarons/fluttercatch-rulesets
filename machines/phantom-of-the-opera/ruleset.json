@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "Grq1D",
+  "title": "Phantom of the Opera",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Factory Phantom instruction card",
+      "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Phantom_of_the_Opera_755-5008-01.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "GameFAQs Phantom rulesheet reference",
+        "url": "https://gamefaqs.gamespot.com/pinball/916493-phantom-of-the-opera/faqs/1412"
+      },
+      {
+        "label": "PinballCards Phantom card",
+        "url": "https://pinballcards.net/phantom-of-the-opera-1990"
+      },
+      {
+        "label": "Kineticist Phantom record",
+        "url": "https://www.kineticist.com/games/pinball/phantom-of-the-opera"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Test the Catwalk ramp and spell P-H-A-N-T-O-M. Repeat the lit ramp for Unlimited Millions. On the configured last ball, make two consecutive ramps for Double Score. Use Organ Multiball when the two-stage relock is reliable.",
+      "quickInfo": [
+        {
+          "name": "Unlimited Millions",
+          "summary": "Complete P-H-A-N-T-O-M to light the Catwalk for repeatable 1,000,000-point shots."
+        },
+        {
+          "name": "Organ Multiball",
+          "summary": "Lock and release one ball, relock both balls in the Organ, then plunge into three-ball jackpot play."
+        },
+        {
+          "name": "Catwalk during Multiball",
+          "summary": "Catwalk shots can complete P-H-A-N-T-O-M and start Unlimited Millions during Organ Multiball. On the configured final ball, two consecutive Catwalk ramps can also start Double Score while Multiball is running."
+        },
+        {
+          "name": "Raise Jackpot",
+          "summary": "Complete the top lanes to start a timed switch-value build for the progressive Organ Jackpot."
+        },
+        {
+          "name": "Double Score",
+          "summary": "On the configured last ball, two quick left ramps start full-playfield 2x scoring."
+        },
+        {
+          "name": "Magic Mirror",
+          "summary": "Mirror shots advance Bonus X to 5x, then light Extra Ball and Hold Bonus on later shots."
+        },
+        {
+          "name": "Ramp features during Multiball",
+          "summary": "P-H-A-N-T-O-M letters and Unlimited Millions can be completed during Multiball. On the configured last ball, the two-ramp Double Score sequence can also be started while Multiball is running."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the left ramp and its return on the first controlled ball. Stop the route after one center-feed reject."
+        },
+        {
+          "text": "Shoot lit P-H-A-N-T-O-M letters and use safe ramp repeats to complete the word."
+        },
+        {
+          "text": "Complete P-H-A-N-T-O-M, then repeat the lit Catwalk ramp for Unlimited Millions.",
+          "modeNotes": [
+            "Unlimited Millions: Each lit Catwalk shot scores 1,000,000."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "On the configured final ball, shoot the left ramp once to start the Double Score hurry-up and again before it expires.",
+          "modeNotes": [
+            "Double Score: The second quick ramp starts full-playfield 2x scoring for its displayed timer."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "If the Organ lock path is safe, open the Organ with the skill shot or three Organ targets and lock the first ball."
+        },
+        {
+          "text": "Plunge the served ball. A non-top switch releases the lock and starts Two-Ball Play.",
+          "modeNotes": [
+            "Two-Ball Play: Put both balls into the Organ within about ten seconds to prepare Three-Ball Play."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Relock both balls in the Organ. Plunge the served ball and make a non-top switch to release them into Three-Ball Play.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit an Organ target to open the collect for about five to seven seconds. Shoot inside the Organ for Jackpot.",
+          "modeNotes": [
+            "Organ Multiball: The progressive Jackpot starts at 100,000, can reach 2,000,000, and can be collected once per multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If one ball is already controlled during Organ Multiball, use the other for controlled Magic Mirror hits to advance Bonus X, then return to the Organ Jackpot sequence.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use the short grace period after one ball remains for a lit Organ Jackpot, then resume the ramp route."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Unlimited Millions ramp loop",
+        "when": "Recovery pivot: Use this when the Organ relock timing or target returns are unsafe.",
+        "steps": [
+          {
+            "text": "Complete P-H-A-N-T-O-M to light Unlimited Millions."
+          },
+          {
+            "text": "Shoot the lit Catwalk for Unlimited Millions.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat the Catwalk while its return remains controlled."
+          },
+          {
+            "text": "Stop after a reject or an uncontrolled return."
+          },
+          {
+            "text": "On the configured last ball, convert two quick ramps into Double Score.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Raise Jackpot",
+          "when": "When trailing, use this higher-ceiling route: use this before Organ Multiball when top-lane feeds are safe.",
+          "steps": [
+            {
+              "text": "Complete the top lanes to start the 20-second Raise Jackpot timer."
+            },
+            {
+              "text": "Score switches for 1,000 per switch."
+            },
+            {
+              "text": "Repeat the lanes to reset the timer and raise the switch value through 5,000."
+            },
+            {
+              "text": "Start Organ Multiball and collect the built progressive Jackpot."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Unlimited Millions and maximum Organ Jackpot",
+        "steps": [
+          {
+            "text": "Complete P-H-A-N-T-O-M and repeat Unlimited Millions."
+          },
+          {
+            "text": "Use Raise Jackpot to build the progressive value."
+          },
+          {
+            "text": "Start Organ Multiball and collect its single Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use Double Score on the configured final ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Phantom of the Opera has no separate mini-wizard or wizard mode."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Unlimited Millions",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Raise Jackpot",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Organ Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Two-Ball Play",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Three-Ball Play",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Double Score",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Magic Mirror",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [],
+      "cautions": [],
+      "simpleOverview": "In Phantom of the Opera, spelling P-H-A-N-T-O-M lights the Catwalk ramp for repeatable Unlimited Millions. Use the Organ route only when its lock, relock, and return are controlled.",
+      "overview": "In Phantom of the Opera, complete P-H-A-N-T-O-M and repeat the lit Catwalk ramp for Unlimited Millions, then use Double Score on the configured final ball when that ramp remains reliable. For Organ Multiball, open and lock at the Organ, release into two-ball play, relock both balls, then reopen the Organ and shoot inside for Jackpot.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

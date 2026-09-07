@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "GRb2y",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Motor Show links RALLY to Double Scoring, DRAGSTER to ball recovery, and MOTOCROSS or FORMULA 1 to two-ball Multiball. Build RALLY with its three targets and the right loop, then collect it; later right-loop awards advance through 2x, 3x, and 5x, with Extra Ball at 3x. Build DRAGSTER with its targets and the left loop; after collecting it, the video game begins when the ball drains, and a win returns that ball. For Multiball, complete either ramp objective, shoot its lit ramp to lock the ball and begin the video game, then win.",
+        "simpleOverview": "Build RALLY at its targets and the right loop to start Double Scoring, and build DRAGSTER at its targets and the left loop for a chance to win back the drained ball. To start Multiball, complete MOTOCROSS or FORMULA 1, shoot that objective's lit ramp, and win its video game.",
+        "summary": "Use RALLY for scoring and DRAGSTER for drain protection. Complete either ramp objective, lock at its lit ramp, and win the video game to start two-ball Multiball.",
+        "quickInfo": [
+          {
+            "name": "Time the Skill Shot",
+            "summary": "Plunge on green for 100,000; yellow scores 20,000."
+          },
+          {
+            "name": "Build RALLY",
+            "summary": "Use its targets and the right loop for Double Scoring."
+          },
+          {
+            "name": "Build DRAGSTER",
+            "summary": "Its video can return the ball after a drain."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Finish a ramp objective, lock at its ramp, and win the video."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Time the plunge for the green starting-line lamp to score 100,000; yellow scores 20,000.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete RALLY with its three-target bank and right-loop shots, then collect it to start Double Scoring; keep using the right loop to advance its multiplier awards.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete DRAGSTER with its three-target bank and left-loop shots; after collecting it, the video starts on the drain, and winning returns the ball to the plunger.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For Multiball, complete MOTOCROSS, shoot the lit left ramp to lock and play its video game, then win to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use FORMULA 1 for Multiball",
+            "when": "Use this when the right ramp is more repeatable than the left ramp.",
+            "steps": [
+              {
+                "text": "Complete FORMULA 1 with its target bank and right-ramp shots, then shoot the lit right ramp to lock and begin the video game.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Win the Formula 1 video game to start two-ball Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Complete the four-race set",
+          "steps": [
+            {
+              "text": "Collect DRAGSTER and RALLY before exposing the ball to repeated ramp attempts.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete and collect MOTOCROSS and FORMULA 1 to finish the four objectives and reach the operator-set Super Special award.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm the easy or hard setting for each video game, ball count, score-award thresholds, Extra Ball conversions, and the operator-set Super Special award.",
+          "Test the starting-line lamps, all four target banks, both loops and both ramps, the two video locks, monitor, flipper-button video controls, and ball releases."
+        ],
+        "techniques": [
+          {
+            "name": "Live catch",
+            "instruction": "Live-catch a controlled ramp or loop return before choosing the next objective shot.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/rulesheets/motorshow.html",
+            "techniqueSlug": "live-catch"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "RALLY",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "DRAGSTER",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "RALLY targets",
+            "label": "RALLY targets",
+            "description": "Right-side three-bank used with the right loop to complete RALLY.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right loop",
+            "label": "RALLY loop",
+            "description": "Right entrance to the shared loop; builds and collects RALLY and its multiplier awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "DRAGSTER targets",
+            "label": "DRAGSTER targets",
+            "description": "Left-side three-bank used with the left loop to complete DRAGSTER.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "MOTOCROSS ramp",
+            "description": "Left ramp that builds MOTOCROSS and becomes its video lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "FORMULA 1 ramp",
+            "description": "Right ramp that builds FORMULA 1 and becomes its video lock.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The ramp video games can be lost on hard settings.",
+            "response": "Check the setup before choosing a Multiball route; a loss returns the locked ball without starting Multiball.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/rulesheets/motorshow.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use RALLY for scoring and DRAGSTER for drain protection. Complete either ramp objective, lock at its lit ramp, and win the video game to start two-ball Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Time the plunge for the green starting-line lamp to score 100,000; yellow scores 20,000.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete RALLY with its three-target bank and right-loop shots, then collect it to start Double Scoring; keep using the right loop to advance its multiplier awards.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete DRAGSTER with its three-target bank and left-loop shots; after collecting it, the video starts on the drain, and winning returns the ball to the plunger.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For Multiball, complete MOTOCROSS, shoot the lit left ramp to lock and play its video game, then win to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Time the Skill Shot",
+            "summary": "Plunge on green for 100,000; yellow scores 20,000."
+          },
+          {
+            "name": "Build RALLY",
+            "summary": "Use its targets and the right loop for Double Scoring."
+          },
+          {
+            "name": "Build DRAGSTER",
+            "summary": "Its video can return the ball after a drain."
+          }
+        ]
+      }
+    }
+  ]
+}

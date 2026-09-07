@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "Grk62",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Hit the four-bank drop targets in their lit sequence to raise the scoring level; level 4 lights Special, and another ordered completion collects it before conversion. Complete the three top rollovers for Bonus X. The center loop rollunder starts timed Double Scoring, so use it immediately before the lit five-bank drops or another repeatable scoring shot.",
+        "simpleOverview": "Complete the four-bank drops in their lit sequence to raise the scoring level. Use the three top rollovers for Bonus X and the center loop rollunder for timed Double Scoring, then hit the lit five-bank drops while the timer runs.",
+        "summary": "Hit the four-bank drops in their lit sequence to raise the scoring level. Complete the top rollovers for Bonus X, then use the center loop rollunder to start timed Double Scoring before attacking the lit five-bank drops.",
+        "quickInfo": [
+          {
+            "name": "Follow the Lit Sequence",
+            "summary": "Complete the four-bank drops in order to raise the scoring level."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete the three top rollovers."
+          },
+          {
+            "name": "Start Double Scoring",
+            "summary": "Hit the center loop rollunder."
+          },
+          {
+            "name": "Advance Bonus",
+            "summary": "Lit five-bank drops advance twice; side rollovers advance once."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the four-bank drop targets in the lit sequence; each ordered completion advances the scoring level.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the three top rollovers to advance Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the center loop rollunder to start timed Double Scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Double Scoring, hit lit targets in the five-bank; each lit hit also advances the ROCK AND ROLL LIVES bonus twice.",
+            "kinds": [
+              "multiplier",
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Qualify Extra Ball",
+            "when": "Use this when ROCK AND ROLL LIVES is close to completion and Extra Ball is not converted.",
+            "steps": [
+              {
+                "text": "Complete the ROCK AND ROLL LIVES bonus sequence to light Extra Ball.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete the center loop rollunder and left-side rollover while the Extra Ball feature is lit to collect it.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Reach scoring level 4",
+          "steps": [
+            {
+              "text": "Keep the four-bank sequence intact instead of taking unlit drop targets out of order.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "At level 4, another ordered completion collects the lit Special before tournament conversion.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play, Extra Ball and Special conversions, scoring-level carry, Double Scoring duration, and Bonus X maximum.",
+          "Test all four ordered drops and sequence lamps, five-bank drops and lamps, top rollovers, center loop rollunder, left-side rollover, side lanes, and trough."
+        ],
+        "termStyles": [
+          {
+            "label": "Four-bank sequence",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Double Scoring",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "ROCK AND ROLL LIVES",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "four-bank drop targets",
+            "label": "Ordered four-bank drops",
+            "description": "The four drops that must be completed in the lit sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center loop rollunder",
+            "label": "Center loop rollunder",
+            "description": "The center loop switch that starts timed Double Scoring.",
+            "precision": "unverified"
+          },
+          {
+            "term": "five-bank drop targets",
+            "label": "Five-bank drops",
+            "description": "The targets whose lit members score and advance bonus at double value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top three rollovers",
+            "label": "Top three rollovers",
+            "description": "The upper lanes that advance Bonus X when completed.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The four-bank scoring route depends on target order, not only bank completion.",
+            "response": "Read the active sequence lamp before every drop-target shot; an uncontrolled hit can interrupt the planned completion.",
+            "sourceUrl": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Rock_instruction_cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Hit the four-bank drops in their lit sequence to raise the scoring level. Complete the top rollovers for Bonus X, then use the center loop rollunder to start timed Double Scoring before attacking the lit five-bank drops.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the four-bank drop targets in the lit sequence; each ordered completion advances the scoring level.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the three top rollovers to advance Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the center loop rollunder to start timed Double Scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Double Scoring, hit lit targets in the five-bank; each lit hit also advances the ROCK AND ROLL LIVES bonus twice.",
+            "kinds": [
+              "multiplier",
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Follow the Lit Sequence",
+            "summary": "Complete the four-bank drops in order to raise the scoring level."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete the three top rollovers."
+          },
+          {
+            "name": "Start Double Scoring",
+            "summary": "Hit the center loop rollunder."
+          }
+        ]
+      }
+    }
+  ]
+}

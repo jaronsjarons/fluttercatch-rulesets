@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "id": "G4OKd",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Enter a pinball detour, collect AMMO and Power Paddle, qualify an Extra Canoe when the hoop is safe, then complete EXIT and return to the river with stored resources.",
+        "quickInfo": [
+          {
+            "name": "Video Phase",
+            "summary": "Steer the canoe, spend Shots on hazards, collect Gold, and enter pinball detours from the river."
+          },
+          {
+            "name": "Pinball Phase",
+            "summary": "One physical ball earns resources until a drain or lit EXIT saucer returns play to the river."
+          },
+          {
+            "name": "Power Paddle",
+            "summary": "Complete POWER and shoot the saucer to store a timed stronger paddle for video play."
+          },
+          {
+            "name": "Extra Canoe",
+            "summary": "Roll over all eight center buttons, then shoot the lit saucer to add one canoe after the regular turn."
+          }
+        ],
+        "steps": [
+          {
+            "text": "In the Video Phase, use short paddle taps to steer toward a pinball entrance."
+          },
+          {
+            "text": "Enter the pinball entrance. Complete A-M-M-O once for five Shots.",
+            "modeNotes": [
+              "Pinball Phase: One physical ball earns resources until EXIT or a drain returns play to the river.",
+              "Shots: A-M-M-O stores ammunition; either fire button spends one Shot against a gator or spear-thrower."
+            ]
+          },
+          {
+            "text": "Complete the five P-O-W-E-R drops. Shoot the saucer while Power Paddle is lit.",
+            "modeNotes": [
+              "Power Paddle: POWER and the saucer store a timed stronger video paddle; press the center button when it flashes."
+            ]
+          },
+          {
+            "text": "During the river phase, use Power Paddle to pass green gators and gain speed. Save Shots for blocking hazards."
+          },
+          {
+            "text": "On another pinball visit, repeat the top-right hoop and collect all eight center rollover lights.",
+            "modeNotes": [
+              "Extra Canoe: Eight center rollover lights qualify it; the lit saucer stores one added canoe for play after the regular turn."
+            ]
+          },
+          {
+            "text": "Shoot the saucer while Extra Canoe is lit."
+          },
+          {
+            "text": "Complete E-X-I-T when you are ready to return to the river. Shoot the saucer while EXIT is lit.",
+            "modeNotes": [
+              "EXIT: Completing E-X-I-T lights the saucer; collection ends the current Pinball Phase and resumes the Video Phase."
+            ]
+          },
+          {
+            "text": "Use fire buttons only when a gator or spear-thrower blocks the route, and collect Gold before toll routes."
+          }
+        ],
+        "fallback": {
+          "title": "AMMO and EXIT",
+          "when": "Use this when POWER drops or the hoop return are unsafe.",
+          "steps": [
+            {
+              "text": "Complete A-M-M-O once for five Shots."
+            },
+            {
+              "text": "Complete E-X-I-T."
+            },
+            {
+              "text": "Shoot the saucer while EXIT is lit."
+            },
+            {
+              "text": "Conserve Shots until a hazard blocks the river route."
+            },
+            {
+              "text": "Enter another pinball detour before ammunition reaches zero."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Extra Canoe loop",
+            "when": "Use this when the top-right hoop returns safely to a flipper.",
+            "steps": [
+              {
+                "text": "Shoot the hoop and read the flashing center rollover."
+              },
+              {
+                "text": "Roll through the flashing button and repeat the hoop."
+              },
+              {
+                "text": "Roll over all eight center buttons."
+              },
+              {
+                "text": "Shoot the lit Extra Canoe saucer."
+              },
+              {
+                "text": "Complete EXIT and return to video play."
+              }
+            ]
+          },
+          {
+            "title": "Power Paddle river route",
+            "when": "Use this when POWER is safer than AMMO and the video controls feel predictable.",
+            "steps": [
+              {
+                "text": "Complete P-O-W-E-R and shoot the lit Power Paddle saucer."
+              },
+              {
+                "text": "Complete E-X-I-T and shoot the lit EXIT saucer."
+              },
+              {
+                "text": "Press the center button when Power Paddle flashes."
+              },
+              {
+                "text": "Use the added thrust to pass green gators and save Shots for later hazards."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "More canoes with stored river resources",
+          "steps": [
+            {
+              "text": "Complete A-M-M-O for Shots."
+            },
+            {
+              "text": "Complete P-O-W-E-R and collect Power Paddle."
+            },
+            {
+              "text": "Use the hoop to light all eight center rollovers."
+            },
+            {
+              "text": "Collect Extra Canoe at the saucer."
+            },
+            {
+              "text": "Complete EXIT and return to the river."
+            },
+            {
+              "text": "Use Shots, Gold, and Power Paddle to protect the current canoe."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Video Phase",
+            "tone": "teal",
+            "kind": "item"
+          },
+          {
+            "label": "Pinball Phase",
+            "tone": "teal",
+            "kind": "item"
+          },
+          {
+            "label": "Shots",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Gold",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Power Paddle",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Canoe",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "EXIT",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-M-M-O",
+            "label": "AMMO standups",
+            "description": "Five standups used to store Shots for the Video Phase.",
+            "precision": "unverified"
+          },
+          {
+            "term": "P-O-W-E-R",
+            "label": "POWER drops",
+            "description": "Five drops that light Power Paddle at the saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "saucer",
+            "label": "Feature saucer",
+            "description": "Central saucer used to collect Power Paddle, Extra Canoe, and EXIT when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-right hoop",
+            "label": "Extra Canoe hoop",
+            "description": "Upper-right hoop used to advance the eight center rollover lights.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center rollover",
+            "label": "Extra Canoe rollovers",
+            "description": "Eight center buttons whose completion lights Extra Canoe.",
+            "precision": "unverified"
+          },
+          {
+            "term": "E-X-I-T",
+            "label": "EXIT targets",
+            "description": "Four targets used to light the saucer for a return to video play.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [],
+        "cautions": [
+          {
+            "issue": "Green gators can bite a normal paddle.",
+            "response": "Use Power Paddle and point it toward the gator while the feature is active.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/granny-and-the-gators-bally-1984-vp8.2942/"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm switches 6, 8, 15, and 24 for hoop qualification, feature memory, Extra Canoe, and award behavior.",
+          "Dynamite's effect and input are unconfirmed, so leave it out of the scoring plan.",
+          "Test all buttons, video steering, AMMO, POWER, hoop, eight rollovers, EXIT, and saucer priority before choosing a resource route."
+        ],
+        "simpleOverview": "Granny and the Gators alternates video river travel with short pinball detours that supply Shots, Power Paddle, and extra canoes. Enter pinball, spell A-M-M-O and P-O-W-E-R, use the hoop to collect all eight center rollovers, then shoot the lit saucer for Extra Canoe before completing E-X-I-T.",
+        "overview": "Granny and the Gators alternates video river travel with short pinball detours that supply Shots, Power Paddle, and extra canoes. Complete A-M-M-O for Shots, complete P-O-W-E-R and collect Power Paddle at the saucer, then use repeated hoop shots to roll over all eight center buttons and collect Extra Canoe. Complete E-X-I-T when the needed resources are stored, then spend Shots only on blocking hazards during the river.",
+        "machineSetup": [
+          "Confirm switches 6, 8, 15, and 24 for hoop qualification, feature memory, Extra Canoe, and award behavior.",
+          "Dynamite's effect and input are unconfirmed, so leave it out of the scoring plan.",
+          "Test all buttons, video steering, AMMO, POWER, hoop, eight rollovers, EXIT, and saucer priority before choosing a resource route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Enter a pinball detour, collect AMMO and Power Paddle, qualify an Extra Canoe when the hoop is safe, then complete EXIT and return to the river with stored resources.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "In the Video Phase, use short paddle taps to steer toward a pinball entrance."
+          },
+          {
+            "text": "Enter the pinball entrance. Complete A-M-M-O once for five Shots.",
+            "details": [
+              "Pinball Phase: One physical ball earns resources until EXIT or a drain returns play to the river.",
+              "Shots: A-M-M-O stores ammunition; either fire button spends one Shot against a gator or spear-thrower."
+            ]
+          },
+          {
+            "text": "Complete the five P-O-W-E-R drops. Shoot the saucer while Power Paddle is lit.",
+            "details": [
+              "Power Paddle: POWER and the saucer store a timed stronger video paddle; press the center button when it flashes."
+            ]
+          },
+          {
+            "text": "During the river phase, use Power Paddle to pass green gators and gain speed. Save Shots for blocking hazards."
+          },
+          {
+            "text": "On another pinball visit, repeat the top-right hoop and collect all eight center rollover lights.",
+            "details": [
+              "Extra Canoe: Eight center rollover lights qualify it; the lit saucer stores one added canoe for play after the regular turn."
+            ]
+          },
+          {
+            "text": "Shoot the saucer while Extra Canoe is lit."
+          },
+          {
+            "text": "Complete E-X-I-T when you are ready to return to the river. Shoot the saucer while EXIT is lit.",
+            "details": [
+              "EXIT: Completing E-X-I-T lights the saucer; collection ends the current Pinball Phase and resumes the Video Phase."
+            ]
+          },
+          {
+            "text": "Use fire buttons only when a gator or spear-thrower blocks the route, and collect Gold before toll routes."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Video Phase",
+            "summary": "Steer the canoe, spend Shots on hazards, collect Gold, and enter pinball detours from the river."
+          },
+          {
+            "name": "Pinball Phase",
+            "summary": "One physical ball earns resources until a drain or lit EXIT saucer returns play to the river."
+          },
+          {
+            "name": "Power Paddle",
+            "summary": "Complete POWER and shoot the saucer to store a timed stronger paddle for video play."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: AMMO and EXIT",
+          "when": "Use this when POWER drops or the hoop return are unsafe.",
+          "steps": [
+            {
+              "text": "Complete A-M-M-O once for five Shots."
+            },
+            {
+              "text": "Complete E-X-I-T."
+            },
+            {
+              "text": "Shoot the saucer while EXIT is lit."
+            },
+            {
+              "text": "Conserve Shots until a hazard blocks the river route."
+            },
+            {
+              "text": "Enter another pinball detour before ammunition reaches zero."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

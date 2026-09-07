@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwl7",
+  "title": "Spy Hunter",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Spy Hunter factory instruction cards",
+      "url": "https://pinballrebel.com/pinball/cards/Bally/Bally_Spy_Hunter_instruction_cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Spy Hunter competitive rules",
+        "url": "https://rules.silverballmania.com/rules/GRwl7-MJ45o"
+      },
+      {
+        "label": "Spy Hunter machine and playfield overview",
+        "url": "https://www.kineticist.com/games/pinball/spy-hunter"
+      },
+      {
+        "label": "Spy Hunter manual verification and rule recreation",
+        "url": "https://pinballnirvana.com/forums/resources/spy-hunter-bally-1984-vp8.3193/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Time the plunge for the cycling 50,000 skill-shot rollover, which qualifies the right saucer. Otherwise complete S-H-O-T to qualify it. Backhand the lit saucer from the right flipper, control its kickout, and repeat as its award rises from 25,000 toward 250,000. Use the upper playfield only while the ball is already there; four lit Agent targets qualify the captive ball and seven score the larger set award.",
+      "simpleOverview": "Time the plunge for 50,000 or complete S-H-O-T to qualify the right saucer. Backhand the lit saucer from the right flipper, control the kickout, and repeat as its value rises toward 250,000. Keep a naturally fed ball in the upper playfield, but do not force a return there.",
+      "summary": "Qualify the right saucer with the 50,000 skill shot or S-H-O-T, then backhand and repeat it from the right flipper as its value climbs toward 250,000. Use the upper Agent targets and captive ball only while the ball is already there.",
+      "quickInfo": [
+        {
+          "name": "Qualify the Saucer",
+          "summary": "Take the 50,000 skill shot or complete S-H-O-T."
+        },
+        {
+          "name": "Repeat the Right Saucer",
+          "summary": "Its award rises from 25,000 toward 250,000."
+        },
+        {
+          "name": "Use the Right Flipper",
+          "summary": "Backhand the saucer and control its kickout."
+        },
+        {
+          "name": "Stay Up Top",
+          "summary": "Use Agent targets and the captive ball only on natural upper feeds."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Time the plunge for the cycling 50,000 skill-shot rollover; that qualifies the right saucer.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "If the skill shot misses, complete S-H-O-T to qualify the saucer and light its spinner for one pass.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Backhand the lit right saucer from the right flipper, control its kickout, and repeat it as the award climbs from 25,000 toward 250,000.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When the ball reaches the upper playfield, hit at least four Agent targets to light the captive ball; use the captive ball for 2x, then 3x playfield scoring before the feed leaves the area.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build end-of-ball bonus",
+          "when": "Use this while the ball is already in the upper-left warehouse and the saucer repeat is not available.",
+          "steps": [
+            {
+              "text": "Use lane change to collect different warehouse rollover lamps; each adds 10,000 to base bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Let incidental four-drop-bank completions raise Bonus X and reopen the lower-left gate; do not force their rebounds.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Protect the repeatable saucer feed",
+        "steps": [
+          {
+            "text": "Learn the first saucer kickout before the award is large.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Continue the backhand repeat only while the right flipper receives a clean, controllable return.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm skill-shot timing, saucer award ladder, Extra Ball and Special conversions, Agent target count, captive-ball 2x and 3x behavior, and Bonus X maximum.",
+        "Test the shooter-lane rollover and lamps, S-H-O-T targets, right saucer and kickout, spinner, all seven upper Agent targets, captive ball, warehouse rollovers and lane change, four-drop bank, lower-left gate, and trough."
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the qualified right saucer from a controlled right-flipper cradle, then read the kickout before repeating.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRwl7-MJ45o",
+          "techniqueSlug": "backhand"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Right saucer",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Agent targets",
+          "tone": "forest",
+          "kind": "mode"
+        },
+        {
+          "label": "2x and 3x playfield",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The left side and the upper playfield can lose the ball through several gaps at once.",
+          "response": "Do not force a return to the upper area; stay on the saucer repeat until its kickout stops being controllable.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRwl7-MJ45o"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

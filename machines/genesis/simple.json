@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr2wz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the left ramp for A-R-M-S; its first completion lights a ramp lock. Lock and plunge to start Genesis Multiball, use the bumpers and protected center drops, then finish all four Body Parts and hit Lifeforce to carry Playfield X into the next Robot Cycle.",
+        "overview": "Genesis uses the first completed Body Part in each Robot Cycle to raise Playfield X and light a ramp lock. Start with A-R-M-S at the left ramp, take the flashing lock, then use Multiball to feed the bumpers and finish center drops. Complete A-R-M-S, L-E-G-S, B-R-A-I-N, and B-O-D-Y, then hit the Lifeforce vari-target hard to preserve the multiplier into the next cycle.",
+        "simpleOverview": "Genesis uses the first completed Body Part in each Robot Cycle to raise Playfield X and light a ramp lock. Complete A-R-M-S at the left ramp, take the flashing ramp lock, plunge to start two-ball Multiball, then complete all four Body Parts and hit Lifeforce to keep the multiplier for the next cycle.",
+        "quickInfo": [
+          {
+            "name": "Body Parts",
+            "summary": "The left ramp adds ARMS, the right ramp adds LEGS, the lit orbit adds BRAIN, and unlighting all three top lanes adds one BODY letter."
+          },
+          {
+            "name": "Spot Letter",
+            "summary": "An inlane lights the vari-target for ten seconds. A strong hit spots the Body Part closest to completion; if all four parts are tied, it spots all four."
+          },
+          {
+            "name": "1-2-3 drops",
+            "summary": "Hit the center drops from left to right. Switch 8 ON spots one letter in every Body Part; switch 8 OFF spots the most-complete Body Part."
+          },
+          {
+            "name": "Playfield Multiplier",
+            "summary": "Each first Body Part completion in a Robot Cycle adds 1x, to 16x. Genesis Multiball doubles it temporarily, to 32x."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the left ramp until ARMS is complete; Noah Crable starts there because its feed is usually calmer than the right-ramp bumper feed.",
+            "modeNotes": [
+              "ARMS: Only the left ramp adds these letters."
+            ]
+          },
+          {
+            "text": "The first ARMS completion in the current Robot Cycle adds 1x and lights one ramp for lock. If the completing shot did not lock the ball, shoot the flashing ramp.",
+            "modeNotes": [
+              "Ramp lock: The game chooses the left or right ramp. A ramp completion can lock the ball immediately when that same ramp is flashing.",
+              "Duplicate Body Part: A repeated ARMS, LEGS, BRAIN, or BODY completion scores 50,000 but does not add 1x."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Plunge the served ball to start two-ball Genesis Multiball. Two-ball play doubles the current Playfield Multiplier.",
+            "modeNotes": [
+              "Genesis Multiball: Normal Body Part progress continues, but another lock cannot light until single-ball play resumes."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Genesis Multiball, shoot any ramp or orbit to feed the pop bumpers. Use the second ball to hit the center drops from left to right.",
+            "modeNotes": [
+              "Multi-Multiplier: There is no separate Jackpot; the main value is doubled playfield scoring.",
+              "1-2-3 drops: Switch 8 controls whether completing them spots every Body Part or the most-complete part."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After Multiball, shoot the right ramp for LEGS, the lit orbit for BRAIN, and unlight all three top lanes for each BODY letter.",
+            "modeNotes": [
+              "LEGS: Only the right ramp adds these letters.",
+              "BRAIN: Slingshot hits move the lit BRAIN orbit between the left and right sides.",
+              "BODY: Use the right flipper to change the top lanes; unlighting all three adds one letter."
+            ]
+          },
+          {
+            "text": "When all four Body Parts are complete, hit the Lifeforce vari-target hard. It resets the Body Parts, keeps the Playfield Multiplier, and starts the next Robot Cycle.",
+            "modeNotes": [
+              "Lifeforce: A strong hit collects the current letter bonus and reveals the completed robot."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the new-part locks and Genesis Multiballs toward 16x. Genesis Multiball temporarily doubles 16x to 32x.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "16x and repeatable Robot Cycles",
+          "steps": [
+            {
+              "text": "Shoot the left ramp, right ramp, lit orbit, or top lanes until a new Body Part is complete; that first completion adds 1x and lights a ramp lock.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Shoot the flashing ramp and plunge the served ball to start Genesis Multiball with doubled playfield scoring.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Finish ARMS, LEGS, BRAIN, and BODY, then hit the flashing Lifeforce vari-target hard to keep the multiplier for the next Robot Cycle."
+            },
+            {
+              "text": "Repeat the same new-part, lock, and Lifeforce sequence toward 16x and temporary 32x two-ball scoring.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Genesis Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Playfield Multiplier",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Multi-Multiplier",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Body Part",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Robot Cycle",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Spot Letter",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lifeforce",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "Left ARMS ramp",
+            "description": "Left ramp that adds ARMS letters and can serve as a lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Right LEGS ramp",
+            "description": "Right ramp that adds LEGS letters and can serve as a lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit orbit",
+            "label": "Lit BRAIN orbit",
+            "description": "Whichever orbit is lit to add BRAIN letters.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top lanes",
+            "label": "BODY top lanes",
+            "description": "Top lanes used to complete the BODY Body Part.",
+            "precision": "unverified"
+          },
+          {
+            "term": "vari-target",
+            "label": "Vari-target",
+            "description": "Center variable-depth target used for Spot Letter and Lifeforce collects.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-2-3 bank",
+            "label": "1-2-3 bank",
+            "description": "Center drop-target bank whose completion spots Body Part letters according to switch 8.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Left-ramp first",
+            "instruction": "Use the left ramp for early ARMS letters when its return is calmer than the right-ramp bumper feed.",
+            "sourceUrl": "https://www.kineticist.com/news/genesis-pinball-tutorial"
+          },
+          {
+            "name": "Shatz pass",
+            "instruction": "Shatz pass through an inlane to light Spot Letter; test low force first.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://www.kineticist.com/news/genesis-pinball-tutorial"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce a fast right-orbit return to the left flipper, or hold the right flipper up for a slow return.",
+            "techniqueSlug": "dead-bounce",
+            "sourceUrl": "https://www.kineticist.com/news/genesis-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Every plunge and both ramps can feed the pop bumpers.",
+            "response": "Watch both bumper exits before you choose a repeatable shot.",
+            "sourceUrl": "https://www.kineticist.com/news/genesis-pinball-tutorial"
+          },
+          {
+            "issue": "The center drop targets can reject toward the drain.",
+            "response": "Use them during Genesis Multiball while another ball remains active.",
+            "sourceUrl": "https://www.kineticist.com/news/genesis-pinball-tutorial"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm switch 8: ON spots one letter in every Body Part; OFF advances only the most-complete part.",
+          "Check switches 31 and 32 for Extra Ball and Special requirements before assigning tournament value to those awards.",
+          "Test lane change, both ramp returns, both pop-bumper exits, and full vari-target registration before choosing a route."
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At INDISC 2023, Germain Mariolle completed different Body Parts to reach 8x. Keith Elwin attacked the dangerous 1-2-3 drops during Genesis Multiball, while a second ball protected the attempt.",
+            "At the UK Open 2025, finalists completed Body Parts for permanent multipliers, started Genesis Multiball at the flashing ramp, and attacked the dangerous 1-2-3 bank during Multiball."
+          ]
+        },
+        "machineSetup": [
+          "Confirm switch 8: ON spots one letter in every Body Part; OFF advances only the most-complete part.",
+          "Check switches 31 and 32 for Extra Ball and Special requirements before assigning tournament value to those awards.",
+          "Test lane change, both ramp returns, both pop-bumper exits, and full vari-target registration before choosing a route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete A-R-M-S at the left ramp for a lock, start Genesis Multiball, then finish the four Body Parts and hit Lifeforce to carry the multiplier forward.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Genesis Multiball",
+            "text": "Shoot the left ramp until A-R-M-S is complete. Its first completion adds 1x and lights a ramp lock; shoot the flashing ramp if the ball did not lock, then plunge to start Genesis Multiball.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Use the doubled scoring",
+            "text": "During Multiball, shoot ramps or orbits into the pop bumpers and use the second ball to hit the center drops from left to right.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Finish the Robot Cycle",
+            "text": "Shoot the right ramp for L-E-G-S, the lit orbit for B-R-A-I-N, and unlight all three top lanes for each B-O-D-Y letter. Hit Lifeforce when all four parts are complete."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Body Parts",
+            "summary": "The left ramp adds ARMS, the right ramp adds LEGS, the lit orbit adds BRAIN, and unlighting all three top lanes adds one BODY letter."
+          },
+          {
+            "name": "Spot Letter",
+            "summary": "An inlane lights the vari-target for ten seconds. A strong hit spots the Body Part closest to completion; if all four parts are tied, it spots all four."
+          },
+          {
+            "name": "1-2-3 drops",
+            "summary": "Hit the center drops from left to right. Switch 8 ON spots one letter in every Body Part; switch 8 OFF spots the most-complete Body Part."
+          }
+        ],
+        "warning": {
+          "title": "The center drop targets can reject toward the drain.",
+          "text": "Use them during Genesis Multiball while another ball remains active."
+        }
+      }
+    }
+  ]
+}

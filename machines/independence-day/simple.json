@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "G4doQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Repeat the safer ramp to start Red Alert, alternate controlled ramps during its 30-second scoring window, and pivot to Area 51 Multiball when the lower bank and upper orbit are safer.",
+        "quickInfo": [
+          {
+            "name": "Red Alert",
+            "summary": "Three combined left- or right-ramp shots start 30 seconds in which either ramp scores 50M."
+          },
+          {
+            "name": "Hurry-Up",
+            "summary": "Complete the upper three-bank, build the value in the bumpers, then collect and repeat it at the left orbit."
+          },
+          {
+            "name": "Alien Scan",
+            "summary": "Complete the lower Area 51 three-bank, then hit it again for a rotating award that can light Area 51 Multiball."
+          },
+          {
+            "name": "Area 51 Multiball",
+            "summary": "Start at the upper orbit, repeat it for jackpots, and hit each green Area 51 target once for an add-a-ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the opening save to test both ramps, the upper orbit, left orbit, and returns from both three-banks."
+          },
+          {
+            "text": "Repeat whichever ramp returns predictably until the third combined ramp shot starts Red Alert.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Red Alert, alternate only the ramp shots that can be caught or safely looped.",
+            "modeNotes": [
+              "Red Alert scoring: Either ramp scores 50M for 30 seconds; do not spend the timer forcing a rejecting side."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "If the ball reaches the bumpers safely, finish the upper three-bank and build the Hurry-Up before collecting it at the left orbit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the lower three-bank from controlled rebounds, then collect Alien Scan and accept Light Area 51 Multiball when it appears.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Area 51 Multiball at the upper orbit, repeat it for jackpots, and take each green target once for an add-a-ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Area 51 loop",
+          "when": "Use this when either ramp rejects or the lower target bank is already close.",
+          "steps": [
+            {
+              "text": "Finish the lower three-bank from controlled shots."
+            },
+            {
+              "text": "Collect Alien Scan until Area 51 Multiball is lit.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the upper orbit to start multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the orbit jackpot without forcing the right-orbit value build.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Hurry-Up position play",
+            "when": "Use this when the top bank and left orbit are safer than both ramps.",
+            "steps": [
+              {
+                "text": "Complete the upper three-bank."
+              },
+              {
+                "text": "Use bumper time to build the countdown."
+              },
+              {
+                "text": "Shoot the left orbit to freeze the value."
+              },
+              {
+                "text": "Repeat the left orbit while the mode remains active.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable mode cycles",
+          "steps": [
+            {
+              "text": "Finish Red Alert without sacrificing control.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Rebuild the ramp count."
+            },
+            {
+              "text": "Use Hurry-Up or Area 51 between Red Alert cycles."
+            },
+            {
+              "text": "Return to Red Alert whenever both ramps remain trustworthy.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Red Alert",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Hurry-Up",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Alien Scan",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Area 51 Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "context": "left ramp",
+            "label": "Red Alert ramp",
+            "description": "Left ramp used to qualify and score Red Alert.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "right ramp",
+            "label": "Red Alert ramp",
+            "description": "Right ramp used to qualify and score Red Alert.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left orbit",
+            "context": "left orbit",
+            "label": "Hurry-Up collect",
+            "description": "Left orbit collects and repeats Hurry-Up.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper orbit",
+            "context": "upper orbit",
+            "label": "Area 51 shot",
+            "description": "Upper-flipper loop that starts and scores Area 51 Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper three-bank",
+            "context": "upper three-bank",
+            "label": "F-18 targets",
+            "description": "Three upper targets that qualify Hurry-Up.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower three-bank",
+            "context": "lower three-bank",
+            "label": "Area 51 targets",
+            "description": "Three lower-left targets that qualify Alien Scan and add balls during Area 51 Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Safer-ramp repeat",
+            "instruction": "Use the ramp whose return reaches a catch or a repeatable opposite-flipper shot.",
+            "sourceUrl": "https://www.pinball.org/rules/independenceday.html"
+          },
+          {
+            "name": "Orbit cashout",
+            "instruction": "Freeze the built Hurry-Up before trying to repeat the left orbit.",
+            "sourceUrl": "https://www.pinball.org/rules/independenceday.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Red Alert and Area 51 end without a useful grace period.",
+            "response": "Do not start a risky transfer when only a moment remains; regain control for the next qualification.",
+            "sourceUrl": "https://www.pinball.org/rules/independenceday.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm installed ROM, League or Wizard Mode, ball save, Red Alert and Hurry-Up timers, Team Play, and Extra Ball conversion.",
+          "Confirm Alien Scan award order, Area 51 jackpot and add-a-ball settings, and whether modes pause during multiball.",
+          "Test both ramps, both three-banks, upper and left orbits, lock, upper flipper, bumpers, and every eject or return."
+        ],
+        "simpleOverview": "Independence Day starts Red Alert after three ramp shots, lights a Hurry-Up at the upper bank, and builds Area 51 Multiball at the lower bank. Repeat the safer ramp for Red Alert; when its return deteriorates, pivot to the bank whose next collect is controlled and use Area 51's extra balls for its upper-orbit Jackpots.",
+        "overview": "Red Alert, the upper-bank Hurry-Up, and Area 51 Multiball advance independently in Independence Day. Favor repeatable ramps into Red Alert, use the upper bank and bumpers for Hurry-Up when that feed is safe, or finish the lower bank for Alien Scan and Area 51 Multiball. Choose by return quality and resume the strongest prepared route after each timed window.",
+        "machineSetup": [
+          "Confirm installed ROM, League or Wizard Mode, ball save, Red Alert and Hurry-Up timers, Team Play, and Extra Ball conversion.",
+          "Confirm Alien Scan award order, Area 51 jackpot and add-a-ball settings, and whether modes pause during multiball.",
+          "Test both ramps, both three-banks, upper and left orbits, lock, upper flipper, bumpers, and every eject or return."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the safer ramp to start Red Alert, alternate controlled ramps during its 30-second scoring window, and pivot to Area 51 Multiball when the lower bank and upper orbit are safer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the opening save to test both ramps, the upper orbit, left orbit, and returns from both three-banks."
+          },
+          {
+            "text": "Repeat whichever ramp returns predictably until the third combined ramp shot starts Red Alert.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Red Alert, alternate only the ramp shots that can be caught or safely looped.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Red Alert scoring: Either ramp scores 50M for 30 seconds; do not spend the timer forcing a rejecting side."
+            ]
+          },
+          {
+            "text": "If the ball reaches the bumpers safely, finish the upper three-bank and build the Hurry-Up before collecting it at the left orbit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the lower three-bank from controlled rebounds, then collect Alien Scan and accept Light Area 51 Multiball when it appears.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Area 51 Multiball at the upper orbit, repeat it for jackpots, and take each green target once for an add-a-ball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Red Alert",
+            "summary": "Three combined left- or right-ramp shots start 30 seconds in which either ramp scores 50M."
+          },
+          {
+            "name": "Hurry-Up",
+            "summary": "Complete the upper three-bank, build the value in the bumpers, then collect and repeat it at the left orbit."
+          },
+          {
+            "name": "Alien Scan",
+            "summary": "Complete the lower Area 51 three-bank, then hit it again for a rotating award that can light Area 51 Multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Area 51 loop",
+          "when": "Use this when either ramp rejects or the lower target bank is already close.",
+          "steps": [
+            {
+              "text": "Finish the lower three-bank from controlled shots."
+            },
+            {
+              "text": "Collect Alien Scan until Area 51 Multiball is lit.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the upper orbit to start multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the orbit jackpot without forcing the right-orbit value build.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

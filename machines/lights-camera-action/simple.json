@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "GrlZe",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete the left Lock target sequence, then shoot the top-right hole to capture the first ball. On the next plunge, send the served ball into that same top-right hole to lock it and start three-ball Multiball; if the plunge misses, two-ball Multiball begins instead. The five movie Scenes build toward Select-a-Feature at the same hole.",
+        "simpleOverview": "Complete the left Lock targets and shoot the top-right hole to capture a ball. Plunge the next ball into that same hole for three-ball Multiball; a missed plunge starts two-ball Multiball. Start Gunfight at the flashing top-left hole, or complete all five Scenes and shoot the top-right hole for Select-a-Feature.",
+        "summary": "Complete the left Lock targets and lock one ball at the top-right hole. Plunge the next ball into that hole for three-ball Multiball; a miss starts two-ball play. Start Gunfight at the flashing top-left hole and finish all five Scenes for Select-a-Feature.",
+        "quickInfo": [
+          {
+            "name": "Light Lock",
+            "summary": "Complete the left Lock target sequence."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Lock at the top-right hole, then plunge the next ball into the same hole for three balls; a miss gives two."
+          },
+          {
+            "name": "Start Gunfight",
+            "summary": "Shoot the flashing top-left hole, then press the right flipper on DRAW."
+          },
+          {
+            "name": "Start Select-a-Feature",
+            "summary": "Complete all five Scenes, then shoot the top-right hole."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the left Lock target sequence to light Lock at the top-right hole.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the top-right hole to capture the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "On the next plunge, send the served ball into the top-right hole to lock it and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the plunge misses the hole, continue with the two-ball Multiball that starts instead.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Start Gunfight",
+            "when": "Use this when the top-left hole is flashing for Gunfight.",
+            "steps": [
+              {
+                "text": "Shoot the top-left hole to start Gunfight.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Wait for DRAW, then press the right flipper button to fire.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Complete the five Scenes",
+            "when": "Use these routes to reach Select-a-Feature.",
+            "steps": [
+              {
+                "text": "For Stair Scene, light SPIN, shoot the spinner, then use the top-right hole to transfer each lit card; collect all five cards.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "For Jackpot Scene, clear the center drop bank, then advance the exposed center target to Collect Jackpot.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "For Stunt Scene, clear the right drop bank, hit the top-left target, then finish the flashing targets.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "After all five Scenes, shoot the top-right hole; cycle with the right flipper and select with the left.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish the movie",
+          "steps": [
+            {
+              "text": "Use the Scene inserts to see which movie sequences remain.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Prioritize the physical task for an unfinished Scene rather than repeating a completed one.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Once all five are complete, return to the top-right hole for Select-a-Feature.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Multiball, Extra Ball, Special, and timed-feature settings before competitive play.",
+          "Test the left Lock targets, top-right capture hole, shooter-lane feed, top-left Gunfight hole, both drop banks, spinner, card inserts, and flipper-button selections."
+        ],
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Gunfight",
+            "tone": "oxblood",
+            "kind": "mode"
+          },
+          {
+            "label": "Scenes",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Select-a-Feature",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left Lock targets",
+            "label": "Lock target sequence",
+            "description": "The left-side target sequence that lights the first lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-right hole",
+            "label": "Top-right capture hole",
+            "description": "The ball lock, three-ball plunge target, card transfer, and Select-a-Feature shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-left hole",
+            "label": "Top-left Gunfight hole",
+            "description": "The hole that starts Gunfight while flashing.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drop bank",
+            "label": "Jackpot Scene drops",
+            "description": "The center bank that exposes the Jackpot Scene target.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right drop bank",
+            "label": "Stunt Scene drops",
+            "description": "The right bank used to begin the Stunt Scene sequence.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The second plunge determines whether Multiball begins with three balls or two.",
+            "response": "Aim for the top-right hole on the plunge; if it misses, switch immediately to controlled two-ball play.",
+            "sourceUrl": "https://gottlieb2.manuel.free.fr/Ligths_Camera.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Complete the left Lock targets and lock one ball at the top-right hole. Plunge the next ball into that hole for three-ball Multiball; a miss starts two-ball play. Start Gunfight at the flashing top-left hole and finish all five Scenes for Select-a-Feature.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the left Lock target sequence to light Lock at the top-right hole.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the top-right hole to capture the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "On the next plunge, send the served ball into the top-right hole to lock it and start three-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the plunge misses the hole, continue with the two-ball Multiball that starts instead.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Lock",
+            "summary": "Complete the left Lock target sequence."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Lock at the top-right hole, then plunge the next ball into the same hole for three balls; a miss gives two."
+          },
+          {
+            "name": "Start Gunfight",
+            "summary": "Shoot the flashing top-left hole, then press the right flipper on DRAW."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "GR91N",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot TX once to lower its drop and again to lock; repeat for three locks. Leave R-E-D one captive-ball hit short, start Multiball, then finish R-E-D so the mode runs with it. Use ramp sequences for Quick Fire and take Final Battle requirements when safely available.",
+        "steps": [
+          {
+            "text": "Time the gun launch for Bonus Multiplier when you need the longer opening ball save. Take Lock or RPG only when their immediate value is better.",
+            "modeNotes": [
+              "The launch award changes by ball. The multiplier selection is the opening choice that adds a useful ball-save window on factory settings."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the TX lock lane once to lower its drop, then again to lock the ball. Repeat until three balls are locked.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the captive ball three times to spell R-E-D, but leave the final hit until Multiball is ready.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Multiball at the third TX lock. Then finish R-E-D so RED runs on top of the active multiball.",
+            "modeNotes": [
+              "RED can stack onto an active mode or multiball, but it blocks new mode starts while running. Start RED last."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the stack, complete indicated ramp sequences. Four consecutive called ramps trigger Quick Fire; use the gun when prompted.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Multiball Super Jackpot, Escape award, RPG, Assault, Max Escape, and Payback Time opportunities when safe. They are separate qualifications for Final Battle."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Ramps, Security Levels, and Command Centre",
+          "when": "Recovery pivot: Use this when the TX lock lane rejects toward the center.",
+          "steps": [
+            {
+              "text": "Shoot the A and B ramps to advance Security Levels."
+            },
+            {
+              "text": "Complete circulating lane lights to advance Command Centre awards."
+            },
+            {
+              "text": "Take Hurry-Up, Video Mode, RPG, or Assault when lit at a safe collect shot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Build four-ramp sequences for Quick Fire."
+            },
+            {
+              "text": "Keep Escape progress alive by avoiding high-risk shots before the award is collected."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Multiball first, then RED",
+          "steps": [
+            {
+              "text": "Lock three balls in the TX lane."
+            },
+            {
+              "text": "Prepare two R-E-D captive-ball hits."
+            },
+            {
+              "text": "Start Multiball with the third lock.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit the captive ball once more to add RED.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "RED",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Quick Fire",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Assault",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Final Battle",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus Multiplier",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A rejected TX lock shot can return straight down the middle.",
+            "response": "Shoot the lock lane from a full cradle and prepare a center save. Stop after the first dangerous reject.",
+            "sourceUrl": "https://www.pinball.org/rules/terminator3.html"
+          },
+          {
+            "issue": "The sharply turning metal ramps return the ball at high speed.",
+            "response": "Test A, B, and C separately during ball save. Build Quick Fire only through the ramps with predictable feeds.",
+            "sourceUrl": "https://www.pinball.org/rules/terminator3.html"
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Position play: Final Battle qualifications",
+            "when": "When trailing and the lock stack has already paid, chase the remaining Final Battle qualifications instead of repeating it.",
+            "steps": [
+              {
+                "text": "Identify the missing Multiball Super, Escape, RPG, Assault, Max Escape, or Payback Time qualification."
+              },
+              {
+                "text": "Use A-B ramp sequences for Security Levels and four consecutive called ramps for Quick Fire."
+              },
+              {
+                "text": "Collect only the missing lit qualifications, then start Final Battle when it becomes available.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Shoot TX once to lower its drop and again to lock; repeat for three locks."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Lock three balls in the TX lane."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Ramps, Security Levels, and Command Centre: Use this when the TX lock lane rejects toward the center."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ROM, RPG availability, feature difficulty, and ball save.",
+          "Test both ramps, the RPG, and center returns."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "RPG",
+            "label": "Backbox RPG",
+            "description": "Backbox feature used for RPG awards when enabled.",
+            "precision": "unverified",
+            "context": "Backbox feature used for RPG awards when enabled."
+          },
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "Major shot used for modes, locks, and multiball scoring.",
+            "precision": "unverified",
+            "context": "Major shot used for modes, locks, and multiball scoring."
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp",
+            "description": "Major shot used for modes, locks, and multiball scoring.",
+            "precision": "unverified",
+            "context": "Major shot used for modes, locks, and multiball scoring."
+          },
+          {
+            "term": "center shot",
+            "label": "Center shot",
+            "description": "Central target area used for major feature progress.",
+            "precision": "unverified",
+            "context": "Central target area used for major feature progress."
+          }
+        ],
+        "simpleOverview": "Terminator 3 lets RED run on top of its three-lock Multiball. Lock three balls in the TX lane, leave one captive-ball hit for RED, then start Multiball before finishing R-E-D. Use the stack for called ramp sequences, Quick Fire, and the Multiball Super.",
+        "overview": "Terminator 3 lets RED run on top of its three-lock Multiball. Prepare two RED hits, start Multiball with the third lock, then add RED and follow the called ramps. Collect Final Battle requirements only when they coincide with controlled shots in the active stack.",
+        "machineSetup": [
+          "Confirm ROM, RPG availability, feature difficulty, and ball save.",
+          "Test both ramps, the RPG, and center returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot TX once to lower its drop and again to lock; repeat for three locks. Leave R-E-D one captive-ball hit short, start Multiball, then finish R-E-D so the mode runs with it. Use ramp sequences for Quick Fire and take Final Battle requirements when safely available.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Time the gun launch for Bonus Multiplier when you need the longer opening ball save. Take Lock or RPG only when their immediate value is better.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "The launch award changes by ball. The multiplier selection is the opening choice that adds a useful ball-save window on factory settings."
+            ]
+          },
+          {
+            "text": "Shoot the TX lock lane once to lower its drop, then again to lock the ball. Repeat until three balls are locked.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the captive ball three times to spell R-E-D, but leave the final hit until Multiball is ready.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Start Multiball at the third TX lock. Then finish R-E-D so RED runs on top of the active multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ],
+            "details": [
+              "RED can stack onto an active mode or multiball, but it blocks new mode starts while running. Start RED last."
+            ]
+          },
+          {
+            "text": "During the stack, complete indicated ramp sequences. Four consecutive called ramps trigger Quick Fire; use the gun when prompted.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Multiball Super Jackpot, Escape award, RPG, Assault, Max Escape, and Payback Time opportunities when safe. They are separate qualifications for Final Battle."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Shoot TX once to lower its drop and again to lock; repeat for three locks."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Lock three balls in the TX lane."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Ramps, Security Levels, and Command Centre: Use this when the TX lock lane rejects toward the center."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Ramps, Security Levels, and Command Centre",
+          "when": "Recovery pivot: Use this when the TX lock lane rejects toward the center.",
+          "steps": [
+            {
+              "text": "Shoot the A and B ramps to advance Security Levels."
+            },
+            {
+              "text": "Complete circulating lane lights to advance Command Centre awards."
+            },
+            {
+              "text": "Take Hurry-Up, Video Mode, RPG, or Assault when lit at a safe collect shot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Build four-ramp sequences for Quick Fire."
+            },
+            {
+              "text": "Keep Escape progress alive by avoiding high-risk shots before the award is collected."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A rejected TX lock shot can return straight down the middle.",
+          "text": "Shoot the lock lane from a full cradle and prepare a center save. Stop after the first dangerous reject."
+        }
+      }
+    }
+  ]
+}

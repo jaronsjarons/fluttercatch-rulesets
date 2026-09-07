@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jQw",
+  "title": "Big Game",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Big Game",
+      "url": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Big Game machine guide",
+        "url": "https://www.kineticist.com/games/pinball/big-game"
+      },
+      {
+        "label": "PinballCards Big Game card",
+        "url": "https://pinballcards.net/big-game-1980"
+      },
+      {
+        "label": "Official BigGame2022 recode rules",
+        "url": "https://www.pinballrefresh.com/blog/big-game-2022"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot the far-left spinner whenever the X card lights it for 2,000 per spin. Otherwise, hit numbered drop targets to fill the three bingo cards and advance carried Bonus X and Reserve Bonus.",
+      "steps": [
+        {
+          "text": "Test the far-left spinner from both right-side flippers. Watch the upper-saucer exit and full top-lane feed."
+        },
+        {
+          "text": "Read which X, Y, or Z bingo card is active.",
+          "modeNotes": [
+            "Active card: Top lanes, the upper pop bumper, the center star rollover, and slingshots rotate the selected card on stock code."
+          ]
+        },
+        {
+          "text": "When X is active, shoot the far-left spinner.",
+          "modeNotes": [
+            "Lit far-left spinner: Each spin scores 2,000. The shot feeds the upper saucer and then the top B-I-G lanes."
+          ]
+        },
+        {
+          "text": "When the far-left spinner is not lit, hit a numbered drop that advances the active bingo card.",
+          "modeNotes": [
+            "Bingo number: A target lights its number on every active card. Each lit number adds 1,000 to base bonus."
+          ]
+        },
+        {
+          "text": "Choose drops that complete three-in-a-row lines or a full card.",
+          "modeNotes": [
+            "2x Bonus: Complete one card, or make one line on each of the three cards.",
+            "3x Bonus: Complete two cards, or make two lines on each of the three cards."
+          ]
+        },
+        {
+          "text": "Use the upper saucer as an added collect on the spinner route.",
+          "modeNotes": [
+            "Upper saucer: It scores 5,000 per lit B-I-G G-A-M-E letter, plus 25,000 after completing the word on stock code."
+          ]
+        },
+        {
+          "text": "Repeat the lit-spinner and drop-target route. Base bonus and Bonus X carry between balls."
+        },
+        {
+          "text": "After all three cards are complete, protect the permanent Reserve Bonus instead of forcing another dangerous target."
+        }
+      ],
+      "fallback": {
+        "title": "Numbered drop targets",
+        "when": "Use this plan when the far-left spinner or its full feed is unsafe.",
+        "steps": [
+          {
+            "text": "Read the active bingo card before each controlled target shot."
+          },
+          {
+            "text": "Complete the numbered bank with the most useful missing squares."
+          },
+          {
+            "text": "Hit numbered drop targets until every card has one completed line for 2x. Continue until every card has two completed lines for 3x."
+          },
+          {
+            "text": "Complete all three cards for the permanent 27,000 Reserve Bonus.",
+            "modeNotes": [
+              "Reserve Bonus: A completed set of all three cards adds 27,000 to the end-of-ball bonus on this and later balls."
+            ]
+          },
+          {
+            "text": "After all three versions of one numbered bank are lit, a later bank completion scores 25,000."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "B-I-G G-A-M-E and upper saucer",
+          "when": "Use this plan when the far-left spinner reliably reaches the top.",
+          "steps": [
+            {
+              "text": "Collect B, I, and the first G at the top lanes."
+            },
+            {
+              "text": "Collect the second G and A at the two left standups. Collect M and E at the inlanes."
+            },
+            {
+              "text": "A completed B-I-G lights the inner-left spinner for 1,000 per spin."
+            },
+            {
+              "text": "A full word lights Extra Ball at the left side lane. A second word lights Special there."
+            },
+            {
+              "text": "Shoot the far-left spinner and upper saucer for the letter value and the stock completion award."
+            }
+          ]
+        },
+        {
+          "title": "Inner-left spinner",
+          "when": "Use this plan when its backhand is clean and X is active.",
+          "steps": [
+            {
+              "text": "Backhand the inner-left spinner from the left flipper."
+            },
+            {
+              "text": "A lit spinner scores 1,000 per spin."
+            },
+            {
+              "text": "Prefer the far-left 2,000 spinner when both shots are safe."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Reserve Bonus and carried Bonus X",
+        "steps": [
+          {
+            "text": "Use numbered drops to build the X, Y, and Z cards."
+          },
+          {
+            "text": "Make one line on each card or one full card for 2x."
+          },
+          {
+            "text": "Make two lines on each card or two full cards for 3x."
+          },
+          {
+            "text": "Complete all three cards for a permanent 27,000 Reserve Bonus."
+          }
+        ]
+      },
+      "checkBeforePlay": [
+        "Identify stock code or BigGame2022 RPU; its prey hunt, skill shot, card selection, hurry-ups, ball save, and Jackpot are not stock.",
+        "Confirm which ball enables the 5,000-per-line bonus and whether Extra Ball and Special convert to points.",
+        "Verify the upper-saucer stock completion award: stock code uses 25,000, while some modern replacements use 35,000."
+      ],
+      "termStyles": [
+        {
+          "label": "Reserve Bonus",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "B-I-G G-A-M-E",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "X card",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Y card",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Z card",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Test a left-flipper backhand into the inner-left spinner. Prefer it to the right-flipper forehand when the backhand is clean.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Far-left spinner from paired flippers",
+          "instruction": "Test both right-side flippers. A rolling lower-flipper shot can work. Strike very late, near the tip, from the upper flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+        },
+        {
+          "name": "Pseudo-post pass",
+          "instruction": "Bounce the ball from a lower flipper off the underside of the upper flipper to move it across the game. Test the geometry before using it with a lead.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "Let a controlled feed cross the wide lower-flipper area to the opposite side. Use the extra flipper surface only after the bounce is known.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl",
+          "techniqueSlug": "dead-bounce"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Target and lane shots create more side-to-side movement than the far-left spinner.",
+          "response": "Return to the far-left spinner whenever it is lit and its feed is controlled.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+        },
+        {
+          "issue": "The upper-right and center-left chute feeds can drain through the center at the wrong speed.",
+          "response": "Watch each full feed before trapping or dead-bouncing it.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+        },
+        {
+          "issue": "Balls can hop between the paired flippers when a metal barrier is missing.",
+          "response": "Check the barriers below both upper flippers before using the wide dead-bounce area.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+        },
+        {
+          "issue": "Oblique side feeds can pass the sling and side post.",
+          "response": "Keep the opposite flipper ready. Do not depend on a late outlane save.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4jQw-MJ5rl"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Shoot the far-left spinner whenever the X card lights it for 2,000 per spin."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Use numbered drops to build the X, Y, and Z cards."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Numbered drop targets: Use this plan when the far-left spinner or its full feed is unsafe."
+        }
+      ],
+      "simpleOverview": "In stock Big Game, the active X, Y, or Z card determines which numbered drops advance useful bingo patterns. Shoot the far-left spinner whenever X lights it for 2,000 per spin; otherwise use controlled numbered drops to complete card lines and build carried Bonus X and Reserve Bonus.",
+      "overview": "Stock Big Game alternates between a lit far-left spinner and numbered drops that fill the active X, Y, or Z bingo card. Read the active card, repeat the spinner whenever X lights it, and choose drops that complete three-in-a-row lines or a full card. Protect the carried Bonus X and permanent Reserve Bonus after all three cards are complete.",
+      "machineSetup": [
+        "Identify stock code or BigGame2022 RPU; its prey hunt, skill shot, card selection, hurry-ups, ball save, and Jackpot are not stock.",
+        "Confirm which ball enables the 5,000-per-line bonus and whether Extra Ball and Special convert to points.",
+        "Verify the upper-saucer stock completion award: stock code uses 25,000, while some modern replacements use 35,000."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "stock",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Stock ROM"
+        },
+        {
+          "id": "big-game-2022",
+          "label": "BigGame2022",
+          "strategy": {
+            "summary": "Use a top lane to launch prey, select its flashing card with the pop bumpers, then hit the matching numbered drop twice to flush and collect it. Build card lines and B-I-G G-A-M-E progress alongside that hunt.",
+            "quickInfo": [
+              {
+                "name": "Skill shot",
+                "summary": "A flashing top lane begins each ball; side 10-point switches raise its value before the ball enters a lane."
+              },
+              {
+                "name": "Prey hunt",
+                "summary": "A top lane launches prey; select its card, hit the matching drop to flush it, then hit that number again for 20,000."
+              },
+              {
+                "name": "Scoring cards",
+                "summary": "Pop bumpers select X, Y, and Z; numbered drops light their matching squares on every selected card."
+              },
+              {
+                "name": "Drop hurry-up",
+                "summary": "When enabled, finish a started three-bank before it resets; liberal clear can award that bank on every card."
+              },
+              {
+                "name": "B-I-G G-A-M-E Jackpot",
+                "summary": "Complete the letters, then use the upper-left lane and saucer for letter value plus an optional timed 100,000 Jackpot."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Use the side 10-point switches to raise the flashing-lane skill shot, then plunge through the lit top lane."
+              },
+              {
+                "text": "Read the prey's flashing number and X, Y, or Z card before choosing a target."
+              },
+              {
+                "text": "Use the lower-left bumper for X, lower-right for Y, or five upper-bumper hits for Z."
+              },
+              {
+                "text": "Hit the numbered drop matching the prey to flush it, then hit that number again to collect the 20,000 award."
+              },
+              {
+                "text": "When a drop-bank hurry-up begins, complete that three-bank only if the timer and rebounds make the all-card clear attainable."
+              },
+              {
+                "text": "Repeat prey hunts. Use the three top lanes, two inlanes, and two standups to complete B-I-G G-A-M-E; use selected numbered drops for card patterns."
+              }
+            ],
+            "fallback": {
+              "title": "Card-pattern progress",
+              "when": "Use this when prey selection is awkward but controlled drop targets are available.",
+              "steps": [
+                {
+                  "text": "Select the card containing the safest useful numbered target."
+                },
+                {
+                  "text": "Complete one card or one line on every card for 2x end-of-ball bonus."
+                },
+                {
+                  "text": "Complete two cards or two lines on every card for 3x end-of-ball bonus."
+                },
+                {
+                  "text": "Complete all three cards for Reserve Bonus, then protect the carried value."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "B-I-G G-A-M-E Jackpot",
+                "when": "Use this when the letters and upper-left saucer route are safer than the required prey targets.",
+                "steps": [
+                  {
+                    "text": "Collect B-I-G at the top, the second G and A at the standups, and M-E at the inlanes."
+                  },
+                  {
+                    "text": "After completing the word, shoot the upper-left lane into the saucer."
+                  },
+                  {
+                    "text": "Collect 5,000 per lit letter, 35,000 per completed word, and the timed 100,000 Jackpot when that setting is enabled."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Higher prey levels and Reserve Bonus",
+              "steps": [
+                {
+                  "text": "Collect the single prey on level one."
+                },
+                {
+                  "text": "Use later top-lane entries to launch every prey on the next level."
+                },
+                {
+                  "text": "Select each prey's card and collect its matching numbered target."
+                },
+                {
+                  "text": "Complete all three cards for carried Reserve Bonus while advancing the hunt."
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Reserve Bonus",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "B-I-G G-A-M-E",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Prey-card read",
+                "instruction": "Read both the flashing prey number and its card before touching a bumper or numbered drop.",
+                "sourceUrl": "https://www.pinballrefresh.com/blog/big-game-2022"
+              },
+              {
+                "name": "Hurry-up commitment",
+                "instruction": "After the first drop, compare the timer with the two remaining rebounds; abandon an unsafe bank before the reset path costs the ball.",
+                "sourceUrl": "https://www.pinballrefresh.com/blog/big-game-2022"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The operator can limit simultaneous card selection to one, two, or three cards and reduce that limit after completed card sets.",
+                "response": "Read selected-card lamps after every bumper hit instead of assuming all prior cards remain active.",
+                "sourceUrl": "https://www.pinballrefresh.com/blog/big-game-2022"
+              },
+              {
+                "issue": "A timed drop bank can reset before completion, and liberal all-card credit is separately adjustable.",
+                "response": "Confirm both settings before risking a second or third drop solely for cross-card progress.",
+                "sourceUrl": "https://www.pinballrefresh.com/blog/big-game-2022"
+              },
+              {
+                "issue": "The upper saucer and paired-flipper feeds remain machine-dependent despite the rewritten rules.",
+                "response": "Test the full far-left lane and saucer return before using the optional 100,000 Jackpot as the primary route.",
+                "sourceUrl": "https://www.pinballrefresh.com/blog/big-game-2022"
+              }
+            ],
+            "checkBeforePlay": [
+              "Check which ball enables the 5,000-per-line bonus and whether Extra Ball and Special convert to points.",
+              "Check the upper-saucer completion award before using that smaller collect as a scoring plan."
+            ],
+            "simpleOverview": "In BigGame2022, a flashing top lane launches prey and the pop bumpers select its X, Y, or Z card. Hit the numbered drop that matches the prey to flush it, then hit the same number again for 20,000. Repeat prey hunts while useful card patterns build alongside them.",
+            "overview": "BigGame2022 starts each prey hunt at a flashing top lane. Use the lower-left bumper for X, the lower-right bumper for Y, or five upper-bumper hits for Z, then hit the prey's numbered drop once to flush it and again to collect 20,000. Continue hunts while selected drops complete card lines and B-I-G G-A-M-E progress.",
+            "machineSetup": [
+              "Check which ball enables the 5,000-per-line bonus and whether Extra Ball and Special convert to points.",
+              "Check the upper-saucer completion award before using that smaller collect as a scoring plan."
+            ],
+            "rulesNotes": []
+          },
+          "differences": {
+            "changes": [
+              "The recode adds a prey hunt: a top lane launches prey, pop bumpers select its card, and two hits to the matching numbered drop collect it.",
+              "It adds a new skill shot, configurable card selection, drop-bank hurry-ups, liberal bank clears, and adjustable ball save.",
+              "Completing B-I-G G-A-M-E can qualify a timed 100,000 Jackpot at the upper-left lane and saucer."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

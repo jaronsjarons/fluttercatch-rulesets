@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr8xn",
+  "title": "Teenage Mutant Ninja Turtles",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Japan Flipper Pinball Association Data East TMNT guide",
+      "url": "https://jfpa-pinball.com/tmnt.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Data East TMNT instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Teenage_Mutant_Ninja_Turtles_755-5021-00.pdf"
+      },
+      {
+        "label": "Kineticist Data East TMNT machine record",
+        "url": "https://www.kineticist.com/games/pinball/teenage-mutant-ninja-turtles"
+      },
+      {
+        "label": "Mark Phaedrus Data East TMNT rulesheet",
+        "url": "https://gamefaqs.gamespot.com/pinball/915945-teenage-mutant-ninja-turtles-pinball/faqs/1462"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the Turtle banks, then shoot the Sewer while Release flashes to start three-ball Multiball. During Multiball, shoot the Sewer again to light both ramp Jackpots and restore the third ball once. Collect both Jackpots, complete all four Turtle banks, then shoot the Sewer to relight them.",
+      "quickInfo": [
+        {
+          "name": "Twin Millions",
+          "summary": "Seven ramp shots start a timed left-ramp, right-ramp, and Sewer sequence worth 12,000,000 total."
+        },
+        {
+          "name": "Turtle banks",
+          "summary": "A flashing target can complete its three-target bank immediately before another target in that bank scores."
+        },
+        {
+          "name": "Three-Ball Multiball",
+          "summary": "Complete the required banks and shoot lit Release at the Sewer to add two balls."
+        },
+        {
+          "name": "Ramp Jackpots",
+          "summary": "Revisit the Sewer during multiball, then collect one displayed Jackpot at each ramp before one ball remains."
+        },
+        {
+          "name": "Awesome Scoring",
+          "summary": "Build the Awesome Shot ladder, start at the Sewer, and bank switch points for end-of-ball collection."
+        },
+        {
+          "name": "Last Chance",
+          "summary": "On the final ball, a lit outlane can give one ball save when the player's score and settings qualify the feature."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Watch each color-coded three-target Turtle bank; when one target lamp flashes, shoot that target before touching either other target.",
+          "modeNotes": [
+            "The flashing target completes its entire bank. Hitting another target first turns off the flash, so the remaining unlit targets must be hit separately.",
+            "The first multiball normally needs three completed banks. Later starts need all four. The first requirement is adjustable."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Sewer while Release flashes.",
+          "modeNotes": [
+            "Three-Ball Multiball: One ball enters the Sewer and two balls autoplunge. Normal rules remain active. Multiball ends when one ball remains."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the Sewer again to light a Jackpot at each ramp.",
+          "modeNotes": [
+            "Each ramp scores its displayed Jackpot. The two values can change independently.",
+            "The Sewer can restore the third ball once per multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left ramp and right ramp to collect both Jackpots.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After both Jackpots, complete all four Turtle target banks.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the Sewer again to relight both ramp Jackpots, then repeat the collect.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Twin Millions",
+        "when": "Recovery pivot: Use this independent route when the ramps are more controlled than the Turtle target banks.",
+        "steps": [
+          {
+            "text": "Shoot either ramp seven times in total to spell T-U-R-T-L-E-S and start Twin Millions.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for 1,000,000, then use its feed to shoot the right ramp for another 1,000,000.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Each successful ramp resets the ten-second timer.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After both ramps, shoot the Sewer within ten seconds for 10,000,000.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Awesome and Super Awesome Scoring",
+          "when": "When trailing, use this higher-ceiling route: use this when both inlane combo feeds and the Sewer are controlled.",
+          "steps": [
+            {
+              "text": "Make an Awesome Shot after either inlane.",
+              "modeNotes": [
+                "Awesome Shot: After the left inlane, shoot through the spinner to Save April. After the right inlane, hit the captive ball fully.",
+                "The ladder awards 75,000, 100,000, 125,000, 150,000, then lights Awesome Scoring and Super Awesome Scoring."
+              ]
+            },
+            {
+              "text": "Shoot the Sewer when the intended scoring mode is lit.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Awesome Scoring, hit safe switches for 50,000 each. Super Awesome Scoring awards 100,000 each.",
+              "modeNotes": [
+                "Awesome Scoring: All mode points wait for the end-of-ball collection and do not use Bonus X.",
+                "The mode time is 20 seconds."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Avoid the regular start when Super Awesome Scoring is the goal. Make one more Awesome Shot first."
+            }
+          ]
+        },
+        {
+          "title": "Splinter and Sewer utility awards",
+          "when": "Use this only when the captive-ball and Sewer returns are controlled.",
+          "steps": [
+            {
+              "text": "Hit the captive ball fully for five switches and the lit Splinter Award.",
+              "modeNotes": [
+                "Splinter Award: A full captive-ball hit gives the lit award. The game selects another award after collection.",
+                "Mystery X raises Bonus X by a random amount, to 8x. Instant 3 Ball starts multiball. Twin Millions starts its timed sequence.",
+                "Mystery Value awards points. Looping qualifies its left-ramp combo. Extra Ball lights for another captive-ball hit."
+              ]
+            },
+            {
+              "text": "For Looping, shoot the left ramp for 500,000. Repeat within eight seconds for values that rise by 250,000."
+            },
+            {
+              "text": "When Extra Ball is lit, hit the captive ball fully again to collect it."
+            },
+            {
+              "text": "Shoot an otherwise unlit Sewer for a mystery utility.",
+              "modeNotes": [
+                "Sewer mystery: It can award points, Bonus X, one completed Turtle bank, lit Special at the spinner, or Bonus Hold.",
+                "Bonus Hold: This stores base bonus for the next ball. It does not store Bonus X or Awesome Scoring points."
+              ]
+            },
+            {
+              "text": "When the Sewer lights Special, shoot the right spinner to collect it."
+            },
+            {
+              "text": "Do not depend on one random award."
+            }
+          ]
+        },
+        {
+          "title": "Last Chance and Turbo Ginsu",
+          "when": "Use these only when their lamps and multiplayer setting are enabled.",
+          "steps": [
+            {
+              "text": "On the final ball, read the lit outlane before the ball reaches the split.",
+              "modeNotes": [
+                "Last Chance: If the feature lights on the final ball, the lit outlane gives one ball save."
+              ]
+            },
+            {
+              "text": "Use an early legal nudge only when the split can reach the lit outlane."
+            },
+            {
+              "text": "In multiplayer play, the highest-scoring player can receive a thirty-second final timed ball.",
+              "modeNotes": [
+                "Turbo Ginsu: The game supplies replacement balls as they drain until the thirty-second timer ends."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Twin Millions",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Awesome Scoring",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Super Awesome Scoring",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Turbo Ginsu",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Three-Ball Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Ramp Jackpots",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Turtle bank",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Splinter Award",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus Hold",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Last Chance",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "8x",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Ramp skill shot",
+          "instruction": "Use a full plunge, then shoot the left ramp and right ramp before another scoring switch. Each ramp scores 250,000 times the current ball number.",
+          "sourceUrl": "https://jfpa-pinball.com/tmnt.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The lower-center pizza disc can send the ball in changing directions.",
+          "response": "Track the ball across the disc. Prepare both flippers before its return.",
+          "sourceUrl": "https://pinballrebel.com/game/pins/teenage_mutant_ninja_turtles/teenage_mutant_ninja_turtles_pinball.htm"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Data East code and first-multiball bank requirement.",
+        "Test both ramps, Sewer, captive ball, and Turtle targets."
+      ],
+      "simpleOverview": "Teenage Mutant Ninja Turtles uses four color-coded Turtle banks to light Release at the Sewer. In each bank, shoot the target whose lamp is flashing before touching either other target, start three-ball Multiball at the Sewer, then revisit the Sewer and collect both ramp Jackpots.",
+      "overview": "Completing the required flashing Turtle banks lights Release at the Sewer in Teenage Mutant Ninja Turtles. Shoot the Sewer to start Multiball, revisit it to light both ramp Jackpots, and complete all four Turtle banks before the next Sewer shot to relight them.",
+      "machineSetup": [
+        "Confirm Data East code and first-multiball bank requirement.",
+        "Test both ramps, Sewer, captive ball, and Turtle targets."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

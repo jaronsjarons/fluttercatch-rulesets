@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "id": "G42XB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Keep the ball in the upper playfield and hit lit blue mushroom bumpers to spell ROCKET. In the lower playfield, use red mushrooms to add letters and close the zipper flippers. Complete ROCKET to advance the Planet Bonus.",
+        "quickInfo": [
+          {
+            "name": "ROCKET",
+            "summary": "Lit blue mushrooms and lower red mushrooms add letters; a completion clears the word and advances one planet."
+          },
+          {
+            "name": "Zipper flippers",
+            "summary": "Red mushrooms close the center gap, while yellow mushrooms open it again."
+          },
+          {
+            "name": "Planet Bonus",
+            "summary": "Planet progress carries between balls, but the operator selects its threshold and award."
+          },
+          {
+            "name": "Right outlane gate",
+            "summary": "With open zipper flippers and three letters, one right-outlane ball returns to the shooter lane."
+          },
+          {
+            "name": "Left outlane kickback",
+            "summary": "With open zipper flippers and five letters, the lit left outlane returns one ball until ROCKET completes."
+          },
+          {
+            "name": "Spinning Flipper",
+            "summary": "The upper-center device rotates counterclockwise, scores no points, and changes the ball direction."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge into the upper playfield."
+          },
+          {
+            "text": "Nudge the ball away from the lower exit and toward a lit blue mushroom."
+          },
+          {
+            "text": "Hit lit blue mushrooms to add ROCKET letters.",
+            "modeNotes": [
+              "Upper light transfer: A lit left hit turns that lamp off and lights its matching right mushroom.",
+              "A lit right hit turns its lamp off and does not relight the matching left mushroom."
+            ]
+          },
+          {
+            "text": "Do not aim at the Spinning Flipper.",
+            "modeNotes": [
+              "Spinning Flipper: The upper-center device rotates counterclockwise, scores no points, and changes the ball direction."
+            ]
+          },
+          {
+            "text": "When the ball reaches the lower playfield, hit red mushrooms.",
+            "modeNotes": [
+              "Red mushroom: It adds one ROCKET letter and closes the zipper flippers.",
+              "Zipper flippers: Closing them removes the center gap; a yellow mushroom opens the gap again."
+            ]
+          },
+          {
+            "text": "Keep the zipper flippers closed when the center gap is the main drain risk."
+          },
+          {
+            "text": "Complete ROCKET to advance the lit planet by one step.",
+            "modeNotes": [
+              "ROCKET completion: It clears all six letters and advances the Planet Bonus.",
+              "Planet Bonus: Progress carries between balls, but the operator selects Planet 8 or Planet 9 and its award."
+            ]
+          },
+          {
+            "text": "Repeat the route, and do not depend on the Planet award in tournament play."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Protect the center drain",
+          "when": "Recovery pivot: Use this when upper-playfield control is lost.",
+          "steps": [
+            {
+              "text": "Hit a red mushroom to close the zipper flippers."
+            },
+            {
+              "text": "Avoid yellow mushrooms while the center gap is dangerous."
+            },
+            {
+              "text": "Use the closed flippers to regain control."
+            },
+            {
+              "text": "Continue on red mushrooms for ROCKET letters."
+            },
+            {
+              "text": "Accept low switch scoring because ball survival is the main value."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Open the right outlane gate",
+            "when": "When trailing, use this higher-ceiling route: use this only when the zipper flippers are open.",
+            "steps": [
+              {
+                "text": "Collect at least three ROCKET letters."
+              },
+              {
+                "text": "The right outlane gate opens while the zipper flippers remain open."
+              },
+              {
+                "text": "A right-outlane drain uses the gate and returns the ball to the shooter lane."
+              },
+              {
+                "text": "The gate closes after use."
+              },
+              {
+                "text": "Complete ROCKET, then collect three new letters to reopen it."
+              }
+            ]
+          },
+          {
+            "title": "Light the left outlane kickback",
+            "when": "Use this only with five ROCKET letters and open zipper flippers.",
+            "steps": [
+              {
+                "text": "Leave the sixth letter unlit."
+              },
+              {
+                "text": "The left outlane lights for Special and activates its kickback."
+              },
+              {
+                "text": "Completing ROCKET removes the kickback and advances the planet."
+              },
+              {
+                "text": "Do not open the zipper flippers only to chase this award when the center is unsafe."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Planet Bonus",
+          "steps": [
+            {
+              "text": "Spell ROCKET to advance one planet."
+            },
+            {
+              "text": "The Planet count carries between balls."
+            },
+            {
+              "text": "The operator selects Planet 8 or Planet 9 as the award threshold."
+            },
+            {
+              "text": "Read the local apron card because the award can be a replay, points, or an extra ball."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "ROCKET",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Spinning Flipper",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Zipper flippers",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Planet Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Right outlane gate",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Left outlane kickback",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "blue mushroom bumpers",
+            "label": "Upper blue mushroom bumpers",
+            "description": "Upper-playfield bumpers used to spell ROCKET.",
+            "xPercent": 33.07,
+            "yPercent": 14.06,
+            "precision": "exact"
+          },
+          {
+            "term": "blue mushroom bumpers",
+            "label": "Upper blue mushroom bumpers",
+            "description": "Upper-playfield bumpers used to spell ROCKET.",
+            "xPercent": 58.84,
+            "yPercent": 14.14,
+            "precision": "exact"
+          },
+          {
+            "term": "left outlane",
+            "label": "left outlane",
+            "description": "The left outlane lights for Special and activates its kickback.",
+            "xPercent": 13.2,
+            "yPercent": 63.44,
+            "precision": "exact"
+          },
+          {
+            "term": "right outlane",
+            "label": "right outlane",
+            "description": "The right outlane gate opens while the zipper flippers remain open.",
+            "xPercent": 79.39,
+            "yPercent": 65.62,
+            "precision": "exact"
+          },
+          {
+            "term": "shooter lane",
+            "label": "shooter lane",
+            "description": "A right-outlane drain uses the gate and returns the ball to the shooter lane.",
+            "xPercent": 86.09,
+            "yPercent": 71.94,
+            "precision": "exact"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Red-mushroom safety close",
+            "instruction": "Hit a red mushroom to close the zipper flippers before the ball reaches the center.",
+            "sourceUrl": "https://www.pinballaustralia.com/zip/Bally_1967_Rocket_III_Reproduction_Score_and_Instruction_Cards.zip"
+          },
+          {
+            "name": "Flipper-state check",
+            "instruction": "Check the center gap before each flip because a yellow mushroom can reopen the zipper flippers.",
+            "sourceUrl": "https://www.pinballaustralia.com/zip/Bally_1967_Rocket_III_Reproduction_Score_and_Instruction_Cards.zip"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Spinning Flipper scores nothing and sends the ball out of control.",
+            "response": "Nudge the ball toward a lit blue mushroom instead of the rotating center.",
+            "sourceUrl": "https://www.pinballaustralia.com/zip/Bally_1967_Rocket_III_Reproduction_Score_and_Instruction_Cards.zip"
+          },
+          {
+            "issue": "A yellow mushroom opens the center gap.",
+            "response": "Check the flipper position after each yellow hit and close the gap with a red mushroom when possible.",
+            "sourceUrl": "https://www.pinballaustralia.com/zip/Bally_1967_Rocket_III_Reproduction_Score_and_Instruction_Cards.zip"
+          },
+          {
+            "issue": "Tilt ends the game on this setup.",
+            "response": "Test the tilt before strong upper-playfield nudges and read the local apron card.",
+            "sourceUrl": "https://www.pinballaustralia.com/zip/Bally_1967_Rocket_III_Reproduction_Score_and_Instruction_Cards.zip"
+          }
+        ],
+        "simpleOverview": "Rocket III is an upper-playfield spelling game. Keep the ball up top, hit lit blue mushroom bumpers to spell R-O-C-K-E-T, and use red mushrooms below to add letters and close the zipper flippers when the ball falls to the lower playfield.",
+        "overview": "Rocket III is an upper-playfield spelling game. Nudge toward lit blue mushrooms while the ball is up top, use red mushrooms below to add letters and protect the center gap, then repeat the spelling loop without depending on the operator-selected Planet award.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball up top and hit lit blue mushrooms for R-O-C-K-E-T letters; use red mushrooms below to add letters and close the zipper flippers.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Score up top",
+            "text": "Plunge into the upper playfield. Nudge away from the lower exit and toward the lit blue mushroom bumpers to add R-O-C-K-E-T letters."
+          },
+          {
+            "title": "Close the zipper flippers",
+            "text": "When the ball reaches the lower playfield, hit red mushroom bumpers to add letters and close the zipper flippers. Avoid the yellow mushrooms while the center gap is dangerous."
+          },
+          {
+            "title": "Complete R-O-C-K-E-T",
+            "text": "Keep using lit blue mushrooms up top and red mushrooms below. Completing R-O-C-K-E-T advances the lit Planet Bonus one step."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "ROCKET",
+            "summary": "Lit blue mushrooms and lower red mushrooms add letters; a completion clears the word and advances one planet."
+          },
+          {
+            "name": "Zipper flippers",
+            "summary": "Red mushrooms close the center gap, while yellow mushrooms open it again."
+          },
+          {
+            "name": "Planet Bonus",
+            "summary": "Planet progress carries between balls, but the operator selects its threshold and award."
+          }
+        ],
+        "warning": {
+          "title": "Watch the center gap",
+          "text": "Keep the zipper flippers closed when the center gap is the main drain risk."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "GRWBd",
+  "title": "Diner",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Diner rules and strategy",
+      "url": "https://pinball.org/rules/diner.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Diner operator handbook",
+        "url": "https://www.bmigaming.com/Games/Manuals/pinball-machines/Diner_HAN.pdf"
+      },
+      {
+        "label": "PAPA exact-machine Diner tutorial",
+        "url": "https://www.youtube.com/watch?v=v2kPwKvkNi4"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Serve five customers to reach Dine-Time. Each customer takes one completion of the six drop targets; completing the E-A-T lanes lights both food ramps so either lit ramp spots an entire bank. For Multiball, shoot the right Cup ramp to raise the left ramp, lock a ball beneath it, then shoot the upper-left saucer to release the lock and start two-ball play.",
+      "simpleOverview": "Complete the six drop targets once for each customer, using the E-A-T lanes to light both ramps for an instant bank completion. For two-ball Multiball, shoot the right Cup ramp, lock a ball under the raised left ramp, then shoot the upper-left saucer. After serving all five customers, shoot that saucer again to start Dine-Time.",
+      "summary": "Serve five customers by completing the six drop targets. E-A-T lights both ramps to spot a full bank. For two-ball Multiball, shoot the Cup ramp, lock beneath the raised left ramp, then shoot the upper-left saucer. After customer five, shoot the saucer for Dine-Time.",
+      "quickInfo": [
+        {
+          "name": "Serve a customer",
+          "summary": "Complete all six drop targets; E-A-T lights both ramps to spot a full bank."
+        },
+        {
+          "name": "Lock a ball",
+          "summary": "Shoot the right Cup ramp, then shoot beneath the raised left ramp."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "With a ball locked, shoot the upper-left saucer."
+        },
+        {
+          "name": "Start Dine-Time",
+          "summary": "Serve all five customers, then shoot the upper-left saucer."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the E-A-T lanes to light both serve-food ramps.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot either lit ramp to spot all six drop targets and serve the current customer, or complete the six targets directly.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the right Cup ramp to raise the left ramp and open its lock for a short time.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot beneath the raised left ramp to lock a ball, then shoot the upper-left saucer to release it and start two-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, shoot the upper-left saucer and then the Today's Special sinkhole to light both ramps for 500,000 through the rest of that Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Start Dine-Time",
+          "when": "Use this after the fifth customer has been served.",
+          "steps": [
+            {
+              "text": "Shoot the upper-left saucer to start the timed Dine-Time clock.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the saucer before time expires to collect the displayed clock value, worth one million per remaining unit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Cycle the customer route",
+        "steps": [
+          {
+            "text": "Favor E-A-T completions when the top feed is safe; each lit food ramp replaces six separate drop-target hits.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the left cash-register ramp between customers to build its repeat award and later Dine-Time progress.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Serve customer five, then prioritize the upper-left saucer before its Dine-Time value falls.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm the extra-ball, Today's Special, and progressive-award settings before competitive play.",
+        "Test all six drop targets, E-A-T lanes, both ramps, the left-ramp lift and lock, upper-left saucer, Cup ramp, and Today's Special sinkhole."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Dine-Time",
+          "tone": "indigo",
+          "kind": "mode"
+        },
+        {
+          "label": "E-A-T",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Cup ramp opens the left-ramp lock only briefly.",
+          "response": "Settle the return when possible, but shoot the raised left-ramp opening before it closes.",
+          "sourceUrl": "https://pinball.org/rules/diner.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

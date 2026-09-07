@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "GR9o1",
+  "title": "Joker Poker",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Joker Poker strategy",
+      "url": "https://www.kineticist.com/games/pinball/joker-poker"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Joker Poker instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Joker_Poker_instruction_cards.zip"
+      },
+      {
+        "label": "MAME Gottlieb System 1 model and ROM definitions",
+        "url": "https://github.com/mamedev/mame/blob/master/src/mame/pinball/gts1.cpp#L843-L851"
+      },
+      {
+        "label": "Gottlieb Joker Poker technical chart",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Gottlieb_Joker_Poker_Tech_Chart.pdf"
+      },
+      {
+        "label": "PI-1 replacement-board manual",
+        "url": "https://bigdaddy-enterprises.com/ProductPages/manual_PI-1X4_en.pdf"
+      },
+      {
+        "label": "Pinball Land replacement-board machine notes",
+        "url": "https://pinball-land.com/joker-poker/"
+      },
+      {
+        "label": "Joker Poker tournament game",
+        "url": "https://pinballvideos.com/v/5295"
+      },
+      {
+        "label": "Joker Poker at Southern Pinball Festival 2013",
+        "url": "https://pinballvideos.com/v/548/4647"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete the goal rank that lights 5X Bonus on this ball, then repeat the Ace group and Queen bank for 5,000-point drop-target hits.",
+      "steps": [
+        {
+          "text": "Complete the card rank lit for 5X Bonus. In stock three-ball play, that is the 10 on ball 1, the three Queens on ball 2, and the Ace group (four Aces plus the Joker) on ball 3."
+        },
+        {
+          "text": "Then shoot the Ace group and Queen bank first. Once a set completes and resets, later drop-target hits in that set score 5,000 each for the rest of the ball."
+        },
+        {
+          "text": "If Extra Ball is enabled, completing the Ace group or A-B-C lights the upper-right Extra Ball standup; hit it while lit."
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Machine scope",
+          "summary": "This strategy covers the stock solid-state game; the electromechanical game and replacement-board versions use different rules."
+        },
+        {
+          "name": "Three-ball 5X sequence",
+          "summary": "The stock three-ball card assigns the 10 to ball 1, Queens to ball 2, and the Ace group (four Aces plus the Joker) to ball 3."
+        },
+        {
+          "name": "Five-ball goal rank",
+          "summary": "In five-ball play, follow the lit goal rank instead of using the three-ball 10–Queen–Ace order unless the lamps show it."
+        },
+        {
+          "name": "Repeat drop targets",
+          "summary": "After a set of cards is completed once during the ball, later hits to that set's drop targets score 5,000 each."
+        },
+        {
+          "name": "Reset linkage",
+          "summary": "The 10 and Jack targets reset together, while the Queen, King, and Ace groups reset separately."
+        },
+        {
+          "name": "Maximum group bonus",
+          "summary": "Completing all five groups makes 15,000 base bonus, worth 75,000 at 5X at the end of the ball; this explains the maximum but is not an instruction to complete every group first."
+        },
+        {
+          "name": "Extra Ball",
+          "summary": "Completing the Ace group or A-B-C lights the upper-right Extra Ball standup when the award is enabled."
+        }
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the Southern Pinball Festival 2013, Steven Bowden and the other semifinalists built the lit 5X rank and used the safer Queen return.",
+          "At the Concord Open 2024 Women's event, Leslie Ruckman, Jenna Crisp, Kelly Fox, and Beth Stein followed the lit ball-specific rank for 5X, then built bonus."
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "5X Bonus",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Ace group",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test the upper flipper, Queen and Ace-group resets, right-hand Jack, bottom King, and top exits."
+      ],
+      "techniques": [
+        {
+          "name": "Upper-flipper Ace access",
+          "instruction": "Use the upper flipper or a nudge off the left bumper for the far-left Ace.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/joker-poker"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right-hand Jack and bottom King can drain out the right.",
+          "response": "After the current 5X goal rank is complete, return to the Ace group or Queen bank instead of repeating either risky target.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/joker-poker"
+        }
+      ],
+      "simpleOverview": "In Joker Poker, complete the card rank lit for 5x Bonus on the current ball, then finish the Ace group and Queen bank. After either set resets, every later drop-target hit in that set scores 5,000 for the rest of the ball. Repeat the safer completed set while protecting the multiplied end-of-ball bonus.",
+      "overview": "In Joker Poker, the lit 5x Bonus goal changes by ball, while completing the Ace group or Queen bank raises later hits in that reset set to 5,000 for the rest of the ball. Finish the current 5x rank first, then complete the Ace group and Queens. Repeat the safer reset set for 5,000 per target, and collect the upper-right Extra Ball standup only when its award is useful.",
+      "machineSetup": [
+        "Test the upper flipper, Queen and Ace-group resets, right-hand Jack, bottom King, and top exits."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

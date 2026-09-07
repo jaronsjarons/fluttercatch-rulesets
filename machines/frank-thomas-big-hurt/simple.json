@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "id": "G4kzN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "During single-ball play, shoot the flashing right orbit to raise the regular Jackpot and the left gap to advance innings. Then play regular Multiball through Home Run, orbit, and a timed return to Home Run for Jackpot, Double Jackpot, and an innings-scaled Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Innings",
+            "summary": "The left gap advances innings during normal play; each inning adds 100M to the eventual Super Jackpot."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Start from Players Choice at the right gap or from the bullpen route."
+          },
+          {
+            "name": "Jackpot cycle",
+            "summary": "Home Run scores the jackpot, an orbit advances it, and a quick return to Home Run doubles the next award."
+          },
+          {
+            "name": "Seventh Inning",
+            "summary": "Completing the sixth inning starts a four-ball mode whose left loop and right orbit build BIG HURT."
+          },
+          {
+            "name": "Grand Slam",
+            "summary": "Completing G-R-A-N-D S-L-A-M starts a four-ball center-shot derby."
+          }
+        ],
+        "steps": [
+          {
+            "text": "During non-mode single-ball play, shoot the flashing right orbit to add 10M to the regular Jackpot."
+          },
+          {
+            "text": "Shoot the left gap during non-mode single-ball play to advance innings and raise the eventual Super Jackpot by 100M per completed inning."
+          },
+          {
+            "text": "Prepare regular multiball through Players Choice or the bullpen while keeping the Home Run feed under control."
+          },
+          {
+            "text": "Start multiball and shoot Home Run for the base jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the right orbit, or the left loop during multiball, to raise the jackpot before returning to Home Run.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to Home Run within the combo window for the doubled award, then repeat the orbit-to-Home-Run cycle.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the required cycles, collect the Super Jackpot whose value reflects the innings built before the start.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the sixth inning completes, switch to the Seventh Inning route and use the major loops to spell BIG HURT for doubled jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Players Choice multiball",
+          "when": "Use this when inning advancement or the GRAND SLAM targets are feeding dangerously.",
+          "steps": [
+            {
+              "text": "Take the available Players Choice at the right gap."
+            },
+            {
+              "text": "Choose the regular multiball start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Cash the first Home Run and orbit cycle without overbuilding the Super."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Grand Slam Derby",
+            "when": "Use this when the GRAND SLAM letters are nearly complete and the center Home Run shot is reliable.",
+            "steps": [
+              {
+                "text": "Finish the remaining GRAND SLAM letters."
+              },
+              {
+                "text": "Enter the four-ball Derby.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat controlled center Home Run shots during the protected window."
+              }
+            ]
+          },
+          {
+            "title": "Mode-before-multiball",
+            "when": "Use this when a valuable right-scoop mode is ready and its shots overlap the regular multiball route.",
+            "steps": [
+              {
+                "text": "Start the selected mode at the right scoop.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Begin the prepared regular multiball.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the extra balls to finish mode shots without abandoning Home Run cashouts."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "World Series and the 900M Super ceiling",
+          "steps": [
+            {
+              "text": "Complete normal modes toward World Series."
+            },
+            {
+              "text": "Shoot the left gap during non-mode single-ball play to advance innings."
+            },
+            {
+              "text": "Enter multiball with a large innings multiplier."
+            },
+            {
+              "text": "Finish the jackpot cycle and collect the innings-scaled Super."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Seventh Inning Stretch",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Grand Slam Derby",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "World Series",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left gap",
+            "context": "left gap",
+            "label": "Inning advance",
+            "description": "Left-side gap used to advance innings outside modes and multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Home Run",
+            "context": "Home Run",
+            "label": "Home Run shot",
+            "description": "Central scoring shot used for jackpots and Derby awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "context": "right orbit",
+            "label": "Jackpot advance orbit",
+            "description": "Orbit used to raise the next regular multiball jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left loop",
+            "context": "left loop",
+            "label": "Multiball advance loop",
+            "description": "Loop that raises jackpot value during multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right gap",
+            "context": "right gap",
+            "label": "Players Choice",
+            "description": "Right-side shot used to access Players Choice.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right scoop",
+            "context": "right scoop",
+            "label": "Mode start",
+            "description": "Scoop used to start qualified normal modes.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Innings before multiball",
+            "instruction": "Advance innings during single-ball play before committing to the jackpot cycle; the progress raises the final Super.",
+            "sourceUrl": "https://www.pinball.org/rules/bighurt.html"
+          },
+          {
+            "name": "Orbit-to-Home-Run return",
+            "instruction": "After raising the jackpot at an orbit, regain control quickly enough to return to Home Run inside the double window.",
+            "sourceUrl": "https://www.pinball.org/rules/bighurt.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The raised ramp and glove feeds can return the ball unpredictably.",
+            "response": "Test their ejects before relying on a combo or mode start.",
+            "sourceUrl": "https://www.pinball.org/rules/bighurt.html"
+          },
+          {
+            "issue": "Advancing innings delays the immediate Multiball start.",
+            "response": "Take the ready start when match position values survival more than the larger Super ceiling.",
+            "sourceUrl": "https://www.pinball.org/rules/bighurt.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Big Hurt and tournament treatment of Extra Ball and replay awards.",
+          "Test Home Run, orbit, glove, ramp, and eject returns."
+        ],
+        "simpleOverview": "Frank Thomas' Big Hurt builds two values before regular Multiball: the flashing right orbit raises the Jackpot, and the left gap advances innings to raise the Super Jackpot. Build both during single-ball play, then shoot Home Run, an orbit, and Home Run again within five seconds for Jackpot and Double Jackpot before repeating the cycle for the Super.",
+        "overview": "Frank Thomas' Big Hurt builds two values before regular Multiball: the flashing right orbit raises the Jackpot, and the left gap advances innings to raise the Super Jackpot. During single-ball play, shoot the flashing right orbit to raise the regular Jackpot and the left gap to advance innings. Then repeat the Home Run, orbit, and timed Home Run cycle during regular Multiball, using the larger four-ball features when they are already close.",
+        "machineSetup": [
+          "Confirm Gottlieb Big Hurt and tournament treatment of Extra Ball and replay awards.",
+          "Test Home Run, orbit, glove, ramp, and eject returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "During single-ball play, shoot the flashing right orbit to raise the regular Jackpot and the left gap to advance innings. Then play regular Multiball through Home Run, orbit, and a timed return to Home Run for Jackpot, Double Jackpot, and an innings-scaled Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "During non-mode single-ball play, shoot the flashing right orbit to add 10M to the regular Jackpot."
+          },
+          {
+            "text": "Shoot the left gap during non-mode single-ball play to advance innings and raise the eventual Super Jackpot by 100M per completed inning."
+          },
+          {
+            "text": "Prepare regular multiball through Players Choice or the bullpen while keeping the Home Run feed under control."
+          },
+          {
+            "text": "Start multiball and shoot Home Run for the base jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the right orbit, or the left loop during multiball, to raise the jackpot before returning to Home Run.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Return to Home Run within the combo window for the doubled award, then repeat the orbit-to-Home-Run cycle.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the required cycles, collect the Super Jackpot whose value reflects the innings built before the start.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the sixth inning completes, switch to the Seventh Inning route and use the major loops to spell BIG HURT for doubled jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Innings",
+            "summary": "The left gap advances innings during normal play; each inning adds 100M to the eventual Super Jackpot."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Start from Players Choice at the right gap or from the bullpen route."
+          },
+          {
+            "name": "Jackpot cycle",
+            "summary": "Home Run scores the jackpot, an orbit advances it, and a quick return to Home Run doubles the next award."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Players Choice multiball",
+          "when": "Use this when inning advancement or the GRAND SLAM targets are feeding dangerously.",
+          "steps": [
+            {
+              "text": "Take the available Players Choice at the right gap."
+            },
+            {
+              "text": "Choose the regular multiball start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Cash the first Home Run and orbit cycle without overbuilding the Super."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

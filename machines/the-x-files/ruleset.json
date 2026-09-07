@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jPq",
+  "title": "The X Files",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "The X Files rulesheet",
+      "url": "https://www.pinball.org/rules/xfiles.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Levi Nayman at Buffalo Pinball Summer Open 2017",
+        "url": "https://pinballvideos.com/v/1584/12588"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the file cabinet until its drawer opens, then enter it to start Multiball. Make two left-ramp Jackpots, the timed right-ramp Double Jackpot, and the cabinet Super Jackpot.",
+      "quickInfo": [
+        {
+          "name": "File Cabinet Multiball",
+          "summary": "Repeated cabinet hits lower the drawer; shooting the open drawer starts three-ball play."
+        },
+        {
+          "name": "Jackpot sequence",
+          "summary": "Two left-ramp jackpots light a brief right-ramp Double Jackpot, followed by a cabinet Super Jackpot."
+        },
+        {
+          "name": "Restart",
+          "summary": "If no jackpot was made before one-ball play, the cabinet may offer one brief restart window."
+        },
+        {
+          "name": "Episodes",
+          "summary": "The scoop starts the displayed episode for safer incremental scoring when the cabinet is dangerous."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the file-cabinet rebound and both ramp returns while ball save is active."
+        },
+        {
+          "text": "Hit the file cabinet until its upper drawer opens."
+        },
+        {
+          "text": "Shoot the open drawer to start File Cabinet Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left ramp for the first Jackpot, then repeat the left ramp for the second Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Transfer quickly to the right ramp for the timed Double Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the file cabinet for the Super Jackpot, then begin the sequence again while two balls remain.",
+          "modeNotes": [
+            "Multiball order: Left ramp, left ramp, timed right ramp, then file cabinet for the Super Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If Multiball ends before any jackpot, shoot the cabinet during its one brief restart window, then take the first left-ramp Jackpot after the relaunch.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Episode scoring",
+        "when": "Use this when the cabinet face or its drawer eject is unsafe.",
+        "steps": [
+          {
+            "text": "Shoot the scoop to start the available episode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Take the episode shots with the cleanest returns.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Return to the cabinet only after its feed can be attacked from control."
+          }
+        ]
+      },
+      "alternatives": [],
+      "buildsToward": {
+        "title": "Repeated Super Jackpots",
+        "steps": [
+          {
+            "text": "Convert both left-ramp jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the timed right-ramp Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cash the cabinet Super Jackpot and repeat the sequence.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "File Cabinet Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Episodes",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Ramp transfer",
+          "instruction": "After the second left ramp, prepare the receiving flipper for the brief right-ramp Double Jackpot.",
+          "sourceUrl": "https://www.pinball.org/rules/xfiles.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Multiball begins without a long opening grace period.",
+          "response": "Do not plunge blindly; establish control and make the first left ramp promptly.",
+          "sourceUrl": "https://www.pinball.org/rules/xfiles.html"
+        },
+        {
+          "issue": "Cabinet switches, drawer travel, and eject behavior vary by physical condition.",
+          "response": "Test registration and the return before using the cabinet as a repeated tournament shot.",
+          "sourceUrl": "https://www.pinball.org/rules/xfiles.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ROM, episode rules, timers, and award settings.",
+        "Test cabinet hits, both ramps, and scoop returns."
+      ],
+      "simpleOverview": "The X Files turns the file cabinet and two ramps into a repeatable Multiball ladder. Hit the cabinet until its drawer opens and enter it, shoot the left ramp twice, transfer to the briefly lit right-ramp Double Jackpot, then hit the cabinet for Super Jackpot before beginning the sequence again.",
+      "overview": "Repeated cabinet hits open its drawer and start The X Files' three-ball Multiball, whose Jackpots follow a fixed left-left-right-cabinet order. Execute the sequence from controlled feeds. Use the one restart window after an empty Multiball, or play Episodes at the scoop when cabinet rebounds make that loop unsafe.",
+      "machineSetup": [
+        "Confirm ROM, episode rules, timers, and award settings.",
+        "Test cabinet hits, both ramps, and scoop returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "G8llL",
+  "title": "Sorcerer's Apprentice",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Rulesheets Sorcerer's Apprentice guide",
+      "url": "https://pinballrulesheets.com/multimorphic/sorcerers-apprentice-rulesheet"
+    },
+    "supportingSources": [
+      {
+        "label": "Current P3 game-code list",
+        "url": "https://pinballrulesheets.com/other/list-of-games-with-their-current-code-number-wiki.html"
+      },
+      {
+        "label": "Sorcerer's Apprentice walkthrough with Multimorphic",
+        "url": "https://www.youtube.com/watch?v=5qwsf1K_K-M"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Travel among four locations, start the selected mode at the left loop, and learn Fire, Ice, Lightning, and Shield. Black Magic Multiball can run with the spell modes, replacing elemental requirements and pausing their timer while its extra balls are active.",
+      "simpleOverview": "Use the labeled orbits outside a mode to travel, hit the captive ball to change the available selection, and shoot the left loop from either side to start it. Learn the three attack spells before returning to the Workshop for the Sorcerer.",
+      "summary": "Travel to a location, choose its available mode with the captive ball, and start it at the left loop. Learn Fire, Ice, and Lightning, prepare Black Magic Multiball, then use the stack to protect another spell mode before returning to the Workshop for the Sorcerer.",
+      "quickInfo": [
+        {
+          "name": "Travel and start modes",
+          "summary": "Outside a mode, use a labeled orbit to travel. Hit the captive ball to change the selection, then shoot the left loop from either side to start it."
+        },
+        {
+          "name": "Attack spells",
+          "summary": "Learn Fire at the Workshop, Ice at the Bazaar, and Lightning at the Dunes; use the white buttons to match the active spell to a lit shot."
+        },
+        {
+          "name": "Shield",
+          "summary": "Learn Shield at the Oasis. Use the yellow buttons to activate it against damage and turn it off when it needs to recharge."
+        },
+        {
+          "name": "Black Magic Multiball",
+          "summary": "Use side targets to move the floatie, hit the floatie to light a lock, and shoot the scoop; three locks begin Multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Outside a mode, shoot the labeled orbit for the location you want: Workshop, Bazaar, Dunes, or Oasis.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the captive ball until the desired available mode is selected, then shoot the left loop from either direction to start it.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Learn Fire, Ice, and Lightning in their location modes. Use the white buttons to select the spell color that matches the next lit shot.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "While working the spells, hit the side targets to move the Black Magic floatie. Shoot the floatie to light the next lock, then shoot the scoop; repeat for three locks.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start a spell mode before taking the final Black Magic lock. During the stack, Black Magic satisfies the elemental shots and the spell-mode timer is suspended.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Return to the Workshop. Shoot the right ramp with Fire, then Ice, then Lightning to open the Sorcerer battle; use Shield to absorb his attacks when available.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Health and Shield route",
+        "when": "Use this when ward damage is ending spell modes before their objectives are complete.",
+        "steps": [
+          {
+            "text": "Travel to the Oasis and learn Shield, then use the yellow buttons to activate it only during incoming attacks.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Turn Shield off between attacks so its charge can recover.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Collect herbs from the relevant standups or the alternating inlane potion to restore health before returning to an attack-spell mode.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Battle the Sorcerer",
+        "steps": [
+          {
+            "text": "Learn Fire at the Workshop, Ice at the Bazaar, and Lightning at the Dunes.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Learn Shield at the Oasis when practical; it is helpful but not required to open the battle.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "At the Workshop, shoot the right ramp with Fire, then Ice, then Lightning.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Match the lit spell shots to damage the Sorcerer and use Shield against his attacks.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "spell mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Black Magic Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Shield",
+          "tone": "teal",
+          "kind": "item"
+        },
+        {
+          "label": "Sorcerer battle",
+          "tone": "oxblood",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The complete developer walkthrough is launch-era, while the maintained code list identifies 1.1.0.0 as current.",
+          "response": "Use the physical starts and spell order, but read the display for later scoring, timing, or balance changes.",
+          "sourceUrl": "https://pinballrulesheets.com/other/list-of-games-with-their-current-code-number-wiki.html"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

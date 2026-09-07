@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "GRvE1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Time the plunge to stop and collect a 5K tunnel value. Repeat the center red Collect Tunnel target while the value is at least 3K. Change a low value through safe top play.",
+        "quickInfo": [
+          {
+            "name": "Tunnel value",
+            "summary": "The tunnel cycles from 1K through 5K until the Stop Tunnel switch near the top of the plunger lane scores."
+          },
+          {
+            "name": "Tunnel skill shot",
+            "summary": "A timed near-full plunge can stop the tunnel and collect it through the top-center Collect Tunnel lane."
+          },
+          {
+            "name": "Center Collect Tunnel",
+            "summary": "The center red standup collects the displayed tunnel value and raises the center post."
+          },
+          {
+            "name": "Start Tunnel",
+            "summary": "The top saucers and side standups restart the tunnel cycle when the displayed value is too low."
+          },
+          {
+            "name": "Gates",
+            "summary": "Each top saucer opens one gate, and a gate passage scores points and collects the tunnel value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Align the plunger for the top-center Collect Tunnel lane."
+          },
+          {
+            "text": "Watch the tunnel lamps. Release a near-full plunge so the Stop Tunnel switch selects 5K."
+          },
+          {
+            "text": "Collect the selected value through the top-center lane."
+          },
+          {
+            "text": "When the tunnel shows 3K or more, hit the center red Collect Tunnel target near its middle."
+          },
+          {
+            "text": "Let the target rebound settle toward a flipper and the raised center post."
+          },
+          {
+            "text": "Use a dead bounce or drop catch to control the ball beside the center post."
+          },
+          {
+            "text": "Use small flipper taps to prepare the next center-target shot."
+          },
+          {
+            "text": "Repeat the center target while the tunnel stays at 3K or more and the rebound remains controlled."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Change a low tunnel value",
+          "when": "Recovery pivot: Use this plan when the tunnel shows 1K or 2K.",
+          "steps": [
+            {
+              "text": "Do not repeat the center Collect Tunnel target for the low value."
+            },
+            {
+              "text": "Use the left Collect Bonus shot, an open gate, or a safe shot toward the top."
+            },
+            {
+              "text": "Let a top Start Tunnel saucer restart the value cycle."
+            },
+            {
+              "text": "Stop the cycle at 3K or more, then return to the center target."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Two-step tunnel plunge",
+            "when": "When trailing, use this distinct scoreboard route: use this plan only when a soft plunge can stop the tunnel more accurately on this machine.",
+            "steps": [
+              {
+                "text": "Soft-plunge only far enough to score the Stop Tunnel switch at 5K."
+              },
+              {
+                "text": "Let the ball return to the plunger lane."
+              },
+              {
+                "text": "Plunge through the top-center Collect Tunnel lane."
+              },
+              {
+                "text": "Use the one-step near-full plunge if the soft plunge cannot stop the value reliably."
+              }
+            ]
+          },
+          {
+            "title": "Open-gate collect",
+            "when": "Use this plan when a top saucer opens a gate and the gate shot is already available.",
+            "steps": [
+              {
+                "text": "Confirm that the gate is open."
+              },
+              {
+                "text": "Take the gate passage for points and a tunnel collect."
+              },
+              {
+                "text": "Do not chase the gate when a high-value center-target shot is controlled."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 5K tunnel collects",
+          "steps": [
+            {
+              "text": "Stop the tunnel at 5K during the plunge."
+            },
+            {
+              "text": "Collect the 5K value through the top-center lane."
+            },
+            {
+              "text": "Hit the center red target to raise the center post."
+            },
+            {
+              "text": "Control each rebound and repeat the 5K target collect."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "Collect Tunnel target",
+            "label": "Collect Tunnel target",
+            "description": "Center red target used to collect the currently lit tunnel value.",
+            "precision": "unverified",
+            "context": "Repeat the center Collect Tunnel target while its value is worthwhile."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Timed near-full plunge",
+            "instruction": "Set the plunger position before you watch the tunnel lamps. Release the plunger when the timing will stop the value at 5K.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvE1-MQ2P6"
+          },
+          {
+            "name": "Drop catch",
+            "instruction": "Use a dead bounce or drop catch after the center-target rebound. Settle the ball beside the raised post, then use small taps to change flippers.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvE1-MQ2P6",
+            "techniqueSlug": "drop-catch"
+          },
+          {
+            "name": "Centered target hit",
+            "instruction": "Hit the center red target near its middle. An edge hit sends the rebound toward a slingshot or outlane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvE1-MQ2P6"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The two white buttons above the slingshots lower the center post.",
+            "response": "Watch the post after either button scores. Prepare to flip or trap without depending on the post.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvE1-MQ2P6"
+          },
+          {
+            "issue": "An edge hit on the center red target can rebound toward an outlane or slingshot.",
+            "response": "Aim for the middle of the target. Stop repeating it when the rebound does not return toward a flipper or the post.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvE1-MQ2P6"
+          },
+          {
+            "issue": "The side Start Tunnel standups can produce dangerous rebounds.",
+            "response": "Use top saucers, the left Collect Bonus shot, or an open gate to change a low value when possible.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRvE1-MQ2P6"
+          }
+        ],
+        "simpleOverview": "Space Time and Time Zone cycle a Tunnel value from 1K to 5K, then let several shots collect it. Time the plunge to stop and collect 5K through the top-center lane, hit the center red target for another collect and a raised center post, and restart a low value through safe top play.",
+        "overview": "Space Time and Time Zone revolve around stopping the cycling Tunnel value at 5K and collecting it repeatedly. Collect it through the top-center lane on the plunge, then hit the center red target for another 5K and to raise the center post. A top saucer restarts a low Tunnel value and opens its matching side gate.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Time the plunge to stop and collect a 5K tunnel value. Repeat the center red Collect Tunnel target while the value is at least 3K. Change a low value through safe top play.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Align the plunger for the top-center Collect Tunnel lane."
+          },
+          {
+            "text": "Watch the tunnel lamps. Release a near-full plunge so the Stop Tunnel switch selects 5K."
+          },
+          {
+            "text": "Collect the selected value through the top-center lane."
+          },
+          {
+            "text": "When the tunnel shows 3K or more, hit the center red Collect Tunnel target near its middle."
+          },
+          {
+            "text": "Let the target rebound settle toward a flipper and the raised center post."
+          },
+          {
+            "text": "Use a dead bounce or drop catch to control the ball beside the center post."
+          },
+          {
+            "text": "Use small flipper taps to prepare the next center-target shot."
+          },
+          {
+            "text": "Repeat the center target while the tunnel stays at 3K or more and the rebound remains controlled."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Tunnel value",
+            "summary": "The tunnel cycles from 1K through 5K until the Stop Tunnel switch near the top of the plunger lane scores."
+          },
+          {
+            "name": "Tunnel skill shot",
+            "summary": "A timed near-full plunge can stop the tunnel and collect it through the top-center Collect Tunnel lane."
+          },
+          {
+            "name": "Center Collect Tunnel",
+            "summary": "The center red standup collects the displayed tunnel value and raises the center post."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Change a low tunnel value",
+          "when": "Recovery pivot: Use this plan when the tunnel shows 1K or 2K.",
+          "steps": [
+            {
+              "text": "Do not repeat the center Collect Tunnel target for the low value."
+            },
+            {
+              "text": "Use the left Collect Bonus shot, an open gate, or a safe shot toward the top."
+            },
+            {
+              "text": "Let a top Start Tunnel saucer restart the value cycle."
+            },
+            {
+              "text": "Stop the cycle at 3K or more, then return to the center target."
+            }
+          ]
+        },
+        "warning": {
+          "title": "An edge hit on the center red target can rebound toward an outlane or slingshot.",
+          "text": "Aim for the middle of the target. Stop repeating it when the rebound does not return toward a flipper or the post."
+        }
+      }
+    }
+  ]
+}

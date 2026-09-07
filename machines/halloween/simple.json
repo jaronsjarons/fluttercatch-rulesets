@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "id": "Gj66Z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Store a Tombstone lock with the secret skill shot, start a Jack-O-Lantern mode with controlled shots, lock one ball at each Hedge scoop for Hedge Multiball, then add Tombstone Multiball's 2x playfield scoring before collecting Hedge Jackpots and its Super Jackpot.",
+        "steps": [
+          {
+            "text": "Use the secret skill shot when the Judith Tombstone target is controlled. Plunge so the ball reaches the hidden target and stores the first Tombstone lock.",
+            "modeNotes": [
+              "Tombstone lock: The secret skill shot or five Judith-target hits stores one locked ball. Hit Judith again after the lock is ready to start Tombstone Multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the opening ball save to test the center House ramp. A strong shot should complete from either flipper. Do not build a ramp route when weak or clean shots reject."
+          },
+          {
+            "text": "Clear the three center drop targets to light the Jack-O-Lantern scoop. Start Jack-O-Lantern V or VI when its required shots are safe. Select III or IV when the target banks are safer than the hard mode shots.",
+            "modeNotes": [
+              "Jack-O-Lantern V (Let Me In): Hit the one green drop target. Then make an orbit to reset the bank. Avoid the other drops. Repeat five times.",
+              "Jack-O-Lantern VI (Laurie Slashes Back): Hit the moving pink shot before the red shot. Complete five rounds.",
+              "Jack-O-Lantern III (Counting Bodies): Hit the green shots. Avoid the red shots.",
+              "Jack-O-Lantern IV (Escape the Kitchen): Hit all six standup targets."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "While the mode runs, shoot each of the three Hedge scoops to lock one ball. The third lock starts Hedge Multiball.",
+            "modeNotes": [
+              "Hedge qualification: Each of the three scoops holds one ball. Locking the third ball starts the multiball.",
+              "Stack rule: A Jack-O-Lantern mode can continue during Hedge, Tombstone, Sanitarium, or House Multiball."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Hedge Multiball, make a left-ramp or Blood-target reveal. Shoot the lit Hedge scoop for a Jackpot. After three Jackpots, shoot the middle scoop for the Super Jackpot.",
+            "modeNotes": [
+              "Hedge Super Jackpot: The first Super adds a ball. If the multiball ends before a Super, the Jack-O-Lantern scoop lights for about 15 seconds to restart it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When Hedge is ready or running, hit Judith to release its stored ball. This starts Tombstone Multiball and adds 2x playfield scoring to the stack.",
+            "modeNotes": [
+              "Tombstone Multiball: It starts with two balls and 2x playfield scoring. Orange shots award Jackpots; Judith awards the Super Jackpot and raises later Jackpots.",
+              "Stack rule: Tombstone can run with Jack-O-Lantern modes and the other main multiballs."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect safe Tombstone Jackpots and its Judith Super, then complete the current Hedge reveal, Jackpot, and middle-scoop Super sequence under 2x playfield scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Collect Blood during safe phases. Spend ten Blood on 2x playfield scoring only while the current stack is alive and a large collect is ready.",
+            "modeNotes": [
+              "Blood: Mode qualifications and wins add stored Blood. One Blood awards points. Ten Blood starts 2x playfield scoring for the rest of the ball. Twelve Blood can light an Extra Ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the safest Jack-O-Lantern mode and multiball route. Do not force the Judith target in single-ball play when its return is not controlled.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Sanitarium Multiball",
+          "when": "Recovery pivot: Use this plan when the Hedge scoops or Judith target are unsafe.",
+          "steps": [
+            {
+              "text": "Hit the middle drop, then shoot the scoop behind it to start Sanitarium qualification.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit any two lit standups. Hit the middle drop. Shoot the center scoop. Repeat until the qualification is complete.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "When the ball exits the middle playfield, Sanitarium starts as a two-ball multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect six standup Jackpots. Shoot the middle scoop for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Add a Jack-O-Lantern mode only when its qualification is already ready.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: House Attack",
+            "when": "When trailing, use this higher-ceiling route: use this plan when the center ramp and upper-playfield feeds are strong and predictable.",
+            "steps": [
+              {
+                "text": "Make five center-ramp shots, complete Hedge and Sanitarium, or use Dirty Pool at the crossover to qualify the House.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the center ramp to start the 60-second House Attack. Upper spinners damage Michael. The upper drop damages Laurie. Middle standups restore health.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete the upper drop and crossover objectives to start the three-ball phase.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot ramps and orbits for Jackpots. Shoot the crossover for the Super Jackpot worth the Jackpot total.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Jack-O-Lantern Multiball",
+            "when": "Use this plan when mode starts are safer than the physical multiball targets.",
+            "steps": [
+              {
+                "text": "Complete three different Jack-O-Lantern modes.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the Jack-O-Lantern scoop to start the four-ball Jack-O-Lantern Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Hit center drops to raise the Jackpot value. Shoot the lit major arrows to collect it.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Complete another set of three modes for the next start. A mode can start during another multiball, but the game selects the easiest uncompleted mode for you.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Boogeyman and The Night He Came Home",
+          "steps": [
+            {
+              "text": "Collect the Super Jackpot in Hedge, Sanitarium, and House Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Relock all three Hedge balls. Shoot both Sanitarium scoops. Complete the House crossover to start Boogeyman.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start or complete the operator-set Jack-O-Lantern requirement. The default can require six of nine or all nine modes.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Jack-O-Lantern scoop to start The Night He Came Home. Complete its lit location shots, collect the hurry-up, and lock each location value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use Blood-shop awards and the Judith target to build the final value. The fuel timer controls the remaining time.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "quickInfo": [
+          {
+            "name": "Jack-O-Lantern modes",
+            "summary": "Clear the center drops and shoot the Jack-O-Lantern scoop; completed modes add Hedge progress and count toward deeper features."
+          },
+          {
+            "name": "Hedge Multiball",
+            "summary": "Lock one ball at each Hedge scoop; the third lock starts Multiball, then reveal Michael and collect three scoop Jackpots before the middle-scoop Super Jackpot."
+          },
+          {
+            "name": "Tombstone Multiball",
+            "summary": "A secret skill shot or five Judith hits stores its lock; the start supplies two balls and 2x playfield scoring."
+          },
+          {
+            "name": "Blood",
+            "summary": "Mode qualification and completion light Blood; ten Blood buys 2x playfield scoring for the rest of the ball."
+          },
+          {
+            "name": "Stacking",
+            "summary": "Jack-O-Lantern modes and Tombstone Multiball can overlap the main multiballs, making Hedge a practical protected scoring route."
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Jack-O-Lantern",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Let Me In",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Laurie Slashes Back",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Counting Bodies",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Escape the Kitchen",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Hedge Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Tombstone Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Sanitarium Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "House Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Jack-O-Lantern Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "2x playfield scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Blood",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "House Attack",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Boogeyman",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "The Night He Came Home",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Judith Tombstone target",
+            "label": "Judith Tombstone",
+            "description": "Captive-ball and drop-target area used to store the Tombstone lock and collect its Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center House ramp",
+            "label": "Center House ramp",
+            "description": "Center ramp feeding the upper House playfield; repeated completions can qualify House Attack.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Jack-O-Lantern scoop",
+            "label": "Jack-O-Lantern scoop",
+            "description": "Right-side scoop used for mode selection, Blood Store, Jack-O-Lantern Multiball, and wizard starts.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Hedge scoops",
+            "label": "Hedge scoops",
+            "description": "Three physical scoop locks used to qualify Hedge Multiball and collect its Jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "middle scoop",
+            "label": "Middle-playfield scoop",
+            "description": "Upper scoop used for Hedge and Sanitarium Super Jackpots and Sanitarium qualification.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Check whether The Night He Came Home requires starting or completing six or nine Jack-O-Lantern modes."
+        ],
+        "techniques": [
+          {
+            "name": "Judith secret skill shot",
+            "instruction": "Choose the secret plunge only after you see its lane. A successful Judith hit stores a Tombstone lock without five direct target hits.",
+            "sourceUrl": "https://tiltforums.com/t/halloween-rulesheet/7933"
+          },
+          {
+            "name": "Dirty Pool House qualification",
+            "instruction": "When the center drop rises during its reset, make the House crossover. A clean Dirty Pool hit can qualify the House immediately and later hits can raise its multiplier.",
+            "sourceUrl": "https://www.spookypinball.com/game-support/halloween/"
+          }
+        ],
+        "cautions": [],
+        "simpleOverview": "Halloween uses the center drops and right scoop for Jack-O-Lantern modes, the three Hedge scoops for Hedge Multiball, and Judith for Tombstone Multiball. Clear the center drops, shoot the right scoop, and choose Escape the Kitchen; hit all six lit standups to complete it. Separately, lock one ball at each Hedge scoop (the third starts Multiball), or trap and release a ball at Judith for two-ball play and 2x scoring.",
+        "overview": "Halloween builds Jack-O-Lantern modes at the center drops and right scoop, while the Hedge, Sanitarium, and House Super Jackpots advance Boogeyman. Clear the drops, start a mode at the right scoop, and lock one ball at each Hedge scoop; the third lock starts Hedge Multiball while the mode remains available. Release a stored Judith lock for Tombstone Multiball's 2x scoring, reveal Michael with the left ramp or a target beside a Hedge scoop, collect the matching scoop Jackpots, then finish at the middle scoop.",
+        "machineSetup": [
+          "Check whether The Night He Came Home requires starting or completing six or nine Jack-O-Lantern modes."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the center drops and Jack-O-Lantern scoop for a mode, then use Judith for Tombstone Multiball and 2x playfield scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Jack-O-Lantern IV",
+            "text": "Clear the three center drop targets to light the Jack-O-Lantern scoop, then shoot the scoop and select Jack-O-Lantern IV when the six standup targets are safe.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Jack-O-Lantern IV: Escape the Kitchen",
+              "reason": "Choose it when the six standup targets are safer than the game's harder mode shots.",
+              "play": "Hit all six standup targets to complete the mode."
+            }
+          },
+          {
+            "title": "Start Tombstone Multiball and 2x scoring",
+            "text": "Use the secret skill shot to hit the Judith Tombstone target and store the first lock, or hit Judith five times. When the lock is ready, hit Judith again to start two-ball Tombstone Multiball with 2x playfield scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Jack-O-Lantern modes",
+            "summary": "Clear the center drops and shoot the Jack-O-Lantern scoop; completed modes add Hedge progress and count toward deeper features."
+          },
+          {
+            "name": "Hedge Multiball",
+            "summary": "Lock one ball at each Hedge scoop; the third lock starts Multiball, then reveal Michael and collect three scoop Jackpots before the middle-scoop Super Jackpot."
+          },
+          {
+            "name": "Tombstone Multiball",
+            "summary": "A secret skill shot or five Judith hits stores its lock; the start supplies two balls and 2x playfield scoring."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Hedge Multiball",
+          "when": "Use this when the three Hedge scoops are safer than the Judith target.",
+          "steps": [
+            {
+              "text": "Shoot each of the three Hedge scoops to lock one ball. The third lock starts Hedge Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "During Multiball, shoot the left ramp or a target beside a Hedge scoop to reveal Michael, then shoot the matching scoop for a Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

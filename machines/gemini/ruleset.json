@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "G5KPZ",
+  "title": "Gemini",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Gemini",
+      "url": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Gemini machine guide",
+        "url": "https://www.kineticist.com/games/pinball/gemini"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Collect all four colors before attacking the eight drop targets. Then clear the targets twice for 3x, build base bonus to 19,000, and continue target play only while the rebounds remain manageable.",
+      "quickInfo": [
+        {
+          "name": "Color skill shot",
+          "summary": "Plunge a red or yellow top lane, with yellow normally being the easier soft-plunge choice."
+        },
+        {
+          "name": "Color locations",
+          "summary": "Each color has a top lane; red and white also have upper-left side lanes, green has an upper-right standup, and yellow has a center-right side lane."
+        },
+        {
+          "name": "Drop-target value",
+          "summary": "Each drop target scores 1,000 plus another 1,000 for every collected color, up to 5,000 with all four colors."
+        },
+        {
+          "name": "Bonus X",
+          "summary": "Clear all eight drop targets once for 2x and a second time for 3x, while Ball 3 begins at 2x."
+        },
+        {
+          "name": "Base bonus",
+          "summary": "Top lanes, return lanes, outlanes, and standup targets advance base bonus to a maximum of 19,000."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Soft plunge for the yellow top lane, or take red when its lane is the cleaner plunge."
+        },
+        {
+          "text": "Read the four color lamps before choosing a lower-playfield shot."
+        },
+        {
+          "text": "Use the upper-left side lanes for missing red or white."
+        },
+        {
+          "text": "Use the upper-right standup for missing green and the center-right side lane for missing yellow."
+        },
+        {
+          "text": "After all four colors are collected, begin controlled shots at the eight drop targets."
+        },
+        {
+          "text": "Clear the full target set once for 2x Bonus and a second time for 3x Bonus."
+        },
+        {
+          "text": "Build base bonus to 19,000 through lane and standup progress."
+        },
+        {
+          "text": "At 3x Bonus and 19,000, continue drop-target shots only while their rebounds remain controllable."
+        }
+      ],
+      "fallback": {
+        "title": "Missing-color recovery",
+        "when": "Use this plan when one color is still uncollected after the plunge and natural top play.",
+        "steps": [
+          {
+            "text": "Read the color lamps before the ball reaches a flipper."
+          },
+          {
+            "text": "For red or white, send the ball toward the matching upper-left side lane."
+          },
+          {
+            "text": "For green, use the upper-right standup only from a controlled angle."
+          },
+          {
+            "text": "For yellow, use the center-right side lane or wait for the next soft plunge."
+          },
+          {
+            "text": "Stop color-specific shots as soon as all four colors are lit."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Bonus-first survival",
+          "when": "Use this plan when direct drop-target rebounds repeatedly reach the center or slingshots.",
+          "steps": [
+            {
+              "text": "Favor top, side, and return lanes that advance base bonus."
+            },
+            {
+              "text": "Let natural upper-playfield action collect missing colors."
+            },
+            {
+              "text": "Take only edge hits on drop targets that complete the next bank."
+            },
+            {
+              "text": "Preserve the built bonus instead of forcing 3x on an unsafe target bank."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "19,000 at 3x with maximum targets",
+        "steps": [
+          {
+            "text": "Collect red, white, green, and yellow before sustained target play."
+          },
+          {
+            "text": "Clear all eight drop targets for 2x Bonus."
+          },
+          {
+            "text": "Clear all eight again for 3x Bonus."
+          },
+          {
+            "text": "Score top and side lanes or standup targets until base bonus reaches 19,000."
+          },
+          {
+            "text": "Use remaining drop targets for their full four-color value."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Soft yellow plunge",
+          "instruction": "Use a controlled soft plunge that reaches the yellow top lane without carrying past the lane entrance.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/gemini"
+        },
+        {
+          "name": "Target edge hit",
+          "instruction": "Contact the inner edge of a needed drop target. Avoid a face-on hit that sends the rebound straight toward the center.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+        },
+        {
+          "name": "Side-lane exit read",
+          "instruction": "Track the ball through the full side-lane exit. Flip only after its arc clearly reaches a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Drop-target rebounds can return through the center or into a slingshot.",
+          "response": "Use edge hits and prepare both flippers before contact. Stop forcing a bank after an uncontrolled rebound.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+        },
+        {
+          "issue": "The upper-left yellow-lane exit is less predictable than the red-lane exit.",
+          "response": "Prefer red when both colors are available. Track a yellow-lane exit until it clears the rail and reaches a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+        },
+        {
+          "issue": "Balls between the green and yellow target pairs can roll smoothly into the center drain.",
+          "response": "Nudge before the ball enters that gap, within the machine's tilt limit. Do not wait until it is below the targets.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+        },
+        {
+          "issue": "A right-bumper hit can send the ball to the left outlane through the rubber above the yellow targets.",
+          "response": "Watch the right-bumper exit and nudge before the ball reaches the upper-left rubber.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5KPZ-MLBKd"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ball count and how replay, Extra Ball, and Special awards are handled; Ball 3 normally begins at 2x Bonus.",
+        "Test both drop banks, the green standup, the yellow side lane, and the upper-left lane exits before choosing a color route.",
+        "Verify target resets, tilt sensitivity, and whether completing all four colors lights a tournament-valuable Extra Ball."
+      ],
+      "simpleOverview": "Gemini makes each drop target more valuable after all four colors are collected. Use the top and side color shots first, then clear the eight drops once for 2x and again for 3x, while lanes and standups raise base bonus toward 19,000.",
+      "overview": "In Gemini, collecting red, white, green, and yellow raises the value of every drop target. Collect the colors through the named top and side shots before attacking the drops, then clear the eight-target bank twice for 3x Bonus. Continue target play at the 19,000 base maximum only while the rebounds remain controllable.",
+      "machineSetup": [
+        "Confirm ball count and how replay, Extra Ball, and Special awards are handled; Ball 3 normally begins at 2x Bonus.",
+        "Test both drop banks, the green standup, the yellow side lane, and the upper-left lane exits before choosing a color route.",
+        "Verify target resets, tilt sensitivity, and whether completing all four colors lights a tournament-valuable Extra Ball."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

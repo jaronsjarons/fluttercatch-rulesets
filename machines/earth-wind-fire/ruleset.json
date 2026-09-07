@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "GR96Q",
+  "title": "Earth Wind Fire",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Earth Wind Fire operator manual",
+      "url": "https://www.zaccaria-pinball.com/gen1/earthwindfire/Earth-Wind-Fire_manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Earth Wind Fire operator settings",
+        "url": "https://www.zaccaria-pinball.com/gen1/earthwindfire/settings.html"
+      },
+      {
+        "label": "Earth Wind Fire play and rules account",
+        "url": "https://www.flippers.be/pinball/zaccaria/earthwindfire/earth_wind_fire.html"
+      },
+      {
+        "label": "Earth Wind Fire card archive",
+        "url": "https://www.zaccaria-pinball.com/gen1/earthwindfire/cards.zip"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Earth Wind Fire rewards repeated completion of its ten numbered standups, while the upper rollover lanes build the bonus multiplier and a top Special. Complete the drop bank to light the outlane ball-return feature. The top-right lane target advances its own award. When the Fire Special hole is lit, shoot it to collect the current value. A timed bonus round adds a late-ball scoring window.",
+      "simpleOverview": "Complete the ten numbered standup targets repeatedly to build the Fire Special route. Complete the three upper rollovers to raise Bonus X and work toward the top Special. Complete the drop bank to light the outlane ball return, and shoot the Fire Special hole whenever its award is lit.",
+      "summary": "Finish the numbered set closest to completion, use the upper rollovers for Bonus X, and take the Fire Special hole only when its lamp shows a worthwhile award. Build ball return from the drop bank when safety matters more than raw points.",
+      "quickInfo": [
+        {
+          "name": "Build Fire Special",
+          "summary": "Complete the ten numbered standups repeatedly."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete the three upper rollovers."
+        },
+        {
+          "name": "Light Ball Return",
+          "summary": "Complete the drop bank."
+        },
+        {
+          "name": "Collect Fire",
+          "summary": "Shoot the lit Fire Special hole."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the ten numbered standup targets; repeated completions advance the Fire Special route.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the three upper rollovers to advance Bonus X and the upper Special sequence.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete the drop-target bank to light the outlane ball-return feature.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the Fire Special hole when its lamp is lit, and use the top-right lane target to advance its displayed award.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Favor survival",
+          "when": "Use this when the numbered standups are rejecting the ball.",
+          "steps": [
+            {
+              "text": "Complete the drop bank to light ball return.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use upper rollovers for Bonus X before returning to the standups.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Convert Fire Special",
+        "steps": [
+          {
+            "text": "Keep completing the numbered set until the Fire route reaches its lit collect.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the Fire Special hole while that award is available.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check the numbered-target Special threshold, Bonus X limit, ball-return behavior, timed bonus round, and Special awards.",
+        "Test all ten standups, three upper rollovers, drop bank, Fire Special hole, top-right lane target, return gate, and award lamps."
+      ],
+      "termStyles": [
+        {
+          "label": "Fire Special",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Numbered Targets",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Ball Return",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The number of target-set completions needed for Special can vary by setup.",
+          "response": "Follow the Fire lamps instead of assuming one fixed completion count.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen1/earthwindfire/settings.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

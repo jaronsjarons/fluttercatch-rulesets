@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "G4lLp",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Stellar Wars connects its letter objective, feature banks, and end-of-ball bonus. Complete S-T-E-L-L-A-R through the center and left drops and W-A-R-S through the four return lanes; either word raises Bonus X, and finishing both awards 50,000. One completion of the upper-right three-bank lights the captive ball to spot letters, while the top 1-2-3-4 lanes provide the safer repeatable route to 5x Bonus.",
+        "simpleOverview": "Complete the upper-right three-bank once to light the captive ball, then use captive-ball hits to spot S-T-E-L-L-A-R letters. After S-T-E-L-L-A-R is complete, captive-ball hits can spot W-A-R-S; completing both words awards 50,000. Complete the top 1-2-3-4 lanes whenever possible to raise Bonus X.",
+        "summary": "Use controlled side-lane shots to reach the numbered top lanes and build Bonus X. If S-T-E-L-L-A-R is close, finish its drop targets, complete the upper-right bank once, and use the lit captive ball to cover missing W-A-R-S lanes. Treat center-bank Extra Ball progression as a higher-risk alternative.",
+        "quickInfo": [
+          {
+            "name": "Light Captive Ball",
+            "summary": "Complete the upper-right three-bank once."
+          },
+          {
+            "name": "Spot Letters",
+            "summary": "Hit the lit captive ball; W-A-R-S is spotted only after S-T-E-L-L-A-R."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete S-T-E-L-L-A-R, W-A-R-S, or top lanes 1-2-3-4."
+          },
+          {
+            "name": "Collect 50,000",
+            "summary": "Complete both S-T-E-L-L-A-R and W-A-R-S."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the upper-right three-bank once to light the captive-ball target."
+          },
+          {
+            "text": "Finish S-T-E-L-L-A-R with the center and left drops, using lit captive-ball hits to spot missing letters."
+          },
+          {
+            "text": "After S-T-E-L-L-A-R is complete, use return lanes or lit captive-ball hits to finish W-A-R-S."
+          },
+          {
+            "text": "Complete both words for 50,000; use the top 1-2-3-4 lanes throughout the ball to raise Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Feature-bank route",
+            "when": "Use this when the letter drops are badly split or the captive-ball shot rejects.",
+            "steps": [
+              {
+                "text": "Complete the left three-bank once to light the upper jet bumpers for 1,000; complete it twice to flash them for 2,000."
+              },
+              {
+                "text": "Complete the upper-right bank three times to light both spinners for 1,000 per spin."
+              },
+              {
+                "text": "Keep feeding the numbered top lanes to grow Bonus X behind the feature scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "145,000 end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Build base bonus toward 29,000 with lanes and drop targets."
+            },
+            {
+              "text": "Complete 1-2-3-4, S-T-E-L-L-A-R, or W-A-R-S to reach 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Protect the ball after reaching 29,000 at 5x; verify whether sub-5x Bonus X carries between balls on the installed setup."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test all three drop banks and resets, the captive ball and target, four W-A-R-S return lanes, 1-2-3-4 top lanes, both spinners, the eject hole, all five jet bumpers, and the bonus lamps.",
+          "Confirm adjustment 27 for captive-ball and lower-bumper qualification, adjustment 33 for Bonus X carryover, Extra Ball behavior, and whether the eject-hole stop bracket reliably captures the ball."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-right three-bank",
+            "label": "Upper-right three-bank",
+            "description": "Bank that lights the captive ball, lower bumpers, spinners, and Special in sequence.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "label": "Captive ball",
+            "description": "Lit target that spots the next available title letter.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drop bank",
+            "label": "Center drop bank",
+            "description": "S-T-E-L-L-A-R letters and progressive eject-hole awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left three-bank",
+            "label": "Left three-bank",
+            "description": "S-T letters and upper-jet-bumper qualification.",
+            "precision": "unverified"
+          },
+          {
+            "term": "W-A-R-S return lanes",
+            "label": "W-A-R-S return lanes",
+            "description": "Four lower return lanes used to complete W-A-R-S.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-2-3-4 top lanes",
+            "label": "1-2-3-4 top lanes",
+            "description": "Four numbered lanes whose completion raises Bonus X.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Two operator adjustments materially change the route.",
+            "response": "Check whether one right-bank completion lights both the captive ball and lower bumpers, and whether an unfinished multiplier carries to the next ball.",
+            "sourceUrl": "https://www.pinrepair.com/sys37/manuals/wms4-stellarwars.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use controlled side-lane shots to reach the numbered top lanes and build Bonus X. If S-T-E-L-L-A-R is close, finish its drop targets, complete the upper-right bank once, and use the lit captive ball to cover missing W-A-R-S lanes. Treat center-bank Extra Ball progression as a higher-risk alternative.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the upper-right three-bank once to light the captive-ball target."
+          },
+          {
+            "text": "Finish S-T-E-L-L-A-R with the center and left drops, using lit captive-ball hits to spot missing letters."
+          },
+          {
+            "text": "After S-T-E-L-L-A-R is complete, use return lanes or lit captive-ball hits to finish W-A-R-S."
+          },
+          {
+            "text": "Complete both words for 50,000; use the top 1-2-3-4 lanes throughout the ball to raise Bonus X toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Captive Ball",
+            "summary": "Complete the upper-right three-bank once."
+          },
+          {
+            "name": "Spot Letters",
+            "summary": "Hit the lit captive ball; W-A-R-S is spotted only after S-T-E-L-L-A-R."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete S-T-E-L-L-A-R, W-A-R-S, or top lanes 1-2-3-4."
+          }
+        ]
+      }
+    }
+  ]
+}

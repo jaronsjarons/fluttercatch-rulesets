@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "id": "GRzB7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start each Nightmare at the Boiler Room. Fill the Freddy Meter at the five face shots, then return to the Boiler Room to defeat him. During a Multiball Nightmare, defeat Freddy before one ball remains, collect five rising Jackpots, then repeat the captive-ball Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Nightmares",
+            "summary": "Start each numbered battle at the Boiler Room, fill the Freddy Meter, and return there to defeat Freddy."
+          },
+          {
+            "name": "Multiball Nightmare",
+            "summary": "Nightmares 1, 3, and 5 normally start two-ball play with a short save and target-based add-a-balls."
+          },
+          {
+            "name": "Three Items",
+            "summary": "Fully Awake qualifies Freddy's Bones for More Power, Alarm Clock, and Multi Ball support."
+          },
+          {
+            "name": "Kruegerands",
+            "summary": "Single-ball left-orbit and center-loop shots build currency that the shop spends on one award."
+          },
+          {
+            "name": "Final Nightmare",
+            "summary": "Finish six Nightmares to start the four-ball final battle and its built Boiler Room Jackpot."
+          },
+          {
+            "name": "Dream Warriors",
+            "summary": "Buy it with the displayed currency threshold or complete all three different Jackpot types."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Time the plunge so the ball enters the Boiler Room while its moving wall is down and starts the next Nightmare."
+          },
+          {
+            "text": "During a Nightmare, shoot the five flashing Freddy-face shots until the red meter is full.",
+            "modeNotes": [
+              "Freddy Meter: The left orbit, upper-left target, center loop, Boiler Room, and right captive ball add two lights each; More Power adds a third."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When the meter is full, shoot the Boiler Room to defeat Freddy.",
+            "modeNotes": [
+              "Grab Freddy: The collect scores 10,000,000 times the Nightmare number and adds 10,000,000 to Final Nightmare value."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Nightmares 1, 3, and 5, hit the flashing lower-left standup early to add a ball.",
+            "modeNotes": [
+              "Multiball Nightmare: Two-ball play has a short opening save, and the add-a-ball target can add two balls during one Nightmare."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Defeat Freddy while at least two balls remain to start the Multiball Jackpot phase.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot each of the five lit Jackpot shots once, then repeat the right captive ball for 50,000,000 until one ball remains.",
+            "modeNotes": [
+              "Rising Jackpots: The five different shots score 10,000,000 through 50,000,000; after all five, the captive ball repeats at 50,000,000."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Before Nightmares 2, 4, and 6, hit Coffee until the Awake meter reaches the top."
+          },
+          {
+            "text": "When Fully Awake, hit the flashing captive ball for Freddy's Bones and all three Items.",
+            "modeNotes": [
+              "More Power: Each Freddy-face shot adds one extra meter light.",
+              "Alarm Clock: The Boiler Room gets a short continuation after the timer or multiball ends.",
+              "Multi Ball Item: The next single-ball Nightmare becomes a Multiball Nightmare."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start the next Nightmare and use its side feature only when it does not delay Grab Freddy."
+          },
+          {
+            "text": "Repeat through all six Nightmares."
+          }
+        ],
+        "fallback": {
+          "title": "Build and spend Kruegerands",
+          "when": "Use this when the Boiler Room or Freddy shots are unreliable.",
+          "steps": [
+            {
+              "text": "Shoot the left orbit or center loop in single-ball Awake play for three Kruegerands."
+            },
+            {
+              "text": "Reach at least 20, roll through the lit right inlane, and shoot the left orbit to open Freddy's Shop."
+            },
+            {
+              "text": "Buy Kruegerand Multiball at 20 to 29 and shoot the Boiler Room wall for five Kruegerands per hit.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "If Dream Warriors is offered, buy it instead of storing more currency."
+            },
+            {
+              "text": "Ignore the Soul purchase unless Final Nightmare value is already important."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Hidden Mode",
+            "when": "Use this once when Coffee shots and the upper flipper are safe.",
+            "steps": [
+              {
+                "text": "Reach Fully Awake."
+              },
+              {
+                "text": "Use the upper-right flipper to hit the upper-left target near Freddy's head."
+              },
+              {
+                "text": "During three-ball Hidden Mode, repeat the Boiler Room for 10,000,000.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "The mode ends at one ball and can start once per player."
+              }
+            ]
+          },
+          {
+            "title": "Three-Jackpot Dream Warriors",
+            "when": "Use this when the shop price is high and all three Jackpot types are available.",
+            "steps": [
+              {
+                "text": "Collect one Multiball Jackpot after defeating Freddy."
+              },
+              {
+                "text": "Collect one roving Freddy Jackpot during Nightmare 4 or 6."
+              },
+              {
+                "text": "Collect one Combo Jackpot with left inlane, captive ball, then upper-flipper center loop."
+              },
+              {
+                "text": "Shoot Mystery in Awake play to start Dream Warriors."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Final Nightmare and Dream Warriors",
+          "steps": [
+            {
+              "text": "Play Nightmares 1 through 6."
+            },
+            {
+              "text": "In four-ball Final Nightmare, shoot all five flashing Freddy shots.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the Boiler Room for the built Final Nightmare Jackpot."
+            },
+            {
+              "text": "Buy Dream Warriors or complete the three different Jackpot lamps."
+            },
+            {
+              "text": "During Dream Warriors, shoot the strobing shot for 100,000,000 and follow its five-shot sequence.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Both final multiballs end when one ball remains."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Nightmares",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball Nightmare",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Kruegerand Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Hidden Mode",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Final Nightmare",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Dream Warriors",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "More Power",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Alarm Clock",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Multi Ball Item",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Kruegerands",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Boiler Room",
+            "context": "Boiler Room",
+            "label": "Boiler Room",
+            "description": "The start and finish shot for each Nightmare.",
+            "precision": "unverified"
+          },
+          {
+            "term": "five face shots",
+            "context": "five face shots",
+            "label": "Freddy Meter shots",
+            "description": "The five playfield shots that fill the Freddy Meter.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "context": "captive ball",
+            "label": "Captive ball",
+            "description": "The center feature used by Combo Jackpot and glove qualification.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Boiler Room skill plunge",
+            "instruction": "Watch the moving wall and release the plunge so the ball reaches the room while the wall is down.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          },
+          {
+            "name": "Glove flipper",
+            "instruction": "Qualify the glove at the captive ball, then press the left flipper as the Mystery habitrail carries the ball past it.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          },
+          {
+            "name": "Manual Claw save",
+            "instruction": "After C-L-A-W is complete, press the second right-side button as the ball approaches the center drain.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          },
+          {
+            "name": "Combo Jackpot transfer",
+            "instruction": "Roll through the left inlane, hit the captive ball, then use the upper-right flipper for the center loop without another switch.",
+            "sourceUrl": "https://nightmareonelmstreetfilms.com/Files/Freddyspinballinstructions.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Multiball Nightmares have very little opening ball save.",
+            "response": "Use the lower-left add-a-ball target early.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          },
+          {
+            "issue": "The Claw save is manual and lasts only a short time.",
+            "response": "Keep a finger ready on the second right-side button after C-L-A-W is complete.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          },
+          {
+            "issue": "The left-outlane Kick Save is consumed when used.",
+            "response": "Relight it at the lower-left standup or upper-left Take That target during eligible Awake play.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          },
+          {
+            "issue": "Single-ball Nightmares end at a drain or timeout.",
+            "response": "Build More Power and Alarm Clock before a difficult Nightmare.",
+            "sourceUrl": "https://www.pinball.org/rules/freddy.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Freddy and operator settings for Nightmare order, timers, and Extra Ball.",
+          "Test Boiler Room, Freddy Meter shots, captive ball, Glove, and Claw save."
+        ],
+        "simpleOverview": "Freddy starts each Nightmare at the Boiler Room, then five Freddy-face shots fill the meter needed to defeat him. Start a Nightmare, shoot the five flashing faces, return to the Boiler Room, then collect the five Jackpot shots during Multiball and repeat the right captive ball.",
+        "overview": "Each Boiler Room Nightmare in Freddy requires five flashing face shots and a return to the Boiler Room to defeat Freddy. Odd-numbered Nightmares begin with Multiball and offer an add-a-ball. Fill the meter, defeat Freddy before one ball remains, collect each of the five lit Jackpots, then repeat the right captive ball. Use Coffee and the flashing captive ball between even-numbered Nightmares to collect Freddy's Bones and Items.",
+        "machineSetup": [
+          "Confirm Gottlieb Freddy and operator settings for Nightmare order, timers, and Extra Ball.",
+          "Test Boiler Room, Freddy Meter shots, captive ball, Glove, and Claw save."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Start each Nightmare at the Boiler Room. Fill the Freddy Meter at the five face shots, then return to the Boiler Room to defeat him. During a Multiball Nightmare, defeat Freddy before one ball remains, collect five rising Jackpots, then repeat the captive-ball Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Time the plunge so the ball enters the Boiler Room while its moving wall is down and starts the next Nightmare."
+          },
+          {
+            "text": "During a Nightmare, shoot the five flashing Freddy-face shots until the red meter is full.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Freddy Meter: The left orbit, upper-left target, center loop, Boiler Room, and right captive ball add two lights each; More Power adds a third."
+            ]
+          },
+          {
+            "text": "When the meter is full, shoot the Boiler Room to defeat Freddy.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Grab Freddy: The collect scores 10,000,000 times the Nightmare number and adds 10,000,000 to Final Nightmare value."
+            ]
+          },
+          {
+            "text": "During Nightmares 1, 3, and 5, hit the flashing lower-left standup early to add a ball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball Nightmare: Two-ball play has a short opening save, and the add-a-ball target can add two balls during one Nightmare."
+            ]
+          },
+          {
+            "text": "Defeat Freddy while at least two balls remain to start the Multiball Jackpot phase.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot each of the five lit Jackpot shots once, then repeat the right captive ball for 50,000,000 until one ball remains.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Rising Jackpots: The five different shots score 10,000,000 through 50,000,000; after all five, the captive ball repeats at 50,000,000."
+            ]
+          },
+          {
+            "text": "Before Nightmares 2, 4, and 6, hit Coffee until the Awake meter reaches the top."
+          },
+          {
+            "text": "When Fully Awake, hit the flashing captive ball for Freddy's Bones and all three Items.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "More Power: Each Freddy-face shot adds one extra meter light.",
+              "Alarm Clock: The Boiler Room gets a short continuation after the timer or multiball ends.",
+              "Multi Ball Item: The next single-ball Nightmare becomes a Multiball Nightmare."
+            ]
+          },
+          {
+            "text": "Start the next Nightmare and use its side feature only when it does not delay Grab Freddy."
+          },
+          {
+            "text": "Repeat through all six Nightmares."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Nightmares",
+            "summary": "Start each numbered battle at the Boiler Room, fill the Freddy Meter, and return there to defeat Freddy."
+          },
+          {
+            "name": "Multiball Nightmare",
+            "summary": "Nightmares 1, 3, and 5 normally start two-ball play with a short save and target-based add-a-balls."
+          },
+          {
+            "name": "Three Items",
+            "summary": "Fully Awake qualifies Freddy's Bones for More Power, Alarm Clock, and Multi Ball support."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Build and spend Kruegerands",
+          "when": "Use this when the Boiler Room or Freddy shots are unreliable.",
+          "steps": [
+            {
+              "text": "Shoot the left orbit or center loop in single-ball Awake play for three Kruegerands."
+            },
+            {
+              "text": "Reach at least 20, roll through the lit right inlane, and shoot the left orbit to open Freddy's Shop."
+            },
+            {
+              "text": "Buy Kruegerand Multiball at 20 to 29 and shoot the Boiler Room wall for five Kruegerands per hit.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "If Dream Warriors is offered, buy it instead of storing more currency."
+            },
+            {
+              "text": "Ignore the Soul purchase unless Final Nightmare value is already important."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The left-outlane Kick Save is consumed when used.",
+          "text": "Relight it at the lower-left standup or upper-left Take That target during eligible Awake play."
+        }
+      }
+    }
+  ]
+}

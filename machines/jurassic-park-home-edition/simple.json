@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "id": "GxvvB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Dinosaur paddocks, Smart Missiles, worker rescues, two main Multiballs, and timed 2X can progress together. Make three hits at several major shots, launch Smart Missiles before finishing those paddocks, then collect them during T-Rex or Raptor Multiball and 2X.",
+        "simpleOverview": "Shoot a major shot three times to enter its dinosaur paddock, then follow its lit progress to evacuate it. Enter several paddocks before launching Smart Missiles, and collect them during T-Rex or Raptor Multiball with 2X active.",
+        "summary": "Enter several dinosaur paddocks with three hits apiece, then build and launch Smart Missiles before finishing their lit shots. Prepare T-Rex or Raptor Multiball, complete the top lanes a second time for 2X, and evacuate the built paddocks during the stack.",
+        "quickInfo": [
+          {
+            "name": "Dinosaur paddocks",
+            "summary": "Hit a major shot three times to enter its paddock, then keep making that lit shot until the dinosaur is evacuated."
+          },
+          {
+            "name": "Smart Missile",
+            "summary": "Build it at the Smart Missile targets; the launch improves the remaining shots for every currently lit paddock."
+          },
+          {
+            "name": "T-Rex Multiball",
+            "summary": "Knock down the center wall, shoot T-Rex three times, then collect orange jackpots before returning to T-Rex for the Super."
+          },
+          {
+            "name": "Raptor Tri-Ball",
+            "summary": "Keep hitting the Raptor Pen until the fence reaches zero, then return to the pen to begin three-ball play."
+          },
+          {
+            "name": "30-second 2X",
+            "summary": "Every second top-lane completion starts 30 seconds of 2X playfield scoring; use the flippers to change the lit lanes."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose several major shots that return safely. Make each one three times to enter its dinosaur paddock, but leave the remaining lit captures available.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the Smart Missile targets until the launch is ready, then collect it while several paddocks are lit. Repeat the build when control allows.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Prepare T-Rex Multiball by lowering the center wall and shooting T-Rex three times, or reduce the Raptor Pen fence to zero for Raptor Tri-Ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the top lanes for the second time immediately before the stack when practical. Use the flippers to finish the missing lane and start 30 seconds of 2X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start the prepared Multiball and make the lit paddock shots. During T-Rex, collect orange jackpots then shoot T-Rex for the Super; during Raptor, follow the flashing orange jackpots.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Fast T-Rex route",
+          "when": "Use this when holding several paddocks for a larger missile build is causing dangerous repeat shots.",
+          "steps": [
+            {
+              "text": "Knock down the center wall and shoot T-Rex three times to start two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the orange jackpot arrows and return to T-Rex when the Super Jackpot lights.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take safe dinosaur evacuations during the extra-ball protection instead of waiting for a perfect five-paddock build.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Escape Nublar and Restore Power",
+          "steps": [
+            {
+              "text": "Evacuate all five dinosaurs, then shoot T-Rex to start Escape Nublar.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "During Escape Nublar, follow the flashing correct-way shots and finish at T-Rex with as many balls alive as possible.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Separately, rescue lit workers and hit the left Control Room target to add more rescues to the playfield.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After 25 rescues, shoot T-Rex to start Restore Power and finish one lit feature before moving to another.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "dinosaur paddock",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Smart Missile",
+            "tone": "teal",
+            "kind": "item"
+          },
+          {
+            "label": "T-Rex Multiball",
+            "tone": "oxblood",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Raptor Tri-Ball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "2X playfield",
+            "tone": "indigo",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "major shots",
+            "label": "Dinosaur paddock shots",
+            "description": "The major arrows and captive ball tied to the five dinosaur paddocks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Smart Missile targets",
+            "label": "Smart Missile targets",
+            "description": "The target bank used to build and launch Smart Missiles.",
+            "precision": "unverified"
+          },
+          {
+            "term": "T-Rex",
+            "label": "T-Rex target",
+            "description": "The center target behind the drop wall used for Multiball and the two longer modes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Raptor Pen",
+            "label": "Raptor Pen",
+            "description": "The lower-right pen shot used to reduce fence integrity and start Raptor Tri-Ball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The code-1.03 sheet and July 2026 tutorial disagree on the shots remaining after a paddock is entered.",
+            "response": "Use three hits to enter the paddock, then follow its lit progress instead of assuming one remaining count on every installed version.",
+            "sourceUrl": "https://www.youtube.com/watch?v=c1YCBV6o-X4"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Enter several dinosaur paddocks with three hits apiece, then build and launch Smart Missiles before finishing their lit shots. Prepare T-Rex or Raptor Multiball, complete the top lanes a second time for 2X, and evacuate the built paddocks during the stack.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose several major shots that return safely. Make each one three times to enter its dinosaur paddock, but leave the remaining lit captures available.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the Smart Missile targets until the launch is ready, then collect it while several paddocks are lit. Repeat the build when control allows.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Prepare T-Rex Multiball by lowering the center wall and shooting T-Rex three times, or reduce the Raptor Pen fence to zero for Raptor Tri-Ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the top lanes for the second time immediately before the stack when practical. Use the flippers to finish the missing lane and start 30 seconds of 2X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start the prepared Multiball and make the lit paddock shots. During T-Rex, collect orange jackpots then shoot T-Rex for the Super; during Raptor, follow the flashing orange jackpots.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Dinosaur paddocks",
+            "summary": "Hit a major shot three times to enter its paddock, then keep making that lit shot until the dinosaur is evacuated."
+          },
+          {
+            "name": "Smart Missile",
+            "summary": "Build it at the Smart Missile targets; the launch improves the remaining shots for every currently lit paddock."
+          },
+          {
+            "name": "T-Rex Multiball",
+            "summary": "Knock down the center wall, shoot T-Rex three times, then collect orange jackpots before returning to T-Rex for the Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Fast T-Rex route",
+          "when": "Use this when holding several paddocks for a larger missile build is causing dangerous repeat shots.",
+          "steps": [
+            {
+              "text": "Knock down the center wall and shoot T-Rex three times to start two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the orange jackpot arrows and return to T-Rex when the Super Jackpot lights.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take safe dinosaur evacuations during the extra-ball protection instead of waiting for a perfect five-paddock build.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

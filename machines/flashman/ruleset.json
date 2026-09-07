@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Q0J",
+  "title": "Flashman",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Sportmatic Flashman factory manual",
+      "url": "https://www.recreativas.org/archivo/flash-man-pinball-manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Flashman rules",
+        "url": "https://www.kineticist.com/games/pinball/flashman"
+      },
+      {
+        "label": "Recreativas.org Flashman archive",
+        "url": "https://www.recreativas.org/flash-man-2982-sport-matic"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "In Flashman, hit A and B plus a banner passage to light the next 2x, 3x, 5x, or 10x target, then hit that lit target to claim the multiplier. Complete all four upper lanes, shoot the cannon, then repeat both actions to light Special. Clear the center target bank once for 30,000, twice to light Extra Ball at the upper rollover, and three times to light Special.",
+      "simpleOverview": "In Flashman, hit A and B plus a banner passage to light the next 2x, 3x, 5x, or 10x target, then hit it. Complete all four upper lanes, shoot the cannon, then repeat both actions for Special. Clear the center bank once for 30,000, twice for the upper-rollover Extra Ball, and three times for Special.",
+      "summary": "Build the multiplier first when A, B, and the banner are available from controlled feeds. Repeat the center bank for its 30,000, Extra Ball, and Special cycle. During upper-playfield time, finish all four lanes before shooting the cannon so the lane sequence can advance toward Special.",
+      "quickInfo": [
+        {
+          "name": "Light a multiplier",
+          "summary": "Hit A and B plus a banner passage."
+        },
+        {
+          "name": "Collect a multiplier",
+          "summary": "Hit the corresponding lit 2x, 3x, 5x, or 10x target."
+        },
+        {
+          "name": "Center bank completion 1",
+          "summary": "Light 30,000."
+        },
+        {
+          "name": "Center bank completion 2",
+          "summary": "Light Extra Ball at the upper rollover."
+        },
+        {
+          "name": "Upper-lane Special",
+          "summary": "Complete all four lanes and shoot the cannon, then repeat both actions."
+        },
+        {
+          "name": "Outlane awards",
+          "summary": "Combine A, B, and repeated center-bank cycles to advance alternating Extra Ball and Special awards."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit A and B, then pass through the banner to light the next multiplier target.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Hit the lit 2x, 3x, 5x, or 10x target to collect that multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Clear the center target bank once to light 30,000, then clear it again to light Extra Ball at the upper rollover."
+        },
+        {
+          "text": "Take the lit upper rollover for Extra Ball, then complete the center bank a third time to light Special."
+        },
+        {
+          "text": "Complete all four upper lanes and shoot the cannon; repeat the lane-and-cannon sequence to light alternating Special across the upper lanes."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Outlane-award route",
+          "when": "Use this when A, B, and the center bank are already close to complete.",
+          "steps": [
+            {
+              "text": "Complete A, B, and one full center-bank cycle to alternate Extra Ball and Special at the right outlane."
+            },
+            {
+              "text": "Complete the bank cycle again to advance the alternating awards across both outlane Specials and Extra Ball."
+            },
+            {
+              "text": "Complete a third cycle to leave both outlane Specials and Extra Ball lit steadily."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "10x, Extra Ball, and Special",
+        "steps": [
+          {
+            "text": "Repeat A, B, and banner passages until the 10x target is lit, then collect it.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the center bank twice and collect Extra Ball at the upper rollover."
+          },
+          {
+            "text": "Use either a third center-bank completion or two completed upper-lane-and-cannon cycles to light Special."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm balls per game, Bonus carry and multiplier behavior, Extra Ball and Special conversion, and whether the target-bank cycle resets between balls.",
+        "Test A and B, the banner switch, all multiplier targets and lamps, four upper lanes, cannon target, center target bank, upper rollover, top Bonus target, and three pop bumpers."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

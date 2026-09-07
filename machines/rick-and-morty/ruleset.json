@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "GQKb2",
+  "title": "Rick and Morty",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Tilt Forums Rick and Morty rulesheet",
+      "url": "https://tiltforums.com/t/rick-morty-rulesheet/6391"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Spooky Pinball Rick and Morty code and change log",
+        "url": "https://www.spookypinball.com/game-support/"
+      },
+      {
+        "label": "Official Spooky Pinball Rick and Morty manual",
+        "url": "https://www.spookypinball.com/wp-content/uploads/2024/08/Rick-and-Morty-Manual.pdf"
+      },
+      {
+        "label": "Derek Price at California NACS 2023",
+        "url": "https://pinballvideos.com/v/6171"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot either ramp to light an Adventure, hit the Flooble Crank, and lock a ball at Danesi Lock 2.0. Repeat the Crank and lock sequence, start the Adventure at the center scoop, then return for Gromflomite Battle Multiball while its ball save remains active.",
+      "quickInfo": [
+        {
+          "name": "Adventures",
+          "summary": "The first Adventure needs either ramp, later Adventures need both, and the center scoop starts every Adventure except Pickle Rick."
+        },
+        {
+          "name": "Gromflomite Battle Multiball",
+          "summary": "A Flooble Crank hit lights a lock; lock two balls, then shoot the center scoop to start multiball."
+        },
+        {
+          "name": "Stacked ball save",
+          "summary": "Starting an Adventure with Gromflomite combines their ball-save time and lets multiball shots advance the Adventure."
+        },
+        {
+          "name": "Meeseeks",
+          "summary": "The Box lights a shot for 2x, 3x, or 4x depending on active Meeseeks, while old purple Meeseeks divide the collected shot instead."
+        },
+        {
+          "name": "Dimensions",
+          "summary": "Charge the portal gun, enter the garage, and collect Megaseeds for dimensions that can add strong scoring modifiers or harmful rule changes."
+        },
+        {
+          "name": "Megaseeds",
+          "summary": "Each seed adds 5% of that ball's score to end-of-ball bonus and persists for later balls, making tilt especially expensive."
+        }
+      ],
+      "steps": [
+        {
+          "text": "From the auto-plunge, shoot the upper-flipper garage entrance for the larger skill shot or hit Noob Noob for the standard skill shot. A side loop before either shot multiplies its value."
+        },
+        {
+          "text": "Shoot either ramp to qualify the first Adventure at the center scoop. On later Adventures, complete both ramps."
+        },
+        {
+          "text": "Leave the currently lit Adventure at the center scoop while building Gromflomite.",
+          "modeNotes": [
+            "Total Rickall uses drop targets, Beth, and Summer to remove parasites.",
+            "Whirly Dirly uses two orbit shots to light a brief right-ramp kill shot, twice, then the scoop.",
+            "Get Schwifty cycles Targets, Loops, and Ramps and completes when the vote meter finishes positive."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the Flooble Crank to light a lock, collect it at either side of Danesi Lock 2.0, then repeat for the second lock.",
+          "modeNotes": [
+            "After the first multiball, lit locks fade and time out. The timeout becomes faster on later qualifications."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the center scoop to start the Adventure, then return to the scoop to start Gromflomite Battle Multiball with the Adventure active.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Gromflomite, collect any Jackpot, then shoot the garage for the first Super Jackpot.",
+          "modeNotes": [
+            "The first Super can use either garage entrance. Later Supers require the upper-flipper left garage entrance.",
+            "Each later cycle needs one more Jackpot before the next Super lights.",
+            "Ramps can qualify the next Adventure during multiball, although it cannot start until multiball ends."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the Meeseeks Box, then collect a fresh blue Meeseeks on the most valuable active Adventure or multiball shot.",
+          "modeNotes": [
+            "One, two, or three active blue Meeseeks multiply a collected Meeseeks shot by 2x, 3x, or 4x.",
+            "Each Meeseeks has its own timer. Purple Meeseeks divide scoring and should be cleared before a large collect."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Charge the portal gun with spinner and regular-shot progress, enter either garage, and collect the orange Megaseeds in a positive dimension."
+        },
+        {
+          "text": "When one ball remains, qualify the next Adventure with the ramps and rebuild two Gromflomite locks before returning to the scoop."
+        }
+      ],
+      "fallback": {
+        "title": "Adventure card route",
+        "when": "Use this to advance the Morty Adventure Card without preparing Gromflomite Battle Multiball.",
+        "steps": [
+          {
+            "text": "Shoot either ramp to qualify the first Adventure."
+          },
+          {
+            "text": "Start it at the center scoop and use its ten-second ball save to learn the required shots.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the Adventure when possible; a played Adventure still stamps the Morty Adventure Card."
+          },
+          {
+            "text": "Shoot both ramps to qualify each later Adventure, then start the lit Adventure at the center scoop."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Meeseeks Mania route",
+          "when": "Use this when the Meeseeks Box and lit blue shots are repeatedly available.",
+          "steps": [
+            {
+              "text": "Spawn Meeseeks and collect them before they turn purple."
+            },
+            {
+              "text": "Repeat until Meeseeks Mania starts as a two-ball multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect Meeseeks Jackpots quickly to keep the multiplier positive.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Hit the Box to add Meeseeks and reset all bad Meeseeks.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After the drain to one ball, collect the Jerry hurry-up without touching Beth or Summer."
+            }
+          ]
+        },
+        {
+          "title": "Positive-dimension bonus route",
+          "when": "This route uses Megaseeds to add 5% of the current ball's score per seed to end-of-ball bonus.",
+          "steps": [
+            {
+              "text": "Charge the portal gun, then enter either garage."
+            },
+            {
+              "text": "Read the active dimension before committing to its modified shots."
+            },
+            {
+              "text": "Collect orange Megaseeds and recharge before the portal-gun meter empties."
+            },
+            {
+              "text": "Enter another dimension before returning to C-137 to receive an extra Megaseed."
+            },
+            {
+              "text": "Avoid tilt because each persistent seed returns 5% of the ball's score in bonus."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Morty Adventure Card and Rick Potion No. 9",
+        "steps": [
+          {
+            "text": "Start or complete Adventures to fill the Morty Adventure Card."
+          },
+          {
+            "text": "Use completed Adventures for the stronger completion state while continuing to fill all nine card positions."
+          },
+          {
+            "text": "After a full card, use the Adventure selector to choose Rick Potion No. 9.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete its Morty, purple-shot, escape, scoop, and final character sequence.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Rick and Morty edition",
+          "pro": "The 750-game production run uses one shared playfield and rules package.",
+          "premium": "There is no separate gameplay edition.",
+          "sourceUrl": "https://www.spookypinball.com/wp-content/uploads/2024/08/Rick-and-Morty-Manual.pdf"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Adventure",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Gromflomite Battle Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Meeseeks",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Meeseeks Mania",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "dimension",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Megaseeds",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Morty Adventure Card",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Slam Save",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Combined ball-save start",
+          "instruction": "Start an Adventure first and Gromflomite second so the two start saves combine and multiball can advance the Adventure.",
+          "sourceUrl": "https://tiltforums.com/t/rick-morty-rulesheet/6391"
+        },
+        {
+          "name": "Fresh-Meeseeks collect",
+          "instruction": "Collect blue Meeseeks immediately on a valuable lit shot before its individual timer turns it into a scoring divisor.",
+          "sourceUrl": "https://tiltforums.com/t/rick-morty-rulesheet/6391"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Later Gromflomite lock lights time out increasingly quickly.",
+          "response": "Trap first, hit the Flooble Crank only when the corresponding lock entrance is immediately shootable.",
+          "sourceUrl": "https://tiltforums.com/t/rick-morty-rulesheet/6391"
+        },
+        {
+          "issue": "Megaseeds make end-of-ball bonus large, but a tilt forfeits that value.",
+          "response": "Avoid tilting after collecting Megaseeds because a tilt forfeits the entire end-of-ball bonus.",
+          "sourceUrl": "https://tiltforums.com/t/rick-morty-rulesheet/6391"
+        },
+        {
+          "issue": "Slam Save only rescues a very fast drain from a pop-bumper hit and is disabled during multiball.",
+          "response": "Complete S-L-A-M at the return lanes to qualify it, but expect no save if the ball reaches the drain after the short detection window.",
+          "sourceUrl": "https://tiltforums.com/t/rick-morty-rulesheet/6391"
+        }
+      ],
+      "simpleOverview": "Rick and Morty adds Gromflomite Battle Multiball's ball-save time to a running Adventure, while Meeseeks multiplies individual shots. Shoot either ramp to light the first Adventure at the center scoop (later Adventures require both ramps), then shoot the scoop to start the lit Adventure. Hit the Flooble Crank, lock a ball at either side of Danesi Lock 2.0, and repeat with the remaining side; after two locks, the center scoop starts Multiball.",
+      "overview": "Rick and Morty adds Gromflomite Battle Multiball's ball-save time to the time remaining from a running Adventure. Shoot either ramp to light the first Adventure at the center scoop (later Adventures require both ramps), then hit the Flooble Crank and lock a ball at either side of Danesi Lock 2.0. Repeat the Crank and lock sequence, shoot the center scoop to start the lit Adventure, then return to the scoop for Multiball and use fresh blue Meeseeks on valuable Adventure or Jackpot shots.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

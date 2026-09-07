@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "G4yzj",
+  "title": "Tee'd Off",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball.org Tee'd Off rulesheet",
+      "url": "https://www.pinball.org/rules/teedoff.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Keith Elwin at INDISC 2014",
+        "url": "https://pinballvideos.com/v/565/6891"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Play holes 1 through 9 in order, secure the third ball at the Mean Hole when multiball starts, then clear the strobing jackpots for the 300M Super.",
+      "quickInfo": [
+        {
+          "name": "Nine holes",
+          "summary": "Complete holes in numerical order; the first and third nine-hole completions start multiball."
+        },
+        {
+          "name": "Third ball",
+          "summary": "At multiball start, plunge into the Mean Hole to upgrade two-ball play to three balls."
+        },
+        {
+          "name": "Jackpot set",
+          "summary": "Collect every strobing jackpot shot; the last remaining shot becomes the 300M Super."
+        },
+        {
+          "name": "Captive ball",
+          "summary": "Captive-ball hits raise the regular jackpot value and end-of-ball bonus."
+        },
+        {
+          "name": "Go-Fore-Par-Tee",
+          "summary": "Spell G-O-P-H-E-R on the wheel for a three-ball center-lane and Volcano scoring mode."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Read the current hole and test its required shot, the Mean Hole, Volcano, center lane, and captive ball."
+        },
+        {
+          "text": "Complete holes 1 through 9 in order, using the right ramp for holes 2, 4, and 8 and the saucer for 3, 5, and 7."
+        },
+        {
+          "text": "When the ninth hole starts multiball, plunge the served ball into the Mean Hole to add the third ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect the currently strobing jackpot shots, choosing the safest available feed first.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When one jackpot remains, treat that shot as the 300M Super and set it up from control.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the Super, repeat the relit set while ball count permits."
+        },
+        {
+          "text": "Between nine-hole cycles, build G-O-P-H-E-R only from incidental safe wheel results."
+        }
+      ],
+      "fallback": {
+        "title": "Go-Fore-Par-Tee",
+        "when": "Use this when the hole sequence is stalled but G-O-P-H-E-R is nearly complete.",
+        "steps": [
+          {
+            "text": "Finish the remaining wheel letters."
+          },
+          {
+            "text": "Start the three-ball mode.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the center lane or Volcano from the safer current flipper."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Raining Cats and Dogs",
+          "when": "Use this after the second nine-hole completion.",
+          "steps": [
+            {
+              "text": "Start the three-ball storm.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat controlled lit jackpot shots and the center lane."
+            },
+            {
+              "text": "Protect the deferred total from a tilt after the mode."
+            }
+          ]
+        },
+        {
+          "title": "Skins certainty",
+          "when": "Use this when Skins is complete and match position does not justify risking the score.",
+          "steps": [
+            {
+              "text": "Take the guaranteed points instead of double-or-nothing."
+            },
+            {
+              "text": "If choosing the gamble, identify the selected shot before committing."
+            },
+            {
+              "text": "Use the Dogleg recovery only if the gamble fails and the feed is safe."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Anything Goes",
+        "steps": [
+          {
+            "text": "Complete four full nine-hole cycles."
+          },
+          {
+            "text": "Shoot the Mean Hole when Anything Goes is lit."
+          },
+          {
+            "text": "Use three-ball play to repeat the lit 50M storm shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Tee'd Off Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Go-Fore-Par-Tee",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Skins Game",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Hole",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Mean-Hole third ball",
+          "instruction": "At multiball start, prioritize the served plunge into the Mean Hole; missing leaves only two balls in play.",
+          "sourceUrl": "https://www.pinball.org/rules/teedoff.html"
+        },
+        {
+          "name": "Cradle",
+          "instruction": "After clearing the other strobing shots, cradle and set up the final lit shot because it is the 300M Super.",
+          "sourceUrl": "https://www.pinball.org/rules/teedoff.html",
+          "techniqueSlug": "cradle"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The center lane is narrow and coconut-target rebounds can drain immediately.",
+          "response": "Use multiball protection or a known straight feed for center-lane work.",
+          "sourceUrl": "https://www.pinball.org/rules/teedoff.html"
+        },
+        {
+          "issue": "Raining Cats and Dogs awards its accumulated total at end of ball.",
+          "response": "Reduce nudging and protect the deferred total from a tilt.",
+          "sourceUrl": "https://www.pinball.org/rules/teedoff.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm multiball ball count, Mean Hole plunge, and ball-save settings.",
+        "Test the Volcano, center lane, and saucer ejects."
+      ],
+      "simpleOverview": "Tee'd Off advances through golf holes in order, with the first and third nine-hole completions starting Multiball. Finish holes 1 through 9, plunge the served ball into the Mean Hole for three-ball play, then clear every strobing Jackpot and set up the final 300M Super.",
+      "overview": "Tee'd Off starts Multiball after the first and third completions of its nine-hole ladder. Prioritize the current hole, add the third ball at the Mean Hole, then collect the safest strobing Jackpots until the last becomes the 300M Super. Spell G-O-P-H-E-R on the wheel for its three-ball mode when that progress does not interrupt a nearly complete hole cycle.",
+      "machineSetup": [
+        "Confirm multiball ball count, Mean Hole plunge, and ball-save settings.",
+        "Test the Volcano, center lane, and saucer ejects."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "schemaVersion": 1,
+  "id": "GrjKk",
+  "editions": [
+    {
+      "id": "GrjKk-Mx09X",
+      "title": "Jive Time",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/jive-time.webp",
+        "sourceUrl": "https://vpuniverse.com/files/file/8621-jive-time-williams-1970/",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Hit the far-left target beside the center saucer to raise the center post, send controlled shots through the center saucer or either side into the bumper nest, and let bumper action feed Spin saucers that collect the built bonus.",
+            "quickInfo": [
+              {
+                "name": "Center-post priority",
+                "summary": "The far-left standup beside the center saucer raises the post between the flippers and makes later play substantially safer."
+              },
+              {
+                "name": "Spin saucers",
+                "summary": "The top and center saucers start the backglass arrow, which spins before awarding its random result."
+              },
+              {
+                "name": "Bonus collection",
+                "summary": "Base bonus advances to 10,000 but is not awarded at drain; it must be collected by landing on the Spin award."
+              },
+              {
+                "name": "West Gate",
+                "summary": "A Spin can open the left-side West Gate, whose award depends on whether the machine is the replay or Add-A-Ball sibling."
+              },
+              {
+                "name": "Bumper lights",
+                "summary": "The two targets around the top saucer light the green and yellow bumpers; the outer upper targets also advance bonus."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge for the top saucer to start an immediate Spin."
+              },
+              {
+                "text": "On the first controlled return, hit the far-left target beside the center saucer to raise the center post."
+              },
+              {
+                "text": "Treat the small right-outlane post as secondary protection; it can still allow a ball to sneak around it."
+              },
+              {
+                "text": "With the center post raised, settle the ball against the post and a flipper before choosing the next shot."
+              },
+              {
+                "text": "Shoot cleanly through or into the center saucer when its entrance is reliable; a pass-through still reaches the bumpers."
+              },
+              {
+                "text": "When the center shot is inconsistent, send the ball up either side and let lively bumpers feed a saucer naturally."
+              },
+              {
+                "text": "Advance bonus with the safer outer upper targets rather than the dangerous standups beside the center saucer."
+              },
+              {
+                "text": "After a Spin collects bonus or changes the West Gate or Double Bonus state, read the backglass and rebuild the safest value."
+              }
+            ],
+            "fallback": {
+              "title": "Recovery: Side-feed bumper plan",
+              "when": "Recovery pivot: Use this when the center saucer rejects, passes unpredictably, or exposes its adjacent posts.",
+              "steps": [
+                {
+                  "text": "Keep the center post raised."
+                },
+                {
+                  "text": "Cradle or settle the ball against the raised post."
+                },
+                {
+                  "text": "Choose the side with the cleaner path into the bumper nest."
+                },
+                {
+                  "text": "Let the bumpers advance bonus and feed either saucer without forcing a direct saucer hit."
+                },
+                {
+                  "text": "Track the entire exit before attempting another upper feed."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Position play: Controlled center-saucer repeat",
+                "when": "When trailing, use this distinct scoreboard route: use this only when the center-saucer line consistently enters or passes through without striking a side post.",
+                "steps": [
+                  {
+                    "text": "Settle the ball against the raised center post and the better-positioned flipper."
+                  },
+                  {
+                    "text": "Aim through the middle of the saucer entrance."
+                  },
+                  {
+                    "text": "Accept either a Spin or a clean pass into the bumper nest."
+                  },
+                  {
+                    "text": "Abandon the repeat after any side-post rejection or dangerous lateral rebound."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Protected bonus collection",
+              "steps": [
+                {
+                  "text": "Hit the far-left target beside the center saucer to raise the center post."
+                },
+                {
+                  "text": "Advance base bonus toward 10,000 through upper targets and bumper action."
+                },
+                {
+                  "text": "Use side feeds or a controlled center shot to reach a Spin saucer."
+                },
+                {
+                  "text": "Collect bonus or double it when the random Spin provides that award."
+                },
+                {
+                  "text": "Repeat while preserving the raised-post safety advantage."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top saucer",
+                "label": "Top Spin saucer",
+                "description": "The upper saucer sits above the five-bumper nest near the top-center playfield.",
+                "xPercent": 50,
+                "yPercent": 15,
+                "precision": "area"
+              },
+              {
+                "term": "center saucer",
+                "label": "Center Spin saucer",
+                "description": "The center saucer is the main lower entrance into the bumper nest.",
+                "xPercent": 50,
+                "yPercent": 43,
+                "precision": "area"
+              },
+              {
+                "term": "far-left target",
+                "context": "Hit the far-left target beside the center saucer.",
+                "label": "Center-post target",
+                "description": "The far-left standup beside the center saucer raises the center post.",
+                "xPercent": 34,
+                "yPercent": 44,
+                "precision": "area"
+              },
+              {
+                "term": "center post",
+                "label": "Center safety post",
+                "description": "The post rises between the two flippers after its standup target is hit.",
+                "xPercent": 50,
+                "yPercent": 83,
+                "precision": "area"
+              },
+              {
+                "term": "right-outlane post",
+                "label": "Right-outlane mini-post",
+                "description": "The small post sits in the right outlane and offers limited protection.",
+                "xPercent": 82,
+                "yPercent": 76,
+                "precision": "area"
+              },
+              {
+                "term": "West Gate",
+                "label": "West Gate",
+                "description": "The left-side gate opens when awarded by a Spin result.",
+                "xPercent": 18,
+                "yPercent": 36,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "techniques": [
+              {
+                "name": "Raised-post settle",
+                "instruction": "When the center post is up, let the ball settle between it and either flipper before making the next upper shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Center-saucer line",
+                "instruction": "Aim through the middle of the saucer entrance so a miss continues into the bumpers instead of clipping either side post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Side UTAD feed",
+                "instruction": "Send the ball cleanly up a side and let bumper action search for the top or center saucer.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The standups immediately beside the center saucer produce dangerous rebounds.",
+                "response": "Do not shoot them for bonus. Use the outer upper targets and bumper action instead.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "The right-outlane mini-post is not a complete ball saver.",
+                "response": "Keep following the ball and nudge legally; do not assume a lit or raised post guarantees a return.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "Random Spin awards can create large score swings.",
+                "response": "Create more Spin opportunities behind the raised center post rather than chasing one particular award.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "simpleOverview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the center post, send the ball into the bumper nest, and let bumper action feed the top or center Spin saucer.",
+            "overview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the post, use controlled center or side feeds into the bumpers, and take natural saucer entries to collect bonus or change the West Gate and Double Bonus state. Rebuild the displayed value after every Spin result.",
+            "machineSetup": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Hit the far-left target beside the center saucer to raise the center post, send controlled shots through the center saucer or either side into the bumper nest, and let bumper action feed Spin saucers that collect the built bonus.",
+            "quickInfo": [
+              {
+                "name": "Center-post priority",
+                "summary": "The far-left standup beside the center saucer raises the post between the flippers and makes later play substantially safer."
+              },
+              {
+                "name": "Spin saucers",
+                "summary": "The top and center saucers start the backglass arrow, which spins before awarding its random result."
+              },
+              {
+                "name": "Bonus collection",
+                "summary": "Base bonus advances to 10,000 but is not awarded at drain; it must be collected by landing on the Spin award."
+              },
+              {
+                "name": "West Gate",
+                "summary": "A Spin can open the left-side West Gate, whose award depends on whether the machine is the replay or Add-A-Ball sibling."
+              },
+              {
+                "name": "Bumper lights",
+                "summary": "The two targets around the top saucer light the green and yellow bumpers; the outer upper targets also advance bonus."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge for the top saucer to start an immediate Spin."
+              },
+              {
+                "text": "On the first controlled return, hit the far-left target beside the center saucer to raise the center post."
+              },
+              {
+                "text": "Treat the small right-outlane post as secondary protection; it can still allow a ball to sneak around it."
+              },
+              {
+                "text": "With the center post raised, settle the ball against the post and a flipper before choosing the next shot."
+              },
+              {
+                "text": "Shoot cleanly through or into the center saucer when its entrance is reliable; a pass-through still reaches the bumpers."
+              },
+              {
+                "text": "When the center shot is inconsistent, send the ball up either side and let lively bumpers feed a saucer naturally."
+              },
+              {
+                "text": "Advance bonus with the safer outer upper targets rather than the dangerous standups beside the center saucer."
+              },
+              {
+                "text": "After a Spin collects bonus or changes the West Gate or Double Bonus state, read the backglass and rebuild the safest value."
+              }
+            ],
+            "fallback": {
+              "title": "Recovery: Side-feed bumper plan",
+              "when": "Recovery pivot: Use this when the center saucer rejects, passes unpredictably, or exposes its adjacent posts.",
+              "steps": [
+                {
+                  "text": "Keep the center post raised."
+                },
+                {
+                  "text": "Cradle or settle the ball against the raised post."
+                },
+                {
+                  "text": "Choose the side with the cleaner path into the bumper nest."
+                },
+                {
+                  "text": "Let the bumpers advance bonus and feed either saucer without forcing a direct saucer hit."
+                },
+                {
+                  "text": "Track the entire exit before attempting another upper feed."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Position play: Controlled center-saucer repeat",
+                "when": "When trailing, use this distinct scoreboard route: use this only when the center-saucer line consistently enters or passes through without striking a side post.",
+                "steps": [
+                  {
+                    "text": "Settle the ball against the raised center post and the better-positioned flipper."
+                  },
+                  {
+                    "text": "Aim through the middle of the saucer entrance."
+                  },
+                  {
+                    "text": "Accept either a Spin or a clean pass into the bumper nest."
+                  },
+                  {
+                    "text": "Abandon the repeat after any side-post rejection or dangerous lateral rebound."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Protected bonus collection",
+              "steps": [
+                {
+                  "text": "Hit the far-left target beside the center saucer to raise the center post."
+                },
+                {
+                  "text": "Advance base bonus toward 10,000 through upper targets and bumper action."
+                },
+                {
+                  "text": "Use side feeds or a controlled center shot to reach a Spin saucer."
+                },
+                {
+                  "text": "Collect bonus or double it when the random Spin provides that award."
+                },
+                {
+                  "text": "Repeat while preserving the raised-post safety advantage."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top saucer",
+                "label": "Top Spin saucer",
+                "description": "The upper saucer sits above the five-bumper nest near the top-center playfield.",
+                "xPercent": 50,
+                "yPercent": 15,
+                "precision": "area"
+              },
+              {
+                "term": "center saucer",
+                "label": "Center Spin saucer",
+                "description": "The center saucer is the main lower entrance into the bumper nest.",
+                "xPercent": 50,
+                "yPercent": 43,
+                "precision": "area"
+              },
+              {
+                "term": "far-left target",
+                "context": "Hit the far-left target beside the center saucer.",
+                "label": "Center-post target",
+                "description": "The far-left standup beside the center saucer raises the center post.",
+                "xPercent": 34,
+                "yPercent": 44,
+                "precision": "area"
+              },
+              {
+                "term": "center post",
+                "label": "Center safety post",
+                "description": "The post rises between the two flippers after its standup target is hit.",
+                "xPercent": 50,
+                "yPercent": 83,
+                "precision": "area"
+              },
+              {
+                "term": "right-outlane post",
+                "label": "Right-outlane mini-post",
+                "description": "The small post sits in the right outlane and offers limited protection.",
+                "xPercent": 82,
+                "yPercent": 76,
+                "precision": "area"
+              },
+              {
+                "term": "West Gate",
+                "label": "West Gate",
+                "description": "The left-side gate opens when awarded by a Spin result.",
+                "xPercent": 18,
+                "yPercent": 36,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "techniques": [
+              {
+                "name": "Raised-post settle",
+                "instruction": "When the center post is up, let the ball settle between it and either flipper before making the next upper shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Center-saucer line",
+                "instruction": "Aim through the middle of the saucer entrance so a miss continues into the bumpers instead of clipping either side post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Side UTAD feed",
+                "instruction": "Send the ball cleanly up a side and let bumper action search for the top or center saucer.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The standups immediately beside the center saucer produce dangerous rebounds.",
+                "response": "Do not shoot them for bonus. Use the outer upper targets and bumper action instead.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "The right-outlane mini-post is not a complete ball saver.",
+                "response": "Keep following the ball and nudge legally; do not assume a lit or raised post guarantees a return.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "Random Spin awards can create large score swings.",
+                "response": "Create more Spin opportunities behind the raised center post rather than chasing one particular award.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "simpleOverview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the center post, send the ball into the bumper nest, and let bumper action feed the top or center Spin saucer.",
+            "overview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the post, use controlled center or side feeds into the bumpers, and take natural saucer entries to collect bonus or change the West Gate and Double Bonus state. Rebuild the displayed value after every Spin result.",
+            "machineSetup": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "GrjKk-MLBnP",
+      "title": "Rock 'N Roll",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/rock-n-roll.webp",
+        "sourceUrl": "https://user.xmission.com/~daina/images/dw/rocknroll.html",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Hit the far-left target beside the center saucer to raise the center post, send controlled shots through the center saucer or either side into the bumper nest, and let bumper action feed Spin saucers that collect the built bonus.",
+            "quickInfo": [
+              {
+                "name": "Center-post priority",
+                "summary": "The far-left standup beside the center saucer raises the post between the flippers and makes later play substantially safer."
+              },
+              {
+                "name": "Spin saucers",
+                "summary": "The top and center saucers start the backglass arrow, which spins before awarding its random result."
+              },
+              {
+                "name": "Bonus collection",
+                "summary": "Base bonus advances to 10,000 but is not awarded at drain; it must be collected by landing on the Spin award."
+              },
+              {
+                "name": "West Gate",
+                "summary": "A Spin can open the left-side West Gate, whose award depends on whether the machine is the replay or Add-A-Ball sibling."
+              },
+              {
+                "name": "Bumper lights",
+                "summary": "The two targets around the top saucer light the green and yellow bumpers; the outer upper targets also advance bonus."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge for the top saucer to start an immediate Spin."
+              },
+              {
+                "text": "On the first controlled return, hit the far-left target beside the center saucer to raise the center post."
+              },
+              {
+                "text": "Treat the small right-outlane post as secondary protection; it can still allow a ball to sneak around it."
+              },
+              {
+                "text": "With the center post raised, settle the ball against the post and a flipper before choosing the next shot."
+              },
+              {
+                "text": "Shoot cleanly through or into the center saucer when its entrance is reliable; a pass-through still reaches the bumpers."
+              },
+              {
+                "text": "When the center shot is inconsistent, send the ball up either side and let lively bumpers feed a saucer naturally."
+              },
+              {
+                "text": "Advance bonus with the safer outer upper targets rather than the dangerous standups beside the center saucer."
+              },
+              {
+                "text": "After a Spin collects bonus or changes the West Gate or Double Bonus state, read the backglass and rebuild the safest value."
+              }
+            ],
+            "fallback": {
+              "title": "Recovery: Side-feed bumper plan",
+              "when": "Recovery pivot: Use this when the center saucer rejects, passes unpredictably, or exposes its adjacent posts.",
+              "steps": [
+                {
+                  "text": "Keep the center post raised."
+                },
+                {
+                  "text": "Cradle or settle the ball against the raised post."
+                },
+                {
+                  "text": "Choose the side with the cleaner path into the bumper nest."
+                },
+                {
+                  "text": "Let the bumpers advance bonus and feed either saucer without forcing a direct saucer hit."
+                },
+                {
+                  "text": "Track the entire exit before attempting another upper feed."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Position play: Controlled center-saucer repeat",
+                "when": "When trailing, use this distinct scoreboard route: use this only when the center-saucer line consistently enters or passes through without striking a side post.",
+                "steps": [
+                  {
+                    "text": "Settle the ball against the raised center post and the better-positioned flipper."
+                  },
+                  {
+                    "text": "Aim through the middle of the saucer entrance."
+                  },
+                  {
+                    "text": "Accept either a Spin or a clean pass into the bumper nest."
+                  },
+                  {
+                    "text": "Abandon the repeat after any side-post rejection or dangerous lateral rebound."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Protected bonus collection",
+              "steps": [
+                {
+                  "text": "Hit the far-left target beside the center saucer to raise the center post."
+                },
+                {
+                  "text": "Advance base bonus toward 10,000 through upper targets and bumper action."
+                },
+                {
+                  "text": "Use side feeds or a controlled center shot to reach a Spin saucer."
+                },
+                {
+                  "text": "Collect bonus or double it when the random Spin provides that award."
+                },
+                {
+                  "text": "Repeat while preserving the raised-post safety advantage."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top saucer",
+                "label": "Top Spin saucer",
+                "description": "The upper saucer sits above the five-bumper nest near the top-center playfield.",
+                "xPercent": 50,
+                "yPercent": 15,
+                "precision": "area"
+              },
+              {
+                "term": "center saucer",
+                "label": "Center Spin saucer",
+                "description": "The center saucer is the main lower entrance into the bumper nest.",
+                "xPercent": 50,
+                "yPercent": 43,
+                "precision": "area"
+              },
+              {
+                "term": "far-left target",
+                "context": "Hit the far-left target beside the center saucer.",
+                "label": "Center-post target",
+                "description": "The far-left standup beside the center saucer raises the center post.",
+                "xPercent": 34,
+                "yPercent": 44,
+                "precision": "area"
+              },
+              {
+                "term": "center post",
+                "label": "Center safety post",
+                "description": "The post rises between the two flippers after its standup target is hit.",
+                "xPercent": 50,
+                "yPercent": 83,
+                "precision": "area"
+              },
+              {
+                "term": "right-outlane post",
+                "label": "Right-outlane mini-post",
+                "description": "The small post sits in the right outlane and offers limited protection.",
+                "xPercent": 82,
+                "yPercent": 76,
+                "precision": "area"
+              },
+              {
+                "term": "West Gate",
+                "label": "West Gate",
+                "description": "The left-side gate opens when awarded by a Spin result.",
+                "xPercent": 18,
+                "yPercent": 36,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "techniques": [
+              {
+                "name": "Raised-post settle",
+                "instruction": "When the center post is up, let the ball settle between it and either flipper before making the next upper shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Center-saucer line",
+                "instruction": "Aim through the middle of the saucer entrance so a miss continues into the bumpers instead of clipping either side post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Side UTAD feed",
+                "instruction": "Send the ball cleanly up a side and let bumper action search for the top or center saucer.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The standups immediately beside the center saucer produce dangerous rebounds.",
+                "response": "Do not shoot them for bonus. Use the outer upper targets and bumper action instead.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "The right-outlane mini-post is not a complete ball saver.",
+                "response": "Keep following the ball and nudge legally; do not assume a lit or raised post guarantees a return.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "Random Spin awards can create large score swings.",
+                "response": "Create more Spin opportunities behind the raised center post rather than chasing one particular award.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "simpleOverview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the center post, send the ball into the bumper nest, and let bumper action feed the top or center Spin saucer.",
+            "overview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the post, use controlled center or side feeds into the bumpers, and take natural saucer entries to collect bonus or change the West Gate and Double Bonus state. Rebuild the displayed value after every Spin result.",
+            "machineSetup": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Hit the far-left target beside the center saucer to raise the center post, send controlled shots through the center saucer or either side into the bumper nest, and let bumper action feed Spin saucers that collect the built bonus.",
+            "quickInfo": [
+              {
+                "name": "Center-post priority",
+                "summary": "The far-left standup beside the center saucer raises the post between the flippers and makes later play substantially safer."
+              },
+              {
+                "name": "Spin saucers",
+                "summary": "The top and center saucers start the backglass arrow, which spins before awarding its random result."
+              },
+              {
+                "name": "Bonus collection",
+                "summary": "Base bonus advances to 10,000 but is not awarded at drain; it must be collected by landing on the Spin award."
+              },
+              {
+                "name": "West Gate",
+                "summary": "A Spin can open the left-side West Gate, whose award depends on whether the machine is the replay or Add-A-Ball sibling."
+              },
+              {
+                "name": "Bumper lights",
+                "summary": "The two targets around the top saucer light the green and yellow bumpers; the outer upper targets also advance bonus."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge for the top saucer to start an immediate Spin."
+              },
+              {
+                "text": "On the first controlled return, hit the far-left target beside the center saucer to raise the center post."
+              },
+              {
+                "text": "Treat the small right-outlane post as secondary protection; it can still allow a ball to sneak around it."
+              },
+              {
+                "text": "With the center post raised, settle the ball against the post and a flipper before choosing the next shot."
+              },
+              {
+                "text": "Shoot cleanly through or into the center saucer when its entrance is reliable; a pass-through still reaches the bumpers."
+              },
+              {
+                "text": "When the center shot is inconsistent, send the ball up either side and let lively bumpers feed a saucer naturally."
+              },
+              {
+                "text": "Advance bonus with the safer outer upper targets rather than the dangerous standups beside the center saucer."
+              },
+              {
+                "text": "After a Spin collects bonus or changes the West Gate or Double Bonus state, read the backglass and rebuild the safest value."
+              }
+            ],
+            "fallback": {
+              "title": "Recovery: Side-feed bumper plan",
+              "when": "Recovery pivot: Use this when the center saucer rejects, passes unpredictably, or exposes its adjacent posts.",
+              "steps": [
+                {
+                  "text": "Keep the center post raised."
+                },
+                {
+                  "text": "Cradle or settle the ball against the raised post."
+                },
+                {
+                  "text": "Choose the side with the cleaner path into the bumper nest."
+                },
+                {
+                  "text": "Let the bumpers advance bonus and feed either saucer without forcing a direct saucer hit."
+                },
+                {
+                  "text": "Track the entire exit before attempting another upper feed."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Position play: Controlled center-saucer repeat",
+                "when": "When trailing, use this distinct scoreboard route: use this only when the center-saucer line consistently enters or passes through without striking a side post.",
+                "steps": [
+                  {
+                    "text": "Settle the ball against the raised center post and the better-positioned flipper."
+                  },
+                  {
+                    "text": "Aim through the middle of the saucer entrance."
+                  },
+                  {
+                    "text": "Accept either a Spin or a clean pass into the bumper nest."
+                  },
+                  {
+                    "text": "Abandon the repeat after any side-post rejection or dangerous lateral rebound."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Protected bonus collection",
+              "steps": [
+                {
+                  "text": "Hit the far-left target beside the center saucer to raise the center post."
+                },
+                {
+                  "text": "Advance base bonus toward 10,000 through upper targets and bumper action."
+                },
+                {
+                  "text": "Use side feeds or a controlled center shot to reach a Spin saucer."
+                },
+                {
+                  "text": "Collect bonus or double it when the random Spin provides that award."
+                },
+                {
+                  "text": "Repeat while preserving the raised-post safety advantage."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top saucer",
+                "label": "Top Spin saucer",
+                "description": "The upper saucer sits above the five-bumper nest near the top-center playfield.",
+                "xPercent": 50,
+                "yPercent": 15,
+                "precision": "area"
+              },
+              {
+                "term": "center saucer",
+                "label": "Center Spin saucer",
+                "description": "The center saucer is the main lower entrance into the bumper nest.",
+                "xPercent": 50,
+                "yPercent": 43,
+                "precision": "area"
+              },
+              {
+                "term": "far-left target",
+                "context": "Hit the far-left target beside the center saucer.",
+                "label": "Center-post target",
+                "description": "The far-left standup beside the center saucer raises the center post.",
+                "xPercent": 34,
+                "yPercent": 44,
+                "precision": "area"
+              },
+              {
+                "term": "center post",
+                "label": "Center safety post",
+                "description": "The post rises between the two flippers after its standup target is hit.",
+                "xPercent": 50,
+                "yPercent": 83,
+                "precision": "area"
+              },
+              {
+                "term": "right-outlane post",
+                "label": "Right-outlane mini-post",
+                "description": "The small post sits in the right outlane and offers limited protection.",
+                "xPercent": 82,
+                "yPercent": 76,
+                "precision": "area"
+              },
+              {
+                "term": "West Gate",
+                "label": "West Gate",
+                "description": "The left-side gate opens when awarded by a Spin result.",
+                "xPercent": 18,
+                "yPercent": 36,
+                "precision": "area"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "techniques": [
+              {
+                "name": "Raised-post settle",
+                "instruction": "When the center post is up, let the ball settle between it and either flipper before making the next upper shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Center-saucer line",
+                "instruction": "Aim through the middle of the saucer entrance so a miss continues into the bumpers instead of clipping either side post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "name": "Side UTAD feed",
+                "instruction": "Send the ball cleanly up a side and let bumper action search for the top or center saucer.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The standups immediately beside the center saucer produce dangerous rebounds.",
+                "response": "Do not shoot them for bonus. Use the outer upper targets and bumper action instead.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "The right-outlane mini-post is not a complete ball saver.",
+                "response": "Keep following the ball and nudge legally; do not assume a lit or raised post guarantees a return.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              },
+              {
+                "issue": "Random Spin awards can create large score swings.",
+                "response": "Create more Spin opportunities behind the raised center post rather than chasing one particular award.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GrjKk-MLBnP"
+              }
+            ],
+            "simpleOverview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the center post, send the ball into the bumper nest, and let bumper action feed the top or center Spin saucer.",
+            "overview": "Jive Time / Rock 'N Roll stores base bonus until a Spin saucer lands on the collect award; it does not pay at the drain. Hit the far-left target beside the center saucer to raise the post, use controlled center or side feeds into the bumpers, and take natural saucer entries to collect bonus or change the West Gate and Double Bonus state. Rebuild the displayed value after every Spin result.",
+            "machineSetup": [
+              "Confirm Jive Time or Rock 'N Roll; the replay and Add-A-Ball siblings use different special and added-ball awards.",
+              "Read the instruction cards for ball count, Spin awards, bonus scale, post behavior, and West Gate rules.",
+              "Test both saucer entrances, the center-post target, bumper exits, outlane post, tilt, and flipper strength before choosing repeats."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  ]
+}

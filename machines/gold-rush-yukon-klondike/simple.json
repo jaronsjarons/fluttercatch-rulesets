@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "GR987",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Gold Rush, Yukon, and Klondike use three slot reels to set the value of seven collect shots. Send the ball up top while the reels are mixed. When two matching symbols plus a wagon or three matching symbols appear, stop advancing that combination and shoot the center saucer repeatedly for the raised reel value.",
+        "simpleOverview": "In Gold Rush, Yukon, or Klondike, shoot up top to advance the three slot reels. A wagon is wild. When the reels show a valuable match, stop changing them and shoot the center saucer to collect the raised value. If the center post is up, let it stop the ball before flipping.",
+        "summary": "Advance only the reel that can improve the current match. Collect ordinary mixed reels for 500, hats for 3,000, pans for 4,000, and lantern or wagon combinations for 5,000 on the common card; another installed card can raise those top awards substantially.",
+        "quickInfo": [
+          {
+            "name": "Advance a reel",
+            "summary": "Use its rollover or standup; side lanes advance the center reel and raise the center post."
+          },
+          {
+            "name": "Wagon symbol",
+            "summary": "Acts as a wild card with two matching hats, pans, or lanterns."
+          },
+          {
+            "name": "Collect reel value",
+            "summary": "Use the center saucer, top lanes, top saucers, or outlanes; the center saucer is the direct repeatable shot."
+          },
+          {
+            "name": "Center post",
+            "summary": "Rises after either side lane and drops when the lower rollover switch is crossed."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Soft-plunge for the top-right collect lane if the inherited reel value is already above 500."
+          },
+          {
+            "text": "While the reels are mixed, shoot up top and advance only the reel that can create or improve a match."
+          },
+          {
+            "text": "Treat a wagon as wild with a matching pair of hats, pans, or lanterns."
+          },
+          {
+            "text": "Once a high-value match is showing, stop changing the reels and shoot the center collect saucer."
+          },
+          {
+            "text": "When a side lane raises the center post, let the ball settle against it before making a controlled micro-flip."
+          }
+        ],
+        "buildsToward": {
+          "title": "A high-value reel match with repeatable collects",
+          "steps": [
+            {
+              "text": "Advance selected reels rather than changing all three blindly."
+            },
+            {
+              "text": "Freeze a strong pair-plus-wild or three-symbol match."
+            },
+            {
+              "text": "Repeat the center saucer while preserving that reel state."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Read the installed score card before play: reel combinations may award only points or may add Extra Balls and replays, and Gold Rush, Yukon, and Klondike have different lower-playfield hardware.",
+          "Test all three reels and every advance switch, all seven collect switches, the center saucer and kickout, both side-lane center-post raises, the post-lowering rollover, and dangerous standup rebounds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "slot reels",
+            "label": "Three upper slot reels",
+            "description": "Reels whose visible symbols set the collect value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center saucer",
+            "label": "Center collect saucer",
+            "description": "Direct shot that scores the currently displayed reel combination.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side lanes",
+            "label": "Center-reel side lanes",
+            "description": "Lanes that advance the center reel and raise the center post.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center post",
+            "label": "Lower center post",
+            "description": "Post raised by side lanes and lowered by the nearby rollover button.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Advance only the reel that can improve the current match. Collect ordinary mixed reels for 500, hats for 3,000, pans for 4,000, and lantern or wagon combinations for 5,000 on the common card; another installed card can raise those top awards substantially.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Soft-plunge for the top-right collect lane if the inherited reel value is already above 500."
+          },
+          {
+            "text": "While the reels are mixed, shoot up top and advance only the reel that can create or improve a match."
+          },
+          {
+            "text": "Treat a wagon as wild with a matching pair of hats, pans, or lanterns."
+          },
+          {
+            "text": "Once a high-value match is showing, stop changing the reels and shoot the center collect saucer."
+          },
+          {
+            "text": "When a side lane raises the center post, let the ball settle against it before making a controlled micro-flip."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Advance a reel",
+            "summary": "Use its rollover or standup; side lanes advance the center reel and raise the center post."
+          },
+          {
+            "name": "Wagon symbol",
+            "summary": "Acts as a wild card with two matching hats, pans, or lanterns."
+          },
+          {
+            "name": "Collect reel value",
+            "summary": "Use the center saucer, top lanes, top saucers, or outlanes; the center saucer is the direct repeatable shot."
+          }
+        ]
+      }
+    }
+  ]
+}

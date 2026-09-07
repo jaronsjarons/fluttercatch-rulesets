@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "G43W4",
+  "title": "AC/DC",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist AC/DC tournament strategy guide",
+      "url": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Bowen Kerins tutorial",
+        "url": "https://pinballvideos.com/v/1415"
+      },
+      {
+        "label": "The Pinball Channel AC/DC tips",
+        "url": "https://thepinballchannel.com/index.php/2019/09/23/acdc-tips/"
+      },
+      {
+        "label": "Stern AC/DC rule card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_AC-DC_755-51C6orC7-XX.pdf"
+      },
+      {
+        "label": "Johannes Ostermeier at Bulls&Balls Midsommar 2018 5-Strike",
+        "url": "https://pinballvideos.com/v/2243/321"
+      },
+      {
+        "label": "Pinballso AC/DC Pro tournament tutorial",
+        "url": "https://www.youtube.com/watch?v=E57H36dUfG8"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Choose Hells Bells, backhand the safer ramp to start Jam Multiball, use the bell for 2x or 3x playfield scoring, then cash a large Song Jackpot.",
+      "steps": [
+        {
+          "text": "Choose Hells Bells. Take the flashing A-X-E lane skill shot for a VIP Pass.",
+          "modeNotes": [
+            "Hells Bells: Bell hits light the five major shots. Song points also build the Song Jackpot.",
+            "VIP Pass: During multiball, it spots one major shot toward add-a-ball."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Backhand the safer ramp until Jam Multiball is lit at the right ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start Jam Multiball. Hit ramps for jackpots.",
+          "modeNotes": [
+            "Jam Multiball: Ramp shots score jackpots. Hit all five major shots to add a ball.",
+            "Hells Bells continues through Multiball with no timer. Its mode points keep building the Song Jackpot."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit the bell three times for 20 seconds of 2x playfield scoring, then hit it three more times during 2x for 20 seconds of 3x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "If four add-a-ball shots are complete, use a VIP Pass to spot the fifth shot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When it can decide the group, cash the Song Jackpot: complete F-I-R-E three times, shoot the right ramp, then fire at the flashing target.",
+          "modeNotes": [
+            "Song Jackpot: Mode points build its value. A drain removes the uncollected value.",
+            "Pass the collect only when the ramps are controlled and another 2x or 3x Jam window can justify losing the stored value."
+          ]
+        }
+      ],
+      "simpleOverview": "AC/DC's modes are Songs. Choose one before plunging; it stays active through Multiball, and its points build a Song Jackpot. That lets Hells Bells, Jam Jackpots, and the bell multiplier score together, but the uncollected Song Jackpot is lost when the ball drains.",
+      "quickInfo": [
+        {
+          "name": "Hells Bells",
+          "summary": "Bell hits light the five major shots, and all song points also build the Song Jackpot."
+        },
+        {
+          "name": "Jam Multiball",
+          "summary": "Ramp progress lights it at the right ramp; ramps score Jackpots and all five major shots add a ball."
+        },
+        {
+          "name": "Playfield multiplier",
+          "summary": "Three bell hits start 20 seconds of 2x playfield scoring; three more during 2x start 20 seconds of 3x."
+        },
+        {
+          "name": "Song Jackpot",
+          "summary": "Spell F-I-R-E three times, shoot the right ramp, then fire the cannon at its flashing target before a drain erases the value."
+        },
+        {
+          "name": "VIP Pass",
+          "summary": "During Multiball, spend one after four major shots to spot the fifth and collect the add-a-ball."
+        },
+        {
+          "name": "Song and Multiball",
+          "summary": "The selected Song mode continues during Multiball, has no timer, carries between balls, and ends only when you change songs."
+        }
+      ],
+      "fallback": {
+        "title": "Rock N Roll Train and Jam",
+        "when": "Use this plan when the bell return is unsafe.",
+        "steps": [
+          {
+            "text": "Choose Rock N Roll Train.",
+            "modeNotes": [
+              "Rock N Roll Train: Left-ramp hits light the five major song shots."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Backhand the left ramp to score the mode and light Jam.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Play Jam without forcing bell shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Song Jackpot before the ball drains."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "War Machine spinner",
+          "when": "Use this plan only when the left spinner is strong and its return is safe.",
+          "steps": [
+            {
+              "text": "Choose War Machine. Repeat the left spinner.",
+              "modeNotes": [
+                "War Machine: Spinner hits light the five major song shots."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use loop shots to advance Tour Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the Song Jackpot before the ball drains."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Encore (wizard)",
+        "steps": [
+          {
+            "text": "Change songs until all 12 songs are complete.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Change the song one more time to start Encore.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Hells Bells",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Rock N Roll Train",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "War Machine",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Encore",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Jam Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Tour Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "2x playfield scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "3x playfield scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Song Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "VIP Pass",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Test each ramp from the same-side flipper. Use the safer backhand to build Jam without a full cross-playfield shot.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The bell can drain on a miss or on a made shot.",
+          "response": "Test the return. Build Jam with safer ramp backhands, and take bell shots during multiball when possible.",
+          "sourceUrl": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+        },
+        {
+          "issue": "A cannon shot at the left drop targets can feed the right outlane.",
+          "response": "Fire only for a valuable award. If several targets are lit, aim between two targets.",
+          "sourceUrl": "https://www.kineticist.com/news/ac-dc-pinball-tutorial"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Pro or Premium/LE hardware, song list, ball count, Extra Ball conversion, Competition mode, and tournament adjustments.",
+        "Confirm Jam, Tour, and Album requirements, bell multiplier timing, VIP Pass behavior, Song Jackpot carry, and Encore qualification.",
+        "Test both ramp backhands and returns, bell entry and eject, loops, spinner, top saucer, cannon aim, target rebounds, and outlanes."
+      ],
+      "overview": "AC/DC's Songs stay active through Multiball, their scoring builds a Song Jackpot, and bell hits can multiply the entire stack. Choose Hells Bells, start Jam Multiball from the safer ramp, then use the bell for 2x or 3x. Collect the built Song Jackpot before the ball drains.",
+      "machineSetup": [
+        "Confirm Pro or Premium/LE hardware, song list, ball count, Extra Ball conversion, Competition mode, and tournament adjustments.",
+        "Confirm Jam, Tour, and Album requirements, bell multiplier timing, VIP Pass behavior, Song Jackpot carry, and Encore qualification.",
+        "Test both ramp backhands and returns, bell entry and eject, loops, spinner, top saucer, cannon aim, target rebounds, and outlanes."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

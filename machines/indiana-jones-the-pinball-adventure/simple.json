@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xZy",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete E-N-T to open the idol and lock three balls. During Multiball, shoot the sinkhole or left ramp to light each regular Jackpot, collect it at the right ramp, and finish the set at the captive-ball Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Regular Multiball",
+            "summary": "Complete E-N-T and lock three balls; the Ark, Stones, and Grail jackpots begin at 20M, 30M, and 40M."
+          },
+          {
+            "name": "Idol jackpot multiplier",
+            "summary": "Parking one or two balls in the idol raises only the regular jackpot to 2x or 3x until its collect or 20-second release."
+          },
+          {
+            "name": "Quick Multiball",
+            "summary": "Repeated captive-ball target hits start a timed two-ball treasure collect."
+          },
+          {
+            "name": "Path of Adventure",
+            "summary": "Complete ADVENTURE and shoot the right ramp for the flipper-steered upper playfield."
+          },
+          {
+            "name": "Path modes and Multiball",
+            "summary": "Regular Multiball suspends a running Three Challenges or Steal the Stones mode. Finish either before the third lock; ramp shots during Multiball can still change the selected mode while it is suspended."
+          },
+          {
+            "name": "Eternal Life Multiball",
+            "summary": "Complete all twelve scene modes, then shoot the mode saucer for the six-ball wizard feature."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the mode saucer, both ramps, and the E-N-T reject while ball save is active."
+          },
+          {
+            "text": "Complete E-N-T, then shoot the opened sinkhole to lock a ball. Repeat until the third lock starts Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the sinkhole or left ramp to light the current jackpot, then collect it at the right ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Only with another ball controlled, park one or two balls in the idol for a 2x or 3x regular-jackpot collect; this is not a playfield multiplier.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Ark, Stones, and Grail jackpots, then hit the captive ball for the Super Jackpot.",
+            "modeNotes": [
+              "Regular Multiball order: Light at the sinkhole or left ramp, collect at the right ramp, and finish the three-jackpot set at the captive ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, use the mode saucer or a ready Quick Multiball instead of immediately rebuilding through a dangerous E-N-T bank."
+          }
+        ],
+        "fallback": {
+          "title": "Quick Multiball treasures",
+          "when": "Use this when the E-N-T bank or lock sinkhole rejects dangerously.",
+          "steps": [
+            {
+              "text": "Hit the captive-ball target until Quick Multiball starts.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the captive ball to collect persistent treasures while two balls protect the shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to the safest lit mode or Path of Adventure after the timer ends.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Mode and Path position play",
+            "when": "Use this when the mode saucer and right ramp are safer than the center lock bank.",
+            "steps": [
+              {
+                "text": "Shoot the mode saucer and follow the lit mode shots.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete ADVENTURE and take the right ramp for Path of Adventure.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Finish the upper-playfield path before starting regular Multiball.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Eternal Life Multiball",
+          "steps": [
+            {
+              "text": "Start and complete all twelve scene modes at the mode saucer.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to the mode saucer after all twelve are spotted."
+            },
+            {
+              "text": "Use Eternal Life Multiball's six balls to hit every lit switch, including Path of Adventure switches.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Quick Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Eternal Life Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Path of Adventure",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "E-N-T bank",
+            "context": "E-N-T bank",
+            "label": "Lock-opening targets",
+            "description": "Three center-left drop targets in front of the lock sinkhole.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lock sinkhole",
+            "context": "lock sinkhole",
+            "label": "Idol lock",
+            "description": "Sinkhole behind E-N-T used to lock balls and light a multiball jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "context": "left ramp",
+            "label": "Jackpot light",
+            "description": "Left ramp lights the current regular-multiball jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "right ramp",
+            "label": "Jackpot collect",
+            "description": "Right ramp collects the current jackpot and starts Path of Adventure when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "mode saucer",
+            "context": "mode saucer",
+            "label": "Mode start",
+            "description": "The short tunnel and saucer used for modes, Hand of Fate, and lit awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "context": "captive ball",
+            "label": "Quick Multiball shot",
+            "description": "The captive ball used for Quick Multiball treasures and the regular Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Path of Adventure",
+            "context": "Path of Adventure",
+            "label": "Raised mini-playfield",
+            "description": "Flipper-steered upper playfield entered from the lit right ramp.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Idol jackpot control",
+            "instruction": "Park a ball in the idol only when another ball is controlled for the lit right-ramp jackpot; the 20-second release can erase the multiplier.",
+            "sourceUrl": "https://www.pinball.org/rules/indianajones.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Regular Multiball suspends Three Challenges or Steal the Stones, but its ramp shots can still change the selected mode.",
+            "response": "Finish either Path of Adventure mode before the third lock so Multiball does not disrupt its completion or leave the wrong mode selected.",
+            "sourceUrl": "https://www.pinball.org/rules/indianajones.html"
+          },
+          {
+            "issue": "Rules and bugs differ substantially across early and production ROMs.",
+            "response": "Use installed L-7 behavior for locks, jackpots, timers, and operator-adjustable awards.",
+            "sourceUrl": "https://www.pinball.org/rules/indianajones.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm production L-7 code, Easy Multiball, Extra Ball and buy-in settings, mode difficulty, Path timer, and ball save.",
+          "Confirm E-N-T reset behavior, physical locks, idol release timer, jackpot bases, raise-jackpot total, and captive-ball Super values.",
+          "Test E-N-T, lock sinkhole and eject, both ramps, mode saucer, captive ball, Path controls, orbits, and all return feeds."
+        ],
+        "simpleOverview": "Indiana Jones: The Pinball Adventure uses E-N-T to open the idol for three regular Multiball locks. During Multiball, shoot the sinkhole or left ramp to light the current Jackpot, collect it at the right ramp, and complete the Ark, Stones, and Grail set before hitting the captive ball for Super Jackpot.",
+        "overview": "Indiana Jones: The Pinball Adventure uses E-N-T to open the idol for three regular Multiball locks. Use E-N-T and three idol locks for the repeatable Jackpot route, finishing each light, right-ramp collect, and captive-ball Super in order. Complete Three Challenges or Steal the Stones before the third lock because regular Multiball suspends those running modes.",
+        "machineSetup": [
+          "Confirm production L-7 code, Easy Multiball, Extra Ball and buy-in settings, mode difficulty, Path timer, and ball save.",
+          "Confirm E-N-T reset behavior, physical locks, idol release timer, jackpot bases, raise-jackpot total, and captive-ball Super values.",
+          "Test E-N-T, lock sinkhole and eject, both ramps, mode saucer, captive ball, Path controls, orbits, and all return feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete E-N-T to open the idol and lock three balls. During Multiball, shoot the sinkhole or left ramp to light each regular Jackpot, collect it at the right ramp, and finish the set at the captive-ball Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the mode saucer, both ramps, and the E-N-T reject while ball save is active."
+          },
+          {
+            "text": "Complete E-N-T, then shoot the opened sinkhole to lock a ball. Repeat until the third lock starts Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, shoot the sinkhole or left ramp to light the current jackpot, then collect it at the right ramp.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Only with another ball controlled, park one or two balls in the idol for a 2x or 3x regular-jackpot collect; this is not a playfield multiplier.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Ark, Stones, and Grail jackpots, then hit the captive ball for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Regular Multiball order: Light at the sinkhole or left ramp, collect at the right ramp, and finish the three-jackpot set at the captive ball."
+            ]
+          },
+          {
+            "text": "After multiball, use the mode saucer or a ready Quick Multiball instead of immediately rebuilding through a dangerous E-N-T bank."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Regular Multiball",
+            "summary": "Complete E-N-T and lock three balls; the Ark, Stones, and Grail jackpots begin at 20M, 30M, and 40M."
+          },
+          {
+            "name": "Idol jackpot multiplier",
+            "summary": "Parking one or two balls in the idol raises only the regular jackpot to 2x or 3x until its collect or 20-second release."
+          },
+          {
+            "name": "Quick Multiball",
+            "summary": "Repeated captive-ball target hits start a timed two-ball treasure collect."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Quick Multiball treasures",
+          "when": "Use this when the E-N-T bank or lock sinkhole rejects dangerously.",
+          "steps": [
+            {
+              "text": "Hit the captive-ball target until Quick Multiball starts.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the captive ball to collect persistent treasures while two balls protect the shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to the safest lit mode or Path of Adventure after the timer ends.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

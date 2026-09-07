@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "G42Nz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete T-I-M-E in the recessed left alley to start Snail Time, a slow-motion ball-save period that begins with at least 30 seconds. Add time before it starts with lit return lanes, the top 1 lane, and F-A-N-T-A-S-Y completions. During Snail Time, complete the top 1-2-3-4-5 lanes repeatedly to raise playfield scoring toward 5x; a full set at 5x is worth 450,000. Complete F-A-N-T-A-S-Y to raise the held end-of-ball Bonus X toward 10x.",
+        "simpleOverview": "Complete T-I-M-E in the recessed left alley to start Snail Time. During Snail Time, complete the top 1-2-3-4-5 lanes repeatedly to raise playfield scoring to 5x. Complete F-A-N-T-A-S-Y for held Bonus X, and build Snail Time above its 30-second minimum before starting it.",
+        "summary": "Build time, complete T-I-M-E to start Snail Time, and use repeated 1-2-3-4-5 sets to reach 5x playfield scoring. Complete F-A-N-T-A-S-Y for held Bonus X.",
+        "quickInfo": [
+          {
+            "name": "Build Time First",
+            "summary": "Use lit returns, top 1, and F-A-N-T-A-S-Y before Snail Time."
+          },
+          {
+            "name": "Start Snail Time",
+            "summary": "Complete T-I-M-E in the recessed left alley."
+          },
+          {
+            "name": "Reach 5x Playfield",
+            "summary": "Complete 1-2-3-4-5 sets during Snail Time."
+          },
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete F-A-N-T-A-S-Y for up to 10x."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before starting Snail Time, add seconds with a lit return lane, the top 1 lane, and F-A-N-T-A-S-Y completions; time cannot be added once Snail Time begins.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the cycling T-I-M-E letters in the recessed left alley to start Snail Time.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Snail Time, use lane change to complete 1-2-3-4-5 repeatedly and raise playfield scoring toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "At 5x, complete another 1-2-3-4-5 set for 450,000; complete F-A-N-T-A-S-Y between Snail Time runs to raise the held Bonus X toward 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build the mushroom value",
+            "when": "Use this when the left orbit is repeatable and Snail Time is not ready.",
+            "steps": [
+              {
+                "text": "Shoot the mushroom jump in the arrow direction to raise its held value toward 100,000; avoid the opposite direction, which lowers it.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Use a full 99-second Snail Time",
+          "steps": [
+            {
+              "text": "Accumulate time before completing T-I-M-E, up to the 99-second cap.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Enter Snail Time with lane progress ready so the 5x scoring window begins sooner.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Snail Time duration, Extra Ball and Special conversions, ball count, playfield-multiplier behavior, and Bonus X maximum.",
+          "Test the recessed T-I-M-E alley, all five upper lanes and lane change, F-A-N-T-A-S-Y switches, both return lanes, top 1 lane, mushroom jump, and ball-save releases."
+        ],
+        "termStyles": [
+          {
+            "label": "Snail Time",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "5x playfield",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "T-I-M-E alley",
+            "label": "T-I-M-E alley",
+            "description": "Recessed left alley that qualifies Snail Time.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-2-3-4-5 lanes",
+            "label": "Top 1-2-3-4-5 lanes",
+            "description": "Upper lanes that raise playfield scoring during Snail Time.",
+            "precision": "unverified"
+          },
+          {
+            "term": "F-A-N-T-A-S-Y targets",
+            "label": "F-A-N-T-A-S-Y targets",
+            "description": "Targets and lanes that raise held Bonus X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "mushroom jump",
+            "label": "Mushroom jump",
+            "description": "Left orbit with a direction-sensitive held value.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Snail Time cannot be extended after it begins.",
+            "response": "Build the timer before the final T-I-M-E letter instead of starting at the 30-second minimum.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G42Nz-MNEpl"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build time, complete T-I-M-E to start Snail Time, and use repeated 1-2-3-4-5 sets to reach 5x playfield scoring. Complete F-A-N-T-A-S-Y for held Bonus X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before starting Snail Time, add seconds with a lit return lane, the top 1 lane, and F-A-N-T-A-S-Y completions; time cannot be added once Snail Time begins.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the cycling T-I-M-E letters in the recessed left alley to start Snail Time.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Snail Time, use lane change to complete 1-2-3-4-5 repeatedly and raise playfield scoring toward 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "At 5x, complete another 1-2-3-4-5 set for 450,000; complete F-A-N-T-A-S-Y between Snail Time runs to raise the held Bonus X toward 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Build Time First",
+            "summary": "Use lit returns, top 1, and F-A-N-T-A-S-Y before Snail Time."
+          },
+          {
+            "name": "Start Snail Time",
+            "summary": "Complete T-I-M-E in the recessed left alley."
+          },
+          {
+            "name": "Reach 5x Playfield",
+            "summary": "Complete 1-2-3-4-5 sets during Snail Time."
+          }
+        ]
+      }
+    }
+  ]
+}

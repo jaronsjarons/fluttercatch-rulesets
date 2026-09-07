@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "G4dOQ",
+  "title": "Iron Maiden: Legacy of the Beast",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Iron Maiden tournament strategy guide",
+      "url": "https://www.kineticist.com/news/iron-maiden-pinball-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Iron Maiden living rulesheet",
+        "url": "https://tiltforums.com/t/iron-maiden-pinball-rulesheet/3787"
+      },
+      {
+        "label": "PAPA tutorial with Bowen Kerins",
+        "url": "https://www.youtube.com/watch?v=zaCEffQkj4o"
+      },
+      {
+        "label": "Bowen Kerins at NYCPC 2018",
+        "url": "https://pinballvideos.com/v/1858/23390"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Leave Mummy Multiball one hit from starting, choose Flight of Icarus, then start the Battle before Mummy so both features use the same ramp route.",
+      "steps": [
+        {
+          "text": "Soft plunge. Shoot the center jump ramp during ball save. Test both ramps and the Mummy captive-ball return."
+        },
+        {
+          "text": "Shoot white arrows to spell E-D-D-I-E. Before the last letter, use the left spinner to select Flight of Icarus.",
+          "modeNotes": [
+            "Eddie Battle: Complete E-D-D-I-E. Shoot the center jump ramp to start the flashing Battle.",
+            "On Premium and LE, the center ramp lowers and exposes the Battle scoop."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit the Mummy captive ball twice. Collect the lit lock at the center ramp on Pro or the left ramp on Premium and LE.",
+          "modeNotes": [
+            "Mummy lock: The first lock needs two captive-ball hits. Later Mummy multiballs need five hits.",
+            "If the first lock does not light after two hits, keep hitting the captive ball until the lock lights."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the lock, hit the captive ball five times to spell M-U-M-M-Y. Do not make the next captive-ball hit.",
+          "modeNotes": [
+            "Mummy start: The lock and M-U-M-M-Y qualification stay ready. The next captive-ball hit starts two-ball Mummy Multiball.",
+            "On Premium and LE, the start hit must push the locked ball out of the sarcophagus."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the center jump ramp to start Flight of Icarus. Then hit the captive ball to start Mummy Multiball.",
+          "modeNotes": [
+            "Flight of Icarus: Alternate the two ramps. A five-second ramp combo raises the shot multiplier.",
+            "Score 20 million in the mode. Then hit the bullseye to end the mode and light its Soul Shard.",
+            "A single-ball Battle can run with Mummy Multiball when the Battle starts first. Multiballs cannot run together."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Alternate the two ramps first. Complete both yellow ramp arrows to add one ball.",
+          "modeNotes": [
+            "Mummy add-a-ball 1: Complete both ramps. Add-a-ball 2 needs both ramps and both orbits.",
+            "Later add-a-balls need both ramps, both orbits, both loops, the center ramp, and the Super Jackpot target.",
+            "The game permits three Mummy add-a-balls in one multiball. Yellow-shot progress survives a failed Mummy attempt."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "When the captive ball lights, stop the yellow shots and collect the Mummy Jackpot. Return to yellow shots after the collect.",
+          "modeNotes": [
+            "Mummy Jackpot: Score ten switches to light the first captive-ball Jackpot. Each later Jackpot needs ten more switches.",
+            "Jackpot qualifications do not stack. A lit Jackpot stops switch progress until you collect it.",
+            "Each Jackpot spells one M-U-M-M-Y letter. Five Jackpots light the bullseye Super Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After Flight ends, hit the bullseye again within ten seconds to collect the Soul Shard.",
+          "modeNotes": [
+            "Soul Shard: A stored Battle completion. The collect starts at 20% of the Battle score and can score 2x or 3x for bullseye accuracy.",
+            "A collected Shard raises bonus and wizard value. If the ten-second hurry-up ends, the Shard is not stored."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Trooper Multiball",
+        "when": "Use this route when the Mummy captive ball or alternating ramps are unsafe.",
+        "steps": [
+          {
+            "text": "Complete the center drop bank twice to light all three locks for the first Trooper Multiball."
+          },
+          {
+            "text": "Shoot the left orbit or right loop for three locks. The third lock starts three-ball Trooper Multiball.",
+            "modeNotes": [
+              "Trooper locks: Later attempts need one drop-bank completion for each lock and can restrict the lit lock shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect three blue major-shot Jackpots. Shoot the upper Super Jackpot target.",
+            "modeNotes": [
+              "Trooper Super: It relights collected Jackpots at one higher value. Uncollected Jackpots keep their current value.",
+              "The first Super awards the Trooper Eddie Card. Trooper progress survives a failed attempt."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the center drop bank. Shoot the bullseye to fire the cannon. Repeat after a Super Jackpot.",
+            "modeNotes": [
+              "Cannon: The bullseye scores one, two, or three lit Jackpots. The first cannon shot also adds one ball.",
+              "Trooper ends when one ball remains. A mode cannot start during Trooper."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Power Features into Cyborg",
+          "when": "Use this route when several Power Feature counters are close and a Battle or multiball can protect the remaining shots.",
+          "steps": [
+            {
+              "text": "Complete all orange X targets. Move the lit inlane away from the incoming ball and keep playfield X ready for Cyborg.",
+              "modeNotes": [
+                "Playfield X: One X-target set lights 2x for 20 seconds. A second set before collection lights 3x.",
+                "Do not spend the lit inlane early unless the Power Jackpot must be cashed before a dangerous shot."
+              ],
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use an active Battle or multiball to finish the Power Ramp, Orbit, Spinner, Pop, and Target counters.",
+              "modeNotes": [
+                "Power Features: Each of the five shot groups has its own counter. Completing one lights a Power Jackpot at the Orb. Completing all five qualifies Cyborg Multiball."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect the Power Jackpot at the Orb before the ball drains. Preserve the lit playfield X inlane when Cyborg is ready.",
+              "modeNotes": [
+                "Power Jackpot: Each additional completed Power Feature adds 1x to the Orb collect. Its value and multiplier are lost at the drain.",
+                "Use playfield X on this collect only when the ball is in danger or Cyborg still needs substantial progress."
+              ]
+            },
+            {
+              "text": "Roll through the lit inlane for playfield X. Start Cyborg Multiball at the bullseye or center ramp. Hit each flashing Power Feature group once, then shoot the Orb Super Jackpot.",
+              "modeNotes": [
+                "Cyborg Multiball: Complete the five flashing Power Feature groups to light the Orb. Each Super Jackpot raises the next Super multiplier, and the first two Supers each add a ball.",
+                "Playfield X cannot be started during Cyborg, so bring it in already running."
+              ],
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Number of the Beast",
+        "steps": [
+          {
+            "text": "Collect four Eddie Cards: score a Mummy Super Jackpot, score a Trooper Super Jackpot, start Cyborg Multiball, and start 2 Minutes to Midnight.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Four Eddie Cards qualify Number of the Beast; follow the display for its lit start.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Mummy Multiball lock and start",
+          "pro": "Use the virtual lock at the center ramp. Follow the display and lit center-ramp insert for the start.",
+          "premium": "Collect the physical lock at the left ramp. The start hit must push the locked ball out of the sarcophagus.",
+          "sourceUrl": "https://tiltforums.com/t/iron-maiden-pinball-rulesheet/3787"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Flight of Icarus",
+          "summary": "Complete E-D-D-I-E, start at the center jump ramp, alternate ramps, then use the bullseye for its Soul Shard hurry-up."
+        },
+        {
+          "name": "Mummy Multiball",
+          "summary": "Shoot the lit lock at the edition-specific ramp, hit the captive ball until M-U-M-M-Y is complete, then hit it once more to start two-ball play."
+        },
+        {
+          "name": "Trooper Multiball",
+          "summary": "Complete the center drop bank, collect three locks at the left orbit or right loop, then work three Jackpots and the upper Super."
+        },
+        {
+          "name": "Playfield X",
+          "summary": "Complete orange X targets and roll through the lit inlane for 20 seconds of 2x or prepared 3x playfield scoring."
+        },
+        {
+          "name": "Soul Shard",
+          "summary": "A Battle completion hurry-up whose 2x or 3x bullseye accuracy modifies only that collect, not general playfield scoring."
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Flight of Icarus",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Eddie Battle",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "2 Minutes to Midnight",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Number of the Beast",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Mummy Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Trooper Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Cyborg Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Playfield X",
+          "tone": "rust",
+          "kind": "multiplier",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Soul Shard",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Power Jackpot",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Check Competition Mode, target time, Extra Ball conversion, and Battle ball saves.",
+        "Check first Mummy-lock hits, later lock thresholds, Playfield X duration, Power Feature counts, Soul Shard values, and wizard requirements.",
+        "Test jump ramp, Mummy captive and lock, drops, bullseye, Orb, both ramps, loops, spinners, upper flipper, inlanes, and returns."
+      ],
+      "techniques": [
+        {
+          "name": "Center-shot opening",
+          "instruction": "Soft plunge to a lower flipper. Shoot the center jump ramp while the opening ball save is active.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=225s"
+        },
+        {
+          "name": "Alternating-ramp rhythm",
+          "instruction": "Use each ramp return to set up the opposite ramp. Keep the five-second Flight combo alive only while control is stable.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=255s"
+        },
+        {
+          "name": "Upper-flipper captive hit",
+          "instruction": "Use an early upper-left-flipper shot to hit the left side of the Mummy captive ball.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=409s"
+        },
+        {
+          "name": "Repeated Mummy hits",
+          "instruction": "Hit the captive ball on its left side. If the ball returns to the upper flipper, repeat the same early shot.",
+          "sourceUrl": "https://www.kineticist.com/news/iron-maiden-pinball-tutorial"
+        },
+        {
+          "name": "Premium lock-release hit",
+          "instruction": "On Premium and LE, hit the captive ball firmly enough to push the locked ball out of the sarcophagus.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=439s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A missed side-loop shot can feed the right outlane.",
+          "response": "Prefer the center orbit or jump ramp until the loop is dialed in. Stop repeated loop attempts after one dangerous miss.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=1657s"
+        },
+        {
+          "issue": "Side-to-side loop play can remove lower-flipper control.",
+          "response": "Use the center jump ramp as the bailout shot. Resume loops only from a stable upper-flipper feed.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=225s"
+        },
+        {
+          "issue": "Repeated captive-ball hits can rebound toward the center drain.",
+          "response": "Use the early upper-flipper angle. Stop the sequence when the ball no longer returns to the upper flipper.",
+          "sourceUrl": "https://www.youtube.com/watch?v=zaCEffQkj4o&t=409s"
+        },
+        {
+          "issue": "The lower-left REVIVE spinner is a difficult shot toward the left outlane.",
+          "response": "Test it from a right-flipper cradle. Abandon it when the miss feeds the outlane.",
+          "sourceUrl": "https://www.kineticist.com/news/iron-maiden-pinball-tutorial"
+        }
+      ],
+      "overview": "Iron Maiden lets single-ball Eddie Battles continue into Mummy or Trooper Multiball. Use the left spinner to select Flight of Icarus, spell E-D-D-I-E with white arrows, and shoot the center ramp to start it. Hit Mummy captive twice, collect the center-ramp (Pro) or left-ramp (Premium/LE) lock, spell M-U-M-M-Y, then hit captive again; alternate ramps for Icarus and Mummy add-a-ball, collecting captive-ball Jackpots whenever lit.",
+      "simpleOverview": "Iron Maiden lets a single-ball Eddie Battle continue into Mummy or Trooper Multiball, while orange X targets prepare Playfield X. Use the left spinner to select Flight of Icarus before completing E-D-D-I-E with white arrows; shoot the center ramp to start. Hit the Mummy captive ball twice, collect the center-ramp lock on Pro or left-ramp lock on Premium/LE, spell M-U-M-M-Y, then hit the captive ball again; complete orange X targets and roll through the lit inlane for Playfield X.",
+      "machineSetup": [
+        "Check Competition Mode, target time, Extra Ball conversion, and Battle ball saves.",
+        "Check first Mummy-lock hits, later lock thresholds, Playfield X duration, Power Feature counts, Soul Shard values, and wizard requirements.",
+        "Test jump ramp, Mummy captive and lock, drops, bullseye, Orb, both ramps, loops, spinners, upper flipper, inlanes, and returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "id": "Grx8Y",
+  "title": "The Getaway: High Speed II",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "The Getaway: High Speed II complete rulesheet",
+      "url": "https://www.pinball.org/rules/getaway.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist tournament tutorial",
+        "url": "https://www.kineticist.com/news/the-getaway-pinball-tutorial"
+      },
+      {
+        "label": "Daniele Celestino Acciari at Bulls&Balls Hohoho Spring 2022 Swiss",
+        "url": "https://pinballvideos.com/v/3325/3197"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat the right orbit and shift through five gears, start Redline Mania at the Supercharger, collect the lit back-ramp Jackpot, make the required Supercharger loops, then return to the ramp for the 100M Super Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Gears",
+          "summary": "Shift when the lamp flashes because gear four starts Supercharger Mode and gear five lights Redline Mania."
+        },
+        {
+          "name": "Redline Mania",
+          "summary": "Start at the Supercharger with the Jackpot already lit, then make the required Supercharger loops and return to the back ramp for the Super Jackpot."
+        },
+        {
+          "name": "Regular Multiball",
+          "summary": "Complete the traffic lights and lock three balls, then use Supercharger loops to light the back-ramp Jackpot and later Super Jackpots."
+        },
+        {
+          "name": "Getaway Time",
+          "summary": "After a regular Jackpot, an uncollected award can remain lit briefly when multiball drains to one ball."
+        },
+        {
+          "name": "Helicopter Bonus",
+          "summary": "The tunnel can award it after a Jackpot or Super Jackpot when ball count and control permit the shot."
+        },
+        {
+          "name": "Stoplights during scoring features",
+          "summary": "All nine Stoplight targets flash during Supercharger Mode and every Multiball. Completing the bank can light Extra Ball when the installed settings allow it."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Repeat the right orbit for RPM and Freeway value. Use the upper loop or left orbit when their returns are safer."
+        },
+        {
+          "text": "Shift immediately whenever the yellow SHIFT lamp flashes. Continue through five gears."
+        },
+        {
+          "text": "Use gear four Supercharger Mode for points, then start gear five Redline Mania at the Supercharger.",
+          "modeNotes": [
+            "Supercharger Mode: Major shots score during the timed round. Successive Supercharger loops increase their own awards.",
+            "Redline Mania: Multiball begins with the back-ramp Jackpot already lit."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Collect the lit back-ramp Jackpot immediately. Then shoot the required Supercharger loops.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Return to the back ramp for the 100M Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After a Jackpot or Super, use the tunnel for Helicopter Bonus only when remaining balls are controlled.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Regular Multiball",
+        "when": "Use this when orbit feeds are poor but the traffic banks and back ramp are safe.",
+        "steps": [
+          {
+            "text": "Complete the traffic lights from green through yellow to red."
+          },
+          {
+            "text": "Lock three balls at the back ramp to start regular Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make ten Supercharger loops, then collect the back-ramp Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Make the required additional loops and return to the ramp for the escalating Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Freeways and Speed Millions",
+          "when": "Use this when locks and the back ramp reject but orbit control is stable.",
+          "steps": [
+            {
+              "text": "Repeat the right orbit for Freeways."
+            },
+            {
+              "text": "Use the upper flipper for Speed Millions only when its narrow return is controlled."
+            },
+            {
+              "text": "Do not force the 1-2-3 targets for kickback when Redline Mania is close; Redline relights it."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Redline Mania and escalating Supers",
+        "steps": [
+          {
+            "text": "Shift through all five gears to start Redline Mania.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the starting Jackpot and 100M Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use regular Multiball for later Super Jackpot cycles that increase in value.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "The game has no larger conventional wizard mode."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Redline Mania",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Regular Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Supercharger Mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Super Jackpot",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Orbit catch",
+          "instruction": "Use a live catch or drop catch on the left flipper after a controlled right-orbit return.",
+          "sourceUrl": "https://www.kineticist.com/news/the-getaway-pinball-tutorial"
+        },
+        {
+          "name": "Ski pass",
+          "instruction": "Ski pass a controlled Supercharger return from the left flipper to the right to set up the back ramp.",
+          "sourceUrl": "https://www.kineticist.com/news/the-getaway-pinball-tutorial",
+          "techniqueSlug": "ski-pass"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the Supercharger only after confirming the flipper angle completes it reliably.",
+          "sourceUrl": "https://www.kineticist.com/news/the-getaway-pinball-tutorial",
+          "techniqueSlug": "backhand"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The left outlane is the main drain, and kickback is not normally lit at every ball start.",
+          "response": "Do not force the 1-2-3 targets. Nudge early and let Redline relight kickback when that route is close.",
+          "sourceUrl": "https://www.kineticist.com/news/the-getaway-pinball-tutorial"
+        },
+        {
+          "issue": "A missed upper-loop shot can fall among the traffic targets and toward the right outlane.",
+          "response": "Let a weak upper feed pass to the lower-right flipper instead of forcing the tiny Speed Millions window.",
+          "sourceUrl": "https://www.kineticist.com/news/the-getaway-pinball-tutorial"
+        },
+        {
+          "issue": "The tunnel holds the ball briefly, then feeds the upper flipper.",
+          "response": "Track the held ball and prepare the upper-flipper return before the eject.",
+          "sourceUrl": "https://www.pinball.org/rules/getaway.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm ROM family before using RPM, lock, or Redline thresholds.",
+        "Test Supercharger speed, Free Ride timer, and orbit returns."
+      ],
+      "simpleOverview": "The Getaway: High Speed II uses right-orbit shots and gear shifts to reach Redline Mania. Shift through five gears, start at the Supercharger, collect the back-ramp Jackpot, make the required Supercharger loops, then return to the ramp for the 100M Super Jackpot.",
+      "overview": "Right-orbit RPM and shifts advance the gears in The Getaway: High Speed II. Gear four starts Supercharger Mode, and gear five starts Redline Mania with its back-ramp Jackpot already lit. Collect it, make the required Supercharger loops, and return to the back ramp for the 100M Super Jackpot. Complete the traffic lights and lock three balls to start regular Multiball.",
+      "machineSetup": [
+        "Confirm ROM family before using RPM, lock, or Redline thresholds.",
+        "Test Supercharger speed, Free Ride timer, and orbit returns."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

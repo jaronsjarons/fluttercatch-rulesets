@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "GrXzD",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use both ramps to build the Gumball Machine and release the Powerball, start Powerball Mania at the right orbit, repeat the Powerfield Jackpot and relight it at the left ramp, or use normal Multiball when those feeds are safer.",
+        "quickInfo": [
+          {
+            "name": "Powerball Mania",
+            "summary": "Load and release the ceramic Powerball, then shoot its lit right orbit to start the timed scoring mode."
+          },
+          {
+            "name": "Powerfield Jackpot",
+            "summary": "Enter the Powerfield from the right ramp and reach its upper exit for the Mania Jackpot."
+          },
+          {
+            "name": "Normal Multiball",
+            "summary": "Complete both ramps, collect locks, and use the left ramp to start Multiball."
+          },
+          {
+            "name": "Rounds and Multiball",
+            "summary": "Normal Multiball can run with any standard round, but it cannot start during another Multiball or while Fast Lock is counting down."
+          },
+          {
+            "name": "Piano and Camera",
+            "summary": "The Piano scores the Jackpot, and the Camera relights it during normal Multiball."
+          },
+          {
+            "name": "Lost in the Zone",
+            "summary": "Collect all 14 Door Panels to qualify the final feature."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the right ramp, Lock Lane, Piano, Camera, and Powerball feeds during the opening ball save."
+          },
+          {
+            "text": "Shoot both ramps to spell GUMBALL. Load the Gumball Machine until it releases the ceramic Powerball.",
+            "modeNotes": [
+              "Gumball Machine: Completed ramp letters load a ball. Continued cycles return the loaded balls until the ceramic Powerball enters play."
+            ]
+          },
+          {
+            "text": "After the Powerball is released, regain control on the left flipper, then send it through the lit right orbit and into the Gumball Machine to start Powerball Mania.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Powerball Mania, shoot the right ramp to enter the Powerfield. Reach the upper exit to collect the Mania Jackpot.",
+            "modeNotes": [
+              "Powerfield Jackpot: The upper exit scores 50,000,000 during Powerball Mania."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After a Mania Jackpot, shoot the left ramp to relight the Powerfield. Repeat the right-ramp and upper-exit cycle.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Protect the end-of-ball bonus. Powerball Mania scoring is banked in bonus and a tilt removes it."
+          }
+        ],
+        "fallback": {
+          "title": "Normal Multiball",
+          "when": "Use this plan when the Powerball, right ramp, or Powerfield is unreliable.",
+          "steps": [
+            {
+              "text": "Complete both ramps to spell GUMBALL and light the Lock Lane."
+            },
+            {
+              "text": "Collect the first lock. Collect a second lock when it is safe because it raises the base Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the left ramp to start normal Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the Piano for the Jackpot. Shoot the Camera to relight it. Repeat this pair.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Hit GREED during Multiball when it does not interrupt a controlled Jackpot cycle.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Camera Collect Bonus",
+            "when": "Use this only when the Camera sequence is fixed for the competition and Collect Bonus is the known next award.",
+            "steps": [
+              {
+                "text": "Start Powerball Mania and build its stored end-of-ball bonus with Powerfield Jackpots and safe switch scoring.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "After Powerball Mania, hit Robot targets until Camera is lit."
+              },
+              {
+                "text": "Shoot Camera for Collect Bonus before risking the stored value on another difficult feed."
+              },
+              {
+                "text": "Protect the collect. A tilt removes the Powerball Mania bonus before it is awarded."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Lost in the Zone",
+          "steps": [
+            {
+              "text": "Collect Door Panels from the Door and other available awards."
+            },
+            {
+              "text": "Complete all 14 Door Panels."
+            },
+            {
+              "text": "Start Lost in the Zone. Do not use this long build as the opening plan unless the match position requires it.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Powerball Mania",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Normal Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Powerfield Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Lost in the Zone",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Right-ramp Piano feed",
+            "instruction": "Shoot the right ramp. Use the upper-left flipper to send the return toward the Piano.",
+            "sourceUrl": "https://www.kineticist.com/news/twilight-zone-pinball-tutorial"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the lit right orbit from the upper-right flipper when the Powerball is controlled.",
+            "sourceUrl": "https://www.kineticist.com/news/twilight-zone-pinball-tutorial",
+            "techniqueSlug": "backhand"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The ceramic Powerball moves faster than a normal steel ball and can change familiar feeds.",
+            "response": "Use the first controlled Powerball return to set timing. Do not use steel-ball timing by assumption.",
+            "sourceUrl": "https://pinball.org/rules/twilightzone.html"
+          },
+          {
+            "issue": "Powerball Mania scoring is stored in end-of-ball bonus.",
+            "response": "Protect the ball after the mode and avoid a tilt that would remove the stored value.",
+            "sourceUrl": "https://www.kineticist.com/news/twilight-zone-pinball-tutorial"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm production ROM, lock count, restart, and Camera awards.",
+          "Test both ramps, Gumball release, Powerfield, and Piano."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Gumball Machine",
+            "label": "Gumball Machine",
+            "description": "Ball-storage device used to release and collect the Powerball.",
+            "precision": "unverified",
+            "context": "Ball-storage device used to release and collect the Powerball."
+          },
+          {
+            "term": "right orbit",
+            "label": "Powerball Mania start",
+            "description": "Orbit used to send the Powerball into the Gumball Machine.",
+            "precision": "unverified",
+            "context": "Orbit used to send the Powerball into the Gumball Machine."
+          },
+          {
+            "term": "right ramp",
+            "label": "Powerfield ramp",
+            "description": "Ramp used to enter the Powerfield during Powerball Mania.",
+            "precision": "unverified",
+            "context": "Ramp used to enter the Powerfield during Powerball Mania."
+          },
+          {
+            "term": "left ramp",
+            "label": "Powerfield relight",
+            "description": "Ramp used to relight the Powerfield Jackpot.",
+            "precision": "unverified",
+            "context": "Ramp used to relight the Powerfield Jackpot."
+          }
+        ],
+        "simpleOverview": "In Twilight Zone, load and release the Powerball, then shoot its lit right orbit for Powerball Mania. When the normal ramp feeds are safer, complete both ramps and return to the left ramp for Multiball instead.",
+        "overview": "In Twilight Zone, standard Rounds can run with normal Multiball but not with another Multiball. Release the Powerball and start Powerball Mania at the right orbit, then repeat the Powerfield Jackpot and relight at the left ramp. Use the normal lock route when ramp, Piano, and Camera feeds are more controlled.",
+        "machineSetup": [
+          "Confirm production ROM, lock count, restart, and Camera awards.",
+          "Test both ramps, Gumball release, Powerfield, and Piano."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use both ramps to release the Powerball, start Powerball Mania at the lit right orbit, then alternate the Powerfield Jackpot with its left-ramp relight.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Release the Powerball",
+            "text": "Shoot both ramps to spell GUMBALL. Keep loading the Gumball Machine until it releases the ceramic Powerball."
+          },
+          {
+            "title": "Start Powerball Mania",
+            "text": "After the Powerball reaches the left flipper, shoot it through the lit right orbit and into the Gumball Machine to start Powerball Mania.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Repeat the Jackpot cycle",
+            "text": "Shoot the right ramp into the Powerfield and reach the upper exit for Jackpot. Shoot the left ramp to relight it, then repeat.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Powerball Mania",
+            "summary": "Load and release the ceramic Powerball, then shoot its lit right orbit to start the timed scoring mode."
+          },
+          {
+            "name": "Powerfield Jackpot",
+            "summary": "Enter the Powerfield from the right ramp and reach its upper exit for the Mania Jackpot."
+          },
+          {
+            "name": "Normal Multiball",
+            "summary": "Complete both ramps, collect locks, and use the left ramp to start Multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Normal Multiball",
+          "when": "Use this when the Powerball, right ramp, or Powerfield is unreliable.",
+          "steps": [
+            {
+              "text": "Complete both ramps, collect the lit Lock Lane, then shoot the left ramp to start Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the Piano for Jackpot and the Camera to relight it. Repeat the pair.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

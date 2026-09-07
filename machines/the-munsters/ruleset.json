@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "id": "GbPde",
+  "title": "The Munsters",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist The Munsters tournament strategy",
+      "url": "https://www.kineticist.com/news/the-munsters-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Tilt Forums The Munsters rulesheet",
+        "url": "https://tiltforums.com/t/the-munsters-rulesheet/4781"
+      },
+      {
+        "label": "Eric Stone The Munsters tournament tutorial",
+        "url": "https://www.youtube.com/watch?v=HfjKUJD8hS4"
+      },
+      {
+        "label": "The Munsters current code history",
+        "url": "https://pinside.com/pinball/machine/munsters/details"
+      },
+      {
+        "label": "Raymond Davidson at Stern Pro Circuit Finals 2018-2019 — Round 2",
+        "url": "https://pinballvideos.com/v/2506/19155"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Start Herman Multiball, complete Lily and collect the DRAGULA add-a-ball under protection, then build Raven and Kitty before collecting stored Supers.",
+      "steps": [
+        {
+          "text": "Use a short plunge. Catch the ball on the right flipper. Test the Herman target and ramp returns."
+        },
+        {
+          "text": "Shoot lit red ramps for S-P-O-T. When Spot rises, hit it only if the feed is controlled.",
+          "modeNotes": [
+            "Spot: Each lit red ramp adds a letter and briefly raises Spot. A Spot hit during that window adds a bonus letter.",
+            "Complete SPOT to start the timed mode and complete one character level.",
+            "During the mode, hit raised Spot four times. The hits score 150,000, then add 100,000 per hit. Four hits light a stored Spot Super.",
+            "If Spot returns dangerously, trap the ball and let the mode time out."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit Herman to start the hurry-up. Hit Herman again to collect it and capture the ball.",
+          "modeNotes": [
+            "After the capture, the game auto-plunges another ball.",
+            "Hit the captured ball to double the hurry-up and start three-ball Herman Multiball. A miss starts two-ball multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Herman Multiball, complete L-I-L-Y. Shoot DRAGULA for add-a-ball.",
+          "modeNotes": [
+            "Herman Multiball: Major shots score jackpots. Herman relights one completed jackpot. Every three Herman hits raises jackpot value.",
+            "Four jackpots light the stored Herman Super at DRAGULA. The feature ends when one ball remains.",
+            "Lily: Complete L-I-L-Y before the bank progress resets. Switches then score frenzy points; Lily hits raise their value.",
+            "At 100 switches, Lily lights a stored Super. An unfinished switch count persists to the next Lily attempt."
+          ],
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete another character level. After its mode ends, collect the Raven advance at the left ramp. Repeat for three advances.",
+          "modeNotes": [
+            "Raven advance: A stored step earned from another completed character level. The left ramp collects it.",
+            "Three collected advances start three-ball Raven Multiball.",
+            "During Raven, collect four major jackpots to light the stored Raven Super. Three left ramps start Raven Boost.",
+            "DRAGULA add-a-ball is immediately lit. If two balls drain before the Super, the left ramp can give a 15-second restart."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete a character to light Kitty. Hit Kitty twice more to reach 6x. Then shoot DRAGULA to collect all stored Supers.",
+          "modeNotes": [
+            "Kitty: A timed playfield multiplier. Kitty hits advance it from 2x to 3x to 6x and reset its timer.",
+            "Stacked Super: Character and side-feature Supers stay stored after a drain. DRAGULA collects all lit Supers together.",
+            "Hold the action button for one or two seconds to cancel a pending stacked collect and keep the Supers stored."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Complete Grandpa last. One completed level for Spot, Herman, Lily, Raven, and Grandpa lights Munster Madness at the scoop."
+        }
+      ],
+      "fallback": {
+        "title": "Herman, Lily, and Raven first",
+        "when": "Use this plan when direct Spot returns head toward the center drain.",
+        "steps": [
+          {
+            "text": "Short-plunge to the right flipper."
+          },
+          {
+            "text": "Start Herman Hurry-Up and Herman Multiball."
+          },
+          {
+            "text": "Complete L-I-L-Y and collect the DRAGULA add-a-ball during multiball."
+          },
+          {
+            "text": "Complete Grandpa."
+          },
+          {
+            "text": "Complete another character level, then shoot the left ramp to collect its Raven advance. Repeat until three advances start Raven Multiball."
+          },
+          {
+            "text": "Build Kitty to 6x and collect stored Supers at DRAGULA.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to Spot last. Use ramp loops to qualify it, then time out the dangerous mode from a cradle."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Raven, Kitty, and stored Supers",
+          "when": "Use this as the scoring line when Munster Madness is too far away.",
+          "steps": [
+            {
+              "text": "Start Raven Multiball from three collected advances."
+            },
+            {
+              "text": "Collect DRAGULA add-a-ball."
+            },
+            {
+              "text": "Collect four jackpots for the Raven Super."
+            },
+            {
+              "text": "Shoot the left ramp three times for Raven Boost."
+            },
+            {
+              "text": "Start Kitty and reach 6x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Collect all stored Supers at DRAGULA."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Munster Madness",
+        "steps": [
+          {
+            "text": "Complete one level for Herman, Lily, Grandpa, Raven, and Spot. Wait until no character mode is running.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit scoop to start Munster Madness.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Munster Madness ball count",
+          "pro": "The mode starts with four balls.",
+          "premium": "The mode starts with four main-playfield balls plus a fifth Lab ball.",
+          "sourceUrl": "https://tiltforums.com/t/the-munsters-rulesheet/4781"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Short-plunge Herman setup",
+          "instruction": "Short-plunge to the right flipper. Use the controlled ball for the Herman target.",
+          "sourceUrl": "https://www.kineticist.com/news/the-munsters-tutorial"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand Spot when the local copy gives a safer return than the forehand.",
+          "sourceUrl": "https://www.kineticist.com/news/the-munsters-tutorial",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Drop catch",
+          "instruction": "Drop-catch a controlled orbit return. Use a small nudge on a right-ramp return only after the tilt is known.",
+          "sourceUrl": "https://www.youtube.com/watch?v=HfjKUJD8hS4&t=90s",
+          "techniqueSlug": "drop-catch"
+        },
+        {
+          "name": "Drop catch",
+          "instruction": "Use a drop catch on a controlled Herman return to regain a cradle.",
+          "sourceUrl": "https://www.youtube.com/watch?v=HfjKUJD8hS4&t=120s",
+          "techniqueSlug": "drop-catch"
+        },
+        {
+          "name": "Raven transfer",
+          "instruction": "Use a controlled flipper transfer for the Raven left ramp. A small cabinet bump can move the return to the opposite flipper.",
+          "sourceUrl": "https://www.youtube.com/watch?v=HfjKUJD8hS4&t=240s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Spot can send the ball down the middle.",
+          "response": "Use the safer backhand. If the return remains unsafe, qualify Spot and let its mode time out from a cradle.",
+          "sourceUrl": "https://www.kineticist.com/news/the-munsters-tutorial"
+        },
+        {
+          "issue": "Lily and DRAGULA are dangerous standup and lane shots.",
+          "response": "Shoot them during Herman Multiball ball save.",
+          "sourceUrl": "https://www.youtube.com/watch?v=HfjKUJD8hS4&t=1290s"
+        },
+        {
+          "issue": "A tournament copy can have a sensitive tilt.",
+          "response": "Test tilt tolerance before using cabinet movement on a return; use only the smallest proven nudge on this copy.",
+          "sourceUrl": "https://www.youtube.com/watch?v=HfjKUJD8hS4&t=1260s"
+        },
+        {
+          "issue": "A tournament copy can have little or no normal ball save.",
+          "response": "Confirm the setting before using a hazardous mode-start shot.",
+          "sourceUrl": "https://www.kineticist.com/news/the-munsters-tutorial"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Time out unsafe Spot shots."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete one level for all five characters."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Herman, Lily, and Raven first: Use this plan when direct Spot returns head toward the center drain."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Stern The Munsters code and edition before relying on exact values or timers.",
+        "Test the Spot target, Herman, DRAGULA, both ramps, and scoop kickouts."
+      ],
+      "overview": "The Munsters advances five Family Members toward Munster Madness; Lily can run with other features. Start Herman Multiball, complete L-I-L-Y during it, and spell D-R-A-G-U-L-A for add-a-ball. Each completed Family Member lights Kitty and a Raven advance; hit Kitty up to 6x, then collect the left-ramp advance after the mode ends. Three advances start Raven Multiball; collect Supers at DRAGULA during 6x.",
+      "simpleOverview": "The Munsters advances five Family Members toward Munster Madness; Lily can run with other features. Hit Herman to start the hurry-up, hit him again to capture the ball, then hit the captive ball for three-ball Herman Multiball (a miss starts two-ball). Complete L-I-L-Y during Multiball; each completed Family Member lights Kitty, whose hits advance timed playfield scoring from 2x to 3x to 6x.",
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the 2018–2019 Stern Pro Circuit Finals, players opened with Herman Multiball, used its protection to work on Lily, built Kitty to 6x, and collected stacked Supers."
+        ]
+      },
+      "machineSetup": [
+        "Confirm Stern The Munsters code and edition before relying on exact values or timers.",
+        "Test the Spot target, Herman, DRAGULA, both ramps, and scoop kickouts."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

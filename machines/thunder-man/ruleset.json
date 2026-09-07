@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "GRoyw",
+  "title": "Thunder Man",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Apple Time Thunder Man factory instruction manual",
+      "url": "https://www.zaccaria-pinball.com/gen2/thunderman/Apple-Time-Thunder-Man-Manual.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Thunder Man factory instruction card",
+        "url": "https://www.zaccaria-pinball.com/gen2/thunderman/Cards.zip"
+      },
+      {
+        "label": "Thunder Man exact switch matrix",
+        "url": "https://www.zaccaria-pinball.com/gen2/thunderman/smatrix.html"
+      },
+      {
+        "label": "Thunder Man machine reference",
+        "url": "https://www.kineticist.com/games/pinball/thunder-man"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Thunder Man links its five split-letter lanes to tunnel value and Bonus X. Roll through T-H, U-N, D-E, R-M, and A-N to complete THUNDER MAN and light the tunnel's Stars Flashing Advance Multiplier award. Repeated tunnel shots raise the lit star value; once that value is at maximum, another tunnel shot advances Bonus X. Complete the three yellow drop targets to advance Thunder Special, and repeatedly shoot the Add Man hole to advance Man Special. Each Special lights after its operator-set number of advances, then pays at its matching yellow or red target. The rotary target scores according to hit speed.",
+      "simpleOverview": "Complete the T-H, U-N, D-E, R-M, and A-N lanes, then shoot the tunnel to raise its star value and eventually advance Bonus X. Clear the three yellow drops to advance Thunder Special; shoot the Add Man hole to advance Man Special, then hit the matching lit Special target.",
+      "summary": "Build the THUNDER MAN lanes whenever the top and inlane feeds are available, then cash tunnel value into Bonus X. Choose one Special route at a time: the three-drop bank for Thunder Special or the Add Man hole for Man Special.",
+      "quickInfo": [
+        {
+          "name": "Complete THUNDER MAN",
+          "summary": "Roll through T-H, U-N, D-E, R-M, and A-N."
+        },
+        {
+          "name": "Advance Bonus X",
+          "summary": "Max the tunnel's star value, then shoot the tunnel again."
+        },
+        {
+          "name": "Advance Thunder Special",
+          "summary": "Clear all three yellow drop targets."
+        },
+        {
+          "name": "Advance Man Special",
+          "summary": "Shoot the Add Man hole."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Roll through the T-H, U-N, and D-E top lanes plus the R-M and A-N inlanes to complete THUNDER MAN.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit tunnel to raise its star value; after the value reaches maximum, shoot the tunnel again to advance Bonus X.",
+          "kinds": [
+            "mode",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Clear all three yellow drop targets to advance Thunder Special toward its installed threshold.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When Thunder Special lights, hit the matching yellow Special target to collect the configured award.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Man Special route",
+          "when": "Use this when the Add Man hole is safer or already close to its installed threshold.",
+          "steps": [
+            {
+              "text": "Shoot the Add Man hole for 100,000 and one Man Special advance.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "When Man Special lights, hit the matching red Special target to collect the configured award.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rotary-target scoring",
+          "when": "Use this when neither Special route is close and the spinner can be hit cleanly.",
+          "steps": [
+            {
+              "text": "Shoot the rotary target firmly; its value depends on the speed of the hit.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to lane or Special progress after the rebound is controlled.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Bonus Multiplier",
+        "steps": [
+          {
+            "text": "Complete all five split-letter lanes to enable the tunnel progression.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Raise the tunnel's star value to maximum, then make another tunnel shot for Bonus X.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test the five THUNDER MAN lane switches, tunnel, star-value lamps, Bonus X indication, three yellow drop targets, Add Man hole, both Special targets, and rotary target.",
+        "Check tests 27/33 for the Man Special award and required hole count, and tests 28/34 for the Thunder Special award and availability; both are operator-configurable."
+      ],
+      "cautions": [
+        {
+          "issue": "Both Special ladders and their awards are adjustable.",
+          "response": "Follow the lit target and posted settings; do not assume one bank clear or one hole shot will light a replay.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen2/thunderman/Apple-Time-Thunder-Man-Manual.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

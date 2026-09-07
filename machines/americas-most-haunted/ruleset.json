@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ELZ",
+  "title": "America's Most Haunted",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "America's Most Haunted official rules card",
+      "url": "https://web.archive.org/web/20180324221959id_/http://www.spookypinball.com:80/wp-content/uploads/2014/09/AMH_rules-1.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Designer code v23 and change log",
+        "url": "https://www.benheck.com/amh/"
+      },
+      {
+        "label": "America's Most Haunted tutorial",
+        "url": "https://pinballvideos.com/v/866/379"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Alternate the elevator target and elevator ramp for three locks, build and collect the Hellavator Jackpot, then complete the remaining requirements for Bumps in the Night.",
+      "quickInfo": [
+        {
+          "name": "Hellavator Multiball",
+          "summary": "Lock three balls, then use ramps to build the Jackpot, the elevator to collect it, and flashing shots to catch ghosts."
+        },
+        {
+          "name": "Minion Multiball",
+          "summary": "The third and ninth Minion battles start it, after which orbits build the Jackpot and the ghost loop and targets trap and collect."
+        },
+        {
+          "name": "Photo Hunt",
+          "summary": "Spell GLIR and collect at the scoop, then make the strobing shots before time ends."
+        },
+        {
+          "name": "Ghost Burst",
+          "summary": "Combos build 2x through 9x; move the pulsing GLIR lane with the flippers, then roll through it to apply the multiplier."
+        },
+        {
+          "name": "Bumps in the Night",
+          "summary": "On v23, complete three Minions, one Hellavator Multiball, and one Photo Hunt, then start at the scoop."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the elevator target to the left of its ramp, then shoot the raised elevator to lock a ball. Repeat the target-and-elevator sequence until the third lock starts Hellavator Multiball.",
+          "modeNotes": [
+            "During Hellavator Multiball, ramps raise the Jackpot, the elevator collects it, and flashing shots catch ghosts.",
+            "Stacking: Hospital, Haunted Bar, War Fort, and Minion Multiball can run with Hellavator Multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot ramps to build the Hellavator Jackpot, then shoot the elevator to collect it.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If Minion Multiball is active, shoot orbits to build its Jackpot. Use the ghost loop to trap balls, then clear the ghost targets to collect.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If a ghost investigation or Minion Multiball is already running, its progress continues during Hellavator Multiball.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete three Minion battles, one Hellavator Multiball, and one Photo Hunt. Start Bumps in the Night at the scoop.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the remaining ghost bosses to qualify Demon Battle. Complete optional achievements along the way to raise its multiplier.",
+          "kinds": [
+            "multiball",
+            "mode",
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Prison and Photo Hunt",
+          "when": "These are separate requirements for the larger ghost battles.",
+          "steps": [
+            {
+              "text": "Make three left orbits, then complete the next orbit into the basement to start Prison.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Clear ghost targets to reclaim balls. Use loops for Prison Jackpots.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Spell GLIR and start Photo Hunt at the scoop. Complete its strobing shots.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Demon Battle",
+        "steps": [
+          {
+            "text": "Complete the ghost bosses required to qualify Demon Battle.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete all five Location Tours to add one level to the Demon Battle multiplier.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start Hospital, Prison, War Fort, Bar Ghost, Hotel Ghost, and Theater Ghost to add one multiplier level.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Minion Multiball, build its Jackpot to 1M to add one multiplier level.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start Demon Battle with the earned 1x-to-4x multiplier.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Hellavator Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Minion Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Photo Hunt",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Bumps in the Night",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Ghost Burst",
+          "tone": "navy",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Demon Battle multiplier",
+          "tone": "navy",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Ghost Burst lane change",
+          "instruction": "Use the flippers to move the pulsing G-L-I-R lane, then roll through that lane to apply the Ghost Burst multiplier to the next score.",
+          "sourceUrl": "https://www.benheck.com/amh/"
+        },
+        {
+          "name": "Minion ball park",
+          "instruction": "Build with the orbits, then use the ghost loop to hold balls before you attack the ghost targets for the Jackpot.",
+          "sourceUrl": "https://web.archive.org/web/20180324221959id_/http://www.spookypinball.com:80/wp-content/uploads/2014/09/AMH_rules-1.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The production game is very fast, and the ghost magnet can add release spin.",
+          "response": "Be ready for the magnet to release the ball with added spin when that option is enabled.",
+          "sourceUrl": "https://www.benheck.com/americas-most-haunted-making-of/"
+        },
+        {
+          "issue": "The right-scoop center-drain save can be disabled during multiball.",
+          "response": "The scoop can return the ball without a center-drain save during Multiball.",
+          "sourceUrl": "https://www.benheck.com/amh/"
+        }
+      ],
+      "simpleOverview": "Ghost investigations and Multiballs advance separately in America's Most Haunted. For Hellavator Multiball, hit the elevator target to the left of its ramp, then shoot the raised elevator to lock a ball; repeat the target-and-elevator sequence for three locks. During Multiball, shoot ramps to build the Jackpot and shoot the elevator to collect it.",
+      "overview": "America's Most Haunted advances six ghost investigations, Minion battles, Hellavator Multiball, and Photo Hunt toward its larger battles. Alternate the elevator target with the elevator ramp for three locks, then use ramps to build the Hellavator Jackpot and the elevator to collect it. Complete three Minion battles, play one Hellavator Multiball, spell G-L-I-R and start Photo Hunt at the scoop, then return to the scoop to start Bumps in the Night.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

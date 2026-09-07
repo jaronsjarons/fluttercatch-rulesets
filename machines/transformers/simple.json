@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "id": "GRnPz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Decepticon and shoot four orange-arrow major shots to start the next Battle. Complete B-U-M-B-L-E-B-E-E at the captive ball for 40 seconds of 2x, then shoot Megatron for the fourth lock and Multiball. Collect ten major-shot Jackpots, relight them at Megatron, and shoot Optimus for the Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Shot multipliers",
+            "summary": "Complete all four inserts for your faction, then shoot an unmultiplied major shot to give it permanent 2x scoring for the rest of the ball."
+          },
+          {
+            "name": "Megatron Multiball",
+            "summary": "Lock four balls at Megatron, collect ten major-shot Jackpots, then shoot Optimus for the Super Jackpot."
+          },
+          {
+            "name": "BUMBLEBEE 2x",
+            "summary": "Complete B-U-M-B-L-E-B-E-E at the captive ball to start 40 seconds of playfield 2x scoring immediately."
+          },
+          {
+            "name": "AllSpark",
+            "summary": "The mystery award can restore lost balls during multiball, so a collect at full ball count can waste that benefit."
+          },
+          {
+            "name": "Battle modes",
+            "summary": "Make four orange-arrow major shots to start the next faction Battle automatically; incomplete Battle progress carries into its next attempt."
+          },
+          {
+            "name": "Start the Battle first",
+            "summary": "Start a faction Battle before Megatron Multiball so the Battle remains active during Multiball. A ready Battle does not start after Multiball has begun."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose Decepticon for the persistent Megatron Jackpot relight rule."
+          },
+          {
+            "text": "Use the flipper buttons to change the lit faction inserts. Complete all four for your chosen faction, then shoot an unmultiplied major shot to give it permanent 2x scoring for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot three balls into the lit Megatron lock. Leave the fourth lock ready while you prepare a Battle and BUMBLEBEE 2x.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot four orange-arrow major shots to start the next faction Battle automatically.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the BUMBLEBEE captive ball until B-U-M-B-L-E-B-E-E is complete; the final hit immediately starts 40 seconds of 2x playfield scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start Megatron Multiball. Collect ten Jackpots across the six major shots, then shoot Optimus for the Super Jackpot.",
+            "modeNotes": [
+              "Megatron Multiball: Four locks start four-ball play. As Decepticon, a Megatron hit scores a small Jackpot and permanently relights all six major Jackpot shots.",
+              "Jackpot cycle: Ten Jackpots light Optimus for a Super Jackpot. The cycle then repeats."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the stacked playfield 2x with permanent shot 2x for 4x awards. A later roving 3x can combine for 6x scoring.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If AllSpark is lit, wait until a ball drains before you collect it. Use the award to restore ball count.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Immediate Megatron Multiball",
+          "when": "Use this as the direct four-lock Multiball route.",
+          "steps": [
+            {
+              "text": "Complete the four Megatron locks without delaying the final start.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start Megatron Multiball as soon as the fourth lock is available.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use Megatron to relight all six major Jackpot shots, and collect ten Jackpots before shooting Optimus for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Return to shot multipliers and Battle progress after one ball remains.",
+              "kinds": [
+                "multiplier",
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Autobot Optimus route",
+            "when": "Use this as the Autobot Multiball route.",
+            "steps": [
+              {
+                "text": "Choose Autobot and make four center-lane shots to raise Optimus."
+              },
+              {
+                "text": "Register four Optimus hits to start three-ball Optimus Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect a major Jackpot, then repeat that shot for its Double Jackpot. Clear all six and shoot Megatron for the Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Sentinel Prime and Battle for Cybertron",
+          "steps": [
+            {
+              "text": "Complete the five features on one faction side."
+            },
+            {
+              "text": "Start Sentinel Prime at AllSpark. Complete each major shot twice, then collect the AllSpark Super Jackpot."
+            },
+            {
+              "text": "Complete all five features on the other faction side."
+            },
+            {
+              "text": "Start Battle for Cybertron. Complete each major shot three times, then collect the repeating AllSpark Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Controlled gate and Battle hardware",
+            "pro": "The Pro omits the controlled gate, complete-orbit/right-ramp skill-shot option, Ironhide moving mini-playfield, and Starscream moving guide with hidden target.",
+            "premium": "Limited Edition art variants include this hardware. The shared faction, shot-multiplier, Megatron, and Optimus rules remain the same, but hardware-specific Battle feeds differ.",
+            "sourceUrl": "https://www.pinballnews.com/games/transformers/index6a.html"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Megatron Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Optimus Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Battle modes",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "BUMBLEBEE 2x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "shot multipliers",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the left ramp during Shockwave after making AllSpark and the right ramp.",
+            "sourceUrl": "https://www.pinballnews.com/games/transformers/index6b.html",
+            "techniqueSlug": "backhand"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Megatron can eject four balls rapidly toward the right flipper.",
+            "response": "Expect immediate chaos. Use the short ball saver to separate and trap balls before you aim a Jackpot.",
+            "sourceUrl": "https://www.pinballnews.com/games/transformers/index6b.html"
+          },
+          {
+            "issue": "Optimus hit sensing can miss visible impacts.",
+            "response": "Confirm each registered hit on the display. Do not assume four physical contacts completed qualification.",
+            "sourceUrl": "https://www.pinballnews.com/games/transformers/index6b.html"
+          },
+          {
+            "issue": "Energon targets are disabled during Optimus Multiball.",
+            "response": "Complete A-L-L-S-P-A-R-K before the start if you want its mystery award available during Multiball.",
+            "sourceUrl": "https://www.pinballnews.com/games/transformers/index6b.html"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Megatron locks",
+            "label": "Megatron locks",
+            "description": "Four physical locks used to start Megatron Multiball.",
+            "precision": "unverified",
+            "context": "Four physical locks used to start Megatron Multiball."
+          },
+          {
+            "term": "BUMBLEBEE captive ball",
+            "label": "Bumblebee",
+            "description": "Captive ball used to prepare 2x scoring.",
+            "precision": "unverified",
+            "context": "Captive ball used to prepare 2x scoring."
+          },
+          {
+            "term": "Optimus",
+            "label": "Optimus shot",
+            "description": "Shot used for the Megatron Super Jackpot.",
+            "precision": "unverified",
+            "context": "Shot used for the Megatron Super Jackpot."
+          },
+          {
+            "term": "faction inserts",
+            "label": "Faction lane inserts",
+            "description": "Four lane inserts for each faction; completing the chosen set lights a shot multiplier.",
+            "precision": "unverified",
+            "context": "Four lane inserts for each faction; completing the chosen set lights a shot multiplier."
+          }
+        ],
+        "simpleOverview": "Transformers keeps faction Battles separate from Megatron and Optimus Multiballs. Choose Decepticon and shoot Megatron four times to lock four balls and start Megatron Multiball. Complete B-U-M-B-L-E-B-E-E at the captive ball to start 40 seconds of 2x playfield scoring; four orange-arrow major shots start the next faction Battle automatically.",
+        "overview": "Transformers keeps its faction Battle ladder separate from Megatron and Optimus Multiballs. Choose Decepticon, shoot four orange-arrow major shots to start the next Battle, complete B-U-M-B-L-E-B-E-E at the captive ball for 40 seconds of 2x, then shoot Megatron for the fourth lock and Multiball start. Collect ten major-shot Jackpots, use Megatron to relight them, and shoot Optimus for the Super Jackpot.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose Decepticon, shoot Megatron four times for Multiball, complete B-U-M-B-L-E-B-E-E for 2x scoring, and use four orange-arrow shots to start the next Battle.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Megatron Multiball",
+            "text": "Before plunging, use the left flipper to choose Decepticon. Shoot the lit Megatron lock four times; the fourth lock starts four-ball Megatron Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start 2x playfield scoring",
+            "text": "Hit the BUMBLEBEE captive ball until B-U-M-B-L-E-B-E-E is complete. The final hit immediately starts 40 seconds of 2x playfield scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Shot multipliers",
+            "summary": "Complete all four inserts for your faction, then shoot an unmultiplied major shot to give it permanent 2x scoring for the rest of the ball."
+          },
+          {
+            "name": "Megatron Multiball",
+            "summary": "Lock four balls at Megatron, collect ten major-shot Jackpots, then shoot Optimus for the Super Jackpot."
+          },
+          {
+            "name": "BUMBLEBEE 2x",
+            "summary": "Complete B-U-M-B-L-E-B-E-E at the captive ball to start 40 seconds of playfield 2x scoring immediately."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Optimus Multiball",
+          "when": "Choose Autobot for the Optimus Multiball route.",
+          "steps": [
+            {
+              "text": "Choose Autobot and make four center-lane shots to raise Optimus, then register four Optimus hits to start three-ball Optimus Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

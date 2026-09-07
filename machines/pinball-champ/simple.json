@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPdq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Pinball Champ makes the upper playfield its most valuable controlled visit. Hit the white fixed targets and blue drop targets to add upper-playfield time; completing the white set flashes the tunnel multiplier, while blue-bank completions raise the booster and advance Orange Special. On the upper level, each C-H-A-M-P target scores strongly and completing the word advances Red Special. Hard spinner shots raise the lane value.",
+        "simpleOverview": "Hit the white fixed targets and blue drop targets to add upper-playfield time. Complete the white set to flash the tunnel multiplier, and complete blue banks to raise the booster and advance Orange Special. On the upper level, spell C-H-A-M-P to advance Red Special. Shoot the spinner hard to raise the lane value.",
+        "summary": "Build upper-playfield time before entering it, then stay there long enough to finish C-H-A-M-P. Use white targets for the tunnel multiplier and blue drops for booster and Orange Special progress.",
+        "quickInfo": [
+          {
+            "name": "Add Upper Time",
+            "summary": "Hit white fixed targets and blue drops."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Spell C-H-A-M-P on the upper level."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Complete the blue drop bank."
+          },
+          {
+            "name": "Raise Lane Value",
+            "summary": "Shoot the spinner hard."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit white fixed targets and blue drop targets to add time for the next upper-playfield visit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete all white targets to flash the tunnel multiplier, then make the tunnel while it is valuable.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "On the upper playfield, hit C-H-A-M-P and complete the word to advance Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete blue drop banks to raise the booster and advance Orange Special; use hard spinner shots to raise the lane value.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build the booster first",
+            "when": "Use this when the upper entrance is not ready or upper time is low.",
+            "steps": [
+              {
+                "text": "Finish a blue drop bank for more upper time and booster progress.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Enter the upper level only after enough time is banked to work C-H-A-M-P.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Convert an upper visit",
+          "steps": [
+            {
+              "text": "Build time and prepare the white or blue set before sending the ball upstairs.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Finish C-H-A-M-P and take the best lit tunnel or Special collect on the way out.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check upper-playfield time, Red and Orange Special thresholds, tunnel multiplier, booster, and Special awards.",
+          "Test white fixed targets, blue drops, upper entrance and timer, C-H-A-M-P targets, tunnel, booster, spinner, and lane-value lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "Upper Playfield",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "C-H-A-M-P",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Booster",
+            "tone": "amber",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Tunnel Multiplier",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "white fixed targets",
+            "label": "White targets",
+            "description": "Targets that add upper time and qualify the tunnel multiplier.",
+            "precision": "unverified"
+          },
+          {
+            "term": "blue drop targets",
+            "label": "Blue drop bank",
+            "description": "Targets that add upper time, raise the booster, and advance Orange Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "C-H-A-M-P targets",
+            "label": "C-H-A-M-P",
+            "description": "Upper targets that advance Red Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "tunnel",
+            "label": "Tunnel",
+            "description": "Upper route that collects the flashing multiplier value.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Upper-playfield time is limited.",
+            "response": "Add time before entering instead of spending the visit on an incomplete C-H-A-M-P set.",
+            "sourceUrl": "https://www.zaccaria-pinball.com/rulesheets/pinballchamp.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build upper-playfield time before entering it, then stay there long enough to finish C-H-A-M-P. Use white targets for the tunnel multiplier and blue drops for booster and Orange Special progress.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit white fixed targets and blue drop targets to add time for the next upper-playfield visit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete all white targets to flash the tunnel multiplier, then make the tunnel while it is valuable.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "On the upper playfield, hit C-H-A-M-P and complete the word to advance Red Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete blue drop banks to raise the booster and advance Orange Special; use hard spinner shots to raise the lane value.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Add Upper Time",
+            "summary": "Hit white fixed targets and blue drops."
+          },
+          {
+            "name": "Build Red Special",
+            "summary": "Spell C-H-A-M-P on the upper level."
+          },
+          {
+            "name": "Build Orange Special",
+            "summary": "Complete the blue drop bank."
+          }
+        ]
+      }
+    }
+  ]
+}

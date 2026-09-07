@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jXW",
+  "title": "Diamond Lady",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Majestic Pinball Diamond Lady tutorial",
+      "url": "https://www.youtube.com/watch?v=-cCD26fTg-w"
+    },
+    "supportingSources": [
+      {
+        "label": "PinballCards Diamond Lady strategy",
+        "url": "https://pinballcards.net/diamond-lady-1988/"
+      },
+      {
+        "label": "Gottlieb Diamond Lady instruction cards",
+        "url": "https://pinballrebel.com/pinball/cards/Gottlieb.htm"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge through Spot All Targets to start Diamond Hurry-Up. Knock down six diamond drop targets to score it and start another. When the right orbit lights, lock a ball; the hurry-up timer keeps running. Plunge to start Multiball and continue the target loop with two balls.",
+      "quickInfo": [
+        {
+          "name": "Diamond Hurry-Up",
+          "summary": "Spot All Targets or a full drop-target completion starts it. Knock down the six diamond drop targets to collect it and immediately begin another cycle."
+        },
+        {
+          "name": "Spot All Targets skill plunge",
+          "summary": "Plunge across the lane rollover when the bottom of its three inserts is lit to start the first Diamond Hurry-Up."
+        },
+        {
+          "name": "Multiball",
+          "summary": "Completing all six diamond targets lights the right orbit to lock a ball; the game then feeds the shooter lane for Multiball."
+        },
+        {
+          "name": "Playfield X",
+          "summary": "Each lit top lane during Multiball adds 1x, up to 15x. It does not multiply Diamond Hurry-Up, Royal Flush, or All Diamonds Down."
+        },
+        {
+          "name": "Royal Flush",
+          "summary": "Completing A-K-Q-J-10 resets all drops and ends the active Diamond Hurry-Up loop."
+        },
+        {
+          "name": "Lit spinner",
+          "summary": "An inlane briefly lights its spinner. Use the incoming ball to shoot that spinner before the timer ends."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge across the skill lane while Spot All Targets is lit to start Diamond Hurry-Up."
+        },
+        {
+          "text": "Knock down all six diamond drop targets before the hurry-up ends."
+        },
+        {
+          "text": "Repeat the six diamond targets when the next Diamond Hurry-Up begins."
+        },
+        {
+          "text": "When the right orbit lights, shoot it to lock a ball. Diamond Hurry-Up continues to count down.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Plunge the served ball to start Multiball. Use the second ball to finish the active six-target cycle.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Multiball, roll through lit top lanes to raise Playfield X, then return to the diamond-target loop.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When an inlane lights its spinner, shoot that spinner before the short timer ends."
+        },
+        {
+          "text": "Avoid completing Royal Flush while the Diamond Hurry-Up loop is paying well."
+        }
+      ],
+      "buildsToward": {
+        "title": "Run Diamond Hurry-Up during multiplied Multiball",
+        "steps": [
+          {
+            "text": "Start Diamond Hurry-Up with Spot All Targets or a full target completion."
+          },
+          {
+            "text": "Complete six diamond targets to light the right-orbit lock and restart the hurry-up."
+          },
+          {
+            "text": "Shoot the lit right orbit to lock a ball. Diamond Hurry-Up continues to count down.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Plunge the served ball to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use lit top lanes to raise Playfield X while continuing the diamond-target cycle.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Diamond Hurry-Up",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Playfield X",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Royal Flush",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Spot All Targets",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "cautions": [],
+      "checkBeforePlay": [
+        "Confirm Gottlieb Diamond Lady from 1988 and read Competition Mode, Extra Ball, Special, and Royal Flush awards.",
+        "Test the six drop-target rebounds, right-orbit lock feed, top lanes, kickback timer, and both timed spinners."
+      ],
+      "simpleOverview": "Diamond Lady turns repeated six-target completions into a continuous Diamond Hurry-Up loop. The same targets light a right-orbit lock, Multiball adds Playfield X through the top lanes, and completing Royal Flush ends the active hurry-up cycle.",
+      "overview": "Completing all six diamond drop targets in Diamond Lady collects and restarts Diamond Hurry-Up and lights the right-orbit lock. Lock one ball there, plunge to start Multiball, and continue the target cycle while lit top lanes raise Playfield X. Avoid Royal Flush while the Hurry-Up loop is valuable because it resets the drops and ends that cycle.",
+      "machineSetup": [
+        "Confirm Gottlieb Diamond Lady from 1988 and read Competition Mode, Extra Ball, Special, and Royal Flush awards.",
+        "Test the six drop-target rebounds, right-orbit lock feed, top lanes, kickback timer, and both timed spinners."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

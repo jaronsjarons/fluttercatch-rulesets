@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "id": "G5BYQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Street Fighter II advances through 12 named opponents, with a flipper-selected award after most defeats and Multiball offered after opponents 2, 4, 6, 8, and 10. The strongest route is to take the feature instead of the points, build the progressive Multiball toward its eighth-shot Super Jackpot, and finish all 12 opponents for Champion Challenge.",
+        "simpleOverview": "Shoot any white-lit opponent. After a defeat, use the right flipper for the non-points feature and always take Multiball when it appears; finish all 12 opponents to start Champion Challenge.",
+        "summary": "Shoot a white-lit opponent, then choose the right-side feature instead of the left-side points. Take Multiball after opponents 2, 4, 6, 8, and 10; during it, clear the harder flashing Jackpots first so an easier shot can remain for the repeatable Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Opponent awards",
+            "summary": "Three opponents are normally lit. After a defeat, choose with a flipper; waiting about five seconds takes the left-side award automatically."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "It is the right-side choice after every even-numbered opponent through number 10. Four unlit Sagat barrel kicks or an unlit Vega random award can also start it."
+          },
+          {
+            "name": "Progressive Jackpots",
+            "summary": "Two opponent shots flash at a time, and completed shots carry into later Multiballs. The eighth completion becomes the Super Jackpot."
+          },
+          {
+            "name": "Torpedo Multiball",
+            "summary": "Spell T-O-R-P-E-D-O through unlit E. Honda or lower-right-hole shots and the opponent-six award. The final flashing qualifying hole starts the frenzy."
+          },
+          {
+            "name": "Champion Challenge",
+            "summary": "Defeat all 12 opponents on the route into the challenge. All eight physical opponent shots then light, and ten made shots finish it."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot any opponent whose white name lamp is lit. At the award choice, press the right flipper for the feature instead of the left-side points.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After opponents 2, 4, 6, 8, and 10, press the right flipper to start regular Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During regular Multiball, shoot either flashing opponent for a Jackpot. Two shots stay available until only one uncollected Jackpot remains, and progress carries into later Multiballs.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Prioritize the harder Blanka, Guile, and Ken-and-Ryu Jackpots when they flash. Try to leave an easier Sagat, Vega, or Dhalsim shot as the eighth completion so that shot becomes the repeatable Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between regular Multiballs, shoot unlit E. Honda or the lower-right hole to add T-O-R-P-E-D-O letters. The opponent-six choice can add three; shoot the final flashing qualifying hole to start Torpedo Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Torpedo Multiball, repeat Sagat and Vega when they are controllable: Sagat parks a ball briefly, while Vega feeds the upper playfield. Do not tilt after the mode, because its frenzy total is paid as end-of-ball bonus.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Champion Challenge",
+          "steps": [
+            {
+              "text": "Continue defeating white-lit opponents until all 12 are complete; the 12th defeat starts Champion Challenge immediately.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot every lit physical opponent shot. The lower-right hole defeats M. Bison and Balrog together, and the spiral defeats Ken and Ryu together.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Make the ten required physical shots before draining to complete the challenge and become the new Master.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Opponent",
+            "tone": "rust",
+            "kind": "mode"
+          },
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Torpedo Multiball",
+            "tone": "indigo",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Champion Challenge",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Sagat",
+            "label": "Sagat left underpass",
+            "description": "The shot exposed when the left ramp rises; unlit shots kick barrels toward Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Vega",
+            "label": "Vega right underpass",
+            "description": "The shot exposed when the right ramp rises; an unlit shot gives a random award.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spiral",
+            "label": "Ken and Ryu spiral",
+            "description": "The upper-right spiral shot shared by Ken and Ryu.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Hard settings can reset the Super Jackpot sequence after one collect.",
+            "response": "On normal settings, repeat the final Super Jackpot shot. If its lamp resets, rebuild from the currently flashing Jackpot pair.",
+            "sourceUrl": "https://www.pinball.org/rules/streetfighter2.html"
+          },
+          {
+            "issue": "Several minor counts and values vary by ROM or setup.",
+            "response": "Use the lamps and display for Car Crunch, green-target, and side-mode details; none of those uncertain counts is required by this route.",
+            "sourceUrl": "https://www.pinball.org/rules/streetfighter2.html"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Shoot a white-lit opponent, then choose the right-side feature instead of the left-side points. Take Multiball after opponents 2, 4, 6, 8, and 10; during it, clear the harder flashing Jackpots first so an easier shot can remain for the repeatable Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot any opponent whose white name lamp is lit. At the award choice, press the right flipper for the feature instead of the left-side points.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After opponents 2, 4, 6, 8, and 10, press the right flipper to start regular Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During regular Multiball, shoot either flashing opponent for a Jackpot. Two shots stay available until only one uncollected Jackpot remains, and progress carries into later Multiballs.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Prioritize the harder Blanka, Guile, and Ken-and-Ryu Jackpots when they flash. Try to leave an easier Sagat, Vega, or Dhalsim shot as the eighth completion so that shot becomes the repeatable Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between regular Multiballs, shoot unlit E. Honda or the lower-right hole to add T-O-R-P-E-D-O letters. The opponent-six choice can add three; shoot the final flashing qualifying hole to start Torpedo Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Torpedo Multiball, repeat Sagat and Vega when they are controllable: Sagat parks a ball briefly, while Vega feeds the upper playfield. Do not tilt after the mode, because its frenzy total is paid as end-of-ball bonus.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Opponent awards",
+            "summary": "Three opponents are normally lit. After a defeat, choose with a flipper; waiting about five seconds takes the left-side award automatically."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "It is the right-side choice after every even-numbered opponent through number 10. Four unlit Sagat barrel kicks or an unlit Vega random award can also start it."
+          },
+          {
+            "name": "Progressive Jackpots",
+            "summary": "Two opponent shots flash at a time, and completed shots carry into later Multiballs. The eighth completion becomes the Super Jackpot."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "GRVOY",
+  "title": "Hang-On",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Sonic Hang-On factory rules flyer",
+      "url": "https://img.recreativas.org/201910/fp/hang-on-fp8201.jpg"
+    },
+    "supportingSources": [
+      {
+        "label": "Sonic Hang-On factory parts and operator manual",
+        "url": "https://www.recreativas.org/archivo/hang-on-pinball-manual.pdf"
+      },
+      {
+        "label": "Hang-On exact-machine archive, flyer, and photographs",
+        "url": "https://www.recreativas.org/hang-on-3007-sega-sonic"
+      },
+      {
+        "label": "MAME Sonic hardware and ROM reference",
+        "url": "https://github.com/mamedev/mame/blob/master/src/mame/pinball/peyper.cpp"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Hang-On begins with a choice of circuit 1, 2, or 3. Follow the lit circuit and complete its Loop before the race time expires; finishing a circuit awards a replay, and completing all three can award four replays. The H-A-N-G targets prepare Extra Ball, while the O-N targets raise the end-of-ball bonus multiplier. Faster settings shorten the available race time, so the circuit route matters more than unrelated scoring.",
+      "simpleOverview": "Select circuit 1, 2, or 3 at the start, then follow that circuit and complete its Loop before race time expires. Complete H-A-N-G to prepare Extra Ball and O-N to raise Bonus X. Finish all three circuits for the largest replay award.",
+      "summary": "Choose the circuit with the clearest return path, complete its Loop before taking side objectives, then use H-A-N-G for survival or O-N for Bonus X between circuit attempts.",
+      "quickInfo": [
+        {
+          "name": "Choose a Circuit",
+          "summary": "Select 1, 2, or 3 at the start."
+        },
+        {
+          "name": "Finish the Race",
+          "summary": "Complete the selected circuit and its Loop."
+        },
+        {
+          "name": "Prepare Extra Ball",
+          "summary": "Complete H-A-N-G."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete O-N."
+        }
+      ],
+      "steps": [
+        {
+          "text": "At the start, select circuit 1, 2, or 3 and identify its lit route before plunging.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Follow the selected circuit and make its Loop before the race timer expires.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Repeat with the remaining circuits; one completed circuit awards a replay, while all three can award four replays.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete H-A-N-G when Extra Ball matters more than race progress, or complete O-N to raise Bonus X.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Survival route",
+          "when": "Use this when the chosen circuit is rejecting shots or the timer is already too low.",
+          "steps": [
+            {
+              "text": "Complete the four H-A-N-G targets to prepare Extra Ball.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to circuit play on the next controlled ball rather than forcing a late Loop shot.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Three-Circuit Award",
+        "steps": [
+          {
+            "text": "Complete each selected circuit and its Loop within the available race time.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish circuits 1, 2, and 3 for the machine's four-replay award setting.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm the circuit-selection control, race-time setting, replay and Extra Ball awards, and whether the location permits the factory multi-replay values.",
+        "Test the three circuit lamps, Loop switches, H-A-N-G and O-N targets, Bonus X lamps, outlane saves, and all playfield switches shown in the operator diagrams."
+      ],
+      "techniques": [
+        {
+          "name": "Nudging",
+          "instruction": "Use small, early nudges to keep a timed circuit return out of the side lanes; a saved ball is worth more than an uncontrolled flip while race time remains.",
+          "sourceUrl": "https://img.recreativas.org/201910/fp/hang-on-fp8201.jpg",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Race time and the replay-heavy factory awards can differ substantially by setup.",
+          "response": "Confirm the timer and award configuration before choosing a circuit or treating a completed race as an Extra Ball route.",
+          "sourceUrl": "https://img.recreativas.org/201910/fp/hang-on-fp8201.jpg"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

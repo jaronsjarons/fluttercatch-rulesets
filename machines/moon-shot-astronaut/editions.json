@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "id": "GR7V3",
+  "editions": [
+    {
+      "id": "GR7V3-MQPyL",
+      "title": "Moon Shot",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/moon-shot.webp",
+        "sourceUrl": "https://www.vpforums.org/index.php?app=downloads&showfile=16537",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Hit the safer upper gate target to open its swing gate, repeat that side's curved rocket lane, let natural white-rollover passes raise its value, and avoid direct lower-target shots.",
+            "quickInfo": [
+              {
+                "name": "Rocket lanes",
+                "summary": "The two curved rocket lanes are the main scoring shots, and each lane has its own value."
+              },
+              {
+                "name": "Rocket value",
+                "summary": "The top bumpers and small lower white rollover buttons raise the related rocket value from 50 to 500."
+              },
+              {
+                "name": "Swing gates",
+                "summary": "An upper or lower side standup opens the gate on the same side, and an open gate returns the ball toward a flipper."
+              },
+              {
+                "name": "No bonus",
+                "summary": "The game has no end-of-ball bonus, so every scoring opportunity must be collected during the ball."
+              },
+              {
+                "name": "Center-post variation",
+                "summary": "The large center-drain area can have a center post, but the installed post and rubber setup can differ."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge so the ball contacts both upper bumpers when the feed allows it."
+              },
+              {
+                "text": "Read whether the left and right swing gates are open."
+              },
+              {
+                "text": "If a gate is closed, send the ball up that side toward the safer upper gate target."
+              },
+              {
+                "text": "Do not shoot the lower gate target directly."
+              },
+              {
+                "text": "After a gate opens, shoot the curved rocket lane on that side."
+              },
+              {
+                "text": "Let upward and downward passes collect the related white rollover button naturally."
+              },
+              {
+                "text": "Repeat the rocket lane while its gate and lower feed remain controlled."
+              },
+              {
+                "text": "Favor the higher-value rocket when both sides are equally safe."
+              }
+            ],
+            "fallback": {
+              "title": "Safe side feed",
+              "when": "Use this plan when a curved rocket lane rejects shots or sends the ball into a dangerous sling exit.",
+              "steps": [
+                {
+                  "text": "Stop forcing the unsafe curved lane."
+                },
+                {
+                  "text": "Send the ball high up the safer side of the playfield."
+                },
+                {
+                  "text": "Use natural bumper action to reach the upper gate target and rocket area."
+                },
+                {
+                  "text": "Collect rollover advances only when the ball crosses them through normal flow."
+                },
+                {
+                  "text": "Return to a rocket-lane repeat after its gate and feed are stable."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Maxed-rocket repeat",
+                "when": "Use this plan when one rocket is at 500 and its swing gate gives a reliable flipper return.",
+                "steps": [
+                  {
+                    "text": "Confirm that the selected rocket value is 500."
+                  },
+                  {
+                    "text": "Transfer to the flipper with the cleanest entry to that curved lane."
+                  },
+                  {
+                    "text": "Repeat the curved rocket lane."
+                  },
+                  {
+                    "text": "Track the sling and gate return before every repeat."
+                  },
+                  {
+                    "text": "Switch sides after the first uncontrolled return."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Two open gates and 500-point rockets",
+              "steps": [
+                {
+                  "text": "Hit an upper swing-gate target to open the gate on that side."
+                },
+                {
+                  "text": "Advance the related rocket through bumper and rollover action."
+                },
+                {
+                  "text": "Repeat the curved rocket lane as its value rises."
+                },
+                {
+                  "text": "Hit the opposite upper gate target and use bumper or rollover action to raise that rocket when the first feed becomes unsafe."
+                },
+                {
+                  "text": "Repeat the safest 500-point rocket lane."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "upper bumpers",
+                "label": "Upper bumpers",
+                "description": "The two top bumpers advance the related rocket values during upper-playfield action.",
+                "precision": "unverified"
+              },
+              {
+                "term": "upper gate target",
+                "label": "Upper gate targets",
+                "description": "The safer upper side standups that open the swing gate on the same side.",
+                "precision": "unverified"
+              },
+              {
+                "term": "swing gates",
+                "label": "Left and right swing gates",
+                "description": "The side gates that open after a same-side target hit and return the ball toward a flipper.",
+                "precision": "unverified"
+              },
+              {
+                "term": "curved rocket lane",
+                "label": "Curved rocket lanes",
+                "description": "The two main side scoring lanes, each with its own advancing rocket value.",
+                "precision": "unverified"
+              },
+              {
+                "term": "white rollover button",
+                "label": "Lower white rollovers",
+                "description": "The small side rollovers that advance the related rocket value during natural passes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "lower gate target",
+                "label": "Lower gate targets",
+                "description": "The dangerous lower side standups that can rebound through the wide center drain.",
+                "precision": "unverified"
+              },
+              {
+                "term": "center post",
+                "label": "Center post",
+                "description": "The optional post above the center drain; its installed rubber and presence can vary.",
+                "precision": "unverified"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Two-bumper plunge",
+                "instruction": "Adjust plunge strength so the ball enters the upper arc and contacts both upper bumpers before it descends.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Upper gate-target feed",
+                "instruction": "Send the ball high along a side wall so it reaches the upper gate target through natural flow instead of striking the lower target directly.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Rollover return advance",
+                "instruction": "Let the ball pass the small white rollover on the way down after an upper shot instead of aiming at the rollover and its inside post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A direct shot at a lower gate target can rebound through the wide center drain.",
+                "response": "Hit the upper swing-gate target to open the gate, then use side flow instead of a direct lower-target shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A shot at a white rollover button can hit its inside post and leave the ball out of control.",
+                "response": "Collect the button through normal upward or downward flow and do not shoot it as a stand-alone target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A rocket-lane exit can strike the lower sling and reach the center or side drain.",
+                "response": "Watch the complete lane exit and stop repeating that side when the sling feed is not controllable.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "simpleOverview": "Moon Shot / Astronaut has two curved rocket lanes whose values rise through top bumpers and nearby white rollover buttons. Hit the safer upper gate target to open that side's swing gate, repeat the curved rocket lane, and let natural passes collect its rollover instead of shooting the dangerous lower target directly.",
+            "overview": "Moon Shot / Astronaut scores during the ball and has no end-of-ball bonus. Use an upper side target to open a swing gate, repeat that side's curved rocket lane, and let bumper and rollover action raise its value from 50 to 500. Change sides only when the first gate or return stops feeding a flipper safely.",
+            "machineSetup": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Hit the safer upper gate target to open its swing gate, repeat that side's curved rocket lane, let natural white-rollover passes raise its value, and avoid direct lower-target shots.",
+            "quickInfo": [
+              {
+                "name": "Rocket lanes",
+                "summary": "The two curved rocket lanes are the main scoring shots, and each lane has its own value."
+              },
+              {
+                "name": "Rocket value",
+                "summary": "The top bumpers and small lower white rollover buttons raise the related rocket value from 50 to 500."
+              },
+              {
+                "name": "Swing gates",
+                "summary": "An upper or lower side standup opens the gate on the same side, and an open gate returns the ball toward a flipper."
+              },
+              {
+                "name": "No bonus",
+                "summary": "The game has no end-of-ball bonus, so every scoring opportunity must be collected during the ball."
+              },
+              {
+                "name": "Center-post variation",
+                "summary": "The large center-drain area can have a center post, but the installed post and rubber setup can differ."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge so the ball contacts both upper bumpers when the feed allows it."
+              },
+              {
+                "text": "Read whether the left and right swing gates are open."
+              },
+              {
+                "text": "If a gate is closed, send the ball up that side toward the safer upper gate target."
+              },
+              {
+                "text": "Do not shoot the lower gate target directly."
+              },
+              {
+                "text": "After a gate opens, shoot the curved rocket lane on that side."
+              },
+              {
+                "text": "Let upward and downward passes collect the related white rollover button naturally."
+              },
+              {
+                "text": "Repeat the rocket lane while its gate and lower feed remain controlled."
+              },
+              {
+                "text": "Favor the higher-value rocket when both sides are equally safe."
+              }
+            ],
+            "fallback": {
+              "title": "Safe side feed",
+              "when": "Use this plan when a curved rocket lane rejects shots or sends the ball into a dangerous sling exit.",
+              "steps": [
+                {
+                  "text": "Stop forcing the unsafe curved lane."
+                },
+                {
+                  "text": "Send the ball high up the safer side of the playfield."
+                },
+                {
+                  "text": "Use natural bumper action to reach the upper gate target and rocket area."
+                },
+                {
+                  "text": "Collect rollover advances only when the ball crosses them through normal flow."
+                },
+                {
+                  "text": "Return to a rocket-lane repeat after its gate and feed are stable."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Maxed-rocket repeat",
+                "when": "Use this plan when one rocket is at 500 and its swing gate gives a reliable flipper return.",
+                "steps": [
+                  {
+                    "text": "Confirm that the selected rocket value is 500."
+                  },
+                  {
+                    "text": "Transfer to the flipper with the cleanest entry to that curved lane."
+                  },
+                  {
+                    "text": "Repeat the curved rocket lane."
+                  },
+                  {
+                    "text": "Track the sling and gate return before every repeat."
+                  },
+                  {
+                    "text": "Switch sides after the first uncontrolled return."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Two open gates and 500-point rockets",
+              "steps": [
+                {
+                  "text": "Hit an upper swing-gate target to open the gate on that side."
+                },
+                {
+                  "text": "Advance the related rocket through bumper and rollover action."
+                },
+                {
+                  "text": "Repeat the curved rocket lane as its value rises."
+                },
+                {
+                  "text": "Hit the opposite upper gate target and use bumper or rollover action to raise that rocket when the first feed becomes unsafe."
+                },
+                {
+                  "text": "Repeat the safest 500-point rocket lane."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "upper bumpers",
+                "label": "Upper bumpers",
+                "description": "The two top bumpers advance the related rocket values during upper-playfield action.",
+                "precision": "unverified"
+              },
+              {
+                "term": "upper gate target",
+                "label": "Upper gate targets",
+                "description": "The safer upper side standups that open the swing gate on the same side.",
+                "precision": "unverified"
+              },
+              {
+                "term": "swing gates",
+                "label": "Left and right swing gates",
+                "description": "The side gates that open after a same-side target hit and return the ball toward a flipper.",
+                "precision": "unverified"
+              },
+              {
+                "term": "curved rocket lane",
+                "label": "Curved rocket lanes",
+                "description": "The two main side scoring lanes, each with its own advancing rocket value.",
+                "precision": "unverified"
+              },
+              {
+                "term": "white rollover button",
+                "label": "Lower white rollovers",
+                "description": "The small side rollovers that advance the related rocket value during natural passes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "lower gate target",
+                "label": "Lower gate targets",
+                "description": "The dangerous lower side standups that can rebound through the wide center drain.",
+                "precision": "unverified"
+              },
+              {
+                "term": "center post",
+                "label": "Center post",
+                "description": "The optional post above the center drain; its installed rubber and presence can vary.",
+                "precision": "unverified"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Two-bumper plunge",
+                "instruction": "Adjust plunge strength so the ball enters the upper arc and contacts both upper bumpers before it descends.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Upper gate-target feed",
+                "instruction": "Send the ball high along a side wall so it reaches the upper gate target through natural flow instead of striking the lower target directly.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Rollover return advance",
+                "instruction": "Let the ball pass the small white rollover on the way down after an upper shot instead of aiming at the rollover and its inside post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A direct shot at a lower gate target can rebound through the wide center drain.",
+                "response": "Hit the upper swing-gate target to open the gate, then use side flow instead of a direct lower-target shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A shot at a white rollover button can hit its inside post and leave the ball out of control.",
+                "response": "Collect the button through normal upward or downward flow and do not shoot it as a stand-alone target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A rocket-lane exit can strike the lower sling and reach the center or side drain.",
+                "response": "Watch the complete lane exit and stop repeating that side when the sling feed is not controllable.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "simpleOverview": "Moon Shot / Astronaut has two curved rocket lanes whose values rise through top bumpers and nearby white rollover buttons. Hit the safer upper gate target to open that side's swing gate, repeat the curved rocket lane, and let natural passes collect its rollover instead of shooting the dangerous lower target directly.",
+            "overview": "Moon Shot / Astronaut scores during the ball and has no end-of-ball bonus. Use an upper side target to open a swing gate, repeat that side's curved rocket lane, and let bumper and rollover action raise its value from 50 to 500. Change sides only when the first gate or return stops feeding a flipper safely.",
+            "machineSetup": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "GR7V3-MJpjv",
+      "title": "Astronaut",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/astronaut.webp",
+        "sourceUrl": "https://vpuniverse.com/files/file/9447-astronaut-chicago-coin-1969/",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Hit the safer upper gate target to open its swing gate, repeat that side's curved rocket lane, let natural white-rollover passes raise its value, and avoid direct lower-target shots.",
+            "quickInfo": [
+              {
+                "name": "Rocket lanes",
+                "summary": "The two curved rocket lanes are the main scoring shots, and each lane has its own value."
+              },
+              {
+                "name": "Rocket value",
+                "summary": "The top bumpers and small lower white rollover buttons raise the related rocket value from 50 to 500."
+              },
+              {
+                "name": "Swing gates",
+                "summary": "An upper or lower side standup opens the gate on the same side, and an open gate returns the ball toward a flipper."
+              },
+              {
+                "name": "No bonus",
+                "summary": "The game has no end-of-ball bonus, so every scoring opportunity must be collected during the ball."
+              },
+              {
+                "name": "Center-post variation",
+                "summary": "The large center-drain area can have a center post, but the installed post and rubber setup can differ."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge so the ball contacts both upper bumpers when the feed allows it."
+              },
+              {
+                "text": "Read whether the left and right swing gates are open."
+              },
+              {
+                "text": "If a gate is closed, send the ball up that side toward the safer upper gate target."
+              },
+              {
+                "text": "Do not shoot the lower gate target directly."
+              },
+              {
+                "text": "After a gate opens, shoot the curved rocket lane on that side."
+              },
+              {
+                "text": "Let upward and downward passes collect the related white rollover button naturally."
+              },
+              {
+                "text": "Repeat the rocket lane while its gate and lower feed remain controlled."
+              },
+              {
+                "text": "Favor the higher-value rocket when both sides are equally safe."
+              }
+            ],
+            "fallback": {
+              "title": "Safe side feed",
+              "when": "Use this plan when a curved rocket lane rejects shots or sends the ball into a dangerous sling exit.",
+              "steps": [
+                {
+                  "text": "Stop forcing the unsafe curved lane."
+                },
+                {
+                  "text": "Send the ball high up the safer side of the playfield."
+                },
+                {
+                  "text": "Use natural bumper action to reach the upper gate target and rocket area."
+                },
+                {
+                  "text": "Collect rollover advances only when the ball crosses them through normal flow."
+                },
+                {
+                  "text": "Return to a rocket-lane repeat after its gate and feed are stable."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Maxed-rocket repeat",
+                "when": "Use this plan when one rocket is at 500 and its swing gate gives a reliable flipper return.",
+                "steps": [
+                  {
+                    "text": "Confirm that the selected rocket value is 500."
+                  },
+                  {
+                    "text": "Transfer to the flipper with the cleanest entry to that curved lane."
+                  },
+                  {
+                    "text": "Repeat the curved rocket lane."
+                  },
+                  {
+                    "text": "Track the sling and gate return before every repeat."
+                  },
+                  {
+                    "text": "Switch sides after the first uncontrolled return."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Two open gates and 500-point rockets",
+              "steps": [
+                {
+                  "text": "Hit an upper swing-gate target to open the gate on that side."
+                },
+                {
+                  "text": "Advance the related rocket through bumper and rollover action."
+                },
+                {
+                  "text": "Repeat the curved rocket lane as its value rises."
+                },
+                {
+                  "text": "Hit the opposite upper gate target and use bumper or rollover action to raise that rocket when the first feed becomes unsafe."
+                },
+                {
+                  "text": "Repeat the safest 500-point rocket lane."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "upper bumpers",
+                "label": "Upper bumpers",
+                "description": "The two top bumpers advance the related rocket values during upper-playfield action.",
+                "precision": "unverified"
+              },
+              {
+                "term": "upper gate target",
+                "label": "Upper gate targets",
+                "description": "The safer upper side standups that open the swing gate on the same side.",
+                "precision": "unverified"
+              },
+              {
+                "term": "swing gates",
+                "label": "Left and right swing gates",
+                "description": "The side gates that open after a same-side target hit and return the ball toward a flipper.",
+                "precision": "unverified"
+              },
+              {
+                "term": "curved rocket lane",
+                "label": "Curved rocket lanes",
+                "description": "The two main side scoring lanes, each with its own advancing rocket value.",
+                "precision": "unverified"
+              },
+              {
+                "term": "white rollover button",
+                "label": "Lower white rollovers",
+                "description": "The small side rollovers that advance the related rocket value during natural passes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "lower gate target",
+                "label": "Lower gate targets",
+                "description": "The dangerous lower side standups that can rebound through the wide center drain.",
+                "precision": "unverified"
+              },
+              {
+                "term": "center post",
+                "label": "Center post",
+                "description": "The optional post above the center drain; its installed rubber and presence can vary.",
+                "precision": "unverified"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Two-bumper plunge",
+                "instruction": "Adjust plunge strength so the ball enters the upper arc and contacts both upper bumpers before it descends.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Upper gate-target feed",
+                "instruction": "Send the ball high along a side wall so it reaches the upper gate target through natural flow instead of striking the lower target directly.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Rollover return advance",
+                "instruction": "Let the ball pass the small white rollover on the way down after an upper shot instead of aiming at the rollover and its inside post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A direct shot at a lower gate target can rebound through the wide center drain.",
+                "response": "Hit the upper swing-gate target to open the gate, then use side flow instead of a direct lower-target shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A shot at a white rollover button can hit its inside post and leave the ball out of control.",
+                "response": "Collect the button through normal upward or downward flow and do not shoot it as a stand-alone target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A rocket-lane exit can strike the lower sling and reach the center or side drain.",
+                "response": "Watch the complete lane exit and stop repeating that side when the sling feed is not controllable.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "simpleOverview": "Moon Shot / Astronaut has two curved rocket lanes whose values rise through top bumpers and nearby white rollover buttons. Hit the safer upper gate target to open that side's swing gate, repeat the curved rocket lane, and let natural passes collect its rollover instead of shooting the dangerous lower target directly.",
+            "overview": "Moon Shot / Astronaut scores during the ball and has no end-of-ball bonus. Use an upper side target to open a swing gate, repeat that side's curved rocket lane, and let bumper and rollover action raise its value from 50 to 500. Change sides only when the first gate or return stops feeding a flipper safely.",
+            "machineSetup": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Hit the safer upper gate target to open its swing gate, repeat that side's curved rocket lane, let natural white-rollover passes raise its value, and avoid direct lower-target shots.",
+            "quickInfo": [
+              {
+                "name": "Rocket lanes",
+                "summary": "The two curved rocket lanes are the main scoring shots, and each lane has its own value."
+              },
+              {
+                "name": "Rocket value",
+                "summary": "The top bumpers and small lower white rollover buttons raise the related rocket value from 50 to 500."
+              },
+              {
+                "name": "Swing gates",
+                "summary": "An upper or lower side standup opens the gate on the same side, and an open gate returns the ball toward a flipper."
+              },
+              {
+                "name": "No bonus",
+                "summary": "The game has no end-of-ball bonus, so every scoring opportunity must be collected during the ball."
+              },
+              {
+                "name": "Center-post variation",
+                "summary": "The large center-drain area can have a center post, but the installed post and rubber setup can differ."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Plunge so the ball contacts both upper bumpers when the feed allows it."
+              },
+              {
+                "text": "Read whether the left and right swing gates are open."
+              },
+              {
+                "text": "If a gate is closed, send the ball up that side toward the safer upper gate target."
+              },
+              {
+                "text": "Do not shoot the lower gate target directly."
+              },
+              {
+                "text": "After a gate opens, shoot the curved rocket lane on that side."
+              },
+              {
+                "text": "Let upward and downward passes collect the related white rollover button naturally."
+              },
+              {
+                "text": "Repeat the rocket lane while its gate and lower feed remain controlled."
+              },
+              {
+                "text": "Favor the higher-value rocket when both sides are equally safe."
+              }
+            ],
+            "fallback": {
+              "title": "Safe side feed",
+              "when": "Use this plan when a curved rocket lane rejects shots or sends the ball into a dangerous sling exit.",
+              "steps": [
+                {
+                  "text": "Stop forcing the unsafe curved lane."
+                },
+                {
+                  "text": "Send the ball high up the safer side of the playfield."
+                },
+                {
+                  "text": "Use natural bumper action to reach the upper gate target and rocket area."
+                },
+                {
+                  "text": "Collect rollover advances only when the ball crosses them through normal flow."
+                },
+                {
+                  "text": "Return to a rocket-lane repeat after its gate and feed are stable."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Maxed-rocket repeat",
+                "when": "Use this plan when one rocket is at 500 and its swing gate gives a reliable flipper return.",
+                "steps": [
+                  {
+                    "text": "Confirm that the selected rocket value is 500."
+                  },
+                  {
+                    "text": "Transfer to the flipper with the cleanest entry to that curved lane."
+                  },
+                  {
+                    "text": "Repeat the curved rocket lane."
+                  },
+                  {
+                    "text": "Track the sling and gate return before every repeat."
+                  },
+                  {
+                    "text": "Switch sides after the first uncontrolled return."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "Two open gates and 500-point rockets",
+              "steps": [
+                {
+                  "text": "Hit an upper swing-gate target to open the gate on that side."
+                },
+                {
+                  "text": "Advance the related rocket through bumper and rollover action."
+                },
+                {
+                  "text": "Repeat the curved rocket lane as its value rises."
+                },
+                {
+                  "text": "Hit the opposite upper gate target and use bumper or rollover action to raise that rocket when the first feed becomes unsafe."
+                },
+                {
+                  "text": "Repeat the safest 500-point rocket lane."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "upper bumpers",
+                "label": "Upper bumpers",
+                "description": "The two top bumpers advance the related rocket values during upper-playfield action.",
+                "precision": "unverified"
+              },
+              {
+                "term": "upper gate target",
+                "label": "Upper gate targets",
+                "description": "The safer upper side standups that open the swing gate on the same side.",
+                "precision": "unverified"
+              },
+              {
+                "term": "swing gates",
+                "label": "Left and right swing gates",
+                "description": "The side gates that open after a same-side target hit and return the ball toward a flipper.",
+                "precision": "unverified"
+              },
+              {
+                "term": "curved rocket lane",
+                "label": "Curved rocket lanes",
+                "description": "The two main side scoring lanes, each with its own advancing rocket value.",
+                "precision": "unverified"
+              },
+              {
+                "term": "white rollover button",
+                "label": "Lower white rollovers",
+                "description": "The small side rollovers that advance the related rocket value during natural passes.",
+                "precision": "unverified"
+              },
+              {
+                "term": "lower gate target",
+                "label": "Lower gate targets",
+                "description": "The dangerous lower side standups that can rebound through the wide center drain.",
+                "precision": "unverified"
+              },
+              {
+                "term": "center post",
+                "label": "Center post",
+                "description": "The optional post above the center drain; its installed rubber and presence can vary.",
+                "precision": "unverified"
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Two-bumper plunge",
+                "instruction": "Adjust plunge strength so the ball enters the upper arc and contacts both upper bumpers before it descends.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Upper gate-target feed",
+                "instruction": "Send the ball high along a side wall so it reaches the upper gate target through natural flow instead of striking the lower target directly.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "name": "Rollover return advance",
+                "instruction": "Let the ball pass the small white rollover on the way down after an upper shot instead of aiming at the rollover and its inside post.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A direct shot at a lower gate target can rebound through the wide center drain.",
+                "response": "Hit the upper swing-gate target to open the gate, then use side flow instead of a direct lower-target shot.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A shot at a white rollover button can hit its inside post and leave the ball out of control.",
+                "response": "Collect the button through normal upward or downward flow and do not shoot it as a stand-alone target.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              },
+              {
+                "issue": "A rocket-lane exit can strike the lower sling and reach the center or side drain.",
+                "response": "Watch the complete lane exit and stop repeating that side when the sling feed is not controllable.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/GR7V3-MJpjv"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "simpleOverview": "Moon Shot / Astronaut has two curved rocket lanes whose values rise through top bumpers and nearby white rollover buttons. Hit the safer upper gate target to open that side's swing gate, repeat the curved rocket lane, and let natural passes collect its rollover instead of shooting the dangerous lower target directly.",
+            "overview": "Moon Shot / Astronaut scores during the ball and has no end-of-ball bonus. Use an upper side target to open a swing gate, repeat that side's curved rocket lane, and let bumper and rollover action raise its value from 50 to 500. Change sides only when the first gate or return stops feeding a flipper safely.",
+            "machineSetup": [
+              "Confirm Astronaut two-player or Moon Shot four-player edition, instruction card, scoring labels, and three-ball or five-ball setup.",
+              "Confirm Extra Ball and Special treatment, tilt settings, rocket values, gate action, and whether the center post and rubber are installed.",
+              "Test both swing gates, upper and lower gate targets, curved rocket lanes, white rollovers, bumper exits, slingshots, and center-drain feed."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  ]
+}

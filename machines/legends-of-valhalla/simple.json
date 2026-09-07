@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "GWyyq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Build five combos for a Valkyrie and hit the three purple side targets to light the Viking ship. Spend the Valkyrie on Dearg Due to trigger Draugar, then lock three balls during Draugar to start War at Sea.",
+        "overview": "Legends of Valhalla uses weapons to unlock Legend battles and eight tasks to qualify Valhalla. Build five combos for a Valkyrie and hit the three purple side targets to light the ship locks. Use the Valkyrie to defeat Dearg Due, enter Draugar, then lock three balls in the ship to start War at Sea.",
+        "quickInfo": [
+          {
+            "name": "Route setting",
+            "summary": "This selectable battle route requires Battle Auto-Start disabled, the factory default. When it is enabled, qualified battles are selected randomly."
+          },
+          {
+            "name": "Battle selection",
+            "summary": "Shoot the lit scoop or shooter lane to enter battle selection, then use the flippers to choose and confirm a battle."
+          },
+          {
+            "name": "Weapons",
+            "summary": "Shoot the left ramp to light a random weapon shot, then shoot that lit shot to collect the weapon."
+          },
+          {
+            "name": "Mystery",
+            "summary": "Hit Berzerker several times, then shoot the lit scoop or shooter lane for Mystery. Fixed Mystery awards may be used in tournaments."
+          },
+          {
+            "name": "Battle helpers",
+            "summary": "Five combos award a Valkyrie. Thor's Hammer fires before a held Valkyrie, so do not enter Dearg Due holding both helpers."
+          },
+          {
+            "name": "War at Sea",
+            "summary": "Hit the three purple side targets to light ship locks. Lock three balls in the Viking ship to start War at Sea; physical and virtual locks use the same shots."
+          },
+          {
+            "name": "Battle and War at Sea",
+            "summary": "War at Sea can start during any Legend battle. The battle pauses while War at Sea runs, then resumes when the Multiball ends."
+          },
+          {
+            "name": "Covered build",
+            "summary": "Production Classic, Deluxe, and Limited packages on v25.08.27 share this route; the 2020 Riot prototype is outside this audit."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the left ramp to light a random weapon shot, then shoot that lit shot to collect the weapon needed for a tier-one Legend battle."
+          },
+          {
+            "text": "Make five combos to earn a Valkyrie, and hit all three purple side targets to light the Viking ship locks."
+          },
+          {
+            "text": "If Thor's Hammer and the Valkyrie are both ready, choose a multiball Legend battle first and press the action button to spend the Hammer. Return to Dearg Due only when the Valkyrie will fire first.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Choose Dearg Due and press the action button to spend the Valkyrie. Defeating Dearg Due this way awards a bonus battle and starts Draugar.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Draugar, shoot the right orbit while holding the left flipper to feed the Viking ship. When the ship is purple, lock three balls there; the third lock starts War at Sea.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Continue collecting the eight Valhalla tasks in parallel. After four Legend battles have been played, shoot the lit scoop for Extra Ball or its tournament-converted award."
+          }
+        ],
+        "buildsToward": {
+          "title": "Valhalla",
+          "steps": [
+            {
+              "text": "Collect 10 weapons by shooting the left ramp to light a random weapon shot, then shooting that lit shot. Collect weapons during battles when possible."
+            },
+            {
+              "text": "Collect 10 raiders through R-A-I-D lane completions, switch hits, spinner progress, and Mystery awards while working on the other tasks."
+            },
+            {
+              "text": "Make 10 combos, and hit all three War on Land stand-ups during single-ball play to start War on Land.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "On a fresh ball, plunge directly into the Viking ship for the Super Skill Shot and God of Thunder. Current v25.08.27 also qualifies it with one completed set of top rollovers."
+            },
+            {
+              "text": "Complete Conquest's eight qualities. Take right-ramp, Berzerker, and under-ship progress first, then use Multiball for the remaining shot families.",
+              "modeNotes": [
+                "Fidelity: one right ramp.",
+                "Self-Reliance: three Berzerker hits.",
+                "Discipline: 25 spinner spins.",
+                "Honor: 10 center ramps.",
+                "Perseverance: two Blood/Rage target hits.",
+                "Courage: 10 alternating loops.",
+                "Hospitality: five under-ship target hits.",
+                "Truth: 10 left ramps."
+              ]
+            },
+            {
+              "text": "When all eight task inserts are complete, shoot the lit scoop or shooter lane to start Valhalla.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Banshee",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Dearg Due",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Draugar",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Leanan Sidhe",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "War on Land",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "War at Sea",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Thor's Hammer",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Valkyrie",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Valhalla",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "Ramp that lights a random weapon shot and can complete several listed combos.",
+            "context": "Shoot the left ramp to light a random weapon shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "label": "Center ramp",
+            "description": "Shot used by several combos and the Honor task.",
+            "context": "Center-ramp shots can advance combos and Honor.",
+            "precision": "unverified"
+          },
+          {
+            "term": "purple side targets",
+            "label": "Purple side targets",
+            "description": "Three targets that light the Viking ship locks.",
+            "context": "Hit all three purple side targets to light ship locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Viking ship",
+            "label": "Viking ship",
+            "description": "Lock area used to start War at Sea and the direct-plunge God of Thunder skill shot.",
+            "context": "Three ship locks start War at Sea.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Berzerker",
+            "label": "Berzerker target",
+            "description": "Drop target used to light Mystery and advance Conquest.",
+            "context": "Repeated Berzerker hits light Mystery.",
+            "precision": "unverified"
+          },
+          {
+            "term": "scoop",
+            "label": "Scoop",
+            "description": "Battle selection, Mystery, Extra Ball, and Valhalla start shot when lit.",
+            "context": "Shoot the scoop for the feature currently lit there.",
+            "precision": "unverified"
+          },
+          {
+            "term": "shooter lane",
+            "label": "Shooter lane",
+            "description": "Alternate battle, Mystery, and Valhalla start shot when lit.",
+            "context": "The shooter lane can start the lit feature.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "Orbit used with a held left flipper to feed the Viking ship.",
+            "context": "Hold the left flipper while shooting the right orbit to feed the ship.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [],
+        "simpleOverview": "Legends of Valhalla uses weapons to unlock Legend battles and eight tasks to qualify Valhalla. Shoot the left ramp to light a weapon shot, then shoot that lit shot to collect a weapon. For War at Sea, hit the three purple side targets to light the ship locks, then lock three balls in the Viking ship.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Collect a weapon to play a Legend battle, and light and lock three balls in the Viking ship to start War at Sea.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Collect a weapon",
+            "text": "Shoot the left ramp to light a random weapon shot, then shoot that lit shot. One weapon unlocks the first tier of Legend battles."
+          },
+          {
+            "title": "Start a Legend battle",
+            "text": "With Battle Auto-Start disabled, shoot the lit scoop or shooter lane to enter battle selection. Use the flippers to choose and confirm an available battle.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start War at Sea",
+            "text": "Hit all three purple side targets to light the Viking ship locks. Shoot the right orbit while holding the left flipper to feed the ship, and lock three balls there; the third lock starts War at Sea.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Route setting",
+            "summary": "This selectable battle route requires Battle Auto-Start disabled, the factory default. When it is enabled, qualified battles are selected randomly."
+          },
+          {
+            "name": "Battle selection",
+            "summary": "Shoot the lit scoop or shooter lane to enter battle selection, then use the flippers to choose and confirm a battle."
+          },
+          {
+            "name": "Weapons",
+            "summary": "Shoot the left ramp to light a random weapon shot, then shoot that lit shot to collect the weapon."
+          }
+        ]
+      }
+    }
+  ]
+}

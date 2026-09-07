@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "Gre72",
+  "title": "Pink Panther",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Pink Panther exact game features and rules",
+      "url": "https://www.pinball.org/rules/cache/Pinkpanther-rules.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Pink Panther strategy",
+        "url": "https://rules.silverballmania.com/rules/Gre72-MDE5e"
+      },
+      {
+        "label": "Kineticist Pink Panther machine reference",
+        "url": "https://www.kineticist.com/games/pinball/pink-panther"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Pink Panther starts three-ball Multiball from two hidden locks. Clear the black four-bank to light Secret Passage at the left capture hole, and clear the white three-bank to light Hidden Staircase at the right capture hole. Shoot each lit hole to store a ball. With both balls captured, send the third ball through any top rollover; that switch releases Secret Passage first and Hidden Staircase second. During Multiball, spot targets and black drops add Blue Diamonds, and beating the stored Total to Beat awards Special.",
+      "simpleOverview": "Clear the black four-bank to light the left Secret Passage lock and the white three-bank to light the right Hidden Staircase lock. Capture one ball in each lit hole, then send the third ball through any top rollover to release both locks and start three-ball Multiball.",
+      "summary": "Finish one bank at a time and take its hidden lock immediately. After both captures, use a controlled plunge through a top rollover to release all three balls. In Multiball, prioritize spot targets and black drops because those are the shots that add Blue Diamonds.",
+      "quickInfo": [
+        {
+          "name": "Light Secret Passage",
+          "summary": "Complete the black four-bank."
+        },
+        {
+          "name": "Light Hidden Staircase",
+          "summary": "Complete the white three-bank."
+        },
+        {
+          "name": "Start Multiball",
+          "summary": "Lock both balls, then roll the third through a top lane."
+        },
+        {
+          "name": "Build Blue Diamonds",
+          "summary": "During Multiball, hit spot targets and black drops."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the black four-bank to light the left Secret Passage capture hole."
+        },
+        {
+          "text": "Shoot the lit Secret Passage to capture the first ball; a replacement is served."
+        },
+        {
+          "text": "Complete the white three-bank and shoot the lit right Hidden Staircase to capture the second ball."
+        },
+        {
+          "text": "Plunge the third ball through any top rollover. The game releases the left ball, then the right, and starts three-ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Bonus and Extra Ball route",
+          "when": "Use this while a drop bank is partly down or a lock entrance is rejecting.",
+          "steps": [
+            {
+              "text": "Cycle the pink and blue spot-target states to add bonus and raise Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete the four top rollovers to light Extra Ball, then collect it at the lower-right hole when lit."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Blue Diamond Total to Beat",
+        "steps": [
+          {
+            "text": "Start three-ball Multiball so spot targets and black drops begin adding Blue Diamonds.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Keep hitting those targets while three balls are active; the Special window ends after two balls drain."
+          },
+          {
+            "text": "Exceed the stored Total to Beat to collect Special and establish the new total."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test both drop banks and resets, both hidden capture holes and release coils, all four top rollovers, the three-ball trough, spot targets, lower-right hole, Blue Diamond display, and all four flippers.",
+        "Confirm that both captured balls remain stored, the third-ball top rollover releases left then right, and the adjustable Multiball Special window matches the installed setting."
+      ],
+      "cautions": [
+        {
+          "issue": "A captured ball can be displaced during multiplayer lock interaction.",
+          "response": "Treat each lit lock as immediate priority; if another player's lock releases yours, rebuild the corresponding bank instead of assuming the stored ball remains yours.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/Gre72-MDE5e"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

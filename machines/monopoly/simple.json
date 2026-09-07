@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "id": "G48w3",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Pass GO, lock two balls at the center ramp, start Monopoly Multiball at the right ramp, then alternate Free Parking Jackpots with railroad relights before taking Electric Company Supers.",
+        "quickInfo": [
+          {
+            "name": "Monopoly Multiball",
+            "summary": "Pass GO, lock two balls at the center ramp, and start at the right ramp."
+          },
+          {
+            "name": "Free Parking Jackpot",
+            "summary": "Use the upper flipper to shoot the Free Parking ramp during Monopoly Multiball."
+          },
+          {
+            "name": "Railroad Multiball",
+            "summary": "Collect all four railroads, then use the railroad ramp for Jackpots."
+          },
+          {
+            "name": "Corner Multiballs",
+            "summary": "Roll & Collect can start Breakout, Free Parking Multiball, or Ripoff Multiball from a corner space."
+          },
+          {
+            "name": "Land Grab",
+            "summary": "Collect all eight property groups and four railroads, then use Roll & Collect to start the timed four-ball final mode."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the center ramp, right ramp, railroad ramp, Electric Company, and upper-flipper Free Parking shot."
+          },
+          {
+            "text": "Use Roll & Collect, complete lit mode shots, and shoot railroads to move around the board. A railroad advances ten spaces. Pass GO to light a lock."
+          },
+          {
+            "text": "Shoot the center ramp for the first lock. Build safe railroad or Roll & Collect progress until the return is controlled, then shoot the center ramp for the second lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right ramp to start Monopoly Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the upper flipper to shoot the Free Parking ramp for a Jackpot.",
+            "modeNotes": [
+              "Monopoly Multiball Jackpot: The upper Free Parking ramp scores the Jackpot. The right railroad ramp relights it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right railroad ramp to relight the Jackpot. Return to Free Parking and repeat.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the railroad-ramp enable, shoot Electric Company for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Railroad Multiball",
+          "when": "Use this plan when the Bank door, center ramp, or Electric Company feed is unreliable.",
+          "steps": [
+            {
+              "text": "Collect all four railroads through board movement and railroad shots."
+            },
+            {
+              "text": "Start Railroad Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the railroad ramp for Jackpots while the return remains controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take Breakout, Free Parking Multiball, or Ripoff Multiball when Roll & Collect lands on its corner.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Land Grab",
+          "steps": [
+            {
+              "text": "Collect all eight property groups and all four railroads."
+            },
+            {
+              "text": "Use Roll & Collect to start the timed four-ball Land Grab.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the center ramp to add houses, or make four Free Parking ramp shots during Land Grab."
+            },
+            {
+              "text": "Build the hotel at Electric Company. Shoot the right ramp for the next property."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Monopoly Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Railroad Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Breakout",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Free Parking Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Ripoff Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Land Grab",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-flipper Free Parking shot",
+            "instruction": "Let the ball reach the upper flipper under control. Shoot the short Free Parking ramp for the Jackpot.",
+            "sourceUrl": "https://www.justbecauseican.com/pinball/monopoly/rules.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Electric Company can reject or kick the ball toward danger.",
+            "response": "Test the first feed under protection. Do not force the Super Jackpot after repeated rejects.",
+            "sourceUrl": "https://www.justbecauseican.com/pinball/monopoly/rules.html"
+          },
+          {
+            "issue": "The Bank door can block the center-ramp lock shot, and the railroad ramp returns quickly.",
+            "response": "Confirm that the door is open before the center shot. Prepare the left flipper before each railroad return.",
+            "sourceUrl": "https://www.justbecauseican.com/pinball/monopoly/rules.html"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Roll & Collect",
+            "context": "Use Roll & Collect to move around the board and start qualified features.",
+            "label": "Roll & Collect saucer",
+            "description": "Roll the dice, collect property, and start qualified corner or final features here.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center ramp",
+            "context": "Lock two balls at the center ramp.",
+            "label": "Center ramp and Bank door",
+            "description": "Pass the Bank door to lock balls for Monopoly Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "Start Monopoly Multiball and advance Land Grab properties at the right ramp.",
+            "label": "Right ramp",
+            "description": "Start Monopoly Multiball; during Land Grab, advance to the next property.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Free Parking ramp",
+            "context": "Shoot the upper-flipper Free Parking ramp for Monopoly Multiball Jackpots.",
+            "label": "Free Parking ramp",
+            "description": "Collect Monopoly Multiball Jackpots or add one Land Grab house per shot until four are complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "railroad ramp",
+            "context": "Shoot the railroad ramp to relight the Monopoly Jackpot.",
+            "label": "Railroad ramp",
+            "description": "Relight Monopoly Jackpots and collect Railroad Multiball Jackpots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Electric Company",
+            "context": "Shoot Electric Company for the Monopoly Super Jackpot or a Land Grab hotel.",
+            "label": "Electric Company",
+            "description": "Collect the Monopoly Super Jackpot or build a Land Grab hotel.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm CPU 3.02 with display 3.01; earlier code changes tournament handling, corner features, and Land Grab behavior.",
+          "Verify IFPA, PAPA, EXPO, or custom settings, plus Extra Ball conversion, Bank difficulty, Bonus X, and Electric Company difficulty.",
+          "Test the Bank door, center and right ramps, railroad return, Roll & Collect eject, Free Parking shot, and Electric Company feed."
+        ],
+        "simpleOverview": "Monopoly uses laps around the board to pass GO, then two center-ramp locks and the right ramp start Monopoly Multiball. Alternate the upper-flipper Free Parking Jackpot with railroad-ramp relights, then shoot Electric Company for the Super Jackpot.",
+        "overview": "Passing GO lights a center-ramp lock in Monopoly. Bank two locks and shoot the right ramp to start Monopoly Multiball, then alternate Free Parking Jackpots with railroad-ramp relights before collecting Electric Company Supers. Continue property groups and railroads toward Land Grab only alongside controlled Multiball shots.",
+        "machineSetup": [
+          "Confirm CPU 3.02 with display 3.01; earlier code changes tournament handling, corner features, and Land Grab behavior.",
+          "Verify IFPA, PAPA, EXPO, or custom settings, plus Extra Ball conversion, Bank difficulty, Bonus X, and Electric Company difficulty.",
+          "Test the Bank door, center and right ramps, railroad return, Roll & Collect eject, Free Parking shot, and Electric Company feed."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Pass GO, lock two balls at the center ramp, start Monopoly Multiball at the right ramp, then alternate Free Parking Jackpots with railroad relights before taking Electric Company Supers.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the center ramp, right ramp, railroad ramp, Electric Company, and upper-flipper Free Parking shot."
+          },
+          {
+            "text": "Use Roll & Collect, complete lit mode shots, and shoot railroads to move around the board. A railroad advances ten spaces. Pass GO to light a lock."
+          },
+          {
+            "text": "Shoot the center ramp for the first lock. Build safe railroad or Roll & Collect progress until the return is controlled, then shoot the center ramp for the second lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right ramp to start Monopoly Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the upper flipper to shoot the Free Parking ramp for a Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Monopoly Multiball Jackpot: The upper Free Parking ramp scores the Jackpot. The right railroad ramp relights it."
+            ]
+          },
+          {
+            "text": "Shoot the right railroad ramp to relight the Jackpot. Return to Free Parking and repeat.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the railroad-ramp enable, shoot Electric Company for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Monopoly Multiball",
+            "summary": "Pass GO, lock two balls at the center ramp, and start at the right ramp."
+          },
+          {
+            "name": "Free Parking Jackpot",
+            "summary": "Use the upper flipper to shoot the Free Parking ramp during Monopoly Multiball."
+          },
+          {
+            "name": "Railroad Multiball",
+            "summary": "Collect all four railroads, then use the railroad ramp for Jackpots."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Railroad Multiball",
+          "when": "Use this plan when the Bank door, center ramp, or Electric Company feed is unreliable.",
+          "steps": [
+            {
+              "text": "Collect all four railroads through board movement and railroad shots."
+            },
+            {
+              "text": "Start Railroad Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the railroad ramp for Jackpots while the return remains controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take Breakout, Free Parking Multiball, or Ripoff Multiball when Roll & Collect lands on its corner.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "GrdDB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use the right flipper to repeat the left drop bank until bonus reaches 5x. From the left flipper, shoot the center spinner when it is lit for 1K per spin.",
+        "quickInfo": [
+          {
+            "name": "Planet bank",
+            "summary": "Left-bank completions award the next planet value and advance the bonus multiplier on set completion counts."
+          },
+          {
+            "name": "Bonus multiplier",
+            "summary": "The first two bank completions award 2x and 3x, the fourth awards 4x, and the sixth awards 5x."
+          },
+          {
+            "name": "Center spinner",
+            "summary": "The lit spinner scores 1K per spin and returns the ball to the upper playfield."
+          },
+          {
+            "name": "Galaxy lane",
+            "summary": "The upper-left lane scores from its collected letters, and its long chute can slow the game and reset control."
+          },
+          {
+            "name": "Base bonus",
+            "summary": "Lanes and star rollovers build the base bonus that the game multiplies at the end of the ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the top saucer when the skill shot is repeatable."
+          },
+          {
+            "text": "From the right flipper, shoot the left drop bank."
+          },
+          {
+            "text": "Complete the bank twice to reach 3x. Continue to four and six completions for 4x and 5x."
+          },
+          {
+            "text": "From the left flipper, shoot the center spinner when its 1K light is on."
+          },
+          {
+            "text": "Use the spinner to score and feed the top lanes. Let normal lane play build the base bonus."
+          },
+          {
+            "text": "After 5x is secure, alternate the lit spinner with controlled bank shots for planet awards."
+          }
+        ],
+        "fallback": {
+          "title": "Galaxy-lane reset",
+          "when": "Use this when neither the left bank nor the spinner is available from a stable cradle.",
+          "steps": [
+            {
+              "text": "Shoot the upper-left Galaxy lane."
+            },
+            {
+              "text": "Use the chute time to reset your stance and read the exit."
+            },
+            {
+              "text": "Control the returned ball before the lane divider."
+            },
+            {
+              "text": "Resume the drop bank from the right flipper or the lit spinner from the left."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Lit-spinner scoring",
+            "when": "Use this when the center spinner is lit and the left-bank rebound is dangerous.",
+            "steps": [
+              {
+                "text": "Trap on the left flipper."
+              },
+              {
+                "text": "Shoot through the center spinner."
+              },
+              {
+                "text": "Use upper-playfield switches to build base bonus."
+              },
+              {
+                "text": "Repeat while the spinner remains lit and its return stays controlled."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "5x bonus and Pluto",
+          "steps": [
+            {
+              "text": "Complete the left bank six times to reach 5x bonus."
+            },
+            {
+              "text": "Continue bank completions through the planet awards."
+            },
+            {
+              "text": "Reach Pluto at the top of the planet-value sequence."
+            },
+            {
+              "text": "Protect the built base bonus until the end of the ball."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "left drop bank",
+            "label": "Planet drop bank",
+            "description": "The left four-bank that advances planet awards and Bonus X on specified completions.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center spinner",
+            "label": "Center spinner",
+            "description": "The spinner worth 1,000 per spin while lit and used to return the ball to the top.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Galaxy lane",
+            "label": "Upper-left Galaxy lane",
+            "description": "The long upper-left chute that scores collected GALAXY letters and can slow the game.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top saucer",
+            "label": "Top skill-shot saucer",
+            "description": "The upper saucer used as the opening skill-shot target.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Right-flipper bank repeat",
+            "instruction": "Use the right flipper for the left drop bank. Return the ball to the right before the next bank attempt.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrdDB-ML8xK"
+          },
+          {
+            "name": "Galaxy-lane control",
+            "instruction": "Use the long upper-left chute when you need time. Read its divider exit before you attempt a catch.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrdDB-ML8xK"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The required left drop bank can rebound toward the center drain.",
+            "response": "Shoot it from the right flipper and prepare the opposite flipper for the rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrdDB-ML8xK"
+          },
+          {
+            "issue": "Bumper exits after a spinner shot can be unpredictable.",
+            "response": "Keep both flippers ready until the ball leaves the upper playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrdDB-ML8xK"
+          },
+          {
+            "issue": "The Galaxy chute can send the ball into a lane divider and then toward the left outlane or center drain.",
+            "response": "Watch the first exit. Prepare an early nudge only if the ball approaches the divider.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrdDB-ML8xK"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original 1980 Stern Galaxy hardware, ball count, Bonus X and base-bonus carry, Extra Ball and Special conversion, and tilt.",
+          "Confirm planet-bank completion memory, spinner light behavior, Galaxy-letter value, outlane spots, top-saucer award, and starting bumper state.",
+          "Test the left-bank rebound, lit spinner return, Galaxy-lane divider, top-saucer eject loop, bumper exits, and plunge before choosing the repeat route."
+        ],
+        "simpleOverview": "Galaxy uses repeated left-bank completions to raise Bonus X to 5x, while a lit center spinner provides repeatable points and an upper return. Shoot the bank from the right flipper, use the spinner from the left when lit, and preserve the built base bonus.",
+        "overview": "Galaxy uses repeated left-bank completions to raise Bonus X to 5x, while a lit center spinner provides repeatable points and an upper return. Use the right flipper for the bank until the sixth completion reaches 5x, and use the left flipper for the lit spinner between bank opportunities. Continue toward Pluto only while the bank returns remain controlled, then protect the multiplied base bonus.",
+        "machineSetup": [
+          "Confirm original 1980 Stern Galaxy hardware, ball count, Bonus X and base-bonus carry, Extra Ball and Special conversion, and tilt.",
+          "Confirm planet-bank completion memory, spinner light behavior, Galaxy-letter value, outlane spots, top-saucer award, and starting bumper state.",
+          "Test the left-bank rebound, lit spinner return, Galaxy-lane divider, top-saucer eject loop, bumper exits, and plunge before choosing the repeat route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Use the right flipper to repeat the left drop bank until bonus reaches 5x. From the left flipper, shoot the center spinner when it is lit for 1K per spin.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the top saucer when the skill shot is repeatable."
+          },
+          {
+            "text": "From the right flipper, shoot the left drop bank."
+          },
+          {
+            "text": "Complete the bank twice to reach 3x. Continue to four and six completions for 4x and 5x."
+          },
+          {
+            "text": "From the left flipper, shoot the center spinner when its 1K light is on."
+          },
+          {
+            "text": "Use the spinner to score and feed the top lanes. Let normal lane play build the base bonus."
+          },
+          {
+            "text": "After 5x is secure, alternate the lit spinner with controlled bank shots for planet awards."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Planet bank",
+            "summary": "Left-bank completions award the next planet value and advance the bonus multiplier on set completion counts."
+          },
+          {
+            "name": "Bonus multiplier",
+            "summary": "The first two bank completions award 2x and 3x, the fourth awards 4x, and the sixth awards 5x."
+          },
+          {
+            "name": "Center spinner",
+            "summary": "The lit spinner scores 1K per spin and returns the ball to the upper playfield."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Galaxy-lane reset",
+          "when": "Use this when neither the left bank nor the spinner is available from a stable cradle.",
+          "steps": [
+            {
+              "text": "Shoot the upper-left Galaxy lane."
+            },
+            {
+              "text": "Use the chute time to reset your stance and read the exit."
+            },
+            {
+              "text": "Control the returned ball before the lane divider."
+            },
+            {
+              "text": "Resume the drop bank from the right flipper or the lit spinner from the left."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The required left drop bank can rebound toward the center drain.",
+          "text": "Shoot it from the right flipper and prepare the opposite flipper for the rebound."
+        }
+      }
+    }
+  ]
+}

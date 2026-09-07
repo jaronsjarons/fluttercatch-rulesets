@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "GRpLk",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Aztec builds a base Bonus as high as 100,000 through upper-playfield action. Reach the maximum, then hit the Z or T stand-up to light Double Bonus at the spinner lane and upper-right chute. Completing A-Z-T or A-E-C lights the center stand-up for Extra Ball when enabled. The center top lane lights the spinner for 1,000 per spin and is the strongest plunge target.",
+        "simpleOverview": "In Aztec, plunge the center top lane to light the spinner for 1,000 per spin, then keep shooting the spinner and upper-right chute to build Bonus. At 100,000 Bonus, hit Z or T to light Double Bonus at those two feeds. If Extra Ball is enabled, complete A-Z-T or A-E-C, then hit the lit center stand-up.",
+        "summary": "Use the center-lane plunge and repeated upper feeds to raise Bonus without challenging the lower stand-ups early. Once Bonus reaches 100,000, hit Z or T and then collect Double Bonus through the spinner lane or upper-right chute. Pursue the remaining letters only when Extra Ball is enabled.",
+        "quickInfo": [
+          {
+            "name": "Center top lane",
+            "summary": "Light the spinner for 1,000 per spin."
+          },
+          {
+            "name": "Maximum Bonus",
+            "summary": "Build the base Bonus to 100,000."
+          },
+          {
+            "name": "Z or T target",
+            "summary": "At maximum Bonus, light Double Bonus at the spinner lane and right chute."
+          },
+          {
+            "name": "A-Z-T or A-E-C",
+            "summary": "Light the center stand-up for Extra Ball when enabled."
+          },
+          {
+            "name": "Center stand-up",
+            "summary": "Collect the lit Extra Ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge the center top lane to light the spinner for 1,000 per spin."
+          },
+          {
+            "text": "Shoot the spinner from the right flipper and the upper-right chute from the left flipper to build Bonus."
+          },
+          {
+            "text": "Reach the 100,000 base Bonus maximum, then hit the Z or T stand-up to light Double Bonus."
+          },
+          {
+            "text": "Send the ball through the spinner lane or upper-right chute while lit to activate Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Extra Ball letter route",
+            "when": "Use this only when Extra Ball is enabled and the remaining letter target can be hit from control.",
+            "steps": [
+              {
+                "text": "Complete A-Z-T or A-E-C to light the center stand-up."
+              },
+              {
+                "text": "Hit the lit center stand-up to collect Extra Ball."
+              },
+              {
+                "text": "Return to upper feeds rather than continuing to challenge unneeded stand-ups."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "A 200,000-point doubled Bonus",
+          "steps": [
+            {
+              "text": "Build the base Bonus to 100,000 through the upper feeds."
+            },
+            {
+              "text": "Hit Z or T to light Double Bonus."
+            },
+            {
+              "text": "Collect the lit multiplier through the spinner lane or upper-right chute.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play, Extra Ball and Special conversion, the conservative, medium, or liberal letter requirement, and whether the 100,000 Bonus threshold is operating correctly.",
+          "Test all five A-Z-T-E-C switches, center top lane, spinner and lamp, upper-right chute and kickout, Double Bonus lamps, center Extra Ball target, Bonus unit, and upper rollover disk."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center top lane",
+            "label": "Center top rollover lane",
+            "description": "Plunge lane that lights the spinner for 1,000 per spin.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Left spinner",
+            "description": "Upper feed used to build Bonus and collect Double Bonus when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-right chute",
+            "label": "Upper-right candy-cane chute",
+            "description": "Curved kickout lane used to build Bonus and collect Double Bonus when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center stand-up",
+            "label": "Center Extra Ball target",
+            "description": "Center target lit by the operator-selected A-Z-T-E-C combination.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the center-lane plunge and repeated upper feeds to raise Bonus without challenging the lower stand-ups early. Once Bonus reaches 100,000, hit Z or T and then collect Double Bonus through the spinner lane or upper-right chute. Pursue the remaining letters only when Extra Ball is enabled.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the center top lane to light the spinner for 1,000 per spin."
+          },
+          {
+            "text": "Shoot the spinner from the right flipper and the upper-right chute from the left flipper to build Bonus."
+          },
+          {
+            "text": "Reach the 100,000 base Bonus maximum, then hit the Z or T stand-up to light Double Bonus."
+          },
+          {
+            "text": "Send the ball through the spinner lane or upper-right chute while lit to activate Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Center top lane",
+            "summary": "Light the spinner for 1,000 per spin."
+          },
+          {
+            "name": "Maximum Bonus",
+            "summary": "Build the base Bonus to 100,000."
+          },
+          {
+            "name": "Z or T target",
+            "summary": "At maximum Bonus, light Double Bonus at the spinner lane and right chute."
+          }
+        ]
+      }
+    }
+  ]
+}

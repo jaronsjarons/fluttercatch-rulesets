@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "id": "GrlXK",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Select Pit Creature. Use the Crypt super skill shot to light Secret Passage and lock a ball. Start Pit Creature, add Crypt Multiball, then cash the Frenzy hurry-up.",
+        "steps": [
+          {
+            "text": "Hit the center Monster Select targets until Pit Creature is selected. Do this before an outside orbit locks the selection.",
+            "modeNotes": [
+              "Monster Select: The center targets change the selected monster. The first navigation orbit locks that choice for the current battle."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the skill-shot window, shoot the Crypt. This locks a ball and lights Secret Passage and the outlane SAVE.",
+            "modeNotes": [
+              "Secret Passage: When lit, the inner loop skips the room map and starts the selected battle.",
+              "SAVE: Complete the four lower S-A-V-E lanes to arm a timed magnetic outlane save. A super skill shot lights it immediately."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the inner loop to start Pit Creature.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the flashing Mystery scoop, center scoop, or Crypt until you find the Pit Creature.",
+            "modeNotes": [
+              "Pit Creature: The creature hides in one of the three scoops. After you find it, a 15-second hide timer starts."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "If the Crypt still holds the skill-shot ball, shoot the Crypt again to start Crypt Multiball.",
+            "modeNotes": [
+              "Crypt Multiball: The three scoops score jackpots. After all three, hit the right X standup to relight them as Super Jackpots. It can stack with any monster battle."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the 15-second Pit Creature phase, shoot an orbit or scoop. The timer counts down only while the ball is hidden in an orbit, scoop, or subway.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the hide timer reaches zero, hit the center Monster Select targets to kill the creature.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the 30-second Frenzy, shoot lit major shots. Prioritize the three scoops because they also score Crypt jackpots and can find the Pit Creature again.",
+            "modeNotes": [
+              "Frenzy: A defeated monster starts 30 seconds of scoring with unlimited ball save. Its points build a separate hurry-up."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "As Frenzy ends, shoot the left standup above the Mystery scoop.",
+            "modeNotes": [
+              "Frenzy hurry-up: It starts at the full Frenzy score, with a minimum of 5 million for each monster battled. It counts down quickly."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Vampire",
+          "when": "Use this plan when the upper eyes target is safer than the three Pit Creature scoops.",
+          "steps": [
+            {
+              "text": "Select Vampire. During the skill-shot window, shoot the Crypt to light Secret Passage, then shoot the inner loop to start the battle.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit the eyes target on the upper playfield three times.",
+              "modeNotes": [
+                "Vampire: Three stakes defeat it. The upper eyes target scores a stake. Five ramp shots light the center Monster Select targets to score one stake instead."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Frenzy, prioritize the upper eyes and both orbits. The orbits score double jackpots.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the left standup as Frenzy ends to collect the hurry-up.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Alice Cooper battle",
+            "when": "Use this plan when the Guillotine shot is repeatable.",
+            "steps": [
+              {
+                "text": "Select Alice Cooper. Reach the battle through Secret Passage or the room map.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the upper Guillotine three times.",
+                "modeNotes": [
+                  "Alice Cooper battle: Three Guillotine shots defeat Alice. Five ramp shots light the center Monster Select targets to spot one Guillotine hit."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "During Frenzy, repeat the Guillotine and lit major shots. Then collect the left-standup hurry-up.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Frankenstein and Crypt stack",
+            "when": "Use this plan only after the battle, both locks, and both multiballs are ready.",
+            "steps": [
+              {
+                "text": "Lock the first Frankenstein ball at the left ramp. Hit the upper drop or eyes target. Shoot the upper-left ramp behind the drop for the second lock.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Lock one ball in the Crypt. Start the selected monster battle before either multiball.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start Frankenstein Multiball first. Then shoot the Crypt to start Crypt Multiball. Crypt cannot join Frankenstein if Crypt starts first.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Frankenstein, shoot either lower ramp for jackpots. After three jackpots, shoot the Guillotine for the Super Jackpot.",
+                "modeNotes": [
+                  "Frankenstein Multiball: Other shots build the jackpot. Jackpots remain available while the Guillotine Super Jackpot is lit."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Crypt, collect all three scoop jackpots. Hit the right X standup, then collect the three Super Jackpots.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Billion Dollar Babies",
+          "steps": [
+            {
+              "text": "Battle all eight selected monsters and Frankenstein. Kills add life points for the wizard mode.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "During Billion Dollar Babies, hit blue shots to climb 20 floors, add time, and raise the escape value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Avoid red shots because each one removes a life. Shoot a green scoop to pause and accept the current escape value.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Reach the top floor for 1 billion. If time or life reaches zero before a collect, the mode awards nothing and the game ends.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Stored SAVE completion",
+            "instruction": "Use lane change to hold three completed S-A-V-E lanes. Complete the fourth lane through an outlane when you need the magnetic save.",
+            "sourceUrl": "https://www.youtube.com/watch?v=dACKtZK3Lhs&t=841s"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the right orbit from the right flipper only when this copy completes the shot reliably.",
+            "sourceUrl": "https://www.youtube.com/watch?v=dACKtZK3Lhs&t=1091s",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Crypt super skill shot",
+            "instruction": "Shoot the Crypt during the skill-shot window. It gives the most useful combined award: points, a physical lock, Secret Passage, and SAVE.",
+            "sourceUrl": "https://www.youtube.com/watch?v=dACKtZK3Lhs&t=548s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "An early location copy had steep ramps. Left-ramp rejects often returned toward the center.",
+            "response": "Test both ramps under SAVE. Use Pit Creature's scoops and orbits when the left ramp rejects.",
+            "sourceUrl": "https://tiltforums.com/t/alice-cooper-nightmare-castle-rulesheet/3950"
+          },
+          {
+            "issue": "Two hidden subway paths can eject from the left scoop without a clear warning.",
+            "response": "Keep the left flipper ready after any scoop or subway shot. Regain control before the next aimed shot.",
+            "sourceUrl": "https://tiltforums.com/t/alice-cooper-nightmare-castle-rulesheet/3950"
+          },
+          {
+            "issue": "On an early location copy, the right-orbit exit often hit the right sling.",
+            "response": "Watch the first orbit return. Use Secret Passage or the opposite route when the sling sends the ball out of control.",
+            "sourceUrl": "https://tiltforums.com/t/alice-cooper-nightmare-castle-rulesheet/3950"
+          },
+          {
+            "issue": "The right ramp can require a clean moving-ball shot on a steep copy.",
+            "response": "Do not force Alice Cooper or Frankenstein when the ramp is not repeatable. Choose Pit Creature or Vampire instead.",
+            "sourceUrl": "https://tiltforums.com/t/alice-cooper-nightmare-castle-rulesheet/3950"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Select Pit Creature."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Battle all eight selected monsters and Frankenstein."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Vampire: Use this plan when the upper eyes target is safer than the three Pit Creature scoops."
+          }
+        ],
+        "checkBeforePlay": [
+          "Check whether Competition Mode changes monster selection, skill-shot awards, or Mystery order."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Crypt",
+            "label": "Crypt",
+            "description": "Lock and scoop used for the super skill shot and Crypt Multiball.",
+            "precision": "unverified",
+            "context": "Lock and scoop used for the super skill shot and Crypt Multiball."
+          },
+          {
+            "term": "Monster Select targets",
+            "label": "Monster Select targets",
+            "description": "Center targets used to choose and finish monsters.",
+            "precision": "unverified",
+            "context": "Center targets used to choose and finish monsters."
+          },
+          {
+            "term": "inner loop",
+            "label": "Secret Passage loop",
+            "description": "Inner loop used to enter selected monster battles.",
+            "precision": "unverified",
+            "context": "Inner loop used to enter selected monster battles."
+          }
+        ],
+        "simpleOverview": "Alice Cooper's Nightmare Castle begins by letting you choose a monster Battle. Hit the center Monster Select targets until Pit Creature is selected. During the skill-shot window, shoot the Crypt to lock a ball and light Secret Passage, then shoot the inner loop to start the Battle. Find the Pit Creature in one of the three scoops, hide the ball in orbits or scoops for 15 seconds, then hit the Monster Select targets to defeat it. Shoot the Crypt again to start Crypt Multiball, and collect the lit left-standup hurry-up when the following Frenzy ends.",
+        "overview": "Alice Cooper's Nightmare Castle uses room navigation to reach a selected monster Battle, while a lit Secret Passage skips directly to that Battle. Hit the center Monster Select targets until Pit Creature is selected, then shoot the Crypt during the skill-shot window to lock a ball and light Secret Passage. Shoot the inner loop to start Pit Creature, find it in one of the three scoops, hide the ball in orbits or scoops for 15 seconds, then hit the Monster Select targets to defeat it. Shoot the Crypt again to start Crypt Multiball during the Battle, and collect the lit left-standup hurry-up when Frenzy ends.",
+        "machineSetup": [
+          "Check whether Competition Mode changes monster selection, skill-shot awards, or Mystery order."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Select Pit Creature, use the Crypt skill shot for a lock, then use the inner loop for the battle and the Crypt for its multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Pit Creature",
+            "text": "Hit the center Monster Select targets until Pit Creature is selected. During the skill-shot window, shoot the Crypt to light Secret Passage, then shoot the inner loop to start Pit Creature.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Pit Creature",
+              "reason": "Choose it when the three scoops and inner loop are reliable.",
+              "play": "Shoot the flashing Mystery scoop, center scoop, or Crypt until you find the creature. During its 15-second hiding phase, shoot an orbit or scoop; when the timer reaches zero, hit the center Monster Select targets."
+            }
+          },
+          {
+            "title": "Start Crypt Multiball",
+            "text": "The Crypt Super Skill Shot locks one ball. While that ball is still held, shoot the Crypt again to start Crypt Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Select Pit Creature."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Battle all eight selected monsters and Frankenstein."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Vampire: Use this plan when the upper eyes target is safer than the three Pit Creature scoops."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Vampire",
+          "when": "Use this when the upper eyes target is safer than the three Pit Creature scoops.",
+          "steps": [
+            {
+              "text": "Use Monster Select to choose Vampire, light Secret Passage with the Crypt Super Skill Shot, then shoot the inner loop to start the battle.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit the upper-playfield eyes target three times.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

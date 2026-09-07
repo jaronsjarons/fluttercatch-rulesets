@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "id": "G5bv3",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete MTL to light Access Claw, roll through the lit left inlane, shoot the right ramp, select Lock Freeze to start each multiball quickly, complete all four multiballs, then collect the Demolition Jackpot before the ball ends.",
+        "steps": [
+          {
+            "text": "Complete the three MTL lanes when the ball reaches them.",
+            "modeNotes": [
+              "Bonus X: Each MTL completion advances the end-of-ball multiplier, to 5x. A completion also lights Access Claw at the left inlane.",
+              "MTL lane progress: Use either flipper to move the unlit lane. A 5x completion also lights Extra Ball at the left loop."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll through the lit left inlane. Then shoot the right ramp.",
+            "modeNotes": [
+              "Access Claw: The lit left inlane opens the right-ramp diverter. The diverter sends the next right-ramp shot to the Cryo-Claw.",
+              "Cryo-Claw: Use the flipper buttons or gun triggers to move the Claw. Use a thumb button or launch button to drop the ball into an award lane."
+            ]
+          },
+          {
+            "text": "Move the Claw above Lock Freeze. Drop the ball into that lane.",
+            "modeNotes": [
+              "Freeze: One stored lock step for the current multiball cycle. Later multiballs need one, two, three, then four Freezes.",
+              "Lock Freeze: It supplies all missing Freezes for the next multiball. If Multiball is ready, it starts the mode with one added frozen ball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Multiball is ready, shoot the left loop into the top sinkhole.",
+            "modeNotes": [
+              "Multiball start: The full left-loop shot must reach the sinkhole. A weak shot can enter MTL without starting Multiball.",
+              "Quick Freeze alternative: Complete all five lit yellow standups. Roll through the lit right inlane. Shoot the left ramp within five seconds for one Freeze."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Fortress Multiball, shoot the center ramp, Underground, and left ramp in order. Then shoot the right ramp.",
+            "modeNotes": [
+              "Fortress Multiball: One Freeze qualifies it. The first three shots score Jackpots. The right ramp scores a triple Super Jackpot.",
+              "Second Fortress cycle: Shoot center ramp, Underground, left ramp, right ramp, left loop, right loop, then side ramp. The sequence relights the right-ramp Super.",
+              "Secret Jackpot: Press both thumb buttons once during this multiball. The buttons collect the next regular Jackpot. They cannot collect a Super Jackpot.",
+              "Fortress ends when one ball remains. It does not stack with another multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Museum Multiball with two Freezes. Collect every lit major-shot Jackpot, then shoot the right ramp.",
+            "modeNotes": [
+              "Museum Multiball: All seven major shots light for Jackpots. Collect all seven to light the right-ramp Super Jackpot.",
+              "Jet-bumper hits increase the Jackpot value. Both thumb buttons can collect one regular Secret Jackpot.",
+              "Museum ends when one ball remains. Uncollected Jackpot persistence can vary by ROM."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Wasteland Multiball with three Freezes. Collect the lit Jackpots. Make a double Car Crash to light another Jackpot.",
+            "modeNotes": [
+              "Wasteland Multiball: More than one Jackpot can light at once. Follow the lit shots and display before choosing the next target.",
+              "A double Car Crash lights another Jackpot and starts a short ball saver on normal settings.",
+              "Both thumb buttons can collect one regular Secret Jackpot. Wasteland ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect four Freezes, then shoot the left loop into the top sinkhole to start Cryo-Prison Multiball. During Multiball, shoot the major shots marked by flashing Jackpot arrows to build the right-ramp Super Jackpot.",
+            "modeNotes": [
+              "Cryo-Prison Multiball: All Jackpot arrows light. Each lit-arrow shot adds value to the right-ramp Super Jackpot.",
+              "After the first Super, make one lit-arrow shot to relight it. Later cycles need two, then three, then more shots.",
+              "Both thumb buttons count as one lit-arrow shot. Cryo-Prison ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Cryo-Prison, shoot the lit right ramp for the Demolition Jackpot.",
+            "modeNotes": [
+              "Demolition Jackpot: Supers count as Jackpots. Its LA-4 value is (Fortress count + 1) x 15 million, plus (Museum + 1) x 20 million, plus (Wasteland + 1) x 25 million, plus (Cryo-Prison count + 1) x 30 million.",
+              "Collection: The right ramp collects it after Cryo-Prison. A drain removes it. Starting Fortress again also removes it.",
+              "After collection or loss, the multiball cycle returns to Fortress."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Quick Freeze and combos",
+          "when": "Use this plan when the Claw is disabled or a custom ROM changes repeated Lock Freeze.",
+          "steps": [
+            {
+              "text": "Complete all five lit yellow standups."
+            },
+            {
+              "text": "Roll through the lit right inlane. Shoot the left ramp within five seconds for one Freeze.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat until Multiball is ready. Shoot the left loop into the top sinkhole.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "During single-ball play, make controlled follow-up combos.",
+              "modeNotes": [
+                "Combo: A major shot lights available follow-up arrows. A lit follow-up starts at 5 million. Each continued shot adds 1 million.",
+                "A missed or expired continuation resets the value. Each combo adds 1 million to end-of-ball bonus for the rest of the game.",
+                "Trigger Combo: Use the gun triggers for a successful combo. It adds another 1 million to end-of-ball bonus."
+              ]
+            },
+            {
+              "text": "When Computer lights, shoot the Underground to collect the displayed award.",
+              "modeNotes": [
+                "Computer Award: The normal threshold is ten combos. Difficulty settings can use six through fourteen.",
+                "Useful awards include Maximize Freezes, Collect Bonus, Collect Standups, and Light Explodes.",
+                "Maximize Freezes fills four Freezes and lights Multiball. Collect Bonus awards the current end-of-ball bonus with Bonus X."
+              ],
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Reach 5x at MTL before a late Collect Bonus. Protect the accumulated end-of-ball bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Demolition Time",
+            "when": "Use this plan when Claw selection is reliable and the four-multiball cycle is far away.",
+            "steps": [
+              {
+                "text": "Select Start AcMag once. Shoot the center ramp for increasing awards.",
+                "modeNotes": [
+                  "Start AcMag: The first selection raises center-ramp awards from 5 million through 12.5 million. Later selections use 6 million through 13.5 million. Both thumb buttons give one free AcMag award."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Select Prison Break once. Make the immediate Underground or side-ramp follow-up.",
+                "modeNotes": [
+                  "Prison Break: The Claw awards 15 million and feeds the upper-left flipper. Underground doubles the award. Side ramp triples it."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Select Super Jets once. Make the required jet-bumper hits.",
+                "modeNotes": [
+                  "Super Jets: It starts with 25 hits at 1 million each. Yellow-standup hits add remaining jet hits.",
+                  "The feature ends when the hit count reaches zero. Drain persistence can vary by ROM."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Select Capture Simon once. Shoot any three lit major shots.",
+                "modeNotes": [
+                  "Capture Simon: Seven major shots light for 5 million each. Three shots add a 25 million completion award.",
+                  "Press both thumb buttons after the third shot for a 10 million Capture Bonus. The feature ends after three shots or a drain."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Select Lock Freeze once if it was not already selected.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "After all five Claw awards start, shoot the lit Underground for Demolition Time.",
+                "modeNotes": [
+                  "Demolition Time: The start awards 50 million. Every major shot begins at 15 million.",
+                  "Complete all five yellow standups to add one ball and raise every major-shot value by 5 million. Losing a ball lowers the award. The mode ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Explodes and bonus",
+            "when": "Use this plan when the multiball start shots reject and the major shots are controlled.",
+            "steps": [
+              {
+                "text": "Shoot an unlit Underground to light one Explode shot.",
+                "modeNotes": [
+                  "Explode: A lit left loop, right loop, left ramp, or right ramp scores 10 million. It stays lit until collection or drain."
+                ]
+              },
+              {
+                "text": "When Explode Hurry-Up starts, shoot one lit Explode before the value counts down from 15 million.",
+                "modeNotes": [
+                  "Explode Hurry-Up: A collect adds 15 million to the running value. Shoot another Explode to collect the new value.",
+                  "It ends after all four shots, at the countdown floor, or at the drain."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete MTL lanes until 5x is active.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Make controlled combos. Collect Computer at the Underground when it lights."
+              },
+              {
+                "text": "Collect Bonus if Computer offers it. Protect the remaining end-of-ball bonus.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Cryo-Prison and the Demolition Jackpot",
+          "steps": [
+            {
+              "text": "Use Lock Freeze or Quick Freeze for Fortress.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete Fortress, Museum, and Wasteland while collecting as many Jackpots as possible.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use four Freezes for Cryo-Prison. Collect repeated right-ramp Supers.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the lit right ramp for the Demolition Jackpot before the ball ends.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Do not start another Fortress until the Demolition Jackpot resolves.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Start AcMag",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Prison Break",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Jets",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Capture Simon",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Explode Hurry-Up",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Fortress Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Museum Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Wasteland Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Cryo-Prison Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Demolition Time",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "5x",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Freeze",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Access Claw",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Cryo-Claw",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Lock Freeze",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Secret Jackpot",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Demolition Jackpot",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Computer Award",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Explode",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm that the Cryo-Claw is enabled and whether repeated Lock Freeze selections are allowed.",
+          "Read Tournament Mode before depending on random Claw, Computer, or secret awards.",
+          "Read Quick Freeze difficulty and the Car Crash ball-save setting before planning Freeze recovery."
+        ],
+        "techniques": [
+          {
+            "name": "Handle-trigger combo",
+            "instruction": "Use the gun triggers as flipper buttons for a combo shot. A successful Trigger Combo adds 1 million to end-of-ball bonus.",
+            "sourceUrl": "https://www.pinball.org/rules/demolitionman.html"
+          },
+          {
+            "name": "Secret Jackpot buttons",
+            "instruction": "Press both thumb buttons once during Fortress, Museum, or Wasteland. The buttons collect the next regular Jackpot.",
+            "sourceUrl": "https://www.pinball.org/rules/demolitionman.html"
+          },
+          {
+            "name": "Cryo-Prison button advance",
+            "instruction": "Press both thumb buttons during Cryo-Prison. The input counts as one lit-arrow shot toward the next Super Jackpot.",
+            "sourceUrl": "https://www.pinball.org/rules/demolitionman.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The left-loop start must reach the sinkhole.",
+            "response": "Confirm the full shot. A weak loop can enter MTL without starting Multiball.",
+            "sourceUrl": "https://www.pinball.org/rules/demolitionman.html"
+          },
+          {
+            "issue": "A weak right loop falls into MTL.",
+            "response": "Prepare for the upper-playfield exit instead of assuming a full loop return.",
+            "sourceUrl": "https://www.pinball.org/rules/demolitionman.html"
+          },
+          {
+            "issue": "The center-ramp return can take two paths.",
+            "response": "Watch one return before planning a one-time shot. It can reach the upper-left flipper or enter MTL.",
+            "sourceUrl": "https://www.pinball.org/rules/demolitionman.html"
+          },
+          {
+            "issue": "The Underground entrance can have weld damage.",
+            "response": "Confirm that the entrance assembly is stable before repeated upper-flipper shots.",
+            "sourceUrl": "https://www.afpinball.com/p/demolition-man"
+          }
+        ],
+        "simplePilotKey": "G5bv3:stock-l4",
+        "simpleOverview": "Demolition Man earns Freezes through the M-T-L rollovers and the Cryo-Claw. Complete M-T-L, roll through the lit left inlane, shoot the right ramp, and choose Lock Freeze. If Multiball does not start there, shoot the left loop all the way to the top sinkhole for Fortress Multiball.",
+        "overview": "In Demolition Man, each Freeze advances a four-Multiball cycle from Fortress through Museum, Wasteland, and Cryo-Prison. Complete M-T-L and use the Cryo-Claw for Lock Freeze, then start the ready Multiball at the left loop and top sinkhole. After Cryo-Prison, shoot the lit right ramp for the Demolition Jackpot before draining or starting Fortress again.",
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete MTL to light Access Claw."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Use Lock Freeze or Quick Freeze for Fortress."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Quick Freeze and combos: Use this plan when the Claw is disabled or a custom ROM changes repeated Lock Freeze."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Claw",
+            "label": "Claw",
+            "description": "Mechanical selector used for Claw awards.",
+            "precision": "unverified",
+            "context": "Mechanical selector used for Claw awards."
+          },
+          {
+            "term": "Computer",
+            "label": "Computer collect",
+            "description": "Underground collect used for Computer awards.",
+            "precision": "unverified",
+            "context": "Underground collect used for Computer awards."
+          }
+        ],
+        "machineSetup": [
+          "Confirm that the Cryo-Claw is enabled and whether repeated Lock Freeze selections are allowed.",
+          "Read Tournament Mode before depending on random Claw, Computer, or secret awards.",
+          "Read Quick Freeze difficulty and the Car Crash ball-save setting before planning Freeze recovery."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Send the ball through the M-T-L rollovers above the jet bumpers to open the Cryo-Claw, choose Lock Freeze for the easiest Multiball start, then shoot the Fortress Jackpot sequence.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Choose Lock Freeze",
+            "text": "Reach the M-T-L rollovers above the jet bumpers from the wide center ramp or with a loop shot that falls short. Complete all three lanes, then roll through the lit left inlane and shoot the right ramp. Use the flipper buttons or gun triggers to move the Cryo-Claw over Lock Freeze, then press the launch button to drop the ball into that lane."
+          },
+          {
+            "title": "Start Fortress Multiball",
+            "text": "On standard settings, Lock Freeze fills every Freeze lamp needed for the next Multiball. If Multiball is already lit, Lock Freeze starts it with one extra ball; otherwise, shoot the left loop all the way to the top sinkhole.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect the Fortress Super",
+            "text": "During Fortress Multiball, shoot the center ramp, Underground, and left ramp in order, then shoot the right ramp for the triple Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete MTL to light Access Claw."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Use Lock Freeze or Quick Freeze for Fortress."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Quick Freeze and combos: Use this plan when the Claw is disabled or a custom ROM changes repeated Lock Freeze."
+          }
+        ]
+      }
+    }
+  ]
+}

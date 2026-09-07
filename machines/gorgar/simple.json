@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "G5zd6",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete A-B-C twice for 3x Bonus, use the lit spinner before Base Bonus reaches 20,000, then complete D-E pairs to light and collect a 50,000 Snake Pit.",
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "Two A-B-C completions raise end-of-ball bonus to its 3x maximum."
+          },
+          {
+            "name": "Lit Spinner Window",
+            "summary": "The spinner scores 1,000 per spin while Base Bonus is between 10,000 and 19,000."
+          },
+          {
+            "name": "D-E Pair",
+            "summary": "Collecting both inlane letters spots one number in the 1-2-3-4 set."
+          },
+          {
+            "name": "Snake Pit",
+            "summary": "GOR completions raise the Snake Pit award, while a 1-2-3-4 completion sets it to 50,000."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use a controlled plunge toward B. Read the unlit A-B-C lanes because the game has no lane change."
+          },
+          {
+            "text": "Complete A-B-C once for 2x and again for 3x Bonus X.",
+            "modeNotes": [
+              "Bonus X: A-B-C completions advance the end-of-ball multiplier to 3x; a drain spends and resets it."
+            ]
+          },
+          {
+            "text": "Build Base Bonus to 10,000. Rip the spinner before Base Bonus reaches 20,000.",
+            "modeNotes": [
+              "Lit Spinner Window: The spinner scores 1,000 per spin from 10,000 through 19,000 Base Bonus, then stays unlit for the rest of the ball."
+            ]
+          },
+          {
+            "text": "Shatz pass through D and E only while the inlane geometry is safe. Each completed pair spots one 1-2-3-4 number.",
+            "modeNotes": [
+              "D-E Pair: Collect both inlane letters to spend the pair and spot one number under the configured random or sequential setting."
+            ]
+          },
+          {
+            "text": "Complete all four numbers to set Snake Pit to 50,000 and advance Star Progress.",
+            "modeNotes": [
+              "1-2-3-4 Set: Completing all four lit numbers spends the set, sets Snake Pit to 50,000, and advances the star and target-Special track."
+            ]
+          },
+          {
+            "text": "Shoot Snake Pit for 50,000. Values of 20,000 or more reset the ladder after collection.",
+            "modeNotes": [
+              "Snake Pit: GOR completions raise the award; the number set makes it 50,000. Collects at 10,000 or less remain repeatable, while larger collects reset it."
+            ]
+          },
+          {
+            "text": "Rebuild D-E and 1-2-3-4. Stop alley passing if the ball crosses toward an outlane."
+          },
+          {
+            "text": "Use GOR completions as the fallback Snake Pit build when the inlane pass is unsafe."
+          },
+          {
+            "text": "Protect up to 29,000 Base Bonus at 3x for an 87,000 drain collect."
+          }
+        ],
+        "fallback": {
+          "title": "GOR and repeatable Pit values",
+          "when": "Use this when D-E alley passes threaten the outlanes.",
+          "steps": [
+            {
+              "text": "Stop cross-alley passes."
+            },
+            {
+              "text": "Shoot GOR from the right flipper."
+            },
+            {
+              "text": "Complete the bank to raise Snake Pit one step."
+            },
+            {
+              "text": "Collect 5,000 or 10,000 only when the magnet release is safe."
+            },
+            {
+              "text": "Continue GOR toward a larger Pit value and use the lit spinner before 20,000 Base Bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Repeatable 15,000 eject",
+            "when": "Use this only after the left-saucer kickout is proven safe.",
+            "steps": [
+              {
+                "text": "Complete GOR and GAR pairs until the Eject Ladder reaches 15,000."
+              },
+              {
+                "text": "Do not advance to Extra Ball unless that award is useful."
+              },
+              {
+                "text": "Shoot the eject saucer for 15,000."
+              },
+              {
+                "text": "Trap the kickout and repeat while the ladder remains at 15,000."
+              }
+            ]
+          },
+          {
+            "title": "GAR targets",
+            "when": "Use this when the GAR bank has safe rebounds.",
+            "steps": [
+              {
+                "text": "Complete GAR and read the newly lit feature."
+              },
+              {
+                "text": "Build bumper values under the installed Function 31 rule."
+              },
+              {
+                "text": "Use the 5,000 GAR targets when lit."
+              },
+              {
+                "text": "Ignore the outlane Special when it has no tournament value."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "3x and a 50,000 Snake Pit",
+          "steps": [
+            {
+              "text": "Complete A-B-C twice for 3x Bonus X."
+            },
+            {
+              "text": "Use the lit-spinner window for points and top-lane returns."
+            },
+            {
+              "text": "Complete D-E pairs to spot 1-2-3-4."
+            },
+            {
+              "text": "Complete the number set and collect a 50,000 Snake Pit."
+            },
+            {
+              "text": "Repeat the number set to advance Star Progress."
+            },
+            {
+              "text": "Protect up to 87,000 end-of-ball bonus."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "olive",
+            "kind": "item"
+          },
+          {
+            "label": "Lit Spinner Window",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "D-E Pair",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "1-2-3-4 Set",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Snake Pit",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Eject Ladder",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Star Progress",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B-C",
+            "label": "A-B-C top lanes",
+            "description": "Three top lanes used to advance end-of-ball Bonus X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Lit spinner",
+            "description": "Center spinner worth 1,000 per spin from 10,000 through 19,000 Base Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "D and E",
+            "label": "D-E inlanes",
+            "description": "Two inlane letters whose pair spots a 1-2-3-4 number.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-2-3-4",
+            "label": "1-2-3-4 targets",
+            "description": "Four number targets whose completion sets Snake Pit to 50,000.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Snake Pit",
+            "label": "Snake Pit",
+            "description": "Upper-left magnetic collect whose value is built by GOR or 1-2-3-4.",
+            "precision": "unverified"
+          },
+          {
+            "term": "GOR",
+            "label": "GOR drop bank",
+            "description": "Three drops that advance the Snake Pit value.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Controlled B-lane plunge",
+            "instruction": "Use a controlled plunge toward B for three Base Bonus advances and early A-B-C progress.",
+            "sourceUrl": "https://pinball-genie.com/machines/gorgar"
+          },
+          {
+            "name": "Lit-spinner rip",
+            "instruction": "Shoot the spinner hard from the left flipper only during the 10,000 through 19,000 bonus window.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5zd6-MJVo4"
+          },
+          {
+            "name": "Shatz pass",
+            "instruction": "Shatz pass through D or E only after confirming the ball cannot continue into the outlane.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5zd6-MJVo4"
+          },
+          {
+            "name": "Eject trap and reshoot",
+            "instruction": "Trap one saucer kickout before you use the repeatable 15,000 eject route.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5zd6-MJVo4"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A hard D-E pass can continue through the inlane into the outlane.",
+            "response": "Reduce flip power and stop when the ball reaches the top of the inlane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5zd6-MJVo4"
+          },
+          {
+            "issue": "Drop and standup targets can reject toward a drain.",
+            "response": "Use D-E or GOR when those lines return the ball more safely.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5zd6-MJVo4"
+          },
+          {
+            "issue": "The Snake Pit magnet release is copy-dependent.",
+            "response": "Keep both flippers ready until the release path is known.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5zd6-MJVo4"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Functions 31–34 for GAR grouping, Eject Ladder memory, number spotting, Extra Ball, Special, and star-memory behavior.",
+          "Test the Snake Pit release, eject-saucer kickout, spinner return, both inlanes, and target-bank rebounds before choosing a repeat route.",
+          "Verify three-ball or five-ball play, tilt, and whether tournament awards are disabled or converted to points."
+        ],
+        "simpleOverview": "Gorgar uses A-B-C for Bonus X and D-E pairs to spot 1-2-3-4 for the Snake Pit. Complete A-B-C twice for 3x, use the lit spinner before base bonus reaches 20,000, then complete D-E pairs and shoot Snake Pit at 50,000.",
+        "overview": "Gorgar uses A-B-C for Bonus X and D-E pairs to spot 1-2-3-4 for the Snake Pit. Reach 3x, use the spinner during its valuable window, then make only controlled D-E passes until 1-2-3-4 is complete. Collect Snake Pit, rebuild the number set for Star Progress, and protect the multiplied base bonus from a tilt.",
+        "machineSetup": [
+          "Confirm Functions 31–34 for GAR grouping, Eject Ladder memory, number spotting, Extra Ball, Special, and star-memory behavior.",
+          "Test the Snake Pit release, eject-saucer kickout, spinner return, both inlanes, and target-bank rebounds before choosing a repeat route.",
+          "Verify three-ball or five-ball play, tilt, and whether tournament awards are disabled or converted to points."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete A-B-C twice for 3x Bonus, use the lit spinner before Base Bonus reaches 20,000, then complete D-E pairs to light and collect a 50,000 Snake Pit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use a controlled plunge toward B. Read the unlit A-B-C lanes because the game has no lane change."
+          },
+          {
+            "text": "Complete A-B-C once for 2x and again for 3x Bonus X.",
+            "details": [
+              "Bonus X: A-B-C completions advance the end-of-ball multiplier to 3x; a drain spends and resets it."
+            ]
+          },
+          {
+            "text": "Build Base Bonus to 10,000. Rip the spinner before Base Bonus reaches 20,000.",
+            "details": [
+              "Lit Spinner Window: The spinner scores 1,000 per spin from 10,000 through 19,000 Base Bonus, then stays unlit for the rest of the ball."
+            ]
+          },
+          {
+            "text": "Shatz pass through D and E only while the inlane geometry is safe. Each completed pair spots one 1-2-3-4 number.",
+            "details": [
+              "D-E Pair: Collect both inlane letters to spend the pair and spot one number under the configured random or sequential setting."
+            ]
+          },
+          {
+            "text": "Complete all four numbers to set Snake Pit to 50,000 and advance Star Progress.",
+            "details": [
+              "1-2-3-4 Set: Completing all four lit numbers spends the set, sets Snake Pit to 50,000, and advances the star and target-Special track."
+            ]
+          },
+          {
+            "text": "Shoot Snake Pit for 50,000. Values of 20,000 or more reset the ladder after collection.",
+            "details": [
+              "Snake Pit: GOR completions raise the award; the number set makes it 50,000. Collects at 10,000 or less remain repeatable, while larger collects reset it."
+            ]
+          },
+          {
+            "text": "Rebuild D-E and 1-2-3-4. Stop alley passing if the ball crosses toward an outlane."
+          },
+          {
+            "text": "Use GOR completions as the fallback Snake Pit build when the inlane pass is unsafe."
+          },
+          {
+            "text": "Protect up to 29,000 Base Bonus at 3x for an 87,000 drain collect."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "Two A-B-C completions raise end-of-ball bonus to its 3x maximum."
+          },
+          {
+            "name": "Lit Spinner Window",
+            "summary": "The spinner scores 1,000 per spin while Base Bonus is between 10,000 and 19,000."
+          },
+          {
+            "name": "D-E Pair",
+            "summary": "Collecting both inlane letters spots one number in the 1-2-3-4 set."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: GOR and repeatable Pit values",
+          "when": "Use this when D-E alley passes threaten the outlanes.",
+          "steps": [
+            {
+              "text": "Stop cross-alley passes."
+            },
+            {
+              "text": "Shoot GOR from the right flipper."
+            },
+            {
+              "text": "Complete the bank to raise Snake Pit one step."
+            },
+            {
+              "text": "Collect 5,000 or 10,000 only when the magnet release is safe."
+            },
+            {
+              "text": "Continue GOR toward a larger Pit value and use the lit spinner before 20,000 Base Bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A hard D-E pass can continue through the inlane into the outlane.",
+          "text": "Reduce flip power and stop when the ball reaches the top of the inlane."
+        }
+      }
+    }
+  ]
+}

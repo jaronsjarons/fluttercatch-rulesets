@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ywq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Rack 'Em Up asks you to light all fifteen numbered pool balls. At the start of a ball, use the right flipper button to rotate the flashing solid-and-stripe pair before the first scored switch fixes the selection. Hit a target or lane while its number flashes to add that ball to the rack; the four top lanes pair 3/11, 4/12, 5/13, and 6/14. After play begins, the spinner and top-left corner pocket can move the flashing selection again. Completing either drop bank advances Bonus X through 3x, 5x, and 10x. Finishing the rack lights Special at the lower-left outlane. The lower-right spot target can also rotate through awards including Spinner, Spot Number, and Extra Ball.",
+        "simpleOverview": "Before the first scored switch, use the right flipper to align a flashing number with a reachable lane or target. Hit flashing numbered features to fill all fifteen balls; use the spinner or top-left corner pocket to move the selection later. Clear drop banks for 3x, 5x, and 10x Bonus, and finish the rack to light lower-left outlane Special.",
+        "summary": "Use the opening lane-change window instead of accepting a poor flashing pair, then work the safest lit number rather than an unlit target. Take bank completions early for Bonus X and treat the outlane Special as a secondary collect, not a reason to give up control.",
+        "quickInfo": [
+          {
+            "name": "Choose the Pair",
+            "summary": "Use right-flipper lane change before the first scored switch."
+          },
+          {
+            "name": "Fill the Rack",
+            "summary": "Hit each target or lane while its number flashes."
+          },
+          {
+            "name": "Move the Selection",
+            "summary": "Shoot the spinner or top-left corner pocket."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete drop banks for 3x, 5x, then 10x."
+          }
+        ],
+        "steps": [
+          {
+            "text": "At ball start, use the right flipper button to rotate the flashing solid-and-stripe pair toward the safest reachable feature.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the flashing target or lane to add its numbered ball to the rack; a lit number scores more than an unlit one.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the opening selection is fixed, shoot the spinner or top-left corner pocket to move the flashing numbers again.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the upper-left or lower-right drop bank to advance Bonus X through 3x, 5x, and 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Lower-right award target",
+            "when": "Use this when the target is safely reachable and Extra Ball or Spot Number is currently lit.",
+            "steps": [
+              {
+                "text": "Read the lit award at the lower-right spot target before shooting.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the target for the displayed Spinner, Spot Number, or Extra Ball award, then return to the flashing rack number.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Complete Rack and Special",
+          "steps": [
+            {
+              "text": "Keep moving the flashing pair and collect every missing numbered ball.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After all fifteen are lit, take the lower-left outlane only when Special is lit and the feed gives a reasonable chance to survive.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test right-flipper lane change before the first score, the four paired top lanes, numbered targets and lower lanes, spinner, top-left corner pocket, both drop banks, lower-right award target, and lower-left Special outlane.",
+          "Check the installed memory difficulty: Normal preserves center lamps, target and rollover lamps, and an uncollected Special between balls; Hardest clears all of that progress."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "paired top lanes",
+            "label": "Paired top lanes",
+            "description": "Four lanes covering 3/11, 4/12, 5/13, and 6/14.",
+            "precision": "unverified"
+          },
+          {
+            "term": "numbered targets and lanes",
+            "label": "Numbered rack features",
+            "description": "Targets and lanes that add a pool ball when its number flashes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "spinner",
+            "label": "Selection and value spinner",
+            "description": "Spinner that can move the flashing number selection after play begins.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-left corner pocket",
+            "label": "Top-left corner pocket",
+            "description": "Hidden top-left area that moves the flashing selection and returns the ball up top.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop banks",
+            "label": "Upper-left and lower-right drop banks",
+            "description": "Banks that advance Bonus X through 3x, 5x, and 10x.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower-right spot target",
+            "label": "Lower-right award target",
+            "description": "Target that rotates among Spinner, Spot Number, and Extra Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower-left outlane",
+            "label": "Lower-left Special outlane",
+            "description": "Outlane that collects Special after the rack is complete.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Progress memory changes with the installed difficulty level.",
+            "response": "Do not assume a nearly complete rack or lit Special will survive the drain; read the lamps on the next ball and rebuild any cleared selection.",
+            "sourceUrl": "https://www.flippp.fr/media/manual/menus_PI-80_nl.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the opening lane-change window instead of accepting a poor flashing pair, then work the safest lit number rather than an unlit target. Take bank completions early for Bonus X and treat the outlane Special as a secondary collect, not a reason to give up control.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "At ball start, use the right flipper button to rotate the flashing solid-and-stripe pair toward the safest reachable feature.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the flashing target or lane to add its numbered ball to the rack; a lit number scores more than an unlit one.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the opening selection is fixed, shoot the spinner or top-left corner pocket to move the flashing numbers again.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the upper-left or lower-right drop bank to advance Bonus X through 3x, 5x, and 10x.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Choose the Pair",
+            "summary": "Use right-flipper lane change before the first scored switch."
+          },
+          {
+            "name": "Fill the Rack",
+            "summary": "Hit each target or lane while its number flashes."
+          },
+          {
+            "name": "Move the Selection",
+            "summary": "Shoot the spinner or top-left corner pocket."
+          }
+        ],
+        "warning": {
+          "title": "Progress memory changes with the installed difficulty level.",
+          "text": "Do not assume a nearly complete rack or lit Special will survive the drain; read the lamps on the next ball and rebuild any cleared selection."
+        }
+      }
+    }
+  ]
+}

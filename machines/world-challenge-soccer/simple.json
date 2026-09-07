@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "GreOx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit the left or center target to raise Goal Value before Multiball. Complete the MULTI and BALL drops to light both locks, then alternate the qualified Goal and ramp Jackpots.",
+        "quickInfo": [
+          {
+            "name": "Goal Value",
+            "summary": "The left and center targets raise the value of every scored goal for the current ball."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Complete MULTI and BALL, lock both balls, then use the plunge rollover to qualify the opening jackpots."
+          },
+          {
+            "name": "Rounds and Multiball",
+            "summary": "A feature round blocks Multiball, Challenge, and World Championship starts until it ends. World Championship is itself three-ball play; scoring its third goal starts Riot for the rest of that Multiball."
+          },
+          {
+            "name": "Challenge matches",
+            "summary": "A lit Challenge is won by scoring the required goal and advances the World Championship ladder."
+          },
+          {
+            "name": "B-O-O save",
+            "summary": "Holding both flippers opens the goal for one shot once per ball; reserve it for a valuable conversion."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the opening ball save to test the center target, left target, goal, and both lock feeds."
+          },
+          {
+            "text": "Hit the safer left or center target to raise Goal Value before committing to Multiball."
+          },
+          {
+            "text": "Complete the MULTI and BALL drop groups to light the two lock shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock both balls, then plunge through the lit top rollover to qualify the opening Multiball jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the qualified Goal jackpot, then the qualified ramp jackpot; rebuild the drop banks between later collects.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use B-O-O only when opening the goal converts a major value or a match-critical shot.",
+            "modeNotes": [
+              "B-O-O rule: Holding both flippers opens the goal for one shot and is available once per ball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Goal-value position play",
+          "when": "Recovery pivot: Use this when the drop banks or lock feeds are rejecting but the Goal shot is controllable.",
+          "steps": [
+            {
+              "text": "Hit the safer left or center target to raise Goal Value."
+            },
+            {
+              "text": "Use normal progress or the saved B-O-O award to open the Goal."
+            },
+            {
+              "text": "Cash the Goal and protect the resulting bonus rather than forcing Multiball."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Challenge ladder",
+            "when": "When trailing, use this distinct scoreboard route: use this when Challenge is ready and one controlled goal is safer than the remaining lock work.",
+            "steps": [
+              {
+                "text": "Start the lit Challenge match.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Score the required goal before returning to qualification shots.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Repeat only while Challenge progress and the Goal feed remain favorable."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "World Championship",
+          "steps": [
+            {
+              "text": "Win the required Challenge matches across controlled balls.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start World Championship and score its required goals.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Continue into the final Riot phase only while ball control remains stable.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Challenge",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "World Championship",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Goal",
+            "label": "Goal shot",
+            "description": "The guarded upper goal used for goals and Multiball jackpots.",
+            "precision": "unverified",
+            "context": "Goal: The guarded upper goal used for goals and Multiball jackpots."
+          },
+          {
+            "term": "MULTI and BALL drops",
+            "label": "Multiball drops",
+            "description": "The two drop-target groups that qualify the locks.",
+            "precision": "unverified",
+            "context": "MULTI and BALL drops: The two drop-target groups that qualify the locks."
+          },
+          {
+            "term": "ramp",
+            "label": "Ramp jackpot",
+            "description": "The ramp used for the second qualified Multiball jackpot.",
+            "precision": "unverified",
+            "context": "ramp: The ramp used for the second qualified Multiball jackpot."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "One-shot goal opening",
+            "instruction": "Save the once-per-ball B-O-O opening until the next goal has meaningful value.",
+            "sourceUrl": "https://www.pinball.org/rules/worldchallengesoccer.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Challenge progress and lamp memory can change under tournament settings.",
+            "response": "Read the current Challenge lamps every ball instead of assuming prior progress carried.",
+            "sourceUrl": "https://www.pinball.org/rules/worldchallengesoccer.html"
+          },
+          {
+            "issue": "The 300M ramp jackpot requires repeated qualification and can tempt unsafe drop-bank shots.",
+            "response": "Take the reachable jackpot cycle; do not chase the unlimited tier after control is lost.",
+            "sourceUrl": "https://www.pinball.org/rules/worldchallengesoccer.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ROM, Challenge memory, Goal Value, and lock compensation.",
+          "Test Goal, ramp, drops, locks, and scoop returns."
+        ],
+        "simpleOverview": "In World Challenge Soccer, the left and center targets raise Goal Value for the current ball. Complete the MULTI and BALL drop groups, lock twice, then plunge through the lit rollover to qualify the Multiball Jackpots. Alternate the Goal and ramp Jackpots, using B-O-O only for an important open-goal conversion.",
+        "overview": "In World Challenge Soccer, the left and center targets raise Goal Value for the current ball. Hit the left or center target to raise Goal Value before finishing MULTI and BALL, lock twice, and use the lit plunge rollover to qualify the opening Jackpots. Alternate Goal and ramp collects, then resume the Challenge ladder between starts.",
+        "machineSetup": [
+          "Confirm ROM, Challenge memory, Goal Value, and lock compensation.",
+          "Test Goal, ramp, drops, locks, and scoop returns."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit the left or center target to raise Goal Value before Multiball. Complete the MULTI and BALL drops to light both locks, then alternate the qualified Goal and ramp Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the opening ball save to test the center target, left target, goal, and both lock feeds."
+          },
+          {
+            "text": "Hit the safer left or center target to raise Goal Value before committing to Multiball."
+          },
+          {
+            "text": "Complete the MULTI and BALL drop groups to light the two lock shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock both balls, then plunge through the lit top rollover to qualify the opening Multiball jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the qualified Goal jackpot, then the qualified ramp jackpot; rebuild the drop banks between later collects.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use B-O-O only when opening the goal converts a major value or a match-critical shot.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "B-O-O rule: Holding both flippers opens the goal for one shot and is available once per ball."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Goal Value",
+            "summary": "The left and center targets raise the value of every scored goal for the current ball."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Complete MULTI and BALL, lock both balls, then use the plunge rollover to qualify the opening jackpots."
+          },
+          {
+            "name": "Rounds and Multiball",
+            "summary": "A feature round blocks Multiball, Challenge, and World Championship starts until it ends. World Championship is itself three-ball play; scoring its third goal starts Riot for the rest of that Multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Goal-value position play",
+          "when": "Recovery pivot: Use this when the drop banks or lock feeds are rejecting but the Goal shot is controllable.",
+          "steps": [
+            {
+              "text": "Hit the safer left or center target to raise Goal Value."
+            },
+            {
+              "text": "Use normal progress or the saved B-O-O award to open the Goal."
+            },
+            {
+              "text": "Cash the Goal and protect the resulting bonus rather than forcing Multiball."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

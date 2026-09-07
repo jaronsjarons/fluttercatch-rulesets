@@ -1,0 +1,25 @@
+name: Correct or improve a ruleset
+description: Report a rule, strategy, or wording problem. No coding required.
+title: "Rules correction: "
+body:
+  - type: input
+    id: machine
+    attributes:
+      label: Machine and edition
+      description: Include software or ROM version if it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should the guide say?
+      description: Explain the current problem and the proposed correction.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How can we verify it?
+      description: Link a source, page, or timestamp, or describe a reproducible test on the machine.
+    validations:
+      required: true

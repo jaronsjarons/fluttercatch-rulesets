@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "G5LW9",
+  "title": "Family Guy",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Family Guy rules and strategy review",
+      "url": "https://www.pinballnews.com/games/familyguy/index7.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Vimeo PAPA Family Guy tutorial reference",
+        "url": "https://vimeo.com/15771417"
+      },
+      {
+        "label": "Pinball News Family Guy production-code update",
+        "url": "https://www.pinballnews.com/games/familyguy/index8.html"
+      },
+      {
+        "label": "Keith Elwin at Pinburgh 2016",
+        "url": "https://pinballvideos.com/v/1392/7526"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit the captive balls to qualify Stewie Pinball, then use the mini-playfield to complete the family and start Stewie Multiball. During Stewie Multiball, prioritize the difficult mini-playfield members while the main-playfield ball save protects the stack.",
+      "checkBeforePlay": [
+        "Confirm this is factory Family Guy, not Shrek.",
+        "Confirm both Newton captive balls are present and working."
+      ],
+      "steps": [
+        {
+          "text": "Hit either captive Newton ball to spell P-I-N-B-A-L-L. Use controlled shots rather than repeated live-ball impacts."
+        },
+        {
+          "text": "When P-I-N-B-A-L-L is complete, shoot the TV scoop to start Stewie Pinball on the mini-playfield.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "On Stewie Pinball, complete Brian, Meg, Peter, Lois, and Chris with the mini ramps, loops, and targets.",
+          "modeNotes": [
+            "Completing all five family members starts Stewie Multiball. The mini-playfield does not award ordinary points outside its named objectives."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Stewie Multiball, use the opening ball save to finish the harder Peter and Meg mini-playfield shots before protecting every main-playfield ball.",
+          "modeNotes": [
+            "The family shots on both playfields qualify the Stewie Super Jackpot. Main-playfield Stewie targets can add mini-playfield time."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Hit captive balls during Stewie Multiball to respell P-I-N-B-A-L-L and add a ball when fewer than four are active.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "When the mini timer expires, return attention to the main playfield and finish the lit family shots for the Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Fart Multiball and TV modes",
+        "when": "Use this when the captive-ball rebounds or mini-playfield are unreliable.",
+        "steps": [
+          {
+            "text": "Clear the F-A-R-T four-bank to advance Fart Multiball."
+          },
+          {
+            "text": "Shoot the spinner target or right orbit to light the TV scoop."
+          },
+          {
+            "text": "Start a TV mode at the scoop before multiball when stacking is allowed.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "If Crazy Chris is progressing, start Fart Multiball as protection. Crazy Chris continues during Fart, which also offers an add-a-ball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use Death's raised post as a temporary center save when it is available."
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Stewie Multiball Super Jackpot",
+        "steps": [
+          {
+            "text": "Spell P-I-N-B-A-L-L at the captive balls."
+          },
+          {
+            "text": "Start Stewie Pinball at the TV scoop.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete all five family members to start Stewie Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the lit family shots on both playfields for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Stewie Pinball",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Stewie Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Fart Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "TV Mode",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Super Jackpot",
+          "tone": "navy",
+          "kind": "item"
+        },
+        {
+          "label": "Add-a-Ball",
+          "tone": "navy",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Stewie Pinball diverts attention from live balls on the main playfield during multiball.",
+          "response": "Use the opening ball save for the mini-playfield. Return attention to the main playfield as soon as the save or mini timer ends.",
+          "sourceUrl": "https://www.pinballnews.com/games/familyguy/index7.html"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Hit the captive balls to qualify Stewie Pinball, then use the mini-playfield to complete the family and start Stewie Multiball."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Spell P-I-N-B-A-L-L at the captive balls."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Fart Multiball and TV modes: Use this when the captive-ball rebounds or mini-playfield are unreliable."
+        },
+        {
+          "name": "Edition scope",
+          "summary": "Feature names follow Family Guy; Shrek uses the same physical layout with different theme terminology."
+        }
+      ],
+      "simpleOverview": "Family Guy uses captive-ball letters to open Stewie Pinball, whose five family shots start Stewie Multiball. Spell P-I-N-B-A-L-L, complete the mini-playfield family, then use the opening ball save for its hardest members. Finish the remaining lit family shots for the Super Jackpot.",
+      "overview": "Family Guy uses captive-ball letters to open Stewie Pinball, whose five family shots start Stewie Multiball. Hit the captive balls to open the mini-game, complete its ramps, loops, and targets, then use Multiball protection for Peter and Meg. Respelling P-I-N-B-A-L-L can add a ball before the final family-shot Super.",
+      "machineSetup": [
+        "Confirm this is factory Family Guy, not Shrek.",
+        "Confirm both Newton captive balls are present and working."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

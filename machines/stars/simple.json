@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "id": "GrXEW",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Check the Special setting. If it scores 100,000, collect all five stars and repeat the roaming Special. Otherwise, build the right spinner to 1,000 and rip it.",
+        "steps": [
+          {
+            "text": "Before play, confirm whether a Special gives no points, one 100,000 award per ball, or unlimited 100,000 awards. Test the right spinner and center post.",
+            "modeNotes": [
+              "Special setting: The operator setting changes the highest-value strategy. Do not assume a replay or extra ball converts to points.",
+              "One random star is already collected at the start of each ball."
+            ]
+          },
+          {
+            "text": "On the plunge, hit an uncollected white or green star near the top bumper."
+          },
+          {
+            "text": "Collect all five star standups. Each collected star raises the right spinner by 200, up to 1,000 per spin.",
+            "modeNotes": [
+              "Star target: A hit scores 500 and adds one bonus advance. A lit target is collected.",
+              "The collected stars and right-spinner value stay for the rest of the ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "If Specials score points, hit the star with the roaming red lamp. Use safe switch hits to move the lamp when its target is dangerous.",
+            "modeNotes": [
+              "Roaming Special: Completing all five stars lights one star target. Any switch hit moves the lit target.",
+              "With unlimited 100,000 Specials, keep collecting the lit star. With a one-per-ball limit, stop after the first collect."
+            ]
+          },
+          {
+            "text": "After the allowed Special, or when Specials score no points, trap on the left flipper and repeat the right spinner for up to 1,000 per spin."
+          },
+          {
+            "text": "If the right spinner is weak, complete the drop banks for Bonus X and left-spinner value.",
+            "modeNotes": [
+              "First drop-bank award: Complete one bank for 2x bonus.",
+              "Second award: Complete both banks for 3x bonus.",
+              "Later awards: Complete both banks for a Wow or Special, based on operator settings.",
+              "An award resets both banks. Bonus X resets at the drain."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When using the drops, hit a center target in either bank to add 400 per spin to the left spinner. Rip the left spinner before a bank reset removes that value.",
+            "modeNotes": [
+              "Left spinner: It starts at 200 per spin and can reach 1,000 after both center targets.",
+              "If both outer targets in a bank are down, the remaining center target scores an extra 7,000.",
+              "Maximum end-of-ball bonus is 19,000 at 3x, or 57,000."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Drop banks and bonus",
+          "when": "Use this when one star target does not register, the roaming Special is disabled, or the right spinner is weak.",
+          "steps": [
+            {
+              "text": "Complete one drop bank to light 2x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete both banks to light 3x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Build base bonus with star targets, lit lower lanes, and rollover buttons."
+            },
+            {
+              "text": "Use the left spinner before a bank reset removes its built value."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "One Special per ball",
+            "when": "Use this when the Special is worth 100,000 but can be collected only once on each ball.",
+            "steps": [
+              {
+                "text": "Collect all five stars."
+              },
+              {
+                "text": "Move the roaming lamp to an accessible star and collect one 100,000 Special."
+              },
+              {
+                "text": "Stop chasing stars. Repeat the right spinner at 1,000 per spin."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 100,000 Special or 57,000 bonus",
+          "steps": [
+            {
+              "text": "With unlimited point Specials, keep all five stars complete and follow the roaming red lamp."
+            },
+            {
+              "text": "With Specials disabled, build 19,000 base bonus and 3x through the drops.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Center-post transfer",
+            "instruction": "When the center post has rubber, let the ball roll off one flipper, bounce from the post, and reach the other flipper. Test the rebound before using it under pressure.",
+            "sourceUrl": "https://www.youtube.com/watch?v=B_PKDn0OuFw&t=120s"
+          },
+          {
+            "name": "Tap pass",
+            "instruction": "Use a tap pass when the center-post transfer is too weak or too lively on this copy.",
+            "sourceUrl": "https://www.youtube.com/watch?v=B_PKDn0OuFw&t=789s",
+            "techniqueSlug": "tap-pass"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball falling just to the right of the top bumper has a high drain rate.",
+            "response": "Nudge before it clears the bumper area. Do not wait until the ball reaches a sling or outlane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXEW-MDEwr"
+          },
+          {
+            "issue": "A partial spinner shot can reject toward a drain.",
+            "response": "Find the full-power spinner angle before repeating it. Stop when the shot no longer clears the spinner lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXEW-MDEwr"
+          },
+          {
+            "issue": "Star and drop-target rebounds can feed the slings and outlanes.",
+            "response": "Move the roaming Special with safer switches. Shoot a dangerous target only when its point award justifies the rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrXEW-MDEwr"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Check the Special setting."
+          },
+          {
+            "name": "Long goal",
+            "summary": "With unlimited point Specials, keep all five stars complete and follow the roaming red lamp."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Drop banks and bonus: Use this when one star target does not register, the roaming Special is disabled, or the right spinner is weak."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Bally Stars, ball count, Special setting, and any 100,000 conversion.",
+          "Test star standups, both spinners, drop banks, and upper feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "star standups",
+            "label": "Star targets",
+            "description": "Standups used for the central scoring route.",
+            "precision": "unverified",
+            "context": "Standups used for the central scoring route."
+          },
+          {
+            "term": "right spinner",
+            "label": "Right spinner",
+            "description": "Repeatable scoring and upper-feed shot.",
+            "precision": "unverified",
+            "context": "Repeatable scoring and upper-feed shot."
+          },
+          {
+            "term": "drop banks",
+            "label": "Drop-target banks",
+            "description": "Banks used for feature progress.",
+            "precision": "unverified",
+            "context": "Banks used for feature progress."
+          }
+        ],
+        "simpleOverview": "In Stars, collecting all five star standups raises the right spinner to 1,000 per spin and lights a roaming Special. When Special awards 100,000, hit the star carrying the red lamp and follow it for another collect when allowed. When Special gives no points, repeat the built right spinner instead.",
+        "overview": "In Stars, each collected star raises the right spinner by 200, and all five light a roaming Special. When Special awards 100,000, collect the red-lit star as often as the operator setting allows, then repeat the 1,000-per-spin right spinner. When Special gives no points, use the drop banks for 3x Bonus and left-spinner value while protecting the 57,000 maximum bonus.",
+        "machineSetup": [
+          "Confirm Bally Stars, ball count, Special setting, and any 100,000 conversion.",
+          "Test star standups, both spinners, drop banks, and upper feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Check the Special setting. If it scores 100,000, collect all five stars and repeat the roaming Special. Otherwise, build the right spinner to 1,000 and rip it.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before play, confirm whether a Special gives no points, one 100,000 award per ball, or unlimited 100,000 awards. Test the right spinner and center post.",
+            "details": [
+              "Special setting: The operator setting changes the highest-value strategy. Do not assume a replay or extra ball converts to points.",
+              "One random star is already collected at the start of each ball."
+            ]
+          },
+          {
+            "text": "On the plunge, hit an uncollected white or green star near the top bumper."
+          },
+          {
+            "text": "Collect all five star standups. Each collected star raises the right spinner by 200, up to 1,000 per spin.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Star target: A hit scores 500 and adds one bonus advance. A lit target is collected.",
+              "The collected stars and right-spinner value stay for the rest of the ball."
+            ]
+          },
+          {
+            "text": "If Specials score points, hit the star with the roaming red lamp. Use safe switch hits to move the lamp when its target is dangerous.",
+            "details": [
+              "Roaming Special: Completing all five stars lights one star target. Any switch hit moves the lit target.",
+              "With unlimited 100,000 Specials, keep collecting the lit star. With a one-per-ball limit, stop after the first collect."
+            ]
+          },
+          {
+            "text": "After the allowed Special, or when Specials score no points, trap on the left flipper and repeat the right spinner for up to 1,000 per spin."
+          },
+          {
+            "text": "If the right spinner is weak, complete the drop banks for Bonus X and left-spinner value.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "First drop-bank award: Complete one bank for 2x bonus.",
+              "Second award: Complete both banks for 3x bonus.",
+              "Later awards: Complete both banks for a Wow or Special, based on operator settings.",
+              "An award resets both banks. Bonus X resets at the drain."
+            ]
+          },
+          {
+            "text": "When using the drops, hit a center target in either bank to add 400 per spin to the left spinner. Rip the left spinner before a bank reset removes that value.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Left spinner: It starts at 200 per spin and can reach 1,000 after both center targets.",
+              "If both outer targets in a bank are down, the remaining center target scores an extra 7,000.",
+              "Maximum end-of-ball bonus is 19,000 at 3x, or 57,000."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Check the Special setting."
+          },
+          {
+            "name": "Long goal",
+            "summary": "With unlimited point Specials, keep all five stars complete and follow the roaming red lamp."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Drop banks and bonus: Use this when one star target does not register, the roaming Special is disabled, or the right spinner is weak."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Drop banks and bonus",
+          "when": "Use this when one star target does not register, the roaming Special is disabled, or the right spinner is weak.",
+          "steps": [
+            {
+              "text": "Complete one drop bank to light 2x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete both banks to light 3x bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Build base bonus with star targets, lit lower lanes, and rollover buttons."
+            },
+            {
+              "text": "Use the left spinner before a bank reset removes its built value."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A ball falling just to the right of the top bumper has a high drain rate.",
+          "text": "Nudge before it clears the bumper area. Do not wait until the ball reaches a sling or outlane."
+        }
+      }
+    }
+  ]
+}

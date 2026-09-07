@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "G6lnq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On Pro, spin the left spinner 60 times to start Disco Multiball, use white major-shot combos to collect weapons, then start Mechsuit Multiball and use the SNIKT ricochet for temporary playfield scoring. Use Juggernaut with Lil’ Deadpool as the direct Battle stack.",
+        "steps": [
+          {
+            "text": "With no major mode active, spin the left spinner 60 times to start Disco Multiball.",
+            "modeNotes": [
+              "Disco Multiball: Switches build its jackpot. A random jackpot opens a Super round; the left spinner raises the Super Jackpot and the left ramp collects it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Disco, make white major-shot combos and visit the scoop when the feed is controlled. Bank 45 weapons.",
+            "modeNotes": [
+              "Weapons: One major shot turns the other major shots white. Shoot white combos, then the scoop, to cash out weapons based on the number of shots made. The 45th weapon lights Mechsuit Multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When no major mode is active, start Mechsuit Multiball at the scoop. Collect five different major-shot jackpots, then shoot the scoop for the Super Jackpot.",
+            "modeNotes": [
+              "Mechsuit Multiball: This is a four-ball mode. Each completed round adds one million to future base jackpots."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the ricochet is controlled, hit SNIKT into the right ramp before the Super Jackpot. Hit SNIKT again to extend the multiplier.",
+            "modeNotes": [
+              "Playfield X: The SNIKT-to-right-ramp ricochet raises temporary playfield scoring, up to 5x."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the B-O-O-M return lanes with lane change. Save four BOOM awards for a Big BOOM when several valuable shots are lit.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Sabretooth Battle",
+          "when": "Use this route when the O-O-F target or Lil’ Deadpool feed is unsafe.",
+          "steps": [
+            {
+              "text": "Select Sabretooth at the scoop. Shoot orbits, the center spinner, and pop bumpers to remove his health.",
+              "modeNotes": [
+                "Sabretooth Battle: Orbit, spinner, and pop-bumper hits cause damage. The scoop finishes the Battle after his health reaches zero."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the left orbit when it gives a controlled return. Do not force the scoop from a moving ball."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Juggernaut with Lil’ Deadpool Multiball",
+            "when": "Use this when O-O-F is controllable or the installed edition does not offer the Pro Disco route.",
+            "steps": [
+              {
+                "text": "Choose Wolverine Team-Up. Shoot the center spinner twice to activate it.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the O-O-F targets until the bank lowers. Hit the exposed target until it turns green, then shoot the Lil’ Deadpool shot to lock the ball.",
+                "modeNotes": [
+                  "Lil’ Deadpool Multiball: The O-O-F release starts the multiball. Do not release the locked ball before the Battle starts.",
+                  "Major modes exclude other majors; Lil’ Deadpool can stack with Battles, not Quests or another multiball."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start Juggernaut Battle at the scoop. Hit O-O-F with the served ball to release Lil’ Deadpool Multiball.",
+                "modeNotes": [
+                  "Juggernaut Battle: Complete any four D-E-A-D-P-O-O-L targets. Flashing damage shots stay lit for 20 seconds.",
+                  "When Juggernaut has no health, shoot the scoop within 10 seconds to finish the Battle.",
+                  "Battle progress survives a drain. A tilt on the final shot removes the completion."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Lil’ Deadpool Multiball, collect five Lil’ Deadpool jackpots. Then collect the five flashing red double jackpots.",
+                "modeNotes": [
+                  "Lil’ Deadpool Multiball: Lock a ball at Lil’ Deadpool after the double jackpots. Shoot either spinner for the Super Jackpot.",
+                  "After the Super, the jackpot cycle resets at higher values during the same multiball. The feature ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "T-Rex Battle with Ninja Multiball",
+            "when": "Use this route when the right orbit and katana target are reliable.",
+            "steps": [
+              {
+                "text": "Shoot the right orbit to advance the truck. Collect three orange chimichanga shots. Select T-Rex at the scoop.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete the third katana lock to start Ninja Multiball with T-Rex Battle.",
+                "modeNotes": [
+                  "T-Rex Battle: Green shots lower the O-O-F bank. The exposed target throws a bomb. Five bombs light the scoop jackpot.",
+                  "Ninja Multiball: Collect lit major-shot jackpots. Complete the set. Shoot the right katana for the Super Jackpot."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Big BOOM",
+            "when": "Use this route when normal play has completed several B-O-O-M lane sets.",
+            "steps": [
+              {
+                "text": "Save four BOOM awards. Then use Big BOOM to collect all lit non-scoop awards at once.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hold the action button only when you want to spend one normal BOOM award."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Sauron and Megakrakolodonus Rex",
+          "steps": [
+            {
+              "text": "Complete Juggernaut, Mystique, and Sabretooth Battles to qualify Sauron.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Three Battle completions qualify Sauron; follow the display for the lit start shot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete both Quests and start Sauron to qualify Megakrakolodonus Rex. Follow the lit start shown by the installed display.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Disco feature",
+            "pro": "With no major mode active, 60 left-spinner spins start Disco Multiball. Later starts use higher spin thresholds.",
+            "premium": "The same thresholds start single-ball Disco Loops instead of Disco Multiball; starts occur at 60, 180, 300, and later thresholds.",
+            "sourceUrl": "https://tiltforums.com/t/deadpool-rulesheet/4311"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Left-orbit ball park",
+            "instruction": "During multiball, use the left orbit to remove one ball from the lower playfield. Use the time to aim another shot.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/deadpool-2018"
+          },
+          {
+            "name": "Drop catch",
+            "instruction": "Test the scoop kickout during ball save. Use a drop catch or a controlled bounce when the feed reaches a flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=XMOpWL-gAwA",
+            "techniqueSlug": "drop-catch"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The exposed O-O-F target can reject the ball down the middle.",
+            "response": "Test the target during ball save. Stop the Lil’ Deadpool route when repeated hits return toward the center drain.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/deadpool-2018"
+          },
+          {
+            "issue": "The scoop kickout can return without control.",
+            "response": "Watch the first kickout. Use a drop catch or controlled bounce when that feed reaches a flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=XMOpWL-gAwA"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "On Pro, use Disco Multiball to build weapons for Mechsuit Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete Juggernaut, Mystique, and Sabretooth Battles to light the Sauron mini-wizard mode."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Sabretooth Battle: Use this route when the O-O-F target or Lil’ Deadpool feed is unsafe."
+          }
+        ],
+        "checkBeforePlay": [
+          "Check Battle and Multiball difficulty settings.",
+          "Major modes exclude other majors; Lil’ Deadpool can stack with Battles, not Quests or another multiball."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Lil’ Deadpool",
+            "label": "Lil’ Deadpool shot",
+            "description": "Center shot used for Lil’ Deadpool Multiball.",
+            "precision": "unverified",
+            "context": "Center shot used for Lil’ Deadpool Multiball."
+          },
+          {
+            "term": "Katana",
+            "label": "Katana ramp",
+            "description": "Ramp used for Battles and major scoring.",
+            "precision": "unverified",
+            "context": "Ramp used for Battles and major scoring."
+          }
+        ],
+        "overview": "Deadpool allows Lil' Deadpool Multiball during Battles, not Quests or Multiballs. Choose Wolverine before plunge, shoot center spinner twice to activate it, lower O-O-F, hit exposed target twice until green, lock a ball. Shoot the scoop for Juggernaut, then O-O-F to release Multiball; hit four D-E-A-D-P-O-O-L targets, make flashing damage shots, finish at the scoop, collect five Lil' Deadpool Jackpots, then five flashing doubles.",
+        "simpleOverview": "Shoot the scoop to start a Battle; after one Battle, complete D-E-A-D to relight it. Choose Wolverine before plunge, then shoot the center spinner twice to activate him before Juggernaut. Hit the O-O-F targets until the bank lowers, then hit the exposed target twice until it turns green and lock a ball there. Start Juggernaut at the scoop, then hit O-O-F to release Lil' Deadpool. Ricochet SNIKT into the right ramp for playfield X.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the OBX Fall Pinball Bash 2019, Aleksander Kaczmarczyk used Juggernaut to build a 120-million Disco Multiball, then continued through Mystique, Ninja Multiball, and Mechsuit."
+          ]
+        },
+        "machineSetup": [
+          "Check Battle and Multiball difficulty settings."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use Wolverine for a Team-Up, O-O-F for Lil' Deadpool Multiball, or the scoop for Sabretooth.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Wolverine Team-Up",
+            "text": "Choose Wolverine Team-Up, then shoot the center spinner twice to activate it.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Wolverine Team-Up",
+              "reason": "Choose it because Wolverine doubles damage during a Battle.",
+              "play": "While Wolverine is active, shoot the scoop to start a Battle. Make the flashing damage shots, then return to the scoop after the enemy's health reaches zero."
+            }
+          },
+          {
+            "title": "Start Lil' Deadpool Multiball",
+            "text": "Hit the O-O-F targets to lower the bank. Hit the exposed target until it turns green, then lock the ball. Hit O-O-F again to release the locked ball and start Lil' Deadpool Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "On Pro, use Disco Multiball to build weapons for Mechsuit Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete Juggernaut, Mystique, and Sabretooth Battles to light the Sauron mini-wizard mode."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Sabretooth Battle: Use this route when the O-O-F target or Lil’ Deadpool feed is unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Sabretooth",
+          "when": "Use this when O-O-F or its return is unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the scoop, choose Sabretooth, and shoot the scoop again to start the Battle.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr31Y",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge through the top to open the gate. Repeat the lit spinner and upper-left bonus rollover until base bonus reaches 100K, then complete the four-bank and collect Double Bonus at the right saucer.",
+        "quickInfo": [
+          {
+            "name": "Gate",
+            "summary": "A successful plunge opens the upper gate for returns to the top lanes and spinner area."
+          },
+          {
+            "name": "Spinner",
+            "summary": "Ten-point switches toggle the spinner between 100 and 1,000 per spin; use it for repeatable points and top access when lit."
+          },
+          {
+            "name": "Four-bank",
+            "summary": "Complete the four drop targets once to light Double Bonus at the right saucer."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Collect the lit right saucer to double the end-of-ball bonus."
+          },
+          {
+            "name": "100K bonus",
+            "summary": "The spinner and upper-left advance-bonus rollover raise base bonus to a displayed 100K maximum before Double Bonus."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through the lit top route to open the gate."
+          },
+          {
+            "text": "Read the spinner lamp after slingshot or other 10-point hits. Repeat it when lit, and use upper-left rollover feeds to build base bonus."
+          },
+          {
+            "text": "Continue upper play until the displayed base bonus reaches 100K."
+          },
+          {
+            "text": "Complete the four drop targets once. Do not continue attacking a reset bank after Double Bonus is lit."
+          },
+          {
+            "text": "Shoot the right saucer to collect Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to the lit spinner and upper play. Protect the 200K end-of-ball bonus instead of forcing low-control targets.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Top-play bonus",
+          "when": "Use this when the four-bank or right saucer rejects dangerously.",
+          "steps": [
+            {
+              "text": "Keep the upper gate open with controlled top entries."
+            },
+            {
+              "text": "Repeat the spinner and collect top lanes."
+            },
+            {
+              "text": "Score the spinner and upper-left advance-bonus rollover until base bonus reaches 100K."
+            },
+            {
+              "text": "Take Double Bonus only after the saucer feed is known.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Fast Double Bonus",
+            "when": "Use this when the base bonus is already large and the four-bank is nearly complete.",
+            "steps": [
+              {
+                "text": "Finish the remaining drop targets from controlled shots."
+              },
+              {
+                "text": "Collect Double Bonus at the right saucer.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Return to the spinner and upper-left advance-bonus rollover until base bonus reaches 100K."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "200K end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Score the lit spinner and upper-left advance-bonus rollover until base bonus reaches 100K."
+            },
+            {
+              "text": "Complete the four-bank to light Double Bonus."
+            },
+            {
+              "text": "Collect the lit right saucer.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Drain only after the displayed bonus and multiplier are secured.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Controlled spinner repeat",
+            "instruction": "Use the open-gate return to regain the upper lanes. Repeat the spinner only while the return reaches a predictable flipper or top feed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr31Y-MQ9bZ"
+          },
+          {
+            "name": "Saucer setup",
+            "instruction": "Trap before the right-saucer shot. Aim for the center of the opening to reduce rejects.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr31Y-MQ9bZ"
+          },
+          {
+            "name": "Short Shatz pass to open the gate",
+            "instruction": "Shatz pass softly through the left return lane to open the gate. Stop if the ball climbs far enough to enter the outlane.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr31Y-MQ9bZ"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A cross-playfield shatz or spinner feed can send the ball toward an outlane.",
+            "response": "Use the transfer only after its lane return is repeatable. Keep both flippers ready after a weak spinner shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr31Y-MQ9bZ"
+          },
+          {
+            "issue": "The right saucer can reject or eject unpredictably.",
+            "response": "Test the saucer before you depend on Double Bonus. Use top play if the entry or eject is unsafe.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr31Y-MQ9bZ"
+          },
+          {
+            "issue": "Direct drop-target shots create fast center rebounds.",
+            "response": "Finish the bank from controlled angles. Stop shooting it after Double Bonus is lit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr31Y-MQ9bZ"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ball count, Extra Ball and Special treatment, tilt consequence, and whether the right-saucer and outlane awards are enabled.",
+          "Read the spinner lamp after 10-point switch hits; it toggles between 100 and 1,000 per spin.",
+          "Test the spinner return, upper-left dribble, right-saucer entry and eject, left-sling kick, and outlane gate before choosing the route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "Primary repeatable scoring shot with a toggled value.",
+            "precision": "unverified",
+            "context": "Primary repeatable scoring shot with a toggled value."
+          },
+          {
+            "term": "right-saucer",
+            "label": "Right saucer",
+            "description": "Saucer used for its qualified award.",
+            "precision": "unverified",
+            "context": "Saucer used for its qualified award."
+          },
+          {
+            "term": "upper-left",
+            "label": "Upper-left feed",
+            "description": "Upper route used to return the ball to top play.",
+            "precision": "unverified",
+            "context": "Upper route used to return the ball to top play."
+          }
+        ],
+        "simpleOverview": "Argosy uses the plunge to open an upper gate, then its lit spinner and rollovers build a 100K base bonus. Complete the four-bank, collect Double Bonus at the right saucer, and preserve the resulting 200K end-of-ball value.",
+        "overview": "Argosy uses the plunge to open an upper gate, then its lit spinner and rollovers build a 100K base bonus. Plunge through the top to open the gate, build 100K through controlled upper returns, then complete the bank and take the saucer before protecting the doubled bonus.",
+        "machineSetup": [
+          "Confirm ball count, Extra Ball and Special treatment, tilt consequence, and whether the right-saucer and outlane awards are enabled.",
+          "Read the spinner lamp after 10-point switch hits; it toggles between 100 and 1,000 per spin.",
+          "Test the spinner return, upper-left dribble, right-saucer entry and eject, left-sling kick, and outlane gate before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Plunge through the top to open the gate. Repeat the lit spinner and upper-left bonus rollover until base bonus reaches 100K, then complete the four-bank and collect Double Bonus at the right saucer.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through the lit top route to open the gate."
+          },
+          {
+            "text": "Read the spinner lamp after slingshot or other 10-point hits. Repeat it when lit, and use upper-left rollover feeds to build base bonus."
+          },
+          {
+            "text": "Continue upper play until the displayed base bonus reaches 100K."
+          },
+          {
+            "text": "Complete the four drop targets once. Do not continue attacking a reset bank after Double Bonus is lit."
+          },
+          {
+            "text": "Shoot the right saucer to collect Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Return to the lit spinner and upper play. Protect the 200K end-of-ball bonus instead of forcing low-control targets.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Gate",
+            "summary": "A successful plunge opens the upper gate for returns to the top lanes and spinner area."
+          },
+          {
+            "name": "Spinner",
+            "summary": "Ten-point switches toggle the spinner between 100 and 1,000 per spin; use it for repeatable points and top access when lit."
+          },
+          {
+            "name": "Four-bank",
+            "summary": "Complete the four drop targets once to light Double Bonus at the right saucer."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Top-play bonus",
+          "when": "Use this when the four-bank or right saucer rejects dangerously.",
+          "steps": [
+            {
+              "text": "Keep the upper gate open with controlled top entries."
+            },
+            {
+              "text": "Repeat the spinner and collect top lanes."
+            },
+            {
+              "text": "Score the spinner and upper-left advance-bonus rollover until base bonus reaches 100K."
+            },
+            {
+              "text": "Take Double Bonus only after the saucer feed is known.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "A cross-playfield shatz or spinner feed can send the ball toward an outlane.",
+          "text": "Use the transfer only after its lane return is repeatable. Keep both flippers ready after a weak spinner shot."
+        }
+      }
+    }
+  ]
+}

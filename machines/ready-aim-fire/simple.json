@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "GRL2z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Ready...Aim...Fire! is a color-set prize ladder. Complete all spot targets of one color, then hit that color's flashing pop bumper to win the next animal prize. Each prize raises the end-of-ball bonus multiplier; the sequence is Bear, Giraffe, Elephant, then Tiger.",
+        "simpleOverview": "Finish every spot target in one color, then hit that color's flashing pop bumper to win a prize. Prizes raise Bonus X in order from Bear to Giraffe to Elephant to Tiger.",
+        "summary": "Work one visible color set at a time, collect it at the matching flashing pop, and use the resulting prize ladder to grow Bonus X.",
+        "quickInfo": [
+          {
+            "name": "Qualify Prize",
+            "summary": "Complete every spot target of one color."
+          },
+          {
+            "name": "Win Prize",
+            "summary": "Hit that color's flashing pop bumper."
+          },
+          {
+            "name": "Prize Order",
+            "summary": "Bear, Giraffe, Elephant, then Tiger."
+          },
+          {
+            "name": "Raise Bonus X",
+            "summary": "Each won prize adds one multiplier step."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose a color with few remaining spot targets and finish that set."
+          },
+          {
+            "text": "Hit the matching flashing pop bumper to win the next animal prize."
+          },
+          {
+            "text": "Repeat the color-set and pop-bumper cycle to raise the bonus multiplier."
+          },
+          {
+            "text": "After three prizes, use only the outlane award that is visibly lit; after four, the top rollover can light for Special."
+          }
+        ],
+        "buildsToward": {
+          "title": "Four prizes",
+          "steps": [
+            {
+              "text": "Win Bear, then Giraffe, Elephant, and Tiger through four color completions."
+            },
+            {
+              "text": "Use each prize to raise Bonus X."
+            },
+            {
+              "text": "After the fourth prize, score the lit top rollover for Special or its configured substitute."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test every colored spot target, all four pop bumpers and flashing lamps, prize lamps, bonus ladder, top rollover, and both outlane lamps.",
+          "Confirm three- or five-ball play and how Extra Ball and Special are converted."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "colored target groups",
+            "label": "Colored spot targets",
+            "description": "Targets grouped by the four pop-bumper colors.",
+            "precision": "unverified"
+          },
+          {
+            "term": "flashing pop bumper",
+            "label": "Prize-collect pop bumper",
+            "description": "Matching pop that awards a prize after its color set is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top rollover",
+            "label": "Top Special rollover",
+            "description": "Top lane lit for Special after the fourth prize.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The inspected English card says one outlane lights for Extra Ball after three prizes, while the French card says both outlanes.",
+            "response": "Follow the lamps on the exact game and do not assume both sides are active.",
+            "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Ready-Aim-Fire_instruction_cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Work one visible color set at a time, collect it at the matching flashing pop, and use the resulting prize ladder to grow Bonus X.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose a color with few remaining spot targets and finish that set."
+          },
+          {
+            "text": "Hit the matching flashing pop bumper to win the next animal prize."
+          },
+          {
+            "text": "Repeat the color-set and pop-bumper cycle to raise the bonus multiplier."
+          },
+          {
+            "text": "After three prizes, use only the outlane award that is visibly lit; after four, the top rollover can light for Special."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Qualify Prize",
+            "summary": "Complete every spot target of one color."
+          },
+          {
+            "name": "Win Prize",
+            "summary": "Hit that color's flashing pop bumper."
+          },
+          {
+            "name": "Prize Order",
+            "summary": "Bear, Giraffe, Elephant, then Tiger."
+          }
+        ],
+        "warning": {
+          "title": "The inspected English card says one outlane lights for Extra Ball after three prizes, while the French card says both outlanes.",
+          "text": "Follow the lamps on the exact game and do not assume both sides are active."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "G5V3y",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Collect each card once for 5,000, then avoid repeats worth only 500. After completing 8 through Ace, send the ball through the unlit middle gate for 5,000.",
+        "steps": [
+          {
+            "text": "Send the ball up top and collect cards that are still unlit. A card scores 5,000 the first time and 500 afterward."
+          },
+          {
+            "text": "Use the top lanes, side lanes, return lanes, outlanes, and targets to finish the missing cards."
+          },
+          {
+            "text": "After completing 8 through Ace, send the ball through the middle gate that is not lit for Special; that lane scores 5,000."
+          },
+          {
+            "text": "Ignore the three center standups unless 8 through Ace is complete, when each becomes worth 5,000."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top lanes",
+            "context": "top lanes",
+            "label": "Top card lanes",
+            "description": "Card lanes used to collect missing ranks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "middle gate",
+            "context": "middle gate",
+            "label": "Middle gate lanes",
+            "description": "The two center gates used after 8-through-Ace completion.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center standups",
+            "context": "center standups",
+            "label": "Center standups",
+            "description": "The three rebound-heavy targets that become valuable after 8 through Ace is complete.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Center standup rebounds are dangerous when the targets are worth only 500.",
+            "response": "Stay up top until 8 through Ace is complete; shoot a center standup only after it lights for 5,000.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5V3y-MQjo3"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect each card once for 5,000, then avoid repeats worth only 500."
+          }
+        ],
+        "simpleOverview": "Hi-Lo Ace places cards across the upper lanes, side lanes, return lanes, outlanes, and targets. Each unlit card is worth ten times a repeat, and completing 8 through Ace changes the unlit middle gate into the final collect.",
+        "overview": "Hi-Lo Ace rewards collecting each card once, then sharply reduces the value of repeats. Send the ball up top and use the lanes and targets to finish 8 through Ace. After the set is complete, shoot the unlit middle gate for 5,000 and use the center standups only while they also score 5,000.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Collect each card once for 5,000. After completing 8 through Ace, send the ball through the middle gate that is not lit for Special.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Collect missing cards",
+            "text": "Send the ball up top and use the lanes and targets to collect each unlit card. Repeats fall from 5,000 to 500."
+          },
+          {
+            "title": "Use the middle gate",
+            "text": "After completing 8 through Ace, send the ball through the middle gate that is not lit for Special; it scores 5,000."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Collect each card once for 5,000, then avoid repeats worth only 500."
+          }
+        ]
+      }
+    }
+  ]
+}

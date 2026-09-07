@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "GrJen",
+  "title": "Dodge City",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Dodge City",
+      "url": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Dodge City machine guide",
+        "url": "https://www.kineticist.com/games/pinball/dodge-city"
+      },
+      {
+        "label": "Pinrepair Dodge City machine record",
+        "url": "https://www.pinrepair.com/gtb/dcity.htm"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot lit rollunder gates A-E in order to raise them to 10x, then 100x; use the lit side saucer for steady value, and at 100x choose the next gate through the Roto window because it scores the shown value and resets the sequence.",
+      "quickInfo": [
+        {
+          "name": "Skill shot",
+          "summary": "Either center 50-point lane spins the under-playfield Roto mechanism on the plunge."
+        },
+        {
+          "name": "Ordered gates",
+          "summary": "Only the next needed A-E rollunder is lit; completing all five once raises them to 10x and twice raises them to 100x."
+        },
+        {
+          "name": "Roto windows",
+          "summary": "Five playfield windows show values from 2 through 5 or a star worth 1 that can award an extra ball."
+        },
+        {
+          "name": "100x cash-out",
+          "summary": "After reaching 100x, the next rollunder scores 100 times its displayed window and resets the base value to 1."
+        },
+        {
+          "name": "Lit saucer",
+          "summary": "One side saucer is lit for 50, 100, or 150; changing the score's tens digit swaps which side is lit."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge either center 50-point lane to spin the Roto."
+        },
+        {
+          "text": "Read the currently lit letter and shoot only that A-E rollunder."
+        },
+        {
+          "text": "Complete A through E once to raise the rollunder value to 10x."
+        },
+        {
+          "text": "Repeat the ordered sequence to reach 100x."
+        },
+        {
+          "text": "At 100x, compare the value visible beneath the next reachable rollunder."
+        },
+        {
+          "text": "Shoot the best controlled lit gate to score its displayed value at 100x, then expect the base value to reset."
+        },
+        {
+          "text": "When the ordered gate is not controlled, shoot the currently lit side saucer for 50, 100, or 150."
+        },
+        {
+          "text": "Use bumper and safe-lane action to change the tens digit when swapping the lit saucer improves the next shot."
+        }
+      ],
+      "fallback": {
+        "title": "Lit-saucer control plan",
+        "when": "Use this plan when the next ordered rollunder is too dangerous or the Roto window offers poor value.",
+        "steps": [
+          {
+            "text": "Read which side saucer is lit and its current award."
+          },
+          {
+            "text": "Shoot only the lit saucer from the flipper with the cleaner angle."
+          },
+          {
+            "text": "Observe the kickout and regain control before another aimed shot."
+          },
+          {
+            "text": "Use safe scoring to change the tens digit if the opposite saucer is preferable."
+          },
+          {
+            "text": "Return to the ordered gate when its angle and Roto value improve."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Bumper-value route",
+          "when": "Use this plan when both saucer kickouts and the current rollunder are unreliable.",
+          "steps": [
+            {
+              "text": "Hit a rollunder only when its broad gate is naturally presented."
+            },
+            {
+              "text": "Use that gate to light the bumper above it for 10."
+            },
+            {
+              "text": "Let the always-10 center bumper and newly lit bumper provide incidental value."
+            },
+            {
+              "text": "Resume the ordered sequence after the ball reaches a controlled flipper."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "High-value 100x Roto collect",
+        "steps": [
+          {
+            "text": "Complete the lit A-E sequence for 10x."
+          },
+          {
+            "text": "Complete it again for the rollunder's 100x value."
+          },
+          {
+            "text": "Read the Roto value under the next reachable gate."
+          },
+          {
+            "text": "Wait for a controlled shot at a favorable value."
+          },
+          {
+            "text": "Score the 100x gate and begin rebuilding after its reset."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Lit-letter discipline",
+          "instruction": "Read the illuminated A-E letter before every aimed gate shot. Ignore unlit rollunders until the required letter advances.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+        },
+        {
+          "name": "Roto-window read",
+          "instruction": "At 100x, pause on the flipper long enough to compare the visible value beneath the next reachable gate before committing to the reset shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+        },
+        {
+          "name": "Outlane salvage nudge",
+          "instruction": "If a side drain is already developing, nudge early toward the outlane marked 50 and spin Roto. Do not sacrifice an inlane recovery to chase it.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Only the required A-E rollunder advances the ordered sequence.",
+          "response": "Read the lit letter before shooting. Use the lit saucer rather than forcing an unlit gate.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+        },
+        {
+          "issue": "The first rollunder after 100x spends the built value and resets the base to 1.",
+          "response": "Do not cash out automatically. Compare the Roto window and shot safety first.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+        },
+        {
+          "issue": "A side saucer is valuable only while that side is lit, and its kickout may vary by machine.",
+          "response": "Confirm the lamp before shooting and test each kickout once before repeating it.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrJen-MQ4l6"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "100x",
+          "tone": "olive",
+          "kind": "item"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm four-player 1965 Gottlieb Dodge City, ball count, replay or star Extra Ball awards, tilt, and tournament scoring.",
+        "Confirm the ordered A-E sequence, 10x and 100x rollunder values, cashout reset, Roto alignment, and lit-saucer values.",
+        "Test every rollunder switch, both kickout holes, saucer lamps and ejects, bumpers, outlane Roto spin, and mechanical backbox animation."
+      ],
+      "simpleOverview": "Dodge City lights rollunders A through E in order and raises their value from 1x to 10x and then 100x. Shoot only the currently lit gate, read the Roto window beneath the next reachable letter at 100x, then collect the best controlled value before the sequence resets.",
+      "overview": "Dodge City lights rollunders A through E in order and raises their value from 1x to 10x and then 100x. Complete the sequence twice for 100x, compare the visible windows, and take the best survivable lit gate for the cashout. Use the currently lit side saucer while the ordered gate is unavailable rather than breaking control.",
+      "machineSetup": [
+        "Confirm four-player 1965 Gottlieb Dodge City, ball count, replay or star Extra Ball awards, tilt, and tournament scoring.",
+        "Confirm the ordered A-E sequence, 10x and 100x rollunder values, cashout reset, Roto alignment, and lit-saucer values.",
+        "Test every rollunder switch, both kickout holes, saucer lamps and ejects, bumpers, outlane Roto spin, and mechanical backbox animation."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "G5VxP",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Go up top through the right orbit to collect the four numbered lanes and light yellow and green multiplier progress, then finish the center drops only when one target remains and the needed color is lit.",
+        "quickInfo": [
+          {
+            "name": "Four top lanes",
+            "summary": "Each lane starts lit for 5,000, adds 1,000 base bonus, and determines which yellow or green multiplier advances become available."
+          },
+          {
+            "name": "Two-color multiplier",
+            "summary": "The bonus multiplier advances only after both yellow and green progress have been collected."
+          },
+          {
+            "name": "Center four-bank",
+            "summary": "Complete it only when the needed color is lit and preferably only one drop remains."
+          },
+          {
+            "name": "Collect Bonus saucer",
+            "summary": "At 20,000 base bonus, the upper-right saucer collects the multiplied bonus and resets only the base value."
+          },
+          {
+            "name": "Vari-targets",
+            "summary": "Each can add one to five bonus advances, but worn machines often cannot register the deepest value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge a numbered top lane that normal orbit returns reach least often."
+          },
+          {
+            "text": "From either flipper, shoot the right orbit to send the ball back through the top lanes."
+          },
+          {
+            "text": "Collect lanes 1 and 2 to light yellow progress at the saucer and center drops."
+          },
+          {
+            "text": "Collect lanes 3 and 4 to light green progress at those same features."
+          },
+          {
+            "text": "Continue the right-orbit route until both colors are available or only one center drop remains."
+          },
+          {
+            "text": "Complete the center four-bank only when the lit color advances the multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "At 20,000 base bonus, wait for a useful multiplier before shooting the upper-right Collect Bonus saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After a collect resets base bonus, resume up-top shots while the multiplier remains."
+          }
+        ],
+        "fallback": {
+          "title": "Either-side up-top route",
+          "when": "Use this plan when the right orbit is not reliable from the current flipper.",
+          "steps": [
+            {
+              "text": "Choose the open side that sends the ball above the center triangle."
+            },
+            {
+              "text": "Favor a miss that still reaches the upper playfield."
+            },
+            {
+              "text": "Track the ball through the numbered lanes and central triangle."
+            },
+            {
+              "text": "Resume the right orbit after regaining control."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Built-bonus collect",
+            "when": "Use this plan when base bonus is 20,000 and the multiplier is already useful.",
+            "steps": [
+              {
+                "text": "Confirm the upper-right Collect Bonus saucer is active."
+              },
+              {
+                "text": "Shoot the saucer only after yellow and green progress have produced a useful multiplier.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Collect the multiplied bonus."
+              },
+              {
+                "text": "Rebuild the base bonus through lanes while preserving the multiplier for the ball."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable multiplied bonus collects",
+          "steps": [
+            {
+              "text": "Use numbered top lanes to light both yellow and green progress."
+            },
+            {
+              "text": "Collect both colors through a lit saucer, final drop, or upper-left horseshoe."
+            },
+            {
+              "text": "Collect both lit colors repeatedly to raise the multiplier toward 5X; color progress carries between balls."
+            },
+            {
+              "text": "Shoot lit top or return lanes, drop targets, or either vari-target until base bonus reaches 20,000."
+            },
+            {
+              "text": "Collect the multiplied bonus at the upper-right saucer and rebuild the base value."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "right orbit",
+            "label": "Right orbit",
+            "description": "Orbit feeding the four numbered top lanes and multiplier progress.",
+            "precision": "unverified",
+            "context": "Use the right orbit to reach the numbered lanes."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Right-orbit UTAD",
+            "instruction": "Shoot the right orbit with enough strength to reach the numbered top lanes. Use whichever lower flipper gives the cleanest entry on the installed game.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          },
+          {
+            "name": "Selective final drop",
+            "instruction": "Shoot the center bank only when one target remains and at least one needed multiplier color is lit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          },
+          {
+            "name": "Horseshoe feed read",
+            "instruction": "Watch a soft ball falling below the upper-left horseshoe. Nudge before it meets the rubber cushion that can direct it down the center.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A soft exit below the upper-left horseshoe can drain down the center.",
+            "response": "Track the ball as soon as it leaves the horseshoe area and nudge before it reaches the lower cushion.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          },
+          {
+            "issue": "Balls exiting the top can deflect from the center triangle onto a sling or lane divider.",
+            "response": "Prepare both flippers and use an early, legal nudge rather than waiting for the deflection to reach a sling.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          },
+          {
+            "issue": "Center-drop rebounds can return straight down the middle.",
+            "response": "Do not shoot a fresh bank. Take only a one-drop completion with useful color progress lit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          },
+          {
+            "issue": "The instruction card and observed target scoring can disagree.",
+            "response": "The drop may score 3,000 or 5,000. Verify the installed scoring before valuing that shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5VxP-MLWlV"
+          }
+        ],
+        "simpleOverview": "Star Race requires both yellow and green progress before Bonus X advances. Use the right orbit to collect the four top lanes, take each needed color through a lit saucer, the last center drop, or the upper-left horseshoe, then build 20,000 base bonus for the upper-right saucer collect.",
+        "overview": "Star Race requires both yellow and green progress before Bonus X advances. Use upper play to light the colors, finish the center bank only when its needed color is lit, and reach 5x before building 20,000. Collect at the upper-right saucer, then rebuild the base while color progress carries between balls.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Go up top through the right orbit to collect the four numbered lanes and light yellow and green multiplier progress, then finish the center drops only when one target remains and the needed color is lit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge a numbered top lane that normal orbit returns reach least often."
+          },
+          {
+            "text": "From either flipper, shoot the right orbit to send the ball back through the top lanes."
+          },
+          {
+            "text": "Collect lanes 1 and 2 to light yellow progress at the saucer and center drops."
+          },
+          {
+            "text": "Collect lanes 3 and 4 to light green progress at those same features."
+          },
+          {
+            "text": "Continue the right-orbit route until both colors are available or only one center drop remains."
+          },
+          {
+            "text": "Complete the center four-bank only when the lit color advances the multiplier.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "At 20,000 base bonus, wait for a useful multiplier before shooting the upper-right Collect Bonus saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After a collect resets base bonus, resume up-top shots while the multiplier remains."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Four top lanes",
+            "summary": "Each lane starts lit for 5,000, adds 1,000 base bonus, and determines which yellow or green multiplier advances become available."
+          },
+          {
+            "name": "Two-color multiplier",
+            "summary": "The bonus multiplier advances only after both yellow and green progress have been collected."
+          },
+          {
+            "name": "Center four-bank",
+            "summary": "Complete it only when the needed color is lit and preferably only one drop remains."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Either-side up-top route",
+          "when": "Use this plan when the right orbit is not reliable from the current flipper.",
+          "steps": [
+            {
+              "text": "Choose the open side that sends the ball above the center triangle."
+            },
+            {
+              "text": "Favor a miss that still reaches the upper playfield."
+            },
+            {
+              "text": "Track the ball through the numbered lanes and central triangle."
+            },
+            {
+              "text": "Resume the right orbit after regaining control."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A soft exit below the upper-left horseshoe can drain down the center.",
+          "text": "Track the ball as soon as it leaves the horseshoe area and nudge before it reaches the lower cushion."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "G5LYj",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Corsario rewards specific combinations in the A-B-C-D drop bank. Make A+B to prepare the lower-lane Extra Ball, B+C to prepare the left-ramp Extra Ball and raise the loop to 10,000, or C+D to open the barrier. Completing all four letters lights Special at the platforms and lower target, and prepares Extra Ball at the rear-bank target. The upper lane also has a two-pass sequence: the first pass prepares it and the second awards Extra Ball.",
+        "simpleOverview": "Use exact combinations in the A-B-C-D drop bank: A+B prepares the lower-lane Extra Ball, B+C prepares the left-ramp Extra Ball and raises the loop, and C+D opens the barrier. Complete all four letters for the larger Special and Extra Ball set. Pass through the upper lane twice for another Extra Ball.",
+        "summary": "Choose an A-B-C-D combination for the award you want, then collect it at the indicated lane, ramp, platform, or target. A full bank opens the larger Special and Extra Ball set, while two upper-lane passes award another Extra Ball.",
+        "quickInfo": [
+          {
+            "name": "Choose a Drop Pair",
+            "summary": "A+B, B+C, and C+D prepare different awards."
+          },
+          {
+            "name": "Use B+C for the Ramp",
+            "summary": "It prepares Extra Ball at the left ramp and raises the loop."
+          },
+          {
+            "name": "Complete A-B-C-D",
+            "summary": "The full bank lights the larger Special and Extra Ball set."
+          },
+          {
+            "name": "Repeat the Upper Lane",
+            "summary": "The first pass prepares it; the second awards Extra Ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Make A+B when the lower-lane Extra Ball is the safest collect, or make B+C to prepare Extra Ball at the left ramp and raise the loop to 10,000.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Make C+D to open the barrier before committing to the route behind it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete A-B-C-D to light Special at the platforms and lower target and prepare Extra Ball at the rear-bank target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the separate upper-lane award, pass through once to prepare the sequence and a second time to collect Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use a single-letter platform award",
+            "when": "Use this when one outside drop is already exposed and a full combination would add unnecessary rebound risk.",
+            "steps": [
+              {
+                "text": "Take A to prepare the left-platform Extra Ball, or D to prepare the right-platform Extra Ball, then collect at that platform.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Convert prepared awards",
+          "steps": [
+            {
+              "text": "After a qualifying combination, move to its named collect instead of continuing to clear unrelated drops.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "At an Extra Ball preparation standup, the first hit lights its Extra Ball collect; after collecting it, a second hit lights Special there.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count and whether Extra Balls and Specials remain enabled or convert to points.",
+          "Test all four A-B-C-D drops and their lamps, the barrier, upper lane, loop, left ramp, both platforms, lower target, rear-bank target, and Extra Ball preparation standups."
+        ],
+        "termStyles": [
+          {
+            "label": "A-B-C-D",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "forest",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B-C-D drop bank",
+            "label": "A-B-C-D drop bank",
+            "description": "Four drops whose exact combinations prepare different awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper lane",
+            "label": "Upper lane",
+            "description": "Lane whose first pass prepares and second pass awards Extra Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "Extra Ball collect prepared by the B+C combination.",
+            "precision": "unverified"
+          },
+          {
+            "term": "barrier",
+            "label": "Barrier",
+            "description": "Gate opened by the C+D combination.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The drop-bank awards depend on the exact letter combination, not just the number of targets down.",
+            "response": "Read the A-B-C-D lamps and build the pair tied to the collect you intend to shoot.",
+            "sourceUrl": "https://www.recreativas.org/archivo/corsario-pinball-manual.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose an A-B-C-D combination for the award you want, then collect it at the indicated lane, ramp, platform, or target. A full bank opens the larger Special and Extra Ball set, while two upper-lane passes award another Extra Ball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Make A+B when the lower-lane Extra Ball is the safest collect, or make B+C to prepare Extra Ball at the left ramp and raise the loop to 10,000.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Make C+D to open the barrier before committing to the route behind it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete A-B-C-D to light Special at the platforms and lower target and prepare Extra Ball at the rear-bank target.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For the separate upper-lane award, pass through once to prepare the sequence and a second time to collect Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Choose a Drop Pair",
+            "summary": "A+B, B+C, and C+D prepare different awards."
+          },
+          {
+            "name": "Use B+C for the Ramp",
+            "summary": "It prepares Extra Ball at the left ramp and raises the loop."
+          },
+          {
+            "name": "Complete A-B-C-D",
+            "summary": "The full bank lights the larger Special and Extra Ball set."
+          }
+        ]
+      }
+    }
+  ]
+}

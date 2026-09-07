@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "GRW3o",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete either drop bank to light successive Bonus X awards: first 2x, then 4x plus upper-rollover Extra Ball, then 6x, then a 10,000 ramp collect. Collect each lit award at its captive-ball lane, ramp, or upper rollover. Route 1 starts at the upper-left lane and finishes at the lower captive ball. Route 2 starts at the ramp and also finishes at the lower captive ball. Three consecutive ramp shots award one Extra Ball per ball.",
+        "simpleOverview": "Complete either drop bank, then collect the lit Bonus X at the lower captive ball, ramp, upper captive ball, or lit upper rollover. Route 1 starts at the upper-left lane and ends at the lower captive ball; Route 2 starts at the ramp and ends there. Three consecutive ramp shots award one Extra Ball per ball.",
+        "summary": "Use a drop bank to light the next Bonus X, then move to its collect. Start Route 1 at the upper-left lane or Route 2 at the ramp and finish at the lower captive ball. If the ramp is repeatable, three consecutive shots award Extra Ball.",
+        "quickInfo": [
+          {
+            "name": "Build Bonus X",
+            "summary": "Either drop bank advances the 2x, 4x, and 6x ladder."
+          },
+          {
+            "name": "Start Route 1",
+            "summary": "Shoot the upper-left lane, then finish at the lower captive ball."
+          },
+          {
+            "name": "Start Route 2",
+            "summary": "Shoot the ramp, then finish at the lower captive ball."
+          },
+          {
+            "name": "Repeat the Ramp",
+            "summary": "Three consecutive ramp shots award one Extra Ball per ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete either drop bank once to light 2x Bonus, then collect it at the lower captive ball or ramp.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a bank a second time to light 4x at the upper captive ball or ramp and Extra Ball at the lit upper rollover.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a bank a third time to light 6x at the ramp or lit upper rollover; the fourth completion lights a 10,000 bonus collect at the ramp.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the ramp return is safe, make three consecutive ramp shots for the once-per-ball Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Run a route through the lower captive ball",
+            "when": "Use this when a route start is safer than repeating the drop banks.",
+            "steps": [
+              {
+                "text": "Start Route 1 at the upper-left lane, then shoot the lower captive ball; the first completion collects Bonus and the second awards Extra Ball.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Or start Route 2 at the ramp, then shoot the lower captive ball to collect Bonus.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish L-O-R-T-I-U-M",
+          "steps": [
+            {
+              "text": "Use the top-left targets, captive balls, and rollovers to light the L-O-R-T-I-U-M letters.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the letters to light Special while continuing to convert lit Bonus X collects.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count and whether Extra Balls and Specials remain enabled or convert to points.",
+          "Test both drop banks, both captive balls, the ramp, upper-left lane, upper rollovers, center standups, and all L-O-R-T-I-U-M lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Route 1",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Route 2",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Extra Ball",
+            "tone": "forest",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "drop banks",
+            "label": "Drop banks",
+            "description": "Either three-target bank advances the Bonus X ladder.",
+            "precision": "unverified"
+          },
+          {
+            "term": "ramp",
+            "label": "Ramp",
+            "description": "Route 2 start, several Bonus X collects, and the three-shot Extra Ball route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower captive ball",
+            "label": "Lower captive ball",
+            "description": "Finish for both routes and a 2x Bonus collect.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-left lane",
+            "label": "Upper-left lane",
+            "description": "Physical start for Route 1.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The ramp Extra Ball requires three consecutive ramp shots.",
+            "response": "Do not interrupt the sequence with another scoring switch when pursuing that award.",
+            "sourceUrl": "https://www.vpforums.org/index.php?showtopic=42768"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use a drop bank to light the next Bonus X, then move to its collect. Start Route 1 at the upper-left lane or Route 2 at the ramp and finish at the lower captive ball. If the ramp is repeatable, three consecutive shots award Extra Ball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete either drop bank once to light 2x Bonus, then collect it at the lower captive ball or ramp.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a bank a second time to light 4x at the upper captive ball or ramp and Extra Ball at the lit upper rollover.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete a bank a third time to light 6x at the ramp or lit upper rollover; the fourth completion lights a 10,000 bonus collect at the ramp.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the ramp return is safe, make three consecutive ramp shots for the once-per-ball Extra Ball.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Build Bonus X",
+            "summary": "Either drop bank advances the 2x, 4x, and 6x ladder."
+          },
+          {
+            "name": "Start Route 1",
+            "summary": "Shoot the upper-left lane, then finish at the lower captive ball."
+          },
+          {
+            "name": "Start Route 2",
+            "summary": "Shoot the ramp, then finish at the lower captive ball."
+          }
+        ]
+      }
+    }
+  ]
+}

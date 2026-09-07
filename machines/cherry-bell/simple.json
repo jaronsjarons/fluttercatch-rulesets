@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "GRKWZ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Cherry Bell is a bonus-building game with different multipliers for two collections. The top-center lane lights 2x at the upper-right Collect Bonus saucer, while one of the three center saucers awards 3x for end-of-ball bonus. Build the base bonus to 100,000 through the left orbit and bonus-advance switches, then choose whether to collect now and rebuild or preserve the larger end-of-ball payout.",
+        "simpleOverview": "Plunge or shoot the left orbit for the top-center lane to light 2x at the Collect Bonus saucer. Shoot the three center saucers until one awards 3x for end-of-ball bonus. Build the base bonus, then collect it at the upper-right saucer only when taking the points now is worth resetting the base bonus to 10,000.",
+        "summary": "Light the collect doubler through the top-center lane, then use the center saucers to find the end-of-ball tripler. Keep sending the ball up the left orbit to build bonus; collect only when you can afford to reset that bonus and rebuild it.",
+        "quickInfo": [
+          {
+            "name": "Light 2x Collect",
+            "summary": "Roll through the top-center lane."
+          },
+          {
+            "name": "Light 3x End-of-Ball",
+            "summary": "Shoot the three center saucers until they award it."
+          },
+          {
+            "name": "Advance Bonus",
+            "summary": "Use the left orbit, top-right lane, star rollovers, left return lane, or outer-right outlane."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "Shoot the upper-right saucer; the base bonus then resets to 10,000."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge through the top-center lane; if you miss it, shoot the left orbit until that lane lights 2x at the Collect Bonus saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the three center saucers until one awards 3x for end-of-ball bonus; their kickouts normally return the ball safely.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the left orbit to add base bonus and return the ball to the top lanes."
+          },
+          {
+            "text": "When the base bonus is high, choose between preserving the tripled end-of-ball payout and shooting the upper-right saucer to collect up to 2x now, reset the base to 10,000, and rebuild."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Preserve the tripled bonus",
+            "when": "Use this when the current end-of-ball bonus is enough for the score you need.",
+            "steps": [
+              {
+                "text": "Avoid the upper-right Collect Bonus saucer so the base bonus does not reset."
+              },
+              {
+                "text": "Keep using controlled left-orbit shots to add bonus without targeting the rebound-heavy standups."
+              },
+              {
+                "text": "Let the ball drain without tilting to receive the 3x end-of-ball bonus."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Refilled maximum bonus",
+          "steps": [
+            {
+              "text": "Build the base bonus toward 100,000 with the left orbit and bonus-advance switches."
+            },
+            {
+              "text": "Shoot the upper-right saucer to collect the current base bonus at up to 2x."
+            },
+            {
+              "text": "After the base resets to 10,000, return to the left orbit and rebuild before the ball ends."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test the top-center and top-right lanes, left orbit, all three center saucers and kickouts, Collect Bonus saucer, bonus ladder, multiplier lamps, and right-side post.",
+          "Confirm five-ball play, Special and Extra Ball conversion, saucer award order, maximum base bonus, and whether each saucer feed can be brought under control."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top-center lane",
+            "label": "Top-center 2x lane",
+            "description": "Top lane that lights 2x for the Collect Bonus saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Repeatable shot to the top lanes that also advances base bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center saucers",
+            "label": "Three center saucers",
+            "description": "Center cove that cycles awards including 3x end-of-ball bonus and the right-side post.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Collect Bonus saucer",
+            "label": "Upper-right Collect Bonus saucer",
+            "description": "Hole that collects the base bonus at up to 2x and resets it to 10,000.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right-side post",
+            "label": "Right-side post",
+            "description": "Raised post that can block some balls from the right outlane.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The 2x and 3x multipliers apply to different bonus collections.",
+            "response": "Use 2x only at the Collect Bonus saucer; preserve 3x for end-of-ball bonus and remember that collecting resets the base bonus to 10,000.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRKWZ-MQYWB"
+          },
+          {
+            "issue": "The raised right-side post does not stop every right-outlane drain.",
+            "response": "Treat the post as partial protection and keep nudging early when the ball heads toward the right-side lanes.",
+            "sourceUrl": "https://www.youtube.com/watch?v=4YU5zGlIECo"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Light the collect doubler through the top-center lane, then use the center saucers to find the end-of-ball tripler. Keep sending the ball up the left orbit to build bonus; collect only when you can afford to reset that bonus and rebuild it.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge through the top-center lane; if you miss it, shoot the left orbit until that lane lights 2x at the Collect Bonus saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the three center saucers until one awards 3x for end-of-ball bonus; their kickouts normally return the ball safely.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the left orbit to add base bonus and return the ball to the top lanes."
+          },
+          {
+            "text": "When the base bonus is high, choose between preserving the tripled end-of-ball payout and shooting the upper-right saucer to collect up to 2x now, reset the base to 10,000, and rebuild."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light 2x Collect",
+            "summary": "Roll through the top-center lane."
+          },
+          {
+            "name": "Light 3x End-of-Ball",
+            "summary": "Shoot the three center saucers until they award it."
+          },
+          {
+            "name": "Advance Bonus",
+            "summary": "Use the left orbit, top-right lane, star rollovers, left return lane, or outer-right outlane."
+          }
+        ],
+        "warning": {
+          "title": "The raised right-side post does not stop every right-outlane drain.",
+          "text": "Treat the post as partial protection and keep nudging early when the ball heads toward the right-side lanes."
+        }
+      }
+    }
+  ]
+}

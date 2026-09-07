@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "GrJWP",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Complete the lit top lanes to raise the bonus multiplier and lower the center ramp, then use the lit side rollover beneath the ramp for another multiplier advance. Complete a lower target bank to raise a Sniper, hit the Sniper, then hit the roving lit lower target; repeat to spell EXTRA BALL. Complete the upper target bank and the required Snipers to qualify the upper Special sequence.",
+        "simpleOverview": "Complete the lit top lanes to build the bonus multiplier and lower the center ramp, then use the lit side rollover under it. Complete a lower target bank to raise a Sniper, hit it, and hit the roving lit lower target to advance EXTRA BALL.",
+        "summary": "Build the bonus multiplier with the lit top lanes and the lit side rollover beneath the lowered center ramp. For EXTRA BALL, complete a lower target bank, hit the raised Sniper, then hit the roving lit lower target.",
+        "quickInfo": [
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete the lit top lanes and use the lit rollover under the ramp."
+          },
+          {
+            "name": "Raise a Sniper",
+            "summary": "Complete either lower target bank."
+          },
+          {
+            "name": "Advance EXTRA BALL",
+            "summary": "Hit the Sniper, then the roving lit lower target."
+          },
+          {
+            "name": "Use the Spinner",
+            "summary": "Roll through an inlane to light the spinner, then shoot it for the raised value."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the lit top lanes to raise the bonus multiplier and lower the center ramp.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot through the lit side rollover exposed beneath the lowered ramp for another multiplier advance.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete either lower target bank to raise a Sniper target, then hit that Sniper.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the roving lit lower target to advance EXTRA, then repeat the Sniper sequence to advance BALL and earn Extra Ball before conversion.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Use the lit spinner",
+            "when": "Use this when an inlane has lit the spinner and the center ramp route is not controlled.",
+            "steps": [
+              {
+                "text": "Roll through an inlane to light the spinner.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the spinner while lit; its per-spin value is a major scoring shot on this low-scoring game.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Qualify the upper Special",
+          "steps": [
+            {
+              "text": "Complete the upper target bank and score the operator-required number of different Snipers.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the moving upper-target light and hit the lit upper target to collect Special before tournament conversion.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm ball count, Extra Ball and Special conversions, bonus-multiplier carry, and whether three, four, or another configured Sniper count qualifies Special.",
+          "Test the top lanes, center ramp lift, both under-ramp rollovers, both lower target banks, rising Snipers, roving target lamps, upper bank, spinner, inlanes, and trough."
+        ],
+        "termStyles": [
+          {
+            "label": "Bonus multiplier",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Sniper",
+            "tone": "forest",
+            "kind": "mode"
+          },
+          {
+            "label": "EXTRA BALL",
+            "tone": "indigo",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center ramp",
+            "label": "Center lift ramp",
+            "description": "The ramp lowered by the top-lane sequence to expose the multiplier rollovers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower target banks",
+            "label": "Lower target banks",
+            "description": "The two lower banks whose completion raises a Sniper target.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Sniper",
+            "label": "Rising Sniper targets",
+            "description": "The pop-up targets that activate a roving lower-target light when hit.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Sniper requirement for Special is operator-adjustable.",
+            "response": "Build bonus and spinner value as the repeatable plan; check the configured Sniper count before chasing Special.",
+            "sourceUrl": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Raven_instruction_cards.zip"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build the bonus multiplier with the lit top lanes and the lit side rollover beneath the lowered center ramp. For EXTRA BALL, complete a lower target bank, hit the raised Sniper, then hit the roving lit lower target.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the lit top lanes to raise the bonus multiplier and lower the center ramp.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot through the lit side rollover exposed beneath the lowered ramp for another multiplier advance.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete either lower target bank to raise a Sniper target, then hit that Sniper.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the roving lit lower target to advance EXTRA, then repeat the Sniper sequence to advance BALL and earn Extra Ball before conversion.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Build Bonus X",
+            "summary": "Complete the lit top lanes and use the lit rollover under the ramp."
+          },
+          {
+            "name": "Raise a Sniper",
+            "summary": "Complete either lower target bank."
+          },
+          {
+            "name": "Advance EXTRA BALL",
+            "summary": "Hit the Sniper, then the roving lit lower target."
+          }
+        ]
+      }
+    }
+  ]
+}

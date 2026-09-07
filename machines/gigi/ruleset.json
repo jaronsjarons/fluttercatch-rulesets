@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "G43ek",
+  "title": "Gigi",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Gigi",
+      "url": "https://rules.silverballmania.com/rules/G43ek-MQd7N"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Gigi machine guide",
+        "url": "https://www.kineticist.com/games/pinball/gigi"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Send the ball between adjacent red bumpers and nudge for more contacts. Complete either color set during one ball for end-of-game bonus.",
+      "quickInfo": [
+        {
+          "name": "Two color sets",
+          "summary": "Gigi has one seven-bumper red set and one seven-bumper yellow set."
+        },
+        {
+          "name": "Single-ball sets",
+          "summary": "A color set must reach all seven bumpers during one ball because the bumper lamps reset each ball."
+        },
+        {
+          "name": "End-of-game bonus",
+          "summary": "One completed set gives 100, two give 200, and three or more give 300 at game end."
+        },
+        {
+          "name": "Red threads",
+          "summary": "The primary repeat shots pass between adjacent red bumpers from 2-3 through 5-6."
+        },
+        {
+          "name": "Drain values",
+          "summary": "Each outlane scores 100, while the center drain scores no points."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge to graze the top of yellow bumper 4."
+        },
+        {
+          "text": "Guide the falling ball toward yellow bumper 3 or 5."
+        },
+        {
+          "text": "Read both color sets before the ball reaches a flipper."
+        },
+        {
+          "text": "Shoot between adjacent red bumpers from 2-3 through 5-6."
+        },
+        {
+          "text": "Nudge while the ball is among the bumpers to extend the current color set."
+        },
+        {
+          "text": "Repeat the red-bumper threads until one color set reaches all seven."
+        },
+        {
+          "text": "When the ball reaches the top, accept natural hits on the two upper standup targets."
+        },
+        {
+          "text": "Ignore the five green rollovers and continue the bumper route."
+        }
+      ],
+      "fallback": {
+        "title": "Scoring side drain",
+        "when": "Use this plan only when a drain is unavoidable and the ball can still reach either outlane.",
+        "steps": [
+          {
+            "text": "Stop flipping when another stroke would direct the ball toward the center drain."
+          },
+          {
+            "text": "Use one small nudge toward the nearer outlane."
+          },
+          {
+            "text": "Let the outlane score 100 instead of accepting a zero-point center drain."
+          },
+          {
+            "text": "On the next ball, restart a complete color set because all bumper lamps reset."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Upper standup pass",
+          "when": "Use this plan when bumper action already sends the ball above the yellow 2 or 6 bumper.",
+          "steps": [
+            {
+              "text": "Track the ball while it remains above the yellow bumpers."
+            },
+            {
+              "text": "Nudge toward the nearby upper standup target."
+            },
+            {
+              "text": "Do not replace an open bumper thread with a forced standup shot."
+            },
+            {
+              "text": "Resume bumper threads when the ball returns to the lower flippers."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Maximum 300 end-of-game bonus",
+        "steps": [
+          {
+            "text": "Complete all seven bumpers of either color during one ball."
+          },
+          {
+            "text": "On a later ball, complete another full color set."
+          },
+          {
+            "text": "Complete a third full color set before the game ends."
+          },
+          {
+            "text": "Protect each ball because six lit bumpers give no set credit."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Yellow 4 skill shot",
+          "instruction": "Plunge to graze the top of yellow bumper 4. Guide the rebound toward yellow bumper 3 or 5.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/gigi"
+        },
+        {
+          "name": "Red-bumper thread",
+          "instruction": "Aim between two adjacent red bumpers. Let the falling ball contact their sides instead of hitting one bumper face first.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43ek-MQd7N"
+        },
+        {
+          "name": "Nudging",
+          "instruction": "Use small nudges while the ball moves among the bumpers. Guide it toward an unlit bumper in the chosen color set.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43ek-MQd7N",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A face-on bumper hit can send the ball directly down the center.",
+          "response": "Thread the ball between bumper pairs. Prefer contacts while the ball moves down through the bumper field.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43ek-MQd7N"
+        },
+        {
+          "issue": "Feeds from the bumpers and side lanes can reach a drain or the slingshots without control.",
+          "response": "Track each exit and nudge before the ball reaches a slingshot. Do not assume a side-lane feed is safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43ek-MQd7N"
+        },
+        {
+          "issue": "Six lit bumpers in a color set give no end-of-game bonus if the ball drains.",
+          "response": "Prioritize the last missing bumper. Avoid unrelated rollovers and standups until that bumper scores.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G43ek-MQd7N"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Gottlieb Gigi and tournament treatment of replay awards.",
+        "Test red-bumper threading, yellow lanes, side returns, and bumper-area nudges."
+      ],
+      "simpleOverview": "Gigi counts one complete seven-bumper red set or yellow set toward its end-of-game bonus, but partial sets reset at the start of each ball. Thread the ball between adjacent bumpers, nudge for missing contacts, and finish one color before the ball drains.",
+      "overview": "Gigi turns complete seven-bumper color sets into an end-of-game bonus, but partial sets reset every ball. Use repeatable threads between adjacent red bumpers and controlled nudges to finish one color in a single ball. Complete full sets on later balls until the game-end award reaches its three-set maximum.",
+      "machineSetup": [
+        "Confirm Gottlieb Gigi and tournament treatment of replay awards.",
+        "Test red-bumper threading, yellow lanes, side returns, and bumper-area nudges."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

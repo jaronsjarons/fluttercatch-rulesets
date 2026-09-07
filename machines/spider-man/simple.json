@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "id": "G5D94",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Place shot multipliers before multiball. Start a timed mode. Stack Doc Ock, Black Suit, and villain battles. Complete every villain twice, then collect multiplied Royale Jackpots.",
+        "steps": [
+          {
+            "text": "Plunge a lit W-E-B top lane for +5 Bonus X. Test both ramps, both orbits, the side ramp, Doc Ock, and the center post.",
+            "modeNotes": [
+              "Top-lane skill shot: Adds 5x to Bonus X and doubles bumper value. On ball 3, it also doubles the final bonus after other multipliers.",
+              "The soft-plunge side-ramp skill shot gives more Venom value, but it is harder and less reliable."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Clear all six flashing white major shots. Make the next major shot to store 2x there for the rest of the ball.",
+            "modeNotes": [
+              "Shot 2x: Use the left orbit and spinner, side ramp, or Doc Ock. Do not use the right orbit. Save the right ramp for a late Battle Royale setup.",
+              "A 2x and 3x cannot combine on one shot. All shot multipliers end at the drain.",
+              "Mode and multiplier progress is locked out during multiball. Clear orbit and side-ramp arrows before a multiball blocks them."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot either orbit to start the flashing timed mode. Complete its objective before time ends or the ball drains.",
+            "modeNotes": [
+              "Bonesaw or Electro: Make 100 switch hits. Use the spinner and bumpers.",
+              "Rescue MJ or Tell MJ: Make eight shots at the three moving lit arrows.",
+              "New Goblin or Jack O' Lantern: Make five alternating left-ramp and right-ramp shots.",
+              "Daily Bugle: Hit the right three-bank, then any major shot. Repeat this sequence three times.",
+              "The Amazing Spider-Man: Make all six major shots once. Make multiplied shots late because each shot raises the value."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the timed mode. Put the earned 3x on a different strong shot. When Battle Royale is one or two villain modes away, put 3x on the right ramp.",
+            "modeNotes": [
+              "Shot 3x: A completed timed mode lights one tripler. A timed-out mode does not.",
+              "Use 2x on the right ramp if the tripler setup is too risky."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot Doc Ock until the toy lowers and Multiball lights. Hit Doc Ock again to start the current Doc Ock multiball.",
+            "modeNotes": [
+              "Fusion Malfunction or Lend Me a Hand: Score five major-shot jackpots, then shoot Doc Ock for the Super. Each later Super needs one more jackpot.",
+              "Bank Bust or Ock's Oscorp Outing: Knock the held ball into Doc Ock. The hurry-up sets the jackpot. Collect one jackpot at every major shot, then the Super at Doc Ock.",
+              "Armed at the Dock or Battle on the Bridge: A four-ball multiball. One jackpot lights the Doc Ock Super. The Super equals the sum of jackpots scored.",
+              "Each multiball ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Doc Ock or Black Suit, start and finish the other villain battles. Use ball save for Sandman and Green Goblin.",
+            "modeNotes": [
+              "Sandman: Clear the center three-bank, hit Sandman until he rises, then shoot the exposed hole.",
+              "Green Goblin: Complete the right five-bank. Hit it once more to start. Then hit valid bank targets until the battle ends.",
+              "Venom: Repeat the side ramp to start. During the battle, shoot the left ramp or side ramp. The side ramp scores 2x Venom value. Spinner hits build that value.",
+              "Villain battles can run with multiball and continue after a drain. The first Venom hurry-up also completes when time ends."
+            ],
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete all four villains twice. Start Battle Royale at either orbit. Hit each villain once, then shoot the multiplied right ramp for the Royale Jackpot.",
+            "modeNotes": [
+              "Battle Royale: A four-ball mini-wizard that does not stack with another multiball. A lit or running timed mode can play with it.",
+              "Each villain first scores one high-value jackpot. Other shots have one low-value jackpot.",
+              "The right-ramp Royale Jackpot scores the sum of jackpots since the prior Royale and relights them.",
+              "The first two Royale Jackpots add a ball and a short ball save. Repeat villain hits, then the right ramp."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Fast Doc Ock scoring",
+          "when": "Use this when several white arrows, the side ramp, or the dangerous villain targets are not reliable.",
+          "steps": [
+            {
+              "text": "Complete the available white arrows. Store 2x on Doc Ock if possible.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Backhand Doc Ock until its multiball starts.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Score major-shot jackpots. Stop regular jackpots when the Doc Ock Super is lit."
+            },
+            {
+              "text": "Collect the multiplied Super at Doc Ock.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Black Suit Multiball route",
+            "when": "Use this when its locks are already lit, or when its jackpot cycle can carry a timed mode or dangerous villain progress.",
+            "steps": [
+              {
+                "text": "Hit the Light Lock target beside the spinner. Collect three locks at either orbit.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start a timed mode before the third lock if one is ready.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Black Suit Multiball. Score two jackpots at each of the six major shots.",
+                "modeNotes": [
+                  "Black Suit Multiball: After 12 jackpots, collect two Supers at the left ramp and two Double Supers at the side ramp.",
+                  "After all four Supers, the 12-jackpot cycle restarts. The feature ends when one ball remains."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Stack Doc Ock when it is ready. Use the extra balls to advance dangerous villains.",
+                "kinds": [
+                  "multiball",
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Battle Royale and Super Hero",
+          "steps": [
+            {
+              "text": "Complete each villain twice to light Battle Royale at either orbit.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete each villain three times and play all five timed modes to light Super Hero at either orbit.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "In Super Hero, clear all six major shots, the villains, all six shots without repeating a red shot, Sandman hits, then Spider-Sense."
+            },
+            {
+              "text": "The final Spider-Sense shot scores 250,000,000 and starts 2x playfield scoring for the rest of the ball.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Shoot Doc Ock from the right flipper. Use the backhand to qualify multiball and collect lit Supers.",
+            "sourceUrl": "https://www.youtube.com/watch?v=lGM-AGo-iWc&t=510s",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Shoot the left orbit from the left flipper when this copy accepts the angle. Use it for white-arrow progress and mode starts.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the right three-bank so the rebound enters Doc Ock. Then repeat the required bank-to-major-shot sequence.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Bonesaw spinner carry-through",
+            "instruction": "Start Bonesaw through the spinner. Press both flippers to skip the start animation so the continuing spins count toward 100 switches.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Backhanding either lower ramp can reject the ball down the middle.",
+            "response": "Do not backhand the left or right ramp. Use forehands and learn how misses reach the center post.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial"
+          },
+          {
+            "issue": "Direct Sandman hits and Green Goblin bank hits can return toward a drain.",
+            "response": "Use multiball ball save and controlled balls for these villain targets.",
+            "sourceUrl": "https://www.youtube.com/watch?v=lGM-AGo-iWc&t=546s"
+          },
+          {
+            "issue": "The Light Lock target can throw the ball sideways toward either outlane.",
+            "response": "Take required hits during ball save or let safe rebounds qualify locks. Do not force Black Suit before a multiplier is ready.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial"
+          },
+          {
+            "issue": "The Spider-Sense lane can bounce off the right sling and enter the right outlane.",
+            "response": "Do not shoot it for ordinary awards. Use it only for a valuable stored add-a-ball, time award, or required wizard shot.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial"
+          },
+          {
+            "issue": "Failed ramp shots usually head toward the center post.",
+            "response": "Learn the post response. Do not panic-flip when the post will return the ball to a flipper.",
+            "sourceUrl": "https://www.kineticist.com/news/spider-man-pinball-tutorial"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Place shot multipliers before multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete each villain twice to light Battle Royale at either orbit."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Fast Doc Ock scoring: Use this when several white arrows, the side ramp, or the dangerous villain targets are not reliable."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Stern Spider-Man code and edition before relying on exact values or timers.",
+          "Test Doc Ock, both orbits, ramps, post, and mode-start registration."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Doc Ock",
+            "label": "Doc Ock",
+            "description": "Center mechanism used for locks and Super Jackpots.",
+            "precision": "unverified",
+            "context": "Center mechanism used for locks and Super Jackpots."
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Orbit used for mode and feature progress.",
+            "precision": "unverified",
+            "context": "Orbit used for mode and feature progress."
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp",
+            "description": "Ramp used for major scoring and progress.",
+            "precision": "unverified",
+            "context": "Ramp used for major scoring and progress."
+          }
+        ],
+        "simpleOverview": "In Spider-Man, completing the six white arrows stores 2x and 3x multipliers on chosen shots for the rest of the ball. Place them on reliable major shots, start a timed mode, then begin Doc Ock or Black Suit Multiball so its extra balls protect the villain battle.",
+        "overview": "In Spider-Man, completing the six white arrows stores 2x and 3x multipliers on chosen shots for the rest of the ball. Place 2x and 3x before protected play, start a compatible timed mode, then complete villains during Doc Ock or Black Suit. Finish every villain twice and collect Royale Jackpots through the multiplied right ramp.",
+        "machineSetup": [
+          "Confirm Stern Spider-Man code and edition before relying on exact values or timers.",
+          "Test Doc Ock, both orbits, ramps, post, and mode-start registration."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Place shot multipliers before multiball. Start a timed mode. Stack Doc Ock, Black Suit, and villain battles. Complete every villain twice, then collect multiplied Royale Jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge a lit W-E-B top lane for +5 Bonus X. Test both ramps, both orbits, the side ramp, Doc Ock, and the center post.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Top-lane skill shot: Adds 5x to Bonus X and doubles bumper value. On ball 3, it also doubles the final bonus after other multipliers.",
+              "The soft-plunge side-ramp skill shot gives more Venom value, but it is harder and less reliable."
+            ]
+          },
+          {
+            "text": "Clear all six flashing white major shots. Make the next major shot to store 2x there for the rest of the ball.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Shot 2x: Use the left orbit and spinner, side ramp, or Doc Ock. Do not use the right orbit. Save the right ramp for a late Battle Royale setup.",
+              "A 2x and 3x cannot combine on one shot. All shot multipliers end at the drain.",
+              "Mode and multiplier progress is locked out during multiball. Clear orbit and side-ramp arrows before a multiball blocks them."
+            ]
+          },
+          {
+            "text": "Shoot either orbit to start the flashing timed mode. Complete its objective before time ends or the ball drains.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Bonesaw or Electro: Make 100 switch hits. Use the spinner and bumpers.",
+              "Rescue MJ or Tell MJ: Make eight shots at the three moving lit arrows.",
+              "New Goblin or Jack O' Lantern: Make five alternating left-ramp and right-ramp shots.",
+              "Daily Bugle: Hit the right three-bank, then any major shot. Repeat this sequence three times.",
+              "The Amazing Spider-Man: Make all six major shots once. Make multiplied shots late because each shot raises the value."
+            ]
+          },
+          {
+            "text": "Complete the timed mode. Put the earned 3x on a different strong shot. When Battle Royale is one or two villain modes away, put 3x on the right ramp.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ],
+            "details": [
+              "Shot 3x: A completed timed mode lights one tripler. A timed-out mode does not.",
+              "Use 2x on the right ramp if the tripler setup is too risky."
+            ]
+          },
+          {
+            "text": "Shoot Doc Ock until the toy lowers and Multiball lights. Hit Doc Ock again to start the current Doc Ock multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Fusion Malfunction or Lend Me a Hand: Score five major-shot jackpots, then shoot Doc Ock for the Super. Each later Super needs one more jackpot.",
+              "Bank Bust or Ock's Oscorp Outing: Knock the held ball into Doc Ock. The hurry-up sets the jackpot. Collect one jackpot at every major shot, then the Super at Doc Ock.",
+              "Armed at the Dock or Battle on the Bridge: A four-ball multiball. One jackpot lights the Doc Ock Super. The Super equals the sum of jackpots scored.",
+              "Each multiball ends when one ball remains."
+            ]
+          },
+          {
+            "text": "During Doc Ock or Black Suit, start and finish the other villain battles. Use ball save for Sandman and Green Goblin.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ],
+            "details": [
+              "Sandman: Clear the center three-bank, hit Sandman until he rises, then shoot the exposed hole.",
+              "Green Goblin: Complete the right five-bank. Hit it once more to start. Then hit valid bank targets until the battle ends.",
+              "Venom: Repeat the side ramp to start. During the battle, shoot the left ramp or side ramp. The side ramp scores 2x Venom value. Spinner hits build that value.",
+              "Villain battles can run with multiball and continue after a drain. The first Venom hurry-up also completes when time ends."
+            ]
+          },
+          {
+            "text": "Complete all four villains twice. Start Battle Royale at either orbit. Hit each villain once, then shoot the multiplied right ramp for the Royale Jackpot.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ],
+            "details": [
+              "Battle Royale: A four-ball mini-wizard that does not stack with another multiball. A lit or running timed mode can play with it.",
+              "Each villain first scores one high-value jackpot. Other shots have one low-value jackpot.",
+              "The right-ramp Royale Jackpot scores the sum of jackpots since the prior Royale and relights them.",
+              "The first two Royale Jackpots add a ball and a short ball save. Repeat villain hits, then the right ramp."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Place shot multipliers before multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete each villain twice to light Battle Royale at either orbit."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Fast Doc Ock scoring: Use this when several white arrows, the side ramp, or the dangerous villain targets are not reliable."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Fast Doc Ock scoring",
+          "when": "Use this when several white arrows, the side ramp, or the dangerous villain targets are not reliable.",
+          "steps": [
+            {
+              "text": "Complete the available white arrows. Store 2x on Doc Ock if possible.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Backhand Doc Ock until its multiball starts.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Score major-shot jackpots. Stop regular jackpots when the Doc Ock Super is lit."
+            },
+            {
+              "text": "Collect the multiplied Super at Doc Ock.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "Direct Sandman hits and Green Goblin bank hits can return toward a drain.",
+          "text": "Use multiball ball save and controlled balls for these villain targets."
+        }
+      }
+    }
+  ]
+}

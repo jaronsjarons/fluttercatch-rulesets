@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "G3EBl",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Venom is a host-and-grid game. Mini-modes fill the current host's grid and light Mayhem locks. Start Mayhem after two locks for safer play, or wait for up to six balls. The expert route changes from Eddie to Flash, adds Carnage during ball save, and raises Playfield X.",
+        "steps": [
+          {
+            "text": "Choose Eddie Brock. Shoot the left loop for the skill shot. Select the award that spots one mini-mode.",
+            "modeNotes": [
+              "Host: Your selected character. A host changes the mini-mode shots, perks, and Mayhem Multiball setup.",
+              "Mini-mode: Each host has a blue, yellow, and white two-shot task. The first shot is not timed. The second shot is timed.",
+              "Eddie starts with two Mayhem locks ready and raises Mayhem scoring."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete Eddie's blue, yellow, and white mini-modes. Change the host to Flash Thompson. Use the right-loop award to spot a mini-mode when it is available.",
+            "modeNotes": [
+              "Change Host: Complete all three mini-modes for the current host. Then shoot the lit host-change shot and select the next host.",
+              "Flash can light a playfield multiplier at the left loop and has a high-scoring host ladder."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot each flashing green lock. After the second and later locks, hold the action button to continue single-ball play. Lock all six balls.",
+            "modeNotes": [
+              "Mayhem lock: A lit green major shot stores one ball for Mayhem Multiball.",
+              "Two locks can start Mayhem. Hold the action button during the prompt to defer the start. The maximum start uses six balls.",
+              "The third ball in the right canister adds 1x playfield scoring during Mayhem. The third ball in the left canister gives 2x experience."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Start six-ball Mayhem. In the opening ball save, hit the Carnage captive ball until Carnage is at Ravencroft. Shoot the center ramp to start Carnage Multiball.",
+            "modeNotes": [
+              "Mayhem Multiball, phase 1: Alternate the left ramp and scoop for quick jackpots. A miss or expired timer releases more balls. The phase can award up to nine jackpots.",
+              "Mayhem Multiball, phase 2: Major shots score red jackpots. Complete the set. Then shoot the scoop for the Super Jackpot and one boss credit.",
+              "The next Mayhem set needs each shot two times, then three times. Mayhem ends when one ball remains.",
+              "Carnage Multiball: Hit blue jackpot shots. Push the captive ball to the far side again. Then shoot the scoop for the Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During the stack, hold the action button for Spider-Sense. Release the button when the safest white shot is selected. Make that shot.",
+            "modeNotes": [
+              "Spider-Sense: A once-per-ball action-button award. The game cycles white major shots. Release the button to select a shot, then make that shot.",
+              "During Mayhem, Spider-Sense completes a jackpot set or lights the Super Jackpot. During Carnage or Toxin, it lights the Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the center ramp. Then hit the bell-tower target to raise playfield X. Use the multiplier on the multiball stack and Super Jackpots.",
+            "modeNotes": [
+              "Playfield X: Center-ramp progress lights the bell tower. The lit bell hit raises the playfield multiplier, up to 7x before other perks."
+            ],
+            "kinds": [
+              "multiplier",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Mayhem and Carnage, defeat one Doppelganger. Shoot the scoop to start Toxin. Complete the six yellow jackpots and collect the scoop Super Jackpot.",
+            "modeNotes": [
+              "Doppelganger: Defeat enough red Infected targets. Then shoot the flashing left loop on Pro before its timer ends.",
+              "Toxin, phase 1: A single-ball mode with six yellow jackpots. Carnage captive-ball hits give brief 2x or 3x scoring. A drain ends this phase.",
+              "Shoot the scoop for the first 25,000,000 Super Jackpot. The game adds a second ball. Each later Super adds 25,000,000. Toxin ends when one ball remains.",
+              "If Sleeper is available, the action button adds a ball. Save it until only one ball remains."
+            ],
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After Toxin, make Flash's Host Combo: right loop, scoop, left ramp, scoop. Shoot the scoop to start Host Hurry-Up. Repeat the combo shots.",
+            "modeNotes": [
+              "Host Hurry-Up: The first value is 20,000,000. Each successful shot adds the value of the prior shot. Playfield X multiplies the awards."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "hideSummaryTitle": true,
+        "fallback": {
+          "title": "Eddie multiball stack",
+          "when": "Use this plan when host-change shots or Flash's combo are not reliable.",
+          "steps": [
+            {
+              "text": "Stay with Eddie. Complete mini-modes and lock as many balls as the copy allows.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start Mayhem. Use its ball save to qualify and start Carnage.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use Spider-Sense to complete a Mayhem set or light a Carnage Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the center ramp until the bell tower lights, then hit the bell to raise playfield X. Use this route only when both returns are safe.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Flash-first Sleeper route",
+            "when": "Use this plan when you want reliable access to Sleeper and can complete Flash's mini-modes.",
+            "steps": [
+              {
+                "text": "Choose Flash as the first host. Complete his three mini-modes.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Defeat each group of ten Infected. Continue until Sleeper is offered."
+              },
+              {
+                "text": "Select Sleeper. Save its action-button add-a-ball for Toxin or another valuable multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Klyntar Multiball",
+          "steps": [
+            {
+              "text": "Defeat Knull. Start Rampage and Blood Lust.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start Toxin Team-Up and Scream video mode.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete one Host Hurry-Up and start Bell Tower Frenzy. These seven objectives light Klyntar at the center ramp.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the lit center ramp to start Klyntar Multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Loop pass",
+            "instruction": "Use a loop pass after the plunge to reach the flipper with the safer left-loop shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=GTjKuccEW88&t=71s",
+            "techniqueSlug": "loop-pass"
+          },
+          {
+            "name": "Left-loop recovery",
+            "instruction": "Nudge the loop return away from the sling. Then live-catch the ball on the right flipper when the copy permits it.",
+            "sourceUrl": "https://www.youtube.com/watch?v=GTjKuccEW88&t=360s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The far-left and far-right Infected-target rubbers are directly above the outlanes.",
+            "response": "Nudge before the rebound reaches the outlane. Avoid direct target hits when a safe ricochet can make progress.",
+            "sourceUrl": "https://www.kineticist.com/news/venom-pinball-tutorial"
+          },
+          {
+            "issue": "A canister can release stored balls before the incoming ball reaches the lock.",
+            "response": "Expect an early release. Keep both flippers ready when you shoot a lit lock.",
+            "sourceUrl": "https://www.kineticist.com/news/venom-pinball-tutorial"
+          },
+          {
+            "issue": "The Carnage captive ball can reject toward the center drain.",
+            "response": "Make the required hits during Mayhem ball save whenever possible.",
+            "sourceUrl": "https://www.kineticist.com/news/venom-pinball-tutorial"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Start Eddie."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Defeat Knull."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Eddie multiball stack: Use this plan when host-change shots or Flash's combo are not reliable."
+          }
+        ],
+        "checkBeforePlay": [
+          "Check Host selection, Competition Mode, Mayhem start prompts, Extra Ball conversion, timers, and edition-specific lock behavior.",
+          "Test host selection, bell tower, locks, scoop, ramps, and action button."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left loop",
+            "label": "Left loop",
+            "description": "Loop used for skill shots and host progress.",
+            "precision": "unverified",
+            "context": "Loop used for skill shots and host progress."
+          },
+          {
+            "term": "center ramp",
+            "label": "Center ramp",
+            "description": "Ramp used for character and multiball progress.",
+            "precision": "unverified",
+            "context": "Ramp used for character and multiball progress."
+          },
+          {
+            "term": "bell tower",
+            "label": "Bell tower",
+            "description": "Center mechanism used for locks and battles.",
+            "precision": "unverified",
+            "context": "Center mechanism used for locks and battles."
+          }
+        ],
+        "overview": "Venom uses Host mini-modes to light Mayhem locks and fill a grid whose completed boxes award lasting perks. Choose Eddie Brock, shoot the left-loop Spot a Mini-Mode skill shot, complete his blue, yellow, and white two-shot mini-modes, then shoot the lit left ramp to change to Flash Thompson and complete his set. Shoot the flashing green locks; after the second and each later lock, hold the action button until all six balls are locked and Mayhem starts. During the opening ball save, hit the Carnage captive ball until Carnage reaches Ravencroft, then shoot the lit center ramp to start Carnage Multiball. Hold and release the action button to select a white Spider-Sense shot, then repeat the center ramp and hit the lit bell-tower target to raise playfield scoring during the stack.",
+        "simpleOverview": "Venom begins with a Host choice, and each Host has blue, yellow, and white two-shot mini-modes; the first shot is untimed and the second is timed. Choose Eddie Brock before plunging and shoot the left-loop Spot a Mini-Mode skill shot. Complete Eddie's three mini-modes, shoot the lit left ramp to change to Flash Thompson, then use the right-loop Spot a Mini-Mode award and complete Flash's set. Shoot the flashing green locks; after the second and each later lock, hold the action button to defer Mayhem until all six balls are locked. During Mayhem's opening ball save, hit the Carnage captive ball until Carnage reaches Ravencroft, then shoot the lit center ramp to start Carnage Multiball.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At the UK Open 2025, Josh Iles chose Eddie Brock, completed his mini-mode column, changed hosts for another multiplier, then brought Carnage into a long Mayhem Multiball."
+          ]
+        },
+        "machineSetup": [
+          "Check Host selection, Competition Mode, Mayhem start prompts, Extra Ball conversion, timers, and edition-specific lock behavior.",
+          "Test host selection, bell tower, locks, scoop, ramps, and action button."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose Eddie Brock, complete same-color two-shot mini-modes to fill his grid and light Mayhem locks, then start Mayhem after two locks for safety or wait for more balls and stronger scoring. Use the center ramp and bell-tower target to raise playfield X.",
+        "integrateSummaryWithPlan": false,
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Fill the grid",
+            "text": "Choose Eddie Brock. He starts with two Mayhem locks ready and boosts Mayhem scoring. Each host fills one column of grid lights.",
+            "details": [
+              "Shoot a colored arrow, then quickly shoot the blinking arrow of the same color to fill a light.",
+              "Complete yellow, blue, and white to fill the column and light Change Host at the left ramp."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start Mayhem",
+            "text": "Complete a mini-mode to light each Mayhem lock, then shoot the flashing green lock. After two locks, accept the Mayhem prompt to reduce single-ball risk, or hold the action button and wait for up to six balls plus canister bonuses.",
+            "details": [
+              "During Mayhem, alternate the left ramp and scoop. After the stored balls release, shoot the lit major shots, then the scoop for the Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Raise Playfield X",
+            "text": "Shoot the center ramp, then hit the lit bell-tower target to raise Playfield X. Use it during Mayhem.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Spot mini-modes",
+            "summary": "The left-loop skill shot and right-loop bonus shot can each spot one mini-mode."
+          },
+          {
+            "name": "Choose Flash Thompson",
+            "summary": "Choose Flash before plunging when his mini-mode shots feel safer."
+          },
+          {
+            "name": "Six-ball bonuses",
+            "summary": "The third ball in the right canister adds +1x playfield scoring. The third in the left adds 2x experience."
+          }
+        ]
+      }
+    }
+  ]
+}

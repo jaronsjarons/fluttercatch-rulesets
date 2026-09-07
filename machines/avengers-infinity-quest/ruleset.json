@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "Gj66P",
+  "title": "Avengers: Infinity Quest",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Genie Avengers tournament strategy",
+      "url": "https://pinball-genie.com/machines/avengers"
+    },
+    "supportingSources": [
+      {
+        "label": "Raymond Davidson Avengers tutorial",
+        "url": "https://www.youtube.com/watch?v=wCH-Q-zDkK4"
+      },
+      {
+        "label": "Tilt Forums Avengers rulesheet",
+        "url": "https://tiltforums.com/t/avengers-infinity-quest-rulesheet/6740"
+      },
+      {
+        "label": "Current pinball code index",
+        "url": "https://tiltforums.com/t/list-of-games-with-their-current-code-number-wiki/3615"
+      },
+      {
+        "label": "Keith Elwin at IFPA 18 World Pinball Championship — Quarterfinals",
+        "url": "https://pinballvideos.com/v/5138/4792"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Bank two Portal Locks, leave Thor one hit from starting, then begin Reality Gem Quest and start Thor Multiball inside it.",
+      "steps": [
+        {
+          "text": "Use a medium plunge. Let the ball crest the upper loop and roll backward through it.",
+          "modeNotes": [
+            "Secret skill shot: It scores at least 3M, gives a 10-second ball save, and lights one Portal Lock.",
+            "Portal Lock: Collect one for 2x quest scoring. Collect two for 3x while the extra balls remain in play."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot the disc or Premium portal to collect the lit Portal Lock.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Hit the Thor captive ball twice. Stop. The third hit will start the first Thor Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Make four combos to light the second Portal Lock. Then collect it at the disc or portal.",
+          "modeNotes": [
+            "Combo: Make a major shot. Then make a white-flashing major shot before the combo timer ends.",
+            "The Black Widow ramp to Captain Marvel shot is the primary early combo loop."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Spin the disc to spell STRANGE. Shoot the right ramp or portal. Select Reality Gem Quest.",
+          "modeNotes": [
+            "Reality Gem Quest: Disc spins light the major shots yellow. Make eight yellow shots to win. The pop lane and upper loop score 2x.",
+            "The quest has a falling health bar and ends on a drain. Spin the disc again when yellow shots or multiplier letters go dark."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After the quest starts, make the third captive-ball hit. This starts two-ball Thor Multiball inside the quest.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Finish the eight yellow shots while at least three balls remain. This keeps 3x active and starts Victory Laps.",
+          "modeNotes": [
+            "If one ball drains, the Portal multiplier drops to 2x while at least two balls remain.",
+            "Victory Laps: Disc spins build and relight every major shot. Major shots collect the value. The pop lane and upper loop score 2x."
+          ],
+          "kinds": [
+            "mode",
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "During Thor, collect one jackpot and hit the captive ball. Then collect two, three, and four jackpots before each next captive-ball hit.",
+          "modeNotes": [
+            "Thor Multiball: The four captive-ball attacks spell THOR. Then the Tower lights for a 20x Super Jackpot.",
+            "Outside a Portal-locked quest, spell STRANGE during Thor and shoot the Sanctum target to add one ball.",
+            "Thor's normal add-a-ball is not available while Portal multiball is active."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After the quest, shoot the right ramp to collect the Reality Gem. Then shoot a flashing Gem shot to place it.",
+          "modeNotes": [
+            "Placed Reality Gem: It gives that shot 2x. A level-one Avenger gives 3x. A level-two Avenger gives 4x."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "One Portal Lock and Thor",
+        "when": "Use this plan when the secret plunge or second Portal Lock is not repeatable.",
+        "steps": [
+          {
+            "text": "Make four combos to light one Portal Lock. Collect it at the disc or portal.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the captive ball twice to ready Thor.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Spell STRANGE. Start Reality Quest, or choose Time Quest when both ramps and the moving drops are safer.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the captive ball once to start Thor inside the quest. Quest scoring is 2x while both balls remain.",
+            "kinds": [
+              "mode",
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the quest before one ball drains to start Victory Laps.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Iron Man quest stack",
+          "when": "Use this plan when the return lanes and Tower are safer than the captive ball.",
+          "steps": [
+            {
+              "text": "Spell I-R-O-N through the return lanes. Disc spins move the lit letters. Flipper buttons do not move them.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Lock two balls at the Tower. Bank one or two Portal Locks and start a Gem Quest.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take the third Tower lock to start Iron Man Multiball inside the quest.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Collect each jackpot pair, then shoot the Tower within 10 seconds for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "The pairs are ramps, orbits, pop lane plus Captain Marvel, then Tower plus upper loop.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Outside Portal multiball, complete I-R-O-N again and shoot the Sanctum target to add one ball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Soul Gem cash-out",
+          "when": "Use this plan after the first Avengers Assemble round is close or complete.",
+          "steps": [
+            {
+              "text": "Collect all six Avengers. Shoot the right ramp to start Soul Gem Quest.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "In Normal Mode, make eight green shots in order before the flip meter reaches zero.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "The order is right orbit, left ramp, right ramp, left orbit, captive ball, drops, Captain Marvel, Tower.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Place the won Soul Gem on a leveled Avenger.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "After the next Gem Quest, collect the Soul Jackpot at that shot. It returns 50%, 75%, or 150% of the quest score.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Battle Thanos and Trophy Mania",
+        "steps": [
+          {
+            "text": "Attempt all six Gem Quests. Play Soul Gem Quest, Black Order Multiball, and Black Order Battle Royale.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "After those prerequisites, shoot the lit right ramp to start Battle Thanos.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Trophy Mania is a separate goal. Collect 24 of the 32 trophies, then shoot the lit right ramp to start it.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Portal Lock secret plunge",
+          "instruction": "Use a medium plunge. The ball must crest the upper loop, stop, and roll backward through the loop.",
+          "sourceUrl": "https://www.youtube.com/watch?v=wCH-Q-zDkK4&t=368s"
+        },
+        {
+          "name": "Shatz pass",
+          "instruction": "Use an alley pass when it safely reaches a lit opposite return lane. Flipper lane change does not move I-R-O-N.",
+          "sourceUrl": "https://tiltforums.com/t/avengers-infinity-quest-rulesheet/6740",
+          "techniqueSlug": "shatz-pass"
+        },
+        {
+          "name": "Free held flipper in Soul Gem",
+          "instruction": "Raise the needed flipper before Soul Gem Quest begins. Keeping it held does not spend a flip.",
+          "sourceUrl": "https://www.youtube.com/watch?v=wCH-Q-zDkK4&t=1387s"
+        },
+        {
+          "name": "Upper-flipper pass in Soul Gem",
+          "instruction": "Keep the upper flipper raised and let the ball fall to the lower flipper. The held flipper does not spend a flip.",
+          "sourceUrl": "https://www.youtube.com/watch?v=wCH-Q-zDkK4&t=1407s"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Intentionally qualifying Tower locks and Hawkeye Challenge can be risky in single-ball play.",
+          "response": "Take a Tower lock when it is already lit. Use the easier Thor route when Tower progress is not ready.",
+          "sourceUrl": "https://tiltforums.com/t/avengers-infinity-quest-rulesheet/6740"
+        },
+        {
+          "issue": "The lower drop targets are safer during multiball than during controlled single-ball play.",
+          "response": "Save Super Mode and grid-target work for Thor or Iron Man when possible.",
+          "sourceUrl": "https://www.youtube.com/watch?v=wCH-Q-zDkK4&t=1630s"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Take the secret Portal Lock skill shot."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Attempt all six Gem Quests."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "One Portal Lock and Thor: Use this plan when the secret plunge or second Portal Lock is not repeatable."
+        }
+      ],
+      "checkBeforePlay": [
+        "Check whether Competition Mode is enabled and whether Extra Balls convert to points."
+      ],
+      "overview": "Avengers: Infinity Quest builds scores by winning Gem Quests and placing their Gems, while Portal Locks multiply the next Quest as long as the extra balls remain in play. Spin the disc to spell S-T-R-A-N-G-E, shoot the right ramp (Pro) or portal (Premium/LE), choose Reality Gem Quest, and confirm it with the Action Button or both flippers. Before starting Reality, collect two Portal Locks and hit the Thor captive ball twice; after the Quest begins, make the third captive-ball hit to start Thor Multiball. Complete eight yellow shots while all three balls remain to keep 3x scoring and light Victory Laps. The other five Gem Quests and three Black Order mini-wizard modes build toward Battle Thanos.",
+      "simpleOverview": "Spelling S-T-R-A-N-G-E qualifies a Gem Quest in Avengers: Infinity Quest, and Portal Locks can multiply it while their extra balls remain in play. Shoot the right ramp (Pro) or portal (Premium/LE), choose Reality with the flippers, and confirm it with the Action Button or both flippers. Before starting the Quest, collect one or two Portal Locks and hit the Thor captive ball twice; after Reality begins, hit it a third time to start Thor Multiball inside the Quest.",
+      "machineSetup": [
+        "Check whether Competition Mode is enabled and whether Extra Balls convert to points."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

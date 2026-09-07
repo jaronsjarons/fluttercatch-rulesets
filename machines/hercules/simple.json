@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "G4NOx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete all three top lanes, use full Path of Victory orbits to collect Double Bonus and useful awards, unlock each Base Bonus threshold, then switch to the raised left spinner.",
+        "quickInfo": [
+          {
+            "name": "Path of Victory",
+            "summary": "A complete right-to-left orbit must operate both rollovers without another switch and advances every active award path."
+          },
+          {
+            "name": "Base Bonus",
+            "summary": "Bonus stops at each 10,000 threshold until its matching flashing pad is hit."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Complete three full Paths of Victory to light the three yellow Double Bonus lamps, then complete one more full Path for 2x end-of-ball bonus on that ball."
+          },
+          {
+            "name": "Bonus memory",
+            "summary": "Base Bonus carries between balls through 49,000, while Double Bonus resets when the ball drains."
+          },
+          {
+            "name": "Spinner reset",
+            "summary": "Top-lane sets raise the left spinner to 1,000, 2,000, then 3,000; collecting another Path award resets it to 100."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge and watch the oversized cue ball's spin before the first flipper shot."
+          },
+          {
+            "text": "Complete all three top lanes to activate the yellow, orange, and red award paths."
+          },
+          {
+            "text": "Transfer to the left flipper and shoot the complete right-to-left Path of Victory.",
+            "modeNotes": [
+              "Path of Victory: The ball must operate both orbit rollovers without touching another switch; a weak shot that falls into the bumpers does not count."
+            ]
+          },
+          {
+            "text": "Repeat the Path until all three yellow lights under Double Bonus are lit, then make one more full Path to earn Double Bonus."
+          },
+          {
+            "text": "Continue toward Extra Ball or Special only when the tournament setting gives those awards useful value."
+          },
+          {
+            "text": "Build Base Bonus with top lanes, pad targets, and return lanes. Hit the flashing pad at each 10,000 threshold.",
+            "modeNotes": [
+              "Base Bonus: A flashing threshold pad scores the current stored value and unlocks more progress without removing the bonus."
+            ]
+          },
+          {
+            "text": "Protect the prepared 2x end-of-ball bonus, which can pay up to 98,000."
+          },
+          {
+            "text": "After useful Path awards are complete, finish top-lane sets and shoot the left spinner at 1,000 or more per spin."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Base Bonus and Double Bonus",
+          "when": "Recovery pivot: Use this when the full Path of Victory does not validate reliably.",
+          "steps": [
+            {
+              "text": "Complete the left yellow top lane."
+            },
+            {
+              "text": "Use successful full Path shots only to advance the yellow path."
+            },
+            {
+              "text": "Build Base Bonus with safer lanes and pad targets."
+            },
+            {
+              "text": "Hit each flashing threshold pad before adding more bonus."
+            },
+            {
+              "text": "If the yellow path becomes ready, attempt one full Path and collect Double Bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: High-value spinner",
+            "when": "When trailing, use this higher-ceiling route: use this after useful Path awards are complete.",
+            "steps": [
+              {
+                "text": "Complete one top-lane set for a 1,000 spinner."
+              },
+              {
+                "text": "Complete more sets for 2,000 and 3,000 per spin."
+              },
+              {
+                "text": "Shoot the left spinner from the right flipper."
+              },
+              {
+                "text": "Do not collect another Path award because it resets the spinner to 100."
+              }
+            ]
+          },
+          {
+            "title": "Extra Ball path",
+            "when": "Use this only when Extra Balls are enabled or compensated.",
+            "steps": [
+              {
+                "text": "Complete the center top lane to activate the orange path."
+              },
+              {
+                "text": "Build five orange steps with the lane and full Path shots."
+              },
+              {
+                "text": "Use a full Path for the final step, then collect either lit inlane."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum bonus and a 3,000 spinner",
+          "steps": [
+            {
+              "text": "Collect Double Bonus from the yellow path."
+            },
+            {
+              "text": "Unlock Base Bonus at 10,000, 20,000, 30,000, and 40,000."
+            },
+            {
+              "text": "Continue to 49,000 Base Bonus."
+            },
+            {
+              "text": "Complete three top-lane sets for a 3,000 spinner."
+            },
+            {
+              "text": "Shoot the spinner and protect up to 98,000 drain bonus."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Path of Victory",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Base Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top lanes",
+            "label": "Three top lanes",
+            "description": "Left-side lanes that activate and advance the yellow Double Bonus, orange Extra Ball, and red Special paths.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Path of Victory",
+            "label": "Path of Victory orbit",
+            "description": "Complete right-to-left orbit whose two rollovers must register without an intervening switch hit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "flashing pad",
+            "label": "Base Bonus threshold pads",
+            "description": "Four large standups that unlock progress past 10,000, 20,000, 30,000, and 40,000 Base Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Spinner raised by completed top-lane sets and reset to 100 after another Path award is collected.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Loop pass",
+            "instruction": "Loop pass the slow Path return into the right inlane only after testing how the oversized flipper sags.",
+            "techniqueSlug": "loop-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4NOx-MyNYZ"
+          },
+          {
+            "name": "Shatz pass",
+            "instruction": "Shatz pass with low force when the oversized flippers and long inlane accept a controlled transfer.",
+            "techniqueSlug": "shatz-pass",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4NOx-MyNYZ"
+          },
+          {
+            "name": "Full Path validation",
+            "instruction": "Shoot a complete right-to-left orbit. The shot must operate both orbit rollovers without another switch hit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4NOx-MyNYZ"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The cue ball moves slowly but carries strong spin.",
+            "response": "Wait until its line is clear before the flipper stroke.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/hercules"
+          },
+          {
+            "issue": "A weak Path shot can fall into the bumpers.",
+            "response": "Keep both flippers ready and stop forcing the orbit if this feed repeats.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4NOx-MyNYZ"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ball count and whether Extra Ball and Special award points, compensation, or no tournament value.",
+          "Test both oversized flippers, full Path validation, loop-pass return, top lanes, four Base Bonus pads, left spinner, bumpers, and tilt sensitivity.",
+          "Verify that Base Bonus carries, Double Bonus resets at drain, and collecting a Path award resets the spinner to 100."
+        ],
+        "simpleOverview": "Hercules uses three top lanes to activate three award paths, then full Path of Victory orbits collect their lamps. Complete the yellow path for Double Bonus, build Base Bonus with lanes and targets, and switch to the left spinner after its value rises.",
+        "overview": "Hercules uses three top lanes to activate three award paths, then full Path of Victory orbits collect their lamps. Complete three full yellow Paths and one more for Double Bonus, hit the flashing pad at each 10,000 threshold, and reach the useful bonus total. After the path awards are complete, use repeated top-lane sets to raise the left spinner and protect the doubled drain bonus.",
+        "machineSetup": [
+          "Confirm ball count and whether Extra Ball and Special award points, compensation, or no tournament value.",
+          "Test both oversized flippers, full Path validation, loop-pass return, top lanes, four Base Bonus pads, left spinner, bumpers, and tilt sensitivity.",
+          "Verify that Base Bonus carries, Double Bonus resets at drain, and collecting a Path award resets the spinner to 100."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Complete all three top lanes, use full Path of Victory orbits to collect Double Bonus and useful awards, unlock each Base Bonus threshold, then switch to the raised left spinner.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge and watch the oversized cue ball's spin before the first flipper shot."
+          },
+          {
+            "text": "Complete all three top lanes to activate the yellow, orange, and red award paths."
+          },
+          {
+            "text": "Transfer to the left flipper and shoot the complete right-to-left Path of Victory.",
+            "details": [
+              "Path of Victory: The ball must operate both orbit rollovers without touching another switch; a weak shot that falls into the bumpers does not count."
+            ]
+          },
+          {
+            "text": "Repeat the Path until all three yellow lights under Double Bonus are lit, then make one more full Path to earn Double Bonus."
+          },
+          {
+            "text": "Continue toward Extra Ball or Special only when the tournament setting gives those awards useful value."
+          },
+          {
+            "text": "Build Base Bonus with top lanes, pad targets, and return lanes. Hit the flashing pad at each 10,000 threshold.",
+            "details": [
+              "Base Bonus: A flashing threshold pad scores the current stored value and unlocks more progress without removing the bonus."
+            ]
+          },
+          {
+            "text": "Protect the prepared 2x end-of-ball bonus, which can pay up to 98,000."
+          },
+          {
+            "text": "After useful Path awards are complete, finish top-lane sets and shoot the left spinner at 1,000 or more per spin."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Path of Victory",
+            "summary": "A complete right-to-left orbit must operate both rollovers without another switch and advances every active award path."
+          },
+          {
+            "name": "Base Bonus",
+            "summary": "Bonus stops at each 10,000 threshold until its matching flashing pad is hit."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Complete three full Paths of Victory to light the three yellow Double Bonus lamps, then complete one more full Path for 2x end-of-ball bonus on that ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Base Bonus and Double Bonus",
+          "when": "Recovery pivot: Use this when the full Path of Victory does not validate reliably.",
+          "steps": [
+            {
+              "text": "Complete the left yellow top lane."
+            },
+            {
+              "text": "Use successful full Path shots only to advance the yellow path."
+            },
+            {
+              "text": "Build Base Bonus with safer lanes and pad targets."
+            },
+            {
+              "text": "Hit each flashing threshold pad before adding more bonus."
+            },
+            {
+              "text": "If the yellow path becomes ready, attempt one full Path and collect Double Bonus."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

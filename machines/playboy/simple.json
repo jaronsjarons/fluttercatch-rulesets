@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "id": "GrkOB",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot up the right orbit from the left flipper. Shoot the Grotto chute from the right flipper. Use the top lanes to collect Keys 1 through 4, then hit the center Key 5 target. Repeat this route to build 5x bonus and at least 20,000 Super Bonus.",
+        "steps": [
+          {
+            "text": "Shoot the right orbit from the left flipper. Let the ball return through the top lanes.",
+            "modeNotes": [
+              "Right orbit: It scores 500, or 5,000 when lit, and advances bonus. Many playfield switches change its lit state."
+            ]
+          },
+          {
+            "text": "Use the top lanes to collect Keys 1 through 4.",
+            "modeNotes": [
+              "Key: A lit Key scores 500 and advances bonus once. Keys 1 through 4 are the top lanes. Key 5 is the center standup.",
+              "Key-pair setting: The operator can tie Keys 1 and 4 together. The operator can also tie Keys 2 and 3 together."
+            ]
+          },
+          {
+            "text": "When Keys 1 through 4 are complete, shoot the center Key 5 standup.",
+            "modeNotes": [
+              "Key set: The first set awards 2x bonus. The second set awards 3x. The third set awards 5x. Later sets award Special.",
+              "Carryover: Bonus X always carries between balls. Partial Key progress can reset or carry by operator setting.",
+              "Read whether partial Key progress carries and whether Keys 1/4 or Keys 2/3 are paired. Bonus X always carries."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the narrow Grotto chute from the right flipper.",
+            "modeNotes": [
+              "Grotto: Each Key lights its matching Grotto number for the current ball. The chute scores 1,000 and one bonus advance for each lit number.",
+              "Full Grotto: All five lit numbers add 25,000. A full collect is 30,000 and five bonus advances.",
+              "Return: The Grotto kicks the ball upward. Use the return to collect another top-lane Key."
+            ]
+          },
+          {
+            "text": "Hit lit Playmate targets, shoot the right orbit, and collect the Grotto until base bonus reaches at least 20,000 on ball one. Then repeat the Key and Grotto loop toward 39,000 and 5x.",
+            "modeNotes": [
+              "Super Bonus: At 20,000, the next ball starts with a 20,000 bonus floor instead of 1,000. This hold cannot be disabled.",
+              "Maximum bonus: Base bonus stops at 39,000. The maximum drain bonus is 195,000 at 5x."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Complete a nearly finished bank",
+          "when": "Recovery pivot: Use this plan when the orbit or Grotto does not feed safely.",
+          "steps": [
+            {
+              "text": "Shoot a target bank only when one target, or two adjacent targets, remain."
+            },
+            {
+              "text": "Complete the five drop targets once to light the outlanes for 25,000. A second bank awards Special."
+            },
+            {
+              "text": "Complete the five Playmate standups once to light the star rollover for Extra Ball. A second set lights the star for Special."
+            },
+            {
+              "text": "Stop shooting the bank after the collect. Return to the Key and bonus route."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Secure the 20,000 Super Bonus floor",
+            "when": "When trailing, use this higher-ceiling route: use this route when the next Key set is too far away.",
+            "steps": [
+              {
+                "text": "Shoot any lit Playmate standup for one bonus advance."
+              },
+              {
+                "text": "Shoot the right orbit for one bonus advance."
+              },
+              {
+                "text": "Use a partial Grotto collect for one bonus advance per lit number."
+              },
+              {
+                "text": "Stop when base bonus reaches 20,000. The next ball will keep that floor."
+              }
+            ]
+          },
+          {
+            "title": "Outlane value",
+            "when": "Use this only when a drop bank is already nearly complete.",
+            "steps": [
+              {
+                "text": "Finish the drop bank."
+              },
+              {
+                "text": "The outlanes light for 25,000. A setting can light both outlanes or alternate one lit side."
+              },
+              {
+                "text": "Do not aim for an outlane. The award only reduces the cost of an uncontrolled drain."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeat the Key and Grotto loop",
+          "steps": [
+            {
+              "text": "Complete Key sets to reach 5x, and repeat the right orbit and full Grotto collect until base bonus reaches 39,000."
+            },
+            {
+              "text": "Prioritize ball one because Bonus X and the 20,000 Super Bonus floor carry to later balls.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Key",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Key set",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Grotto",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Full Grotto",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2x bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x bonus",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Super Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top lanes",
+            "context": "Shoot the right orbit from the left flipper. Let the ball return through the top lanes.",
+            "label": "Top Key lanes",
+            "description": "The upper lanes collect Keys 1 through 4.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Grotto chute",
+            "context": "Shoot the narrow Grotto chute from the right flipper.",
+            "label": "Grotto chute",
+            "description": "The narrow upper-left chute collects the lit Grotto numbers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Key 5 standup",
+            "context": "When Keys 1 through 4 are complete, shoot the center Key 5 standup.",
+            "label": "Center Key 5",
+            "description": "The center standup completes the five-Key set.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right orbit",
+            "context": "Shoot the right orbit from the left flipper. Let the ball return through the top lanes.",
+            "label": "Right orbit",
+            "description": "The upper-right orbit returns the ball through the top lanes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Playmate standups",
+            "context": "Complete the five Playmate standups once to light the star rollover for Extra Ball. A second set lights the star for Special.",
+            "label": "Playmate targets",
+            "description": "The left-middle standup bank advances bonus when lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop targets",
+            "context": "Complete the five drop targets once to light the outlanes for 25,000. A second bank awards Special.",
+            "label": "Drop targets",
+            "description": "The right-middle drop bank lights outlane value after completion.",
+            "precision": "unverified"
+          },
+          {
+            "term": "star rollover",
+            "context": "Complete the five Playmate standups once to light the star rollover for Extra Ball. A second set lights the star for Special.",
+            "label": "Star rollover",
+            "description": "The left-center rollover collects a lit Extra Ball or Special.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Right-orbit up-and-down",
+            "instruction": "From the left flipper, shoot the right orbit. The ball returns through the top lanes and gives another Key chance.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrkOB-MJVvl"
+          },
+          {
+            "name": "Grotto gate from the right flipper",
+            "instruction": "From the right flipper, shoot the narrow gate left of the left bumper. A clean entry collects the Grotto and kicks the ball back to the top.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrkOB-MJVvl"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Most target shots rebound into the bumpers and can lose control.",
+            "response": "Use the right orbit and Grotto route. Shoot a bank only when one target, or two adjacent targets, remain.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrkOB-MJVvl"
+          },
+          {
+            "issue": "The top-lane return is the risky part of the safe route.",
+            "response": "Watch the first return. If it rejects toward an outlane, stop the up-and-down route and secure the 20,000 Super Bonus floor.",
+            "sourceUrl": "https://www.kineticist.com/pinball-machines/playboy-1978"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Bally Playboy model 1116-E from 1978, not the later Data East or Stern games.",
+          "Read whether partial Key progress carries and whether Keys 1/4 or Keys 2/3 are paired. Bonus X always carries.",
+          "Confirm whether the drop-bank outlane value lights both sides or alternates and whether its Special has tournament value."
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Shoot up the right orbit from the left flipper."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete Key sets to reach 5x, and repeat the right orbit and full Grotto collect until base bonus reaches 39,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Complete a nearly finished bank: Use this plan when the orbit or Grotto does not feed safely."
+          }
+        ],
+        "simpleOverview": "Playboy is an orbit, Grotto, and key-collection bonus loop. Shoot the right orbit from the left flipper, collect Keys 1 through 4 in the top lanes, hit the center Key 5 standup, then shoot the narrow Grotto chute from the right flipper.",
+        "overview": "The right orbit in Playboy returns the ball through Keys 1 through 4, the center standup collects Key 5, and the Grotto chute cashes in the lit Key values. Alternate the right orbit and Grotto from opposite flippers, finish Key 5 after the four top keys, and build toward 5x with at least 20,000 Super Bonus on ball one because that floor carries to later balls.",
+        "machineSetup": [
+          "Confirm Bally Playboy model 1116-E from 1978, not the later Data East or Stern games.",
+          "Confirm whether the drop-bank outlane value lights both sides or alternates and whether its Special has tournament value."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Shoot up the right orbit from the left flipper. Shoot the Grotto chute from the right flipper. Use the top lanes to collect Keys 1 through 4, then hit the center Key 5 target. Repeat this route to build 5x bonus and at least 20,000 Super Bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the right orbit from the left flipper. Let the ball return through the top lanes.",
+            "details": [
+              "Right orbit: It scores 500, or 5,000 when lit, and advances bonus. Many playfield switches change its lit state."
+            ]
+          },
+          {
+            "text": "Use the top lanes to collect Keys 1 through 4.",
+            "details": [
+              "Key: A lit Key scores 500 and advances bonus once. Keys 1 through 4 are the top lanes. Key 5 is the center standup.",
+              "Key-pair setting: The operator can tie Keys 1 and 4 together. The operator can also tie Keys 2 and 3 together."
+            ]
+          },
+          {
+            "text": "When Keys 1 through 4 are complete, shoot the center Key 5 standup.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Key set: The first set awards 2x bonus. The second set awards 3x. The third set awards 5x. Later sets award Special.",
+              "Carryover: Bonus X always carries between balls. Partial Key progress can reset or carry by operator setting.",
+              "Read whether partial Key progress carries and whether Keys 1/4 or Keys 2/3 are paired. Bonus X always carries."
+            ]
+          },
+          {
+            "text": "Shoot the narrow Grotto chute from the right flipper.",
+            "details": [
+              "Grotto: Each Key lights its matching Grotto number for the current ball. The chute scores 1,000 and one bonus advance for each lit number.",
+              "Full Grotto: All five lit numbers add 25,000. A full collect is 30,000 and five bonus advances.",
+              "Return: The Grotto kicks the ball upward. Use the return to collect another top-lane Key."
+            ]
+          },
+          {
+            "text": "Hit lit Playmate targets, shoot the right orbit, and collect the Grotto until base bonus reaches at least 20,000 on ball one. Then repeat the Key and Grotto loop toward 39,000 and 5x.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Super Bonus: At 20,000, the next ball starts with a 20,000 bonus floor instead of 1,000. This hold cannot be disabled.",
+              "Maximum bonus: Base bonus stops at 39,000. The maximum drain bonus is 195,000 at 5x."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Shoot up the right orbit from the left flipper."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete Key sets to reach 5x, and repeat the right orbit and full Grotto collect until base bonus reaches 39,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Complete a nearly finished bank: Use this plan when the orbit or Grotto does not feed safely."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Complete a nearly finished bank",
+          "when": "Recovery pivot: Use this plan when the orbit or Grotto does not feed safely.",
+          "steps": [
+            {
+              "text": "Shoot a target bank only when one target, or two adjacent targets, remain."
+            },
+            {
+              "text": "Complete the five drop targets once to light the outlanes for 25,000. A second bank awards Special."
+            },
+            {
+              "text": "Complete the five Playmate standups once to light the star rollover for Extra Ball. A second set lights the star for Special."
+            },
+            {
+              "text": "Stop shooting the bank after the collect. Return to the Key and bonus route."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The top-lane return is the risky part of the safe route.",
+          "text": "Watch the first return. If it rejects toward an outlane, stop the up-and-down route and secure the 20,000 Super Bonus floor."
+        }
+      }
+    }
+  ]
+}

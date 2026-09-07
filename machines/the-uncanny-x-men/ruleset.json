@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "id": "G7ZEz",
+  "title": "The Uncanny X-Men",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist The Uncanny X-Men tournament guide",
+      "url": "https://www.kineticist.com/news/uncanny-xmen-tutorial"
+    },
+    "supportingSources": [
+      {
+        "label": "Current 0.98 Tilt rulesheet",
+        "url": "https://tiltforums.com/t/the-uncanny-x-men-rulesheet/9100"
+      },
+      {
+        "label": "Current Pinball Rulesheets guide",
+        "url": "https://pinballrulesheets.com/stern/the-uncanny-x-men-rulesheet.html"
+      },
+      {
+        "label": "Pinball Company launch strategy",
+        "url": "https://www.youtube.com/watch?v=_Xr9lfPoG4g"
+      },
+      {
+        "label": "2025 UK Open semifinal",
+        "url": "https://pinballvideos.com/v/5404/28668"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Take the Uptown skill shot, prepare Sentinel Multiball, then choose Sentinel Facility Raid; its moving shots, Escape Nimrod, and Sentinel Multiball build the 35 defeats that light Berserker Multiball.",
+      "steps": [
+        {
+          "text": "Take the Uptown ramp skill shot, then hit the Giant Sentinel until the first Sentinel Multiball is one or two clean hits from starting.",
+          "modeNotes": [
+            "Cerebro skill shot: The Uptown ramp adds one Cerebro advance toward To Me, My X-Men Multiball.",
+            "Sentinel Multiball: The first start needs six direct Sentinel hits. Prepare it during the opening ball save instead of starting it immediately."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Make the required white major shots, then shoot a blue-strobing Midtown or Subway start. Use the flippers and action button to choose Sentinel Facility Raid.",
+          "modeNotes": [
+            "Mission qualification: The first mission needs one white shot. Each later mission needs more.",
+            "Sentinel Facility Raid is Rogue's challenging mission. Completing it and escaping Nimrod earns a once-per-ball multiball add-a-ball."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete eight moving lit shots in Sentinel Facility Raid. Follow them from left to right. Repeat Midtown only when it is lit; a Sentinel-head hit pauses the moving selection until the next lit shot.",
+          "modeNotes": [
+            "Sentinel Facility Raid adds up to seven Sentinel defeats toward the 35 needed for Berserker Multiball."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete Sentinel Facility Raid before starting Sentinel Multiball. With no multiball running, Escape Nimrod starts automatically; shoot its three red shots, then shoot Midtown or Subway within 10 seconds.",
+          "modeNotes": [
+            "A successful Escape Nimrod adds four defeated Sentinels and awards Rogue's hold-the-action-button add-a-ball for one use per ball during multiball.",
+            "Bishop is disabled during Escape Nimrod, so the three red shots and final escape shot must be made normally."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Finish the prepared Sentinel hits until its mouth opens, then hit the open mouth to start Sentinel Multiball.",
+          "modeNotes": [
+            "If Escape Nimrod awarded Rogue's perk, hold the flashing action button during multiball to add a ball once on this ball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Sentinel Multiball, take the reliable yellow jackpots. After a jackpot has been scored at a shot, the next hit there defeats a Sentinel; the Danger Room exit relights jackpots at 2x, then 3x.",
+          "modeNotes": [
+            "Four jackpots light the Giant Sentinel for the first Super Jackpot. A shot into the open mouth scores that Super at 2x."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After 35 Sentinels have been defeated and other features are clear, shoot the lit Uptown ramp to start Berserker Multiball.",
+          "modeNotes": [
+            "Berserker: Make five nonrepeating yellow jackpots, shoot the X-Jet for the Super Jackpot, then quickly shoot the Danger Room exit for 2x."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Sentinel Multiball only",
+        "when": "Use Sentinel Multiball as the easy-access early scoring route when you are not continuing through Sentinel Facility Raid.",
+        "steps": [
+          {
+            "text": "Hit the Giant Sentinel three times to spawn it. Continue with direct hits until its mouth opens, then hit the open mouth to start Sentinel Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Choose four major shots you can repeat. Collect their jackpots; shoot the Danger Room exit to relight them at 2x, then 3x.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After four jackpots, hit the Sentinel head for the Super Jackpot. An open-mouth hit scores it at 2x; repeating a now-unlit jackpot shot adds one Sentinel defeat.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Genosha or Fiery Assault",
+          "when": "Use Genosha Under Siege or A Fiery Assault as the second Mission; they are the usual second choices on an unfamiliar copy.",
+          "steps": [
+            {
+              "text": "Choose Genosha Under Siege. Shoot ten red shots. Take a moving green shot for 2x progress when it is safe.",
+              "kinds": [
+                "mode",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Or choose A Fiery Assault. Shoot a red shot to turn it blue. Shoot three blue shots to finish.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After either challenging mission, complete Escape Nimrod: three red shots, then Midtown or Subway within 10 seconds.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Save the City Multiball",
+          "when": "Use this plan as soon as all six city shots are close to three completions.",
+          "steps": [
+            {
+              "text": "Make the X-Jet, Downtown, Uptown, Midtown, Subway, and Highway shots three times each.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start Save the City at the yellow Midtown or Subway shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use loops, ramps, standups, the Danger Room spinner, and the two bumpers to light the five city jackpots. Collect each lit city shot once.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After all five jackpots, shoot the X-Jet. Then rip the Danger Room spinner. Each spin scores 1,000,000 for 15 seconds.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Berserker Multiball and Save Senator Kelly",
+        "steps": [
+          {
+            "text": "During Sentinel Facility Raid, make the moving lit shots; each one adds a defeated Sentinel.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After a challenging Mission, complete Escape Nimrod by making three red shots and then Midtown or Subway within 10 seconds. A successful escape adds four defeated Sentinels.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Sentinel Multiball, first score a jackpot at a shot; the next hit to that unlit shot adds one defeated Sentinel.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After 35 Sentinel defeats and when no other feature is running, shoot the lit Uptown ramp to start Berserker Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete all eight Missions by qualifying them with white shots and starting them at lit Midtown or Subway.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all eight Missions are complete, shoot the lit Midtown ramp or Subway to start Save Senator Kelly.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "editionDifferences": [
+        {
+          "feature": "Sentinel Attack",
+          "pro": "After the combo threshold, shoot the lit Uptown, Midtown, or Highway ramp.",
+          "premium": "Use the same three ramps, or shoot any lit shot that feeds the Sentinel hands.",
+          "sourceUrl": "https://tiltforums.com/t/the-uncanny-x-men-rulesheet/9100"
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Rescue the Innocent",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "The Future",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Sentinel Facility Raid",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Sentinel Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Escape Nimrod",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Berserker Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Genosha Under Siege",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "A Fiery Assault",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Save the City Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "To Me, My X-Men Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Save Senator Kelly",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Sentinel Attack",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "earlyCode": true,
+      "techniques": [
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the Sentinel from the right flipper, especially while its mouth is open.",
+          "sourceUrl": "https://www.kineticist.com/news/uncanny-xmen-tutorial",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand Midtown from the left only when this copy completes the ramp cleanly.",
+          "sourceUrl": "https://www.youtube.com/watch?v=_Xr9lfPoG4g&t=135s",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Danger Room flipper hold",
+          "instruction": "Hold the left mini-flipper when the ball enters the Danger Room from an accidental outside feed. Do not hold it when the ball enters from the X-Jet route.",
+          "sourceUrl": "https://www.youtube.com/watch?v=_Xr9lfPoG4g&t=1803s"
+        },
+        {
+          "name": "Shatz pass",
+          "instruction": "From a controlled left flipper, test an alley pass through the right inlane into Gambit's bumper. A made pass arms 2x on the next mode or multiball shot.",
+          "sourceUrl": "https://tiltforums.com/t/the-uncanny-x-men-rulesheet/9100",
+          "techniqueSlug": "shatz-pass"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The standup beside the X-Jet can send a miss toward the center drain.",
+          "response": "Shoot the X-Jet very late from the right flipper. Use it on the fly only after you confirm the line.",
+          "sourceUrl": "https://www.kineticist.com/news/uncanny-xmen-tutorial"
+        },
+        {
+          "issue": "A weak Midtown-ramp shot can enter the pop bumpers and feed the right outlane.",
+          "response": "Nudge the incomplete ramp return to the right. Stop looping it when the copy does not clear cleanly.",
+          "sourceUrl": "https://www.kineticist.com/news/uncanny-xmen-tutorial"
+        },
+        {
+          "issue": "The rubber near the Subway loop can send the ball into the pop bumpers.",
+          "response": "Nudge the feed left. Guide the ball toward the right flipper for a cradle.",
+          "sourceUrl": "https://www.kineticist.com/news/uncanny-xmen-tutorial"
+        },
+        {
+          "issue": "The Sentinel magnet and kickout can return the ball without control.",
+          "response": "Keep both flippers ready after every Sentinel hit. Do not assume that the ball will return to the shooting flipper.",
+          "sourceUrl": "https://www.youtube.com/watch?v=_Xr9lfPoG4g"
+        },
+        {
+          "issue": "The left flipper can hop the ball on some copies.",
+          "response": "Test the left flipper early. Use the Midtown or Subway feed to the right flipper when the hop prevents a clean shot.",
+          "sourceUrl": "https://www.youtube.com/watch?v=_Xr9lfPoG4g&t=250s"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Take the Uptown skill shot, prepare Sentinel Multiball, then choose Sentinel Facility Raid; its moving shots, Escape Nimrod, and Sentinel Multiball build the 35 defeats that light Berserker Multiball."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Complete all eight missions to light Save Senator Kelly at the Midtown and Subway shots."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Sentinel Multiball only: Use Sentinel Multiball as the easy-access early scoring route when you are not continuing through Sentinel Facility Raid."
+        }
+      ],
+      "checkBeforePlay": [
+        "Save the City qualification advances only during single-ball play; it cannot advance or start during another Multiball.",
+        "Test Sentinel, Midtown, Danger Room, and X-Jet feeds."
+      ],
+      "overview": "The Uncanny X-Men turns Mission wins, Escape Nimrod, and Sentinel Multiball into Sentinel defeats that build toward Berserker Multiball. Take the Uptown skill shot, then leave the first Sentinel Multiball one or two clean hits from starting. Make one white major shot for the first Mission (up to four later), shoot blue Midtown or Subway, select Sentinel Facility Raid with the flippers, then press the action button. Complete eight moving lit shots; when no Multiball is running, Escape Nimrod starts. Shoot its three red shots, then shoot Midtown or Subway within 10 seconds. Finish the prepared Sentinel hits and start Multiball; 35 total Sentinel defeats light Berserker at Uptown.",
+      "simpleOverview": "The Uncanny X-Men has three separate paths: Missions lead to Future perks, Giant Sentinel hits start Sentinel Multiball, and city-shot progress starts Save the City. Make one white major shot for the first Mission (up to four later), shoot blue Midtown or Subway, select Sentinel Facility Raid with the flippers, then press the action button. Complete eight moving lit shots; Escape Nimrod then starts when no Multiball is running. Shoot its three red shots, then shoot Midtown or Subway within 10 seconds. Separately, hit the Giant Sentinel six times for the first Multiball. During single-ball play, hit each of the six city shots three times, then shoot yellow Midtown or Subway when no other mode is running to start Save the City.",
+      "machineSetup": [
+        "Save the City qualification advances only during single-ball play; it cannot advance or start during another Multiball.",
+        "Test Sentinel, Midtown, Danger Room, and X-Jet feeds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

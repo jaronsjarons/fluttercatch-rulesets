@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "id": "G48qn",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use top lanes and lit yellow lanes to reach at least 3x. Build 20,000 base bonus with targets, top lanes, upper side lanes, and upper-flipper return lanes, then collect at the upper-left saucer. Bonus X stays active, so rebuild and repeat through the safest available bonus shots.",
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "Complete A-B-C-D and roll through the lit yellow lanes to advance 2x, 3x, then 5x."
+          },
+          {
+            "name": "Bonus collect",
+            "summary": "The lit upper-left saucer collects base bonus times Bonus X and preserves the multiplier for the ball."
+          },
+          {
+            "name": "Upgraded drop bank",
+            "summary": "After one full bank completion, every reset target in that bank scores 5,000 for the ball."
+          },
+          {
+            "name": "Extra Ball targets",
+            "summary": "Complete both drop banks to alternate the Extra Ball lamp between the two center standups."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read whether the copy uses three-ball or five-ball rules and identify the lit top letters."
+          },
+          {
+            "text": "Use the upper flippers as live shots through the narrow center gates to return the ball to A-B-C-D."
+          },
+          {
+            "text": "Complete A-B-C-D without forcing a dangerous letter and watch which yellow multiplier lane lights."
+          },
+          {
+            "text": "Roll through each lit yellow lane to reach at least 3x, and continue to 5x while the feed is safe.",
+            "modeNotes": [
+              "Bonus X: Lit yellow lanes advance 2x, 3x, then 5x; later lit lanes score 15,000 without another multiplier step."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit targets and roll through the top lanes, upper side lanes, and upper-flipper return lanes until Base Bonus reaches 20,000."
+          },
+          {
+            "text": "Shoot the upper-left saucer when its collect lamp is lit.",
+            "modeNotes": [
+              "Bonus collect: A 20,000 base scores 60,000 at 3x or 100,000 at 5x; the collect resets base bonus but preserves Bonus X."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Use the lit lower inlanes after the collect, rebuild base bonus with the safer drop bank, and repeat the saucer."
+          },
+          {
+            "text": "Protect the current multiplier before the drain because Bonus X resets each ball."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Upgraded drop-bank value",
+          "when": "Recovery pivot: Use this when the upper gates or saucer are unreliable.",
+          "steps": [
+            {
+              "text": "Choose the drop bank with the safer rebound."
+            },
+            {
+              "text": "Complete the bank and confirm that it resets."
+            },
+            {
+              "text": "Repeat targets in a completed bank for 5,000 each and build Base Bonus."
+            },
+            {
+              "text": "Return to the saucer after Bonus X reaches at least 3x."
+            },
+            {
+              "text": "Stop the bank route when rebounds reach the outlanes."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Maximum bonus route",
+            "when": "When trailing, use this higher-ceiling route: use this when top feeds and the saucer remain controlled.",
+            "steps": [
+              {
+                "text": "Complete A-B-C-D and use lit yellow lanes to reach 5x."
+              },
+              {
+                "text": "Score targets, top lanes, upper side lanes, and upper-flipper return lanes until Base Bonus reaches 20,000."
+              },
+              {
+                "text": "Collect 100,000 at the upper-left saucer."
+              },
+              {
+                "text": "Rebuild the bonus with 5x preserved and collect again."
+              }
+            ]
+          },
+          {
+            "title": "Extra Ball route",
+            "when": "Use this only when the award has tournament value.",
+            "steps": [
+              {
+                "text": "Complete both drop banks."
+              },
+              {
+                "text": "Identify the lit one of the two center standups."
+              },
+              {
+                "text": "Shoot only that target from control and prepare for the rebound."
+              },
+              {
+                "text": "Stop when settings replace Extra Ball with a low point award."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated 5x bonus collects",
+          "steps": [
+            {
+              "text": "Complete the top letters and use each lit yellow lane."
+            },
+            {
+              "text": "Reach 5x Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score targets, top lanes, upper side lanes, and upper-flipper return lanes until Base Bonus reaches 20,000."
+            },
+            {
+              "text": "Collect 100,000 at the lit upper-left saucer."
+            },
+            {
+              "text": "Rebuild and repeat before the multiplier resets at drain."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus collect",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Upgraded drop bank",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Ball targets",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-left saucer",
+            "label": "Bonus collect saucer",
+            "description": "Upper-left saucer used to collect the built base bonus.",
+            "precision": "unverified",
+            "context": "Collect the built bonus at the upper-left saucer."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-gate return",
+            "instruction": "Use an upper flipper to send the ball through a narrow center gate and back to the A-B-C-D lanes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Use a small early nudge to move the ball from the bottom post toward the lower return lane.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1",
+            "techniqueSlug": "nudging"
+          },
+          {
+            "name": "Cradle",
+            "instruction": "Shoot immediately from an upper flipper because its shape does not permit a normal cradle.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1",
+            "techniqueSlug": "cradle"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The center standups have severe rebounds.",
+            "response": "Avoid the center standups until Extra Ball is lit. Then shoot the center standup whose Extra Ball lamp is lit, only from a controlled ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1"
+          },
+          {
+            "issue": "Most upper-playfield contacts can return without control.",
+            "response": "Read each feed before you repeat it; the saucer is the most predictable upper return.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1"
+          },
+          {
+            "issue": "The center bumper can send the ball to either outlane.",
+            "response": "Use an early nudge and stop after the lane is committed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1"
+          },
+          {
+            "issue": "A large upper-outlane post save can overcorrect into the lower outlane.",
+            "response": "Use one small early move instead of a late hard nudge.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G48qn-MDEl1"
+          }
+        ],
+        "simpleOverview": "Roller Disco is a top-lane, multiplier, and saucer-collect game. Complete A-B-C-D, roll through each lit yellow multiplier lane, build base bonus with safe numbered targets and rollovers, then shoot the lit upper-left saucer and repeat before Bonus X resets at drain.",
+        "overview": "Roller Disco is a top-lane, multiplier, and saucer-collect game. Reach at least 3x, build toward 20,000, collect at the lit saucer, then use safer drop-bank shots to rebuild. Avoid the severe center-standup rebounds until an Extra Ball collect is ready.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Use top lanes and lit yellow lanes to reach at least 3x. Build 20,000 base bonus with targets, top lanes, upper side lanes, and upper-flipper return lanes, then collect at the upper-left saucer. Bonus X stays active, so rebuild and repeat through the safest available bonus shots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read whether the copy uses three-ball or five-ball rules and identify the lit top letters."
+          },
+          {
+            "text": "Use the upper flippers as live shots through the narrow center gates to return the ball to A-B-C-D."
+          },
+          {
+            "text": "Complete A-B-C-D without forcing a dangerous letter and watch which yellow multiplier lane lights."
+          },
+          {
+            "text": "Roll through each lit yellow lane to reach at least 3x, and continue to 5x while the feed is safe.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus X: Lit yellow lanes advance 2x, 3x, then 5x; later lit lanes score 15,000 without another multiplier step."
+            ]
+          },
+          {
+            "text": "Hit targets and roll through the top lanes, upper side lanes, and upper-flipper return lanes until Base Bonus reaches 20,000."
+          },
+          {
+            "text": "Shoot the upper-left saucer when its collect lamp is lit.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus collect: A 20,000 base scores 60,000 at 3x or 100,000 at 5x; the collect resets base bonus but preserves Bonus X."
+            ]
+          },
+          {
+            "text": "Use the lit lower inlanes after the collect, rebuild base bonus with the safer drop bank, and repeat the saucer."
+          },
+          {
+            "text": "Protect the current multiplier before the drain because Bonus X resets each ball."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus X",
+            "summary": "Complete A-B-C-D and roll through the lit yellow lanes to advance 2x, 3x, then 5x."
+          },
+          {
+            "name": "Bonus collect",
+            "summary": "The lit upper-left saucer collects base bonus times Bonus X and preserves the multiplier for the ball."
+          },
+          {
+            "name": "Upgraded drop bank",
+            "summary": "After one full bank completion, every reset target in that bank scores 5,000 for the ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Upgraded drop-bank value",
+          "when": "Recovery pivot: Use this when the upper gates or saucer are unreliable.",
+          "steps": [
+            {
+              "text": "Choose the drop bank with the safer rebound."
+            },
+            {
+              "text": "Complete the bank and confirm that it resets."
+            },
+            {
+              "text": "Repeat targets in a completed bank for 5,000 each and build Base Bonus."
+            },
+            {
+              "text": "Return to the saucer after Bonus X reaches at least 3x."
+            },
+            {
+              "text": "Stop the bank route when rebounds reach the outlanes."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The center bumper can send the ball to either outlane.",
+          "text": "Use an early nudge and stop after the lane is committed."
+        }
+      }
+    }
+  ]
+}

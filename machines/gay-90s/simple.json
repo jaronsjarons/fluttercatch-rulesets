@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr88w",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit either A or B to raise the center post, complete both targets to advance the hole, then collect the hole at 400 or 500.",
+        "quickInfo": [
+          {
+            "name": "Top skill plunge",
+            "summary": "A full plunge can pass between the top bumpers and cross the white rotating-award button."
+          },
+          {
+            "name": "A-B completion",
+            "summary": "Lighting either target raises the center post; lighting both scores 200, advances the hole, and resets both targets."
+          },
+          {
+            "name": "Hole ladder",
+            "summary": "The hole value advances through 50, 100, 200, 300, 400, and 500."
+          },
+          {
+            "name": "Hole reset",
+            "summary": "Collecting a hole value above 50 resets the next hole value to 50."
+          },
+          {
+            "name": "Rotating award",
+            "summary": "The white top button can advance the hole or open either side gate."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge between the top bumpers and try to cross the white award button."
+          },
+          {
+            "text": "Send the ball up top when neither A nor B is safely available."
+          },
+          {
+            "text": "Shoot the missing A or B target from a controlled flipper."
+          },
+          {
+            "text": "After either target lights, use the raised center post to control the next shot."
+          },
+          {
+            "text": "Complete A and B to score 200, advance the hole, and reset both targets."
+          },
+          {
+            "text": "Repeat A-B completions until the hole shows 400 or 500."
+          },
+          {
+            "text": "Shoot the hole and track its complete kickout."
+          },
+          {
+            "text": "Use a medium repeat shot if the kickout settles beside the raised post."
+          },
+          {
+            "text": "After the hole resets to 50, resume A-B building."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-playfield route",
+          "when": "Use this plan when the A-B rebounds or hole kickout cannot be controlled.",
+          "steps": [
+            {
+              "text": "Stop direct lower-feature shots."
+            },
+            {
+              "text": "Send the ball between the top bumpers."
+            },
+            {
+              "text": "Use bumper action for natural A, B, and rotating-award contacts."
+            },
+            {
+              "text": "Track the right side of the moving target section."
+            },
+            {
+              "text": "Resume the hole plan after either A or B raises the center post."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Controlled center advance",
+            "when": "Use this plan only when the center post is raised and the center target shot has a protected return.",
+            "steps": [
+              {
+                "text": "Cradle the ball before the center shot."
+              },
+              {
+                "text": "Confirm that the center post is raised."
+              },
+              {
+                "text": "Shoot the center target once for 100 and one hole advance."
+              },
+              {
+                "text": "Stop after any uncontrolled rebound."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable high-value hole",
+          "steps": [
+            {
+              "text": "Hit either A or B to raise the center post."
+            },
+            {
+              "text": "Use the raised center post for safer control."
+            },
+            {
+              "text": "Complete the missing target to advance the hole."
+            },
+            {
+              "text": "Repeat A-B completions until the hole reaches 400 or 500."
+            },
+            {
+              "text": "Collect the hole."
+            },
+            {
+              "text": "Use a controlled kickout for one repeat before rebuilding."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Award-button plunge",
+            "instruction": "Test a full plunge between the upper bumpers. Adjust the strength to cross the white rotating-award button.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr88w-MQPp9"
+          },
+          {
+            "name": "Post-cradle hole repeat",
+            "instruction": "Let a safe hole kickout settle beside the raised post. Use a medium flip if full power rejects the shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr88w-MQPp9"
+          },
+          {
+            "name": "Micro flip",
+            "instruction": "Micro flip beside the raised post only after the ball settles and the next shot is ready.",
+            "techniqueSlug": "micro-flip",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr88w-MQPp9"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A target",
+            "label": "A target",
+            "description": "One of two lower targets; lighting it raises the center post.",
+            "precision": "unverified"
+          },
+          {
+            "term": "B target",
+            "label": "B target",
+            "description": "One of two lower targets; lighting it raises the center post.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center post",
+            "label": "Center post",
+            "description": "Post between the flippers raised by lighting A or B.",
+            "precision": "unverified"
+          },
+          {
+            "term": "hole",
+            "label": "Eject hole",
+            "description": "Center scoring hole with a value ladder from 50 through 500.",
+            "precision": "unverified"
+          },
+          {
+            "term": "rotating-award button",
+            "label": "Rotating award",
+            "description": "White upper button that can advance the hole or open a side gate.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The left gate kickback can miss or return the ball too weakly.",
+            "response": "Do not choose the left gate as a scoring route. Prepare for a weak return if it collects naturally.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr88w-MQPp9"
+          },
+          {
+            "issue": "The center target can rebound dangerously when the center post is down.",
+            "response": "Avoid the target until the post is raised. Stop after one unsafe rebound even with protection active.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr88w-MQPp9"
+          },
+          {
+            "issue": "Balls behind the right side of the moving target section have the highest side-drain risk.",
+            "response": "Track that exit early. Nudge before the ball reaches the right sling or open gate area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gr88w-MQPp9"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm ball count and how replay, Special, and open-gate awards are handled in the event.",
+          "Test the center-post height, left kickback, hole kickout, rotating-award timing, and both flippers before choosing a repeat route.",
+          "Verify that lighting either A or B raises the center post and that completing both advances the hole."
+        ],
+        "simpleOverview": "Gay 90's uses A and B targets to raise the center post and advance a center-hole value from 50 to 500. Hit either missing target, use the raised post for control, complete both letters, and repeat until the hole shows 400 or 500 before collecting it.",
+        "overview": "Gay 90's uses A and B targets to raise the center post and advance a center-hole value from 50 to 500. Use upper play when neither target is safe, hit the missing A or B from control, and complete both to advance the hole. Collect at 400 or 500 only after the post is raised and the kickout has been observed.",
+        "machineSetup": [
+          "Confirm ball count and how replay, Special, and open-gate awards are handled in the event.",
+          "Test the center-post height, left kickback, hole kickout, rotating-award timing, and both flippers before choosing a repeat route.",
+          "Verify that lighting either A or B raises the center post and that completing both advances the hole."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Hit either A or B to raise the center post, complete both targets to advance the hole, then collect the hole at 400 or 500.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge between the top bumpers and try to cross the white award button."
+          },
+          {
+            "text": "Send the ball up top when neither A nor B is safely available."
+          },
+          {
+            "text": "Shoot the missing A or B target from a controlled flipper."
+          },
+          {
+            "text": "After either target lights, use the raised center post to control the next shot."
+          },
+          {
+            "text": "Complete A and B to score 200, advance the hole, and reset both targets."
+          },
+          {
+            "text": "Repeat A-B completions until the hole shows 400 or 500."
+          },
+          {
+            "text": "Shoot the hole and track its complete kickout."
+          },
+          {
+            "text": "Use a medium repeat shot if the kickout settles beside the raised post."
+          },
+          {
+            "text": "After the hole resets to 50, resume A-B building."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Top skill plunge",
+            "summary": "A full plunge can pass between the top bumpers and cross the white rotating-award button."
+          },
+          {
+            "name": "A-B completion",
+            "summary": "Lighting either target raises the center post; lighting both scores 200, advances the hole, and resets both targets."
+          },
+          {
+            "name": "Hole ladder",
+            "summary": "The hole value advances through 50, 100, 200, 300, 400, and 500."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-playfield route",
+          "when": "Use this plan when the A-B rebounds or hole kickout cannot be controlled.",
+          "steps": [
+            {
+              "text": "Stop direct lower-feature shots."
+            },
+            {
+              "text": "Send the ball between the top bumpers."
+            },
+            {
+              "text": "Use bumper action for natural A, B, and rotating-award contacts."
+            },
+            {
+              "text": "Track the right side of the moving target section."
+            },
+            {
+              "text": "Resume the hole plan after either A or B raises the center post."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Balls behind the right side of the moving target section have the highest side-drain risk.",
+          "text": "Track that exit early. Nudge before the ball reaches the right sling or open gate area."
+        }
+      }
+    }
+  ]
+}

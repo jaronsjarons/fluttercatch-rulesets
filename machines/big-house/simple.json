@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "GR07v",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Shoot the flashing left Capture kicker to hold the first ball; this lights both the center Hole for another capture and the right Launch kicker. You may shoot the center Hole for a second lock, then shoot the flashing right Escape/Launch kicker to release everything and start three-ball Multiball. Starting after only the first capture gives two-ball Multiball.",
+        "simpleOverview": "Shoot the flashing left Capture kicker to lock a ball. For three balls, shoot the now-flashing center Hole to capture another ball. Then shoot the flashing right Escape/Launch kicker to release the locks and start Multiball; you can take it after one capture for two balls.",
+        "summary": "Capture one ball at the flashing left kicker, optionally capture a second at the flashing center Hole, then shoot the flashing right Escape/Launch kicker. One capture starts two-ball Multiball; two captures start three-ball Multiball.",
+        "quickInfo": [
+          {
+            "name": "Capture Ball 1",
+            "summary": "Shoot the flashing left Capture kicker."
+          },
+          {
+            "name": "Capture Ball 2",
+            "summary": "For three-ball play, shoot the center Hole while Capture is flashing."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the right Escape/Launch kicker while it is flashing."
+          },
+          {
+            "name": "Advance Multiplier",
+            "summary": "Keep scoring switches to break down the wall; the threshold is lower during Multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot the left kicker while Capture is flashing to hold the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If you want three-ball Multiball, shoot the center Hole while Capture is flashing to hold a second ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right kicker while Escape or Launch is flashing to release the captures and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep the balls moving through switches to break the wall and advance the playfield multiplier more quickly.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Start with one capture",
+            "when": "Use this when the center Hole is dangerous or the current ball is valuable.",
+            "steps": [
+              {
+                "text": "After the left Capture kicker holds one ball, skip the optional center Hole.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the flashing right Escape/Launch kicker immediately for two-ball Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Finish the prison routes",
+          "steps": [
+            {
+              "text": "Complete the flashing J-A-I-L-B-R-E-A-K letters to light the top-center Special rollover.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete Cell Blocks 1 through 4 to light an Extra Ball rollover; Last Chance can release a captured ball at an outlane when lit.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- versus five-ball rules, extra-ball conversion, switch thresholds for multiplier advances, and lock sharing.",
+          "Test both kickers, center capture Hole, captive-ball releases, Last Chance outlanes, J-A-I-L-B-R-E-A-K targets, and all four Cell Blocks."
+        ],
+        "termStyles": [
+          {
+            "label": "Capture",
+            "tone": "navy",
+            "kind": "multiball"
+          },
+          {
+            "label": "Escape",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Wall Multiplier",
+            "tone": "indigo",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left Capture kicker",
+            "label": "Left Capture kicker",
+            "description": "The first physical capture and the shot that enables Launch.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center Hole",
+            "label": "Center capture Hole",
+            "description": "The optional second capture used for three-ball Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right Escape kicker",
+            "label": "Escape / Launch kicker",
+            "description": "The right-side shot that releases captured balls and starts Multiball.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The second capture is optional.",
+            "response": "Do not wait for three balls when survival matters; the flashing Escape/Launch kicker can start Multiball after the first capture.",
+            "sourceUrl": "https://pinballnirvana.com/forums/resources/big-house-gottlieb-1989-vp8.2787/"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Capture one ball at the flashing left kicker, optionally capture a second at the flashing center Hole, then shoot the flashing right Escape/Launch kicker. One capture starts two-ball Multiball; two captures start three-ball Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot the left kicker while Capture is flashing to hold the first ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If you want three-ball Multiball, shoot the center Hole while Capture is flashing to hold a second ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the right kicker while Escape or Launch is flashing to release the captures and start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep the balls moving through switches to break the wall and advance the playfield multiplier more quickly.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Capture Ball 1",
+            "summary": "Shoot the flashing left Capture kicker."
+          },
+          {
+            "name": "Capture Ball 2",
+            "summary": "For three-ball play, shoot the center Hole while Capture is flashing."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the right Escape/Launch kicker while it is flashing."
+          }
+        ]
+      }
+    }
+  ]
+}

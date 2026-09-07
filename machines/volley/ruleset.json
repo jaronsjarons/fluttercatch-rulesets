@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Q19",
+  "title": "Volley",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Classic Pinball Machines",
+      "url": "https://rules.silverballmania.com/rules/G5Q19-MLeEN"
+    },
+    "supportingSources": [
+      {
+        "label": "Volley tournament mini-guide",
+        "url": "https://www.pinballformortals.com/2019/12/22/volley-pinball-mini-guide/"
+      },
+      {
+        "label": "Volley gameplay",
+        "url": "https://www.youtube.com/watch?v=ScVpjKzllwo"
+      },
+      {
+        "label": "Dalton Ely at IFPA North American Pinball Championship 2023 — Quarterfinals",
+        "url": "https://pinballvideos.com/v/4831/25943"
+      },
+      {
+        "label": "District 82 Volley 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=5pRLWEs1Hr0"
+      },
+      {
+        "label": "Pinballso Volley tournament tutorial",
+        "url": "https://www.youtube.com/watch?v=Zrckic8L8ME"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Return the ball through the three colored top lanes. Then pick off lit drop targets one at a time. Clear all 15 targets and repeat.",
+      "steps": [
+        {
+          "text": "Plunge for a blue or green top lane. Use a missing color on later plunges.",
+          "modeNotes": [
+            "Color lane: A blue, yellow, or green top lane lights the matching bumper and drop targets for the rest of the game."
+          ]
+        },
+        {
+          "text": "Return the ball to the top until blue, yellow, and green are lit."
+        },
+        {
+          "text": "Before all colors are lit, shoot only drop targets of a lit color."
+        },
+        {
+          "text": "After all colors are lit, hit one drop target. Let its score finish. Then hit the next target.",
+          "modeNotes": [
+            "Lit drop: A lit target scores 5,000. An unlit target scores 500. A rapid second hit can fail to score."
+          ]
+        },
+        {
+          "text": "Pick off the five yellow targets first when they are open. Then clear the blue and green banks."
+        },
+        {
+          "text": "Clear all 15 targets to reset all three banks. Repeat the one-target rhythm."
+        }
+      ],
+      "fallback": {
+        "title": "Two-color drops",
+        "when": "Use this plan when the third top lane does not register.",
+        "steps": [
+          {
+            "text": "Confirm which two colors are lit."
+          },
+          {
+            "text": "Pick off only the targets in those two banks."
+          },
+          {
+            "text": "Send each controlled return to the top for the missing color."
+          },
+          {
+            "text": "After the third color lights, use all three target banks."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Yellow-lane points",
+          "when": "Use this plan after the yellow bank is complete and drop-target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Return the ball to the top."
+            },
+            {
+              "text": "Plunge or nudge for the yellow top lane. It now scores 5,000."
+            },
+            {
+              "text": "Resume the drop-target plan when the return is controlled."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Fresh 15-target banks",
+        "steps": [
+          {
+            "text": "Return the ball through the top lanes until all three colors are lit."
+          },
+          {
+            "text": "Clear every drop target once."
+          },
+          {
+            "text": "The game resets all 15 targets for another scoring cycle."
+          },
+          {
+            "text": "The first full clear also lights Special at the blue or green top lane."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Light plunge",
+          "instruction": "Use a light plunge that touches the upper-left rubber and enters a top lane. A hard plunge can cross the lane area too quickly.",
+          "sourceUrl": "https://www.pinballformortals.com/2019/12/22/volley-pinball-mini-guide/"
+        },
+        {
+          "name": "Single-target timing",
+          "instruction": "Pick off one drop target. Wait for all five score increments before the next intentional target hit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Q19-MLeEN"
+        },
+        {
+          "name": "Side-lane forward nudge",
+          "instruction": "If the ball enters a middle side lane, nudge forward near the bottom post. Try to move the ball toward the angled rubber and the inlane.",
+          "sourceUrl": "https://www.pinballformortals.com/2019/12/22/volley-pinball-mini-guide/"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The slow score motor can ignore a second drop-target hit during the first 5,000-point count.",
+          "response": "Shoot one target at a time. Ignore this limit only when one shot will finish all 15 targets and reset the banks.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Q19-MLeEN"
+        },
+        {
+          "issue": "The middle side lanes behind the blue and green banks can feed either an inlane or an outlane.",
+          "response": "Avoid the outer edges of the end yellow targets. If the ball enters a side lane, nudge forward early.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Q19-MLeEN"
+        },
+        {
+          "issue": "A miss into exposed rubber behind a lowered target can rebound toward the center drain.",
+          "response": "Aim at standing targets. Do not shoot through an empty target position unless the bank is about to reset.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Q19-MLeEN"
+        },
+        {
+          "issue": "A tilt ends the entire game.",
+          "response": "Use small, early nudges. Accept a lit outlane drain instead of risking the remaining balls.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5Q19-MLeEN"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Return the ball through the three colored top lanes."
+        },
+        {
+          "name": "Long goal",
+          "summary": "Return the ball through the top lanes until all three colors are lit."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "Two-color drops: Use this plan when the third top lane does not register."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Gottlieb Volley, ball count, Special and Extra Ball conversion, and target resets.",
+        "Test color lanes, both target banks, top feeds, and flipper strength."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the 2023 IFPA North American Championship, Dalton Ely lit all three colors and cleared the drop targets one at a time before each bank reset."
+        ]
+      },
+      "simpleOverview": "In Volley, each blue, yellow, or green top lane lights the matching drop targets for the rest of the game. Return the ball to the top until all three colors are lit, then pick off one lit drop at a time and wait for its 5,000-point count. Clearing all 15 drops resets every bank for another cycle.",
+      "overview": "In Volley, the three colored top lanes permanently light their matching drop banks. Return the ball to the top until all three colors are lit, then hit one standing drop at a time and wait for the 5,000-point count before shooting the next. Clear all 15 drops to reset the banks, and repeat without shooting through lowered targets or risking a full-game tilt.",
+      "machineSetup": [
+        "Confirm Gottlieb Volley, ball count, Special and Extra Ball conversion, and target resets.",
+        "Test color lanes, both target banks, top feeds, and flipper strength."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

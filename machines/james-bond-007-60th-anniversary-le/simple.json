@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "Ge1Dy",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete all three Inline Drop targets and start Mission Multiball at the right scoop. Lock both phase-one balls, then use both scoop locks to light Double Jackpot before the Captive Ball and M-target Super Jackpot.",
+        "overview": "Two lit scoop locks begin James Bond 007 60th Anniversary's two-ball lock phase; completing it releases the third ball for Mission Multiball Jackpot scoring. First collect the timed right- and left-scoop locks, then refill both scoop locks to light Double Jackpot and the Captive Ball. Shoot the Captive Ball and finish at the M target for the Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Covered build",
+            "summary": "These rules apply to the 500-unit James Bond 007 60th Anniversary Limited Edition on code v1.11. The 2022 cornerstone James Bond 007 machine plays differently."
+          },
+          {
+            "name": "Mission start",
+            "summary": "Complete Inline Drop 1–3, then shoot the lit right scoop to start two-ball Mission Multiball."
+          },
+          {
+            "name": "Double Jackpot",
+            "summary": "During the three-ball phase, one scoop lock lights the Captive Ball Jackpot for 15 seconds; locking the other scoop first raises it to Double Jackpot."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "After the Captive Ball Jackpot, shoot the M target before its timer expires; the Super Jackpot restarts the Jackpot sequence."
+          },
+          {
+            "name": "Phase-one restart",
+            "summary": "If the two-ball phase ends before both balls are locked, the right scoop lights for 15 seconds to restart Mission Multiball at phase one."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit all three Inline Drop targets, then shoot the lit right scoop to start two-ball Mission Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot either the right scoop or left scoop to lock the first ball; within 15 seconds, shoot the other scoop to lock the second ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Plunge the served third ball to start the three-ball phase.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Lock one ball in either scoop to light the Captive Ball Jackpot for 15 seconds. Before shooting the Captive Ball, lock another ball in the other scoop to light Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Captive Ball for the lit Double Jackpot, then shoot the M target before its timer expires for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "The Super Jackpot restarts the sequence; repeat the scoop locks, Captive Ball, and M target while Mission Multiball continues.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Two-ball phase restart",
+          "when": "Use this if Mission Multiball ends before both phase-one balls are locked.",
+          "steps": [
+            {
+              "text": "Shoot the lit right scoop within 15 seconds to restart Mission Multiball at the two-ball phase.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Mission Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "right scoop",
+            "label": "Right scoop",
+            "description": "Scoop behind the inline drops; it starts Mission Multiball and locks balls during it.",
+            "context": "The right scoop starts Mission Multiball and can lock its balls.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left scoop",
+            "label": "Left scoop",
+            "description": "The other Mission Multiball lock scoop.",
+            "context": "The left scoop locks a Mission Multiball ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Captive Ball",
+            "label": "Captive Ball",
+            "description": "Timed Mission Multiball Jackpot shot after a three-ball-phase scoop lock.",
+            "context": "The Captive Ball scores the lit Jackpot or Double Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "M target",
+            "label": "M target",
+            "description": "Timed Super Jackpot target after the Captive Ball Jackpot.",
+            "context": "The M target scores the Super Jackpot after the Captive Ball Jackpot.",
+            "precision": "unverified"
+          }
+        ],
+        "simpleOverview": "James Bond 007 60th Anniversary runs Mission Multiball in two phases: two timed scoop locks, then three-ball Jackpot scoring. Use the right and left scoops for the timed locks, then fill both scoop locks again before shooting the Captive Ball. The M target collects the Super Jackpot.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Use the Inline Drops and right scoop to start Mission Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Mission Multiball",
+            "text": "Hit all three Inline Drop targets, then shoot the lit right scoop to start two-ball Mission Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Covered build",
+            "summary": "These rules apply to the 500-unit James Bond 007 60th Anniversary Limited Edition on code v1.11. The 2022 cornerstone James Bond 007 machine plays differently."
+          },
+          {
+            "name": "Mission start",
+            "summary": "Complete Inline Drop 1–3, then shoot the lit right scoop to start two-ball Mission Multiball."
+          },
+          {
+            "name": "Double Jackpot",
+            "summary": "During the three-ball phase, one scoop lock lights the Captive Ball Jackpot for 15 seconds; locking the other scoop first raises it to Double Jackpot."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "id": "G4N6n",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start Elk Multiball at the left orbit, then add Bird Multiball at the bird lane and Big Buck Multiball by completing the moving buck's five positions. Shoot the ram kicker three times for 2x scoring; during Multiball, Pappy's Porch usually gives an add-a-ball and a short ball save.",
+        "quickInfo": [
+          {
+            "name": "Big Buck Multiball",
+            "summary": "Hit the moving buck in all five positions to start the main three-ball feature."
+          },
+          {
+            "name": "R-A-M 2x scoring",
+            "summary": "Spell R-A-M for 20 seconds of playfield double scoring; another completion resets the timer to 20 seconds."
+          },
+          {
+            "name": "Big Buck Jackpot cycle",
+            "summary": "Hit the buck in five positions, collect the five lit Double Jackpots, then shoot the spinner lane for Super."
+          },
+          {
+            "name": "Pappy's Porch",
+            "summary": "Complete its three standups for a mystery award; during multiball it usually awards add-a-ball and a short save."
+          },
+          {
+            "name": "Open Season",
+            "summary": "Complete the six Big Buck achievements, spell R-A-M, start Elk Multiball and Moose on the Loose, start all four Bird Multiballs, and start a third bonus round. Shoot the bird lane to begin Open Season."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Spell E-L-K through the inlanes, or shoot the left orbit to spot unlit letters. Collect the left-orbit hurry-up to start Elk Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Elk Multiball, shoot the bird lane four times to start the first Bird Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the moving buck in each of its five positions to add Big Buck Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the ram kicker three times to spell R-A-M and start 20 seconds of 2x scoring. Complete the three Pappy's Porch standups during Multiball for its usual add-a-ball award and a short ball save.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Multiball, hit the buck in each of its five positions for Jackpots, lighting the shot behind each position for Double Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect all five lit Double Jackpots, then shoot the exposed spinner lane for a Super worth the ten preceding Jackpots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After collecting the Super Jackpot, hit the moving buck twenty times for Monster Jackpots and a cycle restart.",
+            "modeNotes": [
+              "Monster Buck phase: Twenty buck hits complete the grid insert and return Big Buck Multiball to its five-position Jackpot phase."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Elk Multiball",
+          "when": "Use this safer route when the buck is unreliable but the left orbit repeats.",
+          "steps": [
+            {
+              "text": "Spell E-L-K through the inlanes or let each left-orbit shot spot an unlit letter."
+            },
+            {
+              "text": "Collect the left-orbit hurry-up to start the first Elk Multiball; later starts require additional E-L-K sets and hurry-ups.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "During multiball, open the elk diverter through an inlane or left orbit, then hit the diverter for the Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Send a ball through the open diverter into the shooter lane, then hit the diverter within five seconds for a Double Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bird Multiball",
+            "when": "Use this when the bird lane and captive-ball shot are reliable.",
+            "steps": [
+              {
+                "text": "Shoot the bird lane four times for the first Bird Multiball; later starts require five, six, then seven shots.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During the 15-second switch build, hit the captive original ball for a Jackpot, its release, and a fourth ball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect six red-arrow Jackpots, then shoot the bird lane for Super and hit the captive ball within 15 seconds for Double Super.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Moose ramp loop",
+            "when": "Use this when the moose ramp returns safely and no multiball is close.",
+            "steps": [
+              {
+                "text": "Spell M-O-O-S-E with five ramp shots."
+              },
+              {
+                "text": "During Moose on the Loose, keep looping the ramp while the return remains controlled.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Abandon the timed mode when the ramp begins rejecting."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Open Season",
+          "steps": [
+            {
+              "text": "Hit the buck, start Big Buck Multiball, collect a Jackpot, collect a Double Jackpot, collect the Super Jackpot, and finish the 20-hit Monster Buck phase."
+            },
+            {
+              "text": "Spell R-A-M, start Elk Multiball and Moose on the Loose, start all four Bird Multiballs, and start a third bonus round."
+            },
+            {
+              "text": "Shoot the bird lane after the full progress grid is lit."
+            },
+            {
+              "text": "During the 90-second Open Season, complete each animal's displayed Jackpot countdown while four balls continually relaunch.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Big Buck Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Elk Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Bird Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "R-A-M 2x scoring",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Moose on the Loose",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Open Season",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "buck",
+            "label": "Moving buck target",
+            "description": "The target that travels across five shot positions.",
+            "precision": "unverified",
+            "context": "buck: The target that travels across five shot positions."
+          },
+          {
+            "term": "bird lane",
+            "label": "Bird Multiball lane",
+            "description": "The lane and captive-ball assembly used for Bird Multiball.",
+            "precision": "unverified",
+            "context": "bird lane: The lane and captive-ball assembly used for Bird Multiball."
+          },
+          {
+            "term": "Pappy's Porch",
+            "label": "Mystery scoop",
+            "description": "The scoop that can add a ball during Multiball.",
+            "precision": "unverified",
+            "context": "Pappy's Porch: The scoop that can add a ball during Multiball."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Moving-target patience",
+            "instruction": "Wait for the buck to stop at a position you can hit cleanly instead of chasing it with uncontrolled shots.",
+            "sourceUrl": "https://www.pinballnews.com/games/bigbuckhunter/index7.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Buck hits can fail to register or rebound sharply as the target moves.",
+            "response": "Confirm the switch at each position and stop attacking any position with a dangerous return.",
+            "sourceUrl": "https://www.pinballnews.com/games/bigbuckhunter/index7.html"
+          },
+          {
+            "issue": "Bird-lane timers, target counts, and Open Season requirements can be adjusted.",
+            "response": "Use the counts and timers shown on the display.",
+            "sourceUrl": "https://www.pinballnews.com/games/bigbuckhunter/index7.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Note the ball count, ball-save settings, Extra Ball conversion, and any tournament adjustments.",
+          "Confirm buck-position registration, bird counts, R-A-M and mode timers, Pappy's Porch award behavior, Open Season requirements, and Multiball restart rules.",
+          "Test the moving buck, bird captive-ball release, elk diverter and shooter-lane feed, ram shot, spinner lane, moose ramp, and standup rebounds."
+        ],
+        "simpleOverview": "Elk Multiball is the easiest entry point and can later run with Bird Multiball. Spell E-L-K through the inlanes or left orbit, then collect the left-orbit hurry-up. During Elk Multiball, shoot the bird lane four times to add Bird Multiball and hit the ram kicker three times for 2x; Pappy's Porch usually gives add-a-ball and a short ball save.",
+        "overview": "Big Buck Hunter Pro allows Big Buck, Elk, and Bird Multiballs to run together. Spell E-L-K through the inlanes or left orbit, then collect the left-orbit hurry-up to start Elk Multiball. During it, shoot the bird lane four times and complete the moving buck's five positions to add the others; hit the ram kicker three times for 2x.",
+        "machineSetup": [
+          "Note the ball count, ball-save settings, Extra Ball conversion, and any tournament adjustments.",
+          "Confirm buck-position registration, bird counts, R-A-M and mode timers, Pappy's Porch award behavior, Open Season requirements, and Multiball restart rules.",
+          "Test the moving buck, bird captive-ball release, elk diverter and shooter-lane feed, ram shot, spinner lane, moose ramp, and standup rebounds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Start Elk Multiball at the left orbit, then add Bird Multiball at the bird lane. Shoot the ram kicker three times for 2x scoring; during Multiball, Pappy's Porch usually gives an add-a-ball and a short ball save.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Elk Multiball",
+            "text": "Spell E-L-K through the inlanes, or shoot the left orbit to spot unlit letters. Shoot the left orbit again to collect the lit hurry-up and start the first Elk Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Add Bird Multiball",
+            "text": "During Elk Multiball, shoot the bird lane four times to start the first Bird Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Protect and double the stack",
+            "text": "Shoot the ram kicker three times to spell R-A-M and start 20 seconds of 2x scoring. Complete the three Pappy's Porch standups during Multiball for its usual add-a-ball award and a short ball save.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Big Buck Multiball",
+            "summary": "Hit the moving buck in all five positions to start the main three-ball feature."
+          },
+          {
+            "name": "R-A-M 2x scoring",
+            "summary": "Spell R-A-M for 20 seconds of playfield double scoring; another completion resets the timer to 20 seconds."
+          },
+          {
+            "name": "Big Buck Jackpot cycle",
+            "summary": "Hit the buck in five positions, collect the five lit Double Jackpots, then shoot the spinner lane for Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Big Buck Multiball",
+          "when": "Use this when the moving buck is registering cleanly.",
+          "steps": [
+            {
+              "text": "Hit the moving buck once in each of its five positions. During Big Buck Multiball, collect five buck Jackpots, the five lit Double Jackpots behind those positions, and the spinner-lane Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

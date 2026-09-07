@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "G4xyR",
+  "title": "The Wizard of Oz",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Wizard of Oz tournament strategy discussion",
+      "url": "https://tiltforums.com/t/woz-tournament-strategy-discussion/252"
+    },
+    "supportingSources": [
+      {
+        "label": "Official Jersey Jack Wizard of Oz support",
+        "url": "https://jerseyjackpinball.com/pages/support/the-wizard-of-oz-yellow-brick-road-limited-edition"
+      },
+      {
+        "label": "Pinball Genie Wizard of Oz strategy guide",
+        "url": "https://pinball-genie.com/machines/wizard-of-oz"
+      },
+      {
+        "label": "The Wizard of Oz semifinal at NWPC 2019",
+        "url": "https://pinballvideos.com/v/2462/29668"
+      },
+      {
+        "label": "The Wizard of Oz tutorial",
+        "url": "https://pinballvideos.com/v/937"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Capture Dorothy, spell R-E-S-C-U-E, and break through the Witch's Castle doors for Rescue Multiball. Roll each character lane and shoot the ramp for Emerald City locks. Complete R-A-I-N-B-O-W and ten Twister loops for a Munchkin Mode, and three Witch hurry-ups for Fireball Frenzy.",
+      "quickInfo": [
+        {
+          "name": "Modes and Multiball",
+          "summary": "Munchkin and Haunted modes can run with Rescue or Emerald City Multiball. Either feature can start first."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Full-plunge or shoot the right loop to hit the Capture Dorothy standups above the pop bumpers."
+        },
+        {
+          "text": "Shoot the right loop again to capture the ball on the Dorothy magnet.",
+          "modeNotes": [
+            "The captured Dorothy state combines with the completed R-E-S-C-U-E letters to make the castle doors the Multiball start."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the single drop target and the VUK behind it to reach the upper-left playfield."
+        },
+        {
+          "text": "Spell R-E-S-C-U-E with Castle standups, the Search Orbit, or Rescue Saucer hits. The Search Orbit adds one letter and the Rescue Saucer adds two.",
+          "modeNotes": [
+            "Rescue qualification combines the captured Dorothy state with completed RESCUE letters."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Break through the castle doors to start Rescue Multiball. Shoot each of the six major shots up to three times; a shot's third Jackpot lights its R-E-S-C-U-E letter and the Super Jackpot at the doors.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Emerald City Multiball",
+        "when": "Recovery pivot: Use this as the separate character-lock route.",
+        "steps": [
+          {
+            "text": "Roll the TIN MAN, LION, or SCARECROW lane, then shoot the ramp to lock that character.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat for the other two characters. The third character lock starts Emerald City Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "buildsToward": {
+        "title": "Battle the Wicked Witch",
+        "steps": [
+          {
+            "text": "Capture Dorothy, spell R-E-S-C-U-E in the Witch's Castle, then break through the castle doors to start Rescue Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Roll the TIN MAN, LION, and SCARECROW character lanes one at a time, shooting the ramp immediately after each lane. The third character lock starts Emerald City Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Spell R-A-I-N-B-O-W, shoot the ramp to enter Twister, then make ten mini-playfield loops to start a Munchkin Mode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete three Witch hurry-ups, then hit the Witch again to start Fireball Frenzy.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all four features have started, hit the Witch to begin Battle the Wicked Witch.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Rescue Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "RESCUE",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Capture Dorothy",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Witch Hurry-Up",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Yellow Brick Road",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The upper-left playfield requires a drop-target and VUK entry, then returns the ball through a separate feed.",
+          "response": "Keep the receiving lower flipper ready when the Castle returns the ball.",
+          "sourceUrl": "https://tiltforums.com/t/woz-tournament-strategy-discussion/252"
+        }
+      ],
+      "simpleOverview": "The Wizard of Oz uses Dorothy's capture and the Witch's Castle mini-playfield to start Rescue Multiball. Hit the Capture Dorothy targets, shoot the right loop to capture Dorothy, then knock down the single drop target and shoot the VUK to enter the Castle. Spell R-E-S-C-U-E and break through the castle doors to start Multiball; the third Jackpot at any one of the six major shots lights its R-E-S-C-U-E letter and a Super Jackpot at the doors.",
+      "overview": "The Wizard of Oz allows its major features to run together, and playing Rescue Multiball, Emerald City Multiball, one Munchkin Mode, and Fireball Frenzy lights Battle the Wicked Witch. Capture Dorothy, enter the Witch's Castle through the single drop target and VUK, spell R-E-S-C-U-E, then break through the doors to start Rescue. For the other three requirements, roll each character lane and shoot the ramp for three Emerald City locks, spell R-A-I-N-B-O-W and make ten Twister loops for a Munchkin Mode, and complete three Witch hurry-ups before hitting the Witch once more for Fireball Frenzy.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

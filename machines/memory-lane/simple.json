@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "Gry0Z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Roll through an inlane to light the spinner on that same side, then repeat the lit spinner to reach the upper saucers. Collect the top-left saucer for 2X Bonus and the top-center saucer for 3X.",
+        "steps": [
+          {
+            "text": "Roll through either inlane to light the spinner on the same side."
+          },
+          {
+            "text": "Shoot the lit spinner for 1,000 per spin and send the ball to the upper playfield."
+          },
+          {
+            "text": "Collect the top-left saucer to light 2X Bonus, then collect the top-center saucer to light 3X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep repeating the lit spinners while the ten pin rollovers build strikes and the held base bonus."
+          },
+          {
+            "text": "When the center drop bank is lit, complete it for one strike; when it is unlit, stay on the spinner route."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "inlane",
+            "context": "either inlane",
+            "label": "Return lanes",
+            "description": "Each return lane lights the spinner on the same side.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lit spinner",
+            "context": "lit spinner",
+            "label": "Side spinners",
+            "description": "The main scoring routes back to the upper playfield.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-left saucer",
+            "context": "top-left saucer",
+            "label": "2X saucer",
+            "description": "Lights 2X Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-center saucer",
+            "context": "top-center saucer",
+            "label": "3X saucer",
+            "description": "Lights 3X Bonus after 2X is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center drop bank",
+            "context": "center drop bank",
+            "label": "Center drop bank",
+            "description": "Awards a strike when completed while lit.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Right-spinner shots that fall short can rebound from the targets.",
+            "response": "Repeat only the spinner that clears cleanly to the upper playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/Gry0Z-MP3zR"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Roll through an inlane to light the spinner on that same side, then repeat the lit spinner to reach the upper saucers."
+          }
+        ],
+        "simpleOverview": "Memory Lane uses each inlane to light the spinner on the same side. The lit spinner returns the ball to upper scoring, where two saucers raise Bonus X and the numbered rollovers build strikes and held bonus.",
+        "overview": "Each inlane in Memory Lane lights the spinner on the same side. Shoot that spinner to return to the upper playfield, collect the left and center saucers for 2X and 3X Bonus, and use the ten pin rollovers to build strikes and held bonus.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Roll through an inlane to light the spinner on that side, shoot it to return up top, then collect the upper saucers for 2X and 3X Bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Light a spinner",
+            "text": "Roll through either inlane to light the spinner on that same side, then shoot it for 1,000 per spin."
+          },
+          {
+            "title": "Raise Bonus X",
+            "text": "Collect the top-left saucer for 2X Bonus, then the top-center saucer for 3X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Take a lit strike",
+            "text": "Complete the center drop bank only while it is lit; a lit completion awards one strike."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Roll through an inlane to light the spinner on that same side, then repeat the lit spinner to reach the upper saucers."
+          }
+        ]
+      }
+    }
+  ]
+}

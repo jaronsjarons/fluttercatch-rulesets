@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "G5W0z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Advance the Bonus Grid to light the Pipeline lock, lock the ball, make the Plunge skill shot for three-ball Multiball, complete two lit shots for the Rapids Jackpot, then complete all five shots and return to Rapids for the Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Bonus Grid",
+            "summary": "The five slide shots advance grid columns whose rows and columns award features."
+          },
+          {
+            "name": "Pipeline lock",
+            "summary": "Complete the bottom three grid rows or the Rapids column to light Multiball at the Pipeline."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Lock at the Pipeline, then make the gentle Plunge skill shot to add the third ball."
+          },
+          {
+            "name": "Super Jackpot",
+            "summary": "Complete all five lit major shots, then shoot the Rapids for 30,000,000."
+          },
+          {
+            "name": "Double Round",
+            "summary": "Spell DOUBLE before Multiball to double most scoring and grid progress for the rest of the ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use a gentle plunge to enter the Plunge saucer. Watch the Rapids return to the right flipper."
+          },
+          {
+            "text": "Hit Pipeline, Rapids, Boomerang, all three Splash targets, and Whirlpool to advance their Bonus Grid columns. A lit inlane can advance one random column."
+          },
+          {
+            "text": "Complete the bottom three grid rows or the Rapids column. Shoot the Pipeline when Lock is lit.",
+            "modeNotes": [
+              "Multiball qualification: The third row lights the Pipeline lock. The Rapids column lights it as a timed hurry-up."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the Pipeline lock, make the gentle Plunge skill shot to start three-ball Multiball. A miss starts two-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Pipeline and Plunge awards complete D-O-U-B-L-E before the lock, start Multiball while rest-of-ball Double Round is active so its Jackpots and Super Jackpots score twice.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the two random lit major shots. Then shoot the Rapids for the Jackpot.",
+            "modeNotes": [
+              "Jackpot phase: Two of Pipeline, Rapids, Boomerang, Whirlpool, and Arcade light first. Their completion lights the Rapids Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the Jackpot, complete all five lit major shots. Shoot the Rapids for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the five-shot cycle and Rapids Super Jackpot while at least two balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Direct grid Multiball",
+          "when": "Use this plan when DOUBLE letters or the Pipeline advance shot are unsafe.",
+          "steps": [
+            {
+              "text": "Use the five slide shots and lit inlanes to complete the bottom three grid rows."
+            },
+            {
+              "text": "Shoot the lit Pipeline and make the Plunge skill shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the two lit shots and collect the Rapids Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Continue to the five-shot Super Jackpot only while the feeds remain controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Repeated 30M Super Jackpots",
+          "steps": [
+            {
+              "text": "Start three-ball Multiball from the Pipeline lock and Plunge skill shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the opening pair and Rapids Jackpot."
+            },
+            {
+              "text": "Complete all five major shots and collect the Rapids Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the five-shot and Super cycle. Add Double Round before the start for the higher ceiling.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Three-ball Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Double Round",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Bonus Grid",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Rapids",
+            "label": "Rapids shot",
+            "description": "Shot used to collect the Multiball Jackpot and Super Jackpot.",
+            "precision": "unverified",
+            "context": "Return to Rapids after completing the required lit shots."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Plunge saucer skill shot",
+            "instruction": "Plunge gently so the ball enters the Plunge saucer. A hard plunge enters the pop bumpers instead.",
+            "sourceUrl": "https://pinball.org/rules/surfnsafari.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Souvenirs and Arcade targets are spring-loaded and return the ball with force.",
+            "response": "Use them only when the grid or award value justifies the rebound. Keep both flippers ready.",
+            "sourceUrl": "https://pinball.org/rules/surfnsafari.html"
+          },
+          {
+            "issue": "The Rapids-column Multiball light is a hurry-up and can expire.",
+            "response": "Do not complete the column until the Pipeline shot is ready. Use the row-based lock when timing is safer.",
+            "sourceUrl": "https://pinball.org/rules/surfnsafari.html"
+          }
+        ],
+        "simpleOverview": "Surf 'n Safari uses five slide shots to fill a Bonus Grid and light the Pipeline lock. Complete the bottom rows or Rapids column, lock at Pipeline, then make the gentle Plunge skill shot for three-ball Multiball and complete all five lit shots before returning to Rapids for the Super Jackpot.",
+        "overview": "Surf 'n Safari uses five slide shots to fill a Bonus Grid and light the Pipeline lock. Build the lock through the bottom rows or Rapids column, then start three-ball play and complete two lit shots for the Jackpot. Finish all five major shots and return to Rapids for the 30M Super Jackpot.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Advance the Bonus Grid to light the Pipeline lock, lock the ball, make the Plunge skill shot for three-ball Multiball, complete two lit shots for the Rapids Jackpot, then complete all five shots and return to Rapids for the Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use a gentle plunge to enter the Plunge saucer. Watch the Rapids return to the right flipper."
+          },
+          {
+            "text": "Hit Pipeline, Rapids, Boomerang, all three Splash targets, and Whirlpool to advance their Bonus Grid columns. A lit inlane can advance one random column."
+          },
+          {
+            "text": "Complete the bottom three grid rows or the Rapids column. Shoot the Pipeline when Lock is lit.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Multiball qualification: The third row lights the Pipeline lock. The Rapids column lights it as a timed hurry-up."
+            ]
+          },
+          {
+            "text": "After the Pipeline lock, make the gentle Plunge skill shot to start three-ball Multiball. A miss starts two-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If Pipeline and Plunge awards complete D-O-U-B-L-E before the lock, start Multiball while rest-of-ball Double Round is active so its Jackpots and Super Jackpots score twice.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the two random lit major shots. Then shoot the Rapids for the Jackpot.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Jackpot phase: Two of Pipeline, Rapids, Boomerang, Whirlpool, and Arcade light first. Their completion lights the Rapids Jackpot."
+            ]
+          },
+          {
+            "text": "After the Jackpot, complete all five lit major shots. Shoot the Rapids for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the five-shot cycle and Rapids Super Jackpot while at least two balls remain.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus Grid",
+            "summary": "The five slide shots advance grid columns whose rows and columns award features."
+          },
+          {
+            "name": "Pipeline lock",
+            "summary": "Complete the bottom three grid rows or the Rapids column to light Multiball at the Pipeline."
+          },
+          {
+            "name": "Three-ball Multiball",
+            "summary": "Lock at the Pipeline, then make the gentle Plunge skill shot to add the third ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Direct grid Multiball",
+          "when": "Use this plan when DOUBLE letters or the Pipeline advance shot are unsafe.",
+          "steps": [
+            {
+              "text": "Use the five slide shots and lit inlanes to complete the bottom three grid rows."
+            },
+            {
+              "text": "Shoot the lit Pipeline and make the Plunge skill shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Complete the two lit shots and collect the Rapids Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Continue to the five-shot Super Jackpot only while the feeds remain controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

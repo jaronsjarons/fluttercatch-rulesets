@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "id": "GrjDz",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Shoot the left orbit and engine ramp to collect three locks, finish Rev Mode, then use Corvette Multiball to collect Horse Power, Torque, and the side-loop-to-side-ramp Super.",
+        "quickInfo": [
+          {
+            "name": "Engine locks",
+            "summary": "The left orbit lights engine locks; the left ramp sends balls into the engine."
+          },
+          {
+            "name": "Rev Mode",
+            "summary": "The third lock starts a flipper-driven rev sequence; Multiball begins when that ball drops into the engine."
+          },
+          {
+            "name": "Corvette Multiball",
+            "summary": "All three balls feed toward the upper flipper for the side-loop and side-ramp Jackpot cycle."
+          },
+          {
+            "name": "Horse Power",
+            "summary": "The side loop scores the larger Horse Power jackpot."
+          },
+          {
+            "name": "Torque",
+            "summary": "The side ramp scores Torque; side loop into side ramp makes the Torque award a Super."
+          },
+          {
+            "name": "Cars",
+            "summary": "Route 66, Challenge, early locks, and Drag Race award cars; collecting the set leads to Future Car."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the left orbit-to-engine feed and the upper-flipper side-loop shot before committing to the lock route."
+          },
+          {
+            "text": "Shoot the left orbit to light engine lock, then use the left ramp to lock the ball."
+          },
+          {
+            "text": "Repeat the qualification and lock sequence until the third engine lock starts Rev Mode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep the flippers active during Rev Mode; when the third ball drops into the engine, Corvette Multiball begins.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Choose the next multiball shot from the current feed; take the easier side-ramp Torque first when the upper-flipper feed is unstable.",
+            "modeNotes": [
+              "Side loop: Horse Power jackpot; attempt it only from a stable upper-flipper feed.",
+              "Side ramp: Torque jackpot and the safer cashout.",
+              "Side loop followed by side ramp: doubled Torque Super."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After collecting both main jackpots, repeat the relit loop-and-ramp cycle at the increased values.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When two balls drain before any jackpot, use the short engine-restart window instead of returning immediately to side play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between multiballs, take safe Route 66 or Challenge progress toward the nine-car Future Car set."
+          }
+        ],
+        "fallback": {
+          "title": "Route 66 car route",
+          "when": "Use this when the left orbit or engine lock is rejecting.",
+          "steps": [
+            {
+              "text": "Repeat the right ramp to enter Route 66 awards and car progress."
+            },
+            {
+              "text": "Take a lit Challenge at the Pit only when its return is understood.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to engine locks after the feed becomes controllable."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Future Car build",
+            "when": "Use this when several cars are already collected and ordinary jackpots no longer separate the field.",
+            "steps": [
+              {
+                "text": "Use Route 66 and Challenge to fill the missing car awards."
+              },
+              {
+                "text": "Collect remaining car opportunities from locks and Drag Race."
+              },
+              {
+                "text": "Enter the Future Car sequence after all nine cars are secured.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Future Car multiball",
+          "steps": [
+            {
+              "text": "Collect the nine distinct cars across Route 66, Challenge, locks, and Drag Race."
+            },
+            {
+              "text": "Complete the Future Car puzzle when it becomes available."
+            },
+            {
+              "text": "Use the four-ball start to convert the major shots while maintaining control.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Rev Mode",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Corvette Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Horse Power",
+            "tone": "navy",
+            "kind": "shot"
+          },
+          {
+            "label": "Torque",
+            "tone": "olive",
+            "kind": "shot"
+          },
+          {
+            "label": "Challenge",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Future Car",
+            "tone": "navy",
+            "kind": "mode",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Future Car Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "context": "left orbit",
+            "label": "Engine-lock light",
+            "description": "Orbit used to qualify engine locks.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "context": "left ramp",
+            "label": "Engine ramp",
+            "description": "Ramp that sends the ball to the engine lock.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side loop",
+            "context": "side loop",
+            "label": "Horse Power loop",
+            "description": "Upper-flipper loop used for the Horse Power jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side ramp",
+            "context": "side ramp",
+            "label": "Torque ramp",
+            "description": "Upper-flipper ramp used for Torque and the combo Super.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "right ramp",
+            "label": "Route 66 ramp",
+            "description": "Right ramp used for Route 66 car awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Pit",
+            "context": "Pit",
+            "label": "Challenge start",
+            "description": "Pit shot used to begin a qualified Challenge.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Side-loop to side-ramp combo",
+            "instruction": "After the side-loop jackpot, hold or settle the feed needed for the side ramp so the Torque award becomes the doubled Super.",
+            "sourceUrl": "https://www.pinball.org/rules/corvette.html"
+          },
+          {
+            "name": "Engine restart",
+            "instruction": "If Rev Mode collapses before a jackpot, shoot the engine during the short restart window.",
+            "sourceUrl": "https://www.pinball.org/rules/corvette.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper-flipper side shots can reject into uncontrolled lower play.",
+            "response": "Test the feed early and take the easier Torque ramp when the loop is not clean.",
+            "sourceUrl": "https://www.pinball.org/rules/corvette.html"
+          },
+          {
+            "issue": "The engine diverter and lock hardware may not release consistently.",
+            "response": "Confirm lock behavior before depending on a restart or a precise upper-flipper feed.",
+            "sourceUrl": "https://www.pinball.org/rules/corvette.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm production L-3 or the installed ROM, physical or virtual locks, ball count, Extra Ball conversion, and Multiball saves.",
+          "Confirm later-lock timers, engine compensation, Jackpot values, Challenge difficulty, Drag Race awards, and Future Car reset behavior.",
+          "Test the left orbit, engine ramp and diverter, Pit, side loop, side ramp, upper flipper, and engine release before choosing the route."
+        ],
+        "simpleOverview": "Corvette uses the left orbit and engine ramp to collect three locks before Rev Mode releases Corvette Multiball. During Multiball, shoot the side loop for Horse Power and the side ramp for Torque; make the loop and then the ramp for the doubled Torque Super.",
+        "overview": "The left orbit lights each engine lock in Corvette, and the left ramp collects it. The third lock starts Rev Mode; when the third ball drops into the engine, Corvette Multiball begins. Shoot the side loop for Horse Power, the side ramp for Torque, and loop then ramp for the Torque Super.",
+        "machineSetup": [
+          "Confirm production L-3 or the installed ROM, physical or virtual locks, ball count, Extra Ball conversion, and Multiball saves.",
+          "Confirm later-lock timers, engine compensation, Jackpot values, Challenge difficulty, Drag Race awards, and Future Car reset behavior.",
+          "Test the left orbit, engine ramp and diverter, Pit, side loop, side ramp, upper flipper, and engine release before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Shoot the left orbit and engine ramp to collect three locks, finish Rev Mode, then use Corvette Multiball to collect Horse Power, Torque, and the side-loop-to-side-ramp Super.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the left orbit-to-engine feed and the upper-flipper side-loop shot before committing to the lock route."
+          },
+          {
+            "text": "Shoot the left orbit to light engine lock, then use the left ramp to lock the ball."
+          },
+          {
+            "text": "Repeat the qualification and lock sequence until the third engine lock starts Rev Mode.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Keep the flippers active during Rev Mode; when the third ball drops into the engine, Corvette Multiball begins.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Choose the next multiball shot from the current feed; take the easier side-ramp Torque first when the upper-flipper feed is unstable.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Side loop: Horse Power jackpot; attempt it only from a stable upper-flipper feed.",
+              "Side ramp: Torque jackpot and the safer cashout.",
+              "Side loop followed by side ramp: doubled Torque Super."
+            ]
+          },
+          {
+            "text": "After collecting both main jackpots, repeat the relit loop-and-ramp cycle at the increased values.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When two balls drain before any jackpot, use the short engine-restart window instead of returning immediately to side play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between multiballs, take safe Route 66 or Challenge progress toward the nine-car Future Car set."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Engine locks",
+            "summary": "The left orbit lights engine locks; the left ramp sends balls into the engine."
+          },
+          {
+            "name": "Rev Mode",
+            "summary": "The third lock starts a flipper-driven rev sequence; Multiball begins when that ball drops into the engine."
+          },
+          {
+            "name": "Corvette Multiball",
+            "summary": "All three balls feed toward the upper flipper for the side-loop and side-ramp Jackpot cycle."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Route 66 car route",
+          "when": "Use this when the left orbit or engine lock is rejecting.",
+          "steps": [
+            {
+              "text": "Repeat the right ramp to enter Route 66 awards and car progress."
+            },
+            {
+              "text": "Take a lit Challenge at the Pit only when its return is understood.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to engine locks after the feed becomes controllable."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

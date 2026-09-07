@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "G5YVk",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "In Space Ship, knock down the six left targets to light their follow-up lane; completing that sequence resets the bank, scores 80,000, and lights Special, with a replay on the next cycle. Work the four progressive targets to raise Bonus X through 3x, 5x, 10x, and 20x. Complete the A-B-C-D lanes once to light Extra Ball at the yellow target, then complete them again for Special.",
+        "simpleOverview": "In Space Ship, knock down the six left targets, then take their lit follow-up lane to reset the bank for 80,000 and light Special; the next completed cycle awards a replay. Hit the four progressive targets to raise Bonus X through 3x, 5x, 10x, and 20x. Complete A-B-C-D once for a lit Extra Ball, then again for Special.",
+        "summary": "Build Bonus X with the progressive targets whenever their shots are under control. Use the six-target bank for the 80,000-and-Special cycle, and take A-B-C-D lanes opportunistically because their first and second completions open Extra Ball and Special.",
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Hit the four progressive targets for 3x, 5x, 10x, and 20x."
+          },
+          {
+            "name": "Six-target cycle",
+            "summary": "Clear the six left targets, then take their lit follow-up lane to reset the bank for 80,000 and light Special."
+          },
+          {
+            "name": "Second target cycle",
+            "summary": "Repeat the completed six-target sequence for a replay."
+          },
+          {
+            "name": "A-B-C-D completion 1",
+            "summary": "Light Extra Ball at the fixed yellow target."
+          },
+          {
+            "name": "A-B-C-D completion 2",
+            "summary": "Complete the flashing lanes again for Special."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Hit the four progressive targets to advance Bonus X through 3x, 5x, 10x, and 20x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Knock down all six left targets to light their follow-up lane."
+          },
+          {
+            "text": "Take the lit follow-up lane to finish the sequence, reset the targets, score 80,000, and light Special."
+          },
+          {
+            "text": "Repeat the six-target sequence for the second-cycle replay."
+          },
+          {
+            "text": "Complete the A-B-C-D lanes once to light Extra Ball at the fixed yellow target, then complete them again for Special."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Lit-star and bumper route",
+            "when": "Use this while the ball is already circulating through the upper playfield.",
+            "steps": [
+              {
+                "text": "Hit pairs of the left targets to light the corresponding stars and bumpers."
+              },
+              {
+                "text": "Touch a lit star to make its paired bumper flash."
+              },
+              {
+                "text": "Hit the flashing bumper for 100,000; repeat by relighting it at the star."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "20x Bonus, Extra Ball, and Special",
+          "steps": [
+            {
+              "text": "Finish the progressive targets to reach 20x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete A-B-C-D once for the Extra Ball collect and again for Special."
+            },
+            {
+              "text": "Complete two six-target cycles for the lit Special and replay sequence."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm Bonus X behavior through 20x, balls per game, Extra Ball conversion, Special conversion, replay behavior, and score-threshold awards.",
+          "Test all six left targets, the follow-up lane, four progressive targets, A-B-C-D lanes, fixed yellow target, three pop bumpers, star switches, lower-right trapdoor, and every progress lamp."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "six left targets",
+            "label": "Six-target left bank",
+            "description": "Left-side bank that starts the 80,000-point, Special, and replay cycle.",
+            "precision": "unverified"
+          },
+          {
+            "term": "follow-up lane",
+            "label": "Target-cycle follow-up lane",
+            "description": "Lane lit after all six left targets are down; completing it resets the bank and advances the cycle.",
+            "precision": "unverified"
+          },
+          {
+            "term": "progressive targets",
+            "label": "Four progressive targets",
+            "description": "Upper-right targets that advance Bonus X through 20x.",
+            "precision": "unverified"
+          },
+          {
+            "term": "A-B-C-D lanes",
+            "label": "A-B-C-D lanes",
+            "description": "Four lanes whose first completion lights Extra Ball and second completion awards Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "fixed yellow target",
+            "label": "Yellow Extra Ball target",
+            "description": "Target that collects Extra Ball after the first A-B-C-D completion.",
+            "precision": "unverified"
+          },
+          {
+            "term": "pop bumpers",
+            "label": "Three pop bumpers",
+            "description": "Bumpers that can be lit through paired stars for 100,000-point hits.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Bonus X with the progressive targets whenever their shots are under control. Use the six-target bank for the 80,000-and-Special cycle, and take A-B-C-D lanes opportunistically because their first and second completions open Extra Ball and Special.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Hit the four progressive targets to advance Bonus X through 3x, 5x, 10x, and 20x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Knock down all six left targets to light their follow-up lane."
+          },
+          {
+            "text": "Take the lit follow-up lane to finish the sequence, reset the targets, score 80,000, and light Special."
+          },
+          {
+            "text": "Repeat the six-target sequence for the second-cycle replay."
+          },
+          {
+            "text": "Complete the A-B-C-D lanes once to light Extra Ball at the fixed yellow target, then complete them again for Special."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Hit the four progressive targets for 3x, 5x, 10x, and 20x."
+          },
+          {
+            "name": "Six-target cycle",
+            "summary": "Clear the six left targets, then take their lit follow-up lane to reset the bank for 80,000 and light Special."
+          },
+          {
+            "name": "Second target cycle",
+            "summary": "Repeat the completed six-target sequence for a replay."
+          }
+        ]
+      }
+    }
+  ]
+}

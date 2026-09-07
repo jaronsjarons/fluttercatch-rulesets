@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "GrPO3",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "On original Fathom or Revisited Classic, lock at the easier green saucer, light the spinner, start two-ball play, cradle one ball, rip the spinner for 10,000 per spin, and avoid relocking.",
+        "steps": [
+          {
+            "text": "Lock the first controlled ball in the right green saucer. Use the blue lock only when the shot is safe.",
+            "modeNotes": [
+              "Ball lock: A saucer holds the ball and serves a new ball to the shooter lane. The right green lock is usually easier than the left blue lock."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Hit the standup left of the green in-line targets to light the spinner before you release the locked ball.",
+            "modeNotes": [
+              "Lit spinner: The spinner scores 5,000 per spin in single-ball play. It scores 10,000 per spin during two-ball play."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the green in-line drop targets. A full green set in the left six-target bank can spot the next green in-line target after a ball is locked.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the last green in-line target to release the ball and start two-ball multiball. All scoring is doubled.",
+            "modeNotes": [
+              "Two-ball multiball: Releasing one locked ball starts double scoring. Play continues until one ball remains."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Cradle one ball. Shoot the lit spinner with the other ball. Use the flipper that gives the strongest rip on this machine.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Avoid both saucers during multiball. Relocking a ball ends two-ball play and returns scoring to 1x.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, relock on the green side and repeat. Leave the blue side ready for the next two-ball start when possible.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Lit spinner",
+          "when": "Use this plan when the green lock or in-line targets reject the ball.",
+          "steps": [
+            {
+              "text": "Hit the standup left of the green in-line targets to light the spinner."
+            },
+            {
+              "text": "Shoot the spinner repeatedly for 5,000 per spin."
+            },
+            {
+              "text": "In match play, stay on the spinner when its return is safer than the multiball shots."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "End-of-ball bonus",
+            "when": "Use this plan when the drop banks and top lanes are safer than the spinner.",
+            "steps": [
+              {
+                "text": "Complete 1 through 10 to build one colored base bonus to 55,000."
+              },
+              {
+                "text": "Knock down the matching green or blue multiplier targets to raise that bonus to 5x.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Repeat the numbered 1-through-10 targets and matching multiplier targets for the other color when safe. Two 55,000 bases at 5x produce the 550,000 maximum combined bonus."
+              },
+              {
+                "text": "Do not tilt. A completed 55,000 base carries to the next ball, but its multiplier does not."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Three-ball play and Mermaid Treasure",
+          "steps": [
+            {
+              "text": "For classic three-ball play, lock both saucers and release both balls. All scoring becomes 3x and the lit spinner scores 15,000 per spin. This route is usually less efficient than two separate two-ball starts.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "On Fathom Revisited 2.0, earn all four artifacts to qualify Mermaid Treasure at the Lagoon saucer.",
+              "modeNotes": [
+                "Underwater Breathing: Complete five banks during Mermaid Multiball, which starts from 1-2-3 in order.",
+                "Navigation Device: Collect the Super Jackpot during Lagoon Multiball, which starts after the blue drops light the Lagoon saucer.",
+                "Trident: Win a Mermaiden battle and its cave escape.",
+                "Treasure Key: Collect the playfield Fathom Super Jackpot."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "During Mermaid Treasure, complete the displayed sequence of playfield features. A drain removes the Treasure Key, so you must earn that artifact again.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "From the left flipper, make an early backhand to the spinner. Test both flippers and use the one that gives more spins.",
+            "sourceUrl": "https://www.youtube.com/watch?v=CfdWm7pGAXM&t=277s",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Let a controlled green-side return bounce from the right flipper across the left flipper. Raise the left flipper to cradle it, then shoot the green lane again.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/fathom",
+            "techniqueSlug": "dead-bounce"
+          },
+          {
+            "name": "Upper-flipper backflip",
+            "instruction": "Use the tip of the upper flipper to backflip a nearby ball into the light-spinner standup.",
+            "sourceUrl": "https://www.youtube.com/watch?v=CfdWm7pGAXM&t=610s"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "When the ball is controlled on one lower flipper, test a post transfer to move it to the flipper with the safer lock shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=CfdWm7pGAXM&t=754s",
+            "techniqueSlug": "post-pass"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Nudge a ball toward the small post below the lane divider. A graze can deflect the ball through the gate into the return area. Test the tilt first.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/fathom",
+            "techniqueSlug": "nudging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The return lanes and outlanes are reversed. Most drains occur at the outside lanes.",
+            "response": "Inspect both divider posts before ball 1. Adjust the direction and timing of your normal outlane nudge.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/fathom"
+          },
+          {
+            "issue": "The left blue lock is harder than the right green lock on many copies.",
+            "response": "Start the green multiball first. Take blue progress only from controlled or accidental opportunities.",
+            "sourceUrl": "https://www.youtube.com/watch?v=CfdWm7pGAXM&t=693s"
+          },
+          {
+            "issue": "An unnecessary upper-flipper shot can return the ball without control.",
+            "response": "Let the ball pass the upper flipper when you do not need the lock. Cradle it on a lower flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=CfdWm7pGAXM&t=568s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the easier right green lock."
+          },
+          {
+            "name": "Long goal",
+            "summary": "For classic three-ball play, lock both saucers and release both balls."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Lit spinner: Use this plan when the green lock or in-line targets reject the ball."
+          },
+          {
+            "name": "Edition scope",
+            "summary": "The main route covers original Fathom and Revisited Classic; Revisited 2.0 replaces the core rules with artifacts and modes."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm original Fathom, Revisited Classic, or Revisited 2.0 before choosing a route.",
+          "Test both locks, green in-line targets, spinner, and saucer releases."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "green saucer",
+            "label": "Green lock",
+            "description": "Right-side lock used for the safer two-ball start.",
+            "precision": "unverified",
+            "context": "Right-side lock used for the safer two-ball start."
+          },
+          {
+            "term": "green in-line targets",
+            "label": "Green in-line bank",
+            "description": "Targets that release the lock and start two-ball play.",
+            "precision": "unverified",
+            "context": "Targets that release the lock and start two-ball play."
+          },
+          {
+            "term": "spinner",
+            "label": "Spinner",
+            "description": "High-value repeat shot after its standup lights it.",
+            "precision": "unverified",
+            "context": "High-value repeat shot after its standup lights it."
+          }
+        ],
+        "simpleOverview": "Fathom uses a lit spinner and one green lock to create repeatable two-ball 2x scoring. Hit the standup left of the green inline targets to light the spinner, finish the inline bank, release the locked ball, then cradle one ball and rip the spinner for 10,000 per spin.",
+        "overview": "Fathom uses a lit spinner and one green lock to create repeatable two-ball 2x scoring. Favor the easier green lock, light the spinner before release, and use controlled two-ball play for 10,000-per-spin rips. Relocking ends the multiplier, so return to the saucer only after Multiball.",
+        "machineSetup": [
+          "Confirm original Fathom, Revisited Classic, or Revisited 2.0 before choosing a route.",
+          "Test both locks, green in-line targets, spinner, and saucer releases."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "On original Fathom or Revisited Classic, lock at the easier green saucer, light the spinner, start two-ball play, cradle one ball, rip the spinner for 10,000 per spin, and avoid relocking.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Lock the first controlled ball in the right green saucer. Use the blue lock only when the shot is safe.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Ball lock: A saucer holds the ball and serves a new ball to the shooter lane. The right green lock is usually easier than the left blue lock."
+            ]
+          },
+          {
+            "text": "Hit the standup left of the green in-line targets to light the spinner before you release the locked ball.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Lit spinner: The spinner scores 5,000 per spin in single-ball play. It scores 10,000 per spin during two-ball play."
+            ]
+          },
+          {
+            "text": "Complete the green in-line drop targets. A full green set in the left six-target bank can spot the next green in-line target after a ball is locked.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the last green in-line target to release the ball and start two-ball multiball. All scoring is doubled.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Two-ball multiball: Releasing one locked ball starts double scoring. Play continues until one ball remains."
+            ]
+          },
+          {
+            "text": "Cradle one ball. Shoot the lit spinner with the other ball. Use the flipper that gives the strongest rip on this machine.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Avoid both saucers during multiball. Relocking a ball ends two-ball play and returns scoring to 1x.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, relock on the green side and repeat. Leave the blue side ready for the next two-ball start when possible.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use the easier right green lock."
+          },
+          {
+            "name": "Long goal",
+            "summary": "For classic three-ball play, lock both saucers and release both balls."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Lit spinner: Use this plan when the green lock or in-line targets reject the ball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Lit spinner",
+          "when": "Use this plan when the green lock or in-line targets reject the ball.",
+          "steps": [
+            {
+              "text": "Hit the standup left of the green in-line targets to light the spinner."
+            },
+            {
+              "text": "Shoot the spinner repeatedly for 5,000 per spin."
+            },
+            {
+              "text": "In match play, stay on the spinner when its return is safer than the multiball shots."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The return lanes and outlanes are reversed. Most drains occur at the outside lanes.",
+          "text": "Inspect both divider posts before ball 1. Adjust the direction and timing of your normal outlane nudge."
+        }
+      }
+    }
+  ]
+}

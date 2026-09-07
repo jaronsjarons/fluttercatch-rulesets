@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "id": "GRnX6",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Keep the ball up top to advance bonus and the swinging-target value, collect a lit side saucer for Double Bonus, then use only controlled lit-spinner feeds.",
+        "quickInfo": [
+          {
+            "name": "Swinging target",
+            "summary": "Each direct or lit-lane collect advances its displayed award through A, B, C, and 5,000-point states."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Complete both lights for one A-B-C letter, then enter a lit side saucer to activate Double Bonus."
+          },
+          {
+            "name": "Lit spinner",
+            "summary": "Two 5,000-point positions in the swinging-target cycle light the left spinner for high per-spin value."
+          },
+          {
+            "name": "Side upkickers",
+            "summary": "The two lower saucers return the ball toward the moving target and can support another controlled top feed."
+          },
+          {
+            "name": "Shared target state",
+            "summary": "The swinging-target position and spinner light continue from one player to the next."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for a lit swinging-target collect lane. Use the top-right sling only when it can change the lane state safely."
+          },
+          {
+            "text": "Return the ball to the upper playfield. Advance bonus and collect the swinging-target value.",
+            "modeNotes": [
+              "Swinging-target cycle: A hit or a lit top-lane collect moves the displayed value one position. The cycle controls letter progress and the spinner light.",
+              "Read the swinging-target position and spinner lamp because their state passes from player to player."
+            ]
+          },
+          {
+            "text": "Complete both lamps for one A-B-C letter. This lights the side saucers for Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Let the ball enter a lit side saucer, or shoot the saucer when the backstop makes the feed reliable.",
+            "modeNotes": [
+              "Double Bonus: One completed A-B-C letter pair lights the lower side saucers. A lit saucer activates the end-of-ball multiplier."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the spinner is lit, let the ball roll slowly down the right flipper. Shoot the left spinner."
+          },
+          {
+            "text": "After Double Bonus is active, continue the upper route and swinging-target collects until the ball ends.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Raised-flipper upkicker control",
+          "when": "Use this when direct spinner and side-saucer shots are unsafe.",
+          "steps": [
+            {
+              "text": "Hold the receiving flipper up as the ball approaches a lower side saucer."
+            },
+            {
+              "text": "Let the ball enter the upkicker without a full flip."
+            },
+            {
+              "text": "Prepare for the kick toward the center target or opposite flipper."
+            },
+            {
+              "text": "Use the return to send the ball back to the upper playfield."
+            }
+          ]
+        },
+        "alternatives": [],
+        "buildsToward": {
+          "title": "Double Bonus and repeated target collects",
+          "steps": [
+            {
+              "text": "Advance the swinging target until both lamps for one A-B-C letter are complete."
+            },
+            {
+              "text": "Enter a lit side saucer to activate Double Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Continue upper-playfield bonus and target-value progress."
+            },
+            {
+              "text": "Use each lit-spinner state only when its right-flipper setup is controlled."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "swinging target",
+            "label": "Swinging target",
+            "description": "Upper-playfield target whose state advances during the main bonus route.",
+            "precision": "unverified",
+            "context": "Keep the ball in the upper playfield and advance the swinging target."
+          },
+          {
+            "term": "collect swinging-target value lane",
+            "label": "Lit target-value lane",
+            "description": "Top skill-shot lane that collects and advances the displayed swinging-target award.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side saucer",
+            "label": "Double Bonus saucer",
+            "description": "Either lower side saucer activates Double Bonus after one A-B-C letter pair is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side upkicker",
+            "label": "Side upkicker",
+            "description": "Lower side kickout used for raised-flipper control or a safe transfer toward the spinner.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "High-value spinner only while the swinging-target cycle is in either 5,000-point position.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Raised-flipper saucer capture",
+            "instruction": "Hold the receiving flipper up. Let the ball roll into the side upkicker instead of making a full flip.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRnX6-MQk8L"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce a safe side-saucer kickout across to the right flipper before shooting the lit left spinner.",
+            "techniqueSlug": "dead-bounce",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRnX6-MQk8L"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball that leaves the top can hit a flipper elbow and enter the adjacent outlane.",
+            "response": "Watch every top exit. Keep both flippers ready and nudge before the ball reaches the elbow.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRnX6-MQk8L"
+          },
+          {
+            "issue": "A side-saucer kickout can hit the moving target or its rubber and drain through the center.",
+            "response": "Watch the full kickout. Use a raised flipper only after you learn the machine's return direction.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRnX6-MQk8L"
+          },
+          {
+            "issue": "The playfield does not permit a normal cradle, and the target state is shared between players.",
+            "response": "Use short controlled contacts. Check the target and spinner lights at the start of every ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRnX6-MQk8L"
+          }
+        ],
+        "checkBeforePlay": [
+          "Identify four-player Space Mission or two-player Space Odyssey before using the shared layout card.",
+          "Read the swinging-target position and spinner lamp because their state passes from player to player.",
+          "Learn all four saucer kickouts before relying on raised-flipper control or a Dead bounce."
+        ],
+        "simpleOverview": "Space Mission and Space Odyssey advance a swinging-target award through top play, then use a lit side saucer for Double Bonus. Complete both lights for one A-B-C letter, enter the lit saucer, and use the spinner only when its high-value state has a controlled right-flipper setup.",
+        "overview": "In Space Mission and Space Odyssey, hitting the swinging target or its lit top lanes advances the target value and completes the two lamps for A, B, or C. Completing both lamps for one letter lights the side saucers for Double Bonus. The same target-value cycle lights the spinner at two positions, so repeat it only from a controlled right-flipper feed.",
+        "machineSetup": [
+          "Identify four-player Space Mission or two-player Space Odyssey before using the shared layout card.",
+          "Learn all four saucer kickouts before relying on raised-flipper control or a Dead bounce."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball up top to advance bonus and the swinging-target value, collect a lit side saucer for Double Bonus, then use only controlled lit-spinner feeds.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for a lit swinging-target collect lane. Use the top-right sling only when it can change the lane state safely."
+          },
+          {
+            "text": "Return the ball to the upper playfield. Advance bonus and collect the swinging-target value.",
+            "details": [
+              "Swinging-target cycle: A hit or a lit top-lane collect moves the displayed value one position. The cycle controls letter progress and the spinner light.",
+              "Read the swinging-target position and spinner lamp because their state passes from player to player."
+            ]
+          },
+          {
+            "text": "Complete both lamps for one A-B-C letter. This lights the side saucers for Double Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Let the ball enter a lit side saucer, or shoot the saucer when the backstop makes the feed reliable.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Double Bonus: One completed A-B-C letter pair lights the lower side saucers. A lit saucer activates the end-of-ball multiplier."
+            ]
+          },
+          {
+            "text": "When the spinner is lit, let the ball roll slowly down the right flipper. Shoot the left spinner."
+          },
+          {
+            "text": "After Double Bonus is active, continue the upper route and swinging-target collects until the ball ends.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Swinging target",
+            "summary": "Each direct or lit-lane collect advances its displayed award through A, B, C, and 5,000-point states."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Complete both lights for one A-B-C letter, then enter a lit side saucer to activate Double Bonus."
+          },
+          {
+            "name": "Lit spinner",
+            "summary": "Two 5,000-point positions in the swinging-target cycle light the left spinner for high per-spin value."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Raised-flipper upkicker control",
+          "when": "Use this when direct spinner and side-saucer shots are unsafe.",
+          "steps": [
+            {
+              "text": "Hold the receiving flipper up as the ball approaches a lower side saucer."
+            },
+            {
+              "text": "Let the ball enter the upkicker without a full flip."
+            },
+            {
+              "text": "Prepare for the kick toward the center target or opposite flipper."
+            },
+            {
+              "text": "Use the return to send the ball back to the upper playfield."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A ball that leaves the top can hit a flipper elbow and enter the adjacent outlane.",
+          "text": "Watch every top exit. Keep both flippers ready and nudge before the ball reaches the elbow."
+        }
+      }
+    }
+  ]
+}

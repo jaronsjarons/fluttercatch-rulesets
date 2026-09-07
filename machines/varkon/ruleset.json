@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Lvz",
+  "title": "Varkon",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Williams Varkon factory instruction booklet",
+      "url": "https://www.pinrepair.com/sys37/manuals/wms7-varkon.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "London Pinball Varkon rules and gameplay overview",
+        "url": "https://www.youtube.com/watch?v=5HPn3CEyRVE"
+      },
+      {
+        "label": "Classic Game Room Varkon exact-machine review",
+        "url": "https://www.youtube.com/watch?v=nyOq1ngehHM"
+      },
+      {
+        "label": "Kineticist Varkon machine guide and playfield",
+        "url": "https://www.kineticist.com/games/pinball/varkon"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Varkon begins on the upper playfield. Complete upper targets 1 through 5 to light the ramp chamber, then make the lit chamber: the upper ball is held and a second ball is served to the lower playfield. When the lower ball drains, the held ball returns to the upper level. Upper 1-5 completions also advance the chamber value; K-O-N advances upper Bonus X, V-A-R raises the jet-bumper value, and the chamber can light the Bull's-Eye for Extra Ball. On the lower level, targets 6 through 10 build bonus and A-B advances its separate multiplier.",
+      "simpleOverview": "Complete upper targets 1 through 5 to light the ramp chamber, then shoot the lit chamber to hold the upper ball and start play on the lower level. Complete K-O-N for upper Bonus X. On the lower playfield, complete 6 through 10 for bonus and A-B for its multiplier.",
+      "summary": "Qualify the chamber first, use the lower level to build its large bonus safely, then resume the upper ball with K-O-N and the Bull's-Eye route already advanced.",
+      "quickInfo": [
+        {
+          "name": "Light the Chamber",
+          "summary": "Complete upper targets 1 through 5."
+        },
+        {
+          "name": "Start Lower Play",
+          "summary": "Shoot the lit ramp chamber."
+        },
+        {
+          "name": "Upper Bonus X",
+          "summary": "Complete K-O-N."
+        },
+        {
+          "name": "Lower Bonus",
+          "summary": "Complete targets 6 through 10."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete upper targets 1, 2, 3, 4, and 5 to light the ramp chamber.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot the lit chamber to hold the upper-playfield ball and serve a ball onto the lower playfield.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "On the lower level, complete targets 6 through 10 to collect and advance bonus, and hit A and B to raise its multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After the lower ball drains and the upper ball returns, complete K-O-N for upper Bonus X and continue 1-5 completions to raise the chamber value.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Bull's-Eye Extra Ball route",
+          "when": "Use this when the ramp chamber value has reached the machine's Extra Ball threshold.",
+          "steps": [
+            {
+              "text": "Raise the chamber value to 20,000 or more through repeated 1-5 completions.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Make the lit chamber, then hit the lit Bull's-Eye for the configured Extra Ball award.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lower-Playfield Bonus",
+        "steps": [
+          {
+            "text": "Complete upper targets 1 through 5 and shoot the lit chamber.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete lower targets 6 through 10 and A-B before the lower ball drains.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check the ramp-chamber value needed to light Bull's-Eye Extra Ball, the maximum lower bonus, both Bonus X ladders, and the Special award.",
+        "Test upper targets 1-5, V-A-R rollovers, K-O-N targets, Bull's-Eye, chamber hold and transfer, lower targets 6-10, A-B targets, both flipper sets, and both level drains."
+      ],
+      "techniques": [
+        {
+          "name": "Dead Bounce",
+          "instruction": "On the cramped lower level, let a safe return cross to the opposite flipper instead of adding an unnecessary flip before the 6-10 bank shot.",
+          "sourceUrl": "https://www.youtube.com/watch?v=5HPn3CEyRVE",
+          "techniqueSlug": "dead-bounce"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Varkon's player view is mirrored, so left and right on a service diagram are reversed from the view through the cabinet glass.",
+          "response": "Identify shots by their labels and level before using a left/right callout.",
+          "sourceUrl": "https://www.pinrepair.com/sys37/manuals/wms7-varkon.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

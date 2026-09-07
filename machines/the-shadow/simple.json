@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "id": "G4jPX",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Lock three balls at the Sanctum for Shadow Multiball. Score five upper-loop Jackpots and the side-saucer Super Jackpot. Then complete K-H-A-N and start Khan Multiball at the side saucer.",
+        "steps": [
+          {
+            "text": "Before plunging, press the left blue button to choose points or a random award at the left ramp. If you do not want that ramp shot, use the left orbit to begin the two-way combo.",
+            "modeNotes": [
+              "Skill shot: The left blue button selects points or a random award at the left ramp."
+            ]
+          },
+          {
+            "text": "Shoot the Sanctum wall to take the first lit lock. For each later lock, hit the wall to light Lock, then hit it again to lock a ball. The third lock starts Shadow Multiball.",
+            "modeNotes": [
+              "Sanctum lock: The first lock is already lit. Each later lock requires one additional wall hit before the locking shot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Shadow Multiball, shoot the upper loop for Jackpots. Lock one ball in Start Scene or the side saucer to double the next Jackpot; lock one in each to triple it.",
+            "modeNotes": [
+              "The doubled or tripled value lasts for one Jackpot or 10 seconds. The locked balls then return to play."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After five upper-loop Jackpots, shoot the side saucer for the 100-million Super Jackpot.",
+            "modeNotes": [
+              "Locking a ball in Start Scene doubles the Super Jackpot for 10 seconds."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete K-H-A-N in the inlanes and outlanes. Use either ramp and its blue diverter button to feed a missing inlane letter, then shoot the side saucer to start Khan Multiball.",
+            "modeNotes": [
+              "Each completed K-H-A-N set also raises Bonus X. The Khan Multiball start can time out after repeated starts, so collect the lit side saucer promptly."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Khan Multiball, collect the left orbit, left ramp, Battlefield, right ramp, and upper loop Jackpots. Then hit the moving lit target on the Battlefield for the 100-million Super Jackpot.",
+            "modeNotes": [
+              "Lock one ball in Start Scene or the side saucer to double the next Jackpot. Lock one in each to triple it."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Scenes",
+          "when": "Choose Scenes when Start Scene and the called shots are safer than repeated Sanctum hits.",
+          "steps": [
+            {
+              "text": "Shoot either ramp to change the flashing Scene, then shoot Start Scene when no Scene or multiball is running. Choose Escape Underwater Doom or Discover Hotel Monolith.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For Escape Underwater Doom, shoot both ramps, the left orbit, the upper loop, the left ramp, then Start Scene for the final award.",
+              "modeNotes": [
+                "The called shots are timed hurry-ups and must be completed in that order."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "For Discover Hotel Monolith, hit the Sanctum wall three times and lock a ball there. Make the left orbit, left ramp, Battlefield, Sanctum, right ramp, Start Scene, right orbit, and upper loop while their arrows flash.",
+              "modeNotes": [
+                "This is a two-ball Scene. The three wall hits and Sanctum lock score 40 million before the major shots light."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Khan without the Sanctum",
+            "when": "Use this route when the Sanctum wall rejects dangerously but the ramps and left-orbit feed are controllable.",
+            "steps": [
+              {
+                "text": "Shoot either ramp and use its blue diverter button to feed missing K-H-A-N inlane letters. Complete K-H-A-N to light Khan Multiball.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot the left orbit, then use the upper flipper to put the ball in the side saucer and start Khan Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Collect the left orbit, left ramp, Battlefield, right ramp, and upper loop Jackpots. Then hit the moving lit Battlefield target for the 100-million Super Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Vengeance",
+            "when": "Choose Vengeance when all four ramp paths are controllable.",
+            "steps": [
+              {
+                "text": "Shoot each ramp through both diverter paths, using that side's blue button to choose the return. Lighting all four rings starts Vengeance.",
+                "modeNotes": [
+                  "Phurba diverter: A blue cabinet button changes the exit at the matching ramp. Use it to collect the inner and outer return lanes."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "During the 20-second timer, light all four rings again. The fourth scores 50 million and resets the timer.",
+                "modeNotes": [
+                  "Vengeance: A four-way ramp combo doubles the Vengeance awards. A full doubled completion can score 100 million."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Final Battle",
+          "steps": [
+            {
+              "text": "Complete all six Scenes.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the upper-left drop target to open the Battlefield, then shoot the lane behind it. Use the paddle to make 30 yellow-target hits, then send the ball through the top drop targets to defeat Khan.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete K-H-A-N in the inlanes and outlanes, then shoot the side saucer to start Khan Multiball. Play one Shadow Multiball and one Khan Multiball; each lights its Scarf inlay when it ends.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot Start Scene to begin Final Battle. Keep the five-ball multiball alive and complete all 27 required shots.",
+              "modeNotes": [
+                "Final Battle: Each required shot scores 10 million. Completing the full grid awards 1 billion."
+              ],
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Escape Underwater Doom",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Discover Hotel Monolith",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Vengeance",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Shadow Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Khan Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Final Battle",
+            "tone": "forest",
+            "kind": "multiball"
+          }
+        ],
+        "overview": "In The Shadow, ramps select Scenes, three Sanctum locks start Shadow Multiball, and K-H-A-N through the return lanes lights Khan Multiball at the side saucer. Use the Sanctum route for five upper-loop Jackpots and the side-saucer Super Jackpot. Complete six Scenes, both Multiballs, and Battlefield to qualify Final Battle.",
+        "simpleOverview": "In The Shadow, either ramp chooses a Scene and the lit Start Scene shot begins it. Escape uses both ramps and the two-way loop; Hotel adds two-ball play at the Sanctum. Three Sanctum locks start Shadow Multiball, K-H-A-N and the side saucer start Khan Multiball, and Scene points are paid in end-of-ball bonus.",
+        "playfieldReferences": [
+          {
+            "term": "Battlefield",
+            "label": "Battlefield",
+            "description": "The paddle-controlled upper playfield occupies the upper-left corner.",
+            "xPercent": 34.04,
+            "yPercent": 10.06,
+            "widthPercent": 17.52,
+            "heightPercent": 15.04,
+            "precision": "area"
+          },
+          {
+            "term": "Battlefield target",
+            "label": "Battlefield target",
+            "description": "Then hit the moving lit Battlefield target for the 100-million Super Jackpot.",
+            "xPercent": 45.29,
+            "yPercent": 16.18,
+            "widthPercent": 4.75,
+            "heightPercent": 4.95,
+            "precision": "area"
+          },
+          {
+            "term": "drop target",
+            "label": "drop target",
+            "description": "Shoot the upper-left drop target to open the Battlefield, then shoot the lane behind it.",
+            "xPercent": 45.47,
+            "yPercent": 17.04,
+            "widthPercent": 3.62,
+            "heightPercent": 2.51,
+            "precision": "area"
+          },
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "The orbit entrance is on the far left, beside the left ramp.",
+            "xPercent": 29.19,
+            "yPercent": 31.87,
+            "widthPercent": 9.45,
+            "heightPercent": 10.33,
+            "precision": "area"
+          },
+          {
+            "term": "left ramp",
+            "label": "left ramp",
+            "description": "Before plunging, press the left blue button to choose points or a random award at the left ramp.",
+            "xPercent": 37.91,
+            "yPercent": 31.71,
+            "widthPercent": 9,
+            "heightPercent": 9.15,
+            "precision": "area"
+          },
+          {
+            "term": "right orbit",
+            "label": "right orbit",
+            "description": "Make the left orbit, left ramp, Battlefield, Sanctum, right ramp, Start Scene, right orbit, and upper loop while their arrows flash.",
+            "xPercent": 69.74,
+            "yPercent": 22.49,
+            "widthPercent": 6.34,
+            "heightPercent": 9.15,
+            "precision": "area"
+          },
+          {
+            "term": "right ramp",
+            "label": "right ramp",
+            "description": "During Khan Multiball, collect the left orbit, left ramp, Battlefield, right ramp, and upper loop Jackpots.",
+            "xPercent": 58.46,
+            "yPercent": 20.01,
+            "widthPercent": 8.55,
+            "heightPercent": 10.49,
+            "precision": "area"
+          },
+          {
+            "term": "Sanctum lock",
+            "label": "Sanctum lock",
+            "description": "The hidden-magnet wall and lock are in the upper center, to the right of the Battlefield.",
+            "xPercent": 50.93,
+            "yPercent": 16.53,
+            "widthPercent": 6.17,
+            "heightPercent": 7.38,
+            "precision": "area"
+          },
+          {
+            "term": "side saucer",
+            "label": "Side saucer",
+            "description": "The side saucer is behind the left ramp and beside the upper loop.",
+            "xPercent": 42.31,
+            "yPercent": 27.42,
+            "widthPercent": 10.95,
+            "heightPercent": 5.73,
+            "precision": "area"
+          },
+          {
+            "term": "side targets",
+            "label": "side targets",
+            "description": "Use the motion to reach side targets.",
+            "xPercent": 25.31,
+            "yPercent": 38.55,
+            "widthPercent": 6.11,
+            "heightPercent": 8.13,
+            "precision": "area"
+          },
+          {
+            "term": "side targets",
+            "label": "side targets",
+            "description": "Use the motion to reach side targets.",
+            "xPercent": 68.33,
+            "yPercent": 38.49,
+            "widthPercent": 5.88,
+            "heightPercent": 6.44,
+            "precision": "area"
+          },
+          {
+            "term": "Start Scene",
+            "label": "Start Scene saucer",
+            "description": "The mode-start saucer is on the upper-right side beside the right ramp.",
+            "xPercent": 64.99,
+            "yPercent": 21.56,
+            "widthPercent": 6.34,
+            "heightPercent": 9.35,
+            "precision": "area"
+          },
+          {
+            "term": "top drop targets",
+            "label": "top drop targets",
+            "description": "Use the paddle to make 30 yellow-target hits, then send the ball through the top drop targets to defeat Khan.",
+            "xPercent": 34.74,
+            "yPercent": 7.41,
+            "widthPercent": 19.3,
+            "heightPercent": 9.47,
+            "precision": "area"
+          },
+          {
+            "term": "upper loop",
+            "label": "Upper loop",
+            "description": "The upper-flipper loop is behind the left ramp, near the center-left of the upper playfield.",
+            "xPercent": 42.98,
+            "yPercent": 25.43,
+            "widthPercent": 10.88,
+            "heightPercent": 3.66,
+            "precision": "area"
+          },
+          {
+            "term": "upper-left drop target",
+            "label": "upper-left drop target",
+            "description": "Shoot the upper-left drop target to open the Battlefield, then shoot the lane behind it.",
+            "xPercent": 44.44,
+            "yPercent": 16.44,
+            "widthPercent": 5.77,
+            "heightPercent": 2.71,
+            "precision": "area"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Early upper-loop flip",
+            "instruction": "Shoot the left orbit from the right flipper. Flip very early at the upper flipper. The timing is earlier than the visible loop entrance suggests.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Kz-ouetS558&t=782s"
+          },
+          {
+            "name": "Sanctum return",
+            "instruction": "Use the Sanctum lock from the left flipper to build multiball and return the ball to the loop side. Test the return before you repeat it.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Kz-ouetS558&t=973s"
+          },
+          {
+            "name": "Phurba return control",
+            "instruction": "Press the blue button before a ramp exit. Select the return that feeds the flipper needed for the next shot.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Kz-ouetS558&t=670s"
+          },
+          {
+            "name": "Battlefield paddle edge",
+            "instruction": "Contact the ball with the edge of the Battlefield paddle to add sideways motion. Use the motion to reach side targets.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Kz-ouetS558&t=153s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Battlefield entry target and its return can send the ball toward the center drain.",
+            "response": "Do not use Battlefield as the opening score route. Test its return before you chase Final Battle progress.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Kz-ouetS558&t=131s"
+          },
+          {
+            "issue": "A missed ramp shot can return toward the center drain.",
+            "response": "Use the two-way loop or Scene route until both ramp entrances are controlled.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Kz-ouetS558&t=496s"
+          },
+          {
+            "issue": "The raised Sanctum wall can reject a lock-qualification hit.",
+            "response": "Shoot it from a controlled ball. Stop repeated wall hits when the return is not predictable.",
+            "sourceUrl": "https://www.kineticist.com/news/the-shadow-pinball-tutorial"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Lock three balls at the Sanctum for Shadow Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete all six Scenes."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Scenes: Choose Scenes when Start Scene and the called shots are safer than repeated Sanctum hits."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Bally The Shadow code, ball count, lock rules, and award conversions.",
+          "Test both saucers, upper loop, ramps, diverters, and kickouts."
+        ],
+        "machineSetup": [
+          "Confirm Bally The Shadow code, ball count, lock rules, and award conversions.",
+          "Test both saucers, upper loop, ramps, diverters, and kickouts."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use either ramp to choose a Scene, then shoot Start Scene. Complete all four ramp-diverter rings for Vengeance. Lock three balls at the Sanctum for Shadow Multiball, or complete K-H-A-N and shoot the side saucer for Khan Multiball. Scene points are paid in end-of-ball bonus.",
+        "showBirdEyeView": false,
+        "steps": [
+          {
+            "title": "How to start a Scene",
+            "text": "Shoot either ramp to change the flashing Scene. When the Scene you want flashes, shoot the Start Scene saucer.",
+            "details": [
+              "For Escape Underwater Doom, shoot both ramps, the left orbit, the upper loop, the left ramp, then Start Scene for the final award.",
+              "For Discover Hotel Monolith, hit the Sanctum wall three times and lock a ball there, then make the flashing major shots."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "How Scene points are awarded",
+            "text": "Scene points are held in end-of-ball bonus instead of being added immediately. Let the ball drain normally to collect them; a tilt loses the entire bonus."
+          },
+          {
+            "title": "How to start Vengeance",
+            "text": "Shoot each ramp through both diverter exits. Press that ramp's blue cabinet button to choose its inner or outer return; lighting all four rings starts Vengeance.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "How to start Shadow Multiball",
+            "text": "The first Sanctum lock is lit. Shoot the Sanctum wall to lock the first ball. For later locks, hit the wall once to light Lock and again to lock a ball; the third lock starts Shadow Multiball.",
+            "details": [
+              "Shoot five upper-loop Jackpots, then shoot the side saucer for the 100-million Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "How to start Khan Multiball",
+            "text": "Complete K-H-A-N through the inlanes and outlanes. Use either ramp and its blue cabinet button to feed missing inlane letters. Shoot the side saucer while Khan Multiball is lit.",
+            "details": [
+              "During multiball, make the left orbit, left ramp, Battlefield, right ramp, and upper loop for Jackpots. After all five, hit the moving lit Battlefield target for the Super Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Lock three balls at the Sanctum for Shadow Multiball."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete all six Scenes."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Scenes: Choose Scenes when Start Scene and the called shots are safer than repeated Sanctum hits."
+          }
+        ],
+        "warning": {
+          "title": "The Battlefield entry target and its return can send the ball toward the center drain.",
+          "text": "Do not use Battlefield as the opening score route. Test its return before you chase Final Battle progress."
+        }
+      }
+    }
+  ]
+}

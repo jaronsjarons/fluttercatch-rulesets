@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "G41yq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete the four lower-right standups and their lane to open the lower re-entry gate, then complete one upper bank for 2x or both for 3x lower-playfield scoring. Lock one ball below and one above, then plunge the Gravity Tunnel to begin the full multiball sequence.",
+        "quickInfo": [
+          {
+            "name": "Lower re-entry gate",
+            "summary": "Complete the four lower-right standups and their lane, or either lower bank, to open the gate before committing to the inverted playfield."
+          },
+          {
+            "name": "2x and 3x lower scoring",
+            "summary": "Complete either upper drop bank for 2x lower-playfield scoring or both banks for 3x."
+          },
+          {
+            "name": "Lower lock",
+            "summary": "Hit the lower lock targets, then shoot the lower capture to lock one ball while the re-entry gate is open."
+          },
+          {
+            "name": "Black Hole Multiball",
+            "summary": "With both locks prepared, plunge through the Gravity Tunnel to begin two-ball play below and then three-ball play above."
+          },
+          {
+            "name": "Gravity Tunnel",
+            "summary": "The tunnel sends the ball to the inverted lower playfield and should be used only after the gate and scoring state are prepared."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the four lower-right standups and their lane to open re-entry, or open it by completing either lower-playfield bank."
+          },
+          {
+            "text": "Complete either upper drop bank for 2x lower scoring or both banks for 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Lock one ball in the always-active lower capture, then return above through the open re-entry gate.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete either upper bank or visit the lower playfield to light the upper lock, then collect it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Plunge through the Gravity Tunnel to start Black Hole Multiball.",
+            "modeNotes": [
+              "Black Hole Multiball: A qualified ball is locked below and another is locked above. The next ball enters the lower playfield and releases the lower lock for two-ball play.",
+              "Three-ball transition: Return through the open lower gate. The upper lock then releases so three balls continue on the main playfield."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During lower two-ball play, use controlled Gravity-loop and target shots under 3x. Return through the gate before control breaks.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During upper three-ball play, hit the upper drop-target bank with the safer return. Rebuild the gate before another lower entry.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Controlled Gravity loops",
+          "when": "Use this when a lock switch, shared lock, or multiball release is unreliable.",
+          "steps": [
+            {
+              "text": "Complete the four lower-right standups and their lane to open the lower re-entry gate."
+            },
+            {
+              "text": "Send one controlled ball through the Gravity Tunnel."
+            },
+            {
+              "text": "Collect the safest lower-playfield scoring and return through the open gate."
+            },
+            {
+              "text": "Repeat only after the gate is confirmed open again."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "3x lower-playfield scoring",
+            "when": "Use this when upper drop banks are safer than the lock sequence.",
+            "steps": [
+              {
+                "text": "Complete both upper drop banks to light 3x lower scoring.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Complete the four lower-right standups and their lane to open the re-entry gate before entering the lower playfield."
+              },
+              {
+                "text": "Take controlled lower scoring at 3x, then return through the gate.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Full three-ball Black Hole Multiball",
+          "steps": [
+            {
+              "text": "Complete the four lower-right standups and their lane to open the lower re-entry gate."
+            },
+            {
+              "text": "Complete both upper banks for 3x lower scoring.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Lock one ball below and one ball above.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use the Gravity Tunnel plunge to begin two-ball play below, then return to release the third ball above.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Black Hole Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "2x lower scoring",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x lower scoring",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Paired-right-flipper drop catch",
+            "instruction": "Drop catch a controlled return on the paired right flippers; do not dead bounce across their gap.",
+            "techniqueSlug": "drop-catch",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41yq-MQP65"
+          },
+          {
+            "name": "Gravity-loop control",
+            "instruction": "Enter the lower playfield only with the re-entry gate open. Use one lower scoring shot, then take the known return before adding another risk.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41yq-MQP65"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A closed lower re-entry gate can trap the ball below and expose the lower drain.",
+            "response": "Confirm the gate before every Gravity Tunnel entry. Return above before the gate state changes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41yq-MQP65"
+          },
+          {
+            "issue": "The paired right flippers have a gap that can defeat a passive dead bounce.",
+            "response": "Use an active drop catch or controlled flip. Do not let a fast ball cross the pair without input.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41yq-MQP65"
+          },
+          {
+            "issue": "Locks can be shared or carried between players under some settings.",
+            "response": "Check the lock lamps at every ball start. Convert prepared locks before another player can use them when the settings permit stealing.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G41yq-MQP65"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Black Hole, installed PROM and serial-era hardware, ball count, tilt, replay and Extra Ball conversion, lock sharing, and upper-lock release behavior.",
+          "Confirm either upper bank lights 2x below, both light 3x, lower bonus and Bonus X behave as expected, and lock lamps persist correctly.",
+          "Test both capture locks, Gravity Tunnel, re-entry gate and switches, inverted flippers, paired upper flippers, lower banks, upper banks, rollunder, and every dangerous return."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Gravity Tunnel",
+            "label": "Gravity Tunnel",
+            "description": "Route used to enter the inverted lower playfield and start multiball.",
+            "precision": "unverified",
+            "context": "Route used to enter the inverted lower playfield and start multiball."
+          },
+          {
+            "term": "re-entry gate",
+            "label": "Re-entry gate",
+            "description": "Gate used to return safely from the lower playfield.",
+            "precision": "unverified",
+            "context": "Gate used to return safely from the lower playfield."
+          },
+          {
+            "term": "upper drop bank",
+            "label": "Upper drop banks",
+            "description": "Banks used to light regional 2x and 3x lower scoring.",
+            "precision": "unverified",
+            "context": "Banks used to light regional 2x and 3x lower scoring."
+          },
+          {
+            "term": "capture",
+            "label": "Capture locks",
+            "description": "Upper and lower locks used for Black Hole Multiball.",
+            "precision": "unverified",
+            "context": "Upper and lower locks used for Black Hole Multiball."
+          }
+        ],
+        "simpleOverview": "Black Hole requires an open re-entry gate before the inverted lower playfield is useful. Complete the lower-right standups and lane, prepare 3x with both upper banks, lock one ball below and one above, then plunge the Gravity Tunnel for Multiball.",
+        "overview": "Black Hole requires an open re-entry gate before the inverted lower playfield is useful. Complete the four lower-right standups and their lane first, finish both upper banks for 3x, collect both locks, then use the Gravity Tunnel for two-ball play below and return through the gate to release the third ball above.",
+        "machineSetup": [
+          "Confirm Gottlieb Black Hole, installed PROM and serial-era hardware, ball count, tilt, replay and Extra Ball conversion, lock sharing, and upper-lock release behavior.",
+          "Confirm either upper bank lights 2x below, both light 3x, lower bonus and Bonus X behave as expected, and lock lamps persist correctly.",
+          "Test both capture locks, Gravity Tunnel, re-entry gate and switches, inverted flippers, paired upper flippers, lower banks, upper banks, rollunder, and every dangerous return."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete the four lower-right standups and their lane to open the lower re-entry gate, then complete one upper bank for 2x or both for 3x lower-playfield scoring. Lock one ball below and one above, then plunge the Gravity Tunnel to begin the full multiball sequence.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the four lower-right standups and their lane to open re-entry, or open it by completing either lower-playfield bank."
+          },
+          {
+            "text": "Complete either upper drop bank for 2x lower scoring or both banks for 3x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Lock one ball in the always-active lower capture, then return above through the open re-entry gate.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete either upper bank or visit the lower playfield to light the upper lock, then collect it.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Plunge through the Gravity Tunnel to start Black Hole Multiball.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Black Hole Multiball: A qualified ball is locked below and another is locked above. The next ball enters the lower playfield and releases the lower lock for two-ball play.",
+              "Three-ball transition: Return through the open lower gate. The upper lock then releases so three balls continue on the main playfield."
+            ]
+          },
+          {
+            "text": "During lower two-ball play, use controlled Gravity-loop and target shots under 3x. Return through the gate before control breaks.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During upper three-ball play, hit the upper drop-target bank with the safer return. Rebuild the gate before another lower entry.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Lower re-entry gate",
+            "summary": "Complete the four lower-right standups and their lane, or either lower bank, to open the gate before committing to the inverted playfield."
+          },
+          {
+            "name": "2x and 3x lower scoring",
+            "summary": "Complete either upper drop bank for 2x lower-playfield scoring or both banks for 3x."
+          },
+          {
+            "name": "Lower lock",
+            "summary": "Hit the lower lock targets, then shoot the lower capture to lock one ball while the re-entry gate is open."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Controlled Gravity loops",
+          "when": "Use this when a lock switch, shared lock, or multiball release is unreliable.",
+          "steps": [
+            {
+              "text": "Complete the four lower-right standups and their lane to open the lower re-entry gate."
+            },
+            {
+              "text": "Send one controlled ball through the Gravity Tunnel."
+            },
+            {
+              "text": "Collect the safest lower-playfield scoring and return through the open gate."
+            },
+            {
+              "text": "Repeat only after the gate is confirmed open again."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A closed lower re-entry gate can trap the ball below and expose the lower drain.",
+          "text": "Confirm the gate before every Gravity Tunnel entry. Return above before the gate state changes."
+        }
+      }
+    }
+  ]
+}

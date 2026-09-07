@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "G4E2y",
+  "title": "Baseball / Batter Up",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Baseball",
+      "url": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Baseball and Batter Up machine guide",
+        "url": "https://www.kineticist.com/games/pinball/baseball-batter-up"
+      },
+      {
+        "label": "PinballRebel Baseball playfield reference",
+        "url": "https://www.pinballrebel.com/game/pins/baseball/baseball_pinball.htm"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Test the vari-targets. Repeat full-depth hits when the flippers are strong and the returns are safe. Otherwise, keep sending the ball up top.",
+      "quickInfo": [
+        {
+          "name": "Three-one-two skill shot",
+          "summary": "Each top lane scores the same, so choose the lane that feeds a bumper most often."
+        },
+        {
+          "name": "Vari-target value",
+          "summary": "A vari-target scores up to 500 when a strong, accurate shot pushes it fully backward."
+        },
+        {
+          "name": "Base runners",
+          "summary": "The numbered top lanes, numbered standups, vari-target hits, and side lanes move runners around the bases."
+        },
+        {
+          "name": "Lit bumpers",
+          "summary": "Both bumpers light together when runners occupy second and third base."
+        },
+        {
+          "name": "Side drains",
+          "summary": "Each side drain scores 500, which can materially change a close game."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge the top 3, 1, or 2 lane that gives the best bumper feed."
+        },
+        {
+          "text": "Test one vari-target with a controlled full-force shot."
+        },
+        {
+          "text": "Track the target depth and the complete ball return."
+        },
+        {
+          "text": "Repeat the vari-target when full-depth hits score 500 and return safely."
+        },
+        {
+          "text": "Use natural lane and target results to place runners on second and third."
+        },
+        {
+          "text": "When both bumpers light, stop direct vari-target play."
+        },
+        {
+          "text": "Send the ball to the upper playfield while both bumpers remain lit."
+        },
+        {
+          "text": "Return to the tested vari-target after the bumper lights turn off."
+        }
+      ],
+      "fallback": {
+        "title": "Upper-playfield route",
+        "when": "Use this plan when weak flippers or unsafe returns prevent consistent full-depth vari-target hits.",
+        "steps": [
+          {
+            "text": "Stop direct vari-target shots."
+          },
+          {
+            "text": "Send the ball through the broadest route to the upper playfield."
+          },
+          {
+            "text": "Use top lanes to place runners and seek natural bumper action."
+          },
+          {
+            "text": "Repeat upper play while the center return remains survivable."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Single-then-double bumper setup",
+          "when": "Use this plan when the vari-targets return safely and the bumpers are unlit.",
+          "steps": [
+            {
+              "text": "Use a shallow vari-target hit to score a single."
+            },
+            {
+              "text": "Use the next vari-target hit to score a double."
+            },
+            {
+              "text": "Confirm that runners now occupy second and third."
+            },
+            {
+              "text": "Send the ball up top while both bumpers are lit."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit-bumper upper play",
+        "steps": [
+          {
+            "text": "Place one runner on base with a single."
+          },
+          {
+            "text": "Score a double to move runners to second and third."
+          },
+          {
+            "text": "Confirm that both bumpers light."
+          },
+          {
+            "text": "Repeat upper-playfield shots while the bumpers remain lit."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Feed-based skill shot",
+          "instruction": "Test each top 3-1-2 lane. Reuse the lane that sends the ball into the bumpers most reliably.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+        },
+        {
+          "name": "Vari-target depth test",
+          "instruction": "Shoot one vari-target with a strong, centered stroke. Continue only when it reaches full depth and returns safely.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+        },
+        {
+          "name": "Side-lane speed read",
+          "instruction": "Watch the ball speed from each double and triple lane. Nudge before a known speed reaches a slingshot or drain path.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A triple always removes the lit-bumper state.",
+          "response": "Stop deep vari-target shots while the bumpers are lit. Use upper-playfield shots until the lights turn off.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+        },
+        {
+          "issue": "Side double and triple lanes can feed a flipper, slingshot, side drain, or center drain.",
+          "response": "Learn each lane's feed at different speeds. Nudge before the ball reaches the slingshot or return-lane wire.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+        },
+        {
+          "issue": "A center feed can glance from a vari-target chute into a slingshot instead of a flipper.",
+          "response": "Track the chute contact. Nudge before the deflection reaches the slingshot edge.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4E2y-MJ5Pv"
+        }
+      ],
+      "checkBeforePlay": [
+        "Identify Baseball model 290 or add-a-ball Batter Up model 301; they share a playfield but use different awards.",
+        "Confirm ball count, replay or Extra Ball treatment, tilt consequence, and runner and bumper lamp registration.",
+        "Test both vari-targets for full 500-point travel, side lanes at several speeds, and the upper-playfield center feed."
+      ],
+      "simpleOverview": "Baseball / Batter Up uses vari-target depth for its largest repeatable value and lane progress to move runners. Test one vari-target from control; repeat it when full-depth hits score 500 and return safely, otherwise send the ball upstairs and use lit bumpers when runners occupy second and third.",
+      "overview": "Baseball / Batter Up uses vari-target depth for its largest repeatable value and lane progress to move runners. Establish whether a full-force vari-target shot reaches 500 and returns to a flipper, then repeat it only under those conditions. When runners reach second and third, switch to upper-playfield feeds while both bumpers are lit.",
+      "machineSetup": [
+        "Identify Baseball model 290 or add-a-ball Batter Up model 301; they share a playfield but use different awards.",
+        "Confirm ball count, replay or Extra Ball treatment, tilt consequence, and runner and bumper lamp registration.",
+        "Test both vari-targets for full 500-point travel, side lanes at several speeds, and the upper-playfield center feed."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "G41oq",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Shooting the Rapids rewards complete A-B-C sets and progress through its yellow target route. Complete A-B-C once for 2x bonus, again for 3x, and a third time for 5x. The yellow drop targets and top lane advance the Special route. White advance-bonus shots build the end-of-ball bonus. Take the spinner while its larger displayed value is lit.",
+        "simpleOverview": "Complete A-B-C once for 2x bonus, twice for 3x, and three times for 5x. Hit the yellow drop targets and top lane to advance the Special route. Use the white advance-bonus shots to build bonus, and shoot the spinner while its higher value is lit.",
+        "summary": "Finish A-B-C sets instead of leaving letters scattered; the first three completions raise Bonus X sharply. Use the yellow targets and top lane for Special progress, then take the spinner only when its lit value justifies the risk.",
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete A-B-C up to three times."
+          },
+          {
+            "name": "Build Special",
+            "summary": "Hit the yellow drops and top lane."
+          },
+          {
+            "name": "Build Bonus",
+            "summary": "Use the white advance-bonus shots."
+          },
+          {
+            "name": "Use the Spinner",
+            "summary": "Shoot it while the larger value is lit."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete A-B-C once for 2x bonus, a second time for 3x, and a third time for 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the yellow drop targets and the top lane to advance the lit Special route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the white advance-bonus shots to build the bonus collected at the end of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the spinner while its larger displayed value is lit, then return to the nearest incomplete A-B-C or yellow-target set.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Finish the bonus multiplier",
+            "when": "Use this when two A-B-C letters are already lit.",
+            "steps": [
+              {
+                "text": "Complete the missing letter for the next Bonus X step.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Resume the yellow-target Special route after the set resets.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Reach 5x bonus",
+          "steps": [
+            {
+              "text": "Complete three full A-B-C sets.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Build the white-shot bonus after the multiplier is established.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check Bonus X, Special thresholds, spinner values, bonus limits, and extra-ball or replay awards.",
+          "Test A-B-C, all yellow drops, top lane, white advance-bonus switches, spinner, bonus unit, and Special lamps."
+        ],
+        "termStyles": [
+          {
+            "label": "A-B-C",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Yellow Targets",
+            "tone": "crimson",
+            "kind": "mode"
+          },
+          {
+            "label": "Spinner",
+            "tone": "amber",
+            "kind": "mode"
+          },
+          {
+            "label": "Bonus X",
+            "tone": "forest",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-B-C targets",
+            "label": "A-B-C",
+            "description": "Three targets completed in sets to advance Bonus X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "yellow drop targets",
+            "label": "Yellow drop bank",
+            "description": "Drop targets that advance the Special route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top lane",
+            "label": "Top Special lane",
+            "description": "Upper lane that advances the Special route.",
+            "precision": "unverified"
+          },
+          {
+            "term": "white advance-bonus shots",
+            "label": "Advance Bonus shots",
+            "description": "White-lit shots that build end-of-ball bonus.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "One secondary rapid-bonus interaction is uncertain.",
+            "response": "Use the clearly labeled A-B-C, yellow-target, advance-bonus, and spinner routes instead of assuming an extra bonus effect.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/shooting-the-rapids"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Finish A-B-C sets instead of leaving letters scattered; the first three completions raise Bonus X sharply. Use the yellow targets and top lane for Special progress, then take the spinner only when its lit value justifies the risk.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete A-B-C once for 2x bonus, a second time for 3x, and a third time for 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Hit the yellow drop targets and the top lane to advance the lit Special route.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use the white advance-bonus shots to build the bonus collected at the end of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the spinner while its larger displayed value is lit, then return to the nearest incomplete A-B-C or yellow-target set.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Raise Bonus X",
+            "summary": "Complete A-B-C up to three times."
+          },
+          {
+            "name": "Build Special",
+            "summary": "Hit the yellow drops and top lane."
+          },
+          {
+            "name": "Build Bonus",
+            "summary": "Use the white advance-bonus shots."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "id": "Grj6X",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start as many Hero modes as practical, prepare three Magneto locks, start Sentinels at the Blackbird scoop, then collect the fourth lock. During Magneto Multiball, use started Hero shots for damage, recharge them at Magneto, and return to Magneto for the Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Magneto Multiball",
+            "summary": "Hit the two lock targets, lock four balls at flashing Phoenix, Rogue, or Magneto shots, then damage Magneto with lit Hero shots."
+          },
+          {
+            "name": "Hero Modes",
+            "summary": "Shoot most Hero shots twice to start their mode, and use started Heroes for more score and damage during Magneto Multiball."
+          },
+          {
+            "name": "Villain Modes",
+            "summary": "Complete Blackbird lanes to light Villain at the scoop, with one Villain able to run with a Hero and Magneto Multiball."
+          },
+          {
+            "name": "Deadpool",
+            "summary": "Ten combos hire Deadpool, whose switch hits advance the active Villain but usually leave the final shot to the player."
+          },
+          {
+            "name": "Danger Room and Dark Phoenix",
+            "summary": "Hero completion lights Danger Room under default Hero Stacking, while defeating every Villain lights Dark Phoenix."
+          }
+        ],
+        "steps": [
+          {
+            "text": "On the plunge, avoid the Phoenix switch and use the upper flipper to shoot Storm or Rogue for the Skill Shot. Shoot Xavier instead for the Super Skill Shot."
+          },
+          {
+            "text": "Start as many Hero modes as practical before Magneto Multiball. Most Heroes start after two shots. Shoot the Iceman ramp twice for Iceman. Shoot Rogue twice for Rogue. Shoot Beast twice for Beast; pop-bumper hits can help finish him.",
+            "modeNotes": [
+              "Most Heroes start after two shots. With default Hero Stacking off, only one Hero mode runs at a time."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit both upright targets beside Magneto to light a lock, then shoot whichever of Phoenix, Rogue, or Magneto has a flashing Lock insert. Repeat until three balls are locked, then leave the fourth lock uncollected.",
+            "modeNotes": [
+              "Completing the target-and-lock sequence a fourth time starts Magneto Multiball."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use the flipper buttons on ramp returns to complete the Blackbird rollover lanes once for Mystery and a second time for Villain. Shoot the Blackbird scoop, select Sentinels with the flippers, then press both flippers to start it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "With the Villain active, collect the fourth lock to start four-ball Magneto Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Magneto Multiball, shoot the lit Hero shots that were started before multiball. Use overlapping red Villain shots when they match.",
+            "modeNotes": [
+              "Started Heroes score more and deal more damage than unstarted Heroes. Magneto usually needs about ten to twelve lit damage shots."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the started Hero shots go dark, shoot Magneto to recharge them. Continue until Magneto's damage reaches zero.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot Magneto for the Super Jackpot, then use the lit victory laps while control lasts.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Faster Magneto start with fewer balls",
+          "when": "This starts Magneto Multiball sooner, but with only the balls already locked.",
+          "steps": [
+            {
+              "text": "Hit the two lock targets, then shoot a flashing Phoenix, Rogue, or Magneto shot for the first Magneto lock."
+            },
+            {
+              "text": "Hit the captive lock ball seven times to start Magneto Multiball with the currently locked balls.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Prioritize Magneto itself when only one or two Heroes were started; its damage is comparatively stronger in this setup.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the started Hero shots for damage, recharge them at Magneto, then shoot Magneto again after its damage meter reaches zero for the Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Weapon X with a Villain",
+            "when": "A Villain can run during Weapon X Multiball, and the first Blackbird Mystery during Multiball awards an add-a-ball.",
+            "steps": [
+              {
+                "text": "Start a Villain at the Blackbird scoop.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Wolverine's Weapon X Multiball while the Villain is active.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Follow the faster-flashing red path shots, defeat the guards, and shoot the lit boss twice.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot Wolverine for the final escape while using overlapping red shots to finish the Villain.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Take the first Blackbird Mystery during multiball for add-a-ball when it is available.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Deadpool Villain route",
+            "when": "Deadpool can advance a difficult Villain, but usually cannot make its final shot.",
+            "steps": [
+              {
+                "text": "Make ten combos outside a Villain mode to hire Deadpool."
+              },
+              {
+                "text": "Start a difficult unfinished Villain at the Blackbird scoop.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Keep switches active so Deadpool advances the Villain's red-shot work."
+              },
+              {
+                "text": "Make the final Villain shot yourself; preserve Deadpool for a new Villain when the current one is already one shot from completion."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Danger Room and Dark Phoenix",
+          "steps": [
+            {
+              "text": "With default Hero Stacking off, complete all eight Hero modes to light Danger Room at the Blackbird scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "If Hero Stacking is on, start all eight Heroes before four-ball Magneto Multiball and collect its Super Jackpot to light Danger Room.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Defeat all seven Villains to light Dark Phoenix at the Blackbird scoop.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Nightcrawler and playfield hardware",
+            "pro": "The Pro uses shifting red-arrow shots for Nightcrawler and omits the Ice Slide, two pop-up Nightcrawler targets, and the spinning disc magnet.",
+            "premium": "Limited Edition games use physical pop-up Nightcrawler targets and add the Ice Slide plus spinning disc magnet, creating different ramp blocks and feeds.",
+            "sourceUrl": "https://www.pinballnews.com/games/xmen/index3.html"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Magneto Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Weapon X Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Hero Mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Villain Mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Deadpool",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Danger Room",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Dark Phoenix",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Super Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Magneto",
+            "context": "Hit both upright targets beside Magneto to light a lock.",
+            "label": "Magneto lock",
+            "description": "The center lock assembly has two qualification targets, a captive lock ball, and the Magneto collect shot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Blackbird scoop",
+            "context": "Shoot the Blackbird scoop and choose a Villain.",
+            "label": "Blackbird scoop",
+            "description": "The center-left scoop collects Mystery, starts Villains, and starts both wizard modes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Iceman",
+            "context": "Iceman needs two ramp shots.",
+            "label": "Iceman ramp",
+            "description": "The right ramp starts and completes the short Iceman Hero mode.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Wolverine",
+            "context": "Shoot Wolverine for the final Weapon X escape.",
+            "label": "Wolverine bash toy",
+            "description": "The center-right bash target starts and finishes Weapon X sequences and can activate its magnet.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Blackbird lane change",
+            "instruction": "Use the flipper buttons on every ramp return to move the lit Blackbird lane under the ball and accelerate Mystery and Villain qualification.",
+            "sourceUrl": "https://tiltforums.com/t/x-men-stern-2012/8599"
+          },
+          {
+            "name": "Gambit upper-flipper collect",
+            "instruction": "After the Beast shot starts Gambit Hurry-Up, hold or time the upper-right flipper only when it reliably redirects the ball into the right pop bumper.",
+            "sourceUrl": "https://tiltforums.com/t/x-men-stern-2012/8599"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Limited Edition Nightcrawler targets can rise in front of the ramps, and the spinning disc magnet changes exits.",
+            "response": "Read the current target and disc state before shooting a ramp. Do not transfer a Pro return pattern to the Limited Edition.",
+            "sourceUrl": "https://www.pinballnews.com/games/xmen/index3.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Hero Stacking is off by default; this changes simultaneous Hero play and Danger Room qualification.",
+          "The Pro uses red-arrow Nightcrawler shots; the Limited Edition uses physical pop-up targets."
+        ],
+        "simpleOverview": "X-Men starts Hero modes at their character shots, Villain modes at the Blackbird scoop, and Magneto Multiball at the center lock. Most Heroes start after two shots; the right Iceman ramp twice starts and completes Iceman. Complete the Blackbird rollover lanes once for Mystery and again for Villain. Hit both Magneto targets and shoot a flashing lock shot; after the first lock, seven captive-lock hits start Multiball with the balls already locked.",
+        "overview": "X-Men rewards bringing started Hero modes and one Villain into four-ball Magneto Multiball. Start as many Heroes as practical, then hit both Magneto targets and collect three flashing locks at Phoenix, Rogue, or Magneto. Complete the Blackbird rollover lanes once for Mystery and again for Villain, start Sentinels at the Blackbird scoop, then collect the fourth lock. During Multiball, shoot started Hero shots for damage, shoot Magneto to recharge them, then shoot Magneto again for the Super Jackpot after its damage meter reaches zero.",
+        "machineSetup": [
+          "Hero Stacking is off by default; this changes simultaneous Hero play and Danger Room qualification.",
+          "The Pro uses red-arrow Nightcrawler shots; the Limited Edition uses physical pop-up targets."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Most Hero modes start after two shots to that Hero. Complete the Blackbird rollover lanes once for Mystery and again for a Villain. For Magneto Multiball, hit both Magneto targets and shoot a flashing lock shot; after the first lock, seven captive-lock hits start Multiball with the locked balls.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Iceman",
+            "text": "Shoot the right Iceman ramp twice to start and complete Iceman.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Iceman",
+              "reason": "It is the shortest Hero objective: the second Iceman-ramp shot completes it.",
+              "play": "With default Hero Stacking off, finish Iceman before starting another Hero."
+            }
+          },
+          {
+            "title": "Start Sentinels",
+            "text": "Complete the Blackbird rollover lanes once to light Mystery and a second time to light Villain. Shoot the Blackbird scoop, select Sentinels with the flippers, then press both flippers to start it. Shoot any major shot; left shots damage the left Sentinel and right shots damage the right Sentinel.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Start an early Magneto Multiball",
+            "text": "Hit both upright targets beside Magneto to light a lock, then shoot Phoenix, Rogue, or Magneto while its Lock insert flashes. After the first lock, hit the captive lock ball seven times to start Magneto Multiball with the locked balls.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Magneto Multiball",
+            "summary": "Hit the two lock targets, lock four balls at flashing Phoenix, Rogue, or Magneto shots, then damage Magneto with lit Hero shots."
+          },
+          {
+            "name": "Hero Modes",
+            "summary": "Shoot most Hero shots twice to start their mode, and use started Heroes for more score and damage during Magneto Multiball."
+          },
+          {
+            "name": "Villain Modes",
+            "summary": "Complete Blackbird lanes to light Villain at the scoop, with one Villain able to run with a Hero and Magneto Multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: four-ball Magneto Multiball",
+          "when": "Use the complete lock sequence when you want four balls and stronger scoring from additional started Heroes.",
+          "steps": [
+            {
+              "text": "Repeat both Magneto upright targets and one flashing Phoenix, Rogue, or Magneto lock shot until three balls are locked. Complete the sequence once more to start four-ball Magneto Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

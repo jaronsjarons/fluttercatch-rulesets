@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "GELkO",
+  "title": "Queen",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Pinball Brothers Queen rulebook",
+      "url": "https://pinballbrothers.freshdesk.com/support/solutions/articles/80001068107-queen-pinball-rulebook"
+    },
+    "supportingSources": [
+      {
+        "label": "Pinball Cards Queen strategy",
+        "url": "https://pinballcards.net/queen-2022/"
+      },
+      {
+        "label": "Pinball Brothers Queen 2.1G release notes",
+        "url": "https://pinballbrothers.freshdesk.com/support/solutions/articles/80001164090-queen-delta-game-update-2-1g-hotfix-"
+      },
+      {
+        "label": "Queen reveal gameplay",
+        "url": "https://pinballvideos.com/v/4785/442"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Lock two balls for Wembley Multiball, start Queen Frenzy, then collect the third Wembley lock while the Frenzy is running. Use switches to build the Audience Jackpot and shoot the center saucer when it lights.",
+      "quickInfo": [
+        {
+          "name": "Songs and Multiball",
+          "summary": "A Multiball interrupts the current Song. On 2.x software, that Song resumes automatically when Multiball ends."
+        },
+        {
+          "name": "Wembley Multiball",
+          "summary": "Complete the three front drop targets to light each lock, then lock a ball at the center or right ramp. The third lock starts Multiball."
+        },
+        {
+          "name": "Queen Frenzy",
+          "summary": "Collect Q-U-E-E-N at the far-right lane, then shoot that lane again to start the Frenzy. Switches build the Audience Jackpot, which is collected at the center saucer when lit."
+        },
+        {
+          "name": "Bohemian Rhapsody",
+          "summary": "Completing four Songs qualifies this mini-wizard Song; the required count is adjustable."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the three front drop targets, then shoot the center or right ramp to lock one ball for Wembley Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete the drop targets again and lock a second ball at either Wembley ramp.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the far-right lane until Q-U-E-E-N is complete, then shoot the same lane again to start Queen Frenzy.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "While Queen Frenzy is running, complete the front drops a third time and shoot the center or right ramp. The third lock starts Wembley Multiball.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Make switches to build the Audience Jackpot, then shoot the center saucer when it lights. Continue taking the displayed Wembley Jackpot shots.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Bohemian Rhapsody",
+        "steps": [
+          {
+            "text": "Complete a Song, then shoot the left VUK to collect its completion and choose the next Song.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Repeat until four Songs are complete, or until the machine's displayed requirement is met.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Choose Bohemian Rhapsody when it appears on the Song-selection wheel.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Songs",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Wembley Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Queen Frenzy",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Audience Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bohemian Rhapsody",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "simpleOverview": "Queen begins with a selected Song, but Multiball interrupts it and current software resumes it afterward. Complete the three front drop targets and lock two balls at the center or right ramp, then spell Q-U-E-E-N at the far-right lane and shoot that lane again for Queen Frenzy. Collect the third Wembley lock while the Frenzy is running.",
+      "overview": "Queen begins with a selected Song, but Multiball interrupts it and current software resumes it afterward. Complete the three front drops and lock two balls at the center or right ramp, spell Q-U-E-E-N at the far-right lane, then shoot it again for Queen Frenzy. Complete the drops and collect the third Wembley lock during the Frenzy; switches build the center-saucer Audience Jackpot.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

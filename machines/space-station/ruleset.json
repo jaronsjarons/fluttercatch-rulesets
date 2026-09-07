@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "id": "G5QXO",
+  "title": "Space Station",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Steve Loft Space Station rulesheet",
+      "url": "https://www.pinball.org/rules/spacestation.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Williams Space Station official operations manual",
+        "url": "https://fliphtml5.com/gkmlu/wivt/Space_Station/"
+      },
+      {
+        "label": "Kineticist Space Station record and L-5 ROM listing",
+        "url": "https://www.kineticist.com/games/pinball/space-station"
+      },
+      {
+        "label": "Jeff's Space Station rules and strategy",
+        "url": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+      },
+      {
+        "label": "Adam Becker at IFPA 15 World Pinball Championship",
+        "url": "https://pinballvideos.com/v/1882/3673"
+      },
+      {
+        "label": "Bowen Kerins Space Station tutorial",
+        "url": "https://pinballvideos.com/v/5334"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete 1-2-3 to light the docks. Lock two balls at the left orbit or right ramp. Dock a third ball to start multiball. Then redock two balls before one remains to collect the Rescue Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Docks",
+          "summary": "Complete upper 1-2-3 to light both locks, which factory settings also light at game start."
+        },
+        {
+          "name": "Three-Ball Multiball",
+          "summary": "Dock two balls, then dock the third at the left orbit or upper-right saucer."
+        },
+        {
+          "name": "Rescue Jackpot",
+          "summary": "During multiball, redock two balls before one remains to score the 200,000 start value, which grows after missed rescues."
+        },
+        {
+          "name": "Stop n Score",
+          "summary": "Hit the target in front of the right ramp to lower it, then shoot the ramp during its timer for a cycling value times the U-S-A multiplier."
+        },
+        {
+          "name": "SHUTTLE and STATION",
+          "summary": "Each word completion takes its displayed award, and the lower-right target changes one selected award."
+        },
+        {
+          "name": "Bonus Ball",
+          "summary": "A stored timed fourth ball plays after normal turns but cannot start multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use lane change on the plunge to complete upper 1-2-3."
+        },
+        {
+          "text": "Complete 1-2-3 for 25,000, a permanent bumper-value advance, and lit docks.",
+          "modeNotes": [
+            "Docks: The left-orbit and right-ramp locks. Complete 1-2-3 when their green lamps are not lit."
+          ]
+        },
+        {
+          "text": "Dock the first two balls at either the left orbit or right ramp."
+        },
+        {
+          "text": "After two locks, leave one 1-2-3 lane unlit when possible. This makes the next dock qualification shorter."
+        },
+        {
+          "text": "Dock the third ball at the left orbit or upper-right saucer to start Three-Ball Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During multiball, redock one ball at the left orbit or right ramp.",
+          "modeNotes": [
+            "Rescue Jackpot: Redock two balls during multiball. The collect starts at 200,000."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Redock a second ball before play returns to one ball to collect the Rescue Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If one ball remains before two redocks, the multiball and rescue attempt end.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete the remaining 1-2-3 lane to relight docks after multiball."
+        },
+        {
+          "text": "Repeat the lock route. Shared physical locks can be stolen by another player."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Stop n Score",
+        "when": "Recovery pivot: Use this when a dock rejects or another player controls the shared locks.",
+        "steps": [
+          {
+            "text": "Complete U-S-A to score 25,000 and raise Stop n Score X."
+          },
+          {
+            "text": "Repeat U-S-A to raise its multiplier toward 5x on the same ball."
+          },
+          {
+            "text": "Hit the drop target in front of the right ramp to start the timer.",
+            "modeNotes": [
+              "Stop n Score: A timed single ramp collect. Its display cycles from 20,000 through 99,990.",
+              "Stop n Score X: Each U-S-A completion raises the ramp collect multiplier, up to 5x for this ball."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Watch a non-player display and shoot the ramp so the ball reaches its top near 99,990."
+          },
+          {
+            "text": "The first ramp collect or timeout ends the feature and resets its target when docks are not lit."
+          },
+          {
+            "text": "Repeat U-S-A and the ramp while the feeds remain safe."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: SHUTTLE and STATION awards",
+          "when": "When trailing, use this higher-ceiling route: use this when target banks are safer than the locks and one useful award is displayed.",
+          "steps": [
+            {
+              "text": "Read the displayed award for both words."
+            },
+            {
+              "text": "Press both flippers to select which word the lower-right standup will change."
+            },
+            {
+              "text": "Hit that standup until one word shows the wanted award."
+            },
+            {
+              "text": "Complete its flashing letters. A flashing target scores 20,000 and becomes solid."
+            },
+            {
+              "text": "The word completion collects its displayed award."
+            }
+          ]
+        },
+        {
+          "title": "Upper-drop Bonus X route",
+          "when": "Use this when the upper-right drop bank returns safely.",
+          "steps": [
+            {
+              "text": "Complete the upper-right drop bank for 50,000 and one Bonus X advance."
+            },
+            {
+              "text": "Complete it three times to reach 4x and light Extra Ball at the bank."
+            },
+            {
+              "text": "Complete it once more to reach 5x and collect Extra Ball."
+            },
+            {
+              "text": "Continue toward the 7x maximum only when the bank remains safe."
+            },
+            {
+              "text": "Protect the multiplied end-of-ball bonus."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeat Rescue Jackpots",
+        "steps": [
+          {
+            "text": "Complete 1-2-3 and dock two balls."
+          },
+          {
+            "text": "Dock the third ball to start Three-Ball Multiball."
+          },
+          {
+            "text": "Redock two balls for the Rescue Jackpot."
+          },
+          {
+            "text": "Leave one 1-2-3 lane unlit before or during the lock sequence."
+          },
+          {
+            "text": "Complete that lane after multiball to relight docks."
+          },
+          {
+            "text": "Repeat. Each multiball without a Rescue adds 10,000 to its stored value."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Three-Ball Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Stop n Score",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Stop n Score X",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Bonus X",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Docks",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Rescue Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Bonus Ball",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Hold Bonus",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Stop n Score timing",
+          "instruction": "Hold the ball on the left flipper. Watch the cycling value and time the ramp for a value near 99,000.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+        },
+        {
+          "name": "No-inlane control",
+          "instruction": "Test direct slingshot-to-flipper feeds before you attempt a transfer. The game has no inlanes.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+        },
+        {
+          "name": "Award selection",
+          "instruction": "Press both flippers to change which word award the lower-right standup will reroll.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The game has no inlanes, and the slingshots connect directly to the flipper bases.",
+          "response": "Use dead bounces and early nudges. Make the next safe shot instead of forcing a transfer.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+        },
+        {
+          "issue": "The right outlane has no kickback and scores 100,000 only while lit.",
+          "response": "Keep the ball away from that lane. Use the left-outlane kickback when a choice is possible.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+        },
+        {
+          "issue": "A ramp shot with two balls docked replaces a docked ball instead of starting multiball.",
+          "response": "After two docks, shoot the center or upper-right ball popper to start multiball.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/spacestation/rules/rules.html"
+        }
+      ],
+      "simpleOverview": "Space Station uses the 1-2-3 top lanes to light two dock shots. Complete 1-2-3, dock two balls at the left orbit or right ramp, dock a third ball to start Multiball, then redock two balls before one remains for the Rescue Jackpot.",
+      "overview": "Space Station uses the 1-2-3 top lanes to light two dock shots. Leave one top lane unfinished when possible, take the third dock, then redock two balls before one remains for the Rescue Jackpot. Complete the saved top lane afterward to relight the docks and repeat.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

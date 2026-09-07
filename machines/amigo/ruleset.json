@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "G4ONX",
+  "title": "Amigo",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Amigo",
+      "url": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Amigo installation and service manual",
+        "url": "https://www.flipperservice.de/flipperteile-handbuch/Bally_1974_Amigo/page.pdf"
+      },
+      {
+        "label": "Kineticist Amigo machine guide",
+        "url": "https://www.kineticist.com/games/pinball/amigo"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Use the upper-right arc to light the spinner. Shoot the left spinner orbit to open the right outlane gate. Hit the center Up Post target when its rebound is safe. Then repeat the spinner from the right flipper.",
+      "quickInfo": [
+        {
+          "name": "Center-saucer skill shot",
+          "summary": "A successful center-saucer plunge lights both bumpers and adds three bonus advances."
+        },
+        {
+          "name": "Upper-right arc",
+          "summary": "Shoot the upper-right lane arc from the left flipper to light the spinner."
+        },
+        {
+          "name": "Left spinner orbit",
+          "summary": "Shoot through the left spinner orbit from the right flipper to open the lower-right outlane gate."
+        },
+        {
+          "name": "Center post",
+          "summary": "The center Up Post target raises drain protection until a down-post switch lowers the post."
+        },
+        {
+          "name": "Right outlane gate",
+          "summary": "The open gate saves one right-outlane ball, then closes after the ball uses it."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge for the center saucer. Accept a side top lane when the saucer rejects the ball."
+        },
+        {
+          "text": "From the left flipper, shoot the upper-right lane arc to light the spinner."
+        },
+        {
+          "text": "From the right flipper, shoot through the left spinner orbit to open the lower-right outlane gate."
+        },
+        {
+          "text": "Test the center Up Post target from control. Hit it only when its rebound avoids the outlanes."
+        },
+        {
+          "text": "Move the ball to the right flipper when the transfer is safe."
+        },
+        {
+          "text": "Repeat the lit spinner from the right flipper."
+        },
+        {
+          "text": "Use the right-arc return to regain the right flipper. Relight the spinner when necessary."
+        }
+      ],
+      "fallback": {
+        "title": "Spinner without the center post",
+        "when": "Use this when the Up Post target rebounds toward an outlane.",
+        "steps": [
+          {
+            "text": "Ignore the center Up Post target."
+          },
+          {
+            "text": "Shoot the upper-right arc to light the spinner."
+          },
+          {
+            "text": "Shoot the left spinner orbit to open the right outlane gate when the shot is controlled."
+          },
+          {
+            "text": "Repeat the spinner from the right flipper."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Top-right bumper loop",
+          "when": "Use this only when the top-right bumper sends most right-lane balls into the U-turn chute.",
+          "steps": [
+            {
+              "text": "Shoot the spinner to the top."
+            },
+            {
+              "text": "Guide the ball into the top-right lane with a legal nudge."
+            },
+            {
+              "text": "Guide the right-bumper rebound into the U-turn chute."
+            },
+            {
+              "text": "Catch or dead bounce the chute exit to the right flipper."
+            },
+            {
+              "text": "Repeat the spinner while the loop remains reliable."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit-spinner control loop",
+        "steps": [
+          {
+            "text": "Shoot the upper-right arc to light the spinner."
+          },
+          {
+            "text": "Shoot the left spinner orbit to open the lower-right outlane gate."
+          },
+          {
+            "text": "Hit the center Up Post target only if its return is safe."
+          },
+          {
+            "text": "Return the ball to the right flipper and repeat the spinner."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Dead bounce the right-arc return",
+          "instruction": "Dead bounce a slow, aligned right-arc return from the left flipper to the right flipper.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+        },
+        {
+          "name": "Right-arc exit nudge",
+          "instruction": "If the right-arc feed approaches a drain, nudge as the ball reaches the exit post. Stay within the tilt limit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+        },
+        {
+          "name": "Safe flipper transfer",
+          "instruction": "Move a left-flipper ball to the right only when the transfer is controlled. Otherwise, shoot the upper-right arc again.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The center saucer can reject the plunge without scoring the award.",
+          "response": "Do not depend on the saucer catch. Accept the guaranteed side-lane value when the plunge enters a side lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+        },
+        {
+          "issue": "The center Up Post target can rebound toward either side drain.",
+          "response": "Test the target once from control. Ignore it and use the spinner if the return is dangerous.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+        },
+        {
+          "issue": "Bumper exits and right-arc returns can hit a down-post switch or move toward a drain.",
+          "response": "Prepare for the complete feed. Relight protection only when the required shot remains safe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4ONX-MQY24"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm this is the Bally 1974 production game, plus its ball count, tilt, Extra Ball, Special, and replay treatment.",
+        "Read the spinner value and test its strength, the center-post and right-gate adjustments, and whether the gate closes after one save.",
+        "Test the center-saucer catch, upper-right arc feeds, bumper exits, and dangerous target rebounds before choosing the route."
+      ],
+      "simpleOverview": "Amigo turns the upper-right arc into a spinner light and the left spinner orbit into a one-use right-outlane save. Shoot those two routes in order, hit the center Up Post target only when its rebound is safe, then repeat the lit spinner from the right flipper.",
+      "overview": "Amigo turns the upper-right arc into a spinner light and the left spinner orbit into a one-use right-outlane save. Shoot the upper-right arc from the left flipper, then the spinner orbit from the right to open the gate. Test the Up Post target only from control and repeat the lit spinner while using the right-arc return to regain the right flipper.",
+      "machineSetup": [
+        "Confirm this is the Bally 1974 production game, plus its ball count, tilt, Extra Ball, Special, and replay treatment.",
+        "Read the spinner value and test its strength, the center-post and right-gate adjustments, and whether the gate closes after one save.",
+        "Test the center-saucer catch, upper-right arc feeds, bumper exits, and dangerous target rebounds before choosing the route."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

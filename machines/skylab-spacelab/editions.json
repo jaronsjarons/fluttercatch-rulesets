@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "id": "G5DOx",
+  "editions": [
+    {
+      "id": "G5DOx-MJwzd",
+      "title": "Skylab",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/skylab.webp",
+        "sourceUrl": "https://www.flickr.com/photos/10707024@N04/52723249426",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Send the ball to the top and bank it through missing S-K-Y-L-A-B letters, repeat the safer side until base bonus reaches 24,000, and ignore the captive-ball bank unless its award matters.",
+            "quickInfo": [
+              {
+                "name": "SKYLAB set",
+                "summary": "Completing S-K-Y-L-A-B adds two bonus advances."
+              },
+              {
+                "name": "Lit lanes",
+                "summary": "Each lit top lane and lit return lane adds one bonus advance."
+              },
+              {
+                "name": "Change buttons",
+                "summary": "The two small red Change rollover buttons alternate which lanes are lit for a bonus advance."
+              },
+              {
+                "name": "Base bonus",
+                "summary": "Base bonus reaches a maximum of 24,000 and is doubled on the last ball."
+              },
+              {
+                "name": "Captive balls",
+                "summary": "Moving all five captive balls to the lit side collects the configured Special award."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the missing S-K-Y-L-A-B letters, the lit lanes, and the current base bonus."
+              },
+              {
+                "text": "Choose the upper route that can bank the ball through a missing letter."
+              },
+              {
+                "text": "Send the ball to the top instead of shooting the captive-ball bank."
+              },
+              {
+                "text": "Use natural upper action to collect missing letters, Change buttons, and lit lanes."
+              },
+              {
+                "text": "Complete S-K-Y-L-A-B for two bonus advances."
+              },
+              {
+                "text": "Keep using the controlled upper route until base bonus reaches 24,000."
+              },
+              {
+                "text": "After bonus is full, keep using the same controlled upper route."
+              },
+              {
+                "text": "On the last ball, protect the doubled 24,000 bonus instead of forcing a captive-ball award."
+              }
+            ],
+            "fallback": {
+              "title": "One-side upper repeat",
+              "when": "Use this plan when one side of the playfield returns safely and the other side feeds a sling or outlane.",
+              "steps": [
+                {
+                  "text": "Stop using the side with the unsafe return."
+                },
+                {
+                  "text": "Read which SKYLAB letters remain available from the safer side."
+                },
+                {
+                  "text": "Repeat a broad upper shot on that side."
+                },
+                {
+                  "text": "Accept lit-lane and Change-button advances from natural ball movement."
+                },
+                {
+                  "text": "Use the other side only when a missing letter requires it and the ball is controlled."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Valuable captive-ball award",
+                "when": "Use this plan only when the configured Special gives points, an allowed extra ball, or another useful tournament award.",
+                "steps": [
+                  {
+                    "text": "Confirm the captive-ball award before the game."
+                  },
+                  {
+                    "text": "Roll through lit top and return lanes for one bonus advance each, and complete S-K-Y-L-A-B for two bonus advances."
+                  },
+                  {
+                    "text": "Count how many captive balls still need to move to the lit side."
+                  },
+                  {
+                    "text": "Shoot the bank only from a settled flipper and only while its rebounds remain safe."
+                  },
+                  {
+                    "text": "Collect the award, then return to SKYLAB letters and bonus."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "24,000 base bonus with last-ball double bonus",
+              "steps": [
+                {
+                  "text": "Bank upper shots through missing SKYLAB letters."
+                },
+                {
+                  "text": "Use Change buttons to move lit-lane opportunities."
+                },
+                {
+                  "text": "Complete SKYLAB for two bonus advances."
+                },
+                {
+                  "text": "Use lit lanes for single bonus advances."
+                },
+                {
+                  "text": "Reach 24,000 and preserve the doubled collect on the last ball."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top lanes",
+                "label": "S-K-Y-L-A-B top lanes",
+                "description": "Upper lanes used to complete missing SKYLAB letters and advance base bonus.",
+                "precision": "unverified",
+                "context": "Send the ball to the top and bank it through missing letters."
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Letter-bank upper shot",
+                "instruction": "Aim beside the needed letter so the ball banks through it on the way to the top instead of striking the feature squarely.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Lit-lane change",
+                "instruction": "Use a small red Change rollover when natural ball movement offers it, then read the newly lit top and return lanes.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Return-lane save nudge",
+                "instruction": "When the ball heads toward an outlane, nudge early so it contacts the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated side travel can feed a slingshot, the center drain, or an outlane.",
+                "response": "Compare both returns early and repeat only the side whose exit reaches a controllable flipper area.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "The captive-ball bank adds direct rebound risk without a useful award when Special is disabled or valueless.",
+                "response": "Ignore the bank unless you have confirmed that moving all five balls to the lit side has tournament value.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "Waiting until the outlane mouth to nudge is often too late.",
+                "response": "Nudge while the ball can still reach the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "simpleOverview": "Skylab / Spacelab raises base bonus through S-K-Y-L-A-B, lit lanes, and the red Change buttons. Send the ball to the top through the side that can reach missing letters, complete the word for two bonus advances, and keep using upper play until base bonus reaches 24,000.",
+            "overview": "Skylab / Spacelab raises base bonus through S-K-Y-L-A-B letters, lit lanes, and Change buttons in the upper playfield. Use controlled shots to reach 24,000 and preserve it for the last-ball double. Shoot the captive-ball bank only when its configured Special award justifies the lateral return.",
+            "machineSetup": [],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Send the ball to the top and bank it through missing S-K-Y-L-A-B letters, repeat the safer side until base bonus reaches 24,000, and ignore the captive-ball bank unless its award matters.",
+            "quickInfo": [
+              {
+                "name": "SKYLAB set",
+                "summary": "Completing S-K-Y-L-A-B adds two bonus advances."
+              },
+              {
+                "name": "Lit lanes",
+                "summary": "Each lit top lane and lit return lane adds one bonus advance."
+              },
+              {
+                "name": "Change buttons",
+                "summary": "The two small red Change rollover buttons alternate which lanes are lit for a bonus advance."
+              },
+              {
+                "name": "Base bonus",
+                "summary": "Base bonus reaches a maximum of 24,000 and is doubled on the last ball."
+              },
+              {
+                "name": "Captive balls",
+                "summary": "Moving all five captive balls to the lit side collects the configured Special award."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the missing S-K-Y-L-A-B letters, the lit lanes, and the current base bonus."
+              },
+              {
+                "text": "Choose the upper route that can bank the ball through a missing letter."
+              },
+              {
+                "text": "Send the ball to the top instead of shooting the captive-ball bank."
+              },
+              {
+                "text": "Use natural upper action to collect missing letters, Change buttons, and lit lanes."
+              },
+              {
+                "text": "Complete S-K-Y-L-A-B for two bonus advances."
+              },
+              {
+                "text": "Keep using the controlled upper route until base bonus reaches 24,000."
+              },
+              {
+                "text": "After bonus is full, keep using the same controlled upper route."
+              },
+              {
+                "text": "On the last ball, protect the doubled 24,000 bonus instead of forcing a captive-ball award."
+              }
+            ],
+            "fallback": {
+              "title": "One-side upper repeat",
+              "when": "Use this plan when one side of the playfield returns safely and the other side feeds a sling or outlane.",
+              "steps": [
+                {
+                  "text": "Stop using the side with the unsafe return."
+                },
+                {
+                  "text": "Read which SKYLAB letters remain available from the safer side."
+                },
+                {
+                  "text": "Repeat a broad upper shot on that side."
+                },
+                {
+                  "text": "Accept lit-lane and Change-button advances from natural ball movement."
+                },
+                {
+                  "text": "Use the other side only when a missing letter requires it and the ball is controlled."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Valuable captive-ball award",
+                "when": "Use this plan only when the configured Special gives points, an allowed extra ball, or another useful tournament award.",
+                "steps": [
+                  {
+                    "text": "Confirm the captive-ball award before the game."
+                  },
+                  {
+                    "text": "Roll through lit top and return lanes for one bonus advance each, and complete S-K-Y-L-A-B for two bonus advances."
+                  },
+                  {
+                    "text": "Count how many captive balls still need to move to the lit side."
+                  },
+                  {
+                    "text": "Shoot the bank only from a settled flipper and only while its rebounds remain safe."
+                  },
+                  {
+                    "text": "Collect the award, then return to SKYLAB letters and bonus."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "24,000 base bonus with last-ball double bonus",
+              "steps": [
+                {
+                  "text": "Bank upper shots through missing SKYLAB letters."
+                },
+                {
+                  "text": "Use Change buttons to move lit-lane opportunities."
+                },
+                {
+                  "text": "Complete SKYLAB for two bonus advances."
+                },
+                {
+                  "text": "Use lit lanes for single bonus advances."
+                },
+                {
+                  "text": "Reach 24,000 and preserve the doubled collect on the last ball."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top lanes",
+                "label": "S-K-Y-L-A-B top lanes",
+                "description": "Upper lanes used to complete missing SKYLAB letters and advance base bonus.",
+                "precision": "unverified",
+                "context": "Send the ball to the top and bank it through missing letters."
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Letter-bank upper shot",
+                "instruction": "Aim beside the needed letter so the ball banks through it on the way to the top instead of striking the feature squarely.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Lit-lane change",
+                "instruction": "Use a small red Change rollover when natural ball movement offers it, then read the newly lit top and return lanes.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Return-lane save nudge",
+                "instruction": "When the ball heads toward an outlane, nudge early so it contacts the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated side travel can feed a slingshot, the center drain, or an outlane.",
+                "response": "Compare both returns early and repeat only the side whose exit reaches a controllable flipper area.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "The captive-ball bank adds direct rebound risk without a useful award when Special is disabled or valueless.",
+                "response": "Ignore the bank unless you have confirmed that moving all five balls to the lit side has tournament value.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "Waiting until the outlane mouth to nudge is often too late.",
+                "response": "Nudge while the ball can still reach the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "simpleOverview": "Skylab / Spacelab raises base bonus through S-K-Y-L-A-B, lit lanes, and the red Change buttons. Send the ball to the top through the side that can reach missing letters, complete the word for two bonus advances, and keep using upper play until base bonus reaches 24,000.",
+            "overview": "Skylab / Spacelab raises base bonus through S-K-Y-L-A-B letters, lit lanes, and Change buttons in the upper playfield. Use controlled shots to reach 24,000 and preserve it for the last-ball double. Shoot the captive-ball bank only when its configured Special award justifies the lateral return.",
+            "machineSetup": [],
+            "rulesNotes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "G5DOx-MP3Ey",
+      "title": "Spacelab",
+      "sourceUrls": [],
+      "image": {
+        "url": "https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/variants/spacelab.webp",
+        "sourceUrl": "https://www.kineticist.com/games/pinball/skylab-spacelab",
+        "rightsStatus": "permission-required"
+      },
+      "contexts": [
+        {
+          "name": "stock",
+          "input": {
+            "summary": "Send the ball to the top and bank it through missing S-K-Y-L-A-B letters, repeat the safer side until base bonus reaches 24,000, and ignore the captive-ball bank unless its award matters.",
+            "quickInfo": [
+              {
+                "name": "SKYLAB set",
+                "summary": "Completing S-K-Y-L-A-B adds two bonus advances."
+              },
+              {
+                "name": "Lit lanes",
+                "summary": "Each lit top lane and lit return lane adds one bonus advance."
+              },
+              {
+                "name": "Change buttons",
+                "summary": "The two small red Change rollover buttons alternate which lanes are lit for a bonus advance."
+              },
+              {
+                "name": "Base bonus",
+                "summary": "Base bonus reaches a maximum of 24,000 and is doubled on the last ball."
+              },
+              {
+                "name": "Captive balls",
+                "summary": "Moving all five captive balls to the lit side collects the configured Special award."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the missing S-K-Y-L-A-B letters, the lit lanes, and the current base bonus."
+              },
+              {
+                "text": "Choose the upper route that can bank the ball through a missing letter."
+              },
+              {
+                "text": "Send the ball to the top instead of shooting the captive-ball bank."
+              },
+              {
+                "text": "Use natural upper action to collect missing letters, Change buttons, and lit lanes."
+              },
+              {
+                "text": "Complete S-K-Y-L-A-B for two bonus advances."
+              },
+              {
+                "text": "Keep using the controlled upper route until base bonus reaches 24,000."
+              },
+              {
+                "text": "After bonus is full, keep using the same controlled upper route."
+              },
+              {
+                "text": "On the last ball, protect the doubled 24,000 bonus instead of forcing a captive-ball award."
+              }
+            ],
+            "fallback": {
+              "title": "One-side upper repeat",
+              "when": "Use this plan when one side of the playfield returns safely and the other side feeds a sling or outlane.",
+              "steps": [
+                {
+                  "text": "Stop using the side with the unsafe return."
+                },
+                {
+                  "text": "Read which SKYLAB letters remain available from the safer side."
+                },
+                {
+                  "text": "Repeat a broad upper shot on that side."
+                },
+                {
+                  "text": "Accept lit-lane and Change-button advances from natural ball movement."
+                },
+                {
+                  "text": "Use the other side only when a missing letter requires it and the ball is controlled."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Valuable captive-ball award",
+                "when": "Use this plan only when the configured Special gives points, an allowed extra ball, or another useful tournament award.",
+                "steps": [
+                  {
+                    "text": "Confirm the captive-ball award before the game."
+                  },
+                  {
+                    "text": "Roll through lit top and return lanes for one bonus advance each, and complete S-K-Y-L-A-B for two bonus advances."
+                  },
+                  {
+                    "text": "Count how many captive balls still need to move to the lit side."
+                  },
+                  {
+                    "text": "Shoot the bank only from a settled flipper and only while its rebounds remain safe."
+                  },
+                  {
+                    "text": "Collect the award, then return to SKYLAB letters and bonus."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "24,000 base bonus with last-ball double bonus",
+              "steps": [
+                {
+                  "text": "Bank upper shots through missing SKYLAB letters."
+                },
+                {
+                  "text": "Use Change buttons to move lit-lane opportunities."
+                },
+                {
+                  "text": "Complete SKYLAB for two bonus advances."
+                },
+                {
+                  "text": "Use lit lanes for single bonus advances."
+                },
+                {
+                  "text": "Reach 24,000 and preserve the doubled collect on the last ball."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top lanes",
+                "label": "S-K-Y-L-A-B top lanes",
+                "description": "Upper lanes used to complete missing SKYLAB letters and advance base bonus.",
+                "precision": "unverified",
+                "context": "Send the ball to the top and bank it through missing letters."
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Letter-bank upper shot",
+                "instruction": "Aim beside the needed letter so the ball banks through it on the way to the top instead of striking the feature squarely.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Lit-lane change",
+                "instruction": "Use a small red Change rollover when natural ball movement offers it, then read the newly lit top and return lanes.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Return-lane save nudge",
+                "instruction": "When the ball heads toward an outlane, nudge early so it contacts the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated side travel can feed a slingshot, the center drain, or an outlane.",
+                "response": "Compare both returns early and repeat only the side whose exit reaches a controllable flipper area.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "The captive-ball bank adds direct rebound risk without a useful award when Special is disabled or valueless.",
+                "response": "Ignore the bank unless you have confirmed that moving all five balls to the lit side has tournament value.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "Waiting until the outlane mouth to nudge is often too late.",
+                "response": "Nudge while the ball can still reach the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "simpleOverview": "Skylab / Spacelab raises base bonus through S-K-Y-L-A-B, lit lanes, and the red Change buttons. Send the ball to the top through the side that can reach missing letters, complete the word for two bonus advances, and keep using upper play until base bonus reaches 24,000.",
+            "overview": "Skylab / Spacelab raises base bonus through S-K-Y-L-A-B letters, lit lanes, and Change buttons in the upper playfield. Use controlled shots to reach 24,000 and preserve it for the last-ball double. Shoot the captive-ball bank only when its configured Special award justifies the lateral return.",
+            "machineSetup": [],
+            "rulesNotes": []
+          },
+          "strategy": {
+            "summary": "Send the ball to the top and bank it through missing S-P-A-C-E-L-A-B letters, repeat the safer side until base bonus reaches 24,000, and ignore the captive-ball bank unless its award matters.",
+            "quickInfo": [
+              {
+                "name": "SPACELAB set",
+                "summary": "Completing S-P-A-C-E-L-A-B adds two bonus advances."
+              },
+              {
+                "name": "Lit lanes",
+                "summary": "Each lit top lane and lit return lane adds one bonus advance."
+              },
+              {
+                "name": "Change buttons",
+                "summary": "The two small red Change rollover buttons alternate which lanes are lit for a bonus advance."
+              },
+              {
+                "name": "Base bonus",
+                "summary": "Base bonus reaches a maximum of 24,000 and is doubled on the last ball."
+              },
+              {
+                "name": "Captive balls",
+                "summary": "Moving all five captive balls to the lit side collects the configured Special award."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Read the missing S-P-A-C-E-L-A-B letters, the lit lanes, and the current base bonus."
+              },
+              {
+                "text": "Choose the upper route that can bank the ball through a missing letter."
+              },
+              {
+                "text": "Send the ball to the top instead of shooting the captive-ball bank."
+              },
+              {
+                "text": "Use natural upper action to collect missing letters, Change buttons, and lit lanes."
+              },
+              {
+                "text": "Complete S-P-A-C-E-L-A-B for two bonus advances."
+              },
+              {
+                "text": "Keep using the controlled upper route until base bonus reaches 24,000."
+              },
+              {
+                "text": "After bonus is full, keep using the same controlled upper route."
+              },
+              {
+                "text": "On the last ball, protect the doubled 24,000 bonus instead of forcing a captive-ball award."
+              }
+            ],
+            "fallback": {
+              "title": "One-side upper repeat",
+              "when": "Use this plan when one side of the playfield returns safely and the other side feeds a sling or outlane.",
+              "steps": [
+                {
+                  "text": "Stop using the side with the unsafe return."
+                },
+                {
+                  "text": "Read which SPACELAB letters remain available from the safer side."
+                },
+                {
+                  "text": "Repeat a broad upper shot on that side."
+                },
+                {
+                  "text": "Accept lit-lane and Change-button advances from natural ball movement."
+                },
+                {
+                  "text": "Use the other side only when a missing letter requires it and the ball is controlled."
+                }
+              ]
+            },
+            "alternatives": [
+              {
+                "title": "Valuable captive-ball award",
+                "when": "Use this plan only when the configured Special gives points, an allowed extra ball, or another useful tournament award.",
+                "steps": [
+                  {
+                    "text": "Confirm the captive-ball award before the game."
+                  },
+                  {
+                    "text": "Roll through lit top and return lanes for one bonus advance each, and complete S-P-A-C-E-L-A-B for two bonus advances."
+                  },
+                  {
+                    "text": "Count how many captive balls still need to move to the lit side."
+                  },
+                  {
+                    "text": "Shoot the bank only from a settled flipper and only while its rebounds remain safe."
+                  },
+                  {
+                    "text": "Collect the award, then return to SPACELAB letters and bonus."
+                  }
+                ]
+              }
+            ],
+            "buildsToward": {
+              "title": "24,000 base bonus with last-ball double bonus",
+              "steps": [
+                {
+                  "text": "Bank upper shots through missing SPACELAB letters."
+                },
+                {
+                  "text": "Use Change buttons to move lit-lane opportunities."
+                },
+                {
+                  "text": "Complete SPACELAB for two bonus advances."
+                },
+                {
+                  "text": "Use lit lanes for single bonus advances."
+                },
+                {
+                  "text": "Reach 24,000 and preserve the doubled collect on the last ball."
+                }
+              ]
+            },
+            "playfieldReferences": [
+              {
+                "term": "top lanes",
+                "label": "S-P-A-C-E-L-A-B top lanes",
+                "description": "Upper lanes used to complete missing SPACELAB letters and advance base bonus.",
+                "precision": "unverified",
+                "context": "Send the ball to the top and bank it through missing letters."
+              }
+            ],
+            "techniques": [
+              {
+                "name": "Letter-bank upper shot",
+                "instruction": "Aim beside the needed letter so the ball banks through it on the way to the top instead of striking the feature squarely.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Lit-lane change",
+                "instruction": "Use a small red Change rollover when natural ball movement offers it, then read the newly lit top and return lanes.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "name": "Return-lane save nudge",
+                "instruction": "When the ball heads toward an outlane, nudge early so it contacts the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "Repeated side travel can feed a slingshot, the center drain, or an outlane.",
+                "response": "Compare both returns early and repeat only the side whose exit reaches a controllable flipper area.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "The captive-ball bank adds direct rebound risk without a useful award when Special is disabled or valueless.",
+                "response": "Ignore the bank unless you have confirmed that moving all five balls to the lit side has tournament value.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              },
+              {
+                "issue": "Waiting until the outlane mouth to nudge is often too late.",
+                "response": "Nudge while the ball can still reach the angled rubber above the return lane.",
+                "sourceUrl": "https://rules.silverballmania.com/rules/G5DOx-MJwzd"
+              }
+            ],
+            "simpleOverview": "Skylab / Spacelab raises base bonus through S-P-A-C-E-L-A-B, lit lanes, and the red Change buttons. Send the ball to the top through the side that can reach missing letters, complete the word for two bonus advances, and keep using upper play until base bonus reaches 24,000.",
+            "overview": "Skylab / Spacelab raises base bonus through S-P-A-C-E-L-A-B letters, lit lanes, and Change buttons in the upper playfield. Use controlled shots to reach 24,000 and preserve it for the last-ball double. Shoot the captive-ball bank only when its configured Special award justifies the lateral return.",
+            "machineSetup": [],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwZ7",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Cyclopes builds toward two-ball Multiball by completing both halves of C-Y-C-L-O-P-E-S. Complete the C-Y-C-L and O-P-E-S target groups to light the top-right hole, then shoot that hole to start Multiball. Each half also advances Bonus X and raises its matching spinner value. Complete M-O-N-S-T-E-R-S to light the center target and rotating Extra Ball; hit the flashing center target to raise Monster Bonus and light the top hole to collect it. Repeated hits to the E-Y-E-S captive-ball area raise its value.",
+        "simpleOverview": "Complete the C-Y-C-L and O-P-E-S target groups, then shoot the lit top-right hole to start two-ball Multiball. Each group also advances Bonus X and raises one spinner. Complete M-O-N-S-T-E-R-S, hit the flashing center target, then shoot the lit top hole to collect Monster Bonus.",
+        "summary": "Finish C-Y-C-L and O-P-E-S first so the same target work builds spinner value, Bonus X, and Multiball. If M-O-N-S-T-E-R-S is nearly complete, finish it and collect Monster Bonus before returning to the harder captive-ball shots.",
+        "quickInfo": [
+          {
+            "name": "Light Multiball",
+            "summary": "Complete C-Y-C-L and O-P-E-S."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the lit top-right hole."
+          },
+          {
+            "name": "Build Monster Bonus",
+            "summary": "Complete M-O-N-S-T-E-R-S, then hit the flashing center target."
+          },
+          {
+            "name": "Collect Monster Bonus",
+            "summary": "Shoot the lit top hole."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete the C-Y-C-L target group to advance Bonus X and raise the left spinner value.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the O-P-E-S target group to advance Bonus X and raise the right spinner value.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After both halves are complete, shoot the lit top-right hole to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During controlled play, use the now-higher-value spinners and continue working whichever letter group is safest to reach.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Monster Bonus route",
+            "when": "Use this when the M-O-N-S-T-E-R-S targets are safer than the two CYCLOPES groups or already close to complete.",
+            "steps": [
+              {
+                "text": "Complete M-O-N-S-T-E-R-S to light the center target and the rotating Extra Ball award.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Hit the center target while it flashes to raise Monster Bonus and light the top hole.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the lit top hole to collect Monster Bonus before restarting the sequence.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Special at 10x",
+          "steps": [
+            {
+              "text": "Keep completing C-Y-C-L and O-P-E-S to advance Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Reach 10x to light Special at its indicated shot.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test both CYCLOPES target groups, both spinners, the top-right Multiball hole, the M-O-N-S-T-E-R-S targets, center target, top bonus hole, and E-Y-E-S captive-ball area.",
+          "On multiplayer games, explain that the highest score after normal play receives a timed Bonus Ball; the drop-target banks add time during that ball."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "C-Y-C-L target group",
+            "label": "C-Y-C-L targets",
+            "description": "First half of CYCLOPES; advances Bonus X and the left spinner.",
+            "precision": "unverified"
+          },
+          {
+            "term": "O-P-E-S target group",
+            "label": "O-P-E-S targets",
+            "description": "Second half of CYCLOPES; advances Bonus X and the right spinner.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top-right hole",
+            "label": "Top-right Multiball hole",
+            "description": "Hole that starts Multiball after CYCLOPES is complete.",
+            "precision": "unverified"
+          },
+          {
+            "term": "M-O-N-S-T-E-R-S targets",
+            "label": "M-O-N-S-T-E-R-S targets",
+            "description": "Targets that light the center target and rotating Extra Ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center Monster target",
+            "description": "Flashing target that builds Monster Bonus and lights its collect hole.",
+            "precision": "unverified"
+          },
+          {
+            "term": "top hole",
+            "label": "Top Monster Bonus hole",
+            "description": "Hole that collects the lit Monster Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "E-Y-E-S captive-ball area",
+            "label": "E-Y-E-S captive-ball area",
+            "description": "Captive-ball feature whose hits increase its scoring value.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The timed Bonus Ball is a multiplayer-only competition feature.",
+            "response": "Do not plan around it in a one-player game; in multiplayer, the highest score earns it after normal play ends.",
+            "sourceUrl": "https://www.gameplanpinball.com/machine-cyclopes-rulesofplay.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Finish C-Y-C-L and O-P-E-S first so the same target work builds spinner value, Bonus X, and Multiball. If M-O-N-S-T-E-R-S is nearly complete, finish it and collect Monster Bonus before returning to the harder captive-ball shots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete the C-Y-C-L target group to advance Bonus X and raise the left spinner value.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete the O-P-E-S target group to advance Bonus X and raise the right spinner value.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After both halves are complete, shoot the lit top-right hole to start two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During controlled play, use the now-higher-value spinners and continue working whichever letter group is safest to reach.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Multiball",
+            "summary": "Complete C-Y-C-L and O-P-E-S."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the lit top-right hole."
+          },
+          {
+            "name": "Build Monster Bonus",
+            "summary": "Complete M-O-N-S-T-E-R-S, then hit the flashing center target."
+          }
+        ]
+      }
+    }
+  ]
+}

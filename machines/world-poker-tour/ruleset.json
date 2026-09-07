@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "id": "G5poe",
+  "title": "World Poker Tour",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Tilt Forums World Poker Tour tournament strategy",
+      "url": "https://tiltforums.com/t/world-poker-tour-strategy-and-rules/2925"
+    },
+    "supportingSources": [
+      {
+        "label": "Tilt Forums World Poker Tour code 14.0 rulesheet",
+        "url": "https://tiltforums.com/t/world-poker-tour-rulesheet/3858"
+      },
+      {
+        "label": "Kineticist World Poker Tour machine record",
+        "url": "https://www.kineticist.com/games/pinball/world-poker-tour"
+      },
+      {
+        "label": "Pinball Rulesheets World Poker Tour guide",
+        "url": "https://pinballrulesheets.com/stern/world-poker-tour-rulesheet"
+      },
+      {
+        "label": "PAPA World Poker Tour tutorial with Nick Lane",
+        "url": "https://pinballvideos.com/v/936"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "On the mini-playfield, open the jail, lock a ball, and leave one captive-ball hit. Complete Flop, Turn, and River at either ramp, start Change Gears at Poker Corner, then spin the orbits into All-In and add Ace in the Hole Multiball and Cut the Cards.",
+      "quickInfo": [
+        {
+          "name": "Hold 'Em and Poker Corner",
+          "summary": "Shoot three ramp advances for Flop, Turn, and River, select a 30-second mode, and shoot the Poker Corner scoop."
+        },
+        {
+          "name": "Ace in the Hole Multiball",
+          "summary": "Hit the jail target on the mini-playfield to open the bars, lock one ball there, then hit the captive ball three times to start the first Multiball."
+        },
+        {
+          "name": "All-In Multiball",
+          "summary": "Orbit spinners build Main Pot until it reaches the rising All-In threshold and starts multiball automatically."
+        },
+        {
+          "name": "Triple Scoring",
+          "summary": "Complete a Drop Target Poker hand, then use the lit inlane to make the next scoring action worth 3x for three seconds."
+        },
+        {
+          "name": "Cut the Cards",
+          "summary": "Relight the upper-left shot and collect the back-left VUK for more mode time or the first multiball add-a-ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use the first plunge to test the shooter-lane VUK feed and the mini-playfield flippers."
+        },
+        {
+          "text": "On the mini-playfield, hit the jail to open its bars and lock one ball.",
+          "modeNotes": [
+            "Ace in the Hole Lock: Jail hits open the bars. A shot through the open bars locks one ball.",
+            "A Poker Corner mode start relights the Ace in the Hole feature after it has been played."
+          ]
+        },
+        {
+          "text": "Hit the captive ball twice, then leave one hit before Ace in the Hole Multiball.",
+          "modeNotes": [
+            "Ace in the Hole Multiball: The first lock needs three captive-ball hits to release the ball and start multiball.",
+            "The first two balls begin on the mini-playfield. A quick re-lock scores 1,000,000 and adds a ball.",
+            "If a ball exits before the re-lock, the bars close and two-ball multiball continues."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot either ramp for Flop, Turn, and River to complete one Hold 'Em Hand.",
+          "modeNotes": [
+            "Hold 'Em Hand: Three ramp advances complete it. Advance Hold 'Em from the skill shot can replace one ramp advance.",
+            "The hand award equals Main Pot multiplied by hand strength. Tournament mode deals hands in rising strength.",
+            "A completed hand lights Poker Corner and advances the current city tournament."
+          ]
+        },
+        {
+          "text": "At Poker Corner, use the right flipper button to select Change Gears, then shoot the scoop.",
+          "modeNotes": [
+            "Change Gears: The mode lasts 30 seconds. Six lower shots and three upper targets score during the mode.",
+            "Each lower shot scores 500,000 at first and adds 50,000 to the next lower-shot value. Each upper target starts at 300,000 and adds 25,000 to the next upper-target value.",
+            "Make eight total shots for the Trophy. A Trophy scores 1,000,000 and raises Poker Wizard value.",
+            "Poker Corner modes cannot start during multiball. A started mode continues when a multiball begins."
+          ],
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot full orbits until Main Pot reaches the All-In threshold.",
+          "modeNotes": [
+            "Main Pot: It starts at 250,000. Each spinner spin adds 5,000 plus 500 for each completed Hold 'Em Hand.",
+            "All-In Threshold: It starts at 750,000 and rises by 250,000 after each All-In Multiball.",
+            "All-In Multiball starts automatically at the threshold and awards one completed Hold 'Em Hand plus Main Pot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During All-In Multiball, hit the left ramp, center VUK, Poker Corner scoop, and right ramp for rising Jackpots.",
+          "modeNotes": [
+            "All-In Jackpots start at 150,000 and rise through switch hits.",
+            "The orbit spinners remain available for Side Pots and Main Pot progress.",
+            "All-In Multiball can run with a Poker Corner mode and Ace in the Hole Multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Return to the mini-playfield and make the final captive-ball hit to add Ace in the Hole Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During the stack, shoot the upper-left mini-playfield lane to relight Cut the Cards, then shoot the back-left VUK for add-a-ball.",
+          "modeNotes": [
+            "Cut the Cards: The upper-left mini-playfield shot relights the back-left VUK award.",
+            "The first Cut the Cards award during multiball adds a ball unless four balls are already active.",
+            "During a single Poker Corner mode, the award adds 15 seconds and cannot repeat on consecutive collects."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "While the multiballs protect the drain, make red-arrow lower shots or white mini-playfield targets for Change Gears."
+        },
+        {
+          "text": "After the stack ends, repeat the Hold 'Em, Poker Corner, and Ace in the Hole cycle."
+        }
+      ],
+      "fallback": {
+        "title": "No Limit Multiball and a drop-target mode",
+        "when": "Use this when the mini-playfield jail or orbit feeds are unreliable.",
+        "steps": [
+          {
+            "text": "Hit the left lock standup three times to light the first three No Limit locks."
+          },
+          {
+            "text": "Collect two locks at the VUK or Poker Corner scoop."
+          },
+          {
+            "text": "Complete one Hold 'Em Hand to light Poker Corner."
+          },
+          {
+            "text": "Select A Chip and a Chair or Know Your Outs when the drop targets are safe."
+          },
+          {
+            "text": "Shoot the scoop while the mode and third lock are both lit."
+          },
+          {
+            "text": "During No Limit Multiball, shoot the left ramp for a 1,000,000 Jackpot."
+          },
+          {
+            "text": "Complete the left drop bank to relight 3x Jackpot, the right bank for 2x, or the center bank for 1x."
+          },
+          {
+            "text": "The mode and multiball end at their normal timer or one-ball condition."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Triple the final Hold 'Em shot",
+          "when": "Use this when a Drop Target Poker hand is complete and the current Hold 'Em Hand needs one River shot.",
+          "steps": [
+            {
+              "text": "Complete a valid Drop Target Poker hand."
+            },
+            {
+              "text": "Use flipper lane change to move the lit Triple Scoring inlane."
+            },
+            {
+              "text": "Roll through the lit inlane to start three seconds of 3x scoring."
+            },
+            {
+              "text": "Shoot the final ramp for River before the timer ends."
+            },
+            {
+              "text": "The completed hand, Main Pot award, and related progress score at 3x."
+            }
+          ]
+        },
+        {
+          "title": "Ace in the Hole relock route",
+          "when": "Use this when the mini-playfield jail is reliable and multiball control is strong.",
+          "steps": [
+            {
+              "text": "Hit the mini-playfield jail to open its bars, lock one ball through the bars, then hit the captive ball three times to start Ace in the Hole Multiball."
+            },
+            {
+              "text": "Quickly shoot one of the two mini-playfield balls through the open jail bars for a 1,000,000-point relock and add-a-ball."
+            },
+            {
+              "text": "Collect three ramp or jail Jackpots to reopen the jail."
+            },
+            {
+              "text": "Lock another ball to add a replacement ball and refresh ball save."
+            },
+            {
+              "text": "After the third relock cycle, use the short captive-ball Super Jackpot phase."
+            },
+            {
+              "text": "The multiball ends when one ball remains and no jailed ball can be released."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Poker Wizard, World Championship, and Keefer Invitational",
+        "steps": [
+          {
+            "text": "Play all six Poker Corner modes and earn as many Trophies as possible."
+          },
+          {
+            "text": "After all six Poker Corner modes have been played, shoot the relit Poker Corner scoop to start Poker Wizard."
+          },
+          {
+            "text": "Complete Hold 'Em Hands to win six city tournaments."
+          },
+          {
+            "text": "Score 10,000,000 in WPT World Championship to win it."
+          },
+          {
+            "text": "Score 25,000,000 in each of the six displayed Keefer categories."
+          },
+          {
+            "text": "Shoot the upper-left mini-playfield lane, then the back-left VUK for Cut the Cards to start four-ball Keefer Invitational."
+          },
+          {
+            "text": "During Keefer, use major-shot Jackpots, permanent hurry-ups, and drop-bank add-a-balls."
+          },
+          {
+            "text": "Keefer Invitational ends when one ball remains."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Ace in the Hole Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "All-In Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "No Limit Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Poker Wizard",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Keefer Invitational",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Change Gears",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "A Chip and a Chair",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Know Your Outs",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "WPT World Championship",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Triple Scoring",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "3x",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Hold 'Em Hand",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Main Pot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "All-In Threshold",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Cut the Cards",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Trophy",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Side Pot",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Advance Hold 'Em skill selection",
+          "instruction": "Release the shooter when the insert before Advance Hold 'Em is lit because the award locks when the ball reaches the VUK.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-strategy-and-rules/2925"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand either ramp from its same-side flipper after confirming the feed and return.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-strategy-and-rules/2925",
+          "techniqueSlug": "backhand"
+        },
+        {
+          "name": "Poker Corner and third-lock stack",
+          "instruction": "Lock two No Limit balls, light the third lock and Poker Corner, then shoot the scoop to start both features.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-strategy-and-rules/2925"
+        },
+        {
+          "name": "Triple-scoring transfer",
+          "instruction": "Use lane change to place 3x on the incoming inlane, then shoot the prepared River or No Limit Jackpot within three seconds.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-rulesheet/3858"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Poker Corner scoop can eject the ball into the bumpers and toward the left outlane.",
+          "response": "Prepare a nudge before the eject enters the bumper area.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-strategy-and-rules/2925"
+        },
+        {
+          "issue": "The right-ramp welds can break on a worn machine.",
+          "response": "Confirm that the ramp accepts and returns a ball before you depend on it for Hold 'Em or Jackpots.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-rulesheet/3858?page=3"
+        },
+        {
+          "issue": "The Ace in the Hole lock can develop opto faults.",
+          "response": "Verify that jail hits, locks, and releases register before you prepare a long multiball stack.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-rulesheet/3858?page=3"
+        },
+        {
+          "issue": "The clear upper playfield can have heavy wear that changes ball speed and flipper feeds.",
+          "response": "Test both mini-playfield exits before you depend on the jail or Cut the Cards route.",
+          "sourceUrl": "https://tiltforums.com/t/world-poker-tour-rulesheet/3858?page=3"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm code 14.0, tournament hand order, and lock difficulty.",
+        "Test jail, captive ball, ramps, VUK, and Poker Corner."
+      ],
+      "simpleOverview": "Completing Flop, Turn, and River lights a Poker Corner mode in World Poker Tour. Orbit spins raise Main Pot until All-In Multiball starts automatically. Hit the mini-playfield jail target to open its bars, shoot through them to lock a ball, then leave one captive-ball hit for Ace in the Hole Multiball. Start Change Gears first, let All-In begin, then make that final captive-ball hit while the mode runs.",
+      "overview": "World Poker Tour lets a running Poker Corner mode continue into All-In and Ace in the Hole Multiballs. Prepare the mini-playfield jail and leave one captive-ball hit, complete a Hold 'Em hand, start Change Gears at Poker Corner, then use full orbits to start All-In. Add Ace in the Hole and use Cut the Cards for add-a-ball while the stack protects Change Gears shots.",
+      "machineSetup": [
+        "Confirm code 14.0, tournament hand order, and lock difficulty.",
+        "Test jail, captive ball, ramps, VUK, and Poker Corner."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

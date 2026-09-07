@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "id": "G4Ne1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Collect cards through their matching rollovers, then shoot the Aces saucer to score all four current saucer values in sequence.",
+        "quickInfo": [
+          {
+            "name": "Card matrix",
+            "summary": "The sixteen cards comprise four Aces, four Kings, four Queens, and four Jacks."
+          },
+          {
+            "name": "Card scoring",
+            "summary": "Each card rollover scores 5 points and raises the matching rank's saucer value by 10."
+          },
+          {
+            "name": "Saucer values",
+            "summary": "Each saucer scores 10 points plus 10 for each collected card of its rank."
+          },
+          {
+            "name": "Saucer chain",
+            "summary": "Each saucer passes the ball to the saucer on its right before the Jacks saucer ejects it."
+          },
+          {
+            "name": "Aces route",
+            "summary": "The Aces saucer starts the full four-saucer chain and scores 200 points when all cards are complete."
+          },
+          {
+            "name": "Special states",
+            "summary": "Completing a rank can light its saucer for Special, while completing all four Clubs can light the top-center rollover."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Read the sixteen-card matrix before the plunge."
+          },
+          {
+            "text": "Use the top lanes and side lanes to collect missing Aces, Kings, Queens, and Jacks."
+          },
+          {
+            "text": "Let the two lower side rollovers collect missing Jacks; do not force the ball toward an outlane for one card."
+          },
+          {
+            "text": "Keep the ball moving through card lanes until several saucer values are high."
+          },
+          {
+            "text": "Settle the ball on the right flipper when the feed permits it."
+          },
+          {
+            "text": "Shoot the Aces saucer to start the four-saucer scoring chain."
+          },
+          {
+            "text": "Prepare the right flipper for the eject from the Jacks saucer."
+          },
+          {
+            "text": "Repeat the Aces saucer after each controlled return."
+          }
+        ],
+        "fallback": {
+          "title": "Partial-card Aces route",
+          "when": "Use this plan when further card collection produces unsafe feeds.",
+          "steps": [
+            {
+              "text": "Stop direct attempts at the unsafe card lane or target."
+            },
+            {
+              "text": "Read the current values for all four saucers."
+            },
+            {
+              "text": "Control the ball on the right flipper when possible."
+            },
+            {
+              "text": "Shoot the Aces saucer to collect every current saucer value."
+            },
+            {
+              "text": "Repeat the Aces saucer while the Jacks eject remains controlled."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Natural card collection",
+            "when": "Use this plan when the ball is already moving through the upper lanes.",
+            "steps": [
+              {
+                "text": "Read which rank still needs cards."
+              },
+              {
+                "text": "Nudge toward a matching top or side lane before the ball reaches its divider."
+              },
+              {
+                "text": "Do not force a late lane change after the ball passes the divider."
+              },
+              {
+                "text": "Return to the Aces saucer after the natural card pass."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "200-point Aces chain",
+          "steps": [
+            {
+              "text": "Collect all four Aces."
+            },
+            {
+              "text": "Collect all four Kings."
+            },
+            {
+              "text": "Collect all four Queens."
+            },
+            {
+              "text": "Collect all four Jacks."
+            },
+            {
+              "text": "Shoot the Aces saucer to score all four 50-point saucers."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "card matrix",
+            "label": "Sixteen-card matrix",
+            "description": "The center grid tracks Aces through Jacks across four suits.",
+            "xPercent": 50,
+            "yPercent": 52,
+            "precision": "area"
+          },
+          {
+            "term": "card lanes",
+            "label": "Card rollovers",
+            "description": "Sixteen rollovers around the playfield light their matching cards in the center matrix.",
+            "xPercent": 50,
+            "yPercent": 30,
+            "precision": "area"
+          },
+          {
+            "term": "Aces saucer",
+            "label": "Aces saucer",
+            "description": "The leftmost of four inline saucers starts the full scoring chain.",
+            "xPercent": 36,
+            "yPercent": 39,
+            "precision": "area"
+          },
+          {
+            "term": "Jacks saucer",
+            "label": "Jacks saucer",
+            "description": "The rightmost saucer ends the chain and ejects the ball toward the lower flippers.",
+            "xPercent": 64,
+            "yPercent": 39,
+            "precision": "area"
+          },
+          {
+            "term": "lower side rollovers",
+            "label": "Lower Jack rollovers",
+            "description": "The two lower outside rollovers collect Jacks but sit on dangerous side-drain paths.",
+            "xPercent": 50,
+            "yPercent": 66,
+            "precision": "area"
+          },
+          {
+            "term": "top-center rollover",
+            "label": "Top-center Special rollover",
+            "description": "The center rollover above the upper bumpers can light for Special after all four Clubs are collected.",
+            "xPercent": 50,
+            "yPercent": 8,
+            "precision": "area"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the single-player 1965 Gottlieb Kings & Queens and read the ball-count, replay, Special, and match settings.",
+          "Check whether completed ranks light saucers for Special and whether all four Clubs light the top-center rollover.",
+          "Test all card rollovers, four saucer transfers, Jacks eject, bumper exits, center posts, tilt sensitivity, and flipper strength."
+        ],
+        "techniques": [
+          {
+            "name": "Aces saucer chain",
+            "instruction": "Shoot the Aces saucer from the right flipper. Track the ball through all four saucers before the Jacks eject.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4Ne1-ML3dR"
+          },
+          {
+            "name": "Nudging",
+            "instruction": "Watch both posts beside the narrow center drain. Time a nudge or flipper stroke after the ball grazes a post.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4Ne1-ML3dR",
+            "techniqueSlug": "nudging"
+          },
+          {
+            "name": "Jacks-eject read",
+            "instruction": "Prepare the right flipper before the Jacks saucer ejects. Control the return before the next Aces shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4Ne1-ML3dR"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Balls leaving the bumpers can miss every saucer and return without control.",
+            "response": "Track the full exit. Do not choose the next card or saucer shot until a flipper controls the ball.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4Ne1-ML3dR"
+          },
+          {
+            "issue": "The side Queen lanes produce less predictable returns than the side Ace lanes.",
+            "response": "Prepare both lower flippers after a Queen-lane exit. Prefer a natural Queen collection over a forced shot.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4Ne1-ML3dR"
+          },
+          {
+            "issue": "The narrow center drain requires correct flipper or nudge timing.",
+            "response": "Wait for contact with a post or flipper. Use one small nudge within the machine's tilt limit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G4Ne1-ML3dR"
+          }
+        ],
+        "simpleOverview": "Kings & Queens turns sixteen card rollovers into four rising saucer values. Collect cards of each rank, then shoot the Aces saucer to send the ball through Aces, Kings, Queens, and Jacks in one four-saucer scoring chain.",
+        "overview": "In Kings & Queens, each card rollover raises the matching Aces, Kings, Queens, or Jacks saucer value. The Aces saucer begins a chain through all four. Complete the ranks, then shoot Aces to collect four 50-point saucers in sequence; pursue a lit Special only when that configured award is worthwhile.",
+        "machineSetup": [
+          "Confirm the single-player 1965 Gottlieb Kings & Queens and read the ball-count, replay, Special, and match settings.",
+          "Check whether completed ranks light saucers for Special and whether all four Clubs light the top-center rollover.",
+          "Test all card rollovers, four saucer transfers, Jacks eject, bumper exits, center posts, tilt sensitivity, and flipper strength."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Collect cards through their matching rollovers, then shoot the Aces saucer to score all four current saucer values in sequence.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Read the sixteen-card matrix before the plunge."
+          },
+          {
+            "text": "Use the top lanes and side lanes to collect missing Aces, Kings, Queens, and Jacks."
+          },
+          {
+            "text": "Let the two lower side rollovers collect missing Jacks; do not force the ball toward an outlane for one card."
+          },
+          {
+            "text": "Keep the ball moving through card lanes until several saucer values are high."
+          },
+          {
+            "text": "Settle the ball on the right flipper when the feed permits it."
+          },
+          {
+            "text": "Shoot the Aces saucer to start the four-saucer scoring chain."
+          },
+          {
+            "text": "Prepare the right flipper for the eject from the Jacks saucer."
+          },
+          {
+            "text": "Repeat the Aces saucer after each controlled return."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Card matrix",
+            "summary": "The sixteen cards comprise four Aces, four Kings, four Queens, and four Jacks."
+          },
+          {
+            "name": "Card scoring",
+            "summary": "Each card rollover scores 5 points and raises the matching rank's saucer value by 10."
+          },
+          {
+            "name": "Saucer values",
+            "summary": "Each saucer scores 10 points plus 10 for each collected card of its rank."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Partial-card Aces route",
+          "when": "Use this plan when further card collection produces unsafe feeds.",
+          "steps": [
+            {
+              "text": "Stop direct attempts at the unsafe card lane or target."
+            },
+            {
+              "text": "Read the current values for all four saucers."
+            },
+            {
+              "text": "Control the ball on the right flipper when possible."
+            },
+            {
+              "text": "Shoot the Aces saucer to collect every current saucer value."
+            },
+            {
+              "text": "Repeat the Aces saucer while the Jacks eject remains controlled."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The narrow center drain requires correct flipper or nudge timing.",
+          "text": "Wait for contact with a post or flipper. Use one small nudge within the machine's tilt limit."
+        }
+      }
+    }
+  ]
+}

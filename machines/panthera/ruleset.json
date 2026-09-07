@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "G5bQq",
+  "title": "Panthera",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Gottlieb Panthera factory instruction card",
+      "url": "https://arcarc.xmission.com/Pinball/Instruction%20%20Cards/panthera.gif"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Panthera strategy",
+        "url": "https://rules.silverballmania.com/rules/G5bQq-MQ4ob"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Panthera links its four colored top lanes to matching drop targets. A top lane lights that color; completing all three lit drops of one color raises Bonus X, while lit drops score 5,000 instead of 500 and stay down between balls. Build the base bonus to 20,000 to light the left saucer for Collect Bonus, then collect and rebuild while preserving the multiplier.",
+      "simpleOverview": "Roll through a colored top lane, then complete the three lit drop targets of that color to raise Bonus X. Lit drops score 5,000 and remain down between balls. Build 20,000 bonus to light the left saucer, then shoot it to collect the bonus with its multiplier.",
+      "summary": "Use the plunge and controlled upper-playfield feeds to light a color, then finish only that color's three lit drops. Prioritize the 20,000 Collect Bonus saucer once it is safe; collecting resets the base bonus but keeps the multiplier active for the next build on the same ball.",
+      "quickInfo": [
+        {
+          "name": "Light a Drop Color",
+          "summary": "Roll through its matching top lane."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete all three lit drops of one color."
+        },
+        {
+          "name": "Light Collect Bonus",
+          "summary": "Build the base bonus to 20,000."
+        },
+        {
+          "name": "Collect Bonus",
+          "summary": "Shoot the lit left saucer."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Roll through a white, green, yellow, or blue top lane to light that color's three drop targets."
+        },
+        {
+          "text": "Complete all three lit drops of the same color to raise Bonus X toward 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Continue hitting lit drops and scoring switches until the base bonus reaches 20,000."
+        },
+        {
+          "text": "Shoot the lit left saucer to collect the current bonus with its multiplier, then rebuild the base value.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "1-2-3 award route",
+          "when": "Use this when the color drops are badly split or the left saucer is rejecting.",
+          "steps": [
+            {
+              "text": "Complete 1-2-3 to light the Extra Ball target."
+            },
+            {
+              "text": "After the yellow, blue, white, and green rollover sequence is complete, finish 1-2-3 again to light the alternating saucer Special."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated multiplied collections",
+        "steps": [
+          {
+            "text": "Use new top-lane colors to find intact matching drops."
+          },
+          {
+            "text": "Raise Bonus X before taking the 20,000 Collect Bonus saucer.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "After collecting, rebuild the base bonus while the earned multiplier remains active."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Test all four colored top lanes, every colored insert and drop switch, drop resets and ball-to-ball memory, the left Collect Bonus saucer, both spinners, and the 1-2-3 targets.",
+        "Confirm the Bonus X ceiling, Extra Ball and Special settings, and whether the saucer eject returns safely enough to make repeated bonus collections practical."
+      ],
+      "cautions": [
+        {
+          "issue": "Lit and unlit drops behave differently between balls.",
+          "response": "Read the color lamps before choosing a bank: lit drops score more and hold down, while unlit drops reset for the next ball.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5bQq-MQ4ob"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

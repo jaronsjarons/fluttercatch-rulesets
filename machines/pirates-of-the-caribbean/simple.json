@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "GRbPY",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose Pintel, start On Stranger Tides Multiball from repeated Fountain of Youth loops, and use protected play to prepare more Multiballs. Chain each ready Multiball after the current ball save, then use PIRATE for Super X or Add A Ball.",
+        "quickInfo": [
+          {
+            "name": "Character choice",
+            "summary": "Each character changes chapter, multiball, gold, or timer behavior; Tia Dalma gives chapter selection, while Jack Sparrow boosts treasure and stacked multiball scoring."
+          },
+          {
+            "name": "Chapters",
+            "summary": "A movie shot lights its colored skull, and the Star Map starts the last color touched and multiplies character values when several skulls are lit."
+          },
+          {
+            "name": "Movie multiballs",
+            "summary": "Five movie multiballs can stack with one another and with Tortuga, and starting another during the grace period revives multiball play."
+          },
+          {
+            "name": "PIRATE awards",
+            "summary": "Cycle the desired award with the action button, complete PIRATE lanes, then collect it at the PIRATE target."
+          },
+          {
+            "name": "Gold and Tortuga",
+            "summary": "Collect spawned gold with the action button, and use fifty gold to qualify the first Tortuga Multiball at the right saucer."
+          },
+          {
+            "name": "Movie wizard modes",
+            "summary": "Play five chapters of one color and its matching movie multiball to qualify that movie's wizard mode."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose Pintel before plunging so each PIRATE award needs fewer completed lanes.",
+            "modeNotes": [
+              "Pintel begins with five of the six letters spotted, then four on each later completion; Arrr! Frenzy also scores double.",
+              "Philip Swift reduces the Fountain of Youth loop count for On Stranger Tides Multiball.",
+              "Tia Dalma allows direct chapter selection and makes At World's End easier and more valuable.",
+              "Jack Sparrow doubles treasure scoring and raises stacked-multiball scoring progressively.",
+              "Weatherby Swann raises multiball scoring and can pardon a multiball-ending drain, but disables Tortuga and Arrr! Frenzy.",
+              "Hector Barbossa makes multiball shots easier but sharply reduces Jackpot, Super, and wizard-tally value."
+            ]
+          },
+          {
+            "text": "Repeat the Fountain of Youth upper loop about eight or nine times to qualify On Stranger Tides Multiball, then shoot the loop once more to start it.",
+            "modeNotes": [
+              "Philip Swift reduces the required loop count.",
+              "During Multiball, the inner loop scores Jackpots; Chest-to-loop combos score Double Jackpots and orbit-to-loop combos score Triple Jackpots."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "While On Stranger Tides Multiball is running, make progress toward another Multiball instead of playing each Multiball separately.",
+            "modeNotes": [
+              "All six Multiballs can stack, and another Multiball can be started during the grace period to restore multiball play.",
+              "For Dead Man's Chest, complete both green targets beside the Chest and shoot the Chest for each lock; Bootstrap Bill needs only one green target per lock."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Let the active Multiball's ball save run before starting the next ready Multiball, then use the new ball and ball save to keep building the chain.",
+            "modeNotes": [
+              "Starting another Multiball adds a ball; starting one during the grace period revives multiball play."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Before completing PIRATE, use the action button to select Super X or Add A Ball, then shoot the lit PIRATE target to collect it.",
+            "modeNotes": [
+              "Super X is available every second P-I-R-A-T-E completion; after collecting it, hit the flashing 2x target to start about 30 seconds of 2x playfield scoring.",
+              "Add A Ball can be selected and collected only while a Multiball is running."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          }
+        ],
+        "editionDifferences": [
+          {
+            "feature": "Standard, Limited, and Collector's rules",
+            "pro": "Standard Edition contains the shared movie, chapter, character, multiball, and wizard rules used by this plan.",
+            "premium": "Limited and Collector's Edition change presentation and trim; the official support materials do not identify a separate rules package for the core route.",
+            "sourceUrl": "https://jerseyjackpinball.com/pages/support/pirates-of-the-caribbean-standard-edition"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "chapter",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Star Map",
+            "tone": "navy",
+            "kind": "shot"
+          },
+          {
+            "label": "Dead Man's Chest Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "At World's End Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Tortuga Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Super X",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "gold",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "PIRATE",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Star Map",
+            "context": "Use the Star Map to start chapters and collect skull values.",
+            "label": "Star Map",
+            "description": "Central magnet-and-target assembly that chooses a qualified chapter color.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Chest",
+            "context": "Shoot the Chest for Dead Man's Chest locks and its Super Jackpot.",
+            "label": "Dead Man's Chest",
+            "description": "Center-left orbit and physical lock guarded by two green targets.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Maelstrom",
+            "context": "Shoot Maelstrom to start At World's End and collect its Jackpot.",
+            "label": "Maelstrom",
+            "description": "Tight left ramp surrounding the whirlpool mechanism.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right saucer",
+            "context": "Shoot the right saucer to start Tortuga Multiball.",
+            "label": "Tortuga saucer",
+            "description": "Right-side saucer that starts Tortuga after enough gold is collected.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Tortuga grace-period revive",
+            "instruction": "When another multiball drains to one ball, start a ready Tortuga during the grace period to restore multiball play.",
+            "sourceUrl": "https://tiltforums.com/t/pirates-of-the-caribbean-jjp-rulesheet-wip/4169"
+          }
+        ],
+        "simpleOverview": "Pirates of the Caribbean chains its six Multiballs, uses Chapters to qualify movie wizard modes, and lets PIRATE award Super X or Add A Ball. Choose Philip Swift before plunging. At standard settings, about eight or nine Fountain of Youth upper loops qualify On Stranger Tides Multiball; Philip reduces that count. Shoot the loop once more to start Multiball. Before completing PIRATE, use the action button to select Super X (or Add A Ball during Multiball), then collect the award at the PIRATE target.",
+        "overview": "Pirates of the Caribbean uses Chapters and movie Multiballs to qualify five movie wizard modes, while its six Multiballs can be chained together. Choose Pintel before plunging, shoot the Fountain of Youth upper loop about eight or nine times to qualify On Stranger Tides Multiball, then shoot it once more to start Multiball and prepare another Multiball during protected play. Wait until the current ball save is nearly over before starting the next ready Multiball; select Super X (or Add A Ball during Multiball) before completing PIRATE, then collect the award at the PIRATE target.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose a Character before plunging, use a colored movie shot and the Star Map for a Chapter, or repeat the Fountain of Youth upper loop for On Stranger Tides Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Chapter",
+            "text": "Shoot Port Royal, the Chest, Maelstrom, Fountain of Youth, or Devil's Triangle once to light that movie color at the Star Map. Shoot the Star Map to start the last color its targets select.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "The selected Chapter",
+              "reason": "Chapters collect Characters and build the score level for the matching movie wizard.",
+              "play": "Shoot the flashing Character shots before the timer expires. If more than one Chapter color is lit, Tia Dalma can select the Chapter with the flippers and action button; other Characters receive the color selected by the Star Map."
+            }
+          },
+          {
+            "title": "Start On Stranger Tides Multiball",
+            "text": "Choose Philip Swift before plunging to reduce the required loop count. At standard settings, about eight or nine Fountain of Youth upper loops qualify On Stranger Tides Multiball; Philip reduces that count. Shoot the loop once more to start Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start Super X",
+            "text": "Use the action button to select the purple Super X award, complete the six PIRATE lanes, and shoot the lit PIRATE target. Then hit the flashing 2x target to start about 30 seconds of 2x playfield scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Character choice",
+            "summary": "Each character changes chapter, multiball, gold, or timer behavior; Tia Dalma gives chapter selection, while Jack Sparrow boosts treasure and stacked multiball scoring."
+          },
+          {
+            "name": "Chapters",
+            "summary": "A movie shot lights its colored skull, and the Star Map starts the last color touched and multiplies character values when several skulls are lit."
+          },
+          {
+            "name": "Movie multiballs",
+            "summary": "Five movie multiballs can stack with one another and with Tortuga, and starting another during the grace period revives multiball play."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative feature: Tortuga Multiball",
+          "when": "Use this when gold is already close to 50.",
+          "steps": [
+            {
+              "text": "Press the action button whenever gold appears. After collecting 50 gold, shoot the lit right saucer to start Tortuga Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot lit major shots for Jackpots, then shoot the right saucer for the Super Jackpot. Complete G-O-L-D to add a ball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

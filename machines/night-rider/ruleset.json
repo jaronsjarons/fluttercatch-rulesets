@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "GryQj",
+  "title": "Night Rider",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Night Rider",
+      "url": "https://rules.silverballmania.com/rules/GryQj-MLvN7"
+    },
+    "supportingSources": [
+      {
+        "label": "Bally Night Rider operator manual",
+        "url": "https://arcarc.xmission.com/PDF_Electro_Mechanical/Bally/Night_Rider_Manual.pdf"
+      },
+      {
+        "label": "Night Rider rules and strategy reference",
+        "url": "https://www.jeff-z.com/pinball/nightrider/rules/rules.html"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Cycle the top-saucer award with incidental switch hits and collect Double Bonus. Advance bonus to 15K with lit lanes, the saucer, and incidental target hits. Use the lit spinner when its return is controlled.",
+      "quickInfo": [
+        {
+          "name": "Bonus",
+          "summary": "The saucer, each drop target, the lit center target, and a lit return lane advance bonus toward 15K."
+        },
+        {
+          "name": "Double Bonus",
+          "summary": "Put the ball in the top saucer while Double Bonus is lit to double the end-of-ball bonus."
+        },
+        {
+          "name": "Saucer awards",
+          "summary": "Ten-point and 100-point switches move the top saucer through its displayed scoring awards."
+        },
+        {
+          "name": "Lit spinner",
+          "summary": "A lit spinner scores more per spin, and bonus advances change which spinner is lit."
+        },
+        {
+          "name": "Drop banks",
+          "summary": "A completed bank scores only 3,000 in Bob's tournament guide and can produce dangerous rebounds."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge to the top and watch which saucer award and spinner are lit."
+        },
+        {
+          "text": "Use safe top and spinner switches to move the saucer display toward Double Bonus."
+        },
+        {
+          "text": "Collect the top saucer when Double Bonus is lit.",
+          "modeNotes": [
+            "Double Bonus: The top saucer enables 2x end-of-ball bonus only while its Double Bonus lamp is lit."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Advance bonus toward 15K with repeat saucers, lit return lanes, the lit center target, and incidental drop targets."
+        },
+        {
+          "text": "Shoot the lit spinner from a controlled flipper. Continue only while the return avoids the slingshots and outlanes."
+        },
+        {
+          "text": "After 15K and Double Bonus are ready, stop attacking the drop banks. Protect the 30K end-of-ball collect.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Lit-spinner and top loop",
+        "when": "Recovery pivot: Use this when the top saucer is not receiving the ball cleanly.",
+        "steps": [
+          {
+            "text": "Identify the lit spinner."
+          },
+          {
+            "text": "Shoot it from a settled ball."
+          },
+          {
+            "text": "Use the resulting top play to move the saucer award."
+          },
+          {
+            "text": "Return to the saucer when Double Bonus is lit.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: 5,000 saucer awards",
+          "when": "When trailing, use this distinct scoreboard route: use this after Double Bonus is ready or when the displayed 5,000 award is easy to collect.",
+          "steps": [
+            {
+              "text": "Use safe switches until 5,000 is lit at the top saucer."
+            },
+            {
+              "text": "Send the ball through a top route into the saucer."
+            },
+            {
+              "text": "Resume bonus advances after the eject returns the ball."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "15K at Double Bonus",
+        "steps": [
+          {
+            "text": "Score 10-point or 100-point switches until the saucer's Double Bonus lamp is lit."
+          },
+          {
+            "text": "Collect the lit saucer to enable 2x bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the saucer, any drop target, the lit center target, or a lit return lane until base bonus reaches 15K."
+          },
+          {
+            "text": "Carry the 30K maximum collect to the end of the ball.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Double Bonus",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Saucer-award control",
+          "instruction": "Count the ten-point and 100-point switch hits near the top. Shoot the saucer when the needed award is lit.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryQj-MLvN7"
+        },
+        {
+          "name": "Lit-spinner timing",
+          "instruction": "Read the spinner lamps after each bonus advance. Shoot the lit side only from a controlled flipper.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/nightrider/rules/rules.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Balls leaving the bumpers can hit a slingshot or drain instead of reaching a flipper.",
+          "response": "Watch the full bumper exit. Nudge before the ball reaches a slingshot or lane divider.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryQj-MLvN7"
+        },
+        {
+          "issue": "Every standup and drop target can produce a dangerous rebound.",
+          "response": "Use incidental target hits for bonus. Do not attack a target bank when a safe spinner or top shot is available.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GryQj-MLvN7"
+        },
+        {
+          "issue": "The lit lanes, spinner, bumpers, and center target can change after each bonus advance.",
+          "response": "Read the lamps again after every advance. Do not repeat a shot because its prior value was lit.",
+          "sourceUrl": "https://www.jeff-z.com/pinball/nightrider/rules/rules.html"
+        }
+      ],
+      "simpleOverview": "Night Rider cycles the top-saucer award with switch hits, while lit lanes build base bonus to 15K. Move the display to Double Bonus, collect it at the saucer, then advance the base through lit lanes and use the lit spinner only when its return is controlled.",
+      "overview": "Night Rider cycles the top-saucer award with switch hits, while lit lanes build base bonus to 15K. Collect Double Bonus at the saucer first, then build the base with lit lanes, the saucer, and incidental target hits. Favor a controlled lit spinner over the low-value drop banks and preserve the 30K end-of-ball collect.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

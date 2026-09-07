@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "G5po2",
+  "title": "Godzilla",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Tilt Forums Sega Godzilla rules project",
+      "url": "https://tiltforums.com/t/godzilla-rules/2361"
+    },
+    "supportingSources": [
+      {
+        "label": "Sega Godzilla game manual and instruction card",
+        "url": "https://online.gameex.com/media/pinballx/all/addmedia/godzilla%20%28sega%201998%29/Manual%20%28with%20schematics%2C%20missing%20pages%2020-21%2C24-25%2C46-47%2C64-65%2C106-107%2C112-113%29.pdf"
+      },
+      {
+        "label": "Pinball Nirvana exact-machine rules summary",
+        "url": "https://pinballnirvana.com/forums/resources/godzilla-sega-1998-vp9.2664/"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Sega's Godzilla builds five separate Multiballs, all started at the left inner loop after their own qualification. The quick route is Taxi Multiball: complete the T-A-X-I targets, then shoot the left inner loop. You can qualify several Multiballs before that start shot, or add another qualified one during play for a fresh ball save and larger Jackpots.",
+      "simpleOverview": "Complete the T-A-X-I targets to qualify Taxi Multiball, then shoot the left inner loop to start it. Every qualified Multiball starts at that same inner loop, so you can prepare more than one before shooting it.",
+      "summary": "Complete the T-A-X-I targets, then shoot the left inner loop to start Taxi Multiball. The other four Multiballs use different qualifications but the same left-inner-loop start; prepare several for larger Jackpots, or add one during Multiball to restart ball save.",
+      "quickInfo": [
+        {
+          "name": "Taxi Multiball",
+          "summary": "Complete T-A-X-I, then shoot the left inner loop."
+        },
+        {
+          "name": "Baby Zilla Multiball",
+          "summary": "Shoot the left orbit four times, then the left inner loop."
+        },
+        {
+          "name": "Godzilla Multiball",
+          "summary": "Shoot the right ramp four times, then the left inner loop."
+        },
+        {
+          "name": "Save New York",
+          "summary": "Play all five Multiballs, then shoot the left inner loop."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the T-A-X-I standups to qualify Taxi Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Shoot the left inner loop while Start Multiball is flashing to begin Taxi Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Taxi Multiball, return to the T-A-X-I targets for Jackpots.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If another Multiball is qualified, shoot the left inner loop during play to add it, restore missing balls, and restart ball save.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Safer repeatable orbit route",
+          "when": "Use this when the left orbit is more controllable than the T-A-X-I bank.",
+          "steps": [
+            {
+              "text": "Shoot the left orbit four times to qualify Baby Zilla Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the left inner loop to start it, then return to the left orbit for Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Reach Save New York",
+        "steps": [
+          {
+            "text": "Qualify Godzilla with four right-ramp shots, Baby Zilla with four left-orbit shots, Taxi by completing T-A-X-I, Sonar with six captive-ball hits, and Helicopter by building the inlane-to-opposite-target combos through 6X.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start each qualified Multiball at the left inner loop; starting several together still records each one as played.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After all five have been played, shoot the left inner loop to start Save New York. Complete N-E-W Y-O-R-K at the major shots, then return to the left inner loop for the Super Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Prefer CPU 2.05 with display 2.0; earlier software can behave differently.",
+        "Check the left inner loop, both orbits, right ramp, T-A-X-I bank, three captive balls, inlanes, and yellow combo targets before competitive play."
+      ],
+      "termStyles": [
+        {
+          "label": "T-A-X-I",
+          "tone": "navy",
+          "kind": "multiball"
+        },
+        {
+          "label": "left inner loop",
+          "tone": "rust",
+          "kind": "multiball"
+        },
+        {
+          "label": "Baby Zilla Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Save New York",
+          "tone": "indigo",
+          "kind": "mode"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Starting several Multiballs together raises the Jackpot but spends every prepared start at once.",
+          "response": "Stack two or more when control is good; otherwise start the safest one and add another during ball save so the new start restores balls and refreshes protection.",
+          "sourceUrl": "https://tiltforums.com/t/godzilla-rules/2361"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

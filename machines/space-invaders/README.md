@@ -1,0 +1,319 @@
+# Space Invaders
+
+[View on FlutterCatch](https://fluttercatch.com/machine/space-invaders) · [Propose a correction](https://github.com/jaronsjarons/fluttercatch-rulesets/issues/new/choose)
+
+Generated reading copy. Edit [ruleset.json](ruleset.json), [simple.json](simple.json), or [mappings.json](mappings.json) to contribute.
+
+## Simple strategy
+
+### Summary Title
+
+The goal
+
+### Summary
+
+Repeat the center horseshoe for 5x. Build normal bonus and the separate Red Invader bonus, knock down Mystery Ship, then shoot the rollover behind it to collect the full multiplied bonus. The collect resets neither value, so replunge and repeat.
+
+### Steps
+
+- Use the plunge to test the three top lanes and both upper-flipper feeds.
+
+- Roll through the center top lane to light the spinner for 1,000 per spin.
+
+- Repeat the center horseshoe four times to reach 5x Bonus X.
+
+Details
+
+- Bonus X: The end-of-ball multiplier. The center horseshoe advances it to 5x and it resets at the next ball.
+
+- Score horseshoes, drop targets, return lanes, and Clone Chamber hits until normal bonus reaches 39,000.
+
+Details
+
+- Normal Bonus: The base end-of-ball bonus. It reaches 39,000, and 20,000 is held after the value first reaches that level.
+
+- Complete all five Red Invaders three times to build 60,000 of carryover bonus.
+
+Details
+
+- Red Invader Bonus: A stored 20,000, 40,000, or 60,000 bonus from complete sets of five red targets.
+
+- Knock down the Mystery Ship drop target to open its bonus rollover.
+
+Details
+
+- Mystery Ship: A drop target and the rollover behind it. The rollover collects the full current bonus and returns the ball to the shooter lane.
+
+- Shoot through the open rollover to collect normal bonus plus Red Invader Bonus, all at 5x.
+
+- Replunge and repeat the Mystery Ship collect because the collect does not reset either bonus value.
+
+- If the siren sounds, hit the currently available Mystery Ship switch for its added 50,000.
+
+- Use the lit spinner or horseshoe between safe bonus collects.
+
+### Quick Info
+
+- Center horseshoe
+
+Summary
+
+The first four shots raise Bonus X through 2x to 5x, while later awards depend on ball-count settings.
+
+- Mystery Ship
+
+Summary
+
+Knock down its drop target, then shoot the rollover behind it to collect the full bonus without resetting any value.
+
+- Red Invaders
+
+Summary
+
+Complete five targets three times for 20,000, 40,000, and 60,000 of carryover bonus.
+
+### Fallback
+
+Alternative route: Recovery: Spinner and upper-playfield scoring
+
+When
+
+Recovery pivot: Use this when the horseshoe or Mystery Ship rollover is unreliable.
+
+Steps
+
+- Shoot up the playfield without aiming at the captive ball.
+
+- Roll through the center top lane to light the spinner.
+
+- Shoot the right spinner for 1,000 per spin.
+
+- Use upper mini-flippers to slow the return or transfer it to a lower flipper.
+
+- Take safe horseshoe shots when either entrance becomes controlled.
+
+- Protect the held 20,000 normal bonus and Red Invader Bonus.
+
+## Full strategy
+
+### Summary
+
+Repeat the center horseshoe for 5x. Build normal bonus and the separate Red Invader bonus, knock down Mystery Ship, then shoot the rollover behind it to collect the full multiplied bonus. The collect resets neither value, so replunge and repeat.
+
+### Quick Info
+
+- Center horseshoe
+
+Summary
+
+The first four shots raise Bonus X through 2x to 5x, while later awards depend on ball-count settings.
+
+- Mystery Ship
+
+Summary
+
+Knock down its drop target, then shoot the rollover behind it to collect the full bonus without resetting any value.
+
+- Red Invaders
+
+Summary
+
+Complete five targets three times for 20,000, 40,000, and 60,000 of carryover bonus.
+
+- Clone Chamber
+
+Summary
+
+Strong captive-ball hits score and advance a stored value from 10,000 through 50,000.
+
+- Blue Invaders
+
+Summary
+
+Three top lanes light the center lane for Clone Chamber value, and all five light Extra Ball plus a center-target award.
+
+### Steps
+
+- Use the plunge to test the three top lanes and both upper-flipper feeds.
+
+- Roll through the center top lane to light the spinner for 1,000 per spin.
+
+- Repeat the center horseshoe four times to reach 5x Bonus X.
+
+Mode Notes
+
+- Bonus X: The end-of-ball multiplier. The center horseshoe advances it to 5x and it resets at the next ball.
+
+- Score horseshoes, drop targets, return lanes, and Clone Chamber hits until normal bonus reaches 39,000.
+
+Mode Notes
+
+- Normal Bonus: The base end-of-ball bonus. It reaches 39,000, and 20,000 is held after the value first reaches that level.
+
+- Complete all five Red Invaders three times to build 60,000 of carryover bonus.
+
+Mode Notes
+
+- Red Invader Bonus: A stored 20,000, 40,000, or 60,000 bonus from complete sets of five red targets.
+
+- Knock down the Mystery Ship drop target to open its bonus rollover.
+
+Mode Notes
+
+- Mystery Ship: A drop target and the rollover behind it. The rollover collects the full current bonus and returns the ball to the shooter lane.
+
+- Shoot through the open rollover to collect normal bonus plus Red Invader Bonus, all at 5x.
+
+- Replunge and repeat the Mystery Ship collect because the collect does not reset either bonus value.
+
+- If the siren sounds, hit the currently available Mystery Ship switch for its added 50,000.
+
+- Use the lit spinner or horseshoe between safe bonus collects.
+
+### Fallback
+
+Recovery: Spinner and upper-playfield scoring
+
+When
+
+Recovery pivot: Use this when the horseshoe or Mystery Ship rollover is unreliable.
+
+Steps
+
+- Shoot up the playfield without aiming at the captive ball.
+
+- Roll through the center top lane to light the spinner.
+
+- Shoot the right spinner for 1,000 per spin.
+
+- Use upper mini-flippers to slow the return or transfer it to a lower flipper.
+
+- Take safe horseshoe shots when either entrance becomes controlled.
+
+- Protect the held 20,000 normal bonus and Red Invader Bonus.
+
+### Alternatives
+
+- Position play: Clone Chamber value
+
+When
+
+When trailing, use this higher-ceiling route: use this only when the captive-ball return is predictable.
+
+Steps
+
+- Hit the captive ball hard enough to register its rear target.
+
+- Keep hitting the captive ball to raise its stored value from 10,000 through 50,000.
+
+- Complete the three top Blue Invader lanes.
+
+- Roll through the lit center top lane to collect the current value.
+
+- Repeat only when the captive-ball rebound stays safe.
+
+- Blue Invaders and left bank
+
+When
+
+Use this when lanes and drop targets are safer than the center horseshoe.
+
+Steps
+
+- Complete all five Blue Invader lanes.
+
+- Collect the lit far-inlane Extra Ball or tournament award.
+
+- Use the lit center target for 5,000 and three bonus advances.
+
+- Complete the left drop bank for 10,000, 15,000, 20,000, and 25,000.
+
+- A later bank completion awards Special.
+
+### Builds Toward
+
+Repeat 495,000 bonus collects
+
+Steps
+
+- Score horseshoes, drop targets, return lanes, and Clone Chamber hits until normal bonus reaches 39,000.
+
+- Complete Red Invaders three times for 60,000.
+
+- Shoot four horseshoes for 5x Bonus X.
+
+- Knock down the Mystery Ship drop target.
+
+- Shoot the rollover for 495,000.
+
+- Replunge and repeat the collect without rebuilding either bonus.
+
+### Techniques
+
+- Mini-flipper transfer
+
+Instruction
+
+Use an upper mini-flipper to deflect, roll, or transfer a fast ball toward a lower flipper before you aim again.
+
+Source Url
+
+[Source](https://www.kineticist.com/games/pinball/space-invaders)
+
+- Four-flipper horseshoe
+
+Instruction
+
+Test both horseshoe entrances from each upper and lower flipper. Use the flipper that gives the most repeatable full traversal.
+
+Source Url
+
+[Source](https://www.kineticist.com/games/pinball/space-invaders)
+
+### Cautions
+
+- Issue
+
+The captive-ball shot has a risky direct rebound.
+
+Response
+
+Use it only after you know its return. Prefer the horseshoe or lit spinner otherwise.
+
+Source Url
+
+[Source](https://www.kineticist.com/games/pinball/space-invaders)
+
+- Issue
+
+The Mystery Ship collect is blocked until its drop target is down.
+
+Response
+
+Confirm the target is down before you shoot through the rollover lane.
+
+Source Url
+
+[Source](https://www.kineticist.com/games/pinball/space-invaders)
+
+### Simple Overview
+
+Space Invaders is a bonus-building and repeat-collect game. Shoot four center horseshoes for 5x, build normal and Red Invader bonus, knock down the Mystery Ship drop target, then shoot the rollover behind it to collect the full multiplied bonus without resetting it.
+
+### Overview
+
+Space Invaders is a bonus-building and repeat-collect game. Reach 5x, build normal bonus and three Red Invader completions, knock down the Mystery Ship drop target, then shoot its rollover. Replunge and repeat the collect because neither bonus value resets.
+
+## Sources
+
+- [Kineticist Bob Matthews Space Invaders strategy](https://www.kineticist.com/games/pinball/space-invaders)
+- [Bally Space Invaders instruction card](https://arcarc.xmission.com/Pinball/Instruction%20%20Cards/Space_Invaders.pdf)
+- [District 82 Space Invaders 90-second tutorial](https://www.youtube.com/watch?v=8KNo69JMVjw)
+
+## Playfield
+
+[View the current playfield image](https://drgz1lvvatieiezu.public.blob.vercel-storage.com/site-media/v2/playfields/replacements/G42PX.webp).
+
+[Image credit and rights](image.json) · [Crop recipe](crop.json) · [Mappings](mappings.json)
+
+Ruleset text and mapping data: CC BY-SA 4.0, FlutterCatch contributors. External images retain their separate rights.

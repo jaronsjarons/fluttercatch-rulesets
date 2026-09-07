@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "GrP6q",
+  "title": "Nitro Ground Shaker",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Classic Pinball Machines",
+      "url": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1"
+    },
+    "supportingSources": [
+      {
+        "label": "PAPA Nitro Ground Shaker gameplay",
+        "url": "https://www.youtube.com/watch?v=LwWGCXC48-g"
+      },
+      {
+        "label": "PinballCards Nitro Ground Shaker rules card",
+        "url": "https://pinballcards.net/nitro-ground-shaker-1978"
+      },
+      {
+        "label": "Martin Hotze at Bulls&Balls Okayest Weekend 2022 5-Strike",
+        "url": "https://pinballvideos.com/v/3529/3288"
+      },
+      {
+        "label": "District 82 Nitro Ground Shaker 90-second tutorial",
+        "url": "https://www.youtube.com/watch?v=ljFio73N6hU"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Shoot the right spinner into the top-center saucer to light the spinner and select the two collect arrows. Build both base bonuses, light 2x, then shoot the upper-left saucer for the collect on five-ball rules.",
+      "steps": [
+        {
+          "text": "Plunge for the top-center saucer. Watch the upper-left saucer reject and kickout."
+        },
+        {
+          "text": "From the left flipper, shoot the right spinner to return the ball to the top-center saucer.",
+          "modeNotes": [
+            "Top-center saucer: Ten-point switches cycle the left and right arrows every switch. The 2x lamp toggles every second switch, independently of the arrows.",
+            "A made saucer also lights the spinner for 1,000 per spin."
+          ]
+        },
+        {
+          "text": "Collect the left arrow, right arrow, and green 2x award at the top-center saucer.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "From the right flipper, shoot the upper-left saucer. Repeat it while the made-shot and missed-shot returns stay controlled.",
+          "modeNotes": [
+            "Three-ball rules: The saucer advances both base bonuses by three before collecting the side or sides shown by the lit arrows.",
+            "Five-ball rules: The saucer advances each base bonus once only while neither collect arrow is lit. Once a collect is lit, the saucer collects without advancing that bonus.",
+            "The full repeatable value needs both base bonuses at 29,000, both collect arrows lit, and 2x."
+          ]
+        },
+        {
+          "text": "On five-ball rules, build both bonuses before lighting their collect arrows. After both collects and 2x are ready, use the upper-left saucer for the full value.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "A-F carried bonus",
+        "when": "Use this when the upper-left saucer will not hold the ball or its kickout is unsafe.",
+        "steps": [
+          {
+            "text": "Collect A-F through the two top lanes, two top standups, and two return lanes."
+          },
+          {
+            "text": "Complete A-F once for 20,000 carried end-of-ball bonus."
+          },
+          {
+            "text": "Complete it again for 30,000 carried end-of-ball bonus."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Lit spinner",
+          "when": "Use this when the spinner is strong and the bumper exit is safe.",
+          "steps": [
+            {
+              "text": "Make the top-center saucer to light the spinner for 1,000 per spin."
+            },
+            {
+              "text": "Repeat the right spinner from the left flipper."
+            },
+            {
+              "text": "Use each trip to the top to collect a missing arrow or 2x award.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeatable double bonus collect",
+        "steps": [
+          {
+            "text": "On five-ball rules, shoot the upper-left saucer while neither collect arrow is lit until both base bonuses reach 29,000."
+          },
+          {
+            "text": "Use the top-center saucer to light both collect arrows and 2x. Read the arrow and 2x lamp cycles independently.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the upper-left saucer to collect both 29,000 bonuses at 2x for 116,000."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Saucer half-miss",
+          "instruction": "Graze the edge of the upper-left chute. Use the contact to slow a shot that otherwise rims out.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1"
+        },
+        {
+          "name": "Soft or fluttered saucer shot",
+          "instruction": "Use a short or fluttered flip to remove speed. The goal is to drop the ball into the saucer, not drive it through the mouth.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1"
+        },
+        {
+          "name": "Live catch",
+          "instruction": "Read the upper-left saucer kickout. Nudge and catch it on the right flipper before repeating the shot.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1",
+          "techniqueSlug": "live-catch"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A hard upper-left saucer shot can rim out and return faster than a made shot.",
+          "response": "Use a half-miss, soft flip, or flutter. Prepare a separate control move for made and missed returns.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1"
+        },
+        {
+          "issue": "The upper-left saucer kickout can feed the center drain.",
+          "response": "Test it before committing to the repeat route. Nudge early and catch on the right flipper when possible.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1"
+        },
+        {
+          "issue": "Most drains start at a bumper exit or a sling.",
+          "response": "Use the spinner and saucer routes. Avoid direct rebound shots unless they complete a valuable A-F award.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrP6q-M5Rp1"
+        }
+      ],
+      "quickInfo": [
+        {
+          "name": "Main route",
+          "summary": "Shoot the right spinner into the top-center saucer, build both bonuses, light both collect arrows and 2x, then shoot the upper-left saucer."
+        },
+        {
+          "name": "Long goal",
+          "summary": "On five-ball rules, shoot the upper-left saucer while neither collect arrow is lit until both base bonuses reach 29,000."
+        },
+        {
+          "name": "Safer fallback",
+          "summary": "A-F carried bonus: Use this when the upper-left saucer will not hold the ball or its kickout is unsafe."
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Bally Nitro Ground Shaker, ball count, Bonus X rules, and award conversions.",
+        "Test both saucers, the spinner, lane change, and lower-bank rebounds."
+      ],
+      "noteDetails": {
+        "label": "Top-player proof",
+        "items": [
+          "At the Bulls&Balls Okayest Weekend 2022, Craig Pennuto shot the spinner and top saucer, then repeatedly collected the side indicated by its lit bonus arrow."
+        ]
+      },
+      "simpleOverview": "In Nitro Ground Shaker, shoot the right spinner into the top-center saucer to light the spinner and cycle the left collect arrow, right collect arrow, and 2x lamp. On five-ball rules, build both base bonuses before lighting their collect arrows; once both arrows and 2x are lit, shoot the upper-left saucer to collect both bonuses at 2x.",
+      "overview": "In Nitro Ground Shaker, ten-point switches cycle the two collect arrows at the top-center saucer and toggle its 2x lamp every second switch. Shoot the right spinner into that saucer to light the spinner and select the needed awards. On five-ball rules, first build both base bonuses to 29,000, then light both arrows and 2x before shooting the upper-left saucer for the 116,000 collect. On three-ball rules, the upper-left saucer advances both bases before collecting the lit side or sides.",
+      "machineSetup": [
+        "Confirm Bally Nitro Ground Shaker, ball count, Bonus X rules, and award conversions.",
+        "Test both saucers, the spinner, lane change, and lower-bank rebounds."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

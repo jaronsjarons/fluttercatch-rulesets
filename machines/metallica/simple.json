@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBE4",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Choose the safer Electric Chair or Grave Marker Multiball, start Lady Justice first, then use Pick and FUEL timers for 4x scoring while building Spider items toward Crank It Up.",
+        "steps": [
+          {
+            "text": "Use the regular skill shot. Test the ramps, Electric Chair reject, Grave Marker backhand, and Coffin graze during ball save.",
+            "modeNotes": [
+              "The super skill shot shortens the opening ball save. Use it only after its feed is known.",
+              "This is original Metallica from 2013. It has the Spider feature. Metallica Remastered does not have the Spider."
+            ]
+          },
+          {
+            "text": "Choose Electric Chair when Sparky is controllable. Otherwise, choose Grave Marker and finish its drop bank on the same ball.",
+            "modeNotes": [
+              "Electric Chair qualification: Hit Sparky. The center target counts two hits. Either side target counts one. The first multiball needs 10 hits. Progress stays after a drain.",
+              "Grave Marker qualification: Lower the inline drop targets. Then hit the Grave Marker target. The first multiball needs one target hit after the drops. Drop progress resets at drain.",
+              "Electric Chair has the higher ceiling. Grave Marker needs fewer shots and can be safer as a left-flipper backhand."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When three Pick targets are complete, leave the last target for multiball. Start Lady Justice before the multiball when its ramp shots are under control.",
+            "modeNotes": [
+              "Pick target set: Complete all four guitar-pick standups to light the Snake shot for 20 seconds.",
+              "Lady Justice: Spell METALLICA with ramp shots. Then alternate the lit left and right shots. An opposite-side shot raises both values and scores 2x.",
+              "A running mode can stack with a main multiball. Main multiballs do not stack with each other. Coffin Multiball is the exception and can overlap another main multiball."
+            ],
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start the qualified multiball. Complete the last Pick target. Shoot the lit Snake lane before its 20-second timer ends.",
+            "modeNotes": [
+              "Snake Pick award: The first timed Snake lock during a multiball adds one ball, starts a 10-second ball save, and starts 20 seconds of 2x playfield.",
+              "Electric Chair Multiball: Shoot lit jackpots at the orbits and Sparky to fill the power meter. Shoot Sparky for the Super Jackpot. Seven Supers convert the regular jackpots to Supers.",
+              "Grave Marker Multiball: Collect the five major jackpots. The marker spots any uncollected jackpot. After the set, shoot the marker for a Double Jackpot and a 20-second magnet phase. Build the Super with other jackpots. Knock the held ball from the magnet to collect it.",
+              "The multiball ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "While the Snake 2x timer is running, complete F-U-E-L and hit the piston target to start another 2x timer. Both multipliers make the active scoring 4x.",
+            "modeNotes": [
+              "FUEL multiplier: Complete the four left standups to light the piston target. The piston starts about 20 seconds of 2x playfield.",
+              "Snake 2x and FUEL 2x multiply together for 4x. Keep the high-value jackpot or mode collect ready before you start the second timer."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Move the Spider to an easy major shot. Hit the Chair, Snake, and Grave Marker features to light their item inserts at that Spider shot. Repeat the shot to collect items.",
+            "modeNotes": [
+              "Spider: A lit arrow at the last major shot made. A direct Chair, Snake, or Grave Marker hit lights that item at the Spider shot. Repeat the shot to collect that item for the rest of the ball.",
+              "When all three item inserts are lit at one shot, make that shot to start a Coffin Hurry-Up. Shoot the Coffin to collect it and lock those three inserts across balls.",
+              "Coffin item: Direct captive-ball hits also collect Coffins. Spider spots Chair, Snake, and Grave Marker items, but not Coffins."
+            ]
+          },
+          {
+            "text": "Collect 12 Chairs, Snakes, Grave Markers, and Coffins. Shoot the right scoop. Choose For Whom the Bell Tolls. On Premium or LE, Fade to Black is also strong.",
+            "modeNotes": [
+              "Crank It Up: A long single-ball song mode with brief ball save. Its timer follows the song and is about five to seven minutes.",
+              "For Whom the Bell Tolls: Hit each of the five major shots three times. Controlled ramp alternation also builds a strong cash-out value.",
+              "Fade to Black: Spinner and switch hits build value. A major shot collects the moving jackpot. The added Premium and LE spinners make it stronger on those editions.",
+              "Escape: Hit each of the four physical item features once during Crank It Up. The Spider cannot spot these escape hits. Shoot the scoop and choose cash out to collect the mode total, or continue.",
+              "Completing the mode also collects its jackpot. Use Snake or FUEL 2x before the completion or escape collect when possible."
+            ],
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Grave Marker control route",
+          "when": "Use this plan when Sparky rejects toward the center, or when tournament settings make Grave Marker materially shorter than Electric Chair.",
+          "steps": [
+            {
+              "text": "Backhand Grave Marker from the left flipper. Complete its drop bank on the same ball.",
+              "modeNotes": [
+                "Use this only when the same-ball drop-bank requirement and Grave Marker return are safer than Sparky."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Start a side mode. Start Grave Marker Multiball.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Finish the Pick targets. Collect the Snake add-a-ball and 2x.",
+              "kinds": [
+                "multiball",
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Collect the five Grave Marker jackpots. Use the marker to spot a difficult uncollected shot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Use safe Spider shots after multiball to continue item progress."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Snake Multiball",
+            "when": "Use this plan when the Snake lane is repeatable and the main toys reject badly.",
+            "steps": [
+              {
+                "text": "Repeat the Snake feature to spell S-N-A-K-E. The Pick targets are for the during-multiball add-a-ball and 2x, not for qualifying Snake Multiball."
+              },
+              {
+                "text": "Complete S-N-A-K-E at the Snake feature to start two-ball Snake Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Shoot the lit major jackpots. Use controlled shots to keep the Snake 2x timer active when it relights.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Coffin stack",
+            "when": "Use this plan when Coffin hits occur safely or during another multiball.",
+            "steps": [
+              {
+                "text": "Hit the Coffin captive ball until Coffin Multiball qualifies."
+              },
+              {
+                "text": "Start Electric Chair, Grave Marker, or Snake first.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Start Coffin during that multiball. It is the main multiball that can stack.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use Pick and FUEL timers during the two-multiball overlap.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "End of the Line",
+          "steps": [
+            {
+              "text": "Play all four Crank It Up modes. A mode cannot be selected again after it is attempted.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After each attempt, collect a new item set. Later sets need one more of each item. Extra items from the prior set do not carry into the new requirement."
+            },
+            {
+              "text": "After the fourth Crank It Up attempt, collect the next required set of Chairs, Snakes, Grave Markers, and Coffins. Shoot the right scoop to start End of the Line.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Alternate the lit Jackpot and roving Super Jackpot. Six Supers light the scoop for the final Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "quickInfo": [
+          {
+            "name": "Main Multiballs",
+            "summary": "Electric Chair, Grave Marker, and Snake do not stack with one another; Coffin Multiball can overlap them."
+          },
+          {
+            "name": "Lady Justice",
+            "summary": "Spell METALLICA with ramps, then alternate lit side shots; opposite-side shots raise both values and score 2x."
+          },
+          {
+            "name": "Pick targets",
+            "summary": "Complete all four picks to light a timed Snake award that adds a ball during Multiball and starts 2x playfield scoring."
+          },
+          {
+            "name": "FUEL 2x",
+            "summary": "Complete F-U-E-L and hit the piston for about 20 seconds of 2x playfield scoring."
+          },
+          {
+            "name": "Spider",
+            "summary": "The last major shot can collect Chair, Snake, and Grave Marker items; Coffins require the captive ball."
+          },
+          {
+            "name": "Crank It Up",
+            "summary": "Collect 12 of each item, shoot the right scoop, and choose a long song mode."
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Electric Chair Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Grave Marker Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Snake Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Coffin Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Lady Justice",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Crank It Up",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "For Whom the Bell Tolls",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Fade to Black",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "End of the Line",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Snake 2x",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "FUEL 2x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x playfield",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "4x playfield",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand Grave Marker or a same-side orbit only when the shot clears safely on this copy.",
+            "techniqueSlug": "backhand",
+            "sourceUrl": "https://www.youtube.com/watch?v=O26SH3gNVnY&t=897s"
+          },
+          {
+            "name": "Coffin graze",
+            "instruction": "Graze the right side of the Coffin to feed the Snake area. Graze the left side to feed the Electric Chair area.",
+            "sourceUrl": "https://www.kineticist.com/news/metallica-pinball-tutorial"
+          },
+          {
+            "name": "Post pass",
+            "instruction": "Post pass a controlled Sparky return onto the flipper with the safer next shot after testing it under ball save.",
+            "techniqueSlug": "post-pass",
+            "sourceUrl": "https://www.youtube.com/watch?v=O26SH3gNVnY&t=350s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Sparky can reject or release the ball toward the center.",
+            "response": "Test Sparky under ball save. Use Grave Marker as the opening multiball when the return cannot be controlled.",
+            "sourceUrl": "https://www.youtube.com/watch?v=O26SH3gNVnY&t=125s"
+          },
+          {
+            "issue": "The Coffin captive ball can send the ball toward the center.",
+            "response": "Use a sourced edge graze. Make repeated Coffin hits during multiball when possible.",
+            "sourceUrl": "https://www.kineticist.com/news/metallica-pinball-tutorial"
+          },
+          {
+            "issue": "The FUEL standups can return toward an outlane or the center.",
+            "response": "Take natural FUEL progress. Complete the bank during multiball instead of forcing direct single-ball hits.",
+            "sourceUrl": "https://www.kineticist.com/news/metallica-pinball-tutorial"
+          },
+          {
+            "issue": "The super skill shot reduces the opening ball-save time.",
+            "response": "Use the regular skill shot on an unknown copy. Try the super skill shot only after its return is known.",
+            "sourceUrl": "https://www.kineticist.com/news/metallica-pinball-tutorial"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Sparky",
+            "context": "Hit Sparky to qualify and score Electric Chair Multiball.",
+            "label": "Sparky and Electric Chair",
+            "description": "Build Electric Chair progress and collect its jackpots here.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Grave Marker",
+            "context": "Lower the inline drops, then hit Grave Marker.",
+            "label": "Grave Marker",
+            "description": "Qualify its Multiball and collect its special jackpots here.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Snake lane",
+            "context": "Shoot the Snake lane for the timed Pick award.",
+            "label": "Snake lane",
+            "description": "Collect the Pick add-a-ball and timed 2x during Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Pick targets",
+            "context": "Complete the four Pick targets before Multiball.",
+            "label": "Pick targets",
+            "description": "Complete all four to light the timed Snake award.",
+            "precision": "unverified"
+          },
+          {
+            "term": "F-U-E-L",
+            "context": "Complete the four F-U-E-L standups.",
+            "label": "FUEL targets",
+            "description": "Complete these to light the piston target for 2x playfield scoring.",
+            "precision": "unverified"
+          },
+          {
+            "term": "piston target",
+            "context": "Hit the piston target to start FUEL 2x.",
+            "label": "Piston target",
+            "description": "Start the timed FUEL playfield multiplier here.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Spider",
+            "context": "Move the Spider to a safe major shot and collect items there.",
+            "label": "Spider arrows",
+            "description": "The last major shot can collect lit Chair, Snake, and Grave Marker items.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Coffin",
+            "context": "Hit or graze the Coffin captive ball for Coffin items and Multiball.",
+            "label": "Coffin captive ball",
+            "description": "Collect Coffins and qualify the stackable Coffin Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right scoop",
+            "context": "Shoot the right scoop to choose Crank It Up.",
+            "label": "Right scoop",
+            "description": "Start a qualified Crank It Up mode or collect its cash-out.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "context": "Use the right ramp for METALLICA and Lady Justice progress.",
+            "label": "Right ramp",
+            "description": "Advance METALLICA and alternate Lady Justice shots here.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Check Competition Mode, ball save, Electric Chair hit count, Grave Marker requirement, Extra Ball conversion, and Crank It Up timers.",
+          "On Premium or LE, note the added spinners before choosing between For Whom the Bell Tolls and Fade to Black.",
+          "Test Sparky, Grave Marker, Coffin, Snake, both ramps, both orbits, right scoop, piston, and Pick-target rebounds before choosing the opening route."
+        ],
+        "simpleOverview": "Metallica turns the Electric Chair, Grave Marker, Snake, and Coffin into matching Multiballs and item progress toward Crank It Up. For the first Multiball, hit Sparky ten times for Electric Chair, or lower the inline drop targets and hit the Grave Marker on the same ball. Ramp shots spell M-E-T-A-L-L-I-C-A and start Lady Justice. During Multiball, complete the four Pick targets and shoot the lit Snake within 20 seconds for an add-a-ball and 2x playfield scoring. Complete F-U-E-L, then hit the piston target for another 2x timer.",
+        "overview": "Lady Justice and other side modes can run during a Metallica Multiball, while collected Electric Chair, Grave Marker, Snake, and Coffin items advance toward Crank It Up. Choose Electric Chair when Sparky returns controllably, or Grave Marker when the same-ball drop bank is repeatable. Leave one Pick target, spell M-E-T-A-L-L-I-C-A to start Lady Justice, then start the chosen Multiball and finish the Pick bank. Shoot the lit Snake within 20 seconds for an add-a-ball and 2x playfield scoring; complete F-U-E-L and hit the piston target to raise the active scoring to 4x.",
+        "machineSetup": [
+          "Check Competition Mode, ball save, Electric Chair hit count, Grave Marker requirement, Extra Ball conversion, and Crank It Up timers.",
+          "On Premium or LE, note the added spinners before choosing between For Whom the Bell Tolls and Fade to Black.",
+          "Test Sparky, Grave Marker, Coffin, Snake, both ramps, both orbits, right scoop, piston, and Pick-target rebounds before choosing the opening route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Spell M-E-T-A-L-L-I-C-A for Lady Justice, use the Grave Marker drops and target for Multiball, and use F-U-E-L for 2x scoring.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start Lady Justice",
+            "text": "Spell M-E-T-A-L-L-I-C-A with ramp shots to start Lady Justice.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "Lady Justice",
+              "reason": "Choose it when the ramps and alternating side shots are controlled.",
+              "play": "Alternate the lit left and right shots. An opposite-side shot raises both values and scores 2x."
+            }
+          },
+          {
+            "title": "Start Grave Marker Multiball",
+            "text": "Hit the inline Grave Marker drop targets to lower them, then hit the Grave Marker target. On the first qualification, that target hit starts Grave Marker Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start FUEL 2x",
+            "text": "Complete the four F-U-E-L standup targets on the left, then hit the piston target to start about 20 seconds of 2x playfield scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main Multiballs",
+            "summary": "Electric Chair, Grave Marker, and Snake do not stack with one another; Coffin Multiball can overlap them."
+          },
+          {
+            "name": "Lady Justice",
+            "summary": "Spell METALLICA with ramps, then alternate lit side shots; opposite-side shots raise both values and score 2x."
+          },
+          {
+            "name": "Pick targets",
+            "summary": "Complete all four picks to light a timed Snake award that adds a ball during Multiball and starts 2x playfield scoring."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Electric Chair Multiball",
+          "when": "Use this when Sparky is controllable and the Grave Marker drops are not.",
+          "steps": [
+            {
+              "text": "Hit Sparky until the first ten-hit requirement is complete. The center target counts as two hits and either side target counts as one; the completed count starts Electric Chair Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

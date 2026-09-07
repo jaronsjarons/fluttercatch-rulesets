@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "GR73N",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Repeat the left spinner from the right flipper, complete lanes 1-2-3-4 for 3x Bonus, then shoot center drops only when their return is safe or few SUPERMAN letters remain.",
+        "quickInfo": [
+          {
+            "name": "Lit spinners",
+            "summary": "A slingshot hit lights one spinner for 1,000 per spin, and later slingshot hits change the lit spinner."
+          },
+          {
+            "name": "Left spinner",
+            "summary": "The left spinner is the preferred repeatable shot because its top lane also adds 5,000 points."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Complete top lanes 1-2-3 for 2x Bonus, then add lane 4 for 3x Bonus."
+          },
+          {
+            "name": "SUPERMAN",
+            "summary": "Five standups and three return lanes spell SUPERMAN for 30,000 or 50,000 points, based on the switch setting."
+          },
+          {
+            "name": "Drop bank and saucer",
+            "summary": "One drop-bank completion raises the upper-left saucer from 5,000 to 10,000, and a second completion can light Extra Ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for top lane 4. Then check which spinner the first slingshot hit lights."
+          },
+          {
+            "text": "Move the ball to the right flipper. Shoot the left spinner even when the other spinner is lit."
+          },
+          {
+            "text": "Use the top feed to complete lanes 1-2-3 for 2x Bonus. Add lane 4 for 3x Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the left spinner while its return remains controlled. Use lit-spinner periods for the best value."
+          },
+          {
+            "text": "Shoot a lit center drop only if its rebound avoids the right outlane. Stop after an unsafe return."
+          },
+          {
+            "text": "Complete SUPERMAN only when one or two standups remain and their shots are controlled."
+          }
+        ],
+        "fallback": {
+          "title": "Top lanes and bonus",
+          "when": "Use this when spinner returns are fast or the right flipper cannot make the left spinner.",
+          "steps": [
+            {
+              "text": "Send the ball to the top through the safer available lane."
+            },
+            {
+              "text": "Complete lanes 1-2-3 for 2x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Add lane 4 for 3x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use lanes, rollovers, and incidental drops to build base bonus toward 29,000."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Drop bank and saucer",
+            "when": "Use this when center-drop rebounds are safe on this machine.",
+            "steps": [
+              {
+                "text": "Time each drop shot for the target that is lit for 5,000."
+              },
+              {
+                "text": "Complete the five-bank once to raise the upper-left saucer to 10,000."
+              },
+              {
+                "text": "Take the saucer when its kickout is controlled."
+              },
+              {
+                "text": "Do not chase the second bank when Extra Ball is disabled or the rebound becomes unsafe."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "3x Bonus and repeatable spinner scoring",
+          "steps": [
+            {
+              "text": "Complete lanes 1-2-3-4 to secure 3x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Score lanes, star rollovers, and drop targets until base bonus reaches 29,000."
+            },
+            {
+              "text": "Repeat the left spinner during its lit periods."
+            },
+            {
+              "text": "Take SUPERMAN only when the remaining standups are safe."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x Bonus",
+            "tone": "navy",
+            "kind": "multiplier"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left spinner",
+            "label": "Left spinner",
+            "description": "Primary repeatable spinner shot used for the safer scoring route.",
+            "precision": "unverified",
+            "context": "Repeat the left spinner from the right flipper."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Lane-4 skill shot",
+            "instruction": "Adjust the plunge to collect lane 4. This lane is required for 3x Bonus and is easiest from the plunge.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR73N-MwN9x"
+          },
+          {
+            "name": "Lit-spinner selection",
+            "instruction": "Watch the slingshots. Each hit changes which spinner is lit, so wait for the useful spinner when control permits it.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/superman"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Center-drop rebounds often move toward the right outlane.",
+            "response": "Test one controlled shot. Return to the spinners if the rebound reaches the outlane area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR73N-MwN9x"
+          },
+          {
+            "issue": "Balls that return through the right spinner can become uncontrolled.",
+            "response": "Watch the complete feed before you repeat that spinner. Prefer the left spinner when its return is safer.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/superman"
+          },
+          {
+            "issue": "The upper-left saucer kickout can change with machine setup.",
+            "response": "Observe one kickout before you use the saucer as a repeatable scoring shot.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/superman"
+          }
+        ],
+        "simpleOverview": "Superman uses lanes 1-2-3-4 for 3x Bonus and slingshot hits to move a 1,000-per-spin lamp between two spinners. Complete the lanes, repeat the left spinner when it is lit, and shoot SUPERMAN standups only when the remaining letters have safe returns.",
+        "overview": "Superman uses lanes 1-2-3-4 for 3x Bonus and slingshot hits to move a 1,000-per-spin lamp between two spinners. Complete 1-2-3-4 and build the base toward 29,000, then favor the lit left spinner from the right flipper. Use the center standups only for a short, controlled finish to SUPERMAN and avoid repeated drop-bank rebounds.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Repeat the left spinner from the right flipper, complete lanes 1-2-3-4 for 3x Bonus, then shoot center drops only when their return is safe or few SUPERMAN letters remain.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for top lane 4. Then check which spinner the first slingshot hit lights."
+          },
+          {
+            "text": "Move the ball to the right flipper. Shoot the left spinner even when the other spinner is lit."
+          },
+          {
+            "text": "Use the top feed to complete lanes 1-2-3 for 2x Bonus. Add lane 4 for 3x Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Repeat the left spinner while its return remains controlled. Use lit-spinner periods for the best value."
+          },
+          {
+            "text": "Shoot a lit center drop only if its rebound avoids the right outlane. Stop after an unsafe return."
+          },
+          {
+            "text": "Complete SUPERMAN only when one or two standups remain and their shots are controlled."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Lit spinners",
+            "summary": "A slingshot hit lights one spinner for 1,000 per spin, and later slingshot hits change the lit spinner."
+          },
+          {
+            "name": "Left spinner",
+            "summary": "The left spinner is the preferred repeatable shot because its top lane also adds 5,000 points."
+          },
+          {
+            "name": "Bonus X",
+            "summary": "Complete top lanes 1-2-3 for 2x Bonus, then add lane 4 for 3x Bonus."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Top lanes and bonus",
+          "when": "Use this when spinner returns are fast or the right flipper cannot make the left spinner.",
+          "steps": [
+            {
+              "text": "Send the ball to the top through the safer available lane."
+            },
+            {
+              "text": "Complete lanes 1-2-3 for 2x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Add lane 4 for 3x Bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Use lanes, rollovers, and incidental drops to build base bonus toward 29,000."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Center-drop rebounds often move toward the right outlane.",
+          "text": "Test one controlled shot. Return to the spinners if the rebound reaches the outlane area."
+        }
+      }
+    }
+  ]
+}

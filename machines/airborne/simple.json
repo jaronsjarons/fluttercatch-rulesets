@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "G4EZe",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Play the called Airshow stunt and take safe locks along the way. Complete AIR and SHOW for Night Flying, then use three locks to start Air Frenzy.",
+        "steps": [
+          {
+            "text": "Launch the ball. Press both flipper buttons when the ball reaches the Injector. Aim for a chosen jet entrance.",
+            "modeNotes": [
+              "Injector: The timed flipper press pushes the ball toward the left jet entrance, center Pilot's Seat, or right jet entrance.",
+              "Pilot's Seat: This center entrance locks a ball. Two Pilot's Seat locks start Dogfight Mayhem."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the currently called Airshow stunt. When it calls for an outer ramp, use the ramp that completes cleanly and returns under control.",
+            "modeNotes": [
+              "Airshow: Each country gives an ordered set of stunts and about 75 seconds. A completed set or an expired timer advances to the next country."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete the three AIR drops, then complete the four SHOW drops before their qualification expires to start Night Flying.",
+            "modeNotes": [
+              "AIR is the upper-right drop bank. SHOW is the left-side drop bank."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Night Flying, make the required stunt shots. Every major shot also scores 500,000, and the Airshow timer remains frozen until the mode ends.",
+            "modeNotes": [
+              "Use Night Flying to finish a difficult stunt without spending the remaining Airshow time."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Take safe lit locks as they become available. Three balls locked among the available lock shots start Air Frenzy.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When three balls are locked anywhere, play Air Frenzy. Shoot the tower orbit, right reverse scoop, left reverse scoop, then right ramp.",
+            "modeNotes": [
+              "Air Frenzy: This is a three-ball multiball. Its four jackpots are worth 4 million, 5 million, 6 million, and 10 million in that order. Each value is doubled while three balls remain."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Protect all three balls until the right-ramp Super Jackpot. Air Frenzy ends when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Dogfight Mayhem",
+          "when": "Use this plan when you can place the skill shot in the center Pilot's Seat.",
+          "steps": [
+            {
+              "text": "Put two balls in the Pilot's Seat. The second lock starts two-ball Dogfight Mayhem.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Trap one ball. Shoot each reverse scoop ramp three times with the other ball.",
+              "modeNotes": [
+                "Dogfight Mayhem: Each reverse-ramp hit scores a 1.5 million jackpot. Three hits defeat that ramp's pilot."
+              ],
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "After one pilot is defeated, repeat that pilot's reverse ramp for 4 million. The mode ends when either ball drains.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Tower-ramp Fly-Bys",
+            "when": "Use this plan when the tower ramp completes cleanly and returns safely.",
+            "steps": [
+              {
+                "text": "From the right flipper, repeat the tower ramp while it clears cleanly."
+              },
+              {
+                "text": "Continue while the display raises the Fly-By value. Follow the displayed value because installed copies do not all stop at the same cap."
+              },
+              {
+                "text": "Stop when a weak shot rattles out or the return stops reaching the right flipper under control."
+              }
+            ]
+          },
+          {
+            "title": "Right-ramp Fly-Bys",
+            "when": "Use this plan when the right ramp completes cleanly and returns safely.",
+            "steps": [
+              {
+                "text": "Repeat the right ramp. Do not use the Injector on the return."
+              },
+              {
+                "text": "Continue while the display raises the Fly-By value. Installed copies do not all share the same cap, so follow the display."
+              },
+              {
+                "text": "Stop if a weak shot rattles out. Change to the tower-ramp loop."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "World Frenzy",
+          "steps": [
+            {
+              "text": "Advance through USA, France, Germany, Britain, Italy, and Spain. Complete Spain's stunts in any order.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After Spain, put a ball in any lock to start four-ball World Frenzy.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the tower ramp for 5 million. Shoot the full right ramp for 15 million. A weak right ramp into a jet entrance scores 10 million.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "World Frenzy ends when one ball remains. You can advance the countries again for another attempt."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Airshow",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Airshows during Multiball",
+            "summary": "The current Airshow stays active during either Multiball. Dogfight Mayhem and Air Frenzy cannot run together."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Injector timing",
+            "instruction": "Press both flipper buttons as the ball reaches the top Injector. Change the press timing to select the left entrance, Pilot's Seat, or right entrance.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8Eqj14SmLD0&t=272s"
+          },
+          {
+            "name": "Late left-saucer shot",
+            "instruction": "Use a late right-flipper release to reach the far-left saucer. Take it only when a lock or Extra Ball is lit.",
+            "sourceUrl": "https://tiltforums.com/t/airborne-rulesheet/5670"
+          },
+          {
+            "name": "One-ball trap in Dogfight",
+            "instruction": "Trap one ball. Use the other flipper to repeat the safer outer ramp or the required reverse ramp.",
+            "sourceUrl": "https://tiltforums.com/t/airborne-rulesheet/5670"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A weak right-ramp shot can reject with an unsafe return.",
+            "response": "Test the ramp before you grind it. Change to the tower ramp when the right ramp does not clear cleanly.",
+            "sourceUrl": "https://www.youtube.com/watch?v=8Eqj14SmLD0&t=352s"
+          },
+          {
+            "issue": "The three center Formation standups are close to the center drain.",
+            "response": "Ignore Formation Awards in tournament play. Take them only from incidental hits.",
+            "sourceUrl": "https://tiltforums.com/t/airborne-rulesheet/5670"
+          },
+          {
+            "issue": "A left orbit can return straight down the middle when the tower-ramp flap is raised and the upper lock is not ready.",
+            "response": "Do not force that orbit in this state. Use an outer ramp or wait until the upper lock changes the feed.",
+            "sourceUrl": "https://tiltforums.com/t/airborne-rulesheet/5670"
+          },
+          {
+            "issue": "The right ramp can rattle and fail on a bricky copy.",
+            "response": "Use the left tower-ramp Fly-By loop when the right ramp is not repeatable.",
+            "sourceUrl": "https://tiltforums.com/t/airborne-rulesheet/5670"
+          }
+        ],
+        "checkBeforePlay": [
+          "Follow the displayed Fly-By value because installed copies do not all stop at the same cap."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Injector",
+            "label": "Injector",
+            "description": "Top mechanism that directs the plunge to a selected entrance.",
+            "precision": "unverified",
+            "context": "Top mechanism that directs the plunge to a selected entrance."
+          },
+          {
+            "term": "tower ramp",
+            "label": "Tower ramp",
+            "description": "Left-side ramp used for Fly-Bys and jackpots.",
+            "precision": "unverified",
+            "context": "Left-side ramp used for Fly-Bys and jackpots."
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp",
+            "description": "Outer ramp used for Fly-Bys and major multiball awards.",
+            "precision": "unverified",
+            "context": "Outer ramp used for Fly-Bys and major multiball awards."
+          }
+        ],
+        "simpleOverview": "Airborne keeps the current Airshow active while either Multiball runs. Complete the called stunt, finish AIR and SHOW for Night Flying, and collect three safe locks for Air Frenzy. During Air Frenzy, follow tower orbit, right reverse scoop, left reverse scoop, and right ramp.",
+        "overview": "Airborne keeps the current Airshow active while either Multiball runs. Advance the called stunt and AIR-SHOW banks while taking safe locks, then use Air Frenzy to complete its four-shot Jackpot sequence. Choose Dogfight instead when the Pilot's Seat and reverse ramps are safer.",
+        "machineSetup": [
+          "Follow the displayed Fly-By value because installed copies do not all stop at the same cap."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Play the called Airshow stunt and take safe locks along the way. Complete AIR and SHOW for Night Flying, then use three locks to start Air Frenzy.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Launch the ball. Press both flipper buttons when the ball reaches the Injector. Aim for a chosen jet entrance.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Injector: The timed flipper press pushes the ball toward the left jet entrance, center Pilot's Seat, or right jet entrance.",
+              "Pilot's Seat: This center entrance locks a ball. Two Pilot's Seat locks start Dogfight Mayhem."
+            ]
+          },
+          {
+            "text": "Shoot the currently called Airshow stunt. When it calls for an outer ramp, use the ramp that completes cleanly and returns under control.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Airshow: Each country gives an ordered set of stunts and about 75 seconds. A completed set or an expired timer advances to the next country."
+            ]
+          },
+          {
+            "text": "Complete the three AIR drops, then complete the four SHOW drops before their qualification expires to start Night Flying.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "AIR is the upper-right drop bank. SHOW is the left-side drop bank."
+            ]
+          },
+          {
+            "text": "During Night Flying, make the required stunt shots. Every major shot also scores 500,000, and the Airshow timer remains frozen until the mode ends.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Use Night Flying to finish a difficult stunt without spending the remaining Airshow time."
+            ]
+          },
+          {
+            "text": "Take safe lit locks as they become available. Three balls locked among the available lock shots start Air Frenzy.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "When three balls are locked anywhere, play Air Frenzy. Shoot the tower orbit, right reverse scoop, left reverse scoop, then right ramp.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Air Frenzy: This is a three-ball multiball. Its four jackpots are worth 4 million, 5 million, 6 million, and 10 million in that order. Each value is doubled while three balls remain."
+            ]
+          },
+          {
+            "text": "Protect all three balls until the right-ramp Super Jackpot. Air Frenzy ends when one ball remains.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Airshows during Multiball",
+            "summary": "The current Airshow stays active during either Multiball. Dogfight Mayhem and Air Frenzy cannot run together."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Dogfight Mayhem",
+          "when": "Use this plan when you can place the skill shot in the center Pilot's Seat.",
+          "steps": [
+            {
+              "text": "Put two balls in the Pilot's Seat. The second lock starts two-ball Dogfight Mayhem.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Trap one ball. Shoot each reverse scoop ramp three times with the other ball.",
+              "kinds": [
+                "multiball"
+              ],
+              "details": [
+                "Dogfight Mayhem: Each reverse-ramp hit scores a 1.5 million jackpot. Three hits defeat that ramp's pilot."
+              ]
+            },
+            {
+              "text": "After one pilot is defeated, repeat that pilot's reverse ramp for 4 million. The mode ends when either ball drains.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "The three center Formation standups are close to the center drain.",
+          "text": "Ignore Formation Awards in tournament play. Take them only from incidental hits."
+        }
+      }
+    }
+  ]
+}

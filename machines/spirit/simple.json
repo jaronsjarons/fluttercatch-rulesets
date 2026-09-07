@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "Grl9W",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Spirit builds toward two- or three-ball Multiball through three lit Capture Holes and the center Stargate. Shoot a lit Capture Hole to lock a ball. Complete the 1-4 spot targets, then shoot the lit green X at the Roundabout to open the Stargate; the lit Ball Save targets can also open it. Shoot through the open Stargate for two-ball Multiball with zero or one ball already captured, or for three-ball Multiball with two captured balls. Filling all three Capture Holes also starts three-ball Multiball.",
+        "simpleOverview": "Shoot a lit Capture Hole to lock a ball. Complete the 1-4 spot targets, then shoot the lit green X at the Roundabout to open the Stargate. Shoot the open Stargate for two-ball Multiball with zero or one captured ball, or three-ball Multiball with two captured balls; filling all three Capture Holes also starts three-ball Multiball.",
+        "summary": "Take a safe lit Capture Hole first, qualify the Stargate through 1-4 and the green X, then choose a fast two-ball start or wait for two locks and a stronger three-ball start.",
+        "quickInfo": [
+          {
+            "name": "Capture a Ball",
+            "summary": "Shoot a lit Capture Hole."
+          },
+          {
+            "name": "Light Green X",
+            "summary": "Complete the 1-4 spot targets."
+          },
+          {
+            "name": "Open Stargate",
+            "summary": "Shoot the lit green X at the Roundabout."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot the open Stargate or fill all three holes."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot whichever unoccupied Capture Hole is lit to lock a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete spot targets 1, 2, 3, and 4 to light the green X at the Roundabout.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit green X to open the Stargate, then shoot through the open gate.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use zero or one captured ball for two-ball Multiball, or arrive with two captured balls for three-ball Multiball; three filled Capture Holes also start three-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Three-Capture start",
+            "when": "Use this when two Capture Holes are already occupied and the third is safely lit.",
+            "steps": [
+              {
+                "text": "Shoot the third lit Capture Hole instead of reopening the Stargate.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "All three filled holes immediately begin three-ball Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Three-Ball Multiball",
+          "steps": [
+            {
+              "text": "Capture two balls in lit holes.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Open and shoot the Stargate, or capture the third ball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Check Capture Hole memory, Stargate timing, ball-save target behavior, Special and Extra Ball settings, and whether lane progress carries between balls.",
+          "Test all three Capture Holes and lamps, spot targets 1-4, Roundabout green X, Stargate motor and switch, both drop banks, top-left rollovers, six flippers, and captive-ball releases."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Capture Holes",
+            "label": "Three Capture Holes",
+            "description": "Lit kickouts that hold balls for Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "1-4 spot targets",
+            "label": "1-4 spot targets",
+            "description": "Target sequence that lights the green X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Roundabout green X",
+            "label": "Green X Roundabout",
+            "description": "Lit shot that opens the Stargate.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Stargate",
+            "label": "Center Stargate",
+            "description": "Gate shot that starts two- or three-ball Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "S-P-I-R-I-T drop banks",
+            "label": "S-P-I-R-I-T drop banks",
+            "description": "Upper and main banks that progress toward Special.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Flipper Staging",
+            "instruction": "Stage the paired flippers so the upper flipper can reach a Capture Hole or Stargate feed without giving up control on the main flipper.",
+            "sourceUrl": "https://www.youtube.com/watch?v=kIZ8WYxKT0Q",
+            "techniqueSlug": "flipper-staging"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A drain can empty the captive system and erase the Multiball build.",
+            "response": "Prefer the two-ball Stargate start when the third capture is substantially riskier than the open gate.",
+            "sourceUrl": "https://www.pinball.org/rules/cache/Spirit-rules.html"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Take a safe lit Capture Hole first, qualify the Stargate through 1-4 and the green X, then choose a fast two-ball start or wait for two locks and a stronger three-ball start.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot whichever unoccupied Capture Hole is lit to lock a ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete spot targets 1, 2, 3, and 4 to light the green X at the Roundabout.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the lit green X to open the Stargate, then shoot through the open gate.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use zero or one captured ball for two-ball Multiball, or arrive with two captured balls for three-ball Multiball; three filled Capture Holes also start three-ball play.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Capture a Ball",
+            "summary": "Shoot a lit Capture Hole."
+          },
+          {
+            "name": "Light Green X",
+            "summary": "Complete the 1-4 spot targets."
+          },
+          {
+            "name": "Open Stargate",
+            "summary": "Shoot the lit green X at the Roundabout."
+          }
+        ],
+        "warning": {
+          "title": "A drain can empty the captive system and erase the Multiball build.",
+          "text": "Prefer the two-ball Stargate start when the third capture is substantially riskier than the open gate."
+        }
+      }
+    }
+  ]
+}

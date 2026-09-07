@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "G48on",
+  "title": "Torpedo Alley",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Data East Torpedo Alley instruction card",
+      "url": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Torpedo_Alley_755-5003-01.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Torpedo Alley walkthrough",
+        "url": "https://www.youtube.com/watch?v=2pNf5lLr7wE"
+      },
+      {
+        "label": "Torpedo Alley competition play",
+        "url": "https://www.youtube.com/watch?v=9GlwBe8N46c&t=2243s"
+      },
+      {
+        "label": "Torpedo Alley machine overview",
+        "url": "https://www.kineticist.com/games/pinball/torpedo-alley"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "The left and center kickers load torpedoes and start Multiball. Shoot the left kicker twice, or the center kicker followed by the left, for instant two-ball play. For three-ball play, collect one left and one center load, then shoot either kicker again. Destroy any colored ship four times to light its Jackpot.",
+      "simpleOverview": "Shoot the left kicker twice for two-ball Multiball, or shoot center then left. For three-ball Multiball, shoot both kickers once and then either one again. Spell S-U-B to spot colored torpedoes. Destroy the same colored ship four times to light its Jackpot.",
+      "summary": "Left twice, or center then left, starts two-ball Multiball. Left plus center, then either kicker again, starts three-ball Multiball. Spell S-U-B to spot torpedoes and destroy one colored ship four times to light Jackpot.",
+      "quickInfo": [
+        {
+          "name": "Start 2-Ball",
+          "summary": "Shoot the left kicker twice, or the center kicker and then the left."
+        },
+        {
+          "name": "Start 3-Ball",
+          "summary": "Collect one left and one center load, then shoot either kicker again."
+        },
+        {
+          "name": "Spot Torpedoes",
+          "summary": "Complete the S-U-B lanes."
+        },
+        {
+          "name": "Light Jackpot",
+          "summary": "Destroy the same colored ship four times."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the left kicker twice for instant two-ball Multiball, or load the center kicker and then shoot the left.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "For three-ball Multiball, collect one left-kicker load and one center-kicker load, then shoot either kicker again.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete S-U-B to spot the lit colored torpedoes.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Destroy one colored ship four times to light its Jackpot, then follow the lit collect indicated by the machine.",
+          "kinds": [
+            "multiball",
+            "mode"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Use the right ramp and spinner",
+          "when": "Use this when the kicker feeds are difficult but the right ramp and spinner are repeatable.",
+          "steps": [
+            {
+              "text": "Shoot the right wireform ramp and right spinner to load torpedoes through the longer route.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Combine that progress with the left kicker so the next qualifying load begins Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Finish the fleet",
+        "steps": [
+          {
+            "text": "Keep one ship color in focus rather than spreading hits across every bank.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After destroying the required ships, watch the left orbit for the fleet hurry-up.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Use Multiball protection to finish dangerous ship-bank shots before taking the lit collect.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Confirm whether extra ball, special, and Jackpot values are altered for tournament play.",
+        "Test the left and center kickers, ball locks and releases, S-U-B lanes, colored ship banks, right wireform, right spinner, and left orbit."
+      ],
+      "termStyles": [
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball"
+        },
+        {
+          "label": "Torpedoes",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Jackpot",
+          "tone": "indigo",
+          "kind": "multiball"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The order of the kicker loads determines whether the game begins two- or three-ball Multiball.",
+          "response": "For three balls, make sure both left and center have been loaded once before taking the third kicker shot.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Data_East/Data_East_Torpedo_Alley_755-5003-01.pdf"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

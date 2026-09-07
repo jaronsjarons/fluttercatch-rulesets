@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "G7Zp0",
+  "title": "Super Mario Bros. Mushroom World",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Super Mario Bros. Mushroom World rules and strategy guide",
+      "url": "https://www.pinball.org/rules/supermarioworld.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Preserved Mushroom World instruction-card set",
+        "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_SMB_Mushroom_World_instruction_cards.zip"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Super Mario Bros. Mushroom World changes substantially between its hard and easy setups. On hard rules, Line Up begins each World, the remaining drop targets must be cleared within 30 seconds, and the best route is to secure the eighth-World Special before settling into Whistle-to-ramp video modes. Easy rules remove the timer and make Boom Boom Multiball useful for clearing Worlds.",
+      "simpleOverview": "On hard rules, use Line Up to enter a World and clear the remaining drop targets within 30 seconds. Reach the eighth World for the Special, then repeat the Whistle target and lit ramp for Secrets and video modes.",
+      "summary": "Clear each World's remaining drop targets before the 30-second hard-rules timer ends, and reach Dark Land for the Special. After that, hit the Whistle target and shoot the lit ramp; every other Secret is one of the two video modes.",
+      "quickInfo": [
+        {
+          "name": "Line Up and Worlds",
+          "summary": "The plunge starts Line Up. Without a Starman award, the current World begins and a fixed subset of drop targets falls before the timed target round."
+        },
+        {
+          "name": "World completion",
+          "summary": "Clear the remaining targets before the timer expires. Completing seven Worlds and beginning Dark Land awards the Special."
+        },
+        {
+          "name": "Starman",
+          "summary": "Landing on Starman during Line Up completes the current World automatically."
+        },
+        {
+          "name": "Secrets",
+          "summary": "Hit the Whistle target to light the ramp. The first and alternating lit-ramp shots start one of the two video modes."
+        },
+        {
+          "name": "Boom Boom Multiball",
+          "summary": "Three Boom Boom sinkhole shots start two-ball play. It is useful on easy rules, but can make the World timer unreliable on hard rules."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On hard rules, plunge to start Line Up. Let the pop bumpers settle on an award; Starman completes the current World, while another result begins its target round.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "When the machine releases the ball, clear every standing drop target before the 30-second timer expires. Failing the World ends the ball by disabling the flippers.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Repeat the World cycle until seven are complete and the eighth World, Dark Land, begins. Starting Dark Land awards the Special.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After securing the Special on hard rules, avoid the upper-left World-start VUK when you can. Hit the Whistle target, regain control, then shoot the lit ramp for a Secret.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Repeat Whistle to lit ramp. The first and alternating Secret starts one of the two video modes; use the flippers to jump in the first game and swim around obstacles in Frog Mario.",
+          "kinds": [
+            "mode"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Dark Land",
+        "steps": [
+          {
+            "text": "Complete Worlds one through seven by clearing their timed drop targets, or collect Starman when Line Up offers it.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Begin the eighth World to collect the Special and enter Dark Land.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During Dark Land, hit a lit target before it drops automatically to collect its displayed award.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Easy-rules target route",
+          "when": "Use this when the World timer is disabled and the extra bumper-area opening is present.",
+          "steps": [
+            {
+              "text": "Clear each World's drop targets without a timer; the next World starts automatically after a completion.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Boom Boom sinkhole three times for two-ball Multiball, then use both balls to clear the World targets faster.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            },
+            {
+              "text": "Continue through Dark Land, or return to Whistle and lit-ramp Secrets after the Special is secured.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "World",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "Secret",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Dark Land",
+          "tone": "indigo",
+          "kind": "mode"
+        },
+        {
+          "label": "Boom Boom Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "machineSetup": [
+        "Hard rules: The bumper-area post is installed, Line Up controls each World start, and Worlds use the 30-second target timer.",
+        "Easy rules: The bumper-area post is removed, Worlds start automatically after completion, and the World timer is disabled.",
+        "Redemption: A ticket-equipped machine can replace some point or credit awards. The physical World and Secret starts remain recognizable."
+      ],
+      "cautions": [
+        {
+          "issue": "Boom Boom Multiball can make the World timer continue or accelerate on hard rules.",
+          "response": "Avoid starting it while a hard-rules World is active; use it as a target-clearing tool only on the timer-free easy setup.",
+          "sourceUrl": "https://www.pinball.org/rules/supermarioworld.html"
+        },
+        {
+          "issue": "This is the compact Mushroom World machine, not Gottlieb's full-size Super Mario Bros.",
+          "response": "Confirm the two drop-target banks, Whistle target, and absence of normal inlanes or outlanes before play.",
+          "sourceUrl": "https://www.pinball.org/rules/supermarioworld.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

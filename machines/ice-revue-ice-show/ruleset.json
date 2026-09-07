@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "GRnYX",
+  "title": "Ice-Revue / Ice Show",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Ice-Revue",
+      "url": "https://rules.silverballmania.com/rules/GRnYX-MQk08"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Ice-Revue / Ice Show machine guide",
+        "url": "https://www.kineticist.com/games/pinball/ice-revue-ice-show"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge unlit top lanes to raise bumper value, complete safe standup pairs to build both center saucers to 200, then use controlled saucer entries as scoring shots and cross-playfield transfers.",
+      "quickInfo": [
+        {
+          "name": "Top lanes",
+          "summary": "Each of the five top lanes lights its corresponding bumper for 10 points instead of 1 point."
+        },
+        {
+          "name": "Standup targets",
+          "summary": "Each numbered standup target lights its corresponding outlane for 50 points instead of 5 points."
+        },
+        {
+          "name": "Target pairs",
+          "summary": "Completed standup-target pairs raise both center saucers from 50 to 100 and then 200 points."
+        },
+        {
+          "name": "Center saucers",
+          "summary": "A successful center-saucer shot ejects the ball toward the opposite flipper."
+        },
+        {
+          "name": "Lower layouts",
+          "summary": "Known playfields use either four outlanes with small slingshots or six outlanes without slingshots."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Before each plunge, identify a top lane whose corresponding bumper is not lit."
+        },
+        {
+          "text": "Plunge through that top lane when the lane is reachable."
+        },
+        {
+          "text": "From either flipper, send controlled shots toward the top lanes."
+        },
+        {
+          "text": "Guide upper play toward an uncollected lane instead of a lit lane."
+        },
+        {
+          "text": "Shoot a numbered standup target only from a controlled ball."
+        },
+        {
+          "text": "Complete target pairs to raise the center saucers to 200."
+        },
+        {
+          "text": "Shoot a 200-point center saucer when its entry is controlled."
+        },
+        {
+          "text": "Drop catch or dead bounce the saucer eject on the opposite flipper."
+        },
+        {
+          "text": "Return to the top lanes after the saucer collect."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Saucer transfer",
+        "when": "Recovery pivot: Use this plan when upward shots return through dangerous bumpers or outlane dividers.",
+        "steps": [
+          {
+            "text": "Choose the center saucer that is reachable from the controlled flipper."
+          },
+          {
+            "text": "Shoot only when the ball can enter the saucer cleanly."
+          },
+          {
+            "text": "Track the eject toward the opposite flipper."
+          },
+          {
+            "text": "Control the ball, then choose another saucer or a safer upward shot."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Target-pair qualification",
+          "when": "When trailing, use this distinct scoreboard route: use this plan when one controlled target hit completes a pair and raises both saucers.",
+          "steps": [
+            {
+              "text": "Identify the missing target in the nearest incomplete pair."
+            },
+            {
+              "text": "Shoot that target from the flipper with the safer rebound angle."
+            },
+            {
+              "text": "Stop target shots after both saucers reach 200."
+            },
+            {
+              "text": "Take a center saucer from control."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit bumpers and 200-point saucers",
+        "steps": [
+          {
+            "text": "Collect different top lanes to light their bumpers for 10."
+          },
+          {
+            "text": "Complete controlled standup-target pairs."
+          },
+          {
+            "text": "Complete more standup-target pairs until both center saucers reach 200."
+          },
+          {
+            "text": "Use the center saucers as scoring shots and flipper transfers."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Unlit-lane plunge",
+          "instruction": "Read the five bumper lamps before the plunge. Aim for a top lane whose bumper still scores 1 point.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRnYX-MQk08"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "Dead bounce a predictable center-saucer eject to the opposite flipper when the receiving side is clear.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRnYX-MQk08"
+        },
+        {
+          "name": "Nudging",
+          "instruction": "Use small nudges while the ball contacts an outlane-divider post. Move the ball inward toward a flipper.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRnYX-MQk08",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Every unsuccessful non-saucer shot has rebound drain risk.",
+          "response": "Prefer clean saucer entries and controlled upward shots. Do not shoot a standup target from a moving ball.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRnYX-MQk08"
+        },
+        {
+          "issue": "The four-outlane layout adds small slingshots beside the flippers.",
+          "response": "Read each slingshot kick before you depend on a dead bounce. Nudge before the ball reaches an outer lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRnYX-MQk08"
+        },
+        {
+          "issue": "The six-outlane layout has no slingshots and leaves more divider posts exposed.",
+          "response": "Nudge while the ball rattles between divider posts. Guide it inward before it enters an outlane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GRnYX-MQk08"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm whether the game is 1965 Ice-Revue replay or 1966 Ice Show add-a-ball, and read the matching instruction card.",
+        "Confirm four- or six-outlane playfield, ball count, tilt, Special treatment, posts, slingshots, lane lamps, and saucer scoring.",
+        "Test five top lanes, numbered standups, bumpers, both center saucers, ejects, divider posts, slingshots, and every lower-lane feed."
+      ],
+      "simpleOverview": "Ice-Revue uses five top lanes to light matching bumpers and standup-target pairs to raise both center saucers. Plunge an unlit lane, complete controlled target pairs until the saucers reach 200, and use each saucer as both a scoring shot and a transfer to the opposite flipper.",
+      "overview": "Ice-Revue uses five top lanes to light matching bumpers and standup-target pairs to raise both center saucers. Collect different lanes to light the bumpers, complete controlled pairs until the saucers reach 200, then use the saucers for points and cross-playfield transfers. Account for the installed lower-playfield layout before trusting an outlane return.",
+      "machineSetup": [
+        "Confirm whether the game is 1965 Ice-Revue replay or 1966 Ice Show add-a-ball, and read the matching instruction card.",
+        "Confirm four- or six-outlane playfield, ball count, tilt, Special treatment, posts, slingshots, lane lamps, and saucer scoring.",
+        "Test five top lanes, numbered standups, bumpers, both center saucers, ejects, divider posts, slingshots, and every lower-lane feed."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

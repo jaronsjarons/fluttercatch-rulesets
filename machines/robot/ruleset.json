@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Wjk",
+  "title": "Robot",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Robot instruction cards",
+      "url": "https://www.zaccaria-pinball.com/gen2/robot/Cards.zip"
+    },
+    "supportingSources": [
+      {
+        "label": "Robot operator settings",
+        "url": "https://www.zaccaria-pinball.com/gen2/robot/settings.html"
+      },
+      {
+        "label": "Robot operator manual",
+        "url": "https://www.zaccaria-pinball.com/gen2/robot/zaccaria-robot_manual.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Robot begins its Red Special route at the upper Robot Bridge. Shoot the bridge to raise the five Robot targets, then knock them down to advance R-O-B-O-T; completing the required sequence lights Red Special for a return to the targets. The center drop bank lights Time Special and advances Orange Special. The three Z standups and upper-left lane advance the bonus multiplier. Upper lanes light Ball Return, with the yellow-target setting deciding whether one or both return lanes relight.",
+      "simpleOverview": "Shoot the upper Robot Bridge to raise five Robot targets, then knock them down to advance R-O-B-O-T toward Red Special. Complete the center drop bank for Time and Orange Special. Use the three Z standups or upper-left lane for Bonus X, and the upper lanes to light Ball Return.",
+      "summary": "Shoot Robot Bridge to raise the five Robot targets, then knock them down and repeat until Red Special is lit. Use the center drops for the two shorter Special routes, and advance Bonus X or Ball Return when those lamps are close.",
+      "quickInfo": [
+        {
+          "name": "Raise Robot Targets",
+          "summary": "Shoot the upper Robot Bridge."
+        },
+        {
+          "name": "Advance R-O-B-O-T",
+          "summary": "Knock down the five raised targets."
+        },
+        {
+          "name": "Build Other Specials",
+          "summary": "Complete the center drop bank."
+        },
+        {
+          "name": "Light Ball Return",
+          "summary": "Use the upper lanes and yellow targets."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Shoot the upper Robot Bridge to raise the five Robot targets.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Knock down the five targets to advance R-O-B-O-T; complete the required sequence, then return to the lit targets for Red Special.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Complete the center drop bank to light Time Special and advance Orange Special, then take the corresponding lit target.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Use the three Z standups or the upper-left lane to advance the bonus multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Build drain protection",
+          "when": "Use this when the upper Robot targets are rejecting the ball.",
+          "steps": [
+            {
+              "text": "Use the upper lanes to light Ball Return.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Knock down the yellow targets to relight one or both return lanes, depending on setup.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Finish the Robot sequence",
+        "steps": [
+          {
+            "text": "Keep returning through the Robot Bridge and clearing all five raised targets.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "When Red Special lights, prioritize the target collect before starting another bank route.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "machineSetup": [
+        "Check the number of Robot-target completions required for Red Special, the Orange Special requirement, Ball Return setting, ball count, and award values.",
+        "Test Robot Bridge, all five rising targets, center drop bank, Time and Orange targets, Z standups, upper-left lane, upper lanes, yellow targets, and both return lanes."
+      ],
+      "termStyles": [
+        {
+          "label": "Robot Bridge",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Red Special",
+          "tone": "crimson",
+          "kind": "mode"
+        },
+        {
+          "label": "Time Special",
+          "tone": "amber",
+          "kind": "mode"
+        },
+        {
+          "label": "Bonus Multiplier",
+          "tone": "forest",
+          "kind": "multiplier"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Robot-target and Ball Return behavior varies by setup.",
+          "response": "Read the R-O-B-O-T and return-lane lamps instead of relying on one fixed count.",
+          "sourceUrl": "https://www.zaccaria-pinball.com/gen2/robot/settings.html"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

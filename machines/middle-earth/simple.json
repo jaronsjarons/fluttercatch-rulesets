@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "G4OzV",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Middle Earth rewards target-bank completions, repeated upper-loop passes, and standing-target sequences. Complete either five-target bank to light Extra Ball at the lower inside lane; complete both banks to light Special there. The upper loop advances bonus once on its first pass, twice on its second, and three times thereafter. Hit standing-target pairs and groups to raise bumper and rollover values, then light all five star rollovers for double bonus.",
+        "simpleOverview": "Complete either five-target bank to light Extra Ball at the lower inside lane, then complete both banks to light Special there. Repeated upper-loop passes advance bonus faster: one step on the first pass, two on the second, and three thereafter. Hit all five standing targets to raise the star rollovers, then light all five star rollovers for double bonus.",
+        "summary": "Work through both five-target banks for the inside-lane awards, using the upper loop whenever it is available to accelerate bonus. Complete the standing targets and then the five star rollovers to raise their values and secure double bonus.",
+        "quickInfo": [
+          {
+            "name": "Light Extra Ball",
+            "summary": "Complete either five-target bank."
+          },
+          {
+            "name": "Light Special",
+            "summary": "Complete both five-target banks."
+          },
+          {
+            "name": "Build bonus",
+            "summary": "Repeat the upper loop for one, then two, then three bonus advances per pass."
+          },
+          {
+            "name": "Double bonus",
+            "summary": "Hit all five standing targets, then light all five star rollovers."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Complete either five-target bank to light Extra Ball at the lower inside lane."
+          },
+          {
+            "text": "Complete the other five-target bank to light Special at the lower inside lane."
+          },
+          {
+            "text": "Shoot the upper loop whenever it is available: the first pass advances bonus once, the second advances it twice, and later passes advance it three times."
+          },
+          {
+            "text": "Hit all five standing targets to raise the star-rollover value, then light all five star rollovers for double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Raise bumper values first",
+            "when": "Use this when the standing targets are easier to reach than a full target bank.",
+            "steps": [
+              {
+                "text": "Hit two standing targets in sequence to raise the center pop bumper from 10 to 100."
+              },
+              {
+                "text": "Hit three standing targets in sequence to raise the side pop bumpers from 10 to 100."
+              },
+              {
+                "text": "Return to the upper loop or target banks after the bumper values are raised."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Double bonus and lit inside-lane awards",
+          "steps": [
+            {
+              "text": "Complete one five-target bank to light Extra Ball."
+            },
+            {
+              "text": "Complete the second bank to light Special."
+            },
+            {
+              "text": "Build bonus through repeated upper-loop passes."
+            },
+            {
+              "text": "Complete the standing targets and all five star rollovers to light double bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test both five-target banks, all five standing targets, all five star rollovers, the upper-loop switch, three pop bumpers, spinners, lower inside lanes, and their Extra Ball and Special lamps.",
+          "Confirm three- or five-ball play, whether Extra Ball and Special award a ball, replay, or points, and whether bonus features carry between balls before choosing a route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper target bank",
+            "label": "Upper five-target bank",
+            "description": "Upper-right bank that contributes to the Extra Ball and Special qualifications.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower target bank",
+            "label": "Lower five-target bank",
+            "description": "Lower-left bank that contributes to the Extra Ball and Special qualifications.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper loop",
+            "label": "Upper loop",
+            "description": "Long top loop whose repeated passes accelerate bonus advances.",
+            "precision": "unverified"
+          },
+          {
+            "term": "standing targets",
+            "label": "Five standing targets",
+            "description": "Targets that raise bumper values and prepare the higher star-rollover value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "star rollovers",
+            "label": "Five star rollovers",
+            "description": "Rollover set that lights double bonus when all five are lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower inside lane",
+            "label": "Lower inside award lane",
+            "description": "Lower inlane where qualified Extra Ball or Special is collected.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Extra Ball and Special can be converted by operator settings.",
+            "response": "Read the installed award card and lamps before play; follow the same bank-completion route even when the award is points or a replay.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Atari/Middle%20Earth/Middle_Earth_TM-108_1st_Printing.pdf"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Work through both five-target banks for the inside-lane awards, using the upper loop whenever it is available to accelerate bonus. Complete the standing targets and then the five star rollovers to raise their values and secure double bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Complete either five-target bank to light Extra Ball at the lower inside lane."
+          },
+          {
+            "text": "Complete the other five-target bank to light Special at the lower inside lane."
+          },
+          {
+            "text": "Shoot the upper loop whenever it is available: the first pass advances bonus once, the second advances it twice, and later passes advance it three times."
+          },
+          {
+            "text": "Hit all five standing targets to raise the star-rollover value, then light all five star rollovers for double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light Extra Ball",
+            "summary": "Complete either five-target bank."
+          },
+          {
+            "name": "Light Special",
+            "summary": "Complete both five-target banks."
+          },
+          {
+            "name": "Build bonus",
+            "summary": "Repeat the upper loop for one, then two, then three bonus advances per pass."
+          }
+        ]
+      }
+    }
+  ]
+}

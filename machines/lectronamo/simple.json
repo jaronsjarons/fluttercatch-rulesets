@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "GRWd2",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit the left standup once to light the top saucer and bonus chute, complete the right three-bank until Bonus X reaches at least 3X, then collect the built bonus through the left-side chute and rebuild it.",
+        "steps": [
+          {
+            "text": "Hit the left-side standup once. It lights the top saucer and the lane above the left-side bonus chute."
+          },
+          {
+            "text": "Complete the right three-bank until Bonus X reaches at least 3X; continue to 5X when the bank remains controllable.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Build the base bonus with the top saucer, spinner, left chute, and slingshot rollovers."
+          },
+          {
+            "text": "When the base bonus is at least 7,000 and Bonus X is at least 3X, shoot the left-side chute to collect it. The base resets; Bonus X remains lit.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Relight the chute at the left standup, rebuild the base bonus, and repeat the collect."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left-side standup",
+            "context": "left-side standup",
+            "label": "Left bonus-light target",
+            "description": "Lights the top saucer and left-side bonus chute.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right three-bank",
+            "context": "right three-bank",
+            "label": "Right drop bank",
+            "description": "The three-bank used to raise Bonus X.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left-side chute",
+            "context": "left-side chute",
+            "label": "Score Lit Bonus chute",
+            "description": "Collects the current base bonus times Bonus X.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The left standup and right drop bank can rebound into dangerous areas.",
+            "response": "Hit the left standup once and complete the right bank, then use the spinner and upper routes to build before returning for a collect.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GRWd2-MQ4Ye"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Hit the left standup once to light the top saucer and bonus chute, complete the right three-bank until Bonus X reaches at least 3X, then collect the built bonus through the left-side chute and rebuild it."
+          }
+        ],
+        "simpleOverview": "Lectronamo keeps Bonus X after a bonus collect, but resets the base bonus. The left standup lights the collect chute, the right drop bank raises Bonus X, and upper-playfield switches refill the base for another collect.",
+        "overview": "In Lectronamo, collecting bonus resets the base value but leaves Bonus X lit. Hit the left standup to light the bonus chute, complete the right three-bank for Bonus X, and build base bonus through upper play. Collect through the chute at 3X or better, then relight the chute and rebuild while the multiplier remains active.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit the left standup to light the bonus chute, complete the right three-bank until Bonus X reaches at least 3X, then collect the built bonus and repeat the loop.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Light the bonus features",
+            "text": "Hit the left-side standup once. It lights the top saucer and the lane above the left-side bonus chute."
+          },
+          {
+            "title": "Raise Bonus X",
+            "text": "Complete the right three-bank until Bonus X reaches at least 3X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Collect and rebuild",
+            "text": "At 7,000 or more base bonus, shoot the left-side chute. The base resets, but Bonus X remains lit.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Hit the left standup once to light the top saucer and bonus chute, complete the right three-bank until Bonus X reaches at least 3X, then collect the built bonus through the left-side chute and rebuild it."
+          }
+        ]
+      }
+    }
+  ]
+}

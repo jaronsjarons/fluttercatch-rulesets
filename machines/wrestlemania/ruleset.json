@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6Or",
+  "title": "WrestleMania",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "WrestleMania 1.25 rules and strategy discussion",
+      "url": "https://tiltforums.com/t/wwe-version-1-25-discussion/1295"
+    },
+    "supportingSources": [
+      {
+        "label": "WrestleMania instruction card",
+        "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_Wrestlemania_755-51G1-XX.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Complete W-W-E drop bank, then shoot either ramp to enter the ring. Drain the opponent's health with ring targets and lit lower shots, then collect Pin Value at Kickout Hole. Hit both Tag targets and the left Tag Team shot before starting Tag Team Multiball at either ramp.",
+      "quickInfo": [
+        {
+          "name": "Standard matches",
+          "summary": "Complete the required W-W-E drop-bank sets (two by default), then shoot either gold-lit ramp to start the match. Empty the opponent's health bar and shoot the ring Kickout Hole when the Pin lights."
+        },
+        {
+          "name": "Tag Team Multiball",
+          "summary": "Hit both Tag targets, shoot the left Tag Team shot (mini-orbit on Pro, scoop on LE), then shoot either ramp to start the four-ball match. Later starts require more Tag Team shots."
+        },
+        {
+          "name": "Referee Multiball",
+          "summary": "Complete the purple REF shots during a standard match to start this separate two-ball Multiball. Referee Multiball pauses the standard match's finish until Multiball ends."
+        },
+        {
+          "name": "Pin multipliers",
+          "summary": "Complete a Signature Move and the three lit lower-playfield attack shots before the Pin to multiply its base value."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Choose a Superstar before plunging."
+        },
+        {
+          "text": "Complete the W-W-E drop bank twice at default settings, then shoot either gold-lit ramp to start a standard match.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Hit targets in the ring and the lit attack shots on the lower playfield to empty the opponent's health bar. Complete the right-side Signature Move targets and all three lower attack shots before the Pin to multiply its base value.",
+          "kinds": [
+            "mode",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "When the 1-2-3 Pin inserts light, shoot the ring Kickout Hole to collect the Pin Value and finish the match.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Between matches, hit both Tag targets, then shoot the left Tag Team shot once for the first Multiball (the mini-orbit on Pro or scoop on LE). Shoot either ramp to start four-ball Tag Team Multiball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Tag Team Multiball, damage each opponent with the ring targets and lit lower-playfield attacks, then shoot the ring Kickout Hole for the Pin Jackpot. Opponents tag out every 30 seconds.",
+          "modeNotes": [
+            "Tag Team add-a-ball: Hit both Tag targets again, then shoot the lit left Tag Team shot for a timed 2x playfield award and an add-a-ball."
+          ],
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Referee Multiball",
+          "when": "This is a separate two-ball feature rather than part of a standard or Tag Team match.",
+          "steps": [
+            {
+              "text": "During a standard match, complete the purple REF shots to start Referee Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot lit REF shots for Jackpots and Double Jackpots that build the Super Jackpot, then shoot the ring Kickout Hole to collect it.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "The standard match cannot finish during Referee Multiball; resume its Pin after Multiball ends.",
+              "kinds": [
+                "multiball",
+                "mode"
+              ]
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Royal Rumble",
+        "steps": [
+          {
+            "text": "Win three standard matches to start three-ball Royal Rumble.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Royal Rumble, shoot balls through the side exits of the ring to defeat the opponents.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Tag Team Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Referee Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "match",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Build a multiplied Pin",
+          "instruction": "Complete the right-side Signature Move targets and all three lit lower-playfield attack shots before collecting the Pin.",
+          "sourceUrl": "https://tiltforums.com/t/wwe-version-1-25-discussion/1295"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Pro and Limited Edition use different left Tag Team shots.",
+          "response": "Shoot the mini-orbit on Pro or the scoop on LE.",
+          "sourceUrl": "https://tiltforums.com/t/wwe-version-1-25-discussion/1295"
+        },
+        {
+          "issue": "A standard match cannot finish during Referee Multiball.",
+          "response": "Build the Referee Super Jackpot, then return to the standard-match Pin after Multiball ends.",
+          "sourceUrl": "https://tiltforums.com/t/wwe-version-1-25-discussion/1295"
+        }
+      ],
+      "checkBeforePlay": [
+        "The left Tag Team shot is the mini-orbit on Pro or the scoop on LE.",
+        "Test both ramps, the ring Kickout Hole, and both Tag targets."
+      ],
+      "simpleOverview": "WrestleMania alternates between matches and setup on the lower playfield. Complete the W-W-E drop bank twice at default settings, then shoot either gold-lit ramp to start a match. Empty the opponent's health bar with ring targets and lit lower-playfield attacks, then shoot the ring Kickout Hole for the Pin. Between matches, hit both Tag targets, shoot the left Tag Team shot once, then shoot either ramp to start the first Tag Team Multiball.",
+      "overview": "WrestleMania alternates between matches and setup on the lower playfield. Complete the W-W-E drop bank twice at default settings, then shoot either gold-lit ramp to start a standard match. Deplete the opponent's health bar and build the Pin Value with ring targets and lower-playfield attacks, then collect it at the ring Kickout Hole. After the first Pin, hit both Tag targets, shoot the left Tag Team shot once, then shoot either ramp to start Tag Team Multiball and collect larger Pin Jackpots.",
+      "machineSetup": [
+        "The left Tag Team shot is the mini-orbit on Pro or the scoop on LE.",
+        "Test both ramps, the ring Kickout Hole, and both Tag targets."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

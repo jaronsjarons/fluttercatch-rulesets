@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "id": "G5BP6",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Move between the Attic and Cellar to build 5x Monster Bonus, complete the safer secondary-floor drop bank twice, then score controlled targets on the floors whose local Double Scoring flags are lit.",
+        "quickInfo": [
+          {
+            "name": "Monster Bonus",
+            "summary": "Most level changes raise the end-of-ball multiplier through 5x."
+          },
+          {
+            "name": "Double Scoring",
+            "summary": "Each floor has a separate 2x scoring flag; these local flags do not multiply scoring on the other floors."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Each floor has a separate requirement and top-hole collect for its end-of-ball bonus flag."
+          },
+          {
+            "name": "Floor controls",
+            "summary": "The Attic and Cellar use the rear cabinet flipper buttons; switch button sets immediately when the ball changes levels."
+          },
+          {
+            "name": "Stock rules",
+            "summary": "This route covers stock PROM 669/1, not the aftermarket PI-80 rules package."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the plunge to test the Attic and Cellar feeds. Prefer the Cellar only when its flippers and up-kicker work."
+          },
+          {
+            "text": "Move between the Attic, Main Floor, and Cellar to advance Monster Bonus toward 5x.",
+            "modeNotes": [
+              "Monster Bonus: Qualified Attic and Cellar switches build the drain bonus; most level changes raise its multiplier through 5x."
+            ]
+          },
+          {
+            "text": "Complete the Cellar drop bank once to light its left spot target and Extra Ball at the right side kicker."
+          },
+          {
+            "text": "Complete the Cellar bank a second time. This lights Main Floor Double Scoring, Attic Double Bonus, and the Attic bank for Special.",
+            "modeNotes": [
+              "Double Scoring: Each floor has its own 2x flag; two Cellar-bank completions light the Main Floor flag without a mid-ball shutoff.",
+              "Double Bonus: A prepared top-hole collect activates the matching floor's end-of-ball bonus flag."
+            ]
+          },
+          {
+            "text": "Return to the Main Floor and score safe switches while its local Double Scoring light remains active."
+          },
+          {
+            "text": "If Special has tournament value, enter the Attic and complete the lit drop bank."
+          },
+          {
+            "text": "Use Attic and Cellar target hits to build Monster Bonus and the opposite floor's Double Scoring."
+          },
+          {
+            "text": "Do not force the right side kicker when Extra Ball toggles off; read the lamp at the moment of the shot."
+          },
+          {
+            "text": "Protect the 5x Monster Bonus and any active Double Bonus flags at the drain."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Attic drops and level changes",
+          "when": "Recovery pivot: Use this when the Trap Door, Cellar flippers, or Cellar up-kicker do not work reliably.",
+          "steps": [
+            {
+              "text": "Use the plunge or Main Floor ramp to enter the Attic."
+            },
+            {
+              "text": "Hit Attic drops for score and Monster Bonus."
+            },
+            {
+              "text": "Use the Attic right ramp to return to the Main Floor if the Cellar is unsafe."
+            },
+            {
+              "text": "Repeat safe level entries to build Monster Bonus."
+            },
+            {
+              "text": "Protect the multiplied drain bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Main Floor 1-through-5",
+            "when": "When trailing, use this higher-ceiling route: use this when the ordered targets are safer than either drop bank.",
+            "steps": [
+              {
+                "text": "Hit targets 1 through 5 in order."
+              },
+              {
+                "text": "The completion lights Extra Ball at the side kicker."
+              },
+              {
+                "text": "It also lights the Cellar hole for Special and top-center hole for Cellar Double Bonus."
+              },
+              {
+                "text": "Collect only awards permitted by the event and continue level changes."
+              }
+            ]
+          },
+          {
+            "title": "Floor Double Scoring",
+            "when": "Use this when one secondary level has predictable flipper feeds.",
+            "steps": [
+              {
+                "text": "Make eleven scoring hits on the safer level."
+              },
+              {
+                "text": "Move to the opposite level and score while its local Double Scoring flag is active."
+              },
+              {
+                "text": "Avoid the Attic hole during Attic 2x or the Cellar up-kicker during Cellar 2x."
+              },
+              {
+                "text": "Return to the Main Floor after the valuable target work ends."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "5x Monster Bonus and doubled target scoring",
+          "steps": [
+            {
+              "text": "Move between the Attic and Cellar to raise Monster Bonus X."
+            },
+            {
+              "text": "Complete the Cellar drop bank twice."
+            },
+            {
+              "text": "Use local Double Scoring on the Main Floor."
+            },
+            {
+              "text": "Make eleven hits on one secondary level."
+            },
+            {
+              "text": "Move to the opposite level for its local Double Scoring."
+            },
+            {
+              "text": "Protect the 5x end-of-ball Monster Bonus."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Monster Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Double Scoring",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Double Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Attic",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Main Floor",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Cellar",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Trap Door",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Attic",
+            "label": "Attic playfield",
+            "description": "Upper secondary playfield with reversed-looking flipper geometry, drop targets, and exits to the Main Floor or Cellar.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Main Floor",
+            "label": "Main Floor",
+            "description": "Primary playfield with two right flippers, the upper-entry ramp, Trap Door, center hole, and floor-scoped scoring flags.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Cellar",
+            "label": "Cellar playfield",
+            "description": "Lower reversed-view playfield whose drop bank is the preferred route to opposite-floor and Main Floor Double Scoring.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Trap Door",
+            "label": "Trap Door",
+            "description": "Far-right Main Floor shot that transfers the ball into the Cellar.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Cellar up-kicker",
+            "label": "Cellar up-kicker",
+            "description": "Mechanism that returns the ball from the Cellar toward the upper Main Floor left flipper.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Attic-to-Cellar route",
+            "instruction": "Plunge to the Attic and use its left exit to reach the Cellar for two quick level changes.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5BP6-MJK4Z"
+          },
+          {
+            "name": "Cellar-exit readiness",
+            "instruction": "Prepare the upper Main Floor left flipper before the Cellar up-kicker fires.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5BP6-MJK4Z"
+          },
+          {
+            "name": "Lower-bank priority",
+            "instruction": "Complete the Cellar bank first when both secondary playfields work; it is the easier of the two.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/haunted-house"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A small drain exists between the two Main Floor right flippers.",
+            "response": "Track slow balls in that area and keep both right flippers ready.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5BP6-MJK4Z"
+          },
+          {
+            "issue": "A ball descending the Attic ramp can drain.",
+            "response": "Prepare the Main Floor flippers before the ball leaves the upper level.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5BP6-MJK4Z"
+          },
+          {
+            "issue": "Level-transfer mechanisms can change the useful route when maintenance is poor.",
+            "response": "Test all three level transfers before you commit to the Cellar plan.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/haunted-house"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm stock PROM 669/1; the aftermarket PI-80 package uses different rules and is outside this card.",
+          "Check ball count, bumper values, Attic-bank reset, Extra Ball, and Special settings before deciding which awards are worth pursuing.",
+          "Test both button sets, every level transfer, all flippers, Cellar up-kicker, Trap Door, drop banks, and right-flipper drain gap."
+        ],
+        "simpleOverview": "Haunted House uses movement between three floors to raise Monster Bonus. Completing a floor's numbered targets lights Double Scoring for that floor. Complete the Cellar bank twice, return to the Main Floor for its doubled switches, and use the Attic or Cellar only when its flippers and ejects are reliable.",
+        "overview": "Haunted House uses movement between three floors to raise Monster Bonus. Move between levels toward 5x, complete the Cellar bank twice, then cash controlled Main Floor scoring. Treat each floor's Double Scoring as local and preserve the drain bonus.",
+        "machineSetup": [
+          "Confirm stock PROM 669/1; the aftermarket PI-80 package uses different rules and is outside this card.",
+          "Check ball count, bumper values, Attic-bank reset, Extra Ball, and Special settings before deciding which awards are worth pursuing.",
+          "Test both button sets, every level transfer, all flippers, Cellar up-kicker, Trap Door, drop banks, and right-flipper drain gap."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Move between the Attic and Cellar to build 5x Monster Bonus, complete the safer secondary-floor drop bank twice, then score controlled targets on the floors whose local Double Scoring flags are lit.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the plunge to test the Attic and Cellar feeds. Prefer the Cellar only when its flippers and up-kicker work."
+          },
+          {
+            "text": "Move between the Attic, Main Floor, and Cellar to advance Monster Bonus toward 5x.",
+            "details": [
+              "Monster Bonus: Qualified Attic and Cellar switches build the drain bonus; most level changes raise its multiplier through 5x."
+            ]
+          },
+          {
+            "text": "Complete the Cellar drop bank once to light its left spot target and Extra Ball at the right side kicker."
+          },
+          {
+            "text": "Complete the Cellar bank a second time. This lights Main Floor Double Scoring, Attic Double Bonus, and the Attic bank for Special.",
+            "details": [
+              "Double Scoring: Each floor has its own 2x flag; two Cellar-bank completions light the Main Floor flag without a mid-ball shutoff.",
+              "Double Bonus: A prepared top-hole collect activates the matching floor's end-of-ball bonus flag."
+            ]
+          },
+          {
+            "text": "Return to the Main Floor and score safe switches while its local Double Scoring light remains active."
+          },
+          {
+            "text": "If Special has tournament value, enter the Attic and complete the lit drop bank."
+          },
+          {
+            "text": "Use Attic and Cellar target hits to build Monster Bonus and the opposite floor's Double Scoring."
+          },
+          {
+            "text": "Do not force the right side kicker when Extra Ball toggles off; read the lamp at the moment of the shot."
+          },
+          {
+            "text": "Protect the 5x Monster Bonus and any active Double Bonus flags at the drain."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Monster Bonus",
+            "summary": "Most level changes raise the end-of-ball multiplier through 5x."
+          },
+          {
+            "name": "Double Scoring",
+            "summary": "Each floor has a separate 2x scoring flag; these local flags do not multiply scoring on the other floors."
+          },
+          {
+            "name": "Double Bonus",
+            "summary": "Each floor has a separate requirement and top-hole collect for its end-of-ball bonus flag."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Attic drops and level changes",
+          "when": "Recovery pivot: Use this when the Trap Door, Cellar flippers, or Cellar up-kicker do not work reliably.",
+          "steps": [
+            {
+              "text": "Use the plunge or Main Floor ramp to enter the Attic."
+            },
+            {
+              "text": "Hit Attic drops for score and Monster Bonus."
+            },
+            {
+              "text": "Use the Attic right ramp to return to the Main Floor if the Cellar is unsafe."
+            },
+            {
+              "text": "Repeat safe level entries to build Monster Bonus."
+            },
+            {
+              "text": "Protect the multiplied drain bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "A small drain exists between the two Main Floor right flippers.",
+          "text": "Track slow balls in that area and keep both right flippers ready."
+        }
+      }
+    }
+  ]
+}

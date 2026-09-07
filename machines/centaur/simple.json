@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "GrX7q",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete O-R-B-S in exact order to start two-ball play, repeat the ordered bank during Multiball to add balls, then complete ordered 1-2-3-4 to light the upper-right Collect Bonus and release a stored ball.",
+        "quickInfo": [
+          {
+            "name": "ORBS",
+            "summary": "Complete the four drops in exact order to store a ball and start two-ball play."
+          },
+          {
+            "name": "1-2-3-4",
+            "summary": "An ordered completion scores rising values, builds bonus, and lights Collect Bonus."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The far upper-right target collects bonus and can release a stored ball when lit."
+          },
+          {
+            "name": "Inline release",
+            "summary": "The left captive-ball bank opens a second route that can release a stored ball."
+          },
+          {
+            "name": "Lane-change Multiball",
+            "summary": "Complete all four bottom lanes with a stored ball to release two-ball play."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test both lane-change buttons. Note the outlane posts, tilt, target rebounds, and release feed."
+          },
+          {
+            "text": "Complete the O, R, B, and S drop targets in exact order.",
+            "modeNotes": [
+              "Ordered ORBS: The exact sequence stores a ball and starts two-ball play. An out-of-order completion stores a ball but does not release it at once."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, trap one ball when possible. Repeat ordered ORBS to add another ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the 1, 2, 3, and 4 drop targets in exact order. Use the green reset target if the sequence is spoiled.",
+            "modeNotes": [
+              "Ordered 1-2-3-4: The targets score 10,000, 20,000, 40,000, and 80,000. They also add 1, 2, 4, and 8 bonus advances."
+            ]
+          },
+          {
+            "text": "Time the lit far upper-right Collect Bonus lane for its 5x lamp. An ordered 1-2-3-4 completion also makes this the direct stored-ball release route.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, pass both left-arc stars before the captive-ball shot. This doubles its current value.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the left inline drops while Multiball protects their rebounds. Use the open path as a second stored-ball release route.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Lane-change release",
+          "when": "Use this plan when the ordered drop banks are not reliable.",
+          "steps": [
+            {
+              "text": "Use the left flipper button to change the left pair of bottom lanes."
+            },
+            {
+              "text": "Use the right flipper button to change the right pair of bottom lanes."
+            },
+            {
+              "text": "Complete all four lanes while a ball is stored. The fourth lane releases two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Without a stored ball, build the top-lane bonus multiplier and complete 1-2-3-4 in any order to light Collect Bonus."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Controlled 1-2-3-4 position play",
+            "when": "Use this when ORBS rebounds are unsafe but the right-side bank can be attacked from a cradle.",
+            "steps": [
+              {
+                "text": "Trap on the flipper that gives the cleanest shot at target 1."
+              },
+              {
+                "text": "Shoot 1-2-3-4 in order; use the green reset target immediately after a spoiled sequence."
+              },
+              {
+                "text": "Use the ordered completion to light the upper-right Collect Bonus release."
+              },
+              {
+                "text": "Wait for the 5x lamp, collect bonus, and use the released ball to begin controlled Multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Five-ball play and maximum bonus",
+          "steps": [
+            {
+              "text": "Repeat ordered ORBS during Multiball to add stored balls, up to five-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Score targets and top lanes, with ordered 1-2-3-4 hits adding 1, 2, 4, and 8 bonus advances, until base bonus reaches 79,000."
+            },
+            {
+              "text": "Complete the top lanes to raise the bonus multiplier to five times."
+            },
+            {
+              "text": "Collect or protect the 395,000 maximum bonus. Base-bonus hold stops at its set thresholds, and the multiplier resets."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "ORBS",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Lane-change Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Five-ball play",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Independent lane change",
+            "instruction": "Use the left flipper button for the left lane pair. Use the right flipper button for the right lane pair.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrX7q-MLWkn"
+          },
+          {
+            "name": "Reset a spoiled sequence",
+            "instruction": "Hit the green reset target when the 1-2-3-4 order is spoiled. Then restart the sequence at target 1.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrX7q-MLWkn"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The ORBS, 1-2-3-4, and inline drop banks can produce uncontrolled rebounds.",
+            "response": "Use Multiball protection for repeated bank work. Stop a single-ball sequence after a dangerous rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrX7q-MLWkn"
+          },
+          {
+            "issue": "Competition machines can remove the factory outlane post rubbers.",
+            "response": "Nudge before the ball reaches an outlane. Do not depend on the rubber to return the ball.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/centaur"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Centaur or Centaur II, not a licensed regional copy, plus ball count, tilt, Extra Ball and Special conversion, bonus hold, and multiplayer lock behavior.",
+          "Confirm ordered and unordered ORBS behavior, 1-2-3-4 release rules, five-step Collect Bonus multiplier, lane-change release, pity release, and five-ball capacity.",
+          "Test both lane-change pairs, ORBS and 1-2-3-4 banks, reset target, release target, captive ball and inline drops, trough, outlane posts, gates, and feeds."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "ORBS bank",
+            "label": "ORBS bank",
+            "description": "Ordered drop bank used to start and add balls.",
+            "precision": "unverified",
+            "context": "Ordered drop bank used to start and add balls."
+          },
+          {
+            "term": "1-2-3-4 bank",
+            "label": "1-2-3-4 bank",
+            "description": "Ordered bank used to light Collect Bonus.",
+            "precision": "unverified",
+            "context": "Ordered bank used to light Collect Bonus."
+          }
+        ],
+        "machineSetup": [
+          "Confirm Centaur or Centaur II, not a licensed regional copy, plus ball count, tilt, Extra Ball and Special conversion, bonus hold, and multiplayer lock behavior.",
+          "Confirm ordered and unordered ORBS behavior, 1-2-3-4 release rules, five-step Collect Bonus multiplier, lane-change release, pity release, and five-ball capacity.",
+          "Test both lane-change pairs, ORBS and 1-2-3-4 banks, reset target, release target, captive ball and inline drops, trough, outlane posts, gates, and feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete O-R-B-S in exact order to start two-ball play, repeat the ordered bank during Multiball to add balls, then complete ordered 1-2-3-4 to light the upper-right Collect Bonus and release a stored ball.",
+        "showBirdEyeView": false,
+        "steps": [
+          {
+            "text": "Test both lane-change buttons. Note the outlane posts, tilt, target rebounds, and release feed."
+          },
+          {
+            "text": "Complete the O, R, B, and S drop targets in exact order.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Ordered ORBS: The exact sequence stores a ball and starts two-ball play. An out-of-order completion stores a ball but does not release it at once."
+            ]
+          },
+          {
+            "text": "During Multiball, trap one ball when possible. Repeat ordered ORBS to add another ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the 1, 2, 3, and 4 drop targets in exact order. Use the green reset target if the sequence is spoiled.",
+            "details": [
+              "Ordered 1-2-3-4: The targets score 10,000, 20,000, 40,000, and 80,000. They also add 1, 2, 4, and 8 bonus advances."
+            ]
+          },
+          {
+            "text": "Time the lit far upper-right Collect Bonus lane for its 5x lamp. An ordered 1-2-3-4 completion also makes this the direct stored-ball release route.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, pass both left-arc stars before the captive-ball shot. This doubles its current value.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Knock down the left inline drops while Multiball protects their rebounds. Use the open path as a second stored-ball release route.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "ORBS",
+            "summary": "Complete the four drops in exact order to store a ball and start two-ball play."
+          },
+          {
+            "name": "1-2-3-4",
+            "summary": "An ordered completion scores rising values, builds bonus, and lights Collect Bonus."
+          },
+          {
+            "name": "Collect Bonus",
+            "summary": "The far upper-right target collects bonus and can release a stored ball when lit."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Lane-change release",
+          "when": "Use this plan when the ordered drop banks are not reliable.",
+          "steps": [
+            {
+              "text": "Use the left flipper button to change the left pair of bottom lanes."
+            },
+            {
+              "text": "Use the right flipper button to change the right pair of bottom lanes."
+            },
+            {
+              "text": "Complete all four lanes while a ball is stored. The fourth lane releases two-ball Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Without a stored ball, build the top-lane bonus multiplier and complete 1-2-3-4 in any order to light Collect Bonus."
+            }
+          ]
+        },
+        "warning": {
+          "title": "Competition machines can remove the factory outlane post rubbers.",
+          "text": "Nudge before the ball reaches an outlane. Do not depend on the rubber to return the ball."
+        }
+      }
+    }
+  ]
+}

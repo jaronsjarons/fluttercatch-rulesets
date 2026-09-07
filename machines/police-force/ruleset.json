@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "id": "G4d8d",
+  "title": "Police Force",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Tilt Forums Police Force post-INDISC LX-5 rules and July 12 update",
+      "url": "https://tiltforums.com/t/new-competition-roms-car-hop-swords-of-fury-police-force-transporter-ice-fever-the-games/9991/25"
+    },
+    "supportingSources": [
+      {
+        "label": "Police Force LX-5 author archive and README",
+        "url": "https://pinballtherapy.com/wp-content/uploads/2026/07/Police_Force_LX5.zip"
+      },
+      {
+        "label": "Police Force LX-5 release and strategy discussion",
+        "url": "https://pinside.com/pinball/forum/topic/police-force-new-lx-5-rom-release"
+      },
+      {
+        "label": "PinMAME Police Force post-INDISC ROM identity",
+        "url": "https://github.com/vpinball/pinmame/blob/master/src/wpc/s11games.c"
+      },
+      {
+        "label": "Public-domain Police Force rulesheet",
+        "url": "https://gamefaqs.gamespot.com/pinball/916494-police-force/faqs/1413"
+      },
+      {
+        "label": "Kineticist Police Force machine record",
+        "url": "https://www.kineticist.com/games/pinball/police-force"
+      },
+      {
+        "label": "Stock Police Force at District 82 Super Series 2022",
+        "url": "https://pinballvideos.com/v/4773/2956"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "simplePilotKey": "G4d8d:lx-5",
+      "summary": "Complete G-U-N up top and use lane change to save the lit inlane for Police Multiball. Follow the green lock lamps and lock twice at the right ramp. During Multiball, roll through the lit inlane for Playfield X, then alternate the center and right ramps for Doublecross awards.",
+      "quickInfo": [
+        {
+          "name": "Police Multiball",
+          "summary": "The flashing green Lock 1 and Lock 2 lamps show the next right-ramp lock. Later Multiballs can require an arrest before the next lock, depending on the operator setting."
+        },
+        {
+          "name": "Doublecross",
+          "summary": "During Police Multiball, one ramp briefly lights the other for Doublecross. Awards rise by 1,000,000 and reset for the next Multiball."
+        },
+        {
+          "name": "Playfield X",
+          "summary": "Each G-U-N top-lane completion adds one Playfield X level. A lit inlane starts the timer, and lane change alternates the lit inlane."
+        },
+        {
+          "name": "Criminal Jackpot",
+          "summary": "Arrest Croc, Shark, Rat, and Weasel, then shoot the lit right ramp. On the July 12 build the Jackpot starts each ball at 2,000,000, adds 250,000 per center ramp, and caps at 9.99M."
+        },
+        {
+          "name": "Center ramp",
+          "summary": "The center ramp advances through 150,000 and adds 250,000 to the Criminal Jackpot. It scores millions only as a Doublecross during Police Multiball."
+        },
+        {
+          "name": "Take Highest",
+          "summary": "On LX-5, completing Take Highest maxes the Criminal Jackpot; it does not copy another player's score."
+        },
+        {
+          "name": "Firing Range",
+          "summary": "The 75,000 Firing Range award also spots one P-O-L-I-C-E letter."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Complete the G-U-N top lanes with two-way lane change to build Playfield X.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Once an inlane is lit, use lane change to keep the ball out of the lit inlane and save Playfield X for Police Multiball.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Read the flashing green Lock 1 and Lock 2 lamps. Shoot the right ramp when the next lock flashes; if neither lock flashes, arrest one criminal and read the lamps again. Lock two balls to start Police Multiball.",
+          "modeNotes": [
+            "The first Police Multiball commonly has two free locks. Later locks can require one arrest each by operator setting."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Police Multiball, roll through the lit inlane to start the saved Playfield X.",
+          "kinds": [
+            "multiball",
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Shoot either the center ramp or right ramp, then shoot the flashing other ramp for Doublecross. Keep alternating; the awards rise from 1,000,000 to 2,000,000 to 3,000,000 and higher.",
+          "modeNotes": [
+            "One ramp briefly lights the other. The Doublecross value resets at the next Police Multiball."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Police Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Playfield X",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Doublecross",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Criminal Jackpot",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Criminal Arrest",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "P-O-L-I-C-E",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Top Cop",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Hot Sheet",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Take Highest",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [],
+      "checkBeforePlay": [
+        "Confirm the July 12, 2026 post-INDISC LX-5 build: U26 00390CC0 and U27 003315BD.",
+        "Confirm Playfield X Timer (Adjustment 35), Inlane Memory (40), Playfield X Memory (43), lock requirements, and ball count."
+      ],
+      "simpleOverview": "Police Force uses the right ramp for two locks and its center and right ramps for Multiball scoring. Follow the flashing green lock lamps, lock two balls at the right ramp, then alternate the center and right ramps during Police Multiball.",
+      "overview": "Police Force uses two right-ramp locks to start Police Multiball, where one ramp briefly lights the other for rising Doublecross awards. Follow the flashing green lock lamps, start Multiball, then alternate the center and right ramps. If Playfield X is available, complete G-U-N up top and save the lit inlane until Multiball begins.",
+      "machineSetup": [
+        "Confirm the July 12, 2026 post-INDISC LX-5 build: U26 00390CC0 and U27 003315BD.",
+        "Confirm Playfield X Timer (Adjustment 35), Inlane Memory (40), Playfield X Memory (43), lock requirements, and ball count."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "lx-5",
+      "items": [
+        {
+          "id": "la-4",
+          "label": "Stock LA-4",
+          "strategy": {
+            "simplePilotKey": "G4d8d:la-4",
+            "summary": "On stock LA-4, lock two balls at the right ramp. During two-ball Police Multiball, repeat the center ramp: all scoring is doubled and its ladder can reach Unlimited Millions. Arrest all four criminals only when their banks return safely.",
+            "quickInfo": [
+              {
+                "name": "Police Multiball",
+                "summary": "Lock two balls at the right ramp. The first locks are commonly lit; later locks can require one criminal arrest each."
+              },
+              {
+                "name": "Center ramp",
+                "summary": "Consecutive center ramps climb toward Unlimited Millions. Switch hits break the ladder in single-ball play but not during multiball."
+              },
+              {
+                "name": "Criminal Jackpot",
+                "summary": "Arrest Croc, Shark, Rat, and Weasel, then collect the timed right-ramp Jackpot."
+              },
+              {
+                "name": "G-U-N lanes",
+                "summary": "Complete G-U-N to raise end-of-ball bonus X and briefly increase the Criminal Jackpot from target hits."
+              },
+              {
+                "name": "P-O-L-I-C-E",
+                "summary": "Finish the six letters to light the 3,000,000 Top Cop collect near the bumpers for the rest of the ball."
+              }
+            ],
+            "noteDetails": {
+              "label": "Top-player proof",
+              "items": [
+                "At the District 82 Super Series 2022, Colin MacAlpine repeatedly shot the right ramp because a tournament rubber blocked the easier center-ramp repeat. He also completed P-O-L-I-C-E and collected the 3,000,000 Top Cop award."
+              ]
+            },
+            "steps": [
+              {
+                "text": "Use the first plunge to test the Firing Range spinner and the top-lane return."
+              },
+              {
+                "text": "Read the green lock arrows. If one flashes, shoot the right ramp; if neither flashes, arrest one criminal first."
+              },
+              {
+                "text": "Lock two balls at the right ramp. Prepare the left flipper for the police-car release.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Police Multiball, repeat the center ramp. All playfield scoring is doubled, and switch hits do not break the center-ramp ladder.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "If the center ramp is unreliable, use the second ball to finish safe criminal banks and collect a lit right-ramp Jackpot.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "After multiball, rebuild one lock or return to G-U-N and the safest criminal bank."
+              }
+            ],
+            "fallback": {
+              "title": "P-O-L-I-C-E and Top Cop",
+              "when": "Use this when the center ramp and criminal banks are rejecting.",
+              "steps": [
+                {
+                  "text": "Take the 75,000 Firing Range award when it is repeatable; it also spots a P-O-L-I-C-E letter."
+                },
+                {
+                  "text": "Shoot an unlit right ramp to spot another letter."
+                },
+                {
+                  "text": "Finish P-O-L-I-C-E and collect Top Cop near the bumpers before the ball ends."
+                }
+              ]
+            },
+            "buildsToward": {
+              "title": "Unlimited Millions during doubled multiball",
+              "steps": [
+                {
+                  "text": "Lock two balls at the right ramp."
+                },
+                {
+                  "text": "Start Police Multiball and control the police-car release.",
+                  "kinds": [
+                    "multiball"
+                  ]
+                },
+                {
+                  "text": "Repeat the center ramp through Unlimited Millions while scoring is doubled.",
+                  "kinds": [
+                    "multiball",
+                    "multiplier"
+                  ]
+                }
+              ]
+            },
+            "termStyles": [
+              {
+                "label": "Police Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Unlimited Millions",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Criminal Jackpot",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "P-O-L-I-C-E",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Top Cop",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "checkBeforePlay": [
+              "Confirm stock LA-4; center-ramp Unlimited Millions and doubled Police Multiball identify it.",
+              "Read the green lock arrows and inspect the center post."
+            ],
+            "techniques": [
+              {
+                "name": "Right-flipper center-ramp repeat",
+                "instruction": "Trap on the right flipper. Repeat the center ramp only after its return proves that the next shot is stable.",
+                "sourceUrl": "https://gamefaqs.gamespot.com/pinball/916494-police-force/faqs/1413"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "The police car releases both multiball balls toward the left inlane.",
+                "response": "Prepare the left flipper before the second lock starts multiball.",
+                "sourceUrl": "https://gamefaqs.gamespot.com/pinball/916494-police-force/faqs/1413"
+              },
+              {
+                "issue": "The stock machine can have a center post between the flippers.",
+                "response": "Check its rebounds before relying on a center-save nudge.",
+                "sourceUrl": "https://gamefaqs.gamespot.com/pinball/916494-police-force/faqs/1413"
+              }
+            ],
+            "simpleOverview": "Police Force uses the right ramp for two locks and its center and right ramps for Multiball scoring. Follow the flashing green lock lamps, lock two balls at the right ramp, then alternate the center and right ramps during Police Multiball.",
+            "overview": "Police Force uses two right-ramp locks to start Police Multiball, where one ramp briefly lights the other for rising Doublecross awards. Follow the flashing green lock lamps, start Multiball, then alternate the center and right ramps. If Playfield X is available, complete G-U-N up top and save the lit inlane until Multiball begins.",
+            "machineSetup": [
+              "Confirm stock LA-4; center-ramp Unlimited Millions and doubled Police Multiball identify it.",
+              "Read the green lock arrows and inspect the center post."
+            ],
+            "rulesNotes": []
+          }
+        },
+        {
+          "id": "lx-5",
+          "label": "LX-5 (Post-INDISC, July 12, 2026)",
+          "differences": {
+            "changes": [
+              "Completing the G-U-N top lanes builds a timed Playfield X that starts at a lit inlane, with two-way lane change.",
+              "During Police Multiball, alternating the center and right ramps scores rising Doublecross awards instead of stock Unlimited Millions.",
+              "The July 12 build resets the Criminal Jackpot to 2,000,000 each ball, adds 250,000 per center ramp, and caps it at 9.99M.",
+              "Take Highest maximizes the Criminal Jackpot, and the 75,000 Firing Range award also spots one P-O-L-I-C-E letter."
+            ]
+          },
+          "strategy": {
+            "simplePilotKey": "G4d8d:lx-5",
+            "summary": "Complete G-U-N up top and use lane change to save the lit inlane for Police Multiball. Follow the green lock lamps and lock twice at the right ramp. During Multiball, roll through the lit inlane for Playfield X, then alternate the center and right ramps for Doublecross awards.",
+            "quickInfo": [
+              {
+                "name": "Police Multiball",
+                "summary": "The flashing green Lock 1 and Lock 2 lamps show the next right-ramp lock. Later Multiballs can require an arrest before the next lock, depending on the operator setting."
+              },
+              {
+                "name": "Doublecross",
+                "summary": "During Police Multiball, one ramp briefly lights the other for Doublecross. Awards rise by 1,000,000 and reset for the next Multiball."
+              },
+              {
+                "name": "Playfield X",
+                "summary": "Each G-U-N top-lane completion adds one Playfield X level. A lit inlane starts the timer, and lane change alternates the lit inlane."
+              },
+              {
+                "name": "Criminal Jackpot",
+                "summary": "Arrest Croc, Shark, Rat, and Weasel, then shoot the lit right ramp. On the July 12 build the Jackpot starts each ball at 2,000,000, adds 250,000 per center ramp, and caps at 9.99M."
+              },
+              {
+                "name": "Center ramp",
+                "summary": "The center ramp advances through 150,000 and adds 250,000 to the Criminal Jackpot. It scores millions only as a Doublecross during Police Multiball."
+              },
+              {
+                "name": "Take Highest",
+                "summary": "On LX-5, completing Take Highest maxes the Criminal Jackpot; it does not copy another player's score."
+              },
+              {
+                "name": "Firing Range",
+                "summary": "The 75,000 Firing Range award also spots one P-O-L-I-C-E letter."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Complete the G-U-N top lanes with two-way lane change to build Playfield X.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Once an inlane is lit, use lane change to keep the ball out of the lit inlane and save Playfield X for Police Multiball.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Read the flashing green Lock 1 and Lock 2 lamps. Shoot the right ramp when the next lock flashes; if neither lock flashes, arrest one criminal and read the lamps again. Lock two balls to start Police Multiball.",
+                "modeNotes": [
+                  "The first Police Multiball commonly has two free locks. Later locks can require one arrest each by operator setting."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "During Police Multiball, roll through the lit inlane to start the saved Playfield X.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot either the center ramp or right ramp, then shoot the flashing other ramp for Doublecross. Keep alternating; the awards rise from 1,000,000 to 2,000,000 to 3,000,000 and higher.",
+                "modeNotes": [
+                  "One ramp briefly lights the other. The Doublecross value resets at the next Police Multiball."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ],
+            "termStyles": [
+              {
+                "label": "Police Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Playfield X",
+                "tone": "rust",
+                "kind": "multiplier"
+              },
+              {
+                "label": "Doublecross",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Criminal Jackpot",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Criminal Arrest",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "P-O-L-I-C-E",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Top Cop",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Hot Sheet",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Take Highest",
+                "tone": "indigo",
+                "kind": "item"
+              }
+            ],
+            "techniques": [],
+            "checkBeforePlay": [
+              "Confirm Playfield X Timer (Adjustment 35), Inlane Memory (40), Playfield X Memory (43), lock requirements, and ball count."
+            ],
+            "simpleOverview": "Police Force uses the right ramp for two locks and its center and right ramps for Multiball scoring. Follow the flashing green lock lamps, lock two balls at the right ramp, then alternate the center and right ramps during Police Multiball.",
+            "overview": "Police Force uses two right-ramp locks to start Police Multiball, where one ramp briefly lights the other for rising Doublecross awards. Follow the flashing green lock lamps, start Multiball, then alternate the center and right ramps. If Playfield X is available, complete G-U-N up top and save the lit inlane until Multiball begins.",
+            "machineSetup": [
+              "Confirm Playfield X Timer (Adjustment 35), Inlane Memory (40), Playfield X Memory (43), lock requirements, and ball count."
+            ],
+            "rulesNotes": []
+          }
+        }
+      ]
+    }
+  }
+}

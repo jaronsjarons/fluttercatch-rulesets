@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vnL",
+  "title": "Adventures of Rocky and Bullwinkle and Friends",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Rocky and Bullwinkle rulesheet",
+      "url": "https://pinball.org/rules/rockyandbullwinkle.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Dave Stewart at INDISC 2015",
+        "url": "https://pinballvideos.com/v/682/440"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Alternate the ramps to spot B-O-M-B, finish the Pie, start Tri-Ball at the right ramp, then use Hat Trick to relight double jackpots or restore the third ball.",
+      "quickInfo": [
+        {
+          "name": "Tri-Ball",
+          "summary": "Complete the Pie through B-O-M-B progress, then shoot the lit right ramp."
+        },
+        {
+          "name": "Ramp looping",
+          "summary": "Alternating ramps builds points and spots B-O-M-B targets after the first loop."
+        },
+        {
+          "name": "Hat targets",
+          "summary": "During single-ball play, completing the three hat targets lights Hat Trick at the left orbit. During Tri-Ball, completing them relaunches the third ball when only two remain."
+        },
+        {
+          "name": "Puzzle rounds",
+          "summary": "Clear puzzle pieces at the center or Aesop & Son, then follow the mode-specific shots."
+        },
+        {
+          "name": "Rounds and Tri-Ball",
+          "summary": "A WABAC round cannot start during Tri-Ball. Start the round first and it continues normally during Tri-Ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test both ramps and the Aesop & Son eject while the opening save is active."
+        },
+        {
+          "text": "Alternate the left and right ramps while both returns are controlled; later loop shots spot B-O-M-B progress."
+        },
+        {
+          "text": "Finish the remaining B-O-M-B targets to complete the Pie and light the right ramp for Tri-Ball.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Start Tri-Ball, then shoot the left orbit to light the Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Use the left ramp to raise the Jackpot by 1 million per shot only while its return stays controlled. Shoot the right ramp to collect.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "After a collect, shoot the left orbit again to relight the next Jackpot. If Jackpot is already lit, the orbit starts an eight-second Double Jackpot window.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If only two balls remain, hit all three hat targets to relaunch the third ball before resuming Jackpot work.",
+          "modeNotes": [
+            "The hat bank changes function during Multiball: its completion adds the third ball instead of lighting Hat Trick."
+          ],
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Puzzle rounds",
+        "when": "Use this when the right ramp rejects or alternating ramps cannot be sustained.",
+        "steps": [
+          {
+            "text": "Clear puzzle pieces at the center shot or Aesop & Son."
+          },
+          {
+            "text": "Read the selected round, then take only its repeatable lit shots.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Return to ramp qualification after the timed round ends."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Mystery position play",
+          "when": "Use this when Select is ready and its scoop return is safer than the unfinished B-O-M-B targets.",
+          "steps": [
+            {
+              "text": "Collect Mystery Select at the center shot."
+            },
+            {
+              "text": "Choose immediate points, Tri-Ball, or a safe round according to match position."
+            },
+            {
+              "text": "Avoid choosing a difficult timed round only for theoretical value."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeatable Tri-Balls",
+        "steps": [
+          {
+            "text": "Use alternating ramps to reduce later B-O-M-B requirements."
+          },
+          {
+            "text": "Complete each Pie and start the next Tri-Ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Tri-Ball, complete the three hat targets when only two balls remain to relaunch the third ball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Tri-Ball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Puzzle round",
+          "tone": "navy",
+          "kind": "mode"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Alternating-ramp qualification",
+          "instruction": "Use controlled alternating ramps to spot B-O-M-B letters instead of attacking every standup directly.",
+          "sourceUrl": "https://pinball.org/rules/rockyandbullwinkle.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The right ramp is steep and partial shots can break control.",
+          "response": "Learn its narrow make point before using it for repeated Tri-Ball qualification or timed awards.",
+          "sourceUrl": "https://pinball.org/rules/rockyandbullwinkle.html"
+        },
+        {
+          "issue": "The outlanes and several ejects can be severe on a fast copy.",
+          "response": "Choose ramp loops and mystery awards according to the observed return rather than their maximum value.",
+          "sourceUrl": "https://pinball.org/rules/rockyandbullwinkle.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Data East production code and Tri-Ball difficulty. Later starts change the order in which B-O-M-B targets must be completed.",
+        "Test the steep right ramp, WABAC return, Aesop & Son eject, and Hat Trick diverter before committing to their timed features.",
+        "Confirm Extra Ball conversion, Mystery awards, Laser Kick behavior, and tournament settings."
+      ],
+      "simpleOverview": "Adventures of Rocky and Bullwinkle and Friends uses alternating ramps to spot B-O-M-B and complete the Pie for Tri-Ball. Start at the right ramp, shoot the left orbit to light Jackpot, raise it at the left ramp, and collect at the right ramp; if one ball drains, complete the hat targets to relaunch it.",
+      "overview": "Adventures of Rocky and Bullwinkle and Friends uses alternating ramps to spot B-O-M-B and complete the Pie for Tri-Ball. Alternate controlled ramps, finish the remaining targets, then use the left orbit, left ramp, and right ramp to light, raise, and collect Jackpot. Complete the hat bank when only two balls remain, or use puzzle rounds when the steep right ramp is not reliable.",
+      "machineSetup": [
+        "Confirm Data East production code and Tri-Ball difficulty. Later starts change the order in which B-O-M-B targets must be completed.",
+        "Test the steep right ramp, WABAC return, Aesop & Son eject, and Hat Trick diverter before committing to their timed features.",
+        "Confirm Extra Ball conversion, Mystery awards, Laser Kick behavior, and tournament settings."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

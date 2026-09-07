@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "GRwBN",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Hokus Pokus rewards repeated trips through the side spinner and careful completion of the A-B-C-D top lanes. Completing A-B-C-D once lights double bonus; completing it again alternately lights an outlane for the configured award. A side spinner or the upper center target opens the side gate, creating another route back to the top lanes.",
+        "simpleOverview": "Shoot through the side spinner or hit the upper center target to open the side gate, then keep sending the ball to the top. Complete A-B-C-D once for double bonus and a second time to light an outlane for the configured award. Nudge at the top to finish missing letters.",
+        "summary": "Keep the ball above the bumpers as long as possible. The spinner is both a repeatable score and a gate-control shot; top-lane nudging is more valuable than direct low-feature risk because A-B-C-D doubles the whole end-of-ball bonus.",
+        "quickInfo": [
+          {
+            "name": "Open Side Gate",
+            "summary": "Shoot the spinner or hit the upper center target."
+          },
+          {
+            "name": "Light Double Bonus",
+            "summary": "Complete A-B-C-D once."
+          },
+          {
+            "name": "Light Outlane Award",
+            "summary": "Complete A-B-C-D a second time."
+          },
+          {
+            "name": "Build Bonus",
+            "summary": "Use top lanes and repeated upper-playfield action."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Shoot through the side spinner or hit the upper center target to open the side gate."
+          },
+          {
+            "text": "Use the gate and spinner routes to return the ball to the top lanes."
+          },
+          {
+            "text": "Complete A-B-C-D once to light double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete A-B-C-D again to light the configured outlane award, alternating sides."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Upper-center route",
+            "when": "Use this when the spinner shot is not feeding the top cleanly.",
+            "steps": [
+              {
+                "text": "Hit the upper center target to open the side gate."
+              },
+              {
+                "text": "Use bumper action and nudging to collect missing top letters."
+              },
+              {
+                "text": "Return to the spinner only from a controlled flipper feed."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Doubled end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Build base bonus through lanes and upper-playfield switches."
+            },
+            {
+              "text": "Complete A-B-C-D once to light double bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Protect the ball after both the base and doubler are valuable."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test A-B-C-D, spinner, upper center target, side gate and return, bumpers, outlane lamps, bonus ladder, and all upper-playfield feeds shown on the factory playfield chart.",
+          "Confirm the outlane award, maximum one Extra Ball per ball, three- or five-ball rules, and whether the gate stays open and returns the ball consistently."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "side spinner",
+            "label": "Side spinner",
+            "description": "Repeatable shot that also opens the side gate.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper center target",
+            "label": "Upper center target",
+            "description": "Standup target that opens the side gate.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side gate",
+            "label": "Side gate",
+            "description": "Gate that creates another route into the upper playfield.",
+            "precision": "unverified"
+          },
+          {
+            "term": "A-B-C-D top lanes",
+            "label": "A-B-C-D top lanes",
+            "description": "Four lanes that qualify double bonus and the alternating outlane award.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Keep the ball above the bumpers as long as possible. The spinner is both a repeatable score and a gate-control shot; top-lane nudging is more valuable than direct low-feature risk because A-B-C-D doubles the whole end-of-ball bonus.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Shoot through the side spinner or hit the upper center target to open the side gate."
+          },
+          {
+            "text": "Use the gate and spinner routes to return the ball to the top lanes."
+          },
+          {
+            "text": "Complete A-B-C-D once to light double bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete A-B-C-D again to light the configured outlane award, alternating sides."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Open Side Gate",
+            "summary": "Shoot the spinner or hit the upper center target."
+          },
+          {
+            "name": "Light Double Bonus",
+            "summary": "Complete A-B-C-D once."
+          },
+          {
+            "name": "Light Outlane Award",
+            "summary": "Complete A-B-C-D a second time."
+          }
+        ]
+      }
+    }
+  ]
+}

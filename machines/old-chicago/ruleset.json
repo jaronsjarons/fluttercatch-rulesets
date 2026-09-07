@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "id": "G4dJE",
+  "title": "Old Chicago",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Old Chicago tournament strategy",
+      "url": "https://www.kineticist.com/games/pinball/old-chicago"
+    },
+    "supportingSources": [
+      {
+        "label": "Bob's Guide Old Chicago rules",
+        "url": "https://rules.silverballmania.com/rules/G4dJE-MQKoo"
+      },
+      {
+        "label": "PinballCards Old Chicago card",
+        "url": "https://pinballcards.net/old-chicago-1976"
+      },
+      {
+        "label": "Old Chicago Twitch-origin tournament tips",
+        "url": "https://www.youtube.com/watch?v=2nGZ8QBT068"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Build bonus with the left spinner, collect that same value at the center saucer without resetting it, then repeat the saucer as the value reaches 10,000.",
+      "quickInfo": [
+        {
+          "name": "Left spinner",
+          "summary": "Each five spins add one bonus step, and a strong shot can add several steps."
+        },
+        {
+          "name": "Bonus Collect",
+          "summary": "The center saucer scores the current base bonus without removing or resetting it."
+        },
+        {
+          "name": "Maximum bonus",
+          "summary": "Base bonus stops at 10,000, so every later center-saucer collect can score the same 10,000."
+        },
+        {
+          "name": "Double Bonus",
+          "summary": "The operator assigns it to specific balls, and it applies only to the bonus at drain."
+        },
+        {
+          "name": "Right drop bank",
+          "summary": "The first completion scores 5,000 and lights outlane awards; later completions award Special."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge for the lit top lane.",
+          "modeNotes": [
+            "Lit top lane: It scores 3,000 and adds three bonus steps in a three-ball game or one step in a five-ball game.",
+            "Lane selection: Rubber-wall switches change the lit lane; the flipper buttons do not change it."
+          ]
+        },
+        {
+          "text": "From the right flipper, shoot the left spinner.",
+          "modeNotes": [
+            "Left spinner: It scores 100 per spin, and each fifth spin adds one bonus step."
+          ]
+        },
+        {
+          "text": "When bonus reaches 6,000, shoot the center saucer from the right flipper.",
+          "modeNotes": [
+            "Bonus Collect: The saucer scores the current base bonus without removing or resetting it.",
+            "Kickout: The saucer normally sends the ball toward the right flipper."
+          ]
+        },
+        {
+          "text": "Dead-bounce, live-catch, or trap the kickout on the right flipper."
+        },
+        {
+          "text": "Repeat the center saucer when its return stays controlled."
+        },
+        {
+          "text": "Use the spinner between collects until the base bonus reaches 10,000.",
+          "modeNotes": [
+            "Maximum bonus: Base bonus stops at 10,000.",
+            "Double Bonus: It applies at the drain, not to a center-saucer collect."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After bonus reaches 10,000, repeat the center saucer without rebuilding the bonus."
+        }
+      ],
+      "fallback": {
+        "title": "Recovery: Use the upper-right saucer",
+        "when": "Recovery pivot: Use this when the ball is trapped on the left flipper.",
+        "steps": [
+          {
+            "text": "Shoot the upper-right saucer for one bonus step."
+          },
+          {
+            "text": "Watch its first kickout; it normally strikes the lower part of the left flipper."
+          },
+          {
+            "text": "Regain control and return to the left spinner or center saucer."
+          },
+          {
+            "text": "Stop this route if the kickout reaches a sling or outlane."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Position play: Secure a small bonus",
+          "when": "When trailing, use this higher-ceiling route: use this when the spinner does not spin freely.",
+          "steps": [
+            {
+              "text": "Use the lit top lane for bonus progress."
+            },
+            {
+              "text": "Use the upper-right saucer for one bonus step."
+            },
+            {
+              "text": "Use the lower-left standup only when its rebound is controlled."
+            },
+            {
+              "text": "Collect the bonus at the center saucer."
+            }
+          ]
+        },
+        {
+          "title": "Finish a nearly complete drop bank",
+          "when": "Use this only when one right-bank target remains.",
+          "steps": [
+            {
+              "text": "Complete the right drop bank for 5,000."
+            },
+            {
+              "text": "The first completion lights outlane awards for the rest of the ball."
+            },
+            {
+              "text": "Later completions award Special."
+            },
+            {
+              "text": "Stop if Special and Extra Ball have no tournament point value."
+            },
+            {
+              "text": "A simultaneous two-target hit can register only one target on this electromechanical game."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Repeated 10,000 Bonus Collects",
+        "steps": [
+          {
+            "text": "Shoot the left spinner until the base bonus reaches at least 6,000."
+          },
+          {
+            "text": "Collect the built value at the center saucer; the collect does not reset it."
+          },
+          {
+            "text": "Use the spinner between collects until the base reaches 10,000, then repeat the center saucer while its kickout stays controlled."
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Bonus Collect",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Double Bonus",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Lit top lane",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Left spinner",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Center-saucer transfer",
+          "instruction": "Shoot the center saucer from the right flipper, then control its kickout on the same flipper.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/old-chicago"
+        },
+        {
+          "name": "Late spinner shot",
+          "instruction": "Trap on the right flipper before shooting the left spinner.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4dJE-MQKoo"
+        },
+        {
+          "name": "Dead bounce",
+          "instruction": "Let a safe return bounce toward the opposite flipper, then raise that flipper after the ball clears the short wall.",
+          "techniqueSlug": "dead-bounce",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/old-chicago"
+        },
+        {
+          "name": "Nudging",
+          "instruction": "Nudge toward the lit top lane while the ball remains above the lane entrance.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/old-chicago",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A weak left-side shot can fall into a lower bumper or outlane.",
+          "response": "Shoot the spinner with enough force to reach the top, and stop after a dangerous fallback.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/old-chicago"
+        },
+        {
+          "issue": "The two lower bumpers can send the ball to an outlane.",
+          "response": "Do not aim at them; use the spinner, saucers, and controlled bounces.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4dJE-MQKoo"
+        }
+      ],
+      "overview": "Old Chicago is a spinner-and-saucer bonus loop. Build at least 6,000 with spinner shots, collect at the saucer, control its kickout, and continue until the base reaches 10,000. Repeat the saucer while its return stays controlled.",
+      "simpleOverview": "Old Chicago is a spinner-and-saucer bonus loop. Shoot the left spinner from the right flipper to raise base bonus, then shoot the center saucer to collect that value without resetting it and repeat the saucer as the bonus grows.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

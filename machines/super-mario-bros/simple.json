@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBzQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Become Super before starting a round or multiball, complete the numbered 1-2-3-4 shots, then use three-ball play to send repeated balls into the Castle for escalating jackpots.",
+        "quickInfo": [
+          {
+            "name": "Super Mario",
+            "summary": "Shoot the right ramp, lower-left hole, or right hole when its S-U-P-E-R lamp is flashing. Finish the word before a round or multiball to double round values and upgrade multiball to three balls."
+          },
+          {
+            "name": "1-2-3-4",
+            "summary": "Make left ramp, Yoshi, right loop, then the upper-flipper ramp in order."
+          },
+          {
+            "name": "Multiball start",
+            "summary": "After 1-2-3-4, shoot the lower-left hole to start multiball."
+          },
+          {
+            "name": "Castle jackpots",
+            "summary": "Each ball sent into the Castle advances the jackpot from 5M through 10M, 20M, and 40M."
+          },
+          {
+            "name": "Rounds",
+            "summary": "Hit shell shots until three shells are lit, collect a key at a lit hole, then choose between two offered rounds."
+          },
+          {
+            "name": "Yoshi’s Countdown and Multiball",
+            "summary": "If Yoshi’s Countdown is running when Multiball starts, its displayed value stops counting down during Multiball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the left ramp, Yoshi target, right loop, upper ramp, and Castle-hole feeds."
+          },
+          {
+            "text": "Shoot the right ramp, lower-left hole, or right hole when its S-U-P-E-R lamp is flashing. Finish the word before completing a round or multiball qualification when the remaining shots are controlled."
+          },
+          {
+            "text": "Complete 1-2-3-4 in order.",
+            "modeNotes": [
+              "1: left ramp.",
+              "2: Yoshi target on the upper playfield.",
+              "3: right loop into the bumpers.",
+              "4: upper-left-flipper ramp to the right inlane."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lower-left hole to start multiball. Finish S-U-P-E-R first for the stronger three-ball start; take the immediate two-ball start when the remaining Super shots are more dangerous than the extra ball is worth.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send balls into the Castle for the escalating jackpot ladder while preserving one controlled lower ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, light three shells, collect the key at a lit hole, and choose the offered round whose shots are safest.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Enter valuable rounds while Super so their scoring is doubled.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Super round route",
+          "when": "Use this when the upper-flipper number-four shot is rejecting but shell and key shots are safe.",
+          "steps": [
+            {
+              "text": "Shoot the right ramp, lower-left hole, or right hole when its S-U-P-E-R lamp is flashing until S-U-P-E-R is complete."
+            },
+            {
+              "text": "Hit shell shots until three shells are lit, then shoot the lit hole to collect the key."
+            },
+            {
+              "text": "Choose Exclamation, Yoshi, or another round that matches the reliable shots on this copy.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Save the Princess",
+          "steps": [
+            {
+              "text": "Become Super and enter the Castle to destroy it."
+            },
+            {
+              "text": "Carry the completed-castle count across games where enabled."
+            },
+            {
+              "text": "Destroy all seven castles to complete the long-term objective."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Super Mario",
+            "tone": "indigo",
+            "kind": "multiplier",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Super Mario Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Round",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Castle",
+            "tone": "plum",
+            "kind": "shot"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left ramp",
+            "label": "Number-one ramp",
+            "description": "Left ramp used for the first multiball qualification shot and shell progress.",
+            "precision": "unverified",
+            "context": "left ramp: Left ramp used for the first multiball qualification shot and shell progress."
+          },
+          {
+            "term": "Yoshi target",
+            "label": "Number-two target",
+            "description": "Upper-playfield target used for the second qualification shot and Yoshi round.",
+            "precision": "unverified",
+            "context": "Yoshi target: Upper-playfield target used for the second qualification shot and Yoshi round."
+          },
+          {
+            "term": "right loop",
+            "label": "Number-three loop",
+            "description": "Right loop used for the third qualification shot.",
+            "precision": "unverified",
+            "context": "right loop: Right loop used for the third qualification shot."
+          },
+          {
+            "term": "upper ramp",
+            "label": "Number-four ramp",
+            "description": "Upper-flipper ramp used for the fourth qualification shot.",
+            "precision": "unverified",
+            "context": "upper ramp: Upper-flipper ramp used for the fourth qualification shot."
+          },
+          {
+            "term": "lower-left hole",
+            "label": "Multiball start",
+            "description": "Lower-left sinkhole used to start qualified multiball.",
+            "precision": "unverified",
+            "context": "lower-left hole: Lower-left sinkhole used to start qualified multiball."
+          },
+          {
+            "term": "Castle",
+            "label": "Castle hole",
+            "description": "Upper Castle shot used for multiball jackpots and castle destruction.",
+            "precision": "unverified",
+            "context": "Castle: Upper Castle shot used for multiball jackpots and castle destruction."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Super-before-start order",
+            "instruction": "Finish S-U-P-E-R before entering a round or multiball whenever the last Super shot is controlled.",
+            "sourceUrl": "https://www.pinball.org/rules/supermariobrothers.txt"
+          },
+          {
+            "name": "Numbered-shot discipline",
+            "instruction": "Follow the lit 1-2-3-4 order; unlit repeats do not replace the next required shot.",
+            "sourceUrl": "https://www.pinball.org/rules/supermariobrothers.txt"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper-flipper number-four and Castle shots can miss into fast, uncontrolled returns.",
+            "response": "Test both feeds early and take the two-ball start rather than overbuilding Super on a rejecting copy.",
+            "sourceUrl": "https://www.pinball.org/rules/supermariobrothers.txt"
+          },
+          {
+            "issue": "Castle progress may carry across games.",
+            "response": "Read the castle state before plunging and do not describe inherited progress as earned in the current game.",
+            "sourceUrl": "https://www.pinball.org/rules/supermariobrothers.txt"
+          }
+        ],
+        "simpleOverview": "Super Mario Bros. uses S-U-P-E-R to strengthen its rounds and main Multiball. Become Super when the remaining shots are safe, complete the numbered left ramp, Yoshi, right loop, and upper ramp sequence, then start at the lower-left hole and send repeated balls into the Castle for rising Jackpots.",
+        "overview": "Spelling S-U-P-E-R in Super Mario Bros. strengthens its rounds and changes its main Multiball to three-ball play. Complete 1-2-3-4 in order, then use the lower-left hole and repeat the Castle for its escalating Jackpot ladder; between starts, light shells and choose the offered round whose required shots best match the controlled side.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Become Super before starting a round or multiball, complete the numbered 1-2-3-4 shots, then use three-ball play to send repeated balls into the Castle for escalating jackpots.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the left ramp, Yoshi target, right loop, upper ramp, and Castle-hole feeds."
+          },
+          {
+            "text": "Shoot the right ramp, lower-left hole, or right hole when its S-U-P-E-R lamp is flashing. Finish the word before completing a round or multiball qualification when the remaining shots are controlled."
+          },
+          {
+            "text": "Complete 1-2-3-4 in order.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "1: left ramp.",
+              "2: Yoshi target on the upper playfield.",
+              "3: right loop into the bumpers.",
+              "4: upper-left-flipper ramp to the right inlane."
+            ]
+          },
+          {
+            "text": "Shoot the lower-left hole to start multiball. Finish S-U-P-E-R first for the stronger three-ball start; take the immediate two-ball start when the remaining Super shots are more dangerous than the extra ball is worth.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Send balls into the Castle for the escalating jackpot ladder while preserving one controlled lower ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After multiball, light three shells, collect the key at a lit hole, and choose the offered round whose shots are safest.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Enter valuable rounds while Super so their scoring is doubled.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Super Mario",
+            "summary": "Shoot the right ramp, lower-left hole, or right hole when its S-U-P-E-R lamp is flashing. Finish the word before a round or multiball to double round values and upgrade multiball to three balls."
+          },
+          {
+            "name": "1-2-3-4",
+            "summary": "Make left ramp, Yoshi, right loop, then the upper-flipper ramp in order."
+          },
+          {
+            "name": "Multiball start",
+            "summary": "After 1-2-3-4, shoot the lower-left hole to start multiball."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Super round route",
+          "when": "Use this when the upper-flipper number-four shot is rejecting but shell and key shots are safe.",
+          "steps": [
+            {
+              "text": "Shoot the right ramp, lower-left hole, or right hole when its S-U-P-E-R lamp is flashing until S-U-P-E-R is complete."
+            },
+            {
+              "text": "Hit shell shots until three shells are lit, then shoot the lit hole to collect the key."
+            },
+            {
+              "text": "Choose Exclamation, Yoshi, or another round that matches the reliable shots on this copy.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

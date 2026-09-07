@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "id": "GrO7w",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Reach the upper playfield through the safer lower ramp. Lock three balls through the upper mini-orbit, start Multiball, and keep the balls in the upper loop while scoring is doubled or tripled.",
+        "quickInfo": [
+          {
+            "name": "Ball locks",
+            "summary": "The upper mini-orbit locks balls after Lock is lit, and three locked balls start Multiball."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Three balls score 3x and two balls score 2x until only one ball remains."
+          },
+          {
+            "name": "Upper bank",
+            "summary": "The three upper drop targets can light the next lock when the game uses the harder lock setting."
+          },
+          {
+            "name": "Bonus",
+            "summary": "Base bonus reaches 49,000 and the multiplier reaches 5x."
+          },
+          {
+            "name": "Magna-Save",
+            "summary": "Each cabinet button activates its side magnet while saved magnet time remains."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the left, center, and right routes to the upper playfield; use the one the current flipper can complete safely."
+          },
+          {
+            "text": "On the upper playfield, transfer to the upper-left flipper and shoot the short mini-orbit into the lock."
+          },
+          {
+            "text": "If Lock is dark, complete the upper three-bank, then return to the mini-orbit."
+          },
+          {
+            "text": "Repeat until three balls are locked and Multiball starts.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep all three balls alive for 3x scoring and repeat upper loops, locks, and safe ramps.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When one ball remains, rebuild Lock and repeat the same route."
+          }
+        ],
+        "fallback": {
+          "title": "Upper-bank control",
+          "when": "Use this when a lower ramp does not feed the upper playfield safely.",
+          "steps": [
+            {
+              "text": "Stop forcing the rejecting ramp."
+            },
+            {
+              "text": "Use the safer available path to the upper playfield."
+            },
+            {
+              "text": "Repeat the upper-left target bank for points and Lock progress."
+            },
+            {
+              "text": "Take a lock only after the ball returns to the upper-left flipper under control."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Early center start",
+            "when": "Use this when at least one ball is locked and the center green-arrow start shot is lit.",
+            "steps": [
+              {
+                "text": "Confirm that the center start arrow is lit."
+              },
+              {
+                "text": "Shoot the center start instead of risking another upper lock."
+              },
+              {
+                "text": "Use the shorter Multiball for controlled 2x or 3x scoring.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Timed return-lane awards",
+            "when": "Use this when lock shots are unreliable but the return-lane feeds are controlled.",
+            "steps": [
+              {
+                "text": "Let either return lane light its timed shot."
+              },
+              {
+                "text": "After the left return lane, take the briefly lit center-ramp award only from a controlled ball."
+              },
+              {
+                "text": "After the right return lane, use the briefly lit spinner only when its return is safe."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Three-ball Multiball and 5x bonus",
+          "steps": [
+            {
+              "text": "Complete the upper bank when needed to light Lock, then shoot the upper mini-orbit for three locks."
+            },
+            {
+              "text": "Preserve three balls for 3x play.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "During Multiball, let the half-figure-eight happen or shoot it only with another ball protecting the return to raise Bonus X toward 5x."
+            },
+            {
+              "text": "Repeat Multiball after the game returns to single-ball play.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "3x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Magna-Save",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Upper-lock transfer",
+            "instruction": "Let the ball reach the upper-left flipper, then shoot the short upper orbit into the lock.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrO7w-M9R03"
+          },
+          {
+            "name": "Plunge deflection",
+            "instruction": "Use a moderate plunge and hold the upper-right flipper to guide the ball toward the upper-left side.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrO7w-M9R03"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The upper-playfield exit can send the ball down the middle or toward the left outlane.",
+            "response": "Watch the full exit and use an early legal nudge before the ball gains speed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrO7w-M9R03"
+          },
+          {
+            "issue": "Shots at the lower drop targets and incomplete ramp shots can return the ball through the center.",
+            "response": "Prefer complete ramp shots and stop shooting a target or ramp after an unsafe rebound.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrO7w-M9R03"
+          },
+          {
+            "issue": "Magna-Save time is limited and a late button press may not recover the ball.",
+            "response": "Test the magnet early and use it before the ball reaches the outlane mouth.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/black-knight"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper mini-orbit",
+            "context": "Lock balls through the upper mini-orbit.",
+            "label": "Upper lock orbit",
+            "description": "Shoot it from the upper-left flipper after Lock is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Magna-Save",
+            "context": "Magna-Save uses the player-controlled magnets above the outlanes.",
+            "label": "Magna-Save",
+            "description": "Use the cabinet buttons while magnet time remains.",
+            "precision": "unverified"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Black Knight standard or LE, not licensed Black Rider or Cavaleiro Negro; verify ball count, tilt, Extra Ball, Special, and lock sharing.",
+          "Confirm whether every lock begins lit or requires the timed upper bank, and whether the center green arrow starts early two- or three-ball Multiball.",
+          "Test all three upper routes, upper lock and release, paired flippers, Magna-Saves and buttons, upper exit, half-figure-eight feed, ramps, spinner, and drop rebounds."
+        ],
+        "simpleOverview": "Black Knight uses its lower ramp to reach an upper playfield where the mini-orbit stores three balls. Complete the upper bank when Lock is not lit, take three upper locks for Multiball, and keep the balls upstairs while three-ball scoring is tripled.",
+        "overview": "Black Knight uses its lower ramp to reach an upper playfield where the mini-orbit stores three balls. Use the safer ramp, complete the upper bank when Lock is not lit, and take all three locks. During Multiball, preserve three balls and repeat controlled upper scoring while using Magna-Save only when its stored magnet time can prevent a drain.",
+        "machineSetup": [
+          "Confirm Williams Black Knight standard or LE, not licensed Black Rider or Cavaleiro Negro; verify ball count, tilt, Extra Ball, Special, and lock sharing.",
+          "Confirm whether every lock begins lit or requires the timed upper bank, and whether the center green arrow starts early two- or three-ball Multiball.",
+          "Test all three upper routes, upper lock and release, paired flippers, Magna-Saves and buttons, upper exit, half-figure-eight feed, ramps, spinner, and drop rebounds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Reach the upper playfield through the safer lower ramp. Lock three balls through the upper mini-orbit, start Multiball, and keep the balls in the upper loop while scoring is doubled or tripled.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the left, center, and right routes to the upper playfield; use the one the current flipper can complete safely."
+          },
+          {
+            "text": "On the upper playfield, transfer to the upper-left flipper and shoot the short mini-orbit into the lock."
+          },
+          {
+            "text": "If Lock is dark, complete the upper three-bank, then return to the mini-orbit."
+          },
+          {
+            "text": "Repeat until three balls are locked and Multiball starts.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, keep all three balls alive for 3x scoring and repeat upper loops, locks, and safe ramps.",
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When one ball remains, rebuild Lock and repeat the same route."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Ball locks",
+            "summary": "The upper mini-orbit locks balls after Lock is lit, and three locked balls start Multiball."
+          },
+          {
+            "name": "Multiball",
+            "summary": "Three balls score 3x and two balls score 2x until only one ball remains."
+          },
+          {
+            "name": "Upper bank",
+            "summary": "The three upper drop targets can light the next lock when the game uses the harder lock setting."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper-bank control",
+          "when": "Use this when a lower ramp does not feed the upper playfield safely.",
+          "steps": [
+            {
+              "text": "Stop forcing the rejecting ramp."
+            },
+            {
+              "text": "Use the safer available path to the upper playfield."
+            },
+            {
+              "text": "Repeat the upper-left target bank for points and Lock progress."
+            },
+            {
+              "text": "Take a lock only after the ball returns to the upper-left flipper under control."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The upper-playfield exit can send the ball down the middle or toward the left outlane.",
+          "text": "Watch the full exit and use an early legal nudge before the ball gains speed."
+        }
+      }
+    }
+  ]
+}

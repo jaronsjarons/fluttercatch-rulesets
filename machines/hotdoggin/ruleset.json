@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "id": "GrENE",
+  "title": "Hotdoggin'",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Kineticist Hotdoggin' tournament strategy via Bob's Guide",
+      "url": "https://www.kineticist.com/games/pinball/hotdoggin"
+    },
+    "supportingSources": [
+      {
+        "label": "Silverball Rules Hotdoggin' guide",
+        "url": "https://rules.silverballmania.com/rules/GrENE-MD0dz"
+      },
+      {
+        "label": "Buffalo Pinball Hotdoggin' tutorial with Bruce Nightingale",
+        "url": "https://www.youtube.com/watch?v=p4ZcM7jQkNM&t=360s"
+      },
+      {
+        "label": "Bally Hotdoggin' instruction cards",
+        "url": "https://www.pinballrebel.com/game/pins/instruction/Bally_Hotdoggin_instruction_cards.zip"
+      },
+      {
+        "label": "Jack Tadman at INDISC 2023 Classics II — Semifinals",
+        "url": "https://pinballvideos.com/v/4971/1396"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Plunge K, build 5x before finishing the first letter set, stop at fourteen letters in the second set, and collect the 285,000 bonus at the lit kicker and drain.",
+      "steps": [
+        {
+          "text": "Plunge the K top lane on every ball. K lights the right-side bonus kicker."
+        },
+        {
+          "text": "From a controlled left-flipper ball, complete the three back-left inline drops.",
+          "modeNotes": [
+            "First drop: Awards 3x and lights the spinner at 1,000 per spin for the rest of the ball.",
+            "Second drop: Awards 4x.",
+            "Third drop: Awards 5x, opens the turnaround, and lights the saucer for special for the rest of the ball."
+          ]
+        },
+        {
+          "text": "After 5x is secure, complete HOTDOGGIN SKI FUN once.",
+          "modeNotes": [
+            "HOTDOGGIN SKI FUN: Fifteen stored letter lamps. Each lit letter adds 2,000 to base bonus.",
+            "First completion: Adds a stored 30,000 Extra Bonus and starts a second letter set.",
+            "A lit bonus-kicker collect does not consume the letters or Extra Bonus."
+          ]
+        },
+        {
+          "text": "Stop at 14 of 15 letters in the second set. This keeps the large built bonus available."
+        },
+        {
+          "text": "Enter the lit right-side kicker to collect the full base bonus times the multiplier.",
+          "modeNotes": [
+            "Lit side kicker: Pays the full bonus, returns the ball, and unlights itself. It does not reset bonus or multiplier.",
+            "Unlit side kicker: Scores only its small base value and feeds the right-outlane area."
+          ]
+        },
+        {
+          "text": "Return the ball to the K lane to relight the kicker. Collect the same bonus again when the side feed is safe."
+        },
+        {
+          "text": "At the drain, collect the built bonus again. Do not tilt."
+        }
+      ],
+      "fallback": {
+        "title": "3x spinner and safe letters",
+        "when": "Use this plan when later inline-drop rebounds approach the center drain.",
+        "steps": [
+          {
+            "text": "Plunge K."
+          },
+          {
+            "text": "Hit only the first inline drop. Take 3x and light the spinner at 1,000 per spin."
+          },
+          {
+            "text": "Loop the spinner. Use top lanes and Spot Letter awards to build bonus."
+          },
+          {
+            "text": "Use completed DOGG or FUN bank resets to spot a letter."
+          },
+          {
+            "text": "Enter the side kicker only when it is lit."
+          },
+          {
+            "text": "At the drain, collect the built 3x bonus."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "25,000 saucer loop",
+          "when": "Use this only when the physical instruction card confirms 25,000 and the saucer return is safe.",
+          "steps": [
+            {
+              "text": "Reach at least 3x."
+            },
+            {
+              "text": "Complete the inline bank to light the saucer award."
+            },
+            {
+              "text": "Collect the configured saucer award."
+            },
+            {
+              "text": "Backhand the 25,000 saucer while its return stays controlled."
+            },
+            {
+              "text": "Return to the spinner if the saucer feed becomes unsafe."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "285,000 at 5x",
+        "steps": [
+          {
+            "text": "Complete the first letter set for the stored 30,000 Extra Bonus."
+          },
+          {
+            "text": "Shoot the lit HOTDOGGIN SKI FUN lanes and targets until 14 letters are lit in the second set."
+          },
+          {
+            "text": "Keep the 5x bonus multiplier active."
+          },
+          {
+            "text": "Collect at the lit side kicker and again at the drain."
+          }
+        ]
+      },
+      "quickInfo": [
+        {
+          "name": "K skill plunge",
+          "summary": "K lights the right-side disappearing kicker, allowing one in-play collect of the full built bonus."
+        },
+        {
+          "name": "Bonus X",
+          "summary": "The three inline drops award 3x, 4x, and 5x end-of-ball bonus; there is no 2x step."
+        },
+        {
+          "name": "Letter bonus",
+          "summary": "Each of fifteen letters adds 2,000; the first set adds a stored 30,000 Extra Bonus and begins a second set."
+        },
+        {
+          "name": "Maximum bonus",
+          "summary": "One complete set plus fourteen second-set letters makes 57,000 base and 285,000 at 5x."
+        },
+        {
+          "name": "Side kicker",
+          "summary": "A lit collect pays the full multiplied bonus without resetting it, then unlights until another K lane."
+        }
+      ],
+      "techniques": [
+        {
+          "name": "K skill plunge",
+          "instruction": "Adjust plunge strength until the ball enters the K lane. K lights the side bonus kicker on every ball.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrENE-MD0dz"
+        },
+        {
+          "name": "Backhand",
+          "instruction": "Backhand the inline bank only after moving a left-flipper cradle toward its repeatable shooting angle.",
+          "techniqueSlug": "backhand",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrENE-MD0dz"
+        },
+        {
+          "name": "Inline-bank forehand",
+          "instruction": "Use the forehand when its rebound is safer than the backhand return. Both lower flippers can reach the inline bank.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrENE-MD0dz"
+        },
+        {
+          "name": "Upper-flipper DOGG shot",
+          "instruction": "Stage the flippers and use the upper-right flipper for DOGG only after you know the left-outlane feed.",
+          "sourceUrl": "https://www.youtube.com/watch?v=p4ZcM7jQkNM&t=526s"
+        },
+        {
+          "name": "Slap save",
+          "instruction": "As the ball reaches the small lower pin, slap the right side so the ball deflects toward a return lane.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrENE-MD0dz",
+          "techniqueSlug": "nudging"
+        },
+        {
+          "name": "Walking-post nudge",
+          "instruction": "Nudge before repeated side-post contacts carry the ball to an outlane.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/hotdoggin"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Inline-bank rebounds can travel near the center drain.",
+          "response": "Test one target. Stop at 3x and use the spinner if the later targets do not return safely.",
+          "sourceUrl": "https://www.youtube.com/watch?v=p4ZcM7jQkNM&t=595s"
+        },
+        {
+          "issue": "Upper-flipper DOGG shots can feed the left outlane.",
+          "response": "Use Spot Letter awards when the upper-flipper return is unsafe.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrENE-MD0dz"
+        },
+        {
+          "issue": "Direct letter-bank hits can rebound to either outlane.",
+          "response": "Secure the multiplier first. Use lanes and Spot Letter when a direct bank is not controlled.",
+          "sourceUrl": "https://www.kineticist.com/games/pinball/hotdoggin"
+        },
+        {
+          "issue": "The unlit side kicker feeds the right-outlane area.",
+          "response": "Enter it only when lit. If the ball enters unlit, prepare the right-side pin save.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/GrENE-MD0dz"
+        },
+        {
+          "issue": "A tilt removes the built end-of-ball bonus.",
+          "response": "Test tilt sensitivity early. Use smaller nudges after the bonus is large.",
+          "sourceUrl": "https://www.youtube.com/watch?v=p4ZcM7jQkNM&t=485s"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm 57,000 base and 285,000 at 5x on the physical card, plus letter, saucer, Extra Ball, Special, and replay conversions.",
+        "Confirm bonus-multiplier carry, target resets, kicker memory, ball count, and tilt before depending on a later-ball bonus collect.",
+        "Test K-lane plunges, all inline rebounds, lit and unlit kicker feeds, upper-flipper exits, saucer hold, spinner return, and outlane posts."
+      ],
+      "simpleOverview": "Hotdoggin' builds a carried letter bonus and a multiplier that can be collected twice. Plunge K, reach 5x at the inline drops, complete one letter set, then stop at fourteen letters in the second set. Collect the 285,000 bonus at the lit side kicker and again at the drain.",
+      "overview": "Hotdoggin' builds a carried letter bonus and a multiplier that can be collected twice. Plunge K, secure 5x, complete one set, and stop at fourteen letters in the next. Enter the lit side kicker for the full 285,000, relight it through K, and protect the same value for the drain.",
+      "machineSetup": [
+        "Confirm 57,000 base and 285,000 at 5x on the physical card, plus letter, saucer, Extra Ball, Special, and replay conversions.",
+        "Confirm bonus-multiplier carry, target resets, kicker memory, ball count, and tilt before depending on a later-ball bonus collect.",
+        "Test K-lane plunges, all inline rebounds, lit and unlit kicker feeds, upper-flipper exits, saucer hold, spinner return, and outlane posts."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

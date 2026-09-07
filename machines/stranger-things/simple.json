@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "id": "Gzy89",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Start a Chapter, begin Demodog Attack inside it, then start Telekinesis Multiball and use the extra balls to finish the running features.",
+        "steps": [
+          {
+            "text": "Plunge for the flashing center drop when Demogorgon progress matters; take the saucer Super Skill Shot when immediate points matter more. During initial ball save, hit both LIGHT LOCK targets at the left ramp.",
+            "modeNotes": [
+              "Skill Shot: The flashing drop scores 5,000,000, and every physical drop it knocks down advances the first Demogorgon word. The saucer Super Skill Shot scores 10,000,000 but leaves the drop bank intact.",
+              "Demogorgon: Complete the center-drop word, then shoot through the lowered bank to start its feature.",
+              "First Telekinesis attempt: One completion of both green targets lights all three locks.",
+              "Later attempts need more target completions for each lock.",
+              "The center drops also advance Demogorgon and two DEMODOG letters, but direct hits can be dangerous."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot one major orbit or ramp three times to start a Chapter. Complete the flashing chapter shots.",
+            "modeNotes": [
+              "Chapter: The third shot to one major orbit or ramp starts a timed story mode.",
+              "The left orbit and left ramp start Season 1. The right ramp and right orbit start Season 2.",
+              "Complete a Chapter for one Drawing. A special completion condition can award a second Drawing.",
+              "Drawing: Adds 2,000,000 to end-of-ball bonus and 10,000,000 to the opening jackpot of each wizard mode."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "While the Chapter runs, spell DEMODOG. Shoot the left standup lane to start Demodog Attack.",
+            "modeNotes": [
+              "Demodog Attack: A 40-second mode. The first mode, Break Out, needs 15 lit DEMODOG-target hits.",
+              "A Chapter cannot start during Demodog Attack. A Chapter that started first continues with it.",
+              "Telekinesis can progress and start during Demodog Attack."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left ramp for all three locks. The third lock starts three-ball Telekinesis Multiball.",
+            "modeNotes": [
+              "Telekinesis Multiball: Shoot five flashing blue jackpots. Then shoot the left saucer for the 6,000,000 Super Jackpot.",
+              "Pro: Lock one ball at the left ramp for 20 seconds to make the Super 2x.",
+              "Premium or LE: Lock one or two balls on the magnet to make the Super 2x or 3x.",
+              "A Super Jackpot solidly completes the Telekinesis objective and awards one to three Drawings.",
+              "The feature ends when one ball remains."
+            ],
+            "kinds": [
+              "multiball",
+              "multiplier"
+            ]
+          },
+          {
+            "text": "During Telekinesis, prioritize five blue jackpots and the Super Jackpot. Finish dangerous Chapter or Demodog shots only when they overlap or the Super is not ready. Then collect a qualified mystery for add-a-ball.",
+            "modeNotes": [
+              "Multiball mystery: Complete the return lanes to light mystery at the left standup lane. The first qualified mystery during multiball adds a ball when normal ball save is off.",
+              "Mystery can also add time to a timed mode."
+            ],
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "If 2x is close, shoot Burn It Back. Collect lit 2x at the saucer before the Super Jackpot or another valuable stack.",
+            "modeNotes": [
+              "Burn It Back: The right inner loop stores survival and scoring awards. Default milestones include Spell of Protection at three loops and 2x at seven loops.",
+              "Spell of Protection: A stored save for a left-outlane drain.",
+              "2x Scoring: A stored saucer award that starts 60 seconds of double playfield scoring.",
+              "Operator settings can change the milestones."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Cycle the return-lane lights with the flippers. Complete even sets to raise Bonus X, up to 5x.",
+            "modeNotes": [
+              "End-of-ball bonus carries across balls. It includes objective starts, Drawings, and 10% of Chapter scoring from the current ball.",
+              "A tilt loses the current end-of-ball bonus count."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Chapters and Telekinesis",
+            "summary": "A Chapter started before Telekinesis Multiball continues during it. A new Chapter cannot start after Telekinesis begins."
+          },
+          {
+            "name": "Upside Down exception",
+            "summary": "Chapter and Telekinesis starts remain available during Upside Down 1, but both are blocked during Upside Down 2."
+          }
+        ],
+        "fallback": {
+          "title": "Bonus and safe feeds",
+          "when": "Use this when center drops, the right ramp, or the mystery eject are not safe.",
+          "steps": [
+            {
+              "text": "Loop the safer left ramp or left orbit. Use the returns to complete the inlanes."
+            },
+            {
+              "text": "Use flipper lane change before each inlane feed and complete the lit inlanes until Bonus X reaches 5x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Make a five-way combo with safe ramps, the left orbit, and Burn It Back. This adds 10,000,000 to carried bonus."
+            },
+            {
+              "text": "Take Spell of Protection when Burn It Back reaches its lit milestone."
+            },
+            {
+              "text": "Return to Telekinesis only after the left-ramp feed is controlled.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Four-feature stack",
+            "when": "Use this only when the Demogorgon mouth shot is reliable and the raised ramp does not block needed shots.",
+            "steps": [
+              {
+                "text": "Start a Demogorgon single-ball mode, then a Chapter. The reverse order also works.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Demodog Attack after the Chapter.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Start Telekinesis Multiball last.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Kill the Demogorgon early so the raised ramp stops blocking mystery and Burn It Back."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Final Showdown",
+          "steps": [
+            {
+              "text": "Make a five-way combo.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete Send It Back and Light the Fire through all 12 Chapters.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Play all three Demodog Attacks and all five Demogorgon modes.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect a Telekinesis Super Jackpot.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "When all six center objectives are solid, shoot the left ramp to start Final Showdown.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "editionDifferences": [
+          {
+            "feature": "Telekinesis Super multiplier",
+            "pro": "Lock one virtual ball at the left ramp for 20 seconds to make the Super Jackpot 2x.",
+            "premium": "Lock one or two balls on the Telekinesis magnet to make the Super Jackpot 2x or 3x.",
+            "sourceUrl": "https://tiltforums.com/t/stranger-things-rulesheet/6093"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Backhand",
+            "instruction": "Backhand the left ramp from a left-flipper cradle. Use the forehand on a Premium or LE when the backhand rejects.",
+            "sourceUrl": "https://systemjpinball.ca/index.php/2025/01/29/stranger-things-tactics-page/",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Backhand",
+            "instruction": "Test a right-flipper backhand to Burn It Back. Use it only when the loop return stays controlled.",
+            "sourceUrl": "https://systemjpinball.ca/index.php/2025/01/29/stranger-things-tactics-page/",
+            "techniqueSlug": "backhand"
+          },
+          {
+            "name": "Mystery-eject nudge test",
+            "instruction": "Watch the first eject. Test a small left or right cabinet nudge, or one flipper click, to deaden the return.",
+            "sourceUrl": "https://systemjpinball.ca/index.php/2025/01/29/stranger-things-tactics-page/"
+          },
+          {
+            "name": "Return-lane cycling",
+            "instruction": "Use the flipper buttons to move the lit return-lane inserts. Put an unlit insert under the incoming ball.",
+            "sourceUrl": "https://www.youtube.com/watch?v=I02bLDDEYj0&t=1053s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Direct center-drop hits can rebound down the middle.",
+            "response": "Use initial or multiball ball save for direct hits. Let safe ricochets make progress when possible.",
+            "sourceUrl": "https://www.youtube.com/watch?v=I02bLDDEYj0&t=1193s"
+          },
+          {
+            "issue": "The mystery eject can feed the middle, a sling, or an outlane.",
+            "response": "Watch the first eject. Test a small nudge or flipper click. Do not assume two copies feed the same way.",
+            "sourceUrl": "https://systemjpinball.ca/index.php/2025/01/29/stranger-things-tactics-page/"
+          },
+          {
+            "issue": "A running Demogorgon mode raises the center ramp and can block mystery and Burn It Back.",
+            "response": "Keep Demogorgon out of the default stack. Add it only when the mouth shot can end the obstruction quickly.",
+            "sourceUrl": "https://tiltforums.com/t/stranger-things-rulesheet/6093"
+          },
+          {
+            "issue": "The right ramp can be a difficult and dangerous shot on a tournament copy.",
+            "response": "Use a left-side Chapter when the right-ramp reject is not controlled.",
+            "sourceUrl": "https://www.youtube.com/watch?v=I02bLDDEYj0&t=59s"
+          },
+          {
+            "issue": "Premium or LE Telekinesis magnets can reject or fail to hold a ball.",
+            "response": "Confirm the lock behavior before planning a 2x or 3x Super Jackpot.",
+            "sourceUrl": "https://systemjpinball.ca/index.php/2025/01/29/stranger-things-tactics-page/"
+          }
+        ],
+        "termStyles": [
+          {
+            "label": "Demogorgon",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Multiball mystery",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Check ball count, ball-save time, and competition-mode settings",
+          "Check Extra Ball and Special conversion",
+          "Use ball save to test the primary ramp, scoop, and orbit returns"
+        ],
+        "playfieldReferences": [
+          {
+            "term": "center drops",
+            "label": "Center drop targets",
+            "description": "Targets used for Demogorgon and feature progress.",
+            "precision": "unverified",
+            "context": "Targets used for Demogorgon and feature progress."
+          },
+          {
+            "term": "left ramp",
+            "label": "Left ramp",
+            "description": "Ramp used for modes and multiball progress.",
+            "precision": "unverified",
+            "context": "Ramp used for modes and multiball progress."
+          },
+          {
+            "term": "Burn It Back",
+            "label": "Burn It Back",
+            "description": "Loop used for major qualification and scoring.",
+            "precision": "unverified",
+            "context": "Loop used for major qualification and scoring."
+          }
+        ],
+        "overview": "Stranger Things allows a Chapter and Demodog Attack that start before Telekinesis Multiball to continue during it. Repeat one major orbit or ramp three times to start a Chapter. While it runs, spell D-E-M-O-D-O-G and shoot the left standup lane to start Demodog Attack. Complete both LIGHT LOCK targets once, then shoot the left ramp for all three locks so the third starts Telekinesis Multiball. During Multiball, shoot five flashing blue Jackpots and the left-saucer Super Jackpot. When Burn It Back lights 2x at the saucer, collect it before the Super for 60 seconds of 2x playfield scoring.",
+        "simpleOverview": "Stranger Things starts a Chapter after three shots to the same major orbit or ramp. For the first Telekinesis Multiball, complete both LIGHT LOCK targets once, then shoot the left ramp for all three locks; the third lock starts Multiball. During Multiball, shoot five flashing blue Jackpots, then shoot the left saucer for the Super Jackpot. Burn It Back progress can light 2x scoring at the saucer (seven loops on default settings); shoot the lit saucer to start 60 seconds of 2x playfield scoring.",
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At California NACS 2023, Andrei Massenkoff and Nic Stein opened with a Chapter and Telekinesis Multiball; Massenkoff used 2x for Jackpots, while Stein continued toward Total Isolation.",
+            "At DFW Carpool PinMasters 2025, Thomas Shipman used Telekinesis, its add-a-ball, and carried bonus; Hadi Seyed-Ali started Monster Hunting first and used Multiball on its dangerous targets."
+          ]
+        },
+        "machineSetup": [
+          "Check ball count, ball-save time, and competition-mode settings",
+          "Check Extra Ball and Special conversion",
+          "Use ball save to test the primary ramp, scoop, and orbit returns"
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use three shots to one orbit or ramp for a Chapter, LIGHT LOCK and the left ramp for Telekinesis, and Burn It Back for 2x.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Start a Chapter",
+            "text": "During single-ball play, shoot the same major orbit or ramp three times to start its Chapter.",
+            "kinds": [
+              "mode"
+            ],
+            "modeGuide": {
+              "name": "The Chapter on your safest major shot",
+              "reason": "Choose the left orbit or left ramp for Season 1, or the right ramp or right orbit for Season 2, based on the safer repeatable shot.",
+              "play": "Make the flashing Chapter shots. Complete the Chapter to earn a Drawing and raise later wizard-mode value."
+            }
+          },
+          {
+            "title": "Start Telekinesis Multiball",
+            "text": "Hit both LIGHT LOCK targets at the left ramp, then shoot the left ramp for all three locks. The third lock starts Telekinesis Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Start 2x playfield scoring",
+            "text": "Shoot Burn It Back until 2x is ready, then shoot the saucer to start 2x playfield scoring.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Chapters and Telekinesis",
+            "summary": "A Chapter started before Telekinesis Multiball continues during it. A new Chapter cannot start after Telekinesis begins."
+          },
+          {
+            "name": "Upside Down exception",
+            "summary": "Chapter and Telekinesis starts remain available during Upside Down 1, but both are blocked during Upside Down 2."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Demodog Attack",
+          "when": "Use this when DEMODOG letters arrive before a Chapter is ready.",
+          "steps": [
+            {
+              "text": "Spell D-E-M-O-D-O-G, then shoot the left standup lane to start Demodog Attack.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

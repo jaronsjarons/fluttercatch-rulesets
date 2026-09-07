@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qO8",
+  "title": "Stardust",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Stardust",
+      "url": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Stardust guide",
+        "url": "https://www.kineticist.com/games/pinball/stardust"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Hit either yellow standup beside the center saucer to raise the center post, then build bonus to 10K. When the wheel points to Double Bonus or Triple Bonus, collect at the center saucer, then rebuild.",
+      "quickInfo": [
+        {
+          "name": "Base bonus",
+          "summary": "The lower yellow standups and upper slingshots advance bonus to 10K, and the game gives no end-of-ball bonus."
+        },
+        {
+          "name": "Wheel advance",
+          "summary": "Each advance-bonus switch moves the under-playfield wheel one position clockwise."
+        },
+        {
+          "name": "Bonus collect",
+          "summary": "The center saucer collects bonus at base, double, or triple value according to the wheel position."
+        },
+        {
+          "name": "Center post",
+          "summary": "Either yellow standup beside the center saucer raises the center post, while the nearby small rollovers lower it."
+        },
+        {
+          "name": "Gate values",
+          "summary": "The right and bottom gates can return a 5K side-lane or outlane ball to the plunger, while the left gate can cause a drain."
+        }
+      ],
+      "steps": [
+        {
+          "text": "On the plunge, use the upper slingshots before the ball enters the top saucer when possible."
+        },
+        {
+          "text": "Hit either yellow standup beside the center saucer squarely to raise the center post."
+        },
+        {
+          "text": "Use the lower yellow standups and upper slingshots to build bonus toward 10K."
+        },
+        {
+          "text": "Track the wheel after each advance-bonus switch."
+        },
+        {
+          "text": "When the wheel points to Double Bonus or Triple Bonus, shoot the center saucer.",
+          "modeNotes": [
+            "Bonus collect: The center saucer awards the base bonus, Double Bonus, or Triple Bonus shown by the wheel."
+          ],
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "After the collect resets bonus and its multiplier, rebuild the base bonus."
+        },
+        {
+          "text": "Repeat the collect only while the center-saucer entry remains reliable."
+        }
+      ],
+      "fallback": {
+        "title": "Post-protected top play",
+        "when": "Use this plan when the center saucer rejects direct shots or the wheel does not show a bonus collect.",
+        "steps": [
+          {
+            "text": "Hit the inner face of a nearby yellow standup to raise the center post."
+          },
+          {
+            "text": "Send the ball toward the upper slingshots and top saucer."
+          },
+          {
+            "text": "Hit the upper slingshots to add bonus and move the wheel."
+          },
+          {
+            "text": "Return to the center saucer only when a double or triple collect is ready."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Right-side gate value",
+          "when": "Use this plan when bonus is low and the wheel points to the right or bottom gate.",
+          "steps": [
+            {
+              "text": "Shoot the center saucer to open the indicated right-side gate."
+            },
+            {
+              "text": "Do not aim for the right outlane or side lane."
+            },
+            {
+              "text": "If the ball enters the protected lane naturally, collect 5K and return to the plunger."
+            },
+            {
+              "text": "Use the next plunge to rebuild bonus and wheel position."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "10K Triple Bonus collect",
+        "steps": [
+          {
+            "text": "Hit either yellow standup beside the center saucer to raise the center post."
+          },
+          {
+            "text": "Hit the lower yellow standups or upper slingshots until base bonus reaches 10K."
+          },
+          {
+            "text": "Keep hitting those advance-bonus switches until the wheel points to Triple Bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the center saucer to collect 30K.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Double Bonus",
+          "tone": "indigo",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Triple Bonus",
+          "tone": "indigo",
+          "kind": "multiplier"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Inside standup miss",
+          "instruction": "Hit an up-post standup in its center. If the shot misses, keep the miss toward the center saucer instead of the outlane side.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+        },
+        {
+          "name": "Top-saucer skill shot",
+          "instruction": "On the plunge, collect as many upper slingshot hits as the feed permits before the ball enters the top saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A direct center-saucer shot can pass over or around the saucer without scoring.",
+          "response": "Observe one entry before you repeat it. Use upper play when the saucer rejects controlled shots.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+        },
+        {
+          "issue": "The outer edge of an up-post standup can rebound toward a side drain.",
+          "response": "Aim at the target center. Favor an inside miss toward the saucer.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+        },
+        {
+          "issue": "The left gate can send the ball out of the left side instead of saving it.",
+          "response": "Do not choose the left-gate wheel position as a scoring plan. Prefer bonus or a right-side gate.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+        },
+        {
+          "issue": "Balls leaving the upper area can reach the center, slingshots, or outlanes.",
+          "response": "Watch the full descent. Nudge before the ball reaches a slingshot or lower divider.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G4qO8-MJ6x3"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams Stardust, ball count, wheel behavior, multiplier collect, and award conversions.",
+        "Test the center post, yellow standups, center saucer, right gates, slingshots, and tilt."
+      ],
+      "simpleOverview": "Stardust has no automatic end-of-ball bonus; the built bonus scores only when the center saucer collects it. Hit a yellow standup to raise the center post, build 10K bonus, advance the wheel to Double or Triple Bonus, then shoot the center saucer.",
+      "overview": "Stardust has no automatic end-of-ball bonus; the built bonus scores only when the center saucer collects it. Hit either yellow standup beside the saucer to raise the post, build bonus with the lower standups and upper slingshots, and track the wheel through advance-bonus switches. Collect 20K or 30K at the saucer, then rebuild because the game pays no end-of-ball bonus.",
+      "machineSetup": [
+        "Confirm Williams Stardust, ball count, wheel behavior, multiplier collect, and award conversions.",
+        "Test the center post, yellow standups, center saucer, right gates, slingshots, and tilt."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

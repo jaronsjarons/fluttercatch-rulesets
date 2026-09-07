@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "id": "G5Kvx",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use a lower maze escape tunnel to enter Pinball Mode. Complete T-U-N-N-E-L for permanent side-tunnel speed, then complete a P-A-C-M-A-N column and shoot its side saucer to return without closing both lower maze exits.",
+        "steps": [
+          {
+            "text": "In the first maze, clear safe dots near the lower area. Enter either lower escape tunnel when the ghosts approach.",
+            "modeNotes": [
+              "Maze Mode: Baby Pac-Man starts in the video maze. A lower escape tunnel transfers play to the physical pinball field."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During the first physical visit, prioritize the far-right T-U-N-N-E-L lane and right saucer.",
+            "modeNotes": [
+              "Pinball Mode: Physical shots build tunnel speed, power pills, fruit, and extra lives. A qualified saucer or center drain returns to the maze.",
+              "Tunnel Speed: Completing T-U-N-N-E-L raises Baby Pac-Man's permanent side-tunnel speed by one, to Speed 8."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the yellow center drop targets. Hit the captive ball only when its rebound is controlled.",
+            "modeNotes": [
+              "Power-pill columns: Each yellow target adds one P-A-C-M-A-N letter to its matching column. A complete six-letter column places one power pill in the maze.",
+              "Captive-ball award: It is the fast route to the two outer power-pill columns."
+            ]
+          },
+          {
+            "text": "Use the inner-left lane to equalize columns 1 and 2. Use the inner-right lane to equalize columns 3 and 4.",
+            "modeNotes": [
+              "Equalizer: The lower column rises to the higher adjacent value. If one paired column is complete, the other completes too."
+            ]
+          },
+          {
+            "text": "When a power pill is ready, shoot its matching side saucer.",
+            "modeNotes": [
+              "Controlled maze return: The left saucer uses power-pill columns 1 or 2. The right saucer uses columns 3 or 4. The chosen lower maze exit stays open. The opposite exit closes."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "In the maze, use the faster side tunnel to separate Baby Pac-Man from the ghosts. Save unused early power pills for later mazes.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Return to Pinball Mode when no power pills remain or the ghosts close in. Repeat tunnel-speed and power-pill progress.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Power pills before speed",
+          "when": "Use this plan when the far-right T-U-N-N-E-L lane is unsafe.",
+          "steps": [
+            {
+              "text": "Hit the safest yellow drop target."
+            },
+            {
+              "text": "Use an inner equalizer lane to copy progress to its paired column."
+            },
+            {
+              "text": "Hit the captive ball only when its rebound is controlled."
+            },
+            {
+              "text": "Complete one P-A-C-M-A-N column. Exit through its matching saucer before a center drain."
+            },
+            {
+              "text": "Use the power pill only when it prevents a life loss or clears a dangerous maze section.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Extra Life at the blue target",
+            "when": "Use this plan when the center target rebounds are safe and Extra Life is enabled.",
+            "steps": [
+              {
+                "text": "Hit a yellow center target. The blue center target rises for a short time."
+              },
+              {
+                "text": "Hit the blue target to light one center arrow."
+              },
+              {
+                "text": "Repeat until all five arrows are lit."
+              },
+              {
+                "text": "A complete set awards an extra Baby when the operator setting permits it."
+              },
+              {
+                "text": "Stop when the shorter blue-target window makes the rebound unsafe."
+              }
+            ]
+          },
+          {
+            "title": "Fruit upgrade",
+            "when": "Use this plan only after tunnel speed and power pills are sufficient.",
+            "steps": [
+              {
+                "text": "Roll through the far-left F-R-U-I-T-S lane or use the left saucer to add a letter."
+              },
+              {
+                "text": "Complete F-R-U-I-T-S to raise the maze fruit to the next value."
+              },
+              {
+                "text": "Eat the fruit in Maze Mode for the larger award.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Before chasing another F-R-U-I-T-S letter, complete the needed T-U-N-N-E-L letters and P-A-C-M-A-N column."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Later and invisible mazes",
+          "steps": [
+            {
+              "text": "Complete T-U-N-N-E-L to raise permanent Tunnel Speed."
+            },
+            {
+              "text": "Carry unused power pills into harder mazes."
+            },
+            {
+              "text": "Clear every dot in the current maze.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "The three maze layouts repeat with harder colors, faster play, and later invisible interior walls.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "checkBeforePlay": [
+          "Confirm whether the maze tunnels start qualified, whether center-arrow progress survives player changes and a playfield drain, and how Extra Baby is awarded."
+        ],
+        "termStyles": [
+          {
+            "label": "Maze Mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Pinball Mode",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Tunnel Speed",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Speed 8",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "P-A-C-M-A-N",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Power Pill",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "T-U-N-N-E-L",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "F-R-U-I-T-S",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "Extra Life",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Power-column equalizer",
+            "instruction": "Use the inner-left lane for columns 1 and 2. Use the inner-right lane for columns 3 and 4. Build one column high, then copy it to the other.",
+            "sourceUrl": "https://primetimeamusements.com/getting-good-baby-pac-man/"
+          },
+          {
+            "name": "Controlled saucer exit",
+            "instruction": "After a power pill is complete, shoot its left or right saucer instead of allowing a center drain. This keeps one lower maze exit available.",
+            "sourceUrl": "https://primetimeamusements.com/getting-good-baby-pac-man/"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A center drain closes both lower maze exits.",
+            "response": "Return through a qualified saucer whenever possible. After a drain, Pinball Mode stays locked until the maze is cleared or a life is lost.",
+            "sourceUrl": "https://primetimeamusements.com/getting-good-baby-pac-man/"
+          },
+          {
+            "issue": "A qualified saucer ends Pinball Mode.",
+            "response": "Choose the side that matches a completed power-pill column. Finish the needed physical-playfield work before you enter it.",
+            "sourceUrl": "https://primetimeamusements.com/getting-good-baby-pac-man/"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use a lower maze escape tunnel to enter Pinball Mode."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete T-U-N-N-E-L to raise permanent Tunnel Speed."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Power pills before speed: Use this plan when the far-right T-U-N-N-E-L lane is unsafe."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "yellow center drop targets",
+            "label": "Yellow center targets",
+            "description": "Targets used for power-pill and column progress.",
+            "precision": "unverified",
+            "context": "Targets used for power-pill and column progress."
+          },
+          {
+            "term": "captive ball",
+            "label": "Captive ball",
+            "description": "Center feature used to advance the paired columns.",
+            "precision": "unverified",
+            "context": "Center feature used to advance the paired columns."
+          },
+          {
+            "term": "left saucer",
+            "label": "Left saucer",
+            "description": "Saucer used for F-R-U-I-T-S letters and the left-side maze return.",
+            "precision": "unverified",
+            "context": "Saucer used for F-R-U-I-T-S letters and the left-side maze return."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Saucer used for T-U-N-N-E-L letters and the right-side maze return.",
+            "precision": "unverified",
+            "context": "Saucer used for T-U-N-N-E-L letters and the right-side maze return."
+          },
+          {
+            "term": "far-left F-R-U-I-T-S lane",
+            "label": "F-R-U-I-T-S lane",
+            "description": "Far-left lane used to add F-R-U-I-T-S letters.",
+            "precision": "unverified",
+            "context": "Far-left lane used to add F-R-U-I-T-S letters."
+          },
+          {
+            "term": "far-right T-U-N-N-E-L lane",
+            "label": "T-U-N-N-E-L lane",
+            "description": "Far-right lane used to add T-U-N-N-E-L letters.",
+            "precision": "unverified",
+            "context": "Far-right lane used to add T-U-N-N-E-L letters."
+          },
+          {
+            "term": "inner-left lane",
+            "label": "Left equalizer lane",
+            "description": "Inner-left lane that equalizes P-A-C-M-A-N columns 1 and 2.",
+            "precision": "unverified",
+            "context": "Inner-left lane that equalizes P-A-C-M-A-N columns 1 and 2."
+          },
+          {
+            "term": "inner-right lane",
+            "label": "Right equalizer lane",
+            "description": "Inner-right lane that equalizes P-A-C-M-A-N columns 3 and 4.",
+            "precision": "unverified",
+            "context": "Inner-right lane that equalizes P-A-C-M-A-N columns 3 and 4."
+          },
+          {
+            "term": "blue center target",
+            "label": "Extra Baby target",
+            "description": "Timed center target used for Extra Baby arrow progress.",
+            "precision": "unverified",
+            "context": "Timed center target used for Extra Baby arrow progress."
+          },
+          {
+            "term": "escape tunnel",
+            "label": "Maze escape tunnels",
+            "description": "Lower video-maze tunnels used to transfer between Maze Mode and Pinball Mode.",
+            "precision": "unverified",
+            "context": "Lower video-maze tunnels used to transfer between Maze Mode and Pinball Mode."
+          }
+        ],
+        "simpleOverview": "Baby Pac-Man alternates between a video maze and a physical playfield that supplies tunnel speed and power pills. Escape through a lower maze tunnel, complete T-U-N-N-E-L for permanent speed, then finish a P-A-C-M-A-N column and enter its matching saucer. Save power pills for later mazes.",
+        "overview": "Baby Pac-Man uses Pinball Mode to prepare future maze survival. Enter through a lower maze tunnel, improve permanent Tunnel Speed, and complete paired P-A-C-M-A-N columns for power pills. Return through the matching saucer before both lower exits close, then spend pills only when they prevent a lost life.",
+        "machineSetup": [
+          "Confirm whether the maze tunnels start qualified, whether center-arrow progress survives player changes and a playfield drain, and how Extra Baby is awarded."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use a lower maze escape tunnel to enter Pinball Mode. Complete T-U-N-N-E-L for permanent side-tunnel speed, complete one P-A-C-M-A-N column for a power pill, then shoot the matching side saucer to return to the maze.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Enter Pinball Mode",
+            "text": "In the maze, enter either lower escape tunnel. Baby Pac-Man transfers to the physical pinball playfield.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "title": "Increase tunnel speed",
+            "text": "Roll through the far-right T-U-N-N-E-L lane or shoot the right saucer to add a letter. Complete T-U-N-N-E-L to permanently increase Baby Pac-Man's side-tunnel speed, up to Speed 8."
+          },
+          {
+            "title": "Add a power pill",
+            "text": "Hit the yellow target above one P-A-C-M-A-N column to add a letter. The inner-left lane makes columns 1 and 2 match the fuller column; the inner-right lane does the same for columns 3 and 4. Complete one column to place its power pill in the maze."
+          },
+          {
+            "title": "Return through a saucer",
+            "text": "For columns 1 or 2, shoot the left saucer. For columns 3 or 4, shoot the right saucer. Baby Pac-Man returns through that side's lower maze tunnel; use the faster side tunnel and the new power pill to stay ahead of the ghosts.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Use a lower maze escape tunnel to enter Pinball Mode."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete T-U-N-N-E-L to raise permanent Tunnel Speed."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Power pills before speed: Use this plan when the far-right T-U-N-N-E-L lane is unsafe."
+          }
+        ],
+        "warning": {
+          "title": "A center drain closes both lower maze tunnels.",
+          "text": "Return through the side saucer that matches a completed P-A-C-M-A-N column. After a center drain, Pinball Mode stays unavailable until the maze is cleared or a life is lost."
+        }
+      }
+    }
+  ]
+}

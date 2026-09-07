@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "id": "GRo7K",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Complete A-C-O-R-A and lock a ball as protection. Build 25x bonus. Build the base bonus, collect it, and repeat.",
+        "steps": [
+          {
+            "text": "During ball save, test the lower-saucer kickout, the right orbit, and both lane-change buttons.",
+            "modeNotes": [
+              "Lane change: The right flipper moves lanes 1, 2, and 3. The left flipper moves lanes 4, 5, and 6."
+            ]
+          },
+          {
+            "text": "Hit the right target bank in A-C-O-R-A order. Then shoot the right orbit into the upper saucer.",
+            "modeNotes": [
+              "Upper lock: A completed A-C-O-R-A bank lights the upper saucer to hold one ball. If the active ball drains, the game releases the held ball and play continues."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the lock, hit the next A-C-O-R-A targets until two letters remain. Do not complete this bank while two or more balls are in play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete B-A-RR in order. Repeat both ordered banks to raise the two bonus multipliers.",
+            "modeNotes": [
+              "Bonus multiplier: Each completed letter bank advances the regular multiplier. Completing both banks advances the super multiplier. Their product can reach 25x.",
+              "The regular multiplier resets at the end of the ball. The super multiplier carries to the next ball."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Shoot the spinner and complete top lanes 1 through 6 to build the base bonus and light Collect Bonus.",
+            "modeNotes": [
+              "Base bonus: The six lanes and playfield features build a value up to 29,000. At 25x, the maximum bonus collect is 725,000.",
+              "Lanes 4, 5, and 6 can light only after their matching lanes 1, 2, and 3 are lit."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "When the held ball returns after a drain, finish the two remaining A-C-O-R-A targets. Shoot the upper saucer to lock the ball again.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit upper saucer to collect the built bonus. Then rebuild the base and collect it again before a tilt.",
+            "modeNotes": [
+              "Collect Bonus: The upper saucer scores the current base bonus times both multipliers. The collect resets the base value but keeps both multipliers."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Upper lock and spinner",
+          "when": "Use this plan when the ordered target banks or lower-saucer return are unsafe.",
+          "steps": [
+            {
+              "text": "Complete A-C-O-R-A and shoot the right orbit to store the upper-lock protection.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the spinner and use both flipper buttons to finish top lanes 1 through 6.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete B-A-RR only from a controlled ball. Do not shoot the center standups for Target Bonus."
+            },
+            {
+              "text": "Collect Bonus at the upper saucer when its value is useful. Relight the upper lock after it releases.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Multiball bonus progress",
+            "when": "Use this plan when the lower-saucer shot is safe and extra balls make the target-bank and bonus route more repeatable.",
+            "steps": [
+              {
+                "text": "Shoot the lower saucer with no ball in the upper lock to start two-ball multiball.",
+                "modeNotes": [
+                  "Two-ball multiball: The lower saucer releases its ball and launches another ball. Standard software does not add jackpot rules."
+                ],
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "First lock a ball in the upper saucer. Then shoot the lower saucer to start three-ball multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Use the extra balls to complete B-A-RR, top lanes, and spinner progress.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Leave the next A-C-O-R-A bank incomplete until single-ball play. The upper lock cannot relight during multiball.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Target Bonus cash-out",
+            "when": "Use this plan only when normal play has already built a useful Target Bonus.",
+            "steps": [
+              {
+                "text": "Hit lit left standups to raise the Target Bonus value. Hit lit right standups to raise its multiplier.",
+                "modeNotes": [
+                  "Target Bonus: The standups can build a separate value up to 25,000 at 10x. The horseshoe scores the collect."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot the horseshoe only from control. Equal-tier collects keep the built value and multiplier.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Maximum bonus cycle",
+          "steps": [
+            {
+              "text": "Complete B-A-RR and A-C-O-R-A in order until the regular and super multipliers combine for 25x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Build the base bonus to 29,000. Collect 725,000 at the upper saucer.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Rebuild and collect the base again while 25x remains active.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "The repeated 25x collect is the long-term objective."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Gentle pop transfer",
+            "instruction": "Use a light tap from one flipper to move the ball across the wide sling gap. Test this before you try a full transfer.",
+            "sourceUrl": "https://www.youtube.com/watch?v=1olt8o55iYk&t=176s"
+          },
+          {
+            "name": "Soft-plunge kickout deflection",
+            "instruction": "Soft plunge the new ball. Use it to deflect the lower-saucer kickout before that kickout reaches the center drain.",
+            "sourceUrl": "https://tiltforums.com/t/barracora-williams-1981/485"
+          },
+          {
+            "name": "Two-part lane change",
+            "instruction": "Use the right button for lanes 1 through 3. Use the left button for lanes 4 through 6. Match each upper lane before the ball reaches it.",
+            "sourceUrl": "https://www.kineticist.com/games/pinball/barracora"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The lower-saucer kickout can travel toward the center drain.",
+            "response": "Test the feed during ball save. When possible, soft plunge the next ball and use it to deflect the kickout.",
+            "sourceUrl": "https://tiltforums.com/t/barracora-williams-1981/485"
+          },
+          {
+            "issue": "The center Target Bonus standups can drain the ball.",
+            "response": "Do not shoot them as a primary plan. Take their progress during multiball or from natural rebounds.",
+            "sourceUrl": "https://tiltforums.com/t/barracora-williams-1981/485"
+          },
+          {
+            "issue": "Completing A-C-O-R-A during multiball cannot relight the upper lock.",
+            "response": "Stop with one or two letters remaining. Finish the bank after the game returns to single-ball play.",
+            "sourceUrl": "https://tiltforums.com/t/barracora-williams-1981/485"
+          },
+          {
+            "issue": "An alley pass is dangerous across the wide sling gap.",
+            "response": "Use a gentle pop transfer or shoot from the flipper that already holds the ball. Do not force an alley pass.",
+            "sourceUrl": "https://www.youtube.com/watch?v=1olt8o55iYk&t=1269s"
+          },
+          {
+            "issue": "A tilt removes the large end-of-ball bonus.",
+            "response": "Use smaller nudges after the bonus is large. Collect the bonus before you make a high-risk save.",
+            "sourceUrl": "https://www.youtube.com/watch?v=1olt8o55iYk&t=1442s"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete A-C-O-R-A and lock a ball as protection."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete B-A-RR and A-C-O-R-A in order until the regular and super multipliers combine for 25x."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Upper lock and spinner: Use this plan when the ordered target banks or lower-saucer return are unsafe."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Barracora, ball count, lock sharing, and Extra Ball or Special conversion.",
+          "Test both saucer ejects, ordered target banks, lane change, and spinner registration."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "A-C-O-R-A",
+            "label": "A-C-O-R-A bank",
+            "description": "Ordered right bank used to qualify the upper lock.",
+            "precision": "unverified",
+            "context": "Ordered right bank used to qualify the upper lock."
+          },
+          {
+            "term": "upper saucer",
+            "label": "Upper lock and collect saucer",
+            "description": "Saucer used to lock a ball and collect built bonus.",
+            "precision": "unverified",
+            "context": "Saucer used to lock a ball and collect built bonus."
+          },
+          {
+            "term": "lower saucer",
+            "label": "Lower multiball saucer",
+            "description": "Saucer used to start two- or three-ball play.",
+            "precision": "unverified",
+            "context": "Saucer used to start two- or three-ball play."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "Bowen Kerins used the ordered A-C-O-R-A lock, built the two ordered-bank multipliers, filled bonus with the spinner and numbered lanes, and delayed the collect until the multiplier was ready."
+          ]
+        },
+        "simpleOverview": "Barracora carries two ordered-bank multipliers and its base bonus between balls. Complete A-C-O-R-A, store a ball in the upper saucer, then work B-A-RR and A-C-O-R-A toward 25x. Build and repeatedly collect the base bonus at the upper saucer.",
+        "overview": "Barracora carries two ordered-bank multipliers and its base bonus between balls. Store a ball before finishing the next A-C-O-R-A cycle, build base bonus through spinner and lanes, then collect and rebuild it while 25x remains.",
+        "machineSetup": [
+          "Confirm Williams Barracora, ball count, lock sharing, and Extra Ball or Special conversion.",
+          "Test both saucer ejects, ordered target banks, lane change, and spinner registration."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Complete A-C-O-R-A and lock a ball as protection. Build 25x bonus. Build the base bonus, collect it, and repeat.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "During ball save, test the lower-saucer kickout, the right orbit, and both lane-change buttons.",
+            "details": [
+              "Lane change: The right flipper moves lanes 1, 2, and 3. The left flipper moves lanes 4, 5, and 6."
+            ]
+          },
+          {
+            "text": "Hit the right target bank in A-C-O-R-A order. Then shoot the right orbit into the upper saucer.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Upper lock: A completed A-C-O-R-A bank lights the upper saucer to hold one ball. If the active ball drains, the game releases the held ball and play continues."
+            ]
+          },
+          {
+            "text": "After the lock, hit the next A-C-O-R-A targets until two letters remain. Do not complete this bank while two or more balls are in play.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete B-A-RR in order. Repeat both ordered banks to raise the two bonus multipliers.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Bonus multiplier: Each completed letter bank advances the regular multiplier. Completing both banks advances the super multiplier. Their product can reach 25x.",
+              "The regular multiplier resets at the end of the ball. The super multiplier carries to the next ball."
+            ]
+          },
+          {
+            "text": "Shoot the spinner and complete top lanes 1 through 6 to build the base bonus and light Collect Bonus.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Base bonus: The six lanes and playfield features build a value up to 29,000. At 25x, the maximum bonus collect is 725,000.",
+              "Lanes 4, 5, and 6 can light only after their matching lanes 1, 2, and 3 are lit."
+            ]
+          },
+          {
+            "text": "When the held ball returns after a drain, finish the two remaining A-C-O-R-A targets. Shoot the upper saucer to lock the ball again.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit upper saucer to collect the built bonus. Then rebuild the base and collect it again before a tilt.",
+            "kinds": [
+              "multiplier"
+            ],
+            "details": [
+              "Collect Bonus: The upper saucer scores the current base bonus times both multipliers. The collect resets the base value but keeps both multipliers."
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Complete A-C-O-R-A and lock a ball as protection."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Complete B-A-RR and A-C-O-R-A in order until the regular and super multipliers combine for 25x."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Upper lock and spinner: Use this plan when the ordered target banks or lower-saucer return are unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Upper lock and spinner",
+          "when": "Use this plan when the ordered target banks or lower-saucer return are unsafe.",
+          "steps": [
+            {
+              "text": "Complete A-C-O-R-A and shoot the right orbit to store the upper-lock protection.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot the spinner and use both flipper buttons to finish top lanes 1 through 6.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Complete B-A-RR only from a controlled ball. Do not shoot the center standups for Target Bonus."
+            },
+            {
+              "text": "Collect Bonus at the upper saucer when its value is useful. Relight the upper lock after it releases.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "The lower-saucer kickout can travel toward the center drain.",
+          "text": "Test the feed during ball save. When possible, soft plunge the next ball and use it to deflect the kickout."
+        }
+      }
+    }
+  ]
+}

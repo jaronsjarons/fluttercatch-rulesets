@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "G4JZ4",
+  "title": "High Roller Casino",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "High Roller Casino instruction card",
+      "url": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_High_Roller_Casino_755-5165-XX.pdf"
+    },
+    "supportingSources": [
+      {
+        "label": "Raymond Davidson at INDISC 2014",
+        "url": "https://pinballvideos.com/v/555/2535"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Lock three balls at the Slot Machine, advance safe shots through single, double, and triple Jackpots, make the Slot Machine triple to light Super, and add more triples before cashing it.",
+      "quickInfo": [
+        {
+          "name": "Slot Machine",
+          "summary": "Spin the slot to light locks, lock three balls, and start the main multiball."
+        },
+        {
+          "name": "Jackpots",
+          "summary": "Major shots award single, double, and triple jackpots during Slot Machine Multiball."
+        },
+        {
+          "name": "Super",
+          "summary": "The Slot Machine Triple Jackpot lights Super Jackpot; every additional Triple Jackpot first increases its value."
+        },
+        {
+          "name": "Casino games",
+          "summary": "Slot Machine, Poker, Hi-Lo, Roulette, Craps, and Blackjack all feed the Casino Frenzy qualification."
+        },
+        {
+          "name": "Casino Frenzy",
+          "summary": "Win all six casino games to light a four-ball multiball with game Jackpots and a final Super."
+        },
+        {
+          "name": "Break the Bank",
+          "summary": "Collect 100 chips to light the second four-ball multiball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the Slot Machine, lock, middle-ramp, orbit, and roulette feeds before selecting a scoring route."
+        },
+        {
+          "text": "Spin the Slot Machine until lock is lit, then collect each of the three locks."
+        },
+        {
+          "text": "Start Slot Machine Multiball and take the safest lit major shot for its single jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Move through the available major shots for double and triple jackpots rather than repeating a dangerous feed.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Advance the Slot Machine shot through its Triple Jackpot to light Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "If ball count remains healthy, add safe Triple Jackpots before following the flashing Super arrow; each one raises its value.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Between multiballs, complete only the safest casino games while collecting chips toward Break the Bank."
+        }
+      ],
+      "fallback": {
+        "title": "Roll'n'Win ramp route",
+        "when": "Use this when Slot Machine or lock feeds are rejecting but the upper-right target and middle ramp are reliable.",
+        "steps": [
+          {
+            "text": "Hit the upper-right target to light Roll'n'Win."
+          },
+          {
+            "text": "Shoot the middle ramp to begin the feature.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete controlled laps for the available Super awards."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Casino Frenzy build",
+          "when": "Use this when several of the six casino games are already won.",
+          "steps": [
+            {
+              "text": "Finish the nearest safe casino game."
+            },
+            {
+              "text": "Avoid forcing Roulette or another rejecting game solely for completion."
+            },
+            {
+              "text": "After all six wins, start Casino Frenzy from a settled feed and use four-ball protection to collect the six game Jackpots.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ATM and orbit points",
+          "when": "Use this when the pop-bumper feed and lit orbits are safer than the central devices.",
+          "steps": [
+            {
+              "text": "Build ATM value through the pop bumpers."
+            },
+            {
+              "text": "Collect ATM from the lit orbit."
+            },
+            {
+              "text": "Return to Slot Machine qualification when the center feed improves."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Casino Frenzy and Break the Bank",
+        "steps": [
+          {
+            "text": "Win all six casino games."
+          },
+          {
+            "text": "Collect chips across controlled game and multiball awards."
+          },
+          {
+            "text": "Start Casino Frenzy after the sixth game and complete its lit multiball shots.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Reach 100 chips and start Break the Bank when lit.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Slot Machine Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Casino Frenzy",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Break the Bank",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Roll'n'Win",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Poker",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Hi-Lo",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Roulette",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Craps",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Blackjack",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Chip",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Triple-before-Super growth",
+          "instruction": "After lighting the Super, add another safe triple only while ball count and control justify delaying the collect.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_High_Roller_Casino_755-5165-XX.pdf"
+        },
+        {
+          "name": "Shot-spread jackpot control",
+          "instruction": "Use the major shot with the safest current feed for each jackpot level instead of forcing the same rejecting shot.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_High_Roller_Casino_755-5165-XX.pdf"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Slot Machine, roulette, and lock mechanisms can change their returns as they wear.",
+          "response": "Test each mechanism early and switch to Roll'n'Win or ATM scoring if a return becomes dangerous.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_High_Roller_Casino_755-5165-XX.pdf"
+        },
+        {
+          "issue": "Holding a lit Super for more triple growth risks losing the certain award.",
+          "response": "Collect immediately when match position favors certainty or only two poorly controlled balls remain.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_High_Roller_Casino_755-5165-XX.pdf"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm installed software and Tournament Mode; code revisions change deterministic casino behavior, Casino Frenzy values, Break the Bank, and spinner Bonus X.",
+        "Confirm casino difficulty, physical-lock state, ball saves, center post, Extra Ball conversion, and chip memory before choosing a deep route.",
+        "Test the Slot Machine, roulette wheel, middle ramp, upper-right target, both orbits, pop exits, and every lock release."
+      ],
+      "simpleOverview": "Three Slot Machine locks start High Roller Casino's repeatable Multiball, while completed casino games and collected chips qualify separate wizard modes. Spin the Slot Machine to light and collect the locks, then move through single, double, and triple Jackpots. Make the Slot Machine triple to light Super, adding more safe triples before collecting it.",
+      "overview": "Winning all six casino games lights Casino Frenzy in High Roller Casino, 100 chips light Break the Bank, and three Slot Machine locks start the repeatable Slot Machine Multiball. Lead with the lock route and its single, double, triple, and Super ladder. Between starts, finish only controlled casino games and gather chips without delaying another prepared Multiball.",
+      "machineSetup": [
+        "Confirm installed software and Tournament Mode; code revisions change deterministic casino behavior, Casino Frenzy values, Break the Bank, and spinner Bonus X.",
+        "Confirm casino difficulty, physical-lock state, ball saves, center post, Extra Ball conversion, and chip memory before choosing a deep route.",
+        "Test the Slot Machine, roulette wheel, middle ramp, upper-right target, both orbits, pop exits, and every lock release."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

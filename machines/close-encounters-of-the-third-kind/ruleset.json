@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qvL",
+  "title": "Close Encounters of the Third Kind",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Silverball Rules Close Encounters EM strategy",
+      "url": "https://rules.silverballmania.com/rules/G4qvL-MJ6z6"
+    },
+    "supportingSources": [
+      {
+        "label": "Gottlieb Close Encounters solid-state factory instruction cards",
+        "url": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Close_Encounters_3_Kind_instruction_cards.zip"
+      },
+      {
+        "label": "Gottlieb Close Encounters solid-state technical chart",
+        "url": "https://www.pinballrebel.com/pinball/cards/Tech_Charts/Gottlieb_Close_Encounters_Tech_Chart.pdf"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Close Encounters turns its A-B-C lanes, star roto target, and five black drop targets into Bonus X progress. Each A-B-C lane also raises the matching visible roto-target and yellow-target value; completing A-B-C qualifies the configured Extra Ball award. The left standup lights the spinner, so the repeatable scoring route is to light it, shoot it from the right flipper, and use the left flipper for the right drop bank.",
+      "simpleOverview": "Hit the left standup to light the spinner, then shoot the spinner from the right flipper. Complete A-B-C, hit a visible star roto target, or finish the five black drops to raise Bonus X. Use the left flipper for the right drop bank, but take a visible star whenever the roto target presents one.",
+      "summary": "Hit the left standup first to light the spinner, then use it as the safe repeatable score. Build the end-of-ball payout with A-B-C, star roto hits, and black-bank completions; choose clean edge hits on the drops instead of driving the center of the bank.",
+      "quickInfo": [
+        {
+          "name": "Light Spinner",
+          "summary": "Hit the left standup target."
+        },
+        {
+          "name": "Raise Bonus X",
+          "summary": "Complete A-B-C, hit the star roto target, or finish the black drop bank."
+        },
+        {
+          "name": "Increase Roto Values",
+          "summary": "Collect A, B, and C to raise their matching visible targets."
+        },
+        {
+          "name": "Qualify Extra Ball",
+          "summary": "Complete A-B-C when the operator has enabled the award."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Hit the left standup to light the spinner."
+        },
+        {
+          "text": "From the right flipper, shoot the lit spinner for repeatable scoring."
+        },
+        {
+          "text": "Complete A-B-C, hit a visible star roto target, or finish the five black drops to raise Bonus X.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Use left-flipper edge shots to finish the right drop bank while protecting the accumulated bonus."
+        }
+      ],
+      "alternatives": [
+        {
+          "title": "Roto-target route",
+          "when": "Use this when a star is visible or the drop-bank rebounds are dangerous.",
+          "steps": [
+            {
+              "text": "Collect A, B, and C to raise the matching roto-target and yellow-target values."
+            },
+            {
+              "text": "Shoot the visible star roto target to raise Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Return to the lit spinner after the roto target rotates away from the star."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Multiplied end-of-ball bonus",
+        "steps": [
+          {
+            "text": "Add base bonus with standups, lanes, and drops."
+          },
+          {
+            "text": "Use A-B-C, the star roto target, and black-bank completions to raise Bonus X.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Protect the ball after the multiplier and base bonus are both valuable."
+          }
+        ]
+      },
+      "machineSetup": [
+        "Identify the electromechanical or solid-state edition, then test A-B-C, both roto-target assemblies, all five black drops and reset, the left spinner standup, spinner, and bonus lamps.",
+        "Confirm three- or five-ball play, Extra Ball and Special awards, and the Bonus X ceiling: the EM rules reach 3x, while the solid-state instruction card supports additional multiplier progress."
+      ],
+      "cautions": [
+        {
+          "issue": "The catalog family contains distinct EM and solid-state editions.",
+          "response": "Use the apron card and multiplier lamps on the actual machine; the core shots agree, but the multiplier ceiling and award configuration differ.",
+          "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Close_Encounters_3_Kind_instruction_cards.zip"
+        }
+      ],
+      "rulesNotes": []
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "G5v02",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Plunge a C-O-N lane to raise the center post, keep sending the ball to the upper playfield, then use the raised post to settle the ball and favor safe deflections over precise shots at the swinging target.",
+        "quickInfo": [
+          {
+            "name": "C-O-N skill shot",
+            "summary": "The center O lane scores 5,000 while C or N scores 1,000, and any of the three lanes raises the center post."
+          },
+          {
+            "name": "Center post",
+            "summary": "The top C-O-N lanes and left saucer raise the post, while the side slings below the saucer and right-side horseshoes lower it."
+          },
+          {
+            "name": "Color values",
+            "summary": "White, yellow, and green begin at 5,000 and can advance to 40,000 through the C, O, and N lanes respectively."
+          },
+          {
+            "name": "Color collects",
+            "summary": "The upper-left four-bank scores white, the upper-right horseshoe scores green, and the swinging target scores yellow on either yellow-score position."
+          },
+          {
+            "name": "End-of-ball bonus",
+            "summary": "Only the value of the currently active color is counted as bonus at the end of the ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge for the center O lane. Accept C or N rather than missing all three lanes."
+          },
+          {
+            "text": "Confirm that the center post rises before the ball reaches the lower playfield."
+          },
+          {
+            "text": "Deflect or flip the ball back toward the upper playfield as soon as a safe angle appears."
+          },
+          {
+            "text": "Use C-O-N lanes and natural upper-playfield action to advance the three color values."
+          },
+          {
+            "text": "When the post is raised, let the ball settle against it instead of making an immediate full flip."
+          },
+          {
+            "text": "Micro flip the settled ball onto one flipper face, then send it back up top."
+          },
+          {
+            "text": "Take a color collect only when its four-bank, horseshoe, or yellow target position is reached from a controlled feed."
+          },
+          {
+            "text": "Ignore the remaining CONTACT letters when Extra Ball and Special awards have no tournament value."
+          }
+        ],
+        "fallback": {
+          "title": "Raised-post flow play",
+          "when": "Use this plan when the four-flipper layout will not permit a stable cradle or a repeatable aimed shot.",
+          "steps": [
+            {
+              "text": "Roll through a C-O-N lane or shoot the left saucer to raise the center post."
+            },
+            {
+              "text": "Let a slow ball stop against the raised post."
+            },
+            {
+              "text": "Micro flip the settled ball onto one flipper face."
+            },
+            {
+              "text": "Flip on the roll and aim only for the broad upper-playfield opening."
+            },
+            {
+              "text": "Repeat while the post remains raised."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Best-color collect",
+            "when": "Use this plan when one color value is clearly ahead and its collect shot has behaved safely in practice.",
+            "steps": [
+              {
+                "text": "Read which color is active and compare the white, yellow, and green values.",
+                "modeNotes": [
+                  "Confirm whether color values and CONTACT progress carry between balls, then read the active color before protecting end-of-ball bonus."
+                ]
+              },
+              {
+                "text": "Advance the leading color with its C-O-N lane or a lit advance-color position on the swinging target."
+              },
+              {
+                "text": "Collect white at the upper-left bank, green at the horseshoe, or yellow at a yellow-score target position."
+              },
+              {
+                "text": "Return to broad upper-playfield shots after one controlled collect."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "40,000 active-color bonus",
+          "steps": [
+            {
+              "text": "Keep the center post raised through C-O-N lanes or the left saucer."
+            },
+            {
+              "text": "Use its C-O-N lane, a lit Advance Color position on the swinging target, or the recessed right-side pads to raise the safest color toward 40,000."
+            },
+            {
+              "text": "Make that color active before the ball ends."
+            },
+            {
+              "text": "Preserve the ball and its active-color bonus with upper-playfield flow play."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Post settle",
+            "instruction": "When the post is raised, stop flipping and let a slow ball come to rest against it before choosing the next move.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5v02-MDnyO"
+          },
+          {
+            "name": "Micro flip",
+            "instruction": "Micro flip the ball off the raised center post only after it has settled and the receiving flipper is ready.",
+            "techniqueSlug": "micro-flip",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5v02-MDnyO"
+          },
+          {
+            "name": "Upper-playfield deflection",
+            "instruction": "When a precise shot is unavailable, use a short flip or passive deflection that sends the ball above the center target area.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5v02-MDnyO"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The paired lower flippers can scissor the ball through their open gaps.",
+            "response": "Avoid unnecessary full-button flips. Use the raised post and Flipper staging to move only the flipper that improves the path.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5v02-MDnyO"
+          },
+          {
+            "issue": "The swinging target, standups, and drop targets can produce uncontrolled rebounds.",
+            "response": "Prefer the broad route to the upper playfield. Shoot a target only from a tested, controlled feed.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5v02-MDnyO"
+          },
+          {
+            "issue": "A saucer catch is useful only when its kickout is safe on that copy.",
+            "response": "Observe the left and right kickouts before you hold an upper flipper to guide the ball into a saucer.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5v02-MDnyO"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm the 1978 Williams Contact, ball count, replay, Extra Ball and Special conversion, tilt, and tournament scoring.",
+          "Confirm whether color values and CONTACT progress carry between balls, then read the active color before protecting end-of-ball bonus.",
+          "Test center-post action, dual-action flipper staging, swinging-target registration, horseshoes, drop bank, and both saucer kickouts before choosing the route."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left orbit",
+            "label": "Left orbit",
+            "description": "Major shot used in the main route.",
+            "precision": "unverified",
+            "context": "Major shot used in the main route."
+          },
+          {
+            "term": "center targets",
+            "label": "Center targets",
+            "description": "Targets used to qualify the collect.",
+            "precision": "unverified",
+            "context": "Targets used to qualify the collect."
+          }
+        ],
+        "simpleOverview": "Contact uses the top C-O-N lanes to raise the center post and advance three color values. Keep returning the ball upstairs, use the raised post for control, and make the highest color active before the ball ends because only that color becomes end-of-ball bonus.",
+        "overview": "Contact uses the top C-O-N lanes to raise the center post and advance three color values. Keep the post raised through the top lanes or left saucer, advance the safest color toward 40,000, then make that color active before the ball ends. Favor upper-playfield flow over forcing the swinging target.",
+        "machineSetup": [
+          "Confirm the 1978 Williams Contact, ball count, replay, Extra Ball and Special conversion, tilt, and tournament scoring.",
+          "Test center-post action, dual-action flipper staging, swinging-target registration, horseshoes, drop bank, and both saucer kickouts before choosing the route."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Plunge a C-O-N lane to raise the center post, keep sending the ball to the upper playfield, then use the raised post to settle the ball and favor safe deflections over precise shots at the swinging target.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge for the center O lane. Accept C or N rather than missing all three lanes."
+          },
+          {
+            "text": "Confirm that the center post rises before the ball reaches the lower playfield."
+          },
+          {
+            "text": "Deflect or flip the ball back toward the upper playfield as soon as a safe angle appears."
+          },
+          {
+            "text": "Use C-O-N lanes and natural upper-playfield action to advance the three color values."
+          },
+          {
+            "text": "When the post is raised, let the ball settle against it instead of making an immediate full flip."
+          },
+          {
+            "text": "Micro flip the settled ball onto one flipper face, then send it back up top."
+          },
+          {
+            "text": "Take a color collect only when its four-bank, horseshoe, or yellow target position is reached from a controlled feed."
+          },
+          {
+            "text": "Ignore the remaining CONTACT letters when Extra Ball and Special awards have no tournament value."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "C-O-N skill shot",
+            "summary": "The center O lane scores 5,000 while C or N scores 1,000, and any of the three lanes raises the center post."
+          },
+          {
+            "name": "Center post",
+            "summary": "The top C-O-N lanes and left saucer raise the post, while the side slings below the saucer and right-side horseshoes lower it."
+          },
+          {
+            "name": "Color values",
+            "summary": "White, yellow, and green begin at 5,000 and can advance to 40,000 through the C, O, and N lanes respectively."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Raised-post flow play",
+          "when": "Use this plan when the four-flipper layout will not permit a stable cradle or a repeatable aimed shot.",
+          "steps": [
+            {
+              "text": "Roll through a C-O-N lane or shoot the left saucer to raise the center post."
+            },
+            {
+              "text": "Let a slow ball stop against the raised post."
+            },
+            {
+              "text": "Micro flip the settled ball onto one flipper face."
+            },
+            {
+              "text": "Flip on the roll and aim only for the broad upper-playfield opening."
+            },
+            {
+              "text": "Repeat while the post remains raised."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

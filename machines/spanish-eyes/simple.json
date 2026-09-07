@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "GrOjX",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Send the ball up top to collect the numbered lanes, then choose between the 5,000-point center horseshoe and the center saucer, which scores for each collected number. Keep the route whose return survives the lower center bumper.",
+        "steps": [
+          {
+            "text": "Send the ball up top to collect numbers 1 through 6."
+          },
+          {
+            "text": "Shoot the center saucer after several numbers are lit; it scores 1,000 for each collected number."
+          },
+          {
+            "text": "Shoot the center horseshoe for 5,000 when its exit off the lower center bumper is safer than the saucer kickout."
+          },
+          {
+            "text": "Repeat the safer of those two shots. If neither return is controlled, return to the upper lanes."
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Extra balls",
+            "summary": "When enabled, completing A-E adds a ball immediately; completing 1-6 and then shooting the horseshoe also adds a ball."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "numbered lanes",
+            "context": "numbers 1 through 6",
+            "label": "Numbered lanes and targets",
+            "description": "Collect 1 through 6 to raise the center-saucer value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center saucer",
+            "context": "center saucer",
+            "label": "Center saucer",
+            "description": "Scores according to the number of lit numbers.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center horseshoe",
+            "context": "center horseshoe",
+            "label": "Center horseshoe",
+            "description": "The 5,000-point loop around the lower center bumper.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lower center bumper",
+            "context": "lower center bumper",
+            "label": "Lower center bumper",
+            "description": "The bumper below the flippers that determines both return feeds.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The lower center bumper can send the ball under a flipper or into an outlane.",
+            "response": "Keep both flippers ready for defense and do not assume either central shot has a catchable return.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrOjX-MJook"
+          }
+        ],
+        "simpleOverview": "Spanish Eyes uses the six numbered upper lanes to raise the center saucer's value. The center horseshoe pays a fixed 5,000, so the useful choice is between a growing saucer and a fixed horseshoe with different returns.",
+        "overview": "Each numbered upper lane in Spanish Eyes adds 1,000 to the center-saucer value, while the center horseshoe always scores 5,000. Collect numbers up top, then compare the saucer kickout with the horseshoe exit off the lower bumper. Repeat the safer scoring shot, or return upstairs when neither feed is controlled.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Collect numbers up top, then compare the center saucer with the center horseshoe and repeat whichever return is safer on that machine.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Collect numbers 1 through 6",
+            "text": "Send the ball up top. Each collected number adds 1,000 to the center-saucer value."
+          },
+          {
+            "title": "Choose the safe center shot",
+            "text": "Shoot the center saucer for the built value, or the center horseshoe for 5,000. Repeat the shot whose return off the lower bumper survives."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Extra balls",
+            "summary": "When enabled, completing A-E adds a ball immediately; completing 1-6 and then shooting the horseshoe also adds a ball."
+          }
+        ],
+        "warning": {
+          "title": "The lower center bumper can send the ball under a flipper or into an outlane.",
+          "text": "Keep both flippers ready for defense and do not assume either central shot has a catchable return."
+        }
+      }
+    }
+  ]
+}

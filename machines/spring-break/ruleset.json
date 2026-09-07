@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "GRLKd",
+  "title": "Spring Break",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Preserved Spring Break instruction rules",
+      "url": "https://pinballnirvana.com/forums/resources/spring-break-gottlieb-1987-vp8.3192/"
+    },
+    "supportingSources": [
+      {
+        "label": "Flippers.com Spring Break original and single-ball PROM listing",
+        "url": "https://flippers.com/catalog_oc/gottlieb-game-or-sound-prom-eprom-gals-gott-prom"
+      },
+      {
+        "label": "MAME Spring Break and single-ball ROM definitions",
+        "url": "https://github.com/mamedev/mame/blob/master/src/mame/pinball/gts80b.cpp"
+      },
+      {
+        "label": "Kineticist Spring Break machine record",
+        "url": "https://www.kineticist.com/games/pinball/spring-break"
+      },
+      {
+        "label": "PinWiki Spring Break launch-switch warning",
+        "url": "https://pinwiki.com/wiki/index.php/Gottlieb_System_80"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "On the earned-Multiball setting, complete 1-2-3 and shoot the indicated Release feature to add balls. Playfield activity raises Playfield X, and completing V-A-C-A-T-I-O-N lights Extra Ball.",
+      "quickInfo": [
+        {
+          "name": "Release",
+          "summary": "Complete 1-2-3, then shoot the playfield feature whose Release lamp is lit to add balls."
+        },
+        {
+          "name": "Playfield X",
+          "summary": "Playfield activity and top-lane-to-bumper feeds raise the scoring multiplier."
+        },
+        {
+          "name": "VACATION",
+          "summary": "Complete the word to light Extra Ball at its lit collect lane."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press the right flipper to launch the ball."
+        },
+        {
+          "text": "To earn Multiball, hit the lit 1, 2, and 3 standups. Then shoot the playfield feature whose Release lamp is lit to add balls.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "To raise Playfield X, keep the ball active on playfield switches; top-lane and pop-bumper activity supplies repeated switch hits.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "To light Extra Ball, complete V-A-C-A-T-I-O-N at the three drop-target banks, then shoot the lane whose Extra Ball lamp is lit."
+        }
+      ],
+      "termStyles": [
+        {
+          "label": "Four-Ball Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Playfield X",
+          "tone": "rust",
+          "kind": "multiplier"
+        },
+        {
+          "label": "Release",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "VACATION",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Extra Ball",
+          "tone": "indigo",
+          "kind": "item"
+        },
+        {
+          "label": "Special",
+          "tone": "indigo",
+          "kind": "item"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A failed shooter-lane exit switch can prevent later automatic launches and stop the game.",
+          "response": "Confirm that the first launched ball registers the exit switch before you depend on added balls.",
+          "sourceUrl": "https://pinwiki.com/wiki/index.php/Gottlieb_System_80"
+        },
+        {
+          "issue": "Playfield X depends on continued playfield switch activity.",
+          "response": "Keep balls moving through the bumpers before you pursue slower drop-target awards.",
+          "sourceUrl": "https://pinballnirvana.com/forums/resources/spring-break-gottlieb-1987-vp8.3192/"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test the shooter-lane exit switch before depending on automatic multiball launches."
+      ],
+      "simpleOverview": "With SW31 Off, complete the lit 1-2-3 standups and shoot the feature whose Release lamp is lit to add balls. Playfield switches independently raise Playfield X, while the three drop-target banks spell V-A-C-A-T-I-O-N and light Extra Ball.",
+      "overview": "With SW31 Off, complete the lit 1-2-3 standups and shoot the feature whose Release lamp is lit to add balls. Playfield switches independently raise Playfield X, while the three drop-target banks spell V-A-C-A-T-I-O-N and light Extra Ball.",
+      "machineSetup": [
+        "Test the shooter-lane exit switch before depending on automatic multiball launches."
+      ],
+      "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "single-ball",
+      "items": [
+        {
+          "id": "single-ball",
+          "label": "Earned Multiball (SW31 Off)",
+          "differences": {
+            "changes": [
+              "SW31 Off begins each turn with one ball.",
+              "Completing 1-2-3 lights Release; shooting the indicated Release feature adds balls."
+            ]
+          },
+          "strategy": {
+            "summary": "On the earned-Multiball setting, complete 1-2-3 and shoot the indicated Release feature to add balls. Playfield activity raises Playfield X, and completing V-A-C-A-T-I-O-N lights Extra Ball.",
+            "quickInfo": [
+              {
+                "name": "Release",
+                "summary": "Complete 1-2-3, then shoot the playfield feature whose Release lamp is lit to add balls."
+              },
+              {
+                "name": "Playfield X",
+                "summary": "Playfield activity and top-lane-to-bumper feeds raise the scoring multiplier."
+              },
+              {
+                "name": "VACATION",
+                "summary": "Complete the word to light Extra Ball at its lit collect lane."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Press the right flipper to launch the ball."
+              },
+              {
+                "text": "To earn Multiball, hit the lit 1, 2, and 3 standups. Then shoot the playfield feature whose Release lamp is lit to add balls.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "To raise Playfield X, keep the ball active on playfield switches; top-lane and pop-bumper activity supplies repeated switch hits.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "To light Extra Ball, complete V-A-C-A-T-I-O-N at the three drop-target banks, then shoot the lane whose Extra Ball lamp is lit."
+              }
+            ],
+            "termStyles": [
+              {
+                "label": "Four-Ball Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Playfield X",
+                "tone": "rust",
+                "kind": "multiplier"
+              },
+              {
+                "label": "Release",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "VACATION",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Extra Ball",
+                "tone": "indigo",
+                "kind": "item"
+              },
+              {
+                "label": "Special",
+                "tone": "indigo",
+                "kind": "item"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A failed shooter-lane exit switch can prevent later automatic launches and stop the game.",
+                "response": "Confirm that the first launched ball registers the exit switch before you depend on added balls.",
+                "sourceUrl": "https://pinwiki.com/wiki/index.php/Gottlieb_System_80"
+              },
+              {
+                "issue": "Playfield X depends on continued playfield switch activity.",
+                "response": "Keep balls moving through the bumpers before you pursue slower drop-target awards.",
+                "sourceUrl": "https://pinballnirvana.com/forums/resources/spring-break-gottlieb-1987-vp8.3192/"
+              }
+            ],
+            "checkBeforePlay": [
+              "Test the shooter-lane exit switch before depending on automatic ball launches."
+            ],
+            "simpleOverview": "With SW31 Off, complete the lit 1-2-3 standups and shoot the feature whose Release lamp is lit to add balls. Playfield switches independently raise Playfield X, while the three drop-target banks spell V-A-C-A-T-I-O-N and light Extra Ball.",
+            "overview": "With SW31 Off, complete the lit 1-2-3 standups and shoot the feature whose Release lamp is lit to add balls. Playfield switches independently raise Playfield X, while the three drop-target banks spell V-A-C-A-T-I-O-N and light Extra Ball.",
+            "machineSetup": [
+              "Test the shooter-lane exit switch before depending on automatic ball launches."
+            ],
+            "rulesNotes": []
+          }
+        },
+        {
+          "id": "free-multiball",
+          "label": "Continuous Multiball (SW31 On)",
+          "strategy": {
+            "summary": "With SW31 On, Spring Break begins turns with continuous Multiball action. Playfield activity raises Playfield X, and completing V-A-C-A-T-I-O-N lights Extra Ball.",
+            "quickInfo": [
+              {
+                "name": "Continuous Multiball",
+                "summary": "SW31 On preserves the game's multiple-ball starts instead of requiring 1-2-3 and Release first."
+              },
+              {
+                "name": "Playfield X",
+                "summary": "Top-lane and pop-bumper activity builds the live playfield scoring multiplier."
+              },
+              {
+                "name": "VACATION",
+                "summary": "Complete the word at the three drop-target banks to light Extra Ball."
+              }
+            ],
+            "steps": [
+              {
+                "text": "Press the right flipper to begin the turn; the SW31 On setting serves multiple balls without requiring Release first.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "To raise Playfield X, keep balls active on playfield switches; top-lane and pop-bumper activity supplies repeated switch hits.",
+                "kinds": [
+                  "multiball",
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "To light Extra Ball, complete V-A-C-A-T-I-O-N at the three drop-target banks, then shoot the lane whose Extra Ball lamp is lit."
+              }
+            ],
+            "termStyles": [
+              {
+                "label": "Four-Ball Multiball",
+                "tone": "forest",
+                "kind": "multiball",
+                "kindIsExplicit": true
+              },
+              {
+                "label": "Playfield X",
+                "tone": "rust",
+                "kind": "multiplier"
+              },
+              {
+                "label": "VACATION",
+                "tone": "navy",
+                "kind": "item"
+              },
+              {
+                "label": "Extra Ball",
+                "tone": "navy",
+                "kind": "item"
+              }
+            ],
+            "cautions": [
+              {
+                "issue": "A failed shooter-lane exit switch can prevent automatic launches and stop the game.",
+                "response": "Confirm that each launched ball registers the exit switch before relying on the free multiball start.",
+                "sourceUrl": "https://pinwiki.com/wiki/index.php/Gottlieb_System_80"
+              }
+            ],
+            "checkBeforePlay": [
+              "Test the shooter-lane exit switch before depending on automatic launches."
+            ],
+            "simpleOverview": "With SW31 Off, complete the lit 1-2-3 standups and shoot the feature whose Release lamp is lit to add balls. Playfield switches independently raise Playfield X, while the three drop-target banks spell V-A-C-A-T-I-O-N and light Extra Ball.",
+            "overview": "With SW31 Off, complete the lit 1-2-3 standups and shoot the feature whose Release lamp is lit to add balls. Playfield switches independently raise Playfield X, while the three drop-target banks spell V-A-C-A-T-I-O-N and light Extra Ball.",
+            "machineSetup": [
+              "Test the shooter-lane exit switch before depending on automatic launches."
+            ],
+            "rulesNotes": []
+          },
+          "differences": {
+            "changes": [
+              "SW31 On preserves continuous Multiball action at the start of turns.",
+              "The player does not need to complete 1-2-3 and Release before the opening multiple-ball play."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

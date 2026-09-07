@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "id": "GRnwQ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Hit the lit Slam Dunk target to open the Free Ball Gate, clear all four Free Throw inline drops to raise Bonus X to 5x and the Trotter Fast Break spinner to 2,000 per spin, then repeat that spinner from the right flipper.",
+        "steps": [
+          {
+            "text": "Plunge the Top Basket G-L-O-B-E saucer to add 3,000 to base bonus and spot a lit G-L-O-B-E letter."
+          },
+          {
+            "text": "Hit the right Slam Dunk target while OPEN GATE is lit to open the Free Ball Gate. The next ball that reaches the right outlane returns to the right flipper, then the gate closes."
+          },
+          {
+            "text": "Use the left flippers to clear all four right-side Free Throw inline drops. The second, third, and fourth drops light 2x, 3x, and 5x Bonus X; all four drops raise the Trotter Fast Break spinner to 2,000 per spin."
+          },
+          {
+            "text": "Move the ball to the right flipper, then repeat the left-side Trotter Fast Break spinner for 2,000 per spin."
+          }
+        ],
+        "fallback": {
+          "title": "Top Basket route",
+          "when": "Use this only when the G-L-O-B-E lamps step one at a time and upper-playfield feeds are more controlled than right-to-left transfers.",
+          "steps": [
+            {
+              "text": "From the right flipper, shoot the Trotter Fast Break spinner toward Top Basket even before the spinner is fully raised."
+            },
+            {
+              "text": "Shoot the Top Basket G-L-O-B-E saucer to spot the next letter."
+            },
+            {
+              "text": "Repeat the spinner and saucer. Five saucer shots from a fresh sequence complete G-L-O-B-E for 50,000."
+            }
+          ]
+        },
+        "quickInfo": [
+          {
+            "name": "Free Throw inline drops",
+            "summary": "Each drop adds 1,000 bonus, spots a G-L-O-B-E letter, and raises the Trotter Fast Break spinner. Drops two, three, and four also light 2x, 3x, and 5x Bonus X."
+          },
+          {
+            "name": "Trotter Fast Break spinner",
+            "summary": "Its value rises through 10, 100, 200, 1,000, and 2,000 as the Free Throw inline drops fall."
+          },
+          {
+            "name": "Free Ball Gate",
+            "summary": "Hit the Slam Dunk target while OPEN GATE is lit. The gate returns one right-outlane ball to the right flipper, then closes."
+          },
+          {
+            "name": "G-L-O-B-E",
+            "summary": "The Top Basket saucer and Free Throw drops spot letters. The operator setting makes the saucer lamps scan or step one at a time; completing G-L-O-B-E scores 50,000."
+          },
+          {
+            "name": "Super Bonus",
+            "summary": "When enabled, reaching 20,000, 30,000, or 40,000 base bonus preserves that checkpoint for later balls."
+          },
+          {
+            "name": "Free Throw saucer",
+            "summary": "When the completed inline bank stays down, the saucer behind it scores 25,000, or 50,000 when lit for Special."
+          }
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At PAPA 14, Keith Elwin opened the Free Ball Gate, reached 5x, and repeatedly shot the 2,000-per-spin Trotter Fast Break spinner.",
+            "At California NACS 2024, Derek Price and Tony Lavigna cleared the Free Throw in-line drops and returned to the Top Basket saucer; Tony added 5x bonus and Special."
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Bonus X",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "2x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "3x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "5x",
+            "tone": "rust",
+            "kind": "multiplier"
+          },
+          {
+            "label": "Free Ball Gate",
+            "tone": "navy",
+            "kind": "item"
+          },
+          {
+            "label": "G-L-O-B-E",
+            "tone": "navy",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Top Basket G-L-O-B-E saucer",
+            "label": "Top Basket saucer",
+            "description": "Upper saucer that adds bonus and spots a lit G-L-O-B-E letter.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Slam Dunk target",
+            "label": "Slam Dunk target",
+            "description": "Recessed lower-right standup that opens the Free Ball Gate when OPEN GATE is lit.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Free Throw inline drops",
+            "label": "Free Throw inline drops",
+            "description": "Four right-side targets that raise Base Bonus and Bonus X, spot G-L-O-B-E, and increase the Trotter Fast Break spinner value.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Trotter Fast Break spinner",
+            "label": "Trotter Fast Break spinner",
+            "description": "Left-side spinner used for repeatable scoring after the Free Throw drops raise it.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Free Throw saucer",
+            "label": "Free Throw saucer",
+            "description": "Saucer exposed behind the completed Free Throw inline bank.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Rubber-post nudge",
+            "instruction": "As a drop-target rebound passes the rubber post, nudge from right to left. This moves the ball toward the left flippers.",
+            "sourceUrl": "https://www.pinballformortals.com/2019/06/12/harlem-globetrotters-on-tour-pinball-mini-guide/"
+          },
+          {
+            "name": "Tap pass",
+            "instruction": "Tap pass a controlled right-flipper cradle to the left flippers before shooting the inline drops.",
+            "techniqueSlug": "tap-pass",
+            "sourceUrl": "https://www.pinballformortals.com/2019/06/12/harlem-globetrotters-on-tour-pinball-mini-guide/"
+          },
+          {
+            "name": "Dead bounce",
+            "instruction": "Dead bounce a clean split-flipper feed to the right flipper instead of raising both left flippers.",
+            "techniqueSlug": "dead-bounce",
+            "sourceUrl": "https://www.pinballformortals.com/2019/06/12/harlem-globetrotters-on-tour-pinball-mini-guide/"
+          },
+          {
+            "name": "Post catch",
+            "instruction": "Let a suitable inline-drop return rebound off the same-side post into control, then use the resulting upper-flipper angle. Test the rebound before relying on it.",
+            "techniqueSlug": "post-catch",
+            "sourceUrl": "https://www.youtube.com/watch?v=isLEkCdcdBI&t=2669s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "An inline drop-target rebound can travel toward the center gap.",
+            "response": "As the ball passes the rubber post, nudge from right to left so it moves toward the left flippers.",
+            "sourceUrl": "https://www.pinballformortals.com/2019/06/12/harlem-globetrotters-on-tour-pinball-mini-guide/"
+          },
+          {
+            "issue": "A ball can pass between the two raised left flippers.",
+            "response": "Flip as the ball arrives, or dead bounce the ball to the right flipper.",
+            "sourceUrl": "https://www.pinballformortals.com/2019/06/12/harlem-globetrotters-on-tour-pinball-mini-guide/"
+          }
+        ],
+        "checkBeforePlay": [
+          "Test the Slam Dunk target and confirm that the Free Ball Gate returns a right-outlane ball to the right flipper.",
+          "Test Free Throw rebounds, the split left-flipper gap, and whether the Trotter Fast Break spinner reaches the upper playfield cleanly."
+        ],
+        "alternatives": [
+          {
+            "title": "G-L-O-B-E and bonus",
+            "when": "Use this when the inline drops return safely and the Top Basket saucer is easier to control than repeated spinner shots.",
+            "steps": [
+              {
+                "text": "Clear the four Free Throw inline drops to build base bonus, light 5x Bonus X, and add G-L-O-B-E letters.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot the Top Basket saucer to spot the lit G-L-O-B-E letter. Completing G-L-O-B-E scores 50,000."
+              },
+              {
+                "text": "If the Free Throw bank remains down, shoot the saucer behind it for 25,000, or 50,000 when Special is lit."
+              }
+            ]
+          }
+        ],
+        "simpleOverview": "In Harlem Globetrotters On Tour, hit the right Slam Dunk target while Open Gate is lit to protect the right outlane, then clear the four right-side Free Throw inline drops. The second, third, and fourth drops raise Bonus X to 2x, 3x, and 5x, and the full bank raises the left Trotter Fast Break spinner to 2,000 per spin. Repeat that spinner from the right flipper.",
+        "overview": "In Harlem Globetrotters On Tour, the Slam Dunk target opens the Free Ball Gate, while the four Free Throw inline drops raise Bonus X to 5x and the Trotter Fast Break spinner to 2,000 per spin. Hit Slam Dunk while Open Gate is lit, clear the inline bank from the left flippers, then move the ball to the right flipper and repeat the spinner. Use the Top Basket saucer for G-L-O-B-E and bonus only when its return is controlled.",
+        "machineSetup": [
+          "Test the Slam Dunk target and confirm that the Free Ball Gate returns a right-outlane ball to the right flipper.",
+          "Test Free Throw rebounds, the split left-flipper gap, and whether the Trotter Fast Break spinner reaches the upper playfield cleanly."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Hit the lit Slam Dunk target to open the Free Ball Gate, clear all four Free Throw inline drops to raise Bonus X to 5x and the Trotter Fast Break spinner to 2,000 per spin, then repeat that spinner from the right flipper.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Open the Free Ball Gate",
+            "text": "Hit the right Slam Dunk target while OPEN GATE is lit to open the Free Ball Gate. The next ball that reaches the right outlane returns to the right flipper, then the gate closes."
+          },
+          {
+            "title": "Raise 5x and the spinner",
+            "text": "Use the left flippers to clear all four right-side Free Throw inline drops. The second, third, and fourth drops light 2x, 3x, and 5x Bonus X; all four drops raise the Trotter Fast Break spinner to 2,000 per spin.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "title": "Repeat the spinner",
+            "text": "Move the ball to the right flipper, then repeat the left-side Trotter Fast Break spinner for 2,000 per spin."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Free Throw inline drops",
+            "summary": "Each drop adds 1,000 bonus, spots a G-L-O-B-E letter, and raises the Trotter Fast Break spinner. Drops two, three, and four also light 2x, 3x, and 5x Bonus X."
+          },
+          {
+            "name": "Trotter Fast Break spinner",
+            "summary": "Its value rises through 10, 100, 200, 1,000, and 2,000 as the Free Throw inline drops fall."
+          },
+          {
+            "name": "Free Ball Gate",
+            "summary": "Hit the Slam Dunk target while OPEN GATE is lit. The gate returns one right-outlane ball to the right flipper, then closes."
+          }
+        ],
+        "warning": {
+          "title": "Free Throw rebounds can travel toward the center gap.",
+          "text": "Nudge from right to left as the ball passes the rubber post, and do not hold both left flippers up together."
+        }
+      }
+    }
+  ]
+}

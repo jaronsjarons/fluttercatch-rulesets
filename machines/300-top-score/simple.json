@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "G5W1w",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "‘300’ and Top Score use red balls in the backglass to show a Bonus that tops out at ten units. Build it through the spinner, lit lanes, stand-ups, and the right mystery saucer, then shoot the upper-left collect saucer to score and reset it. The mystery saucer adds one, two, or three units. Every five spinner turns add one unit, while the upper-left side lane opens the right-side gate.",
+        "simpleOverview": "In ‘300’ and Top Score, build the backglass Bonus toward ten units, then shoot the upper-left collect saucer before more advances are wasted. The right mystery saucer adds one, two, or three units. Every five spinner turns add one unit. The upper-left side lane opens the right-side gate, which protects the exit from the eight-lane waterfall.",
+        "summary": "Build Bonus with the spinner and upper-playfield action, but watch the backglass count. As it approaches ten, prioritize the left collect saucer so the next advances still matter. Use the left side lane to open the right gate before challenging the eight-lane waterfall.",
+        "quickInfo": [
+          {
+            "name": "Bonus maximum",
+            "summary": "Ten red backglass balls."
+          },
+          {
+            "name": "Upper-left collect saucer",
+            "summary": "Score and reset the accumulated Bonus."
+          },
+          {
+            "name": "Right mystery saucer",
+            "summary": "Add one, two, or three Bonus units."
+          },
+          {
+            "name": "Center spinner",
+            "summary": "Add one Bonus unit for every five turns."
+          },
+          {
+            "name": "Upper-left side lane",
+            "summary": "Open the right-side ball-save gate."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the center spinner and upper-playfield lanes to add Bonus units."
+          },
+          {
+            "text": "Take the right mystery saucer when available to add one, two, or three units."
+          },
+          {
+            "text": "Watch the backglass count and shoot the upper-left collect saucer as Bonus approaches ten units."
+          },
+          {
+            "text": "After the saucer scores and resets the Bonus, repeat the build-and-collect cycle."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Right waterfall route",
+            "when": "Use this when its crosswise lit sequence starts with the reachable top lane and the right gate is open.",
+            "steps": [
+              {
+                "text": "Nudge the ball through the upper-left side lane to open the right-side gate."
+              },
+              {
+                "text": "Shoot the eight-lane waterfall only when the top reachable lane is lit."
+              },
+              {
+                "text": "Guide the ball through the alternating lit lanes and toward the protected return."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeated ten-unit Bonus collects",
+          "steps": [
+            {
+              "text": "Add Bonus with spinner turns, lit lanes, and the mystery saucer."
+            },
+            {
+              "text": "Stop adding when the count reaches ten."
+            },
+            {
+              "text": "Shoot the upper-left collect saucer, then rebuild from zero."
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm three- or five-ball play because each backglass Bonus unit can pay 1,000, 2,000, or 3,000 by ball number, then confirm gate behavior, Special conversion, and the mystery-saucer step range.",
+          "Test the backglass ball-count unit, both upper-left saucers and kickouts, center spinner and five-turn step relay, all eight right-side lanes and lamps, left gate-opening lane, right gate, return lanes, and stand-ups."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "upper-left collect saucer",
+            "label": "Left Bonus collect saucer",
+            "description": "Leftmost upper saucer that scores and resets the accumulated Bonus.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right mystery saucer",
+            "label": "Mystery add-Bonus saucer",
+            "description": "Adjacent upper saucer that adds one, two, or three Bonus units.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center spinner",
+            "label": "Center Bonus spinner",
+            "description": "Spinner that adds one Bonus unit after every five turns.",
+            "precision": "unverified"
+          },
+          {
+            "term": "eight-lane waterfall",
+            "label": "Right pin-ball waterfall lanes",
+            "description": "Four paired lane levels with a crosswise alternating lit pattern.",
+            "precision": "unverified"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Build Bonus with the spinner and upper-playfield action, but watch the backglass count. As it approaches ten, prioritize the left collect saucer so the next advances still matter. Use the left side lane to open the right gate before challenging the eight-lane waterfall.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the center spinner and upper-playfield lanes to add Bonus units."
+          },
+          {
+            "text": "Take the right mystery saucer when available to add one, two, or three units."
+          },
+          {
+            "text": "Watch the backglass count and shoot the upper-left collect saucer as Bonus approaches ten units."
+          },
+          {
+            "text": "After the saucer scores and resets the Bonus, repeat the build-and-collect cycle."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Bonus maximum",
+            "summary": "Ten red backglass balls."
+          },
+          {
+            "name": "Upper-left collect saucer",
+            "summary": "Score and reset the accumulated Bonus."
+          },
+          {
+            "name": "Right mystery saucer",
+            "summary": "Add one, two, or three Bonus units."
+          }
+        ]
+      }
+    }
+  ]
+}

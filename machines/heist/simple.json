@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "id": "G18pJ",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Crew jobs, Side Jobs, jail rescues, Crane Multiball, and Police Multiball feed the larger Heists. Start a crew job before adding a prepared Multiball, collect its MacGuffin, and recover jailed specialists so the Mastermind and Big Final Heist remain available.",
+        "simpleOverview": "Hit a crew member's major shot twice to start that job. Prepare Crane or Police Multiball first, start the crew job, then add the Multiball; failed specialists can be recovered at the center jail.",
+        "summary": "Choose a safe crew shot and hit it twice to start the job. Add a prepared Crane or Police Multiball, finish the task, and collect its MacGuffin at the raised scoop. Rescue jailed specialists and complete the Mastermind before entering the Big Final Heist.",
+        "quickInfo": [
+          {
+            "name": "Crew jobs",
+            "summary": "Wheelman is the left orbit, Cat Burglar the left ramp, Safecracker the right horseshoe, Hacker the right ramp, and Demolition the right orbit; hit one twice to start."
+          },
+          {
+            "name": "Jailbreak",
+            "summary": "Hit the center jail to open it, then shoot the scoop to start one extra ball for every specialist currently jailed."
+          },
+          {
+            "name": "Police Multiball",
+            "summary": "Hit the blue police targets to light the two horseshoe locks, collect three locks, then shoot the lit jackpot pairs and jail advances."
+          },
+          {
+            "name": "Crane Multiball",
+            "summary": "Build enough cash at the ATM and armored car, shoot the right ramp, then knock the held ball from the crane to begin scoring."
+          },
+          {
+            "name": "Mastermind",
+            "summary": "After two recruits, qualify the Mastermind at the left horseshoe; more recruited crew produce a larger and harder jewel heist."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Choose the crew shot with the safest return and hit it twice to start its job: left orbit, left ramp, right horseshoe, right ramp, or right orbit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Before the second crew hit, prepare Crane Multiball through cash and the right ramp, or prepare Police Multiball through the blue targets and horseshoe locks.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start the crew job first, then collect the prepared Multiball. Use the extra balls to finish the timed task without abandoning its required shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the crew task is complete, shoot the raised scoop for its MacGuffin. A full completion recruits the specialist; a failure sends that specialist to jail.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For a rescue, hit the center jail to open it and shoot the scoop. Jailbreak serves the ball in play plus one ball for each jailed specialist.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After at least two recruits, use the left horseshoe for the Mastermind. Recruit more crew first when the larger jewel route remains practical.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Side Job route",
+          "when": "Use this when a direct crew-start shot is rejecting but the side targets and crane are safer.",
+          "steps": [
+            {
+              "text": "Complete the side targets, hit the crane when it moves into reach, then shoot the opened OCPD building to start the Side Job.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the short Side Job to qualify its linked crew member without the first direct crew hit.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to that crew shot to start the job, then add a prepared Multiball when available.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Big Final Heist",
+          "steps": [
+            {
+              "text": "Recruit Wheelman, Cat Burglar, Safecracker, Hacker, and Demolition, rescuing anyone who is jailed.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete a Mastermind heist and collect its jewel at the raised scoop.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "With all six crew available, shoot the center jail to start the Big Final Heist.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use each collected MacGuffin to simplify its crew phase, then reach the final 15 Car Monte sequence.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "crew job",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Crane Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Police Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Jailbreak",
+            "tone": "rust",
+            "kind": "multiball"
+          },
+          {
+            "label": "Big Final Heist",
+            "tone": "oxblood",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "crew shot",
+            "label": "Five crew shots",
+            "description": "The two orbits, two ramps, and right horseshoe tied to the five recruitable specialists.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center jail",
+            "label": "OCPD jail",
+            "description": "The center gate and scoop used for Side Jobs, Jailbreak, and the Big Final Heist.",
+            "precision": "unverified"
+          },
+          {
+            "term": "police targets",
+            "label": "Police lock targets",
+            "description": "The blue-flashing targets that light Police Multiball locks at the horseshoes.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left horseshoe",
+            "label": "Mastermind and Police lock shot",
+            "description": "The left horseshoe used for a Police lock and the Mastermind route after enough crew are recruited.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Code 1.0.1.3 behavior can differ from current code 2.3.0.0.",
+            "response": "The February 2025 exact-machine play confirms the two-hit crew start; read the display for later scoring, timers, and feature additions.",
+            "sourceUrl": "https://www.youtube.com/watch?v=QsPsnLe02es"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose a safe crew shot and hit it twice to start the job. Add a prepared Crane or Police Multiball, finish the task, and collect its MacGuffin at the raised scoop. Rescue jailed specialists and complete the Mastermind before entering the Big Final Heist.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Choose the crew shot with the safest return and hit it twice to start its job: left orbit, left ramp, right horseshoe, right ramp, or right orbit.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Before the second crew hit, prepare Crane Multiball through cash and the right ramp, or prepare Police Multiball through the blue targets and horseshoe locks.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start the crew job first, then collect the prepared Multiball. Use the extra balls to finish the timed task without abandoning its required shots.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "When the crew task is complete, shoot the raised scoop for its MacGuffin. A full completion recruits the specialist; a failure sends that specialist to jail.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "For a rescue, hit the center jail to open it and shoot the scoop. Jailbreak serves the ball in play plus one ball for each jailed specialist.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After at least two recruits, use the left horseshoe for the Mastermind. Recruit more crew first when the larger jewel route remains practical.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Crew jobs",
+            "summary": "Wheelman is the left orbit, Cat Burglar the left ramp, Safecracker the right horseshoe, Hacker the right ramp, and Demolition the right orbit; hit one twice to start."
+          },
+          {
+            "name": "Jailbreak",
+            "summary": "Hit the center jail to open it, then shoot the scoop to start one extra ball for every specialist currently jailed."
+          },
+          {
+            "name": "Police Multiball",
+            "summary": "Hit the blue police targets to light the two horseshoe locks, collect three locks, then shoot the lit jackpot pairs and jail advances."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Side Job route",
+          "when": "Use this when a direct crew-start shot is rejecting but the side targets and crane are safer.",
+          "steps": [
+            {
+              "text": "Complete the side targets, hit the crane when it moves into reach, then shoot the opened OCPD building to start the Side Job.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the short Side Job to qualify its linked crew member without the first direct crew hit.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Return to that crew shot to start the job, then add a prepared Multiball when available.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

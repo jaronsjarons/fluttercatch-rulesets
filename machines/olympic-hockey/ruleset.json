@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "G41WY",
+  "title": "Olympic Hockey",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Olympic Hockey",
+      "url": "https://rules.silverballmania.com/rules/G41WY-MJj5r"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Olympic Hockey machine guide",
+        "url": "https://www.kineticist.com/games/pinball/olympic-hockey"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Send the ball around the outside of the bumper group until you score a goal. Then skim the lit center bumper repeatedly before a side lane resets it.",
+      "quickInfo": [
+        {
+          "name": "A-B skill shot",
+          "summary": "A lights the two yellow bumpers, B lights the two red bumpers, and collecting both opens the right-outlane gate."
+        },
+        {
+          "name": "Goal progress",
+          "summary": "The A and B lanes give three puck advances, while bumpers, center rollovers, and side lanes also advance the puck."
+        },
+        {
+          "name": "Center bumper",
+          "summary": "A goal lights the center bumper for 1,000 until a Start At Center Ice side lane begins the next goal sequence."
+        },
+        {
+          "name": "Center post",
+          "summary": "Either upper standup raises the post between the flippers, but the white rollover above the post lowers it."
+        },
+        {
+          "name": "Ball reset",
+          "summary": "Goal progress, bumper lights, the outlane gate, and the center post reset for each ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge the top A or B lane and note which pair of colored bumpers lights."
+        },
+        {
+          "text": "If the ball returns up top, collect the other letter to open the right-outlane gate."
+        },
+        {
+          "text": "Shoot through the gap outside either outer bumper instead of driving into the center of the bumper group."
+        },
+        {
+          "text": "Use upper play to advance the puck until the game awards a goal."
+        },
+        {
+          "text": "Confirm that the center bumper is lit for 1,000."
+        },
+        {
+          "text": "Shoot the edge of the center bumper so the ball continues into upper play."
+        },
+        {
+          "text": "Repeat center-bumper edge hits while the 1,000 light remains on."
+        },
+        {
+          "text": "If a Start At Center Ice side lane turns the light off, rebuild the next goal through the outside gaps."
+        }
+      ],
+      "fallback": {
+        "title": "Outside-gap upper play",
+        "when": "Use this plan when direct center-bumper shots rebound toward the drain or the center bumper is not lit.",
+        "steps": [
+          {
+            "text": "Stop direct shots at the center bumper."
+          },
+          {
+            "text": "Choose the outside gap that gives the safer upper-playfield return."
+          },
+          {
+            "text": "Send the ball through that gap to collect puck advances and incidental upper-standup hits."
+          },
+          {
+            "text": "Use the same route until a goal lights the center bumper."
+          },
+          {
+            "text": "Return to edge shots only after the center bumper is lit."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Raised-post control",
+          "when": "Use this plan when an upper standup is available without a direct rebound and the center post is down.",
+          "steps": [
+            {
+              "text": "Hit either 1,000-point upper standup to raise the center post."
+            },
+            {
+              "text": "Track the ball past the white rollover that lowers the post."
+            },
+            {
+              "text": "Use the raised post to recover a center feed without making a rushed flip."
+            },
+            {
+              "text": "Resume the goal route after the ball reaches a controlled flipper."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Lit center-bumper scoring window",
+        "steps": [
+          {
+            "text": "Collect A or B on the plunge."
+          },
+          {
+            "text": "Use outside-gap upper play to advance the puck."
+          },
+          {
+            "text": "Score a goal to light the center bumper for 1,000."
+          },
+          {
+            "text": "Skim the bumper edge to continue upper action."
+          },
+          {
+            "text": "Repeat until a side lane starts the next goal sequence."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Outside-gap upper feed",
+          "instruction": "Aim just outside an outer bumper. Use the open path instead of hitting the bottom of the bumper group.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G41WY-MJj5r"
+        },
+        {
+          "name": "Center-bumper edge shot",
+          "instruction": "Hit the side of the lit center bumper. Let the rebound continue toward the upper playfield.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G41WY-MJj5r"
+        },
+        {
+          "name": "Nudging",
+          "instruction": "Read the speed of each descending ball before it reaches a sling. Use a small legal nudge only when it improves the expected kick.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G41WY-MJj5r",
+          "techniqueSlug": "nudging"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "A shot into the bottom of a bumper can rebound directly toward the center drain.",
+          "response": "Use the outside gaps for the build. When the center bumper is lit, aim at its edge instead of its underside.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G41WY-MJj5r"
+        },
+        {
+          "issue": "Either Start At Center Ice side lane turns off the 1,000-point center bumper after a goal.",
+          "response": "Do not chase a side lane during the lit window. Return to goal-building play only after the reset occurs.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G41WY-MJj5r"
+        },
+        {
+          "issue": "The white rollover above the flippers lowers the center post without warning from the ball's position alone.",
+          "response": "Read the post before every center feed. Do not depend on a save after the ball crosses the white rollover.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G41WY-MJj5r"
+        }
+      ],
+      "checkBeforePlay": [
+        "Confirm Williams Olympic Hockey, ball count, right-gate behavior, center-post behavior, and replay conversion.",
+        "Test the five bumpers, outside gaps, side lanes, upper standups, white rollover, and tilt."
+      ],
+      "simpleOverview": "Olympic Hockey advances a puck through the gaps outside the bumper group until a goal lights the center bumper for 1,000. Plunge A and B to light the colored bumpers and open the right-outlane gate, score a goal through upper play, then skim the lit center bumper repeatedly before a side lane starts the next sequence.",
+      "overview": "Olympic Hockey advances a puck through the gaps outside the bumper group until a goal lights the center bumper for 1,000. Collect both top letters when possible, keep the ball outside the bumper group until a goal scores, then graze the lit center bumper so the ball returns upstairs. A Start At Center Ice side lane ends that collect and begins the next goal cycle.",
+      "machineSetup": [
+        "Confirm Williams Olympic Hockey, ball count, right-gate behavior, center-post behavior, and replay conversion.",
+        "Test the five bumpers, outside gaps, side lanes, upper standups, white rollover, and tilt."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

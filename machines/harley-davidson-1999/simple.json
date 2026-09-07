@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "id": "G56lO",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Across the Sega original and Stern reissues, the most direct objective is Harley Multiball: spell H-A-R-L-E-Y at the motorcycle, then use its opened ramp to lock four balls. The right ramp separately advances gears toward Speedometer Multiball, while the traffic signals build Red Light Multiball and every major shot adds miles toward the next city.",
+        "simpleOverview": "Shoot the motorcycle to spell H-A-R-L-E-Y, then lock four balls up its opened ramp for Harley Multiball. During it, complete H-A-R-L-E-Y Jackpots and return to the open motorcycle for the Super Jackpot.",
+        "summary": "Choose a HARLEY letter at the skill shot when available, then keep shooting the motorcycle until H-A-R-L-E-Y is complete. Lock four balls through the opened motorcycle ramp, complete the HARLEY Jackpots during Multiball, and return to the open motorcycle for the Super Jackpot.",
+        "quickInfo": [
+          {
+            "name": "Harley Multiball",
+            "summary": "Spell H-A-R-L-E-Y at the motorcycle, then lock four balls through the opened motorcycle ramp."
+          },
+          {
+            "name": "Harley Jackpots",
+            "summary": "During Multiball, complete the H-A-R-L-E-Y Jackpots, then shoot the open motorcycle for the Super Jackpot."
+          },
+          {
+            "name": "Speedometer Multiball",
+            "summary": "Right-ramp shots advance the gears toward the start. Follow the display and flashing shots to get up to speed and collect its Jackpots."
+          },
+          {
+            "name": "Red Light Multiball",
+            "summary": "Major shots change their traffic signals. Complete the red lights, then shoot the big traffic signal to begin the mode."
+          },
+          {
+            "name": "Cities and patches",
+            "summary": "Major shots add miles toward the next city. Reaching a city lights its displayed Patch hurry-up; Milwaukee begins the final mode."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the flippers to choose the skill-shot award before plunging. Take a HARLEY letter when it is offered to shorten the first Multiball build.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the motorcycle to add H-A-R-L-E-Y letters. When the word is complete, the motorcycle ramp opens for locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the open motorcycle ramp four times to lock four balls and start Harley Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Harley Multiball, shoot the lit playfield shots to complete the H-A-R-L-E-Y Jackpot sequence.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the HARLEY Jackpots are complete, shoot the open motorcycle for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between Harley builds, repeat the right ramp to advance gears toward Speedometer Multiball and use major shots to keep adding miles toward the next city.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Milwaukee",
+          "steps": [
+            {
+              "text": "Keep making major shots to add the displayed miles toward the next city.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "When a city is reached, shoot the flashing Patch hurry-up shot shown on the display.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Continue the city trip until Milwaukee begins the final mode.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Harley Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Speedometer Multiball",
+            "tone": "indigo",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Red Light Multiball",
+            "tone": "rust",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Patch",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "motorcycle",
+            "label": "Center motorcycle",
+            "description": "The center toy and opening ramp used to spell HARLEY, lock four balls, and collect the Super Jackpot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Right gear ramp",
+            "description": "The ramp that advances gears toward Speedometer Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "big traffic signal",
+            "label": "Big traffic-signal shot",
+            "description": "The traffic-light collect used to start Red Light Multiball and take its Super Jackpot.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "This catalog page combines the Sega original with Stern reissues.",
+            "response": "The second and third editions share these mechanics. Cabinet art and presentation differ by edition.",
+            "sourceUrl": "https://www.actionpinball.com/parts.php?item=PM0192"
+          },
+          {
+            "issue": "Gear requirements, miles, and feature difficulty can be adjusted.",
+            "response": "Use the display and lamps for current counts; the route does not rely on one fixed numeric setting.",
+            "sourceUrl": "https://www.pinballrebel.com/pinball/cards/Stern/Stern_Harley_Davidson-3rd_755-5187-XX.pdf"
+          }
+        ],
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Choose a HARLEY letter at the skill shot when available, then keep shooting the motorcycle until H-A-R-L-E-Y is complete. Lock four balls through the opened motorcycle ramp, complete the HARLEY Jackpots during Multiball, and return to the open motorcycle for the Super Jackpot.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the flippers to choose the skill-shot award before plunging. Take a HARLEY letter when it is offered to shorten the first Multiball build.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the motorcycle to add H-A-R-L-E-Y letters. When the word is complete, the motorcycle ramp opens for locks.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the open motorcycle ramp four times to lock four balls and start Harley Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Harley Multiball, shoot the lit playfield shots to complete the H-A-R-L-E-Y Jackpot sequence.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After the HARLEY Jackpots are complete, shoot the open motorcycle for the Super Jackpot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Between Harley builds, repeat the right ramp to advance gears toward Speedometer Multiball and use major shots to keep adding miles toward the next city.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Harley Multiball",
+            "summary": "Spell H-A-R-L-E-Y at the motorcycle, then lock four balls through the opened motorcycle ramp."
+          },
+          {
+            "name": "Harley Jackpots",
+            "summary": "During Multiball, complete the H-A-R-L-E-Y Jackpots, then shoot the open motorcycle for the Super Jackpot."
+          },
+          {
+            "name": "Speedometer Multiball",
+            "summary": "Right-ramp shots advance the gears toward the start. Follow the display and flashing shots to get up to speed and collect its Jackpots."
+          }
+        ]
+      }
+    }
+  ]
+}

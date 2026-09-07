@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "G5pn8",
+  "title": "Pokerino",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Bob's Guide to Pokerino",
+      "url": "https://rules.silverballmania.com/rules/G5pn8-MJ5P4"
+    },
+    "supportingSources": [
+      {
+        "label": "Kineticist Pokerino machine guide",
+        "url": "https://www.kineticist.com/games/pinball/pokerino"
+      },
+      {
+        "label": "PinWiki Pokerino technical guide",
+        "url": "https://www.pinwiki.com/wiki/index.php/Pokerino"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Repeat the upper-left horseshoe until bonus reaches 5x, then use the safer Jack and Queen banks to build a large multiplied bonus.",
+      "quickInfo": [
+        {
+          "name": "Held multiplier",
+          "summary": "Each upper-left horseshoe advances the bonus multiplier toward 5x, and the multiplier holds between balls."
+        },
+        {
+          "name": "Maximum bonus",
+          "summary": "Card and target progress builds base bonus to 29,000, which is worth 145,000 at 5x."
+        },
+        {
+          "name": "Card ranks",
+          "summary": "Aces use the top star rollovers, Kings use the upper-left captive balls, Queens use the upper-right bank, Jacks use the two lower side pairs, and Tens use the alternating center rollover."
+        },
+        {
+          "name": "Repeated banks",
+          "summary": "Completing Jacks or Queens scores 10,000 the first time and 20,000 on later completions."
+        },
+        {
+          "name": "Card memory",
+          "summary": "Completed card ranks hold between balls, while base bonus resets after each ball."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Test the staged flippers with short presses before the first fast return."
+        },
+        {
+          "text": "Move the ball to the right flipper when the transfer is controlled."
+        },
+        {
+          "text": "Shoot the upper-left horseshoe to advance the held bonus multiplier.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Repeat the horseshoe until the multiplier reaches 5x.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "From the left flipper, shoot the upper-right Queen bank when its return is controlled."
+        },
+        {
+          "text": "Use either lower Jack pair when the Queen shot is unavailable."
+        },
+        {
+          "text": "Repeat the completed Jack and Queen banks for their increased 20,000 awards."
+        },
+        {
+          "text": "When the left spinner lights through normal progress, shoot it only from a controlled angle."
+        },
+        {
+          "text": "Preserve the 5x multiplier and card progress across later balls."
+        }
+      ],
+      "fallback": {
+        "title": "Wide Jack-bank route",
+        "when": "Use this plan when the upper-left horseshoe or Queen-bank return is unreliable.",
+        "steps": [
+          {
+            "text": "Stop forcing the failed upper shot."
+          },
+          {
+            "text": "Choose the lower Jack pair on the same side as the controlled flipper."
+          },
+          {
+            "text": "Shoot the wide target area instead of the center triangle."
+          },
+          {
+            "text": "Complete Jacks to add bonus and card progress."
+          },
+          {
+            "text": "Repeat the bank after its completion value rises to 20,000."
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Card-rank completion",
+          "when": "Use this plan when one held card rank is close to completion and its shot is safer than the current bank repeat.",
+          "steps": [
+            {
+              "text": "Read which card rank is incomplete."
+            },
+            {
+              "text": "Use the matching feature: top rollovers for Aces, captive balls for Kings, Queen bank, Jack pairs, or center Tens rollover."
+            },
+            {
+              "text": "Complete the rank for its 10,000 award and held progress."
+            },
+            {
+              "text": "Return to Jack and Queen repeats after the safe rank is complete."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "29,000 bonus at 5x",
+        "steps": [
+          {
+            "text": "Repeat the upper-left horseshoe until the multiplier reaches 5x.",
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Complete Jack and Queen banks to build base bonus."
+          },
+          {
+            "text": "Repeat those banks for their higher completion values."
+          },
+          {
+            "text": "Add safe card and target hits until base bonus reaches 29,000."
+          },
+          {
+            "text": "Protect the ball and collect the multiplied bonus at the drain."
+          }
+        ]
+      },
+      "techniques": [
+        {
+          "name": "Flipper staging",
+          "instruction": "Use a short button press to operate the inner flipper first. Press fully only when the outer flipper must also move.",
+          "techniqueSlug": "flipper-staging",
+          "sourceUrl": "https://www.pinwiki.com/wiki/index.php/Pokerino"
+        },
+        {
+          "name": "Right-flipper horseshoe setup",
+          "instruction": "Settle the ball on the right flipper before the upper-left horseshoe shot. Do not shoot it from a weak moving-ball angle.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5pn8-MJ5P4"
+        },
+        {
+          "name": "Same-side Jack shot",
+          "instruction": "Shoot the wide Jack pair that is across from the active flipper. Track the return on the same half of the wide playfield.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5pn8-MJ5P4"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The staged double flippers can open a scissors drain when both pairs move at the wrong time.",
+          "response": "Learn the short-press stage before making precision shots. Use a full press only when both flippers are necessary.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5pn8-MJ5P4"
+        },
+        {
+          "issue": "The single center drop target below the Tens rollover can return the ball through the center gap.",
+          "response": "Do not shoot it directly. Collect Tens only when a natural feed reaches the alternating rollover.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5pn8-MJ5P4"
+        },
+        {
+          "issue": "Target and bumper returns remain dangerous even when the wide playfield makes some side-bank shots appear safe.",
+          "response": "Test one return before repeating a bank. Stop the repeat if the ball begins to cross toward the opposite drain.",
+          "sourceUrl": "https://rules.silverballmania.com/rules/G5pn8-MJ5P4"
+        }
+      ],
+      "simpleOverview": "Pokerino carries Bonus X between balls and raises it through the upper-left horseshoe. Repeat that horseshoe until Bonus X reaches 5x, then use the safer Jack and Queen banks to add to base bonus and score their larger repeat-completion awards.",
+      "overview": "Pokerino carries Bonus X between balls while base bonus resets. Use controlled right-flipper shots through the upper-left horseshoe to reach 5x, then repeat the upper-right Queen bank or lower Jack pairs for bonus and 20,000 repeat awards. Protect the multiplied bonus rather than forcing the captive-ball Kings.",
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

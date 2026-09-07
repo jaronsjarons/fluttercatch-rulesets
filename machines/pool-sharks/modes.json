@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": 1,
+  "id": "GR68o",
+  "modes": [
+    {
+      "id": "nine-ball",
+      "title": "9 Ball",
+      "input": {
+        "summary": "Choose 9-ball when the HOT SHOT targets register. Finish the rack. Collect the 3,000,000 Trick Shot. During the same ball, build all three sharks and collect the Jackpot at the right saucer.",
+        "steps": [
+          {
+            "text": "Before the first plunge, use the flippers to select 9-ball. This choice applies to all players.",
+            "modeNotes": [
+              "9-ball: Hit the flashing HOT SHOT targets in order. If the next required target is already down, the bank resets. After the sequence, shoot the lit 8-ball ramp and then the other ramp for the 9-ball. Later racks can need more bank completions."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Test the three plunge levels. Use the shortest clean plunge when it reaches the right saucer.",
+            "modeNotes": [
+              "Plunge awards: A full plunge scores 100,000 and spots one rack ball. A medium plunge scores 200,000 and spots two. A short plunge scores 300,000 and spots three. If no scoring switch validates the ball, an immediate drain gives another plunge."
+            ]
+          },
+          {
+            "text": "Finish the 9-ball target sequence. Shoot the lit 8-ball ramp. Then shoot the other ramp for the 9-ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left orbit into the Power Shot scoop before the Trick Shot value expires.",
+            "modeNotes": [
+              "Trick Shot: A finished rack lights the left orbit. The value holds at 3,000,000 for about seven seconds, counts down to 100,000, and then holds briefly. The operator can change the timing."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build all three sharks during one ball. Finish the rack for Great White. Complete C-U-E for Tiger. Complete the three lower-right targets for Hammerhead.",
+            "modeNotes": [
+              "Shark qualification: The three awards must be earned on the same ball. Lane change moves the lit C-U-E lane."
+            ]
+          },
+          {
+            "text": "Shoot the right saucer for the Jackpot before the timer ends.",
+            "modeNotes": [
+              "Jackpot: It starts at 1,000,000 on each ball. The left ramp adds 25,000. The right ramp adds 50,000. The right saucer adds 100,000. Drop targets add 5,000. The default timer is 20 seconds."
+            ]
+          },
+          {
+            "text": "If the Jackpot timer expires, continue to shoot the right saucer for the available shark award.",
+            "modeNotes": [
+              "Shark awards: Great White scores 750,000 for 20 seconds. Tiger scores 500,000 for 20 seconds. Hammerhead scores 250,000 for 20 seconds."
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: 8-ball and Cue Stick",
+          "when": "Recovery pivot: Use this plan when the 9-ball target order or bank reset is unreliable.",
+          "steps": [
+            {
+              "text": "Select 8-ball before the first plunge.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete HOT SHOT twice. Then shoot one lit ramp for the 8-ball and rack completion.",
+              "modeNotes": [
+                "8-ball: The first HOT SHOT bank scores balls 1 through 7. The second bank scores balls 9 through 15. One lit ramp then sinks the 8-ball."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the drop bank to raise the Cue Stick award. Collect it when its value is large.",
+              "modeNotes": [
+                "Cue Stick: Each bank completion raises the award through 30,000, 50,000, 80,000, 100,000, 200,000, 300,000, 500,000, and 1,000,000."
+              ]
+            },
+            {
+              "text": "Complete Hammerhead before a high Cue Stick collect.",
+              "modeNotes": [
+                "2x Cue Stick: The three lower-right targets start a default 15-second timer. One Cue Stick collect during the timer scores 2x. The effect ends after that collect or when the timer ends."
+              ],
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Power Shot mystery",
+            "when": "When trailing, use this higher-ceiling route: use this route when the left orbit and scoop behave reliably but a rack is not ready.",
+            "steps": [
+              {
+                "text": "Shoot the left orbit when Trick Shot is not lit."
+              },
+              {
+                "text": "Collect the Power Shot mystery in the scoop.",
+                "modeNotes": [
+                  "Power Shot: The random award can be points, Scratch, Sink Ball, Advance Cue Stick, Light Extra Ball, or Instant Extra Ball. Do not depend on one award in competition play."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CUE and Extra Ball",
+            "when": "Use this route when the top lanes and left orbit are controlled.",
+            "steps": [
+              {
+                "text": "Use lane change to complete C-U-E."
+              },
+              {
+                "text": "Each completion advances bonus X to a 5x cap and earns Tiger.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "The completion briefly lights the left orbit for Light Extra Ball. Collect it only when tournament settings permit it."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Rack completion and the shark Jackpot",
+          "steps": [
+            {
+              "text": "Repeat rack completion, Trick Shot, Cue Stick growth, and the three-shark Jackpot."
+            },
+            {
+              "text": "Rack, C-U-E, bonus X, and Cue Stick memory depend on operator settings."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "9-ball",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "8-ball",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Trick Shot",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Cue Stick",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2x Cue Stick",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "C-U-E",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Great White",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Tiger",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Hammerhead",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "techniques": [
+          {
+            "name": "Short-plunge ladder",
+            "instruction": "Learn the three plunge lengths. The shortest clean plunge reaches the right saucer and spots three rack balls.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          },
+          {
+            "name": "Lane change",
+            "instruction": "Use the flipper buttons to move the lit C-U-E lane before the ball reaches the top rollovers.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Trick Shot value starts counting down soon after rack completion.",
+            "response": "Shoot the lit left orbit immediately. Read the display because the operator can change the timer.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Choose 9-ball when the HOT SHOT targets register."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Repeat rack completion, Trick Shot, Cue Stick growth, and the three-shark Jackpot."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "8-ball and Cue Stick: Use this plan when the 9-ball target order or bank reset is unreliable."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "HOT SHOT",
+            "label": "HOT SHOT targets",
+            "description": "Center target bank used to finish the selected rack.",
+            "precision": "unverified",
+            "context": "Center target bank used to finish the selected rack."
+          },
+          {
+            "term": "8-ball ramp",
+            "label": "8-ball ramp",
+            "description": "Lit ramp used near the end of a 9-ball rack.",
+            "precision": "unverified",
+            "context": "Lit ramp used near the end of a 9-ball rack."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Shark Jackpot and shark-award collect.",
+            "precision": "unverified",
+            "context": "Shark Jackpot and shark-award collect."
+          }
+        ],
+        "simpleOverview": "Pool Sharks begins with one 8-ball or 9-ball choice for every player. Choose 9-ball before the first plunge, finish the lit target sequence, shoot the lit 8-ball ramp and then the other ramp, and collect the timed Trick Shot at the left-orbit Power Shot scoop. On the same ball, complete the three shark requirements and shoot the right saucer for the Jackpot.",
+        "overview": "Pool Sharks uses a completed 9-ball rack for both the timed Trick Shot and the Great White shark. Choose 9-ball before the first plunge, complete its target and ramp sequence, then shoot the left orbit into the Power Shot scoop before the Trick Shot expires. Complete C-U-E for Tiger and the three lower-right targets for Hammerhead, then shoot the right saucer before the shark Jackpot timer ends.",
+        "machineSetup": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "rulesNotes": []
+      },
+      "strategy": {
+        "summary": "Choose 9 Ball before the first plunge. Finish the ordered HOT SHOT rack, collect the timed Trick Shot, then complete all three sharks on one ball and collect the Jackpot.",
+        "steps": [
+          {
+            "text": "Before the first plunge, use the flippers to select 9-ball. This choice applies to all players.",
+            "modeNotes": [
+              "9-ball: Hit the flashing HOT SHOT targets in order. If the next required target is already down, the bank resets. After the sequence, shoot the lit 8-ball ramp and then the other ramp for the 9-ball. Later racks can need more bank completions."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Test the three plunge levels. Use the shortest clean plunge when it reaches the right saucer.",
+            "modeNotes": [
+              "Plunge awards: A full plunge scores 100,000 and spots one rack ball. A medium plunge scores 200,000 and spots two. A short plunge scores 300,000 and spots three. If no scoring switch validates the ball, an immediate drain gives another plunge."
+            ]
+          },
+          {
+            "text": "Finish the 9-ball target sequence. Shoot the lit 8-ball ramp. Then shoot the other ramp for the 9-ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left orbit into the Power Shot scoop before the Trick Shot value expires.",
+            "modeNotes": [
+              "Trick Shot: A finished rack lights the left orbit. The value holds at 3,000,000 for about seven seconds, counts down to 100,000, and then holds briefly. The operator can change the timing."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build all three sharks during one ball. Finish the rack for Great White. Complete C-U-E for Tiger. Complete the three lower-right targets for Hammerhead.",
+            "modeNotes": [
+              "Shark qualification: The three awards must be earned on the same ball. Lane change moves the lit C-U-E lane."
+            ]
+          },
+          {
+            "text": "Shoot the right saucer for the Jackpot before the timer ends.",
+            "modeNotes": [
+              "Jackpot: It starts at 1,000,000 on each ball. The left ramp adds 25,000. The right ramp adds 50,000. The right saucer adds 100,000. Drop targets add 5,000. The default timer is 20 seconds."
+            ]
+          },
+          {
+            "text": "If the Jackpot timer expires, continue to shoot the right saucer for the available shark award.",
+            "modeNotes": [
+              "Shark awards: Great White scores 750,000 for 20 seconds. Tiger scores 500,000 for 20 seconds. Hammerhead scores 250,000 for 20 seconds."
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Position play: Power Shot mystery",
+            "when": "When trailing, use this higher-ceiling route: use this route when the left orbit and scoop behave reliably but a rack is not ready.",
+            "steps": [
+              {
+                "text": "Shoot the left orbit when Trick Shot is not lit."
+              },
+              {
+                "text": "Collect the Power Shot mystery in the scoop.",
+                "modeNotes": [
+                  "Power Shot: The random award can be points, Scratch, Sink Ball, Advance Cue Stick, Light Extra Ball, or Instant Extra Ball. Do not depend on one award in competition play."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CUE and Extra Ball",
+            "when": "Use this route when the top lanes and left orbit are controlled.",
+            "steps": [
+              {
+                "text": "Use lane change to complete C-U-E."
+              },
+              {
+                "text": "Each completion advances bonus X to a 5x cap and earns Tiger.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "The completion briefly lights the left orbit for Light Extra Ball. Collect it only when tournament settings permit it."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Rack completion and the shark Jackpot",
+          "steps": [
+            {
+              "text": "Repeat rack completion, Trick Shot, Cue Stick growth, and the three-shark Jackpot."
+            },
+            {
+              "text": "Rack, C-U-E, bonus X, and Cue Stick memory depend on operator settings."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "9-ball",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Trick Shot",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Cue Stick",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2x Cue Stick",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "C-U-E",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Great White",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Tiger",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Hammerhead",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "techniques": [
+          {
+            "name": "Short-plunge ladder",
+            "instruction": "Learn the three plunge lengths. The shortest clean plunge reaches the right saucer and spots three rack balls.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          },
+          {
+            "name": "Lane change",
+            "instruction": "Use the flipper buttons to move the lit C-U-E lane before the ball reaches the top rollovers.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Trick Shot value starts counting down soon after rack completion.",
+            "response": "Shoot the lit left orbit immediately. Read the display because the operator can change the timer.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Opening choice",
+            "summary": "Use the flippers before the first plunge to choose 9 Ball for every player."
+          },
+          {
+            "name": "9 Ball rack",
+            "summary": "Hit the flashing HOT SHOT targets in order, then shoot the two lit ramps."
+          },
+          {
+            "name": "Trick Shot and Jackpot",
+            "summary": "Collect the timed left-orbit Trick Shot, then finish all three sharks on one ball for the right-saucer Jackpot."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "HOT SHOT",
+            "label": "HOT SHOT targets",
+            "description": "Center target bank used to finish the selected rack.",
+            "precision": "unverified",
+            "context": "Center target bank used to finish the selected rack."
+          },
+          {
+            "term": "8-ball ramp",
+            "label": "8-ball ramp",
+            "description": "Lit ramp used near the end of a 9-ball rack.",
+            "precision": "unverified",
+            "context": "Lit ramp used near the end of a 9-ball rack."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Shark Jackpot and shark-award collect.",
+            "precision": "unverified",
+            "context": "Shark Jackpot and shark-award collect."
+          }
+        ],
+        "simpleOverview": "Pool Sharks begins with one shared game choice. In 9 Ball, hit the flashing HOT SHOT targets in order, shoot the lit 8-ball ramp and then the other ramp, and collect the timed Trick Shot at the left-orbit Power Shot scoop. Finish the rack, C-U-E, and the lower-right targets on one ball to light the shark Jackpot at the right saucer.",
+        "overview": "Pool Sharks begins with one shared game choice. In 9 Ball, hit the flashing HOT SHOT targets in order, shoot the lit 8-ball ramp and then the other ramp, and collect the timed Trick Shot at the left-orbit Power Shot scoop. Finish the rack, C-U-E, and the lower-right targets on one ball to light the shark Jackpot at the right saucer.",
+        "machineSetup": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "rulesNotes": []
+      }
+    },
+    {
+      "id": "eight-ball",
+      "title": "8 Ball",
+      "input": {
+        "summary": "Choose 9-ball when the HOT SHOT targets register. Finish the rack. Collect the 3,000,000 Trick Shot. During the same ball, build all three sharks and collect the Jackpot at the right saucer.",
+        "steps": [
+          {
+            "text": "Before the first plunge, use the flippers to select 9-ball. This choice applies to all players.",
+            "modeNotes": [
+              "9-ball: Hit the flashing HOT SHOT targets in order. If the next required target is already down, the bank resets. After the sequence, shoot the lit 8-ball ramp and then the other ramp for the 9-ball. Later racks can need more bank completions."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Test the three plunge levels. Use the shortest clean plunge when it reaches the right saucer.",
+            "modeNotes": [
+              "Plunge awards: A full plunge scores 100,000 and spots one rack ball. A medium plunge scores 200,000 and spots two. A short plunge scores 300,000 and spots three. If no scoring switch validates the ball, an immediate drain gives another plunge."
+            ]
+          },
+          {
+            "text": "Finish the 9-ball target sequence. Shoot the lit 8-ball ramp. Then shoot the other ramp for the 9-ball.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left orbit into the Power Shot scoop before the Trick Shot value expires.",
+            "modeNotes": [
+              "Trick Shot: A finished rack lights the left orbit. The value holds at 3,000,000 for about seven seconds, counts down to 100,000, and then holds briefly. The operator can change the timing."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build all three sharks during one ball. Finish the rack for Great White. Complete C-U-E for Tiger. Complete the three lower-right targets for Hammerhead.",
+            "modeNotes": [
+              "Shark qualification: The three awards must be earned on the same ball. Lane change moves the lit C-U-E lane."
+            ]
+          },
+          {
+            "text": "Shoot the right saucer for the Jackpot before the timer ends.",
+            "modeNotes": [
+              "Jackpot: It starts at 1,000,000 on each ball. The left ramp adds 25,000. The right ramp adds 50,000. The right saucer adds 100,000. Drop targets add 5,000. The default timer is 20 seconds."
+            ]
+          },
+          {
+            "text": "If the Jackpot timer expires, continue to shoot the right saucer for the available shark award.",
+            "modeNotes": [
+              "Shark awards: Great White scores 750,000 for 20 seconds. Tiger scores 500,000 for 20 seconds. Hammerhead scores 250,000 for 20 seconds."
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: 8-ball and Cue Stick",
+          "when": "Recovery pivot: Use this plan when the 9-ball target order or bank reset is unreliable.",
+          "steps": [
+            {
+              "text": "Select 8-ball before the first plunge.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete HOT SHOT twice. Then shoot one lit ramp for the 8-ball and rack completion.",
+              "modeNotes": [
+                "8-ball: The first HOT SHOT bank scores balls 1 through 7. The second bank scores balls 9 through 15. One lit ramp then sinks the 8-ball."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Complete the drop bank to raise the Cue Stick award. Collect it when its value is large.",
+              "modeNotes": [
+                "Cue Stick: Each bank completion raises the award through 30,000, 50,000, 80,000, 100,000, 200,000, 300,000, 500,000, and 1,000,000."
+              ]
+            },
+            {
+              "text": "Complete Hammerhead before a high Cue Stick collect.",
+              "modeNotes": [
+                "2x Cue Stick: The three lower-right targets start a default 15-second timer. One Cue Stick collect during the timer scores 2x. The effect ends after that collect or when the timer ends."
+              ],
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Power Shot mystery",
+            "when": "When trailing, use this higher-ceiling route: use this route when the left orbit and scoop behave reliably but a rack is not ready.",
+            "steps": [
+              {
+                "text": "Shoot the left orbit when Trick Shot is not lit."
+              },
+              {
+                "text": "Collect the Power Shot mystery in the scoop.",
+                "modeNotes": [
+                  "Power Shot: The random award can be points, Scratch, Sink Ball, Advance Cue Stick, Light Extra Ball, or Instant Extra Ball. Do not depend on one award in competition play."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CUE and Extra Ball",
+            "when": "Use this route when the top lanes and left orbit are controlled.",
+            "steps": [
+              {
+                "text": "Use lane change to complete C-U-E."
+              },
+              {
+                "text": "Each completion advances bonus X to a 5x cap and earns Tiger.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "The completion briefly lights the left orbit for Light Extra Ball. Collect it only when tournament settings permit it."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Rack completion and the shark Jackpot",
+          "steps": [
+            {
+              "text": "Repeat rack completion, Trick Shot, Cue Stick growth, and the three-shark Jackpot."
+            },
+            {
+              "text": "Rack, C-U-E, bonus X, and Cue Stick memory depend on operator settings."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "9-ball",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "8-ball",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Trick Shot",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Cue Stick",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2x Cue Stick",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "C-U-E",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Great White",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Tiger",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Hammerhead",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "techniques": [
+          {
+            "name": "Short-plunge ladder",
+            "instruction": "Learn the three plunge lengths. The shortest clean plunge reaches the right saucer and spots three rack balls.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          },
+          {
+            "name": "Lane change",
+            "instruction": "Use the flipper buttons to move the lit C-U-E lane before the ball reaches the top rollovers.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Trick Shot value starts counting down soon after rack completion.",
+            "response": "Shoot the lit left orbit immediately. Read the display because the operator can change the timer.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Choose 9-ball when the HOT SHOT targets register."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Repeat rack completion, Trick Shot, Cue Stick growth, and the three-shark Jackpot."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "8-ball and Cue Stick: Use this plan when the 9-ball target order or bank reset is unreliable."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "HOT SHOT",
+            "label": "HOT SHOT targets",
+            "description": "Center target bank used to finish the selected rack.",
+            "precision": "unverified",
+            "context": "Center target bank used to finish the selected rack."
+          },
+          {
+            "term": "8-ball ramp",
+            "label": "8-ball ramp",
+            "description": "Lit ramp used near the end of a 9-ball rack.",
+            "precision": "unverified",
+            "context": "Lit ramp used near the end of a 9-ball rack."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Shark Jackpot and shark-award collect.",
+            "precision": "unverified",
+            "context": "Shark Jackpot and shark-award collect."
+          }
+        ],
+        "simpleOverview": "Pool Sharks begins with one 8-ball or 9-ball choice for every player. Choose 9-ball before the first plunge, finish the lit target sequence, shoot the lit 8-ball ramp and then the other ramp, and collect the timed Trick Shot at the left-orbit Power Shot scoop. On the same ball, complete the three shark requirements and shoot the right saucer for the Jackpot.",
+        "overview": "Pool Sharks uses a completed 9-ball rack for both the timed Trick Shot and the Great White shark. Choose 9-ball before the first plunge, complete its target and ramp sequence, then shoot the left orbit into the Power Shot scoop before the Trick Shot expires. Complete C-U-E for Tiger and the three lower-right targets for Hammerhead, then shoot the right saucer before the shark Jackpot timer ends.",
+        "machineSetup": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "rulesNotes": []
+      },
+      "strategy": {
+        "summary": "Choose 8 Ball before the first plunge. Complete HOT SHOT twice, sink the 8 Ball at either lit ramp, collect the timed Trick Shot, then finish all three sharks on one ball for the Jackpot.",
+        "steps": [
+          {
+            "text": "Before the first plunge, use the flippers to select 8 Ball. This choice applies to all players.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Test the three plunge levels. Use the shortest clean plunge when it reaches the right saucer.",
+            "modeNotes": [
+              "A full plunge spots one rack ball, a medium plunge spots two, and a short plunge spots three. Read the installed game's awards and validate the feed before relying on the short plunge."
+            ]
+          },
+          {
+            "text": "Complete HOT SHOT twice. Then shoot either lit ramp to sink the 8 Ball and finish the rack.",
+            "modeNotes": [
+              "The first HOT SHOT bank scores balls 1 through 7. The second scores balls 9 through 15. One lit ramp then sinks the 8 Ball."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the left orbit into the Power Shot scoop before the Trick Shot value expires.",
+            "modeNotes": [
+              "A finished rack lights the timed Trick Shot. The operator can change its timing, so read the display before committing to the scoop."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Build all three sharks during one ball. Finish the rack for Great White, complete C-U-E for Tiger, and complete the three lower-right targets for Hammerhead."
+          },
+          {
+            "text": "Shoot the right saucer for the Jackpot before the timer ends."
+          },
+          {
+            "text": "If the Jackpot timer expires, continue to shoot the right saucer for the available shark award."
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Cue Stick cashout",
+            "when": "Use this while the HOT SHOT bank is controlled and the Cue Stick value is worth collecting.",
+            "steps": [
+              {
+                "text": "Complete HOT SHOT twice. Then shoot one lit ramp for the 8-ball and rack completion.",
+                "modeNotes": [
+                  "8-ball: The first HOT SHOT bank scores balls 1 through 7. The second bank scores balls 9 through 15. One lit ramp then sinks the 8-ball."
+                ],
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete the drop bank to raise the Cue Stick award. Collect it when its value is large.",
+                "modeNotes": [
+                  "Cue Stick: Each bank completion raises the award through 30,000, 50,000, 80,000, 100,000, 200,000, 300,000, 500,000, and 1,000,000."
+                ]
+              },
+              {
+                "text": "Complete Hammerhead before a high Cue Stick collect.",
+                "modeNotes": [
+                  "2x Cue Stick: The three lower-right targets start a default 15-second timer. One Cue Stick collect during the timer scores 2x. The effect ends after that collect or when the timer ends."
+                ],
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Position play: Power Shot mystery",
+            "when": "When trailing, use this higher-ceiling route: use this route when the left orbit and scoop behave reliably but a rack is not ready.",
+            "steps": [
+              {
+                "text": "Shoot the left orbit when Trick Shot is not lit."
+              },
+              {
+                "text": "Collect the Power Shot mystery in the scoop.",
+                "modeNotes": [
+                  "Power Shot: The random award can be points, Scratch, Sink Ball, Advance Cue Stick, Light Extra Ball, or Instant Extra Ball. Do not depend on one award in competition play."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CUE and Extra Ball",
+            "when": "Use this route when the top lanes and left orbit are controlled.",
+            "steps": [
+              {
+                "text": "Use lane change to complete C-U-E."
+              },
+              {
+                "text": "Each completion advances bonus X to a 5x cap and earns Tiger.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "The completion briefly lights the left orbit for Light Extra Ball. Collect it only when tournament settings permit it."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "8 Ball rack, Trick Shot, and shark Jackpot",
+          "steps": [
+            {
+              "text": "Before the first plunge, use the flippers to select 8 Ball. This choice applies to all players.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Test the three plunge levels. Use the shortest clean plunge when it reaches the right saucer.",
+              "modeNotes": [
+                "A full plunge spots one rack ball, a medium plunge spots two, and a short plunge spots three. Read the installed game's awards and validate the feed before relying on the short plunge."
+              ]
+            },
+            {
+              "text": "Complete HOT SHOT twice. Then shoot either lit ramp to sink the 8 Ball and finish the rack.",
+              "modeNotes": [
+                "The first HOT SHOT bank scores balls 1 through 7. The second scores balls 9 through 15. One lit ramp then sinks the 8 Ball."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the left orbit into the Power Shot scoop before the Trick Shot value expires.",
+              "modeNotes": [
+                "A finished rack lights the timed Trick Shot. The operator can change its timing, so read the display before committing to the scoop."
+              ],
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Build all three sharks during one ball. Finish the rack for Great White, complete C-U-E for Tiger, and complete the three lower-right targets for Hammerhead."
+            },
+            {
+              "text": "Shoot the right saucer for the Jackpot before the timer ends."
+            },
+            {
+              "text": "If the Jackpot timer expires, continue to shoot the right saucer for the available shark award."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "8-ball",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Trick Shot",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Jackpot",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Cue Stick",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "2x Cue Stick",
+            "tone": "indigo",
+            "kind": "multiplier"
+          },
+          {
+            "label": "C-U-E",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Great White",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Tiger",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Hammerhead",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "checkBeforePlay": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "techniques": [
+          {
+            "name": "Short-plunge ladder",
+            "instruction": "Learn the three plunge lengths. The shortest clean plunge reaches the right saucer and spots three rack balls.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          },
+          {
+            "name": "Lane change",
+            "instruction": "Use the flipper buttons to move the lit C-U-E lane before the ball reaches the top rollovers.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Trick Shot value starts counting down soon after rack completion.",
+            "response": "Shoot the lit left orbit immediately. Read the display because the operator can change the timer.",
+            "sourceUrl": "https://arcarc.xmission.com/Pinball/PDF%20Pinball%20Manuals%20and%20Schematics/Pool%20Sharks%20Operation%20Manual.pdf"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Opening choice",
+            "summary": "Use the flippers before the first plunge to choose 8 Ball for every player."
+          },
+          {
+            "name": "8 Ball rack",
+            "summary": "Complete HOT SHOT twice, then shoot either lit ramp to sink the 8 Ball."
+          },
+          {
+            "name": "Trick Shot and Jackpot",
+            "summary": "Collect the timed left-orbit Trick Shot, then finish all three sharks on one ball for the right-saucer Jackpot."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "HOT SHOT",
+            "label": "HOT SHOT targets",
+            "description": "Center target bank used to finish the selected rack.",
+            "precision": "unverified",
+            "context": "Center target bank used to finish the selected rack."
+          },
+          {
+            "term": "8-ball ramp",
+            "label": "8-ball ramp",
+            "description": "Lit ramp used near the end of a 9-ball rack.",
+            "precision": "unverified",
+            "context": "Lit ramp used near the end of a 9-ball rack."
+          },
+          {
+            "term": "right saucer",
+            "label": "Right saucer",
+            "description": "Shark Jackpot and shark-award collect.",
+            "precision": "unverified",
+            "context": "Shark Jackpot and shark-award collect."
+          }
+        ],
+        "simpleOverview": "Pool Sharks begins with one shared game choice. In 8 Ball, complete the HOT SHOT bank twice and shoot either lit ramp to finish the rack. Collect the timed Trick Shot at the left-orbit Power Shot scoop, then finish the rack, C-U-E, and the lower-right targets on one ball to light the shark Jackpot at the right saucer.",
+        "overview": "Pool Sharks begins with one shared game choice. In 8 Ball, complete the HOT SHOT bank twice and shoot either lit ramp to finish the rack. Collect the timed Trick Shot at the left-orbit Power Shot scoop, then finish the rack, C-U-E, and the lower-right targets on one ball to light the shark Jackpot at the right saucer.",
+        "machineSetup": [
+          "Rack, C-U-E, bonus X, Cue Stick, and timer memory depend on operator settings.",
+          "The Jackpot and shark timer is operator-adjustable; read the display before committing to its collect shot."
+        ],
+        "rulesNotes": []
+      }
+    }
+  ]
+}

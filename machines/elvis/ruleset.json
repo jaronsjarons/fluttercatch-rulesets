@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "G4qbX",
+  "title": "Elvis",
+  "kind": "catalog",
+  "content": {
+    "source": {
+      "label": "Elvis rules and review",
+      "url": "https://www.pinballnews.com/games/elvis/index5.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Daniele Celestino Acciari at UK Open 2025",
+        "url": "https://pinballvideos.com/v/5396/20070"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "summary": "Prepare All Shook Up, start Heartbreak Hotel or Jailhouse Rock Multiball, then combine the song with TCB 2x playfield scoring and repeat the protected Jackpot shot.",
+      "quickInfo": [
+        {
+          "name": "Heartbreak Hotel Multiball",
+          "summary": "Shoot the upper hotel until its door opens, then lock through the doorway to start the feature."
+        },
+        {
+          "name": "Jailhouse Rock Multiball",
+          "summary": "Use the saucer to qualify and collect locks; its Jackpots and Super return to the saucer."
+        },
+        {
+          "name": "All Shook Up",
+          "summary": "Complete the left loop, left ramp, and right ramp; it is easy to prepare for a multiball stack."
+        },
+        {
+          "name": "Other Featured Hits",
+          "summary": "Hound Dog is a switch frenzy, while Blue Suede Shoes qualifies and then repeats the upper inner loop."
+        },
+        {
+          "name": "TCB 2x playfield scoring",
+          "summary": "Complete the T-C-B targets for a timed double that applies to modes and Multiballs and can be extended at Scarf."
+        },
+        {
+          "name": "Graceland",
+          "summary": "Start all five Featured Hits, collect every Gift from E-L-V-I-S, and reach number one in Top Ten Countdown to light the top saucer."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Use ball save to test the hotel entry, Jailhouse saucer, left loop, and both ramp returns. Drop catch a clean Jailhouse eject on the lower-right flipper."
+        },
+        {
+          "text": "Collect two of All, Shook, and Up; leave the safest final shot uncollected while a Multiball is nearly ready."
+        },
+        {
+          "text": "Use the upper playfield to prepare Heartbreak Hotel, or use the saucer to prepare Jailhouse Rock.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Complete T-C-B for 20 seconds of 2x playfield scoring when its final target can be made without sacrificing the ball.",
+          "kinds": [
+            "multiplier"
+          ]
+        },
+        {
+          "text": "Start the prepared Multiball, then finish All Shook Up inside the protected window.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "Repeat the feature's Jackpot shot and use the Scarf target for add-a-ball only from a controlled feed.",
+          "modeNotes": [
+            "Jailhouse sequence: Saucer Jackpots advance J-A-I-L-B-R-E-A-K and its saucer Super Jackpot."
+          ],
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "fallback": {
+        "title": "Heartbreak Hotel only",
+        "when": "Use this when the upper hotel is reliable but the Jailhouse saucer or TCB targets reject.",
+        "steps": [
+          {
+            "text": "Use the left ramp to enter the upper playfield."
+          },
+          {
+            "text": "Hit the hotel until its door opens, then shoot through the doorway to lock the ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Heartbreak Hotel Multiball, shoot the hotel to open its door, then enter before it closes for the escalating Heartbreak award.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "title": "Hound Dog spinner",
+          "when": "Use this when Hound Dog is ready and the left loop is the safest repeatable shot.",
+          "steps": [
+            {
+              "text": "Start Hound Dog at its target.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Rip the left-loop spinner for dense switch scoring.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Let the timer expire rather than forcing the target to extend it from a bad feed."
+            }
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "Graceland",
+        "steps": [
+          {
+            "text": "Start Hound Dog, Blue Suede Shoes, All Shook Up, Heartbreak Hotel Multiball, and Jailhouse Rock Multiball.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Complete the Gifts from E-L-V-I-S progression."
+          },
+          {
+            "text": "Advance through the Top Ten Countdown, then start Graceland at the top saucer.",
+            "kinds": [
+              "mode"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Heartbreak Hotel Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Jailhouse Rock Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "All Shook Up",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Hound Dog",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Blue Suede Shoes",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "Graceland",
+          "tone": "navy",
+          "kind": "mode",
+          "kindIsExplicit": true
+        }
+      ],
+      "techniques": [
+        {
+          "name": "Prepared song stack",
+          "instruction": "Leave one safe All Shook Up shot uncollected, then finish it after Multiball and TCB are active.",
+          "sourceUrl": "https://www.pinballnews.com/games/elvis/index5.html"
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "The Jailhouse saucer is narrow and may collect from the bumpers rather than a direct shot.",
+          "response": "Do not force a centerline attempt when a safer bumper feed or other Multiball is available.",
+          "sourceUrl": "https://www.pinballnews.com/games/elvis/index5.html"
+        }
+      ],
+      "checkBeforePlay": [
+        "Test both ramps, upper flippers, hotel door, Jailhouse saucer eject, loop magnet, T-C-B and KING standups, and Scarf target before choosing the stack."
+      ],
+      "simpleOverview": "In Elvis, completing Featured Hits awards Gifts and advances Top Ten Countdown toward Graceland. Prepare the safe final shot of All Shook Up, build Heartbreak Hotel or Jailhouse Rock, then complete T-C-B and start the Multiball before finishing the song under 2x playfield scoring and extra-ball protection.",
+      "overview": "In Elvis, completing Featured Hits awards Gifts and advances Top Ten Countdown toward Graceland. For the repeatable scoring route, prepare All Shook Up and either primary Multiball, complete T-C-B for 2x playfield scoring, start the Multiball, then finish the song while the extra balls protect its Jackpot shots.",
+      "machineSetup": [
+        "Test both ramps, upper flippers, hotel door, Jailhouse saucer eject, loop magnet, T-C-B and KING standups, and Scarf target before choosing the stack."
+      ],
+      "rulesNotes": []
+    }
+  }
+}

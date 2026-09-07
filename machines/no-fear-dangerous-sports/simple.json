@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "id": "Gr2Y2",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Select Start Challenge at each plunge. Repeat safe Jump shots and let dangerous challenges time out. Start all five challenges, then play No Limits, Fear Fest, and Meet Your Maker. Repeat the 200,000,000 Jump Super in Meet Your Maker.",
+        "quickInfo": [
+          {
+            "name": "Minor Challenges",
+            "summary": "Start Dirt, Asphalt, Water, Snow, and Air to qualify the Major Challenge sequence."
+          },
+          {
+            "name": "No Limits",
+            "summary": "Start all five Minor Challenges and shoot the Skull for rising major-shot jackpots."
+          },
+          {
+            "name": "Fear Fest",
+            "summary": "Spell N-O F-E-A-R and shoot the Skull for a multiball with a built jackpot collect."
+          },
+          {
+            "name": "Meet Your Maker",
+            "summary": "Spell N-O F-E-A-R again and shoot the Skull for repeatable 200,000,000 Jump Supers."
+          },
+          {
+            "name": "Regular Multiball",
+            "summary": "Hit the Skydive drop target to light locks, collect three locks, then shoot Skull, Skydive, and Jump Jackpots in order."
+          },
+          {
+            "name": "Jump Bonus",
+            "summary": "Every completed Jump adds 5,000,000 to end-of-ball bonus for the full game."
+          },
+          {
+            "name": "Challenge timing",
+            "summary": "Starting Multiball during a Minor Challenge pauses the Challenge and its timer. The Challenge resumes when Multiball ends."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Before each new ball, select Start Challenge with the flippers and launch the ball."
+          },
+          {
+            "text": "Test the lower Jump Ramp and the upper-flipper loop over the gap. Repeat the Jump while both feeds are reliable.",
+            "modeNotes": [
+              "Jump: The first shot scores 5,000,000; immediate repeats rise by 5,000,000 through 25,000,000.",
+              "Jump Bonus: Every completed Jump adds 5,000,000 to end-of-ball bonus, and this contribution carries for the game."
+            ]
+          },
+          {
+            "text": "During Dirt, Water, or Air, take safe lit shots. During dangerous Asphalt or Snow shots, trap and let the timer expire.",
+            "modeNotes": [
+              "Minor Challenge: Starting the timed mode is enough for Major Challenge progress; after no switch activity, a trapped ball can pause the timer."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After all five Minor Challenges have started, shoot the Skull when No Limits flashes.",
+            "modeNotes": [
+              "No Limits: Three-ball play has a 15-second save; major shots start at 20,000,000 and rise by 1,000,000 to 70,000,000."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After No Limits, shoot lit majors to spell N-O F-E-A-R. Shoot the Skull to start Fear Fest.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Fear Fest, use major shots to add 20,000,000 to the Jackpot. Collect at the Skull or with a completed Jump.",
+            "modeNotes": [
+              "Fear Fest Jackpot starts at 80,000,000 on some physical copies and 50,000,000 on digital 1.44.7; follow the installed display."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "After Fear Fest, spell N-O F-E-A-R again and shoot the Skull for Meet Your Maker.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Meet Your Maker, hold balls on the left flipper and use the right flipper for the Jump Ramp and upper loop.",
+            "modeNotes": [
+              "Meet Your Maker: Four-ball play has a 20-second save, a repeatable 200,000,000 Jump Super, and a 50,000,000 Skull Jackpot."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Jump Super until its feed breaks. Use the Skull only as a recovery shot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Protect the accumulated Jump Bonus and do not risk a tilt at the drain."
+          }
+        ],
+        "fallback": {
+          "title": "Recovery: Regular Multiball",
+          "when": "Recovery pivot: Use this when Major Challenge progress is too far away.",
+          "steps": [
+            {
+              "text": "Hit the Skydive drop target to light Lock at Skydive and Skull."
+            },
+            {
+              "text": "Collect three locks in any combination and start Regular Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot Skull for 50,000,000, then Skydive for 100,000,000."
+            },
+            {
+              "text": "Complete the Jump for the 200,000,000 Super Jackpot."
+            },
+            {
+              "text": "Repeat Skull, Skydive, and Jump while at least two balls remain."
+            },
+            {
+              "text": "If no jackpot was made, use the 10-second Last Chance after one ball remains."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Position play: Payback Time into Over the Edge",
+            "when": "When trailing, use this higher-ceiling route: use this when the Track Orbit and both main ramps are safe.",
+            "steps": [
+              {
+                "text": "Make three Jump Ramp and three Hairpin Ramp shots to start Payback Time.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "During its 25 seconds, each major shot scores 25,000,000."
+              },
+              {
+                "text": "Prepare the ninth Track Orbit, then start Payback Time before you collect it."
+              },
+              {
+                "text": "The ninth orbit starts two-ball Over the Edge.",
+                "modeNotes": [
+                  "Payback Time runs with Over the Edge. Ordinary Minor Challenges instead pause when Multiball starts and resume afterward."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat both ramps as their values rise from 25,000,000 to 75,000,000."
+              }
+            ]
+          },
+          {
+            "title": "Flipper Skill Shot",
+            "when": "Use this when the plunge feed to the right flipper is controlled.",
+            "steps": [
+              {
+                "text": "Select Flipper Skill Shot before the plunge."
+              },
+              {
+                "text": "Use the served feed for the displayed lit shot."
+              },
+              {
+                "text": "Return to Jump or Challenge progress after the collect."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Meet Your Maker",
+          "steps": [
+            {
+              "text": "Start all five Minor Challenges.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Start No Limits at the Skull.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Spell N-O F-E-A-R and start Fear Fest.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Spell N-O F-E-A-R again and start Meet Your Maker.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Repeat the 200,000,000 Jump Super during Meet Your Maker."
+            },
+            {
+              "text": "Meet Your Maker is the final Major Challenge and wizard objective."
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Minor Challenge",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Payback Time",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "No Limits",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Fear Fest",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Meet Your Maker",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Over the Edge",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Jump Bonus",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Skull ramp",
+            "context": "Skull ramp",
+            "label": "Skull ramp",
+            "description": "The ramp used to qualify and collect Meet Your Maker progress.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Jump ramp",
+            "context": "Jump ramp",
+            "label": "Jump ramp",
+            "description": "The upper-flipper jump shot used by modes and multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "scoop",
+            "context": "scoop",
+            "label": "Mode scoop",
+            "description": "The scoop used to start a qualified mode.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Cradle",
+            "instruction": "Hold two or more balls on the left flipper and use the right flipper for repeated Jump shots.",
+            "techniqueSlug": "cradle",
+            "sourceUrl": "https://tiltforums.com/t/no-fear-pro-tips/984"
+          },
+          {
+            "name": "Timer pause",
+            "instruction": "Trap the ball without switch activity to pause a dangerous Minor Challenge after its grace period.",
+            "sourceUrl": "https://www.pinball.org/rules/nofear.html"
+          },
+          {
+            "name": "Upper-flipper Jump timing",
+            "instruction": "Flip only after the ball clears the lower ramp and reaches the upper bat; test the gap before a major attempt.",
+            "sourceUrl": "https://tiltforums.com/t/no-fear-pro-tips/984"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The Jump requires a second shot over an upper-playfield gap.",
+            "response": "Test both the lower-ramp feed and upper-flipper timing before you depend on repeated Supers.",
+            "sourceUrl": "https://tiltforums.com/t/no-fear-pro-tips/984"
+          },
+          {
+            "issue": "Asphalt and Snow can demand dangerous shots for a small tournament return.",
+            "response": "Trap the ball and let the challenge expire after its progress is recorded.",
+            "sourceUrl": "https://tiltforums.com/t/no-fear-pro-tips/984"
+          }
+        ],
+        "simpleOverview": "No Fear turns five Minor Challenges into No Limits, Fear Fest, and Meet Your Maker. Select Start Challenge at every plunge, repeat safe Jump shots, and let dangerous Asphalt or Snow objectives time out. After the two earlier Major Challenges, repeat the 200,000,000 Jump Super in Meet Your Maker.",
+        "overview": "No Fear turns five Minor Challenges into No Limits, Fear Fest, and Meet Your Maker. Start every Challenge, take only controlled lit shots, then use No Limits and Fear Fest to reach the final mode. In Meet Your Maker, hold balls left and repeat the Jump Ramp and upper loop from the right flipper.",
+        "machineSetup": [],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Select Start Challenge at each plunge. Repeat safe Jump shots and let dangerous challenges time out. Start all five challenges, then play No Limits, Fear Fest, and Meet Your Maker. Repeat the 200,000,000 Jump Super in Meet Your Maker.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Before each new ball, select Start Challenge with the flippers and launch the ball."
+          },
+          {
+            "text": "Test the lower Jump Ramp and the upper-flipper loop over the gap. Repeat the Jump while both feeds are reliable.",
+            "details": [
+              "Jump: The first shot scores 5,000,000; immediate repeats rise by 5,000,000 through 25,000,000.",
+              "Jump Bonus: Every completed Jump adds 5,000,000 to end-of-ball bonus, and this contribution carries for the game."
+            ]
+          },
+          {
+            "text": "During Dirt, Water, or Air, take safe lit shots. During dangerous Asphalt or Snow shots, trap and let the timer expire.",
+            "kinds": [
+              "mode"
+            ],
+            "details": [
+              "Minor Challenge: Starting the timed mode is enough for Major Challenge progress; after no switch activity, a trapped ball can pause the timer."
+            ]
+          },
+          {
+            "text": "After all five Minor Challenges have started, shoot the Skull when No Limits flashes.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "No Limits: Three-ball play has a 15-second save; major shots start at 20,000,000 and rise by 1,000,000 to 70,000,000."
+            ]
+          },
+          {
+            "text": "After No Limits, shoot lit majors to spell N-O F-E-A-R. Shoot the Skull to start Fear Fest.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Fear Fest, use major shots to add 20,000,000 to the Jackpot. Collect at the Skull or with a completed Jump.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Fear Fest Jackpot starts at 80,000,000 on some physical copies and 50,000,000 on digital 1.44.7; follow the installed display."
+            ]
+          },
+          {
+            "text": "After Fear Fest, spell N-O F-E-A-R again and shoot the Skull for Meet Your Maker.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Meet Your Maker, hold balls on the left flipper and use the right flipper for the Jump Ramp and upper loop.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Meet Your Maker: Four-ball play has a 20-second save, a repeatable 200,000,000 Jump Super, and a 50,000,000 Skull Jackpot."
+            ]
+          },
+          {
+            "text": "Repeat the Jump Super until its feed breaks. Use the Skull only as a recovery shot.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Protect the accumulated Jump Bonus and do not risk a tilt at the drain."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Minor Challenges",
+            "summary": "Start Dirt, Asphalt, Water, Snow, and Air to qualify the Major Challenge sequence."
+          },
+          {
+            "name": "No Limits",
+            "summary": "Start all five Minor Challenges and shoot the Skull for rising major-shot jackpots."
+          },
+          {
+            "name": "Fear Fest",
+            "summary": "Spell N-O F-E-A-R and shoot the Skull for a multiball with a built jackpot collect."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Recovery: Regular Multiball",
+          "when": "Recovery pivot: Use this when Major Challenge progress is too far away.",
+          "steps": [
+            {
+              "text": "Hit the Skydive drop target to light Lock at Skydive and Skull."
+            },
+            {
+              "text": "Collect three locks in any combination and start Regular Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Shoot Skull for 50,000,000, then Skydive for 100,000,000."
+            },
+            {
+              "text": "Complete the Jump for the 200,000,000 Super Jackpot."
+            },
+            {
+              "text": "Repeat Skull, Skydive, and Jump while at least two balls remain."
+            },
+            {
+              "text": "If no jackpot was made, use the 10-second Last Chance after one ball remains."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "id": "GR6bk",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Drop the three center targets, then repeat the saucer with the lit Spot arrows.",
+        "steps": [
+          {
+            "text": "Plunge the A lane. It is the only safe chance to collect A before an outlane."
+          },
+          {
+            "text": "Hit the three center drop targets. Each target lights one Spot arrow and adds bonus."
+          },
+          {
+            "text": "Watch which side has the lit Spot arrows. Shoot that top saucer.",
+            "modeNotes": [
+              "Lit saucer: Scores 3,000 and adds one bonus step for each lit Spot arrow."
+            ]
+          },
+          {
+            "text": "Nudge a loose ball into a side chute when the opening is available. The chute feeds its saucer."
+          },
+          {
+            "text": "On the five-ball or conservative setup, the 10-point middle pop bumper moves the lit Spot side. On the three-ball setup, both sides may stay lit."
+          },
+          {
+            "text": "Complete A-B-C through natural top and return-lane feeds for 2x end-of-ball bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Saucer scoring",
+          "when": "Use this plan when the center drop-target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the safer top saucer even when its Spot arrows are off."
+            },
+            {
+              "text": "Take the base 3,000 award."
+            },
+            {
+              "text": "Use natural A-B-C lanes and protect the end-of-ball bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Bonus first",
+            "when": "Use this plan when the top lanes and inlanes are feeding safely.",
+            "steps": [
+              {
+                "text": "Collect A-B-C for 2x end-of-ball bonus.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Use lit saucers to build base bonus to 15,000."
+              },
+              {
+                "text": "On the final ball, A-B-C combines with the automatic 2x for 4x bonus.",
+                "kinds": [
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "60,000 end-of-ball bonus",
+          "steps": [
+            {
+              "text": "Use top switches and return lanes to raise base bonus to 15,000."
+            },
+            {
+              "text": "Complete A-B-C on the final ball for 4x.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Side-chute nudge",
+            "instruction": "When a loose ball reaches a side-chute opening, nudge it into the chute. The chute feeds the top saucer.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR6bk-MDE6e"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The three required drop targets can give hard rebounds.",
+            "response": "Shoot them only from a controlled ball. Stop after all three are down and switch to the saucers.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR6bk-MDE6e"
+          },
+          {
+            "issue": "A saucer kickout can feed a flipper or carom into the bumpers.",
+            "response": "Observe both kickouts. Repeat the saucer with the safer return when its Spot arrows are lit.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR6bk-MDE6e"
+          },
+          {
+            "issue": "A B or C post pass can continue into the outlane.",
+            "response": "Do not force a post pass. Collect B and C from natural feeds when possible.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GR6bk-MDE6e"
+          }
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Drop the three center targets."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Use top switches and return lanes to raise base bonus to 15,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Saucer scoring: Use this plan when the center drop-target rebounds are unsafe."
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Bronco or Mustang and three- or five-ball Spot-arrow behavior.",
+          "Check Extra Ball and Special conversion before chasing either award."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "top saucers",
+            "label": "Top saucers",
+            "description": "Saucers selected by the lit Spot arrows.",
+            "precision": "unverified",
+            "context": "Saucers selected by the lit Spot arrows."
+          },
+          {
+            "term": "center targets",
+            "label": "Center targets",
+            "description": "Targets used for primary feature progress.",
+            "precision": "unverified",
+            "context": "Targets used for primary feature progress."
+          }
+        ],
+        "simpleOverview": "In Bronco or Mustang, knock down the three center drops to light Spot arrows, then shoot the top saucer on the side carrying those arrows. Each lit arrow adds 3,000 and one bonus step. Use natural top and return-lane feeds to complete A-B-C for 2x end-of-ball bonus.",
+        "overview": "In Bronco or Mustang, each center drop lights one Spot arrow, and the top saucer on the lit side scores 3,000 plus one bonus step for every arrow. Complete the three-bank, shoot the indicated saucer, control its return, and repeat. Complete A-B-C through natural top and return-lane feeds for 2x Bonus, or 4x on the final ball when the automatic 2x is active.",
+        "machineSetup": [
+          "Confirm Bronco or Mustang and three- or five-ball Spot-arrow behavior.",
+          "Check Extra Ball and Special conversion before chasing either award."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Drop the three center targets, then repeat the saucer with the lit Spot arrows.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge the A lane. It is the only safe chance to collect A before an outlane."
+          },
+          {
+            "text": "Hit the three center drop targets. Each target lights one Spot arrow and adds bonus."
+          },
+          {
+            "text": "Watch which side has the lit Spot arrows. Shoot that top saucer.",
+            "details": [
+              "Lit saucer: Scores 3,000 and adds one bonus step for each lit Spot arrow."
+            ]
+          },
+          {
+            "text": "Nudge a loose ball into a side chute when the opening is available. The chute feeds its saucer."
+          },
+          {
+            "text": "On the five-ball or conservative setup, the 10-point middle pop bumper moves the lit Spot side. On the three-ball setup, both sides may stay lit."
+          },
+          {
+            "text": "Complete A-B-C through natural top and return-lane feeds for 2x end-of-ball bonus.",
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Drop the three center targets."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Use top switches and return lanes to raise base bonus to 15,000."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Saucer scoring: Use this plan when the center drop-target rebounds are unsafe."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Saucer scoring",
+          "when": "Use this plan when the center drop-target rebounds are unsafe.",
+          "steps": [
+            {
+              "text": "Shoot the safer top saucer even when its Spot arrows are off."
+            },
+            {
+              "text": "Take the base 3,000 award."
+            },
+            {
+              "text": "Use natural A-B-C lanes and protect the end-of-ball bonus.",
+              "kinds": [
+                "multiplier"
+              ]
+            }
+          ]
+        },
+        "warning": {
+          "title": "A B or C post pass can continue into the outlane.",
+          "text": "Do not force a post pass. Collect B and C from natural feeds when possible."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "id": "GrZY2",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Roll over a flipper-adjacent star when its spinner-light position is on, then shoot the opposite lower spinner for 2,000 per spin. Lock the upper-left spinner at its displayed 4,000-point value, then build the held base bonus and complete the lower banks for up to 10x.",
+        "steps": [
+          {
+            "text": "Test all three spinner returns, the bumper exits, and the upper-left-spinner feed. Mildly favor the right flipper.",
+            "modeNotes": [
+              "The lower-left and right spinners score 200 per spin when unlit and 2,000 when lit.",
+              "After the ball finishes spinning through the lit lower spinner, that spinner's 10x lamp turns off."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Roll over the star button beside a flipper when its spinner-light position is on. Then shoot the opposite lower spinner for 2,000 per spin.",
+            "modeNotes": [
+              "Star rollover: Its four lamps cycle. The top and third positions collect a zodiac symbol. The other two positions light the opposite lower spinner.",
+              "The lit spinner stays at 2,000 per spin until it stops. If the ball returns to a flipper in time, shoot the same spinner again before it stops to keep the 10X lamp lit."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Watch the cycling upper-left-spinner value. When it shows 4,000, hit one target in the adjacent three-bank to lock the value.",
+            "modeNotes": [
+              "Variable spinner: The first bank hit locks the currently displayed spinner value until the bank resets.",
+              "The same hit locks the displayed bank-completion value. When the spinner value is high, the bank-completion value is low, and vice versa."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          },
+          {
+            "text": "Keep shooting the upper-left spinner for 4,000 per spin. If a lower value was locked, complete the adjacent bank to reset it, then time the first target hit for 4,000."
+          },
+          {
+            "text": "Hit lit zodiac drop targets, or let bumper rebounds strike them. Roll over a star button when its top or third lamp is lit. Build base bonus before you force the lower banks.",
+            "modeNotes": [
+              "Zodiac bonus: Collected symbols raise the displayed base bonus, which is held between balls.",
+              "Base bonus is held between balls."
+            ]
+          },
+          {
+            "text": "When base bonus is large, complete either lower drop bank to raise Bonus X. Repeat until the lit 1-2-3-4 values total 10x.",
+            "modeNotes": [
+              "Bonus X: Each lower-bank completion advances the multiplier to 10x. Use the machine display for the exact held-base and payout totals.",
+              "Each drop target also rises in value from 1,000 to 4,000 on repeated hits."
+            ],
+            "kinds": [
+              "multiplier"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Held bonus",
+          "when": "Use this when spinner returns are weak or the upper-left spinner frequently drains.",
+          "steps": [
+            {
+              "text": "Hit lit zodiac drop targets, or use safe bumper rebounds and lit star rollovers to collect zodiac symbols and build base bonus."
+            },
+            {
+              "text": "After the base bonus is large, complete a lower bank to advance Bonus X.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Protect the held bonus. Do not force the upper-left spinner."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Lower-spinner cycle",
+            "when": "Use this when one lower spinner is strong and the jam-flip rollover is repeatable.",
+            "steps": [
+              {
+                "text": "Use the star rollover beside one flipper to light the opposite spinner.",
+                "kinds": [
+                  "multiplier"
+                ]
+              },
+              {
+                "text": "Shoot the lit spinner for 2,000 per spin."
+              },
+              {
+                "text": "Regain control. Relight it and repeat."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Held base bonus at 10x",
+          "steps": [
+            {
+              "text": "Hit lit zodiac targets and use the top or third star-rollover lamp to collect zodiac symbols and build the held base bonus."
+            },
+            {
+              "text": "Complete lower drop banks until Bonus X reaches 10x.",
+              "kinds": [
+                "multiplier"
+              ]
+            },
+            {
+              "text": "Drain without tilting to collect the displayed multiplied bonus."
+            }
+          ]
+        },
+        "techniques": [
+          {
+            "name": "Star-rollover jam flip",
+            "instruction": "From a cradle, make a quick short flip so the ball rolls backward over the nearby star button. Use the correct lamp position to collect a zodiac symbol or light the opposite spinner.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZY2-ML0Rb"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "A ball falling through the upper-left spinner can continue down the middle.",
+            "response": "Test the first feed before repeating it. Stop the spinner route when its exit does not reach a controlled flipper.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZY2-ML0Rb"
+          },
+          {
+            "issue": "The upper bumpers can produce uncontrolled exits.",
+            "response": "Watch the first full-plunge and zodiac-target feeds. Nudge before the ball reaches a known drain path.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZY2-ML0Rb"
+          },
+          {
+            "issue": "Direct drop-target hits can rebound toward a drain.",
+            "response": "Build zodiac bonus passively. Complete the lower banks only after the base bonus makes the risk worthwhile.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/GrZY2-ML0Rb"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Roll over a flipper-adjacent star when its spinner-light position is on, then shoot the opposite lower spinner for 2,000 per spin."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Hit lit zodiac targets and use the top or third star-rollover lamp to collect zodiac symbols and build the held base bonus."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Held bonus: Use this when spinner returns are weak or the upper-left spinner frequently drains."
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "lower spinners",
+            "label": "Lower spinners",
+            "description": "Repeatable scoring shots from the lower flippers.",
+            "precision": "unverified",
+            "context": "Repeatable scoring shots from the lower flippers."
+          },
+          {
+            "term": "upper-left spinner",
+            "label": "Upper-left spinner",
+            "description": "Upper-playfield spinner used for progression.",
+            "precision": "unverified",
+            "context": "Upper-playfield spinner used for progression."
+          },
+          {
+            "term": "drop banks",
+            "label": "Drop-target banks",
+            "description": "Banks used for zodiac and bonus progress.",
+            "precision": "unverified",
+            "context": "Banks used for zodiac and bonus progress."
+          }
+        ],
+        "simpleOverview": "In Star Gazer, a flipper-adjacent star rollover can light the opposite lower spinner for 2,000 per spin, while the upper-left bank locks that spinner's displayed value. Repeat a lit lower spinner, or hit the upper-left bank when its spinner shows 4,000 and then repeat that spinner. Complete lower drop banks later to raise the held bonus to 10x.",
+        "overview": "In Star Gazer, the star rollovers light lower spinners or collect zodiac symbols, while the first upper-left-bank hit locks the displayed upper spinner value. Repeat a lit lower spinner for 2,000 per spin, or lock the upper spinner at 4,000 and repeat it. Collect zodiac symbols to build held base bonus, then complete lower drop banks until Bonus X reaches 10x.",
+        "machineSetup": [
+          "Confirm three- or five-ball play and carryover",
+          "Check Extra Ball and Special conversion plus any posts or gates",
+          "Use the first plunge to read top-lane and outlane feeds"
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Use the star rollovers to light a lower spinner, lock the upper-left spinner at 4,000, then build held bonus and complete lower banks for up to 10x.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Light a lower spinner",
+            "text": "Roll over the star button beside a flipper when its spinner-light position is on, then shoot the opposite lower spinner for 2,000 per spin."
+          },
+          {
+            "title": "Lock the upper-left spinner at 4,000",
+            "text": "Watch the cycling upper-left-spinner value. When it shows 4,000, hit one target in the adjacent three-bank to lock that value, then keep shooting the spinner."
+          },
+          {
+            "title": "Build held bonus and Bonus X",
+            "text": "Hit lit zodiac drops and star rollovers to build base bonus. When the base is large, complete either lower drop bank and repeat until the lit 1-2-3-4 values total 10x."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Main route",
+            "summary": "Roll over a flipper-adjacent star when its spinner-light position is on, then shoot the opposite lower spinner for 2,000 per spin."
+          },
+          {
+            "name": "Long goal",
+            "summary": "Hit lit zodiac targets and use the top or third star-rollover lamp to collect zodiac symbols and build the held base bonus."
+          },
+          {
+            "name": "Safer fallback",
+            "summary": "Held bonus: Use this when spinner returns are weak or the upper-left spinner frequently drains."
+          }
+        ],
+        "warning": {
+          "title": "The upper bumpers can produce uncontrolled exits.",
+          "text": "Watch the first full-plunge and zodiac-target feeds. Nudge before the ball reaches a known drain path."
+        }
+      }
+    }
+  ]
+}

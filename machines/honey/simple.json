@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "G5vO1",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Drop the center target to open its pocket, then shoot the pocket until it reaches 10K. Repeat it while the center post provides control, and use top play whenever the entry becomes unsafe.",
+        "quickInfo": [
+          {
+            "name": "Center pocket",
+            "summary": "The center pocket starts at 1K and advances through 3K and 5K to 10K when scored or fed by the top-center lane."
+          },
+          {
+            "name": "Pocket drop target",
+            "summary": "The center drop target must be down before the ball can enter the center pocket."
+          },
+          {
+            "name": "Center post",
+            "summary": "A side-slingshot hit raises the center post, but the rollover button directly above the post lowers it."
+          },
+          {
+            "name": "A-B gate",
+            "summary": "Completing the upper A and B standups opens the ball-save gate at the lower right."
+          },
+          {
+            "name": "Side saucers",
+            "summary": "The synchronized 1-2-3-4-5 rollovers raise both side saucers from 500 to 1K to 3K for the current ball."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Plunge across the top red rollover button and into the top-center lane when the timing permits it."
+          },
+          {
+            "text": "Knock down the drop target that blocks the center pocket."
+          },
+          {
+            "text": "Shoot the center pocket. Repeat the pocket or top-center lane until the pocket value reaches 10K."
+          },
+          {
+            "text": "Hit a side slingshot to raise the center post when the ball reaches that area."
+          },
+          {
+            "text": "Micro flip a settled ball beside the raised center post to prepare another center-pocket shot."
+          },
+          {
+            "text": "Repeat the 10K center pocket while the entry and kickout remain controlled."
+          },
+          {
+            "text": "If the center shot is not ready, use top play to collect A-B or the next lit numbered rollover."
+          }
+        ],
+        "fallback": {
+          "title": "Top play and right gate",
+          "when": "Use this plan when the center pocket is blocked or its shot is not controlled.",
+          "steps": [
+            {
+              "text": "Send the ball toward the top instead of forcing the center drop target."
+            },
+            {
+              "text": "Complete A and B to open the lower-right ball-save gate."
+            },
+            {
+              "text": "Collect the next lit 1-2-3-4-5 rollover during upper and side play."
+            },
+            {
+              "text": "Return to the center pocket after the drop target falls or a controlled shot becomes available."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Qualified side saucers",
+            "when": "Use this plan when the center pocket is unreliable and a side saucer has reached 3K.",
+            "steps": [
+              {
+                "text": "Follow the lit 1-2-3-4-5 rollover until the side-saucer value reaches 3K."
+              },
+              {
+                "text": "Read which side saucer is available from the controlled flipper."
+              },
+              {
+                "text": "Shoot the 3K saucer only when its entry and kickout are safe."
+              },
+              {
+                "text": "Resume top play after the saucer value or feed becomes unfavorable."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Repeatable 10K center pocket",
+          "steps": [
+            {
+              "text": "Drop the center target to open its pocket."
+            },
+            {
+              "text": "Shoot the center pocket or top-center lane until the pocket advances through 3K and 5K to 10K."
+            },
+            {
+              "text": "Hit a side slingshot to raise the center post before you depend on it for control."
+            },
+            {
+              "text": "Repeat the 10K pocket from a controlled flipper."
+            }
+          ]
+        },
+        "playfieldReferences": [
+          {
+            "term": "center pocket",
+            "context": "center pocket",
+            "label": "Center pocket",
+            "description": "Central scoring pocket that advances from 1K through 3K and 5K to 10K.",
+            "precision": "unverified"
+          },
+          {
+            "term": "drop target",
+            "context": "drop target",
+            "label": "Pocket blocker",
+            "description": "Single center target that must be down before the center pocket can accept the ball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center post",
+            "context": "center post",
+            "label": "Center post",
+            "description": "Post between the flippers that can hold a ball for controlled micro flips.",
+            "precision": "unverified"
+          },
+          {
+            "term": "rollover button",
+            "context": "rollover button",
+            "label": "Post-lowering button",
+            "description": "Small rollover directly above the center post that lowers it when scored.",
+            "precision": "unverified"
+          },
+          {
+            "term": "A and B",
+            "context": "A and B",
+            "label": "A-B standups",
+            "description": "Upper standups that open the lower-right gate when both are collected.",
+            "precision": "unverified"
+          },
+          {
+            "term": "side saucers",
+            "context": "side saucers",
+            "label": "Side saucers",
+            "description": "Side pockets raised together by the synchronized numbered rollovers.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Micro flip",
+            "instruction": "Micro flip only after the ball settles beside the raised center post and the next pocket angle is ready.",
+            "techniqueSlug": "micro-flip",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5vO1-MKNYE"
+          },
+          {
+            "name": "Synchronized rollover tracking",
+            "instruction": "Watch the lit numbered rollover on both sides. A hit on either side advances the sequence for both sides.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5vO1-MKNYE"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The five-bumper cluster can send the ball to the center, an outlane, or a slingshot.",
+            "response": "Watch the ball before it leaves the bumpers. Nudge while the ball is still above the lower playfield.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5vO1-MKNYE"
+          },
+          {
+            "issue": "The rollover button above the center post lowers the post.",
+            "response": "Check the post before you use it for a trap. Prepare both flippers when that button scores.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5vO1-MKNYE"
+          },
+          {
+            "issue": "A side-saucer shot has limited value before the numbered rollovers raise it to 3K.",
+            "response": "Use top play instead of an early saucer shot. Take the saucer only after its value and feed justify the risk.",
+            "sourceUrl": "https://rules.silverballmania.com/rules/G5vO1-MKNYE"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Williams Honey, ball count, numbered-rollover reset, Extra Ball and Special conversion, and tilt.",
+          "Confirm three numbered-rollover completions light Extra Ball when enabled, and read the side-saucer and gate lamps before relying on them.",
+          "Test the pocket target, 10K pocket eject, center-post action, lowering button, five-bumper exit, gate, and both side-saucer feeds."
+        ],
+        "simpleOverview": "Honey raises a center-pocket value from 1K to 10K and uses a side slingshot to raise the center post. Drop the target in front of the pocket, repeat the pocket until it reaches 10K, and keep collecting it while the entry and post return remain controlled.",
+        "overview": "Honey raises a center-pocket value from 1K to 10K and uses a side slingshot to raise the center post. Drop the center target, advance the pocket through 3K and 5K to 10K, then repeat it from control. Hit a side slingshot to raise the post, complete A-B for the lower-right save gate, and return to top play whenever the center entry is unsafe.",
+        "machineSetup": [
+          "Confirm Williams Honey, ball count, numbered-rollover reset, Extra Ball and Special conversion, and tilt.",
+          "Confirm three numbered-rollover completions light Extra Ball when enabled, and read the side-saucer and gate lamps before relying on them.",
+          "Test the pocket target, 10K pocket eject, center-post action, lowering button, five-bumper exit, gate, and both side-saucer feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "scoring-loop",
+        "summaryTitle": "The goal",
+        "summary": "Drop the center target to open its pocket, then shoot the pocket until it reaches 10K. Repeat it while the center post provides control, and use top play whenever the entry becomes unsafe.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Plunge across the top red rollover button and into the top-center lane when the timing permits it."
+          },
+          {
+            "text": "Knock down the drop target that blocks the center pocket."
+          },
+          {
+            "text": "Shoot the center pocket. Repeat the pocket or top-center lane until the pocket value reaches 10K."
+          },
+          {
+            "text": "Hit a side slingshot to raise the center post when the ball reaches that area."
+          },
+          {
+            "text": "Micro flip a settled ball beside the raised center post to prepare another center-pocket shot."
+          },
+          {
+            "text": "Repeat the 10K center pocket while the entry and kickout remain controlled."
+          },
+          {
+            "text": "If the center shot is not ready, use top play to collect A-B or the next lit numbered rollover."
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Center pocket",
+            "summary": "The center pocket starts at 1K and advances through 3K and 5K to 10K when scored or fed by the top-center lane."
+          },
+          {
+            "name": "Pocket drop target",
+            "summary": "The center drop target must be down before the ball can enter the center pocket."
+          },
+          {
+            "name": "Center post",
+            "summary": "A side-slingshot hit raises the center post, but the rollover button directly above the post lowers it."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Top play and right gate",
+          "when": "Use this plan when the center pocket is blocked or its shot is not controlled.",
+          "steps": [
+            {
+              "text": "Send the ball toward the top instead of forcing the center drop target."
+            },
+            {
+              "text": "Complete A and B to open the lower-right ball-save gate."
+            },
+            {
+              "text": "Collect the next lit 1-2-3-4-5 rollover during upper and side play."
+            },
+            {
+              "text": "Return to the center pocket after the drop target falls or a controlled shot becomes available."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The five-bumper cluster can send the ball to the center, an outlane, or a slingshot.",
+          "text": "Watch the ball before it leaves the bumpers. Nudge while the ball is still above the lower playfield."
+        }
+      }
+    }
+  ]
+}

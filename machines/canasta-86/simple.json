@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "GrEpb",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "In Canasta 86, the two top-arch lane groups collect different lit awards, while each three-target bank controls Extra Ball and Special. On either bank, the indicated two-target combinations light Extra Ball or Special; completing all three lights both. The upper-left lanes collect 2x bonus, Extra Ball, or bonus and possibly 5x. The upper-right lanes collect 100,000 when lit, light the 5x lane, collect Extra Ball, or collect Special. The center target advances bonus when orange, lights the 5x lane when green, and awards Special when its Special lamp is on.",
+        "simpleOverview": "Complete the lit pair in either three-target bank to light Extra Ball or Special; clear all three targets in that bank to light both. Collect the award at the matching lit top or lower lane. Use the center target when green to light the 5x lane or when orange to advance bonus.",
+        "summary": "Read the backglass and choose one bank combination before shooting. A full three-bank completion is strongest because it makes both major awards available, but take a lit lane award before risking another bank rebound.",
+        "quickInfo": [
+          {
+            "name": "Light One Award",
+            "summary": "Complete the indicated pair in either three-bank."
+          },
+          {
+            "name": "Light Both Awards",
+            "summary": "Complete all three targets in that bank."
+          },
+          {
+            "name": "Light 5x Lane",
+            "summary": "Hit the center target while green."
+          },
+          {
+            "name": "Advance Bonus",
+            "summary": "Hit the center target while orange."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the backglass to identify which two targets in the safer three-bank currently light Extra Ball or Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete that pair, or finish all three targets to light both awards.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the matching lit top or lower lane to collect Extra Ball or Special before returning to the bank.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the center target while green to light the 5x lane, then collect the lit upper-left or upper-right bonus lane when controlled.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Bonus route",
+            "when": "Use this when the target banks are rejecting the ball and the top lanes are reachable.",
+            "steps": [
+              {
+                "text": "Hit the center target while orange to advance bonus.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Use the upper-left 2x or bonus-collect lane, or the upper-right 100,000 lane, according to the current lamps.",
+                "kinds": [
+                  "mode",
+                  "multiplier"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Extra Ball and Special Together",
+          "steps": [
+            {
+              "text": "Complete all three targets in one side bank.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Collect the lit Extra Ball and Special at their indicated lanes while each remains available.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Test both three-target banks, the center target, all three upper-left lanes, all four upper-right lanes, and the lower Extra Ball and Special lanes.",
+          "Confirm that the backglass correctly identifies the active two-target combinations and that Extra Ball and Special awards match the installed replay settings."
+        ],
+        "playfieldReferences": [
+          {
+            "term": "left three-bank",
+            "label": "Left three-target bank",
+            "description": "Left bank whose pair and full-bank completions light awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right three-bank",
+            "label": "Right three-target bank",
+            "description": "Right bank whose pair and full-bank completions light awards.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-left lanes",
+            "label": "Upper-left award lanes",
+            "description": "Three lanes for 2x bonus, Extra Ball, and bonus collect or 5x.",
+            "precision": "unverified"
+          },
+          {
+            "term": "upper-right lanes",
+            "label": "Upper-right award lanes",
+            "description": "Four lanes for points, 5x qualification, Extra Ball, and Special.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center target",
+            "label": "Center color target",
+            "description": "Target that advances bonus, lights 5x, or awards Special according to its lamp.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Live Catch",
+            "instruction": "Live-catch a predictable top-lane return, then aim the exact bank target needed by the backglass instead of flipping through the whole bank.",
+            "sourceUrl": "https://www.youtube.com/watch?v=hVGDolaN2HY",
+            "techniqueSlug": "live-catch"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The useful two-target combinations are shown on the backglass.",
+            "response": "Check the active pair before shooting; a target that lights Extra Ball in one combination may serve Special in another.",
+            "sourceUrl": "https://www.vpforums.org/index.php?app=downloads&showfile=14998"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Read the backglass and choose one bank combination before shooting. A full three-bank completion is strongest because it makes both major awards available, but take a lit lane award before risking another bank rebound.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the backglass to identify which two targets in the safer three-bank currently light Extra Ball or Special.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete that pair, or finish all three targets to light both awards.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Shoot the matching lit top or lower lane to collect Extra Ball or Special before returning to the bank.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the center target while green to light the 5x lane, then collect the lit upper-left or upper-right bonus lane when controlled.",
+            "kinds": [
+              "mode",
+              "multiplier"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light One Award",
+            "summary": "Complete the indicated pair in either three-bank."
+          },
+          {
+            "name": "Light Both Awards",
+            "summary": "Complete all three targets in that bank."
+          },
+          {
+            "name": "Light 5x Lane",
+            "summary": "Hit the center target while green."
+          }
+        ]
+      }
+    }
+  ]
+}

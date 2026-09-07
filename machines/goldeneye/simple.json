@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "id": "G43wE",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Play all five 007 Encounters, finish Q's Pen and Shootout, complete 0-0-7, spell GOLDENEYE on the ramps, then start GOLDENEYE at the Mode Start lane.",
+        "quickInfo": [
+          {
+            "name": "007 Encounters",
+            "summary": "Start all five at the Mode Start lane and let each end; successful completion is not required for GOLDENEYE."
+          },
+          {
+            "name": "Modes and Multiball",
+            "summary": "Satellite or Tank Multiball can start while a 007 Encounter, Shootout, Q's Pen, or a GOLDENEYE ramp hurry-up is running. The running feature pauses and resumes after Multiball."
+          },
+          {
+            "name": "Satellite Multiball",
+            "summary": "Collect four jackpots, knock the stored satellite ball free for 200M, then chase the roaming 150M Super."
+          },
+          {
+            "name": "Q's Pen",
+            "summary": "Hit the white Q target three times to start, then hit the Q bank three times within 14 seconds."
+          },
+          {
+            "name": "Shootout",
+            "summary": "Complete the three white targets, hit yellow, then pull the gun trigger six times to earn Eject or Die."
+          },
+          {
+            "name": "GOLDENEYE",
+            "summary": "The five-ball wizard scores 3M switches and 20M ramps and adds a ball after each 50 switches."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the Mode Start lane, satellite route, right ramp, and center eject before choosing the opening Encounter."
+          },
+          {
+            "text": "Start each 007 Encounter at the Mode Start lane and let all five reach their end; completion is optional for GOLDENEYE.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the center eject to light the lock ramp, collect two virtual locks, then use the left inlane and pop-up ramp to start Satellite Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Satellite Multiball, collect four jackpots, knock the satellite ball free for 200M, then take the roaming 150M Super.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Q's Pen with three white-Q hits, then hit the Q bank three times within 14 seconds.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Shootout: clear the three white targets, hit yellow, then pull the gun trigger six times.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish Q's Pen or Shootout before starting Multiball when its completion matters. A Multiball start pauses the running feature until single-ball play resumes.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use Eject or Die only as drain insurance; during its short save window, shoot the center eject immediately."
+          },
+          {
+            "text": "Complete the top 0-0-7 lanes outside multiball and spell GOLDENEYE with single-ball ramp shots."
+          },
+          {
+            "text": "After every requirement is complete, shoot the Mode Start lane to begin GOLDENEYE.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During GOLDENEYE, favor clean ramps and dense safe switches while preserving the automatic ball-return thresholds.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Satellite Multiball points",
+          "when": "Use this when the Encounter or right-ramp feeds are too dangerous for a wizard-mode build.",
+          "steps": [
+            {
+              "text": "Finish the closest satellite qualification."
+            },
+            {
+              "text": "Start Satellite Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take four jackpots, the 200M satellite release, and the roaming 150M Super without forcing unrelated wizard requirements."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Encounter-first route",
+            "when": "Use this when the Mode Start lane is repeatable and Satellite qualification is still distant.",
+            "steps": [
+              {
+                "text": "Start the safest remaining Encounter.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Complete only its controlled lit shots."
+              },
+              {
+                "text": "Resume Satellite and Q progress after the Encounter ends."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "GOLDENEYE",
+          "steps": [
+            {
+              "text": "Start all five 007 Encounters and let each one end."
+            },
+            {
+              "text": "Complete Q's Pen and Shootout."
+            },
+            {
+              "text": "Complete the top 0-0-7 lanes."
+            },
+            {
+              "text": "Spell GOLDENEYE with single-ball ramp shots."
+            },
+            {
+              "text": "Start the five-ball wizard and repeat ramps while using switch thresholds to maintain ball count.",
+              "kinds": [
+                "mode",
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Satellite Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Tank Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "007 Encounter",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Q's Pen",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Shootout",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "GOLDENEYE",
+            "tone": "navy",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Mode Start lane",
+            "label": "Encounter and GOLDENEYE start",
+            "description": "Lane used to start 007 Encounters and the qualified GOLDENEYE wizard.",
+            "precision": "unverified"
+          },
+          {
+            "term": "satellite",
+            "label": "Satellite",
+            "description": "Magnetic dish used to start Satellite Multiball and score its 200M release.",
+            "precision": "unverified"
+          },
+          {
+            "term": "pop-up ramp",
+            "label": "Satellite ramp",
+            "description": "Rising ramp used to reach the satellite magnet.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Q target",
+            "label": "Q's Pen target",
+            "description": "White target hit three times to start Q's Pen.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center eject",
+            "label": "Center eject",
+            "description": "Target used for virtual-lock qualification and Eject or Die recovery.",
+            "precision": "unverified"
+          },
+          {
+            "term": "lock ramp",
+            "label": "Virtual lock ramp",
+            "description": "Ramp used to collect two virtual locks for Satellite Multiball.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right ramp",
+            "label": "Right ramp",
+            "description": "Major shot used for GOLDENEYE letters and wizard scoring.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Satellite jackpot order",
+            "instruction": "Collect the four available jackpots before committing to the Super shot.",
+            "sourceUrl": "https://www.pinball.org/rules/goldeneye.html"
+          },
+          {
+            "name": "Eject or Die reaction",
+            "instruction": "When the rescue triggers, stop the prior plan and shoot the center eject inside the brief countdown.",
+            "sourceUrl": "https://www.pinball.org/rules/goldeneye.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The right ramp can hop or reject toward an outlane.",
+            "response": "Test it before using it as a repeated mode or wizard shot; take Satellite points when it is not reliable.",
+            "sourceUrl": "https://www.pinball.org/rules/goldeneye.html"
+          },
+          {
+            "issue": "Tank Multiball can consume risk without advancing the stronger route.",
+            "response": "Prefer Satellite or wizard requirements unless Tank is already ready and immediate protection is needed.",
+            "sourceUrl": "https://www.pinball.org/rules/goldeneye.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm production 4.02, tournament settings, Extra Ball handling, ball saves, and whether Tank Multiball can be cancelled with the trigger.",
+          "Test the satellite magnet, pop-up ramp, Mode Start eject, center-target save, lock ramp, and right-ramp return before choosing the wizard route.",
+          "Verify the six-second Eject or Die timer and that 0-0-7 lanes cannot score during multiball."
+        ],
+        "simpleOverview": "Goldeneye uses five 007 Encounters, Q's Pen, Shootout, the 0-0-7 lanes, and ramp letters to qualify its final mode. Start every Encounter and let it end, complete the two target features and lane work, then spell GOLDENEYE on the ramps and return to Mode Start.",
+        "overview": "Goldeneye uses five 007 Encounters, Q's Pen, Shootout, the 0-0-7 lanes, and ramp letters to qualify its final mode. Use Satellite for its four Jackpots, satellite-ball award, and roaming Super while progressing Encounters, Q's Pen, Shootout, and 0-0-7 between starts. Finish the single-ball ramp letters, then start the five-ball wizard at Mode Start.",
+        "machineSetup": [
+          "Confirm production 4.02, tournament settings, Extra Ball handling, ball saves, and whether Tank Multiball can be cancelled with the trigger.",
+          "Test the satellite magnet, pop-up ramp, Mode Start eject, center-target save, lock ramp, and right-ramp return before choosing the wizard route.",
+          "Verify the six-second Eject or Die timer and that 0-0-7 lanes cannot score during multiball."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Play all five 007 Encounters, finish Q's Pen and Shootout, complete 0-0-7, spell GOLDENEYE on the ramps, then start GOLDENEYE at the Mode Start lane.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the Mode Start lane, satellite route, right ramp, and center eject before choosing the opening Encounter."
+          },
+          {
+            "text": "Start each 007 Encounter at the Mode Start lane and let all five reach their end; completion is optional for GOLDENEYE.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Hit the center eject to light the lock ramp, collect two virtual locks, then use the left inlane and pop-up ramp to start Satellite Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Satellite Multiball, collect four jackpots, knock the satellite ball free for 200M, then take the roaming 150M Super.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Start Q's Pen with three white-Q hits, then hit the Q bank three times within 14 seconds.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Complete Shootout: clear the three white targets, hit yellow, then pull the gun trigger six times.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "Finish Q's Pen or Shootout before starting Multiball when its completion matters. A Multiball start pauses the running feature until single-ball play resumes.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Use Eject or Die only as drain insurance; during its short save window, shoot the center eject immediately."
+          },
+          {
+            "text": "Complete the top 0-0-7 lanes outside multiball and spell GOLDENEYE with single-ball ramp shots."
+          },
+          {
+            "text": "After every requirement is complete, shoot the Mode Start lane to begin GOLDENEYE.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "During GOLDENEYE, favor clean ramps and dense safe switches while preserving the automatic ball-return thresholds.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "007 Encounters",
+            "summary": "Start all five at the Mode Start lane and let each end; successful completion is not required for GOLDENEYE."
+          },
+          {
+            "name": "Modes and Multiball",
+            "summary": "Satellite or Tank Multiball can start while a 007 Encounter, Shootout, Q's Pen, or a GOLDENEYE ramp hurry-up is running. The running feature pauses and resumes after Multiball."
+          },
+          {
+            "name": "Satellite Multiball",
+            "summary": "Collect four jackpots, knock the stored satellite ball free for 200M, then chase the roaming 150M Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Satellite Multiball points",
+          "when": "Use this when the Encounter or right-ramp feeds are too dangerous for a wizard-mode build.",
+          "steps": [
+            {
+              "text": "Finish the closest satellite qualification."
+            },
+            {
+              "text": "Start Satellite Multiball.",
+              "kinds": [
+                "multiball"
+              ]
+            },
+            {
+              "text": "Take four jackpots, the 200M satellite release, and the roaming 150M Super without forcing unrelated wizard requirements."
+            }
+          ]
+        },
+        "warning": {
+          "title": "The right ramp can hop or reject toward an outlane.",
+          "text": "Test it before using it as a repeated mode or wizard shot; take Satellite points when it is not reliable."
+        }
+      }
+    }
+  ]
+}

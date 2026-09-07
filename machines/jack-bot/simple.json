@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "id": "GRKOX",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Short-plunge just past the metal gate, hit the target for the flashing Keno row or column to open the Visor, then lock both Eyes to start Multiball. Use Jackbot relights and Super Jackbots to reach Mega Visor and Mega Jackbot.",
+        "overview": "Jack•Bot uses the flashing Keno row or column to open the Visor, then one lock in each Eye starts Multiball. Hit the flashing Keno target to open the Visor, lock one ball in each Eye, and shoot the Game Saucer to relight collected Jackbot shots. Pair opposite Eyes within one second for Super Jackbots and reach 15 Jackbots for Mega Visor.",
+        "simpleOverview": "Jack•Bot uses the flashing Keno row or column to open the Visor, then one lock in each Eye starts Multiball. Collect Jackbots at the Eyes, Cashier, and Hit Me, relight them at the Game Saucer, and pair opposite Eyes quickly for Super Jackbots.",
+        "quickInfo": [
+          {
+            "name": "First Multiball",
+            "summary": "Before the Keno card has progress, hit the target for its flashing row or column to open the Visor immediately. If that shot is missed, hit each of the five front Visor targets; then lock one ball in each Eye."
+          },
+          {
+            "name": "Later Multiballs",
+            "summary": "For the second Multiball, complete one Keno card and lock both Eyes; the third ball is served to the plunger. From the third Multiball onward, the first Eye lock closes the Visor, so complete another Keno card before locking the second ball."
+          },
+          {
+            "name": "Jackbots",
+            "summary": "Collect lit Eyes, Cashier, and Hit Me, and use the Game Saucer to relight all four locations."
+          },
+          {
+            "name": "Super Jackbot",
+            "summary": "Collect a Jackbot at one Eye, then hit the other Eye within one second to score a Super Jackbot for triple the current value."
+          },
+          {
+            "name": "Mega Visor",
+            "summary": "Collect 15 Jackbots during Multiball to start Mega Visor. Hit 25 Visor targets for 50 million each; completion also awards a 750-million Super Jackbot and opens the Eyes."
+          },
+          {
+            "name": "Casino Run",
+            "summary": "Play all four casino games, then build and safely collect a timed single-ball bank."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Short-plunge just past the metal gate. Before the Keno card has progress, hit the target for the flashing row or column to open the Visor immediately.",
+            "modeNotes": [
+              "Playfield validation: Until three different switches register, a drain returns the ball to the plunger. The display changes from skill-shot values to your score when the playfield becomes valid.",
+              "If the instant-open shot is missed, hit each of the five front Visor targets once. A repeated completed target can spot an adjacent unfinished column."
+            ]
+          },
+          {
+            "text": "Lock one ball in each Eye to start the first two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect lit Jackbots at either Eye, Cashier, and Hit Me. After collecting an Eye Jackbot, hit the other Eye within one second for a Super Jackbot.",
+            "modeNotes": [
+              "Jackbot: The first value is 50 million. Each collect raises later values until the 15th is worth 500 million.",
+              "Super Jackbot: The second Eye shot scores triple the current Jackbot value."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the Game Saucer to relight both Eyes, Cashier, and Hit Me.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Repeat the Eye-to-Eye Super Jackbot and Game Saucer relight until 15 Jackbots start Mega Visor.",
+            "kinds": [
+              "multiball",
+              "mode"
+            ]
+          },
+          {
+            "text": "During Mega Visor, hit Visor targets 25 times.",
+            "modeNotes": [
+              "Each target hit scores 50 million. Completing all 25 awards a 750-million Super Jackbot and opens the Eyes.",
+              "Jackbot and Mega Visor progress carries into later Multiballs."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "After the Super Jackbot opens the Eyes, lock one ball if two remain or two balls if three remain. Then shoot the lowered left ramp within 20 seconds.",
+            "modeNotes": [
+              "Mega Jackbot: The left-ramp shot scores 1 billion and restarts Mega Visor. If the timer expires, lock the required Eye balls again."
+            ],
+            "kinds": [
+              "mode"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Casino games into Casino Run",
+          "when": "Use this as the second scoring track when you want to build a single-ball Casino Run bank.",
+          "steps": [
+            {
+              "text": "If the Game Saucer is unlit, shoot the left ramp to relight it."
+            },
+            {
+              "text": "Use the left flipper to choose a casino game, then shoot the Game Saucer to start it.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "After the game score appears, press the right flipper for Double or Nothing, then shoot Cashier before the countdown ends."
+            },
+            {
+              "text": "Repeat until Pinbot Poker, Slot Machine, Roll the Dice, and Keno are complete.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Game Saucer to start Casino Run.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot an Eye or the Game Saucer for each reel spin."
+            },
+            {
+              "text": "While the reels spin, press Extra Ball to try to deflect one center-reel Bomb; a stored Bucket of Water cancels one Bomb automatically."
+            },
+            {
+              "text": "Choose Collect Bank after a reel spin to keep the displayed total. Do not let the timer expire."
+            }
+          ]
+        },
+        "buildsToward": {
+          "title": "Mega Jackbot",
+          "steps": [
+            {
+              "text": "Collect 15 Jackbots during Multiball to start Mega Visor.",
+              "kinds": [
+                "multiball",
+                "mode"
+              ]
+            },
+            {
+              "text": "Hit Visor targets 25 times; each hit scores 50 million, and completion awards a 750-million Super Jackbot.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Lock one Eye ball with two balls remaining, or two Eye balls with three remaining.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the lowered left ramp within 20 seconds for the 1-billion Mega Jackbot. If time expires, lock the required Eye balls again.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Mega Visor",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Casino Run",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Pinbot Poker",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Slot Machine",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Roll the Dice",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Keno",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Bucket of Water",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Visor targets",
+            "context": "During Mega Visor, hit Visor targets 25 times.",
+            "label": "Visor targets",
+            "description": "The five front targets and five side targets fill the colored grid.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Eye",
+            "context": "Lock one ball in each Eye to start the first two-ball Multiball.",
+            "label": "Eye locks",
+            "description": "The two saucers behind the Visor lock balls and score Jackbots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Game Saucer",
+            "context": "Shoot the Game Saucer to relight both Eyes, Cashier, and Hit Me.",
+            "label": "Game Saucer",
+            "description": "The back-left saucer starts casino games and relights Jackbots.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Cashier",
+            "context": "Shoot the Game Saucer to relight both Eyes, Cashier, and Hit Me.",
+            "label": "Cashier target",
+            "description": "The target below the raised left ramp scores Jackbots and Double or Nothing.",
+            "precision": "unverified"
+          },
+          {
+            "term": "Hit Me",
+            "context": "Shoot the Game Saucer to relight both Eyes, Cashier, and Hit Me.",
+            "label": "Hit Me target",
+            "description": "The lower-right standup scores blackjack cards and a lit Jackbot.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left ramp",
+            "context": "After the Super Jackbot opens the Eyes, lock one ball if two remain or two balls if three remain. Then shoot the lowered left ramp within 20 seconds.",
+            "label": "Left ramp",
+            "description": "The ramp raises during normal play and lowers for the Mega Jackbot shot.",
+            "precision": "unverified"
+          }
+        ],
+        "techniques": [
+          {
+            "name": "Switch-free short plunge",
+            "instruction": "Short-plunge just beyond the metal gate without entering the Vortex. Until three different switches register, use the protected ball to shoot the flashing Keno target; stop relying on the return when the display changes to your score.",
+            "sourceUrl": "https://www.nudgepinball.com/articles/nudge-circle-of-honor-nominee-jackbot"
+          },
+          {
+            "name": "Oblique dead bounce",
+            "instruction": "On a clean angled return, keep the receiving flipper down and let the ball rebound across into control before resuming the Game Saucer route. Test the rebound during a safe ball because it depends on the local copy.",
+            "techniqueSlug": "dead-bounce",
+            "sourceUrl": "https://www.youtube.com/watch?v=Li_MZEJnf9E&t=10073s"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "The full Vortex plunge feeds the pop bumpers and can remove control before the first aimed shot.",
+            "response": "Short-plunge just past the metal gate so the playfield-validation return remains available while you try to open the Visor.",
+            "sourceUrl": "https://www.nudgepinball.com/articles/nudge-circle-of-honor-nominee-jackbot"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm production ROM, Tournament Mode, Multiball difficulty, free Game Saucer light, Jackbots for Mega Visor, ball save, and Extra Ball conversion.",
+          "Test Visor and row targets, both Eye locks, Game Saucer eject, Cashier, Hit Me, ramp lift, Vortex, and bumper exit.",
+          "Check ball count, ball-save time, and competition-mode settings"
+        ],
+        "noteDetails": {
+          "label": "Top-player proof",
+          "items": [
+            "At IFPA 20, Viggo Löwgren and Jason Zahler used the short plunge, opened the Visor immediately, repeatedly started Eye-lock Multiball, and left Casino Run as a separate option.",
+            "At the UK Open 2025, Alexander Bue repeatedly started Eye-lock Multiball and built Mega Visor; Nick Stein used three-switch validation to collect early Jackpots before Multiball began."
+          ]
+        },
+        "machineSetup": [
+          "Confirm production ROM, Tournament Mode, Multiball difficulty, free Game Saucer light, Jackbots for Mega Visor, ball save, and Extra Ball conversion.",
+          "Test Visor and row targets, both Eye locks, Game Saucer eject, Cashier, Hit Me, ramp lift, Vortex, and bumper exit.",
+          "Check ball count, ball-save time, and competition-mode settings"
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Hit the Visor targets to open the Visor, lock one ball in each Eye, then shoot and relight the four Jackbot locations during Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "title": "Open the Visor",
+            "text": "Short-plunge just past the metal gate. Before Keno has progress, hit the target for its flashing row or column; after a miss, hit all five front Visor targets."
+          },
+          {
+            "title": "Start Multiball",
+            "text": "Lock one ball in each Eye to start the first two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "title": "Collect and relight Jackbots",
+            "text": "Shoot lit Jackbots at either Eye, Cashier, and Hit Me. Shoot the Game Saucer to relight all four locations; an Eye Jackbot followed by the other Eye within one second scores a Super Jackbot. The 15th Jackbot starts Mega Visor. Hit 25 Visor targets, lock one Eye ball if two remain or two if three remain, then shoot the lowered left ramp within 20 seconds for the 1-billion Mega Jackbot.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "First Multiball",
+            "summary": "Before the Keno card has progress, hit the target for its flashing row or column to open the Visor immediately. If that shot is missed, hit each of the five front Visor targets; then lock one ball in each Eye."
+          },
+          {
+            "name": "Later Multiballs",
+            "summary": "For the second Multiball, complete one Keno card and lock both Eyes; the third ball is served to the plunger. From the third Multiball onward, the first Eye lock closes the Visor, so complete another Keno card before locking the second ball."
+          },
+          {
+            "name": "Jackbots",
+            "summary": "Collect lit Eyes, Cashier, and Hit Me, and use the Game Saucer to relight all four locations."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Casino Run",
+          "when": "Use this when the Game Saucer is easier to repeat than the Eyes.",
+          "steps": [
+            {
+              "text": "Use the left flipper to choose each casino game in turn, then shoot the lit Game Saucer to start it. If the saucer is unlit, shoot the left ramp first. During each title screen, repeatedly press Extra Ball to try to cheat. Complete Pinbot Poker, Slot Machine, Roll the Dice, and Keno.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Shoot the Game Saucer to start Casino Run, then shoot an Eye or the Game Saucer for each reel spin. Bank the displayed score before the timer expires. A Bomb or expired timer removes an uncollected bank; one Bucket of Water cancels one Bomb.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

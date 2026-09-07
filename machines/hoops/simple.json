@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "id": "G4j2z",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "overview": "Hoops builds Multiball through the top lanes and three saucers. Roll through the lit top lane, moving it with the flipper buttons before the ball arrives, then shoot a flashing lock shot; the left saucer is usually the cleanest choice. The first lock on a ball starts two-ball Multiball. Re-lock both balls in the saucers for Super Slam and take the million-point award unless your basket bonus is already unusually large.",
+        "simpleOverview": "Move the lit top lane with the flipper buttons and roll through it to light lock, then shoot a flashing saucer; the left saucer is usually easiest. The first lock starts two-ball Multiball. Re-lock both balls in the saucers for Super Slam, then choose 1,000,000 points unless your basket bonus is already very large.",
+        "summary": "Roll through the lit top lane to light lock, then shoot a flashing saucer; the first lock starts two-ball Multiball. Re-lock both balls for Super Slam and normally take 1,000,000 points. Repeat on the same ball for a two-lock, three-ball Multiball.",
+        "quickInfo": [
+          {
+            "name": "Light lock",
+            "summary": "Roll through the lit top lane; move its light with the flipper buttons."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot any flashing lock shot; the left saucer is usually the cleanest."
+          },
+          {
+            "name": "Super Slam",
+            "summary": "During Multiball, re-lock every ball in the saucers."
+          },
+          {
+            "name": "Repeat Multiball",
+            "summary": "On the same ball, light and lock two balls to start three-ball play."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Use the flipper buttons to move the lit top lane, then roll through that lane to light lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot a flashing lock shot; the left saucer is normally the most controllable choice. The first lock on the ball starts two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, send both balls back into the saucers to collect Super Slam.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Choose 1,000,000 points instead of 20 baskets unless your current basket bonus is already large enough to justify the long game.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the same ball continues, repeat the qualification and lock two balls; the next Multiball is three-ball, with a 3,000,000-or-50-basket Super Slam choice.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "title": "Build Hang Time",
+            "when": "Use this while Multiball qualification is not ready or when the spinner is returning safely.",
+            "steps": [
+              {
+                "text": "Hit the blue Hang Time target near the top lanes to start the feature.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Build the value with spinner and bumper hits.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Roll through the right inlane, then hit the captive ball to collect the current Hang Time value without resetting it.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Play Alley-Oop",
+            "when": "Use this when the captive-ball return is under control.",
+            "steps": [
+              {
+                "text": "Hit the captive ball to light the Fast Break loop.",
+                "kinds": [
+                  "mode"
+                ]
+              },
+              {
+                "text": "Shoot the Fast Break loop, then make the right saucer before another non-bumper switch to collect ten baskets.",
+                "kinds": [
+                  "mode"
+                ]
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Raise the basket multiplier",
+          "steps": [
+            {
+              "text": "Complete the four SLAM DUNK standups and the return-lane requirements.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Each completed SLAM DUNK raises the basket multiplier by one for the rest of the ball, up to 3x.",
+              "kinds": [
+                "mode"
+              ]
+            },
+            {
+              "text": "Use the higher multiplier to make ordinary basket scoring matter; Super Slam's basket award itself is not multiplied.",
+              "kinds": [
+                "mode"
+              ]
+            }
+          ]
+        },
+        "machineSetup": [
+          "Confirm whether extra ball and special award the feature or 500,000 points under tournament settings.",
+          "Test all three top lanes, the left, center, and right saucers, captive ball, spinner, Fast Break loop, and saucer kickouts before competitive play."
+        ],
+        "termStyles": [
+          {
+            "label": "Multiball",
+            "tone": "forest",
+            "kind": "multiball"
+          },
+          {
+            "label": "Super Slam",
+            "tone": "indigo",
+            "kind": "multiball"
+          },
+          {
+            "label": "Hang Time",
+            "tone": "navy",
+            "kind": "mode"
+          },
+          {
+            "label": "Alley-Oop",
+            "tone": "teal",
+            "kind": "mode"
+          },
+          {
+            "label": "SLAM DUNK",
+            "tone": "oxblood",
+            "kind": "mode"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "lit top lane",
+            "label": "Lit top lane",
+            "description": "The flipper-controlled top lane that lights the next lock when rolled through.",
+            "precision": "unverified"
+          },
+          {
+            "term": "left saucer",
+            "label": "Left lock saucer",
+            "description": "The most consistent of the flashing lock shots for many players.",
+            "precision": "unverified"
+          },
+          {
+            "term": "center saucer",
+            "label": "Tip-in saucer",
+            "description": "The center lock and Super Slam saucer.",
+            "precision": "unverified"
+          },
+          {
+            "term": "right saucer",
+            "label": "Right lock saucer",
+            "description": "The right-side lock shot and Alley-Oop basket collect.",
+            "precision": "unverified"
+          },
+          {
+            "term": "captive ball",
+            "label": "Hang Time captive ball",
+            "description": "The left-side target used to light Alley-Oop and collect Hang Time after the right inlane.",
+            "precision": "unverified"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Super Slam offers basket points as an alternative to direct points, but baskets usually need a long ball and a raised multiplier to overtake the million-point award.",
+            "response": "Take the direct points by default; choose baskets only when the displayed basket bonus makes the conversion worthwhile.",
+            "sourceUrl": "https://www.kineticist.com/news/hoops-pinball-tutorial"
+          }
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "feature-guide",
+        "summaryTitle": "The goal",
+        "summary": "Roll through the lit top lane to light lock, then shoot a flashing saucer; the first lock starts two-ball Multiball. Re-lock both balls for Super Slam and normally take 1,000,000 points. Repeat on the same ball for a two-lock, three-ball Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Use the flipper buttons to move the lit top lane, then roll through that lane to light lock.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot a flashing lock shot; the left saucer is normally the most controllable choice. The first lock on the ball starts two-ball Multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "During Multiball, send both balls back into the saucers to collect Super Slam.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Choose 1,000,000 points instead of 20 baskets unless your current basket bonus is already large enough to justify the long game.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "If the same ball continues, repeat the qualification and lock two balls; the next Multiball is three-ball, with a 3,000,000-or-50-basket Super Slam choice.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Light lock",
+            "summary": "Roll through the lit top lane; move its light with the flipper buttons."
+          },
+          {
+            "name": "Start Multiball",
+            "summary": "Shoot any flashing lock shot; the left saucer is usually the cleanest."
+          },
+          {
+            "name": "Super Slam",
+            "summary": "During Multiball, re-lock every ball in the saucers."
+          }
+        ]
+      }
+    }
+  ]
+}

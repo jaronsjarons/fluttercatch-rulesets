@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "GRBqq",
+  "title": "Mario Andretti",
+  "kind": "catalog",
+  "content": {
+    "guideKind": "how-to-start",
+    "source": {
+      "label": "Free State Pinball Association Mario Andretti rulesheet",
+      "url": "https://www.pinball.org/rules/marioandretti.html"
+    },
+    "supportingSources": [
+      {
+        "label": "Preserved Mario Andretti instruction-card set",
+        "url": "https://pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_Mario_Andretti_instruction_cards.zip"
+      }
+    ],
+    "reviewStatus": "comprehensive",
+    "strategy": {
+      "overview": "Mario Andretti carries race progress around the 17-position track; each finish opens the two-sided Checkered Flag ladder, and three first-place races start World Championship. Fuel controls whether the track can advance, while regular Multiball can begin from the skill shot or several awards without replacing the race campaign.",
+      "simpleOverview": "Advance the 17-position track with lit yellow Mario shots, spinning cars, slingshots, and pops. Protect first place with green Pass shots, refill at the right hole when Pit In is lit, and win three races to start World Championship.",
+      "summary": "Plunge the middle captive-ball switch for Lock Ball when available, then advance the race with lit yellow shots and the spinning cars. Use green Pass shots to stay in first, shoot the right hole when Pit In is lit, and choose the right-side Multiball award after a race.",
+      "quickInfo": [
+        {
+          "name": "Skill shot",
+          "summary": "The captive-ball switches award Jackpot, Lock Ball, or Race Strategy from bottom to top. A collected normal award stays unavailable until the other awards have been taken."
+        },
+        {
+          "name": "Race laps",
+          "summary": "Advance the numbered track with lit yellow Mario shots, the spinning cars, slingshots, or pop bumpers. The first race is one lap; later races are two."
+        },
+        {
+          "name": "Pass and Yield",
+          "summary": "Green Pass shots improve your position; red Yield shots drop it. Finish in first for Victory Circle."
+        },
+        {
+          "name": "Checkered Flag",
+          "summary": "After a race, choose the displayed left or right award with that flipper. The first right-side award starts regular Multiball."
+        },
+        {
+          "name": "World Championship",
+          "summary": "Three Victory Circles start a three-ball race. Major shots advance the cars, and every completed lap awards a Super Jackpot."
+        }
+      ],
+      "steps": [
+        {
+          "text": "Plunge the captive ball to the middle switch for Lock Ball when that award is available. The lower switch gives Jackpot and the upper switch gives Race Strategy.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "Advance the 17-position race track with lit yellow Mario shots, the spinning cars, slingshots, or pop bumpers. Complete one lap for the first race and two for later races.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Shoot green Pass shots to improve or protect first place, and avoid red Yield shots when control allows. Finishing in first earns a Victory Circle.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "Watch the fuel display. When Pit In is lit or the car can no longer advance, shoot the right hole for three gallons and return to the track.",
+          "kinds": [
+            "mode"
+          ]
+        },
+        {
+          "text": "After a completed race, use the matching flipper to choose between the displayed Checkered Flag awards. Choose the first right-side award when you want regular Multiball; the two award ladders advance independently.",
+          "kinds": [
+            "mode",
+            "multiball"
+          ]
+        },
+        {
+          "text": "During regular Multiball, clear the left and right Hairpin sides and the right loop, then follow the expanded lit set. After five Jackpots, shoot the left ramp for the Super Jackpot.",
+          "kinds": [
+            "multiball"
+          ]
+        }
+      ],
+      "buildsToward": {
+        "title": "World Championship",
+        "steps": [
+          {
+            "text": "Finish three races in first place to collect three Victory Circles.",
+            "kinds": [
+              "mode"
+            ]
+          },
+          {
+            "text": "World Championship starts automatically as a three-ball Multiball after the third win.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          },
+          {
+            "text": "Shoot the lit major shots to advance the race; each completed lap awards a Super Jackpot.",
+            "kinds": [
+              "mode",
+              "multiball"
+            ]
+          }
+        ]
+      },
+      "termStyles": [
+        {
+          "label": "Race",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "Pass",
+          "tone": "teal",
+          "kind": "mode"
+        },
+        {
+          "label": "Yield",
+          "tone": "rust",
+          "kind": "mode"
+        },
+        {
+          "label": "Checkered Flag",
+          "tone": "navy",
+          "kind": "mode"
+        },
+        {
+          "label": "Multiball",
+          "tone": "forest",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        },
+        {
+          "label": "World Championship",
+          "tone": "indigo",
+          "kind": "multiball",
+          "kindIsExplicit": true
+        }
+      ],
+      "cautions": [
+        {
+          "issue": "Several individual awards vary or remain unclear.",
+          "response": "Follow the display for Race Strategy, Checkered Flag, and Mystery details; the starts and scoring loop remain the dependable route.",
+          "sourceUrl": "https://www.pinball.org/rules/marioandretti.html"
+        },
+        {
+          "issue": "The left outlane save and right diverter switch with slingshot hits.",
+          "response": "Check which save lamp is currently lit before relying on it; the opposite slingshot changes the active side.",
+          "sourceUrl": "https://www.pinball.org/rules/marioandretti.html"
+        }
+      ],
+      "machineSetup": [],
+      "rulesNotes": []
+    }
+  }
+}

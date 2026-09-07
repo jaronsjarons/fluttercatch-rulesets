@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "G50pv",
+  "contexts": [
+    {
+      "name": "default",
+      "input": {
+        "summary": "Use odd Sarcophagus shots for regular Multiball, complete its six moving Jackpots, then collect the Pyramid Super while collecting Quartz and completing Segments toward Stargate Multiball.",
+        "quickInfo": [
+          {
+            "name": "Regular Multiball",
+            "summary": "Odd-numbered Sarcophagus shots start two-ball play; the first jackpot launches a third ball."
+          },
+          {
+            "name": "Jackpot ladder",
+            "summary": "Complete six sequential major-shot jackpots, then shoot the Pyramid for the Super."
+          },
+          {
+            "name": "Quartz",
+            "summary": "Trade Quartz for escalating awards; large holdings can complete Segments or collect the Super."
+          },
+          {
+            "name": "Segments",
+            "summary": "Complete Sarcophagus, Trade Quartz, Transporter, STARGATE, Hurry-Up, Combo, and Pyramid for the wizard multiball."
+          },
+          {
+            "name": "Stargate Multiball",
+            "summary": "All seven major shots light together; completing the set awards the Super and relights the set."
+          }
+        ],
+        "steps": [
+          {
+            "text": "Test the Sarcophagus, Pyramid, guardians, Transporter, Ra kicker, and Trade Quartz feeds before choosing the opening route."
+          },
+          {
+            "text": "Shoot the Sarcophagus on an odd-numbered visit to start regular two-ball multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the safest lit jackpot immediately to launch the third ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Follow the moving jackpot ladder to the Pyramid.",
+            "modeNotes": [
+              "Level 1 begins with several lit shots and advances through six major-shot jackpots.",
+              "Completing all six lights the Pyramid for the Super Jackpot.",
+              "The next level uses one lit jackpot at a time and leads to a doubled Super."
+            ],
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the Pyramid Super as soon as its feed is controlled; do not risk the certain award for unrelated Quartz."
+          },
+          {
+            "text": "Between multiballs, take Trade Quartz only when the displayed offer matches the current position."
+          },
+          {
+            "text": "Complete the remaining seven Segments and preserve Stargate Multiball for a controlled ball because it is available only once per game.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "fallback": {
+          "title": "Quartz cashout",
+          "when": "Use this when the Sarcophagus or Pyramid is unsafe but the right guardian and Trade Quartz feed are repeatable.",
+          "steps": [
+            {
+              "text": "Collect Quartz from every other Sarcophagus award, the middle target of the three-bank, Transporter and White Pyramid awards, STARGATE completions, and Trade Quartz."
+            },
+            {
+              "text": "Roll through the left inlane or hit the guardian target to open Trade Quartz."
+            },
+            {
+              "text": "Accept a useful offer rather than carrying excess Quartz past the Super tier."
+            }
+          ]
+        },
+        "alternatives": [
+          {
+            "title": "Segment route",
+            "when": "Use this when five or more Stargate Segments are already complete.",
+            "steps": [
+              {
+                "text": "Identify the missing Segment inserts."
+              },
+              {
+                "text": "Finish their safest corresponding features."
+              },
+              {
+                "text": "Enter Stargate Multiball after any running mode or multiball ends.",
+                "kinds": [
+                  "multiball"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Sandstorm cashout",
+            "when": "Use this when Sandstorm is awarded without a dangerous setup shot.",
+            "steps": [
+              {
+                "text": "Start the three-ball mode.",
+                "kinds": [
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Repeat only the safest lit major shots."
+              },
+              {
+                "text": "Protect the end-of-ball total because the award is not fully secured until bonus."
+              }
+            ]
+          }
+        ],
+        "buildsToward": {
+          "title": "Stargate Multiball",
+          "steps": [
+            {
+              "text": "Complete all seven Segment features."
+            },
+            {
+              "text": "Wait for other running features to end."
+            },
+            {
+              "text": "Collect all seven lit major-shot jackpots."
+            },
+            {
+              "text": "Repeat the relit set after the Super while ball count permits.",
+              "kinds": [
+                "multiball"
+              ]
+            }
+          ]
+        },
+        "termStyles": [
+          {
+            "label": "Regular Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Stargate Multiball",
+            "tone": "forest",
+            "kind": "multiball",
+            "kindIsExplicit": true
+          },
+          {
+            "label": "Quartz",
+            "tone": "indigo",
+            "kind": "item"
+          },
+          {
+            "label": "Segment",
+            "tone": "indigo",
+            "kind": "item"
+          }
+        ],
+        "playfieldReferences": [
+          {
+            "term": "Sarcophagus",
+            "label": "Sarcophagus",
+            "description": "Left-outlane mechanism used to start odd-numbered regular multiballs.",
+            "precision": "unverified",
+            "context": "Sarcophagus: Left-outlane mechanism used to start odd-numbered regular multiballs."
+          },
+          {
+            "term": "Pyramid",
+            "label": "Pyramid shot",
+            "description": "Central shot used for mode starts and multiball Super Jackpots.",
+            "precision": "unverified",
+            "context": "Pyramid: Central shot used for mode starts and multiball Super Jackpots."
+          },
+          {
+            "term": "Trade Quartz",
+            "label": "Quartz trade lane",
+            "description": "Lane behind the right guardian used to exchange Quartz.",
+            "precision": "unverified",
+            "context": "Trade Quartz: Lane behind the right guardian used to exchange Quartz."
+          },
+          {
+            "term": "Transporter",
+            "label": "Transporter shot",
+            "description": "Shot used for awards and a Stargate Segment.",
+            "precision": "unverified",
+            "context": "Transporter: Shot used for awards and a Stargate Segment."
+          },
+          {
+            "term": "Ra kicker",
+            "label": "Ra target",
+            "description": "Kicker target used in jackpot and wizard-shot sets.",
+            "precision": "unverified",
+            "context": "Ra kicker: Kicker target used in jackpot and wizard-shot sets."
+          },
+          {
+            "term": "guardians",
+            "label": "Guardian lanes",
+            "description": "Moving guards controlling access to the outer lanes and Quartz route.",
+            "precision": "unverified",
+            "context": "guardians: Moving guards controlling access to the outer lanes and Quartz route."
+          }
+        ],
+        "techniques": [
+          {
+            "name": "First-jackpot add-a-ball",
+            "instruction": "Take the easiest initial jackpot immediately; it converts two-ball play into three-ball play.",
+            "sourceUrl": "https://www.pinball.org/rules/stargate.html"
+          },
+          {
+            "name": "Quartz offer discipline",
+            "instruction": "Read the current offer before accepting; cash a useful Super-tier award rather than carrying Quartz with little additional benefit.",
+            "sourceUrl": "https://www.pinball.org/rules/stargate.html"
+          }
+        ],
+        "cautions": [
+          {
+            "issue": "Stargate Multiball can be played only once per game and has a short unmarked ball save.",
+            "response": "Start it from a controlled ball and prioritize immediate safe jackpots.",
+            "sourceUrl": "https://www.pinball.org/rules/stargate.html"
+          },
+          {
+            "issue": "Sandstorm and Segment bonus can be lost to a tilt.",
+            "response": "Reduce nudging after building a large deferred award.",
+            "sourceUrl": "https://www.pinball.org/rules/stargate.html"
+          }
+        ],
+        "checkBeforePlay": [
+          "Confirm Gottlieb Stargate ROM, lock difficulty, timers, Quartz offers, and award conversions.",
+          "Test the Sarcophagus, Pyramid, guardians, Transporter, Ra kicker, and Trade Quartz feeds."
+        ],
+        "simpleOverview": "Odd-numbered Sarcophagus entries start Stargate's repeatable Multiball, while seven Segment objectives qualify the one-time Stargate Multiball. Use the first Jackpot to add the third ball, then follow six moving Jackpots to the Pyramid Super. Complete Segments between starts.",
+        "overview": "Odd-numbered Sarcophagus entries start Stargate's repeatable Multiball, while seven Segments qualify its wizard Multiball and Quartz trades alter progress. Add the third ball through the first Jackpot and finish the six-shot ladder at the Pyramid. Take exact useful Quartz offers and complete missing Segments without risking a certain Pyramid Super.",
+        "machineSetup": [
+          "Confirm Gottlieb Stargate ROM, lock difficulty, timers, Quartz offers, and award conversions.",
+          "Test the Sarcophagus, Pyramid, guardians, Transporter, Ra kicker, and Trade Quartz feeds."
+        ],
+        "rulesNotes": []
+      },
+      "content": {
+        "format": "roadmap",
+        "summaryTitle": "The goal",
+        "summary": "Use odd Sarcophagus shots for regular Multiball, complete its six moving Jackpots, then collect the Pyramid Super while collecting Quartz and completing Segments toward Stargate Multiball.",
+        "showBirdEyeView": true,
+        "steps": [
+          {
+            "text": "Test the Sarcophagus, Pyramid, guardians, Transporter, Ra kicker, and Trade Quartz feeds before choosing the opening route."
+          },
+          {
+            "text": "Shoot the Sarcophagus on an odd-numbered visit to start regular two-ball multiball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Collect the safest lit jackpot immediately to launch the third ball.",
+            "kinds": [
+              "multiball"
+            ]
+          },
+          {
+            "text": "Follow the moving jackpot ladder to the Pyramid.",
+            "kinds": [
+              "multiball"
+            ],
+            "details": [
+              "Level 1 begins with several lit shots and advances through six major-shot jackpots.",
+              "Completing all six lights the Pyramid for the Super Jackpot.",
+              "The next level uses one lit jackpot at a time and leads to a doubled Super."
+            ]
+          },
+          {
+            "text": "Collect the Pyramid Super as soon as its feed is controlled; do not risk the certain award for unrelated Quartz."
+          },
+          {
+            "text": "Between multiballs, take Trade Quartz only when the displayed offer matches the current position."
+          },
+          {
+            "text": "Complete the remaining seven Segments and preserve Stargate Multiball for a controlled ball because it is available only once per game.",
+            "kinds": [
+              "multiball"
+            ]
+          }
+        ],
+        "checkBeforePlay": [],
+        "quickInfo": [
+          {
+            "name": "Regular Multiball",
+            "summary": "Odd-numbered Sarcophagus shots start two-ball play; the first jackpot launches a third ball."
+          },
+          {
+            "name": "Jackpot ladder",
+            "summary": "Complete six sequential major-shot jackpots, then shoot the Pyramid for the Super."
+          },
+          {
+            "name": "Quartz",
+            "summary": "Trade Quartz for escalating awards; large holdings can complete Segments or collect the Super."
+          }
+        ],
+        "fallback": {
+          "title": "Alternative route: Quartz cashout",
+          "when": "Use this when the Sarcophagus or Pyramid is unsafe but the right guardian and Trade Quartz feed are repeatable.",
+          "steps": [
+            {
+              "text": "Collect Quartz from every other Sarcophagus award, the middle target of the three-bank, Transporter and White Pyramid awards, STARGATE completions, and Trade Quartz."
+            },
+            {
+              "text": "Roll through the left inlane or hit the guardian target to open Trade Quartz."
+            },
+            {
+              "text": "Accept a useful offer rather than carrying excess Quartz past the Super tier."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
