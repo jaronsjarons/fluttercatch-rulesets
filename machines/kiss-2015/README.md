@@ -242,7 +242,7 @@ backhand
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=W-VZAdtlo80&t=444s)
+[Source](https://www.kineticist.com/news/modern-kiss-pinball-tutorial)
 
 - Center-ramp combo
 

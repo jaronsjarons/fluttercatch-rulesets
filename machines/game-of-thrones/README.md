@@ -420,7 +420,6 @@ A House mode can run during Blackwater Multiball in Game of Thrones; choose Mart
 - [Game of Thrones living rulesheet](https://tiltforums.com/t/game-of-thrones-pinball-rulesheet/936)
 - [PAPA tutorial with Bowen Kerins](https://www.youtube.com/watch?v=XOfVLODSMUA)
 - [Daniele Celestino Acciari at IFPA 16 World Pinball Championship](https://pinballvideos.com/v/2253/9086)
-- [Pinballso Game of Thrones Pro tournament tutorial](https://www.youtube.com/watch?v=ydcJI1Pw1fE)
 
 ## Playfield
 

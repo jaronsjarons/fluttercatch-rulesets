@@ -345,7 +345,6 @@ See [edition-specific rules](editions.json).
 - [Kineticist Jungle Queen machine page](https://www.kineticist.com/games/pinball/jungle-queen)
 - [Bowen Kerins at PAPA 20 World Pinball Championship](https://pinballvideos.com/v/1437/23240)
 - [Whayne Rouse at NKY Open 2022](https://pinballvideos.com/v/4366/22477)
-- [Pinballso Jungle Princess tournament tutorial](https://www.youtube.com/watch?v=CyadGyuHUQI)
 
 ## Playfield
 

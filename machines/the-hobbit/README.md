@@ -160,16 +160,6 @@ Summary
 
 Complete one Book mode, start Smaug Multiball, complete Super Spinners, start Beast Frenzy, and start Feast Frenzy to earn the five Arkenstone runes.
 
-### Note Details
-
-Label
-
-Top-player proof
-
-Items
-
-- Karl DeAngelo qualified a high-value Book Mode, stored a mode ball, then used Smaug Multiball to build the left-ramp collect and continue into Treasure Hunt and Beast Frenzy.
-
 ### Simple Overview
 
 The Hobbit uses character shots to qualify Book Modes, the left ramp to select one, and the right ramp to start it. Shoot the left ramp before any other qualifier so The Resurgence of Sauron is the only lit mode, spell L-O-C-K, then shoot a green orbit to store a Mode Ball. At the right ramp, press the Ring button to postpone the Smaug lock and start Resurgence with the stored ball.
