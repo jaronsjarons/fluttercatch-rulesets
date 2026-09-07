@@ -214,6 +214,20 @@ Technique Slug
 
 backhand
 
+- Dead bounce on a center return
+
+Instruction
+
+Dead bounce a clean center return to the opposite flipper before choosing the next shot.
+
+Technique Slug
+
+dead-bounce
+
+Source Url
+
+[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=64s)
+
 ### Check Before Play
 
 - Confirm Pro, Premium, or LE, plus ball count, tilt, Extra Ball conversion, and competition settings.
@@ -235,6 +249,18 @@ Use active ball-save time to make qualification progress.
 Source Url
 
 [Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=579s)
+
+- Issue
+
+A pop-bumper exit can miss the side wall and drain.
+
+Response
+
+Hold the flipper only when it deadens the feed.
+
+Source Url
+
+[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=1528s)
 
 - Issue
 

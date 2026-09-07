@@ -156,6 +156,28 @@ Steps
 
 - Collect each ship for a value 10 million higher than the last.
 
+### Techniques
+
+- Offset cannon hit
+
+Instruction
+
+Aim the cannon slightly off center at the lit Broadside target. Hold the right flipper for the usual return and prepare one corrective nudge.
+
+Source Url
+
+[Source](https://www.youtube.com/watch?v=qBSrZU0v5TQ&t=4590s)
+
+- Timed upper-flipper shot
+
+Instruction
+
+Watch the ramp feed. Time the upper flipper before the ball reaches it instead of reacting after contact.
+
+Source Url
+
+[Source](https://www.youtube.com/watch?v=dITLGry5f70&t=1259s)
+
 ### Check Before Play
 
 - Confirm original Bally Black Rose code, not Skull & Bones; verify ball count, tilt, award conversion, lock difficulty, and Broadside order.

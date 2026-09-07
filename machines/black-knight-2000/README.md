@@ -156,6 +156,20 @@ Steps
 
 ### Techniques
 
+- Flipper staging upstairs
+
+Instruction
+
+Stage the upper and lower flippers so an unwanted upper-playfield ball can pass through the orbit to the lower flippers.
+
+Technique Slug
+
+flipper-staging
+
+Source Url
+
+[Source](https://www.youtube.com/watch?v=xiolQ8l17vY&t=917s)
+
 - Challenge Lane ball park
 
 Instruction
@@ -215,6 +229,18 @@ Do not shake the machine. Stop and call the tournament director.
 Source Url
 
 [Source](https://www.pinball.org/rules/blackknight2000.html)
+
+- Issue
+
+Some tournament machines have a modified W-A-R wireform.
+
+Response
+
+Observe the first feed before you trust it.
+
+Source Url
+
+[Source](https://www.youtube.com/watch?v=xiolQ8l17vY&t=55s)
 
 ### Check Before Play
 
