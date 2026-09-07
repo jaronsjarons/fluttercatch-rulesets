@@ -298,11 +298,11 @@ Source Url
 
 - Issue
 
-A rejected left ramp can return toward the center.
+The left ramp can reject full shots on some copies.
 
 Response
 
-Shoot it from a stable trap. Use the short fallback when full shots still reject.
+Shoot it from a stable trap. Stop forcing the ramp when clean shots still fall short.
 
 Source Url
 
@@ -359,16 +359,6 @@ Start Bats and light Mist Multiball.
 Summary
 
 Mist Multiball: Use this when the complete stack is too far away, the ramps reject dangerously, or a smaller score can win.
-
-### Note Details
-
-Label
-
-Top-player proof
-
-Items
-
-- Bowen Kerins lit Mist with Castle ramps, staged Castle and Coffin locks, and used one running Multiball to finish the other two qualifications before pursuing the multiplied Castle Jackpot.
 
 ### Simple Overview
 
@@ -576,11 +566,11 @@ Source Url
 
 - Issue
 
-A rejected left ramp can return toward the center.
+The left ramp can reject full shots on some copies.
 
 Response
 
-Shoot it from a stable trap. Use the short fallback when full shots still reject.
+Shoot it from a stable trap. Stop forcing the ramp when clean shots still fall short.
 
 Source Url
 

@@ -264,16 +264,6 @@ The right drop bank and lit 8-ball complete racks that build carried Super Bonus
 
 Clear the seven right drops and hit the lit 8-ball to complete a rack, then repeat on the next ball. Once the carried bonus is large, raise Bonus X at the left inline drops; use the left orbit when the bank is unsafe.
 
-### Note Details
-
-Label
-
-Top-player proof
-
-Items
-
-- Bowen Kerins cleared the numbered rack, took the lit 8-ball immediately, carried the resulting Super Bonus between balls, and then added Bonus X before later collects.
-
 ### Machine Setup
 
 - Check target spotting, saucer collect, and whether DELUXE resets the rack.

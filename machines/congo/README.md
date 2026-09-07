@@ -252,16 +252,6 @@ Source Url
 
 - Test both ramps, Mystery eject, MAP saucer, and upper-flipper feed.
 
-### Note Details
-
-Label
-
-Top-player proof
-
-Items
-
-- The player repeatedly spelled M-A-P, collected its ordered awards, took each available lock before gathering more diamonds, and used the larger diamond total to raise later ramp Jackpots.
-
 ### Machine Setup
 
 - Confirm ROM 2.1 and Normal or Tournament settings before using Mystery order, MAP awards, or Skill Fire values.
