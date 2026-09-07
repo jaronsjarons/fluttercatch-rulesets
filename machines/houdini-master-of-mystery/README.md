@@ -84,7 +84,7 @@ Use the right inner loop for locks, make the required jackpot shots, then return
 
 Summary
 
-Spell SEANCE, then complete the ordered jackpot sequence toward its Super Jackpot.
+Spell SEANCE at the standup targets and shoot the lit scoop to start. During multiball, spell SEANCE for a jackpot; spell it in order for the Super Jackpot.
 
 - Milkcan multiplier
 
@@ -100,11 +100,13 @@ A Milkcan loop followed by the ramp starts or raises a timed 2x, 3x, or 4x playf
 
 - While the mode is active, complete its marked shots and use orbit shots for added Stage time when needed.
 
-- Start Trunk or Seance Multiball, then add the other if it is ready.
+- Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball.
+
+- Hit the SEANCE standup targets to spell SEANCE, then shoot the lit scoop to start Seance Multiball. Add it to Trunk Multiball when it is ready.
 
 - During Trunk Multiball, collect the lit jackpot shots and return to the trunk for the Super Jackpot; secure at least three Trunk jackpots for its HOUDINI letter.
 
-- During Seance Multiball, follow the lit sequence and collect at least two jackpots for its HOUDINI letter.
+- During Seance Multiball, hit the SEANCE standup targets to spell SEANCE for a jackpot. Spell it in order for the Super Jackpot. Check the installed jackpot requirement for its HOUDINI letter.
 
 - Use the Milkcan loop-to-ramp playfield multiplier only when both shots feed safely, then place the remaining mode and multiball shots inside that window.
 
@@ -228,8 +230,8 @@ Seven major objectives award HOUDINI letters. Hit the curtain four times, make a
 
 - [Tilt Forums Houdini rulesheet](https://tiltforums.com/t/houdini-rulesheet/3934)
 - [Pinball Rulesheets Houdini guide](https://pinballrulesheets.com/american-pinball/houdini-rulesheet)
-- [Official American Pinball Houdini v21.10.25 update](https://www.american-pinball.com/games/houdini/updates/)
-- [Official American Pinball Houdini service manual](https://s4.american-pinball.com/img/support/2021-10/API-Houdini-Service-Manual-10-6-21.pdf)
+- [Official American Pinball Houdini v21.10.25 update](https://americanpinball.com/support/updates/)
+- [Official American Pinball Houdini service manual](https://48804760.fs1.hubspotusercontent-na1.net/hubfs/48804760/Support%20Files/Game%20Manuals/Houdini%20-%20Game%20Manual.pdf)
 - [Steven Bowden at Illinois State 2022](https://pinballvideos.com/v/4761/36150)
 
 ## Playfield
