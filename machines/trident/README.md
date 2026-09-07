@@ -322,6 +322,10 @@ Changes
 
 Strategy
 
+Step Format
+
+feature-guide
+
 Summary
 
 Trident2022 mode starts. Feeding Frenzy, Sharp Shooter, and Explore the Depths can be qualified in any order. Shoot the saucer within the 45-second qualification window to start the qualified modes.
