@@ -752,3 +752,4 @@ Edit the JSON files to propose changes. Readable pages are generated from those 
 - [Zankor](machines/zankor/README.md)
 - [Zig Zag / Wing Ding](machines/zig-zag-wing-ding/README.md)
 - [Zira](machines/zira/README.md)
+- [Student Prince](machines/student-prince/README.md)
