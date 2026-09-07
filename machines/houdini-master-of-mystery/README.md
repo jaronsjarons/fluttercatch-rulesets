@@ -20,9 +20,17 @@ Use the Stage entrance for a mode, the right inner loop for Trunk Multiball, and
 
 Use the flipper buttons to select a Stage mode on the marquee before opening the curtain. Hit the curtain four times, shoot Stage Alley without touching a bumper, or shoot the Key Lane to its red target without touching a bumper to open it. Shoot the Stage to start the mode before Trunk or Seance Multiball.
 
+- Start a Movie mode
+
+Spell FILM at the lower lanes, then shoot the right inner loop to start a Movie mode. Start it before multiball, with no Stage mode running, then follow the blue shot arrows.
+
 - Start Trunk Multiball
 
 Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball. Shoot all three lit jackpot shots, then the right inner loop for the Super Jackpot. This relights the jackpot shots; repeat while multiball continues.
+
+- Start Seance Multiball
+
+Spell SEANCE at the standup targets, then shoot the lit scoop to start. During multiball, spell SEANCE for a jackpot; spell it in order for the Super Jackpot. Add Seance to Trunk Multiball when it is ready.
 
 - Start Milkcan playfield X
 
@@ -67,6 +75,12 @@ Seven HOUDINI letters track Stage modes, Movies, Magic Shop items, Jail Escapes,
 Summary
 
 Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the mode; a clean Stage Alley entry starts it at 2x.
+
+- Movie Mode
+
+Summary
+
+Spell FILM at the lower lanes, then shoot the right inner loop to start a Movie Mode. Start it before multiball, with no Stage Mode running, then follow the blue shot arrows.
 
 - Mode order
 
@@ -232,6 +246,7 @@ Seven major objectives award HOUDINI letters. Hit the curtain four times, make a
 - [Pinball Rulesheets Houdini guide](https://pinballrulesheets.com/american-pinball/houdini-rulesheet)
 - [Official American Pinball Houdini v21.10.25 update](https://americanpinball.com/support/updates/)
 - [Official American Pinball Houdini service manual](https://48804760.fs1.hubspotusercontent-na1.net/hubfs/48804760/Support%20Files/Game%20Manuals/Houdini%20-%20Game%20Manual.pdf)
+- [Houdini tournament commentary: Movie qualification and start](https://www.youtube.com/watch?v=PKQ5kBy2Fak&t=5801s)
 - [Steven Bowden at Illinois State 2022](https://pinballvideos.com/v/4761/36150)
 
 ## Playfield
