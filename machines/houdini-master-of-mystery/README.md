@@ -126,9 +126,11 @@ A Milkcan loop followed by the ramp starts or raises a timed 2x, 3x, or 4x playf
 
 ### Builds Toward
 
-Master Magician
+Master Magician: 18.12.12 baseline
 
 Steps
+
+- These are the 18.12.12 requirements, not verified 21.10.25 defaults. Version 21.01.21 changed several Houdini-letter settings and added second letters for Jail Escapes and Secret Missions. Check the installed game's settings; hold both flipper buttons to view your progress.
 
 - Complete each of the ten Stage Mode features and five Movie Mode features.
 
