@@ -18,11 +18,11 @@ Use the Stage entrance for a mode, the right inner loop for Trunk Multiball, and
 
 - Start a Stage mode
 
-Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Then shoot the Stage to start the selected mode.
+Use the flipper buttons to select a Stage mode on the marquee before opening the curtain. Hit the curtain four times, shoot Stage Alley without touching a bumper, or shoot the Key Lane to its red target without touching a bumper to open it. Shoot the Stage to start the mode before Trunk or Seance Multiball.
 
 - Start Trunk Multiball
 
-Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball.
+Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball. Shoot all three lit jackpot shots, then the right inner loop for the Super Jackpot. This relights the jackpot shots; repeat while multiball continues.
 
 - Start Milkcan playfield X
 
@@ -94,9 +94,9 @@ A Milkcan loop followed by the ramp starts or raises a timed 2x, 3x, or 4x playf
 
 ### Steps
 
-- Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the selected mode.
+- Use the left and right flipper buttons to select a Stage mode on the marquee before opening the curtain. Opening the curtain locks that selection.
 
-- Select a Stage Mode or Movie Mode whose marked shots remain accessible during Multiball, then start it before any Multiball. A clean Stage Alley entry starts a Stage Mode at 2x.
+- Hit the curtain four times, shoot Stage Alley without touching a bumper, or shoot the Key Lane to its red target without touching a bumper to open the curtain. Shoot the open Stage to start the mode before Trunk or Seance Multiball. Entering the open Stage through Stage Alley without touching a bumper starts the mode at 2x.
 
 - While the mode is active, complete its marked shots and use orbit shots for added Stage time when needed.
 
