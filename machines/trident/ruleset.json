@@ -24,6 +24,18 @@
       {
         "label": "District 82 Trident 90-second tutorial",
         "url": "https://www.youtube.com/watch?v=D2FmuZ6XbDs"
+      },
+      {
+        "label": "Trident2022 author: multiball conversion",
+        "url": "https://www.pinballrefresh.com/blog/trident-2022"
+      },
+      {
+        "label": "Trident2022 version 2022.1 source code",
+        "url": "https://github.com/RetroPinUpgrade/Trident2023/blob/36eb748d4b8986974051af44e3943d7e9a4d16cc/Trident2022.ino"
+      },
+      {
+        "label": "Trident2022 author's mode overview",
+        "url": "https://www.youtube.com/watch?v=cTy_5CJNB7E"
       }
     ],
     "reviewStatus": "comprehensive",
@@ -213,6 +225,76 @@
         "Use the first plunge to read top-lane and outlane feeds"
       ],
       "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "stock",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Original ROM"
+        },
+        {
+          "id": "trident-2022",
+          "label": "Trident2022",
+          "differences": {
+            "changes": [
+              "Adds timed multiball modes with a four-ball trough and auto-plunger.",
+              "Spinners qualify Feeding Frenzy, drop targets qualify Sharp Shooter, and stand-ups qualify Explore the Depths. The saucer starts the qualified modes together."
+            ]
+          },
+          "strategy": {
+            "stepFormat": "feature-guide",
+            "hideSummaryTitle": true,
+            "summary": "Trident2022 mode starts. Feeding Frenzy, Sharp Shooter, and Explore the Depths can be qualified in any order. Shoot the saucer within the 45-second qualification window to start the qualified modes.",
+            "steps": [
+              {
+                "text": "For your first Feeding Frenzy, shoot four alternating spinners: left, right, left, right (or right, left, right, left). Shoot the saucer to start it. During Feeding Frenzy, shoot either spinner for points.",
+                "modeNotes": [
+                  "Later Feeding Frenzy starts require more alternating spinner shots. A long gap between shots resets the sequence."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Clear the standing drop targets until the bonus multiplier reaches 3x to qualify your first Sharp Shooter. Shoot the saucer to start it. During Sharp Shooter, hit the single standing drop target for points; the standing target changes as you play.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "Hit all five stand-up targets to qualify Explore the Depths. Shoot the saucer to start it. During Explore the Depths, hit the stand-ups for points.",
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "To start several modes together, qualify them before shooting the saucer. Starting one, two, or three modes adds one, two, or three balls, up to four balls in play. The modes end when their timer expires or play returns to one ball.",
+                "modeNotes": [
+                  "One mode lasts 40 seconds, two modes last 66 seconds, and three modes last 107 seconds."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              },
+              {
+                "text": "To reach Deep Blue Sea, score at least one spinner hit in Feeding Frenzy, one drop-target hit in Sharp Shooter, and one stand-up hit in Explore the Depths. These can come from separate modes or a stack. After the mode rewards finish counting, Deep Blue Sea starts. Shoot the saucer for the lit jackpot.",
+                "modeNotes": [
+                  "Deep Blue Sea lasts 110 seconds."
+                ],
+                "kinds": [
+                  "mode",
+                  "multiball"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

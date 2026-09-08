@@ -288,6 +288,72 @@ In Trident, the five colored upper-right standups raise one spinner to 2,000 per
 
 - Use the first plunge to read top-lane and outlane feeds
 
+## ROM options
+
+### Default Id
+
+stock
+
+### Items
+
+- Id
+
+stock
+
+Label
+
+Original ROM
+
+- Id
+
+trident-2022
+
+Label
+
+Trident2022
+
+Differences
+
+Changes
+
+- Adds timed multiball modes with a four-ball trough and auto-plunger.
+
+- Spinners qualify Feeding Frenzy, drop targets qualify Sharp Shooter, and stand-ups qualify Explore the Depths. The saucer starts the qualified modes together.
+
+Strategy
+
+Step Format
+
+feature-guide
+
+Summary
+
+Trident2022 mode starts. Feeding Frenzy, Sharp Shooter, and Explore the Depths can be qualified in any order. Shoot the saucer within the 45-second qualification window to start the qualified modes.
+
+Steps
+
+- For your first Feeding Frenzy, shoot four alternating spinners: left, right, left, right (or right, left, right, left). Shoot the saucer to start it. During Feeding Frenzy, shoot either spinner for points.
+
+Mode Notes
+
+- Later Feeding Frenzy starts require more alternating spinner shots. A long gap between shots resets the sequence.
+
+- Clear the standing drop targets until the bonus multiplier reaches 3x to qualify your first Sharp Shooter. Shoot the saucer to start it. During Sharp Shooter, hit the single standing drop target for points; the standing target changes as you play.
+
+- Hit all five stand-up targets to qualify Explore the Depths. Shoot the saucer to start it. During Explore the Depths, hit the stand-ups for points.
+
+- To start several modes together, qualify them before shooting the saucer. Starting one, two, or three modes adds one, two, or three balls, up to four balls in play. The modes end when their timer expires or play returns to one ball.
+
+Mode Notes
+
+- One mode lasts 40 seconds, two modes last 66 seconds, and three modes last 107 seconds.
+
+- To reach Deep Blue Sea, score at least one spinner hit in Feeding Frenzy, one drop-target hit in Sharp Shooter, and one stand-up hit in Explore the Depths. These can come from separate modes or a stack. After the mode rewards finish counting, Deep Blue Sea starts. Shoot the saucer for the lit jackpot.
+
+Mode Notes
+
+- Deep Blue Sea lasts 110 seconds.
+
 ## Sources
 
 - [Bob's Guide to Classic Pinball Machines](https://rules.silverballmania.com/rules/GR0KD-MJpnr)
@@ -295,6 +361,9 @@ In Trident, the five colored upper-right standups raise one spinner to 2,000 per
 - [Beth Trofka at District 82 Super Series 2022: Classics Fair Strikes — Round 7](https://pinballvideos.com/v/4796/6314)
 - [Trident at Great Lakes Open 2021](https://pinballvideos.com/v/2702/1822)
 - [District 82 Trident 90-second tutorial](https://www.youtube.com/watch?v=D2FmuZ6XbDs)
+- [Trident2022 author: multiball conversion](https://www.pinballrefresh.com/blog/trident-2022)
+- [Trident2022 version 2022.1 source code](https://github.com/RetroPinUpgrade/Trident2023/blob/36eb748d4b8986974051af44e3943d7e9a4d16cc/Trident2022.ino)
+- [Trident2022 author's mode overview](https://www.youtube.com/watch?v=cTy_5CJNB7E)
 
 ## Playfield
 

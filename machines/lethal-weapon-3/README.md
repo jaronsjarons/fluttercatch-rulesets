@@ -320,6 +320,66 @@ Lethal Weapon 3 uses either three-target bank and the upper VUK to start Lotsaba
 
 - Test both drop banks, upper VUK, left ramp, both orbits, subway, three saucers, launch trigger, and their returns.
 
+## ROM options
+
+### Default Id
+
+stock
+
+### Items
+
+- Id
+
+stock
+
+Label
+
+Original ROM
+
+- Id
+
+chad-3
+
+Label
+
+Chad 3.00 / 3.01
+
+Differences
+
+Changes
+
+- Tri-Ball starts with a 20M Jackpot. Stunts require LW1, LW2 and LW3 in order by default.
+
+- Karate Kick relights through its target: one hit when flashing, two when solid. Fight Mode starts at the unlit left saucer when enabled.
+
+- Tournament Mode fixes Leo award order and disables replay/game awards and extra balls. Version 3.01 fixes the 3.00 left-saucer ball save; the display ROM remains 3.00.
+
+Strategy
+
+Summary
+
+Lethal Weapon 3, Chad 3 (Simple rules)
+
+Step Format
+
+feature-guide
+
+Steps
+
+- Start Tri-Ball: complete the center or lower-right drop bank, then shoot the upper-center VUK when ready. Collect the lit Jackpot at the left ramp; any saucer relights it. The initial Jackpot is 20M.
+
+- Start Shootout with orbit shots that advance the Uzi lights. During the duel, use the gun trigger before time runs out while keeping the ball in play. You must fire at least once to earn an Uzi award; draining or tilting during Shootout forfeits it.
+
+- Start a Stunt by collecting LW1 at the left saucer, LW2 at the upper-center VUK and LW3 at the right saucer. The default requires that order. Time one gun-trigger shot during the animation for an extra million; an early shot misses it.
+
+- After the left-outlane Karate Kick fires, hit its relight target above the left slingshot. A flashing target takes one hit; a solid target takes two.
+
+- Start Fight Mode at the unlit left saucer, once per game when enabled. Press the flipper buttons rapidly to win 10M. Super Leo can offer another fight worth 20M.
+
+Check Before Play
+
+- Tournament Mode fixes Leo award order and disables replay/game awards and extra balls. Video modes and Stunt order are separately adjustable.
+
 ## Sources
 
 - [Lethal Weapon 3 complete rulesheet](https://www.pinball.org/rules/lethalweapon3.html)
@@ -328,6 +388,7 @@ Lethal Weapon 3 uses either three-target bank and the upper VUK to start Lotsaba
 - [Lethal Weapon 3 gameplay](https://pinballvideos.com/v/661/286)
 - [Lethal Weapon 3 at Louisville Arcade Expo 2015](https://pinballvideos.com/v/746/5300)
 - [Lethal Weapon 3 official and unofficial ROM notes](https://www.pinballcode.com/downloads)
+- [Chad — Lethal Weapon 3 unofficial 3.01 change guide](https://www.pinballcode.com/lw300)
 
 ## Playfield
 

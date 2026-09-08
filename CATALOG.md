@@ -752,3 +752,8 @@ Edit the JSON files to propose changes. Readable pages are generated from those 
 - [Zankor](machines/zankor/README.md)
 - [Zig Zag / Wing Ding](machines/zig-zag-wing-ding/README.md)
 - [Zira](machines/zira/README.md)
+- [Expressway](machines/expressway/README.md)
+- [Flying Chariots](machines/flying-chariots/README.md)
+- [Fore](machines/fore/README.md)
+- [Strike Zone](machines/strike-zone/README.md)
+- [Supersonic](machines/supersonic-zaccaria/README.md)

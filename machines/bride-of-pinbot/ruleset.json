@@ -28,6 +28,18 @@
       {
         "label": "Jason Zahler at District 82 Super Series 2022: Progressive KO — Round 4",
         "url": "https://pinballvideos.com/v/4587/4816"
+      },
+      {
+        "label": "Dutch Pinball — Bride of Pinbot 2.0",
+        "url": "https://dutchpinball.com/games/bride-of-pinbot-2-0"
+      },
+      {
+        "label": "Dutch Pinball — official rules cards",
+        "url": "https://cms.dutchpinball.com/uploads/Bo_P2_0_Score_Cards_9f00c083e3.pdf"
+      },
+      {
+        "label": "Dutch Pinball — version changelog",
+        "url": "https://suite.dutchpinball.com/brideofpinbot/software/changelog"
       }
     ],
     "reviewStatus": "comprehensive",
@@ -170,6 +182,45 @@
         "Check Light 1 Billion probability and timer; operators can reduce it to 1%."
       ],
       "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "stock",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Original ROM"
+        },
+        {
+          "id": "dutch-pinball-2",
+          "label": "Dutch Pinball 2.0 conversion",
+          "differences": {
+            "changes": [
+              "This is the Dutch Pinball hardware and rules conversion, not an original Williams ROM update.",
+              "A new ruleset replaces the original wheel awards with Wheel Modes and introduces three-ball multiballs.",
+              "Progress through two multiballs toward Metamorphosis. Big Wheel Billion is reached through Wheel Mode completion."
+            ]
+          },
+          "strategy": {
+            "summary": "Bride of Pinbot 2.0 (Simple rules)",
+            "stepFormat": "feature-guide",
+            "hideSummaryTitle": true,
+            "steps": [
+              {
+                "text": "Start the lock phase at the Shuttle Ramp. Use the Heartbeat Ramp to light locks, then lock three balls at the Shuttle Ramp to start multiball."
+              },
+              {
+                "text": "Shoot the leftmost scoop to start a Wheel Mode. Complete Small Wheel Modes to light Big Wheel Modes; Big Wheel Billion is the last one unlocked."
+              },
+              {
+                "text": "Build the Jackpot value through Wheel Modes and multiball. It starts at 1M and can reach 8M."
+              },
+              {
+                "text": "When the Shuttle Ramp has no lit award, shoot it to spell PINBOT on the mini-playfield. Completing the name lights Video Mode at the scoop."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

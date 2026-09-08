@@ -304,6 +304,68 @@ PIN-BOT uses the flashing rainbow target to open the visor, then one lock in eac
 
 On PIN-BOT, the flashing rainbow target opens the visor, and one lock in each eye starts Multiball. Read the flashing rainbow line and Solar Value, hit the exact target, and lock both eyes. During Multiball, relock one ball to light the timed ramp collect, shoot the ramp before the Solar Value timer expires, and repeat while two balls remain.
 
+## ROM options
+
+### Default Id
+
+stock
+
+### Items
+
+- Id
+
+stock
+
+Label
+
+Original ROM
+
+- Id
+
+pembot
+
+Label
+
+PemBot
+
+Differences
+
+Changes
+
+- Adds power levels, Super Planets and automatic Shield protection.
+
+- Power levels change bumper, Energy and multiball scoring. Low Power becomes a risk after the first multiball.
+
+- TOURNEY disables extra balls, replays and lock stealing; planet Special scores 250K.
+
+Strategy
+
+Summary
+
+PemBot (Simple rules)
+
+Step Format
+
+feature-guide
+
+Steps
+
+- Raise power: roll through the right inlane, then hit the eject beside the visor before its timer expires. Timing out drains power.
+
+- Power rewards: at 50KV, Super Jets triples bumper scoring and survives drains. At 75KV, Energy scores double and all three drop targets stay lit to enable its timed shot. An Energy timeout drops power to 50KV; an unlit eject drops it to 25KV. Raising power above 75KV blows the single-use fuse, lights Extra Ball and returns power to 25KV.
+
+- Low Power: after your first Multiball ends, an unlit eject at 25KV drops you to Low Power. Solar stops advancing, Multiball loses Double Scoring and Energy stays at 50K. The 25KV power-up remains available at the eject without an inlane shot or timer.
+
+- Start Super Planets with a 100K Vortex skillshot, a successful chest skillshot, or a power-up while the planet target is lit. While active, Solar advances double, a power-up advances the planet, and the end-of-ball planet bonus doubles. Hit the blinking planet target for 100K; that hit ends Super Planets.
+
+- Keep Super Planets: an Energy Leak, Power Drain or unlit eject ends it. It also ends after the end-of-ball planet bonus is counted.
+
+Check Before Play
+
+- In TOURNEY, extra balls, replays and lock stealing are disabled; planet Special scores 250K.
+
+- Solar advance can be adjusted; the values here use the documented 50K ramp increment.
+
 ## Sources
 
 - [Kineticist PIN-BOT tournament tutorial](https://www.kineticist.com/news/pin-bot-pinball-tutorial)
@@ -312,6 +374,7 @@ On PIN-BOT, the flashing rainbow target opens the visor, and one lock in each ey
 - [PinballCards PIN-BOT card](https://pinballcards.net/pin-bot-1986)
 - [Pinball.org PIN-BOT rulesheet](https://pinball.org/rules/pinbot.txt)
 - [Jim Belsito at Pinburgh 2018](https://pinballvideos.com/v/2030/22734)
+- [idealjoker — PemBot author README, post 50](https://pinside.com/pinball/forum/topic/pembot-no-relation)
 
 ## Playfield
 
