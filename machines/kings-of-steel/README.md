@@ -154,12 +154,17 @@ Source Url
 
 [Source](https://rules.silverballmania.com/rules/GR67j-M7ZYy)
 
+## Editions
+
+See [edition-specific rules](editions.json).
+
 ## Sources
 
 - [Kings of Steel factory instruction cards](https://pinballrebel.com/pinball/cards/Bally/Bally_Kings_Of_Steel_instruction_cards.zip)
 - [Kings of Steel competitive rules](https://rules.silverballmania.com/rules/GR67j-M7ZYy)
 - [Kings of Steel right-target nine-out demonstration](https://www.youtube.com/watch?v=GoGo5yrhOrI)
 - [Kings of Steel machine and playfield overview](https://www.kineticist.com/games/pinball/kings-of-steel)
+- [John Whyatt — Tiger Rag](https://www.tilt.it/tigerrag.htm)
 
 ## Playfield
 

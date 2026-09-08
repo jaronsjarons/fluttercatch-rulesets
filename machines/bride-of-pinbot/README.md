@@ -252,6 +252,60 @@ Bride of Pinbot is a repeating Shuttle-ramp progression through face stages, Mul
 
 - Check Light 1 Billion probability and timer; operators can reduce it to 1%.
 
+## ROM options
+
+### Default Id
+
+stock
+
+### Items
+
+- Id
+
+stock
+
+Label
+
+Original ROM
+
+- Id
+
+dutch-pinball-2
+
+Label
+
+Dutch Pinball 2.0 conversion
+
+Differences
+
+Changes
+
+- This is the Dutch Pinball hardware and rules conversion, not an original Williams ROM update.
+
+- A new ruleset replaces the original wheel awards with Wheel Modes and introduces three-ball multiballs.
+
+- Progress through two multiballs toward Metamorphosis. Big Wheel Billion is reached through Wheel Mode completion.
+
+Strategy
+
+Summary
+
+Bride of Pinbot 2.0
+
+Step Format
+
+feature-guide
+
+Steps
+
+- Start the lock phase at the Shuttle Ramp. Use the Heartbeat Ramp to light locks, then lock three balls at the Shuttle Ramp to start multiball.
+
+- Shoot the leftmost scoop to start a Wheel Mode. Complete Small Wheel Modes to light Big Wheel Modes; Big Wheel Billion is the last one unlocked.
+
+- Build the Jackpot value through Wheel Modes and multiball. It starts at 1M and can reach 8M.
+
+- When the Shuttle Ramp has no lit award, shoot it to spell PINBOT on the mini-playfield. Completing the name lights Video Mode at the scoop.
+
 ## Sources
 
 - [Official Bride of Pinbot manual](https://www.planetarypinball.com/reference/gamemanuals/The_Machine_Bride_of_Pinbot/files/assets/basic-html/toc.html)
@@ -260,6 +314,9 @@ Bride of Pinbot is a repeating Shuttle-ramp progression through face stages, Mul
 - [Eric Stone's 27-billion physical-machine game](https://www.youtube.com/watch?v=N2XiXiHlaRc&t=1s)
 - [Pinball Genie Bride of Pinbot guide](https://pinball-genie.com/machines/bride-of-pinbot)
 - [Jason Zahler at District 82 Super Series 2022: Progressive KO — Round 4](https://pinballvideos.com/v/4587/4816)
+- [Dutch Pinball — Bride of Pinbot 2.0](https://dutchpinball.com/games/bride-of-pinbot-2-0)
+- [Dutch Pinball — official rules cards](https://cms.dutchpinball.com/uploads/Bo_P2_0_Score_Cards_9f00c083e3.pdf)
+- [Dutch Pinball — version changelog](https://suite.dutchpinball.com/brideofpinbot/software/changelog)
 
 ## Playfield
 

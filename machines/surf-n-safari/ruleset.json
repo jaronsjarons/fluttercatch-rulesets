@@ -20,6 +20,14 @@
       {
         "label": "Chris Basler at Louisville Arcade Expo 2018",
         "url": "https://pinballvideos.com/v/1759/16563"
+      },
+      {
+        "label": "Tournament 4E10 README — fsim, October 2022; package supplied in PinMAME issue 504",
+        "url": "https://github.com/vpinball/pinmame/issues/504"
+      },
+      {
+        "label": "PinMAME tournament-ROM registration",
+        "url": "https://github.com/vpinball/pinmame/commit/3eebdf76255ddd80285d3088455097178bea2e5c"
       }
     ],
     "reviewStatus": "comprehensive",
@@ -199,6 +207,44 @@
       "overview": "Surf 'n Safari uses five slide shots to fill a Bonus Grid and light the Pipeline lock. Build the lock through the bottom rows or Rapids column, then start three-ball play and complete two lit shots for the Jackpot. Finish all five major shots and return to Rapids for the 30M Super Jackpot.",
       "machineSetup": [],
       "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "stock",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Original ROM"
+        },
+        {
+          "id": "tournament-4e10",
+          "label": "Tournament 4E10",
+          "differences": {
+            "changes": [
+              "With Tournament Mode set to YES, the top skill-shot saucer always scores 500K and outlanes score 100K instead of random awards.",
+              "With Tournament Mode set to NO, those awards use their original behavior."
+            ]
+          },
+          "strategy": {
+            "summary": "Surf 'n Safari, Tournament 4E10",
+            "stepFormat": "feature-guide",
+            "hideSummaryTitle": true,
+            "steps": [
+              {
+                "text": "Hit Pipeline, Rapids, Boomerang, all three Splash targets, and Whirlpool to advance their Bonus Grid columns. Complete the bottom three rows or the Rapids column to light the Pipeline lock; the column award is timed."
+              },
+              {
+                "text": "Shoot the lit Pipeline lock. Make the gentle Plunge skill shot to start three-ball multiball; a miss starts two-ball play."
+              },
+              {
+                "text": "During multiball, complete the two lit major shots, then shoot Rapids for the Jackpot. Complete all five lit major shots and return to Rapids for the Super Jackpot. Repeat that five-shot cycle while at least two balls remain."
+              }
+            ],
+            "checkBeforePlay": [
+              "These changes require Tournament Mode set to YES. With it set to NO, the saucer and outlanes use their original behavior."
+            ]
+          }
+        }
+      ]
     }
   }
 }

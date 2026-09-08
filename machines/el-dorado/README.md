@@ -122,11 +122,19 @@ Steps
 
 - Confirm three- or five-ball play and whether card B-16143 or B-16144 is installed, then test both drop banks, moving spot, lit values, completion reset, Special lamps, pop-bumper values, upper-right skill lane, and all three side feeds.
 
+## Editions
+
+See [edition-specific rules](editions.json).
+
 ## Sources
 
 - [Gottlieb El Dorado reproduction instruction cards](https://www.pinballrebel.com/pinball/cards/Gottlieb/Gottlieb_El_Dorado_instruction_cards.zip)
 - [Silverball Rules El Dorado strategy](https://rules.silverballmania.com/rules/GrEZ5-MDxPP)
 - [Silverball Museum El Dorado feature summary](https://silverballmuseum.com/product/el-dorado/)
+- [Bob's Guide — Solar City](https://rules.silverballmania.com/rules/GrEZ5-MJ9y3)
+- [Bob's Guide — Target Alpha](https://rules.silverballmania.com/rules/GrEZ5-MDBY0)
+- [Target Alpha instruction card B-17245-1 — three-ball extra-ball setup](https://www.pinballrebel.com/game/pins/instruction/target-alpha.gif)
+- [Jeffrey Weiss — Target Alpha machine and photographs](https://users.cs.fiu.edu/~jweiss/targetalpha/)
 
 ## Playfield
 

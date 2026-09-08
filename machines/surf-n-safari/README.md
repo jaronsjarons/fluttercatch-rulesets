@@ -220,12 +220,68 @@ Surf 'n Safari uses five slide shots to fill a Bonus Grid and light the Pipeline
 
 Surf 'n Safari uses five slide shots to fill a Bonus Grid and light the Pipeline lock. Build the lock through the bottom rows or Rapids column, then start three-ball play and complete two lit shots for the Jackpot. Finish all five major shots and return to Rapids for the 30M Super Jackpot.
 
+## ROM options
+
+### Default Id
+
+stock
+
+### Items
+
+- Id
+
+stock
+
+Label
+
+Original ROM
+
+- Id
+
+tournament-4e10
+
+Label
+
+Tournament 4E10
+
+Differences
+
+Changes
+
+- With Tournament Mode set to YES, the top skill-shot saucer always scores 500K and outlanes score 100K instead of random awards.
+
+- With Tournament Mode set to NO, those awards use their original behavior.
+
+Strategy
+
+Summary
+
+Surf 'n Safari, Tournament 4E10
+
+Step Format
+
+feature-guide
+
+Steps
+
+- Hit Pipeline, Rapids, Boomerang, all three Splash targets, and Whirlpool to advance their Bonus Grid columns. Complete the bottom three rows or the Rapids column to light the Pipeline lock; the column award is timed.
+
+- Shoot the lit Pipeline lock. Make the gentle Plunge skill shot to start three-ball multiball; a miss starts two-ball play.
+
+- During multiball, complete the two lit major shots, then shoot Rapids for the Jackpot. Complete all five lit major shots and return to Rapids for the Super Jackpot. Repeat that five-shot cycle while at least two balls remain.
+
+Check Before Play
+
+- These changes require Tournament Mode set to YES. With it set to NO, the saucer and outlanes use their original behavior.
+
 ## Sources
 
 - [Surf 'n Safari rulesheet](https://pinball.org/rules/surfnsafari.html)
 - [Kineticist Surf 'n Safari record](https://www.kineticist.com/games/pinball/surf-n-safari)
 - [Raymond Davidson at IFPA 15 World Pinball Championship](https://pinballvideos.com/v/1891/2431)
 - [Chris Basler at Louisville Arcade Expo 2018](https://pinballvideos.com/v/1759/16563)
+- [Tournament 4E10 README — fsim, October 2022; package supplied in PinMAME issue 504](https://github.com/vpinball/pinmame/issues/504)
+- [PinMAME tournament-ROM registration](https://github.com/vpinball/pinmame/commit/3eebdf76255ddd80285d3088455097178bea2e5c)
 
 ## Playfield
 

@@ -28,6 +28,10 @@
       {
         "label": "Lethal Weapon 3 official and unofficial ROM notes",
         "url": "https://www.pinballcode.com/downloads"
+      },
+      {
+        "label": "Chad — Lethal Weapon 3 unofficial 3.01 change guide",
+        "url": "https://www.pinballcode.com/lw300"
       }
     ],
     "reviewStatus": "comprehensive",
@@ -291,6 +295,51 @@
         "Test both drop banks, upper VUK, left ramp, both orbits, subway, three saucers, launch trigger, and their returns."
       ],
       "rulesNotes": []
+    },
+    "romOptions": {
+      "defaultId": "stock",
+      "items": [
+        {
+          "id": "stock",
+          "label": "Original ROM"
+        },
+        {
+          "id": "chad-3",
+          "label": "Chad 3.00 / 3.01",
+          "differences": {
+            "changes": [
+              "Tri-Ball starts with a 20M Jackpot. Stunts require LW1, LW2 and LW3 in order by default.",
+              "Karate Kick relights through its target: one hit when flashing, two when solid. Fight Mode starts at the unlit left saucer when enabled.",
+              "Tournament Mode fixes Leo award order and disables replay/game awards and extra balls. Version 3.01 fixes the 3.00 left-saucer ball save; the display ROM remains 3.00."
+            ]
+          },
+          "strategy": {
+            "summary": "Lethal Weapon 3, Chad 3",
+            "stepFormat": "feature-guide",
+            "hideSummaryTitle": true,
+            "steps": [
+              {
+                "text": "Start Tri-Ball: complete the center or lower-right drop bank, then shoot the upper-center VUK when ready. Collect the lit Jackpot at the left ramp; any saucer relights it. The initial Jackpot is 20M."
+              },
+              {
+                "text": "Start Shootout with orbit shots that advance the Uzi lights. During the duel, use the gun trigger before time runs out while keeping the ball in play. You must fire at least once to earn an Uzi award; draining or tilting during Shootout forfeits it."
+              },
+              {
+                "text": "Start a Stunt by collecting LW1 at the left saucer, LW2 at the upper-center VUK and LW3 at the right saucer. The default requires that order. Time one gun-trigger shot during the animation for an extra million; an early shot misses it."
+              },
+              {
+                "text": "After the left-outlane Karate Kick fires, hit its relight target above the left slingshot. A flashing target takes one hit; a solid target takes two."
+              },
+              {
+                "text": "Start Fight Mode at the unlit left saucer, once per game when enabled. Press the flipper buttons rapidly to win 10M. Super Leo can offer another fight worth 20M."
+              }
+            ],
+            "checkBeforePlay": [
+              "Tournament Mode fixes Leo award order and disables replay/game awards and extra balls. Video modes and Stunt order are separately adjustable."
+            ]
+          }
+        }
+      ]
     }
   }
 }
