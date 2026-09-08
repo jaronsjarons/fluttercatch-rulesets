@@ -290,7 +290,7 @@ Strategy
 
 Summary
 
-Bride of Pinbot 2.0 (Simple rules)
+Bride of Pinbot 2.0
 
 Step Format
 

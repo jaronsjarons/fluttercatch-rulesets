@@ -256,7 +256,7 @@ Strategy
 
 Summary
 
-Surf 'n Safari, Tournament 4E10 (Simple rules)
+Surf 'n Safari, Tournament 4E10
 
 Step Format
 

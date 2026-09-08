@@ -358,7 +358,7 @@ Strategy
 
 Summary
 
-Lethal Weapon 3, Chad 3 (Simple rules)
+Lethal Weapon 3, Chad 3
 
 Step Format
 

@@ -342,7 +342,7 @@ Strategy
 
 Summary
 
-PemBot (Simple rules)
+PemBot
 
 Step Format
 
