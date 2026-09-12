@@ -118,7 +118,7 @@ Steps
 
 When
 
-Use this plan when the spinner feed is safer than the saucer eject.
+Use this plan when the saucer eject is too chaotic and the spinner is repeatable.
 
 Steps
 
@@ -200,7 +200,7 @@ The saucer eject can return the ball without control.
 
 Response
 
-Use the spinner-only route when its return is safer.
+Use the spinner-only route when the spinner is repeatable and its return is less chaotic.
 
 Source Url
 
@@ -208,11 +208,11 @@ Source Url
 
 - Issue
 
-Direct hand targets can send the ball down the middle.
+Changing the hand through the playfield targets is dangerous.
 
 Response
 
-Change the hand through the spinner and top lanes when possible.
+Use the spinner and top lanes when they can make the needed change.
 
 Source Url
 

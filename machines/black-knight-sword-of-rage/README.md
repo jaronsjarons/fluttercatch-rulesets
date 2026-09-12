@@ -200,15 +200,15 @@ Source Url
 
 ### Techniques
 
-- Backhand
+- Shield saucer backhand test
 
 Instruction
 
-Backhand the Shield saucer with the slowest shot that reaches it. Use the first ball save to test the return.
+Test the Shield saucer backhand on this copy. It may work from a trap or after a post transfer.
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=64s)
+[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=554s)
 
 Technique Slug
 
@@ -240,15 +240,15 @@ Source Url
 
 - Issue
 
-The three center shots can return the ball very fast.
+The three center shots are dangerous.
 
 Response
 
-Use low-speed backhands and dead bounces. Use initial ball save for center progress.
+Use active ball-save time to make qualification progress.
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=64s)
+[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=579s)
 
 - Issue
 
@@ -276,15 +276,15 @@ Source Url
 
 - Issue
 
-The Light Lock target can feed the right outlane.
+The Light Lock target is difficult to hit cleanly.
 
 Response
 
-Use a glancing hit and keep Magna-Save ready.
+Clip the far-right edge of the target instead of driving straight at it.
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=579s)
+[Source](https://www.youtube.com/watch?v=i8CZsGEcmBA&t=1548s)
 
 ### Quick Info
 
@@ -313,16 +313,6 @@ Black Knight: Sword of Rage lets a Battle continue into Triple Knights Challenge
 ### Simple Overview
 
 Black Knight: Sword of Rage builds Battles at center shots and Triple Knights Challenge at Light Lock and Shield saucer. Hit a center shot once (then one more per Battle played), shoot center ramp, then saucer to start. Hit Light Lock before each saucer lock; take the third during Battle, then collect POWER at center target when lit.
-
-### Note Details
-
-Label
-
-Top-player proof
-
-Items
-
-- Bowen Kerins prepared two Triple Knights Challenge locks, started a Battle, collected the third lock during the Battle, and used POWER on the combined feature.
 
 ### Machine Setup
 

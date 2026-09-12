@@ -206,19 +206,19 @@ The left and side ramps feed the upper flipper quickly.
 
 Response
 
-Trap when the feed allows it. Otherwise, time the upper flipper before the ball arrives.
+Do not flail at the return. Time one controlled upper-flipper shot only after the feed is visible.
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=dITLGry5f70&t=1259s)
+[Source](https://www.kineticist.com/post/black-rose-pinball-tutorial)
 
 - Issue
 
-A direct Broadside hit can rebound down the middle.
+A dead-on Broadside cannon shot can rebound down the middle.
 
 Response
 
-Use an offset cannon hit. Hold the right flipper for the normal return and stay ready to nudge.
+Avoid striking the lit target squarely.
 
 Source Url
 

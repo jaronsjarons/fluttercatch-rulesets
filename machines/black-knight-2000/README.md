@@ -178,7 +178,7 @@ Send one ball into the Challenge Lane to remove it from play for about ten secon
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=O4mr9s8EJE0&t=80s)
+[Source](https://www.pinball.org/rules/blackknight2000.html)
 
 ### Cautions
 
@@ -192,19 +192,19 @@ Send the ball back through Skyway or Lightning Lane instead of shooting lower ta
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=xiolQ8l17vY&t=117s)
+[Source](https://www.pinball.org/rules/blackknight2000.html)
 
 - Issue
 
-The U-Turn can return the ball toward the center.
+The U-Turn route to light Challenge Lane is dangerous.
 
 Response
 
-Use it only for a deliberate Double Knights Challenge attempt.
+Skip it when the three-ball Multiball route is already available.
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=xiolQ8l17vY&t=180s)
+[Source](https://www.youtube.com/watch?v=xiolQ8l17vY&t=197s)
 
 - Issue
 

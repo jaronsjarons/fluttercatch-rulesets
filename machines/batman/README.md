@@ -174,11 +174,11 @@ Steps
 
 Instruction
 
-Backhand the Scarecrow shot when the moving crane exposes a safe angle. Leave the dangerous center position for the Multiball-starting final hit.
+Backhand Scarecrow from the left flipper. The inside shot is less drain-prone than a forehand.
 
 Source Url
 
-[Source](https://www.youtube.com/watch?v=HOXy2xpY25o)
+[Source](https://www.youtube.com/watch?v=HOXy2xpY25o&t=302s)
 
 ### Cautions
 
