@@ -18,11 +18,19 @@ Use the Stage entrance for a mode, the right inner loop for Trunk Multiball, and
 
 - Start a Stage mode
 
-Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Then shoot the Stage to start the selected mode.
+Use the flipper buttons to select a Stage mode on the marquee before opening the curtain. Hit the curtain four times, shoot Stage Alley without touching a bumper, or shoot the Key Lane to its red target without touching a bumper to open it. Shoot the Stage to start the mode before Trunk or Seance Multiball.
+
+- Start a Movie mode
+
+Spell FILM at the lower lanes, then shoot the right inner loop to start a Movie mode. Start it before multiball, with no Stage mode running, then follow the blue shot arrows.
 
 - Start Trunk Multiball
 
-Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball.
+Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball. Shoot all three lit jackpot shots, then the right inner loop for the Super Jackpot. This relights the jackpot shots; repeat while multiball continues.
+
+- Start Seance Multiball
+
+Spell SEANCE at the standup targets, then shoot the lit scoop to start. During multiball, spell SEANCE for a jackpot; spell it in order for the Super Jackpot. Add Seance to Trunk Multiball when it is ready.
 
 - Start Milkcan playfield X
 
@@ -68,6 +76,12 @@ Summary
 
 Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the mode; a clean Stage Alley entry starts it at 2x.
 
+- Movie Mode
+
+Summary
+
+Spell FILM at the lower lanes, then shoot the right inner loop to start a Movie Mode. Start it before multiball, with no Stage Mode running, then follow the blue shot arrows.
+
 - Mode order
 
 Summary
@@ -84,7 +98,7 @@ Use the right inner loop for locks, make the required jackpot shots, then return
 
 Summary
 
-Spell SEANCE, then complete the ordered jackpot sequence toward its Super Jackpot.
+Spell SEANCE at the standup targets and shoot the lit scoop to start. During multiball, spell SEANCE for a jackpot; spell it in order for the Super Jackpot.
 
 - Milkcan multiplier
 
@@ -94,25 +108,29 @@ A Milkcan loop followed by the ramp starts or raises a timed 2x, 3x, or 4x playf
 
 ### Steps
 
-- Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the selected mode.
+- Use the left and right flipper buttons to select a Stage mode on the marquee before opening the curtain. Opening the curtain locks that selection.
 
-- Select a Stage Mode or Movie Mode whose marked shots remain accessible during Multiball, then start it before any Multiball. A clean Stage Alley entry starts a Stage Mode at 2x.
+- Hit the curtain four times, shoot Stage Alley without touching a bumper, or shoot the Key Lane to its red target without touching a bumper to open the curtain. Shoot the open Stage to start the mode before Trunk or Seance Multiball. Entering the open Stage through Stage Alley without touching a bumper starts the mode at 2x.
 
 - While the mode is active, complete its marked shots and use orbit shots for added Stage time when needed.
 
-- Start Trunk or Seance Multiball, then add the other if it is ready.
+- Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball.
 
-- During Trunk Multiball, collect the lit jackpot shots and return to the trunk for the Super Jackpot; secure at least three Trunk jackpots for its HOUDINI letter.
+- Hit the SEANCE standup targets to spell SEANCE, then shoot the lit scoop to start Seance Multiball. Add it to Trunk Multiball when it is ready.
 
-- During Seance Multiball, follow the lit sequence and collect at least two jackpots for its HOUDINI letter.
+- During Trunk Multiball, collect the three lit jackpot shots, then shoot the right inner loop into the trunk for the Super Jackpot. This relights the jackpots for another cycle. Check the installed jackpot requirement for its HOUDINI letter.
+
+- During Seance Multiball, hit the SEANCE standup targets to spell SEANCE for a jackpot. Spell it in order for the Super Jackpot. Check the installed jackpot requirement for its HOUDINI letter.
 
 - Use the Milkcan loop-to-ramp playfield multiplier only when both shots feed safely, then place the remaining mode and multiball shots inside that window.
 
 ### Builds Toward
 
-Master Magician
+Master Magician: 18.12.12 baseline
 
 Steps
+
+- These are the 18.12.12 requirements, not verified 21.10.25 defaults. Version 21.01.21 changed several Houdini-letter settings and added second letters for Jail Escapes and Secret Missions. Check the installed game's settings; hold both flipper buttons to view your progress.
 
 - Complete each of the ten Stage Mode features and five Movie Mode features.
 
@@ -228,8 +246,9 @@ Seven major objectives award HOUDINI letters. Hit the curtain four times, make a
 
 - [Tilt Forums Houdini rulesheet](https://tiltforums.com/t/houdini-rulesheet/3934)
 - [Pinball Rulesheets Houdini guide](https://pinballrulesheets.com/american-pinball/houdini-rulesheet)
-- [Official American Pinball Houdini v21.10.25 update](https://www.american-pinball.com/games/houdini/updates/)
-- [Official American Pinball Houdini service manual](https://s4.american-pinball.com/img/support/2021-10/API-Houdini-Service-Manual-10-6-21.pdf)
+- [Official American Pinball Houdini v21.10.25 update](https://americanpinball.com/support/updates/)
+- [Official American Pinball Houdini service manual](https://48804760.fs1.hubspotusercontent-na1.net/hubfs/48804760/Support%20Files/Game%20Manuals/Houdini%20-%20Game%20Manual.pdf)
+- [Houdini tournament commentary: Movie qualification and start](https://www.youtube.com/watch?v=PKQ5kBy2Fak&t=5801s)
 - [Steven Bowden at Illinois State 2022](https://pinballvideos.com/v/4761/36150)
 
 ## Playfield

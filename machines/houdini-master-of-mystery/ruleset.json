@@ -15,11 +15,15 @@
       },
       {
         "label": "Official American Pinball Houdini v21.10.25 update",
-        "url": "https://www.american-pinball.com/games/houdini/updates/"
+        "url": "https://americanpinball.com/support/updates/"
       },
       {
         "label": "Official American Pinball Houdini service manual",
-        "url": "https://s4.american-pinball.com/img/support/2021-10/API-Houdini-Service-Manual-10-6-21.pdf"
+        "url": "https://48804760.fs1.hubspotusercontent-na1.net/hubfs/48804760/Support%20Files/Game%20Manuals/Houdini%20-%20Game%20Manual.pdf"
+      },
+      {
+        "label": "Houdini tournament commentary: Movie qualification and start",
+        "url": "https://www.youtube.com/watch?v=PKQ5kBy2Fak&t=5801s"
       },
       {
         "label": "Steven Bowden at Illinois State 2022",
@@ -39,6 +43,10 @@
           "summary": "Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the mode; a clean Stage Alley entry starts it at 2x."
         },
         {
+          "name": "Movie Mode",
+          "summary": "Spell FILM at the lower lanes, then shoot the right inner loop to start a Movie Mode. Start it before multiball, with no Stage Mode running, then follow the blue shot arrows."
+        },
+        {
           "name": "Mode order",
           "summary": "A Stage Mode and Movie Mode cannot run together and must start before a multiball to overlap it."
         },
@@ -48,7 +56,7 @@
         },
         {
           "name": "Seance Multiball",
-          "summary": "Spell SEANCE, then complete the ordered jackpot sequence toward its Super Jackpot."
+          "summary": "Spell SEANCE at the standup targets and shoot the lit scoop to start. During multiball, spell SEANCE for a jackpot; spell it in order for the Super Jackpot."
         },
         {
           "name": "Milkcan multiplier",
@@ -57,10 +65,10 @@
       ],
       "steps": [
         {
-          "text": "Hit the stage curtain four times, make a clean Stage Alley shot, or shoot the Key Lane and hit the red Key Target to open the curtain. Shoot the Stage to start the selected mode."
+          "text": "Use the left and right flipper buttons to select a Stage mode on the marquee before opening the curtain. Opening the curtain locks that selection."
         },
         {
-          "text": "Select a Stage Mode or Movie Mode whose marked shots remain accessible during Multiball, then start it before any Multiball. A clean Stage Alley entry starts a Stage Mode at 2x.",
+          "text": "Hit the curtain four times, shoot Stage Alley without touching a bumper, or shoot the Key Lane to its red target without touching a bumper to open the curtain. Shoot the open Stage to start the mode before Trunk or Seance Multiball. Entering the open Stage through Stage Alley without touching a bumper starts the mode at 2x.",
           "kinds": [
             "mode"
           ]
@@ -72,19 +80,25 @@
           ]
         },
         {
-          "text": "Start Trunk or Seance Multiball, then add the other if it is ready.",
+          "text": "Shoot the right inner loop for the first lit lock. After each lock, shoot Stage Alley to light the next one, then shoot the right inner loop again. The third lock starts Trunk Multiball.",
           "kinds": [
             "multiball"
           ]
         },
         {
-          "text": "During Trunk Multiball, collect the lit jackpot shots and return to the trunk for the Super Jackpot; secure at least three Trunk jackpots for its HOUDINI letter.",
+          "text": "Hit the SEANCE standup targets to spell SEANCE, then shoot the lit scoop to start Seance Multiball. Add it to Trunk Multiball when it is ready.",
           "kinds": [
             "multiball"
           ]
         },
         {
-          "text": "During Seance Multiball, follow the lit sequence and collect at least two jackpots for its HOUDINI letter.",
+          "text": "During Trunk Multiball, collect the three lit jackpot shots, then shoot the right inner loop into the trunk for the Super Jackpot. This relights the jackpots for another cycle. Check the installed jackpot requirement for its HOUDINI letter.",
+          "kinds": [
+            "multiball"
+          ]
+        },
+        {
+          "text": "During Seance Multiball, hit the SEANCE standup targets to spell SEANCE for a jackpot. Spell it in order for the Super Jackpot. Check the installed jackpot requirement for its HOUDINI letter.",
           "kinds": [
             "multiball"
           ]
@@ -97,8 +111,11 @@
         }
       ],
       "buildsToward": {
-        "title": "Master Magician",
+        "title": "Master Magician: 18.12.12 baseline",
         "steps": [
+          {
+            "text": "These are the 18.12.12 requirements, not verified 21.10.25 defaults. Version 21.01.21 changed several Houdini-letter settings and added second letters for Jail Escapes and Secret Missions. Check the installed game's settings; hold both flipper buttons to view your progress."
+          },
           {
             "text": "Complete each of the ten Stage Mode features and five Movie Mode features.",
             "kinds": [
